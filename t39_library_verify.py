@@ -391,8 +391,10 @@ def verify_t15(lib):
 
 # ---------------------------------------------------------------- 5b) T15 全目录重扫
 def verify_t15_full_rescan(lib):
-    """用 mol_label 直接重扫 84,225 目录的终态三价组件，得到权威的「45 库外」形态数。"""
+    """用 mol_label 直接重扫 84,225 目录的终态三价组件，得到权威的「45 库外」形态数。
+    同时验证：这些终态形态确实是「库内 6 级块 + 0 级同类键融合」的产物（T17 结构定理）。"""
     from t15_forms_examples import triv_components
+    from t17b_history_fusion import simulate_record
     t0 = time.time()
     cat = json.load(open(BASE + r"\t4_catalog_all_validated.json", encoding="utf-8"))
     libkeys = set(lib["multi"]) | set(lib["single"])
@@ -416,6 +418,54 @@ def verify_t15_full_rescan(lib):
     forms = json.load(open(BASE + r"\t15_forms.json", encoding="utf-8"))
     labels = [block_label(x["atoms"], [tuple(e) for e in x["edges"]]) for x in forms]
     labels_genuine = [k for k in labels if k not in libkeys]
+
+    # 结构定理验证：这些终态形态的宿主物质，其 6 级块是否全在库内、终态是否 = 6 级块之并
+    cat_by_formula = {r["formula"]: r for r in cat}
+    hosts = sorted({v["example"] for v in new.values()})
+    fstat = Counter()
+    cover_bad = []
+    level6_bad = []
+    terminal_mismatch = []
+    for f in hosts:
+        rec = cat_by_formula.get(f)
+        if not rec:
+            fstat["no_record"] += 1
+            continue
+        atoms = list(rec["atoms"])
+        level6, final, ok, bond6 = simulate_record(atoms, return_bond=True)
+        if level6 is None:
+            fstat["sim_fail"] += 1
+            continue
+        fstat["hosts"] += 1
+        # 1) 6 级块（三价诱导子图）是否全部在库内
+        all_in = True
+        for mem in level6:
+            mem = sorted(mem)
+            ats = [atoms[i] for i in mem]
+            idx = {v: k for k, v in enumerate(mem)}
+            es = []
+            for a in range(len(mem)):
+                for b in range(a + 1, len(mem)):
+                    m = bond6[mem[a]][mem[b]] if bond6 else 0
+                    if m:
+                        es.append((idx[mem[a]], idx[mem[b]], m))
+            if classify_block(lib, ats, es) == "BAD":
+                all_in = False
+        if all_in:
+            fstat["level6_all_in_lib"] += 1
+        else:
+            level6_bad.append(f)
+        # 2) 终态三价组件 = 所含 6 级块之并（结构定理）
+        ok_cover = True
+        for fc in final:
+            blocks = [b for b in level6 if b <= fc]
+            if not blocks or set().union(*blocks) != set(fc):
+                ok_cover = False
+                break
+        if ok_cover:
+            fstat["final_cover_ok"] += 1
+        else:
+            cover_bad.append(f)
     out = {"catalog_records": len(cat), "terminal_components": n_comp,
            "distinct_genuine_new_forms": len(new),
            "size_dist": dict(sorted(Counter(v["n"] for v in new.values()).items())),
@@ -423,6 +473,15 @@ def verify_t15_full_rescan(lib):
            "t15_entries_distinct_mol_label": len(set(labels)),
            "t15_entries_genuine_distinct": len(set(labels_genuine)),
            "t15_entries_duplicate_isomorphic": len(labels_genuine) - len(set(labels_genuine)),
+           "structure_theorem": {
+               "hosts": fstat["hosts"],
+               "hosts_all_level6_in_lib": fstat["level6_all_in_lib"],
+               "hosts_final_cover_ok": fstat["final_cover_ok"],
+               "level6_bad_hosts": level6_bad[:10],
+               "cover_bad_hosts": cover_bad[:10],
+               "note": "终态三价组件 = 自身库内 6 级块之并 + 0 级同类键加固/融合 —— 与 T17/T18 一致",
+           },
+           "forms": list(new.values()),
            "smallest_examples": sorted(new.values(), key=lambda x: (x["n"], x["example"]))[:10],
            "seconds": round(time.time() - t0, 1)}
     json.dump(out, open(BASE + r"\t39_t15_rescan.json", "w", encoding="utf-8"),
