@@ -1,0 +1,8528 @@
+{
+ "O/X/C/P": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P"
+  ],
+  "best_valid": {
+   "natoms": 48,
+   "formula": "O21X10C4P13",
+   "T": 48,
+   "feed": [
+    21,
+    10,
+    4,
+    13
+   ]
+  },
+  "best_any": 48
+ },
+ "O/X/C/W": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "O4X3W9",
+   "T": 64,
+   "feed": [
+    16,
+    7,
+    8,
+    33
+   ]
+  },
+  "best_any": 16
+ },
+ "O/X/C/L": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "L"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "O2X2C2L2",
+   "T": 48,
+   "feed": [
+    14,
+    18,
+    2,
+    14
+   ]
+  },
+  "best_any": 8
+ },
+ "O/X/C/K": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O14X6C4K8",
+   "T": 48,
+   "feed": [
+    20,
+    6,
+    10,
+    12
+   ]
+  },
+  "best_any": 32
+ },
+ "O/X/C/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O6X8C2A16",
+   "T": 96,
+   "feed": [
+    11,
+    14,
+    43,
+    28
+   ]
+  },
+  "best_any": 32
+ },
+ "O/X/C/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "O2X2C2F2",
+   "T": 32,
+   "feed": [
+    5,
+    20,
+    4,
+    3
+   ]
+  },
+  "best_any": 8
+ },
+ "O/X/P/W": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W"
+  ],
+  "best_valid": {
+   "natoms": 50,
+   "formula": "O18X18P8W6",
+   "T": 96,
+   "feed": [
+    24,
+    56,
+    10,
+    6
+   ]
+  },
+  "best_any": 50
+ },
+ "O/X/P/L": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "L"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "O8X6P18L2",
+   "T": 64,
+   "feed": [
+    12,
+    12,
+    29,
+    11
+   ]
+  },
+  "best_any": 34
+ },
+ "O/X/P/K": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 30,
+   "formula": "O7X4P12K7",
+   "T": 32,
+   "feed": [
+    7,
+    4,
+    13,
+    8
+   ]
+  },
+  "best_any": 30
+ },
+ "O/X/P/A": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 57,
+   "formula": "O28X6P12A11",
+   "T": 64,
+   "feed": [
+    31,
+    6,
+    13,
+    14
+   ]
+  },
+  "best_any": 57
+ },
+ "O/X/P/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 29,
+   "formula": "O4X3P10F12",
+   "T": 96,
+   "feed": [
+    6,
+    4,
+    16,
+    70
+   ]
+  },
+  "best_any": 29
+ },
+ "O/X/W/L": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "L"
+  ],
+  "best_valid": {
+   "natoms": 24,
+   "formula": "O5X5W13L",
+   "T": 48,
+   "feed": [
+    9,
+    8,
+    22,
+    9
+   ]
+  },
+  "best_any": 24
+ },
+ "O/X/W/K": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 30,
+   "formula": "O11X4W8K7",
+   "T": 48,
+   "feed": [
+    11,
+    22,
+    8,
+    7
+   ]
+  },
+  "best_any": 30
+ },
+ "O/X/W/A": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 26,
+   "formula": "O4XW9A12",
+   "T": 32,
+   "feed": [
+    4,
+    3,
+    11,
+    14
+   ]
+  },
+  "best_any": 26
+ },
+ "O/X/W/F": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 13,
+   "formula": "O5X3W4F",
+   "T": 32,
+   "feed": [
+    11,
+    11,
+    7,
+    3
+   ]
+  },
+  "best_any": 13
+ },
+ "O/X/L/K": {
+  "elems": [
+   "O",
+   "X",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O8X6K18",
+   "T": 96,
+   "feed": [
+    25,
+    8,
+    11,
+    52
+   ]
+  },
+  "best_any": 32
+ },
+ "O/X/L/A": {
+  "elems": [
+   "O",
+   "X",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 29,
+   "formula": "O9X5L11A4",
+   "T": 64,
+   "feed": [
+    19,
+    11,
+    25,
+    9
+   ]
+  },
+  "best_any": 29
+ },
+ "O/X/L/F": {
+  "elems": [
+   "O",
+   "X",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 6,
+   "formula": "O3LF2",
+   "T": 32,
+   "feed": [
+    19,
+    4,
+    4,
+    5
+   ]
+  },
+  "best_any": 6
+ },
+ "O/X/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 40,
+   "formula": "O15X2K7A16",
+   "T": 96,
+   "feed": [
+    36,
+    4,
+    16,
+    40
+   ]
+  },
+  "best_any": 40
+ },
+ "O/X/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 25,
+   "formula": "O4X3K9F9",
+   "T": 48,
+   "feed": [
+    5,
+    6,
+    12,
+    25
+   ]
+  },
+  "best_any": 25
+ },
+ "O/X/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "O2X6A6F2",
+   "T": 32,
+   "feed": [
+    4,
+    13,
+    13,
+    2
+   ]
+  },
+  "best_any": 16
+ },
+ "O/C/P/W": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W"
+  ],
+  "best_valid": {
+   "natoms": 40,
+   "formula": "O18C8P8W6",
+   "T": 96,
+   "feed": [
+    39,
+    26,
+    17,
+    14
+   ]
+  },
+  "best_any": 40
+ },
+ "O/C/P/L": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "L"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "O7C6P2L",
+   "T": 48,
+   "feed": [
+    23,
+    12,
+    2,
+    11
+   ]
+  },
+  "best_any": 16
+ },
+ "O/C/P/K": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 26,
+   "formula": "O8P14K4",
+   "T": 48,
+   "feed": [
+    14,
+    1,
+    25,
+    8
+   ]
+  },
+  "best_any": 26
+ },
+ "O/C/P/A": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 28,
+   "formula": "O5C2P11A10",
+   "T": 48,
+   "feed": [
+    7,
+    4,
+    17,
+    20
+   ]
+  },
+  "best_any": 28
+ },
+ "O/C/P/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "O7CP2F6",
+   "T": 32,
+   "feed": [
+    15,
+    1,
+    2,
+    14
+   ]
+  },
+  "best_any": 16
+ },
+ "O/C/W/L": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "L"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "OC3W3",
+   "T": 48,
+   "feed": [
+    4,
+    24,
+    14,
+    6
+   ]
+  },
+  "best_any": 7
+ },
+ "O/C/W/K": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "O14CW10K9",
+   "T": 64,
+   "feed": [
+    26,
+    1,
+    20,
+    17
+   ]
+  },
+  "best_any": 34
+ },
+ "O/C/W/A": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "O2W2A3",
+   "T": 96,
+   "feed": [
+    14,
+    44,
+    11,
+    27
+   ]
+  },
+  "best_any": 7
+ },
+ "O/C/W/F": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 9,
+   "formula": "O3C4WF",
+   "T": 32,
+   "feed": [
+    11,
+    14,
+    2,
+    5
+   ]
+  },
+  "best_any": 9
+ },
+ "O/C/L/K": {
+  "elems": [
+   "O",
+   "C",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "O7CL6K2",
+   "T": 32,
+   "feed": [
+    15,
+    1,
+    14,
+    2
+   ]
+  },
+  "best_any": 16
+ },
+ "O/C/L/A": {
+  "elems": [
+   "O",
+   "C",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "O3CL2A2",
+   "T": 32,
+   "feed": [
+    11,
+    9,
+    6,
+    6
+   ]
+  },
+  "best_any": 8
+ },
+ "O/C/L/F": {
+  "elems": [
+   "O",
+   "C",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 6,
+   "formula": "O3L2F",
+   "T": 32,
+   "feed": [
+    19,
+    2,
+    8,
+    3
+   ]
+  },
+  "best_any": 6
+ },
+ "O/C/K/A": {
+  "elems": [
+   "O",
+   "C",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 20,
+   "formula": "O9K5A6",
+   "T": 48,
+   "feed": [
+    11,
+    23,
+    6,
+    8
+   ]
+  },
+  "best_any": 20
+ },
+ "O/C/K/F": {
+  "elems": [
+   "O",
+   "C",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "O7C3K2F4",
+   "T": 48,
+   "feed": [
+    23,
+    3,
+    2,
+    20
+   ]
+  },
+  "best_any": 16
+ },
+ "O/C/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "O2AF4",
+   "T": 32,
+   "feed": [
+    5,
+    16,
+    4,
+    7
+   ]
+  },
+  "best_any": 7
+ },
+ "O/P/W/L": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "L"
+  ],
+  "best_valid": {
+   "natoms": 31,
+   "formula": "O3P10W7L11",
+   "T": 64,
+   "feed": [
+    3,
+    21,
+    18,
+    22
+   ]
+  },
+  "best_any": 31
+ },
+ "O/P/W/K": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "O15P6W12K",
+   "T": 64,
+   "feed": [
+    24,
+    9,
+    30,
+    1
+   ]
+  },
+  "best_any": 34
+ },
+ "O/P/W/A": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 48,
+   "formula": "O17P11W9A11",
+   "T": 48,
+   "feed": [
+    17,
+    11,
+    9,
+    11
+   ]
+  },
+  "best_any": 48
+ },
+ "O/P/W/F": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "O15P7W12",
+   "T": 64,
+   "feed": [
+    21,
+    10,
+    20,
+    13
+   ]
+  },
+  "best_any": 34
+ },
+ "O/P/L/K": {
+  "elems": [
+   "O",
+   "P",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O8P14L6K4",
+   "T": 48,
+   "feed": [
+    12,
+    22,
+    9,
+    5
+   ]
+  },
+  "best_any": 32
+ },
+ "O/P/L/A": {
+  "elems": [
+   "O",
+   "P",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 36,
+   "formula": "O5P13L12A6",
+   "T": 48,
+   "feed": [
+    5,
+    13,
+    24,
+    6
+   ]
+  },
+  "best_any": 36
+ },
+ "O/P/L/F": {
+  "elems": [
+   "O",
+   "P",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "O2P6L2F6",
+   "T": 48,
+   "feed": [
+    7,
+    19,
+    7,
+    15
+   ]
+  },
+  "best_any": 16
+ },
+ "O/P/K/A": {
+  "elems": [
+   "O",
+   "P",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O2P6K18A6",
+   "T": 64,
+   "feed": [
+    10,
+    6,
+    42,
+    6
+   ]
+  },
+  "best_any": 32
+ },
+ "O/P/K/F": {
+  "elems": [
+   "O",
+   "P",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 26,
+   "formula": "O8P14K4",
+   "T": 48,
+   "feed": [
+    15,
+    28,
+    4,
+    1
+   ]
+  },
+  "best_any": 26
+ },
+ "O/P/A/F": {
+  "elems": [
+   "O",
+   "P",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O8P18A6",
+   "T": 32,
+   "feed": [
+    8,
+    18,
+    6,
+    0
+   ]
+  },
+  "best_any": 32
+ },
+ "O/W/L/K": {
+  "elems": [
+   "O",
+   "W",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 36,
+   "formula": "O5W6L12K13",
+   "T": 64,
+   "feed": [
+    9,
+    16,
+    14,
+    25
+   ]
+  },
+  "best_any": 36
+ },
+ "O/W/L/A": {
+  "elems": [
+   "O",
+   "W",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 14,
+   "formula": "O2W4L2A6",
+   "T": 96,
+   "feed": [
+    2,
+    39,
+    14,
+    41
+   ]
+  },
+  "best_any": 14
+ },
+ "O/W/L/F": {
+  "elems": [
+   "O",
+   "W",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "O3W2LF2",
+   "T": 48,
+   "feed": [
+    19,
+    12,
+    7,
+    10
+   ]
+  },
+  "best_any": 8
+ },
+ "O/W/K/A": {
+  "elems": [
+   "O",
+   "W",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 50,
+   "formula": "O7W11K21A11",
+   "T": 64,
+   "feed": [
+    9,
+    17,
+    27,
+    11
+   ]
+  },
+  "best_any": 50
+ },
+ "O/W/K/F": {
+  "elems": [
+   "O",
+   "W",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 39,
+   "formula": "O5W7K14F13",
+   "T": 64,
+   "feed": [
+    7,
+    10,
+    20,
+    27
+   ]
+  },
+  "best_any": 39
+ },
+ "O/W/A/F": {
+  "elems": [
+   "O",
+   "W",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 19,
+   "formula": "O4W6A9",
+   "T": 32,
+   "feed": [
+    6,
+    9,
+    13,
+    4
+   ]
+  },
+  "best_any": 19
+ },
+ "O/L/K/A": {
+  "elems": [
+   "O",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "O15K7A12",
+   "T": 96,
+   "feed": [
+    27,
+    32,
+    13,
+    24
+   ]
+  },
+  "best_any": 34
+ },
+ "O/L/K/F": {
+  "elems": [
+   "O",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "O2L7K7",
+   "T": 32,
+   "feed": [
+    2,
+    15,
+    15,
+    0
+   ]
+  },
+  "best_any": 16
+ },
+ "O/L/A/F": {
+  "elems": [
+   "O",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "O3L2A2F",
+   "T": 48,
+   "feed": [
+    23,
+    2,
+    22,
+    1
+   ]
+  },
+  "best_any": 8
+ },
+ "O/K/A/F": {
+  "elems": [
+   "O",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 22,
+   "formula": "O12K5A4F",
+   "T": 48,
+   "feed": [
+    28,
+    13,
+    4,
+    3
+   ]
+  },
+  "best_any": 22
+ },
+ "X/C/P/W": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "X6C2P2W6",
+   "T": 96,
+   "feed": [
+    39,
+    5,
+    5,
+    47
+   ]
+  },
+  "best_any": 16
+ },
+ "X/C/P/L": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "L"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "XC4P2",
+   "T": 32,
+   "feed": [
+    2,
+    21,
+    5,
+    4
+   ]
+  },
+  "best_any": 7
+ },
+ "X/C/P/K": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 38,
+   "formula": "X10C2P16K10",
+   "T": 64,
+   "feed": [
+    16,
+    12,
+    22,
+    14
+   ]
+  },
+  "best_any": 38
+ },
+ "X/C/P/A": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 19,
+   "formula": "X9P4A6",
+   "T": 64,
+   "feed": [
+    19,
+    26,
+    8,
+    11
+   ]
+  },
+  "best_any": 19
+ },
+ "X/C/P/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 9,
+   "formula": "XC4P3F",
+   "T": 96,
+   "feed": [
+    8,
+    45,
+    33,
+    10
+   ]
+  },
+  "best_any": 9
+ },
+ "X/C/W/L": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "L"
+  ],
+  "best_valid": {
+   "natoms": 6,
+   "formula": "X3WL2",
+   "T": 32,
+   "feed": [
+    19,
+    0,
+    9,
+    4
+   ]
+  },
+  "best_any": 6
+ },
+ "X/C/W/K": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 11,
+   "formula": "XC2W6K2",
+   "T": 48,
+   "feed": [
+    7,
+    5,
+    27,
+    9
+   ]
+  },
+  "best_any": 11
+ },
+ "X/C/W/A": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "X2C2W2A",
+   "T": 64,
+   "feed": [
+    10,
+    42,
+    5,
+    7
+   ]
+  },
+  "best_any": 7
+ },
+ "X/C/W/F": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 6,
+   "formula": "XCW3F",
+   "T": 64,
+   "feed": [
+    5,
+    19,
+    33,
+    7
+   ]
+  },
+  "best_any": 6
+ },
+ "X/C/L/K": {
+  "elems": [
+   "X",
+   "C",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 9,
+   "formula": "XC2L3K3",
+   "T": 32,
+   "feed": [
+    2,
+    8,
+    11,
+    11
+   ]
+  },
+  "best_any": 9
+ },
+ "X/C/L/A": {
+  "elems": [
+   "X",
+   "C",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 6,
+   "formula": "X3L2A",
+   "T": 32,
+   "feed": [
+    17,
+    0,
+    12,
+    3
+   ]
+  },
+  "best_any": 6
+ },
+ "X/C/L/F": {
+  "elems": [
+   "X",
+   "C",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 4,
+   "formula": "X2CL",
+   "T": 48,
+   "feed": [
+    30,
+    9,
+    9,
+    0
+   ]
+  },
+  "best_any": 4
+ },
+ "X/C/K/A": {
+  "elems": [
+   "X",
+   "C",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 11,
+   "formula": "X2CK3A5",
+   "T": 64,
+   "feed": [
+    9,
+    3,
+    15,
+    37
+   ]
+  },
+  "best_any": 11
+ },
+ "X/C/K/F": {
+  "elems": [
+   "X",
+   "C",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 9,
+   "formula": "XC4K3F",
+   "T": 96,
+   "feed": [
+    4,
+    51,
+    33,
+    8
+   ]
+  },
+  "best_any": 9
+ },
+ "X/C/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 5,
+   "formula": "X2AF2",
+   "T": 32,
+   "feed": [
+    13,
+    1,
+    1,
+    17
+   ]
+  },
+  "best_any": 5
+ },
+ "X/P/W/L": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "L"
+  ],
+  "best_valid": {
+   "natoms": 14,
+   "formula": "X6P2W4L2",
+   "T": 64,
+   "feed": [
+    18,
+    6,
+    10,
+    30
+   ]
+  },
+  "best_any": 14
+ },
+ "X/P/W/K": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "X12P7W10K3",
+   "T": 64,
+   "feed": [
+    24,
+    13,
+    22,
+    5
+   ]
+  },
+  "best_any": 32
+ },
+ "X/P/W/A": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 28,
+   "formula": "X10P4W6A8",
+   "T": 48,
+   "feed": [
+    20,
+    8,
+    10,
+    10
+   ]
+  },
+  "best_any": 28
+ },
+ "X/P/W/F": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 14,
+   "formula": "X6P2W4F2",
+   "T": 32,
+   "feed": [
+    11,
+    2,
+    9,
+    10
+   ]
+  },
+  "best_any": 14
+ },
+ "X/P/L/K": {
+  "elems": [
+   "X",
+   "P",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "X6P18K8",
+   "T": 48,
+   "feed": [
+    6,
+    30,
+    0,
+    12
+   ]
+  },
+  "best_any": 32
+ },
+ "X/P/L/A": {
+  "elems": [
+   "X",
+   "P",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "XP3L3A",
+   "T": 64,
+   "feed": [
+    21,
+    31,
+    3,
+    9
+   ]
+  },
+  "best_any": 8
+ },
+ "X/P/L/F": {
+  "elems": [
+   "X",
+   "P",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 9,
+   "formula": "XP3L4F",
+   "T": 32,
+   "feed": [
+    4,
+    11,
+    16,
+    1
+   ]
+  },
+  "best_any": 9
+ },
+ "X/P/K/A": {
+  "elems": [
+   "X",
+   "P",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 36,
+   "formula": "X6P8K18A4",
+   "T": 64,
+   "feed": [
+    18,
+    12,
+    30,
+    4
+   ]
+  },
+  "best_any": 36
+ },
+ "X/P/K/F": {
+  "elems": [
+   "X",
+   "P",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "X4P5K13F10",
+   "T": 32,
+   "feed": [
+    4,
+    5,
+    13,
+    10
+   ]
+  },
+  "best_any": 32
+ },
+ "X/P/A/F": {
+  "elems": [
+   "X",
+   "P",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 14,
+   "formula": "X6P2A4F2",
+   "T": 48,
+   "feed": [
+    19,
+    2,
+    17,
+    10
+   ]
+  },
+  "best_any": 14
+ },
+ "X/W/L/K": {
+  "elems": [
+   "X",
+   "W",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 19,
+   "formula": "X9W6K4",
+   "T": 48,
+   "feed": [
+    14,
+    12,
+    16,
+    6
+   ]
+  },
+  "best_any": 19
+ },
+ "X/W/L/A": {
+  "elems": [
+   "X",
+   "W",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "X2W2L2A",
+   "T": 32,
+   "feed": [
+    14,
+    10,
+    2,
+    6
+   ]
+  },
+  "best_any": 7
+ },
+ "X/W/L/F": {
+  "elems": [
+   "X",
+   "W",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 5,
+   "formula": "X2WF2",
+   "T": 48,
+   "feed": [
+    14,
+    8,
+    1,
+    25
+   ]
+  },
+  "best_any": 5
+ },
+ "X/W/K/A": {
+  "elems": [
+   "X",
+   "W",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 20,
+   "formula": "X6W6K2A6",
+   "T": 32,
+   "feed": [
+    10,
+    9,
+    4,
+    9
+   ]
+  },
+  "best_any": 20
+ },
+ "X/W/K/F": {
+  "elems": [
+   "X",
+   "W",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 11,
+   "formula": "XW4K2F4",
+   "T": 32,
+   "feed": [
+    2,
+    18,
+    8,
+    4
+   ]
+  },
+  "best_any": 11
+ },
+ "X/W/A/F": {
+  "elems": [
+   "X",
+   "W",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "XW3AF2",
+   "T": 48,
+   "feed": [
+    8,
+    25,
+    5,
+    10
+   ]
+  },
+  "best_any": 7
+ },
+ "X/L/K/A": {
+  "elems": [
+   "X",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "X9K4A3",
+   "T": 96,
+   "feed": [
+    37,
+    41,
+    15,
+    3
+   ]
+  },
+  "best_any": 16
+ },
+ "X/L/K/F": {
+  "elems": [
+   "X",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 9,
+   "formula": "XL5K3",
+   "T": 64,
+   "feed": [
+    6,
+    37,
+    21,
+    0
+   ]
+  },
+  "best_any": 9
+ },
+ "X/L/A/F": {
+  "elems": [
+   "X",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 5,
+   "formula": "X2AF2",
+   "T": 32,
+   "feed": [
+    10,
+    8,
+    2,
+    12
+   ]
+  },
+  "best_any": 5
+ },
+ "X/K/A/F": {
+  "elems": [
+   "X",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 22,
+   "formula": "X13K5A3F",
+   "T": 96,
+   "feed": [
+    67,
+    23,
+    5,
+    1
+   ]
+  },
+  "best_any": 22
+ },
+ "C/P/W/L": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "L"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "C2P2W2L2",
+   "T": 48,
+   "feed": [
+    10,
+    8,
+    20,
+    10
+   ]
+  },
+  "best_any": 8
+ },
+ "C/P/W/K": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 40,
+   "formula": "C8P8W6K18",
+   "T": 64,
+   "feed": [
+    14,
+    14,
+    6,
+    30
+   ]
+  },
+  "best_any": 40
+ },
+ "C/P/W/A": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "C2P2W6A6",
+   "T": 32,
+   "feed": [
+    5,
+    3,
+    13,
+    11
+   ]
+  },
+  "best_any": 16
+ },
+ "C/P/W/F": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "C4P2W2",
+   "T": 32,
+   "feed": [
+    5,
+    3,
+    24,
+    0
+   ]
+  },
+  "best_any": 8
+ },
+ "C/P/L/K": {
+  "elems": [
+   "C",
+   "P",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "C7P7K2",
+   "T": 48,
+   "feed": [
+    23,
+    23,
+    0,
+    2
+   ]
+  },
+  "best_any": 16
+ },
+ "C/P/L/A": {
+  "elems": [
+   "C",
+   "P",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "C4P2A",
+   "T": 48,
+   "feed": [
+    12,
+    7,
+    23,
+    6
+   ]
+  },
+  "best_any": 7
+ },
+ "C/P/L/F": {
+  "elems": [
+   "C",
+   "P",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 6,
+   "formula": "CP3F2",
+   "T": 32,
+   "feed": [
+    1,
+    19,
+    4,
+    8
+   ]
+  },
+  "best_any": 6
+ },
+ "C/P/K/A": {
+  "elems": [
+   "C",
+   "P",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 25,
+   "formula": "C9P9K4A3",
+   "T": 64,
+   "feed": [
+    44,
+    11,
+    5,
+    4
+   ]
+  },
+  "best_any": 25
+ },
+ "C/P/K/F": {
+  "elems": [
+   "C",
+   "P",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "CP6K2F7",
+   "T": 32,
+   "feed": [
+    1,
+    14,
+    6,
+    11
+   ]
+  },
+  "best_any": 16
+ },
+ "C/P/A/F": {
+  "elems": [
+   "C",
+   "P",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "C3PA3",
+   "T": 32,
+   "feed": [
+    21,
+    1,
+    4,
+    6
+   ]
+  },
+  "best_any": 7
+ },
+ "C/W/L/K": {
+  "elems": [
+   "C",
+   "W",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "C4WK2",
+   "T": 32,
+   "feed": [
+    20,
+    2,
+    7,
+    3
+   ]
+  },
+  "best_any": 7
+ },
+ "C/W/L/A": {
+  "elems": [
+   "C",
+   "W",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 6,
+   "formula": "CWLA3",
+   "T": 64,
+   "feed": [
+    16,
+    13,
+    2,
+    33
+   ]
+  },
+  "best_any": 6
+ },
+ "C/W/L/F": {
+  "elems": [
+   "C",
+   "W",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 3,
+   "formula": "CWL",
+   "T": 32,
+   "feed": [
+    7,
+    8,
+    16,
+    1
+   ]
+  },
+  "best_any": 3
+ },
+ "C/W/K/A": {
+  "elems": [
+   "C",
+   "W",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 25,
+   "formula": "CW13K5A6",
+   "T": 96,
+   "feed": [
+    18,
+    40,
+    14,
+    24
+   ]
+  },
+  "best_any": 25
+ },
+ "C/W/K/F": {
+  "elems": [
+   "C",
+   "W",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 9,
+   "formula": "CWK3F4",
+   "T": 96,
+   "feed": [
+    8,
+    10,
+    31,
+    47
+   ]
+  },
+  "best_any": 9
+ },
+ "C/W/A/F": {
+  "elems": [
+   "C",
+   "W",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 5,
+   "formula": "C2W2A",
+   "T": 32,
+   "feed": [
+    16,
+    9,
+    5,
+    2
+   ]
+  },
+  "best_any": 5
+ },
+ "C/L/K/A": {
+  "elems": [
+   "C",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "CL4K3",
+   "T": 32,
+   "feed": [
+    9,
+    12,
+    11,
+    0
+   ]
+  },
+  "best_any": 8
+ },
+ "C/L/K/F": {
+  "elems": [
+   "C",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 6,
+   "formula": "LK3F2",
+   "T": 32,
+   "feed": [
+    0,
+    1,
+    23,
+    8
+   ]
+  },
+  "best_any": 6
+ },
+ "C/L/A/F": {
+  "elems": [
+   "C",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 4,
+   "formula": "CA2F",
+   "T": 32,
+   "feed": [
+    9,
+    0,
+    20,
+    3
+   ]
+  },
+  "best_any": 4
+ },
+ "C/K/A/F": {
+  "elems": [
+   "C",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "C4K2A2",
+   "T": 32,
+   "feed": [
+    12,
+    5,
+    14,
+    1
+   ]
+  },
+  "best_any": 8
+ },
+ "P/W/L/K": {
+  "elems": [
+   "P",
+   "W",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "P18W6LK7",
+   "T": 32,
+   "feed": [
+    18,
+    6,
+    1,
+    7
+   ]
+  },
+  "best_any": 32
+ },
+ "P/W/L/A": {
+  "elems": [
+   "P",
+   "W",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 12,
+   "formula": "P4W3L2A3",
+   "T": 64,
+   "feed": [
+    20,
+    21,
+    10,
+    13
+   ]
+  },
+  "best_any": 12
+ },
+ "P/W/L/F": {
+  "elems": [
+   "P",
+   "W",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "P2W2LF3",
+   "T": 32,
+   "feed": [
+    5,
+    18,
+    3,
+    6
+   ]
+  },
+  "best_any": 8
+ },
+ "P/W/K/A": {
+  "elems": [
+   "P",
+   "W",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 25,
+   "formula": "P11W3K5A6",
+   "T": 32,
+   "feed": [
+    14,
+    3,
+    6,
+    9
+   ]
+  },
+  "best_any": 25
+ },
+ "P/W/K/F": {
+  "elems": [
+   "P",
+   "W",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 40,
+   "formula": "P8W6K18F8",
+   "T": 64,
+   "feed": [
+    14,
+    6,
+    30,
+    14
+   ]
+  },
+  "best_any": 40
+ },
+ "P/W/A/F": {
+  "elems": [
+   "P",
+   "W",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 15,
+   "formula": "P7W4A3F",
+   "T": 96,
+   "feed": [
+    41,
+    13,
+    19,
+    23
+   ]
+  },
+  "best_any": 15
+ },
+ "P/L/K/A": {
+  "elems": [
+   "P",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 14,
+   "formula": "P6L2K4A2",
+   "T": 96,
+   "feed": [
+    46,
+    17,
+    31,
+    2
+   ]
+  },
+  "best_any": 14
+ },
+ "P/L/K/F": {
+  "elems": [
+   "P",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "P2K7F7",
+   "T": 32,
+   "feed": [
+    2,
+    4,
+    15,
+    11
+   ]
+  },
+  "best_any": 16
+ },
+ "P/L/A/F": {
+  "elems": [
+   "P",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "P3LA2F2",
+   "T": 48,
+   "feed": [
+    19,
+    1,
+    14,
+    14
+   ]
+  },
+  "best_any": 8
+ },
+ "P/K/A/F": {
+  "elems": [
+   "P",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 27,
+   "formula": "P3K10A3F11",
+   "T": 64,
+   "feed": [
+    7,
+    22,
+    6,
+    29
+   ]
+  },
+  "best_any": 27
+ },
+ "W/L/K/A": {
+  "elems": [
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 11,
+   "formula": "WL3K5A2",
+   "T": 48,
+   "feed": [
+    8,
+    7,
+    27,
+    6
+   ]
+  },
+  "best_any": 11
+ },
+ "W/L/K/F": {
+  "elems": [
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "WL4K2",
+   "T": 32,
+   "feed": [
+    2,
+    19,
+    8,
+    3
+   ]
+  },
+  "best_any": 7
+ },
+ "W/L/A/F": {
+  "elems": [
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 6,
+   "formula": "W3LAF",
+   "T": 96,
+   "feed": [
+    43,
+    1,
+    13,
+    39
+   ]
+  },
+  "best_any": 6
+ },
+ "W/K/A/F": {
+  "elems": [
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "W9K4A3",
+   "T": 64,
+   "feed": [
+    27,
+    12,
+    13,
+    12
+   ]
+  },
+  "best_any": 16
+ },
+ "L/K/A/F": {
+  "elems": [
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "L3K2A2F",
+   "T": 32,
+   "feed": [
+    5,
+    4,
+    20,
+    3
+   ]
+  },
+  "best_any": 8
+ },
+ "O/X/C/P/W": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W"
+  ],
+  "best_valid": {
+   "natoms": 26,
+   "formula": "O7X4C4P3W8",
+   "T": 32,
+   "feed": [
+    7,
+    4,
+    10,
+    3,
+    8
+   ]
+  },
+  "best_any": 26
+ },
+ "O/X/C/P/L": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L"
+  ],
+  "best_valid": {
+   "natoms": 39,
+   "formula": "O5X7C4P14L9",
+   "T": 64,
+   "feed": [
+    7,
+    10,
+    4,
+    20,
+    23
+   ]
+  },
+  "best_any": 39
+ },
+ "O/X/C/P/K": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 23,
+   "formula": "O12X3C3PK4",
+   "T": 96,
+   "feed": [
+    54,
+    10,
+    7,
+    9,
+    16
+   ]
+  },
+  "best_any": 23
+ },
+ "O/X/C/P/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 52,
+   "formula": "O7X9C6P17A13",
+   "T": 64,
+   "feed": [
+    9,
+    9,
+    6,
+    21,
+    19
+   ]
+  },
+  "best_any": 52
+ },
+ "O/X/C/P/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 29,
+   "formula": "O4X3C8P10F4",
+   "T": 48,
+   "feed": [
+    6,
+    6,
+    8,
+    16,
+    12
+   ]
+  },
+  "best_any": 29
+ },
+ "O/X/C/W/L": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "O4X3W9",
+   "T": 96,
+   "feed": [
+    15,
+    3,
+    13,
+    35,
+    30
+   ]
+  },
+  "best_any": 16
+ },
+ "O/X/C/W/K": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 29,
+   "formula": "O4X5C6W2K12",
+   "T": 96,
+   "feed": [
+    10,
+    22,
+    6,
+    14,
+    44
+   ]
+  },
+  "best_any": 29
+ },
+ "O/X/C/W/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 26,
+   "formula": "O4X6W4A12",
+   "T": 48,
+   "feed": [
+    6,
+    13,
+    0,
+    7,
+    22
+   ]
+  },
+  "best_any": 26
+ },
+ "O/X/C/W/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 20,
+   "formula": "O4X5W11",
+   "T": 32,
+   "feed": [
+    4,
+    5,
+    6,
+    11,
+    6
+   ]
+  },
+  "best_any": 20
+ },
+ "O/X/C/L/K": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O9X8LK14",
+   "T": 64,
+   "feed": [
+    9,
+    8,
+    3,
+    30,
+    14
+   ]
+  },
+  "best_any": 32
+ },
+ "O/X/C/L/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 12,
+   "formula": "O2X3L2A5",
+   "T": 32,
+   "feed": [
+    2,
+    3,
+    0,
+    22,
+    5
+   ]
+  },
+  "best_any": 12
+ },
+ "O/X/C/L/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "O2X2C2L2",
+   "T": 64,
+   "feed": [
+    7,
+    38,
+    8,
+    10,
+    1
+   ]
+  },
+  "best_any": 8
+ },
+ "O/X/C/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 38,
+   "formula": "O13X4CK8A12",
+   "T": 64,
+   "feed": [
+    13,
+    4,
+    27,
+    8,
+    12
+   ]
+  },
+  "best_any": 38
+ },
+ "O/X/C/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 31,
+   "formula": "O4X5CK11F10",
+   "T": 48,
+   "feed": [
+    5,
+    8,
+    1,
+    14,
+    20
+   ]
+  },
+  "best_any": 31
+ },
+ "O/X/C/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 27,
+   "formula": "O9X3C2A4F9",
+   "T": 96,
+   "feed": [
+    33,
+    4,
+    20,
+    16,
+    23
+   ]
+  },
+  "best_any": 27
+ },
+ "O/X/P/W/L": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L"
+  ],
+  "best_valid": {
+   "natoms": 64,
+   "formula": "O10X7P25W17L5",
+   "T": 64,
+   "feed": [
+    10,
+    7,
+    25,
+    17,
+    5
+   ]
+  },
+  "best_any": 64
+ },
+ "O/X/P/W/K": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 52,
+   "formula": "O16X9P16W5K6",
+   "T": 64,
+   "feed": [
+    18,
+    9,
+    16,
+    13,
+    8
+   ]
+  },
+  "best_any": 52
+ },
+ "O/X/P/W/A": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 64,
+   "formula": "O4X3P16W13A28",
+   "T": 64,
+   "feed": [
+    4,
+    3,
+    16,
+    13,
+    28
+   ]
+  },
+  "best_any": 64
+ },
+ "O/X/P/W/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 64,
+   "formula": "O23X16P9W10F6",
+   "T": 96,
+   "feed": [
+    23,
+    48,
+    9,
+    10,
+    6
+   ]
+  },
+  "best_any": 64
+ },
+ "O/X/P/L/K": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 49,
+   "formula": "O5X17P18L3K6",
+   "T": 64,
+   "feed": [
+    6,
+    20,
+    21,
+    10,
+    7
+   ]
+  },
+  "best_any": 49
+ },
+ "O/X/P/L/A": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 48,
+   "formula": "O9X7P22L9A",
+   "T": 48,
+   "feed": [
+    9,
+    7,
+    22,
+    9,
+    1
+   ]
+  },
+  "best_any": 48
+ },
+ "O/X/P/L/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O5X6P13L3F5",
+   "T": 32,
+   "feed": [
+    5,
+    6,
+    13,
+    3,
+    5
+   ]
+  },
+  "best_any": 32
+ },
+ "O/X/P/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 42,
+   "formula": "OX16P10KA14",
+   "T": 64,
+   "feed": [
+    1,
+    23,
+    14,
+    1,
+    25
+   ]
+  },
+  "best_any": 42
+ },
+ "O/X/P/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O13X12P5KF",
+   "T": 32,
+   "feed": [
+    13,
+    12,
+    5,
+    1,
+    1
+   ]
+  },
+  "best_any": 32
+ },
+ "O/X/P/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 48,
+   "formula": "O18X8P7F15",
+   "T": 48,
+   "feed": [
+    18,
+    8,
+    7,
+    0,
+    15
+   ]
+  },
+  "best_any": 48
+ },
+ "O/X/W/L/K": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 20,
+   "formula": "O9X2W2LK6",
+   "T": 32,
+   "feed": [
+    15,
+    2,
+    2,
+    1,
+    12
+   ]
+  },
+  "best_any": 20
+ },
+ "O/X/W/L/A": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "OL3A4",
+   "T": 96,
+   "feed": [
+    1,
+    12,
+    0,
+    29,
+    54
+   ]
+  },
+  "best_any": 8
+ },
+ "O/X/W/L/F": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O6X8W16L2",
+   "T": 48,
+   "feed": [
+    6,
+    8,
+    16,
+    18,
+    0
+   ]
+  },
+  "best_any": 32
+ },
+ "O/X/W/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 44,
+   "formula": "O4X18W4K10A8",
+   "T": 96,
+   "feed": [
+    8,
+    48,
+    4,
+    22,
+    14
+   ]
+  },
+  "best_any": 44
+ },
+ "O/X/W/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 41,
+   "formula": "O8X4W3K19F7",
+   "T": 48,
+   "feed": [
+    9,
+    4,
+    6,
+    22,
+    7
+   ]
+  },
+  "best_any": 41
+ },
+ "O/X/W/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 39,
+   "formula": "O7X9W5A17F",
+   "T": 64,
+   "feed": [
+    11,
+    15,
+    11,
+    26,
+    1
+   ]
+  },
+  "best_any": 39
+ },
+ "O/X/L/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 41,
+   "formula": "O17X10LK4A9",
+   "T": 96,
+   "feed": [
+    38,
+    35,
+    3,
+    11,
+    9
+   ]
+  },
+  "best_any": 41
+ },
+ "O/X/L/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O12X10K5F5",
+   "T": 32,
+   "feed": [
+    12,
+    10,
+    0,
+    5,
+    5
+   ]
+  },
+  "best_any": 32
+ },
+ "O/X/L/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 19,
+   "formula": "O7X3A4F5",
+   "T": 48,
+   "feed": [
+    17,
+    7,
+    0,
+    9,
+    15
+   ]
+  },
+  "best_any": 19
+ },
+ "O/X/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 55,
+   "formula": "O5X7K20A12F11",
+   "T": 96,
+   "feed": [
+    10,
+    7,
+    35,
+    23,
+    21
+   ]
+  },
+  "best_any": 55
+ },
+ "O/C/P/W/L": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L"
+  ],
+  "best_valid": {
+   "natoms": 28,
+   "formula": "O5C2P14W6L",
+   "T": 96,
+   "feed": [
+    15,
+    5,
+    44,
+    28,
+    4
+   ]
+  },
+  "best_any": 28
+ },
+ "O/C/P/W/K": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 53,
+   "formula": "O6C7P4W11K25",
+   "T": 64,
+   "feed": [
+    8,
+    7,
+    4,
+    14,
+    31
+   ]
+  },
+  "best_any": 53
+ },
+ "O/C/P/W/A": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 25,
+   "formula": "O9C3P4A9",
+   "T": 48,
+   "feed": [
+    12,
+    17,
+    5,
+    0,
+    14
+   ]
+  },
+  "best_any": 25
+ },
+ "O/C/P/W/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "O15P7W12",
+   "T": 64,
+   "feed": [
+    21,
+    9,
+    9,
+    22,
+    3
+   ]
+  },
+  "best_any": 34
+ },
+ "O/C/P/L/K": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 20,
+   "formula": "OC4P7L6K2",
+   "T": 48,
+   "feed": [
+    1,
+    5,
+    19,
+    17,
+    6
+   ]
+  },
+  "best_any": 20
+ },
+ "O/C/P/L/A": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 18,
+   "formula": "O6P2L8A2",
+   "T": 48,
+   "feed": [
+    6,
+    3,
+    2,
+    35,
+    2
+   ]
+  },
+  "best_any": 18
+ },
+ "O/C/P/L/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "O7C2P2F5",
+   "T": 48,
+   "feed": [
+    27,
+    2,
+    6,
+    0,
+    13
+   ]
+  },
+  "best_any": 16
+ },
+ "O/C/P/K/A": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 48,
+   "formula": "O23C6P3K6A10",
+   "T": 48,
+   "feed": [
+    23,
+    6,
+    3,
+    6,
+    10
+   ]
+  },
+  "best_any": 48
+ },
+ "O/C/P/K/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O8P14K4F6",
+   "T": 96,
+   "feed": [
+    24,
+    14,
+    40,
+    12,
+    6
+   ]
+  },
+  "best_any": 32
+ },
+ "O/C/P/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 18,
+   "formula": "O6C2P2A2F6",
+   "T": 32,
+   "feed": [
+    12,
+    4,
+    2,
+    8,
+    6
+   ]
+  },
+  "best_any": 18
+ },
+ "O/C/W/L/K": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 28,
+   "formula": "O12C6W4LK5",
+   "T": 32,
+   "feed": [
+    14,
+    6,
+    4,
+    2,
+    6
+   ]
+  },
+  "best_any": 28
+ },
+ "O/C/W/L/A": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 19,
+   "formula": "O4W6A9",
+   "T": 64,
+   "feed": [
+    11,
+    13,
+    14,
+    2,
+    24
+   ]
+  },
+  "best_any": 19
+ },
+ "O/C/W/L/F": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 9,
+   "formula": "O3CWL3F",
+   "T": 48,
+   "feed": [
+    17,
+    4,
+    4,
+    20,
+    3
+   ]
+  },
+  "best_any": 9
+ },
+ "O/C/W/K/A": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O6CW9K9A7",
+   "T": 32,
+   "feed": [
+    6,
+    1,
+    9,
+    9,
+    7
+   ]
+  },
+  "best_any": 32
+ },
+ "O/C/W/K/F": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 22,
+   "formula": "O3C4W8K7",
+   "T": 96,
+   "feed": [
+    6,
+    49,
+    20,
+    14,
+    7
+   ]
+  },
+  "best_any": 22
+ },
+ "O/C/W/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 12,
+   "formula": "O2W2A6F2",
+   "T": 32,
+   "feed": [
+    6,
+    0,
+    4,
+    20,
+    2
+   ]
+  },
+  "best_any": 12
+ },
+ "O/C/L/K/A": {
+  "elems": [
+   "O",
+   "C",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 21,
+   "formula": "O3L2K11A5",
+   "T": 48,
+   "feed": [
+    5,
+    0,
+    2,
+    25,
+    16
+   ]
+  },
+  "best_any": 21
+ },
+ "O/C/L/K/F": {
+  "elems": [
+   "O",
+   "C",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "O8CLK3F3",
+   "T": 96,
+   "feed": [
+    65,
+    1,
+    4,
+    23,
+    3
+   ]
+  },
+  "best_any": 16
+ },
+ "O/C/L/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "OCA4F2",
+   "T": 32,
+   "feed": [
+    3,
+    2,
+    2,
+    18,
+    7
+   ]
+  },
+  "best_any": 8
+ },
+ "O/C/K/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 30,
+   "formula": "O11C6K4A6F3",
+   "T": 32,
+   "feed": [
+    11,
+    8,
+    4,
+    6,
+    3
+   ]
+  },
+  "best_any": 30
+ },
+ "O/P/W/L/K": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 44,
+   "formula": "O12P21W4LK6",
+   "T": 64,
+   "feed": [
+    16,
+    28,
+    4,
+    8,
+    8
+   ]
+  },
+  "best_any": 44
+ },
+ "O/P/W/L/A": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 44,
+   "formula": "O16P6W7L14A",
+   "T": 96,
+   "feed": [
+    43,
+    17,
+    13,
+    16,
+    7
+   ]
+  },
+  "best_any": 44
+ },
+ "O/P/W/L/F": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 23,
+   "formula": "O12P5W3L2F",
+   "T": 64,
+   "feed": [
+    34,
+    13,
+    6,
+    8,
+    3
+   ]
+  },
+  "best_any": 23
+ },
+ "O/P/W/K/A": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 48,
+   "formula": "O21P3W3K10A11",
+   "T": 48,
+   "feed": [
+    21,
+    3,
+    3,
+    10,
+    11
+   ]
+  },
+  "best_any": 48
+ },
+ "O/P/W/K/F": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "P20W6K8",
+   "T": 96,
+   "feed": [
+    0,
+    56,
+    20,
+    20,
+    0
+   ]
+  },
+  "best_any": 34
+ },
+ "O/P/W/A/F": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 26,
+   "formula": "O6P9W3A7F",
+   "T": 64,
+   "feed": [
+    13,
+    17,
+    6,
+    10,
+    18
+   ]
+  },
+  "best_any": 26
+ },
+ "O/P/L/K/A": {
+  "elems": [
+   "O",
+   "P",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 25,
+   "formula": "O9P3L9KA3",
+   "T": 48,
+   "feed": [
+    15,
+    5,
+    22,
+    2,
+    4
+   ]
+  },
+  "best_any": 25
+ },
+ "O/P/L/K/F": {
+  "elems": [
+   "O",
+   "P",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 20,
+   "formula": "O4P7K2F7",
+   "T": 96,
+   "feed": [
+    12,
+    21,
+    40,
+    7,
+    16
+   ]
+  },
+  "best_any": 20
+ },
+ "O/P/L/A/F": {
+  "elems": [
+   "O",
+   "P",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "O7P15A12",
+   "T": 96,
+   "feed": [
+    13,
+    33,
+    10,
+    36,
+    4
+   ]
+  },
+  "best_any": 34
+ },
+ "O/P/K/A/F": {
+  "elems": [
+   "O",
+   "P",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 49,
+   "formula": "O2P21K9A17",
+   "T": 96,
+   "feed": [
+    4,
+    27,
+    11,
+    24,
+    30
+   ]
+  },
+  "best_any": 49
+ },
+ "O/W/L/K/A": {
+  "elems": [
+   "O",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 37,
+   "formula": "O12W2L5K5A13",
+   "T": 96,
+   "feed": [
+    27,
+    2,
+    17,
+    10,
+    40
+   ]
+  },
+  "best_any": 37
+ },
+ "O/W/L/K/F": {
+  "elems": [
+   "O",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 18,
+   "formula": "O6W2K2F8",
+   "T": 96,
+   "feed": [
+    12,
+    8,
+    23,
+    2,
+    51
+   ]
+  },
+  "best_any": 18
+ },
+ "O/W/L/A/F": {
+  "elems": [
+   "O",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 12,
+   "formula": "O2W2L2A6",
+   "T": 32,
+   "feed": [
+    4,
+    4,
+    9,
+    14,
+    1
+   ]
+  },
+  "best_any": 12
+ },
+ "O/W/K/A/F": {
+  "elems": [
+   "O",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 29,
+   "formula": "O8W7K13F",
+   "T": 96,
+   "feed": [
+    20,
+    16,
+    31,
+    28,
+    1
+   ]
+  },
+  "best_any": 29
+ },
+ "O/L/K/A/F": {
+  "elems": [
+   "O",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "O7L7K2",
+   "T": 64,
+   "feed": [
+    29,
+    23,
+    2,
+    8,
+    2
+   ]
+  },
+  "best_any": 16
+ },
+ "X/C/P/W/L": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L"
+  ],
+  "best_valid": {
+   "natoms": 27,
+   "formula": "X4P9W3L11",
+   "T": 64,
+   "feed": [
+    9,
+    0,
+    21,
+    9,
+    25
+   ]
+  },
+  "best_any": 27
+ },
+ "X/C/P/W/K": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 69,
+   "formula": "X7C19P6W20K17",
+   "T": 96,
+   "feed": [
+    10,
+    29,
+    8,
+    26,
+    23
+   ]
+  },
+  "best_any": 69
+ },
+ "X/C/P/W/A": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "X6C2P2W6",
+   "T": 96,
+   "feed": [
+    18,
+    11,
+    5,
+    44,
+    18
+   ]
+  },
+  "best_any": 16
+ },
+ "X/C/P/W/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 29,
+   "formula": "X4C2P9W5F9",
+   "T": 48,
+   "feed": [
+    6,
+    4,
+    15,
+    8,
+    15
+   ]
+  },
+  "best_any": 29
+ },
+ "X/C/P/L/K": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 36,
+   "formula": "X6C12P13K5",
+   "T": 48,
+   "feed": [
+    6,
+    16,
+    13,
+    8,
+    5
+   ]
+  },
+  "best_any": 36
+ },
+ "X/C/P/L/A": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 12,
+   "formula": "X6P2L2A2",
+   "T": 48,
+   "feed": [
+    19,
+    2,
+    8,
+    12,
+    7
+   ]
+  },
+  "best_any": 12
+ },
+ "X/C/P/L/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "XC4P2",
+   "T": 32,
+   "feed": [
+    2,
+    4,
+    3,
+    21,
+    2
+   ]
+  },
+  "best_any": 7
+ },
+ "X/C/P/K/A": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 40,
+   "formula": "X18CP3K10A8",
+   "T": 96,
+   "feed": [
+    36,
+    9,
+    6,
+    19,
+    26
+   ]
+  },
+  "best_any": 40
+ },
+ "X/C/P/K/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 20,
+   "formula": "X10P3K7",
+   "T": 32,
+   "feed": [
+    16,
+    0,
+    5,
+    11,
+    0
+   ]
+  },
+  "best_any": 20
+ },
+ "X/C/P/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 12,
+   "formula": "X6P2A2F2",
+   "T": 64,
+   "feed": [
+    20,
+    24,
+    4,
+    10,
+    6
+   ]
+  },
+  "best_any": 12
+ },
+ "X/C/W/L/K": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 18,
+   "formula": "X8W6K4",
+   "T": 32,
+   "feed": [
+    8,
+    2,
+    6,
+    12,
+    4
+   ]
+  },
+  "best_any": 18
+ },
+ "X/C/W/L/A": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "XC2W3A",
+   "T": 48,
+   "feed": [
+    10,
+    10,
+    25,
+    0,
+    3
+   ]
+  },
+  "best_any": 7
+ },
+ "X/C/W/L/F": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 5,
+   "formula": "X2WF2",
+   "T": 32,
+   "feed": [
+    5,
+    12,
+    1,
+    0,
+    14
+   ]
+  },
+  "best_any": 5
+ },
+ "X/C/W/K/A": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 18,
+   "formula": "X4CW5K3A5",
+   "T": 64,
+   "feed": [
+    10,
+    10,
+    16,
+    6,
+    22
+   ]
+  },
+  "best_any": 18
+ },
+ "X/C/W/K/F": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 10,
+   "formula": "X3CW3KF2",
+   "T": 32,
+   "feed": [
+    6,
+    2,
+    10,
+    1,
+    13
+   ]
+  },
+  "best_any": 10
+ },
+ "X/C/W/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "X2CW2AF",
+   "T": 32,
+   "feed": [
+    8,
+    1,
+    3,
+    7,
+    13
+   ]
+  },
+  "best_any": 7
+ },
+ "X/C/L/K/A": {
+  "elems": [
+   "X",
+   "C",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 19,
+   "formula": "X10L2K4A3",
+   "T": 48,
+   "feed": [
+    28,
+    1,
+    2,
+    11,
+    6
+   ]
+  },
+  "best_any": 19
+ },
+ "X/C/L/K/F": {
+  "elems": [
+   "X",
+   "C",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "X2C2LK3",
+   "T": 48,
+   "feed": [
+    18,
+    7,
+    2,
+    21,
+    0
+   ]
+  },
+  "best_any": 8
+ },
+ "X/C/L/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 5,
+   "formula": "X2AF2",
+   "T": 32,
+   "feed": [
+    7,
+    2,
+    5,
+    1,
+    17
+   ]
+  },
+  "best_any": 5
+ },
+ "X/C/K/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 18,
+   "formula": "X10K4A4",
+   "T": 64,
+   "feed": [
+    10,
+    7,
+    4,
+    4,
+    39
+   ]
+  },
+  "best_any": 18
+ },
+ "X/P/W/L/K": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 44,
+   "formula": "X8P16L14K6",
+   "T": 64,
+   "feed": [
+    14,
+    22,
+    6,
+    14,
+    8
+   ]
+  },
+  "best_any": 44
+ },
+ "X/P/W/L/A": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 20,
+   "formula": "X4P4W5A7",
+   "T": 32,
+   "feed": [
+    4,
+    4,
+    5,
+    12,
+    7
+   ]
+  },
+  "best_any": 20
+ },
+ "X/P/W/L/F": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 19,
+   "formula": "X10P4W3F2",
+   "T": 96,
+   "feed": [
+    13,
+    5,
+    3,
+    61,
+    14
+   ]
+  },
+  "best_any": 19
+ },
+ "X/P/W/K/A": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 48,
+   "formula": "X12P9W7K15A5",
+   "T": 48,
+   "feed": [
+    12,
+    9,
+    7,
+    15,
+    5
+   ]
+  },
+  "best_any": 48
+ },
+ "X/P/W/K/F": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 36,
+   "formula": "X8P10W2K16",
+   "T": 48,
+   "feed": [
+    10,
+    13,
+    4,
+    21,
+    0
+   ]
+  },
+  "best_any": 36
+ },
+ "X/P/W/A/F": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 24,
+   "formula": "X8P4W3A9",
+   "T": 48,
+   "feed": [
+    12,
+    6,
+    4,
+    16,
+    10
+   ]
+  },
+  "best_any": 24
+ },
+ "X/P/L/K/A": {
+  "elems": [
+   "X",
+   "P",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 48,
+   "formula": "X4P22L9K9A4",
+   "T": 48,
+   "feed": [
+    4,
+    22,
+    9,
+    9,
+    4
+   ]
+  },
+  "best_any": 48
+ },
+ "X/P/L/K/F": {
+  "elems": [
+   "X",
+   "P",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 18,
+   "formula": "X2P2L8K6",
+   "T": 32,
+   "feed": [
+    2,
+    2,
+    15,
+    6,
+    7
+   ]
+  },
+  "best_any": 18
+ },
+ "X/P/L/A/F": {
+  "elems": [
+   "X",
+   "P",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 9,
+   "formula": "P3L4AF",
+   "T": 32,
+   "feed": [
+    0,
+    11,
+    15,
+    2,
+    4
+   ]
+  },
+  "best_any": 9
+ },
+ "X/P/K/A/F": {
+  "elems": [
+   "X",
+   "P",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 25,
+   "formula": "X13PK7A4",
+   "T": 96,
+   "feed": [
+    50,
+    6,
+    33,
+    4,
+    3
+   ]
+  },
+  "best_any": 25
+ },
+ "X/W/L/K/A": {
+  "elems": [
+   "X",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 35,
+   "formula": "X13W5LK5A11",
+   "T": 96,
+   "feed": [
+    25,
+    5,
+    37,
+    9,
+    20
+   ]
+  },
+  "best_any": 35
+ },
+ "X/W/L/K/F": {
+  "elems": [
+   "X",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 18,
+   "formula": "X8W6K4",
+   "T": 32,
+   "feed": [
+    8,
+    6,
+    7,
+    4,
+    7
+   ]
+  },
+  "best_any": 18
+ },
+ "X/W/L/A/F": {
+  "elems": [
+   "X",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "X2W2AF2",
+   "T": 48,
+   "feed": [
+    12,
+    3,
+    16,
+    11,
+    6
+   ]
+  },
+  "best_any": 7
+ },
+ "X/W/K/A/F": {
+  "elems": [
+   "X",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 14,
+   "formula": "XK4A3F6",
+   "T": 48,
+   "feed": [
+    2,
+    0,
+    15,
+    14,
+    17
+   ]
+  },
+  "best_any": 14
+ },
+ "X/L/K/A/F": {
+  "elems": [
+   "X",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 12,
+   "formula": "X6K2A2F2",
+   "T": 48,
+   "feed": [
+    22,
+    4,
+    4,
+    12,
+    6
+   ]
+  },
+  "best_any": 12
+ },
+ "C/P/W/L/K": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 20,
+   "formula": "C6P9W2LK2",
+   "T": 96,
+   "feed": [
+    35,
+    45,
+    4,
+    2,
+    10
+   ]
+  },
+  "best_any": 20
+ },
+ "C/P/W/L/A": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 20,
+   "formula": "P4W5A11",
+   "T": 32,
+   "feed": [
+    5,
+    5,
+    8,
+    0,
+    14
+   ]
+  },
+  "best_any": 20
+ },
+ "C/P/W/L/F": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 6,
+   "formula": "C2P3L",
+   "T": 48,
+   "feed": [
+    6,
+    27,
+    10,
+    5,
+    0
+   ]
+  },
+  "best_any": 6
+ },
+ "C/P/W/K/A": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 45,
+   "formula": "C4P17W13K7A4",
+   "T": 64,
+   "feed": [
+    4,
+    23,
+    24,
+    9,
+    4
+   ]
+  },
+  "best_any": 45
+ },
+ "C/P/W/K/F": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 38,
+   "formula": "C2P10W10K16",
+   "T": 96,
+   "feed": [
+    30,
+    18,
+    16,
+    28,
+    4
+   ]
+  },
+  "best_any": 38
+ },
+ "C/P/W/A/F": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 19,
+   "formula": "C2P4W3A10",
+   "T": 96,
+   "feed": [
+    7,
+    11,
+    6,
+    28,
+    44
+   ]
+  },
+  "best_any": 19
+ },
+ "C/P/L/K/A": {
+  "elems": [
+   "C",
+   "P",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "P15K7A12",
+   "T": 64,
+   "feed": [
+    0,
+    23,
+    11,
+    10,
+    20
+   ]
+  },
+  "best_any": 34
+ },
+ "C/P/L/K/F": {
+  "elems": [
+   "C",
+   "P",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "C3P2L2K6F3",
+   "T": 48,
+   "feed": [
+    5,
+    7,
+    3,
+    19,
+    14
+   ]
+  },
+  "best_any": 16
+ },
+ "C/P/L/A/F": {
+  "elems": [
+   "C",
+   "P",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "CPL2A3",
+   "T": 32,
+   "feed": [
+    7,
+    2,
+    4,
+    12,
+    7
+   ]
+  },
+  "best_any": 7
+ },
+ "C/P/K/A/F": {
+  "elems": [
+   "C",
+   "P",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 36,
+   "formula": "CP6K14A6F9",
+   "T": 96,
+   "feed": [
+    4,
+    19,
+    41,
+    8,
+    24
+   ]
+  },
+  "best_any": 36
+ },
+ "C/W/L/K/A": {
+  "elems": [
+   "C",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 14,
+   "formula": "C2W6K2A4",
+   "T": 64,
+   "feed": [
+    38,
+    9,
+    8,
+    2,
+    7
+   ]
+  },
+  "best_any": 14
+ },
+ "C/W/L/K/F": {
+  "elems": [
+   "C",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "CLK3F3",
+   "T": 32,
+   "feed": [
+    1,
+    0,
+    8,
+    11,
+    12
+   ]
+  },
+  "best_any": 8
+ },
+ "C/W/L/A/F": {
+  "elems": [
+   "C",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 6,
+   "formula": "CW3LA",
+   "T": 64,
+   "feed": [
+    8,
+    27,
+    8,
+    11,
+    10
+   ]
+  },
+  "best_any": 6
+ },
+ "C/W/K/A/F": {
+  "elems": [
+   "C",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 19,
+   "formula": "C2W10K4A3",
+   "T": 64,
+   "feed": [
+    8,
+    28,
+    11,
+    8,
+    9
+   ]
+  },
+  "best_any": 19
+ },
+ "C/L/K/A/F": {
+  "elems": [
+   "C",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 8,
+   "formula": "C4K2A2",
+   "T": 64,
+   "feed": [
+    31,
+    9,
+    14,
+    10,
+    0
+   ]
+  },
+  "best_any": 8
+ },
+ "P/W/L/K/A": {
+  "elems": [
+   "P",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 50,
+   "formula": "P8W6K18A18",
+   "T": 64,
+   "feed": [
+    9,
+    8,
+    0,
+    21,
+    26
+   ]
+  },
+  "best_any": 50
+ },
+ "P/W/L/K/F": {
+  "elems": [
+   "P",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 25,
+   "formula": "P4W3L9K9",
+   "T": 32,
+   "feed": [
+    5,
+    4,
+    11,
+    12,
+    0
+   ]
+  },
+  "best_any": 25
+ },
+ "P/W/L/A/F": {
+  "elems": [
+   "P",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 33,
+   "formula": "P11W7A6F9",
+   "T": 48,
+   "feed": [
+    17,
+    13,
+    0,
+    9,
+    9
+   ]
+  },
+  "best_any": 33
+ },
+ "P/W/K/A/F": {
+  "elems": [
+   "P",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 39,
+   "formula": "P8W7K17A6F",
+   "T": 64,
+   "feed": [
+    12,
+    10,
+    26,
+    6,
+    10
+   ]
+  },
+  "best_any": 39
+ },
+ "P/L/K/A/F": {
+  "elems": [
+   "P",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 25,
+   "formula": "P2L5K8A5F5",
+   "T": 48,
+   "feed": [
+    4,
+    10,
+    15,
+    12,
+    7
+   ]
+  },
+  "best_any": 25
+ },
+ "W/L/K/A/F": {
+  "elems": [
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 12,
+   "formula": "W3LK4A3F",
+   "T": 48,
+   "feed": [
+    11,
+    5,
+    15,
+    11,
+    6
+   ]
+  },
+  "best_any": 12
+ },
+ "O/X/C/P/W/L": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L"
+  ],
+  "best_valid": {
+   "natoms": 29,
+   "formula": "O4X3C12P10",
+   "T": 128,
+   "feed": [
+    13,
+    12,
+    22,
+    37,
+    16,
+    28
+   ]
+  },
+  "best_any": 29
+ },
+ "O/X/C/P/W/K": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 66,
+   "formula": "O11X4C2P25W16K8",
+   "T": 96,
+   "feed": [
+    16,
+    4,
+    2,
+    35,
+    26,
+    13
+   ]
+  },
+  "best_any": 66
+ },
+ "O/X/C/P/W/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 36,
+   "formula": "O7X11P3W3A12",
+   "T": 96,
+   "feed": [
+    7,
+    41,
+    0,
+    3,
+    32,
+    13
+   ]
+  },
+  "best_any": 36
+ },
+ "O/X/C/P/W/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 25,
+   "formula": "O9P4W3F9",
+   "T": 96,
+   "feed": [
+    30,
+    1,
+    4,
+    13,
+    5,
+    43
+   ]
+  },
+  "best_any": 25
+ },
+ "O/X/C/P/L/K": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 13,
+   "formula": "O3X3C3P3K",
+   "T": 64,
+   "feed": [
+    18,
+    12,
+    8,
+    8,
+    7,
+    11
+   ]
+  },
+  "best_any": 13
+ },
+ "O/X/C/P/L/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 28,
+   "formula": "O6X4C4P2A12",
+   "T": 96,
+   "feed": [
+    6,
+    18,
+    6,
+    2,
+    38,
+    26
+   ]
+  },
+  "best_any": 28
+ },
+ "O/X/C/P/L/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 30,
+   "formula": "O8X8P13F",
+   "T": 64,
+   "feed": [
+    8,
+    8,
+    4,
+    13,
+    18,
+    13
+   ]
+  },
+  "best_any": 30
+ },
+ "O/X/C/P/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 30,
+   "formula": "OX8C2PK12A6",
+   "T": 96,
+   "feed": [
+    1,
+    34,
+    6,
+    3,
+    44,
+    8
+   ]
+  },
+  "best_any": 89
+ },
+ "O/X/C/P/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 31,
+   "formula": "OX7P14K9",
+   "T": 96,
+   "feed": [
+    3,
+    10,
+    33,
+    26,
+    18,
+    6
+   ]
+  },
+  "best_any": 31
+ },
+ "O/X/C/P/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O13XP6A11F",
+   "T": 96,
+   "feed": [
+    16,
+    10,
+    22,
+    7,
+    16,
+    25
+   ]
+  },
+  "best_any": 32
+ },
+ "O/X/C/W/L/K": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 28,
+   "formula": "O5X7W9L5K2",
+   "T": 96,
+   "feed": [
+    5,
+    7,
+    22,
+    9,
+    51,
+    2
+   ]
+  },
+  "best_any": 54
+ },
+ "O/X/C/W/L/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 12,
+   "formula": "O3X3CL4A",
+   "T": 96,
+   "feed": [
+    23,
+    31,
+    9,
+    4,
+    26,
+    3
+   ]
+  },
+  "best_any": 12
+ },
+ "O/X/C/W/L/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 12,
+   "formula": "O4X2C2W2L2",
+   "T": 128,
+   "feed": [
+    40,
+    11,
+    24,
+    23,
+    24,
+    6
+   ]
+  },
+  "best_any": 12
+ },
+ "O/X/C/W/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 57,
+   "formula": "O16X5W10K6A20",
+   "T": 128,
+   "feed": [
+    37,
+    7,
+    3,
+    29,
+    14,
+    38
+   ]
+  },
+  "best_any": 57
+ },
+ "O/X/C/W/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 22,
+   "formula": "OX6C6W6K3",
+   "T": 128,
+   "feed": [
+    1,
+    31,
+    20,
+    33,
+    3,
+    40
+   ]
+  },
+  "best_any": 22
+ },
+ "O/X/C/W/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 60,
+   "formula": "O13X13CW30A3",
+   "T": 64,
+   "feed": [
+    13,
+    13,
+    4,
+    30,
+    3,
+    1
+   ]
+  },
+  "best_any": 60
+ },
+ "O/X/C/L/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 45,
+   "formula": "O16L16K6A7",
+   "T": 96,
+   "feed": [
+    16,
+    25,
+    26,
+    16,
+    6,
+    7
+   ]
+  },
+  "best_any": 45
+ },
+ "O/X/C/L/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 31,
+   "formula": "O4X5C11K11",
+   "T": 64,
+   "feed": [
+    5,
+    8,
+    11,
+    17,
+    14,
+    9
+   ]
+  },
+  "best_any": 64
+ },
+ "O/X/C/L/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 20,
+   "formula": "O4X5A11",
+   "T": 96,
+   "feed": [
+    8,
+    8,
+    20,
+    36,
+    20,
+    4
+   ]
+  },
+  "best_any": 20
+ },
+ "O/X/C/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 45,
+   "formula": "O16C5K6A7F11",
+   "T": 96,
+   "feed": [
+    16,
+    1,
+    55,
+    6,
+    7,
+    11
+   ]
+  },
+  "best_any": 45
+ },
+ "O/X/P/W/L/K": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 64,
+   "formula": "O2X17P27W9L2K7",
+   "T": 64,
+   "feed": [
+    2,
+    17,
+    27,
+    9,
+    2,
+    7
+   ]
+  },
+  "best_any": 64
+ },
+ "O/X/P/W/L/A": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 51,
+   "formula": "O15X7P7W16L2A4",
+   "T": 128,
+   "feed": [
+    37,
+    10,
+    18,
+    37,
+    17,
+    9
+   ]
+  },
+  "best_any": 51
+ },
+ "O/X/P/W/L/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "O13X3P6W11F",
+   "T": 128,
+   "feed": [
+    34,
+    29,
+    13,
+    37,
+    8,
+    7
+   ]
+  },
+  "best_any": 34
+ },
+ "O/X/P/W/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O2XP3W2K11A13",
+   "T": 64,
+   "feed": [
+    3,
+    1,
+    5,
+    2,
+    18,
+    35
+   ]
+  },
+  "best_any": 32
+ },
+ "O/X/P/W/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "O2X4P11K3F14",
+   "T": 96,
+   "feed": [
+    2,
+    4,
+    11,
+    56,
+    3,
+    20
+   ]
+  },
+  "best_any": 34
+ },
+ "O/X/P/W/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 36,
+   "formula": "O8X5P18W2AF2",
+   "T": 128,
+   "feed": [
+    32,
+    11,
+    70,
+    2,
+    11,
+    2
+   ]
+  },
+  "best_any": 36
+ },
+ "O/X/P/L/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 24,
+   "formula": "O4X5P7LK4A3",
+   "T": 128,
+   "feed": [
+    14,
+    25,
+    31,
+    12,
+    23,
+    23
+   ]
+  },
+  "best_any": 24
+ },
+ "O/X/P/L/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 50,
+   "formula": "O5X8P17K2F18",
+   "T": 96,
+   "feed": [
+    5,
+    8,
+    17,
+    8,
+    2,
+    56
+   ]
+  },
+  "best_any": 50
+ },
+ "O/X/P/L/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 20,
+   "formula": "O6X8P2L4",
+   "T": 64,
+   "feed": [
+    20,
+    24,
+    2,
+    9,
+    0,
+    9
+   ]
+  },
+  "best_any": 20
+ },
+ "O/X/P/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 64,
+   "formula": "O29X10P12K7A6",
+   "T": 64,
+   "feed": [
+    29,
+    10,
+    12,
+    7,
+    6,
+    0
+   ]
+  },
+  "best_any": 64
+ },
+ "O/X/W/L/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 22,
+   "formula": "O2X4W3LK5A7",
+   "T": 64,
+   "feed": [
+    3,
+    10,
+    3,
+    1,
+    8,
+    39
+   ]
+  },
+  "best_any": 22
+ },
+ "O/X/W/L/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "O15W12K7",
+   "T": 96,
+   "feed": [
+    30,
+    1,
+    21,
+    17,
+    14,
+    13
+   ]
+  },
+  "best_any": 34
+ },
+ "O/X/W/L/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 41,
+   "formula": "O13X7W4L2A2F13",
+   "T": 96,
+   "feed": [
+    31,
+    16,
+    8,
+    4,
+    6,
+    31
+   ]
+  },
+  "best_any": 41
+ },
+ "O/X/W/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 60,
+   "formula": "O10X14W7K15A13F",
+   "T": 128,
+   "feed": [
+    27,
+    14,
+    22,
+    32,
+    28,
+    5
+   ]
+  },
+  "best_any": 60
+ },
+ "O/X/L/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 29,
+   "formula": "O10K4A3F12",
+   "T": 96,
+   "feed": [
+    19,
+    0,
+    19,
+    7,
+    4,
+    47
+   ]
+  },
+  "best_any": 29
+ },
+ "O/C/P/W/L/K": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 68,
+   "formula": "O5C26P23W8K6",
+   "T": 128,
+   "feed": [
+    9,
+    48,
+    43,
+    16,
+    0,
+    12
+   ]
+  },
+  "best_any": 68
+ },
+ "O/C/P/W/L/A": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "O7P2L7",
+   "T": 128,
+   "feed": [
+    65,
+    1,
+    6,
+    0,
+    46,
+    10
+   ]
+  },
+  "best_any": 16
+ },
+ "O/C/P/W/L/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O5P12W4L3F8",
+   "T": 96,
+   "feed": [
+    13,
+    5,
+    33,
+    6,
+    18,
+    21
+   ]
+  },
+  "best_any": 32
+ },
+ "O/C/P/W/K/A": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 72,
+   "formula": "O29C2P10W5K3A23",
+   "T": 96,
+   "feed": [
+    38,
+    2,
+    13,
+    8,
+    3,
+    32
+   ]
+  },
+  "best_any": 72
+ },
+ "O/C/P/W/K/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 30,
+   "formula": "O2C9P2W6K11",
+   "T": 128,
+   "feed": [
+    4,
+    54,
+    9,
+    22,
+    35,
+    4
+   ]
+  },
+  "best_any": 30
+ },
+ "O/C/P/W/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 18,
+   "formula": "O2C8P6A2",
+   "T": 64,
+   "feed": [
+    2,
+    23,
+    10,
+    16,
+    6,
+    7
+   ]
+  },
+  "best_any": 18
+ },
+ "O/C/P/L/K/A": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 26,
+   "formula": "O2P11K5A8",
+   "T": 64,
+   "feed": [
+    3,
+    22,
+    13,
+    10,
+    6,
+    10
+   ]
+  },
+  "best_any": 26
+ },
+ "O/C/P/L/K/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 26,
+   "formula": "O8P14K4",
+   "T": 96,
+   "feed": [
+    26,
+    5,
+    50,
+    1,
+    4,
+    10
+   ]
+  },
+  "best_any": 26
+ },
+ "O/C/P/L/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 18,
+   "formula": "O6C6P2A2F2",
+   "T": 96,
+   "feed": [
+    21,
+    55,
+    3,
+    1,
+    14,
+    2
+   ]
+  },
+  "best_any": 18
+ },
+ "O/C/P/K/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 30,
+   "formula": "OC3P6K12A8",
+   "T": 128,
+   "feed": [
+    5,
+    21,
+    21,
+    46,
+    30,
+    5
+   ]
+  },
+  "best_any": 30
+ },
+ "O/C/W/L/K/A": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "O15W3K7A9",
+   "T": 96,
+   "feed": [
+    43,
+    1,
+    3,
+    5,
+    21,
+    23
+   ]
+  },
+  "best_any": 34
+ },
+ "O/C/W/L/K/F": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 18,
+   "formula": "O6W2K2F8",
+   "T": 64,
+   "feed": [
+    12,
+    8,
+    8,
+    26,
+    2,
+    8
+   ]
+  },
+  "best_any": 18
+ },
+ "O/C/W/L/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "O2AF4",
+   "T": 64,
+   "feed": [
+    15,
+    10,
+    2,
+    2,
+    4,
+    31
+   ]
+  },
+  "best_any": 7
+ },
+ "O/C/W/K/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 35,
+   "formula": "O13WK5A6F10",
+   "T": 96,
+   "feed": [
+    16,
+    41,
+    1,
+    6,
+    9,
+    23
+   ]
+  },
+  "best_any": 35
+ },
+ "O/C/L/K/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "O15K7A12",
+   "T": 64,
+   "feed": [
+    18,
+    5,
+    10,
+    8,
+    16,
+    7
+   ]
+  },
+  "best_any": 34
+ },
+ "O/P/W/L/K/A": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 29,
+   "formula": "OP8W7K3A10",
+   "T": 96,
+   "feed": [
+    3,
+    18,
+    33,
+    7,
+    6,
+    29
+   ]
+  },
+  "best_any": 29
+ },
+ "O/P/W/L/K/F": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 31,
+   "formula": "O13P5W11KF",
+   "T": 96,
+   "feed": [
+    19,
+    5,
+    22,
+    8,
+    3,
+    39
+   ]
+  },
+  "best_any": 31
+ },
+ "O/P/W/L/A/F": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 55,
+   "formula": "O20P13W10LA11",
+   "T": 96,
+   "feed": [
+    25,
+    16,
+    13,
+    13,
+    15,
+    14
+   ]
+  },
+  "best_any": 55
+ },
+ "O/P/W/K/A/F": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 38,
+   "formula": "OP13K5A4F15",
+   "T": 64,
+   "feed": [
+    3,
+    21,
+    0,
+    7,
+    6,
+    27
+   ]
+  },
+  "best_any": 38
+ },
+ "O/P/L/K/A/F": {
+  "elems": [
+   "O",
+   "P",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 43,
+   "formula": "O4P15L2K3A9F10",
+   "T": 64,
+   "feed": [
+    4,
+    20,
+    13,
+    3,
+    14,
+    10
+   ]
+  },
+  "best_any": 43
+ },
+ "O/W/L/K/A/F": {
+  "elems": [
+   "O",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 20,
+   "formula": "O5W6K9",
+   "T": 64,
+   "feed": [
+    5,
+    6,
+    15,
+    9,
+    0,
+    29
+   ]
+  },
+  "best_any": 20
+ },
+ "X/C/P/W/L/K": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 39,
+   "formula": "X7CP9W8K14",
+   "T": 64,
+   "feed": [
+    10,
+    11,
+    11,
+    10,
+    5,
+    17
+   ]
+  },
+  "best_any": 39
+ },
+ "X/C/P/W/L/A": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 26,
+   "formula": "X10P4W3A9",
+   "T": 96,
+   "feed": [
+    28,
+    9,
+    12,
+    5,
+    19,
+    23
+   ]
+  },
+  "best_any": 26
+ },
+ "X/C/P/W/L/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 13,
+   "formula": "XC2P4W2L4",
+   "T": 64,
+   "feed": [
+    3,
+    14,
+    21,
+    11,
+    14,
+    1
+   ]
+  },
+  "best_any": 13
+ },
+ "X/C/P/W/K/A": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 35,
+   "formula": "C10P5W4K13A3",
+   "T": 96,
+   "feed": [
+    3,
+    19,
+    16,
+    10,
+    43,
+    5
+   ]
+  },
+  "best_any": 35
+ },
+ "X/C/P/W/K/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 62,
+   "formula": "X9C2P28W5K11F7",
+   "T": 96,
+   "feed": [
+    17,
+    2,
+    46,
+    5,
+    17,
+    9
+   ]
+  },
+  "best_any": 62
+ },
+ "X/C/P/W/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "X5CP2W6AF",
+   "T": 64,
+   "feed": [
+    19,
+    4,
+    7,
+    26,
+    7,
+    1
+   ]
+  },
+  "best_any": 16
+ },
+ "X/C/P/L/K/A": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 82,
+   "formula": "X12C4P24L14K10A18",
+   "T": 128,
+   "feed": [
+    22,
+    4,
+    42,
+    14,
+    18,
+    28
+   ]
+  },
+  "best_any": 82
+ },
+ "X/C/P/L/K/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 23,
+   "formula": "X5C2P10K6",
+   "T": 128,
+   "feed": [
+    8,
+    32,
+    49,
+    7,
+    32,
+    0
+   ]
+  },
+  "best_any": 23
+ },
+ "X/C/P/L/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 19,
+   "formula": "X9P4A6",
+   "T": 128,
+   "feed": [
+    47,
+    12,
+    19,
+    7,
+    43,
+    0
+   ]
+  },
+  "best_any": 19
+ },
+ "X/C/P/K/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 52,
+   "formula": "X9P10K24AF8",
+   "T": 96,
+   "feed": [
+    17,
+    13,
+    16,
+    40,
+    1,
+    9
+   ]
+  },
+  "best_any": 52
+ },
+ "X/C/W/L/K/A": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 14,
+   "formula": "X2W2LK5A4",
+   "T": 128,
+   "feed": [
+    8,
+    2,
+    26,
+    7,
+    41,
+    44
+   ]
+  },
+  "best_any": 14
+ },
+ "X/C/W/L/K/F": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 7,
+   "formula": "X3W2K2",
+   "T": 128,
+   "feed": [
+    35,
+    4,
+    13,
+    15,
+    22,
+    39
+   ]
+  },
+  "best_any": 7
+ },
+ "X/C/W/L/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 6,
+   "formula": "XC2W2A",
+   "T": 96,
+   "feed": [
+    1,
+    29,
+    26,
+    3,
+    25,
+    12
+   ]
+  },
+  "best_any": 6
+ },
+ "X/C/W/K/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 31,
+   "formula": "X4C4W2K11A5F5",
+   "T": 64,
+   "feed": [
+    7,
+    8,
+    5,
+    23,
+    12,
+    9
+   ]
+  },
+  "best_any": 31
+ },
+ "X/C/L/K/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 14,
+   "formula": "X6C2K2A4",
+   "T": 128,
+   "feed": [
+    27,
+    21,
+    28,
+    4,
+    25,
+    23
+   ]
+  },
+  "best_any": 14
+ },
+ "X/P/W/L/K/A": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 78,
+   "formula": "X24P5W12LK14A22",
+   "T": 96,
+   "feed": [
+    24,
+    5,
+    20,
+    3,
+    14,
+    30
+   ]
+  },
+  "best_any": 78
+ },
+ "X/P/W/L/K/F": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 18,
+   "formula": "XPW7L4K4F",
+   "T": 96,
+   "feed": [
+    19,
+    1,
+    43,
+    4,
+    28,
+    1
+   ]
+  },
+  "best_any": 18
+ },
+ "X/P/W/L/A/F": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 33,
+   "formula": "X3P11W7L7A3F2",
+   "T": 96,
+   "feed": [
+    6,
+    33,
+    24,
+    18,
+    12,
+    3
+   ]
+  },
+  "best_any": 33
+ },
+ "X/P/W/K/A/F": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 35,
+   "formula": "X3P5W11K12A3F",
+   "T": 64,
+   "feed": [
+    3,
+    7,
+    23,
+    18,
+    4,
+    9
+   ]
+  },
+  "best_any": 35
+ },
+ "X/P/L/K/A/F": {
+  "elems": [
+   "X",
+   "P",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "X12P7K15",
+   "T": 64,
+   "feed": [
+    15,
+    8,
+    1,
+    18,
+    17,
+    5
+   ]
+  },
+  "best_any": 34
+ },
+ "X/W/L/K/A/F": {
+  "elems": [
+   "X",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 16,
+   "formula": "X8WK4A3",
+   "T": 96,
+   "feed": [
+    40,
+    5,
+    9,
+    22,
+    13,
+    7
+   ]
+  },
+  "best_any": 16
+ },
+ "C/P/W/L/K/A": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 18,
+   "formula": "CP8K5A4",
+   "T": 64,
+   "feed": [
+    18,
+    11,
+    24,
+    0,
+    7,
+    4
+   ]
+  },
+  "best_any": 18
+ },
+ "C/P/W/L/K/F": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 36,
+   "formula": "C6P5W6L6K13",
+   "T": 96,
+   "feed": [
+    6,
+    13,
+    12,
+    13,
+    31,
+    21
+   ]
+  },
+  "best_any": 36
+ },
+ "C/P/W/L/A/F": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 29,
+   "formula": "C3P9W5L4A4F4",
+   "T": 96,
+   "feed": [
+    11,
+    29,
+    17,
+    16,
+    13,
+    10
+   ]
+  },
+  "best_any": 29
+ },
+ "C/P/W/K/A/F": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 43,
+   "formula": "C3P7W16K16A",
+   "T": 96,
+   "feed": [
+    6,
+    10,
+    28,
+    25,
+    2,
+    25
+   ]
+  },
+  "best_any": 43
+ },
+ "C/P/L/K/A/F": {
+  "elems": [
+   "C",
+   "P",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 10,
+   "formula": "PL3K3F3",
+   "T": 64,
+   "feed": [
+    2,
+    1,
+    8,
+    9,
+    28,
+    16
+   ]
+  },
+  "best_any": 10
+ },
+ "C/W/L/K/A/F": {
+  "elems": [
+   "C",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 10,
+   "formula": "C3W3KA3",
+   "T": 128,
+   "feed": [
+    28,
+    13,
+    34,
+    5,
+    15,
+    33
+   ]
+  },
+  "best_any": 10
+ },
+ "P/W/L/K/A/F": {
+  "elems": [
+   "P",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 58,
+   "formula": "P4W27K13A13F",
+   "T": 96,
+   "feed": [
+    4,
+    29,
+    22,
+    13,
+    15,
+    13
+   ]
+  },
+  "best_any": 58
+ },
+ "O/X/C/P/W/L/K": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K"
+  ],
+  "best_valid": {
+   "natoms": 38,
+   "formula": "O4X6C7P13L6K2",
+   "T": 64,
+   "feed": [
+    6,
+    8,
+    8,
+    19,
+    4,
+    16,
+    3
+   ]
+  },
+  "best_any": 38
+ },
+ "O/X/C/P/W/L/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 70,
+   "formula": "O4X30C5P15W16",
+   "T": 128,
+   "feed": [
+    7,
+    45,
+    17,
+    24,
+    28,
+    6,
+    1
+   ]
+  },
+  "best_any": 70
+ },
+ "O/X/C/P/W/L/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "O8X4C5P3W14",
+   "T": 128,
+   "feed": [
+    20,
+    4,
+    42,
+    7,
+    38,
+    15,
+    2
+   ]
+  },
+  "best_any": 34
+ },
+ "O/X/C/P/W/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 30,
+   "formula": "O11X10P3WK2A3",
+   "T": 96,
+   "feed": [
+    23,
+    44,
+    9,
+    6,
+    6,
+    4,
+    4
+   ]
+  },
+  "best_any": 30
+ },
+ "O/X/C/P/W/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 24,
+   "formula": "O3X2C10P8K",
+   "T": 64,
+   "feed": [
+    3,
+    2,
+    23,
+    8,
+    8,
+    1,
+    19
+   ]
+  },
+  "best_any": 24
+ },
+ "O/X/C/P/W/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 41,
+   "formula": "O4X5C4P11WA11F5",
+   "T": 64,
+   "feed": [
+    6,
+    8,
+    4,
+    17,
+    1,
+    17,
+    11
+   ]
+  },
+  "best_any": 41
+ },
+ "O/X/C/P/L/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 29,
+   "formula": "O11X2C2P3K4A7",
+   "T": 64,
+   "feed": [
+    11,
+    15,
+    17,
+    3,
+    7,
+    4,
+    7
+   ]
+  },
+  "best_any": 29
+ },
+ "O/X/C/P/L/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 20,
+   "formula": "O4X2C2P10LK",
+   "T": 64,
+   "feed": [
+    18,
+    2,
+    2,
+    38,
+    3,
+    1,
+    0
+   ]
+  },
+  "best_any": 20
+ },
+ "O/X/C/P/L/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O4X4C6P12A4F2",
+   "T": 128,
+   "feed": [
+    5,
+    23,
+    6,
+    34,
+    32,
+    7,
+    21
+   ]
+  },
+  "best_any": 32
+ },
+ "O/X/C/P/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 43,
+   "formula": "O16XCP5K2A16F2",
+   "T": 128,
+   "feed": [
+    46,
+    4,
+    1,
+    13,
+    6,
+    46,
+    12
+   ]
+  },
+  "best_any": 43
+ },
+ "O/X/C/W/L/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 14,
+   "formula": "O2CW3K3A5",
+   "T": 128,
+   "feed": [
+    21,
+    0,
+    4,
+    9,
+    23,
+    22,
+    49
+   ]
+  },
+  "best_any": 14
+ },
+ "O/X/C/W/L/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 28,
+   "formula": "O5X7W9K2F5",
+   "T": 96,
+   "feed": [
+    5,
+    30,
+    10,
+    32,
+    11,
+    2,
+    6
+   ]
+  },
+  "best_any": 28
+ },
+ "O/X/C/W/L/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 15,
+   "formula": "O2X4W4AF4",
+   "T": 96,
+   "feed": [
+    10,
+    27,
+    11,
+    22,
+    1,
+    1,
+    24
+   ]
+  },
+  "best_any": 15
+ },
+ "O/X/C/W/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 50,
+   "formula": "O11X5W6K2A21F5",
+   "T": 96,
+   "feed": [
+    23,
+    6,
+    0,
+    7,
+    6,
+    45,
+    9
+   ]
+  },
+  "best_any": 50
+ },
+ "O/X/C/L/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 27,
+   "formula": "O2X3K14A6F2",
+   "T": 128,
+   "feed": [
+    6,
+    18,
+    4,
+    3,
+    66,
+    24,
+    7
+   ]
+  },
+  "best_any": 27
+ },
+ "O/X/P/W/L/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 36,
+   "formula": "O18X2P2W4L2K6A2",
+   "T": 96,
+   "feed": [
+    52,
+    2,
+    7,
+    14,
+    2,
+    17,
+    2
+   ]
+  },
+  "best_any": 36
+ },
+ "O/X/P/W/L/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 31,
+   "formula": "OX8P4W9L7KF",
+   "T": 128,
+   "feed": [
+    5,
+    31,
+    21,
+    35,
+    11,
+    4,
+    21
+   ]
+  },
+  "best_any": 31
+ },
+ "O/X/P/W/L/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 39,
+   "formula": "O16X3P10W2A8",
+   "T": 96,
+   "feed": [
+    25,
+    31,
+    16,
+    11,
+    2,
+    8,
+    3
+   ]
+  },
+  "best_any": 39
+ },
+ "O/X/P/W/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 48,
+   "formula": "O5X7P14WA12F9",
+   "T": 64,
+   "feed": [
+    7,
+    9,
+    19,
+    1,
+    1,
+    16,
+    11
+   ]
+  },
+  "best_any": 48
+ },
+ "O/X/P/L/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 46,
+   "formula": "O16XP7L5A17",
+   "T": 64,
+   "feed": [
+    16,
+    1,
+    7,
+    19,
+    0,
+    17,
+    4
+   ]
+  },
+  "best_any": 46
+ },
+ "O/X/W/L/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "O3X8W4L3K7A8F",
+   "T": 64,
+   "feed": [
+    3,
+    8,
+    17,
+    3,
+    7,
+    21,
+    5
+   ]
+  },
+  "best_any": 34
+ },
+ "O/C/P/W/L/K/A": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 39,
+   "formula": "O17C8P7W3A4",
+   "T": 64,
+   "feed": [
+    26,
+    9,
+    10,
+    3,
+    8,
+    1,
+    7
+   ]
+  },
+  "best_any": 39
+ },
+ "O/C/P/W/L/K/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 70,
+   "formula": "O6P23W10L11K5F15",
+   "T": 128,
+   "feed": [
+    10,
+    1,
+    41,
+    14,
+    25,
+    8,
+    29
+   ]
+  },
+  "best_any": 70
+ },
+ "O/C/P/W/L/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 25,
+   "formula": "O9P4A3F9",
+   "T": 96,
+   "feed": [
+    27,
+    11,
+    10,
+    0,
+    16,
+    20,
+    12
+   ]
+  },
+  "best_any": 25
+ },
+ "O/C/P/W/K/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 44,
+   "formula": "O2CP13W7K8A13",
+   "T": 96,
+   "feed": [
+    2,
+    18,
+    21,
+    9,
+    16,
+    15,
+    15
+   ]
+  },
+  "best_any": 44
+ },
+ "O/C/P/L/K/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 46,
+   "formula": "OP20K9A16",
+   "T": 128,
+   "feed": [
+    1,
+    20,
+    33,
+    23,
+    14,
+    28,
+    9
+   ]
+  },
+  "best_any": 46
+ },
+ "O/C/W/L/K/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 29,
+   "formula": "O4C4W3L8K10",
+   "T": 64,
+   "feed": [
+    4,
+    4,
+    3,
+    14,
+    10,
+    13,
+    16
+   ]
+  },
+  "best_any": 29
+ },
+ "O/P/W/L/K/A/F": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 44,
+   "formula": "O5P14W3L2K5A15",
+   "T": 128,
+   "feed": [
+    5,
+    14,
+    3,
+    22,
+    5,
+    15,
+    64
+   ]
+  },
+  "best_any": 44
+ },
+ "X/C/P/W/L/K/A": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 34,
+   "formula": "X11CP7L3K3A9",
+   "T": 64,
+   "feed": [
+    17,
+    1,
+    15,
+    3,
+    3,
+    7,
+    18
+   ]
+  },
+  "best_any": 34
+ },
+ "X/C/P/W/L/K/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 36,
+   "formula": "X16P2W8K8F2",
+   "T": 96,
+   "feed": [
+    25,
+    28,
+    4,
+    11,
+    0,
+    14,
+    14
+   ]
+  },
+  "best_any": 36
+ },
+ "X/C/P/W/L/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 30,
+   "formula": "X15P7W4A3F",
+   "T": 64,
+   "feed": [
+    15,
+    3,
+    7,
+    4,
+    23,
+    3,
+    9
+   ]
+  },
+  "best_any": 30
+ },
+ "X/C/P/W/K/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 54,
+   "formula": "X19P8W4K19AF3",
+   "T": 96,
+   "feed": [
+    22,
+    2,
+    9,
+    7,
+    22,
+    1,
+    33
+   ]
+  },
+  "best_any": 54
+ },
+ "X/C/P/L/K/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 45,
+   "formula": "X7C16P6K16",
+   "T": 96,
+   "feed": [
+    7,
+    44,
+    6,
+    5,
+    16,
+    1,
+    17
+   ]
+  },
+  "best_any": 45
+ },
+ "X/C/W/L/K/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 20,
+   "formula": "X8W6K4A2",
+   "T": 64,
+   "feed": [
+    19,
+    4,
+    19,
+    4,
+    12,
+    2,
+    4
+   ]
+  },
+  "best_any": 20
+ },
+ "X/P/W/L/K/A/F": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 49,
+   "formula": "X8P5W8LK13A9F5",
+   "T": 96,
+   "feed": [
+    11,
+    6,
+    8,
+    1,
+    16,
+    29,
+    25
+   ]
+  },
+  "best_any": 49
+ },
+ "C/P/W/L/K/A/F": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 36,
+   "formula": "P8W11K12A5",
+   "T": 96,
+   "feed": [
+    17,
+    13,
+    11,
+    32,
+    17,
+    5,
+    1
+   ]
+  },
+  "best_any": 36
+ },
+ "O/X/C/P/W/L/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "best_valid": {
+   "natoms": 41,
+   "formula": "X15CP2W8K7A8",
+   "T": 160,
+   "feed": [
+    0,
+    38,
+    53,
+    4,
+    8,
+    20,
+    15,
+    22
+   ]
+  },
+  "best_any": 152
+ },
+ "O/X/C/P/W/L/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 42,
+   "formula": "O6X14P17K5",
+   "T": 160,
+   "feed": [
+    13,
+    36,
+    23,
+    38,
+    30,
+    7,
+    6,
+    7
+   ]
+  },
+  "best_any": 42
+ },
+ "O/X/C/P/W/L/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 36,
+   "formula": "O12X4C4P8W4A4",
+   "T": 96,
+   "feed": [
+    13,
+    20,
+    37,
+    9,
+    4,
+    3,
+    4,
+    6
+   ]
+  },
+  "best_any": 36
+ },
+ "O/X/C/P/W/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 52,
+   "formula": "O5X10P3W10K18F6",
+   "T": 96,
+   "feed": [
+    9,
+    18,
+    4,
+    3,
+    20,
+    28,
+    6,
+    8
+   ]
+  },
+  "best_any": 52
+ },
+ "O/X/C/P/L/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 68,
+   "formula": "O14X13P24K4A13",
+   "T": 160,
+   "feed": [
+    14,
+    13,
+    11,
+    24,
+    75,
+    4,
+    13,
+    6
+   ]
+  },
+  "best_any": 68
+ },
+ "O/X/C/W/L/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 22,
+   "formula": "OX6C6W6K3",
+   "T": 192,
+   "feed": [
+    2,
+    46,
+    12,
+    68,
+    17,
+    20,
+    22,
+    5
+   ]
+  },
+  "best_any": 22
+ },
+ "O/X/P/W/L/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 32,
+   "formula": "O13XP5W8LKA3",
+   "T": 192,
+   "feed": [
+    59,
+    23,
+    17,
+    27,
+    16,
+    6,
+    32,
+    12
+   ]
+  },
+  "best_any": 32
+ },
+ "O/C/P/W/L/K/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 46,
+   "formula": "OP20K9A16",
+   "T": 160,
+   "feed": [
+    12,
+    6,
+    56,
+    11,
+    3,
+    21,
+    41,
+    10
+   ]
+  },
+  "best_any": 46
+ },
+ "X/C/P/W/L/K/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 87,
+   "formula": "X12C3P24W15K9A24",
+   "T": 192,
+   "feed": [
+    15,
+    26,
+    27,
+    18,
+    11,
+    10,
+    27,
+    58
+   ]
+  },
+  "best_any": 87
+ },
+ "O/X/C/P/W/L/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "best_valid": {
+   "natoms": 54,
+   "formula": "O12X8P22K10A2",
+   "T": 160,
+   "feed": [
+    21,
+    11,
+    3,
+    37,
+    8,
+    47,
+    19,
+    3,
+    11
+   ]
+  },
+  "best_any": 54
+ }
+}

@@ -1,0 +1,1400 @@
+{
+ "stats": {
+  "总数": 143,
+  "完全转化为别的物质": 143,
+  "产物全在目录": 143,
+  "产物数6": 21,
+  "产物数3": 28,
+  "产物数8": 3,
+  "产物数2": 47,
+  "产物数4": 25,
+  "产物数5": 15,
+  "产物数7": 4
+ },
+ "rows": [
+  {
+   "formula": "C2P3L2K3AF2",
+   "products": [
+    "C2A",
+    "PK",
+    "PK",
+    "PK",
+    "LF",
+    "LF"
+   ]
+  },
+  {
+   "formula": "C3P2WK3F2",
+   "products": [
+    "CP2WK3",
+    "CF",
+    "CF"
+   ]
+  },
+  {
+   "formula": "C4P5L2K5",
+   "products": [
+    "CL",
+    "CL",
+    "C2",
+    "PK",
+    "PK",
+    "PK",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "formula": "CP2LK4",
+   "products": [
+    "CPK2",
+    "PLK2"
+   ]
+  },
+  {
+   "formula": "CP2W2A2F",
+   "products": [
+    "CPA",
+    "PAF",
+    "W2"
+   ]
+  },
+  {
+   "formula": "CP3K3F",
+   "products": [
+    "CF",
+    "PK",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "formula": "CP3L2K2F2",
+   "products": [
+    "CP3K2F2",
+    "L2"
+   ]
+  },
+  {
+   "formula": "CP4WK5A3",
+   "products": [
+    "CP2WK3",
+    "PK",
+    "PK",
+    "A3"
+   ]
+  },
+  {
+   "formula": "CP5LKA2",
+   "products": [
+    "CP3LK",
+    "P2A2"
+   ]
+  },
+  {
+   "formula": "CPKF",
+   "products": [
+    "CF",
+    "PK"
+   ]
+  },
+  {
+   "formula": "CPLK",
+   "products": [
+    "CL",
+    "PK"
+   ]
+  },
+  {
+   "formula": "CPWL2A4",
+   "products": [
+    "CPL2A3",
+    "WA"
+   ]
+  },
+  {
+   "formula": "KA2F3",
+   "products": [
+    "KF3",
+    "A2"
+   ]
+  },
+  {
+   "formula": "O2C2P4LK4F3",
+   "products": [
+    "OCPK",
+    "OCPK",
+    "PK",
+    "PK",
+    "LF",
+    "F2"
+   ]
+  },
+  {
+   "formula": "O2C3LKF",
+   "products": [
+    "O2CLKF",
+    "C2"
+   ]
+  },
+  {
+   "formula": "O2CK2AF",
+   "products": [
+    "OK",
+    "OK",
+    "CAF"
+   ]
+  },
+  {
+   "formula": "O2CP3L6A",
+   "products": [
+    "O2CP3A",
+    "L2",
+    "L2",
+    "L2"
+   ]
+  },
+  {
+   "formula": "O2CPWF2",
+   "products": [
+    "O2PWF",
+    "CF"
+   ]
+  },
+  {
+   "formula": "O2CW5K2A5F",
+   "products": [
+    "OK",
+    "OK",
+    "CF",
+    "WA",
+    "WA",
+    "WA",
+    "WA",
+    "WA"
+   ]
+  },
+  {
+   "formula": "O2K2AF2",
+   "products": [
+    "OK",
+    "OK",
+    "AF2"
+   ]
+  },
+  {
+   "formula": "O2PA2F3",
+   "products": [
+    "O2PA2F",
+    "F2"
+   ]
+  },
+  {
+   "formula": "O2X2CLK2F2",
+   "products": [
+    "OK",
+    "OK",
+    "XLF",
+    "XCF"
+   ]
+  },
+  {
+   "formula": "O2X2CP2W2KA3",
+   "products": [
+    "O2XCP2WKA",
+    "XA",
+    "WA"
+   ]
+  },
+  {
+   "formula": "O2X2CP3K5F",
+   "products": [
+    "OK",
+    "OK",
+    "X2CF",
+    "PK",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "formula": "O2X2CP4W2K2A2F",
+   "products": [
+    "O2X2P4W2K2A2",
+    "CF"
+   ]
+  },
+  {
+   "formula": "O2X2PW2K4A2F",
+   "products": [
+    "O2X2WK3AF",
+    "PK",
+    "WA"
+   ]
+  },
+  {
+   "formula": "O2X2PWK3A3",
+   "products": [
+    "OK",
+    "OK",
+    "XA",
+    "XA",
+    "PK",
+    "WA"
+   ]
+  },
+  {
+   "formula": "O2X2WLAF",
+   "products": [
+    "OAF",
+    "OWL",
+    "X2"
+   ]
+  },
+  {
+   "formula": "O2X3CW3KAF2",
+   "products": [
+    "O2X2W2KAF",
+    "XW",
+    "CF"
+   ]
+  },
+  {
+   "formula": "O2X3P2A3F2",
+   "products": [
+    "OP",
+    "OP",
+    "XA",
+    "XA",
+    "XA",
+    "F2"
+   ]
+  },
+  {
+   "formula": "O2X3W2A",
+   "products": [
+    "O2W2A",
+    "X3"
+   ]
+  },
+  {
+   "formula": "O2X4C2P2W3LK",
+   "products": [
+    "O2XP2LK",
+    "XW",
+    "XW",
+    "XW",
+    "C2"
+   ]
+  },
+  {
+   "formula": "O2X4C2P3W2L2K",
+   "products": [
+    "O2X2P3L2K",
+    "XW",
+    "XW",
+    "C2"
+   ]
+  },
+  {
+   "formula": "O2X5P3W4AF",
+   "products": [
+    "O2X3P3W3F",
+    "XA",
+    "XW"
+   ]
+  },
+  {
+   "formula": "O2XC3P2F",
+   "products": [
+    "OP",
+    "OP",
+    "XCF",
+    "C2"
+   ]
+  },
+  {
+   "formula": "O2XC3P3K4A",
+   "products": [
+    "OXCPKA",
+    "OK",
+    "C2",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "formula": "O3C2L3K2AF2",
+   "products": [
+    "O3K2AF",
+    "CF",
+    "CL",
+    "L2"
+   ]
+  },
+  {
+   "formula": "O3C2P3L2KAF",
+   "products": [
+    "O3CP3KA",
+    "CF",
+    "L2"
+   ]
+  },
+  {
+   "formula": "O3C2PWL5K3A",
+   "products": [
+    "OCPWKA",
+    "OK",
+    "OK",
+    "CL",
+    "L2",
+    "L2"
+   ]
+  },
+  {
+   "formula": "O3C3L5K3",
+   "products": [
+    "OK",
+    "OK",
+    "OK",
+    "CL",
+    "CL",
+    "CL",
+    "L2"
+   ]
+  },
+  {
+   "formula": "O3C3P2L2A",
+   "products": [
+    "O3P2LA",
+    "CL",
+    "C2"
+   ]
+  },
+  {
+   "formula": "O3CK3F",
+   "products": [
+    "OK",
+    "OK",
+    "OK",
+    "CF"
+   ]
+  },
+  {
+   "formula": "O3CPW2LKF",
+   "products": [
+    "O3CPW2K",
+    "LF"
+   ]
+  },
+  {
+   "formula": "O3CPWK2F5",
+   "products": [
+    "OK",
+    "OK",
+    "OP",
+    "CWF",
+    "F2",
+    "F2"
+   ]
+  },
+  {
+   "formula": "O3K3F2",
+   "products": [
+    "OK",
+    "OK",
+    "OK",
+    "F2"
+   ]
+  },
+  {
+   "formula": "O3P2L2K3F6",
+   "products": [
+    "OPKF",
+    "OPKF",
+    "OK",
+    "LF",
+    "LF",
+    "F2"
+   ]
+  },
+  {
+   "formula": "O3P4LA2F2",
+   "products": [
+    "O2P3LA2",
+    "OP",
+    "F2"
+   ]
+  },
+  {
+   "formula": "O3W2K4F3",
+   "products": [
+    "O2W2K3F",
+    "OK",
+    "F2"
+   ]
+  },
+  {
+   "formula": "O3W2L2K3A",
+   "products": [
+    "OK",
+    "OK",
+    "OK",
+    "W2L2A"
+   ]
+  },
+  {
+   "formula": "O3W2L3KF",
+   "products": [
+    "O3W2LKF",
+    "L2"
+   ]
+  },
+  {
+   "formula": "O3X2CWLK3F2",
+   "products": [
+    "OK",
+    "OK",
+    "OK",
+    "X2WF2",
+    "CL"
+   ]
+  },
+  {
+   "formula": "O3X2WKA2",
+   "products": [
+    "O3WKA2",
+    "X2"
+   ]
+  },
+  {
+   "formula": "O3X3CP3W5L",
+   "products": [
+    "OP",
+    "OP",
+    "OP",
+    "XCW2L",
+    "XW2",
+    "XW"
+   ]
+  },
+  {
+   "formula": "O3X3PWL2K2A2",
+   "products": [
+    "OK",
+    "OK",
+    "OP",
+    "XA",
+    "XA",
+    "XW",
+    "L2"
+   ]
+  },
+  {
+   "formula": "O3X4CPW4LKF",
+   "products": [
+    "O3X3CPW3LKF",
+    "XW"
+   ]
+  },
+  {
+   "formula": "O3X4WLK2A3",
+   "products": [
+    "O3X3LK2A3",
+    "XW"
+   ]
+  },
+  {
+   "formula": "O3XC2P3KAF",
+   "products": [
+    "O3XCP3KA",
+    "CF"
+   ]
+  },
+  {
+   "formula": "O3XC3P2LKA2",
+   "products": [
+    "OK",
+    "OP",
+    "OP",
+    "XC2A2",
+    "CL"
+   ]
+  },
+  {
+   "formula": "O3XC3PLK4A2",
+   "products": [
+    "OK",
+    "OK",
+    "OK",
+    "XC2A2",
+    "CL",
+    "PK"
+   ]
+  },
+  {
+   "formula": "O3XPW4LK2A3F",
+   "products": [
+    "OK",
+    "OK",
+    "OP",
+    "XW2LAF",
+    "WA",
+    "WA"
+   ]
+  },
+  {
+   "formula": "O3XW3LK4A2F2",
+   "products": [
+    "O2XW2K3AF",
+    "OK",
+    "WA",
+    "LF"
+   ]
+  },
+  {
+   "formula": "O3XWK3AF2",
+   "products": [
+    "OK",
+    "OK",
+    "OK",
+    "XWA",
+    "F2"
+   ]
+  },
+  {
+   "formula": "O4C2P3LAF2",
+   "products": [
+    "O3P2AF",
+    "OP",
+    "CF",
+    "CL"
+   ]
+  },
+  {
+   "formula": "O4C2PW2K4F",
+   "products": [
+    "OCPK",
+    "OK",
+    "OK",
+    "OK",
+    "CW2F"
+   ]
+  },
+  {
+   "formula": "O4CK3A2",
+   "products": [
+    "O3CK2A2",
+    "OK"
+   ]
+  },
+  {
+   "formula": "O4CP2WK4AF",
+   "products": [
+    "O2P2K2A",
+    "OK",
+    "OK",
+    "CWF"
+   ]
+  },
+  {
+   "formula": "O4CP3L2KAF",
+   "products": [
+    "OK",
+    "OP",
+    "OP",
+    "OP",
+    "CLA",
+    "LF"
+   ]
+  },
+  {
+   "formula": "O4CP4W2K2A2F",
+   "products": [
+    "O2CP2WKA",
+    "O2P2WKAF"
+   ]
+  },
+  {
+   "formula": "O4CPLK3A",
+   "products": [
+    "OK",
+    "OK",
+    "OK",
+    "OP",
+    "CLA"
+   ]
+  },
+  {
+   "formula": "O4CPWL2K4A2",
+   "products": [
+    "OCPKA",
+    "OK",
+    "OK",
+    "OK",
+    "WA",
+    "L2"
+   ]
+  },
+  {
+   "formula": "O4CWL2AF",
+   "products": [
+    "O2LAF",
+    "O2CWL"
+   ]
+  },
+  {
+   "formula": "O4P3W2K2A2F",
+   "products": [
+    "O3P3W2KA2F",
+    "OK"
+   ]
+  },
+  {
+   "formula": "O4P3WKF6",
+   "products": [
+    "OK",
+    "OP",
+    "OP",
+    "OP",
+    "WF2",
+    "F2",
+    "F2"
+   ]
+  },
+  {
+   "formula": "O4P4WF4",
+   "products": [
+    "OP",
+    "OP",
+    "OP",
+    "OP",
+    "WF2",
+    "F2"
+   ]
+  },
+  {
+   "formula": "O4X2P3WL4AF",
+   "products": [
+    "O3XP2WLA",
+    "OP",
+    "XLF",
+    "L2"
+   ]
+  },
+  {
+   "formula": "O4X2PL2K2F3",
+   "products": [
+    "O3K2F3",
+    "OP",
+    "X2L2"
+   ]
+  },
+  {
+   "formula": "O4X2PLK5F",
+   "products": [
+    "OK",
+    "OK",
+    "OK",
+    "OK",
+    "X2LF",
+    "PK"
+   ]
+  },
+  {
+   "formula": "O4XC2P5WKA2",
+   "products": [
+    "O4XP5WKA2",
+    "C2"
+   ]
+  },
+  {
+   "formula": "O4XP2W3K4F2",
+   "products": [
+    "O2XP2K2",
+    "OK",
+    "OK",
+    "W3F2"
+   ]
+  },
+  {
+   "formula": "O4XW2K3AF",
+   "products": [
+    "O3XW2K2AF",
+    "OK"
+   ]
+  },
+  {
+   "formula": "O5C2K4A3F",
+   "products": [
+    "O3C2K2A3F",
+    "OK",
+    "OK"
+   ]
+  },
+  {
+   "formula": "O5CP4W2KF",
+   "products": [
+    "OK",
+    "OP",
+    "OP",
+    "OP",
+    "OP",
+    "CW2F"
+   ]
+  },
+  {
+   "formula": "O5CP6W4",
+   "products": [
+    "O2CP3W2",
+    "OP",
+    "OP",
+    "OP",
+    "W2"
+   ]
+  },
+  {
+   "formula": "O5XP3W2K2F2",
+   "products": [
+    "OK",
+    "OK",
+    "OP",
+    "OP",
+    "OP",
+    "XW2F2"
+   ]
+  },
+  {
+   "formula": "OC2P2A2F",
+   "products": [
+    "OCP2A2",
+    "CF"
+   ]
+  },
+  {
+   "formula": "OC2PA",
+   "products": [
+    "OP",
+    "C2A"
+   ]
+  },
+  {
+   "formula": "OC3P3W2L2K3",
+   "products": [
+    "OCPK",
+    "CWL",
+    "CWL",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "formula": "OC3P4L2K4F2",
+   "products": [
+    "OCPK",
+    "CF",
+    "CF",
+    "PK",
+    "PK",
+    "PK",
+    "L2"
+   ]
+  },
+  {
+   "formula": "OCKF",
+   "products": [
+    "OK",
+    "CF"
+   ]
+  },
+  {
+   "formula": "OCP3LK4A2",
+   "products": [
+    "OK",
+    "CLA2",
+    "PK",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "formula": "OCP3WL2K4A2F",
+   "products": [
+    "OK",
+    "CWLA2",
+    "PK",
+    "PK",
+    "PK",
+    "LF"
+   ]
+  },
+  {
+   "formula": "OCP4WL4K3F",
+   "products": [
+    "OCP2KF",
+    "PK",
+    "PK",
+    "WL2",
+    "L2"
+   ]
+  },
+  {
+   "formula": "OCPW3LK4A2",
+   "products": [
+    "OPW3K4",
+    "CLA2"
+   ]
+  },
+  {
+   "formula": "OCW5K2A5",
+   "products": [
+    "OCW3K2A3",
+    "WA",
+    "WA"
+   ]
+  },
+  {
+   "formula": "OP2L2AF",
+   "products": [
+    "OP2AF",
+    "L2"
+   ]
+  },
+  {
+   "formula": "OWL3A3",
+   "products": [
+    "OWLA3",
+    "L2"
+   ]
+  },
+  {
+   "formula": "OWL3K2",
+   "products": [
+    "OWLK2",
+    "L2"
+   ]
+  },
+  {
+   "formula": "OX2C2P3L2K4",
+   "products": [
+    "OK",
+    "XCL",
+    "XCL",
+    "PK",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "formula": "OX2CP2WK3F",
+   "products": [
+    "OK",
+    "X2CWF",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "formula": "OX2P2WLKA3F",
+   "products": [
+    "OX2P2LKA2F",
+    "WA"
+   ]
+  },
+  {
+   "formula": "OX2P3LK2F3",
+   "products": [
+    "OX2P2KF2",
+    "PK",
+    "LF"
+   ]
+  },
+  {
+   "formula": "OX2PLKA",
+   "products": [
+    "OXPLK",
+    "XA"
+   ]
+  },
+  {
+   "formula": "OX2W2KA2",
+   "products": [
+    "OK",
+    "XWA",
+    "XWA"
+   ]
+  },
+  {
+   "formula": "OX3CPW3K2AF",
+   "products": [
+    "OK",
+    "X2CW2AF",
+    "XW",
+    "PK"
+   ]
+  },
+  {
+   "formula": "OX3CW",
+   "products": [
+    "OCW",
+    "X3"
+   ]
+  },
+  {
+   "formula": "OX3P2W3K3",
+   "products": [
+    "OK",
+    "XW",
+    "XW",
+    "XW",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "formula": "OX3W2KA4",
+   "products": [
+    "OK",
+    "XWA",
+    "XA",
+    "XA",
+    "WA"
+   ]
+  },
+  {
+   "formula": "OX3W3LKF",
+   "products": [
+    "OK",
+    "XW",
+    "XW",
+    "XW",
+    "LF"
+   ]
+  },
+  {
+   "formula": "OX3WKA4",
+   "products": [
+    "OK",
+    "XA",
+    "XA",
+    "XA",
+    "WA"
+   ]
+  },
+  {
+   "formula": "OX4P2W2KF2",
+   "products": [
+    "OX2P2KF2",
+    "XW",
+    "XW"
+   ]
+  },
+  {
+   "formula": "OX4P2W3A5F",
+   "products": [
+    "OX3P2WA2F",
+    "XA",
+    "WA",
+    "WA"
+   ]
+  },
+  {
+   "formula": "OXC4P3LK3A2",
+   "products": [
+    "OXCPKA",
+    "C2A",
+    "CL",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "formula": "OXP2W4KA3F2",
+   "products": [
+    "OXP2W2KAF2",
+    "WA",
+    "WA"
+   ]
+  },
+  {
+   "formula": "OXP3W2K2A3",
+   "products": [
+    "OXP2KA",
+    "PK",
+    "WA",
+    "WA"
+   ]
+  },
+  {
+   "formula": "PW3LA4",
+   "products": [
+    "PW2LA3",
+    "WA"
+   ]
+  },
+  {
+   "formula": "W2L2A2",
+   "products": [
+    "WA",
+    "WA",
+    "L2"
+   ]
+  },
+  {
+   "formula": "W3A2F2",
+   "products": [
+    "W2AF2",
+    "WA"
+   ]
+  },
+  {
+   "formula": "WKA3F3",
+   "products": [
+    "WKF",
+    "A3F2"
+   ]
+  },
+  {
+   "formula": "X2C2P2K2A",
+   "products": [
+    "X2C2A",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "formula": "X2C2PK5",
+   "products": [
+    "X2K2",
+    "C2PK3"
+   ]
+  },
+  {
+   "formula": "X2C3W5K3A3",
+   "products": [
+    "X2CW5K3A3",
+    "C2"
+   ]
+  },
+  {
+   "formula": "X2P2W3K2A",
+   "products": [
+    "XWA",
+    "XW2",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "formula": "X2PL2K3F2",
+   "products": [
+    "X2PL2K3",
+    "F2"
+   ]
+  },
+  {
+   "formula": "X2PW2K",
+   "products": [
+    "XW",
+    "XW",
+    "PK"
+   ]
+  },
+  {
+   "formula": "X2W2L2",
+   "products": [
+    "XW",
+    "XW",
+    "L2"
+   ]
+  },
+  {
+   "formula": "X3C2K2A",
+   "products": [
+    "X3K2",
+    "C2A"
+   ]
+  },
+  {
+   "formula": "X3CW3LK2",
+   "products": [
+    "X3W3K2",
+    "CL"
+   ]
+  },
+  {
+   "formula": "X3L2A2",
+   "products": [
+    "X2L2A",
+    "XA"
+   ]
+  },
+  {
+   "formula": "X3P2K2A2F2",
+   "products": [
+    "X2AF2",
+    "XA",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "formula": "X3PW2KA",
+   "products": [
+    "XA",
+    "XW",
+    "XW",
+    "PK"
+   ]
+  },
+  {
+   "formula": "X4CW3K2F",
+   "products": [
+    "X4W3K2",
+    "CF"
+   ]
+  },
+  {
+   "formula": "X4PW2L2KA4",
+   "products": [
+    "XWA",
+    "XWA",
+    "XA",
+    "XA",
+    "PK",
+    "L2"
+   ]
+  },
+  {
+   "formula": "X7PL4KA3",
+   "products": [
+    "X2L2A",
+    "X3L2A",
+    "X2A",
+    "PK"
+   ]
+  },
+  {
+   "formula": "XC2KAF",
+   "products": [
+    "XCK",
+    "CAF"
+   ]
+  },
+  {
+   "formula": "XC4P3LK2",
+   "products": [
+    "XCP3K2",
+    "CL",
+    "C2"
+   ]
+  },
+  {
+   "formula": "XCAF",
+   "products": [
+    "XA",
+    "CF"
+   ]
+  },
+  {
+   "formula": "XCP2L2K2F",
+   "products": [
+    "XLF",
+    "CL",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "formula": "XCP2W2AF",
+   "products": [
+    "XCP",
+    "PAF",
+    "W2"
+   ]
+  },
+  {
+   "formula": "XCP4LAF2",
+   "products": [
+    "XCP2F",
+    "P2LAF"
+   ]
+  },
+  {
+   "formula": "XCP4WK3AF2",
+   "products": [
+    "XCP3WK2A",
+    "PK",
+    "F2"
+   ]
+  },
+  {
+   "formula": "XP3LK3F",
+   "products": [
+    "XLF",
+    "PK",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "formula": "XP5WL2K5F2",
+   "products": [
+    "XW",
+    "PK",
+    "PK",
+    "PK",
+    "PK",
+    "PK",
+    "LF",
+    "LF"
+   ]
+  },
+  {
+   "formula": "XW2L2A2",
+   "products": [
+    "XWA",
+    "WA",
+    "L2"
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "A": "XPL",
+   "B": "P2K3F3",
+   "new": "XP3LK3F"
+  },
+  {
+   "A": "XK2F2",
+   "B": "CP4WKA",
+   "new": "XCP4WK3AF2"
+  },
+  {
+   "A": "X2P2W2",
+   "B": "X3W2K2A",
+   "new": "X2PW2K"
+  },
+  {
+   "A": "LK2F3",
+   "B": "O4X2PL",
+   "new": "O4X2PL2K2F3"
+  },
+  {
+   "A": "KA3F",
+   "B": "W3AF2",
+   "new": "W3A2F2"
+  },
+  {
+   "A": "O3PLF3",
+   "B": "PLK3F3",
+   "new": "O3P2L2K3F6"
+  },
+  {
+   "A": "OP2KA3",
+   "B": "OX2CW2",
+   "new": "O2X2CP2W2KA3"
+  },
+  {
+   "A": "XC3P3",
+   "B": "XLK3A",
+   "new": "CPLK"
+  },
+  {
+   "A": "XP4WK2",
+   "B": "PL2K3F2",
+   "new": "XP5WL2K5F2"
+  },
+  {
+   "A": "O2CPA",
+   "B": "O2LK3F2",
+   "new": "O4CPLK3A"
+  },
+  {
+   "new": "C2P3L2K3AF2",
+   "products": [
+    "C2A",
+    "PK",
+    "PK",
+    "PK",
+    "LF",
+    "LF"
+   ]
+  },
+  {
+   "new": "C3P2WK3F2",
+   "products": [
+    "CP2WK3",
+    "CF",
+    "CF"
+   ]
+  },
+  {
+   "new": "C4P5L2K5",
+   "products": [
+    "CL",
+    "CL",
+    "C2",
+    "PK",
+    "PK",
+    "PK",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "new": "CP2LK4",
+   "products": [
+    "CPK2",
+    "PLK2"
+   ]
+  },
+  {
+   "new": "CP2W2A2F",
+   "products": [
+    "CPA",
+    "PAF",
+    "W2"
+   ]
+  },
+  {
+   "new": "CP3K3F",
+   "products": [
+    "CF",
+    "PK",
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "new": "CP3L2K2F2",
+   "products": [
+    "CP3K2F2",
+    "L2"
+   ]
+  },
+  {
+   "new": "CP4WK5A3",
+   "products": [
+    "CP2WK3",
+    "PK",
+    "PK",
+    "A3"
+   ]
+  },
+  {
+   "new": "CP5LKA2",
+   "products": [
+    "CP3LK",
+    "P2A2"
+   ]
+  },
+  {
+   "new": "CPKF",
+   "products": [
+    "CF",
+    "PK"
+   ]
+  }
+ ]
+}

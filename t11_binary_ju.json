@@ -1,0 +1,4522 @@
+[
+{
+"A": "C2",
+"B": "C2",
+"ok": true,
+"reason": "",
+"products": [
+"C2",
+"C2"
+]
+},
+{
+"A": "C2",
+"B": "O2",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2"
+]
+},
+{
+"A": "C2",
+"B": "O2C2",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4"
+]
+},
+{
+"A": "C2",
+"B": "O2C4",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"OC3"
+]
+},
+{
+"A": "C2",
+"B": "O2X",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2"
+]
+},
+{
+"A": "C2",
+"B": "O2X2",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC"
+]
+},
+{
+"A": "C2",
+"B": "O2X2C4",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"OC3",
+"X2"
+]
+},
+{
+"A": "C2",
+"B": "O2X3",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC"
+]
+},
+{
+"A": "C2",
+"B": "O2X3C4",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"OC3",
+"X3"
+]
+},
+{
+"A": "C2",
+"B": "O2X4",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C"
+]
+},
+{
+"A": "C2",
+"B": "O2X5",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX3C"
+]
+},
+{
+"A": "C2",
+"B": "O2X6",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"X2"
+]
+},
+{
+"A": "C2",
+"B": "O2X7",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX3C",
+"X2"
+]
+},
+{
+"A": "C2",
+"B": "O2XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4"
+]
+},
+{
+"A": "C2",
+"B": "O2XC4",
+"ok": false,
+"reason": "剩键",
+"products": null
+},
+{
+"A": "C2",
+"B": "O3C3",
+"ok": true,
+"reason": "",
+"products": [
+"O3C5"
+]
+},
+{
+"A": "C2",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"OC3"
+]
+},
+{
+"A": "C2",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"OXC"
+]
+},
+{
+"A": "C2",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O3XC3"
+]
+},
+{
+"A": "C2",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"OXC"
+]
+},
+{
+"A": "C2",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"C2",
+"OC3"
+]
+},
+{
+"A": "C2",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"X2"
+]
+},
+{
+"A": "C2",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"X3"
+]
+},
+{
+"A": "C2",
+"B": "OXC",
+"ok": false,
+"reason": "剩键",
+"products": null
+},
+{
+"A": "C2",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"X2C2"
+]
+},
+{
+"A": "C2",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"XC2",
+"XC2"
+]
+},
+{
+"A": "C2",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"X3C2"
+]
+},
+{
+"A": "C2",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"X2C2",
+"XC2"
+]
+},
+{
+"A": "C2",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"C2",
+"XC2"
+]
+},
+{
+"A": "O2",
+"B": "O2",
+"ok": true,
+"reason": "",
+"products": [
+"O2",
+"O2"
+]
+},
+{
+"A": "O2",
+"B": "O2C2",
+"ok": true,
+"reason": "",
+"products": [
+"O2",
+"O2C2"
+]
+},
+{
+"A": "O2",
+"B": "O2C4",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2C2"
+]
+},
+{
+"A": "O2",
+"B": "O2X",
+"ok": true,
+"reason": "",
+"products": [
+"O2",
+"O2X"
+]
+},
+{
+"A": "O2",
+"B": "O2X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X",
+"O2X"
+]
+},
+{
+"A": "O2",
+"B": "O2X2C4",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"O2XC2"
+]
+},
+{
+"A": "O2",
+"B": "O2X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X",
+"O2X2"
+]
+},
+{
+"A": "O2",
+"B": "O2X3C4",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2",
+"B": "O2X4",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O2X2"
+]
+},
+{
+"A": "O2",
+"B": "O2X5",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O2X3"
+]
+},
+{
+"A": "O2",
+"B": "O2X6",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"O2X3"
+]
+},
+{
+"A": "O2",
+"B": "O2X7",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"O2X4"
+]
+},
+{
+"A": "O2",
+"B": "O2XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2X"
+]
+},
+{
+"A": "O2",
+"B": "O2XC4",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2XC2"
+]
+},
+{
+"A": "O2",
+"B": "O3C3",
+"ok": true,
+"reason": "",
+"products": [
+"O2",
+"O3C3"
+]
+},
+{
+"A": "O2",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O3C3"
+]
+},
+{
+"A": "O2",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X",
+"O3XC"
+]
+},
+{
+"A": "O2",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2",
+"O3XC"
+]
+},
+{
+"A": "O2",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X",
+"O3C3"
+]
+},
+{
+"A": "O2",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"O3C3"
+]
+},
+{
+"A": "O2",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O3X2C"
+]
+},
+{
+"A": "O2",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"OXC"
+]
+},
+{
+"A": "O2",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O3XC"
+]
+},
+{
+"A": "O2",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2"
+]
+},
+{
+"A": "O2",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3"
+]
+},
+{
+"A": "O2",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC"
+]
+},
+{
+"A": "O2",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2"
+]
+},
+{
+"A": "O2C2",
+"B": "O2C2",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2C2"
+]
+},
+{
+"A": "O2C2",
+"B": "O2C4",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2C4"
+]
+},
+{
+"A": "O2C2",
+"B": "O2X",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2X"
+]
+},
+{
+"A": "O2C2",
+"B": "O2X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2X2"
+]
+},
+{
+"A": "O2C2",
+"B": "O2X2C4",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2C2",
+"B": "O2X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O2XC2"
+]
+},
+{
+"A": "O2C2",
+"B": "O2X3C4",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2C2",
+"B": "O2X4",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2C2",
+"B": "O2X5",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2C2",
+"B": "O2X6",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2C2",
+"B": "O2X7",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"OX2C",
+"OXC"
+]
+},
+{
+"A": "O2C2",
+"B": "O2XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2XC2"
+]
+},
+{
+"A": "O2C2",
+"B": "O2XC4",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O2XC2"
+]
+},
+{
+"A": "O2C2",
+"B": "O3C3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O3C3"
+]
+},
+{
+"A": "O2C2",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O3C3"
+]
+},
+{
+"A": "O2C2",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O3C3"
+]
+},
+{
+"A": "O2C2",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X",
+"O3C3"
+]
+},
+{
+"A": "O2C2",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O3XC3"
+]
+},
+{
+"A": "O2C2",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"O3C5"
+]
+},
+{
+"A": "O2C2",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"OXC"
+]
+},
+{
+"A": "O2C2",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2C2",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O3XC3"
+]
+},
+{
+"A": "O2C2",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2C2",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4"
+]
+},
+{
+"A": "O2C2",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC"
+]
+},
+{
+"A": "O2C2",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3C4"
+]
+},
+{
+"A": "O2C2",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4"
+]
+},
+{
+"A": "O2C4",
+"B": "O2C4",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O2C4"
+]
+},
+{
+"A": "O2C4",
+"B": "O2X",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2XC2"
+]
+},
+{
+"A": "O2C4",
+"B": "O2X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"O2XC2"
+]
+},
+{
+"A": "O2C4",
+"B": "O2X2C4",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4",
+"O2XC4"
+]
+},
+{
+"A": "O2C4",
+"B": "O2X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2C4",
+"B": "O2X3C4",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"O2XC4"
+]
+},
+{
+"A": "O2C4",
+"B": "O2X4",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2C4",
+"B": "O2X5",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2C4",
+"B": "O2X6",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2C4",
+"B": "O2X7",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OX2C",
+"OXC"
+]
+},
+{
+"A": "O2C4",
+"B": "O2XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O2XC2"
+]
+},
+{
+"A": "O2C4",
+"B": "O2XC4",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O2XC4"
+]
+},
+{
+"A": "O2C4",
+"B": "O3C3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O3C3"
+]
+},
+{
+"A": "O2C4",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O3C5"
+]
+},
+{
+"A": "O2C4",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"O3XC3"
+]
+},
+{
+"A": "O2C4",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O3XC3"
+]
+},
+{
+"A": "O2C4",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O3XC3"
+]
+},
+{
+"A": "O2C4",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"OC3"
+]
+},
+{
+"A": "O2C4",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4",
+"OXC"
+]
+},
+{
+"A": "O2C4",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"OXC"
+]
+},
+{
+"A": "O2C4",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"OXC"
+]
+},
+{
+"A": "O2C4",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4"
+]
+},
+{
+"A": "O2C4",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"OC3",
+"X2"
+]
+},
+{
+"A": "O2C4",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3C4"
+]
+},
+{
+"A": "O2C4",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"OC3",
+"X3"
+]
+},
+{
+"A": "O2C4",
+"B": "XC2",
+"ok": false,
+"reason": "剩键",
+"products": null
+},
+{
+"A": "O2X",
+"B": "O2X",
+"ok": true,
+"reason": "",
+"products": [
+"O2X",
+"O2X"
+]
+},
+{
+"A": "O2X",
+"B": "O2X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X",
+"O2X2"
+]
+},
+{
+"A": "O2X",
+"B": "O2X2C4",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X",
+"B": "O2X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O2X2"
+]
+},
+{
+"A": "O2X",
+"B": "O2X3C4",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X",
+"B": "O2X4",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O2X3"
+]
+},
+{
+"A": "O2X",
+"B": "O2X5",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"O2X3"
+]
+},
+{
+"A": "O2X",
+"B": "O2X6",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"O2X4"
+]
+},
+{
+"A": "O2X",
+"B": "O2X7",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"O2X4"
+]
+},
+{
+"A": "O2X",
+"B": "O2XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2X2"
+]
+},
+{
+"A": "O2X",
+"B": "O2XC4",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"O2XC2"
+]
+},
+{
+"A": "O2X",
+"B": "O3C3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X",
+"O3C3"
+]
+},
+{
+"A": "O2X",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O3XC3"
+]
+},
+{
+"A": "O2X",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O3XC"
+]
+},
+{
+"A": "O2X",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X",
+"O3XC"
+]
+},
+{
+"A": "O2X",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O3C3"
+]
+},
+{
+"A": "O2X",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"O3XC3"
+]
+},
+{
+"A": "O2X",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"OXC"
+]
+},
+{
+"A": "O2X",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"OXC"
+]
+},
+{
+"A": "O2X",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O3X2C"
+]
+},
+{
+"A": "O2X",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3"
+]
+},
+{
+"A": "O2X",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC"
+]
+},
+{
+"A": "O2X",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4"
+]
+},
+{
+"A": "O2X",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C"
+]
+},
+{
+"A": "O2X",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X2",
+"B": "O2X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O2X2"
+]
+},
+{
+"A": "O2X2",
+"B": "O2X2C4",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X2",
+"B": "O2X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O2X3"
+]
+},
+{
+"A": "O2X2",
+"B": "O2X3C4",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X2",
+"B": "O2X4",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"O2X3"
+]
+},
+{
+"A": "O2X2",
+"B": "O2X5",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"O2X4"
+]
+},
+{
+"A": "O2X2",
+"B": "O2X6",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"O2X4"
+]
+},
+{
+"A": "O2X2",
+"B": "O2X7",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"O2X5"
+]
+},
+{
+"A": "O2X2",
+"B": "O2XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O2XC2"
+]
+},
+{
+"A": "O2X2",
+"B": "O2XC4",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X2",
+"B": "O3C3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O3C3"
+]
+},
+{
+"A": "O2X2",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"O3XC3"
+]
+},
+{
+"A": "O2X2",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O3X2C"
+]
+},
+{
+"A": "O2X2",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O3XC"
+]
+},
+{
+"A": "O2X2",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O3XC3"
+]
+},
+{
+"A": "O2X2",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"OXC"
+]
+},
+{
+"A": "O2X2",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"OXC"
+]
+},
+{
+"A": "O2X2",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"OXC"
+]
+},
+{
+"A": "O2X2",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"OXC"
+]
+},
+{
+"A": "O2X2",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4"
+]
+},
+{
+"A": "O2X2",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C"
+]
+},
+{
+"A": "O2X2",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X5"
+]
+},
+{
+"A": "O2X2",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX3C"
+]
+},
+{
+"A": "O2X2",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC"
+]
+},
+{
+"A": "O2X2C4",
+"B": "O2X2C4",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"O2X2C4"
+]
+},
+{
+"A": "O2X2C4",
+"B": "O2X3",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X2C4",
+"B": "O2X3C4",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"O2X3C4"
+]
+},
+{
+"A": "O2X2C4",
+"B": "O2X4",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X2C4",
+"B": "O2X5",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OX2C",
+"OXC"
+]
+},
+{
+"A": "O2X2C4",
+"B": "O2X6",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OX2C",
+"OX2C"
+]
+},
+{
+"A": "O2X2C4",
+"B": "O2X7",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OX2C",
+"OX3C"
+]
+},
+{
+"A": "O2X2C4",
+"B": "O2XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X2C4",
+"B": "O2XC4",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"O2XC4"
+]
+},
+{
+"A": "O2X2C4",
+"B": "O3C3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O2XC2",
+"OXC"
+]
+},
+{
+"A": "O2X2C4",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O2XC4",
+"OXC"
+]
+},
+{
+"A": "O2X2C4",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X2C4",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"O2XC2",
+"OXC"
+]
+},
+{
+"A": "O2X2C4",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X2C4",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"OC3"
+]
+},
+{
+"A": "O2X2C4",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"OX2C"
+]
+},
+{
+"A": "O2X2C4",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"OX3C"
+]
+},
+{
+"A": "O2X2C4",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"OXC"
+]
+},
+{
+"A": "O2X2C4",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"X2"
+]
+},
+{
+"A": "O2X2C4",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"OC3",
+"X2",
+"X2"
+]
+},
+{
+"A": "O2X2C4",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3C4",
+"X2"
+]
+},
+{
+"A": "O2X2C4",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"OC3",
+"X2",
+"X3"
+]
+},
+{
+"A": "O2X2C4",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"OC3",
+"X3"
+]
+},
+{
+"A": "O2X3",
+"B": "O2X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"O2X3"
+]
+},
+{
+"A": "O2X3",
+"B": "O2X3C4",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X3",
+"B": "O2X4",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"O2X4"
+]
+},
+{
+"A": "O2X3",
+"B": "O2X5",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"O2X4"
+]
+},
+{
+"A": "O2X3",
+"B": "O2X6",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"O2X5"
+]
+},
+{
+"A": "O2X3",
+"B": "O2X7",
+"ok": true,
+"reason": "",
+"products": [
+"O2X5",
+"O2X5"
+]
+},
+{
+"A": "O2X3",
+"B": "O2XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X3",
+"B": "O2XC4",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X3",
+"B": "O3C3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O3XC3"
+]
+},
+{
+"A": "O2X3",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"O2XC2",
+"OXC"
+]
+},
+{
+"A": "O2X3",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O2X2",
+"OXC"
+]
+},
+{
+"A": "O2X3",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O3X2C"
+]
+},
+{
+"A": "O2X3",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O2XC2",
+"OXC"
+]
+},
+{
+"A": "O2X3",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X3",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"OXC"
+]
+},
+{
+"A": "O2X3",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"OX2C"
+]
+},
+{
+"A": "O2X3",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"OXC"
+]
+},
+{
+"A": "O2X3",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X5"
+]
+},
+{
+"A": "O2X3",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX3C"
+]
+},
+{
+"A": "O2X3",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X6"
+]
+},
+{
+"A": "O2X3",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"X2"
+]
+},
+{
+"A": "O2X3",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C"
+]
+},
+{
+"A": "O2X3C4",
+"B": "O2X3C4",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"O2X2C4",
+"X2"
+]
+},
+{
+"A": "O2X3C4",
+"B": "O2X4",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OX2C",
+"OXC"
+]
+},
+{
+"A": "O2X3C4",
+"B": "O2X5",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OX2C",
+"OX2C"
+]
+},
+{
+"A": "O2X3C4",
+"B": "O2X6",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OX2C",
+"OX3C"
+]
+},
+{
+"A": "O2X3C4",
+"B": "O2X7",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OX2C",
+"OX2C",
+"X2"
+]
+},
+{
+"A": "O2X3C4",
+"B": "O2XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X3C4",
+"B": "O2XC4",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"O2X2C4"
+]
+},
+{
+"A": "O2X3C4",
+"B": "O3C3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X3C4",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4",
+"O2XC4",
+"OXC"
+]
+},
+{
+"A": "O2X3C4",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X3C4",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X3C4",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X3C4",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3C4",
+"OC3"
+]
+},
+{
+"A": "O2X3C4",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"OX3C"
+]
+},
+{
+"A": "O2X3C4",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"OX2C",
+"X2"
+]
+},
+{
+"A": "O2X3C4",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"OX2C"
+]
+},
+{
+"A": "O2X3C4",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3C4",
+"X2"
+]
+},
+{
+"A": "O2X3C4",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"OC3",
+"X2",
+"X3"
+]
+},
+{
+"A": "O2X3C4",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"X2",
+"X2"
+]
+},
+{
+"A": "O2X3C4",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"OC3",
+"X2",
+"X2",
+"X2"
+]
+},
+{
+"A": "O2X3C4",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"OC3",
+"X2",
+"X2"
+]
+},
+{
+"A": "O2X4",
+"B": "O2X4",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"O2X4"
+]
+},
+{
+"A": "O2X4",
+"B": "O2X5",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"O2X5"
+]
+},
+{
+"A": "O2X4",
+"B": "O2X6",
+"ok": true,
+"reason": "",
+"products": [
+"O2X5",
+"O2X5"
+]
+},
+{
+"A": "O2X4",
+"B": "O2X7",
+"ok": true,
+"reason": "",
+"products": [
+"O2X5",
+"O2X6"
+]
+},
+{
+"A": "O2X4",
+"B": "O2XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X4",
+"B": "O2XC4",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X4",
+"B": "O3C3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O2XC2",
+"OXC"
+]
+},
+{
+"A": "O2X4",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X4",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O2X3",
+"OXC"
+]
+},
+{
+"A": "O2X4",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O2X2",
+"OXC"
+]
+},
+{
+"A": "O2X4",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X4",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X4",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"OX2C"
+]
+},
+{
+"A": "O2X4",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X5",
+"OX2C"
+]
+},
+{
+"A": "O2X4",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"OXC"
+]
+},
+{
+"A": "O2X4",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X6"
+]
+},
+{
+"A": "O2X4",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"X2"
+]
+},
+{
+"A": "O2X4",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X7"
+]
+},
+{
+"A": "O2X4",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX3C",
+"X2"
+]
+},
+{
+"A": "O2X4",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX3C"
+]
+},
+{
+"A": "O2X5",
+"B": "O2X5",
+"ok": true,
+"reason": "",
+"products": [
+"O2X5",
+"O2X5"
+]
+},
+{
+"A": "O2X5",
+"B": "O2X6",
+"ok": true,
+"reason": "",
+"products": [
+"O2X5",
+"O2X6"
+]
+},
+{
+"A": "O2X5",
+"B": "O2X7",
+"ok": true,
+"reason": "",
+"products": [
+"O2X6",
+"O2X6"
+]
+},
+{
+"A": "O2X5",
+"B": "O2XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X5",
+"B": "O2XC4",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X5",
+"B": "O3C3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X5",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X5",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"O2X3",
+"OXC"
+]
+},
+{
+"A": "O2X5",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O2X3",
+"OXC"
+]
+},
+{
+"A": "O2X5",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X5",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OXC"
+]
+},
+{
+"A": "O2X5",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X5",
+"OX2C"
+]
+},
+{
+"A": "O2X5",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X6",
+"OX2C"
+]
+},
+{
+"A": "O2X5",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"OX2C"
+]
+},
+{
+"A": "O2X5",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X7"
+]
+},
+{
+"A": "O2X5",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX3C",
+"X2"
+]
+},
+{
+"A": "O2X5",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X6",
+"X2"
+]
+},
+{
+"A": "O2X5",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"X2",
+"X2"
+]
+},
+{
+"A": "O2X5",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"X2"
+]
+},
+{
+"A": "O2X6",
+"B": "O2X6",
+"ok": true,
+"reason": "",
+"products": [
+"O2X6",
+"O2X6"
+]
+},
+{
+"A": "O2X6",
+"B": "O2X7",
+"ok": true,
+"reason": "",
+"products": [
+"O2X6",
+"O2X7"
+]
+},
+{
+"A": "O2X6",
+"B": "O2XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"OX2C",
+"OXC"
+]
+},
+{
+"A": "O2X6",
+"B": "O2XC4",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OX2C",
+"OXC"
+]
+},
+{
+"A": "O2X6",
+"B": "O3C3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X6",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X6",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"O2X4",
+"OXC"
+]
+},
+{
+"A": "O2X6",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"O2X3",
+"OXC"
+]
+},
+{
+"A": "O2X6",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X6",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OX2C"
+]
+},
+{
+"A": "O2X6",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X6",
+"OX2C"
+]
+},
+{
+"A": "O2X6",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X6",
+"OX3C"
+]
+},
+{
+"A": "O2X6",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X5",
+"OX2C"
+]
+},
+{
+"A": "O2X6",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X6",
+"X2"
+]
+},
+{
+"A": "O2X6",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"X2",
+"X2"
+]
+},
+{
+"A": "O2X6",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X7",
+"X2"
+]
+},
+{
+"A": "O2X6",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX3C",
+"X2",
+"X2"
+]
+},
+{
+"A": "O2X6",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX3C",
+"X2"
+]
+},
+{
+"A": "O2X7",
+"B": "O2X7",
+"ok": true,
+"reason": "",
+"products": [
+"O2X6",
+"O2X6",
+"X2"
+]
+},
+{
+"A": "O2X7",
+"B": "O2XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"OX2C",
+"OX2C"
+]
+},
+{
+"A": "O2X7",
+"B": "O2XC4",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OX2C",
+"OX2C"
+]
+},
+{
+"A": "O2X7",
+"B": "O3C3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X7",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X7",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"O2X4",
+"OXC"
+]
+},
+{
+"A": "O2X7",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"O2X4",
+"OXC"
+]
+},
+{
+"A": "O2X7",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"OX2C",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2X7",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OX3C"
+]
+},
+{
+"A": "O2X7",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X6",
+"OX3C"
+]
+},
+{
+"A": "O2X7",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X6",
+"OX2C",
+"X2"
+]
+},
+{
+"A": "O2X7",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X6",
+"OX2C"
+]
+},
+{
+"A": "O2X7",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X7",
+"X2"
+]
+},
+{
+"A": "O2X7",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX3C",
+"X2",
+"X2"
+]
+},
+{
+"A": "O2X7",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X6",
+"X2",
+"X2"
+]
+},
+{
+"A": "O2X7",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"X2",
+"X2",
+"X2"
+]
+},
+{
+"A": "O2X7",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"X2",
+"X2"
+]
+},
+{
+"A": "O2XC2",
+"B": "O2XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"O2XC2"
+]
+},
+{
+"A": "O2XC2",
+"B": "O2XC4",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2XC2",
+"B": "O3C3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O3XC3"
+]
+},
+{
+"A": "O2XC2",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O3XC3"
+]
+},
+{
+"A": "O2XC2",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O3XC3"
+]
+},
+{
+"A": "O2XC2",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O3C3"
+]
+},
+{
+"A": "O2XC2",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"O3XC3"
+]
+},
+{
+"A": "O2XC2",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"OXC"
+]
+},
+{
+"A": "O2XC2",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2XC2",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O2XC2",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"OXC"
+]
+},
+{
+"A": "O2XC2",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC"
+]
+},
+{
+"A": "O2XC2",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3C4"
+]
+},
+{
+"A": "O2XC2",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C"
+]
+},
+{
+"A": "O2XC2",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"X2"
+]
+},
+{
+"A": "O2XC2",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4"
+]
+},
+{
+"A": "O2XC4",
+"B": "O2XC4",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4",
+"O2XC4"
+]
+},
+{
+"A": "O2XC4",
+"B": "O3C3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O3XC3"
+]
+},
+{
+"A": "O2XC4",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O2C4",
+"OXC"
+]
+},
+{
+"A": "O2XC4",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"O2XC2",
+"OXC"
+]
+},
+{
+"A": "O2XC4",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"O3XC3"
+]
+},
+{
+"A": "O2XC4",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O2XC2",
+"OXC"
+]
+},
+{
+"A": "O2XC4",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4",
+"OC3"
+]
+},
+{
+"A": "O2XC4",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"OXC"
+]
+},
+{
+"A": "O2XC4",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"OX2C"
+]
+},
+{
+"A": "O2XC4",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4",
+"OXC"
+]
+},
+{
+"A": "O2XC4",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3C4"
+]
+},
+{
+"A": "O2XC4",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"OC3",
+"X3"
+]
+},
+{
+"A": "O2XC4",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"X2"
+]
+},
+{
+"A": "O2XC4",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"OC3",
+"X2",
+"X2"
+]
+},
+{
+"A": "O2XC4",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"OC3",
+"X2"
+]
+},
+{
+"A": "O3C3",
+"B": "O3C3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2C2",
+"O2C2"
+]
+},
+{
+"A": "O3C3",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2C2",
+"O2C4"
+]
+},
+{
+"A": "O3C3",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2C2",
+"O2X2"
+]
+},
+{
+"A": "O3C3",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2C2",
+"O2X"
+]
+},
+{
+"A": "O3C3",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2C2",
+"O2XC2"
+]
+},
+{
+"A": "O3C3",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2C4"
+]
+},
+{
+"A": "O3C3",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"O2XC2"
+]
+},
+{
+"A": "O3C3",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O3C3",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2XC2"
+]
+},
+{
+"A": "O3C3",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"OXC"
+]
+},
+{
+"A": "O3C3",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4",
+"OXC"
+]
+},
+{
+"A": "O3C3",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O3C3",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"OXC"
+]
+},
+{
+"A": "O3C3",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"OXC"
+]
+},
+{
+"A": "O3C5",
+"B": "O3C5",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2C4",
+"O2C4"
+]
+},
+{
+"A": "O3C5",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2XC2",
+"O2XC2"
+]
+},
+{
+"A": "O3C5",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2C2",
+"O2XC2"
+]
+},
+{
+"A": "O3C5",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2C4",
+"O2XC2"
+]
+},
+{
+"A": "O3C5",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O2C4"
+]
+},
+{
+"A": "O3C5",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O3C5",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O3C5",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O2XC2"
+]
+},
+{
+"A": "O3C5",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4",
+"OXC"
+]
+},
+{
+"A": "O3C5",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"OC3"
+]
+},
+{
+"A": "O3C5",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"OXC"
+]
+},
+{
+"A": "O3C5",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3C4",
+"OC3"
+]
+},
+{
+"A": "O3C5",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4",
+"OC3"
+]
+},
+{
+"A": "O3X2C",
+"B": "O3X2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2X2",
+"O2X2"
+]
+},
+{
+"A": "O3X2C",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2X",
+"O2X2"
+]
+},
+{
+"A": "O3X2C",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2X2",
+"O2XC2"
+]
+},
+{
+"A": "O3X2C",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"O2XC2"
+]
+},
+{
+"A": "O3X2C",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O3X2C",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O3X2C",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O2XC2"
+]
+},
+{
+"A": "O3X2C",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"OXC"
+]
+},
+{
+"A": "O3X2C",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O3X2C",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X4",
+"OXC"
+]
+},
+{
+"A": "O3X2C",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"OXC"
+]
+},
+{
+"A": "O3X2C",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O3XC",
+"B": "O3XC",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2X",
+"O2X"
+]
+},
+{
+"A": "O3XC",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2C2",
+"O2X2"
+]
+},
+{
+"A": "O3XC",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2XC2"
+]
+},
+{
+"A": "O3XC",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"O2XC2"
+]
+},
+{
+"A": "O3XC",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O3XC",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2X2"
+]
+},
+{
+"A": "O3XC",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2",
+"OXC"
+]
+},
+{
+"A": "O3XC",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O3XC",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3",
+"OXC"
+]
+},
+{
+"A": "O3XC",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O3XC",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"OXC"
+]
+},
+{
+"A": "O3XC3",
+"B": "O3XC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C2",
+"O2XC2",
+"O2XC2"
+]
+},
+{
+"A": "O3XC3",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"O2C4",
+"O2XC2"
+]
+},
+{
+"A": "O3XC3",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O3XC3",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O3XC3",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC2",
+"O2XC2"
+]
+},
+{
+"A": "O3XC3",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O3XC3",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"OXC"
+]
+},
+{
+"A": "O3XC3",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC",
+"OXC"
+]
+},
+{
+"A": "O3XC3",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4",
+"OX2C"
+]
+},
+{
+"A": "O3XC3",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4",
+"OXC"
+]
+},
+{
+"A": "OC3",
+"B": "OC3",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"OC3"
+]
+},
+{
+"A": "OC3",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X2C4"
+]
+},
+{
+"A": "OC3",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"O2X3C4"
+]
+},
+{
+"A": "OC3",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"O2XC4"
+]
+},
+{
+"A": "OC3",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"X2"
+]
+},
+{
+"A": "OC3",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"X2C2"
+]
+},
+{
+"A": "OC3",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"X3"
+]
+},
+{
+"A": "OC3",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"X3C2"
+]
+},
+{
+"A": "OC3",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"XC2"
+]
+},
+{
+"A": "OX2C",
+"B": "OX2C",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C"
+]
+},
+{
+"A": "OX2C",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX3C"
+]
+},
+{
+"A": "OX2C",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OXC"
+]
+},
+{
+"A": "OX2C",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"X2"
+]
+},
+{
+"A": "OX2C",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"X2",
+"X2"
+]
+},
+{
+"A": "OX2C",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"OX3C",
+"X2"
+]
+},
+{
+"A": "OX2C",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"X2",
+"X3"
+]
+},
+{
+"A": "OX2C",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"X3"
+]
+},
+{
+"A": "OX3C",
+"B": "OX3C",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C",
+"X2"
+]
+},
+{
+"A": "OX3C",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"OX2C"
+]
+},
+{
+"A": "OX3C",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"OX3C",
+"X2"
+]
+},
+{
+"A": "OX3C",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"X2",
+"X3"
+]
+},
+{
+"A": "OX3C",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"X2",
+"X2"
+]
+},
+{
+"A": "OX3C",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"X2",
+"X2",
+"X2"
+]
+},
+{
+"A": "OX3C",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"X2",
+"X2"
+]
+},
+{
+"A": "OXC",
+"B": "OXC",
+"ok": true,
+"reason": "",
+"products": [
+"OXC",
+"OXC"
+]
+},
+{
+"A": "OXC",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"OX3C"
+]
+},
+{
+"A": "OXC",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"X3"
+]
+},
+{
+"A": "OXC",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"OX2C",
+"X2"
+]
+},
+{
+"A": "OXC",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"X2",
+"X2"
+]
+},
+{
+"A": "OXC",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"OC3",
+"X2"
+]
+},
+{
+"A": "X2",
+"B": "X2",
+"ok": true,
+"reason": "",
+"products": [
+"X2",
+"X2"
+]
+},
+{
+"A": "X2",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"X2",
+"X2C2"
+]
+},
+{
+"A": "X2",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"X2",
+"X3"
+]
+},
+{
+"A": "X2",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"X2",
+"X3C2"
+]
+},
+{
+"A": "X2",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"X3C2"
+]
+},
+{
+"A": "X2C2",
+"B": "X2C2",
+"ok": true,
+"reason": "",
+"products": [
+"X2C2",
+"X2C2"
+]
+},
+{
+"A": "X2C2",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"X2",
+"X3C2"
+]
+},
+{
+"A": "X2C2",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"X2C2",
+"X3C2"
+]
+},
+{
+"A": "X2C2",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"X2C2",
+"XC2"
+]
+},
+{
+"A": "X3",
+"B": "X3",
+"ok": true,
+"reason": "",
+"products": [
+"X2",
+"X2",
+"X2"
+]
+},
+{
+"A": "X3",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"X2",
+"X2",
+"X2C2"
+]
+},
+{
+"A": "X3",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"X2",
+"X2C2"
+]
+},
+{
+"A": "X3C2",
+"B": "X3C2",
+"ok": true,
+"reason": "",
+"products": [
+"X2",
+"X2C2",
+"X2C2"
+]
+},
+{
+"A": "X3C2",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"X2C2",
+"X2C2"
+]
+},
+{
+"A": "XC2",
+"B": "XC2",
+"ok": true,
+"reason": "",
+"products": [
+"XC2",
+"XC2"
+]
+}
+]

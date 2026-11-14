@@ -1,0 +1,177 @@
+{
+ "stats": {
+  "分子": 3931,
+  "总键": 29808,
+  "可降级键": 10442,
+  "能量潜力": 14450,
+  "可弛豫分子": 3721
+ },
+ "examples": [
+  {
+   "formula": "CF",
+   "bonds": 1,
+   "reactive_bonds": 1,
+   "release": 2,
+   "detail": [
+    [
+     "CF",
+     "S",
+     "L"
+    ]
+   ]
+  },
+  {
+   "formula": "LF",
+   "bonds": 1,
+   "reactive_bonds": 1,
+   "release": 1,
+   "detail": [
+    [
+     "LF",
+     "C",
+     "L"
+    ]
+   ]
+  },
+  {
+   "formula": "OK",
+   "bonds": 3,
+   "reactive_bonds": 3,
+   "release": 6,
+   "detail": [
+    [
+     "OK",
+     "S",
+     "L"
+    ]
+   ]
+  },
+  {
+   "formula": "PK",
+   "bonds": 3,
+   "reactive_bonds": 3,
+   "release": 3,
+   "detail": [
+    [
+     "PK",
+     "C",
+     "L"
+    ]
+   ]
+  },
+  {
+   "formula": "WA",
+   "bonds": 2,
+   "reactive_bonds": 2,
+   "release": 2,
+   "detail": [
+    [
+     "WA",
+     "C",
+     "L"
+    ]
+   ]
+  },
+  {
+   "formula": "XA",
+   "bonds": 2,
+   "reactive_bonds": 2,
+   "release": 4,
+   "detail": [
+    [
+     "XA",
+     "S",
+     "L"
+    ]
+   ]
+  },
+  {
+   "formula": "C2A",
+   "bonds": 2,
+   "reactive_bonds": 2,
+   "release": 4,
+   "detail": [
+    [
+     "CA",
+     "S",
+     "L"
+    ],
+    [
+     "AC",
+     "S",
+     "L"
+    ]
+   ]
+  },
+  {
+   "formula": "C2W",
+   "bonds": 2,
+   "reactive_bonds": 1,
+   "release": 1,
+   "detail": [
+    [
+     "WC",
+     "S",
+     "C"
+    ]
+   ]
+  },
+  {
+   "formula": "CAF",
+   "bonds": 2,
+   "reactive_bonds": 1,
+   "release": 2,
+   "detail": [
+    [
+     "CA",
+     "S",
+     "L"
+    ]
+   ]
+  },
+  {
+   "formula": "CKA",
+   "bonds": 3,
+   "reactive_bonds": 1,
+   "release": 2,
+   "detail": [
+    [
+     "CK",
+     "S",
+     "L"
+    ]
+   ]
+  },
+  {
+   "formula": "CLA",
+   "bonds": 2,
+   "reactive_bonds": 2,
+   "release": 3,
+   "detail": [
+    [
+     "CA",
+     "S",
+     "L"
+    ],
+    [
+     "AL",
+     "C",
+     "L"
+    ]
+   ]
+  },
+  {
+   "formula": "CPA",
+   "bonds": 3,
+   "reactive_bonds": 2,
+   "release": 2,
+   "detail": [
+    [
+     "PA",
+     "C",
+     "L"
+    ]
+   ]
+  }
+ ]
+}

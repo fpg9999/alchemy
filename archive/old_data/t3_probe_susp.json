@@ -1,0 +1,399 @@
+{
+ "X C K A": {
+  "a": 1,
+  "b": 2,
+  "pred_inf": false,
+  "probe": {
+   "24": {
+    "max": 19,
+    "formula": "X10C2K4A3",
+    "feed": [
+     13,
+     3,
+     5,
+     3
+    ],
+    "tries": 222
+   },
+   "32": {
+    "max": 26,
+    "formula": "X5C7K9A5",
+    "feed": [
+     6,
+     9,
+     11,
+     6
+    ],
+    "tries": 187
+   },
+   "40": {
+    "max": 18,
+    "formula": "X10K4A4",
+    "feed": [
+     16,
+     8,
+     6,
+     10
+    ],
+    "tries": 193
+   }
+  }
+ },
+ "X K A F": {
+  "a": 1,
+  "b": 2,
+  "pred_inf": false,
+  "probe": {
+   "24": {
+    "max": 19,
+    "formula": "X4K7A3F5",
+    "feed": [
+     5,
+     9,
+     5,
+     5
+    ],
+    "tries": 213
+   },
+   "32": {
+    "max": 24,
+    "formula": "X13K5A5F",
+    "feed": [
+     13,
+     5,
+     5,
+     9
+    ],
+    "tries": 190
+   },
+   "40": {
+    "max": 19,
+    "formula": "X10K4A3F2",
+    "feed": [
+     22,
+     8,
+     4,
+     6
+    ],
+    "tries": 195
+   }
+  }
+ },
+ "X C K": {
+  "a": 1,
+  "b": 1,
+  "pred_inf": false,
+  "probe": {
+   "24": {
+    "max": 10,
+    "formula": "X6C2K2",
+    "feed": [
+     12,
+     8,
+     4
+    ],
+    "tries": 207
+   },
+   "32": {
+    "max": 10,
+    "formula": "X6C2K2",
+    "feed": [
+     18,
+     8,
+     6
+    ],
+    "tries": 220
+   },
+   "40": {
+    "max": 9,
+    "formula": "XC5K3",
+    "feed": [
+     6,
+     19,
+     15
+    ],
+    "tries": 220
+   }
+  }
+ },
+ "K A F": {
+  "a": 1,
+  "b": 1,
+  "pred_inf": false,
+  "probe": {
+   "24": {
+    "max": 8,
+    "formula": "K2A2F4",
+    "feed": [
+     7,
+     8,
+     9
+    ],
+    "tries": 227
+   },
+   "32": {
+    "max": 8,
+    "formula": "K2A2F4",
+    "feed": [
+     7,
+     10,
+     15
+    ],
+    "tries": 186
+   },
+   "40": {
+    "max": 8,
+    "formula": "K2A2F4",
+    "feed": [
+     10,
+     10,
+     20
+    ],
+    "tries": 213
+   }
+  }
+ },
+ "O X A": {
+  "a": 1,
+  "b": 2,
+  "pred_inf": false,
+  "probe": {
+   "24": {
+    "max": 16,
+    "formula": "O4X3A9",
+    "feed": [
+     6,
+     5,
+     13
+    ],
+    "tries": 206
+   },
+   "32": {
+    "max": 18,
+    "formula": "O4X4A10",
+    "feed": [
+     6,
+     10,
+     16
+    ],
+    "tries": 196
+   },
+   "40": {
+    "max": 16,
+    "formula": "O6X5A5",
+    "feed": [
+     14,
+     13,
+     13
+    ],
+    "tries": 216
+   }
+  }
+ },
+ "O K W": {
+  "a": 2,
+  "b": 1,
+  "pred_inf": true,
+  "probe": {
+   "24": {
+    "max": 24,
+    "formula": "O10W8K6",
+    "feed": [
+     10,
+     6,
+     8
+    ],
+    "tries": 213
+   },
+   "32": {
+    "max": 26,
+    "formula": "O6W6K14",
+    "feed": [
+     7,
+     17,
+     8
+    ],
+    "tries": 201
+   },
+   "40": {
+    "max": 32,
+    "formula": "O8W6K18",
+    "feed": [
+     10,
+     24,
+     6
+    ],
+    "tries": 188
+   }
+  }
+ },
+ "P K X": {
+  "a": 2,
+  "b": 1,
+  "pred_inf": true,
+  "probe": {
+   "24": {
+    "max": 24,
+    "formula": "X6P7K11",
+    "feed": [
+     7,
+     11,
+     6
+    ],
+    "tries": 219
+   },
+   "32": {
+    "max": 32,
+    "formula": "X6P18K8",
+    "feed": [
+     18,
+     8,
+     6
+    ],
+    "tries": 207
+   },
+   "40": {
+    "max": 32,
+    "formula": "X6P8K18",
+    "feed": [
+     10,
+     24,
+     6
+    ],
+    "tries": 224
+   }
+  }
+ },
+ "O C K A F": {
+  "a": 2,
+  "b": 1,
+  "pred_inf": true,
+  "probe": {
+   "24": {
+    "max": 24,
+    "formula": "O4CK12A6F",
+    "feed": [
+     4,
+     1,
+     12,
+     6,
+     1
+    ],
+    "tries": 238
+   },
+   "32": {
+    "max": 25,
+    "formula": "O4K10A7F4",
+    "feed": [
+     5,
+     0,
+     13,
+     10,
+     4
+    ],
+    "tries": 217
+   },
+   "40": {
+    "max": 40,
+    "formula": "O16C3K6A8F7",
+    "feed": [
+     16,
+     3,
+     6,
+     8,
+     7
+    ],
+    "tries": 201
+   }
+  }
+ },
+ "X C K A F": {
+  "a": 1,
+  "b": 2,
+  "pred_inf": false,
+  "probe": {
+   "24": {
+    "max": 19,
+    "formula": "X10CK4A3F",
+    "feed": [
+     13,
+     2,
+     5,
+     3,
+     1
+    ],
+    "tries": 216
+   },
+   "32": {
+    "max": 20,
+    "formula": "X11K4A5",
+    "feed": [
+     11,
+     4,
+     4,
+     5,
+     8
+    ],
+    "tries": 211
+   },
+   "40": {
+    "max": 16,
+    "formula": "X9K4A3",
+    "feed": [
+     19,
+     3,
+     8,
+     3,
+     7
+    ],
+    "tries": 198
+   }
+  }
+ },
+ "O X C K A F": {
+  "a": 2,
+  "b": 2,
+  "pred_inf": true,
+  "probe": {
+   "24": {
+    "max": 24,
+    "formula": "O9X2C4K2A2F5",
+    "feed": [
+     9,
+     2,
+     4,
+     2,
+     2,
+     5
+    ],
+    "tries": 187
+   },
+   "32": {
+    "max": 32,
+    "formula": "O14X4CK6A6F",
+    "feed": [
+     14,
+     4,
+     1,
+     6,
+     6,
+     1
+    ],
+    "tries": 185
+   },
+   "40": {
+    "max": 40,
+    "formula": "O6X3C2K16A5F8",
+    "feed": [
+     6,
+     3,
+     2,
+     16,
+     5,
+     8
+    ],
+    "tries": 194
+   }
+  }
+ }
+}

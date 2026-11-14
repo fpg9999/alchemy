@@ -1,0 +1,14 @@
+{
+ "n_pairs": 7728346,
+ "n_shards": 773,
+ "shard_size": 10000,
+ "n_uniq_vec": 656343,
+ "sec": 46.1,
+ "format": "[i,j,ridx] 每行一个；结果见 t12b_results.json 的 res[ridx]（status,products）",
+ "status_codes": {
+  "0": "成功",
+  "1": "剩键失败",
+  "2": "摆放失败",
+  "3": "未判定(timeout)"
+ }
+}

@@ -1,0 +1,9314 @@
+{
+ "criterion": "类别 S 无限 ⇔ S 含 9 个最小无限核心之一：两个不同大类的 3 价元素 + 一个 2 价元素（3 价 ∈ {O,P,K}，2 价 ∈ {X,W,A}）",
+ "n_total": 511,
+ "n_infinite": 224,
+ "n_finite": 287,
+ "by_size": {
+  "1": {
+   "inf": 0,
+   "fin": 9
+  },
+  "2": {
+   "inf": 0,
+   "fin": 36
+  },
+  "3": {
+   "inf": 9,
+   "fin": 75
+  },
+  "4": {
+   "inf": 39,
+   "fin": 87
+  },
+  "5": {
+   "inf": 69,
+   "fin": 57
+  },
+  "6": {
+   "inf": 64,
+   "fin": 20
+  },
+  "7": {
+   "inf": 33,
+   "fin": 3
+  },
+  "8": {
+   "inf": 9,
+   "fin": 0
+  },
+  "9": {
+   "inf": 1,
+   "fin": 0
+  }
+ },
+ "minimal_infinite": [
+  "A/K/O",
+  "K/O/W",
+  "K/O/X",
+  "A/K/P",
+  "K/P/W",
+  "K/P/X",
+  "A/O/P",
+  "O/P/W",
+  "O/P/X"
+ ],
+ "rows": [
+  {
+   "elements": [
+    "O"
+   ],
+   "n": 1,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 1,
+   "max_catalog": 2,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X"
+   ],
+   "n": 1,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 2,
+   "max_catalog": 3,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C"
+   ],
+   "n": 1,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 1,
+   "max_catalog": 2,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P"
+   ],
+   "n": 1,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 1,
+   "max_catalog": 2,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "W"
+   ],
+   "n": 1,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 2,
+   "max_catalog": 3,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "L"
+   ],
+   "n": 1,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 1,
+   "max_catalog": 2,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "K"
+   ],
+   "n": 1,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 1,
+   "max_catalog": 2,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "A"
+   ],
+   "n": 1,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 2,
+   "max_catalog": 3,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "F"
+   ],
+   "n": 1,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 1,
+   "max_catalog": 2,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 7,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 6,
+   "max_catalog": 8,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 15,
+   "max_catalog": 14,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "W"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 7,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "L"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 6,
+   "max_catalog": 8,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "K"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 15,
+   "max_catalog": 14,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "A"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 7,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "F"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 6,
+   "max_catalog": 8,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 7,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "W"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 5,
+   "max_catalog": 4,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "L"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "K"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 7,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "A"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 5,
+   "max_catalog": 4,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "F"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 6,
+   "max_catalog": 8,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "W"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "L"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 1,
+   "max_catalog": 2,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "K"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 6,
+   "max_catalog": 8,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "A"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "F"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 1,
+   "max_catalog": 2,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "W"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 7,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "L"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 6,
+   "max_catalog": 8,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "K"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 15,
+   "max_catalog": 14,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "A"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 7,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "F"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 6,
+   "max_catalog": 8,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "W",
+    "L"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "W",
+    "K"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 7,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "W",
+    "A"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 5,
+   "max_catalog": 4,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "W",
+    "F"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "L",
+    "K"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 6,
+   "max_catalog": 8,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "L",
+    "A"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "L",
+    "F"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 1,
+   "max_catalog": 2,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "K",
+    "A"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 7,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "K",
+    "F"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 6,
+   "max_catalog": 8,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "A",
+    "F"
+   ],
+   "n": 2,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 10,
+   "max_catalog": 9,
+   "evidence": {
+    "20": 8,
+    "24": 8,
+    "28": 8,
+    "32": 8,
+    "40": 8,
+    "48": 8
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P"
+   ],
+   "n": 3,
+   "infinite": true,
+   "cores": [
+    "O/P/X"
+   ],
+   "known_count_16": 76,
+   "max_catalog": 16,
+   "evidence": {
+    "48": 37,
+    "56": 37,
+    "64": 42
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 30,
+   "max_catalog": 16,
+   "evidence": {
+    "48": 21,
+    "56": 31,
+    "64": 31
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "L"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 10,
+   "max_catalog": 9,
+   "evidence": {
+    "20": 8,
+    "24": 8,
+    "28": 8,
+    "32": 8,
+    "40": 8,
+    "48": 8
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "K"
+   ],
+   "n": 3,
+   "infinite": true,
+   "cores": [
+    "K/O/X"
+   ],
+   "known_count_16": 75,
+   "max_catalog": 16,
+   "evidence": {
+    "48": 37,
+    "56": 37,
+    "64": 42
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 30,
+   "max_catalog": 16,
+   "evidence": {
+    "48": 21,
+    "56": 31,
+    "64": 31
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 10,
+   "max_catalog": 9,
+   "evidence": {
+    "20": 8,
+    "24": 8,
+    "28": 8,
+    "32": 8,
+    "40": 8,
+    "48": 8
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 56,
+   "max_catalog": 16,
+   "evidence": {
+    "20": 16,
+    "24": 16,
+    "28": 16,
+    "32": 16,
+    "40": 16,
+    "48": 16
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "L"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 8,
+   "evidence": {
+    "20": 8,
+    "24": 6,
+    "28": 6,
+    "32": 8,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "K"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 56,
+   "max_catalog": 16,
+   "evidence": {
+    "20": 16,
+    "24": 16,
+    "28": 16,
+    "32": 16,
+    "40": 16,
+    "48": 16
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 8,
+   "evidence": {
+    "20": 8,
+    "24": 6,
+    "28": 6,
+    "32": 8,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W"
+   ],
+   "n": 3,
+   "infinite": true,
+   "cores": [
+    "O/P/W"
+   ],
+   "known_count_16": 76,
+   "max_catalog": 16,
+   "evidence": {
+    "48": 37,
+    "56": 37,
+    "64": 42
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "L"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 56,
+   "max_catalog": 16,
+   "evidence": {
+    "20": 16,
+    "24": 16,
+    "28": 16,
+    "32": 16,
+    "40": 16,
+    "48": 16
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "K"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 45,
+   "max_catalog": 16,
+   "evidence": {
+    "48": 26,
+    "56": 26,
+    "64": 26
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "A"
+   ],
+   "n": 3,
+   "infinite": true,
+   "cores": [
+    "A/O/P"
+   ],
+   "known_count_16": 76,
+   "max_catalog": 16,
+   "evidence": {
+    "48": 37,
+    "56": 37,
+    "64": 42
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 56,
+   "max_catalog": 16,
+   "evidence": {
+    "20": 16,
+    "24": 16,
+    "28": 16,
+    "32": 16,
+    "40": 16,
+    "48": 16
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "L"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "K"
+   ],
+   "n": 3,
+   "infinite": true,
+   "cores": [
+    "K/O/W"
+   ],
+   "known_count_16": 75,
+   "max_catalog": 16,
+   "evidence": {
+    "48": 37,
+    "56": 37,
+    "64": 42
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 42,
+   "max_catalog": 15,
+   "evidence": {
+    "48": 23,
+    "56": 23,
+    "64": 23
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "L",
+    "K"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 56,
+   "max_catalog": 16,
+   "evidence": {
+    "20": 16,
+    "24": 16,
+    "28": 16,
+    "32": 16,
+    "40": 16,
+    "48": 16
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "L",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "L",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 8,
+   "evidence": {
+    "20": 8,
+    "24": 6,
+    "28": 6,
+    "32": 8,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "K",
+    "A"
+   ],
+   "n": 3,
+   "infinite": true,
+   "cores": [
+    "A/K/O"
+   ],
+   "known_count_16": 74,
+   "max_catalog": 16,
+   "evidence": {
+    "48": 37,
+    "56": 37,
+    "64": 42
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "K",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 56,
+   "max_catalog": 16,
+   "evidence": {
+    "20": 16,
+    "24": 16,
+    "28": 16,
+    "32": 16,
+    "40": 16,
+    "48": 16
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "A",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": {
+    "20": 6,
+    "24": 6,
+    "28": 6,
+    "32": 6,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "L"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": {
+    "20": 4,
+    "24": 4,
+    "28": 4,
+    "32": 4,
+    "40": 4,
+    "48": 4
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "K"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": {
+    "20": 6,
+    "24": 6,
+    "28": 6,
+    "32": 6,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": {
+    "20": 4,
+    "24": 4,
+    "28": 4,
+    "32": 4,
+    "40": 4,
+    "48": 4
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 30,
+   "max_catalog": 16,
+   "evidence": {
+    "48": 21,
+    "56": 31,
+    "64": 31
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "L"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "K"
+   ],
+   "n": 3,
+   "infinite": true,
+   "cores": [
+    "K/P/X"
+   ],
+   "known_count_16": 74,
+   "max_catalog": 16,
+   "evidence": {
+    "48": 37,
+    "56": 37,
+    "64": 42
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 42,
+   "max_catalog": 15,
+   "evidence": {
+    "48": 23,
+    "56": 23,
+    "64": 23
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "L"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": {
+    "20": 6,
+    "24": 6,
+    "28": 6,
+    "32": 6,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "K"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 42,
+   "max_catalog": 15,
+   "evidence": {
+    "48": 23,
+    "56": 23,
+    "64": 23
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 5,
+   "evidence": {
+    "20": 5,
+    "24": 5,
+    "28": 5,
+    "32": 5,
+    "40": 5,
+    "48": 5
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": {
+    "20": 6,
+    "24": 6,
+    "28": 6,
+    "32": 6,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "L",
+    "K"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "L",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": {
+    "20": 6,
+    "24": 6,
+    "28": 6,
+    "32": 6,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "L",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": {
+    "20": 4,
+    "24": 4,
+    "28": 4,
+    "32": 4,
+    "40": 4,
+    "48": 4
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "K",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 30,
+   "max_catalog": 16,
+   "evidence": {
+    "48": 21,
+    "56": 31,
+    "64": 31
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "K",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "A",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": {
+    "20": 6,
+    "24": 6,
+    "28": 6,
+    "32": 6,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 10,
+   "max_catalog": 9,
+   "evidence": {
+    "20": 8,
+    "24": 8,
+    "28": 8,
+    "32": 8,
+    "40": 8,
+    "48": 8
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "L"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 8,
+   "evidence": {
+    "20": 8,
+    "24": 6,
+    "28": 6,
+    "32": 8,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "K"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 56,
+   "max_catalog": 16,
+   "evidence": {
+    "20": 16,
+    "24": 16,
+    "28": 16,
+    "32": 16,
+    "40": 16,
+    "48": 16
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 8,
+   "evidence": {
+    "20": 8,
+    "24": 6,
+    "28": 6,
+    "32": 8,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "L"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": {
+    "20": 4,
+    "24": 4,
+    "28": 4,
+    "32": 4,
+    "40": 4,
+    "48": 4
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "K"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": {
+    "20": 6,
+    "24": 6,
+    "28": 6,
+    "32": 6,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": {
+    "20": 4,
+    "24": 4,
+    "28": 4,
+    "32": 4,
+    "40": 4,
+    "48": 4
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "L",
+    "K"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 8,
+   "evidence": {
+    "20": 8,
+    "24": 6,
+    "28": 6,
+    "32": 8,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "L",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": {
+    "20": 4,
+    "24": 4,
+    "28": 4,
+    "32": 4,
+    "40": 4,
+    "48": 4
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "L",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 0,
+   "max_catalog": 0,
+   "evidence": {
+    "20": 2,
+    "24": 2,
+    "28": 2,
+    "32": 2,
+    "40": 2,
+    "48": 2
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "K",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 10,
+   "max_catalog": 9,
+   "evidence": {
+    "20": 8,
+    "24": 8,
+    "28": 8,
+    "32": 8,
+    "40": 8,
+    "48": 8
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "K",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 8,
+   "evidence": {
+    "20": 8,
+    "24": 6,
+    "28": 6,
+    "32": 8,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "A",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": {
+    "20": 4,
+    "24": 4,
+    "28": 4,
+    "32": 4,
+    "40": 4,
+    "48": 4
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "L"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 10,
+   "max_catalog": 9,
+   "evidence": {
+    "20": 8,
+    "24": 8,
+    "28": 8,
+    "32": 8,
+    "40": 8,
+    "48": 8
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "K"
+   ],
+   "n": 3,
+   "infinite": true,
+   "cores": [
+    "K/P/W"
+   ],
+   "known_count_16": 74,
+   "max_catalog": 16,
+   "evidence": {
+    "48": 37,
+    "56": 37,
+    "64": 42
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 30,
+   "max_catalog": 16,
+   "evidence": {
+    "48": 21,
+    "56": 31,
+    "64": 31
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 10,
+   "max_catalog": 9,
+   "evidence": {
+    "20": 8,
+    "24": 8,
+    "28": 8,
+    "32": 8,
+    "40": 8,
+    "48": 8
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "L",
+    "K"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 56,
+   "max_catalog": 16,
+   "evidence": {
+    "20": 16,
+    "24": 16,
+    "28": 16,
+    "32": 16,
+    "40": 16,
+    "48": 16
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "L",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "L",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 8,
+   "evidence": {
+    "20": 8,
+    "24": 6,
+    "28": 6,
+    "32": 8,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "K",
+    "A"
+   ],
+   "n": 3,
+   "infinite": true,
+   "cores": [
+    "A/K/P"
+   ],
+   "known_count_16": 75,
+   "max_catalog": 16,
+   "evidence": {
+    "48": 37,
+    "56": 37,
+    "64": 42
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "K",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 56,
+   "max_catalog": 16,
+   "evidence": {
+    "20": 16,
+    "24": 16,
+    "28": 16,
+    "32": 16,
+    "40": 16,
+    "48": 16
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "A",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": {
+    "20": 6,
+    "24": 6,
+    "28": 6,
+    "32": 6,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": {
+    "20": 4,
+    "24": 4,
+    "28": 4,
+    "32": 4,
+    "40": 4,
+    "48": 4
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 30,
+   "max_catalog": 16,
+   "evidence": {
+    "48": 21,
+    "56": 31,
+    "64": 31
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 16,
+   "max_catalog": 10,
+   "evidence": {
+    "20": 9,
+    "24": 10,
+    "28": 9,
+    "32": 10,
+    "40": 10,
+    "48": 10
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": {
+    "20": 6,
+    "24": 6,
+    "28": 6,
+    "32": 6,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 10,
+   "max_catalog": 9,
+   "evidence": {
+    "20": 8,
+    "24": 8,
+    "28": 8,
+    "32": 8,
+    "40": 8,
+    "48": 8
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 8,
+   "evidence": {
+    "20": 8,
+    "24": 6,
+    "28": 6,
+    "32": 8,
+    "40": 6,
+    "48": 6
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 5,
+   "evidence": {
+    "20": 4,
+    "24": 4,
+    "28": 4,
+    "32": 4,
+    "40": 4,
+    "48": 4
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 3,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 10,
+   "max_catalog": 9,
+   "evidence": {
+    "20": 8,
+    "24": 8,
+    "28": 8,
+    "32": 8,
+    "40": 8,
+    "48": 8
+   },
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "O/P/X"
+   ],
+   "known_count_16": 171,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 53,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "L"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "K"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "K/O/X"
+   ],
+   "known_count_16": 169,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 53,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 233,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "L"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "O/P/X"
+   ],
+   "known_count_16": 171,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "K"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "K/O/X",
+    "K/P/X",
+    "O/P/X"
+   ],
+   "known_count_16": 230,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "A"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/X"
+   ],
+   "known_count_16": 267,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "F"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "O/P/X"
+   ],
+   "known_count_16": 173,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "L"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 53,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "K"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/O/X"
+   ],
+   "known_count_16": 262,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 161,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 53,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "K/O/X"
+   ],
+   "known_count_16": 169,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 52,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/X"
+   ],
+   "known_count_16": 230,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "K/O/X"
+   ],
+   "known_count_16": 170,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 53,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "O/P/W"
+   ],
+   "known_count_16": 169,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "L"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 142,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "K"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 109,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "A"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "A/O/P"
+   ],
+   "known_count_16": 182,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 142,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "L"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "K"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "K/O/W"
+   ],
+   "known_count_16": 180,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 54,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 142,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 11,
+   "max_catalog": 8,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "A/K/O"
+   ],
+   "known_count_16": 167,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 142,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "L"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "O/P/W"
+   ],
+   "known_count_16": 170,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "K"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/P/W",
+    "O/P/W"
+   ],
+   "known_count_16": 232,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "A"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/W"
+   ],
+   "known_count_16": 265,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "F"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "O/P/W"
+   ],
+   "known_count_16": 171,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 109,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "A/O/P"
+   ],
+   "known_count_16": 182,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 142,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "A/K/P",
+    "A/O/P"
+   ],
+   "known_count_16": 231,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 109,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "A/O/P"
+   ],
+   "known_count_16": 182,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "K/O/W"
+   ],
+   "known_count_16": 181,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 54,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W"
+   ],
+   "known_count_16": 264,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "K/O/W"
+   ],
+   "known_count_16": 182,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 54,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "A/K/O"
+   ],
+   "known_count_16": 167,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 142,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "A/K/O"
+   ],
+   "known_count_16": 167,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 53,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "L"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "K"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "K/P/X"
+   ],
+   "known_count_16": 178,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 54,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "L"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "K"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 54,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 7,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 0,
+   "max_catalog": 0,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 53,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "L"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 53,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "K"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "K/P/W",
+    "K/P/X"
+   ],
+   "known_count_16": 267,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 141,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 53,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "K/P/X"
+   ],
+   "known_count_16": 179,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 54,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/X"
+   ],
+   "known_count_16": 265,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "K/P/X"
+   ],
+   "known_count_16": 179,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 54,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 54,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 7,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 162,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 54,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 7,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 53,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 53,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "L"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "K"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "K/P/W"
+   ],
+   "known_count_16": 171,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 52,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 142,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 11,
+   "max_catalog": 8,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "A/K/P"
+   ],
+   "known_count_16": 169,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 142,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 0,
+   "max_catalog": 0,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 53,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 11,
+   "max_catalog": 8,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 0,
+   "max_catalog": 0,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "K/P/W"
+   ],
+   "known_count_16": 171,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 52,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/W"
+   ],
+   "known_count_16": 235,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "K/P/W"
+   ],
+   "known_count_16": 171,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 52,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "A/K/P"
+   ],
+   "known_count_16": 170,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 142,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": true,
+   "cores": [
+    "A/K/P"
+   ],
+   "known_count_16": 170,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 53,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 18,
+   "max_catalog": 10,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 4,
+   "max_catalog": 6,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 53,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 12,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 358,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "L"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "O/P/X"
+   ],
+   "known_count_16": 251,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "K"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/O/X",
+    "K/P/X",
+    "O/P/X"
+   ],
+   "known_count_16": 320,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/X"
+   ],
+   "known_count_16": 407,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "O/P/X"
+   ],
+   "known_count_16": 252,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "L"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "K"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/O/X"
+   ],
+   "known_count_16": 398,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "A"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 167,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/O/X"
+   ],
+   "known_count_16": 249,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 10,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/X"
+   ],
+   "known_count_16": 356,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/O/X"
+   ],
+   "known_count_16": 249,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "L"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 359,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "K"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/O/X",
+    "K/P/W",
+    "K/P/X",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 517,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 602,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 365,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/O/X",
+    "K/P/X",
+    "O/P/X"
+   ],
+   "known_count_16": 320,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/X"
+   ],
+   "known_count_16": 407,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "O/P/X"
+   ],
+   "known_count_16": 252,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/X",
+    "A/K/P",
+    "K/P/X",
+    "A/O/P",
+    "O/P/X"
+   ],
+   "known_count_16": 586,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/O/X",
+    "K/P/X",
+    "O/P/X"
+   ],
+   "known_count_16": 320,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/X"
+   ],
+   "known_count_16": 406,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/O/X"
+   ],
+   "known_count_16": 399,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 167,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "K/O/X"
+   ],
+   "known_count_16": 624,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/O/X"
+   ],
+   "known_count_16": 405,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 167,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/X"
+   ],
+   "known_count_16": 357,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/O/X"
+   ],
+   "known_count_16": 248,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/X"
+   ],
+   "known_count_16": 357,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "L"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "O/P/W"
+   ],
+   "known_count_16": 242,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "K"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/P/W",
+    "O/P/W"
+   ],
+   "known_count_16": 308,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/W"
+   ],
+   "known_count_16": 401,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "O/P/W"
+   ],
+   "known_count_16": 248,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 205,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/O/P"
+   ],
+   "known_count_16": 236,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 226,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "A/K/P",
+    "A/O/P"
+   ],
+   "known_count_16": 316,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 205,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/O/P"
+   ],
+   "known_count_16": 236,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/O/W"
+   ],
+   "known_count_16": 230,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 41,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 13,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W"
+   ],
+   "known_count_16": 395,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/O/W"
+   ],
+   "known_count_16": 236,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 41,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/O"
+   ],
+   "known_count_16": 243,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 226,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 13,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/O"
+   ],
+   "known_count_16": 241,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/P/W",
+    "O/P/W"
+   ],
+   "known_count_16": 308,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/W"
+   ],
+   "known_count_16": 401,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "O/P/W"
+   ],
+   "known_count_16": 248,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "A/K/P",
+    "K/P/W",
+    "A/O/P",
+    "O/P/W"
+   ],
+   "known_count_16": 512,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/P/W",
+    "O/P/W"
+   ],
+   "known_count_16": 309,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/W"
+   ],
+   "known_count_16": 401,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "A/K/P",
+    "A/O/P"
+   ],
+   "known_count_16": 317,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 205,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/O/P"
+   ],
+   "known_count_16": 236,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "A/K/P",
+    "A/O/P"
+   ],
+   "known_count_16": 317,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W"
+   ],
+   "known_count_16": 398,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/O/W"
+   ],
+   "known_count_16": 236,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 41,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W"
+   ],
+   "known_count_16": 398,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/O"
+   ],
+   "known_count_16": 244,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "L"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "K"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/P/W",
+    "K/P/X"
+   ],
+   "known_count_16": 404,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "A"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 148,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/P/X"
+   ],
+   "known_count_16": 229,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 41,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 13,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/X"
+   ],
+   "known_count_16": 400,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/P/X"
+   ],
+   "known_count_16": 229,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 41,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 41,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 7,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 0,
+   "max_catalog": 0,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 185,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 41,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 7,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 13,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 0,
+   "max_catalog": 0,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/P/W",
+    "K/P/X"
+   ],
+   "known_count_16": 404,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 148,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/W",
+    "K/P/X"
+   ],
+   "known_count_16": 610,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/P/W",
+    "K/P/X"
+   ],
+   "known_count_16": 404,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 148,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/X"
+   ],
+   "known_count_16": 403,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/P/X"
+   ],
+   "known_count_16": 229,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 41,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/X"
+   ],
+   "known_count_16": 405,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 185,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 41,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 3,
+   "max_catalog": 7,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 185,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/P/W"
+   ],
+   "known_count_16": 249,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 10,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/W"
+   ],
+   "known_count_16": 360,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/P/W"
+   ],
+   "known_count_16": 249,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/P"
+   ],
+   "known_count_16": 246,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 226,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 13,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/P"
+   ],
+   "known_count_16": 246,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 13,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 0,
+   "max_catalog": 0,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 10,
+   "max_catalog": 9,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/W"
+   ],
+   "known_count_16": 367,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "K/P/W"
+   ],
+   "known_count_16": 250,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/W"
+   ],
+   "known_count_16": 365,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": true,
+   "cores": [
+    "A/K/P"
+   ],
+   "known_count_16": 249,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 55,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 336,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "K"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/O/X",
+    "K/P/W",
+    "K/P/X",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 535,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 603,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 337,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "L",
+    "K"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/O/X",
+    "K/P/X",
+    "O/P/X"
+   ],
+   "known_count_16": 309,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "L",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/X"
+   ],
+   "known_count_16": 353,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "L",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "O/P/X"
+   ],
+   "known_count_16": 276,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/X",
+    "A/K/P",
+    "K/P/X",
+    "A/O/P",
+    "O/P/X"
+   ],
+   "known_count_16": 577,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/O/X",
+    "K/P/X",
+    "O/P/X"
+   ],
+   "known_count_16": 309,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/X"
+   ],
+   "known_count_16": 351,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/O/X"
+   ],
+   "known_count_16": 349,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 107,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 51,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "K/O/X"
+   ],
+   "known_count_16": 636,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/O/X"
+   ],
+   "known_count_16": 353,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 107,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/X"
+   ],
+   "known_count_16": 334,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/O/X"
+   ],
+   "known_count_16": 275,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 51,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/X"
+   ],
+   "known_count_16": 334,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/O/X",
+    "K/P/W",
+    "K/P/X",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 534,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 603,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 334,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "K/O/X",
+    "A/K/P",
+    "K/P/W",
+    "K/P/X",
+    "A/O/P",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 927,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/O/X",
+    "K/P/W",
+    "K/P/X",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 537,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 603,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/X",
+    "A/K/P",
+    "K/P/X",
+    "A/O/P",
+    "O/P/X"
+   ],
+   "known_count_16": 577,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/O/X",
+    "K/P/X",
+    "O/P/X"
+   ],
+   "known_count_16": 309,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/X"
+   ],
+   "known_count_16": 351,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/X",
+    "A/K/P",
+    "K/P/X",
+    "A/O/P",
+    "O/P/X"
+   ],
+   "known_count_16": 578,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "K/O/X"
+   ],
+   "known_count_16": 636,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/O/X"
+   ],
+   "known_count_16": 353,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 107,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "K/O/X"
+   ],
+   "known_count_16": 638,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/X"
+   ],
+   "known_count_16": 334,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/P/W",
+    "O/P/W"
+   ],
+   "known_count_16": 333,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/W"
+   ],
+   "known_count_16": 348,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "O/P/W"
+   ],
+   "known_count_16": 274,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "A/K/P",
+    "K/P/W",
+    "A/O/P",
+    "O/P/W"
+   ],
+   "known_count_16": 529,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/P/W",
+    "O/P/W"
+   ],
+   "known_count_16": 334,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/W"
+   ],
+   "known_count_16": 348,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "A/K/P",
+    "A/O/P"
+   ],
+   "known_count_16": 300,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 292,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/O/P"
+   ],
+   "known_count_16": 210,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "A/K/P",
+    "A/O/P"
+   ],
+   "known_count_16": 300,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W"
+   ],
+   "known_count_16": 342,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/O/W"
+   ],
+   "known_count_16": 210,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 14,
+   "max_catalog": 14,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W"
+   ],
+   "known_count_16": 345,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O"
+   ],
+   "known_count_16": 271,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "A/K/P",
+    "K/P/W",
+    "A/O/P",
+    "O/P/W"
+   ],
+   "known_count_16": 530,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/P/W",
+    "O/P/W"
+   ],
+   "known_count_16": 334,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/W"
+   ],
+   "known_count_16": 348,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "A/K/P",
+    "K/P/W",
+    "A/O/P",
+    "O/P/W"
+   ],
+   "known_count_16": 530,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "A/K/P",
+    "A/O/P"
+   ],
+   "known_count_16": 304,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W"
+   ],
+   "known_count_16": 345,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/P/W",
+    "K/P/X"
+   ],
+   "known_count_16": 351,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 92,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 51,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/W",
+    "K/P/X"
+   ],
+   "known_count_16": 606,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/P/W",
+    "K/P/X"
+   ],
+   "known_count_16": 351,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 92,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/X"
+   ],
+   "known_count_16": 342,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/P/X"
+   ],
+   "known_count_16": 205,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 14,
+   "max_catalog": 14,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/X"
+   ],
+   "known_count_16": 345,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 125,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 14,
+   "max_catalog": 14,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 0,
+   "max_catalog": 0,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 125,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 51,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/W",
+    "K/P/X"
+   ],
+   "known_count_16": 607,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/P/W",
+    "K/P/X"
+   ],
+   "known_count_16": 351,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 92,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/W",
+    "K/P/X"
+   ],
+   "known_count_16": 610,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/X"
+   ],
+   "known_count_16": 351,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 125,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/W"
+   ],
+   "known_count_16": 333,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "K/P/W"
+   ],
+   "known_count_16": 275,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 51,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/W"
+   ],
+   "known_count_16": 335,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/P"
+   ],
+   "known_count_16": 270,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 51,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/W"
+   ],
+   "known_count_16": 339,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/O/X",
+    "K/P/W",
+    "K/P/X",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 362,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 344,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 234,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "K/O/X",
+    "A/K/P",
+    "K/P/W",
+    "K/P/X",
+    "A/O/P",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 686,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/O/X",
+    "K/P/W",
+    "K/P/X",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 363,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 341,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/X",
+    "A/K/P",
+    "K/P/X",
+    "A/O/P",
+    "O/P/X"
+   ],
+   "known_count_16": 368,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "K/O/X",
+    "K/P/X",
+    "O/P/X"
+   ],
+   "known_count_16": 230,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/X"
+   ],
+   "known_count_16": 216,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/X",
+    "A/K/P",
+    "K/P/X",
+    "A/O/P",
+    "O/P/X"
+   ],
+   "known_count_16": 369,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "K/O/X"
+   ],
+   "known_count_16": 379,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/O/X"
+   ],
+   "known_count_16": 217,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 33,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "K/O/X"
+   ],
+   "known_count_16": 376,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/X"
+   ],
+   "known_count_16": 239,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "K/O/X",
+    "A/K/P",
+    "K/P/W",
+    "K/P/X",
+    "A/O/P",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 690,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/O/X",
+    "K/P/W",
+    "K/P/X",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 363,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 344,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "K/O/X",
+    "A/K/P",
+    "K/P/W",
+    "K/P/X",
+    "A/O/P",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 690,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/X",
+    "A/K/P",
+    "K/P/X",
+    "A/O/P",
+    "O/P/X"
+   ],
+   "known_count_16": 369,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "K/O/X"
+   ],
+   "known_count_16": 380,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "A/K/P",
+    "K/P/W",
+    "A/O/P",
+    "O/P/W"
+   ],
+   "known_count_16": 357,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/P/W",
+    "O/P/W"
+   ],
+   "known_count_16": 246,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/W"
+   ],
+   "known_count_16": 214,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "A/K/P",
+    "K/P/W",
+    "A/O/P",
+    "O/P/W"
+   ],
+   "known_count_16": 358,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "A/K/P",
+    "A/O/P"
+   ],
+   "known_count_16": 221,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W"
+   ],
+   "known_count_16": 213,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "A/K/P",
+    "K/P/W",
+    "A/O/P",
+    "O/P/W"
+   ],
+   "known_count_16": 358,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/W",
+    "K/P/X"
+   ],
+   "known_count_16": 355,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "K/P/W",
+    "K/P/X"
+   ],
+   "known_count_16": 217,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 30,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/W",
+    "K/P/X"
+   ],
+   "known_count_16": 353,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/X"
+   ],
+   "known_count_16": 213,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": false,
+   "cores": [],
+   "known_count_16": 36,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/W",
+    "K/P/X"
+   ],
+   "known_count_16": 358,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/W"
+   ],
+   "known_count_16": 235,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 8,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "K/O/X",
+    "A/K/P",
+    "K/P/W",
+    "K/P/X",
+    "A/O/P",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 300,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 8,
+   "infinite": true,
+   "cores": [
+    "K/O/W",
+    "K/O/X",
+    "K/P/W",
+    "K/P/X",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 197,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 8,
+   "infinite": true,
+   "cores": [
+    "A/O/P",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 110,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 8,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "K/O/X",
+    "A/K/P",
+    "K/P/W",
+    "K/P/X",
+    "A/O/P",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 300,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 8,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/X",
+    "A/K/P",
+    "K/P/X",
+    "A/O/P",
+    "O/P/X"
+   ],
+   "known_count_16": 171,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 8,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "K/O/X"
+   ],
+   "known_count_16": 125,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 8,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "K/O/X",
+    "A/K/P",
+    "K/P/W",
+    "K/P/X",
+    "A/O/P",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 300,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 8,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "A/K/P",
+    "K/P/W",
+    "A/O/P",
+    "O/P/W"
+   ],
+   "known_count_16": 196,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 8,
+   "infinite": true,
+   "cores": [
+    "A/K/P",
+    "K/P/W",
+    "K/P/X"
+   ],
+   "known_count_16": 119,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 9,
+   "infinite": true,
+   "cores": [
+    "A/K/O",
+    "K/O/W",
+    "K/O/X",
+    "A/K/P",
+    "K/P/W",
+    "K/P/X",
+    "A/O/P",
+    "O/P/W",
+    "O/P/X"
+   ],
+   "known_count_16": 98,
+   "max_catalog": 16,
+   "evidence": null,
+   "anneal96": null
+  }
+ ],
+ "caveat": "有限/无限判定是实测口径下的工作分类（无限核心的无穷性由 T=64 的 42 原子分子等证据支持，非形式化证明）；有限类“完整清单”受扫描截断限制，见说明。"
+}

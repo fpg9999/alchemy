@@ -1,0 +1,26 @@
+{
+ "minimal": [
+  "O/X/K",
+  "O/K/A",
+  "O/X/P",
+  "O/P/W",
+  "P/W/K",
+  "P/K/A",
+  "O/P/A",
+  "O/W/K",
+  "X/P/K"
+ ],
+ "inf3": [
+  "O/X/K",
+  "O/K/A",
+  "O/X/P",
+  "O/P/W",
+  "P/W/K",
+  "P/K/A",
+  "O/P/A",
+  "O/W/K",
+  "X/P/K"
+ ],
+ "inf4": [],
+ "inf5": []
+}

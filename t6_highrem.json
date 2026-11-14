@@ -1,0 +1,32 @@
+{
+ "OXK": {
+  "NMAX": 20,
+  "max_rem_ge2_per_component": 3,
+  "example": [
+   1,
+   0,
+   3
+  ],
+  "distribution": {
+   "1": 220,
+   "2": 2530,
+   "3": 1890
+  },
+  "n_cases": 4640
+ },
+ "OXC": {
+  "NMAX": 20,
+  "max_rem_ge2_per_component": 2,
+  "example": [
+   2,
+   0,
+   0
+  ],
+  "distribution": {
+   "0": 10,
+   "1": 3860,
+   "2": 770
+  },
+  "n_cases": 4640
+ }
+}

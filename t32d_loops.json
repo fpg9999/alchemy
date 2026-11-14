@@ -1,0 +1,376 @@
+{
+ "loops": [],
+ "chains": [
+  {
+   "init": [
+    "LKF2",
+    "CPLF"
+   ],
+   "products1": [
+    "CPL2KF",
+    "F2"
+   ],
+   "decay1": [
+    "CF",
+    "F2",
+    "L2",
+    "PK"
+   ],
+   "reaction2_in": [
+    "L2",
+    "F2"
+   ],
+   "reaction2_out": [
+    "LF",
+    "LF"
+   ],
+   "class1": [
+    2,
+    -1,
+    1
+   ],
+   "class2": [
+    0,
+    -1,
+    1
+   ]
+  },
+  {
+   "init": [
+    "OCPK",
+    "CL2K"
+   ],
+   "products1": [
+    "OC2PK2",
+    "L2"
+   ],
+   "decay1": [
+    "C2",
+    "L2",
+    "OK",
+    "PK"
+   ],
+   "reaction2_in": [
+    "C2",
+    "L2"
+   ],
+   "reaction2_out": [
+    "CL",
+    "CL"
+   ],
+   "class1": [
+    4,
+    -1,
+    1
+   ],
+   "class2": [
+    0,
+    -1,
+    1
+   ]
+  },
+  {
+   "init": [
+    "CPLF",
+    "LKF2"
+   ],
+   "products1": [
+    "CPL2KF",
+    "F2"
+   ],
+   "decay1": [
+    "CF",
+    "F2",
+    "L2",
+    "PK"
+   ],
+   "reaction2_in": [
+    "L2",
+    "F2"
+   ],
+   "reaction2_out": [
+    "LF",
+    "LF"
+   ],
+   "class1": [
+    2,
+    -1,
+    1
+   ],
+   "class2": [
+    0,
+    -1,
+    1
+   ]
+  },
+  {
+   "init": [
+    "X2CF",
+    "L2A2"
+   ],
+   "products1": [
+    "XLAF",
+    "XCLA"
+   ],
+   "decay1": [
+    "CL",
+    "LF",
+    "XA",
+    "XA"
+   ],
+   "reaction2_in": [
+    "LF",
+    "CL"
+   ],
+   "reaction2_out": [
+    "CF",
+    "L2"
+   ],
+   "class1": [
+    0,
+    -1,
+    2
+   ],
+   "class2": [
+    2,
+    -1,
+    1
+   ]
+  },
+  {
+   "init": [
+    "LAF",
+    "CWL"
+   ],
+   "products1": [
+    "CWLA",
+    "LF"
+   ],
+   "decay1": [
+    "CL",
+    "LF",
+    "WA"
+   ],
+   "reaction2_in": [
+    "CL",
+    "LF"
+   ],
+   "reaction2_out": [
+    "L2",
+    "CF"
+   ],
+   "class1": [
+    1,
+    -1,
+    1
+   ],
+   "class2": [
+    2,
+    -1,
+    1
+   ]
+  },
+  {
+   "init": [
+    "C2PL",
+    "CLKF"
+   ],
+   "products1": [
+    "C3PLK",
+    "LF"
+   ],
+   "decay1": [
+    "C2",
+    "CL",
+    "LF",
+    "PK"
+   ],
+   "reaction2_in": [
+    "CL",
+    "LF"
+   ],
+   "reaction2_out": [
+    "CF",
+    "L2"
+   ],
+   "class1": [
+    2,
+    -1,
+    1
+   ],
+   "class2": [
+    2,
+    -1,
+    1
+   ]
+  },
+  {
+   "init": [
+    "XCL",
+    "WLF"
+   ],
+   "products1": [
+    "XWLF",
+    "CL"
+   ],
+   "decay1": [
+    "CL",
+    "LF",
+    "XW"
+   ],
+   "reaction2_in": [
+    "LF",
+    "CL"
+   ],
+   "reaction2_out": [
+    "L2",
+    "CF"
+   ],
+   "class1": [
+    1,
+    -1,
+    1
+   ],
+   "class2": [
+    2,
+    -1,
+    1
+   ]
+  },
+  {
+   "init": [
+    "PL2F",
+    "OCF2"
+   ],
+   "products1": [
+    "OCPF3",
+    "L2"
+   ],
+   "decay1": [
+    "CF",
+    "F2",
+    "L2",
+    "OP"
+   ],
+   "reaction2_in": [
+    "F2",
+    "L2"
+   ],
+   "reaction2_out": [
+    "LF",
+    "LF"
+   ],
+   "class1": [
+    2,
+    -1,
+    1
+   ],
+   "class2": [
+    0,
+    -1,
+    1
+   ]
+  },
+  {
+   "init": [
+    "C2PL",
+    "L2KF"
+   ],
+   "products1": [
+    "C2PL2K",
+    "LF"
+   ],
+   "decay1": [
+    "CL",
+    "CL",
+    "LF",
+    "PK"
+   ],
+   "reaction2_in": [
+    "CL",
+    "LF"
+   ],
+   "reaction2_out": [
+    "CF",
+    "L2"
+   ],
+   "class1": [
+    2,
+    -1,
+    1
+   ],
+   "class2": [
+    2,
+    -1,
+    1
+   ]
+  },
+  {
+   "init": [
+    "WLF",
+    "XCL"
+   ],
+   "products1": [
+    "XWLF",
+    "CL"
+   ],
+   "decay1": [
+    "CL",
+    "LF",
+    "XW"
+   ],
+   "reaction2_in": [
+    "LF",
+    "CL"
+   ],
+   "reaction2_out": [
+    "L2",
+    "CF"
+   ],
+   "class1": [
+    1,
+    -1,
+    1
+   ],
+   "class2": [
+    2,
+    -1,
+    1
+   ]
+  },
+  {
+   "init": [
+    "CLKF",
+    "CPLF"
+   ],
+   "products1": [
+    "C2PLKF",
+    "LF"
+   ],
+   "decay1": [
+    "CF",
+    "CL",
+    "LF",
+    "PK"
+   ],
+   "reaction2_in": [
+    "CL",
+    "LF"
+   ],
+   "reaction2_out": [
+    "L2",
+    "CF"
+   ],
+   "class1": [
+    2,
+    -1,
+    1
+   ],
+   "class2": [
+    2,
+    -1,
+    1
+   ]
+  }
+ ]
+}

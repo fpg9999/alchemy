@@ -1,0 +1,599 @@
+{
+ "OK_T12_k3": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "O2K6",
+    "OK3"
+   ]
+  ]
+ },
+ "OK_T24_k8": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "O2K4",
+    "O2K4",
+    "O2K4",
+    "O2K4"
+   ]
+  ]
+ },
+ "OK_T40_k18": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "O4K6",
+    "O4K6",
+    "OK",
+    "OK",
+    "OK",
+    "OK",
+    "OK",
+    "OK",
+    "OK",
+    "OK",
+    "OK",
+    "OK"
+   ]
+  ]
+ },
+ "OK_T60_k18": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "O2K4",
+    "O2K4",
+    "O2K4",
+    "O4K10",
+    "O4K10",
+    "O4K10"
+   ]
+  ]
+ },
+ "XK_T12_k4": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "XK2",
+    "XK2",
+    "XK2",
+    "XK2"
+   ]
+  ]
+ },
+ "XK_T24_k10": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "X2K2",
+    "X2K2",
+    "X2K2",
+    "XK2",
+    "XK2",
+    "XK2",
+    "XK2"
+   ]
+  ]
+ },
+ "XK_T40_k19": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "XK_T60_k28": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "X2K2",
+    "X2K2",
+    "X2K2",
+    "X2K2",
+    "X2K2",
+    "X2K2",
+    "X2K2",
+    "X2K2",
+    "X2K2",
+    "X2K2",
+    "X2K2",
+    "X2K2",
+    "XK2",
+    "XK2",
+    "XK2",
+    "XK2"
+   ]
+  ]
+ },
+ "OX_T12_k6": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "O2X2",
+    "O2X2",
+    "O2X2"
+   ]
+  ]
+ },
+ "OX_T24_k12": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "O2X2",
+    "O2X2",
+    "O2X2",
+    "O2X2",
+    "O2X2",
+    "O2X2"
+   ]
+  ]
+ },
+ "OX_T40_k19": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "OX_T60_k29": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "KA_T12_k4": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "K2A4",
+    "K2A4"
+   ]
+  ]
+ },
+ "KA_T24_k6": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "K2A6",
+    "K2A6",
+    "K2A6"
+   ]
+  ]
+ },
+ "KA_T40_k19": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "KA_T60_k17": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "PW_T12_k3": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "PW_T24_k8": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "P2W4",
+    "P2W4",
+    "P2W4",
+    "P2W4"
+   ]
+  ]
+ },
+ "PW_T40_k11": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "PW_T60_k29": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "OA_T12_k3": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "OA_T24_k12": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2"
+   ]
+  ]
+ },
+ "OA_T40_k20": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2"
+   ]
+  ]
+ },
+ "OA_T60_k30": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2",
+    "O2A2"
+   ]
+  ]
+ },
+ "XF_T12_k5": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "XF_T24_k7": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "XF_T40_k16": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "X2F2",
+    "X2F2",
+    "X2F2",
+    "X2F2",
+    "XF2",
+    "XF2",
+    "XF2",
+    "XF2",
+    "XF2",
+    "XF2",
+    "XF2",
+    "XF2"
+   ]
+  ]
+ },
+ "XF_T60_k23": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "OP_T12_k5": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "O4P6",
+    "OP"
+   ]
+  ]
+ },
+ "OP_T24_k8": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "O2P4",
+    "O2P4",
+    "O2P4",
+    "O2P4"
+   ]
+  ]
+ },
+ "OP_T40_k16": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "O4P6",
+    "O4P6",
+    "O4P6",
+    "O4P6"
+   ]
+  ]
+ },
+ "OP_T60_k17": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "O4P10",
+    "O4P10",
+    "O4P10",
+    "O4P10",
+    "OP3"
+   ]
+  ]
+ },
+ "CK_T12_k5": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "C2K2",
+    "C3K3",
+    "K2"
+   ]
+  ]
+ },
+ "CK_T24_k6": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "K2",
+    "K2",
+    "K2",
+    "K2",
+    "K2",
+    "K2"
+   ]
+  ]
+ },
+ "CK_T40_k18": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "K2",
+    "K2"
+   ]
+  ]
+ },
+ "CK_T60_k24": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "C2K2",
+    "K2",
+    "K2",
+    "K2",
+    "K2",
+    "K2",
+    "K2"
+   ]
+  ]
+ },
+ "WL_T12_k5": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "WL_T24_k9": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "WL_T40_k12": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "L2",
+    "L2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2"
+   ]
+  ]
+ },
+ "WL_T60_k24": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "W2L2",
+    "W2L2",
+    "W2L2",
+    "W2L2",
+    "W2L2",
+    "W2L2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2",
+    "WL2"
+   ]
+  ]
+ },
+ "tri_O_X_K_T18": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "tri_O_X_K_T36": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "tri_O_X_K_T60": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "tri_C_K_A_T18": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "A2",
+    "A2",
+    "A2",
+    "C3K",
+    "C4K2A2"
+   ]
+  ]
+ },
+ "tri_C_K_A_T36": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "C4K2A2",
+    "CKA",
+    "CKA",
+    "CKA",
+    "CKA",
+    "CKA",
+    "CKA",
+    "CKA",
+    "CKA",
+    "CKA2"
+   ]
+  ]
+ },
+ "tri_C_K_A_T60": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "C4K2A2",
+    "CKA",
+    "CKA",
+    "CKA",
+    "CKA",
+    "CKA",
+    "CKA",
+    "CKA",
+    "CKA",
+    "CKA",
+    "CKA",
+    "CKA",
+    "CKA",
+    "CKA2",
+    "CKA2",
+    "CKA2",
+    "CKA2"
+   ]
+  ]
+ },
+ "tri_P_W_L_T18": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "tri_P_W_L_T36": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "tri_P_W_L_T60": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "P2W2",
+    "P2W2",
+    "P2WL2",
+    "P2WL2",
+    "PWL",
+    "PWL",
+    "PWL",
+    "PWL",
+    "PWL",
+    "PWL",
+    "PWL",
+    "PWL",
+    "PWL",
+    "PWL",
+    "PWL",
+    "PWL",
+    "PWL",
+    "PWL"
+   ]
+  ]
+ },
+ "tri_O_K_A_T18": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "O2K6A3",
+    "OK3A3"
+   ]
+  ]
+ },
+ "tri_O_K_A_T36": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "tri_O_K_A_T60": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "pure_O_X_C_T18": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "pure_O_X_C_T36": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "pure_O_X_C_T60": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "pure_P_W_L_T18": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "pure_P_W_L_T36": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "pure_P_W_L_T60": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "pure_K_A_F_T18": {
+  "n_outcomes": 1,
+  "outcomes": [
+   [
+    "K2A2",
+    "K2AF2",
+    "KAF",
+    "KAF",
+    "KAF"
+   ]
+  ]
+ },
+ "pure_K_A_F_T36": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ },
+ "pure_K_A_F_T60": {
+  "n_outcomes": "odd",
+  "outcomes": null
+ }
+}

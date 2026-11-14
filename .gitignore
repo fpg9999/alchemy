@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# 临时文件 / 调试补丁
+_patch_*.py
+_compression_test/
+*.tmp
+*.log
+
+# 大数据原件（仓库内用 _data_gz/ 中的 gzip 版本传输）
+/t12b_pairs.jsonl
+/t4_catalog_all_validated.json
+/t12b_vec_v3.json
+/t12b_results.json
+/t12c_sample_pairs.json
+/t4_catalog_index.json
+
+# 系统文件
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1395 @@
+[
+ {
+  "subset": [
+   "O",
+   "P"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 10,
+   "formula": "O6P4"
+  },
+  "T20": {
+   "max": 14,
+   "formula": "O10P4"
+  },
+  "T24": {
+   "max": 14,
+   "formula": "O4P10"
+  },
+  "T28": {
+   "max": 14,
+   "formula": "O10P4"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "W"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 8,
+   "formula": "O2W6"
+  },
+  "T20": {
+   "max": 8,
+   "formula": "O2W6"
+  },
+  "T24": {
+   "max": 8,
+   "formula": "O2W6"
+  },
+  "T28": {
+   "max": 8,
+   "formula": "O2W6"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 6,
+   "formula": "O3L3"
+  },
+  "T20": {
+   "max": 8,
+   "formula": "O3L5"
+  },
+  "T24": {
+   "max": 6,
+   "formula": "O3L3"
+  },
+  "T28": {
+   "max": 6,
+   "formula": "O2L4"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "X",
+   "P"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 8,
+   "formula": "X6P2"
+  },
+  "T20": {
+   "max": 8,
+   "formula": "X6P2"
+  },
+  "T24": {
+   "max": 8,
+   "formula": "X6P2"
+  },
+  "T28": {
+   "max": 8,
+   "formula": "X6P2"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "X",
+   "W"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 4,
+   "formula": "X3W"
+  },
+  "T20": {
+   "max": 4,
+   "formula": "X3W"
+  },
+  "T24": {
+   "max": 4,
+   "formula": "X3W"
+  },
+  "T28": {
+   "max": 4,
+   "formula": "X3W"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "X",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 4,
+   "formula": "X2L2"
+  },
+  "T20": {
+   "max": 4,
+   "formula": "X2L2"
+  },
+  "T24": {
+   "max": 4,
+   "formula": "X2L2"
+  },
+  "T28": {
+   "max": 4,
+   "formula": "X2L2"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "C",
+   "P"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 6,
+   "formula": "C4P2"
+  },
+  "T20": {
+   "max": 8,
+   "formula": "C5P3"
+  },
+  "T24": {
+   "max": 6,
+   "formula": "C3P3"
+  },
+  "T28": {
+   "max": 6,
+   "formula": "C3P3"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "C",
+   "W"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 4,
+   "formula": "C2W2"
+  },
+  "T20": {
+   "max": 4,
+   "formula": "C2W2"
+  },
+  "T24": {
+   "max": 4,
+   "formula": "C2W2"
+  },
+  "T28": {
+   "max": 4,
+   "formula": "C2W2"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "C",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 2,
+   "formula": "CL"
+  },
+  "T20": {
+   "max": 2,
+   "formula": "CL"
+  },
+  "T24": {
+   "max": 2,
+   "formula": "CL"
+  },
+  "T28": {
+   "max": 2,
+   "formula": "CL"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "X",
+   "P"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "O7X6P3"
+  },
+  "T20": {
+   "max": 20,
+   "formula": "O7X10P3"
+  },
+  "T24": {
+   "max": 24,
+   "formula": "O10X8P6"
+  },
+  "T28": {
+   "max": 28,
+   "formula": "O5X12P11"
+  },
+  "infinite": true
+ },
+ {
+  "subset": [
+   "O",
+   "X",
+   "W"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 14,
+   "formula": "O2X6W6"
+  },
+  "T20": {
+   "max": 20,
+   "formula": "O4X5W11"
+  },
+  "T24": {
+   "max": 15,
+   "formula": "O6X4W5"
+  },
+  "T28": {
+   "max": 16,
+   "formula": "O4X3W9"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "X",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 8,
+   "formula": "O2X2L4"
+  },
+  "T20": {
+   "max": 8,
+   "formula": "O2X6"
+  },
+  "T24": {
+   "max": 8,
+   "formula": "O2X2L4"
+  },
+  "T28": {
+   "max": 8,
+   "formula": "O2X6"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "C",
+   "P"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "O3C5P8"
+  },
+  "T20": {
+   "max": 16,
+   "formula": "O2C7P7"
+  },
+  "T24": {
+   "max": 16,
+   "formula": "O10C2P4"
+  },
+  "T28": {
+   "max": 16,
+   "formula": "O2C8P6"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "C",
+   "W"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 9,
+   "formula": "O2C2W5"
+  },
+  "T20": {
+   "max": 8,
+   "formula": "O3C5"
+  },
+  "T24": {
+   "max": 9,
+   "formula": "O3C5W"
+  },
+  "T28": {
+   "max": 9,
+   "formula": "O2C2W5"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "C",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 6,
+   "formula": "O2L4"
+  },
+  "T20": {
+   "max": 8,
+   "formula": "O3C3L2"
+  },
+  "T24": {
+   "max": 6,
+   "formula": "O2C3L"
+  },
+  "T28": {
+   "max": 6,
+   "formula": "O2CL3"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "P",
+   "W"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "O4P6W6"
+  },
+  "T20": {
+   "max": 20,
+   "formula": "O11P5W4"
+  },
+  "T24": {
+   "max": 24,
+   "formula": "O6P10W8"
+  },
+  "T28": {
+   "max": 28,
+   "formula": "O11P5W12"
+  },
+  "infinite": true
+ },
+ {
+  "subset": [
+   "O",
+   "P",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "O2P7L7"
+  },
+  "T20": {
+   "max": 16,
+   "formula": "O6P2L8"
+  },
+  "T24": {
+   "max": 16,
+   "formula": "O6P2L8"
+  },
+  "T28": {
+   "max": 16,
+   "formula": "O6P2L8"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "W",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 9,
+   "formula": "O3WL5"
+  },
+  "T20": {
+   "max": 8,
+   "formula": "O2W6"
+  },
+  "T24": {
+   "max": 9,
+   "formula": "O3WL5"
+  },
+  "T28": {
+   "max": 9,
+   "formula": "O3WL5"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "X",
+   "C",
+   "P"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 9,
+   "formula": "XC5P3"
+  },
+  "T20": {
+   "max": 9,
+   "formula": "XC5P3"
+  },
+  "T24": {
+   "max": 10,
+   "formula": "X6C2P2"
+  },
+  "T28": {
+   "max": 8,
+   "formula": "X6P2"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "X",
+   "C",
+   "W"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 6,
+   "formula": "X3C2W"
+  },
+  "T20": {
+   "max": 6,
+   "formula": "X3C2W"
+  },
+  "T24": {
+   "max": 6,
+   "formula": "X3C2W"
+  },
+  "T28": {
+   "max": 6,
+   "formula": "X3C2W"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "X",
+   "C",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 4,
+   "formula": "X2CL"
+  },
+  "T20": {
+   "max": 4,
+   "formula": "X2CL"
+  },
+  "T24": {
+   "max": 4,
+   "formula": "X2C2"
+  },
+  "T28": {
+   "max": 4,
+   "formula": "X2CL"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "X",
+   "P",
+   "W"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "X5P6W5"
+  },
+  "T20": {
+   "max": 15,
+   "formula": "X6P2W7"
+  },
+  "T24": {
+   "max": 15,
+   "formula": "X5P6W4"
+  },
+  "T28": {
+   "max": 15,
+   "formula": "X5P6W4"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "X",
+   "P",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 9,
+   "formula": "XP3L5"
+  },
+  "T20": {
+   "max": 8,
+   "formula": "X6P2"
+  },
+  "T24": {
+   "max": 9,
+   "formula": "XP3L5"
+  },
+  "T28": {
+   "max": 8,
+   "formula": "X6P2"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "X",
+   "W",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 6,
+   "formula": "X3WL2"
+  },
+  "T20": {
+   "max": 6,
+   "formula": "XW3L2"
+  },
+  "T24": {
+   "max": 6,
+   "formula": "XW3L2"
+  },
+  "T28": {
+   "max": 6,
+   "formula": "X3WL2"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "C",
+   "P",
+   "W"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 8,
+   "formula": "C4P2W2"
+  },
+  "T20": {
+   "max": 8,
+   "formula": "C4P2W2"
+  },
+  "T24": {
+   "max": 8,
+   "formula": "C4P2W2"
+  },
+  "T28": {
+   "max": 8,
+   "formula": "C4P2W2"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "C",
+   "P",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 6,
+   "formula": "C2P3L"
+  },
+  "T20": {
+   "max": 8,
+   "formula": "C5P3"
+  },
+  "T24": {
+   "max": 6,
+   "formula": "CP2L3"
+  },
+  "T28": {
+   "max": 6,
+   "formula": "C2P2L2"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "C",
+   "W",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 4,
+   "formula": "CW2L"
+  },
+  "T20": {
+   "max": 4,
+   "formula": "CW2L"
+  },
+  "T24": {
+   "max": 4,
+   "formula": "CW2L"
+  },
+  "T28": {
+   "max": 4,
+   "formula": "CW2L"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "X",
+   "C",
+   "P"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "O2X8CP5"
+  },
+  "T20": {
+   "max": 20,
+   "formula": "O10X2C5P3"
+  },
+  "T24": {
+   "max": 24,
+   "formula": "O13X6P5"
+  },
+  "T28": {
+   "max": 28,
+   "formula": "O15X6CP6"
+  },
+  "infinite": true
+ },
+ {
+  "subset": [
+   "O",
+   "X",
+   "C",
+   "W"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 11,
+   "formula": "O4X2C2W3"
+  },
+  "T20": {
+   "max": 14,
+   "formula": "O2X4C2W6"
+  },
+  "T24": {
+   "max": 13,
+   "formula": "O4X2C6W"
+  },
+  "T28": {
+   "max": 16,
+   "formula": "O2X6C2W6"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "X",
+   "C",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 8,
+   "formula": "O2X2CL3"
+  },
+  "T20": {
+   "max": 8,
+   "formula": "O2X2C4"
+  },
+  "T24": {
+   "max": 8,
+   "formula": "O2X2CL3"
+  },
+  "T28": {
+   "max": 8,
+   "formula": "O2X2C2L2"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "X",
+   "P",
+   "W"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "O3X6P7"
+  },
+  "T20": {
+   "max": 20,
+   "formula": "O11X4P5"
+  },
+  "T24": {
+   "max": 24,
+   "formula": "O10X7P6W"
+  },
+  "T28": {
+   "max": 28,
+   "formula": "O10X10P4W4"
+  },
+  "infinite": true
+ },
+ {
+  "subset": [
+   "O",
+   "X",
+   "P",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "O4P10L2"
+  },
+  "T20": {
+   "max": 20,
+   "formula": "O4X4P9L3"
+  },
+  "T24": {
+   "max": 24,
+   "formula": "O11X6P7"
+  },
+  "T28": {
+   "max": 18,
+   "formula": "O2X2P6L8"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "X",
+   "W",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 14,
+   "formula": "O2X6W6"
+  },
+  "T20": {
+   "max": 15,
+   "formula": "O7X4W3L"
+  },
+  "T24": {
+   "max": 20,
+   "formula": "O4X5W11"
+  },
+  "T28": {
+   "max": 13,
+   "formula": "O4X2WL6"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "C",
+   "P",
+   "W"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "O5CP2W8"
+  },
+  "T20": {
+   "max": 20,
+   "formula": "O9C4P3W4"
+  },
+  "T24": {
+   "max": 24,
+   "formula": "O6C2P10W6"
+  },
+  "T28": {
+   "max": 28,
+   "formula": "O12C7P5W4"
+  },
+  "infinite": true
+ },
+ {
+  "subset": [
+   "O",
+   "C",
+   "P",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "O4CP10L"
+  },
+  "T20": {
+   "max": 16,
+   "formula": "O7CP2L6"
+  },
+  "T24": {
+   "max": 16,
+   "formula": "O7C4P2L3"
+  },
+  "T28": {
+   "max": 16,
+   "formula": "O4CP10L"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "C",
+   "W",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 9,
+   "formula": "O2W5L2"
+  },
+  "T20": {
+   "max": 9,
+   "formula": "O3C4WL"
+  },
+  "T24": {
+   "max": 8,
+   "formula": "OCW4L2"
+  },
+  "T28": {
+   "max": 8,
+   "formula": "O3CW2L2"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "P",
+   "W",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "O5P2W6L3"
+  },
+  "T20": {
+   "max": 20,
+   "formula": "O7P3W8L2"
+  },
+  "T24": {
+   "max": 24,
+   "formula": "O6P10W8"
+  },
+  "T28": {
+   "max": 28,
+   "formula": "O5P11W10L2"
+  },
+  "infinite": true
+ },
+ {
+  "subset": [
+   "X",
+   "C",
+   "P",
+   "W"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 11,
+   "formula": "X3C2P4W2"
+  },
+  "T20": {
+   "max": 16,
+   "formula": "X9P4W3"
+  },
+  "T24": {
+   "max": 14,
+   "formula": "XC6P4W3"
+  },
+  "T28": {
+   "max": 21,
+   "formula": "X4C7P7W3"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "X",
+   "C",
+   "P",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 9,
+   "formula": "X5CP2L"
+  },
+  "T20": {
+   "max": 9,
+   "formula": "XCP3L4"
+  },
+  "T24": {
+   "max": 8,
+   "formula": "X2C2P3L"
+  },
+  "T28": {
+   "max": 9,
+   "formula": "X5C2P2"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "X",
+   "C",
+   "W",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 6,
+   "formula": "XCW3L"
+  },
+  "T20": {
+   "max": 6,
+   "formula": "XC2W3"
+  },
+  "T24": {
+   "max": 6,
+   "formula": "XCW3L"
+  },
+  "T28": {
+   "max": 6,
+   "formula": "X3WL2"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "X",
+   "P",
+   "W",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 14,
+   "formula": "X6P2W6"
+  },
+  "T20": {
+   "max": 13,
+   "formula": "XP4W2L6"
+  },
+  "T24": {
+   "max": 15,
+   "formula": "X6P2W7"
+  },
+  "T28": {
+   "max": 18,
+   "formula": "X10P4W4"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "C",
+   "P",
+   "W",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 8,
+   "formula": "CP2W2L3"
+  },
+  "T20": {
+   "max": 8,
+   "formula": "C2P2W2L2"
+  },
+  "T24": {
+   "max": 8,
+   "formula": "CP2W2L3"
+  },
+  "T28": {
+   "max": 8,
+   "formula": "P2W6"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "O2C6P6W2"
+  },
+  "T20": {
+   "max": 20,
+   "formula": "O9X2C7P2"
+  },
+  "T24": {
+   "max": 24,
+   "formula": "O8X2P12W2"
+  },
+  "T28": {
+   "max": 28,
+   "formula": "O4X3C10P10W"
+  },
+  "infinite": true
+ },
+ {
+  "subset": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "O3C2P8L3"
+  },
+  "T20": {
+   "max": 20,
+   "formula": "O4X4C2P10"
+  },
+  "T24": {
+   "max": 24,
+   "formula": "O3X10P7L4"
+  },
+  "T28": {
+   "max": 21,
+   "formula": "O8X5C2P3L3"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 14,
+   "formula": "O2X4W6L2"
+  },
+  "T20": {
+   "max": 14,
+   "formula": "O4X3CWL5"
+  },
+  "T24": {
+   "max": 19,
+   "formula": "O7X3C3W4L2"
+  },
+  "T28": {
+   "max": 12,
+   "formula": "O2X2C2W6"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "O2XP8W3L2"
+  },
+  "T20": {
+   "max": 20,
+   "formula": "O4X6PW8L"
+  },
+  "T24": {
+   "max": 24,
+   "formula": "O3X2P9W4L6"
+  },
+  "T28": {
+   "max": 24,
+   "formula": "O4X4P9W4L3"
+  },
+  "infinite": true
+ },
+ {
+  "subset": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "O6C2P2L6"
+  },
+  "T20": {
+   "max": 20,
+   "formula": "O4CP10W4L"
+  },
+  "T24": {
+   "max": 17,
+   "formula": "O6P2W3L6"
+  },
+  "T28": {
+   "max": 20,
+   "formula": "O5CP12W2"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "X3C3P5W3L2"
+  },
+  "T20": {
+   "max": 15,
+   "formula": "X5P6W4"
+  },
+  "T24": {
+   "max": 14,
+   "formula": "X3C3P5W3"
+  },
+  "T28": {
+   "max": 12,
+   "formula": "XC3P3W3L2"
+  },
+  "infinite": false
+ },
+ {
+  "subset": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L"
+  ],
+  "cats": [
+   "动",
+   "聚"
+  ],
+  "T16": {
+   "max": 16,
+   "formula": "O9X2P3W2"
+  },
+  "T20": {
+   "max": 20,
+   "formula": "O2X2CP7W4L4"
+  },
+  "T24": {
+   "max": 24,
+   "formula": "O2X2C7P9W2L2"
+  },
+  "T28": {
+   "max": 19,
+   "formula": "OC8P6W3L"
+  },
+  "infinite": false
+ }
+]

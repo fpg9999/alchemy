@@ -1,0 +1,321 @@
+{
+ "A_grid16": {
+  "new_forms": 0,
+  "max_component": 13,
+  "max_active": 7,
+  "examples": []
+ },
+ "B_random36": {
+  "samples": 60,
+  "new_forms": 0,
+  "max_component": 13,
+  "max_active": 7,
+  "examples": []
+ },
+ "C_scale": [
+  {
+   "formula": "K",
+   "t": 2,
+   "components": [
+    "K",
+    "K"
+   ]
+  },
+  {
+   "formula": "OK",
+   "t": 2,
+   "components": [
+    "OK",
+    "OK"
+   ]
+  },
+  {
+   "formula": "O2K",
+   "t": 2,
+   "components": [
+    "O2K",
+    "O2K"
+   ]
+  },
+  {
+   "formula": "OK2",
+   "t": 2,
+   "components": [
+    "OK2",
+    "OK2"
+   ]
+  },
+  {
+   "formula": "O3K",
+   "t": 2,
+   "components": [
+    "O3K",
+    "O3K"
+   ]
+  },
+  {
+   "formula": "OK3",
+   "t": 2,
+   "components": [
+    "OK3",
+    "OK3"
+   ]
+  },
+  {
+   "formula": "O2K3",
+   "t": 2,
+   "components": [
+    "O2K3",
+    "O2K3"
+   ]
+  },
+  {
+   "formula": "O3K2",
+   "t": 2,
+   "components": [
+    "O3K2",
+    "O3K2"
+   ]
+  },
+  {
+   "formula": "OPK",
+   "t": 2,
+   "components": [
+    "OPK",
+    "OPK"
+   ]
+  },
+  {
+   "formula": "OP2K",
+   "t": 2,
+   "components": [
+    "OP2K",
+    "OP2K"
+   ]
+  },
+  {
+   "formula": "O2P2K",
+   "t": 2,
+   "components": [
+    "O2P2K",
+    "O2P2K"
+   ]
+  },
+  {
+   "formula": "O3PK",
+   "t": 2,
+   "components": [
+    "O3PK",
+    "O3PK"
+   ]
+  },
+  {
+   "formula": "OP3K",
+   "t": 2,
+   "components": [
+    "OP3K",
+    "OP3K"
+   ]
+  },
+  {
+   "formula": "OPK3",
+   "t": 2,
+   "components": [
+    "OPK3",
+    "OPK3"
+   ]
+  },
+  {
+   "formula": "O2P3K",
+   "t": 2,
+   "components": [
+    "O2P3K",
+    "O2P3K"
+   ]
+  },
+  {
+   "formula": "OP4K",
+   "t": 2,
+   "components": [
+    "OP4K",
+    "OP4K"
+   ]
+  },
+  {
+   "formula": "O2P3K2",
+   "t": 2,
+   "components": [
+    "O2P3K2",
+    "O2P3K2"
+   ]
+  },
+  {
+   "formula": "O3P3K",
+   "t": 2,
+   "components": [
+    "O3P3K",
+    "O3P3K"
+   ]
+  },
+  {
+   "formula": "O3P4K",
+   "t": 2,
+   "components": [
+    "O3P4K",
+    "O3P4K"
+   ]
+  },
+  {
+   "formula": "O3P5K",
+   "t": 2,
+   "components": [
+    "O3P5K",
+    "O3P5K"
+   ]
+  },
+  {
+   "formula": "O3P5K2",
+   "t": 2,
+   "components": [
+    "O4P7K2",
+    "O2P3K2"
+   ]
+  },
+  {
+   "formula": "O4P7K2",
+   "t": 2,
+   "components": [
+    "O4P7K2",
+    "O4P7K2"
+   ]
+  },
+  {
+   "formula": "PK",
+   "t": 2,
+   "components": [
+    "PK",
+    "PK"
+   ]
+  },
+  {
+   "formula": "P2K",
+   "t": 2,
+   "components": [
+    "P2K",
+    "P2K"
+   ]
+  },
+  {
+   "formula": "PK2",
+   "t": 2,
+   "components": [
+    "PK2",
+    "PK2"
+   ]
+  },
+  {
+   "formula": "P3K",
+   "t": 2,
+   "components": [
+    "P3K",
+    "P3K"
+   ]
+  },
+  {
+   "formula": "PK3",
+   "t": 2,
+   "components": [
+    "PK3",
+    "PK3"
+   ]
+  },
+  {
+   "formula": "P2K3",
+   "t": 2,
+   "components": [
+    "P2K3",
+    "P2K3"
+   ]
+  },
+  {
+   "formula": "P3K2",
+   "t": 2,
+   "components": [
+    "P3K2",
+    "P3K2"
+   ]
+  },
+  {
+   "formula": "O",
+   "t": 2,
+   "components": [
+    "O",
+    "O"
+   ]
+  },
+  {
+   "formula": "OP",
+   "t": 2,
+   "components": [
+    "OP",
+    "OP"
+   ]
+  },
+  {
+   "formula": "O2P",
+   "t": 2,
+   "components": [
+    "O2P",
+    "O2P"
+   ]
+  },
+  {
+   "formula": "OP2",
+   "t": 2,
+   "components": [
+    "OP2",
+    "OP2"
+   ]
+  },
+  {
+   "formula": "O3P",
+   "t": 2,
+   "components": [
+    "O3P",
+    "O3P"
+   ]
+  },
+  {
+   "formula": "OP3",
+   "t": 2,
+   "components": [
+    "OP3",
+    "OP3"
+   ]
+  },
+  {
+   "formula": "O2P3",
+   "t": 2,
+   "components": [
+    "O2P3",
+    "O2P3"
+   ]
+  },
+  {
+   "formula": "O3P2",
+   "t": 2,
+   "components": [
+    "O3P2",
+    "O3P2"
+   ]
+  },
+  {
+   "formula": "P",
+   "t": 2,
+   "components": [
+    "P",
+    "P"
+   ]
+  }
+ ]
+}

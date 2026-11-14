@@ -1,0 +1,4673 @@
+{
+ "stats": {
+  "cycle": 2000,
+  "period_1": 2000
+ },
+ "cycles": [
+  {
+   "init": [
+    "CPLF",
+    "CPA2",
+    "OLA",
+    "WA2"
+   ],
+   "history": [
+    [
+     "CPA2",
+     "CPLF",
+     "OLA",
+     "WA2"
+    ],
+    [
+     "CPA2",
+     "CPLF",
+     "OLA",
+     "WA2"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "KA2F",
+    "XKF",
+    "CLKF",
+    "XP2A"
+   ],
+   "history": [
+    [
+     "CLKF",
+     "KA2F",
+     "XKF",
+     "XP2A"
+    ],
+    [
+     "CLKF",
+     "KA2F",
+     "XKF",
+     "XP2A"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "LK3",
+    "WF2"
+   ],
+   "history": [
+    [
+     "LK3",
+     "WF2"
+    ],
+    [
+     "LK3",
+     "WF2"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "CWL",
+    "XA2",
+    "XA3"
+   ],
+   "history": [
+    [
+     "CWL",
+     "XA2",
+     "XA3"
+    ],
+    [
+     "CWL",
+     "XA2",
+     "XA3"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "XWKF",
+    "OP3",
+    "CL2K"
+   ],
+   "history": [
+    [
+     "CL2K",
+     "OP3",
+     "XWKF"
+    ],
+    [
+     "CL2K",
+     "OP3",
+     "XWKF"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "X2PF",
+    "KF3",
+    "KA2F"
+   ],
+   "history": [
+    [
+     "KA2F",
+     "KF3",
+     "X2PF"
+    ],
+    [
+     "KA2F",
+     "KF3",
+     "X2PF"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "K2F2",
+    "X2W",
+    "XA3"
+   ],
+   "history": [
+    [
+     "K2F2",
+     "X2W",
+     "XA3"
+    ],
+    [
+     "K2F2",
+     "XA",
+     "XA2",
+     "XW"
+    ],
+    [
+     "K2F2",
+     "XA",
+     "XA2",
+     "XW"
+    ]
+   ],
+   "period": 1,
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "X2W",
+      "XA3"
+     ],
+     "products": [
+      "X2WA",
+      "XA2"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "K2F2",
+      "X2WA",
+      "XA2"
+     ],
+     "to": [
+      "K2F2",
+      "XA",
+      "XA2",
+      "XW"
+     ]
+    }
+   ]
+  },
+  {
+   "init": [
+    "O2X2",
+    "CKF2"
+   ],
+   "history": [
+    [
+     "CKF2",
+     "O2X2"
+    ],
+    [
+     "CKF2",
+     "O2X2"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "O2LK",
+    "X2LK",
+    "PK2F"
+   ],
+   "history": [
+    [
+     "O2LK",
+     "PK2F",
+     "X2LK"
+    ],
+    [
+     "LF",
+     "OK",
+     "OK",
+     "PK",
+     "X2LK"
+    ],
+    [
+     "LF",
+     "OK",
+     "OK",
+     "PK",
+     "X2LK"
+    ]
+   ],
+   "period": 1,
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "O2LK",
+      "PK2F"
+     ],
+     "products": [
+      "O2PLK3F"
+     ],
+     "class": [
+      0,
+      -1,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "O2PLK3F",
+      "X2LK"
+     ],
+     "to": [
+      "LF",
+      "OK",
+      "OK",
+      "PK",
+      "X2LK"
+     ]
+    }
+   ]
+  },
+  {
+   "init": [
+    "PWF",
+    "WLF"
+   ],
+   "history": [
+    [
+     "PWF",
+     "WLF"
+    ],
+    [
+     "PWF",
+     "WLF"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "XLF",
+    "C2P2",
+    "OPLK"
+   ],
+   "history": [
+    [
+     "C2P2",
+     "OPLK",
+     "XLF"
+    ],
+    [
+     "C2P2",
+     "OPLK",
+     "XLF"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "OXF",
+    "OXL"
+   ],
+   "history": [
+    [
+     "OXF",
+     "OXL"
+    ],
+    [
+     "OXF",
+     "OXL"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "XW2",
+    "L2K2",
+    "O2CL"
+   ],
+   "history": [
+    [
+     "L2K2",
+     "O2CL",
+     "XW2"
+    ],
+    [
+     "CL",
+     "L2",
+     "OK",
+     "OK",
+     "XW2"
+    ],
+    [
+     "CL",
+     "L2",
+     "OK",
+     "OK",
+     "XW2"
+    ]
+   ],
+   "period": 1,
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "L2K2",
+      "O2CL"
+     ],
+     "products": [
+      "O2CL3K2"
+     ],
+     "class": [
+      0,
+      -2,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "O2CL3K2",
+      "XW2"
+     ],
+     "to": [
+      "CL",
+      "L2",
+      "OK",
+      "OK",
+      "XW2"
+     ]
+    }
+   ]
+  },
+  {
+   "init": [
+    "CPLF",
+    "OWAF",
+    "CP3"
+   ],
+   "history": [
+    [
+     "CP3",
+     "CPLF",
+     "OWAF"
+    ],
+    [
+     "CP3",
+     "CPLF",
+     "OWAF"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "P2KF",
+    "CLK2",
+    "OCA2",
+    "X2W"
+   ],
+   "history": [
+    [
+     "CLK2",
+     "OCA2",
+     "P2KF",
+     "X2W"
+    ],
+    [
+     "CLK2",
+     "OCA2",
+     "P2KF",
+     "X2W"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "P2A",
+    "OCWA"
+   ],
+   "history": [
+    [
+     "OCWA",
+     "P2A"
+    ],
+    [
+     "OCWA",
+     "P2A"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "P2W2",
+    "XW2A"
+   ],
+   "history": [
+    [
+     "P2W2",
+     "XW2A"
+    ],
+    [
+     "P2W2",
+     "XW2A"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "W2LF",
+    "CKF2",
+    "OXF",
+    "PAF"
+   ],
+   "history": [
+    [
+     "CKF2",
+     "OXF",
+     "PAF",
+     "W2LF"
+    ],
+    [
+     "CKF2",
+     "OXF",
+     "PAF",
+     "W2LF"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "CWL",
+    "OP"
+   ],
+   "history": [
+    [
+     "CWL",
+     "OP"
+    ],
+    [
+     "CWL",
+     "OP"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "CL2K",
+    "W2L2",
+    "WL2",
+    "W3"
+   ],
+   "history": [
+    [
+     "CL2K",
+     "W2L2",
+     "W3",
+     "WL2"
+    ],
+    [
+     "CL2K",
+     "W2",
+     "W3L2",
+     "WL2"
+    ],
+    [
+     "CL2K",
+     "W2",
+     "W3L2",
+     "WL2"
+    ]
+   ],
+   "period": 1,
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "W2L2",
+      "W3"
+     ],
+     "products": [
+      "W2",
+      "W3L2"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "init": [
+    "CP3",
+    "OCW2",
+    "CP2K",
+    "C2W2"
+   ],
+   "history": [
+    [
+     "C2W2",
+     "CP2K",
+     "CP3",
+     "OCW2"
+    ],
+    [
+     "C2W2",
+     "CP2K",
+     "CP3",
+     "OCW2"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "WA",
+    "CP2L"
+   ],
+   "history": [
+    [
+     "CP2L",
+     "WA"
+    ],
+    [
+     "CP2L",
+     "WA"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "CLKF",
+    "OCW2",
+    "C3K"
+   ],
+   "history": [
+    [
+     "C3K",
+     "CLKF",
+     "OCW2"
+    ],
+    [
+     "C3K",
+     "CLKF",
+     "OCW2"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "O2C2",
+    "WA2",
+    "C2K2"
+   ],
+   "history": [
+    [
+     "C2K2",
+     "O2C2",
+     "WA2"
+    ],
+    [
+     "C2",
+     "C2",
+     "OK",
+     "OK",
+     "WA2"
+    ],
+    [
+     "C2",
+     "C2",
+     "OK",
+     "OK",
+     "WA2"
+    ]
+   ],
+   "period": 1,
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "O2C2",
+      "C2K2"
+     ],
+     "products": [
+      "O2C4K2"
+     ],
+     "class": [
+      0,
+      -2,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "O2C4K2",
+      "WA2"
+     ],
+     "to": [
+      "C2",
+      "C2",
+      "OK",
+      "OK",
+      "WA2"
+     ]
+    }
+   ]
+  },
+  {
+   "init": [
+    "O2F2",
+    "KAF",
+    "W3",
+    "WA2"
+   ],
+   "history": [
+    [
+     "KAF",
+     "O2F2",
+     "W3",
+     "WA2"
+    ],
+    [
+     "KAF",
+     "O2F2",
+     "W2A",
+     "W2A"
+    ],
+    [
+     "KAF",
+     "O2F2",
+     "W2A",
+     "W2A"
+    ]
+   ],
+   "period": 1,
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "W3",
+      "WA2"
+     ],
+     "products": [
+      "W4A2"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "KAF",
+      "O2F2",
+      "W4A2"
+     ],
+     "to": [
+      "KAF",
+      "O2F2",
+      "W2A",
+      "W2A"
+     ]
+    }
+   ]
+  },
+  {
+   "init": [
+    "W2K2",
+    "XWLK"
+   ],
+   "history": [
+    [
+     "W2K2",
+     "XWLK"
+    ],
+    [
+     "W2K2",
+     "XWLK"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "WA2",
+    "A2",
+    "PAF",
+    "C3P"
+   ],
+   "history": [
+    [
+     "A2",
+     "C3P",
+     "PAF",
+     "WA2"
+    ],
+    [
+     "A2",
+     "C3P",
+     "PAF",
+     "WA2"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "CLA2",
+    "PK2F"
+   ],
+   "history": [
+    [
+     "CLA2",
+     "PK2F"
+    ],
+    [
+     "CLA2",
+     "PK2F"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "L2KF",
+    "OXL"
+   ],
+   "history": [
+    [
+     "L2KF",
+     "OXL"
+    ],
+    [
+     "L2KF",
+     "OXL"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "PK",
+    "PL3",
+    "K2F2"
+   ],
+   "history": [
+    [
+     "K2F2",
+     "PK",
+     "PL3"
+    ],
+    [
+     "K2F2",
+     "PK",
+     "PL3"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "KA2F",
+    "W2"
+   ],
+   "history": [
+    [
+     "KA2F",
+     "W2"
+    ],
+    [
+     "KA2F",
+     "W2"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "OC3",
+    "O2A"
+   ],
+   "history": [
+    [
+     "O2A",
+     "OC3"
+    ],
+    [
+     "O2A",
+     "OC3"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "CPA2",
+    "C2PF"
+   ],
+   "history": [
+    [
+     "C2PF",
+     "CPA2"
+    ],
+    [
+     "C2PF",
+     "CPA2"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "OP2F",
+    "O2LK",
+    "X3"
+   ],
+   "history": [
+    [
+     "O2LK",
+     "OP2F",
+     "X3"
+    ],
+    [
+     "LF",
+     "OK",
+     "OP",
+     "OP",
+     "X3"
+    ],
+    [
+     "LF",
+     "OK",
+     "OP",
+     "OP",
+     "X3"
+    ]
+   ],
+   "period": 1,
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "OP2F",
+      "O2LK"
+     ],
+     "products": [
+      "O3P2LKF"
+     ],
+     "class": [
+      0,
+      -1,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "O3P2LKF",
+      "X3"
+     ],
+     "to": [
+      "LF",
+      "OK",
+      "OP",
+      "OP",
+      "X3"
+     ]
+    }
+   ]
+  },
+  {
+   "init": [
+    "C2K2",
+    "K3F"
+   ],
+   "history": [
+    [
+     "C2K2",
+     "K3F"
+    ],
+    [
+     "C2K2",
+     "K3F"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "W2LK",
+    "L2",
+    "XP2W",
+    "OK"
+   ],
+   "history": [
+    [
+     "L2",
+     "OK",
+     "W2LK",
+     "XP2W"
+    ],
+    [
+     "L2",
+     "OK",
+     "W2LK",
+     "XP2W"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "WL2",
+    "K3F",
+    "XWK2"
+   ],
+   "history": [
+    [
+     "K3F",
+     "WL2",
+     "XWK2"
+    ],
+    [
+     "K3F",
+     "WL2",
+     "XWK2"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "O2X",
+    "O2A",
+    "X2"
+   ],
+   "history": [
+    [
+     "O2A",
+     "O2X",
+     "X2"
+    ],
+    [
+     "O2A",
+     "O2X",
+     "X2"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "W2K2",
+    "W3A",
+    "CWF",
+    "O2X"
+   ],
+   "history": [
+    [
+     "CWF",
+     "O2X",
+     "W2K2",
+     "W3A"
+    ],
+    [
+     "CWF",
+     "O2X",
+     "W2K2",
+     "W3A"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  },
+  {
+   "init": [
+    "A3",
+    "XCPA"
+   ],
+   "history": [
+    [
+     "A3",
+     "XCPA"
+    ],
+    [
+     "A3",
+     "XCPA"
+    ]
+   ],
+   "period": 1,
+   "events": []
+  }
+ ],
+ "chains": [
+  {
+   "init": [
+    "W2K2",
+    "P3F",
+    "K2A"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "P3F",
+      "K2A"
+     ],
+     "products": [
+      "P3K2AF"
+     ],
+     "class": [
+      0,
+      -2,
+      3
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "W2K2",
+      "P3K2AF"
+     ],
+     "products": [
+      "P3W2K4AF"
+     ],
+     "class": [
+      0,
+      -1,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "P3W2K4AF"
+     ],
+     "to": [
+      "P2W2K3AF",
+      "PK"
+     ]
+    }
+   ],
+   "history": [
+    [
+     "K2A",
+     "P3F",
+     "W2K2"
+    ],
+    [
+     "P3K2AF",
+     "W2K2"
+    ],
+    [
+     "P2W2K3AF",
+     "PK"
+    ],
+    [
+     "P2W2K3AF",
+     "PK"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "O2A",
+    "LK3",
+    "XK2",
+    "O3F"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "O2A",
+      "LK3"
+     ],
+     "products": [
+      "O2LK3A"
+     ],
+     "class": [
+      0,
+      -2,
+      3
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "XK2",
+      "O3F"
+     ],
+     "products": [
+      "O3XK2F"
+     ],
+     "class": [
+      0,
+      -2,
+      3
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "O2LK3A",
+      "O3XK2F"
+     ],
+     "products": [
+      "O5XLK5AF"
+     ],
+     "class": [
+      0,
+      -1,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "O5XLK5AF"
+     ],
+     "to": [
+      "LF",
+      "OK",
+      "OK",
+      "OK",
+      "OK",
+      "OK",
+      "XA"
+     ]
+    }
+   ],
+   "history": [
+    [
+     "LK3",
+     "O2A",
+     "O3F",
+     "XK2"
+    ],
+    [
+     "O2LK3A",
+     "O3F",
+     "XK2"
+    ],
+    [
+     "O2LK3A",
+     "O3XK2F"
+    ],
+    [
+     "LF",
+     "OK",
+     "OK",
+     "OK",
+     "OK",
+     "OK",
+     "XA"
+    ],
+    [
+     "LF",
+     "OK",
+     "OK",
+     "OK",
+     "OK",
+     "OK",
+     "XA"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "P3L",
+    "X2L2",
+    "W2K2",
+    "CK2F"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "P3L",
+      "CK2F"
+     ],
+     "products": [
+      "CP3LK2F"
+     ],
+     "class": [
+      0,
+      -2,
+      3
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "W2K2",
+      "CP3LK2F"
+     ],
+     "products": [
+      "CP2K2F",
+      "PW2LK2"
+     ],
+     "class": [
+      0,
+      -1,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "CP2K2F",
+      "PW2LK2",
+      "X2L2"
+     ],
+     "to": [
+      "CF",
+      "PK",
+      "PK",
+      "PW2LK2",
+      "X2L2"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "PW2LK2",
+      "CF"
+     ],
+     "products": [
+      "CPW2K2",
+      "LF"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "CK2F",
+     "P3L",
+     "W2K2",
+     "X2L2"
+    ],
+    [
+     "CP3LK2F",
+     "W2K2",
+     "X2L2"
+    ],
+    [
+     "CF",
+     "PK",
+     "PK",
+     "PW2LK2",
+     "X2L2"
+    ],
+    [
+     "CPW2K2",
+     "LF",
+     "PK",
+     "PK",
+     "X2L2"
+    ],
+    [
+     "CPW2K2",
+     "LF",
+     "PK",
+     "PK",
+     "X2L2"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "CPA",
+    "OK2F",
+    "O2PL",
+    "OAF"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "CPA",
+      "OAF"
+     ],
+     "products": [
+      "CF",
+      "OPA2"
+     ],
+     "class": [
+      4,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "CF",
+      "O2PL",
+      "OK2F",
+      "OPA2"
+     ],
+     "to": [
+      "A2",
+      "CF",
+      "O2PL",
+      "OK2F",
+      "OP"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "OK2F",
+      "O2PL"
+     ],
+     "products": [
+      "O3PLK2F"
+     ],
+     "class": [
+      0,
+      -1,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "A2",
+      "CF",
+      "O3PLK2F",
+      "OP"
+     ],
+     "to": [
+      "A2",
+      "CF",
+      "LF",
+      "OK",
+      "OK",
+      "OP",
+      "OP"
+     ]
+    }
+   ],
+   "history": [
+    [
+     "CPA",
+     "O2PL",
+     "OAF",
+     "OK2F"
+    ],
+    [
+     "A2",
+     "CF",
+     "O2PL",
+     "OK2F",
+     "OP"
+    ],
+    [
+     "A2",
+     "CF",
+     "LF",
+     "OK",
+     "OK",
+     "OP",
+     "OP"
+    ],
+    [
+     "A2",
+     "CF",
+     "LF",
+     "OK",
+     "OK",
+     "OP",
+     "OP"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "OXC",
+    "PWL",
+    "OLK2",
+    "PLF2"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "OXC",
+      "PWL"
+     ],
+     "products": [
+      "OXCPWL"
+     ],
+     "class": [
+      1,
+      -2,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "OLK2",
+      "OXCPWL",
+      "PLF2"
+     ],
+     "to": [
+      "CL",
+      "OLK2",
+      "OP",
+      "PLF2",
+      "XW"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "PLF2",
+      "CL"
+     ],
+     "products": [
+      "CPF2",
+      "L2"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "OLK2",
+     "OXC",
+     "PLF2",
+     "PWL"
+    ],
+    [
+     "CL",
+     "OLK2",
+     "OP",
+     "PLF2",
+     "XW"
+    ],
+    [
+     "CPF2",
+     "L2",
+     "OLK2",
+     "OP",
+     "XW"
+    ],
+    [
+     "CPF2",
+     "L2",
+     "OLK2",
+     "OP",
+     "XW"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "PLK2",
+    "O2XA",
+    "CPA2"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "PLK2",
+      "O2XA"
+     ],
+     "products": [
+      "O2XPLK2A"
+     ],
+     "class": [
+      0,
+      -1,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "CPA2",
+      "O2XPLK2A"
+     ],
+     "to": [
+      "CPA2",
+      "OK",
+      "OXPLKA"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "CPA2",
+      "OXPLKA"
+     ],
+     "products": [
+      "OXCPKA",
+      "PLA2"
+     ],
+     "class": [
+      3,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "CPA2",
+     "O2XA",
+     "PLK2"
+    ],
+    [
+     "CPA2",
+     "OK",
+     "OXPLKA"
+    ],
+    [
+     "OK",
+     "OXCPKA",
+     "PLA2"
+    ],
+    [
+     "OK",
+     "OXCPKA",
+     "PLA2"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "O3F",
+    "O3P",
+    "K2A"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "O3F",
+      "K2A"
+     ],
+     "products": [
+      "O3K2AF"
+     ],
+     "class": [
+      0,
+      -2,
+      3
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "O3P",
+      "O3K2AF"
+     ],
+     "products": [
+      "O2K2A",
+      "O4PF"
+     ],
+     "class": [
+      0,
+      -1,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "O2K2A",
+      "O4PF"
+     ],
+     "to": [
+      "O4PF"
+     ]
+    }
+   ],
+   "history": [
+    [
+     "K2A",
+     "O3F",
+     "O3P"
+    ],
+    [
+     "O3K2AF",
+     "O3P"
+    ],
+    [
+     "O4PF"
+    ],
+    [
+     "O4PF"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "X2CF",
+    "XCPA",
+    "CW2L",
+    "OCWA"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "X2CF",
+      "CW2L"
+     ],
+     "products": [
+      "XCWF",
+      "XCWL"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "OCWA",
+      "XCPA",
+      "XCWF",
+      "XCWL"
+     ],
+     "to": [
+      "CF",
+      "CL",
+      "OCWA",
+      "XCPA",
+      "XW",
+      "XW"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "XCPA",
+      "OCWA"
+     ],
+     "products": [
+      "C2",
+      "OXPWA2"
+     ],
+     "class": [
+      3,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "C2",
+      "CF",
+      "CL",
+      "OXPWA2",
+      "XW",
+      "XW"
+     ],
+     "to": [
+      "C2",
+      "CF",
+      "CL",
+      "OP",
+      "WA",
+      "XA",
+      "XW",
+      "XW"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "XW",
+      "WA"
+     ],
+     "products": [
+      "XW2A"
+     ],
+     "class": [
+      4,
+      -2,
+      2
+     ]
+    }
+   ],
+   "history": [
+    [
+     "CW2L",
+     "OCWA",
+     "X2CF",
+     "XCPA"
+    ],
+    [
+     "CF",
+     "CL",
+     "OCWA",
+     "XCPA",
+     "XW",
+     "XW"
+    ],
+    [
+     "C2",
+     "CF",
+     "CL",
+     "OP",
+     "WA",
+     "XA",
+     "XW",
+     "XW"
+    ],
+    [
+     "C2",
+     "CF",
+     "CL",
+     "OP",
+     "XA",
+     "XW",
+     "XW2A"
+    ],
+    [
+     "C2",
+     "CF",
+     "CL",
+     "OP",
+     "XA",
+     "XW",
+     "XW2A"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "LKF2",
+    "OPLK"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "LKF2",
+      "OPLK"
+     ],
+     "products": [
+      "F2",
+      "OPL2K2"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "F2",
+      "OPL2K2"
+     ],
+     "to": [
+      "F2",
+      "L2",
+      "OK",
+      "PK"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "L2",
+      "F2"
+     ],
+     "products": [
+      "LF",
+      "LF"
+     ],
+     "class": [
+      0,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "LKF2",
+     "OPLK"
+    ],
+    [
+     "F2",
+     "L2",
+     "OK",
+     "PK"
+    ],
+    [
+     "LF",
+     "LF",
+     "OK",
+     "PK"
+    ],
+    [
+     "LF",
+     "LF",
+     "OK",
+     "PK"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "X3",
+    "A2",
+    "O2X2",
+    "X2A"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "X3",
+      "X2A"
+     ],
+     "products": [
+      "X2",
+      "X3A"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "A2",
+      "X2"
+     ],
+     "products": [
+      "X2A2"
+     ],
+     "class": [
+      0,
+      -2,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "O2X2",
+      "X2A2",
+      "X3A"
+     ],
+     "to": [
+      "O2X2",
+      "X3A",
+      "XA",
+      "XA"
+     ]
+    }
+   ],
+   "history": [
+    [
+     "A2",
+     "O2X2",
+     "X2A",
+     "X3"
+    ],
+    [
+     "A2",
+     "O2X2",
+     "X2",
+     "X3A"
+    ],
+    [
+     "O2X2",
+     "X3A",
+     "XA",
+     "XA"
+    ],
+    [
+     "O2X2",
+     "X3A",
+     "XA",
+     "XA"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "L2",
+    "PLA",
+    "OC2L",
+    "XP2W"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "PLA",
+      "OC2L"
+     ],
+     "products": [
+      "C2",
+      "OPL2A"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "C2",
+      "L2",
+      "OPL2A",
+      "XP2W"
+     ],
+     "to": [
+      "C2",
+      "L2",
+      "L2A",
+      "OP",
+      "XP2W"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "L2",
+      "C2"
+     ],
+     "products": [
+      "CL",
+      "CL"
+     ],
+     "class": [
+      0,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "L2",
+     "OC2L",
+     "PLA",
+     "XP2W"
+    ],
+    [
+     "C2",
+     "L2",
+     "L2A",
+     "OP",
+     "XP2W"
+    ],
+    [
+     "CL",
+     "CL",
+     "L2A",
+     "OP",
+     "XP2W"
+    ],
+    [
+     "CL",
+     "CL",
+     "L2A",
+     "OP",
+     "XP2W"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "X2A",
+    "W3A",
+    "CKA",
+    "C2A2"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "X2A",
+      "W3A"
+     ],
+     "products": [
+      "W2A",
+      "X2WA"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "C2A2",
+      "CKA",
+      "W2A",
+      "X2WA"
+     ],
+     "to": [
+      "C2A2",
+      "CKA",
+      "W2A",
+      "XA",
+      "XW"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "C2A2",
+      "W2A"
+     ],
+     "products": [
+      "C2W2A3"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "C2W2A3",
+      "CKA",
+      "XA",
+      "XW"
+     ],
+     "to": [
+      "C2WA2",
+      "CKA",
+      "WA",
+      "XA",
+      "XW"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "XW",
+      "WA"
+     ],
+     "products": [
+      "XW2A"
+     ],
+     "class": [
+      4,
+      -2,
+      2
+     ]
+    }
+   ],
+   "history": [
+    [
+     "C2A2",
+     "CKA",
+     "W3A",
+     "X2A"
+    ],
+    [
+     "C2A2",
+     "CKA",
+     "W2A",
+     "XA",
+     "XW"
+    ],
+    [
+     "C2WA2",
+     "CKA",
+     "WA",
+     "XA",
+     "XW"
+    ],
+    [
+     "C2WA2",
+     "CKA",
+     "XA",
+     "XW2A"
+    ],
+    [
+     "C2WA2",
+     "CKA",
+     "XA",
+     "XW2A"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "OL2F",
+    "OC3",
+    "XCP"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "OL2F",
+      "XCP"
+     ],
+     "products": [
+      "CL",
+      "OXPLF"
+     ],
+     "class": [
+      4,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "CL",
+      "OC3",
+      "OXPLF"
+     ],
+     "to": [
+      "CL",
+      "OC3",
+      "OP",
+      "XLF"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "OC3",
+      "CL"
+     ],
+     "products": [
+      "C2",
+      "OC2L"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "OC3",
+     "OL2F",
+     "XCP"
+    ],
+    [
+     "CL",
+     "OC3",
+     "OP",
+     "XLF"
+    ],
+    [
+     "C2",
+     "OC2L",
+     "OP",
+     "XLF"
+    ],
+    [
+     "C2",
+     "OC2L",
+     "OP",
+     "XLF"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "X2F2",
+    "O2LK",
+    "XP2A",
+    "C3K"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "O2LK",
+      "XP2A"
+     ],
+     "products": [
+      "O2XP2LKA"
+     ],
+     "class": [
+      0,
+      -1,
+      3
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "C3K",
+      "O2XP2LKA"
+     ],
+     "products": [
+      "CL",
+      "O2XC2P2K2A"
+     ],
+     "class": [
+      4,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "CL",
+      "O2XC2P2K2A",
+      "X2F2"
+     ],
+     "to": [
+      "C2",
+      "CL",
+      "O2XP2K2A",
+      "X2F2"
+     ]
+    }
+   ],
+   "history": [
+    [
+     "C3K",
+     "O2LK",
+     "X2F2",
+     "XP2A"
+    ],
+    [
+     "C3K",
+     "O2XP2LKA",
+     "X2F2"
+    ],
+    [
+     "C2",
+     "CL",
+     "O2XP2K2A",
+     "X2F2"
+    ],
+    [
+     "C2",
+     "CL",
+     "O2XP2K2A",
+     "X2F2"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "C3K",
+    "O2W",
+    "CPA",
+    "XL2"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "C3K",
+      "CPA"
+     ],
+     "products": [
+      "C2",
+      "C2PKA"
+     ],
+     "class": [
+      4,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "C2",
+      "C2PKA",
+      "O2W",
+      "XL2"
+     ],
+     "to": [
+      "C2",
+      "C2A",
+      "O2W",
+      "PK",
+      "XL2"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "XL2",
+      "C2A"
+     ],
+     "products": [
+      "CL",
+      "CL",
+      "XA"
+     ],
+     "class": [
+      3,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "C3K",
+     "CPA",
+     "O2W",
+     "XL2"
+    ],
+    [
+     "C2",
+     "C2A",
+     "O2W",
+     "PK",
+     "XL2"
+    ],
+    [
+     "C2",
+     "CL",
+     "CL",
+     "O2W",
+     "PK",
+     "XA"
+    ],
+    [
+     "C2",
+     "CL",
+     "CL",
+     "O2W",
+     "PK",
+     "XA"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "PA2F",
+    "OX2L",
+    "OX2C",
+    "XA3"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "OX2L",
+      "XA3"
+     ],
+     "products": [
+      "OX2LA",
+      "XA2"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "OX2C",
+      "OX2LA",
+      "PA2F",
+      "XA2"
+     ],
+     "to": [
+      "OLA",
+      "OX2C",
+      "PA2F",
+      "X2",
+      "XA2"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "OX2C",
+      "XA2"
+     ],
+     "products": [
+      "OX3CA2"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    }
+   ],
+   "history": [
+    [
+     "OX2C",
+     "OX2L",
+     "PA2F",
+     "XA3"
+    ],
+    [
+     "OLA",
+     "OX2C",
+     "PA2F",
+     "X2",
+     "XA2"
+    ],
+    [
+     "OLA",
+     "OX3CA2",
+     "PA2F",
+     "X2"
+    ],
+    [
+     "OLA",
+     "OX3CA2",
+     "PA2F",
+     "X2"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "A2F2",
+    "OCL2",
+    "LA2F",
+    "X2C2"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "A2F2",
+      "X2C2"
+     ],
+     "products": [
+      "XCAF",
+      "XCAF"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "LA2F",
+      "OCL2",
+      "XCAF",
+      "XCAF"
+     ],
+     "to": [
+      "CF",
+      "CF",
+      "LA2F",
+      "OCL2",
+      "XA",
+      "XA"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "OCL2",
+      "CF"
+     ],
+     "products": [
+      "C2",
+      "OL2F"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "A2F2",
+     "LA2F",
+     "OCL2",
+     "X2C2"
+    ],
+    [
+     "CF",
+     "CF",
+     "LA2F",
+     "OCL2",
+     "XA",
+     "XA"
+    ],
+    [
+     "C2",
+     "CF",
+     "LA2F",
+     "OL2F",
+     "XA",
+     "XA"
+    ],
+    [
+     "C2",
+     "CF",
+     "LA2F",
+     "OL2F",
+     "XA",
+     "XA"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "O3C",
+    "P3L",
+    "PLF2",
+    "C2PL"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "O3C",
+      "P3L"
+     ],
+     "products": [
+      "O3CP3L"
+     ],
+     "class": [
+      0,
+      -2,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "C2PL",
+      "O3CP3L",
+      "PLF2"
+     ],
+     "to": [
+      "C2PL",
+      "CL",
+      "OP",
+      "OP",
+      "OP",
+      "PLF2"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "PLF2",
+      "CL"
+     ],
+     "products": [
+      "CPF2",
+      "L2"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "C2PL",
+     "O3C",
+     "P3L",
+     "PLF2"
+    ],
+    [
+     "C2PL",
+     "CL",
+     "OP",
+     "OP",
+     "OP",
+     "PLF2"
+    ],
+    [
+     "C2PL",
+     "CPF2",
+     "L2",
+     "OP",
+     "OP",
+     "OP"
+    ],
+    [
+     "C2PL",
+     "CPF2",
+     "L2",
+     "OP",
+     "OP",
+     "OP"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "K2A",
+    "OLK2",
+    "OC2L",
+    "P3F"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "K2A",
+      "P3F"
+     ],
+     "products": [
+      "P3K2AF"
+     ],
+     "class": [
+      0,
+      -2,
+      3
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "OLK2",
+      "P3K2AF"
+     ],
+     "products": [
+      "OPLK2F",
+      "P2K2A"
+     ],
+     "class": [
+      0,
+      -1,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "OC2L",
+      "OPLK2F",
+      "P2K2A"
+     ],
+     "to": [
+      "LF",
+      "OC2L",
+      "OK",
+      "PK"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "OC2L",
+      "LF"
+     ],
+     "products": [
+      "C2",
+      "OL2F"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "K2A",
+     "OC2L",
+     "OLK2",
+     "P3F"
+    ],
+    [
+     "OC2L",
+     "OLK2",
+     "P3K2AF"
+    ],
+    [
+     "LF",
+     "OC2L",
+     "OK",
+     "PK"
+    ],
+    [
+     "C2",
+     "OK",
+     "OL2F",
+     "PK"
+    ],
+    [
+     "C2",
+     "OK",
+     "OL2F",
+     "PK"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "O2L2",
+    "P3F",
+    "P2KF"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "O2L2",
+      "P3F"
+     ],
+     "products": [
+      "O2P3L2F"
+     ],
+     "class": [
+      0,
+      -2,
+      3
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "P2KF",
+      "O2P3L2F"
+     ],
+     "products": [
+      "O2P2L2",
+      "P3KF2"
+     ],
+     "class": [
+      0,
+      -1,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "O2P2L2",
+      "P3KF2"
+     ],
+     "to": [
+      "L2",
+      "OP",
+      "OP",
+      "P3KF2"
+     ]
+    }
+   ],
+   "history": [
+    [
+     "O2L2",
+     "P2KF",
+     "P3F"
+    ],
+    [
+     "O2P3L2F",
+     "P2KF"
+    ],
+    [
+     "L2",
+     "OP",
+     "OP",
+     "P3KF2"
+    ],
+    [
+     "L2",
+     "OP",
+     "OP",
+     "P3KF2"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "W2A",
+    "PW2F",
+    "OXF",
+    "A3"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "W2A",
+      "A3"
+     ],
+     "products": [
+      "W2A4"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "OXF",
+      "PW2F",
+      "W2A4"
+     ],
+     "to": [
+      "OXF",
+      "PW2F",
+      "WA2",
+      "WA2"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "PW2F",
+      "WA2"
+     ],
+     "products": [
+      "PW3A2F"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    }
+   ],
+   "history": [
+    [
+     "A3",
+     "OXF",
+     "PW2F",
+     "W2A"
+    ],
+    [
+     "OXF",
+     "PW2F",
+     "WA2",
+     "WA2"
+    ],
+    [
+     "OXF",
+     "PW3A2F",
+     "WA2"
+    ],
+    [
+     "OXF",
+     "PW3A2F",
+     "WA2"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "OPKF",
+    "CWK",
+    "X2P2",
+    "LKF2"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "OPKF",
+      "CWK"
+     ],
+     "products": [
+      "CF",
+      "OPWK2"
+     ],
+     "class": [
+      4,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "CF",
+      "LKF2",
+      "OPWK2",
+      "X2P2"
+     ],
+     "to": [
+      "CF",
+      "LKF2",
+      "X2P2"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "LKF2",
+      "CF"
+     ],
+     "products": [
+      "CLKF",
+      "F2"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "CWK",
+     "LKF2",
+     "OPKF",
+     "X2P2"
+    ],
+    [
+     "CF",
+     "LKF2",
+     "X2P2"
+    ],
+    [
+     "CLKF",
+     "F2",
+     "X2P2"
+    ],
+    [
+     "CLKF",
+     "F2",
+     "X2P2"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "C2P2",
+    "L2K2",
+    "CPLF"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "C2P2",
+      "L2K2"
+     ],
+     "products": [
+      "C2P2L2K2"
+     ],
+     "class": [
+      0,
+      -2,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "C2P2L2K2",
+      "CPLF"
+     ],
+     "to": [
+      "CL",
+      "CL",
+      "CPLF",
+      "PK",
+      "PK"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "CPLF",
+      "CL"
+     ],
+     "products": [
+      "C2PF",
+      "L2"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "C2P2",
+     "CPLF",
+     "L2K2"
+    ],
+    [
+     "CL",
+     "CL",
+     "CPLF",
+     "PK",
+     "PK"
+    ],
+    [
+     "C2PF",
+     "CL",
+     "L2",
+     "PK",
+     "PK"
+    ],
+    [
+     "C2PF",
+     "CL",
+     "L2",
+     "PK",
+     "PK"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "OCL2",
+    "LAF",
+    "X2CF",
+    "A2F2"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "X2CF",
+      "A2F2"
+     ],
+     "products": [
+      "XAF2",
+      "XCAF"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "LAF",
+      "OCL2",
+      "XAF2",
+      "XCAF"
+     ],
+     "to": [
+      "CF",
+      "F2",
+      "LAF",
+      "OCL2",
+      "XA",
+      "XA"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "OCL2",
+      "CF"
+     ],
+     "products": [
+      "C2",
+      "OL2F"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "F2",
+      "C2"
+     ],
+     "products": [
+      "CF",
+      "CF"
+     ],
+     "class": [
+      0,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "A2F2",
+     "LAF",
+     "OCL2",
+     "X2CF"
+    ],
+    [
+     "CF",
+     "F2",
+     "LAF",
+     "OCL2",
+     "XA",
+     "XA"
+    ],
+    [
+     "C2",
+     "F2",
+     "LAF",
+     "OL2F",
+     "XA",
+     "XA"
+    ],
+    [
+     "CF",
+     "CF",
+     "LAF",
+     "OL2F",
+     "XA",
+     "XA"
+    ],
+    [
+     "CF",
+     "CF",
+     "LAF",
+     "OL2F",
+     "XA",
+     "XA"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "WLF",
+    "LAF",
+    "XW",
+    "OWAF"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "WLF",
+      "LAF"
+     ],
+     "products": [
+      "LF",
+      "WLAF"
+     ],
+     "class": [
+      1,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "LF",
+      "OWAF",
+      "WLAF",
+      "XW"
+     ],
+     "to": [
+      "LF",
+      "LF",
+      "OWAF",
+      "WA",
+      "XW"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "XW",
+      "WA"
+     ],
+     "products": [
+      "XW2A"
+     ],
+     "class": [
+      4,
+      -2,
+      2
+     ]
+    }
+   ],
+   "history": [
+    [
+     "LAF",
+     "OWAF",
+     "WLF",
+     "XW"
+    ],
+    [
+     "LF",
+     "LF",
+     "OWAF",
+     "WA",
+     "XW"
+    ],
+    [
+     "LF",
+     "LF",
+     "OWAF",
+     "XW2A"
+    ],
+    [
+     "LF",
+     "LF",
+     "OWAF",
+     "XW2A"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "K3F",
+    "P2LK",
+    "OPLK",
+    "CLKF"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "OPLK",
+      "CLKF"
+     ],
+     "products": [
+      "LF",
+      "OCPLK2"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "K3F",
+      "LF",
+      "OCPLK2",
+      "P2LK"
+     ],
+     "to": [
+      "CL",
+      "K3F",
+      "LF",
+      "OK",
+      "P2LK",
+      "PK"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "CL",
+      "LF"
+     ],
+     "products": [
+      "CF",
+      "L2"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "CLKF",
+     "K3F",
+     "OPLK",
+     "P2LK"
+    ],
+    [
+     "CL",
+     "K3F",
+     "LF",
+     "OK",
+     "P2LK",
+     "PK"
+    ],
+    [
+     "CF",
+     "K3F",
+     "L2",
+     "OK",
+     "P2LK",
+     "PK"
+    ],
+    [
+     "CF",
+     "K3F",
+     "L2",
+     "OK",
+     "P2LK",
+     "PK"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "OW2L",
+    "XPAF",
+    "LKF2"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "OW2L",
+      "XPAF"
+     ],
+     "products": [
+      "LF",
+      "OXPW2A"
+     ],
+     "class": [
+      1,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "LF",
+      "LKF2",
+      "OXPW2A"
+     ],
+     "to": [
+      "LF",
+      "LKF2",
+      "OP",
+      "XW2A"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "LKF2",
+      "LF"
+     ],
+     "products": [
+      "F2",
+      "L2KF"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "LKF2",
+     "OW2L",
+     "XPAF"
+    ],
+    [
+     "LF",
+     "LKF2",
+     "OP",
+     "XW2A"
+    ],
+    [
+     "F2",
+     "L2KF",
+     "OP",
+     "XW2A"
+    ],
+    [
+     "F2",
+     "L2KF",
+     "OP",
+     "XW2A"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "X2F2",
+    "CW2L",
+    "XW2",
+    "X2L2"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "X2F2",
+      "CW2L"
+     ],
+     "products": [
+      "XCWF",
+      "XWLF"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "X2L2",
+      "XCWF",
+      "XW2",
+      "XWLF"
+     ],
+     "to": [
+      "CF",
+      "LF",
+      "X2L2",
+      "XW",
+      "XW",
+      "XW2"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "XW2",
+      "X2L2"
+     ],
+     "products": [
+      "X3W2L2"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "CF",
+      "LF",
+      "X3W2L2",
+      "XW",
+      "XW"
+     ],
+     "to": [
+      "CF",
+      "LF",
+      "X2WL2",
+      "XW",
+      "XW",
+      "XW"
+     ]
+    }
+   ],
+   "history": [
+    [
+     "CW2L",
+     "X2F2",
+     "X2L2",
+     "XW2"
+    ],
+    [
+     "CF",
+     "LF",
+     "X2L2",
+     "XW",
+     "XW",
+     "XW2"
+    ],
+    [
+     "CF",
+     "LF",
+     "X2WL2",
+     "XW",
+     "XW",
+     "XW"
+    ],
+    [
+     "CF",
+     "LF",
+     "X2WL2",
+     "XW",
+     "XW",
+     "XW"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "W3",
+    "CA2F",
+    "X2",
+    "OCW2"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "W3",
+      "CA2F"
+     ],
+     "products": [
+      "CW3A2F"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "CW3A2F",
+      "OCW2",
+      "X2"
+     ],
+     "to": [
+      "CW2AF",
+      "OCW2",
+      "WA",
+      "X2"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "OCW2",
+      "CW2AF"
+     ],
+     "products": [
+      "C2W2A",
+      "OW2F"
+     ],
+     "class": [
+      3,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "CA2F",
+     "OCW2",
+     "W3",
+     "X2"
+    ],
+    [
+     "CW2AF",
+     "OCW2",
+     "WA",
+     "X2"
+    ],
+    [
+     "C2W2A",
+     "OW2F",
+     "WA",
+     "X2"
+    ],
+    [
+     "C2W2A",
+     "OW2F",
+     "WA",
+     "X2"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "O3F",
+    "CW2L",
+    "LKA2",
+    "P2F2"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "O3F",
+      "P2F2"
+     ],
+     "products": [
+      "O3P2F3"
+     ],
+     "class": [
+      0,
+      -2,
+      3
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "CW2L",
+      "LKA2"
+     ],
+     "products": [
+      "CW2L2KA2"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "CW2L2KA2",
+      "O3P2F3"
+     ],
+     "to": [
+      "CLA",
+      "O3P2F3",
+      "W2LKA"
+     ]
+    }
+   ],
+   "history": [
+    [
+     "CW2L",
+     "LKA2",
+     "O3F",
+     "P2F2"
+    ],
+    [
+     "CW2L",
+     "LKA2",
+     "O3P2F3"
+    ],
+    [
+     "CLA",
+     "O3P2F3",
+     "W2LKA"
+    ],
+    [
+     "CLA",
+     "O3P2F3",
+     "W2LKA"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "P3L",
+    "O2CF",
+    "CP2K"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "P3L",
+      "O2CF"
+     ],
+     "products": [
+      "O2CP3LF"
+     ],
+     "class": [
+      0,
+      -2,
+      3
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "CP2K",
+      "O2CP3LF"
+     ],
+     "products": [
+      "CP3LK",
+      "O2CP2F"
+     ],
+     "class": [
+      0,
+      -1,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "CP3LK",
+      "O2CP2F"
+     ],
+     "to": [
+      "CF",
+      "CP3LK",
+      "OP",
+      "OP"
+     ]
+    }
+   ],
+   "history": [
+    [
+     "CP2K",
+     "O2CF",
+     "P3L"
+    ],
+    [
+     "CP2K",
+     "O2CP3LF"
+    ],
+    [
+     "CF",
+     "CP3LK",
+     "OP",
+     "OP"
+    ],
+    [
+     "CF",
+     "CP3LK",
+     "OP",
+     "OP"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "XL2",
+    "CLKF",
+    "CLA2",
+    "X2CF"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "CLA2",
+      "X2CF"
+     ],
+     "products": [
+      "XCAF",
+      "XCLA"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "CLKF",
+      "XCAF",
+      "XCLA",
+      "XL2"
+     ],
+     "to": [
+      "CF",
+      "CL",
+      "CLKF",
+      "XA",
+      "XA",
+      "XL2"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "CLKF",
+      "CF"
+     ],
+     "products": [
+      "C2LK",
+      "F2"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "CLA2",
+     "CLKF",
+     "X2CF",
+     "XL2"
+    ],
+    [
+     "CF",
+     "CL",
+     "CLKF",
+     "XA",
+     "XA",
+     "XL2"
+    ],
+    [
+     "C2LK",
+     "CL",
+     "F2",
+     "XA",
+     "XA",
+     "XL2"
+    ],
+    [
+     "C2LK",
+     "CL",
+     "F2",
+     "XA",
+     "XA",
+     "XL2"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "W3A",
+    "P2LF",
+    "O2L2",
+    "X2W"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "W3A",
+      "X2W"
+     ],
+     "products": [
+      "W2A",
+      "X2W2"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "O2L2",
+      "P2LF",
+      "W2A",
+      "X2W2"
+     ],
+     "to": [
+      "O2L2",
+      "P2LF",
+      "W2A",
+      "XW",
+      "XW"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "P2LF",
+      "O2L2"
+     ],
+     "products": [
+      "O2P2L3F"
+     ],
+     "class": [
+      0,
+      -2,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "O2P2L3F",
+      "W2A",
+      "XW",
+      "XW"
+     ],
+     "to": [
+      "L2",
+      "LF",
+      "OP",
+      "OP",
+      "W2A",
+      "XW",
+      "XW"
+     ]
+    }
+   ],
+   "history": [
+    [
+     "O2L2",
+     "P2LF",
+     "W3A",
+     "X2W"
+    ],
+    [
+     "O2L2",
+     "P2LF",
+     "W2A",
+     "XW",
+     "XW"
+    ],
+    [
+     "L2",
+     "LF",
+     "OP",
+     "OP",
+     "W2A",
+     "XW",
+     "XW"
+    ],
+    [
+     "L2",
+     "LF",
+     "OP",
+     "OP",
+     "W2A",
+     "XW",
+     "XW"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "CL2K",
+    "XP2A",
+    "C2K2",
+    "O2KF"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "XP2A",
+      "O2KF"
+     ],
+     "products": [
+      "O2XP2KAF"
+     ],
+     "class": [
+      0,
+      -1,
+      3
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "CL2K",
+      "O2XP2KAF"
+     ],
+     "products": [
+      "LF",
+      "O2XCP2LK2A"
+     ],
+     "class": [
+      4,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "C2K2",
+      "LF",
+      "O2XCP2LK2A"
+     ],
+     "to": [
+      "C2K2",
+      "CL",
+      "LF",
+      "O2XP2K2A"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "CL",
+      "LF"
+     ],
+     "products": [
+      "CF",
+      "L2"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "C2K2",
+     "CL2K",
+     "O2KF",
+     "XP2A"
+    ],
+    [
+     "C2K2",
+     "CL2K",
+     "O2XP2KAF"
+    ],
+    [
+     "C2K2",
+     "CL",
+     "LF",
+     "O2XP2K2A"
+    ],
+    [
+     "C2K2",
+     "CF",
+     "L2",
+     "O2XP2K2A"
+    ],
+    [
+     "C2K2",
+     "CF",
+     "L2",
+     "O2XP2K2A"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "P2L2",
+    "PL2F",
+    "PWF",
+    "O2CF"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "P2L2",
+      "O2CF"
+     ],
+     "products": [
+      "O2CP2L2F"
+     ],
+     "class": [
+      0,
+      -2,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "O2CP2L2F",
+      "PL2F",
+      "PWF"
+     ],
+     "to": [
+      "CF",
+      "L2",
+      "OP",
+      "OP",
+      "PL2F",
+      "PWF"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "PL2F",
+      "CF"
+     ],
+     "products": [
+      "CPF2",
+      "L2"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "O2CF",
+     "P2L2",
+     "PL2F",
+     "PWF"
+    ],
+    [
+     "CF",
+     "L2",
+     "OP",
+     "OP",
+     "PL2F",
+     "PWF"
+    ],
+    [
+     "CPF2",
+     "L2",
+     "L2",
+     "OP",
+     "OP",
+     "PWF"
+    ],
+    [
+     "CPF2",
+     "L2",
+     "L2",
+     "OP",
+     "OP",
+     "PWF"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "XKF",
+    "OWL",
+    "OCLF",
+    "OCW"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "XKF",
+      "OCLF"
+     ],
+     "products": [
+      "CF",
+      "OXLKF"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "CF",
+      "OCW",
+      "OWL",
+      "OXLKF"
+     ],
+     "to": [
+      "CF",
+      "OCW",
+      "OK",
+      "OWL",
+      "XLF"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "OCW",
+      "CF"
+     ],
+     "products": [
+      "C2",
+      "OWF"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "OCLF",
+     "OCW",
+     "OWL",
+     "XKF"
+    ],
+    [
+     "CF",
+     "OCW",
+     "OK",
+     "OWL",
+     "XLF"
+    ],
+    [
+     "C2",
+     "OK",
+     "OWF",
+     "OWL",
+     "XLF"
+    ],
+    [
+     "C2",
+     "OK",
+     "OWF",
+     "OWL",
+     "XLF"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "OP",
+    "P2KF",
+    "CPK2",
+    "XLK"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "P2KF",
+      "CPK2"
+     ],
+     "products": [
+      "CP3K3F"
+     ],
+     "class": [
+      0,
+      -1,
+      3
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "CP3K3F",
+      "OP",
+      "XLK"
+     ],
+     "to": [
+      "CF",
+      "OP",
+      "PK",
+      "PK",
+      "PK",
+      "XLK"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "OP",
+      "PK"
+     ],
+     "products": [
+      "OP2K"
+     ],
+     "class": [
+      6,
+      -3,
+      3
+     ]
+    }
+   ],
+   "history": [
+    [
+     "CPK2",
+     "OP",
+     "P2KF",
+     "XLK"
+    ],
+    [
+     "CF",
+     "OP",
+     "PK",
+     "PK",
+     "PK",
+     "XLK"
+    ],
+    [
+     "CF",
+     "OP2K",
+     "PK",
+     "PK",
+     "XLK"
+    ],
+    [
+     "CF",
+     "OP2K",
+     "PK",
+     "PK",
+     "XLK"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "XWA",
+    "OL2F",
+    "OCPK",
+    "XW3"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "OL2F",
+      "OCPK"
+     ],
+     "products": [
+      "CL",
+      "O2PLKF"
+     ],
+     "class": [
+      4,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "CL",
+      "O2PLKF",
+      "XW3",
+      "XWA"
+     ],
+     "to": [
+      "CL",
+      "LF",
+      "OK",
+      "OP",
+      "XW3",
+      "XWA"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "LF",
+      "CL"
+     ],
+     "products": [
+      "CF",
+      "L2"
+     ],
+     "class": [
+      2,
+      -1,
+      1
+     ]
+    }
+   ],
+   "history": [
+    [
+     "OCPK",
+     "OL2F",
+     "XW3",
+     "XWA"
+    ],
+    [
+     "CL",
+     "LF",
+     "OK",
+     "OP",
+     "XW3",
+     "XWA"
+    ],
+    [
+     "CF",
+     "L2",
+     "OK",
+     "OP",
+     "XW3",
+     "XWA"
+    ],
+    [
+     "CF",
+     "L2",
+     "OK",
+     "OP",
+     "XW3",
+     "XWA"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "XW3",
+    "CW2K",
+    "PLA",
+    "XCPA"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "CW2K",
+      "XCPA"
+     ],
+     "products": [
+      "C2",
+      "XPW2KA"
+     ],
+     "class": [
+      3,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "C2",
+      "PLA",
+      "XPW2KA",
+      "XW3"
+     ],
+     "to": [
+      "C2",
+      "PK",
+      "PLA",
+      "XW2A",
+      "XW3"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "XW3",
+      "XW2A"
+     ],
+     "products": [
+      "XW2",
+      "XW3A"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    }
+   ],
+   "history": [
+    [
+     "CW2K",
+     "PLA",
+     "XCPA",
+     "XW3"
+    ],
+    [
+     "C2",
+     "PK",
+     "PLA",
+     "XW2A",
+     "XW3"
+    ],
+    [
+     "C2",
+     "PK",
+     "PLA",
+     "XW2",
+     "XW3A"
+    ],
+    [
+     "C2",
+     "PK",
+     "PLA",
+     "XW2",
+     "XW3A"
+    ]
+   ]
+  },
+  {
+   "init": [
+    "XCK",
+    "C2PF",
+    "OX2C",
+    "X3A"
+   ],
+   "events": [
+    {
+     "type": "react",
+     "inputs": [
+      "XCK",
+      "C2PF"
+     ],
+     "products": [
+      "CF",
+      "XC2PK"
+     ],
+     "class": [
+      4,
+      -1,
+      1
+     ]
+    },
+    {
+     "type": "decay",
+     "from": [
+      "CF",
+      "OX2C",
+      "X3A",
+      "XC2PK"
+     ],
+     "to": [
+      "CF",
+      "OX2C",
+      "PK",
+      "X3A",
+      "XC2"
+     ]
+    },
+    {
+     "type": "react",
+     "inputs": [
+      "OX2C",
+      "X3A"
+     ],
+     "products": [
+      "OX3C",
+      "X2A"
+     ],
+     "class": [
+      0,
+      -1,
+      2
+     ]
+    }
+   ],
+   "history": [
+    [
+     "C2PF",
+     "OX2C",
+     "X3A",
+     "XCK"
+    ],
+    [
+     "CF",
+     "OX2C",
+     "PK",
+     "X3A",
+     "XC2"
+    ],
+    [
+     "CF",
+     "OX3C",
+     "PK",
+     "X2A",
+     "XC2"
+    ],
+    [
+     "CF",
+     "OX3C",
+     "PK",
+     "X2A",
+     "XC2"
+    ]
+   ]
+  }
+ ]
+}

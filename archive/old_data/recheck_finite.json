@@ -1,0 +1,1317 @@
+{
+ "O": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "P": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "W": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/X": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/P": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/W": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/P": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/W": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/P": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/W": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "P/W": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "P/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "P/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "P/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "P/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "W/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "W/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "W/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "W/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "L/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "L/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "K/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/X/C": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/X/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/X/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/P": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/W": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/P/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/P/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/W/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/W/A": {
+  "T": 36,
+  "max": 19,
+  "info": {
+   "formula": "O4W6A9",
+   "feed": [
+    8,
+    0,
+    0,
+    0,
+    11,
+    0,
+    0,
+    17,
+    0
+   ],
+   "nmols": 3
+  }
+ },
+ "O/W/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/L/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/L/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/P": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/W": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/P/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/P/A": {
+  "T": 36,
+  "max": 19,
+  "info": {
+   "formula": "X9P4A6",
+   "feed": [
+    0,
+    17,
+    0,
+    8,
+    0,
+    0,
+    0,
+    11,
+    0
+   ],
+   "nmols": 3
+  }
+ },
+ "X/P/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/W/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/W/K": {
+  "T": 36,
+  "max": 22,
+  "info": {
+   "formula": "X10W8K4",
+   "feed": [
+    0,
+    16,
+    0,
+    0,
+    14,
+    0,
+    6,
+    0,
+    0
+   ],
+   "nmols": 2
+  }
+ },
+ "X/W/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/W/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/L/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/L/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/P/W": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/P/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/P/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/P/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/P/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/W/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/W/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/W/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/W/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/L/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/L/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/K/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "P/W/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "P/W/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "P/L/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "P/L/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "P/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "P/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "P/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "W/L/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "W/L/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "W/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "W/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "W/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "L/K/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "L/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "L/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "K/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/X/C/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/X/C/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/X/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/P/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/P/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/W/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/W/A": {
+  "T": 36,
+  "max": 19,
+  "info": {
+   "formula": "O4W6A9",
+   "feed": [
+    6,
+    0,
+    8,
+    0,
+    8,
+    0,
+    0,
+    14,
+    0
+   ],
+   "nmols": 6
+  }
+ },
+ "O/C/W/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/L/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/L/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/P/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/W/L/A": {
+  "T": 36,
+  "max": 19,
+  "info": {
+   "formula": "O4W6A9",
+   "feed": [
+    5,
+    0,
+    0,
+    0,
+    7,
+    13,
+    0,
+    11,
+    0
+   ],
+   "nmols": 8
+  }
+ },
+ "O/W/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/W/A/F": {
+  "T": 36,
+  "max": 19,
+  "info": {
+   "formula": "O4W6A9",
+   "feed": [
+    6,
+    0,
+    0,
+    0,
+    10,
+    0,
+    0,
+    14,
+    6
+   ],
+   "nmols": 4
+  }
+ },
+ "O/L/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/L/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/P/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/P/A": {
+  "T": 36,
+  "max": 20,
+  "info": {
+   "formula": "X10P4A6",
+   "feed": [
+    0,
+    13,
+    9,
+    5,
+    0,
+    0,
+    0,
+    9,
+    0
+   ],
+   "nmols": 5
+  }
+ },
+ "X/C/P/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/W/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/W/K": {
+  "T": 36,
+  "max": 19,
+  "info": {
+   "formula": "X9W6K4",
+   "feed": [
+    0,
+    12,
+    11,
+    0,
+    8,
+    0,
+    5,
+    0,
+    0
+   ],
+   "nmols": 7
+  }
+ },
+ "X/C/W/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/W/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/L/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/L/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/P/L/A": {
+  "T": 36,
+  "max": 19,
+  "info": {
+   "formula": "X9P4A6",
+   "feed": [
+    0,
+    15,
+    0,
+    7,
+    0,
+    5,
+    0,
+    9,
+    0
+   ],
+   "nmols": 5
+  }
+ },
+ "X/P/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/P/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/W/L/K": {
+  "T": 36,
+  "max": 20,
+  "info": {
+   "formula": "X9W7LK3",
+   "feed": [
+    0,
+    16,
+    0,
+    0,
+    14,
+    1,
+    5,
+    0,
+    0
+   ],
+   "nmols": 3
+  }
+ },
+ "X/W/L/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/W/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/W/K/F": {
+  "T": 36,
+  "max": 20,
+  "info": {
+   "formula": "X10W6K4",
+   "feed": [
+    0,
+    16,
+    0,
+    0,
+    12,
+    0,
+    6,
+    0,
+    2
+   ],
+   "nmols": 2
+  }
+ },
+ "X/W/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/L/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/L/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/P/W/L": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/P/W/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/P/L/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/P/L/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/P/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/P/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/P/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/W/L/K": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/W/L/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/W/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/W/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/W/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/L/K/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/L/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/L/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/K/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "P/W/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "P/L/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "P/L/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "W/L/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "W/L/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "L/K/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/X/C/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/P/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/W/L/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/W/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/W/A/F": {
+  "T": 36,
+  "max": 20,
+  "info": {
+   "formula": "O4W6A10",
+   "feed": [
+    4,
+    0,
+    10,
+    0,
+    6,
+    0,
+    0,
+    10,
+    6
+   ],
+   "nmols": 9
+  }
+ },
+ "O/C/L/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/L/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/W/L/A/F": {
+  "T": 36,
+  "max": 19,
+  "info": {
+   "formula": "O4W6A9",
+   "feed": [
+    6,
+    0,
+    0,
+    0,
+    11,
+    4,
+    0,
+    15,
+    0
+   ],
+   "nmols": 3
+  }
+ },
+ "X/C/P/L/A": {
+  "T": 36,
+  "max": 19,
+  "info": {
+   "formula": "X9P4A6",
+   "feed": [
+    0,
+    11,
+    7,
+    5,
+    0,
+    4,
+    0,
+    9,
+    0
+   ],
+   "nmols": 6
+  }
+ },
+ "X/C/P/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/P/A/F": {
+  "T": 36,
+  "max": 18,
+  "info": {
+   "formula": "X8P4A6",
+   "feed": [
+    0,
+    10,
+    1,
+    6,
+    0,
+    0,
+    0,
+    10,
+    9
+   ],
+   "nmols": 7
+  }
+ },
+ "X/C/W/L/K": {
+  "T": 36,
+  "max": 19,
+  "info": {
+   "formula": "X9W6K4",
+   "feed": [
+    0,
+    11,
+    5,
+    0,
+    7,
+    8,
+    5,
+    0,
+    0
+   ],
+   "nmols": 8
+  }
+ },
+ "X/C/W/L/A": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/W/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/W/K/F": {
+  "T": 36,
+  "max": 19,
+  "info": {
+   "formula": "X9W6K4",
+   "feed": [
+    0,
+    15,
+    2,
+    0,
+    11,
+    0,
+    6,
+    0,
+    2
+   ],
+   "nmols": 3
+  }
+ },
+ "X/C/W/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/L/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/L/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/P/L/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/W/L/K/F": {
+  "T": 36,
+  "max": 22,
+  "info": {
+   "formula": "X10W8K4",
+   "feed": [
+    0,
+    16,
+    0,
+    0,
+    14,
+    0,
+    6,
+    0,
+    0
+   ],
+   "nmols": 2
+  }
+ },
+ "X/W/L/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/P/W/L/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/P/L/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/P/L/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/W/L/K/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/W/L/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "C/L/K/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "O/C/W/L/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ },
+ "X/C/P/L/A/F": {
+  "T": 36,
+  "max": 19,
+  "info": {
+   "formula": "X9P4A6",
+   "feed": [
+    0,
+    15,
+    0,
+    6,
+    0,
+    3,
+    0,
+    9,
+    3
+   ],
+   "nmols": 5
+  }
+ },
+ "X/C/W/L/K/F": {
+  "T": 36,
+  "max": 19,
+  "info": {
+   "formula": "X9W6K4",
+   "feed": [
+    0,
+    12,
+    0,
+    0,
+    8,
+    8,
+    5,
+    0,
+    3
+   ],
+   "nmols": 7
+  }
+ },
+ "X/C/W/L/A/F": {
+  "T": 36,
+  "max": 0,
+  "info": null
+ }
+}

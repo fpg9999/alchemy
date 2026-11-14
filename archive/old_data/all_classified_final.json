@@ -1,0 +1,8471 @@
+{
+ "O": {
+  "elems": [
+   "O"
+  ],
+  "n": 1,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X": {
+  "elems": [
+   "X"
+  ],
+  "n": 1,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C": {
+  "elems": [
+   "C"
+  ],
+  "n": 1,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P": {
+  "elems": [
+   "P"
+  ],
+  "n": 1,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "W": {
+  "elems": [
+   "W"
+  ],
+  "n": 1,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "L": {
+  "elems": [
+   "L"
+  ],
+  "n": 1,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "K": {
+  "elems": [
+   "K"
+  ],
+  "n": 1,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "A": {
+  "elems": [
+   "A"
+  ],
+  "n": 1,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "F": {
+  "elems": [
+   "F"
+  ],
+  "n": 1,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/X": {
+  "elems": [
+   "O",
+   "X"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C": {
+  "elems": [
+   "O",
+   "C"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/P": {
+  "elems": [
+   "O",
+   "P"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/W": {
+  "elems": [
+   "O",
+   "W"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/L": {
+  "elems": [
+   "O",
+   "L"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/K": {
+  "elems": [
+   "O",
+   "K"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/A": {
+  "elems": [
+   "O",
+   "A"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/F": {
+  "elems": [
+   "O",
+   "F"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C": {
+  "elems": [
+   "X",
+   "C"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/P": {
+  "elems": [
+   "X",
+   "P"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/W": {
+  "elems": [
+   "X",
+   "W"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/L": {
+  "elems": [
+   "X",
+   "L"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/K": {
+  "elems": [
+   "X",
+   "K"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/A": {
+  "elems": [
+   "X",
+   "A"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/F": {
+  "elems": [
+   "X",
+   "F"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/P": {
+  "elems": [
+   "C",
+   "P"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/W": {
+  "elems": [
+   "C",
+   "W"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/L": {
+  "elems": [
+   "C",
+   "L"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/K": {
+  "elems": [
+   "C",
+   "K"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/A": {
+  "elems": [
+   "C",
+   "A"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/F": {
+  "elems": [
+   "C",
+   "F"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/W": {
+  "elems": [
+   "P",
+   "W"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/L": {
+  "elems": [
+   "P",
+   "L"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/K": {
+  "elems": [
+   "P",
+   "K"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/A": {
+  "elems": [
+   "P",
+   "A"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/F": {
+  "elems": [
+   "P",
+   "F"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "W/L": {
+  "elems": [
+   "W",
+   "L"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "W/K": {
+  "elems": [
+   "W",
+   "K"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "W/A": {
+  "elems": [
+   "W",
+   "A"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "W/F": {
+  "elems": [
+   "W",
+   "F"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "L/K": {
+  "elems": [
+   "L",
+   "K"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "L/A": {
+  "elems": [
+   "L",
+   "A"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "L/F": {
+  "elems": [
+   "L",
+   "F"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "K/A": {
+  "elems": [
+   "K",
+   "A"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "K/F": {
+  "elems": [
+   "K",
+   "F"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "A/F": {
+  "elems": [
+   "A",
+   "F"
+  ],
+  "n": 2,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/X/C": {
+  "elems": [
+   "O",
+   "X",
+   "C"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/X/P": {
+  "elems": [
+   "O",
+   "X",
+   "P"
+  ],
+  "n": 3,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P"
+  ]
+ },
+ "O/X/W": {
+  "elems": [
+   "O",
+   "X",
+   "W"
+  ],
+  "n": 3,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/W"
+  ]
+ },
+ "O/X/L": {
+  "elems": [
+   "O",
+   "X",
+   "L"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/X/K": {
+  "elems": [
+   "O",
+   "X",
+   "K"
+  ],
+  "n": 3,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K"
+  ]
+ },
+ "O/X/A": {
+  "elems": [
+   "O",
+   "X",
+   "A"
+  ],
+  "n": 3,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/A"
+  ]
+ },
+ "O/X/F": {
+  "elems": [
+   "O",
+   "X",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/P": {
+  "elems": [
+   "O",
+   "C",
+   "P"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/W": {
+  "elems": [
+   "O",
+   "C",
+   "W"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/L": {
+  "elems": [
+   "O",
+   "C",
+   "L"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/K": {
+  "elems": [
+   "O",
+   "C",
+   "K"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/A": {
+  "elems": [
+   "O",
+   "C",
+   "A"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/F": {
+  "elems": [
+   "O",
+   "C",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/P/W": {
+  "elems": [
+   "O",
+   "P",
+   "W"
+  ],
+  "n": 3,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W"
+  ]
+ },
+ "O/P/L": {
+  "elems": [
+   "O",
+   "P",
+   "L"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/P/K": {
+  "elems": [
+   "O",
+   "P",
+   "K"
+  ],
+  "n": 3,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/K"
+  ]
+ },
+ "O/P/A": {
+  "elems": [
+   "O",
+   "P",
+   "A"
+  ],
+  "n": 3,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/A"
+  ]
+ },
+ "O/P/F": {
+  "elems": [
+   "O",
+   "P",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/W/L": {
+  "elems": [
+   "O",
+   "W",
+   "L"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/W/K": {
+  "elems": [
+   "O",
+   "W",
+   "K"
+  ],
+  "n": 3,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/W/K"
+  ]
+ },
+ "O/W/A": {
+  "elems": [
+   "O",
+   "W",
+   "A"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/W/F": {
+  "elems": [
+   "O",
+   "W",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/L/K": {
+  "elems": [
+   "O",
+   "L",
+   "K"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/L/A": {
+  "elems": [
+   "O",
+   "L",
+   "A"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/L/F": {
+  "elems": [
+   "O",
+   "L",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/K/A": {
+  "elems": [
+   "O",
+   "K",
+   "A"
+  ],
+  "n": 3,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/K/A"
+  ]
+ },
+ "O/K/F": {
+  "elems": [
+   "O",
+   "K",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/A/F": {
+  "elems": [
+   "O",
+   "A",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/P": {
+  "elems": [
+   "X",
+   "C",
+   "P"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/W": {
+  "elems": [
+   "X",
+   "C",
+   "W"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/L": {
+  "elems": [
+   "X",
+   "C",
+   "L"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/K": {
+  "elems": [
+   "X",
+   "C",
+   "K"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/A": {
+  "elems": [
+   "X",
+   "C",
+   "A"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/F": {
+  "elems": [
+   "X",
+   "C",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/P/W": {
+  "elems": [
+   "X",
+   "P",
+   "W"
+  ],
+  "n": 3,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/W"
+  ]
+ },
+ "X/P/L": {
+  "elems": [
+   "X",
+   "P",
+   "L"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/P/K": {
+  "elems": [
+   "X",
+   "P",
+   "K"
+  ],
+  "n": 3,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K"
+  ]
+ },
+ "X/P/A": {
+  "elems": [
+   "X",
+   "P",
+   "A"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/P/F": {
+  "elems": [
+   "X",
+   "P",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/W/L": {
+  "elems": [
+   "X",
+   "W",
+   "L"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/W/K": {
+  "elems": [
+   "X",
+   "W",
+   "K"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/W/A": {
+  "elems": [
+   "X",
+   "W",
+   "A"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/W/F": {
+  "elems": [
+   "X",
+   "W",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/L/K": {
+  "elems": [
+   "X",
+   "L",
+   "K"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/L/A": {
+  "elems": [
+   "X",
+   "L",
+   "A"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/L/F": {
+  "elems": [
+   "X",
+   "L",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/K/A": {
+  "elems": [
+   "X",
+   "K",
+   "A"
+  ],
+  "n": 3,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/K/A"
+  ]
+ },
+ "X/K/F": {
+  "elems": [
+   "X",
+   "K",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/A/F": {
+  "elems": [
+   "X",
+   "A",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/P/W": {
+  "elems": [
+   "C",
+   "P",
+   "W"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/P/L": {
+  "elems": [
+   "C",
+   "P",
+   "L"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/P/K": {
+  "elems": [
+   "C",
+   "P",
+   "K"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/P/A": {
+  "elems": [
+   "C",
+   "P",
+   "A"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/P/F": {
+  "elems": [
+   "C",
+   "P",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/W/L": {
+  "elems": [
+   "C",
+   "W",
+   "L"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/W/K": {
+  "elems": [
+   "C",
+   "W",
+   "K"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/W/A": {
+  "elems": [
+   "C",
+   "W",
+   "A"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/W/F": {
+  "elems": [
+   "C",
+   "W",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/L/K": {
+  "elems": [
+   "C",
+   "L",
+   "K"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/L/A": {
+  "elems": [
+   "C",
+   "L",
+   "A"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/L/F": {
+  "elems": [
+   "C",
+   "L",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/K/A": {
+  "elems": [
+   "C",
+   "K",
+   "A"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/K/F": {
+  "elems": [
+   "C",
+   "K",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/A/F": {
+  "elems": [
+   "C",
+   "A",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/W/L": {
+  "elems": [
+   "P",
+   "W",
+   "L"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/W/K": {
+  "elems": [
+   "P",
+   "W",
+   "K"
+  ],
+  "n": 3,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/K"
+  ]
+ },
+ "P/W/A": {
+  "elems": [
+   "P",
+   "W",
+   "A"
+  ],
+  "n": 3,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/A"
+  ]
+ },
+ "P/W/F": {
+  "elems": [
+   "P",
+   "W",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/L/K": {
+  "elems": [
+   "P",
+   "L",
+   "K"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/L/A": {
+  "elems": [
+   "P",
+   "L",
+   "A"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/L/F": {
+  "elems": [
+   "P",
+   "L",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/K/A": {
+  "elems": [
+   "P",
+   "K",
+   "A"
+  ],
+  "n": 3,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/K/A"
+  ]
+ },
+ "P/K/F": {
+  "elems": [
+   "P",
+   "K",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/A/F": {
+  "elems": [
+   "P",
+   "A",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "W/L/K": {
+  "elems": [
+   "W",
+   "L",
+   "K"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "W/L/A": {
+  "elems": [
+   "W",
+   "L",
+   "A"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "W/L/F": {
+  "elems": [
+   "W",
+   "L",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "W/K/A": {
+  "elems": [
+   "W",
+   "K",
+   "A"
+  ],
+  "n": 3,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "W/K/A"
+  ]
+ },
+ "W/K/F": {
+  "elems": [
+   "W",
+   "K",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "W/A/F": {
+  "elems": [
+   "W",
+   "A",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "L/K/A": {
+  "elems": [
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "L/K/F": {
+  "elems": [
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "L/A/F": {
+  "elems": [
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "K/A/F": {
+  "elems": [
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 3,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/X/C/P": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P"
+  ]
+ },
+ "O/X/C/W": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/W"
+  ]
+ },
+ "O/X/C/L": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "L"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/X/C/K": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "K"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K"
+  ]
+ },
+ "O/X/C/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/A"
+  ]
+ },
+ "O/X/C/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/X/P/W": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/W",
+   "X/P/W",
+   "O/X/W"
+  ]
+ },
+ "O/X/P/L": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "L"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P"
+  ]
+ },
+ "O/X/P/K": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "K"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/K",
+   "X/P/K"
+  ]
+ },
+ "O/X/P/A": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/A",
+   "O/X/A"
+  ]
+ },
+ "O/X/P/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "F"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P"
+  ]
+ },
+ "O/X/W/L": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "L"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/W"
+  ]
+ },
+ "O/X/W/K": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "K"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/W/K",
+   "O/X/W"
+  ]
+ },
+ "O/X/W/A": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/W/F": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "F"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/W"
+  ]
+ },
+ "O/X/L/K": {
+  "elems": [
+   "O",
+   "X",
+   "L",
+   "K"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K"
+  ]
+ },
+ "O/X/L/A": {
+  "elems": [
+   "O",
+   "X",
+   "L",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/A"
+  ]
+ },
+ "O/X/L/F": {
+  "elems": [
+   "O",
+   "X",
+   "L",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/X/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "K",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/K/A",
+   "O/X/A",
+   "X/K/A"
+  ]
+ },
+ "O/X/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "K",
+   "F"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K"
+  ]
+ },
+ "O/X/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/A"
+  ]
+ },
+ "O/C/P/W": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W"
+  ]
+ },
+ "O/C/P/L": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "L"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/P/K": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "K"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/K"
+  ]
+ },
+ "O/C/P/A": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/A"
+  ]
+ },
+ "O/C/P/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/W/L": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "L"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/W/K": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "K"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/W/K"
+  ]
+ },
+ "O/C/W/A": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "A"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 19,
+  "info": {
+   "formula": "O4W6A9",
+   "feed": [
+    6,
+    0,
+    2,
+    0,
+    11,
+    0,
+    0,
+    13,
+    0
+   ],
+   "nmols": 2
+  },
+  "cores": []
+ },
+ "O/C/W/F": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/L/K": {
+  "elems": [
+   "O",
+   "C",
+   "L",
+   "K"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/L/A": {
+  "elems": [
+   "O",
+   "C",
+   "L",
+   "A"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/L/F": {
+  "elems": [
+   "O",
+   "C",
+   "L",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/K/A": {
+  "elems": [
+   "O",
+   "C",
+   "K",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/K/A"
+  ]
+ },
+ "O/C/K/F": {
+  "elems": [
+   "O",
+   "C",
+   "K",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/P/W/L": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "L"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W"
+  ]
+ },
+ "O/P/W/K": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "K"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/K",
+   "O/W/K",
+   "P/W/K"
+  ]
+ },
+ "O/P/W/A": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/A",
+   "P/W/A"
+  ]
+ },
+ "O/P/W/F": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "F"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W"
+  ]
+ },
+ "O/P/L/K": {
+  "elems": [
+   "O",
+   "P",
+   "L",
+   "K"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/K"
+  ]
+ },
+ "O/P/L/A": {
+  "elems": [
+   "O",
+   "P",
+   "L",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/A"
+  ]
+ },
+ "O/P/L/F": {
+  "elems": [
+   "O",
+   "P",
+   "L",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/P/K/A": {
+  "elems": [
+   "O",
+   "P",
+   "K",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/K",
+   "O/P/A",
+   "O/K/A",
+   "P/K/A"
+  ]
+ },
+ "O/P/K/F": {
+  "elems": [
+   "O",
+   "P",
+   "K",
+   "F"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/K"
+  ]
+ },
+ "O/P/A/F": {
+  "elems": [
+   "O",
+   "P",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/A"
+  ]
+ },
+ "O/W/L/K": {
+  "elems": [
+   "O",
+   "W",
+   "L",
+   "K"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/W/K"
+  ]
+ },
+ "O/W/L/A": {
+  "elems": [
+   "O",
+   "W",
+   "L",
+   "A"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 19,
+  "info": {
+   "formula": "O4W6A9",
+   "feed": [
+    5,
+    0,
+    0,
+    0,
+    8,
+    7,
+    0,
+    12,
+    0
+   ],
+   "nmols": 5
+  },
+  "cores": []
+ },
+ "O/W/L/F": {
+  "elems": [
+   "O",
+   "W",
+   "L",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/W/K/A": {
+  "elems": [
+   "O",
+   "W",
+   "K",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/W/K",
+   "O/K/A",
+   "W/K/A"
+  ]
+ },
+ "O/W/K/F": {
+  "elems": [
+   "O",
+   "W",
+   "K",
+   "F"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/W/K"
+  ]
+ },
+ "O/W/A/F": {
+  "elems": [
+   "O",
+   "W",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 18,
+  "info": {
+   "formula": "O3W7A7F",
+   "feed": [
+    5,
+    0,
+    0,
+    0,
+    13,
+    0,
+    0,
+    13,
+    1
+   ],
+   "nmols": 2
+  },
+  "cores": []
+ },
+ "O/L/K/A": {
+  "elems": [
+   "O",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/K/A"
+  ]
+ },
+ "O/L/K/F": {
+  "elems": [
+   "O",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/L/A/F": {
+  "elems": [
+   "O",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/K/A/F": {
+  "elems": [
+   "O",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/K/A"
+  ]
+ },
+ "X/C/P/W": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/W"
+  ]
+ },
+ "X/C/P/L": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "L"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/P/K": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "K"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K"
+  ]
+ },
+ "X/C/P/A": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "A"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 19,
+  "info": {
+   "formula": "X9P4A6",
+   "feed": [
+    0,
+    12,
+    7,
+    5,
+    0,
+    0,
+    0,
+    8,
+    0
+   ],
+   "nmols": 5
+  },
+  "cores": []
+ },
+ "X/C/P/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/W/L": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "L"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/W/K": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "K"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 19,
+  "info": {
+   "formula": "X9W6K4",
+   "feed": [
+    0,
+    11,
+    7,
+    0,
+    9,
+    0,
+    5,
+    0,
+    0
+   ],
+   "nmols": 4
+  },
+  "cores": []
+ },
+ "X/C/W/A": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "A"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/W/F": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/L/K": {
+  "elems": [
+   "X",
+   "C",
+   "L",
+   "K"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/L/A": {
+  "elems": [
+   "X",
+   "C",
+   "L",
+   "A"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/L/F": {
+  "elems": [
+   "X",
+   "C",
+   "L",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/K/A": {
+  "elems": [
+   "X",
+   "C",
+   "K",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/K/A"
+  ]
+ },
+ "X/C/K/F": {
+  "elems": [
+   "X",
+   "C",
+   "K",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/P/W/L": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "L"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/W"
+  ]
+ },
+ "X/P/W/K": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "K"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/W/K",
+   "X/P/W"
+  ]
+ },
+ "X/P/W/A": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/W",
+   "P/W/A"
+  ]
+ },
+ "X/P/W/F": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "F"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/W"
+  ]
+ },
+ "X/P/L/K": {
+  "elems": [
+   "X",
+   "P",
+   "L",
+   "K"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K"
+  ]
+ },
+ "X/P/L/A": {
+  "elems": [
+   "X",
+   "P",
+   "L",
+   "A"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 20,
+  "info": {
+   "formula": "X8P4A8",
+   "feed": [
+    0,
+    12,
+    0,
+    6,
+    0,
+    0,
+    0,
+    14,
+    0
+   ],
+   "nmols": 2
+  },
+  "cores": []
+ },
+ "X/P/L/F": {
+  "elems": [
+   "X",
+   "P",
+   "L",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/P/K/A": {
+  "elems": [
+   "X",
+   "P",
+   "K",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/K/A",
+   "X/K/A"
+  ]
+ },
+ "X/P/K/F": {
+  "elems": [
+   "X",
+   "P",
+   "K",
+   "F"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K"
+  ]
+ },
+ "X/P/A/F": {
+  "elems": [
+   "X",
+   "P",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 20,
+  "info": {
+   "formula": "X10P4A6",
+   "feed": [
+    0,
+    13,
+    0,
+    5,
+    0,
+    0,
+    0,
+    9,
+    5
+   ],
+   "nmols": 3
+  },
+  "cores": []
+ },
+ "X/W/L/K": {
+  "elems": [
+   "X",
+   "W",
+   "L",
+   "K"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 18,
+  "info": {
+   "formula": "X7W7LK3",
+   "feed": [
+    0,
+    13,
+    0,
+    0,
+    13,
+    1,
+    5,
+    0,
+    0
+   ],
+   "nmols": 2
+  },
+  "cores": []
+ },
+ "X/W/L/A": {
+  "elems": [
+   "X",
+   "W",
+   "L",
+   "A"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/W/L/F": {
+  "elems": [
+   "X",
+   "W",
+   "L",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/W/K/A": {
+  "elems": [
+   "X",
+   "W",
+   "K",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/K/A",
+   "W/K/A"
+  ]
+ },
+ "X/W/K/F": {
+  "elems": [
+   "X",
+   "W",
+   "K",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 20,
+  "info": {
+   "formula": "X10W6K4",
+   "feed": [
+    0,
+    13,
+    0,
+    0,
+    9,
+    0,
+    5,
+    0,
+    5
+   ],
+   "nmols": 3
+  },
+  "cores": []
+ },
+ "X/W/A/F": {
+  "elems": [
+   "X",
+   "W",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/L/K/A": {
+  "elems": [
+   "X",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/K/A"
+  ]
+ },
+ "X/L/K/F": {
+  "elems": [
+   "X",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/L/A/F": {
+  "elems": [
+   "X",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/K/A/F": {
+  "elems": [
+   "X",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/K/A"
+  ]
+ },
+ "C/P/W/L": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "L"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/P/W/K": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "K"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/K"
+  ]
+ },
+ "C/P/W/A": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/A"
+  ]
+ },
+ "C/P/W/F": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/P/L/K": {
+  "elems": [
+   "C",
+   "P",
+   "L",
+   "K"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/P/L/A": {
+  "elems": [
+   "C",
+   "P",
+   "L",
+   "A"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/P/L/F": {
+  "elems": [
+   "C",
+   "P",
+   "L",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/P/K/A": {
+  "elems": [
+   "C",
+   "P",
+   "K",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/K/A"
+  ]
+ },
+ "C/P/K/F": {
+  "elems": [
+   "C",
+   "P",
+   "K",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/P/A/F": {
+  "elems": [
+   "C",
+   "P",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/W/L/K": {
+  "elems": [
+   "C",
+   "W",
+   "L",
+   "K"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/W/L/A": {
+  "elems": [
+   "C",
+   "W",
+   "L",
+   "A"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/W/L/F": {
+  "elems": [
+   "C",
+   "W",
+   "L",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/W/K/A": {
+  "elems": [
+   "C",
+   "W",
+   "K",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "W/K/A"
+  ]
+ },
+ "C/W/K/F": {
+  "elems": [
+   "C",
+   "W",
+   "K",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/W/A/F": {
+  "elems": [
+   "C",
+   "W",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/L/K/A": {
+  "elems": [
+   "C",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/L/K/F": {
+  "elems": [
+   "C",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/L/A/F": {
+  "elems": [
+   "C",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/K/A/F": {
+  "elems": [
+   "C",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/W/L/K": {
+  "elems": [
+   "P",
+   "W",
+   "L",
+   "K"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/K"
+  ]
+ },
+ "P/W/L/A": {
+  "elems": [
+   "P",
+   "W",
+   "L",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/A"
+  ]
+ },
+ "P/W/L/F": {
+  "elems": [
+   "P",
+   "W",
+   "L",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/W/K/A": {
+  "elems": [
+   "P",
+   "W",
+   "K",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/K",
+   "P/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "P/W/K/F": {
+  "elems": [
+   "P",
+   "W",
+   "K",
+   "F"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/K"
+  ]
+ },
+ "P/W/A/F": {
+  "elems": [
+   "P",
+   "W",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/A"
+  ]
+ },
+ "P/L/K/A": {
+  "elems": [
+   "P",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/K/A"
+  ]
+ },
+ "P/L/K/F": {
+  "elems": [
+   "P",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/L/A/F": {
+  "elems": [
+   "P",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/K/A/F": {
+  "elems": [
+   "P",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/K/A"
+  ]
+ },
+ "W/L/K/A": {
+  "elems": [
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "W/K/A"
+  ]
+ },
+ "W/L/K/F": {
+  "elems": [
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "W/L/A/F": {
+  "elems": [
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "W/K/A/F": {
+  "elems": [
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "W/K/A"
+  ]
+ },
+ "L/K/A/F": {
+  "elems": [
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 4,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/X/C/P/W": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/W",
+   "X/P/W",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/P/L": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P"
+  ]
+ },
+ "O/X/C/P/K": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "K"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/K",
+   "X/P/K"
+  ]
+ },
+ "O/X/C/P/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/A",
+   "O/X/A"
+  ]
+ },
+ "O/X/C/P/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P"
+  ]
+ },
+ "O/X/C/W/L": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/W"
+  ]
+ },
+ "O/X/C/W/K": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "K"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/W/K",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/W/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/W/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/W"
+  ]
+ },
+ "O/X/C/L/K": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "L",
+   "K"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K"
+  ]
+ },
+ "O/X/C/L/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "L",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/A"
+  ]
+ },
+ "O/X/C/L/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "L",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/X/C/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/K/A",
+   "O/X/A",
+   "X/K/A"
+  ]
+ },
+ "O/X/C/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K"
+  ]
+ },
+ "O/X/C/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/A"
+  ]
+ },
+ "O/X/P/W/L": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/W",
+   "X/P/W",
+   "O/X/W"
+  ]
+ },
+ "O/X/P/W/K": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "K"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/W",
+   "O/P/K",
+   "O/W/K",
+   "X/P/K",
+   "P/W/K",
+   "X/P/W",
+   "O/X/W"
+  ]
+ },
+ "O/X/P/W/A": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/W",
+   "O/P/A",
+   "O/X/A",
+   "X/P/W",
+   "P/W/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/P/W/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/W",
+   "X/P/W",
+   "O/X/W"
+  ]
+ },
+ "O/X/P/L/K": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "L",
+   "K"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/K",
+   "X/P/K"
+  ]
+ },
+ "O/X/P/L/A": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "L",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/A",
+   "O/X/A"
+  ]
+ },
+ "O/X/P/L/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "L",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P"
+  ]
+ },
+ "O/X/P/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/K",
+   "O/P/A",
+   "O/K/A",
+   "X/P/K",
+   "P/K/A",
+   "O/X/A",
+   "X/K/A"
+  ]
+ },
+ "O/X/P/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/K",
+   "X/P/K"
+  ]
+ },
+ "O/X/P/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/A",
+   "O/X/A"
+  ]
+ },
+ "O/X/W/L/K": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "L",
+   "K"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/W/K",
+   "O/X/W"
+  ]
+ },
+ "O/X/W/L/A": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "L",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/W/L/F": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "L",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/W"
+  ]
+ },
+ "O/X/W/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/W/K",
+   "O/K/A",
+   "O/X/A",
+   "X/K/A",
+   "W/K/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/W/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/W/K",
+   "O/X/W"
+  ]
+ },
+ "O/X/W/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/L/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/K/A",
+   "O/X/A",
+   "X/K/A"
+  ]
+ },
+ "O/X/L/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K"
+  ]
+ },
+ "O/X/L/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/A"
+  ]
+ },
+ "O/X/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/K/A",
+   "O/X/A",
+   "X/K/A"
+  ]
+ },
+ "O/C/P/W/L": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W"
+  ]
+ },
+ "O/C/P/W/K": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "K"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/K",
+   "O/W/K",
+   "P/W/K"
+  ]
+ },
+ "O/C/P/W/A": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/A",
+   "P/W/A"
+  ]
+ },
+ "O/C/P/W/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W"
+  ]
+ },
+ "O/C/P/L/K": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "L",
+   "K"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/K"
+  ]
+ },
+ "O/C/P/L/A": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "L",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/A"
+  ]
+ },
+ "O/C/P/L/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "L",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/P/K/A": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/K",
+   "O/P/A",
+   "O/K/A",
+   "P/K/A"
+  ]
+ },
+ "O/C/P/K/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/K"
+  ]
+ },
+ "O/C/P/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/A"
+  ]
+ },
+ "O/C/W/L/K": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "L",
+   "K"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/W/K"
+  ]
+ },
+ "O/C/W/L/A": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "L",
+   "A"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/W/L/F": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "L",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/W/K/A": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/W/K",
+   "O/K/A",
+   "W/K/A"
+  ]
+ },
+ "O/C/W/K/F": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/W/K"
+  ]
+ },
+ "O/C/W/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/L/K/A": {
+  "elems": [
+   "O",
+   "C",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/K/A"
+  ]
+ },
+ "O/C/L/K/F": {
+  "elems": [
+   "O",
+   "C",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/L/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/K/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/K/A"
+  ]
+ },
+ "O/P/W/L/K": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "L",
+   "K"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/K",
+   "O/W/K",
+   "P/W/K"
+  ]
+ },
+ "O/P/W/L/A": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "L",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/A",
+   "P/W/A"
+  ]
+ },
+ "O/P/W/L/F": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "L",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W"
+  ]
+ },
+ "O/P/W/K/A": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/K",
+   "O/P/A",
+   "O/W/K",
+   "O/K/A",
+   "P/W/K",
+   "P/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "O/P/W/K/F": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/K",
+   "O/W/K",
+   "P/W/K"
+  ]
+ },
+ "O/P/W/A/F": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/A",
+   "P/W/A"
+  ]
+ },
+ "O/P/L/K/A": {
+  "elems": [
+   "O",
+   "P",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/K",
+   "O/P/A",
+   "O/K/A",
+   "P/K/A"
+  ]
+ },
+ "O/P/L/K/F": {
+  "elems": [
+   "O",
+   "P",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/K"
+  ]
+ },
+ "O/P/L/A/F": {
+  "elems": [
+   "O",
+   "P",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/A"
+  ]
+ },
+ "O/P/K/A/F": {
+  "elems": [
+   "O",
+   "P",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/K",
+   "O/P/A",
+   "O/K/A",
+   "P/K/A"
+  ]
+ },
+ "O/W/L/K/A": {
+  "elems": [
+   "O",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/W/K",
+   "O/K/A",
+   "W/K/A"
+  ]
+ },
+ "O/W/L/K/F": {
+  "elems": [
+   "O",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/W/K"
+  ]
+ },
+ "O/W/L/A/F": {
+  "elems": [
+   "O",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 20,
+  "info": {
+   "formula": "O4W6A10",
+   "feed": [
+    5,
+    0,
+    0,
+    0,
+    9,
+    5,
+    0,
+    13,
+    0
+   ],
+   "nmols": 3
+  },
+  "cores": []
+ },
+ "O/W/K/A/F": {
+  "elems": [
+   "O",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/W/K",
+   "O/K/A",
+   "W/K/A"
+  ]
+ },
+ "O/L/K/A/F": {
+  "elems": [
+   "O",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/K/A"
+  ]
+ },
+ "X/C/P/W/L": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/W"
+  ]
+ },
+ "X/C/P/W/K": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "K"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/W/K",
+   "X/P/W"
+  ]
+ },
+ "X/C/P/W/A": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/W",
+   "P/W/A"
+  ]
+ },
+ "X/C/P/W/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/W"
+  ]
+ },
+ "X/C/P/L/K": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "L",
+   "K"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K"
+  ]
+ },
+ "X/C/P/L/A": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "L",
+   "A"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 20,
+  "info": {
+   "formula": "X10P4A6",
+   "feed": [
+    0,
+    10,
+    5,
+    4,
+    0,
+    7,
+    0,
+    6,
+    0
+   ],
+   "nmols": 7
+  },
+  "cores": []
+ },
+ "X/C/P/L/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "L",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/P/K/A": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/K/A",
+   "X/K/A"
+  ]
+ },
+ "X/C/P/K/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K"
+  ]
+ },
+ "X/C/P/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/W/L/K": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "L",
+   "K"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 18,
+  "info": {
+   "formula": "X8W6K4",
+   "feed": [
+    0,
+    8,
+    13,
+    0,
+    6,
+    1,
+    4,
+    0,
+    0
+   ],
+   "nmols": 8
+  },
+  "cores": []
+ },
+ "X/C/W/L/A": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "L",
+   "A"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/W/L/F": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "L",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/W/K/A": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/K/A",
+   "W/K/A"
+  ]
+ },
+ "X/C/W/K/F": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 21,
+  "info": {
+   "formula": "X10W7K4",
+   "feed": [
+    0,
+    16,
+    0,
+    0,
+    10,
+    0,
+    6,
+    0,
+    0
+   ],
+   "nmols": 2
+  },
+  "cores": []
+ },
+ "X/C/W/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/L/K/A": {
+  "elems": [
+   "X",
+   "C",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/K/A"
+  ]
+ },
+ "X/C/L/K/F": {
+  "elems": [
+   "X",
+   "C",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/L/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/K/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/K/A"
+  ]
+ },
+ "X/P/W/L/K": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "L",
+   "K"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/W/K",
+   "X/P/W"
+  ]
+ },
+ "X/P/W/L/A": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "L",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/W",
+   "P/W/A"
+  ]
+ },
+ "X/P/W/L/F": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "L",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/W"
+  ]
+ },
+ "X/P/W/K/A": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/W/K",
+   "P/K/A",
+   "X/P/W",
+   "X/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "X/P/W/K/F": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/W/K",
+   "X/P/W"
+  ]
+ },
+ "X/P/W/A/F": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/W",
+   "P/W/A"
+  ]
+ },
+ "X/P/L/K/A": {
+  "elems": [
+   "X",
+   "P",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/K/A",
+   "X/K/A"
+  ]
+ },
+ "X/P/L/K/F": {
+  "elems": [
+   "X",
+   "P",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K"
+  ]
+ },
+ "X/P/L/A/F": {
+  "elems": [
+   "X",
+   "P",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 19,
+  "info": {
+   "formula": "X9P4A6",
+   "feed": [
+    0,
+    11,
+    0,
+    5,
+    0,
+    9,
+    0,
+    7,
+    0
+   ],
+   "nmols": 6
+  },
+  "cores": []
+ },
+ "X/P/K/A/F": {
+  "elems": [
+   "X",
+   "P",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/K/A",
+   "X/K/A"
+  ]
+ },
+ "X/W/L/K/A": {
+  "elems": [
+   "X",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/K/A",
+   "W/K/A"
+  ]
+ },
+ "X/W/L/K/F": {
+  "elems": [
+   "X",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 20,
+  "info": {
+   "formula": "X10W6K4",
+   "feed": [
+    0,
+    10,
+    0,
+    0,
+    6,
+    3,
+    4,
+    0,
+    9
+   ],
+   "nmols": 7
+  },
+  "cores": []
+ },
+ "X/W/L/A/F": {
+  "elems": [
+   "X",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/W/K/A/F": {
+  "elems": [
+   "X",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/K/A",
+   "W/K/A"
+  ]
+ },
+ "X/L/K/A/F": {
+  "elems": [
+   "X",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/K/A"
+  ]
+ },
+ "C/P/W/L/K": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "L",
+   "K"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/K"
+  ]
+ },
+ "C/P/W/L/A": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "L",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/A"
+  ]
+ },
+ "C/P/W/L/F": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "L",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/P/W/K/A": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/K",
+   "P/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "C/P/W/K/F": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/K"
+  ]
+ },
+ "C/P/W/A/F": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/A"
+  ]
+ },
+ "C/P/L/K/A": {
+  "elems": [
+   "C",
+   "P",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/K/A"
+  ]
+ },
+ "C/P/L/K/F": {
+  "elems": [
+   "C",
+   "P",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/P/L/A/F": {
+  "elems": [
+   "C",
+   "P",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/P/K/A/F": {
+  "elems": [
+   "C",
+   "P",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/K/A"
+  ]
+ },
+ "C/W/L/K/A": {
+  "elems": [
+   "C",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "W/K/A"
+  ]
+ },
+ "C/W/L/K/F": {
+  "elems": [
+   "C",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/W/L/A/F": {
+  "elems": [
+   "C",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "C/W/K/A/F": {
+  "elems": [
+   "C",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "W/K/A"
+  ]
+ },
+ "C/L/K/A/F": {
+  "elems": [
+   "C",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "P/W/L/K/A": {
+  "elems": [
+   "P",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/K",
+   "P/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "P/W/L/K/F": {
+  "elems": [
+   "P",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/K"
+  ]
+ },
+ "P/W/L/A/F": {
+  "elems": [
+   "P",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/A"
+  ]
+ },
+ "P/W/K/A/F": {
+  "elems": [
+   "P",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/K",
+   "P/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "P/L/K/A/F": {
+  "elems": [
+   "P",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/K/A"
+  ]
+ },
+ "W/L/K/A/F": {
+  "elems": [
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 5,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "W/K/A"
+  ]
+ },
+ "O/X/C/P/W/L": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/W",
+   "X/P/W",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/P/W/K": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "K"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/W",
+   "O/P/K",
+   "O/W/K",
+   "X/P/K",
+   "P/W/K",
+   "X/P/W",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/P/W/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/W",
+   "O/P/A",
+   "O/X/A",
+   "X/P/W",
+   "P/W/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/P/W/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/W",
+   "X/P/W",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/P/L/K": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L",
+   "K"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/K",
+   "X/P/K"
+  ]
+ },
+ "O/X/C/P/L/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/A",
+   "O/X/A"
+  ]
+ },
+ "O/X/C/P/L/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P"
+  ]
+ },
+ "O/X/C/P/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "K",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/K",
+   "O/P/A",
+   "O/K/A",
+   "X/P/K",
+   "P/K/A",
+   "O/X/A",
+   "X/K/A"
+  ]
+ },
+ "O/X/C/P/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "K",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/K",
+   "X/P/K"
+  ]
+ },
+ "O/X/C/P/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/A",
+   "O/X/A"
+  ]
+ },
+ "O/X/C/W/L/K": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L",
+   "K"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/W/K",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/W/L/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/W/L/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/W"
+  ]
+ },
+ "O/X/C/W/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "K",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/W/K",
+   "O/K/A",
+   "O/X/A",
+   "X/K/A",
+   "W/K/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/W/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "K",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/W/K",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/W/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/L/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/K/A",
+   "O/X/A",
+   "X/K/A"
+  ]
+ },
+ "O/X/C/L/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K"
+  ]
+ },
+ "O/X/C/L/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/A"
+  ]
+ },
+ "O/X/C/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/K/A",
+   "O/X/A",
+   "X/K/A"
+  ]
+ },
+ "O/X/P/W/L/K": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L",
+   "K"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/W",
+   "O/P/K",
+   "O/W/K",
+   "X/P/K",
+   "P/W/K",
+   "X/P/W",
+   "O/X/W"
+  ]
+ },
+ "O/X/P/W/L/A": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/W",
+   "O/P/A",
+   "O/X/A",
+   "X/P/W",
+   "P/W/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/P/W/L/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/W",
+   "X/P/W",
+   "O/X/W"
+  ]
+ },
+ "O/X/P/W/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "K",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/W",
+   "O/P/K",
+   "O/P/A",
+   "O/W/K",
+   "O/K/A",
+   "X/P/K",
+   "P/W/K",
+   "P/K/A",
+   "O/X/A",
+   "X/P/W",
+   "X/K/A",
+   "P/W/A",
+   "W/K/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/P/W/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "K",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/W",
+   "O/P/K",
+   "O/W/K",
+   "X/P/K",
+   "P/W/K",
+   "X/P/W",
+   "O/X/W"
+  ]
+ },
+ "O/X/P/W/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/W",
+   "O/P/A",
+   "O/X/A",
+   "X/P/W",
+   "P/W/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/P/L/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/K",
+   "O/P/A",
+   "O/K/A",
+   "X/P/K",
+   "P/K/A",
+   "O/X/A",
+   "X/K/A"
+  ]
+ },
+ "O/X/P/L/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/K",
+   "X/P/K"
+  ]
+ },
+ "O/X/P/L/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/A",
+   "O/X/A"
+  ]
+ },
+ "O/X/P/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/K",
+   "O/P/A",
+   "O/K/A",
+   "X/P/K",
+   "P/K/A",
+   "O/X/A",
+   "X/K/A"
+  ]
+ },
+ "O/X/W/L/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/W/K",
+   "O/K/A",
+   "O/X/A",
+   "X/K/A",
+   "W/K/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/W/L/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/W/K",
+   "O/X/W"
+  ]
+ },
+ "O/X/W/L/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/W/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/W/K",
+   "O/K/A",
+   "O/X/A",
+   "X/K/A",
+   "W/K/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/L/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/K/A",
+   "O/X/A",
+   "X/K/A"
+  ]
+ },
+ "O/C/P/W/L/K": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/K",
+   "O/W/K",
+   "P/W/K"
+  ]
+ },
+ "O/C/P/W/L/A": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/A",
+   "P/W/A"
+  ]
+ },
+ "O/C/P/W/L/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W"
+  ]
+ },
+ "O/C/P/W/K/A": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "K",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/K",
+   "O/P/A",
+   "O/W/K",
+   "O/K/A",
+   "P/W/K",
+   "P/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "O/C/P/W/K/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "K",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/K",
+   "O/W/K",
+   "P/W/K"
+  ]
+ },
+ "O/C/P/W/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/A",
+   "P/W/A"
+  ]
+ },
+ "O/C/P/L/K/A": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/K",
+   "O/P/A",
+   "O/K/A",
+   "P/K/A"
+  ]
+ },
+ "O/C/P/L/K/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/K"
+  ]
+ },
+ "O/C/P/L/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/A"
+  ]
+ },
+ "O/C/P/K/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/K",
+   "O/P/A",
+   "O/K/A",
+   "P/K/A"
+  ]
+ },
+ "O/C/W/L/K/A": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/W/K",
+   "O/K/A",
+   "W/K/A"
+  ]
+ },
+ "O/C/W/L/K/F": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/W/K"
+  ]
+ },
+ "O/C/W/L/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "O/C/W/K/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/W/K",
+   "O/K/A",
+   "W/K/A"
+  ]
+ },
+ "O/C/L/K/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/K/A"
+  ]
+ },
+ "O/P/W/L/K/A": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/K",
+   "O/P/A",
+   "O/W/K",
+   "O/K/A",
+   "P/W/K",
+   "P/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "O/P/W/L/K/F": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/K",
+   "O/W/K",
+   "P/W/K"
+  ]
+ },
+ "O/P/W/L/A/F": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/A",
+   "P/W/A"
+  ]
+ },
+ "O/P/W/K/A/F": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/K",
+   "O/P/A",
+   "O/W/K",
+   "O/K/A",
+   "P/W/K",
+   "P/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "O/P/L/K/A/F": {
+  "elems": [
+   "O",
+   "P",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/K",
+   "O/P/A",
+   "O/K/A",
+   "P/K/A"
+  ]
+ },
+ "O/W/L/K/A/F": {
+  "elems": [
+   "O",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/W/K",
+   "O/K/A",
+   "W/K/A"
+  ]
+ },
+ "X/C/P/W/L/K": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/W/K",
+   "X/P/W"
+  ]
+ },
+ "X/C/P/W/L/A": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/W",
+   "P/W/A"
+  ]
+ },
+ "X/C/P/W/L/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/W"
+  ]
+ },
+ "X/C/P/W/K/A": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "K",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/W/K",
+   "P/K/A",
+   "X/P/W",
+   "X/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "X/C/P/W/K/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "K",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/W/K",
+   "X/P/W"
+  ]
+ },
+ "X/C/P/W/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/W",
+   "P/W/A"
+  ]
+ },
+ "X/C/P/L/K/A": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/K/A",
+   "X/K/A"
+  ]
+ },
+ "X/C/P/L/K/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K"
+  ]
+ },
+ "X/C/P/L/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": false,
+  "max": 19,
+  "info": {
+   "formula": "X9P4A6",
+   "feed": [
+    0,
+    12,
+    2,
+    5,
+    0,
+    1,
+    0,
+    8,
+    4
+   ],
+   "nmols": 5
+  },
+  "cores": []
+ },
+ "X/C/P/K/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/K/A",
+   "X/K/A"
+  ]
+ },
+ "X/C/W/L/K/A": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/K/A",
+   "W/K/A"
+  ]
+ },
+ "X/C/W/L/K/F": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 6,
+  "infinite": false,
+  "max": 18,
+  "info": {
+   "formula": "X8W6K4",
+   "feed": [
+    0,
+    12,
+    2,
+    0,
+    8,
+    1,
+    6,
+    0,
+    3
+   ],
+   "nmols": 5
+  },
+  "cores": []
+ },
+ "X/C/W/L/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": false,
+  "max": 0,
+  "info": null,
+  "cores": []
+ },
+ "X/C/W/K/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/K/A",
+   "W/K/A"
+  ]
+ },
+ "X/C/L/K/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/K/A"
+  ]
+ },
+ "X/P/W/L/K/A": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/W/K",
+   "P/K/A",
+   "X/P/W",
+   "X/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "X/P/W/L/K/F": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/W/K",
+   "X/P/W"
+  ]
+ },
+ "X/P/W/L/A/F": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/W",
+   "P/W/A"
+  ]
+ },
+ "X/P/W/K/A/F": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/W/K",
+   "P/K/A",
+   "X/P/W",
+   "X/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "X/P/L/K/A/F": {
+  "elems": [
+   "X",
+   "P",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/K/A",
+   "X/K/A"
+  ]
+ },
+ "X/W/L/K/A/F": {
+  "elems": [
+   "X",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/K/A",
+   "W/K/A"
+  ]
+ },
+ "C/P/W/L/K/A": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/K",
+   "P/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "C/P/W/L/K/F": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/K"
+  ]
+ },
+ "C/P/W/L/A/F": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/A"
+  ]
+ },
+ "C/P/W/K/A/F": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/K",
+   "P/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "C/P/L/K/A/F": {
+  "elems": [
+   "C",
+   "P",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/K/A"
+  ]
+ },
+ "C/W/L/K/A/F": {
+  "elems": [
+   "C",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "W/K/A"
+  ]
+ },
+ "P/W/L/K/A/F": {
+  "elems": [
+   "P",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 6,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/K",
+   "P/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "O/X/C/P/W/L/K": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/W",
+   "O/P/K",
+   "O/W/K",
+   "X/P/K",
+   "P/W/K",
+   "X/P/W",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/P/W/L/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "A"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/W",
+   "O/P/A",
+   "O/X/A",
+   "X/P/W",
+   "P/W/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/P/W/L/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/W",
+   "X/P/W",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/P/W/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "K",
+   "A"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/W",
+   "O/P/K",
+   "O/P/A",
+   "O/W/K",
+   "O/K/A",
+   "X/P/K",
+   "P/W/K",
+   "P/K/A",
+   "O/X/A",
+   "X/P/W",
+   "X/K/A",
+   "P/W/A",
+   "W/K/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/P/W/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "K",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/W",
+   "O/P/K",
+   "O/W/K",
+   "X/P/K",
+   "P/W/K",
+   "X/P/W",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/P/W/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/W",
+   "O/P/A",
+   "O/X/A",
+   "X/P/W",
+   "P/W/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/P/L/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/K",
+   "O/P/A",
+   "O/K/A",
+   "X/P/K",
+   "P/K/A",
+   "O/X/A",
+   "X/K/A"
+  ]
+ },
+ "O/X/C/P/L/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/K",
+   "X/P/K"
+  ]
+ },
+ "O/X/C/P/L/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/A",
+   "O/X/A"
+  ]
+ },
+ "O/X/C/P/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/K",
+   "O/P/A",
+   "O/K/A",
+   "X/P/K",
+   "P/K/A",
+   "O/X/A",
+   "X/K/A"
+  ]
+ },
+ "O/X/C/W/L/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/W/K",
+   "O/K/A",
+   "O/X/A",
+   "X/K/A",
+   "W/K/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/W/L/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/W/K",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/W/L/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/W/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/W/K",
+   "O/K/A",
+   "O/X/A",
+   "X/K/A",
+   "W/K/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/L/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/K/A",
+   "O/X/A",
+   "X/K/A"
+  ]
+ },
+ "O/X/P/W/L/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/W",
+   "O/P/K",
+   "O/P/A",
+   "O/W/K",
+   "O/K/A",
+   "X/P/K",
+   "P/W/K",
+   "P/K/A",
+   "O/X/A",
+   "X/P/W",
+   "X/K/A",
+   "P/W/A",
+   "W/K/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/P/W/L/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/W",
+   "O/P/K",
+   "O/W/K",
+   "X/P/K",
+   "P/W/K",
+   "X/P/W",
+   "O/X/W"
+  ]
+ },
+ "O/X/P/W/L/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/W",
+   "O/P/A",
+   "O/X/A",
+   "X/P/W",
+   "P/W/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/P/W/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/W",
+   "O/P/K",
+   "O/P/A",
+   "O/W/K",
+   "O/K/A",
+   "X/P/K",
+   "P/W/K",
+   "P/K/A",
+   "O/X/A",
+   "X/P/W",
+   "X/K/A",
+   "P/W/A",
+   "W/K/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/P/L/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/K",
+   "O/P/A",
+   "O/K/A",
+   "X/P/K",
+   "P/K/A",
+   "O/X/A",
+   "X/K/A"
+  ]
+ },
+ "O/X/W/L/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/W/K",
+   "O/K/A",
+   "O/X/A",
+   "X/K/A",
+   "W/K/A",
+   "O/X/W"
+  ]
+ },
+ "O/C/P/W/L/K/A": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/K",
+   "O/P/A",
+   "O/W/K",
+   "O/K/A",
+   "P/W/K",
+   "P/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "O/C/P/W/L/K/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/K",
+   "O/W/K",
+   "P/W/K"
+  ]
+ },
+ "O/C/P/W/L/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/A",
+   "P/W/A"
+  ]
+ },
+ "O/C/P/W/K/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/K",
+   "O/P/A",
+   "O/W/K",
+   "O/K/A",
+   "P/W/K",
+   "P/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "O/C/P/L/K/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/K",
+   "O/P/A",
+   "O/K/A",
+   "P/K/A"
+  ]
+ },
+ "O/C/W/L/K/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/W/K",
+   "O/K/A",
+   "W/K/A"
+  ]
+ },
+ "O/P/W/L/K/A/F": {
+  "elems": [
+   "O",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/K",
+   "O/P/A",
+   "O/W/K",
+   "O/K/A",
+   "P/W/K",
+   "P/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "X/C/P/W/L/K/A": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/W/K",
+   "P/K/A",
+   "X/P/W",
+   "X/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "X/C/P/W/L/K/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/W/K",
+   "X/P/W"
+  ]
+ },
+ "X/C/P/W/L/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/W",
+   "P/W/A"
+  ]
+ },
+ "X/C/P/W/K/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/W/K",
+   "P/K/A",
+   "X/P/W",
+   "X/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "X/C/P/L/K/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/K/A",
+   "X/K/A"
+  ]
+ },
+ "X/C/W/L/K/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/K/A",
+   "W/K/A"
+  ]
+ },
+ "X/P/W/L/K/A/F": {
+  "elems": [
+   "X",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/W/K",
+   "P/K/A",
+   "X/P/W",
+   "X/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "C/P/W/L/K/A/F": {
+  "elems": [
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 7,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "P/W/K",
+   "P/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "O/X/C/P/W/L/K/A": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A"
+  ],
+  "n": 8,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/W",
+   "O/P/K",
+   "O/P/A",
+   "O/W/K",
+   "O/K/A",
+   "X/P/K",
+   "P/W/K",
+   "P/K/A",
+   "O/X/A",
+   "X/P/W",
+   "X/K/A",
+   "P/W/A",
+   "W/K/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/P/W/L/K/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "F"
+  ],
+  "n": 8,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/W",
+   "O/P/K",
+   "O/W/K",
+   "X/P/K",
+   "P/W/K",
+   "X/P/W",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/P/W/L/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "A",
+   "F"
+  ],
+  "n": 8,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/P/W",
+   "O/P/A",
+   "O/X/A",
+   "X/P/W",
+   "P/W/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/P/W/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 8,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/W",
+   "O/P/K",
+   "O/P/A",
+   "O/W/K",
+   "O/K/A",
+   "X/P/K",
+   "P/W/K",
+   "P/K/A",
+   "O/X/A",
+   "X/P/W",
+   "X/K/A",
+   "P/W/A",
+   "W/K/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/C/P/L/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 8,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/K",
+   "O/P/A",
+   "O/K/A",
+   "X/P/K",
+   "P/K/A",
+   "O/X/A",
+   "X/K/A"
+  ]
+ },
+ "O/X/C/W/L/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 8,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/K",
+   "O/W/K",
+   "O/K/A",
+   "O/X/A",
+   "X/K/A",
+   "W/K/A",
+   "O/X/W"
+  ]
+ },
+ "O/X/P/W/L/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 8,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/W",
+   "O/P/K",
+   "O/P/A",
+   "O/W/K",
+   "O/K/A",
+   "X/P/K",
+   "P/W/K",
+   "P/K/A",
+   "O/X/A",
+   "X/P/W",
+   "X/K/A",
+   "P/W/A",
+   "W/K/A",
+   "O/X/W"
+  ]
+ },
+ "O/C/P/W/L/K/A/F": {
+  "elems": [
+   "O",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 8,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/P/W",
+   "O/P/K",
+   "O/P/A",
+   "O/W/K",
+   "O/K/A",
+   "P/W/K",
+   "P/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "X/C/P/W/L/K/A/F": {
+  "elems": [
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 8,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "X/P/K",
+   "P/W/K",
+   "P/K/A",
+   "X/P/W",
+   "X/K/A",
+   "P/W/A",
+   "W/K/A"
+  ]
+ },
+ "O/X/C/P/W/L/K/A/F": {
+  "elems": [
+   "O",
+   "X",
+   "C",
+   "P",
+   "W",
+   "L",
+   "K",
+   "A",
+   "F"
+  ],
+  "n": 9,
+  "infinite": true,
+  "max": 0,
+  "info": null,
+  "cores": [
+   "O/X/P",
+   "O/X/K",
+   "O/P/W",
+   "O/P/K",
+   "O/P/A",
+   "O/W/K",
+   "O/K/A",
+   "X/P/K",
+   "P/W/K",
+   "P/K/A",
+   "O/X/A",
+   "X/P/W",
+   "X/K/A",
+   "P/W/A",
+   "W/K/A",
+   "O/X/W"
+  ]
+ }
+}

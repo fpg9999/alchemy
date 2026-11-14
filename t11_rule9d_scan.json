@@ -1,0 +1,137 @@
+{
+ "3": {
+  "ncase": 73,
+  "runs": 12,
+  "rule9d_ambiguous": 0,
+  "examples": []
+ },
+ "4": {
+  "ncase": 267,
+  "runs": 12,
+  "rule9d_ambiguous": 0,
+  "examples": []
+ },
+ "5": {
+  "ncase": 609,
+  "runs": 12,
+  "rule9d_ambiguous": 0,
+  "examples": []
+ },
+ "6": {
+  "ncase": 1561,
+  "runs": 12,
+  "rule9d_ambiguous": 0,
+  "examples": []
+ },
+ "7": {
+  "ncase": 3123,
+  "runs": 12,
+  "rule9d_ambiguous": 0,
+  "examples": []
+ },
+ "8": {
+  "ncase": 6582,
+  "runs": 12,
+  "rule9d_ambiguous": 0,
+  "examples": []
+ },
+ "9": {
+  "ncase": 11938,
+  "runs": 12,
+  "rule9d_ambiguous": 4,
+  "examples": [
+   {
+    "feed": [
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     4,
+     1,
+     0
+    ],
+    "outcomes": [
+     [
+      "CPK2A",
+      "OLK2"
+     ],
+     [
+      "CPK2",
+      "OLK2A"
+     ]
+    ]
+   },
+   {
+    "feed": [
+     1,
+     0,
+     1,
+     4,
+     1,
+     0,
+     2,
+     0,
+     0
+    ],
+    "outcomes": [
+     [
+      "CP2WK",
+      "OP2K"
+     ],
+     [
+      "CP2K",
+      "OP2WK"
+     ]
+    ]
+   },
+   {
+    "feed": [
+     2,
+     0,
+     0,
+     4,
+     1,
+     0,
+     1,
+     0,
+     1
+    ],
+    "outcomes": [
+     [
+      "OP2F",
+      "OP2WK"
+     ],
+     [
+      "OP2K",
+      "OP2WF"
+     ]
+    ]
+   },
+   {
+    "feed": [
+     4,
+     1,
+     0,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1
+    ],
+    "outcomes": [
+     [
+      "O2LK",
+      "O2XPF"
+     ],
+     [
+      "O2PF",
+      "O2XLK"
+     ]
+    ]
+   }
+  ]
+ }
+}

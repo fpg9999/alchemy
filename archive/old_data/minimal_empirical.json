@@ -1,0 +1,40 @@
+{
+ "minimal": [
+  "O/X/P",
+  "O/X/K",
+  "O/P/W",
+  "O/P/K",
+  "O/P/A",
+  "O/W/K",
+  "O/K/A",
+  "X/P/K",
+  "P/W/K",
+  "P/K/A",
+  "O/X/A",
+  "X/P/W",
+  "X/K/A",
+  "P/W/A",
+  "W/K/A",
+  "O/X/W"
+ ],
+ "inf3": [
+  "O/X/P",
+  "O/X/K",
+  "O/P/W",
+  "O/P/K",
+  "O/P/A",
+  "O/W/K",
+  "O/K/A",
+  "X/P/K",
+  "P/W/K",
+  "P/K/A",
+  "O/X/A",
+  "X/P/W",
+  "X/K/A",
+  "P/W/A",
+  "W/K/A",
+  "O/X/W"
+ ],
+ "inf4": [],
+ "inf5": []
+}

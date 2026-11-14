@@ -1,0 +1,182 @@
+{
+ "stats": {
+  "R0_全部同K对": 100435,
+  "R1_产物都已知": 62881,
+  "R3_稳定化(能量下降)": 15752,
+  "R2_同端帽": 11027
+ },
+ "examples_R3": [
+  {
+   "A": "X2P2W2",
+   "B": "O3X2CLK",
+   "prodA": "XCP2W2L",
+   "prodB": "O3X3K",
+   "E_before": 1,
+   "E_after": 0
+  },
+  {
+   "A": "K2A4",
+   "B": "P3WKF2",
+   "prodA": "WK2A2F2",
+   "prodB": "P3KA2",
+   "E_before": 1,
+   "E_after": 0
+  },
+  {
+   "A": "OCLK3A2",
+   "B": "O3XPF2",
+   "prodA": "OXK3AF2",
+   "prodB": "O3CPLA",
+   "E_before": 4,
+   "E_after": 0
+  },
+  {
+   "A": "OC2P3A2",
+   "B": "O3XPLF",
+   "prodA": "OXP3LAF",
+   "prodB": "O3C2PA",
+   "E_before": 3,
+   "E_after": 0
+  },
+  {
+   "A": "O2XW4",
+   "B": "X2K2A",
+   "prodA": "O2X3W2",
+   "prodB": "W2K2A",
+   "E_before": 2,
+   "E_after": 1
+  },
+  {
+   "A": "O3PWLAF",
+   "B": "X2K2",
+   "prodA": "O3X2PA",
+   "prodB": "WLK2F",
+   "E_before": 2,
+   "E_after": 0
+  },
+  {
+   "A": "C2WL2K2",
+   "B": "P2A3",
+   "prodA": "WK2A2",
+   "prodB": "C2P2L2A",
+   "E_before": 4,
+   "E_after": 2
+  },
+  {
+   "A": "XW",
+   "B": "X3PWK3",
+   "prodA": "X2",
+   "prodB": "X2PW2K3",
+   "E_before": 2,
+   "E_after": 1
+  },
+  {
+   "A": "O2X2P4",
+   "B": "O4W2K2",
+   "prodA": "O2P4W2",
+   "prodB": "O4X2K2",
+   "E_before": 2,
+   "E_after": 0
+  },
+  {
+   "A": "O4PWKA",
+   "B": "W2K2A3",
+   "prodA": "O4PW2K",
+   "prodB": "WK2A4",
+   "E_before": 2,
+   "E_after": 1
+  }
+ ],
+ "examples_R1": [
+  {
+   "A": "X2P2W2",
+   "B": "O3X2CLK",
+   "prodA": "XCP2W2L",
+   "prodB": "O3X3K",
+   "E_before": 1,
+   "E_after": 0,
+   "stabilizing": true
+  },
+  {
+   "A": "O2CF3",
+   "B": "W2K2",
+   "prodA": "O2W2",
+   "prodB": "CK2F3",
+   "E_before": 1,
+   "E_after": 1,
+   "stabilizing": false
+  },
+  {
+   "A": "O2C4W",
+   "B": "XC2LK2F",
+   "prodA": "O2C2WLF",
+   "prodB": "XC4K2",
+   "E_before": 1,
+   "E_after": 4,
+   "stabilizing": false
+  },
+  {
+   "A": "CP2W2L3",
+   "B": "XP2L4",
+   "prodA": "P2W2L4",
+   "prodB": "XCP2L3",
+   "E_before": 0,
+   "E_after": 0,
+   "stabilizing": false
+  },
+  {
+   "A": "K2A4",
+   "B": "P3WKF2",
+   "prodA": "WK2A2F2",
+   "prodB": "P3KA2",
+   "E_before": 1,
+   "E_after": 0,
+   "stabilizing": true
+  },
+  {
+   "A": "P3WL2K",
+   "B": "O3CW2LK",
+   "prodA": "CP3WLK",
+   "prodB": "O3W2L2K",
+   "E_before": 2,
+   "E_after": 3,
+   "stabilizing": false
+  },
+  {
+   "A": "OCLK3A2",
+   "B": "O3XPF2",
+   "prodA": "OXK3AF2",
+   "prodB": "O3CPLA",
+   "E_before": 4,
+   "E_after": 0,
+   "stabilizing": true
+  },
+  {
+   "A": "CP3L3K",
+   "B": "O3XC2K",
+   "prodA": "XC2P3K",
+   "prodB": "O3CL3K",
+   "E_before": 0,
+   "E_after": 2,
+   "stabilizing": false
+  },
+  {
+   "A": "O2X2L3F",
+   "B": "L2K2AF2",
+   "prodA": "O2X2L2F2",
+   "prodB": "L3K2AF",
+   "E_before": 2,
+   "E_after": 2,
+   "stabilizing": false
+  },
+  {
+   "A": "C2P2WL2",
+   "B": "O2WF4",
+   "prodA": "P2WF4",
+   "prodB": "O2C2WL2",
+   "E_before": 2,
+   "E_after": 3,
+   "stabilizing": false
+  }
+ ]
+}

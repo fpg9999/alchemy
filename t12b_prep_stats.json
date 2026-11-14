@@ -1,0 +1,22 @@
+{
+ "n_S": 3931,
+ "n_pairs": 7728346,
+ "n_unique_vec": 656343,
+ "prep_sec": 14.88,
+ "verify": {
+  "n_catalog": 84225,
+  "missing_in_catalog": 0,
+  "vec_mismatch": 0,
+  "missing_examples": [],
+  "bad_examples": []
+ },
+ "natoms_hist": {
+  "2": 18,
+  "3": 64,
+  "4": 160,
+  "5": 309,
+  "6": 630,
+  "7": 1073,
+  "8": 1677
+ }
+}

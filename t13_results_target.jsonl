@@ -1,0 +1,616 @@
+{"vec": [28, 27, 0, 47, 1, 0, 11, 24, 6], "n": 144, "t": 5.67, "ok": true, "nmols": 4, "max": 138, "top": [138, 2, 2, 2], "formula": "O28X27P47WK11A24", "phase": "target", "label": "t_A4"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 26, 6], "n": 146, "t": 6.76, "ok": true, "nmols": 2, "max": 144, "top": [144, 2], "formula": "O28X27P47WK11A26F4", "phase": "target", "label": "t_A6"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 27, 6], "n": 147, "t": 6.77, "ok": true, "nmols": 1, "max": 147, "top": [147], "formula": "O28X27P47WK11A27F6", "phase": "target", "label": "t_A7"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 29, 6], "n": 149, "t": 6.53, "ok": true, "nmols": 3, "max": 84, "top": [84, 50, 15], "formula": "O16X20P27K6A14F", "phase": "target", "label": "t_A9"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 30, 6], "n": 150, "t": 7.33, "ok": true, "nmols": 3, "max": 56, "top": [56, 51, 43], "formula": "O10X15P17K4A9F", "phase": "target", "label": "t_A10"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 31, 6], "n": 151, "t": 7.48, "ok": true, "nmols": 4, "max": 56, "top": [56, 40, 30, 25], "formula": "O10X15P17K4A9F", "phase": "target", "label": "t_A11"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 32, 6], "n": 152, "t": 7.44, "ok": true, "nmols": 4, "max": 56, "top": [56, 40, 28, 28], "formula": "O10X15P17K4A9F", "phase": "target", "label": "t_A12"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 33, 6], "n": 153, "t": 7.74, "ok": true, "nmols": 4, "max": 56, "top": [56, 40, 29, 28], "formula": "O10X15P17K4A9F", "phase": "target", "label": "t_A13"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 34, 6], "n": 154, "t": 7.84, "ok": true, "nmols": 4, "max": 56, "top": [56, 40, 30, 28], "formula": "O10X15P17K4A9F", "phase": "target", "label": "t_A14"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 35, 6], "n": 155, "t": 8.17, "ok": true, "nmols": 4, "max": 56, "top": [56, 43, 28, 28], "formula": "O10X15P17K4A9F", "phase": "target", "label": "t_A15"}
+{"vec": [28, 27, 0, 47, 5, 0, 11, 20, 6], "n": 144, "t": 6.15, "ok": true, "nmols": 3, "max": 140, "top": [140, 2, 2], "formula": "O28X27P47W5K11A20F2", "phase": "target", "label": "t_W4"}
+{"vec": [28, 27, 0, 47, 7, 0, 11, 20, 6], "n": 146, "t": 6.37, "ok": true, "nmols": 4, "max": 48, "top": [48, 42, 28, 28], "formula": "O7X10P12W7K3A3F6", "phase": "target", "label": "t_W6"}
+{"vec": [28, 27, 0, 47, 8, 0, 11, 20, 6], "n": 147, "t": 6.85, "ok": true, "nmols": 2, "max": 115, "top": [115, 32], "formula": "O24X20P40WK9A20F", "phase": "target", "label": "t_W7"}
+{"vec": [28, 27, 0, 47, 10, 0, 11, 20, 6], "n": 149, "t": 9.51, "ok": true, "nmols": 2, "max": 117, "top": [117, 32], "formula": "O24X20P40W3K9A20F", "phase": "target", "label": "t_W9"}
+{"vec": [28, 27, 0, 47, 11, 0, 11, 20, 6], "n": 150, "t": 9.51, "ok": true, "nmols": 2, "max": 118, "top": [118, 32], "formula": "O24X20P40W4K9A20F", "phase": "target", "label": "t_W10"}
+{"vec": [28, 27, 0, 47, 12, 0, 11, 20, 6], "n": 151, "t": 9.59, "ok": true, "nmols": 4, "max": 58, "top": [58, 37, 28, 28], "formula": "O10X10P17W7K4A7F3", "phase": "target", "label": "t_W11"}
+{"vec": [28, 27, 0, 47, 13, 0, 11, 20, 6], "n": 152, "t": 9.84, "ok": true, "nmols": 2, "max": 120, "top": [120, 32], "formula": "O24X20P40W6K9A20F", "phase": "target", "label": "t_W12"}
+{"vec": [28, 27, 0, 47, 14, 0, 11, 20, 6], "n": 153, "t": 9.71, "ok": true, "nmols": 2, "max": 111, "top": [111, 42], "formula": "O21X20P35W7K8A14F6", "phase": "target", "label": "t_W13"}
+{"vec": [28, 27, 0, 47, 15, 0, 11, 20, 6], "n": 154, "t": 9.84, "ok": true, "nmols": 2, "max": 113, "top": [113, 41], "formula": "O21X20P35W8K8A15F6", "phase": "target", "label": "t_W14"}
+{"vec": [28, 27, 0, 47, 16, 0, 11, 20, 6], "n": 155, "t": 9.89, "ok": true, "nmols": 2, "max": 114, "top": [114, 41], "formula": "O21X20P35W9K8A15F6", "phase": "target", "label": "t_W15"}
+{"vec": [28, 31, 0, 47, 1, 0, 11, 20, 6], "n": 144, "t": 8.58, "ok": true, "nmols": 2, "max": 102, "top": [102, 42], "formula": "O21X19P35WK8A16F2", "phase": "target", "label": "t_X4"}
+{"vec": [28, 33, 0, 47, 1, 0, 11, 20, 6], "n": 146, "t": 8.71, "ok": true, "nmols": 3, "max": 89, "top": [89, 40, 17], "formula": "O18X17P30WK7A13F3", "phase": "target", "label": "t_X6"}
+{"vec": [28, 34, 0, 47, 1, 0, 11, 20, 6], "n": 147, "t": 8.87, "ok": true, "nmols": 2, "max": 89, "top": [89, 58], "formula": "O18X17P30WK7A13F3", "phase": "target", "label": "t_X7"}
+{"vec": [28, 36, 0, 47, 1, 0, 11, 20, 6], "n": 149, "t": 8.91, "ok": true, "nmols": 2, "max": 99, "top": [99, 50], "formula": "O19X24P32K7A15F2", "phase": "target", "label": "t_X9"}
+{"vec": [28, 37, 0, 47, 1, 0, 11, 20, 6], "n": 150, "t": 8.93, "ok": true, "nmols": 3, "max": 86, "top": [86, 39, 25], "formula": "O16X22P27K6A12F3", "phase": "target", "label": "t_X10"}
+{"vec": [28, 38, 0, 47, 1, 0, 11, 20, 6], "n": 151, "t": 8.89, "ok": true, "nmols": 3, "max": 86, "top": [86, 40, 25], "formula": "O16X22P27K6A12F3", "phase": "target", "label": "t_X11"}
+{"vec": [28, 39, 0, 47, 1, 0, 11, 20, 6], "n": 152, "t": 5.38, "ok": true, "nmols": 3, "max": 86, "top": [86, 41, 25], "formula": "O16X22P27K6A12F3", "phase": "target", "label": "t_X12"}
+{"vec": [28, 40, 0, 47, 1, 0, 11, 20, 6], "n": 153, "t": 5.14, "ok": true, "nmols": 4, "max": 69, "top": [69, 40, 25, 19], "formula": "O13X18P22K5A11", "phase": "target", "label": "t_X13"}
+{"vec": [28, 41, 0, 47, 1, 0, 11, 20, 6], "n": 154, "t": 9.79, "ok": true, "nmols": 3, "max": 71, "top": [71, 58, 25], "formula": "O13X19P22K5A10F2", "phase": "target", "label": "t_X14"}
+{"vec": [28, 42, 0, 47, 1, 0, 11, 20, 6], "n": 155, "t": 10.1, "ok": true, "nmols": 3, "max": 58, "top": [58, 58, 39], "formula": "O10X17P17K4A7F3", "phase": "target", "label": "t_X15"}
+{"vec": [28, 27, 0, 47, 1, 0, 15, 20, 6], "n": 144, "t": 8.51, "ok": true, "nmols": 3, "max": 140, "top": [140, 2, 2], "formula": "O28X27P47WK15A20F2", "phase": "target", "label": "t_K4"}
+{"vec": [29, 27, 0, 47, 1, 0, 16, 20, 6], "n": 146, "t": 8.94, "ok": true, "nmols": 5, "max": 132, "top": [132, 8, 2, 2, 2], "formula": "O27X26P44WK15A19", "phase": "target", "label": "t_K5"}
+{"vec": [28, 27, 0, 47, 1, 0, 17, 20, 6], "n": 146, "t": 8.97, "ok": true, "nmols": 5, "max": 94, "top": [94, 46, 2, 2, 2], "formula": "O20X14P33WK13A13", "phase": "target", "label": "t_K6"}
+{"vec": [28, 27, 0, 47, 1, 0, 18, 20, 5], "n": 146, "t": 8.95, "ok": true, "nmols": 3, "max": 142, "top": [142, 2, 2], "formula": "O28X27P47WK18A20F", "phase": "target", "label": "t_K7"}
+{"vec": [28, 27, 0, 47, 1, 0, 21, 20, 6], "n": 150, "t": 9.62, "ok": true, "nmols": 4, "max": 100, "top": [100, 46, 2, 2], "formula": "O19X20P31WK14A13F2", "phase": "target", "label": "t_K9"}
+{"vec": [28, 27, 0, 47, 1, 0, 23, 20, 6], "n": 152, "t": 10.1, "ok": true, "nmols": 6, "max": 73, "top": [73, 28, 28, 15, 6], "formula": "O15X14P24K13A7", "phase": "target", "label": "t_K11"}
+{"vec": [28, 27, 0, 47, 1, 1, 24, 20, 6], "n": 154, "t": 10.46, "ok": true, "nmols": 6, "max": 54, "top": [54, 53, 15, 15, 15], "formula": "O10X10P16WLK8A7F", "phase": "target", "label": "t_K13"}
+{"vec": [28, 27, 0, 47, 1, 0, 25, 20, 6], "n": 154, "t": 10.46, "ok": true, "nmols": 7, "max": 65, "top": [65, 29, 19, 15, 10], "formula": "O11X16P20K9A9", "phase": "target", "label": "t_K14"}
+{"vec": [28, 27, 0, 46, 1, 0, 26, 20, 6], "n": 154, "t": 10.41, "ok": true, "nmols": 9, "max": 62, "top": [62, 18, 18, 10, 10], "formula": "O9X17P17WK7A10F", "phase": "target", "label": "t_K15"}
+{"vec": [28, 27, 0, 50, 1, 0, 11, 20, 7], "n": 144, "t": 8.54, "ok": true, "nmols": 4, "max": 138, "top": [138, 2, 2, 2], "formula": "O28X27P50WK11A20F", "phase": "target", "label": "t_P3"}
+{"vec": [28, 27, 0, 51, 1, 0, 11, 20, 6], "n": 144, "t": 8.54, "ok": true, "nmols": 3, "max": 81, "top": [81, 61, 2], "formula": "O17X17P31K7A8F", "phase": "target", "label": "t_P4"}
+{"vec": [28, 27, 0, 52, 1, 0, 10, 20, 6], "n": 144, "t": 8.59, "ok": true, "nmols": 2, "max": 85, "top": [85, 59], "formula": "O17X17P32WK6A7F5", "phase": "target", "label": "t_P5"}
+{"vec": [29, 27, 0, 54, 1, 0, 11, 20, 6], "n": 148, "t": 9.33, "ok": true, "nmols": 3, "max": 68, "top": [68, 44, 36], "formula": "O12X11P22WK4A14F4", "phase": "target", "label": "t_P7"}
+{"vec": [28, 27, 0, 56, 1, 0, 10, 20, 6], "n": 148, "t": 9.28, "ok": true, "nmols": 9, "max": 30, "top": [30, 29, 20, 15, 14], "formula": "O5X4P10K3A4F4", "phase": "target", "label": "t_P9"}
+{"vec": [28, 27, 0, 57, 1, 0, 11, 20, 6], "n": 150, "t": 9.64, "ok": true, "nmols": 10, "max": 39, "top": [39, 22, 16, 11, 11], "formula": "O7X8P15WK6A2", "phase": "target", "label": "t_P10"}
+{"vec": [28, 27, 1, 58, 1, 0, 11, 20, 6], "n": 152, "t": 9.88, "ok": true, "nmols": 9, "max": 44, "top": [44, 33, 12, 11, 11], "formula": "O8X9CP17WK4A4", "phase": "target", "label": "t_P11"}
+{"vec": [28, 27, 0, 59, 1, 0, 11, 20, 6], "n": 152, "t": 10.03, "ok": true, "nmols": 9, "max": 27, "top": [27, 26, 22, 22, 12], "formula": "O5X6P11K4A", "phase": "target", "label": "t_P12"}
+{"vec": [28, 27, 1, 60, 1, 0, 11, 20, 6], "n": 154, "t": 9.87, "ok": true, "nmols": 8, "max": 34, "top": [34, 26, 26, 22, 12], "formula": "O6X6CP13WK2A5", "phase": "target", "label": "t_P13"}
+{"vec": [28, 27, 0, 61, 1, 0, 11, 20, 6], "n": 154, "t": 9.86, "ok": true, "nmols": 9, "max": 26, "top": [26, 26, 26, 26, 19], "formula": "O5X5P11K2A3", "phase": "target", "label": "t_P14"}
+{"vec": [28, 27, 0, 62, 1, 0, 11, 20, 5], "n": 154, "t": 9.8, "ok": true, "nmols": 8, "max": 30, "top": [30, 26, 26, 26, 26], "formula": "O6X6P13KA4", "phase": "target", "label": "t_P15"}
+{"vec": [32, 27, 0, 47, 1, 0, 11, 20, 6], "n": 144, "t": 8.41, "ok": true, "nmols": 4, "max": 54, "top": [54, 51, 27, 12], "formula": "O12X10P18K4A8F2", "phase": "target", "label": "t_O4"}
+{"vec": [34, 27, 0, 47, 1, 0, 11, 20, 6], "n": 146, "t": 8.65, "ok": true, "nmols": 3, "max": 128, "top": [128, 16, 2], "formula": "O31X23P43WK10A20", "phase": "target", "label": "t_O5"}
+{"vec": [35, 27, 1, 47, 1, 0, 11, 20, 6], "n": 148, "t": 8.8, "ok": true, "nmols": 3, "max": 130, "top": [130, 16, 2], "formula": "O32X23P43WK10A20F", "phase": "target", "label": "t_O7"}
+{"vec": [37, 27, 0, 47, 1, 0, 11, 20, 7], "n": 150, "t": 8.97, "ok": true, "nmols": 6, "max": 61, "top": [61, 43, 40, 2, 2], "formula": "O16X10P21K4A9F", "phase": "target", "label": "t_O9"}
+{"vec": [38, 27, 0, 47, 1, 0, 11, 20, 6], "n": 150, "t": 5.59, "ok": true, "nmols": 6, "max": 64, "top": [64, 40, 40, 2, 2], "formula": "O16X11P23WKA12", "phase": "target", "label": "t_O10"}
+{"vec": [39, 27, 1, 47, 1, 0, 11, 20, 6], "n": 152, "t": 5.43, "ok": true, "nmols": 8, "max": 39, "top": [39, 31, 29, 29, 18], "formula": "O10X6CP14KA7", "phase": "target", "label": "t_O11"}
+{"vec": [40, 27, 0, 47, 1, 0, 11, 20, 6], "n": 152, "t": 10.04, "ok": true, "nmols": 6, "max": 84, "top": [84, 31, 31, 2, 2], "formula": "O22X15P29WK3A14", "phase": "target", "label": "t_O12"}
+{"vec": [41, 27, 1, 47, 1, 0, 11, 20, 6], "n": 154, "t": 10.48, "ok": true, "nmols": 8, "max": 34, "top": [34, 31, 31, 18, 18], "formula": "O9X6P11K2A4F2", "phase": "target", "label": "t_O13"}
+{"vec": [42, 27, 0, 47, 1, 0, 11, 20, 6], "n": 154, "t": 10.82, "ok": true, "nmols": 7, "max": 56, "top": [56, 18, 18, 18, 18], "formula": "O16X9P17WK5A8", "phase": "target", "label": "t_O14"}
+{"vec": [43, 27, 0, 47, 1, 1, 11, 20, 6], "n": 156, "t": 11.09, "ok": true, "nmols": 11, "max": 25, "top": [25, 20, 20, 18, 18], "formula": "O6X6P6WK2A2F2", "phase": "target", "label": "t_O15"}
+{"vec": [27, 27, 1, 47, 1, 0, 11, 25, 6], "n": 145, "t": 8.46, "ok": true, "nmols": 5, "max": 102, "top": [102, 37, 2, 2, 2], "formula": "O21X18P36K9A18", "phase": "target", "label": "rec141_sub_O1"}
+{"vec": [30, 27, 0, 47, 1, 0, 11, 25, 6], "n": 147, "t": 8.85, "ok": true, "nmols": 3, "max": 104, "top": [104, 41, 2], "formula": "O24X17P37K9A17", "phase": "target", "label": "rec141_add_O2"}
+{"vec": [26, 27, 0, 47, 1, 0, 11, 25, 6], "n": 143, "t": 8.09, "ok": true, "nmols": 5, "max": 81, "top": [81, 56, 2, 2, 2], "formula": "O16X15P28WK8A13", "phase": "target", "label": "rec141_sub_O2"}
+{"vec": [31, 27, 0, 48, 1, 0, 11, 25, 6], "n": 149, "t": 9.32, "ok": true, "nmols": 3, "max": 145, "top": [145, 2, 2], "formula": "O31X27P48WK11A25F2", "phase": "target", "label": "rec141_add_O3"}
+{"vec": [25, 27, 0, 47, 1, 0, 11, 25, 5], "n": 141, "t": 7.68, "ok": true, "nmols": 5, "max": 62, "top": [62, 44, 31, 2, 2], "formula": "O11X14P21K2A14", "phase": "target", "label": "rec141_sub_O3"}
+{"vec": [33, 27, 0, 48, 1, 0, 11, 25, 6], "n": 151, "t": 9.66, "ok": true, "nmols": 4, "max": 145, "top": [145, 2, 2, 2], "formula": "O33X27P48WK11A25", "phase": "target", "label": "rec141_add_O5"}
+{"vec": [23, 27, 0, 47, 1, 0, 10, 25, 6], "n": 139, "t": 7.38, "ok": true, "nmols": 10, "max": 34, "top": [34, 28, 22, 12, 8], "formula": "O6X8P13K5A2", "phase": "target", "label": "rec141_sub_O5"}
+{"vec": [28, 28, 0, 47, 1, 0, 11, 25, 6], "n": 146, "t": 8.57, "ok": true, "nmols": 3, "max": 142, "top": [142, 2, 2], "formula": "O28X28P47WK11A25F2", "phase": "target", "label": "rec141_add_X1"}
+{"vec": [28, 26, 0, 47, 1, 0, 11, 25, 6], "n": 144, "t": 8.28, "ok": true, "nmols": 5, "max": 100, "top": [100, 25, 15, 2, 2], "formula": "O21X17P35WK8A18", "phase": "target", "label": "rec141_sub_X1"}
+{"vec": [28, 29, 0, 47, 1, 0, 11, 25, 6], "n": 147, "t": 8.88, "ok": true, "nmols": 3, "max": 143, "top": [143, 2, 2], "formula": "O28X29P47WK11A25F2", "phase": "target", "label": "rec141_add_X2"}
+{"vec": [28, 25, 0, 47, 1, 0, 11, 25, 6], "n": 143, "t": 8.06, "ok": true, "nmols": 6, "max": 42, "top": [42, 41, 28, 28, 2], "formula": "O9X7P15K4A7", "phase": "target", "label": "rec141_sub_X2"}
+{"vec": [28, 30, 0, 47, 1, 0, 11, 25, 6], "n": 148, "t": 8.81, "ok": true, "nmols": 3, "max": 144, "top": [144, 2, 2], "formula": "O28X30P47WK11A25F2", "phase": "target", "label": "rec141_add_X3"}
+{"vec": [28, 24, 0, 47, 1, 0, 11, 25, 6], "n": 142, "t": 8.08, "ok": true, "nmols": 3, "max": 138, "top": [138, 2, 2], "formula": "O28X24P47WK11A25F2", "phase": "target", "label": "rec141_sub_X3"}
+{"vec": [28, 32, 0, 47, 1, 0, 11, 25, 6], "n": 150, "t": 8.95, "ok": true, "nmols": 4, "max": 108, "top": [108, 38, 2, 2], "formula": "O20X27P34WK8A18", "phase": "target", "label": "rec141_add_X5"}
+{"vec": [28, 22, 0, 47, 1, 0, 11, 25, 6], "n": 140, "t": 7.76, "ok": true, "nmols": 3, "max": 136, "top": [136, 2, 2], "formula": "O28X22P47WK11A25F2", "phase": "target", "label": "rec141_sub_X5"}
+{"vec": [29, 27, 1, 47, 1, 0, 11, 25, 6], "n": 147, "t": 8.5, "ok": true, "nmols": 4, "max": 72, "top": [72, 49, 24, 2], "formula": "O16X12P26K6A12", "phase": "target", "label": "rec141_add_C1"}
+{"vec": [28, 27, 2, 47, 1, 0, 11, 25, 6], "n": 147, "t": 8.39, "ok": true, "nmols": 4, "max": 141, "top": [141, 2, 2, 2], "formula": "O28X27C2P47WK11A25", "phase": "target", "label": "rec141_add_C2"}
+{"vec": [28, 27, 3, 48, 1, 0, 11, 25, 6], "n": 149, "t": 8.47, "ok": true, "nmols": 5, "max": 141, "top": [141, 2, 2, 2, 2], "formula": "O28X27CP48WK11A25", "phase": "target", "label": "rec141_add_C3"}
+{"vec": [28, 27, 5, 46, 1, 0, 11, 25, 6], "n": 149, "t": 8.2, "ok": true, "nmols": 4, "max": 143, "top": [143, 2, 2, 2], "formula": "O28X27C5P46WK11A25", "phase": "target", "label": "rec141_add_C5"}
+{"vec": [29, 27, 0, 48, 1, 0, 11, 25, 6], "n": 147, "t": 7.94, "ok": true, "nmols": 3, "max": 143, "top": [143, 2, 2], "formula": "O29X27P48WK11A25F2", "phase": "target", "label": "rec141_add_P1"}
+{"vec": [28, 27, 0, 46, 1, 1, 11, 25, 6], "n": 145, "t": 7.57, "ok": true, "nmols": 2, "max": 143, "top": [143, 2], "formula": "O28X27P46WLK11A25F4", "phase": "target", "label": "rec141_sub_P1"}
+{"vec": [28, 27, 0, 49, 1, 0, 11, 25, 6], "n": 147, "t": 7.66, "ok": true, "nmols": 4, "max": 141, "top": [141, 2, 2, 2], "formula": "O28X27P49WK11A25", "phase": "target", "label": "rec141_add_P2"}
+{"vec": [28, 27, 0, 45, 1, 0, 11, 25, 6], "n": 143, "t": 4.82, "ok": true, "nmols": 2, "max": 85, "top": [85, 58], "formula": "O17X15P27WK7A15F3", "phase": "target", "label": "rec141_sub_P2"}
+{"vec": [28, 27, 1, 50, 1, 0, 11, 25, 6], "n": 149, "t": 5.25, "ok": true, "nmols": 4, "max": 143, "top": [143, 2, 2, 2], "formula": "O28X27CP50WK11A25", "phase": "target", "label": "rec141_add_P3"}
+{"vec": [28, 27, 0, 44, 1, 0, 11, 25, 7], "n": 143, "t": 7.87, "ok": true, "nmols": 4, "max": 44, "top": [44, 41, 36, 22], "formula": "O10X7P16K4A7", "phase": "target", "label": "rec141_sub_P3"}
+{"vec": [28, 27, 0, 52, 1, 1, 11, 25, 6], "n": 151, "t": 9.66, "ok": true, "nmols": 2, "max": 76, "top": [76, 75], "formula": "O15X15P28WLK7A8F", "phase": "target", "label": "rec141_add_P5"}
+{"vec": [28, 27, 0, 42, 1, 1, 11, 25, 6], "n": 141, "t": 7.5, "ok": true, "nmols": 4, "max": 55, "top": [55, 42, 24, 20], "formula": "O11X12P18LK4A9", "phase": "target", "label": "rec141_sub_P5"}
+{"vec": [28, 27, 0, 47, 2, 0, 11, 25, 6], "n": 146, "t": 8.58, "ok": true, "nmols": 4, "max": 140, "top": [140, 2, 2, 2], "formula": "O28X27P47W2K11A25", "phase": "target", "label": "rec141_add_W1"}
+{"vec": [28, 27, 0, 47, 0, 0, 11, 25, 6], "n": 144, "t": 8.34, "ok": true, "nmols": 5, "max": 42, "top": [42, 40, 32, 28, 2], "formula": "O9X7P15K4A7", "phase": "target", "label": "rec141_sub_W1"}
+{"vec": [28, 27, 0, 47, 3, 0, 11, 25, 6], "n": 147, "t": 8.77, "ok": true, "nmols": 4, "max": 117, "top": [117, 26, 2, 2], "formula": "O24X20P40W2K9A21F", "phase": "target", "label": "rec141_add_W2"}
+{"vec": [28, 27, 0, 47, 4, 0, 11, 25, 6], "n": 148, "t": 8.89, "ok": true, "nmols": 3, "max": 115, "top": [115, 31, 2], "formula": "O24X20P40WK9A20F", "phase": "target", "label": "rec141_add_W3"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 25, 6], "n": 150, "t": 9.2, "ok": true, "nmols": 2, "max": 148, "top": [148, 2], "formula": "O28X27P47W6K11A25F4", "phase": "target", "label": "rec141_add_W5"}
+{"vec": [28, 27, 0, 47, 1, 1, 11, 25, 7], "n": 147, "t": 8.86, "ok": true, "nmols": 4, "max": 141, "top": [141, 2, 2, 2], "formula": "O28X27P47WLK11A25F", "phase": "target", "label": "rec141_add_L1"}
+{"vec": [28, 27, 0, 47, 1, 2, 11, 25, 6], "n": 147, "t": 8.78, "ok": true, "nmols": 4, "max": 141, "top": [141, 2, 2, 2], "formula": "O28X27P47WL2K11A25", "phase": "target", "label": "rec141_add_L2"}
+{"vec": [28, 27, 0, 47, 1, 4, 11, 25, 6], "n": 149, "t": 9.08, "ok": true, "nmols": 5, "max": 141, "top": [141, 2, 2, 2, 2], "formula": "O28X27P47WL2K11A25", "phase": "target", "label": "rec141_add_L5"}
+{"vec": [28, 27, 0, 47, 1, 1, 12, 25, 6], "n": 147, "t": 8.75, "ok": true, "nmols": 4, "max": 82, "top": [82, 61, 2, 2], "formula": "O17X12P28WLK7A15F", "phase": "target", "label": "rec141_add_K1"}
+{"vec": [28, 27, 0, 46, 1, 0, 10, 25, 6], "n": 143, "t": 8.15, "ok": true, "nmols": 3, "max": 100, "top": [100, 41, 2], "formula": "O22X17P36K8A17", "phase": "target", "label": "rec141_sub_K1"}
+{"vec": [28, 27, 0, 47, 1, 0, 13, 25, 6], "n": 147, "t": 8.81, "ok": true, "nmols": 2, "max": 145, "top": [145, 2], "formula": "O28X27P47WK13A25F4", "phase": "target", "label": "rec141_add_K2"}
+{"vec": [28, 27, 0, 47, 1, 0, 9, 25, 6], "n": 143, "t": 8.03, "ok": true, "nmols": 4, "max": 137, "top": [137, 2, 2, 2], "formula": "O28X27P47WK9A25", "phase": "target", "label": "rec141_sub_K2"}
+{"vec": [28, 27, 1, 47, 1, 0, 14, 25, 6], "n": 149, "t": 9.04, "ok": true, "nmols": 2, "max": 147, "top": [147, 2], "formula": "O28X27CP47WK14A25F4", "phase": "target", "label": "rec141_add_K3"}
+{"vec": [28, 27, 0, 47, 1, 1, 8, 25, 6], "n": 143, "t": 8.1, "ok": true, "nmols": 5, "max": 83, "top": [83, 54, 2, 2, 2], "formula": "O18X15P29K6A14F", "phase": "target", "label": "rec141_sub_K3"}
+{"vec": [28, 27, 0, 47, 1, 0, 16, 25, 5], "n": 149, "t": 8.82, "ok": true, "nmols": 2, "max": 117, "top": [117, 32], "formula": "O24X20P40WK14A18", "phase": "target", "label": "rec141_add_K5"}
+{"vec": [28, 27, 0, 47, 1, 0, 6, 25, 7], "n": 141, "t": 7.6, "ok": true, "nmols": 6, "max": 49, "top": [49, 44, 32, 12, 2], "formula": "O10X9P17WK2A7F3", "phase": "target", "label": "rec141_sub_K5"}
+{"vec": [28, 27, 0, 47, 1, 0, 10, 25, 7], "n": 145, "t": 8.27, "ok": true, "nmols": 5, "max": 109, "top": [109, 30, 2, 2, 2], "formula": "O22X22P37K8A19F", "phase": "target", "label": "rec141_add_F1"}
+{"vec": [28, 27, 0, 46, 1, 0, 11, 25, 5], "n": 143, "t": 8.03, "ok": true, "nmols": 1, "max": 143, "top": [143], "formula": "O28X27P46WK11A25F5", "phase": "target", "label": "rec141_sub_F1"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 25, 8], "n": 147, "t": 8.45, "ok": true, "nmols": 4, "max": 141, "top": [141, 2, 2, 2], "formula": "O28X27P47WK11A25F2", "phase": "target", "label": "rec141_add_F2"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 25, 4], "n": 143, "t": 8.08, "ok": true, "nmols": 2, "max": 141, "top": [141, 2], "formula": "O28X27P47WK11A25F2", "phase": "target", "label": "rec141_sub_F2"}
+{"vec": [28, 27, 0, 47, 1, 0, 10, 25, 9], "n": 147, "t": 8.3, "ok": true, "nmols": 6, "max": 109, "top": [109, 30, 2, 2, 2], "formula": "O22X22P37K8A19F", "phase": "target", "label": "rec141_add_F3"}
+{"vec": [27, 27, 0, 47, 1, 0, 11, 25, 3], "n": 141, "t": 7.76, "ok": true, "nmols": 3, "max": 102, "top": [102, 37, 2], "formula": "O21X18P36K9A18", "phase": "target", "label": "rec141_sub_F3"}
+{"vec": [28, 27, 0, 47, 1, 0, 10, 25, 11], "n": 149, "t": 8.15, "ok": true, "nmols": 7, "max": 109, "top": [109, 30, 2, 2, 2], "formula": "O22X22P37K8A19F", "phase": "target", "label": "rec141_add_F5"}
+{"vec": [28, 27, 0, 46, 1, 0, 11, 25, 1], "n": 139, "t": 4.26, "ok": true, "nmols": 1, "max": 139, "top": [139], "formula": "O28X27P46WK11A25F", "phase": "target", "label": "rec141_sub_F5"}
+{"vec": [29, 27, 1, 47, 1, 0, 11, 25, 2], "n": 143, "t": 4.35, "ok": true, "nmols": 3, "max": 72, "top": [72, 49, 22], "formula": "O16X12P26K6A12", "phase": "target", "label": "mol141_add_O1"}
+{"vec": [27, 27, 0, 47, 1, 0, 11, 25, 1], "n": 139, "t": 7.55, "ok": true, "nmols": 2, "max": 102, "top": [102, 37], "formula": "O21X18P36K9A18", "phase": "target", "label": "mol141_sub_O1"}
+{"vec": [30, 27, 0, 47, 1, 0, 11, 25, 2], "n": 143, "t": 8.27, "ok": true, "nmols": 2, "max": 104, "top": [104, 39], "formula": "O24X17P37K9A17", "phase": "target", "label": "mol141_add_O2"}
+{"vec": [26, 27, 0, 47, 1, 0, 11, 25, 2], "n": 139, "t": 7.55, "ok": true, "nmols": 3, "max": 81, "top": [81, 56, 2], "formula": "O16X15P28WK8A13", "phase": "target", "label": "mol141_sub_O2"}
+{"vec": [31, 27, 1, 47, 1, 0, 11, 25, 2], "n": 145, "t": 8.56, "ok": true, "nmols": 1, "max": 145, "top": [145], "formula": "O31X27CP47WK11A25F2", "phase": "target", "label": "mol141_add_O3"}
+{"vec": [25, 27, 0, 46, 1, 0, 11, 25, 2], "n": 137, "t": 7.22, "ok": true, "nmols": 2, "max": 135, "top": [135, 2], "formula": "O25X27P46WK11A25", "phase": "target", "label": "mol141_sub_O3"}
+{"vec": [33, 27, 0, 47, 1, 0, 10, 25, 2], "n": 145, "t": 8.62, "ok": true, "nmols": 2, "max": 143, "top": [143, 2], "formula": "O33X27P47WK10A25", "phase": "target", "label": "mol141_add_O5"}
+{"vec": [23, 27, 0, 46, 1, 0, 11, 25, 2], "n": 135, "t": 6.8, "ok": true, "nmols": 7, "max": 28, "top": [28, 28, 28, 25, 12], "formula": "O5X6P10K3A4", "phase": "target", "label": "mol141_sub_O5"}
+{"vec": [28, 28, 0, 47, 1, 0, 11, 25, 2], "n": 142, "t": 8.15, "ok": true, "nmols": 1, "max": 142, "top": [142], "formula": "O28X28P47WK11A25F2", "phase": "target", "label": "mol141_add_X1"}
+{"vec": [28, 26, 0, 47, 1, 0, 11, 25, 2], "n": 140, "t": 7.73, "ok": true, "nmols": 3, "max": 100, "top": [100, 25, 15], "formula": "O21X17P35WK8A18", "phase": "target", "label": "mol141_sub_X1"}
+{"vec": [28, 29, 0, 47, 1, 0, 11, 25, 2], "n": 143, "t": 8.18, "ok": true, "nmols": 1, "max": 143, "top": [143], "formula": "O28X29P47WK11A25F2", "phase": "target", "label": "mol141_add_X2"}
+{"vec": [28, 25, 0, 47, 1, 0, 11, 25, 2], "n": 139, "t": 7.6, "ok": true, "nmols": 4, "max": 42, "top": [42, 41, 28, 28], "formula": "O9X7P15K4A7", "phase": "target", "label": "mol141_sub_X2"}
+{"vec": [28, 30, 0, 47, 1, 0, 11, 25, 2], "n": 144, "t": 8.26, "ok": true, "nmols": 1, "max": 144, "top": [144], "formula": "O28X30P47WK11A25F2", "phase": "target", "label": "mol141_add_X3"}
+{"vec": [28, 24, 0, 47, 1, 0, 11, 25, 2], "n": 138, "t": 7.49, "ok": true, "nmols": 1, "max": 138, "top": [138], "formula": "O28X24P47WK11A25F2", "phase": "target", "label": "mol141_sub_X3"}
+{"vec": [28, 32, 0, 47, 1, 0, 11, 25, 2], "n": 146, "t": 8.79, "ok": true, "nmols": 2, "max": 108, "top": [108, 38], "formula": "O20X27P34WK8A18", "phase": "target", "label": "mol141_add_X5"}
+{"vec": [28, 22, 0, 47, 1, 0, 11, 25, 2], "n": 136, "t": 7.39, "ok": true, "nmols": 1, "max": 136, "top": [136], "formula": "O28X22P47WK11A25F2", "phase": "target", "label": "mol141_sub_X5"}
+{"vec": [27, 27, 1, 47, 1, 0, 11, 25, 2], "n": 141, "t": 7.96, "ok": true, "nmols": 3, "max": 102, "top": [102, 37, 2], "formula": "O21X18P36K9A18", "phase": "target", "label": "mol141_add_C1"}
+{"vec": [28, 27, 2, 47, 1, 0, 11, 25, 2], "n": 143, "t": 8.31, "ok": true, "nmols": 2, "max": 141, "top": [141, 2], "formula": "O28X27C2P47WK11A25", "phase": "target", "label": "mol141_add_C2"}
+{"vec": [27, 27, 3, 47, 1, 0, 11, 25, 2], "n": 143, "t": 8.28, "ok": true, "nmols": 4, "max": 102, "top": [102, 37, 2, 2], "formula": "O21X18P36K9A18", "phase": "target", "label": "mol141_add_C3"}
+{"vec": [28, 27, 5, 47, 1, 1, 11, 25, 2], "n": 147, "t": 8.58, "ok": true, "nmols": 4, "max": 141, "top": [141, 2, 2, 2], "formula": "O28X27C2P47WK11A25", "phase": "target", "label": "mol141_add_C5"}
+{"vec": [28, 27, 0, 48, 1, 0, 12, 25, 2], "n": 143, "t": 8.31, "ok": true, "nmols": 2, "max": 141, "top": [141, 2], "formula": "O28X27P48WK12A25", "phase": "target", "label": "mol141_add_P1"}
+{"vec": [28, 27, 0, 46, 1, 0, 10, 25, 2], "n": 139, "t": 7.72, "ok": true, "nmols": 2, "max": 100, "top": [100, 39], "formula": "O22X17P36K8A17", "phase": "target", "label": "mol141_sub_P1"}
+{"vec": [28, 27, 0, 49, 1, 0, 11, 25, 2], "n": 143, "t": 8.11, "ok": true, "nmols": 2, "max": 141, "top": [141, 2], "formula": "O28X27P49WK11A25", "phase": "target", "label": "mol141_add_P2"}
+{"vec": [28, 27, 0, 45, 1, 0, 11, 25, 2], "n": 139, "t": 7.6, "ok": true, "nmols": 2, "max": 95, "top": [95, 44], "formula": "O20X17P32K8A16F2", "phase": "target", "label": "mol141_sub_P2"}
+{"vec": [28, 27, 0, 50, 1, 0, 10, 25, 2], "n": 143, "t": 8.05, "ok": true, "nmols": 1, "max": 143, "top": [143], "formula": "O28X27P50WK10A25F2", "phase": "target", "label": "mol141_add_P3"}
+{"vec": [28, 27, 0, 52, 1, 0, 10, 25, 2], "n": 145, "t": 8.13, "ok": true, "nmols": 1, "max": 145, "top": [145], "formula": "O28X27P52WK10A25F2", "phase": "target", "label": "mol141_add_P5"}
+{"vec": [28, 27, 0, 43, 1, 0, 11, 25, 2], "n": 137, "t": 7.19, "ok": true, "nmols": 3, "max": 53, "top": [53, 44, 40], "formula": "O12X10P17WK5A8", "phase": "target", "label": "mol141_sub_P5"}
+{"vec": [28, 27, 0, 47, 2, 0, 11, 25, 2], "n": 142, "t": 4.65, "ok": true, "nmols": 2, "max": 140, "top": [140, 2], "formula": "O28X27P47W2K11A25", "phase": "target", "label": "mol141_add_W1"}
+{"vec": [28, 27, 0, 47, 0, 0, 11, 25, 2], "n": 140, "t": 4.06, "ok": true, "nmols": 4, "max": 42, "top": [42, 40, 30, 28], "formula": "O9X7P15K4A7", "phase": "target", "label": "mol141_sub_W1"}
+{"vec": [28, 27, 0, 47, 3, 0, 11, 25, 2], "n": 143, "t": 8.26, "ok": true, "nmols": 2, "max": 117, "top": [117, 26], "formula": "O24X20P40W2K9A21F", "phase": "target", "label": "mol141_add_W2"}
+{"vec": [28, 27, 0, 47, 4, 0, 11, 25, 2], "n": 144, "t": 8.35, "ok": true, "nmols": 2, "max": 115, "top": [115, 29], "formula": "O24X20P40WK9A20F", "phase": "target", "label": "mol141_add_W3"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 25, 2], "n": 146, "t": 8.69, "ok": true, "nmols": 1, "max": 146, "top": [146], "formula": "O28X27P47W6K11A25F2", "phase": "target", "label": "mol141_add_W5"}
+{"vec": [27, 27, 0, 47, 1, 1, 11, 25, 2], "n": 141, "t": 7.79, "ok": true, "nmols": 3, "max": 102, "top": [102, 37, 2], "formula": "O21X18P36K9A18", "phase": "target", "label": "mol141_add_L1"}
+{"vec": [28, 27, 0, 47, 1, 2, 11, 25, 2], "n": 143, "t": 8.17, "ok": true, "nmols": 2, "max": 141, "top": [141, 2], "formula": "O28X27P47WL2K11A25", "phase": "target", "label": "mol141_add_L2"}
+{"vec": [28, 27, 0, 47, 1, 3, 11, 25, 3], "n": 145, "t": 8.6, "ok": true, "nmols": 3, "max": 141, "top": [141, 2, 2], "formula": "O28X27P47WL2K11A25", "phase": "target", "label": "mol141_add_L3"}
+{"vec": [28, 27, 0, 47, 1, 5, 12, 25, 2], "n": 147, "t": 8.8, "ok": true, "nmols": 4, "max": 82, "top": [82, 61, 2, 2], "formula": "O17X12P28WL2K7A15", "phase": "target", "label": "mol141_add_L5"}
+{"vec": [28, 27, 0, 47, 1, 0, 13, 25, 2], "n": 143, "t": 8.33, "ok": true, "nmols": 1, "max": 143, "top": [143], "formula": "O28X27P47WK13A25F2", "phase": "target", "label": "mol141_add_K1"}
+{"vec": [28, 27, 0, 47, 1, 0, 10, 25, 3], "n": 141, "t": 7.89, "ok": true, "nmols": 3, "max": 109, "top": [109, 30, 2], "formula": "O22X22P37K8A19F", "phase": "target", "label": "mol141_sub_K1"}
+{"vec": [28, 27, 0, 47, 1, 0, 9, 25, 2], "n": 139, "t": 7.61, "ok": true, "nmols": 2, "max": 137, "top": [137, 2], "formula": "O28X27P47WK9A25", "phase": "target", "label": "mol141_sub_K2"}
+{"vec": [28, 27, 0, 47, 1, 0, 15, 25, 2], "n": 145, "t": 8.69, "ok": true, "nmols": 2, "max": 84, "top": [84, 61], "formula": "O18X13P30K10A13", "phase": "target", "label": "mol141_add_K3"}
+{"vec": [28, 27, 0, 48, 1, 0, 8, 25, 2], "n": 139, "t": 7.62, "ok": true, "nmols": 2, "max": 137, "top": [137, 2], "formula": "O28X27P48WK8A25", "phase": "target", "label": "mol141_sub_K3"}
+{"vec": [28, 27, 0, 48, 1, 0, 16, 25, 2], "n": 147, "t": 9.15, "ok": true, "nmols": 1, "max": 147, "top": [147], "formula": "O28X27P48WK16A25F2", "phase": "target", "label": "mol141_add_K5"}
+{"vec": [28, 27, 0, 47, 1, 1, 6, 25, 2], "n": 137, "t": 7.16, "ok": true, "nmols": 4, "max": 49, "top": [49, 44, 32, 12], "formula": "O10X9P17WLK2A7F2", "phase": "target", "label": "mol141_sub_K5"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 26, 2], "n": 142, "t": 8.06, "ok": true, "nmols": 1, "max": 142, "top": [142], "formula": "O28X27P47WK11A26F2", "phase": "target", "label": "mol141_add_A1"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 24, 2], "n": 140, "t": 7.78, "ok": true, "nmols": 2, "max": 138, "top": [138, 2], "formula": "O28X27P47WK11A24", "phase": "target", "label": "mol141_sub_A1"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 27, 2], "n": 143, "t": 8.15, "ok": true, "nmols": 1, "max": 143, "top": [143], "formula": "O28X27P47WK11A27F2", "phase": "target", "label": "mol141_add_A2"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 23, 2], "n": 139, "t": 7.57, "ok": true, "nmols": 5, "max": 42, "top": [42, 39, 28, 28, 2], "formula": "O9X7P15K4A7", "phase": "target", "label": "mol141_sub_A2"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 28, 2], "n": 144, "t": 8.1, "ok": true, "nmols": 2, "max": 116, "top": [116, 28], "formula": "O24X20P40WK9A21F", "phase": "target", "label": "mol141_add_A3"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 22, 2], "n": 138, "t": 7.48, "ok": true, "nmols": 2, "max": 92, "top": [92, 46], "formula": "O19X17P32K7A15F2", "phase": "target", "label": "mol141_sub_A3"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 30, 2], "n": 146, "t": 8.16, "ok": true, "nmols": 3, "max": 56, "top": [56, 54, 36], "formula": "O10X15P17K4A9F", "phase": "target", "label": "mol141_add_A5"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 20, 2], "n": 136, "t": 7.27, "ok": true, "nmols": 1, "max": 136, "top": [136], "formula": "O28X27P47WK11A20F2", "phase": "target", "label": "mol141_sub_A5"}
+{"vec": [28, 27, 0, 48, 1, 0, 11, 25, 3], "n": 143, "t": 7.84, "ok": true, "nmols": 2, "max": 141, "top": [141, 2], "formula": "O28X27P48WK11A25F", "phase": "target", "label": "mol141_add_F1"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 25, 2], "n": 141, "t": 7.69, "ok": true, "nmols": 1, "max": 141, "top": [141], "formula": "O28X27P47WK11A25F2", "phase": "target", "label": "mol141_sub_F1"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 25, 0], "n": 139, "t": 7.46, "ok": true, "nmols": 1, "max": 139, "top": [139], "formula": "O28X27P47WK11A25", "phase": "target", "label": "mol141_sub_F2"}
+{"vec": [28, 27, 0, 47, 1, 0, 12, 25, 5], "n": 145, "t": 7.73, "ok": true, "nmols": 3, "max": 82, "top": [82, 61, 2], "formula": "O17X12P28WK7A15F2", "phase": "target", "label": "mol141_add_F3"}
+{"vec": [27, 27, 0, 47, 1, 0, 11, 25, 7], "n": 145, "t": 4.83, "ok": true, "nmols": 5, "max": 102, "top": [102, 37, 2, 2, 2], "formula": "O21X18P36K9A18", "phase": "target", "label": "mol141_add_F5"}
+{"vec": [31, 29, 0, 47, 1, 1, 12, 20, 7], "n": 148, "t": 4.65, "ok": true, "nmols": 7, "max": 45, "top": [45, 36, 33, 28, 2], "formula": "O10X9P14WK4A5F2", "phase": "target", "label": "rec142_add_O1"}
+{"vec": [32, 29, 0, 48, 1, 1, 12, 20, 7], "n": 150, "t": 9.46, "ok": true, "nmols": 4, "max": 90, "top": [90, 56, 2, 2], "formula": "O18X20P30K6A14F2", "phase": "target", "label": "rec142_add_O2"}
+{"vec": [28, 29, 0, 48, 1, 1, 12, 20, 7], "n": 146, "t": 8.64, "ok": true, "nmols": 2, "max": 74, "top": [74, 72], "formula": "O14X15P24LK6A9F5", "phase": "target", "label": "rec142_sub_O2"}
+{"vec": [33, 29, 0, 48, 1, 1, 11, 20, 7], "n": 150, "t": 9.37, "ok": true, "nmols": 2, "max": 104, "top": [104, 46], "formula": "O24X19P34K8A15F4", "phase": "target", "label": "rec142_add_O3"}
+{"vec": [27, 29, 0, 49, 1, 1, 12, 20, 7], "n": 146, "t": 8.8, "ok": true, "nmols": 5, "max": 85, "top": [85, 55, 2, 2, 2], "formula": "O16X18P29WK6A14F", "phase": "target", "label": "rec142_sub_O3"}
+{"vec": [34, 29, 0, 48, 1, 1, 12, 20, 7], "n": 152, "t": 9.84, "ok": true, "nmols": 3, "max": 121, "top": [121, 29, 2], "formula": "O28X23P39WK10A17F3", "phase": "target", "label": "rec142_add_O5"}
+{"vec": [25, 29, 0, 48, 1, 0, 12, 20, 7], "n": 142, "t": 7.95, "ok": true, "nmols": 7, "max": 52, "top": [52, 48, 18, 18, 2], "formula": "O9X11P17WK3A10F", "phase": "target", "label": "rec142_sub_O5"}
+{"vec": [30, 30, 0, 48, 1, 1, 12, 20, 7], "n": 149, "t": 9.3, "ok": true, "nmols": 4, "max": 143, "top": [143, 2, 2, 2], "formula": "O30X30P48WK12A20F2", "phase": "target", "label": "rec142_add_X1"}
+{"vec": [30, 28, 0, 48, 1, 1, 12, 20, 7], "n": 147, "t": 8.95, "ok": true, "nmols": 4, "max": 141, "top": [141, 2, 2, 2], "formula": "O30X28P48WK12A20F2", "phase": "target", "label": "rec142_sub_X1"}
+{"vec": [30, 31, 0, 48, 1, 1, 12, 20, 7], "n": 150, "t": 9.37, "ok": true, "nmols": 6, "max": 103, "top": [103, 33, 8, 2, 2], "formula": "O22X20P35WK9A14F2", "phase": "target", "label": "rec142_add_X2"}
+{"vec": [30, 27, 0, 48, 1, 1, 12, 20, 7], "n": 146, "t": 8.73, "ok": true, "nmols": 5, "max": 84, "top": [84, 56, 2, 2, 2], "formula": "O18X17P29K7A13", "phase": "target", "label": "rec142_sub_X2"}
+{"vec": [30, 32, 0, 48, 1, 1, 12, 20, 7], "n": 151, "t": 9.52, "ok": true, "nmols": 5, "max": 102, "top": [102, 43, 2, 2, 2], "formula": "O22X20P35WK9A15", "phase": "target", "label": "rec142_add_X3"}
+{"vec": [30, 26, 0, 48, 1, 1, 12, 20, 7], "n": 145, "t": 8.68, "ok": true, "nmols": 5, "max": 83, "top": [83, 56, 2, 2, 2], "formula": "O18X16P29K7A13", "phase": "target", "label": "rec142_sub_X3"}
+{"vec": [30, 34, 0, 48, 1, 1, 12, 20, 7], "n": 153, "t": 9.8, "ok": true, "nmols": 4, "max": 147, "top": [147, 2, 2, 2], "formula": "O30X34P48WK12A20F2", "phase": "target", "label": "rec142_add_X5"}
+{"vec": [30, 24, 0, 48, 1, 1, 12, 20, 7], "n": 143, "t": 8.26, "ok": true, "nmols": 5, "max": 106, "top": [106, 31, 2, 2, 2], "formula": "O23X19P37WK9A16F", "phase": "target", "label": "rec142_sub_X5"}
+{"vec": [31, 29, 1, 48, 1, 1, 12, 20, 7], "n": 150, "t": 9.3, "ok": true, "nmols": 6, "max": 59, "top": [59, 52, 33, 2, 2], "formula": "O13X10P21K5A9F", "phase": "target", "label": "rec142_add_C1"}
+{"vec": [30, 29, 2, 48, 1, 1, 12, 20, 7], "n": 150, "t": 9.42, "ok": true, "nmols": 5, "max": 142, "top": [142, 2, 2, 2, 2], "formula": "O30X29P48WK12A20F2", "phase": "target", "label": "rec142_add_C2"}
+{"vec": [30, 29, 3, 48, 1, 1, 12, 20, 6], "n": 150, "t": 9.38, "ok": true, "nmols": 5, "max": 142, "top": [142, 2, 2, 2, 2], "formula": "O30X29P48WK12A20F2", "phase": "target", "label": "rec142_add_C3"}
+{"vec": [31, 29, 5, 48, 1, 1, 12, 20, 7], "n": 154, "t": 9.65, "ok": true, "nmols": 8, "max": 59, "top": [59, 52, 33, 2, 2], "formula": "O13X10P21K5A9F", "phase": "target", "label": "rec142_add_C5"}
+{"vec": [30, 29, 0, 49, 1, 1, 11, 20, 7], "n": 148, "t": 9.06, "ok": true, "nmols": 3, "max": 112, "top": [112, 34, 2], "formula": "O24X20P39K9A16F4", "phase": "target", "label": "rec142_add_P1"}
+{"vec": [30, 29, 0, 47, 1, 0, 12, 20, 7], "n": 146, "t": 8.78, "ok": true, "nmols": 5, "max": 104, "top": [104, 36, 2, 2, 2], "formula": "O21X24P34WK8A15F", "phase": "target", "label": "rec142_sub_P1"}
+{"vec": [30, 29, 0, 50, 1, 1, 12, 20, 7], "n": 150, "t": 9.14, "ok": true, "nmols": 2, "max": 123, "top": [123, 27], "formula": "O26X22P43WK10A20F", "phase": "target", "label": "rec142_add_P2"}
+{"vec": [30, 29, 0, 46, 1, 1, 12, 20, 7], "n": 146, "t": 8.64, "ok": true, "nmols": 5, "max": 138, "top": [138, 2, 2, 2, 2], "formula": "O30X29P46WK12A20", "phase": "target", "label": "rec142_sub_P2"}
+{"vec": [30, 29, 0, 51, 1, 1, 12, 20, 8], "n": 152, "t": 9.27, "ok": true, "nmols": 4, "max": 112, "top": [112, 36, 2, 2], "formula": "O23X22P39WK9A15F3", "phase": "target", "label": "rec142_add_P3"}
+{"vec": [30, 29, 0, 45, 1, 1, 12, 20, 6], "n": 144, "t": 8.31, "ok": true, "nmols": 4, "max": 138, "top": [138, 2, 2, 2], "formula": "O30X29P45WK12A20F", "phase": "target", "label": "rec142_sub_P3"}
+{"vec": [30, 29, 0, 53, 1, 1, 12, 20, 8], "n": 154, "t": 9.32, "ok": true, "nmols": 5, "max": 146, "top": [146, 2, 2, 2, 2], "formula": "O30X29P53WK12A20F", "phase": "target", "label": "rec142_add_P5"}
+{"vec": [30, 29, 0, 44, 1, 1, 12, 20, 7], "n": 144, "t": 8.19, "ok": true, "nmols": 6, "max": 103, "top": [103, 33, 2, 2, 2], "formula": "O24X19P34WK10A15", "phase": "target", "label": "rec142_sub_P5"}
+{"vec": [30, 29, 0, 48, 2, 1, 12, 20, 7], "n": 149, "t": 5.5, "ok": true, "nmols": 5, "max": 95, "top": [95, 48, 2, 2, 2], "formula": "O20X20P32K8A13F2", "phase": "target", "label": "rec142_add_W1"}
+{"vec": [30, 29, 0, 48, 0, 1, 12, 20, 7], "n": 147, "t": 4.5, "ok": true, "nmols": 5, "max": 101, "top": [101, 40, 2, 2, 2], "formula": "O22X20P35K9A15", "phase": "target", "label": "rec142_sub_W1"}
+{"vec": [30, 29, 0, 48, 3, 1, 12, 20, 7], "n": 150, "t": 9.25, "ok": true, "nmols": 6, "max": 81, "top": [81, 32, 31, 2, 2], "formula": "O17X15P27W3K7A11F", "phase": "target", "label": "rec142_add_W2"}
+{"vec": [30, 29, 0, 48, 4, 1, 12, 20, 7], "n": 151, "t": 9.57, "ok": true, "nmols": 4, "max": 145, "top": [145, 2, 2, 2], "formula": "O30X29P48W4K12A20F2", "phase": "target", "label": "rec142_add_W3"}
+{"vec": [30, 29, 0, 48, 6, 1, 12, 20, 7], "n": 153, "t": 9.74, "ok": true, "nmols": 6, "max": 74, "top": [74, 42, 31, 2, 2], "formula": "O15X15P24W3K6A10F", "phase": "target", "label": "rec142_add_W5"}
+{"vec": [30, 29, 0, 47, 1, 2, 12, 20, 7], "n": 148, "t": 8.95, "ok": true, "nmols": 6, "max": 104, "top": [104, 36, 2, 2, 2], "formula": "O21X24P34WK8A15F", "phase": "target", "label": "rec142_add_L1"}
+{"vec": [30, 29, 0, 48, 1, 0, 13, 20, 7], "n": 148, "t": 9.14, "ok": true, "nmols": 4, "max": 142, "top": [142, 2, 2, 2], "formula": "O30X29P48WK13A20F", "phase": "target", "label": "rec142_sub_L1"}
+{"vec": [30, 29, 0, 48, 1, 3, 12, 20, 7], "n": 150, "t": 9.4, "ok": true, "nmols": 5, "max": 142, "top": [142, 2, 2, 2, 2], "formula": "O30X29P48WK12A20F2", "phase": "target", "label": "rec142_add_L2"}
+{"vec": [30, 29, 0, 48, 1, 4, 13, 20, 7], "n": 152, "t": 9.71, "ok": true, "nmols": 6, "max": 142, "top": [142, 2, 2, 2, 2], "formula": "O30X29P48WK13A20F", "phase": "target", "label": "rec142_add_L3"}
+{"vec": [30, 29, 0, 49, 1, 6, 12, 20, 7], "n": 154, "t": 10.1, "ok": true, "nmols": 6, "max": 97, "top": [97, 49, 2, 2, 2], "formula": "O21X17P34K8A14F3", "phase": "target", "label": "rec142_add_L5"}
+{"vec": [30, 29, 0, 48, 1, 2, 11, 20, 7], "n": 148, "t": 9.04, "ok": true, "nmols": 4, "max": 111, "top": [111, 33, 2, 2], "formula": "O24X20P38WK9A16F3", "phase": "target", "label": "rec142_sub_K1"}
+{"vec": [30, 29, 0, 48, 1, 1, 14, 20, 7], "n": 150, "t": 9.42, "ok": true, "nmols": 6, "max": 134, "top": [134, 8, 2, 2, 2], "formula": "O28X28P45WK13A19", "phase": "target", "label": "rec142_add_K2"}
+{"vec": [30, 29, 0, 48, 1, 1, 10, 20, 7], "n": 146, "t": 8.66, "ok": true, "nmols": 3, "max": 83, "top": [83, 46, 17], "formula": "O18X15P29K6A14F", "phase": "target", "label": "rec142_sub_K2"}
+{"vec": [30, 29, 0, 49, 1, 1, 15, 20, 7], "n": 152, "t": 9.89, "ok": true, "nmols": 6, "max": 90, "top": [90, 48, 8, 2, 2], "formula": "O20X14P32WK10A13", "phase": "target", "label": "rec142_add_K3"}
+{"vec": [30, 29, 1, 48, 1, 1, 9, 20, 7], "n": 146, "t": 8.59, "ok": true, "nmols": 5, "max": 55, "top": [55, 54, 33, 2, 2], "formula": "O11X12P18WK3A8F2", "phase": "target", "label": "rec142_sub_K3"}
+{"vec": [30, 29, 0, 48, 1, 0, 17, 20, 7], "n": 152, "t": 9.82, "ok": true, "nmols": 6, "max": 59, "top": [59, 55, 32, 2, 2], "formula": "O12X14P19K7A7", "phase": "target", "label": "rec142_add_K5"}
+{"vec": [30, 29, 0, 48, 1, 1, 6, 20, 7], "n": 142, "t": 7.86, "ok": true, "nmols": 6, "max": 72, "top": [72, 36, 28, 2, 2], "formula": "O16X13P24WLK4A12F", "phase": "target", "label": "rec142_sub_K5"}
+{"vec": [30, 29, 0, 48, 1, 1, 12, 21, 7], "n": 149, "t": 9.2, "ok": true, "nmols": 5, "max": 141, "top": [141, 2, 2, 2, 2], "formula": "O30X29P48WK12A21", "phase": "target", "label": "rec142_add_A1"}
+{"vec": [30, 29, 0, 48, 1, 1, 12, 19, 7], "n": 147, "t": 8.96, "ok": true, "nmols": 4, "max": 87, "top": [87, 56, 2, 2], "formula": "O18X19P29WK7A13", "phase": "target", "label": "rec142_sub_A1"}
+{"vec": [30, 29, 0, 48, 1, 1, 12, 22, 7], "n": 150, "t": 9.29, "ok": true, "nmols": 5, "max": 142, "top": [142, 2, 2, 2, 2], "formula": "O30X29P48WK12A22", "phase": "target", "label": "rec142_add_A2"}
+{"vec": [30, 29, 0, 48, 1, 1, 12, 18, 7], "n": 146, "t": 8.64, "ok": true, "nmols": 4, "max": 56, "top": [56, 56, 32, 2], "formula": "O12X10P19WK5A7F2", "phase": "target", "label": "rec142_sub_A2"}
+{"vec": [30, 29, 0, 48, 1, 1, 12, 23, 7], "n": 151, "t": 9.23, "ok": true, "nmols": 5, "max": 102, "top": [102, 43, 2, 2, 2], "formula": "O22X19P35WK9A16", "phase": "target", "label": "rec142_add_A3"}
+{"vec": [30, 29, 0, 48, 1, 1, 12, 17, 7], "n": 145, "t": 8.64, "ok": true, "nmols": 3, "max": 56, "top": [56, 56, 33], "formula": "O12X10P19WK5A7F2", "phase": "target", "label": "rec142_sub_A3"}
+{"vec": [30, 29, 0, 48, 1, 1, 12, 25, 7], "n": 153, "t": 9.27, "ok": true, "nmols": 3, "max": 98, "top": [98, 53, 2], "formula": "O20X19P32WLK8A16F", "phase": "target", "label": "rec142_add_A5"}
+{"vec": [30, 29, 0, 48, 1, 1, 12, 15, 7], "n": 143, "t": 8.24, "ok": true, "nmols": 3, "max": 56, "top": [56, 44, 43], "formula": "O12X10P19K5A6F4", "phase": "target", "label": "rec142_sub_A5"}
+{"vec": [31, 29, 0, 48, 1, 1, 12, 20, 8], "n": 150, "t": 8.96, "ok": true, "nmols": 6, "max": 59, "top": [59, 52, 33, 2, 2], "formula": "O13X10P21K5A9F", "phase": "target", "label": "rec142_add_F1"}
+{"vec": [30, 29, 0, 48, 1, 1, 11, 20, 6], "n": 146, "t": 8.58, "ok": true, "nmols": 3, "max": 111, "top": [111, 33, 2], "formula": "O24X20P38WK9A16F3", "phase": "target", "label": "rec142_sub_F1"}
+{"vec": [30, 29, 0, 48, 1, 1, 12, 20, 9], "n": 150, "t": 8.83, "ok": true, "nmols": 5, "max": 142, "top": [142, 2, 2, 2, 2], "formula": "O30X29P48WK12A20F2", "phase": "target", "label": "rec142_add_F2"}
+{"vec": [30, 29, 0, 48, 1, 1, 12, 20, 5], "n": 146, "t": 5.2, "ok": true, "nmols": 3, "max": 142, "top": [142, 2, 2], "formula": "O30X29P48WK12A20F2", "phase": "target", "label": "rec142_sub_F2"}
+{"vec": [30, 29, 0, 48, 1, 0, 12, 20, 10], "n": 150, "t": 4.76, "ok": true, "nmols": 5, "max": 142, "top": [142, 2, 2, 2, 2], "formula": "O30X29P48WK12A20F2", "phase": "target", "label": "rec142_add_F3"}
+{"vec": [30, 29, 0, 48, 1, 1, 12, 20, 3], "n": 144, "t": 8.53, "ok": true, "nmols": 2, "max": 142, "top": [142, 2], "formula": "O30X29P48WK12A20F2", "phase": "target", "label": "rec142_sub_F3"}
+{"vec": [29, 29, 0, 48, 1, 1, 12, 20, 12], "n": 152, "t": 9.62, "ok": true, "nmols": 6, "max": 101, "top": [101, 43, 2, 2, 2], "formula": "O22X17P36K9A16F", "phase": "target", "label": "rec142_add_F5"}
+{"vec": [30, 29, 0, 48, 1, 1, 13, 20, 2], "n": 144, "t": 8.58, "ok": true, "nmols": 2, "max": 142, "top": [142, 2], "formula": "O30X29P48WK13A20F", "phase": "target", "label": "rec142_sub_F5"}
+{"vec": [31, 29, 0, 48, 1, 0, 12, 20, 1], "n": 142, "t": 8.23, "ok": true, "nmols": 3, "max": 59, "top": [59, 50, 33], "formula": "O13X10P21K5A9F", "phase": "target", "label": "mol142_add_O1"}
+{"vec": [29, 29, 0, 49, 1, 0, 12, 20, 2], "n": 142, "t": 8.33, "ok": true, "nmols": 2, "max": 108, "top": [108, 34], "formula": "O22X22P37WK9A15F2", "phase": "target", "label": "mol142_sub_O1"}
+{"vec": [32, 29, 0, 48, 1, 0, 12, 20, 2], "n": 144, "t": 8.66, "ok": true, "nmols": 2, "max": 90, "top": [90, 54], "formula": "O18X20P30K6A14F2", "phase": "target", "label": "mol142_add_O2"}
+{"vec": [28, 29, 0, 48, 1, 0, 12, 20, 2], "n": 140, "t": 7.86, "ok": true, "nmols": 2, "max": 72, "top": [72, 68], "formula": "O14X14P24WK6A11F2", "phase": "target", "label": "mol142_sub_O2"}
+{"vec": [33, 29, 0, 48, 1, 0, 11, 20, 2], "n": 144, "t": 8.62, "ok": true, "nmols": 2, "max": 102, "top": [102, 42], "formula": "O24X19P34K8A15F2", "phase": "target", "label": "mol142_add_O3"}
+{"vec": [27, 29, 0, 48, 1, 1, 12, 20, 2], "n": 140, "t": 7.9, "ok": true, "nmols": 1, "max": 140, "top": [140], "formula": "O27X29P48WLK12A20F2", "phase": "target", "label": "mol142_sub_O3"}
+{"vec": [35, 29, 0, 47, 1, 0, 12, 20, 2], "n": 146, "t": 8.88, "ok": true, "nmols": 1, "max": 146, "top": [146], "formula": "O35X29P47WK12A20F2", "phase": "target", "label": "mol142_add_O5"}
+{"vec": [24, 29, 0, 48, 1, 0, 12, 20, 2], "n": 136, "t": 7.11, "ok": true, "nmols": 7, "max": 28, "top": [28, 28, 28, 17, 16], "formula": "O5X6P10K3A4", "phase": "target", "label": "mol142_sub_O5"}
+{"vec": [30, 30, 0, 48, 1, 0, 12, 20, 2], "n": 143, "t": 8.34, "ok": true, "nmols": 1, "max": 143, "top": [143], "formula": "O30X30P48WK12A20F2", "phase": "target", "label": "mol142_add_X1"}
+{"vec": [30, 28, 0, 48, 1, 0, 12, 20, 2], "n": 141, "t": 8.04, "ok": true, "nmols": 1, "max": 141, "top": [141], "formula": "O30X28P48WK12A20F2", "phase": "target", "label": "mol142_sub_X1"}
+{"vec": [30, 31, 0, 48, 1, 0, 12, 20, 2], "n": 144, "t": 8.56, "ok": true, "nmols": 3, "max": 103, "top": [103, 33, 8], "formula": "O22X20P35WK9A14F2", "phase": "target", "label": "mol142_add_X2"}
+{"vec": [30, 27, 0, 48, 1, 0, 12, 20, 2], "n": 140, "t": 7.95, "ok": true, "nmols": 2, "max": 84, "top": [84, 56], "formula": "O18X17P29K7A13", "phase": "target", "label": "mol142_sub_X2"}
+{"vec": [30, 32, 0, 48, 1, 0, 12, 20, 2], "n": 145, "t": 8.55, "ok": true, "nmols": 2, "max": 102, "top": [102, 43], "formula": "O22X20P35WK9A15", "phase": "target", "label": "mol142_add_X3"}
+{"vec": [30, 26, 0, 48, 1, 0, 12, 20, 2], "n": 139, "t": 7.73, "ok": true, "nmols": 2, "max": 83, "top": [83, 56], "formula": "O18X16P29K7A13", "phase": "target", "label": "mol142_sub_X3"}
+{"vec": [30, 34, 0, 48, 1, 0, 12, 20, 2], "n": 147, "t": 8.65, "ok": true, "nmols": 1, "max": 147, "top": [147], "formula": "O30X34P48WK12A20F2", "phase": "target", "label": "mol142_add_X5"}
+{"vec": [30, 24, 0, 48, 1, 0, 12, 20, 2], "n": 137, "t": 7.54, "ok": true, "nmols": 2, "max": 106, "top": [106, 31], "formula": "O23X19P37WK9A16F", "phase": "target", "label": "mol142_sub_X5"}
+{"vec": [30, 29, 1, 48, 1, 0, 11, 20, 2], "n": 142, "t": 8.05, "ok": true, "nmols": 2, "max": 111, "top": [111, 31], "formula": "O24X20CP38WK9A16F2", "phase": "target", "label": "mol142_add_C1"}
+{"vec": [30, 29, 2, 48, 1, 0, 12, 20, 2], "n": 144, "t": 8.27, "ok": true, "nmols": 2, "max": 142, "top": [142, 2], "formula": "O30X29P48WK12A20F2", "phase": "target", "label": "mol142_add_C2"}
+{"vec": [30, 29, 3, 48, 1, 0, 11, 20, 2], "n": 144, "t": 8.22, "ok": true, "nmols": 2, "max": 111, "top": [111, 33], "formula": "O24X20CP38WK9A16F2", "phase": "target", "label": "mol142_add_C3"}
+{"vec": [30, 29, 6, 48, 1, 0, 12, 20, 2], "n": 148, "t": 8.54, "ok": true, "nmols": 4, "max": 142, "top": [142, 2, 2, 2], "formula": "O30X29P48WK12A20F2", "phase": "target", "label": "mol142_add_C5"}
+{"vec": [31, 29, 0, 49, 1, 0, 12, 20, 2], "n": 144, "t": 8.27, "ok": true, "nmols": 2, "max": 112, "top": [112, 32], "formula": "O25X20P39WK10A15F2", "phase": "target", "label": "mol142_add_P1"}
+{"vec": [31, 29, 0, 47, 1, 0, 12, 20, 2], "n": 142, "t": 7.92, "ok": true, "nmols": 4, "max": 45, "top": [45, 36, 33, 28], "formula": "O10X9P14WK4A5F2", "phase": "target", "label": "mol142_sub_P1"}
+{"vec": [30, 29, 0, 50, 1, 0, 12, 20, 2], "n": 144, "t": 7.85, "ok": true, "nmols": 2, "max": 123, "top": [123, 21], "formula": "O26X22P43WK10A20F", "phase": "target", "label": "mol142_add_P2"}
+{"vec": [30, 29, 0, 46, 1, 0, 12, 20, 2], "n": 140, "t": 4.37, "ok": true, "nmols": 2, "max": 138, "top": [138, 2], "formula": "O30X29P46WK12A20", "phase": "target", "label": "mol142_sub_P2"}
+{"vec": [30, 29, 1, 51, 1, 0, 12, 20, 2], "n": 146, "t": 4.84, "ok": true, "nmols": 2, "max": 112, "top": [112, 34], "formula": "O23X22CP39WK9A15F2", "phase": "target", "label": "mol142_add_P3"}
+{"vec": [31, 29, 0, 45, 1, 0, 12, 20, 2], "n": 140, "t": 7.83, "ok": true, "nmols": 2, "max": 138, "top": [138, 2], "formula": "O31X29P45WK12A20", "phase": "target", "label": "mol142_sub_P3"}
+{"vec": [30, 29, 0, 53, 1, 0, 12, 20, 3], "n": 148, "t": 9.55, "ok": true, "nmols": 2, "max": 146, "top": [146, 2], "formula": "O30X29P53WK12A20F", "phase": "target", "label": "mol142_add_P5"}
+{"vec": [30, 29, 0, 43, 1, 0, 11, 20, 2], "n": 136, "t": 7.06, "ok": true, "nmols": 3, "max": 101, "top": [101, 33, 2], "formula": "O24X19P33WK9A15", "phase": "target", "label": "mol142_sub_P5"}
+{"vec": [30, 29, 0, 48, 2, 0, 12, 20, 2], "n": 143, "t": 8.4, "ok": true, "nmols": 2, "max": 95, "top": [95, 48], "formula": "O20X20P32K8A13F2", "phase": "target", "label": "mol142_add_W1"}
+{"vec": [30, 29, 0, 48, 0, 0, 12, 20, 2], "n": 141, "t": 8.09, "ok": true, "nmols": 2, "max": 101, "top": [101, 40], "formula": "O22X20P35K9A15", "phase": "target", "label": "mol142_sub_W1"}
+{"vec": [30, 29, 0, 48, 3, 0, 12, 20, 2], "n": 144, "t": 8.48, "ok": true, "nmols": 3, "max": 81, "top": [81, 32, 31], "formula": "O17X15P27W3K7A11F", "phase": "target", "label": "mol142_add_W2"}
+{"vec": [30, 29, 0, 48, 4, 0, 12, 20, 2], "n": 145, "t": 8.72, "ok": true, "nmols": 1, "max": 145, "top": [145], "formula": "O30X29P48W4K12A20F2", "phase": "target", "label": "mol142_add_W3"}
+{"vec": [30, 29, 0, 48, 6, 0, 12, 20, 2], "n": 147, "t": 8.91, "ok": true, "nmols": 3, "max": 74, "top": [74, 42, 31], "formula": "O15X15P24W3K6A10F", "phase": "target", "label": "mol142_add_W5"}
+{"vec": [30, 29, 1, 48, 1, 1, 12, 20, 2], "n": 144, "t": 8.55, "ok": true, "nmols": 2, "max": 142, "top": [142, 2], "formula": "O30X29P48WK12A20F2", "phase": "target", "label": "mol142_add_L1"}
+{"vec": [30, 29, 0, 48, 1, 2, 12, 20, 2], "n": 144, "t": 8.6, "ok": true, "nmols": 2, "max": 142, "top": [142, 2], "formula": "O30X29P48WK12A20F2", "phase": "target", "label": "mol142_add_L2"}
+{"vec": [30, 29, 0, 49, 1, 3, 12, 20, 2], "n": 146, "t": 8.92, "ok": true, "nmols": 2, "max": 97, "top": [97, 49], "formula": "O21X17P34LK8A14F2", "phase": "target", "label": "mol142_add_L3"}
+{"vec": [30, 29, 0, 49, 1, 5, 12, 20, 2], "n": 148, "t": 9.24, "ok": true, "nmols": 3, "max": 97, "top": [97, 49, 2], "formula": "O21X17P34LK8A14F2", "phase": "target", "label": "mol142_add_L5"}
+{"vec": [30, 29, 0, 48, 1, 1, 11, 20, 2], "n": 142, "t": 8.16, "ok": true, "nmols": 2, "max": 111, "top": [111, 31], "formula": "O24X20P38WLK9A16F2", "phase": "target", "label": "mol142_sub_K1"}
+{"vec": [30, 29, 0, 48, 1, 0, 14, 20, 2], "n": 144, "t": 8.58, "ok": true, "nmols": 3, "max": 134, "top": [134, 8, 2], "formula": "O28X28P45WK13A19", "phase": "target", "label": "mol142_add_K2"}
+{"vec": [30, 29, 0, 48, 1, 0, 10, 20, 2], "n": 140, "t": 7.92, "ok": true, "nmols": 2, "max": 83, "top": [83, 57], "formula": "O18X15P29K6A14F", "phase": "target", "label": "mol142_sub_K2"}
+{"vec": [30, 29, 1, 48, 1, 0, 15, 20, 2], "n": 146, "t": 8.83, "ok": true, "nmols": 3, "max": 111, "top": [111, 33, 2], "formula": "O24X22P38K12A15", "phase": "target", "label": "mol142_add_K3"}
+{"vec": [30, 29, 0, 48, 1, 1, 9, 20, 2], "n": 140, "t": 7.82, "ok": true, "nmols": 2, "max": 85, "top": [85, 55], "formula": "O19X17P30LK6A12", "phase": "target", "label": "mol142_sub_K3"}
+{"vec": [29, 29, 0, 48, 1, 0, 17, 20, 2], "n": 146, "t": 8.68, "ok": true, "nmols": 3, "max": 97, "top": [97, 47, 2], "formula": "O21X15P34WK13A13", "phase": "target", "label": "mol142_add_K5"}
+{"vec": [30, 29, 0, 49, 1, 0, 7, 20, 2], "n": 138, "t": 7.6, "ok": true, "nmols": 3, "max": 93, "top": [93, 43, 2], "formula": "O22X19P34WK6A11", "phase": "target", "label": "mol142_sub_K5"}
+{"vec": [30, 29, 0, 48, 1, 0, 12, 21, 2], "n": 143, "t": 8.35, "ok": true, "nmols": 2, "max": 141, "top": [141, 2], "formula": "O30X29P48WK12A21", "phase": "target", "label": "mol142_add_A1"}
+{"vec": [30, 29, 0, 48, 1, 0, 12, 19, 2], "n": 141, "t": 8.1, "ok": true, "nmols": 2, "max": 87, "top": [87, 54], "formula": "O18X19P29WK7A13", "phase": "target", "label": "mol142_sub_A1"}
+{"vec": [30, 29, 0, 48, 1, 0, 12, 22, 2], "n": 144, "t": 8.3, "ok": true, "nmols": 2, "max": 142, "top": [142, 2], "formula": "O30X29P48WK12A22", "phase": "target", "label": "mol142_add_A2"}
+{"vec": [30, 29, 0, 48, 1, 0, 12, 18, 2], "n": 140, "t": 7.87, "ok": true, "nmols": 3, "max": 56, "top": [56, 52, 32], "formula": "O12X10P19WK5A7F2", "phase": "target", "label": "mol142_sub_A2"}
+{"vec": [30, 29, 0, 48, 1, 0, 12, 23, 2], "n": 145, "t": 8.3, "ok": true, "nmols": 2, "max": 102, "top": [102, 43], "formula": "O22X19P35WK9A16", "phase": "target", "label": "mol142_add_A3"}
+{"vec": [30, 29, 0, 48, 1, 0, 12, 17, 2], "n": 139, "t": 7.69, "ok": true, "nmols": 3, "max": 56, "top": [56, 52, 31], "formula": "O12X10P19WK5A7F2", "phase": "target", "label": "mol142_sub_A3"}
+{"vec": [30, 29, 0, 48, 1, 0, 12, 25, 2], "n": 147, "t": 8.13, "ok": true, "nmols": 2, "max": 98, "top": [98, 49], "formula": "O20X19P32WK8A16F2", "phase": "target", "label": "mol142_add_A5"}
+{"vec": [30, 29, 0, 48, 1, 0, 12, 15, 2], "n": 137, "t": 4.27, "ok": true, "nmols": 3, "max": 54, "top": [54, 44, 39], "formula": "O12X10P19K5A6F2", "phase": "target", "label": "mol142_sub_A5"}
+{"vec": [30, 29, 0, 48, 1, 0, 11, 20, 3], "n": 142, "t": 4.57, "ok": true, "nmols": 2, "max": 111, "top": [111, 31], "formula": "O24X20P38WK9A16F3", "phase": "target", "label": "mol142_add_F1"}
+{"vec": [30, 29, 0, 48, 1, 0, 11, 20, 1], "n": 140, "t": 7.96, "ok": true, "nmols": 2, "max": 109, "top": [109, 31], "formula": "O24X20P38WK9A16F", "phase": "target", "label": "mol142_sub_F1"}
+{"vec": [30, 29, 0, 48, 1, 0, 12, 20, 4], "n": 144, "t": 8.52, "ok": true, "nmols": 2, "max": 142, "top": [142, 2], "formula": "O30X29P48WK12A20F2", "phase": "target", "label": "mol142_add_F2"}
+{"vec": [30, 29, 0, 48, 1, 0, 12, 20, 0], "n": 140, "t": 8.05, "ok": true, "nmols": 1, "max": 140, "top": [140], "formula": "O30X29P48WK12A20", "phase": "target", "label": "mol142_sub_F2"}
+{"vec": [31, 29, 0, 48, 1, 0, 12, 20, 7], "n": 148, "t": 9.11, "ok": true, "nmols": 5, "max": 59, "top": [59, 52, 33, 2, 2], "formula": "O13X10P21K5A9F", "phase": "target", "label": "mol142_add_F5"}
+{"vec": [29, 27, 0, 46, 6, 0, 11, 20, 6], "n": 145, "t": 8.58, "ok": true, "nmols": 5, "max": 103, "top": [103, 36, 2, 2, 2], "formula": "O20X22P33W6K7A15", "phase": "target", "label": "rec143_add_O1"}
+{"vec": [27, 27, 0, 46, 6, 0, 11, 20, 6], "n": 143, "t": 8.18, "ok": true, "nmols": 2, "max": 141, "top": [141, 2], "formula": "O27X27P46W6K11A20F4", "phase": "target", "label": "rec143_sub_O1"}
+{"vec": [30, 27, 0, 47, 6, 0, 11, 20, 6], "n": 147, "t": 8.95, "ok": true, "nmols": 4, "max": 113, "top": [113, 30, 2, 2], "formula": "O24X20P37W4K9A17F2", "phase": "target", "label": "rec143_add_O2"}
+{"vec": [26, 27, 0, 47, 6, 0, 11, 20, 6], "n": 143, "t": 8.19, "ok": true, "nmols": 3, "max": 139, "top": [139, 2, 2], "formula": "O26X27P47W6K11A20F2", "phase": "target", "label": "rec143_sub_O2"}
+{"vec": [31, 27, 0, 48, 6, 0, 11, 20, 6], "n": 149, "t": 9.23, "ok": true, "nmols": 4, "max": 86, "top": [86, 32, 29, 2], "formula": "O18X17P30W2K6A13", "phase": "target", "label": "rec143_add_O3"}
+{"vec": [25, 27, 0, 47, 6, 1, 11, 20, 6], "n": 143, "t": 8.11, "ok": true, "nmols": 5, "max": 80, "top": [80, 57, 2, 2, 2], "formula": "O15X15P28W5LK8A8", "phase": "target", "label": "rec143_sub_O3"}
+{"vec": [32, 27, 0, 47, 6, 0, 11, 20, 6], "n": 149, "t": 9.21, "ok": true, "nmols": 4, "max": 74, "top": [74, 61, 12, 2], "formula": "O15X15P23W5K5A8F3", "phase": "target", "label": "rec143_add_O5"}
+{"vec": [23, 27, 1, 47, 6, 0, 11, 20, 6], "n": 141, "t": 7.6, "ok": true, "nmols": 7, "max": 34, "top": [34, 28, 25, 22, 12], "formula": "O6X8P13K5A2", "phase": "target", "label": "rec143_sub_O5"}
+{"vec": [28, 28, 0, 47, 6, 0, 11, 20, 6], "n": 146, "t": 8.72, "ok": true, "nmols": 3, "max": 142, "top": [142, 2, 2], "formula": "O28X28P47W6K11A20F2", "phase": "target", "label": "rec143_add_X1"}
+{"vec": [28, 26, 0, 47, 6, 0, 11, 20, 6], "n": 144, "t": 8.37, "ok": true, "nmols": 1, "max": 144, "top": [144], "formula": "O28X26P47W6K11A20F6", "phase": "target", "label": "rec143_sub_X1"}
+{"vec": [28, 29, 0, 47, 6, 0, 11, 20, 6], "n": 147, "t": 8.77, "ok": true, "nmols": 4, "max": 141, "top": [141, 2, 2, 2], "formula": "O28X29P47W6K11A20", "phase": "target", "label": "rec143_add_X2"}
+{"vec": [28, 25, 0, 47, 6, 0, 11, 20, 6], "n": 143, "t": 8.35, "ok": true, "nmols": 2, "max": 141, "top": [141, 2], "formula": "O28X25P47W6K11A20F4", "phase": "target", "label": "rec143_sub_X2"}
+{"vec": [28, 30, 0, 47, 6, 0, 11, 20, 6], "n": 148, "t": 8.88, "ok": true, "nmols": 3, "max": 144, "top": [144, 2, 2], "formula": "O28X30P47W6K11A20F2", "phase": "target", "label": "rec143_add_X3"}
+{"vec": [28, 24, 0, 47, 6, 0, 11, 20, 6], "n": 142, "t": 8.13, "ok": true, "nmols": 3, "max": 138, "top": [138, 2, 2], "formula": "O28X24P47W6K11A20F2", "phase": "target", "label": "rec143_sub_X3"}
+{"vec": [28, 32, 0, 47, 6, 0, 11, 20, 6], "n": 150, "t": 9.07, "ok": true, "nmols": 1, "max": 150, "top": [150], "formula": "O28X32P47W6K11A20F6", "phase": "target", "label": "rec143_add_X5"}
+{"vec": [28, 22, 0, 47, 6, 0, 11, 20, 6], "n": 140, "t": 7.85, "ok": true, "nmols": 3, "max": 136, "top": [136, 2, 2], "formula": "O28X22P47W6K11A20F2", "phase": "target", "label": "rec143_sub_X5"}
+{"vec": [28, 27, 1, 47, 6, 0, 11, 20, 5], "n": 145, "t": 8.46, "ok": true, "nmols": 2, "max": 143, "top": [143, 2], "formula": "O28X27CP47W6K11A20F3", "phase": "target", "label": "rec143_add_C1"}
+{"vec": [28, 27, 2, 47, 6, 0, 11, 20, 6], "n": 147, "t": 8.58, "ok": true, "nmols": 3, "max": 143, "top": [143, 2, 2], "formula": "O28X27C2P47W6K11A20F2", "phase": "target", "label": "rec143_add_C2"}
+{"vec": [28, 27, 3, 47, 6, 0, 11, 20, 5], "n": 147, "t": 8.49, "ok": true, "nmols": 3, "max": 143, "top": [143, 2, 2], "formula": "O28X27C3P47W6K11A20F", "phase": "target", "label": "rec143_add_C3"}
+{"vec": [28, 27, 5, 47, 6, 0, 11, 20, 7], "n": 151, "t": 8.72, "ok": true, "nmols": 5, "max": 143, "top": [143, 2, 2, 2, 2], "formula": "O28X27C4P47W6K11A20", "phase": "target", "label": "rec143_add_C5"}
+{"vec": [28, 27, 1, 48, 6, 0, 11, 20, 6], "n": 147, "t": 8.36, "ok": true, "nmols": 2, "max": 145, "top": [145, 2], "formula": "O28X27CP48W6K11A20F4", "phase": "target", "label": "rec143_add_P1"}
+{"vec": [28, 27, 1, 46, 6, 0, 11, 20, 6], "n": 145, "t": 8.09, "ok": true, "nmols": 4, "max": 139, "top": [139, 2, 2, 2], "formula": "O28X27CP46W6K11A20", "phase": "target", "label": "rec143_sub_P1"}
+{"vec": [28, 27, 0, 49, 6, 0, 11, 20, 6], "n": 147, "t": 4.91, "ok": true, "nmols": 4, "max": 98, "top": [98, 45, 2, 2], "formula": "O20X19P35WK8A14F", "phase": "target", "label": "rec143_add_P2"}
+{"vec": [28, 27, 0, 45, 6, 0, 11, 20, 6], "n": 143, "t": 4.34, "ok": true, "nmols": 5, "max": 87, "top": [87, 50, 2, 2, 2], "formula": "O18X17P29W3K7A13", "phase": "target", "label": "rec143_sub_P2"}
+{"vec": [27, 27, 0, 50, 6, 0, 11, 20, 6], "n": 147, "t": 8.88, "ok": true, "nmols": 3, "max": 103, "top": [103, 42, 2], "formula": "O19X21P35W6K6A16", "phase": "target", "label": "rec143_add_P3"}
+{"vec": [28, 27, 1, 44, 6, 0, 11, 20, 6], "n": 143, "t": 8.0, "ok": true, "nmols": 7, "max": 44, "top": [44, 38, 36, 19, 2], "formula": "O10X7P16K4A7", "phase": "target", "label": "rec143_sub_P3"}
+{"vec": [27, 27, 0, 52, 6, 0, 11, 20, 6], "n": 149, "t": 9.18, "ok": true, "nmols": 9, "max": 44, "top": [44, 42, 12, 12, 8], "formula": "O9X8P17K6A2F2", "phase": "target", "label": "rec143_add_P5"}
+{"vec": [28, 27, 0, 42, 6, 0, 11, 20, 5], "n": 139, "t": 7.35, "ok": true, "nmols": 2, "max": 137, "top": [137, 2], "formula": "O28X27P42W6K11A20F3", "phase": "target", "label": "rec143_sub_P5"}
+{"vec": [28, 27, 0, 47, 6, 2, 11, 20, 6], "n": 147, "t": 8.86, "ok": true, "nmols": 3, "max": 143, "top": [143, 2, 2], "formula": "O28X27P47W6K11A20F4", "phase": "target", "label": "rec143_add_L1"}
+{"vec": [27, 27, 0, 47, 6, 3, 11, 20, 6], "n": 147, "t": 8.73, "ok": true, "nmols": 3, "max": 143, "top": [143, 2, 2], "formula": "O27X27P47W6K11A20F5", "phase": "target", "label": "rec143_add_L3"}
+{"vec": [29, 27, 0, 47, 6, 5, 11, 20, 6], "n": 151, "t": 9.4, "ok": true, "nmols": 7, "max": 97, "top": [97, 44, 2, 2, 2], "formula": "O21X17P34W2K8A14F", "phase": "target", "label": "rec143_add_L5"}
+{"vec": [28, 27, 1, 47, 6, 0, 10, 20, 6], "n": 145, "t": 8.48, "ok": true, "nmols": 2, "max": 143, "top": [143, 2], "formula": "O28X27CP47W6K10A20F4", "phase": "target", "label": "rec143_sub_K1"}
+{"vec": [28, 27, 0, 47, 6, 0, 13, 20, 6], "n": 147, "t": 8.93, "ok": true, "nmols": 4, "max": 96, "top": [96, 47, 2, 2], "formula": "O18X20P31W5K8A13F", "phase": "target", "label": "rec143_add_K2"}
+{"vec": [28, 27, 0, 47, 6, 0, 9, 20, 6], "n": 143, "t": 8.16, "ok": true, "nmols": 2, "max": 119, "top": [119, 24], "formula": "O25X22P42WK8A20F", "phase": "target", "label": "rec143_sub_K2"}
+{"vec": [28, 27, 0, 46, 6, 0, 14, 20, 6], "n": 147, "t": 8.86, "ok": true, "nmols": 4, "max": 141, "top": [141, 2, 2, 2], "formula": "O28X27P46W6K14A20", "phase": "target", "label": "rec143_add_K3"}
+{"vec": [28, 27, 0, 48, 6, 0, 16, 20, 6], "n": 151, "t": 9.74, "ok": true, "nmols": 3, "max": 147, "top": [147, 2, 2], "formula": "O28X27P48W6K16A20F2", "phase": "target", "label": "rec143_add_K5"}
+{"vec": [28, 27, 0, 47, 6, 0, 6, 20, 7], "n": 141, "t": 7.59, "ok": true, "nmols": 6, "max": 46, "top": [46, 45, 34, 12, 2], "formula": "O9X5P13W5K3A8F3", "phase": "target", "label": "rec143_sub_K5"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 21, 6], "n": 146, "t": 8.66, "ok": true, "nmols": 2, "max": 144, "top": [144, 2], "formula": "O28X27P47W6K11A21F4", "phase": "target", "label": "rec143_add_A1"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 19, 6], "n": 144, "t": 8.37, "ok": true, "nmols": 2, "max": 142, "top": [142, 2], "formula": "O28X27P47W6K11A19F4", "phase": "target", "label": "rec143_sub_A1"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 22, 6], "n": 147, "t": 8.87, "ok": true, "nmols": 2, "max": 145, "top": [145, 2], "formula": "O28X27P47W6K11A22F4", "phase": "target", "label": "rec143_add_A2"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 18, 6], "n": 143, "t": 8.21, "ok": true, "nmols": 2, "max": 141, "top": [141, 2], "formula": "O28X27P47W6K11A18F4", "phase": "target", "label": "rec143_sub_A2"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 23, 6], "n": 148, "t": 8.74, "ok": true, "nmols": 2, "max": 146, "top": [146, 2], "formula": "O28X27P47W6K11A23F4", "phase": "target", "label": "rec143_add_A3"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 17, 6], "n": 142, "t": 8.04, "ok": true, "nmols": 3, "max": 91, "top": [91, 49, 2], "formula": "O19X17P32WK7A15", "phase": "target", "label": "rec143_sub_A3"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 15, 6], "n": 140, "t": 7.87, "ok": true, "nmols": 2, "max": 138, "top": [138, 2], "formula": "O28X27P47W6K11A15F4", "phase": "target", "label": "rec143_sub_A5"}
+{"vec": [28, 27, 1, 47, 6, 0, 11, 20, 7], "n": 147, "t": 8.52, "ok": true, "nmols": 3, "max": 143, "top": [143, 2, 2], "formula": "O28X27CP47W6K11A20F3", "phase": "target", "label": "rec143_add_F1"}
+{"vec": [28, 27, 0, 48, 6, 0, 11, 20, 5], "n": 145, "t": 8.4, "ok": true, "nmols": 1, "max": 145, "top": [145], "formula": "O28X27P48W6K11A20F5", "phase": "target", "label": "rec143_sub_F1"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 20, 8], "n": 147, "t": 8.5, "ok": true, "nmols": 3, "max": 143, "top": [143, 2, 2], "formula": "O28X27P47W6K11A20F4", "phase": "target", "label": "rec143_add_F2"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 20, 4], "n": 143, "t": 8.07, "ok": true, "nmols": 1, "max": 143, "top": [143], "formula": "O28X27P47W6K11A20F4", "phase": "target", "label": "rec143_sub_F2"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 20, 10], "n": 149, "t": 8.42, "ok": true, "nmols": 4, "max": 143, "top": [143, 2, 2, 2], "formula": "O28X27P47W6K11A20F4", "phase": "target", "label": "rec143_add_F3"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 20, 2], "n": 141, "t": 7.65, "ok": true, "nmols": 1, "max": 141, "top": [141], "formula": "O28X27P47W6K11A20F2", "phase": "target", "label": "rec143_sub_F3"}
+{"vec": [28, 27, 0, 47, 6, 0, 10, 20, 11], "n": 149, "t": 5.01, "ok": true, "nmols": 4, "max": 143, "top": [143, 2, 2, 2], "formula": "O28X27P47W6K10A20F5", "phase": "target", "label": "rec143_add_F5"}
+{"vec": [28, 27, 0, 47, 6, 0, 12, 20, 1], "n": 141, "t": 4.5, "ok": true, "nmols": 2, "max": 99, "top": [99, 42], "formula": "O19X20P32W6K8A13F", "phase": "target", "label": "rec143_sub_F5"}
+{"vec": [29, 27, 1, 47, 6, 0, 11, 20, 4], "n": 145, "t": 8.49, "ok": true, "nmols": 4, "max": 97, "top": [97, 44, 2, 2], "formula": "O21X17CP34W2K8A14", "phase": "target", "label": "mol143_add_O1"}
+{"vec": [27, 27, 0, 47, 6, 0, 10, 20, 4], "n": 141, "t": 7.94, "ok": true, "nmols": 2, "max": 96, "top": [96, 45], "formula": "O18X18P31W6K7A12F4", "phase": "target", "label": "mol143_sub_O1"}
+{"vec": [30, 27, 0, 47, 6, 0, 11, 20, 4], "n": 145, "t": 8.66, "ok": true, "nmols": 3, "max": 113, "top": [113, 30, 2], "formula": "O24X20P37W4K9A17F2", "phase": "target", "label": "mol143_add_O2"}
+{"vec": [26, 27, 0, 47, 6, 0, 11, 20, 4], "n": 141, "t": 7.92, "ok": true, "nmols": 2, "max": 139, "top": [139, 2], "formula": "O26X27P47W6K11A20F2", "phase": "target", "label": "mol143_sub_O2"}
+{"vec": [24, 27, 0, 47, 6, 0, 11, 20, 4], "n": 139, "t": 7.41, "ok": true, "nmols": 8, "max": 48, "top": [48, 22, 20, 17, 8], "formula": "O10X10P19K7A2", "phase": "target", "label": "mol143_sub_O3"}
+{"vec": [33, 27, 0, 48, 6, 0, 11, 20, 4], "n": 149, "t": 9.35, "ok": true, "nmols": 1, "max": 149, "top": [149], "formula": "O33X27P48W6K11A20F4", "phase": "target", "label": "mol143_add_O5"}
+{"vec": [23, 27, 0, 46, 6, 0, 11, 20, 4], "n": 137, "t": 7.05, "ok": true, "nmols": 6, "max": 28, "top": [28, 28, 26, 26, 18], "formula": "O5X6P10K3A4", "phase": "target", "label": "mol143_sub_O5"}
+{"vec": [28, 28, 0, 47, 6, 0, 11, 20, 4], "n": 144, "t": 8.43, "ok": true, "nmols": 2, "max": 142, "top": [142, 2], "formula": "O28X28P47W6K11A20F2", "phase": "target", "label": "mol143_add_X1"}
+{"vec": [28, 26, 0, 47, 6, 0, 11, 20, 4], "n": 142, "t": 8.08, "ok": true, "nmols": 1, "max": 142, "top": [142], "formula": "O28X26P47W6K11A20F4", "phase": "target", "label": "mol143_sub_X1"}
+{"vec": [28, 29, 0, 47, 6, 0, 11, 20, 4], "n": 145, "t": 8.62, "ok": true, "nmols": 3, "max": 141, "top": [141, 2, 2], "formula": "O28X29P47W6K11A20", "phase": "target", "label": "mol143_add_X2"}
+{"vec": [28, 25, 0, 47, 6, 0, 11, 20, 4], "n": 141, "t": 7.97, "ok": true, "nmols": 1, "max": 141, "top": [141], "formula": "O28X25P47W6K11A20F4", "phase": "target", "label": "mol143_sub_X2"}
+{"vec": [28, 30, 0, 47, 6, 0, 11, 20, 4], "n": 146, "t": 8.68, "ok": true, "nmols": 2, "max": 144, "top": [144, 2], "formula": "O28X30P47W6K11A20F2", "phase": "target", "label": "mol143_add_X3"}
+{"vec": [28, 24, 0, 47, 6, 0, 11, 20, 4], "n": 140, "t": 7.8, "ok": true, "nmols": 2, "max": 138, "top": [138, 2], "formula": "O28X24P47W6K11A20F2", "phase": "target", "label": "mol143_sub_X3"}
+{"vec": [28, 32, 0, 47, 6, 0, 11, 20, 4], "n": 148, "t": 8.97, "ok": true, "nmols": 1, "max": 148, "top": [148], "formula": "O28X32P47W6K11A20F4", "phase": "target", "label": "mol143_add_X5"}
+{"vec": [28, 22, 0, 47, 6, 0, 11, 20, 4], "n": 138, "t": 7.56, "ok": true, "nmols": 2, "max": 136, "top": [136, 2], "formula": "O28X22P47W6K11A20F2", "phase": "target", "label": "mol143_sub_X5"}
+{"vec": [28, 27, 1, 47, 6, 0, 10, 20, 4], "n": 143, "t": 8.23, "ok": true, "nmols": 1, "max": 143, "top": [143], "formula": "O28X27CP47W6K10A20F4", "phase": "target", "label": "mol143_add_C1"}
+{"vec": [28, 27, 2, 47, 6, 0, 11, 20, 4], "n": 145, "t": 8.52, "ok": true, "nmols": 2, "max": 143, "top": [143, 2], "formula": "O28X27C2P47W6K11A20F2", "phase": "target", "label": "mol143_add_C2"}
+{"vec": [28, 27, 3, 47, 6, 1, 11, 20, 4], "n": 147, "t": 8.69, "ok": true, "nmols": 3, "max": 143, "top": [143, 2, 2], "formula": "O28X27C3P47W6K11A20F", "phase": "target", "label": "mol143_add_C3"}
+{"vec": [29, 27, 5, 47, 6, 0, 11, 20, 4], "n": 149, "t": 8.78, "ok": true, "nmols": 6, "max": 97, "top": [97, 44, 2, 2, 2], "formula": "O21X17CP34W2K8A14", "phase": "target", "label": "mol143_add_C5"}
+{"vec": [28, 27, 0, 46, 6, 0, 12, 20, 4], "n": 143, "t": 8.18, "ok": true, "nmols": 3, "max": 139, "top": [139, 2, 2], "formula": "O28X27P46W6K12A20", "phase": "target", "label": "mol143_sub_P1"}
+{"vec": [28, 27, 0, 49, 6, 0, 11, 20, 4], "n": 145, "t": 8.28, "ok": true, "nmols": 3, "max": 98, "top": [98, 45, 2], "formula": "O20X19P35WK8A14F", "phase": "target", "label": "mol143_add_P2"}
+{"vec": [28, 27, 0, 45, 6, 0, 11, 20, 4], "n": 141, "t": 7.81, "ok": true, "nmols": 4, "max": 87, "top": [87, 50, 2, 2], "formula": "O18X17P29W3K7A13", "phase": "target", "label": "mol143_sub_P2"}
+{"vec": [28, 27, 0, 50, 6, 0, 11, 20, 3], "n": 145, "t": 8.27, "ok": true, "nmols": 2, "max": 143, "top": [143, 2], "formula": "O28X27P50W6K11A20F", "phase": "target", "label": "mol143_add_P3"}
+{"vec": [28, 27, 0, 44, 6, 0, 12, 20, 4], "n": 141, "t": 7.73, "ok": true, "nmols": 3, "max": 100, "top": [100, 33, 8], "formula": "O19X21P30W5K8A14F3", "phase": "target", "label": "mol143_sub_P3"}
+{"vec": [28, 27, 1, 52, 6, 0, 11, 20, 4], "n": 149, "t": 8.53, "ok": true, "nmols": 3, "max": 73, "top": [73, 47, 29], "formula": "O12X11CP22W5K4A15F3", "phase": "target", "label": "mol143_add_P5"}
+{"vec": [28, 27, 0, 41, 6, 0, 11, 20, 4], "n": 137, "t": 6.93, "ok": true, "nmols": 3, "max": 63, "top": [63, 41, 33], "formula": "O11X12P18W5K4A10F3", "phase": "target", "label": "mol143_sub_P5"}
+{"vec": [28, 27, 0, 47, 7, 0, 11, 20, 4], "n": 144, "t": 4.84, "ok": true, "nmols": 4, "max": 46, "top": [46, 42, 28, 28], "formula": "O7X10P12W7K3A3F4", "phase": "target", "label": "mol143_add_W1"}
+{"vec": [28, 27, 0, 47, 5, 0, 11, 20, 4], "n": 142, "t": 4.21, "ok": true, "nmols": 2, "max": 140, "top": [140, 2], "formula": "O28X27P47W5K11A20F2", "phase": "target", "label": "mol143_sub_W1"}
+{"vec": [28, 27, 0, 47, 8, 0, 11, 20, 4], "n": 145, "t": 8.48, "ok": true, "nmols": 2, "max": 115, "top": [115, 30], "formula": "O24X20P40WK9A20F", "phase": "target", "label": "mol143_add_W2"}
+{"vec": [28, 27, 0, 47, 4, 0, 11, 20, 4], "n": 141, "t": 8.01, "ok": true, "nmols": 3, "max": 137, "top": [137, 2, 2], "formula": "O28X27P47W4K11A20", "phase": "target", "label": "mol143_sub_W2"}
+{"vec": [28, 27, 0, 47, 9, 0, 11, 20, 4], "n": 146, "t": 8.64, "ok": true, "nmols": 2, "max": 116, "top": [116, 30], "formula": "O24X20P40W2K9A20F", "phase": "target", "label": "mol143_add_W3"}
+{"vec": [28, 27, 0, 47, 3, 0, 11, 20, 4], "n": 140, "t": 7.86, "ok": true, "nmols": 2, "max": 138, "top": [138, 2], "formula": "O28X27P47W3K11A20F2", "phase": "target", "label": "mol143_sub_W3"}
+{"vec": [28, 27, 0, 47, 11, 0, 11, 20, 4], "n": 148, "t": 9.0, "ok": true, "nmols": 2, "max": 118, "top": [118, 30], "formula": "O24X20P40W4K9A20F", "phase": "target", "label": "mol143_add_W5"}
+{"vec": [28, 27, 1, 47, 6, 1, 11, 20, 4], "n": 145, "t": 8.58, "ok": true, "nmols": 2, "max": 143, "top": [143, 2], "formula": "O28X27CP47W6K11A20F3", "phase": "target", "label": "mol143_add_L1"}
+{"vec": [28, 27, 0, 47, 6, 2, 11, 20, 4], "n": 145, "t": 8.65, "ok": true, "nmols": 2, "max": 143, "top": [143, 2], "formula": "O28X27P47W6K11A20F4", "phase": "target", "label": "mol143_add_L2"}
+{"vec": [29, 27, 0, 47, 6, 3, 11, 20, 4], "n": 147, "t": 8.79, "ok": true, "nmols": 5, "max": 97, "top": [97, 44, 2, 2, 2], "formula": "O21X17P34W2K8A14F", "phase": "target", "label": "mol143_add_L3"}
+{"vec": [28, 27, 0, 47, 6, 5, 11, 20, 3], "n": 147, "t": 8.82, "ok": true, "nmols": 3, "max": 143, "top": [143, 2, 2], "formula": "O28X27P47W6LK11A20F3", "phase": "target", "label": "mol143_add_L5"}
+{"vec": [29, 27, 0, 47, 6, 0, 10, 20, 4], "n": 143, "t": 8.27, "ok": true, "nmols": 2, "max": 114, "top": [114, 29], "formula": "O24X22P40W2K8A18", "phase": "target", "label": "mol143_sub_K1"}
+{"vec": [28, 27, 0, 47, 6, 0, 13, 20, 4], "n": 145, "t": 8.6, "ok": true, "nmols": 3, "max": 96, "top": [96, 47, 2], "formula": "O18X20P31W5K8A13F", "phase": "target", "label": "mol143_add_K2"}
+{"vec": [28, 27, 0, 47, 6, 0, 9, 20, 4], "n": 141, "t": 7.87, "ok": true, "nmols": 2, "max": 119, "top": [119, 22], "formula": "O25X22P42WK8A20F", "phase": "target", "label": "mol143_sub_K2"}
+{"vec": [28, 27, 0, 47, 6, 1, 14, 20, 4], "n": 147, "t": 8.85, "ok": true, "nmols": 4, "max": 96, "top": [96, 47, 2, 2], "formula": "O18X20P31W5K9A13", "phase": "target", "label": "mol143_add_K3"}
+{"vec": [28, 27, 0, 47, 6, 0, 7, 20, 4], "n": 139, "t": 7.42, "ok": true, "nmols": 3, "max": 135, "top": [135, 2, 2], "formula": "O28X27P47W6K7A20", "phase": "target", "label": "mol143_sub_K3"}
+{"vec": [28, 27, 0, 47, 6, 0, 16, 20, 5], "n": 149, "t": 9.08, "ok": true, "nmols": 3, "max": 145, "top": [145, 2, 2], "formula": "O28X27P47W6K16A20F", "phase": "target", "label": "mol143_add_K5"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 21, 4], "n": 144, "t": 8.38, "ok": true, "nmols": 1, "max": 144, "top": [144], "formula": "O28X27P47W6K11A21F4", "phase": "target", "label": "mol143_add_A1"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 19, 4], "n": 142, "t": 8.13, "ok": true, "nmols": 1, "max": 142, "top": [142], "formula": "O28X27P47W6K11A19F4", "phase": "target", "label": "mol143_sub_A1"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 22, 4], "n": 145, "t": 8.35, "ok": true, "nmols": 1, "max": 145, "top": [145], "formula": "O28X27P47W6K11A22F4", "phase": "target", "label": "mol143_add_A2"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 18, 4], "n": 141, "t": 7.98, "ok": true, "nmols": 1, "max": 141, "top": [141], "formula": "O28X27P47W6K11A18F4", "phase": "target", "label": "mol143_sub_A2"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 23, 4], "n": 146, "t": 8.4, "ok": true, "nmols": 1, "max": 146, "top": [146], "formula": "O28X27P47W6K11A23F4", "phase": "target", "label": "mol143_add_A3"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 17, 4], "n": 140, "t": 7.77, "ok": true, "nmols": 2, "max": 91, "top": [91, 49], "formula": "O19X17P32WK7A15", "phase": "target", "label": "mol143_sub_A3"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 25, 4], "n": 148, "t": 8.53, "ok": true, "nmols": 1, "max": 148, "top": [148], "formula": "O28X27P47W6K11A25F4", "phase": "target", "label": "mol143_add_A5"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 15, 4], "n": 138, "t": 7.63, "ok": true, "nmols": 1, "max": 138, "top": [138], "formula": "O28X27P47W6K11A15F4", "phase": "target", "label": "mol143_sub_A5"}
+{"vec": [28, 27, 1, 47, 6, 0, 11, 20, 3], "n": 143, "t": 8.05, "ok": true, "nmols": 1, "max": 143, "top": [143], "formula": "O28X27CP47W6K11A20F3", "phase": "target", "label": "mol143_sub_F1"}
+{"vec": [28, 27, 0, 47, 6, 1, 11, 20, 1], "n": 141, "t": 7.86, "ok": true, "nmols": 1, "max": 141, "top": [141], "formula": "O28X27P47W6LK11A20F", "phase": "target", "label": "mol143_sub_F3"}
+{"vec": [28, 27, 0, 47, 6, 0, 12, 20, 9], "n": 149, "t": 8.45, "ok": true, "nmols": 5, "max": 101, "top": [101, 42, 2, 2, 2], "formula": "O19X20P32W6K8A13F3", "phase": "target", "label": "mol143_add_F5"}
+{"vec": [29, 27, 0, 48, 1, 0, 11, 20, 6], "n": 142, "t": 4.76, "ok": true, "nmols": 2, "max": 123, "top": [123, 19], "formula": "O26X22P43WK10A20F", "phase": "target", "label": "V140_add_O1"}
+{"vec": [27, 27, 0, 48, 1, 0, 11, 20, 6], "n": 140, "t": 4.02, "ok": true, "nmols": 4, "max": 134, "top": [134, 2, 2, 2], "formula": "O27X27P48WK11A20", "phase": "target", "label": "V140_sub_O1"}
+{"vec": [31, 27, 0, 47, 1, 1, 11, 20, 6], "n": 144, "t": 8.44, "ok": true, "nmols": 3, "max": 95, "top": [95, 47, 2], "formula": "O21X17P33K7A16F", "phase": "target", "label": "V140_add_O3"}
+{"vec": [25, 27, 0, 47, 1, 0, 10, 20, 6], "n": 136, "t": 6.99, "ok": true, "nmols": 4, "max": 70, "top": [70, 62, 2, 2], "formula": "O14X13P26WK8A6F2", "phase": "target", "label": "V140_sub_O3"}
+{"vec": [28, 27, 1, 47, 1, 0, 10, 20, 6], "n": 140, "t": 7.72, "ok": true, "nmols": 3, "max": 119, "top": [119, 19, 2], "formula": "O25X22P42WK9A20", "phase": "target", "label": "V140_add_C1"}
+{"vec": [28, 27, 3, 47, 1, 0, 11, 20, 5], "n": 142, "t": 8.1, "ok": true, "nmols": 2, "max": 140, "top": [140, 2], "formula": "O28X27CP47WK11A20F5", "phase": "target", "label": "V140_add_C3"}
+{"vec": [28, 27, 4, 47, 1, 0, 11, 20, 6], "n": 144, "t": 8.36, "ok": true, "nmols": 3, "max": 140, "top": [140, 2, 2], "formula": "O28X27P47WK11A20F6", "phase": "target", "label": "V140_add_C5"}
+{"vec": [29, 27, 0, 44, 1, 0, 11, 20, 6], "n": 138, "t": 7.31, "ok": true, "nmols": 5, "max": 99, "top": [99, 33, 2, 2, 2], "formula": "O23X17P34WK9A15", "phase": "target", "label": "V140_sub_P3"}
+{"vec": [28, 27, 1, 52, 1, 0, 11, 20, 6], "n": 146, "t": 8.84, "ok": true, "nmols": 2, "max": 75, "top": [75, 71], "formula": "O13X12CP24K4A17F4", "phase": "target", "label": "V140_add_P5"}
+{"vec": [28, 27, 0, 42, 1, 0, 10, 20, 6], "n": 134, "t": 6.64, "ok": true, "nmols": 5, "max": 95, "top": [95, 33, 2, 2, 2], "formula": "O22X17P32WK8A15", "phase": "target", "label": "V140_sub_P5"}
+{"vec": [27, 27, 0, 47, 1, 1, 11, 20, 6], "n": 140, "t": 7.71, "ok": true, "nmols": 4, "max": 100, "top": [100, 36, 2, 2], "formula": "O20X20P35WK8A15F", "phase": "target", "label": "V140_add_L1"}
+{"vec": [28, 27, 0, 47, 1, 3, 12, 20, 6], "n": 144, "t": 8.5, "ok": true, "nmols": 3, "max": 140, "top": [140, 2, 2], "formula": "O28X27P47WK12A20F5", "phase": "target", "label": "V140_add_L3"}
+{"vec": [28, 27, 0, 47, 1, 4, 11, 20, 6], "n": 144, "t": 8.42, "ok": true, "nmols": 3, "max": 140, "top": [140, 2, 2], "formula": "O28X27P47WK11A20F6", "phase": "target", "label": "V140_add_L5"}
+{"vec": [28, 27, 1, 47, 1, 0, 12, 20, 6], "n": 142, "t": 8.19, "ok": true, "nmols": 2, "max": 140, "top": [140, 2], "formula": "O28X27P47WK12A20F5", "phase": "target", "label": "V140_add_K1"}
+{"vec": [27, 27, 0, 47, 1, 0, 14, 20, 6], "n": 142, "t": 8.2, "ok": true, "nmols": 2, "max": 117, "top": [117, 25], "formula": "O23X21P40WK12A19F", "phase": "target", "label": "V140_add_K3"}
+{"vec": [27, 27, 0, 47, 1, 0, 8, 20, 6], "n": 136, "t": 7.11, "ok": true, "nmols": 4, "max": 130, "top": [130, 2, 2, 2], "formula": "O27X27P47WK8A20", "phase": "target", "label": "V140_sub_K3"}
+{"vec": [27, 27, 0, 47, 1, 0, 6, 20, 6], "n": 134, "t": 6.71, "ok": true, "nmols": 4, "max": 67, "top": [67, 63, 2, 2], "formula": "O14X12P23K4A13F", "phase": "target", "label": "V140_sub_K5"}
+{"vec": [28, 27, 1, 47, 1, 0, 11, 20, 9], "n": 144, "t": 8.31, "ok": true, "nmols": 3, "max": 140, "top": [140, 2, 2], "formula": "O28X27P47WK11A20F6", "phase": "target", "label": "V140_add_F3"}
+{"vec": [29, 27, 0, 47, 1, 0, 11, 20, 11], "n": 146, "t": 8.52, "ok": true, "nmols": 6, "max": 72, "top": [72, 66, 2, 2, 2], "formula": "O16X12P26K6A12", "phase": "target", "label": "V140_add_F5"}
+{"vec": [28, 27, 0, 47, 1, 1, 11, 20, 1], "n": 136, "t": 7.39, "ok": true, "nmols": 1, "max": 136, "top": [136], "formula": "O28X27P47WLK11A20F", "phase": "target", "label": "V140_sub_F5"}
+{"vec": [28, 28, 0, 48, 1, 0, 11, 25, 7], "n": 148, "t": 8.64, "ok": true, "nmols": 5, "max": 116, "top": [116, 26, 2, 2, 2], "formula": "O24X21P41K9A21", "phase": "target", "label": "rec141_pm2_0"}
+{"vec": [28, 27, 1, 47, 1, 0, 11, 25, 5], "n": 145, "t": 8.25, "ok": true, "nmols": 3, "max": 141, "top": [141, 2, 2], "formula": "O28X27CP47WK11A25F", "phase": "target", "label": "rec141_pm2_1"}
+{"vec": [29, 27, 0, 48, 2, 0, 11, 25, 6], "n": 148, "t": 8.64, "ok": true, "nmols": 4, "max": 142, "top": [142, 2, 2, 2], "formula": "O29X27P48W2K11A25", "phase": "target", "label": "rec141_pm3_0"}
+{"vec": [27, 26, 0, 48, 1, 0, 11, 24, 6], "n": 143, "t": 8.09, "ok": true, "nmols": 4, "max": 137, "top": [137, 2, 2, 2], "formula": "O27X26P48WK11A24", "phase": "target", "label": "rec141_pm3_1"}
+{"vec": [28, 28, 2, 49, 1, 0, 11, 25, 6], "n": 150, "t": 8.66, "ok": true, "nmols": 4, "max": 144, "top": [144, 2, 2, 2], "formula": "O28X28P49WK11A25F2", "phase": "target", "label": "rec141_pm4_0"}
+{"vec": [28, 26, 1, 46, 0, 0, 11, 25, 6], "n": 143, "t": 8.05, "ok": true, "nmols": 2, "max": 109, "top": [109, 34], "formula": "O24X19P39K9A18", "phase": "target", "label": "rec141_pm4_1"}
+{"vec": [28, 27, 0, 47, 3, 1, 12, 25, 6], "n": 149, "t": 8.52, "ok": true, "nmols": 4, "max": 143, "top": [143, 2, 2, 2], "formula": "O28X27P47W3K12A25F", "phase": "target", "label": "rec141_pm5_0"}
+{"vec": [27, 27, 2, 46, 1, 0, 11, 25, 6], "n": 145, "t": 7.96, "ok": true, "nmols": 4, "max": 139, "top": [139, 2, 2, 2], "formula": "O27X27C2P46WK11A25", "phase": "target", "label": "rec141_pm5_1"}
+{"vec": [29, 28, 1, 47, 1, 1, 13, 25, 7], "n": 152, "t": 6.02, "ok": true, "nmols": 4, "max": 60, "top": [60, 56, 34, 2], "formula": "O14X9P22K6A9", "phase": "target", "label": "rec141_pm6_0"}
+{"vec": [27, 26, 0, 46, 1, 1, 11, 23, 5], "n": 140, "t": 5.12, "ok": true, "nmols": 4, "max": 134, "top": [134, 2, 2, 2], "formula": "O27X26P46WK11A23", "phase": "target", "label": "rec141_pm6_1"}
+{"vec": [30, 29, 2, 47, 1, 0, 12, 25, 7], "n": 153, "t": 9.67, "ok": true, "nmols": 4, "max": 91, "top": [91, 36, 24, 2], "formula": "O18X19C2P29WK7A15", "phase": "target", "label": "rec141_pm7_0"}
+{"vec": [26, 27, 0, 48, 0, 0, 10, 24, 4], "n": 139, "t": 7.49, "ok": true, "nmols": 4, "max": 61, "top": [61, 47, 29, 2], "formula": "O11X14P21K2A13", "phase": "target", "label": "rec141_pm7_1"}
+{"vec": [29, 29, 3, 47, 1, 1, 11, 25, 7], "n": 153, "t": 9.7, "ok": true, "nmols": 5, "max": 112, "top": [112, 35, 2, 2, 2], "formula": "O23X20C3P37WK9A19", "phase": "target", "label": "rec141_pm8_0"}
+{"vec": [29, 25, 1, 46, 1, 0, 10, 24, 4], "n": 140, "t": 7.68, "ok": true, "nmols": 4, "max": 118, "top": [118, 18, 2, 2], "formula": "O26X20P41WK9A21", "phase": "target", "label": "rec141_pm8_1"}
+{"vec": [28, 27, 0, 48, 1, 1, 11, 25, 2], "n": 143, "t": 8.35, "ok": true, "nmols": 2, "max": 141, "top": [141, 2], "formula": "O28X27P48WK11A25F", "phase": "target", "label": "mol141_pm1_0"}
+{"vec": [28, 28, 0, 47, 2, 0, 11, 25, 2], "n": 143, "t": 8.29, "ok": true, "nmols": 2, "max": 141, "top": [141, 2], "formula": "O28X28P47W2K11A25", "phase": "target", "label": "mol141_pm2_0"}
+{"vec": [27, 27, 0, 47, 1, 0, 11, 24, 1], "n": 138, "t": 7.52, "ok": true, "nmols": 1, "max": 138, "top": [138], "formula": "O27X27P47WK11A24F", "phase": "target", "label": "mol141_pm2_1"}
+{"vec": [28, 27, 0, 47, 3, 0, 11, 26, 2], "n": 144, "t": 8.34, "ok": true, "nmols": 2, "max": 142, "top": [142, 2], "formula": "O28X27P47W3K11A26", "phase": "target", "label": "mol141_pm3_0"}
+{"vec": [27, 27, 0, 47, 0, 0, 11, 25, 1], "n": 138, "t": 7.5, "ok": true, "nmols": 2, "max": 109, "top": [109, 29], "formula": "O22X19P38K9A20F", "phase": "target", "label": "mol141_pm3_1"}
+{"vec": [29, 27, 0, 49, 1, 0, 11, 25, 3], "n": 145, "t": 8.8, "ok": true, "nmols": 2, "max": 143, "top": [143, 2], "formula": "O29X27P49WK11A25F", "phase": "target", "label": "mol141_pm4_0"}
+{"vec": [28, 26, 0, 47, 1, 0, 11, 22, 2], "n": 137, "t": 7.44, "ok": true, "nmols": 1, "max": 137, "top": [137], "formula": "O28X26P47WK11A22F2", "phase": "target", "label": "mol141_pm4_1"}
+{"vec": [28, 28, 2, 48, 1, 0, 11, 26, 3], "n": 147, "t": 8.8, "ok": true, "nmols": 4, "max": 94, "top": [94, 49, 2, 2], "formula": "O18X20P31WK7A17", "phase": "target", "label": "mol141_pm5_0"}
+{"vec": [28, 27, 0, 47, 0, 0, 11, 23, 2], "n": 138, "t": 7.47, "ok": true, "nmols": 3, "max": 94, "top": [94, 42, 2], "formula": "O19X20P32K7A16", "phase": "target", "label": "mol141_pm5_1"}
+{"vec": [28, 27, 0, 47, 2, 0, 13, 26, 4], "n": 147, "t": 8.75, "ok": true, "nmols": 2, "max": 96, "top": [96, 51], "formula": "O18X20P30W2K9A16F", "phase": "target", "label": "mol141_pm6_0"}
+{"vec": [28, 27, 0, 46, 1, 0, 9, 24, 1], "n": 136, "t": 7.1, "ok": true, "nmols": 1, "max": 136, "top": [136], "formula": "O28X27P46WK9A24F", "phase": "target", "label": "mol141_pm6_1"}
+{"vec": [29, 27, 1, 48, 1, 1, 11, 27, 2], "n": 147, "t": 8.67, "ok": true, "nmols": 2, "max": 99, "top": [99, 48], "formula": "O19X22CP32LK7A17", "phase": "target", "label": "mol141_pm7_0"}
+{"vec": [27, 27, 0, 45, 0, 1, 10, 24, 1], "n": 135, "t": 6.96, "ok": true, "nmols": 2, "max": 99, "top": [99, 36], "formula": "O19X22P32LK7A17F", "phase": "target", "label": "mol141_pm7_1"}
+{"vec": [29, 27, 1, 48, 3, 1, 11, 25, 4], "n": 149, "t": 9.01, "ok": true, "nmols": 4, "max": 119, "top": [119, 26, 2, 2], "formula": "O25X20CP41W2K9A21", "phase": "target", "label": "mol141_pm8_0"}
+{"vec": [27, 27, 0, 46, 1, 0, 8, 23, 1], "n": 133, "t": 6.66, "ok": true, "nmols": 2, "max": 118, "top": [118, 15], "formula": "O24X23P41WK7A22", "phase": "target", "label": "mol141_pm8_1"}
+{"vec": [29, 29, 0, 49, 1, 1, 12, 20, 7], "n": 148, "t": 8.78, "ok": true, "nmols": 2, "max": 112, "top": [112, 36], "formula": "O22X22P37WK9A15F6", "phase": "target", "label": "rec142_pm1_1"}
+{"vec": [30, 29, 1, 48, 1, 2, 12, 21, 7], "n": 151, "t": 8.91, "ok": true, "nmols": 6, "max": 141, "top": [141, 2, 2, 2, 2], "formula": "O30X29P48WK12A21", "phase": "target", "label": "rec142_pm2_0"}
+{"vec": [29, 29, 0, 48, 1, 1, 11, 20, 7], "n": 146, "t": 8.39, "ok": true, "nmols": 3, "max": 94, "top": [94, 50, 2], "formula": "O20X17P33K7A15F2", "phase": "target", "label": "rec142_pm2_1"}
+{"vec": [30, 30, 0, 49, 1, 1, 12, 20, 8], "n": 151, "t": 8.7, "ok": true, "nmols": 5, "max": 59, "top": [59, 46, 42, 2, 2], "formula": "O13X10P21K5A9F", "phase": "target", "label": "rec142_pm3_0"}
+{"vec": [30, 29, 1, 48, 0, 1, 12, 20, 6], "n": 147, "t": 8.4, "ok": true, "nmols": 5, "max": 101, "top": [101, 40, 2, 2, 2], "formula": "O22X20P35K9A15", "phase": "target", "label": "rec142_pm3_1"}
+{"vec": [30, 29, 2, 49, 1, 1, 12, 20, 8], "n": 152, "t": 8.42, "ok": true, "nmols": 5, "max": 97, "top": [97, 49, 2, 2, 2], "formula": "O21X17P34K8A14F3", "phase": "target", "label": "rec142_pm4_0"}
+{"vec": [29, 29, 1, 47, 1, 0, 12, 20, 7], "n": 146, "t": 7.84, "ok": true, "nmols": 5, "max": 100, "top": [100, 40, 2, 2, 2], "formula": "O22X17P35WK9A14F2", "phase": "target", "label": "rec142_pm4_1"}
+{"vec": [30, 30, 1, 49, 2, 2, 12, 20, 8], "n": 154, "t": 6.12, "ok": true, "nmols": 6, "max": 59, "top": [59, 50, 39, 2, 2], "formula": "O13X10P21K5A9F", "phase": "target", "label": "rec142_pm5_0"}
+{"vec": [29, 29, 0, 46, 1, 1, 12, 20, 6], "n": 144, "t": 5.23, "ok": true, "nmols": 5, "max": 105, "top": [105, 33, 2, 2, 2], "formula": "O22X24P35K9A15", "phase": "target", "label": "rec142_pm5_1"}
+{"vec": [32, 30, 0, 48, 2, 1, 14, 20, 7], "n": 154, "t": 10.18, "ok": true, "nmols": 4, "max": 148, "top": [148, 2, 2, 2], "formula": "O32X30P48W2K14A20F2", "phase": "target", "label": "rec142_pm6_0"}
+{"vec": [28, 28, 0, 48, 1, 1, 11, 20, 8], "n": 145, "t": 8.47, "ok": true, "nmols": 3, "max": 141, "top": [141, 2, 2], "formula": "O28X28P48WK11A20F5", "phase": "target", "label": "rec142_pm6_1"}
+{"vec": [31, 29, 0, 49, 2, 2, 12, 21, 10], "n": 156, "t": 10.5, "ok": true, "nmols": 7, "max": 114, "top": [114, 32, 2, 2, 2], "formula": "O25X20P39W2K10A16F2", "phase": "target", "label": "rec142_pm7_0"}
+{"vec": [30, 28, 0, 47, 1, 1, 12, 19, 6], "n": 144, "t": 8.5, "ok": true, "nmols": 3, "max": 140, "top": [140, 2, 2], "formula": "O30X28P47WK12A19F3", "phase": "target", "label": "rec142_pm7_1"}
+{"vec": [32, 29, 0, 49, 2, 3, 15, 20, 7], "n": 157, "t": 10.78, "ok": true, "nmols": 8, "max": 130, "top": [130, 9, 8, 2, 2], "formula": "O28X26P43W2K13A18", "phase": "target", "label": "rec142_pm8_0"}
+{"vec": [29, 26, 0, 47, 1, 1, 11, 19, 6], "n": 140, "t": 7.89, "ok": true, "nmols": 3, "max": 95, "top": [95, 43, 2], "formula": "O21X16P34K8A15F", "phase": "target", "label": "rec142_pm8_1"}
+{"vec": [30, 29, 0, 49, 1, 0, 13, 20, 2], "n": 144, "t": 8.76, "ok": true, "nmols": 1, "max": 144, "top": [144], "formula": "O30X29P49WK13A20F2", "phase": "target", "label": "mol142_pm1_0"}
+{"vec": [30, 30, 0, 48, 2, 0, 12, 20, 2], "n": 144, "t": 8.49, "ok": true, "nmols": 2, "max": 101, "top": [101, 43], "formula": "O22X20P35K9A15", "phase": "target", "label": "mol142_pm2_0"}
+{"vec": [29, 29, 1, 48, 1, 0, 12, 20, 2], "n": 142, "t": 8.15, "ok": true, "nmols": 2, "max": 101, "top": [101, 41], "formula": "O22X17P36K9A16F", "phase": "target", "label": "mol142_pm2_1"}
+{"vec": [30, 30, 0, 49, 2, 0, 11, 20, 2], "n": 144, "t": 8.5, "ok": true, "nmols": 2, "max": 98, "top": [98, 46], "formula": "O20X20P33WK7A15F2", "phase": "target", "label": "mol142_pm3_0"}
+{"vec": [32, 30, 1, 48, 1, 1, 12, 20, 2], "n": 147, "t": 9.03, "ok": true, "nmols": 4, "max": 58, "top": [58, 33, 28, 28], "formula": "O14X10CP18WLK6A5F2", "phase": "target", "label": "mol142_pm4_0"}
+{"vec": [30, 28, 1, 47, 1, 1, 12, 20, 1], "n": 141, "t": 8.05, "ok": true, "nmols": 2, "max": 139, "top": [139, 2], "formula": "O30X28P47WK12A20F", "phase": "target", "label": "mol142_pm4_1"}
+{"vec": [31, 29, 1, 48, 1, 0, 12, 22, 4], "n": 148, "t": 9.16, "ok": true, "nmols": 4, "max": 125, "top": [125, 19, 2, 2], "formula": "O28X24P43K11A19", "phase": "target", "label": "mol142_pm5_0"}
+{"vec": [29, 29, 0, 48, 1, 0, 11, 19, 2], "n": 139, "t": 7.78, "ok": true, "nmols": 4, "max": 55, "top": [55, 28, 28, 28], "formula": "O11X12P18WK5A6F2", "phase": "target", "label": "mol142_pm5_1"}
+{"vec": [31, 29, 0, 49, 2, 1, 12, 21, 3], "n": 148, "t": 9.08, "ok": true, "nmols": 3, "max": 114, "top": [114, 32, 2], "formula": "O25X20P39W2K10A16F2", "phase": "target", "label": "mol142_pm6_0"}
+{"vec": [31, 29, 1, 47, 1, 0, 11, 19, 2], "n": 141, "t": 7.99, "ok": true, "nmols": 2, "max": 109, "top": [109, 32], "formula": "O25X20CP37K9A15F2", "phase": "target", "label": "mol142_pm6_1"}
+{"vec": [30, 31, 1, 49, 2, 1, 12, 20, 3], "n": 149, "t": 8.96, "ok": true, "nmols": 3, "max": 78, "top": [78, 40, 31], "formula": "O16X15P26W2K6A11F2", "phase": "target", "label": "mol142_pm7_0"}
+{"vec": [29, 26, 1, 48, 1, 0, 12, 20, 0], "n": 137, "t": 7.51, "ok": true, "nmols": 2, "max": 77, "top": [77, 60], "formula": "O16X14CP27K6A13", "phase": "target", "label": "mol142_pm7_1"}
+{"vec": [30, 29, 1, 49, 2, 1, 12, 21, 5], "n": 150, "t": 9.1, "ok": true, "nmols": 4, "max": 74, "top": [74, 72, 2, 2], "formula": "O14X17P23W2K6A9F3", "phase": "target", "label": "mol142_pm8_0"}
+{"vec": [30, 29, 0, 48, 0, 1, 11, 20, 0], "n": 139, "t": 7.8, "ok": true, "nmols": 2, "max": 103, "top": [103, 36], "formula": "O21X24P35LK7A15", "phase": "target", "label": "mol142_pm8_1"}
+{"vec": [28, 27, 0, 47, 6, 1, 10, 20, 6], "n": 145, "t": 8.4, "ok": true, "nmols": 2, "max": 143, "top": [143, 2], "formula": "O28X27P47W6K10A20F5", "phase": "target", "label": "rec143_pm1_1"}
+{"vec": [28, 27, 0, 47, 6, 0, 12, 20, 7], "n": 147, "t": 8.49, "ok": true, "nmols": 4, "max": 101, "top": [101, 42, 2, 2], "formula": "O19X20P32W6K8A13F3", "phase": "target", "label": "rec143_pm2_0"}
+{"vec": [28, 27, 0, 46, 6, 0, 10, 20, 6], "n": 143, "t": 7.99, "ok": true, "nmols": 3, "max": 139, "top": [139, 2, 2], "formula": "O28X27P46W6K10A20F2", "phase": "target", "label": "rec143_pm2_1"}
+{"vec": [28, 27, 0, 47, 6, 3, 10, 20, 6], "n": 147, "t": 7.89, "ok": true, "nmols": 3, "max": 143, "top": [143, 2, 2], "formula": "O28X27P47W6K10A20F5", "phase": "target", "label": "rec143_pm3_0"}
+{"vec": [27, 27, 0, 47, 5, 1, 11, 20, 6], "n": 144, "t": 7.55, "ok": true, "nmols": 2, "max": 142, "top": [142, 2], "formula": "O27X27P47W5K11A20F5", "phase": "target", "label": "rec143_pm3_1"}
+{"vec": [28, 27, 0, 48, 6, 2, 12, 21, 6], "n": 150, "t": 7.92, "ok": true, "nmols": 2, "max": 148, "top": [148, 2], "formula": "O28X27P48W6K12A21F6", "phase": "target", "label": "rec143_pm4_0"}
+{"vec": [28, 27, 1, 47, 6, 0, 10, 18, 6], "n": 143, "t": 4.88, "ok": true, "nmols": 2, "max": 141, "top": [141, 2], "formula": "O28X27CP47W6K10A18F4", "phase": "target", "label": "rec143_pm4_1"}
+{"vec": [28, 27, 1, 47, 7, 3, 11, 20, 6], "n": 150, "t": 5.13, "ok": true, "nmols": 6, "max": 48, "top": [48, 42, 28, 28, 2], "formula": "O7X10CP12W7K3A3F5", "phase": "target", "label": "rec143_pm5_0"}
+{"vec": [28, 27, 0, 46, 5, 0, 10, 19, 6], "n": 141, "t": 7.8, "ok": true, "nmols": 5, "max": 105, "top": [105, 30, 2, 2, 2], "formula": "O22X20P36W3K8A16", "phase": "target", "label": "rec143_pm5_1"}
+{"vec": [28, 29, 0, 47, 8, 0, 12, 20, 7], "n": 151, "t": 9.5, "ok": true, "nmols": 3, "max": 147, "top": [147, 2, 2], "formula": "O28X29P47W8K12A20F3", "phase": "target", "label": "rec143_pm6_0"}
+{"vec": [26, 27, 1, 46, 6, 0, 11, 19, 4], "n": 140, "t": 7.75, "ok": true, "nmols": 1, "max": 140, "top": [140], "formula": "O26X27CP46W6K11A19F4", "phase": "target", "label": "rec143_pm6_1"}
+{"vec": [28, 27, 2, 47, 7, 1, 11, 22, 7], "n": 152, "t": 9.54, "ok": true, "nmols": 6, "max": 50, "top": [50, 42, 28, 28, 2], "formula": "O7X10C2P12W7K3A5F4", "phase": "target", "label": "rec143_pm7_0"}
+{"vec": [27, 26, 1, 45, 6, 0, 11, 20, 6], "n": 142, "t": 8.02, "ok": true, "nmols": 3, "max": 138, "top": [138, 2, 2], "formula": "O27X26CP45W6K11A20F2", "phase": "target", "label": "rec143_pm7_1"}
+{"vec": [28, 29, 0, 47, 9, 1, 12, 20, 6], "n": 152, "t": 9.6, "ok": true, "nmols": 2, "max": 150, "top": [150, 2], "formula": "O28X29P47W9K12A20F5", "phase": "target", "label": "rec143_pm8_0"}
+{"vec": [27, 26, 0, 47, 6, 0, 10, 19, 6], "n": 141, "t": 7.82, "ok": true, "nmols": 4, "max": 83, "top": [83, 54, 2, 2], "formula": "O16X16P28W5K6A10F2", "phase": "target", "label": "rec143_pm8_1"}
+{"vec": [29, 27, 0, 47, 6, 0, 11, 20, 5], "n": 145, "t": 8.58, "ok": true, "nmols": 4, "max": 97, "top": [97, 44, 2, 2], "formula": "O21X17P34W2K8A14F", "phase": "target", "label": "mol143_pm2_0"}
+{"vec": [26, 27, 0, 47, 6, 0, 11, 19, 4], "n": 140, "t": 7.8, "ok": true, "nmols": 2, "max": 138, "top": [138, 2], "formula": "O26X27P47W6K11A19F2", "phase": "target", "label": "mol143_pm2_1"}
+{"vec": [30, 27, 0, 47, 6, 0, 13, 20, 4], "n": 147, "t": 8.89, "ok": true, "nmols": 4, "max": 104, "top": [104, 33, 8, 2], "formula": "O21X21P33W5K9A14F", "phase": "target", "label": "mol143_pm3_0"}
+{"vec": [27, 27, 0, 47, 6, 0, 10, 19, 4], "n": 140, "t": 7.73, "ok": true, "nmols": 2, "max": 98, "top": [98, 42], "formula": "O19X19P33W5K7A12F3", "phase": "target", "label": "mol143_pm3_1"}
+{"vec": [29, 27, 0, 47, 6, 1, 11, 21, 4], "n": 146, "t": 8.76, "ok": true, "nmols": 3, "max": 142, "top": [142, 2, 2], "formula": "O29X27P47W6K11A21F", "phase": "target", "label": "mol143_pm4_0"}
+{"vec": [27, 26, 0, 46, 6, 0, 12, 20, 3], "n": 140, "t": 7.81, "ok": true, "nmols": 1, "max": 140, "top": [140], "formula": "O27X26P46W6K12A20F3", "phase": "target", "label": "mol143_pm4_1"}
+{"vec": [28, 27, 1, 48, 6, 0, 11, 21, 6], "n": 148, "t": 9.05, "ok": true, "nmols": 2, "max": 146, "top": [146, 2], "formula": "O28X27CP48W6K11A21F4", "phase": "target", "label": "mol143_pm5_0"}
+{"vec": [28, 27, 1, 46, 6, 0, 10, 19, 3], "n": 140, "t": 7.9, "ok": true, "nmols": 2, "max": 138, "top": [138, 2], "formula": "O28X27CP46W6K10A19F", "phase": "target", "label": "mol143_pm5_1"}
+{"vec": [28, 29, 1, 50, 6, 0, 11, 21, 4], "n": 150, "t": 9.39, "ok": true, "nmols": 2, "max": 148, "top": [148, 2], "formula": "O28X29CP50W6K11A21F2", "phase": "target", "label": "mol143_pm6_0"}
+{"vec": [28, 26, 0, 47, 5, 1, 10, 18, 4], "n": 139, "t": 7.86, "ok": true, "nmols": 1, "max": 139, "top": [139], "formula": "O28X26P47W5LK10A18F4", "phase": "target", "label": "mol143_pm6_1"}
+{"vec": [28, 27, 0, 47, 8, 2, 13, 21, 4], "n": 150, "t": 9.27, "ok": true, "nmols": 3, "max": 63, "top": [63, 45, 42], "formula": "O11X13P19W5K5A7F3", "phase": "target", "label": "mol143_pm7_0"}
+{"vec": [27, 26, 0, 47, 5, 0, 9, 20, 3], "n": 137, "t": 7.39, "ok": true, "nmols": 4, "max": 62, "top": [62, 45, 28, 2], "formula": "O12X12P21W5K4A7F", "phase": "target", "label": "mol143_pm7_1"}
+{"vec": [29, 30, 0, 47, 6, 2, 12, 22, 4], "n": 152, "t": 9.37, "ok": true, "nmols": 5, "max": 77, "top": [77, 38, 33, 2, 2], "formula": "O15X15P24W5K6A11F", "phase": "target", "label": "mol143_pm8_0"}
+{"vec": [28, 26, 1, 46, 5, 1, 11, 20, 3], "n": 141, "t": 8.05, "ok": true, "nmols": 3, "max": 137, "top": [137, 2, 2], "formula": "O28X26CP46W5K11A20", "phase": "target", "label": "mol143_pm8_1"}
+{"vec": [28, 27, 2, 47, 2, 0, 11, 20, 6], "n": 143, "t": 8.34, "ok": true, "nmols": 3, "max": 139, "top": [139, 2, 2], "formula": "O28X27P47W2K11A20F4", "phase": "target", "label": "V140_pm2_0"}
+{"vec": [28, 26, 2, 47, 1, 0, 11, 20, 6], "n": 141, "t": 7.99, "ok": true, "nmols": 3, "max": 137, "top": [137, 2, 2], "formula": "O28X26P47WK11A20F4", "phase": "target", "label": "V140_pm2_1"}
+{"vec": [28, 27, 0, 46, 1, 1, 11, 19, 6], "n": 139, "t": 7.54, "ok": true, "nmols": 3, "max": 87, "top": [87, 50, 2], "formula": "O19X15P31K7A14F", "phase": "target", "label": "V140_pm3_1"}
+{"vec": [29, 27, 1, 47, 1, 0, 11, 20, 8], "n": 144, "t": 7.94, "ok": true, "nmols": 5, "max": 72, "top": [72, 66, 2, 2, 2], "formula": "O16X12P26K6A12", "phase": "target", "label": "V140_pm4_0"}
+{"vec": [28, 27, 0, 47, 1, 1, 11, 19, 5], "n": 139, "t": 7.56, "ok": true, "nmols": 1, "max": 139, "top": [139], "formula": "O28X27P47WLK11A19F5", "phase": "target", "label": "V140_pm4_1"}
+{"vec": [28, 27, 0, 48, 2, 1, 12, 20, 7], "n": 145, "t": 5.16, "ok": true, "nmols": 5, "max": 70, "top": [70, 69, 2, 2, 2], "formula": "O14X13P24K6A11F2", "phase": "target", "label": "V140_pm5_0"}
+{"vec": [28, 27, 0, 46, 1, 1, 11, 20, 6], "n": 140, "t": 4.52, "ok": true, "nmols": 3, "max": 136, "top": [136, 2, 2], "formula": "O28X27P46WK11A20F3", "phase": "target", "label": "V140_pm5_1"}
+{"vec": [29, 27, 0, 48, 1, 1, 11, 23, 7], "n": 147, "t": 8.92, "ok": true, "nmols": 5, "max": 139, "top": [139, 2, 2, 2, 2], "formula": "O29X27P48WK11A23", "phase": "target", "label": "V140_pm6_0"}
+{"vec": [28, 27, 0, 46, 0, 2, 10, 18, 6], "n": 137, "t": 7.34, "ok": true, "nmols": 2, "max": 118, "top": [118, 19], "formula": "O25X22P41K9A18F3", "phase": "target", "label": "V140_pm6_1"}
+{"vec": [28, 30, 1, 47, 2, 1, 11, 21, 6], "n": 147, "t": 8.73, "ok": true, "nmols": 4, "max": 100, "top": [100, 43, 2, 2], "formula": "O21X18P35WK8A17", "phase": "target", "label": "V140_pm7_0"}
+{"vec": [27, 27, 0, 46, 1, 0, 7, 20, 6], "n": 134, "t": 6.7, "ok": true, "nmols": 5, "max": 96, "top": [96, 32, 2, 2, 2], "formula": "O20X21P35WK5A14", "phase": "target", "label": "V140_pm7_1"}
+{"vec": [27, 27, 1, 47, 1, 3, 12, 21, 8], "n": 147, "t": 8.75, "ok": true, "nmols": 6, "max": 103, "top": [103, 36, 2, 2, 2], "formula": "O20X20P35WK9A16F2", "phase": "target", "label": "V140_pm8_0"}
+{"vec": [29, 27, 1, 46, 1, 1, 9, 19, 6], "n": 139, "t": 7.55, "ok": true, "nmols": 4, "max": 82, "top": [82, 53, 2, 2], "formula": "O18X15P28K6A13F2", "phase": "target", "label": "V140_pm8_1"}
+{"vec": [22, 27, 0, 47, 1, 0, 11, 31, 6], "n": 145, "t": 8.23, "ok": true, "nmols": 10, "max": 30, "top": [30, 29, 28, 12, 12], "formula": "O5X6P11K4A2F2", "phase": "target", "label": "rec141_realloc0"}
+{"vec": [21, 27, 0, 47, 1, 0, 11, 25, 13], "n": 145, "t": 8.05, "ok": true, "nmols": 8, "max": 40, "top": [40, 28, 22, 17, 17], "formula": "O6X10P13WKA9", "phase": "target", "label": "rec141_realloc1"}
+{"vec": [28, 23, 0, 47, 1, 0, 15, 25, 6], "n": 145, "t": 8.59, "ok": true, "nmols": 3, "max": 68, "top": [68, 49, 28], "formula": "O14X9P23WK7A12F2", "phase": "target", "label": "rec141_realloc2"}
+{"vec": [23, 27, 0, 52, 1, 0, 11, 25, 6], "n": 145, "t": 8.55, "ok": true, "nmols": 8, "max": 30, "top": [30, 21, 20, 20, 17], "formula": "O6X10P13K", "phase": "target", "label": "rec141_realloc3"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 23, 8], "n": 145, "t": 8.35, "ok": true, "nmols": 8, "max": 42, "top": [42, 39, 28, 28, 2], "formula": "O9X7P15K4A7", "phase": "target", "label": "rec141_realloc4"}
+{"vec": [28, 21, 0, 53, 1, 0, 11, 25, 6], "n": 145, "t": 8.75, "ok": true, "nmols": 7, "max": 40, "top": [40, 36, 26, 13, 10], "formula": "O7X4P13K4A6F6", "phase": "target", "label": "rec141_realloc5"}
+{"vec": [28, 27, 0, 52, 1, 0, 6, 25, 6], "n": 145, "t": 8.57, "ok": true, "nmols": 4, "max": 61, "top": [61, 45, 20, 19], "formula": "O11X14P21WK2A12", "phase": "target", "label": "rec141_realloc6"}
+{"vec": [28, 28, 0, 47, 1, 0, 11, 24, 6], "n": 145, "t": 8.47, "ok": true, "nmols": 4, "max": 139, "top": [139, 2, 2, 2], "formula": "O28X28P47WK11A24", "phase": "target", "label": "rec141_realloc7"}
+{"vec": [28, 27, 0, 57, 1, 0, 1, 25, 2], "n": 141, "t": 8.1, "ok": true, "nmols": 11, "max": 30, "top": [30, 18, 12, 11, 10], "formula": "O6X6P13KA4", "phase": "target", "label": "mol141_realloc0"}
+{"vec": [19, 27, 0, 47, 1, 0, 11, 25, 11], "n": 141, "t": 7.42, "ok": true, "nmols": 6, "max": 31, "top": [31, 28, 21, 21, 21], "formula": "O4X5P10K4A4F4", "phase": "target", "label": "mol141_realloc1"}
+{"vec": [28, 27, 0, 47, 1, 0, 1, 35, 2], "n": 141, "t": 7.43, "ok": true, "nmols": 6, "max": 32, "top": [32, 26, 26, 26, 16], "formula": "O6X5P10WA8F2", "phase": "target", "label": "mol141_realloc2"}
+{"vec": [28, 29, 0, 47, 1, 0, 9, 25, 2], "n": 141, "t": 7.83, "ok": true, "nmols": 2, "max": 139, "top": [139, 2], "formula": "O28X29P47WK9A25", "phase": "target", "label": "mol141_realloc3"}
+{"vec": [21, 27, 0, 47, 1, 0, 18, 25, 2], "n": 141, "t": 7.71, "ok": true, "nmols": 5, "max": 34, "top": [34, 29, 29, 25, 24], "formula": "O5X6P11K4A8", "phase": "target", "label": "mol141_realloc4"}
+{"vec": [28, 20, 0, 47, 1, 0, 12, 25, 9], "n": 142, "t": 7.87, "ok": true, "nmols": 4, "max": 87, "top": [87, 51, 2, 2], "formula": "O18X13P30WK8A15F2", "phase": "target", "label": "mol141_realloc5"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 27, 0], "n": 141, "t": 7.77, "ok": true, "nmols": 1, "max": 141, "top": [141], "formula": "O28X27P47WK11A27", "phase": "target", "label": "mol141_realloc6"}
+{"vec": [28, 27, 0, 47, 1, 0, 12, 25, 1], "n": 141, "t": 7.75, "ok": true, "nmols": 1, "max": 141, "top": [141], "formula": "O28X27P47WK12A25F", "phase": "target", "label": "mol141_realloc7"}
+{"vec": [40, 29, 0, 48, 1, 1, 12, 10, 7], "n": 148, "t": 8.5, "ok": true, "nmols": 10, "max": 26, "top": [26, 26, 16, 14, 12], "formula": "O8X3P9K3A3", "phase": "target", "label": "rec142_realloc0"}
+{"vec": [26, 33, 0, 48, 1, 1, 12, 20, 7], "n": 148, "t": 8.2, "ok": true, "nmols": 3, "max": 62, "top": [62, 56, 30], "formula": "O11X13P20WK7A6F4", "phase": "target", "label": "rec142_realloc1"}
+{"vec": [38, 29, 0, 48, 1, 1, 4, 20, 7], "n": 148, "t": 8.3, "ok": true, "nmols": 12, "max": 88, "top": [88, 21, 21, 2, 2], "formula": "O22X17P30WK2A14F2", "phase": "target", "label": "rec142_realloc2"}
+{"vec": [30, 21, 0, 56, 1, 1, 12, 20, 7], "n": 148, "t": 8.42, "ok": true, "nmols": 5, "max": 40, "top": [40, 40, 29, 29, 10], "formula": "O9X10P17K4", "phase": "target", "label": "rec142_realloc3"}
+{"vec": [30, 29, 0, 49, 1, 1, 9, 23, 7], "n": 149, "t": 5.15, "ok": true, "nmols": 5, "max": 89, "top": [89, 29, 27, 2, 2], "formula": "O18X18P30K5A15F3", "phase": "target", "label": "rec142_realloc4"}
+{"vec": [33, 29, 0, 45, 1, 1, 12, 20, 7], "n": 148, "t": 4.93, "ok": true, "nmols": 6, "max": 98, "top": [98, 32, 12, 2, 2], "formula": "O22X22P30WK8A13F2", "phase": "target", "label": "rec142_realloc5"}
+{"vec": [30, 33, 0, 48, 1, 1, 12, 20, 3], "n": 148, "t": 9.2, "ok": true, "nmols": 5, "max": 62, "top": [62, 43, 33, 8, 2], "formula": "O14X10P22WK6A9", "phase": "target", "label": "rec142_realloc6"}
+{"vec": [30, 29, 0, 48, 1, 0, 13, 19, 7], "n": 147, "t": 9.02, "ok": true, "nmols": 4, "max": 87, "top": [87, 56, 2, 2], "formula": "O19X15P30WK8A11F3", "phase": "target", "label": "rec142_realloc7"}
+{"vec": [30, 31, 0, 46, 1, 0, 12, 20, 2], "n": 142, "t": 8.26, "ok": true, "nmols": 5, "max": 66, "top": [66, 33, 33, 8, 2], "formula": "O16X10P23WK7A9", "phase": "target", "label": "mol142_realloc0"}
+{"vec": [30, 29, 0, 48, 1, 0, 11, 19, 3], "n": 141, "t": 8.16, "ok": true, "nmols": 4, "max": 49, "top": [49, 36, 28, 28], "formula": "O9X14P15WK3A4F3", "phase": "target", "label": "mol142_realloc1"}
+{"vec": [30, 29, 0, 48, 1, 0, 4, 29, 2], "n": 143, "t": 8.05, "ok": true, "nmols": 3, "max": 105, "top": [105, 36, 2], "formula": "O23X21P36WK3A21", "phase": "target", "label": "mol142_realloc3"}
+{"vec": [32, 27, 0, 48, 1, 0, 12, 20, 2], "n": 142, "t": 8.42, "ok": true, "nmols": 2, "max": 108, "top": [108, 34], "formula": "O26X17P38K10A17", "phase": "target", "label": "mol142_realloc4"}
+{"vec": [30, 29, 0, 48, 1, 0, 6, 26, 2], "n": 142, "t": 8.09, "ok": true, "nmols": 3, "max": 70, "top": [70, 36, 36], "formula": "O16X13P24WK4A10F2", "phase": "target", "label": "mol142_realloc5"}
+{"vec": [30, 29, 0, 48, 1, 0, 11, 21, 1], "n": 141, "t": 8.19, "ok": true, "nmols": 2, "max": 109, "top": [109, 32], "formula": "O24X20P38WK9A16F", "phase": "target", "label": "mol142_realloc7"}
+{"vec": [28, 22, 0, 47, 6, 0, 11, 25, 6], "n": 145, "t": 8.61, "ok": true, "nmols": 3, "max": 141, "top": [141, 2, 2], "formula": "O28X22P47W6K11A25F2", "phase": "target", "label": "rec143_realloc0"}
+{"vec": [28, 27, 0, 47, 10, 0, 11, 16, 6], "n": 145, "t": 8.66, "ok": true, "nmols": 1, "max": 145, "top": [145], "formula": "O28X27P47W10K11A16F6", "phase": "target", "label": "rec143_realloc1"}
+{"vec": [30, 27, 0, 47, 6, 0, 11, 18, 6], "n": 145, "t": 8.7, "ok": true, "nmols": 4, "max": 111, "top": [111, 30, 2, 2], "formula": "O24X20P37W4K9A15F2", "phase": "target", "label": "rec143_realloc2"}
+{"vec": [28, 32, 0, 47, 6, 0, 11, 15, 6], "n": 145, "t": 8.58, "ok": true, "nmols": 1, "max": 145, "top": [145], "formula": "O28X32P47W6K11A15F6", "phase": "target", "label": "rec143_realloc3"}
+{"vec": [32, 27, 0, 47, 6, 0, 11, 16, 6], "n": 145, "t": 8.73, "ok": true, "nmols": 3, "max": 131, "top": [131, 12, 2], "formula": "O29X25P43W6K10A14F4", "phase": "target", "label": "rec143_realloc4"}
+{"vec": [28, 37, 0, 47, 6, 0, 1, 20, 6], "n": 145, "t": 8.0, "ok": true, "nmols": 7, "max": 30, "top": [30, 26, 26, 26, 24], "formula": "O6X9P9W4KA", "phase": "target", "label": "rec143_realloc5"}
+{"vec": [24, 27, 0, 47, 10, 0, 11, 20, 6], "n": 145, "t": 8.29, "ok": true, "nmols": 9, "max": 48, "top": [48, 23, 22, 18, 8], "formula": "O10X10P19K7A2", "phase": "target", "label": "rec143_realloc6"}
+{"vec": [28, 27, 0, 51, 6, 0, 11, 20, 2], "n": 145, "t": 8.54, "ok": true, "nmols": 2, "max": 91, "top": [91, 54], "formula": "O18X18P33W6K7A9", "phase": "target", "label": "rec143_realloc7"}
+{"vec": [28, 27, 0, 47, 9, 0, 11, 17, 4], "n": 143, "t": 8.21, "ok": true, "nmols": 2, "max": 111, "top": [111, 32], "formula": "O22X20P37W4K8A17F3", "phase": "target", "label": "mol143_realloc0"}
+{"vec": [28, 27, 0, 47, 2, 0, 15, 20, 4], "n": 143, "t": 8.37, "ok": true, "nmols": 2, "max": 141, "top": [141, 2], "formula": "O28X27P47W2K15A20F2", "phase": "target", "label": "mol143_realloc1"}
+{"vec": [28, 22, 0, 47, 11, 0, 11, 20, 4], "n": 143, "t": 8.19, "ok": true, "nmols": 3, "max": 72, "top": [72, 69, 2], "formula": "O13X10P22W8K5A12F2", "phase": "target", "label": "mol143_realloc2"}
+{"vec": [28, 34, 0, 47, 6, 0, 4, 20, 5], "n": 144, "t": 7.89, "ok": true, "nmols": 5, "max": 36, "top": [36, 36, 26, 26, 20], "formula": "O7X9P12WKA6", "phase": "target", "label": "mol143_realloc3"}
+{"vec": [28, 27, 0, 47, 0, 0, 11, 20, 10], "n": 143, "t": 8.11, "ok": true, "nmols": 3, "max": 139, "top": [139, 2, 2], "formula": "O28X27P47K11A20F6", "phase": "target", "label": "mol143_realloc4"}
+{"vec": [18, 27, 0, 47, 6, 0, 11, 20, 14], "n": 143, "t": 7.7, "ok": true, "nmols": 7, "max": 56, "top": [56, 40, 39, 2, 2], "formula": "O7X12P20WK6A7F3", "phase": "target", "label": "mol143_realloc5"}
+{"vec": [28, 27, 0, 47, 6, 0, 10, 15, 9], "n": 142, "t": 7.95, "ok": true, "nmols": 4, "max": 105, "top": [105, 33, 2, 2], "formula": "O21X20P35W4K7A15F3", "phase": "target", "label": "mol143_realloc6"}
+{"vec": [28, 27, 0, 53, 6, 0, 11, 13, 4], "n": 142, "t": 8.07, "ok": true, "nmols": 4, "max": 58, "top": [58, 48, 28, 8], "formula": "O11X10P21W4K6A6", "phase": "target", "label": "mol143_realloc7"}
+{"vec": [21, 27, 0, 54, 1, 0, 11, 20, 6], "n": 140, "t": 7.66, "ok": true, "nmols": 6, "max": 44, "top": [44, 39, 30, 18, 7], "formula": "O6X10P17WK5A5", "phase": "target", "label": "V140_realloc0"}
+{"vec": [28, 34, 0, 47, 1, 0, 4, 20, 5], "n": 139, "t": 7.32, "ok": true, "nmols": 5, "max": 36, "top": [36, 35, 31, 26, 11], "formula": "O7X8P12KA8", "phase": "target", "label": "V140_realloc1"}
+{"vec": [28, 24, 0, 47, 1, 0, 15, 20, 6], "n": 141, "t": 4.21, "ok": true, "nmols": 3, "max": 137, "top": [137, 2, 2], "formula": "O28X24P47WK15A20F2", "phase": "target", "label": "V140_realloc2"}
+{"vec": [18, 27, 0, 47, 1, 0, 11, 20, 16], "n": 140, "t": 3.67, "ok": true, "nmols": 5, "max": 56, "top": [56, 24, 21, 21, 18], "formula": "O7X12P20WK6A7F3", "phase": "target", "label": "V140_realloc4"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 10, 16], "n": 140, "t": 7.75, "ok": true, "nmols": 9, "max": 61, "top": [61, 35, 19, 15, 2], "formula": "O13X12P22WK5A8", "phase": "target", "label": "V140_realloc7"}
+{"vec": [28, 27, 0, 47, 7, 0, 11, 25, 6], "n": 151, "t": 9.35, "ok": true, "nmols": 4, "max": 53, "top": [53, 42, 28, 28], "formula": "O7X10P12W7K3A8F6", "phase": "target", "label": "rec141_grow_W6"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 25, 12], "n": 151, "t": 9.26, "ok": true, "nmols": 6, "max": 141, "top": [141, 2, 2, 2, 2], "formula": "O28X27P47WK11A25F2", "phase": "target", "label": "rec141_grow_F6"}
+{"vec": [28, 27, 0, 47, 1, 0, 17, 25, 6], "n": 151, "t": 9.7, "ok": true, "nmols": 2, "max": 94, "top": [94, 57], "formula": "O20X13P33WK13A14", "phase": "target", "label": "rec141_grow_K6"}
+{"vec": [28, 33, 0, 47, 1, 0, 11, 25, 6], "n": 151, "t": 9.4, "ok": true, "nmols": 4, "max": 122, "top": [122, 25, 2, 2], "formula": "O24X26P40WK9A21F", "phase": "target", "label": "rec141_grow_X6"}
+{"vec": [28, 27, 0, 47, 11, 0, 11, 25, 6], "n": 155, "t": 10.1, "ok": true, "nmols": 2, "max": 121, "top": [121, 34], "formula": "O24X20P40W4K9A23F", "phase": "target", "label": "rec141_grow_W10"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 25, 16], "n": 155, "t": 10.0, "ok": true, "nmols": 8, "max": 141, "top": [141, 2, 2, 2, 2], "formula": "O28X27P47WK11A25F2", "phase": "target", "label": "rec141_grow_F10"}
+{"vec": [28, 27, 0, 47, 1, 0, 21, 25, 6], "n": 155, "t": 10.39, "ok": true, "nmols": 4, "max": 48, "top": [48, 43, 36, 28], "formula": "O8X9P13K6A7F5", "phase": "target", "label": "rec141_grow_K10"}
+{"vec": [28, 37, 0, 47, 1, 0, 11, 25, 6], "n": 155, "t": 9.97, "ok": true, "nmols": 3, "max": 151, "top": [151, 2, 2], "formula": "O28X37P47WK11A25F2", "phase": "target", "label": "rec141_grow_X10"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 31, 2], "n": 147, "t": 8.76, "ok": true, "nmols": 3, "max": 56, "top": [56, 53, 38], "formula": "O10X15P17K4A9F", "phase": "target", "label": "mol141_grow_A6"}
+{"vec": [28, 27, 0, 47, 7, 0, 11, 25, 2], "n": 147, "t": 8.7, "ok": true, "nmols": 4, "max": 49, "top": [49, 42, 28, 28], "formula": "O7X10P12W7K3A8F2", "phase": "target", "label": "mol141_grow_W6"}
+{"vec": [28, 27, 0, 47, 1, 0, 17, 25, 2], "n": 147, "t": 9.03, "ok": true, "nmols": 2, "max": 94, "top": [94, 53], "formula": "O20X13P33WK13A14", "phase": "target", "label": "mol141_grow_K6"}
+{"vec": [28, 33, 0, 47, 1, 0, 11, 25, 2], "n": 147, "t": 8.77, "ok": true, "nmols": 2, "max": 122, "top": [122, 25], "formula": "O24X26P40WK9A21F", "phase": "target", "label": "mol141_grow_X6"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 35, 2], "n": 151, "t": 9.12, "ok": true, "nmols": 3, "max": 56, "top": [56, 54, 41], "formula": "O10X15P17K4A9F", "phase": "target", "label": "mol141_grow_A10"}
+{"vec": [28, 27, 0, 47, 11, 0, 11, 25, 2], "n": 151, "t": 9.08, "ok": true, "nmols": 2, "max": 121, "top": [121, 30], "formula": "O24X20P40W4K9A23F", "phase": "target", "label": "mol141_grow_W10"}
+{"vec": [28, 27, 0, 47, 1, 0, 21, 25, 2], "n": 151, "t": 9.4, "ok": true, "nmols": 3, "max": 72, "top": [72, 43, 36], "formula": "O12X16P20K8A14F2", "phase": "target", "label": "mol141_grow_K10"}
+{"vec": [28, 37, 0, 47, 1, 0, 11, 25, 2], "n": 151, "t": 9.04, "ok": true, "nmols": 1, "max": 151, "top": [151], "formula": "O28X37P47WK11A25F2", "phase": "target", "label": "mol141_grow_X10"}
+{"vec": [30, 29, 0, 48, 1, 1, 12, 26, 7], "n": 154, "t": 9.43, "ok": true, "nmols": 3, "max": 91, "top": [91, 39, 24], "formula": "O18X19P29WLK7A15F", "phase": "target", "label": "rec142_grow_A6"}
+{"vec": [30, 29, 0, 48, 7, 1, 12, 20, 7], "n": 154, "t": 9.38, "ok": true, "nmols": 5, "max": 100, "top": [100, 48, 2, 2, 2], "formula": "O20X20P32W5K8A13F2", "phase": "target", "label": "rec142_grow_W6"}
+{"vec": [30, 29, 0, 48, 1, 1, 12, 20, 13], "n": 154, "t": 9.37, "ok": true, "nmols": 7, "max": 142, "top": [142, 2, 2, 2, 2], "formula": "O30X29P48WK12A20F2", "phase": "target", "label": "rec142_grow_F6"}
+{"vec": [30, 29, 0, 48, 1, 1, 18, 20, 7], "n": 154, "t": 9.57, "ok": true, "nmols": 6, "max": 73, "top": [73, 67, 8, 2, 2], "formula": "O14X14P23WLK7A12F", "phase": "target", "label": "rec142_grow_K6"}
+{"vec": [30, 35, 0, 48, 1, 1, 12, 20, 7], "n": 154, "t": 9.26, "ok": true, "nmols": 5, "max": 140, "top": [140, 8, 2, 2, 2], "formula": "O28X34P45WK11A19F2", "phase": "target", "label": "rec142_grow_X6"}
+{"vec": [30, 29, 0, 48, 1, 1, 12, 30, 7], "n": 158, "t": 9.43, "ok": true, "nmols": 4, "max": 48, "top": [48, 40, 39, 31], "formula": "O8X10P13WLK3A9F3", "phase": "target", "label": "rec142_grow_A10"}
+{"vec": [30, 29, 0, 48, 11, 1, 12, 20, 7], "n": 158, "t": 9.48, "ok": true, "nmols": 4, "max": 71, "top": [71, 56, 29, 2], "formula": "O15X14P24W4K6A7F", "phase": "target", "label": "rec142_grow_W10"}
+{"vec": [30, 29, 0, 48, 1, 1, 12, 20, 17], "n": 158, "t": 9.42, "ok": true, "nmols": 9, "max": 142, "top": [142, 2, 2, 2, 2], "formula": "O30X29P48WK12A20F2", "phase": "target", "label": "rec142_grow_F10"}
+{"vec": [30, 29, 0, 48, 1, 1, 22, 20, 7], "n": 158, "t": 9.53, "ok": true, "nmols": 4, "max": 83, "top": [83, 65, 8, 2], "formula": "O18X14P28K16A7", "phase": "target", "label": "rec142_grow_K10"}
+{"vec": [30, 39, 0, 48, 1, 1, 12, 20, 7], "n": 158, "t": 6.11, "ok": true, "nmols": 8, "max": 60, "top": [60, 33, 33, 18, 8], "formula": "O13X13P20K6A7F", "phase": "target", "label": "rec142_grow_X10"}
+{"vec": [30, 29, 0, 48, 1, 0, 12, 26, 2], "n": 148, "t": 4.87, "ok": true, "nmols": 2, "max": 91, "top": [91, 57], "formula": "O18X19P29WK7A15F2", "phase": "target", "label": "mol142_grow_A6"}
+{"vec": [30, 29, 0, 48, 7, 0, 12, 20, 2], "n": 148, "t": 7.96, "ok": true, "nmols": 2, "max": 100, "top": [100, 48], "formula": "O20X20P32W5K8A13F2", "phase": "target", "label": "mol142_grow_W6"}
+{"vec": [30, 29, 0, 48, 1, 0, 12, 20, 8], "n": 148, "t": 7.99, "ok": true, "nmols": 4, "max": 142, "top": [142, 2, 2, 2], "formula": "O30X29P48WK12A20F2", "phase": "target", "label": "mol142_grow_F6"}
+{"vec": [30, 29, 0, 48, 1, 0, 18, 20, 2], "n": 148, "t": 8.24, "ok": true, "nmols": 3, "max": 73, "top": [73, 67, 8], "formula": "O14X14P23WK7A12F2", "phase": "target", "label": "mol142_grow_K6"}
+{"vec": [30, 35, 0, 48, 1, 0, 12, 20, 2], "n": 148, "t": 7.95, "ok": true, "nmols": 2, "max": 140, "top": [140, 8], "formula": "O28X34P45WK11A19F2", "phase": "target", "label": "mol142_grow_X6"}
+{"vec": [30, 29, 0, 48, 1, 0, 12, 30, 2], "n": 152, "t": 8.5, "ok": true, "nmols": 3, "max": 57, "top": [57, 49, 46], "formula": "O12X10P19K5A11", "phase": "target", "label": "mol142_grow_A10"}
+{"vec": [30, 29, 0, 48, 11, 0, 12, 20, 2], "n": 152, "t": 8.6, "ok": true, "nmols": 3, "max": 71, "top": [71, 56, 25], "formula": "O15X14P24W4K6A7F", "phase": "target", "label": "mol142_grow_W10"}
+{"vec": [30, 29, 0, 48, 1, 0, 12, 20, 12], "n": 152, "t": 8.53, "ok": true, "nmols": 6, "max": 142, "top": [142, 2, 2, 2, 2], "formula": "O30X29P48WK12A20F2", "phase": "target", "label": "mol142_grow_F10"}
+{"vec": [30, 29, 0, 48, 1, 0, 22, 20, 2], "n": 152, "t": 8.97, "ok": true, "nmols": 3, "max": 83, "top": [83, 61, 8], "formula": "O18X14P28K16A7", "phase": "target", "label": "mol142_grow_K10"}
+{"vec": [30, 39, 0, 48, 1, 0, 12, 20, 2], "n": 152, "t": 8.47, "ok": true, "nmols": 5, "max": 60, "top": [60, 33, 33, 18, 8], "formula": "O13X13P20K6A7F", "phase": "target", "label": "mol142_grow_X10"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 26, 6], "n": 151, "t": 8.31, "ok": true, "nmols": 2, "max": 115, "top": [115, 36], "formula": "O24X20P40WK9A20F", "phase": "target", "label": "rec143_grow_A6"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 20, 12], "n": 151, "t": 8.23, "ok": true, "nmols": 5, "max": 143, "top": [143, 2, 2, 2, 2], "formula": "O28X27P47W6K11A20F4", "phase": "target", "label": "rec143_grow_F6"}
+{"vec": [28, 27, 0, 47, 6, 0, 17, 20, 6], "n": 151, "t": 8.49, "ok": true, "nmols": 5, "max": 94, "top": [94, 51, 2, 2, 2], "formula": "O20X14P33WK13A13", "phase": "target", "label": "rec143_grow_K6"}
+{"vec": [28, 33, 0, 47, 6, 0, 11, 20, 6], "n": 151, "t": 8.31, "ok": true, "nmols": 3, "max": 89, "top": [89, 45, 17], "formula": "O18X17P30WK7A13F3", "phase": "target", "label": "rec143_grow_X6"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 30, 6], "n": 155, "t": 8.64, "ok": true, "nmols": 3, "max": 151, "top": [151, 2, 2], "formula": "O28X27P47W6K11A30F2", "phase": "target", "label": "rec143_grow_A10"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 20, 16], "n": 155, "t": 8.67, "ok": true, "nmols": 7, "max": 143, "top": [143, 2, 2, 2, 2], "formula": "O28X27P47W6K11A20F4", "phase": "target", "label": "rec143_grow_F10"}
+{"vec": [28, 27, 0, 47, 6, 0, 21, 20, 6], "n": 155, "t": 8.95, "ok": true, "nmols": 3, "max": 97, "top": [97, 56, 2], "formula": "O16X20P27W6K11A13F4", "phase": "target", "label": "rec143_grow_K10"}
+{"vec": [28, 37, 0, 47, 6, 0, 11, 20, 6], "n": 155, "t": 8.53, "ok": true, "nmols": 3, "max": 99, "top": [99, 41, 15], "formula": "O18X22P30W6K7A13F3", "phase": "target", "label": "rec143_grow_X10"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 26, 4], "n": 149, "t": 7.91, "ok": true, "nmols": 2, "max": 115, "top": [115, 34], "formula": "O24X20P40WK9A20F", "phase": "target", "label": "mol143_grow_A6"}
+{"vec": [28, 27, 0, 47, 12, 0, 11, 20, 4], "n": 149, "t": 7.89, "ok": true, "nmols": 4, "max": 58, "top": [58, 35, 28, 28], "formula": "O10X10P17W7K4A7F3", "phase": "target", "label": "mol143_grow_W6"}
+{"vec": [28, 27, 0, 47, 6, 0, 17, 20, 4], "n": 149, "t": 8.21, "ok": true, "nmols": 4, "max": 94, "top": [94, 51, 2, 2], "formula": "O20X14P33WK13A13", "phase": "target", "label": "mol143_grow_K6"}
+{"vec": [28, 33, 0, 47, 6, 0, 11, 20, 4], "n": 149, "t": 7.91, "ok": true, "nmols": 3, "max": 89, "top": [89, 45, 15], "formula": "O18X17P30WK7A13F3", "phase": "target", "label": "mol143_grow_X6"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 30, 4], "n": 153, "t": 8.34, "ok": true, "nmols": 2, "max": 151, "top": [151, 2], "formula": "O28X27P47W6K11A30F2", "phase": "target", "label": "mol143_grow_A10"}
+{"vec": [28, 27, 0, 47, 16, 0, 11, 20, 4], "n": 153, "t": 8.31, "ok": true, "nmols": 2, "max": 112, "top": [112, 41], "formula": "O21X20P35W9K8A15F4", "phase": "target", "label": "mol143_grow_W10"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 20, 14], "n": 153, "t": 8.32, "ok": true, "nmols": 6, "max": 143, "top": [143, 2, 2, 2, 2], "formula": "O28X27P47W6K11A20F4", "phase": "target", "label": "mol143_grow_F10"}
+{"vec": [28, 27, 0, 47, 6, 0, 21, 20, 4], "n": 153, "t": 8.52, "ok": true, "nmols": 2, "max": 97, "top": [97, 56], "formula": "O16X20P27W6K11A13F4", "phase": "target", "label": "mol143_grow_K10"}
+{"vec": [28, 37, 0, 47, 6, 0, 11, 20, 4], "n": 153, "t": 8.1, "ok": true, "nmols": 2, "max": 99, "top": [99, 54], "formula": "O18X22P30W6K7A13F3", "phase": "target", "label": "mol143_grow_X10"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 20, 12], "n": 146, "t": 4.45, "ok": true, "nmols": 4, "max": 140, "top": [140, 2, 2, 2], "formula": "O28X27P47WK11A20F6", "phase": "target", "label": "V140_grow_F6"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 20, 16], "n": 150, "t": 4.73, "ok": true, "nmols": 6, "max": 140, "top": [140, 2, 2, 2, 2], "formula": "O28X27P47WK11A20F6", "phase": "target", "label": "V140_grow_F10"}

@@ -1,0 +1,176 @@
+{
+ "stats": {
+  "候选对": 38911,
+  "可行交换": 1594,
+  "产物都在目录": 1534,
+  "含目录外产物": 60
+ },
+ "examples": [
+  {
+   "A": "C2A",
+   "B": "C2A2",
+   "K": 2,
+   "n_bonds": 2,
+   "release": 4,
+   "E_before": 13,
+   "E_after": 9,
+   "prodA": "C2A",
+   "prodB": "C2A2"
+  },
+  {
+   "A": "C2A",
+   "B": "C2K2",
+   "K": 2,
+   "n_bonds": 2,
+   "release": 4,
+   "E_before": 14,
+   "E_after": 10,
+   "prodA": "C2A",
+   "prodB": "C2K2"
+  },
+  {
+   "A": "C2A",
+   "B": "C2K2A",
+   "K": 2,
+   "n_bonds": 2,
+   "release": 4,
+   "E_before": 15,
+   "E_after": 11,
+   "prodA": "C2A",
+   "prodB": "C2K2A"
+  },
+  {
+   "A": "C2A",
+   "B": "C2WK2",
+   "K": 2,
+   "n_bonds": 2,
+   "release": 4,
+   "E_before": 15,
+   "E_after": 11,
+   "prodA": "C2A",
+   "prodB": "C2WK2"
+  },
+  {
+   "A": "C2A",
+   "B": "XC2K2",
+   "K": 2,
+   "n_bonds": 2,
+   "release": 4,
+   "E_before": 15,
+   "E_after": 11,
+   "prodA": "C2A",
+   "prodB": "XC2K2"
+  },
+  {
+   "A": "C2A",
+   "B": "C2WA3",
+   "K": 2,
+   "n_bonds": 2,
+   "release": 4,
+   "E_before": 17,
+   "E_after": 13,
+   "prodA": "C2A",
+   "prodB": "C2WA3"
+  },
+  {
+   "A": "C2A",
+   "B": "OC2K3",
+   "K": 2,
+   "n_bonds": 2,
+   "release": 4,
+   "E_before": 17,
+   "E_after": 13,
+   "prodA": "C2A",
+   "prodB": "OC2K3"
+  },
+  {
+   "A": "C2A",
+   "B": "XC2K2A",
+   "K": 2,
+   "n_bonds": 2,
+   "release": 4,
+   "E_before": 20,
+   "E_after": 16,
+   "prodA": "C2A",
+   "prodB": "XC2K2A"
+  },
+  {
+   "A": "C2A",
+   "B": "C2PWK3",
+   "K": 2,
+   "n_bonds": 2,
+   "release": 4,
+   "E_before": 20,
+   "E_after": 16,
+   "prodA": "C2A",
+   "prodB": "C2PWK3"
+  },
+  {
+   "A": "C2A",
+   "B": "XC2K2A2",
+   "K": 2,
+   "n_bonds": 2,
+   "release": 4,
+   "E_before": 21,
+   "E_after": 17,
+   "prodA": "C2A",
+   "prodB": "XC2K2A2"
+  },
+  {
+   "A": "C2A",
+   "B": "OC2P2KA2",
+   "K": 2,
+   "n_bonds": 2,
+   "release": 4,
+   "E_before": 27,
+   "E_after": 23,
+   "prodA": "C2A",
+   "prodB": "OC2P2KA2"
+  },
+  {
+   "A": "C2A",
+   "B": "XC2K2A3",
+   "K": 2,
+   "n_bonds": 2,
+   "release": 4,
+   "E_before": 22,
+   "E_after": 18,
+   "prodA": "C2A",
+   "prodB": "XC2K2A3"
+  },
+  {
+   "A": "XF2",
+   "B": "O3PF2",
+   "K": 2,
+   "n_bonds": 2,
+   "release": 4,
+   "E_before": 26,
+   "E_after": 22,
+   "prodA": "XF2",
+   "prodB": "O3PF2"
+  },
+  {
+   "A": "XF2",
+   "B": "X3AF2",
+   "K": 2,
+   "n_bonds": 2,
+   "release": 4,
+   "E_before": 19,
+   "E_after": 15,
+   "prodA": "XF2",
+   "prodB": "X3AF2"
+  },
+  {
+   "A": "XF2",
+   "B": "O3KAF2",
+   "K": 2,
+   "n_bonds": 2,
+   "release": 4,
+   "E_before": 28,
+   "E_after": 24,
+   "prodA": "XF2",
+   "prodB": "O3KAF2"
+  }
+ ],
+ "allS_count": 861
+}

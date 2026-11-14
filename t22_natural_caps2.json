@@ -1,0 +1,597 @@
+{
+ "stats": {
+  "pairs": 100435,
+  "产物都在目录": 77640,
+  "含目录外产物": 22795,
+  "distinct_new_formulas": 2657
+ },
+ "new_examples": [
+  {
+   "A": "CWLK2",
+   "B": "P2WA5",
+   "K": 2,
+   "prodA": "WK2A",
+   "prodB": "CP2WLA4",
+   "capsA": [
+    [
+     "C",
+     1
+    ],
+    [
+     "L",
+     1
+    ]
+   ],
+   "capsB": [
+    [
+     "A",
+     2
+    ]
+   ]
+  },
+  {
+   "A": "X2P3KA2",
+   "B": "O2X2L2A",
+   "K": 2,
+   "prodA": "XP3L2KA2",
+   "prodB": "O2X3A",
+   "capsA": [
+    [
+     "X",
+     2
+    ]
+   ],
+   "capsB": [
+    [
+     "L",
+     1
+    ],
+    [
+     "L",
+     1
+    ]
+   ]
+  },
+  {
+   "A": "O2X5",
+   "B": "OCP2LK",
+   "K": 2,
+   "prodA": "O2X4CL",
+   "prodB": "OXP2K",
+   "capsA": [
+    [
+     "X",
+     2
+    ]
+   ],
+   "capsB": [
+    [
+     "C",
+     1
+    ],
+    [
+     "L",
+     1
+    ]
+   ]
+  },
+  {
+   "A": "P5LKF",
+   "B": "OX2K3A2",
+   "K": 2,
+   "prodA": "XP5K",
+   "prodB": "OXLK3A2F",
+   "capsA": [
+    [
+     "L",
+     1
+    ],
+    [
+     "F",
+     1
+    ]
+   ],
+   "capsB": [
+    [
+     "X",
+     2
+    ]
+   ]
+  },
+  {
+   "A": "WLA2F",
+   "B": "XP2W3",
+   "K": 2,
+   "prodA": "W2A2",
+   "prodB": "XP2W2LF",
+   "capsA": [
+    [
+     "F",
+     1
+    ],
+    [
+     "L",
+     1
+    ]
+   ],
+   "capsB": [
+    [
+     "W",
+     2
+    ]
+   ]
+  },
+  {
+   "A": "OXP3A3",
+   "B": "O2X2C2A",
+   "K": 2,
+   "prodA": "OXC2P3A2",
+   "prodB": "O2X2A2",
+   "capsA": [
+    [
+     "A",
+     2
+    ]
+   ],
+   "capsB": [
+    [
+     "C",
+     1
+    ],
+    [
+     "C",
+     1
+    ]
+   ]
+  },
+  {
+   "A": "W3LAF",
+   "B": "P2WA5",
+   "K": 2,
+   "prodA": "W3A2",
+   "prodB": "P2WLA4F",
+   "capsA": [
+    [
+     "L",
+     1
+    ],
+    [
+     "F",
+     1
+    ]
+   ],
+   "capsB": [
+    [
+     "A",
+     2
+    ]
+   ]
+  },
+  {
+   "A": "X3W2K2A",
+   "B": "OL2K5",
+   "K": 2,
+   "prodA": "X2W2L2K2A",
+   "prodB": "OXK5",
+   "capsA": [
+    [
+     "X",
+     2
+    ]
+   ],
+   "capsB": [
+    [
+     "L",
+     1
+    ],
+    [
+     "L",
+     1
+    ]
+   ]
+  },
+  {
+   "A": "CWK2A3F",
+   "B": "W5K2",
+   "K": 2,
+   "prodA": "W2K2A3",
+   "prodB": "CW4K2F",
+   "capsA": [
+    [
+     "C",
+     1
+    ],
+    [
+     "F",
+     1
+    ]
+   ],
+   "capsB": [
+    [
+     "W",
+     2
+    ]
+   ]
+  },
+  {
+   "A": "XC2W2",
+   "B": "X4P2WA",
+   "K": 2,
+   "prodA": "X2W2",
+   "prodB": "X3C2P2WA",
+   "capsA": [
+    [
+     "C",
+     1
+    ],
+    [
+     "C",
+     1
+    ]
+   ],
+   "capsB": [
+    [
+     "X",
+     2
+    ]
+   ]
+  },
+  {
+   "A": "XA2F2",
+   "B": "P3WKA",
+   "K": 2,
+   "prodA": "XWA2",
+   "prodB": "P3KAF2",
+   "capsA": [
+    [
+     "F",
+     1
+    ],
+    [
+     "F",
+     1
+    ]
+   ],
+   "capsB": [
+    [
+     "W",
+     2
+    ]
+   ]
+  },
+  {
+   "A": "OWL2K3A",
+   "B": "W5K2",
+   "K": 2,
+   "prodA": "OW2K3A",
+   "prodB": "W4L2K2",
+   "capsA": [
+    [
+     "L",
+     1
+    ],
+    [
+     "L",
+     1
+    ]
+   ],
+   "capsB": [
+    [
+     "W",
+     2
+    ]
+   ]
+  }
+ ],
+ "new_formulas_sample": [
+  "A4",
+  "C2K2A2",
+  "C2K2A3",
+  "C2K2A4",
+  "C2P2A2",
+  "C2P2A2F2",
+  "C2P2A3",
+  "C2P2A4",
+  "C2P2K4A",
+  "C2P2K4F2",
+  "C2P2KAF",
+  "C2P2L2A2",
+  "C2P2L2K4",
+  "C2P2LA2F",
+  "C2P2LK4F",
+  "C2P2LKA",
+  "C2P2W2",
+  "C2P2W2A2",
+  "C2P2W2A2F2",
+  "C2P2W2A3",
+  "C2P2W2KAF",
+  "C2P2W2L2A2",
+  "C2P2W2LA2F",
+  "C2P2W2LKA",
+  "C2P2W3",
+  "C2P2W3A2",
+  "C2P2W4",
+  "C2P2WA2",
+  "C2P2WA2F2",
+  "C2P2WA3",
+  "C2P2WA4",
+  "C2P2WKAF",
+  "C2P2WL2A2",
+  "C2P2WLA2F",
+  "C2P2WLKA",
+  "C2P3KA2F2",
+  "C2P3L2KA2",
+  "C2P3LKA2F",
+  "C2P3W2AF",
+  "C2P3W2LA",
+  "C2P3WAF",
+  "C2P3WLA",
+  "C2P4K2F2",
+  "C2P4L2K2",
+  "C2P4LK2F",
+  "C2P4WK2",
+  "C2PAF",
+  "C2PLA",
+  "C2PW2AF",
+  "C2PW2K3F2",
+  "C2PW2L2K3",
+  "C2PW2LA",
+  "C2PW2LK3F",
+  "C2PW3AF",
+  "C2PW3K3",
+  "C2PW3LA",
+  "C2PWAF",
+  "C2PWK2A2F",
+  "C2PWK2AF",
+  "C2PWK2F",
+  "C2PWLA",
+  "C2PWLK2",
+  "C2PWLK2A",
+  "C2PWLK2A2",
+  "C2W2K2",
+  "C2W2K2A",
+  "C2W2K2A2",
+  "C2W2K2A2F2",
+  "C2W2K2A3",
+  "C2W2K2AF2",
+  "C2W2K2F2",
+  "C2W2L2K2",
+  "C2W2L2K2A",
+  "C2W2L2K2A2",
+  "C2W2LK2A2F",
+  "C2W2LK2AF",
+  "C2W2LK2F",
+  "C2W3K2",
+  "C2W3K2A",
+  "C2W3K2A2",
+  "C2W4K2",
+  "C2W4K2A",
+  "C2WK3A2F",
+  "C2WK3AF",
+  "C2WKA2F",
+  "C2WKA3F",
+  "C2WKAF",
+  "C2WKF",
+  "C2WLK",
+  "C2WLK3A",
+  "C2WLK3A2",
+  "C2WLKA",
+  "C2WLKA2",
+  "C2WLKA3",
+  "C3P2A2F",
+  "C3P2K4F",
+  "C3P2KA",
+  "C3P2LA2",
+  "C3P2LK4",
+  "C3P2W2A2F",
+  "C3P2W2KA",
+  "C3P2W2LA2",
+  "C3P2WA2F",
+  "C3P2WKA",
+  "C3P2WLA2",
+  "C3P3LKA2",
+  "C3P3W2A",
+  "C3P3WA",
+  "C3P4K2F",
+  "C3P4LK2",
+  "C3PA",
+  "C3PW2A",
+  "C3PW2K3F",
+  "C3PW2LK3",
+  "C3PW3A",
+  "C3PWA",
+  "C3PWK2",
+  "C3PWK2A",
+  "C3PWK2A2",
+  "C3W2K2A2F",
+  "C3W2K2AF",
+  "C3W2K2F",
+  "C3W2LK2",
+  "C3W2LK2A",
+  "C3W2LK2A2",
+  "C3WK",
+  "C3WK3A",
+  "C3WK3A2",
+  "C3WKA",
+  "C3WKA2",
+  "C3WKA3",
+  "C4P2A2",
+  "C4P2K4",
+  "C4P2W2A2",
+  "C4P2WA2",
+  "C4P3KA2",
+  "C4P4K2",
+  "C4PW2K3",
+  "C4W2K2",
+  "C4W2K2A",
+  "C4W2K2A2",
+  "CK2A2F",
+  "CK2A3F",
+  "CK2A4F",
+  "CLK2A2",
+  "CLK2A3",
+  "CLK2A4",
+  "CP2A2F",
+  "CP2A2F3",
+  "CP2A3F",
+  "CP2A4F",
+  "CP2K4AF",
+  "CP2K4F3",
+  "CP2KAF2",
+  "CP2L2A2F",
+  "CP2L2K4F",
+  "CP2L2KA",
+  "CP2L3A2",
+  "CP2L3K4",
+  "CP2LA2",
+  "CP2LA2F2",
+  "CP2LA3",
+  "CP2LA4",
+  "CP2LK4A",
+  "CP2LK4F2",
+  "CP2LKAF",
+  "CP2W2A2F",
+  "CP2W2A2F3",
+  "CP2W2A3F",
+  "CP2W2F",
+  "CP2W2KA",
+  "CP2W2KAF2",
+  "CP2W2L",
+  "CP2W2L2A2F",
+  "CP2W2L2KA",
+  "CP2W2L3A2",
+  "CP2W2LA2",
+  "CP2W2LA2F2",
+  "CP2W2LA3",
+  "CP2W2LKAF",
+  "CP2W3A2F",
+  "CP2W3F",
+  "CP2W3KA",
+  "CP2W3L",
+  "CP2W3LA2",
+  "CP2W4F",
+  "CP2W4L",
+  "CP2WA2F",
+  "CP2WA2F3",
+  "CP2WA3F",
+  "CP2WA4F",
+  "CP2WKA",
+  "CP2WKAF2",
+  "CP2WL2A2F",
+  "CP2WL2KA",
+  "CP2WL3A2",
+  "CP2WLA2",
+  "CP2WLA2F2",
+  "CP2WLA3",
+  "CP2WLA4",
+  "CP2WLKAF",
+  "CP3A3",
+  "CP3KA2F3",
+  "CP3KA3F",
+  "CP3L2KA2F",
+  "CP3L3KA2",
+  "CP3LKA2F2",
+  "CP3LKA3",
+  "CP3W2AF2",
+  "CP3W2L2A",
+  "CP3W2LAF",
+  "CP3W3A",
+  "CP3WA",
+  "CP3WA3",
+  "CP3WAF2",
+  "CP3WKA2F",
+  "CP3WL2A",
+  "CP3WLAF",
+  "CP3WLKA2",
+  "CP4K2F3",
+  "CP4L2K2F",
+  "CP4L3K2",
+  "CP4LK2F2",
+  "CP4WK2F",
+  "CP4WLK2",
+  "CPAF2",
+  "CPL2A",
+  "CPLAF",
+  "CPW2A",
+  "CPW2AF2",
+  "CPW2K3F3",
+  "CPW2L2A",
+  "CPW2L2K3F",
+  "CPW2L3K3",
+  "CPW2LAF",
+  "CPW2LK3A",
+  "CPW2LK3F2",
+  "CPW3A",
+  "CPW3AF2",
+  "CPW3L2A",
+  "CPW3LAF",
+  "CPW3LK3",
+  "CPW4A",
+  "CPWA",
+  "CPWA4",
+  "CPWAF2",
+  "CPWK2A",
+  "CPWK2A2",
+  "CPWK2A2F2",
+  "CPWK2A3",
+  "CPWK2AF2",
+  "CPWK2F2",
+  "CPWL2A",
+  "CPWL2K2",
+  "CPWL2K2A",
+  "CPWL2K2A2",
+  "CPWLAF",
+  "CPWLK2A2F",
+  "CPWLK2AF",
+  "CPWLK2F",
+  "CW2K2A2F",
+  "CW2K2A2F3",
+  "CW2K2A3F",
+  "CW2K2AF",
+  "CW2K2AF3",
+  "CW2K2F",
+  "CW2K2F3",
+  "CW2L2K2A2F",
+  "CW2L2K2AF",
+  "CW2L2K2F",
+  "CW2L3K2",
+  "CW2L3K2A",
+  "CW2L3K2A2",
+  "CW2LK2",
+  "CW2LK2A",
+  "CW2LK2A2",
+  "CW2LK2A2F2",
+  "CW2LK2A3",
+  "CW2LK2AF2",
+  "CW2LK2F2",
+  "CW3K2A2F",
+  "CW3K2AF",
+  "CW3K2F",
+  "CW3K3",
+  "CW3K3A",
+  "CW3LK2",
+  "CW3LK2A",
+  "CW3LK2A2",
+  "CW4K2AF",
+  "CW4K2F",
+  "CW4KA",
+  "CW4LK2",
+  "CW4LK2A",
+  "CWK3A2F2",
+  "CWK3A3",
+  "CWK3AF2",
+  "CWKA",
+  "CWKA2",
+  "CWKA2F2",
+  "CWKA3"
+ ],
+ "groups": {
+  "0": 218,
+  "2": 717,
+  "3": 1020,
+  "1": 1050,
+  "4": 659,
+  "5": 225,
+  "6": 30
+ }
+}

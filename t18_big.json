@@ -1,0 +1,225 @@
+[
+ {
+  "name": "t12c_big140.json",
+  "n": 140,
+  "status": "ok",
+  "seconds": 2.6,
+  "n_level6_blocks": 9,
+  "level6_sizes": [
+   6,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   13,
+   13
+  ],
+  "all_blocks_in_t8": false,
+  "t8_hits": 0,
+  "n_final_triv_components": 9,
+  "fusion_arity": [
+   1
+  ],
+  "cover_bad": 0
+ },
+ {
+  "name": "t12c_big108.json",
+  "n": 108,
+  "status": "ok",
+  "seconds": 1.2,
+  "n_level6_blocks": 17,
+  "level6_sizes": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6
+  ],
+  "all_blocks_in_t8": false,
+  "t8_hits": 0,
+  "n_final_triv_components": 14,
+  "fusion_arity": [
+   1,
+   4
+  ],
+  "cover_bad": 0
+ },
+ {
+  "name": "t13_scale3.json",
+  "n": 258,
+  "status": "ok",
+  "seconds": 16.5,
+  "n_level6_blocks": 18,
+  "level6_sizes": [
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   13
+  ],
+  "all_blocks_in_t8": false,
+  "t8_hits": 0,
+  "n_final_triv_components": 18,
+  "fusion_arity": [
+   1
+  ],
+  "cover_bad": 0
+ },
+ {
+  "name": "t13_scale4.json",
+  "n": 346,
+  "status": "ok",
+  "seconds": 40.4,
+  "n_level6_blocks": 24,
+  "level6_sizes": [
+   6,
+   6,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   13,
+   13
+  ],
+  "all_blocks_in_t8": false,
+  "t8_hits": 0,
+  "n_final_triv_components": 24,
+  "fusion_arity": [
+   1
+  ],
+  "cover_bad": 0
+ },
+ {
+  "name": "big_struct:scale_1.75",
+  "n": 217,
+  "status": "ok",
+  "seconds": 9.8,
+  "n_level6_blocks": 15,
+  "level6_sizes": [
+   6,
+   6,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   13,
+   13
+  ],
+  "all_blocks_in_t8": false,
+  "t8_hits": 0,
+  "n_final_triv_components": 15,
+  "fusion_arity": [
+   1
+  ],
+  "cover_bad": 0
+ },
+ {
+  "name": "big_struct:scale_2.0",
+  "n": 215,
+  "status": "ok",
+  "seconds": 9.6,
+  "n_level6_blocks": 15,
+  "level6_sizes": [
+   6,
+   6,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   13,
+   13
+  ],
+  "all_blocks_in_t8": false,
+  "t8_hits": 0,
+  "n_final_triv_components": 15,
+  "fusion_arity": [
+   1
+  ],
+  "cover_bad": 0
+ },
+ {
+  "name": "big_struct:scale_1.5",
+  "n": 156,
+  "status": "ok",
+  "seconds": 3.6,
+  "n_level6_blocks": 12,
+  "level6_sizes": [
+   6,
+   6,
+   6,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9
+  ],
+  "all_blocks_in_t8": false,
+  "t8_hits": 0,
+  "n_final_triv_components": 12,
+  "fusion_arity": [
+   1
+  ],
+  "cover_bad": 0
+ }
+]

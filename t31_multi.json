@@ -1,0 +1,2797 @@
+{
+ "stats": {
+  "2": {
+   "体系": 500,
+   "复原": 459,
+   "真正改变": 41,
+   "产新物质": 27,
+   "产物数2": 15,
+   "全体参与": 41,
+   "交换(n=k)": 15,
+   "产物数1": 25,
+   "合并(n<k)": 25,
+   "产物数4": 1,
+   "裂解(n>k)": 1
+  },
+  "3": {
+   "体系": 500,
+   "复原": 428,
+   "真正改变": 72,
+   "产物数2": 45,
+   "部分反应(有分子未参与)": 65,
+   "合并(n<k)": 45,
+   "产新物质": 52,
+   "产物数3": 25,
+   "交换(n=k)": 25,
+   "全体参与": 7,
+   "产物数4": 2,
+   "裂解(n>k)": 2
+  },
+  "4": {
+   "体系": 500,
+   "真正改变": 90,
+   "产物数3": 73,
+   "部分反应(有分子未参与)": 89,
+   "合并(n<k)": 74,
+   "产新物质": 62,
+   "复原": 410,
+   "产物数2": 1,
+   "全体参与": 1,
+   "产物数4": 15,
+   "交换(n=k)": 15,
+   "产物数5": 1,
+   "裂解(n>k)": 1
+  },
+  "5": {
+   "体系": 500,
+   "复原": 386,
+   "真正改变": 114,
+   "产新物质": 80,
+   "产物数4": 92,
+   "部分反应(有分子未参与)": 114,
+   "合并(n<k)": 93,
+   "产物数5": 20,
+   "交换(n=k)": 20,
+   "产物数6": 1,
+   "裂解(n>k)": 1,
+   "产物数3": 1
+  }
+ },
+ "examples": {
+  "2": [
+   {
+    "inputs": [
+     "O2W2",
+     "X2K2"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "OXWK",
+     "OXWK"
+    ],
+    "new": [
+     "OXWK",
+     "OXWK"
+    ],
+    "n": 2,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "W2F2",
+     "X2L2"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "XWLF",
+     "XWLF"
+    ],
+    "new": [
+     "XWLF",
+     "XWLF"
+    ],
+    "n": 2,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "O3P",
+     "XWK2"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O3XPWK2"
+    ],
+    "new": [
+     "O3XPWK2"
+    ],
+    "n": 1,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "O2CF",
+     "P2F2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2CP2F3"
+    ],
+    "new": [
+     "O2CP2F3"
+    ],
+    "n": 1,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "A2F2",
+     "XW2"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "XW2A2F2"
+    ],
+    "new": [
+     "XW2A2F2"
+    ],
+    "n": 1,
+    "partial": false,
+    "atoms": 7
+   },
+   {
+    "inputs": [
+     "CK2F",
+     "P3F"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "CP3K2F2"
+    ],
+    "new": [],
+    "n": 1,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "LAF",
+     "X2CP"
+    ],
+    "class": [
+     1,
+     -1,
+     1
+    ],
+    "products": [
+     "CF",
+     "X2PLA"
+    ],
+    "new": [],
+    "n": 2,
+    "partial": false,
+    "atoms": 7
+   },
+   {
+    "inputs": [
+     "C2PF",
+     "OWF"
+    ],
+    "class": [
+     4,
+     -1,
+     1
+    ],
+    "products": [
+     "F2",
+     "OC2PW"
+    ],
+    "new": [
+     "OC2PW"
+    ],
+    "n": 2,
+    "partial": false,
+    "atoms": 7
+   },
+   {
+    "inputs": [
+     "C2LK",
+     "OLF2"
+    ],
+    "class": [
+     4,
+     -1,
+     1
+    ],
+    "products": [
+     "CF",
+     "CF",
+     "L2",
+     "OK"
+    ],
+    "new": [],
+    "n": 4,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "OCW2",
+     "XPLA"
+    ],
+    "class": [
+     3,
+     -1,
+     1
+    ],
+    "products": [
+     "CL",
+     "OXPW2A"
+    ],
+    "new": [
+     "OXPW2A"
+    ],
+    "n": 2,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "OA2F",
+     "XCL"
+    ],
+    "class": [
+     1,
+     -1,
+     1
+    ],
+    "products": [
+     "CF",
+     "OXLA2"
+    ],
+    "new": [],
+    "n": 2,
+    "partial": false,
+    "atoms": 7
+   },
+   {
+    "inputs": [
+     "L3K",
+     "OLA"
+    ],
+    "class": [
+     4,
+     -1,
+     1
+    ],
+    "products": [
+     "L2",
+     "OL2KA"
+    ],
+    "new": [
+     "OL2KA"
+    ],
+    "n": 2,
+    "partial": false,
+    "atoms": 7
+   },
+   {
+    "inputs": [
+     "O2CL",
+     "P2F2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2CP2LF2"
+    ],
+    "new": [
+     "O2CP2LF2"
+    ],
+    "n": 1,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "CK2F",
+     "O3L"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O3CLK2F"
+    ],
+    "new": [],
+    "n": 1,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "O2W",
+     "P2LF"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2P2WLF"
+    ],
+    "new": [
+     "O2P2WLF"
+    ],
+    "n": 1,
+    "partial": false,
+    "atoms": 7
+   },
+   {
+    "inputs": [
+     "O2A",
+     "P2W"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2P2WA"
+    ],
+    "new": [
+     "O2P2WA"
+    ],
+    "n": 1,
+    "partial": false,
+    "atoms": 6
+   },
+   {
+    "inputs": [
+     "O2PL",
+     "OK2F"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O3PLK2F"
+    ],
+    "new": [
+     "O3PLK2F"
+    ],
+    "n": 1,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "OA2F",
+     "X2CP"
+    ],
+    "class": [
+     1,
+     -1,
+     1
+    ],
+    "products": [
+     "CF",
+     "OX2PA2"
+    ],
+    "new": [
+     "OX2PA2"
+    ],
+    "n": 2,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "PW2F",
+     "X2CF"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "X2CPW2F2"
+    ],
+    "new": [
+     "X2CPW2F2"
+    ],
+    "n": 1,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "O2PF",
+     "OP2K"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O3P3KF"
+    ],
+    "new": [],
+    "n": 1,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "CK3",
+     "O3F"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O3CK3F"
+    ],
+    "new": [
+     "O3CK3F"
+    ],
+    "n": 1,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "K2F2",
+     "O3L"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O3LK2F2"
+    ],
+    "new": [],
+    "n": 1,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "O2CL",
+     "P2F2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2CP2LF2"
+    ],
+    "new": [
+     "O2CP2LF2"
+    ],
+    "n": 1,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "W2KF",
+     "X2PL"
+    ],
+    "class": [
+     3,
+     -1,
+     1
+    ],
+    "products": [
+     "LF",
+     "X2PW2K"
+    ],
+    "new": [
+     "X2PW2K"
+    ],
+    "n": 2,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "W2F2",
+     "X2L2"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "XWLF",
+     "XWLF"
+    ],
+    "new": [
+     "XWLF",
+     "XWLF"
+    ],
+    "n": 2,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "O3P",
+     "OP2L"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O4P3L"
+    ],
+    "new": [
+     "O4P3L"
+    ],
+    "n": 1,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "K2F2",
+     "P3L"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "P3LK2F2"
+    ],
+    "new": [],
+    "n": 1,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "C3P",
+     "OWL"
+    ],
+    "class": [
+     4,
+     -1,
+     1
+    ],
+    "products": [
+     "CL",
+     "OC2PW"
+    ],
+    "new": [
+     "OC2PW"
+    ],
+    "n": 2,
+    "partial": false,
+    "atoms": 7
+   },
+   {
+    "inputs": [
+     "O2XA",
+     "P2W2"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O2XP2W2A"
+    ],
+    "new": [
+     "O2XP2W2A"
+    ],
+    "n": 1,
+    "partial": false,
+    "atoms": 8
+   },
+   {
+    "inputs": [
+     "WA3",
+     "X3W"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "X2W2A2",
+     "XA"
+    ],
+    "new": [
+     "X2W2A2"
+    ],
+    "n": 2,
+    "partial": false,
+    "atoms": 8
+   }
+  ],
+  "3": [
+   {
+    "inputs": [
+     "LKA2",
+     "OLF2",
+     "XW2"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "OLF2",
+     "XW2LKA2"
+    ],
+    "new": [],
+    "n": 2,
+    "partial": true,
+    "atoms": 11
+   },
+   {
+    "inputs": [
+     "CLA",
+     "O2CL",
+     "XP2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "CLA",
+     "O2XCP2L"
+    ],
+    "new": [
+     "O2XCP2L"
+    ],
+    "n": 2,
+    "partial": true,
+    "atoms": 10
+   },
+   {
+    "inputs": [
+     "PF3",
+     "X2LK",
+     "XF2"
+    ],
+    "class": [
+     3,
+     -1,
+     1
+    ],
+    "products": [
+     "PF3",
+     "X2KF",
+     "XLF"
+    ],
+    "new": [],
+    "n": 3,
+    "partial": true,
+    "atoms": 11
+   },
+   {
+    "inputs": [
+     "K2F2",
+     "OPKF",
+     "XP2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "OPKF",
+     "XP2K2F2"
+    ],
+    "new": [
+     "XP2K2F2"
+    ],
+    "n": 2,
+    "partial": true,
+    "atoms": 11
+   },
+   {
+    "inputs": [
+     "CA2F",
+     "CPL2",
+     "X3A"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "CPL2",
+     "X2A",
+     "XCA2F"
+    ],
+    "new": [],
+    "n": 3,
+    "partial": true,
+    "atoms": 12
+   },
+   {
+    "inputs": [
+     "K2F2",
+     "O2F2",
+     "OX2F"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2K2F4",
+     "OX2F"
+    ],
+    "new": [
+     "O2K2F4"
+    ],
+    "n": 2,
+    "partial": true,
+    "atoms": 12
+   },
+   {
+    "inputs": [
+     "C2KF",
+     "OPKF",
+     "PLF2"
+    ],
+    "class": [
+     2,
+     -1,
+     1
+    ],
+    "products": [
+     "C2PKF2",
+     "LF",
+     "OPKF"
+    ],
+    "new": [
+     "C2PKF2"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 12
+   },
+   {
+    "inputs": [
+     "O2PF",
+     "W2A",
+     "X3A"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "O2PF",
+     "X2A",
+     "XW2A"
+    ],
+    "new": [],
+    "n": 3,
+    "partial": true,
+    "atoms": 11
+   },
+   {
+    "inputs": [
+     "CLK2",
+     "OAF",
+     "P2F2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "CP2LK2F2",
+     "OAF"
+    ],
+    "new": [
+     "CP2LK2F2"
+    ],
+    "n": 2,
+    "partial": true,
+    "atoms": 11
+   },
+   {
+    "inputs": [
+     "PW2L",
+     "W3A",
+     "X2LF"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "W2A",
+     "X2PW3L2F"
+    ],
+    "new": [
+     "X2PW3L2F"
+    ],
+    "n": 2,
+    "partial": false,
+    "atoms": 12
+   },
+   {
+    "inputs": [
+     "A3",
+     "OP2F",
+     "W3A"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "OP2F",
+     "W2A3",
+     "WA"
+    ],
+    "new": [
+     "W2A3"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 11
+   },
+   {
+    "inputs": [
+     "CA2F",
+     "OX2L",
+     "XPAF"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "OX2CLA2F",
+     "XPAF"
+    ],
+    "new": [
+     "OX2CLA2F"
+    ],
+    "n": 2,
+    "partial": true,
+    "atoms": 12
+   },
+   {
+    "inputs": [
+     "L2K2",
+     "P2L2",
+     "WL2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "P2L4K2",
+     "WL2"
+    ],
+    "new": [
+     "P2L4K2"
+    ],
+    "n": 2,
+    "partial": true,
+    "atoms": 11
+   },
+   {
+    "inputs": [
+     "CPLF",
+     "OC2L",
+     "WA"
+    ],
+    "class": [
+     2,
+     -1,
+     1
+    ],
+    "products": [
+     "C2",
+     "OCPL2F",
+     "WA"
+    ],
+    "new": [
+     "OCPL2F"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 10
+   },
+   {
+    "inputs": [
+     "CKA",
+     "L2KF",
+     "OXC"
+    ],
+    "class": [
+     1,
+     -2,
+     2
+    ],
+    "products": [
+     "L2KF",
+     "OXC2KA"
+    ],
+    "new": [
+     "OXC2KA"
+    ],
+    "n": 2,
+    "partial": true,
+    "atoms": 10
+   },
+   {
+    "inputs": [
+     "O2CP",
+     "P2KF",
+     "W2K2"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O2CPW2K2",
+     "P2KF"
+    ],
+    "new": [
+     "O2CPW2K2"
+    ],
+    "n": 2,
+    "partial": true,
+    "atoms": 12
+   },
+   {
+    "inputs": [
+     "WA2",
+     "X2A",
+     "XWKF"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "X2WA3",
+     "XWKF"
+    ],
+    "new": [
+     "X2WA3"
+    ],
+    "n": 2,
+    "partial": true,
+    "atoms": 10
+   },
+   {
+    "inputs": [
+     "CLA2",
+     "PW2F",
+     "X2A"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "PW2F",
+     "X2CLA3"
+    ],
+    "new": [
+     "X2CLA3"
+    ],
+    "n": 2,
+    "partial": true,
+    "atoms": 11
+   },
+   {
+    "inputs": [
+     "W2K2",
+     "X2W",
+     "XA3"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "W2K2",
+     "X2WA",
+     "XA2"
+    ],
+    "new": [
+     "X2WA"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 11
+   },
+   {
+    "inputs": [
+     "CPW2",
+     "KA2F",
+     "KAF"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "CPW2KA2F",
+     "KAF"
+    ],
+    "new": [
+     "CPW2KA2F"
+    ],
+    "n": 2,
+    "partial": true,
+    "atoms": 11
+   },
+   {
+    "inputs": [
+     "LA2F",
+     "LK2F",
+     "XP2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "LA2F",
+     "XP2LK2F"
+    ],
+    "new": [
+     "XP2LK2F"
+    ],
+    "n": 2,
+    "partial": true,
+    "atoms": 11
+   },
+   {
+    "inputs": [
+     "C2KF",
+     "CL",
+     "PLA"
+    ],
+    "class": [
+     2,
+     -1,
+     1
+    ],
+    "products": [
+     "C2PKA",
+     "CF",
+     "L2"
+    ],
+    "new": [
+     "C2PKA"
+    ],
+    "n": 3,
+    "partial": false,
+    "atoms": 9
+   },
+   {
+    "inputs": [
+     "OAF",
+     "W3",
+     "X3"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "OAF",
+     "XW",
+     "XW",
+     "XW"
+    ],
+    "new": [],
+    "n": 4,
+    "partial": true,
+    "atoms": 9
+   },
+   {
+    "inputs": [
+     "O2LK",
+     "OLA",
+     "XP2W"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O2XP2WLK",
+     "OLA"
+    ],
+    "new": [],
+    "n": 2,
+    "partial": true,
+    "atoms": 11
+   },
+   {
+    "inputs": [
+     "OLA",
+     "OX2L",
+     "X3W"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "OLA",
+     "OX3L",
+     "X2W"
+    ],
+    "new": [],
+    "n": 3,
+    "partial": true,
+    "atoms": 11
+   },
+   {
+    "inputs": [
+     "W3",
+     "X2F2",
+     "X2PL"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "X2PL",
+     "X2W3F2"
+    ],
+    "new": [
+     "X2W3F2"
+    ],
+    "n": 2,
+    "partial": true,
+    "atoms": 11
+   },
+   {
+    "inputs": [
+     "W2K2",
+     "X2K2",
+     "XL2"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "XL2",
+     "XWK2",
+     "XWK2"
+    ],
+    "new": [],
+    "n": 3,
+    "partial": true,
+    "atoms": 11
+   },
+   {
+    "inputs": [
+     "OWL",
+     "WA2",
+     "X2CF"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "OWL",
+     "X2CWA2F"
+    ],
+    "new": [
+     "X2CWA2F"
+    ],
+    "n": 2,
+    "partial": true,
+    "atoms": 10
+   },
+   {
+    "inputs": [
+     "OCP2",
+     "W2A",
+     "W3"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "OCP2",
+     "W2",
+     "W3A"
+    ],
+    "new": [],
+    "n": 3,
+    "partial": true,
+    "atoms": 10
+   },
+   {
+    "inputs": [
+     "CW2K",
+     "OX2C",
+     "W2A"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "CW2K",
+     "OX2CW2A"
+    ],
+    "new": [],
+    "n": 2,
+    "partial": true,
+    "atoms": 11
+   }
+  ],
+  "4": [
+   {
+    "inputs": [
+     "O2PF",
+     "O2X2",
+     "OLF2",
+     "P2W2"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O2P3W2F",
+     "O2X2",
+     "OLF2"
+    ],
+    "new": [],
+    "n": 3,
+    "partial": true,
+    "atoms": 16
+   },
+   {
+    "inputs": [
+     "C3K",
+     "OC2F",
+     "OK2F",
+     "XP2W"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "C3K",
+     "OC2F",
+     "OXP2WK2F"
+    ],
+    "new": [
+     "OXP2WK2F"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 16
+   },
+   {
+    "inputs": [
+     "CL2K",
+     "OCK2",
+     "OPLK",
+     "XP2A"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "CL2K",
+     "OPLK",
+     "OXCP2K2A"
+    ],
+    "new": [
+     "OXCP2K2A"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 16
+   },
+   {
+    "inputs": [
+     "C2P2",
+     "O3L",
+     "OL3",
+     "P2W2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O3C2P2L",
+     "OL3",
+     "P2W2"
+    ],
+    "new": [],
+    "n": 3,
+    "partial": true,
+    "atoms": 16
+   },
+   {
+    "inputs": [
+     "K2F2",
+     "OC2L",
+     "OW2L",
+     "P2L2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "OC2L",
+     "OW2L",
+     "P2L2K2F2"
+    ],
+    "new": [
+     "P2L2K2F2"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 16
+   },
+   {
+    "inputs": [
+     "CPK2",
+     "O2KF",
+     "X2CP",
+     "XCPA"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O2CPK3F",
+     "X2CP",
+     "XCPA"
+    ],
+    "new": [
+     "O2CPK3F"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 16
+   },
+   {
+    "inputs": [
+     "K2F2",
+     "O2X2",
+     "OW2L",
+     "P2LF"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2X2",
+     "OW2L",
+     "P2LK2F3"
+    ],
+    "new": [
+     "P2LK2F3"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 16
+   },
+   {
+    "inputs": [
+     "C2KF",
+     "OC3",
+     "OLK2",
+     "P2LK"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "C2KF",
+     "OC3",
+     "OP2L2K3"
+    ],
+    "new": [
+     "OP2L2K3"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 16
+   },
+   {
+    "inputs": [
+     "CP2L",
+     "O2F2",
+     "XLK",
+     "XPL"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2CP2LF2",
+     "XLK",
+     "XPL"
+    ],
+    "new": [
+     "O2CP2LF2"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 14
+   },
+   {
+    "inputs": [
+     "O2F2",
+     "OP2F",
+     "OWL",
+     "P2W"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2P2WF2",
+     "OP2F",
+     "OWL"
+    ],
+    "new": [
+     "O2P2WF2"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 14
+   },
+   {
+    "inputs": [
+     "O2KF",
+     "P2WA",
+     "W2F2",
+     "XA2"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "O2KF",
+     "P2WA",
+     "XW2A2F2"
+    ],
+    "new": [
+     "XW2A2F2"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 15
+   },
+   {
+    "inputs": [
+     "CKA2",
+     "OLF2",
+     "XW2A",
+     "XWLK"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "OLF2",
+     "XCW2KA3",
+     "XWLK"
+    ],
+    "new": [],
+    "n": 3,
+    "partial": true,
+    "atoms": 16
+   },
+   {
+    "inputs": [
+     "C2P2",
+     "L2A2",
+     "L2K2",
+     "W2K2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "C2P2L2K2",
+     "L2A2",
+     "W2K2"
+    ],
+    "new": [
+     "C2P2L2K2"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 16
+   },
+   {
+    "inputs": [
+     "LK2F",
+     "O2L2",
+     "XCP",
+     "XWK2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2L3K2F",
+     "XCP",
+     "XWK2"
+    ],
+    "new": [
+     "O2L3K2F"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 15
+   },
+   {
+    "inputs": [
+     "AF2",
+     "CK2F",
+     "O2A",
+     "OXC"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "AF2",
+     "O2CK2AF",
+     "OXC"
+    ],
+    "new": [
+     "O2CK2AF"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 13
+   },
+   {
+    "inputs": [
+     "CP2L",
+     "O2XW",
+     "PW2L",
+     "WK2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "CP2WLK2",
+     "O2XW",
+     "PW2L"
+    ],
+    "new": [
+     "CP2WLK2"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 15
+   },
+   {
+    "inputs": [
+     "C2K2",
+     "O2A",
+     "WK2",
+     "XPL"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2C2K2A",
+     "WK2",
+     "XPL"
+    ],
+    "new": [
+     "O2C2K2A"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 13
+   },
+   {
+    "inputs": [
+     "A3",
+     "L2A2",
+     "X2LF",
+     "XP2W"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "XL2A2",
+     "XLA3F",
+     "XP2W"
+    ],
+    "new": [],
+    "n": 3,
+    "partial": true,
+    "atoms": 15
+   },
+   {
+    "inputs": [
+     "O2A2",
+     "OK2F",
+     "PAF",
+     "XLK"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O3K2A2F",
+     "PAF",
+     "XLK"
+    ],
+    "new": [],
+    "n": 3,
+    "partial": true,
+    "atoms": 14
+   },
+   {
+    "inputs": [
+     "CK2F",
+     "O3C",
+     "PW2F",
+     "XPAF"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O3C2K2F",
+     "PW2F",
+     "XPAF"
+    ],
+    "new": [],
+    "n": 3,
+    "partial": true,
+    "atoms": 16
+   },
+   {
+    "inputs": [
+     "O2W2",
+     "OCK2",
+     "PF3",
+     "W2K2"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O3CW2K2",
+     "PF3",
+     "W2K2"
+    ],
+    "new": [],
+    "n": 3,
+    "partial": true,
+    "atoms": 16
+   },
+   {
+    "inputs": [
+     "O2A",
+     "P2F2",
+     "PK2F",
+     "W2LK"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2P2AF2",
+     "PK2F",
+     "W2LK"
+    ],
+    "new": [
+     "O2P2AF2"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 15
+   },
+   {
+    "inputs": [
+     "CKA2",
+     "OWF",
+     "OX2C",
+     "XA2"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "CKA2",
+     "OWF",
+     "OX3CA2"
+    ],
+    "new": [],
+    "n": 3,
+    "partial": true,
+    "atoms": 14
+   },
+   {
+    "inputs": [
+     "CP2L",
+     "L2K2",
+     "P2LK",
+     "WLK"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "CP2L3K2",
+     "P2LK",
+     "WLK"
+    ],
+    "new": [
+     "CP2L3K2"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 15
+   },
+   {
+    "inputs": [
+     "AF2",
+     "P2WA",
+     "XK2A",
+     "XPLA"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "AF2",
+     "XP2WK2A2",
+     "XPLA"
+    ],
+    "new": [
+     "XP2WK2A2"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 15
+   },
+   {
+    "inputs": [
+     "A2F2",
+     "X2CF",
+     "X2W",
+     "XW2"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "X2WA2F2",
+     "X3CW2F"
+    ],
+    "new": [
+     "X2WA2F2",
+     "X3CW2F"
+    ],
+    "n": 2,
+    "partial": false,
+    "atoms": 14
+   },
+   {
+    "inputs": [
+     "A3",
+     "O2XA",
+     "W2KF",
+     "XA2"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "A2",
+     "O2XA",
+     "W2KF",
+     "XA3"
+    ],
+    "new": [],
+    "n": 4,
+    "partial": true,
+    "atoms": 14
+   },
+   {
+    "inputs": [
+     "CPW",
+     "OCF2",
+     "OXL",
+     "XC2"
+    ],
+    "class": [
+     1,
+     -2,
+     2
+    ],
+    "products": [
+     "OCF2",
+     "OXCPWL",
+     "XC2"
+    ],
+    "new": [
+     "OXCPWL"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 13
+   },
+   {
+    "inputs": [
+     "OC2L",
+     "OCP2",
+     "XCK",
+     "XWK2"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "OC2L",
+     "OXCP2WK2",
+     "XCK"
+    ],
+    "new": [
+     "OXCP2WK2"
+    ],
+    "n": 3,
+    "partial": true,
+    "atoms": 15
+   },
+   {
+    "inputs": [
+     "LK3",
+     "OC2F",
+     "OL2F",
+     "P2L2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "OC2F",
+     "OL2F",
+     "P2L3K3"
+    ],
+    "new": [],
+    "n": 3,
+    "partial": true,
+    "atoms": 16
+   }
+  ],
+  "5": [
+   {
+    "inputs": [
+     "A2F2",
+     "O2LK",
+     "X2A",
+     "XW",
+     "XW2"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "O2LK",
+     "X2A3F2",
+     "XW",
+     "XW2"
+    ],
+    "new": [
+     "X2A3F2"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 16
+   },
+   {
+    "inputs": [
+     "CP2L",
+     "O2W",
+     "OX2C",
+     "PL3",
+     "XP2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2CP2WL",
+     "OX2C",
+     "PL3",
+     "XP2"
+    ],
+    "new": [
+     "O2CP2WL"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 18
+   },
+   {
+    "inputs": [
+     "L2K2",
+     "O3L",
+     "X2F2",
+     "XA",
+     "XWK2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O3L3K2",
+     "X2F2",
+     "XA",
+     "XWK2"
+    ],
+    "new": [],
+    "n": 4,
+    "partial": true,
+    "atoms": 18
+   },
+   {
+    "inputs": [
+     "C2PL",
+     "CP2F",
+     "O2L2",
+     "X2K2",
+     "XA2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "C2PL",
+     "O2CP2L2F",
+     "X2K2",
+     "XA2"
+    ],
+    "new": [
+     "O2CP2L2F"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 19
+   },
+   {
+    "inputs": [
+     "CWF",
+     "K3F",
+     "O2L2",
+     "WK2",
+     "X2P2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "CWF",
+     "K3F",
+     "O2WL2K2",
+     "X2P2"
+    ],
+    "new": [
+     "O2WL2K2"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 18
+   },
+   {
+    "inputs": [
+     "C2LK",
+     "CWF",
+     "O2CK",
+     "OCK2",
+     "OWF"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "C2LK",
+     "CWF",
+     "O3C2K3",
+     "OWF"
+    ],
+    "new": [
+     "O3C2K3"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 18
+   },
+   {
+    "inputs": [
+     "C2W",
+     "O2X",
+     "PLA2",
+     "XP2",
+     "XWLK"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "C2W",
+     "O2X2P2",
+     "PLA2",
+     "XWLK"
+    ],
+    "new": [
+     "O2X2P2"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 17
+   },
+   {
+    "inputs": [
+     "C2KF",
+     "L2A",
+     "OLK2",
+     "OXL",
+     "P2W2"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "C2KF",
+     "L2A",
+     "OP2W2LK2",
+     "OXL"
+    ],
+    "new": [
+     "OP2W2LK2"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 18
+   },
+   {
+    "inputs": [
+     "L2A2",
+     "OF3",
+     "OX2L",
+     "X2KF",
+     "XCL"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "OF3",
+     "OX2L3A2",
+     "X2KF",
+     "XCL"
+    ],
+    "new": [
+     "OX2L3A2"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 19
+   },
+   {
+    "inputs": [
+     "CA2F",
+     "PL3",
+     "WA2",
+     "WF2",
+     "X2CL"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "CA2F",
+     "PL3",
+     "WF2",
+     "X2CWLA2"
+    ],
+    "new": [
+     "X2CWLA2"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 18
+   },
+   {
+    "inputs": [
+     "K2F2",
+     "LKA2",
+     "O3C",
+     "XW",
+     "XW2A"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "LKA2",
+     "O3CK2F2",
+     "XW",
+     "XW2A"
+    ],
+    "new": [],
+    "n": 4,
+    "partial": true,
+    "atoms": 18
+   },
+   {
+    "inputs": [
+     "C2LK",
+     "CPL2",
+     "O2X2",
+     "W3A",
+     "X2CL"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "C2LK",
+     "CPL2",
+     "O2X2",
+     "X2CW3LA"
+    ],
+    "new": [
+     "X2CW3LA"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 20
+   },
+   {
+    "inputs": [
+     "C2LK",
+     "O3L",
+     "OCL2",
+     "OP2K",
+     "XK2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "C2LK",
+     "O3XLK2",
+     "OCL2",
+     "OP2K"
+    ],
+    "new": [],
+    "n": 4,
+    "partial": true,
+    "atoms": 19
+   },
+   {
+    "inputs": [
+     "CPF2",
+     "CW2F",
+     "OCWA",
+     "X2L2",
+     "X2P2"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "CPF2",
+     "OCWA",
+     "X2P2",
+     "XCWL",
+     "XWLF"
+    ],
+    "new": [
+     "XCWL",
+     "XWLF"
+    ],
+    "n": 5,
+    "partial": true,
+    "atoms": 20
+   },
+   {
+    "inputs": [
+     "CAF",
+     "CP2K",
+     "O2CL",
+     "P2A",
+     "P2WA"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "CAF",
+     "CP2K",
+     "O2CP2LA",
+     "P2WA"
+    ],
+    "new": [
+     "O2CP2LA"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 18
+   },
+   {
+    "inputs": [
+     "L2A2",
+     "O3P",
+     "OCF2",
+     "OPLK",
+     "XW2A"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "O3P",
+     "OCF2",
+     "OPLK",
+     "XW2L2A3"
+    ],
+    "new": [
+     "XW2L2A3"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 20
+   },
+   {
+    "inputs": [
+     "K2F2",
+     "O2X2",
+     "O3C",
+     "OWAF",
+     "P2LF"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2X2",
+     "O3CK2F2",
+     "OWAF",
+     "P2LF"
+    ],
+    "new": [],
+    "n": 4,
+    "partial": true,
+    "atoms": 20
+   },
+   {
+    "inputs": [
+     "CL",
+     "CLA2",
+     "X2CF",
+     "XA2",
+     "XPLA"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "CL",
+     "CLA2",
+     "X3CA2F",
+     "XPLA"
+    ],
+    "new": [
+     "X3CA2F"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 17
+   },
+   {
+    "inputs": [
+     "K2A",
+     "LK3",
+     "O2CF",
+     "O2X2",
+     "OA2F"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "LK3",
+     "O2CK2AF",
+     "O2X2",
+     "OA2F"
+    ],
+    "new": [
+     "O2CK2AF"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 19
+   },
+   {
+    "inputs": [
+     "AF2",
+     "O2W2",
+     "WL2",
+     "X2CP",
+     "XWK2"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "AF2",
+     "OW2K",
+     "OXWK",
+     "WL2",
+     "X2CP"
+    ],
+    "new": [
+     "OW2K",
+     "OXWK"
+    ],
+    "n": 5,
+    "partial": true,
+    "atoms": 18
+   },
+   {
+    "inputs": [
+     "CW2F",
+     "O3L",
+     "P3L",
+     "X2CP",
+     "XW3"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "CW2F",
+     "O3P3L2",
+     "X2CP",
+     "XW3"
+    ],
+    "new": [
+     "O3P3L2"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 20
+   },
+   {
+    "inputs": [
+     "O2KF",
+     "O2PF",
+     "OP",
+     "P2W2",
+     "PLA2"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O2P2W2KF",
+     "O2PF",
+     "OP",
+     "PLA2"
+    ],
+    "new": [
+     "O2P2W2KF"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 18
+   },
+   {
+    "inputs": [
+     "C2",
+     "K2A",
+     "O3L",
+     "PL2F",
+     "XLK"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "C2",
+     "O3LK2A",
+     "PL2F",
+     "XLK"
+    ],
+    "new": [],
+    "n": 4,
+    "partial": true,
+    "atoms": 16
+   },
+   {
+    "inputs": [
+     "A2F2",
+     "KA2F",
+     "L2A2",
+     "OX2F",
+     "WA3"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "KA2F",
+     "LA2F",
+     "LA2F",
+     "OX2AF",
+     "WA2"
+    ],
+    "new": [
+     "OX2AF"
+    ],
+    "n": 5,
+    "partial": true,
+    "atoms": 20
+   },
+   {
+    "inputs": [
+     "O2X",
+     "OPKF",
+     "X2K2",
+     "X3A",
+     "XK2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2X2K2",
+     "OPKF",
+     "X2K2",
+     "X3A"
+    ],
+    "new": [
+     "O2X2K2"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 18
+   },
+   {
+    "inputs": [
+     "O2XW",
+     "OCA2",
+     "OPLK",
+     "P2LK",
+     "X2CP"
+    ],
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O2XP2WLK",
+     "OCA2",
+     "OPLK",
+     "X2CP"
+    ],
+    "new": [],
+    "n": 4,
+    "partial": true,
+    "atoms": 20
+   },
+   {
+    "inputs": [
+     "CP2L",
+     "O2C2",
+     "OF3",
+     "OWL",
+     "XL2"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2C3P2L",
+     "OF3",
+     "OWL",
+     "XL2"
+    ],
+    "new": [
+     "O2C3P2L"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 18
+   },
+   {
+    "inputs": [
+     "O2LF",
+     "OF3",
+     "OXC",
+     "P2L2",
+     "W2LK"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "O2P2L3F",
+     "OF3",
+     "OXC",
+     "W2LK"
+    ],
+    "new": [
+     "O2P2L3F"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 19
+   },
+   {
+    "inputs": [
+     "A2F2",
+     "KAF",
+     "L2A2",
+     "OK2F",
+     "XW2"
+    ],
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "KAF",
+     "LA2F",
+     "OK2F",
+     "XW2LA2F"
+    ],
+    "new": [
+     "XW2LA2F"
+    ],
+    "n": 4,
+    "partial": true,
+    "atoms": 18
+   },
+   {
+    "inputs": [
+     "C2KF",
+     "CP3",
+     "O2CL",
+     "O2XA",
+     "XP2A"
+    ],
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "C2KF",
+     "O2C2P3L",
+     "O2XA",
+     "XP2A"
+    ],
+    "new": [],
+    "n": 4,
+    "partial": true,
+    "atoms": 20
+   }
+  ]
+ }
+}

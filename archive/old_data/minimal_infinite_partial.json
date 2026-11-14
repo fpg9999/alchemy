@@ -1,0 +1,39 @@
+{
+ "inf3": [
+  "K/O/X",
+  "A/K/O",
+  "O/P/X",
+  "O/P/W",
+  "K/P/W",
+  "A/K/P",
+  "A/O/P",
+  "K/O/W",
+  "K/P/X"
+ ],
+ "inf4": [
+  "C/P/W/A",
+  "C/W/K/A",
+  "O/C/P/K",
+  "O/P/K/F",
+  "O/P/L/K",
+  "O/X/A/F",
+  "O/X/C/A",
+  "O/X/C/W",
+  "O/X/L/A",
+  "O/X/W/A",
+  "O/X/W/F",
+  "O/X/W/L",
+  "P/W/A/F",
+  "P/W/L/A",
+  "W/K/A/F",
+  "W/L/K/A",
+  "X/C/K/A",
+  "X/C/P/W",
+  "X/K/A/F",
+  "X/L/K/A",
+  "X/P/W/A",
+  "X/P/W/F",
+  "X/P/W/L",
+  "X/W/K/A"
+ ]
+}

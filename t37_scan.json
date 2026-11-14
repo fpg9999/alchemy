@@ -1,0 +1,81 @@
+{
+ "stats": {
+  "tested": 400,
+  "with_ties": 397,
+  "formula_ambiguity": 0,
+  "skeleton_ambiguity": 236,
+  "residual_after_intra": 234
+ },
+ "residual_examples": [
+  {
+   "formula": "OP3WL3F",
+   "natoms": 9,
+   "ties": 7,
+   "outcomes": 2,
+   "intra_outcomes": 2
+  },
+  {
+   "formula": "X3W3LKF2",
+   "natoms": 10,
+   "ties": 6,
+   "outcomes": 2,
+   "intra_outcomes": 2
+  },
+  {
+   "formula": "O3X2KF4",
+   "natoms": 10,
+   "ties": 7,
+   "outcomes": 2,
+   "intra_outcomes": 2
+  },
+  {
+   "formula": "O4CPWF2",
+   "natoms": 9,
+   "ties": 6,
+   "outcomes": 3,
+   "intra_outcomes": 3
+  },
+  {
+   "formula": "OXLK3A3F",
+   "natoms": 10,
+   "ties": 8,
+   "outcomes": 2,
+   "intra_outcomes": 2
+  },
+  {
+   "formula": "XP4W2KAF",
+   "natoms": 10,
+   "ties": 8,
+   "outcomes": 2,
+   "intra_outcomes": 2
+  },
+  {
+   "formula": "O2CL2K5",
+   "natoms": 10,
+   "ties": 9,
+   "outcomes": 2,
+   "intra_outcomes": 2
+  },
+  {
+   "formula": "P3WLKAF",
+   "natoms": 8,
+   "ties": 6,
+   "outcomes": 2,
+   "intra_outcomes": 2
+  },
+  {
+   "formula": "OCP5W2F",
+   "natoms": 10,
+   "ties": 9,
+   "outcomes": 3,
+   "intra_outcomes": 2
+  },
+  {
+   "formula": "X3CPW2K2A",
+   "natoms": 10,
+   "ties": 7,
+   "outcomes": 3,
+   "intra_outcomes": 3
+  }
+ ]
+}

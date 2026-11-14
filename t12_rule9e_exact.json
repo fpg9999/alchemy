@@ -1,0 +1,17 @@
+{
+ "6": {
+  "ncase": 1561,
+  "ambiguous": [],
+  "over": 0
+ },
+ "7": {
+  "ncase": 3123,
+  "ambiguous": [],
+  "over": 30
+ },
+ "8": {
+  "ncase": 6582,
+  "ambiguous": [],
+  "over": 251
+ }
+}

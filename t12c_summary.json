@@ -1,0 +1,1514 @@
+{
+ "task": "T12C 全目录采样与跨元素反应规律",
+ "generated_at": "2026-11-13 02:12:17",
+ "params": {
+  "npairs": [
+   2500,
+   3000,
+   2500,
+   2000
+  ],
+  "nproc": 18,
+  "embed_cap": 3000000,
+  "seed": "20261113 + layer*7919",
+  "layers": [
+   [
+    "L1_2-8",
+    2,
+    8
+   ],
+   [
+    "L2_9-16",
+    9,
+    16
+   ],
+   [
+    "L3_17-32",
+    17,
+    32
+   ],
+   [
+    "L4_33+",
+    33,
+    1000000000
+   ]
+  ]
+ },
+ "catalog": 84225,
+ "simulator": "pot_v3 (rules 1~9) + pot_v2 strict embedding (max_nodes=3,000,000)",
+ "layers": {
+  "L1_2-8": {
+   "n_pairs": 2500,
+   "n_ok": 2462,
+   "success_rate": 0.9848,
+   "distinct_formulas": 2844,
+   "sum_sim_s": 41.9995,
+   "sum_embed_s": 3.946
+  },
+  "L2_9-16": {
+   "n_pairs": 3000,
+   "n_ok": 2974,
+   "success_rate": 0.9913333333333333,
+   "distinct_formulas": 5783,
+   "sum_sim_s": 322.966,
+   "sum_embed_s": 1315.3566
+  },
+  "L3_17-32": {
+   "n_pairs": 2500,
+   "n_ok": 2462,
+   "success_rate": 0.9848,
+   "distinct_formulas": 934,
+   "sum_sim_s": 1131.3895,
+   "sum_embed_s": 4465.6809
+  },
+  "L4_33+": {
+   "n_pairs": 2000,
+   "n_ok": 1929,
+   "success_rate": 0.9645,
+   "distinct_formulas": 327,
+   "sum_sim_s": 4918.0357,
+   "sum_embed_s": 11056.2403
+  }
+ },
+ "layer_table": {
+  "L1_2-8": {
+   "pairs": 2500,
+   "ok": 2462,
+   "success_rate": 0.9848,
+   "distinct_formulas": 2844
+  },
+  "L2_9-16": {
+   "pairs": 3000,
+   "ok": 2974,
+   "success_rate": 0.9913333333333333,
+   "distinct_formulas": 5783
+  },
+  "L3_17-32": {
+   "pairs": 2500,
+   "ok": 2462,
+   "success_rate": 0.9848,
+   "distinct_formulas": 934
+  },
+  "L4_33+": {
+   "pairs": 2000,
+   "ok": 1929,
+   "success_rate": 0.9645,
+   "distinct_formulas": 327
+  }
+ },
+ "failure": {
+  "n_fail": 173,
+  "fail_odd": 0,
+  "fail_even_rem": 51,
+  "fail_embed": 122,
+  "element_presence": [
+   [
+    "O",
+    8712,
+    "1.7%",
+    1288,
+    "1.7%"
+   ],
+   [
+    "X",
+    7331,
+    "1.8%",
+    2669,
+    "1.4%"
+   ],
+   [
+    "C",
+    4516,
+    "1.4%",
+    5484,
+    "2.0%"
+   ],
+   [
+    "P",
+    8743,
+    "1.7%",
+    1257,
+    "2.1%"
+   ],
+   [
+    "W",
+    7212,
+    "1.9%",
+    2788,
+    "1.2%"
+   ],
+   [
+    "L",
+    4338,
+    "1.4%",
+    5662,
+    "2.0%"
+   ],
+   [
+    "K",
+    8686,
+    "1.7%",
+    1314,
+    "2.1%"
+   ],
+   [
+    "A",
+    7271,
+    "1.9%",
+    2729,
+    "1.4%"
+   ],
+   [
+    "F",
+    4516,
+    "1.5%",
+    5484,
+    "2.0%"
+   ]
+  ],
+  "n3val_bins": [
+   [
+    "0-0",
+    7,
+    "0.0%",
+    0,
+    0,
+    "14.3%",
+    4.571428571428571
+   ],
+   [
+    "1-1",
+    29,
+    "0.0%",
+    0,
+    0,
+    "20.7%",
+    7.758620689655173
+   ],
+   [
+    "2-2",
+    103,
+    "2.9%",
+    0,
+    0,
+    "7.8%",
+    6.2
+   ],
+   [
+    "3-4",
+    503,
+    "1.2%",
+    0,
+    0,
+    "11.1%",
+    7.350100603621731
+   ],
+   [
+    "5-8",
+    1743,
+    "1.3%",
+    0,
+    0,
+    "13.3%",
+    8.918651946542708
+   ],
+   [
+    "9+",
+    7615,
+    "1.9%",
+    0,
+    122,
+    "4.5%",
+    15.955573397564565
+   ]
+  ],
+  "count_bins": {
+   "O": [
+    [
+     "0-0",
+     1288,
+     "1.7%"
+    ],
+    [
+     "1-2",
+     1904,
+     "1.3%"
+    ],
+    [
+     "3-5",
+     2190,
+     "1.4%"
+    ],
+    [
+     "6+",
+     4618,
+     "2.1%"
+    ]
+   ],
+   "P": [
+    [
+     "0-0",
+     1257,
+     "2.1%"
+    ],
+    [
+     "1-2",
+     1765,
+     "0.9%"
+    ],
+    [
+     "3-5",
+     2215,
+     "1.4%"
+    ],
+    [
+     "6+",
+     4763,
+     "2.1%"
+    ]
+   ],
+   "K": [
+    [
+     "0-0",
+     1314,
+     "2.1%"
+    ],
+    [
+     "1-2",
+     1922,
+     "1.4%"
+    ],
+    [
+     "3-5",
+     2194,
+     "1.5%"
+    ],
+    [
+     "6+",
+     4570,
+     "1.9%"
+    ]
+   ]
+  },
+  "mask_top_fail": [
+   {
+    "mask": "OXWKAF",
+    "pairs": 42,
+    "fail_rate": 0.09523809523809523,
+    "fail": 4,
+    "odd_fail": 0,
+    "embed_fail": 4,
+    "multi_rate": 0.8095238095238095,
+    "nE": 6,
+    "cat": "聚动散"
+   },
+   {
+    "mask": "XCPWKF",
+    "pairs": 21,
+    "fail_rate": 0.09523809523809523,
+    "fail": 2,
+    "odd_fail": 0,
+    "embed_fail": 2,
+    "multi_rate": 0.6666666666666666,
+    "nE": 6,
+    "cat": "聚动散"
+   },
+   {
+    "mask": "OXPWAF",
+    "pairs": 42,
+    "fail_rate": 0.07142857142857142,
+    "fail": 3,
+    "odd_fail": 0,
+    "embed_fail": 3,
+    "multi_rate": 0.9047619047619048,
+    "nE": 6,
+    "cat": "聚动散"
+   },
+   {
+    "mask": "OXLKA",
+    "pairs": 15,
+    "fail_rate": 0.06666666666666667,
+    "fail": 1,
+    "odd_fail": 0,
+    "embed_fail": 1,
+    "multi_rate": 0.6666666666666666,
+    "nE": 5,
+    "cat": "聚动散"
+   },
+   {
+    "mask": "OXPLAF",
+    "pairs": 15,
+    "fail_rate": 0.06666666666666667,
+    "fail": 1,
+    "odd_fail": 0,
+    "embed_fail": 0,
+    "multi_rate": 0.8,
+    "nE": 6,
+    "cat": "聚动散"
+   },
+   {
+    "mask": "XCPWKAF",
+    "pairs": 46,
+    "fail_rate": 0.06521739130434782,
+    "fail": 3,
+    "odd_fail": 0,
+    "embed_fail": 0,
+    "multi_rate": 0.8695652173913043,
+    "nE": 7,
+    "cat": "聚动散"
+   },
+   {
+    "mask": "OPWLKF",
+    "pairs": 16,
+    "fail_rate": 0.0625,
+    "fail": 1,
+    "odd_fail": 0,
+    "embed_fail": 1,
+    "multi_rate": 0.875,
+    "nE": 6,
+    "cat": "聚动散"
+   },
+   {
+    "mask": "OWKA",
+    "pairs": 66,
+    "fail_rate": 0.06060606060606061,
+    "fail": 4,
+    "odd_fail": 0,
+    "embed_fail": 4,
+    "multi_rate": 0.8939393939393939,
+    "nE": 4,
+    "cat": "聚动散"
+   },
+   {
+    "mask": "XCPKA",
+    "pairs": 17,
+    "fail_rate": 0.058823529411764705,
+    "fail": 1,
+    "odd_fail": 0,
+    "embed_fail": 0,
+    "multi_rate": 0.8235294117647058,
+    "nE": 5,
+    "cat": "聚动散"
+   },
+   {
+    "mask": "OXPAF",
+    "pairs": 17,
+    "fail_rate": 0.058823529411764705,
+    "fail": 1,
+    "odd_fail": 0,
+    "embed_fail": 1,
+    "multi_rate": 0.7647058823529411,
+    "nE": 5,
+    "cat": "聚动散"
+   },
+   {
+    "mask": "XPWKAF",
+    "pairs": 35,
+    "fail_rate": 0.05714285714285714,
+    "fail": 2,
+    "odd_fail": 0,
+    "embed_fail": 1,
+    "multi_rate": 0.7428571428571429,
+    "nE": 6,
+    "cat": "聚动散"
+   },
+   {
+    "mask": "OXCWKA",
+    "pairs": 38,
+    "fail_rate": 0.05263157894736842,
+    "fail": 2,
+    "odd_fail": 0,
+    "embed_fail": 1,
+    "multi_rate": 0.8421052631578947,
+    "nE": 6,
+    "cat": "聚动散"
+   },
+   {
+    "mask": "OXPWKA",
+    "pairs": 193,
+    "fail_rate": 0.05181347150259067,
+    "fail": 10,
+    "odd_fail": 0,
+    "embed_fail": 10,
+    "multi_rate": 0.8911917098445595,
+    "nE": 6,
+    "cat": "聚动散"
+   },
+   {
+    "mask": "PWLKAF",
+    "pairs": 20,
+    "fail_rate": 0.05,
+    "fail": 1,
+    "odd_fail": 0,
+    "embed_fail": 1,
+    "multi_rate": 0.8,
+    "nE": 6,
+    "cat": "动散"
+   },
+   {
+    "mask": "OXCPWF",
+    "pairs": 20,
+    "fail_rate": 0.05,
+    "fail": 1,
+    "odd_fail": 0,
+    "embed_fail": 0,
+    "multi_rate": 0.85,
+    "nE": 6,
+    "cat": "聚动散"
+   }
+  ],
+  "mask_top_single": [
+   {
+    "mask": "OXPWLF",
+    "pairs": 16,
+    "single_rate": 0.3125,
+    "single": 5,
+    "fail_rate": 0.0
+   },
+   {
+    "mask": "CPWLKA",
+    "pairs": 17,
+    "single_rate": 0.29411764705882354,
+    "single": 5,
+    "fail_rate": 0.0
+   },
+   {
+    "mask": "OXLKA",
+    "pairs": 15,
+    "single_rate": 0.26666666666666666,
+    "single": 4,
+    "fail_rate": 0.06666666666666667
+   },
+   {
+    "mask": "XCPWKF",
+    "pairs": 21,
+    "single_rate": 0.23809523809523808,
+    "single": 5,
+    "fail_rate": 0.09523809523809523
+   },
+   {
+    "mask": "OXPLKF",
+    "pairs": 21,
+    "single_rate": 0.23809523809523808,
+    "single": 5,
+    "fail_rate": 0.0
+   },
+   {
+    "mask": "OXCPWAF",
+    "pairs": 40,
+    "single_rate": 0.225,
+    "single": 9,
+    "fail_rate": 0.0
+   },
+   {
+    "mask": "OXCPA",
+    "pairs": 15,
+    "single_rate": 0.2,
+    "single": 3,
+    "fail_rate": 0.0
+   },
+   {
+    "mask": "XPWLKA",
+    "pairs": 32,
+    "single_rate": 0.1875,
+    "single": 6,
+    "fail_rate": 0.03125
+   },
+   {
+    "mask": "OXPLK",
+    "pairs": 22,
+    "single_rate": 0.18181818181818182,
+    "single": 4,
+    "fail_rate": 0.0
+   },
+   {
+    "mask": "OXCPLK",
+    "pairs": 34,
+    "single_rate": 0.17647058823529413,
+    "single": 6,
+    "fail_rate": 0.0
+   },
+   {
+    "mask": "XCPWLKA",
+    "pairs": 34,
+    "single_rate": 0.17647058823529413,
+    "single": 6,
+    "fail_rate": 0.0
+   },
+   {
+    "mask": "OXPAF",
+    "pairs": 17,
+    "single_rate": 0.17647058823529413,
+    "single": 3,
+    "fail_rate": 0.058823529411764705
+   },
+   {
+    "mask": "XCPWLK",
+    "pairs": 23,
+    "single_rate": 0.17391304347826086,
+    "single": 4,
+    "fail_rate": 0.0
+   },
+   {
+    "mask": "XPWKAF",
+    "pairs": 35,
+    "single_rate": 0.17142857142857143,
+    "single": 6,
+    "fail_rate": 0.05714285714285714
+   },
+   {
+    "mask": "OCPWKF",
+    "pairs": 19,
+    "single_rate": 0.15789473684210525,
+    "single": 3,
+    "fail_rate": 0.0
+   }
+  ]
+ },
+ "product": {
+  "n_ok": 9827,
+  "conservation_ok": true,
+  "maxmol_hist": {
+   "3": 436,
+   "5": 578,
+   "6": 487,
+   "7": 561,
+   "10": 677,
+   "9": 545,
+   "8": 590,
+   "2": 244,
+   "11": 550,
+   "4": 173,
+   "12": 353,
+   "13": 460,
+   "14": 496,
+   "15": 232,
+   "16": 472,
+   "23": 134,
+   "19": 215,
+   "21": 142,
+   "25": 134,
+   "18": 243,
+   "24": 134,
+   "20": 406,
+   "17": 252,
+   "22": 241,
+   "26": 116,
+   "27": 98,
+   "28": 101,
+   "29": 70,
+   "30": 69,
+   "31": 45,
+   "32": 115,
+   "35": 29,
+   "36": 46,
+   "49": 18,
+   "34": 60,
+   "37": 20,
+   "39": 28,
+   "42": 22,
+   "40": 19,
+   "48": 8,
+   "46": 12,
+   "41": 18,
+   "38": 26,
+   "43": 21,
+   "50": 10,
+   "45": 12,
+   "33": 15,
+   "44": 17,
+   "51": 6,
+   "47": 6,
+   "53": 6,
+   "56": 3,
+   "52": 3,
+   "54": 3,
+   "58": 7,
+   "57": 2,
+   "59": 1,
+   "60": 1,
+   "63": 3,
+   "68": 3,
+   "66": 3,
+   "71": 4,
+   "69": 1,
+   "70": 3,
+   "62": 3,
+   "65": 3,
+   "55": 1,
+   "61": 1,
+   "64": 3,
+   "72": 1,
+   "82": 2,
+   "76": 2,
+   "87": 1,
+   "74": 1,
+   "108": 1,
+   "83": 1,
+   "80": 1,
+   "140": 1
+  },
+  "nmol_hist": {
+   "2": 1302,
+   "1": 643,
+   "3": 1185,
+   "4": 1005,
+   "5": 770,
+   "6": 662,
+   "7": 505,
+   "8": 424,
+   "12": 224,
+   "11": 300,
+   "9": 421,
+   "10": 381,
+   "13": 229,
+   "14": 166,
+   "15": 168,
+   "16": 138,
+   "17": 121,
+   "22": 75,
+   "21": 97,
+   "18": 116,
+   "20": 109,
+   "23": 74,
+   "19": 139,
+   "25": 38,
+   "24": 66,
+   "26": 42,
+   "27": 60,
+   "28": 30,
+   "30": 41,
+   "29": 42,
+   "31": 28,
+   "35": 55,
+   "33": 17,
+   "34": 34,
+   "36": 29,
+   "32": 27,
+   "39": 7,
+   "40": 6,
+   "41": 6,
+   "42": 5,
+   "37": 11,
+   "49": 4,
+   "45": 1,
+   "53": 1,
+   "51": 1,
+   "38": 5,
+   "46": 2,
+   "58": 2,
+   "48": 3,
+   "44": 4,
+   "57": 1,
+   "68": 1,
+   "60": 1,
+   "71": 1,
+   "55": 1,
+   "63": 1
+  },
+  "per_layer": {
+   "L1_2-8": {
+    "n": 2462,
+    "avg": 8.281884646628757,
+    "median": 8,
+    "max": 16,
+    "hist": {
+     "1-2": 107,
+     "3-4": 197,
+     "5-6": 479,
+     "7-9": 831,
+     "10-16": 848,
+     "17-32": 0,
+     "33-42": 0,
+     "43-64": 0,
+     "65-97": 0
+    }
+   },
+   "L2_9-16": {
+    "n": 2974,
+    "avg": 13.266980497646268,
+    "median": 12,
+    "max": 32,
+    "hist": {
+     "1-2": 39,
+     "3-4": 93,
+     "5-6": 446,
+     "7-9": 429,
+     "10-16": 1106,
+     "17-32": 861,
+     "33-42": 0,
+     "43-64": 0,
+     "65-97": 0
+    }
+   },
+   "L3_17-32": {
+    "n": 2462,
+    "avg": 16.660438667749798,
+    "median": 16,
+    "max": 60,
+    "hist": {
+     "1-2": 72,
+     "3-4": 251,
+     "5-6": 66,
+     "7-9": 240,
+     "10-16": 706,
+     "17-32": 941,
+     "33-42": 128,
+     "43-64": 58,
+     "65-97": 0
+    }
+   },
+   "L4_33+": {
+    "n": 1929,
+    "avg": 19.829445308449973,
+    "median": 17,
+    "max": 140,
+    "hist": {
+     "1-2": 26,
+     "3-4": 68,
+     "5-6": 74,
+     "7-9": 196,
+     "10-16": 580,
+     "17-32": 713,
+     "33-42": 155,
+     "43-64": 89,
+     "65-97": 26
+    }
+   }
+  },
+  "biggest_product": {
+   "A": "O14X13P24K4A13",
+   "B": "O14X14P23WK7A7F6",
+   "n": 140,
+   "maxmol": 140,
+   "products": "O28X27P47WK11A20F6"
+  },
+  "new_records": [
+   {
+    "A": "O14X13P24K4A13",
+    "B": "O14X14P23WK7A7F6",
+    "A_natoms": 68,
+    "B_natoms": 72,
+    "product": "O28X27P47WK11A20F6",
+    "size": 140,
+    "mask": "OXPWKAF",
+    "nE": 7,
+    "prev_catalog_max_same_mask": 72,
+    "prev_catalog_global_max": 97,
+    "n": 140,
+    "tv": 360,
+    "layer": "L4_33+"
+   },
+   {
+    "A": "X10P23K9",
+    "B": "O11X4C2P25W16K8",
+    "A_natoms": 42,
+    "B_natoms": 66,
+    "product": "O11X14C2P48W16K17",
+    "size": 108,
+    "mask": "OXCPWK",
+    "nE": 6,
+    "prev_catalog_max_same_mask": 66,
+    "prev_catalog_global_max": 97,
+    "n": 108,
+    "tv": 290,
+    "layer": "L4_33+"
+   },
+   {
+    "A": "P20K8A9",
+    "B": "O18X18P8W6",
+    "A_natoms": 37,
+    "B_natoms": 50,
+    "product": "O18X18P28W6K8A9",
+    "size": 87,
+    "mask": "OXPWKA",
+    "nE": 6,
+    "prev_catalog_max_same_mask": 32,
+    "prev_catalog_global_max": 97,
+    "n": 87,
+    "tv": 228,
+    "layer": "L4_33+"
+   },
+   {
+    "A": "P11W11K3A23",
+    "B": "O2P21K9A17",
+    "A_natoms": 48,
+    "B_natoms": 49,
+    "product": "O2P26W11K10A34",
+    "size": 83,
+    "mask": "OPWKA",
+    "nE": 5,
+    "prev_catalog_max_same_mask": 48,
+    "prev_catalog_global_max": 97,
+    "n": 97,
+    "tv": 240,
+    "layer": "L4_33+"
+   },
+   {
+    "A": "P15W14K7",
+    "B": "OP20K9A16",
+    "A_natoms": 36,
+    "B_natoms": 46,
+    "product": "OP35W14K16A16",
+    "size": 82,
+    "mask": "OPWKA",
+    "nE": 5,
+    "prev_catalog_max_same_mask": 48,
+    "prev_catalog_global_max": 97,
+    "n": 82,
+    "tv": 216,
+    "layer": "L4_33+"
+   }
+  ],
+  "new_record_molecule": {
+   "A": "O14X13P24K4A13",
+   "B": "O14X14P23WK7A7F6",
+   "A_natoms": 68,
+   "B_natoms": 72,
+   "product": "O28X27P47WK11A20F6",
+   "size": 140,
+   "mask": "OXPWKAF",
+   "nE": 7,
+   "prev_catalog_max_same_mask": 72,
+   "prev_catalog_global_max": 97,
+   "n": 140,
+   "tv": 360,
+   "layer": "L4_33+"
+  },
+  "catalog_global_max": 97,
+  "cap_violations": [
+   {
+    "A": "O5P2AF",
+    "B": "O6C2P3LA2",
+    "product": "O9C2P4LA3",
+    "size": 19,
+    "mask": "OCPLA",
+    "ref": 18
+   },
+   {
+    "A": "OWL3K3F",
+    "B": "O3W4LK8",
+    "product": "O4W5L4K11F",
+    "size": 25,
+    "mask": "OWLKF",
+    "ref": 18
+   },
+   {
+    "A": "X2P2WLK3",
+    "B": "PWLK5A2F5",
+    "product": "X2P3W2L2K8F5",
+    "size": 22,
+    "mask": "XPWLKF",
+    "ref": 18
+   },
+   {
+    "A": "C2PK3A4",
+    "B": "PL4K4F",
+    "product": "CP2L4K6A3F",
+    "size": 17,
+    "mask": "CPLKAF",
+    "ref": 16
+   },
+   {
+    "A": "O3C3P3K",
+    "B": "X2P6W3K2F2",
+    "product": "O3X2C3P9W3K3F2",
+    "size": 25,
+    "mask": "OXCPWKF",
+    "ref": 24
+   },
+   {
+    "A": "O2X3W2A4",
+    "B": "O2XCL3K6F2",
+    "product": "O4X4CW2LK6A4",
+    "size": 22,
+    "mask": "OXCWLKA",
+    "ref": 16
+   },
+   {
+    "A": "O5P2W2AF",
+    "B": "O5CP2A2F2",
+    "product": "O10CP4W2A3F3",
+    "size": 23,
+    "mask": "OCPWAF",
+    "ref": 18
+   },
+   {
+    "A": "O5XCW2K2",
+    "B": "O5X5PW2F2",
+    "product": "O10X6CPW4K2F2",
+    "size": 26,
+    "mask": "OXCPWKF",
+    "ref": 24
+   },
+   {
+    "A": "O4P2LA4F",
+    "B": "O8XP3WF3",
+    "product": "O9XP4LA3F4",
+    "size": 22,
+    "mask": "OXPLAF",
+    "ref": 20
+   },
+   {
+    "A": "O5XW2LK2A",
+    "B": "O3XCW3KA6F",
+    "product": "O8X2CW5LK3A7F",
+    "size": 28,
+    "mask": "OXCWLKAF",
+    "ref": 22
+   },
+   {
+    "A": "O6W2LK3",
+    "B": "O2W3K3A5F",
+    "product": "O6W5LK4A5F",
+    "size": 22,
+    "mask": "OWLKAF",
+    "ref": 20
+   },
+   {
+    "A": "O6XCP2WF",
+    "B": "O5X2CW3K2",
+    "product": "O11X3C2P2W4K2F",
+    "size": 25,
+    "mask": "OXCPWKF",
+    "ref": 24
+   },
+   {
+    "A": "O2WL2K6F2",
+    "B": "O3X2C2LK6A",
+    "product": "O5X2C2WL3K12AF2",
+    "size": 28,
+    "mask": "OXCWLKAF",
+    "ref": 22
+   },
+   {
+    "A": "O4X3L3KF2",
+    "B": "O7CW2LK3A",
+    "product": "O11X3CW2L4K4AF2",
+    "size": 28,
+    "mask": "OXCWLKAF",
+    "ref": 22
+   },
+   {
+    "A": "O5X5CPK",
+    "B": "O7XCP3W3F",
+    "product": "O12X6C2P4W3KF",
+    "size": 29,
+    "mask": "OXCPWKF",
+    "ref": 24
+   },
+   {
+    "A": "O6X2CWK2F",
+    "B": "O6CW2LK2A3",
+    "product": "O12X2C2W3LK4A3F",
+    "size": 28,
+    "mask": "OXCWLKAF",
+    "ref": 22
+   },
+   {
+    "A": "OW7LK3F",
+    "B": "W6K2A6",
+    "product": "OW12LK5A5F",
+    "size": 25,
+    "mask": "OWLKAF",
+    "ref": 20
+   },
+   {
+    "A": "O2XCWLK5A2F",
+    "B": "O2X3C2K7F",
+    "product": "O4X4C3WLK12A2F2",
+    "size": 29,
+    "mask": "OXCWLKAF",
+    "ref": 22
+   },
+   {
+    "A": "O3X3CWL2K2A2",
+    "B": "O3W4K5A3",
+    "product": "O2X3CW3L2K3A3",
+    "size": 17,
+    "mask": "OXCWLKA",
+    "ref": 16
+   },
+   {
+    "A": "O5L3K2A2F2",
+    "B": "O6X2CPW2KA2F",
+    "product": "O6L3K2A3F3",
+    "size": 17,
+    "mask": "OLKAF",
+    "ref": 16
+   }
+  ],
+  "n_cap_violations": 222,
+  "max_over_cap": 68,
+  "cap_violations_by_nE": {
+   "4": 30,
+   "5": 44,
+   "6": 107,
+   "7": 33,
+   "8": 8
+  },
+  "cap_violations_small_subsets": [],
+  "n_single": 643,
+  "single_in_catalog": 643,
+  "single_gt16": 280,
+  "strict_addition": {
+   "n_pairs_sum_in_catalog": 363,
+   "n_violations": 0,
+   "violation_examples": []
+  }
+ },
+ "cross_element": {
+  "by_nE": [
+   {
+    "nE": 2,
+    "pairs": 1,
+    "success": 1,
+    "success_rate": 1.0,
+    "odd_fail": 0,
+    "embed_fail": 0,
+    "inert": 0,
+    "single": 0,
+    "multi": 1
+   },
+   {
+    "nE": 3,
+    "pairs": 249,
+    "success": 246,
+    "success_rate": 0.9879518072289156,
+    "odd_fail": 0,
+    "embed_fail": 3,
+    "inert": 5,
+    "single": 2,
+    "multi": 239
+   },
+   {
+    "nE": 4,
+    "pairs": 1318,
+    "success": 1298,
+    "success_rate": 0.9848254931714719,
+    "odd_fail": 0,
+    "embed_fail": 20,
+    "inert": 6,
+    "single": 45,
+    "multi": 1247
+   },
+   {
+    "nE": 5,
+    "pairs": 2191,
+    "success": 2152,
+    "success_rate": 0.9821999087174806,
+    "odd_fail": 0,
+    "embed_fail": 33,
+    "inert": 11,
+    "single": 144,
+    "multi": 1997
+   },
+   {
+    "nE": 6,
+    "pairs": 2016,
+    "success": 1962,
+    "success_rate": 0.9732142857142857,
+    "odd_fail": 0,
+    "embed_fail": 36,
+    "inert": 7,
+    "single": 180,
+    "multi": 1775
+   },
+   {
+    "nE": 7,
+    "pairs": 2093,
+    "success": 2066,
+    "success_rate": 0.987099856665074,
+    "odd_fail": 0,
+    "embed_fail": 16,
+    "inert": 2,
+    "single": 149,
+    "multi": 1915
+   },
+   {
+    "nE": 8,
+    "pairs": 1586,
+    "success": 1564,
+    "success_rate": 0.9861286254728878,
+    "odd_fail": 0,
+    "embed_fail": 12,
+    "inert": 3,
+    "single": 95,
+    "multi": 1466
+   },
+   {
+    "nE": 9,
+    "pairs": 546,
+    "success": 538,
+    "success_rate": 0.9853479853479854,
+    "odd_fail": 0,
+    "embed_fail": 2,
+    "inert": 0,
+    "single": 28,
+    "multi": 510
+   }
+  ],
+  "by_combo": [
+   {
+    "combo": "散",
+    "pairs": 1,
+    "success_rate": 1.0,
+    "odd_fail": 0,
+    "embed_fail": 0,
+    "inert_rate": 0.0,
+    "single_rate": 0.0,
+    "multi_rate": 1.0,
+    "avg_maxmol": 5.0
+   },
+   {
+    "combo": "聚动",
+    "pairs": 192,
+    "success_rate": 0.9739583333333334,
+    "odd_fail": 0,
+    "embed_fail": 4,
+    "inert_rate": 0.0,
+    "single_rate": 0.0625,
+    "multi_rate": 0.9114583333333334,
+    "avg_maxmol": 15.427807486631016
+   },
+   {
+    "combo": "聚散",
+    "pairs": 193,
+    "success_rate": 0.9844559585492227,
+    "odd_fail": 0,
+    "embed_fail": 2,
+    "inert_rate": 0.010362694300518135,
+    "single_rate": 0.06735751295336788,
+    "multi_rate": 0.9067357512953368,
+    "avg_maxmol": 16.03684210526316
+   },
+   {
+    "combo": "动散",
+    "pairs": 195,
+    "success_rate": 0.9743589743589743,
+    "odd_fail": 0,
+    "embed_fail": 3,
+    "inert_rate": 0.005128205128205128,
+    "single_rate": 0.07179487179487179,
+    "multi_rate": 0.8974358974358975,
+    "avg_maxmol": 15.968421052631578
+   },
+   {
+    "combo": "聚动散",
+    "pairs": 9419,
+    "success_rate": 0.9830130587111159,
+    "odd_fail": 0,
+    "embed_fail": 113,
+    "inert_rate": 0.003291219874721308,
+    "single_rate": 0.06412570336553775,
+    "multi_rate": 0.9155961354708568,
+    "avg_maxmol": 14.055945566475861
+   }
+  ]
+ },
+ "examples": [
+  {
+   "tag": "大投料→全小分子",
+   "A": "O14X14P23WK7A7F6",
+   "B": "O3X8C15P10WK36A22F2",
+   "Ana": 72,
+   "Bna": 97,
+   "n": 169,
+   "tv": 408,
+   "odd": false,
+   "layer": "L4_33+",
+   "status": "ok",
+   "nmol": 63,
+   "maxmol": 6,
+   "prods": "26 × PK + 10 × OK + 10 × XA + 7 × OXCPKA + 4 × XC2A2 + 3 × F2 + 2 × WA + XA2F2",
+   "why": "投料很大但产物全是 ≤8 原子的常见小分子（拆解为二聚体/小分子）"
+  },
+  {
+   "tag": "成功且产物分子最长",
+   "A": "O14X13P24K4A13",
+   "B": "O14X14P23WK7A7F6",
+   "Ana": 68,
+   "Bna": 72,
+   "n": 140,
+   "tv": 360,
+   "odd": false,
+   "layer": "L4_33+",
+   "status": "ok",
+   "nmol": 1,
+   "maxmol": 140,
+   "prods": "O28X27P47WK11A20F6",
+   "why": "产物中出现很大的单分子（有限封顶内的长产物）"
+  },
+  {
+   "tag": "失败：偶价仍剩键",
+   "A": "O4X6C7P13L6K2",
+   "B": "O7X21CP24WK8",
+   "Ana": 38,
+   "Bna": 62,
+   "n": 100,
+   "tv": 244,
+   "odd": false,
+   "layer": "L4_33+",
+   "status": "fail_rem",
+   "nmol": 0,
+   "maxmol": 0,
+   "prods": null,
+   "why": "总价数为偶数，但贪心成键走到无合法可连对仍有原子未饱和"
+  },
+  {
+   "tag": "失败：产物摆放不合法",
+   "A": "O8P20A9",
+   "B": "O10X7P25W17L5",
+   "Ana": 37,
+   "Bna": 64,
+   "n": 101,
+   "tv": 260,
+   "odd": false,
+   "layer": "L4_33+",
+   "status": "fail_embed",
+   "nmol": 1,
+   "maxmol": 101,
+   "prods": null,
+   "why": "反应键数配平，但产物分子无法在六边形格上合法摆放（需 embedding 校验）"
+  },
+  {
+   "tag": "惰性（原样返回）",
+   "A": "O15X12K7",
+   "B": "O15X14K7",
+   "Ana": 34,
+   "Bna": 36,
+   "n": 70,
+   "tv": 184,
+   "odd": false,
+   "layer": "L4_33+",
+   "status": "ok",
+   "nmol": 2,
+   "maxmol": 36,
+   "prods": "O15X12K7 + O15X14K7",
+   "why": "两物质混合后完全不变：总向量没有更优的合法重组方式"
+  },
+  {
+   "tag": "产物碎片数最多",
+   "A": "O2X17P27W9L2K7",
+   "B": "O3X8C15P10WK36A22F2",
+   "Ana": 64,
+   "Bna": 97,
+   "n": 161,
+   "tv": 388,
+   "odd": false,
+   "layer": "L4_33+",
+   "status": "ok",
+   "nmol": 71,
+   "maxmol": 14,
+   "prods": "37 × PK + 15 × XA + 7 × XWA + 4 × C2 + 3 × OK + 2 × CF + 2 × CL + O2X3C3W3K3",
+   "why": "产物拆成很多个小分子（复分解/归中）"
+  },
+  {
+   "tag": "产物含 ≥33 原子的已知大分子",
+   "A": "O14X13P24K4A13",
+   "B": "X24P5W12LK14A22",
+   "Ana": 68,
+   "Bna": 78,
+   "n": 146,
+   "tv": 352,
+   "odd": false,
+   "layer": "L4_33+",
+   "status": "ok",
+   "nmol": 28,
+   "maxmol": 34,
+   "prods": "18 × XA + 4 × OX2P2W2KA2 + 4 × PK + O5X4P8W2K5A4 + O5X7P9W2LK5A5",
+   "why": "产物里出现了目录中的超大分子（>32 原子）"
+  },
+  {
+   "tag": "产物含目录中的大分子（17+ 原子）",
+   "A": "P10K16A9",
+   "B": "P4W27K13A13F",
+   "Ana": 35,
+   "Bna": 58,
+   "n": 93,
+   "tv": 228,
+   "odd": false,
+   "layer": "L4_33+",
+   "status": "ok",
+   "nmol": 10,
+   "maxmol": 34,
+   "prods": "6 × A2 + P2W6K4A6 + P4W6K8 + P7W12K15 + PW3K2A4F",
+   "why": "复分解/重组产物中包含目录里已有的大分子（非新纪录），说明反应能重新组装出已知大物质"
+  },
+  {
+   "tag": "单产物（大投料严格加法）",
+   "A": "X10P23K9",
+   "B": "O11X4C2P25W16K8",
+   "Ana": 42,
+   "Bna": 66,
+   "n": 108,
+   "tv": 290,
+   "odd": false,
+   "layer": "L4_33+",
+   "status": "ok",
+   "nmol": 1,
+   "maxmol": 108,
+   "prods": "O11X14C2P48W16K17",
+   "why": "两个大分子按总向量严格相加，只生成一个更大的分子"
+  },
+  {
+   "tag": "大投料→碎片全是小分子（≤6 原子）",
+   "A": "O17C8P7W3A4",
+   "B": "O3X8C15P10WK36A22F2",
+   "Ana": 39,
+   "Bna": 97,
+   "n": 136,
+   "tv": 320,
+   "odd": false,
+   "layer": "L4_33+",
+   "status": "ok",
+   "nmol": 48,
+   "maxmol": 6,
+   "prods": "19 × OK + 16 × PK + 7 × XC2A2 + 2 × C2WA2 + C2A2 + CWA2F + CWA3F + OXCPKA",
+   "why": "投料 ≥97 原子，但产物全部是 ≤6 原子的碎片"
+  }
+ ],
+ "total_vector_law": {
+  "sampled_pairs": {
+   "n_pairs": 10000,
+   "n_distinct_sums": 9977,
+   "n_groups_ge2": 23,
+   "collision_rate": 0.0023,
+   "all_identical": true
+  },
+  "exact_layer_collisions": {
+   "L1_exact": {
+    "label": "L1(2-8) 全层",
+    "n_entries": 3931,
+    "total_pairs": 7724415,
+    "distinct_sums": 655965,
+    "groups_ge2": 624401,
+    "pairs_in_groups_ge2": 7692851,
+    "collision_rate": 0.995913735862198,
+    "base": 17
+   },
+   "L2_subset_exact": {
+    "label": "L2(9-16) 子集3000",
+    "n_entries": 3000,
+    "total_pairs": 4498500,
+    "distinct_sums": 4089952,
+    "groups_ge2": 364289,
+    "pairs_in_groups_ge2": 772837,
+    "collision_rate": 0.1717988218294987,
+    "base": 33
+   },
+   "L3_exact": {
+    "label": "L3(17-32) 全层",
+    "n_entries": 937,
+    "total_pairs": 438516,
+    "distinct_sums": 323338,
+    "groups_ge2": 76359,
+    "pairs_in_groups_ge2": 191537,
+    "collision_rate": 0.4367845186948709
+   },
+   "L4_exact": {
+    "label": "L4(33+) 全层",
+    "n_entries": 327,
+    "total_pairs": 53301,
+    "distinct_sums": 49161,
+    "groups_ge2": 3417,
+    "pairs_in_groups_ge2": 7557,
+    "collision_rate": 0.14177970394551698
+   },
+   "full_catalog_sample": {
+    "label": "全目录随机对抽样",
+    "sampled_pairs": 1999977,
+    "distinct_sums_in_sample": 1925027,
+    "collision_pairs_frac_in_sample": 0.037475430967456126,
+    "q_est_two_pairs_same_sum": 3.922792185075004e-08,
+    "N_pairs": 3546883200,
+    "note": "q_est=两个随机物质对的总向量相同的概率（样本二阶矩估计）"
+   }
+  },
+  "verification": {
+   "n_groups_verified": 100,
+   "n_identical": 100,
+   "n_ok": 100,
+   "n_embed_ok": 97,
+   "n_embed_fail": 3,
+   "n_shuffled_same": 100
+  }
+ },
+ "total_pairs_sampled": 10000,
+ "total_sim_s": 6414.4,
+ "total_embed_s": 16841.2,
+ "embed_retry": {
+  "cap": 8000000,
+  "n_targets": 131,
+  "n_recovered": 9
+ },
+ "pure_supplement": {
+  "pure_counts": {
+   "聚": 30,
+   "动": 30,
+   "散": 30
+  },
+  "by_combo": {
+   "聚": {
+    "pairs": 435,
+    "ok": 432,
+    "fail_rem": 3,
+    "fail_embed": 0,
+    "inert": 69,
+    "single": 43,
+    "multi": 320,
+    "avg_maxmol": 5.43287037037037
+   },
+   "动": {
+    "pairs": 435,
+    "ok": 432,
+    "fail_rem": 3,
+    "fail_embed": 0,
+    "inert": 69,
+    "single": 43,
+    "multi": 320,
+    "avg_maxmol": 5.43287037037037
+   },
+   "散": {
+    "pairs": 435,
+    "ok": 432,
+    "fail_rem": 3,
+    "fail_embed": 0,
+    "inert": 69,
+    "single": 43,
+    "multi": 320,
+    "avg_maxmol": 5.43287037037037
+   },
+   "聚动": {
+    "pairs": 900,
+    "ok": 864,
+    "fail_rem": 36,
+    "fail_embed": 0,
+    "inert": 0,
+    "single": 156,
+    "multi": 708,
+    "avg_maxmol": 5.777777777777778
+   },
+   "聚散": {
+    "pairs": 900,
+    "ok": 864,
+    "fail_rem": 36,
+    "fail_embed": 0,
+    "inert": 0,
+    "single": 156,
+    "multi": 708,
+    "avg_maxmol": 5.777777777777778
+   },
+   "动散": {
+    "pairs": 900,
+    "ok": 864,
+    "fail_rem": 36,
+    "fail_embed": 0,
+    "inert": 0,
+    "single": 156,
+    "multi": 708,
+    "avg_maxmol": 5.777777777777778
+   }
+  }
+ }
+}

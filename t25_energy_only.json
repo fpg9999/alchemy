@@ -1,0 +1,135 @@
+{
+ "stats": {
+  "分子数": 3931,
+  "总S": 9362,
+  "可转换S(聚-散)": 4008,
+  "冻结S": 5354,
+  "C": 11194,
+  "L": 9252,
+  "无S键的稳定分子": 893,
+  "含冻结S(无聚-散S)的分子": 1020,
+  "会发生自然弛豫的分子": 2018
+ },
+ "examples": [
+  {
+   "formula": "CF",
+   "convertible_S": 1,
+   "frozen_S": 0,
+   "C": 0,
+   "L": 0,
+   "release": 2
+  },
+  {
+   "formula": "OK",
+   "convertible_S": 3,
+   "frozen_S": 0,
+   "C": 0,
+   "L": 0,
+   "release": 6
+  },
+  {
+   "formula": "XA",
+   "convertible_S": 2,
+   "frozen_S": 0,
+   "C": 0,
+   "L": 0,
+   "release": 4
+  },
+  {
+   "formula": "C2A",
+   "convertible_S": 2,
+   "frozen_S": 0,
+   "C": 0,
+   "L": 0,
+   "release": 4
+  },
+  {
+   "formula": "CAF",
+   "convertible_S": 1,
+   "frozen_S": 0,
+   "C": 0,
+   "L": 1,
+   "release": 2
+  },
+  {
+   "formula": "CKA",
+   "convertible_S": 1,
+   "frozen_S": 0,
+   "C": 0,
+   "L": 2,
+   "release": 2
+  },
+  {
+   "formula": "CLA",
+   "convertible_S": 1,
+   "frozen_S": 0,
+   "C": 1,
+   "L": 0,
+   "release": 2
+  },
+  {
+   "formula": "CWK",
+   "convertible_S": 1,
+   "frozen_S": 0,
+   "C": 2,
+   "L": 0,
+   "release": 2
+  },
+  {
+   "formula": "O2A",
+   "convertible_S": 2,
+   "frozen_S": 2,
+   "C": 0,
+   "L": 0,
+   "release": 4
+  },
+  {
+   "formula": "OAF",
+   "convertible_S": 3,
+   "frozen_S": 0,
+   "C": 0,
+   "L": 0,
+   "release": 6
+  },
+  {
+   "formula": "OCA",
+   "convertible_S": 2,
+   "frozen_S": 1,
+   "C": 0,
+   "L": 0,
+   "release": 4
+  },
+  {
+   "formula": "OLA",
+   "convertible_S": 2,
+   "frozen_S": 1,
+   "C": 0,
+   "L": 0,
+   "release": 4
+  },
+  {
+   "formula": "OWF",
+   "convertible_S": 1,
+   "frozen_S": 0,
+   "C": 2,
+   "L": 0,
+   "release": 2
+  },
+  {
+   "formula": "OXF",
+   "convertible_S": 1,
+   "frozen_S": 2,
+   "C": 0,
+   "L": 0,
+   "release": 2
+  },
+  {
+   "formula": "X2A",
+   "convertible_S": 2,
+   "frozen_S": 1,
+   "C": 0,
+   "L": 0,
+   "release": 4
+  }
+ ]
+}

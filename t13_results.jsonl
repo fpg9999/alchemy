@@ -1,0 +1,430 @@
+{"vec": [28, 27, 0, 47, 1, 0, 11, 20, 6], "n": 140, "t": 5.18, "ok": true, "nmols": 1, "max": 140, "top": [140], "formula": "O28X27P47WK11A20F6", "phase": "seed", "label": "base_V140"}
+{"vec": [29, 28, 0, 49, 1, 0, 12, 21, 6], "n": 146, "t": 5.86, "ok": true, "nmols": 2, "max": 97, "top": [97, 49], "formula": "O19X19P32WK8A13F5", "phase": "seed", "label": "scale_1.05"}
+{"vec": [31, 30, 0, 52, 1, 0, 12, 22, 7], "n": 155, "t": 7.08, "ok": true, "nmols": 2, "max": 128, "top": [128, 27], "formula": "O27X23P45WK10A22", "phase": "seed", "label": "scale_1.1"}
+{"vec": [32, 31, 0, 54, 1, 0, 13, 23, 7], "n": 161, "t": 8.07, "ok": true, "nmols": 2, "max": 125, "top": [125, 36], "formula": "O25X24P42WK10A18F5", "phase": "seed", "label": "scale_1.15"}
+{"vec": [34, 32, 0, 56, 1, 0, 13, 24, 7], "n": 167, "t": 8.84, "ok": true, "nmols": 3, "max": 115, "top": [115, 50, 2], "formula": "O25X20P41K9A19F", "phase": "seed", "label": "scale_1.2"}
+{"vec": [35, 34, 0, 59, 1, 0, 14, 25, 8], "n": 176, "t": 10.48, "ok": true, "nmols": 2, "max": 140, "top": [140, 36], "formula": "O28X27P47WK11A20F6", "phase": "seed", "label": "scale_1.25"}
+{"vec": [37, 36, 1, 63, 1, 0, 15, 27, 8], "n": 188, "t": 11.55, "ok": true, "nmols": 3, "max": 114, "top": [114, 72, 2], "formula": "O23X22P39WK9A17F3", "phase": "seed", "label": "scale_1.33"}
+{"vec": [43, 40, 0, 70, 2, 0, 16, 30, 9], "n": 210, "t": 14.11, "ok": true, "nmols": 4, "max": 156, "top": [156, 50, 2, 2], "formula": "O33X30P54K12A24F3", "phase": "seed", "label": "scale_1.5"}
+{"vec": [49, 47, 0, 82, 2, 0, 19, 35, 10], "n": 244, "t": 19.33, "ok": true, "nmols": 2, "max": 217, "top": [217, 27], "formula": "O45X40P75W2K17A35F3", "phase": "seed", "label": "scale_1.75"}
+{"vec": [56, 54, 0, 94, 2, 0, 22, 40, 12], "n": 280, "t": 26.66, "ok": true, "nmols": 3, "max": 215, "top": [215, 38, 27], "formula": "O45X39P75W2K17A36F", "phase": "seed", "label": "scale_2.0"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 21, 6], "n": 141, "t": 5.22, "ok": true, "nmols": 2, "max": 139, "top": [139, 2], "formula": "O28X27P47WK11A21F4", "phase": "seed", "label": "pm_k1_p_0"}
+{"vec": [29, 27, 0, 46, 1, 0, 11, 20, 6], "n": 140, "t": 5.24, "ok": true, "nmols": 3, "max": 136, "top": [136, 2, 2], "formula": "O29X27P46WK11A20F2", "phase": "seed", "label": "pm_k1_m_1"}
+{"vec": [28, 27, 0, 47, 2, 0, 11, 20, 6], "n": 141, "t": 5.24, "ok": true, "nmols": 2, "max": 139, "top": [139, 2], "formula": "O28X27P47W2K11A20F4", "phase": "seed", "label": "pm_k1_p_2"}
+{"vec": [28, 27, 0, 47, 0, 0, 11, 20, 6], "n": 139, "t": 5.01, "ok": true, "nmols": 1, "max": 139, "top": [139], "formula": "O28X27P47K11A20F6", "phase": "seed", "label": "pm_k1_m_3"}
+{"vec": [29, 27, 0, 47, 1, 0, 12, 20, 6], "n": 142, "t": 5.45, "ok": true, "nmols": 3, "max": 138, "top": [138, 2, 2], "formula": "O29X27P47WK12A20F2", "phase": "seed", "label": "pm_k1_p_4"}
+{"vec": [26, 27, 0, 47, 1, 0, 11, 20, 6], "n": 138, "t": 4.92, "ok": true, "nmols": 4, "max": 132, "top": [132, 2, 2, 2], "formula": "O26X27P47WK11A20", "phase": "seed", "label": "pm_k1_m_5"}
+{"vec": [29, 27, 0, 47, 1, 1, 11, 20, 6], "n": 142, "t": 5.4, "ok": true, "nmols": 4, "max": 72, "top": [72, 66, 2, 2], "formula": "O16X12P26K6A12", "phase": "seed", "label": "pm_k1_p_6"}
+{"vec": [28, 27, 0, 47, 2, 1, 11, 20, 5], "n": 141, "t": 5.36, "ok": true, "nmols": 2, "max": 139, "top": [139, 2], "formula": "O28X27P47W2K11A20F4", "phase": "seed", "label": "pm_k2_p_0"}
+{"vec": [28, 27, 0, 47, 1, 0, 10, 21, 7], "n": 141, "t": 5.29, "ok": true, "nmols": 3, "max": 120, "top": [120, 19, 2], "formula": "O25X22P42WK9A21", "phase": "seed", "label": "pm_k2_p_2"}
+{"vec": [28, 27, 0, 45, 1, 0, 11, 19, 6], "n": 137, "t": 4.81, "ok": true, "nmols": 4, "max": 100, "top": [100, 33, 2, 2], "formula": "O22X17P35WK9A14F2", "phase": "seed", "label": "pm_k2_m_3"}
+{"vec": [28, 29, 0, 47, 1, 0, 11, 20, 6], "n": 142, "t": 5.31, "ok": true, "nmols": 2, "max": 92, "top": [92, 50], "formula": "O19X17P32K7A15F2", "phase": "seed", "label": "pm_k2_p_4"}
+{"vec": [27, 27, 0, 47, 1, 0, 10, 19, 6], "n": 137, "t": 4.99, "ok": true, "nmols": 3, "max": 133, "top": [133, 2, 2], "formula": "O27X27P47WK10A19F2", "phase": "seed", "label": "pm_k2_m_5"}
+{"vec": [28, 27, 0, 47, 1, 0, 12, 20, 7], "n": 142, "t": 5.22, "ok": true, "nmols": 2, "max": 140, "top": [140, 2], "formula": "O28X27P47WK12A20F5", "phase": "seed", "label": "pm_k2_p_6"}
+{"vec": [28, 27, 0, 46, 1, 0, 11, 20, 7], "n": 140, "t": 4.98, "ok": true, "nmols": 3, "max": 136, "top": [136, 2, 2], "formula": "O28X27P46WK11A20F3", "phase": "seed", "label": "pm_k2_m_7"}
+{"vec": [29, 27, 0, 48, 1, 1, 12, 20, 6], "n": 144, "t": 5.7, "ok": true, "nmols": 5, "max": 57, "top": [57, 42, 28, 15, 2], "formula": "O11X12P18WK5A6F4", "phase": "seed", "label": "pm_k3_p_0"}
+{"vec": [28, 27, 0, 47, 0, 0, 11, 19, 6], "n": 138, "t": 5.01, "ok": true, "nmols": 4, "max": 64, "top": [64, 42, 17, 15], "formula": "O13X12P22K5A10F2", "phase": "seed", "label": "pm_k3_m_1"}
+{"vec": [29, 29, 1, 47, 1, 0, 11, 20, 6], "n": 144, "t": 5.55, "ok": true, "nmols": 5, "max": 59, "top": [59, 48, 33, 2, 2], "formula": "O13X10P21K5A9F", "phase": "seed", "label": "pm_k3_p_2"}
+{"vec": [27, 27, 0, 47, 1, 0, 11, 20, 5], "n": 138, "t": 5.0, "ok": true, "nmols": 3, "max": 100, "top": [100, 36, 2], "formula": "O20X20P35WK8A15F", "phase": "seed", "label": "pm_k3_m_3"}
+{"vec": [28, 28, 2, 47, 1, 0, 11, 20, 6], "n": 143, "t": 5.6, "ok": true, "nmols": 2, "max": 141, "top": [141, 2], "formula": "O28X28P47WK11A20F6", "phase": "seed", "label": "pm_k3_p_4"}
+{"vec": [27, 27, 0, 46, 1, 0, 11, 20, 6], "n": 138, "t": 5.07, "ok": true, "nmols": 2, "max": 100, "top": [100, 38], "formula": "O20X19P34WK8A16F2", "phase": "seed", "label": "pm_k3_m_5"}
+{"vec": [29, 27, 0, 47, 2, 0, 11, 20, 7], "n": 143, "t": 5.51, "ok": true, "nmols": 4, "max": 72, "top": [72, 67, 2, 2], "formula": "O16X12P26K6A12", "phase": "seed", "label": "pm_k3_p_6"}
+{"vec": [28, 27, 0, 47, 1, 0, 13, 22, 6], "n": 144, "t": 5.65, "ok": true, "nmols": 4, "max": 138, "top": [138, 2, 2, 2], "formula": "O28X27P47WK13A22", "phase": "seed", "label": "pm_k4_p_0"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 18, 6], "n": 138, "t": 5.14, "ok": true, "nmols": 1, "max": 138, "top": [138], "formula": "O28X27P47WK11A18F6", "phase": "seed", "label": "pm_k4_m_1"}
+{"vec": [28, 28, 0, 47, 1, 0, 12, 22, 7], "n": 145, "t": 5.68, "ok": true, "nmols": 4, "max": 139, "top": [139, 2, 2, 2], "formula": "O28X28P47WK12A22F", "phase": "seed", "label": "pm_k4_p_2"}
+{"vec": [28, 26, 0, 47, 0, 0, 10, 19, 5], "n": 135, "t": 4.75, "ok": true, "nmols": 2, "max": 118, "top": [118, 17], "formula": "O25X22P42K9A18F2", "phase": "seed", "label": "pm_k4_m_3"}
+{"vec": [28, 27, 1, 47, 1, 1, 11, 20, 8], "n": 144, "t": 5.7, "ok": true, "nmols": 3, "max": 140, "top": [140, 2, 2], "formula": "O28X27P47WK11A20F6", "phase": "seed", "label": "pm_k4_p_4"}
+{"vec": [27, 27, 0, 46, 1, 0, 10, 20, 7], "n": 138, "t": 4.96, "ok": true, "nmols": 3, "max": 77, "top": [77, 59, 2], "formula": "O16X14P27K6A13F", "phase": "seed", "label": "pm_k4_m_5"}
+{"vec": [30, 27, 0, 48, 1, 0, 12, 20, 6], "n": 144, "t": 5.73, "ok": true, "nmols": 4, "max": 84, "top": [84, 56, 2, 2], "formula": "O18X17P29K7A13", "phase": "seed", "label": "pm_k4_p_6"}
+{"vec": [28, 26, 0, 46, 1, 0, 10, 20, 6], "n": 137, "t": 4.9, "ok": true, "nmols": 3, "max": 92, "top": [92, 43, 2], "formula": "O20X16P33K7A16", "phase": "seed", "label": "pm_k4_m_7"}
+{"vec": [29, 27, 1, 47, 1, 0, 11, 21, 8], "n": 145, "t": 5.64, "ok": true, "nmols": 6, "max": 72, "top": [72, 65, 2, 2, 2], "formula": "O16X12P26K6A12", "phase": "seed", "label": "pm_k5_p_0"}
+{"vec": [28, 26, 0, 46, 1, 0, 11, 19, 5], "n": 136, "t": 3.71, "ok": true, "nmols": 2, "max": 81, "top": [81, 55], "formula": "O17X15P28K6A12F3", "phase": "seed", "label": "pm_k5_m_1"}
+{"vec": [28, 27, 1, 48, 1, 0, 11, 20, 8], "n": 144, "t": 3.98, "ok": true, "nmols": 4, "max": 138, "top": [138, 2, 2, 2], "formula": "O28X27P48WK11A20F3", "phase": "seed", "label": "pm_k5_p_2"}
+{"vec": [28, 27, 0, 47, 1, 0, 9, 20, 4], "n": 136, "t": 3.62, "ok": true, "nmols": 2, "max": 107, "top": [107, 29], "formula": "O22X21P37K7A16F4", "phase": "seed", "label": "pm_k5_m_3"}
+{"vec": [28, 28, 1, 47, 3, 1, 11, 20, 6], "n": 145, "t": 4.16, "ok": true, "nmols": 3, "max": 141, "top": [141, 2, 2], "formula": "O28X28P47W3K11A20F4", "phase": "seed", "label": "pm_k5_p_4"}
+{"vec": [26, 26, 0, 47, 0, 0, 11, 20, 6], "n": 136, "t": 3.68, "ok": true, "nmols": 6, "max": 50, "top": [50, 40, 40, 2, 2], "formula": "O10X12P19K3A6", "phase": "seed", "label": "pm_k5_m_5"}
+{"vec": [28, 28, 1, 48, 1, 1, 12, 20, 6], "n": 145, "t": 4.11, "ok": true, "nmols": 3, "max": 72, "top": [72, 71, 2], "formula": "O14X14P24K6A10F4", "phase": "seed", "label": "pm_k5_p_6"}
+{"vec": [27, 27, 0, 47, 0, 0, 11, 20, 5], "n": 137, "t": 3.52, "ok": true, "nmols": 3, "max": 77, "top": [77, 36, 24], "formula": "O15X15P26K6A12F3", "phase": "seed", "label": "pm_k5_m_7"}
+{"vec": [29, 27, 1, 47, 1, 1, 12, 20, 8], "n": 146, "t": 3.82, "ok": true, "nmols": 5, "max": 138, "top": [138, 2, 2, 2, 2], "formula": "O29X27P47WK12A20F2", "phase": "seed", "label": "pm_k6_p_0"}
+{"vec": [27, 26, 0, 46, 0, 0, 11, 20, 6], "n": 136, "t": 4.94, "ok": true, "nmols": 2, "max": 100, "top": [100, 36], "formula": "O20X19P34K8A15F4", "phase": "seed", "label": "pm_k6_m_1"}
+{"vec": [29, 28, 1, 47, 2, 2, 11, 20, 6], "n": 146, "t": 5.83, "ok": true, "nmols": 6, "max": 78, "top": [78, 31, 31, 2, 2], "formula": "O16X15P26W2K6A11F2", "phase": "seed", "label": "pm_k6_p_2"}
+{"vec": [28, 25, 0, 47, 0, 0, 9, 20, 6], "n": 135, "t": 4.75, "ok": true, "nmols": 3, "max": 131, "top": [131, 2, 2], "formula": "O28X25P47K9A20F2", "phase": "seed", "label": "pm_k6_m_3"}
+{"vec": [28, 27, 0, 47, 2, 1, 11, 21, 9], "n": 146, "t": 5.98, "ok": true, "nmols": 4, "max": 140, "top": [140, 2, 2, 2], "formula": "O28X27P47W2K11A21F4", "phase": "seed", "label": "pm_k6_p_4"}
+{"vec": [29, 27, 0, 47, 1, 0, 10, 19, 4], "n": 137, "t": 5.04, "ok": true, "nmols": 2, "max": 108, "top": [108, 29], "formula": "O23X20P37K8A16F4", "phase": "seed", "label": "pm_k6_m_5"}
+{"vec": [29, 28, 0, 48, 1, 4, 11, 20, 6], "n": 147, "t": 6.08, "ok": true, "nmols": 6, "max": 57, "top": [57, 30, 28, 28, 2], "formula": "O11X12P18WK5A6F4", "phase": "seed", "label": "pm_k6_p_6"}
+{"vec": [28, 26, 0, 46, 0, 0, 10, 20, 6], "n": 136, "t": 4.95, "ok": true, "nmols": 3, "max": 109, "top": [109, 25, 2], "formula": "O23X21P38K8A18F", "phase": "seed", "label": "pm_k6_m_7"}
+{"vec": [28, 29, 0, 50, 1, 0, 12, 20, 6], "n": 146, "t": 6.04, "ok": true, "nmols": 3, "max": 142, "top": [142, 2, 2], "formula": "O28X29P50WK12A20F2", "phase": "seed", "label": "pm_k7_p_0"}
+{"vec": [27, 26, 0, 47, 1, 0, 11, 19, 5], "n": 136, "t": 4.91, "ok": true, "nmols": 3, "max": 132, "top": [132, 2, 2], "formula": "O27X26P47WK11A19F", "phase": "seed", "label": "pm_k7_m_1"}
+{"vec": [30, 29, 0, 48, 1, 1, 12, 20, 7], "n": 148, "t": 6.18, "ok": true, "nmols": 4, "max": 142, "top": [142, 2, 2, 2], "formula": "O30X29P48WK12A20F2", "phase": "seed", "label": "pm_k7_p_2"}
+{"vec": [27, 26, 0, 46, 1, 0, 10, 18, 5], "n": 133, "t": 4.58, "ok": true, "nmols": 2, "max": 131, "top": [131, 2], "formula": "O27X26P46WK10A18F3", "phase": "seed", "label": "pm_k7_m_3"}
+{"vec": [28, 28, 1, 48, 1, 1, 12, 21, 6], "n": 146, "t": 6.01, "ok": true, "nmols": 3, "max": 72, "top": [72, 72, 2], "formula": "O14X14P24WK6A11F2", "phase": "seed", "label": "pm_k7_p_4"}
+{"vec": [28, 26, 0, 46, 0, 0, 10, 20, 4], "n": 134, "t": 4.71, "ok": true, "nmols": 2, "max": 109, "top": [109, 25], "formula": "O23X21P38K8A18F", "phase": "seed", "label": "pm_k7_m_5"}
+{"vec": [28, 28, 5, 47, 1, 0, 11, 21, 7], "n": 148, "t": 5.96, "ok": true, "nmols": 6, "max": 92, "top": [92, 48, 2, 2, 2], "formula": "O19X17P32K7A15F2", "phase": "seed", "label": "pm_k7_p_6"}
+{"vec": [28, 27, 0, 46, 0, 0, 10, 19, 6], "n": 136, "t": 4.89, "ok": true, "nmols": 2, "max": 111, "top": [111, 25], "formula": "O23X22P38K8A17F3", "phase": "seed", "label": "pm_k7_m_7"}
+{"vec": [30, 27, 0, 47, 1, 2, 11, 24, 6], "n": 148, "t": 6.21, "ok": true, "nmols": 4, "max": 142, "top": [142, 2, 2, 2], "formula": "O30X27P47WL2K11A24", "phase": "seed", "label": "pm_k8_p_0"}
+{"vec": [28, 27, 0, 47, 1, 0, 10, 17, 5], "n": 135, "t": 3.94, "ok": true, "nmols": 2, "max": 116, "top": [116, 19], "formula": "O25X22P42WK9A17", "phase": "seed", "label": "pm_k8_m_1"}
+{"vec": [30, 28, 0, 48, 2, 0, 13, 20, 7], "n": 148, "t": 4.67, "ok": true, "nmols": 5, "max": 134, "top": [134, 8, 2, 2, 2], "formula": "O28X27P45W2K12A19F", "phase": "seed", "label": "pm_k8_p_2"}
+{"vec": [28, 26, 0, 45, 1, 0, 9, 20, 6], "n": 135, "t": 3.73, "ok": true, "nmols": 3, "max": 106, "top": [106, 27, 2], "formula": "O22X21P36WK7A16F3", "phase": "seed", "label": "pm_k8_m_3"}
+{"vec": [29, 27, 1, 47, 2, 1, 11, 22, 7], "n": 147, "t": 4.44, "ok": true, "nmols": 5, "max": 139, "top": [139, 2, 2, 2, 2], "formula": "O29X27CP47W2K11A22", "phase": "seed", "label": "pm_k8_p_4"}
+{"vec": [27, 27, 0, 46, 0, 0, 11, 19, 4], "n": 134, "t": 3.64, "ok": true, "nmols": 2, "max": 100, "top": [100, 34], "formula": "O20X19P34K8A15F4", "phase": "seed", "label": "pm_k8_m_5"}
+{"vec": [28, 28, 1, 48, 3, 0, 12, 20, 7], "n": 147, "t": 4.43, "ok": true, "nmols": 4, "max": 141, "top": [141, 2, 2, 2], "formula": "O28X28P48W3K12A20F2", "phase": "seed", "label": "pm_k8_p_6"}
+{"vec": [26, 27, 0, 46, 1, 0, 9, 19, 5], "n": 133, "t": 3.62, "ok": true, "nmols": 3, "max": 129, "top": [129, 2, 2], "formula": "O26X27P46WK9A19F", "phase": "seed", "label": "pm_k8_m_7"}
+{"vec": [30, 27, 0, 47, 1, 0, 11, 20, 6], "n": 142, "t": 4.09, "ok": true, "nmols": 3, "max": 104, "top": [104, 36, 2], "formula": "O24X17P37K9A17", "phase": "seed", "label": "add_O1"}
+{"vec": [31, 27, 0, 47, 1, 0, 10, 20, 6], "n": 142, "t": 5.7, "ok": true, "nmols": 3, "max": 86, "top": [86, 54, 2], "formula": "O19X17P29WK6A12F2", "phase": "seed", "label": "add_O3"}
+{"vec": [25, 27, 0, 47, 1, 0, 11, 20, 5], "n": 136, "t": 4.95, "ok": true, "nmols": 3, "max": 132, "top": [132, 2, 2], "formula": "O25X27P47WK11A20F", "phase": "seed", "label": "sub_O3"}
+{"vec": [33, 27, 0, 46, 1, 0, 11, 20, 6], "n": 144, "t": 5.87, "ok": true, "nmols": 2, "max": 101, "top": [101, 43], "formula": "O24X18P33K8A15F3", "phase": "seed", "label": "add_O5"}
+{"vec": [23, 27, 0, 46, 1, 0, 11, 20, 6], "n": 134, "t": 4.65, "ok": true, "nmols": 8, "max": 28, "top": [28, 28, 28, 17, 12], "formula": "O5X6P10K3A4", "phase": "seed", "label": "sub_O5"}
+{"vec": [36, 27, 0, 47, 1, 0, 11, 20, 6], "n": 148, "t": 6.27, "ok": true, "nmols": 5, "max": 66, "top": [66, 45, 21, 14, 2], "formula": "O16X12P22K4A10F2", "phase": "seed", "label": "add_O8"}
+{"vec": [20, 27, 0, 47, 1, 0, 11, 20, 6], "n": 132, "t": 4.53, "ok": true, "nmols": 4, "max": 36, "top": [36, 34, 34, 28], "formula": "O6X8P14K2A6", "phase": "seed", "label": "sub_O8"}
+{"vec": [28, 28, 0, 47, 1, 0, 11, 20, 6], "n": 141, "t": 5.59, "ok": true, "nmols": 1, "max": 141, "top": [141], "formula": "O28X28P47WK11A20F6", "phase": "seed", "label": "add_X1"}
+{"vec": [28, 26, 0, 47, 1, 0, 11, 20, 6], "n": 139, "t": 5.4, "ok": true, "nmols": 2, "max": 137, "top": [137, 2], "formula": "O28X26P47WK11A20F4", "phase": "seed", "label": "sub_X1"}
+{"vec": [28, 25, 0, 47, 1, 0, 11, 20, 6], "n": 138, "t": 5.33, "ok": true, "nmols": 3, "max": 134, "top": [134, 2, 2], "formula": "O28X25P47WK11A20F2", "phase": "seed", "label": "sub_X2"}
+{"vec": [28, 30, 0, 47, 1, 0, 11, 20, 6], "n": 143, "t": 5.76, "ok": true, "nmols": 4, "max": 43, "top": [43, 42, 30, 28], "formula": "O7X12P12WK3A4F4", "phase": "seed", "label": "add_X3"}
+{"vec": [28, 24, 0, 47, 1, 0, 11, 20, 6], "n": 137, "t": 5.24, "ok": true, "nmols": 4, "max": 131, "top": [131, 2, 2, 2], "formula": "O28X24P47WK11A20", "phase": "seed", "label": "sub_X3"}
+{"vec": [28, 32, 0, 47, 1, 0, 11, 20, 6], "n": 145, "t": 5.92, "ok": true, "nmols": 3, "max": 89, "top": [89, 41, 15], "formula": "O18X17P30WK7A13F3", "phase": "seed", "label": "add_X5"}
+{"vec": [28, 22, 0, 47, 1, 0, 11, 20, 6], "n": 135, "t": 4.97, "ok": true, "nmols": 3, "max": 131, "top": [131, 2, 2], "formula": "O28X22P47WK11A20F2", "phase": "seed", "label": "sub_X5"}
+{"vec": [28, 35, 0, 47, 1, 0, 11, 20, 6], "n": 148, "t": 6.15, "ok": true, "nmols": 2, "max": 90, "top": [90, 58], "formula": "O18X18P30WK7A13F3", "phase": "seed", "label": "add_X8"}
+{"vec": [28, 19, 0, 47, 1, 0, 11, 20, 6], "n": 132, "t": 4.83, "ok": true, "nmols": 3, "max": 80, "top": [80, 35, 17], "formula": "O16X12P27WK6A15F3", "phase": "seed", "label": "sub_X8"}
+{"vec": [28, 27, 1, 48, 1, 0, 11, 20, 6], "n": 142, "t": 5.7, "ok": true, "nmols": 3, "max": 138, "top": [138, 2, 2], "formula": "O28X27P48WK11A20F3", "phase": "seed", "label": "add_C1"}
+{"vec": [28, 27, 2, 47, 1, 0, 11, 20, 6], "n": 142, "t": 4.31, "ok": true, "nmols": 2, "max": 140, "top": [140, 2], "formula": "O28X27P47WK11A20F6", "phase": "seed", "label": "add_C2"}
+{"vec": [28, 27, 5, 47, 1, 1, 11, 20, 6], "n": 146, "t": 4.46, "ok": true, "nmols": 4, "max": 140, "top": [140, 2, 2, 2], "formula": "O28X27P47WK11A20F6", "phase": "seed", "label": "add_C5"}
+{"vec": [28, 27, 8, 47, 1, 0, 11, 20, 6], "n": 148, "t": 4.61, "ok": true, "nmols": 5, "max": 140, "top": [140, 2, 2, 2, 2], "formula": "O28X27P47WK11A20F6", "phase": "seed", "label": "add_C8"}
+{"vec": [28, 27, 0, 48, 1, 0, 12, 20, 6], "n": 142, "t": 4.17, "ok": true, "nmols": 3, "max": 70, "top": [70, 70, 2], "formula": "O14X14P24WK6A9F2", "phase": "seed", "label": "add_P1"}
+{"vec": [28, 27, 0, 49, 1, 0, 11, 20, 6], "n": 142, "t": 4.25, "ok": true, "nmols": 4, "max": 136, "top": [136, 2, 2, 2], "formula": "O28X27P49WK11A20", "phase": "seed", "label": "add_P2"}
+{"vec": [28, 27, 0, 45, 1, 0, 11, 20, 6], "n": 138, "t": 3.6, "ok": true, "nmols": 4, "max": 132, "top": [132, 2, 2, 2], "formula": "O28X27P45WK11A20", "phase": "seed", "label": "sub_P2"}
+{"vec": [28, 27, 1, 50, 1, 0, 11, 20, 6], "n": 144, "t": 4.15, "ok": true, "nmols": 4, "max": 138, "top": [138, 2, 2, 2], "formula": "O28X27CP50WK11A20", "phase": "seed", "label": "add_P3"}
+{"vec": [28, 27, 0, 43, 1, 0, 11, 20, 6], "n": 136, "t": 3.56, "ok": true, "nmols": 6, "max": 53, "top": [53, 44, 33, 2, 2], "formula": "O12X10P17WK5A8", "phase": "seed", "label": "sub_P3"}
+{"vec": [28, 27, 0, 53, 1, 0, 11, 20, 6], "n": 146, "t": 6.12, "ok": true, "nmols": 4, "max": 56, "top": [56, 44, 34, 12], "formula": "O11X14P21WK2A7", "phase": "seed", "label": "add_P5"}
+{"vec": [28, 27, 0, 55, 1, 0, 11, 20, 6], "n": 148, "t": 6.35, "ok": true, "nmols": 7, "max": 48, "top": [48, 27, 23, 20, 10], "formula": "O10X10P19K7A2", "phase": "seed", "label": "add_P8"}
+{"vec": [28, 27, 0, 39, 1, 0, 11, 20, 6], "n": 132, "t": 4.37, "ok": true, "nmols": 5, "max": 44, "top": [44, 41, 33, 12, 2], "formula": "O13X5P15K6A5", "phase": "seed", "label": "sub_P8"}
+{"vec": [28, 27, 0, 47, 3, 0, 11, 20, 6], "n": 142, "t": 5.66, "ok": true, "nmols": 3, "max": 138, "top": [138, 2, 2], "formula": "O28X27P47W3K11A20F2", "phase": "seed", "label": "add_W2"}
+{"vec": [28, 27, 0, 47, 4, 0, 11, 20, 6], "n": 143, "t": 5.78, "ok": true, "nmols": 4, "max": 137, "top": [137, 2, 2, 2], "formula": "O28X27P47W4K11A20", "phase": "seed", "label": "add_W3"}
+{"vec": [28, 27, 0, 47, 6, 0, 11, 20, 6], "n": 145, "t": 5.92, "ok": true, "nmols": 2, "max": 143, "top": [143, 2], "formula": "O28X27P47W6K11A20F4", "phase": "seed", "label": "add_W5"}
+{"vec": [28, 27, 0, 47, 9, 0, 11, 20, 6], "n": 148, "t": 6.12, "ok": true, "nmols": 2, "max": 116, "top": [116, 32], "formula": "O24X20P40W2K9A20F", "phase": "seed", "label": "add_W8"}
+{"vec": [28, 27, 0, 47, 1, 1, 11, 20, 7], "n": 142, "t": 5.58, "ok": true, "nmols": 2, "max": 140, "top": [140, 2], "formula": "O28X27P47WK11A20F6", "phase": "seed", "label": "add_L1"}
+{"vec": [28, 27, 0, 47, 1, 2, 11, 20, 6], "n": 142, "t": 5.64, "ok": true, "nmols": 2, "max": 140, "top": [140, 2], "formula": "O28X27P47WK11A20F6", "phase": "seed", "label": "add_L2"}
+{"vec": [28, 27, 0, 46, 1, 3, 11, 20, 6], "n": 142, "t": 5.56, "ok": true, "nmols": 4, "max": 136, "top": [136, 2, 2, 2], "formula": "O28X27P46WK11A20F3", "phase": "seed", "label": "add_L3"}
+{"vec": [27, 27, 0, 47, 1, 5, 11, 20, 6], "n": 144, "t": 5.87, "ok": true, "nmols": 6, "max": 100, "top": [100, 36, 2, 2, 2], "formula": "O20X20P35WK8A15F", "phase": "seed", "label": "add_L5"}
+{"vec": [28, 27, 0, 47, 1, 8, 11, 20, 6], "n": 148, "t": 6.11, "ok": true, "nmols": 5, "max": 140, "top": [140, 2, 2, 2, 2], "formula": "O28X27P47WK11A20F6", "phase": "seed", "label": "add_L8"}
+{"vec": [28, 27, 0, 47, 1, 0, 13, 20, 6], "n": 142, "t": 5.68, "ok": true, "nmols": 3, "max": 104, "top": [104, 36, 2], "formula": "O21X20P35WK10A15F2", "phase": "seed", "label": "add_K1"}
+{"vec": [28, 27, 0, 47, 1, 1, 10, 20, 6], "n": 140, "t": 5.39, "ok": true, "nmols": 3, "max": 119, "top": [119, 19, 2], "formula": "O25X22P42WK9A20", "phase": "seed", "label": "sub_K1"}
+{"vec": [28, 27, 0, 47, 1, 0, 9, 20, 6], "n": 138, "t": 5.23, "ok": true, "nmols": 3, "max": 107, "top": [107, 29, 2], "formula": "O22X21P37K7A16F4", "phase": "seed", "label": "sub_K2"}
+{"vec": [28, 27, 1, 47, 1, 0, 14, 20, 6], "n": 144, "t": 5.9, "ok": true, "nmols": 3, "max": 140, "top": [140, 2, 2], "formula": "O28X27P47WK14A20F3", "phase": "seed", "label": "add_K3"}
+{"vec": [29, 27, 0, 47, 1, 0, 8, 20, 6], "n": 138, "t": 4.1, "ok": true, "nmols": 4, "max": 132, "top": [132, 2, 2, 2], "formula": "O29X27P47WK8A20", "phase": "seed", "label": "sub_K3"}
+{"vec": [28, 27, 1, 47, 1, 0, 16, 20, 6], "n": 146, "t": 4.3, "ok": true, "nmols": 4, "max": 140, "top": [140, 2, 2, 2], "formula": "O28X27P47WK16A20F", "phase": "seed", "label": "add_K5"}
+{"vec": [28, 27, 0, 47, 1, 1, 6, 20, 6], "n": 136, "t": 3.56, "ok": true, "nmols": 6, "max": 54, "top": [54, 34, 32, 12, 2], "formula": "O10X9P17WLK2A12F2", "phase": "seed", "label": "sub_K5"}
+{"vec": [28, 27, 0, 47, 1, 0, 19, 20, 6], "n": 148, "t": 4.14, "ok": true, "nmols": 4, "max": 142, "top": [142, 2, 2, 2], "formula": "O28X27P47WK19A20", "phase": "seed", "label": "add_K8"}
+{"vec": [28, 27, 0, 47, 1, 0, 3, 20, 6], "n": 132, "t": 3.03, "ok": true, "nmols": 6, "max": 36, "top": [36, 32, 28, 14, 11], "formula": "O7X8P12KA8", "phase": "seed", "label": "sub_K8"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 19, 6], "n": 139, "t": 3.54, "ok": true, "nmols": 1, "max": 139, "top": [139], "formula": "O28X27P47WK11A19F6", "phase": "seed", "label": "sub_A1"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 22, 6], "n": 142, "t": 3.77, "ok": true, "nmols": 4, "max": 92, "top": [92, 46, 2, 2], "formula": "O19X17P32K7A15F2", "phase": "seed", "label": "add_A2"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 23, 6], "n": 143, "t": 3.73, "ok": true, "nmols": 7, "max": 42, "top": [42, 39, 28, 28, 2], "formula": "O9X7P15K4A7", "phase": "seed", "label": "add_A3"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 17, 6], "n": 137, "t": 5.06, "ok": true, "nmols": 1, "max": 137, "top": [137], "formula": "O28X27P47WK11A17F6", "phase": "seed", "label": "sub_A3"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 25, 6], "n": 145, "t": 5.83, "ok": true, "nmols": 3, "max": 141, "top": [141, 2, 2], "formula": "O28X27P47WK11A25F2", "phase": "seed", "label": "add_A5"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 15, 6], "n": 135, "t": 4.89, "ok": true, "nmols": 1, "max": 135, "top": [135], "formula": "O28X27P47WK11A15F6", "phase": "seed", "label": "sub_A5"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 28, 6], "n": 148, "t": 6.12, "ok": true, "nmols": 2, "max": 116, "top": [116, 32], "formula": "O24X20P40WK9A21F", "phase": "seed", "label": "add_A8"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 12, 6], "n": 132, "t": 4.69, "ok": true, "nmols": 4, "max": 63, "top": [63, 35, 19, 15], "formula": "O13X12P22WK5A10", "phase": "seed", "label": "sub_A8"}
+{"vec": [28, 27, 0, 48, 1, 0, 11, 20, 7], "n": 142, "t": 5.56, "ok": true, "nmols": 3, "max": 138, "top": [138, 2, 2], "formula": "O28X27P48WK11A20F3", "phase": "seed", "label": "add_F1"}
+{"vec": [29, 27, 0, 47, 1, 0, 11, 20, 5], "n": 140, "t": 5.31, "ok": true, "nmols": 3, "max": 72, "top": [72, 66, 2], "formula": "O16X12P26K6A12", "phase": "seed", "label": "sub_F1"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 20, 8], "n": 142, "t": 5.56, "ok": true, "nmols": 2, "max": 140, "top": [140, 2], "formula": "O28X27P47WK11A20F6", "phase": "seed", "label": "add_F2"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 20, 4], "n": 138, "t": 5.29, "ok": true, "nmols": 1, "max": 138, "top": [138], "formula": "O28X27P47WK11A20F4", "phase": "seed", "label": "sub_F2"}
+{"vec": [28, 27, 0, 46, 1, 0, 11, 20, 9], "n": 142, "t": 5.51, "ok": true, "nmols": 4, "max": 136, "top": [136, 2, 2, 2], "formula": "O28X27P46WK11A20F3", "phase": "seed", "label": "add_F3"}
+{"vec": [28, 27, 1, 47, 1, 0, 11, 20, 3], "n": 138, "t": 5.27, "ok": true, "nmols": 1, "max": 138, "top": [138], "formula": "O28X27CP47WK11A20F3", "phase": "seed", "label": "sub_F3"}
+{"vec": [28, 27, 1, 47, 1, 0, 11, 20, 11], "n": 146, "t": 5.84, "ok": true, "nmols": 4, "max": 140, "top": [140, 2, 2, 2], "formula": "O28X27P47WK11A20F6", "phase": "seed", "label": "add_F5"}
+{"vec": [28, 27, 1, 47, 1, 0, 11, 20, 1], "n": 136, "t": 5.05, "ok": true, "nmols": 1, "max": 136, "top": [136], "formula": "O28X27CP47WK11A20F", "phase": "seed", "label": "sub_F5"}
+{"vec": [28, 27, 0, 47, 1, 0, 11, 20, 14], "n": 148, "t": 6.11, "ok": true, "nmols": 5, "max": 140, "top": [140, 2, 2, 2, 2], "formula": "O28X27P47WK11A20F6", "phase": "seed", "label": "add_F8"}
+{"vec": [28, 27, 0, 48, 1, 0, 11, 19, 7], "n": 141, "t": 5.46, "ok": true, "nmols": 3, "max": 137, "top": [137, 2, 2], "formula": "O28X27P48WK11A19F3", "phase": "seed", "label": "realloc_1_0"}
+{"vec": [29, 28, 0, 47, 1, 0, 10, 20, 6], "n": 141, "t": 5.56, "ok": true, "nmols": 3, "max": 107, "top": [107, 19, 15], "formula": "O23X20P37WK8A18", "phase": "seed", "label": "realloc_1_2"}
+{"vec": [29, 27, 0, 47, 1, 0, 10, 20, 6], "n": 140, "t": 3.99, "ok": true, "nmols": 2, "max": 121, "top": [121, 19], "formula": "O26X22P42WK9A20F", "phase": "seed", "label": "realloc_1_3"}
+{"vec": [28, 27, 0, 48, 1, 0, 11, 20, 5], "n": 140, "t": 3.96, "ok": true, "nmols": 2, "max": 138, "top": [138, 2], "formula": "O28X27P48WK11A20F3", "phase": "seed", "label": "realloc_1_5"}
+{"vec": [28, 27, 0, 47, 1, 0, 13, 18, 6], "n": 140, "t": 4.0, "ok": true, "nmols": 2, "max": 72, "top": [72, 68], "formula": "O14X14P24K6A10F4", "phase": "seed", "label": "realloc_2_0"}
+{"vec": [28, 25, 0, 47, 1, 0, 11, 22, 6], "n": 140, "t": 4.02, "ok": true, "nmols": 3, "max": 136, "top": [136, 2, 2], "formula": "O28X25P47WK11A22F2", "phase": "seed", "label": "realloc_2_1"}
+{"vec": [26, 27, 0, 47, 1, 0, 11, 20, 8], "n": 140, "t": 3.71, "ok": true, "nmols": 5, "max": 132, "top": [132, 2, 2, 2, 2], "formula": "O26X27P47WK11A20", "phase": "seed", "label": "realloc_2_2"}
+{"vec": [30, 27, 0, 45, 1, 0, 11, 20, 6], "n": 140, "t": 3.63, "ok": true, "nmols": 4, "max": 102, "top": [102, 34, 2, 2], "formula": "O24X17P35WK9A16", "phase": "seed", "label": "realloc_2_3"}
+{"vec": [28, 27, 0, 49, 1, 0, 11, 20, 4], "n": 140, "t": 3.78, "ok": true, "nmols": 3, "max": 136, "top": [136, 2, 2], "formula": "O28X27P49WK11A20", "phase": "seed", "label": "realloc_2_4"}
+{"vec": [30, 27, 0, 47, 1, 0, 11, 18, 6], "n": 140, "t": 3.74, "ok": true, "nmols": 4, "max": 54, "top": [54, 30, 28, 28], "formula": "O12X10P17WK5A5F4", "phase": "seed", "label": "realloc_2_5"}
+{"vec": [26, 27, 0, 47, 1, 0, 13, 20, 6], "n": 140, "t": 5.28, "ok": true, "nmols": 4, "max": 85, "top": [85, 51, 2, 2], "formula": "O16X17P29WK7A15", "phase": "seed", "label": "realloc_2_6"}
+{"vec": [28, 29, 0, 47, 1, 0, 11, 20, 4], "n": 140, "t": 5.42, "ok": true, "nmols": 2, "max": 92, "top": [92, 48], "formula": "O19X17P32K7A15F2", "phase": "seed", "label": "realloc_2_9"}
+{"vec": [28, 27, 0, 47, 1, 0, 9, 23, 6], "n": 141, "t": 5.43, "ok": true, "nmols": 3, "max": 137, "top": [137, 2, 2], "formula": "O28X27P47WK9A23F2", "phase": "seed", "label": "realloc_3_0"}
+{"vec": [29, 30, 0, 47, 1, 0, 8, 20, 6], "n": 141, "t": 5.4, "ok": true, "nmols": 3, "max": 55, "top": [55, 54, 32], "formula": "O10X14P18WK2A6F4", "phase": "seed", "label": "realloc_3_1"}
+{"vec": [29, 27, 0, 47, 1, 0, 11, 17, 9], "n": 141, "t": 5.44, "ok": true, "nmols": 3, "max": 72, "top": [72, 50, 19], "formula": "O16X12P26K6A12", "phase": "seed", "label": "realloc_3_2"}
+{"vec": [28, 30, 0, 47, 1, 1, 8, 20, 6], "n": 141, "t": 5.42, "ok": true, "nmols": 3, "max": 93, "top": [93, 29, 19], "formula": "O19X19P32K5A16F2", "phase": "seed", "label": "realloc_3_3"}
+{"vec": [29, 27, 0, 47, 1, 0, 8, 23, 6], "n": 141, "t": 5.41, "ok": true, "nmols": 4, "max": 135, "top": [135, 2, 2, 2], "formula": "O29X27P47WK8A23", "phase": "seed", "label": "realloc_3_4"}
+{"vec": [28, 27, 0, 50, 1, 0, 8, 20, 6], "n": 140, "t": 5.35, "ok": true, "nmols": 4, "max": 64, "top": [64, 46, 28, 2], "formula": "O13X13P24WK3A6F4", "phase": "seed", "label": "realloc_3_5"}
+{"vec": [29, 24, 0, 47, 1, 0, 14, 20, 6], "n": 141, "t": 5.51, "ok": true, "nmols": 5, "max": 69, "top": [69, 66, 2, 2, 2], "formula": "O14X14P23WK7A10", "phase": "seed", "label": "realloc_3_6"}
+{"vec": [28, 27, 0, 47, 1, 1, 8, 23, 6], "n": 141, "t": 5.44, "ok": true, "nmols": 4, "max": 135, "top": [135, 2, 2, 2], "formula": "O28X27P47WK8A23F", "phase": "seed", "label": "realloc_3_7"}
+{"vec": [28, 27, 0, 51, 1, 0, 11, 17, 6], "n": 141, "t": 5.58, "ok": true, "nmols": 3, "max": 81, "top": [81, 58, 2], "formula": "O17X17P31K7A8F", "phase": "seed", "label": "realloc_3_9"}
+{"vec": [28, 27, 0, 47, 1, 1, 11, 15, 11], "n": 141, "t": 5.41, "ok": true, "nmols": 4, "max": 135, "top": [135, 2, 2, 2], "formula": "O28X27P47WK11A15F6", "phase": "seed", "label": "realloc_5_0"}
+{"vec": [28, 27, 0, 42, 1, 0, 16, 20, 6], "n": 140, "t": 5.32, "ok": true, "nmols": 10, "max": 26, "top": [26, 20, 18, 18, 12], "formula": "O6X4P9K5A2", "phase": "seed", "label": "realloc_5_1"}
+{"vec": [33, 22, 0, 47, 1, 1, 11, 20, 6], "n": 141, "t": 5.51, "ok": true, "nmols": 4, "max": 96, "top": [96, 41, 2, 2], "formula": "O24X17P34WK8A12", "phase": "seed", "label": "realloc_5_2"}
+{"vec": [28, 27, 0, 47, 1, 0, 6, 20, 11], "n": 140, "t": 5.2, "ok": true, "nmols": 8, "max": 54, "top": [54, 34, 32, 12, 2], "formula": "O10X9P17WK2A12F3", "phase": "seed", "label": "realloc_5_3"}
+{"vec": [28, 32, 0, 42, 1, 0, 11, 20, 7], "n": 141, "t": 5.17, "ok": true, "nmols": 6, "max": 69, "top": [69, 33, 33, 2, 2], "formula": "O16X12P22WK7A10F", "phase": "seed", "label": "realloc_5_4"}
+{"vec": [34, 22, 0, 47, 1, 0, 11, 20, 6], "n": 141, "t": 3.93, "ok": true, "nmols": 4, "max": 97, "top": [97, 26, 16, 2], "formula": "O24X16P32WK8A16", "phase": "seed", "label": "realloc_5_5"}
+{"vec": [23, 27, 0, 52, 1, 0, 11, 20, 6], "n": 140, "t": 3.79, "ok": true, "nmols": 7, "max": 30, "top": [30, 28, 28, 17, 17], "formula": "O6X10P13K", "phase": "seed", "label": "realloc_5_6"}
+{"vec": [28, 32, 0, 47, 1, 0, 11, 15, 6], "n": 140, "t": 3.68, "ok": true, "nmols": 3, "max": 89, "top": [89, 28, 23], "formula": "O18X17P30WK7A13F3", "phase": "seed", "label": "realloc_5_8"}
+{"vec": [33, 27, 0, 47, 1, 0, 6, 20, 6], "n": 140, "t": 3.8, "ok": true, "nmols": 4, "max": 54, "top": [54, 42, 42, 2], "formula": "O13X11P19WK2A8", "phase": "seed", "label": "realloc_5_9"}
+{"vec": [28, 27, 0, 55, 1, 0, 3, 20, 6], "n": 140, "t": 3.82, "ok": true, "nmols": 9, "max": 44, "top": [44, 20, 12, 12, 12], "formula": "O10X9P19K3A3", "phase": "seed", "label": "realloc_8_0"}
+{"vec": [28, 27, 0, 55, 1, 0, 11, 12, 6], "n": 140, "t": 3.86, "ok": true, "nmols": 8, "max": 41, "top": [41, 22, 14, 14, 14], "formula": "O9X8P17K6A", "phase": "seed", "label": "realloc_8_1"}
+{"vec": [28, 35, 0, 39, 1, 0, 11, 20, 6], "n": 140, "t": 3.42, "ok": true, "nmols": 5, "max": 85, "top": [85, 49, 2, 2, 2], "formula": "O15X24P24WK5A14F2", "phase": "seed", "label": "realloc_8_2"}
+{"vec": [28, 19, 0, 47, 1, 0, 19, 20, 6], "n": 140, "t": 3.82, "ok": true, "nmols": 4, "max": 134, "top": [134, 2, 2, 2], "formula": "O28X19P47WK19A20", "phase": "seed", "label": "realloc_8_3"}
+{"vec": [36, 27, 0, 47, 1, 0, 11, 12, 6], "n": 140, "t": 5.51, "ok": true, "nmols": 3, "max": 76, "top": [76, 34, 30], "formula": "O20X12P25K7A10F2", "phase": "seed", "label": "realloc_8_4"}
+{"vec": [36, 27, 0, 39, 1, 0, 11, 20, 6], "n": 140, "t": 5.33, "ok": true, "nmols": 8, "max": 31, "top": [31, 28, 23, 18, 18], "formula": "O9X6P9K4A3", "phase": "seed", "label": "realloc_8_5"}
+{"vec": [28, 19, 0, 55, 1, 0, 11, 20, 6], "n": 140, "t": 5.63, "ok": true, "nmols": 9, "max": 40, "top": [40, 16, 14, 14, 12], "formula": "O9X7P17K4A3", "phase": "seed", "label": "realloc_8_6"}
+{"vec": [36, 27, 0, 47, 1, 0, 3, 20, 6], "n": 140, "t": 5.43, "ok": true, "nmols": 14, "max": 23, "top": [23, 21, 18, 16, 16], "formula": "O5X6P6WKA2F2", "phase": "seed", "label": "realloc_8_8"}
+{"vec": [28, 19, 0, 47, 1, 0, 11, 28, 6], "n": 140, "t": 5.41, "ok": true, "nmols": 3, "max": 72, "top": [72, 51, 17], "formula": "O15X12P25WK6A13", "phase": "seed", "label": "realloc_8_9"}
+{"vec": [40, 15, 0, 47, 1, 0, 11, 20, 6], "n": 140, "t": 5.68, "ok": true, "nmols": 6, "max": 33, "top": [33, 28, 25, 21, 18], "formula": "O9X4P11WK2A4F2", "phase": "seed", "label": "realloc_12_0"}
+{"vec": [40, 27, 0, 47, 1, 0, 11, 8, 6], "n": 140, "t": 5.67, "ok": true, "nmols": 7, "max": 33, "top": [33, 26, 26, 16, 15], "formula": "O9X7P11WK2AF2", "phase": "seed", "label": "realloc_12_1"}
+{"vec": [28, 39, 0, 35, 1, 0, 11, 20, 6], "n": 140, "t": 4.87, "ok": true, "nmols": 14, "max": 49, "top": [49, 28, 16, 15, 14], "formula": "O13X10P15K6A5", "phase": "seed", "label": "realloc_12_2"}
+{"vec": [16, 27, 0, 59, 1, 0, 11, 20, 6], "n": 140, "t": 5.43, "ok": true, "nmols": 11, "max": 35, "top": [35, 14, 14, 10, 10], "formula": "O4X8P14WK2F6", "phase": "seed", "label": "realloc_12_3"}
+{"vec": [28, 27, 0, 35, 1, 0, 11, 32, 6], "n": 140, "t": 4.79, "ok": true, "nmols": 9, "max": 24, "top": [24, 23, 16, 16, 16], "formula": "O3X5P5KA5F5", "phase": "seed", "label": "realloc_12_4"}
+{"vec": [28, 15, 0, 59, 1, 0, 11, 20, 6], "n": 140, "t": 5.61, "ok": true, "nmols": 13, "max": 22, "top": [22, 22, 22, 15, 9], "formula": "O4X2P9K3A4", "phase": "seed", "label": "realloc_12_6"}
+{"vec": [28, 15, 0, 47, 1, 0, 11, 32, 6], "n": 140, "t": 5.35, "ok": true, "nmols": 4, "max": 51, "top": [51, 44, 28, 17], "formula": "O10X7P17K4A10F3", "phase": "seed", "label": "realloc_12_7"}
+{"vec": [28, 39, 0, 47, 1, 0, 11, 8, 6], "n": 140, "t": 5.34, "ok": true, "nmols": 4, "max": 61, "top": [61, 28, 28, 23], "formula": "O12X12P20WK5A8F3", "phase": "seed", "label": "realloc_12_9"}
+{"vec": [44, 11, 0, 47, 1, 0, 11, 20, 6], "n": 140, "t": 5.87, "ok": true, "nmols": 12, "max": 34, "top": [34, 20, 20, 15, 15], "formula": "O11X5P12WK3A2", "phase": "seed", "label": "realloc_16_0"}
+{"vec": [12, 27, 0, 47, 1, 0, 11, 36, 6], "n": 140, "t": 5.17, "ok": true, "nmols": 7, "max": 38, "top": [38, 24, 24, 24, 10], "formula": "O3X4P11WK2A11F6", "phase": "seed", "label": "realloc_16_1"}
+{"vec": [12, 27, 0, 63, 1, 0, 11, 20, 6], "n": 140, "t": 5.29, "ok": true, "nmols": 14, "max": 46, "top": [46, 16, 16, 10, 10], "formula": "O5X3P19WK4A8F6", "phase": "seed", "label": "realloc_16_2"}
+{"vec": [44, 27, 0, 31, 1, 0, 11, 20, 6], "n": 140, "t": 3.9, "ok": true, "nmols": 55, "max": 14, "top": [14, 14, 3, 3, 3], "formula": "O3X3K2A3F3", "phase": "seed", "label": "realloc_16_3"}
+{"vec": [12, 43, 0, 47, 1, 0, 11, 20, 6], "n": 140, "t": 3.73, "ok": true, "nmols": 10, "max": 37, "top": [37, 15, 14, 14, 10], "formula": "O3X7P11K2A8F6", "phase": "seed", "label": "realloc_16_4"}
+{"vec": [28, 43, 0, 47, 1, 0, 11, 4, 6], "n": 140, "t": 3.84, "ok": true, "nmols": 5, "max": 33, "top": [33, 28, 28, 28, 23], "formula": "O6X7P10WK3A3F3", "phase": "seed", "label": "realloc_16_6"}
+{"vec": [28, 27, 0, 31, 1, 0, 11, 36, 6], "n": 140, "t": 3.36, "ok": true, "nmols": 16, "max": 18, "top": [18, 14, 14, 14, 14], "formula": "O4X4P5KA4", "phase": "seed", "label": "realloc_16_8"}
+{"vec": [26, 27, 0, 49, 1, 0, 11, 20, 6], "n": 140, "t": 3.76, "ok": true, "nmols": 5, "max": 61, "top": [61, 39, 31, 7, 2], "formula": "O11X14P21K2A13", "phase": "seed", "label": "move_O2toP"}
+{"vec": [26, 29, 0, 47, 1, 0, 11, 20, 6], "n": 140, "t": 3.67, "ok": true, "nmols": 3, "max": 91, "top": [91, 47, 2], "formula": "O17X19P31K6A16F2", "phase": "seed", "label": "move_O2toX"}
+{"vec": [26, 27, 2, 47, 1, 0, 11, 20, 6], "n": 140, "t": 3.64, "ok": true, "nmols": 5, "max": 132, "top": [132, 2, 2, 2, 2], "formula": "O26X27P47WK11A20", "phase": "seed", "label": "move_O2toC"}
+{"vec": [28, 27, 0, 45, 1, 0, 13, 20, 6], "n": 140, "t": 3.56, "ok": true, "nmols": 5, "max": 126, "top": [126, 8, 2, 2, 2], "formula": "O26X26P42WK12A19", "phase": "seed", "label": "move_P2toK"}
+{"vec": [28, 27, 0, 45, 1, 0, 11, 20, 8], "n": 140, "t": 5.28, "ok": true, "nmols": 5, "max": 132, "top": [132, 2, 2, 2, 2], "formula": "O28X27P45WK11A20", "phase": "seed", "label": "move_P2toF"}
+{"vec": [28, 29, 0, 45, 1, 0, 11, 20, 6], "n": 140, "t": 5.35, "ok": true, "nmols": 4, "max": 134, "top": [134, 2, 2, 2], "formula": "O28X29P45WK11A20", "phase": "seed", "label": "move_P2toX"}
+{"vec": [28, 27, 2, 45, 1, 0, 11, 20, 6], "n": 140, "t": 5.3, "ok": true, "nmols": 5, "max": 132, "top": [132, 2, 2, 2, 2], "formula": "O28X27P45WK11A20", "phase": "seed", "label": "move_P2toC"}
+{"vec": [30, 27, 0, 47, 1, 0, 9, 20, 6], "n": 140, "t": 5.41, "ok": true, "nmols": 5, "max": 77, "top": [77, 32, 27, 2, 2], "formula": "O17X16P27WK5A10F", "phase": "seed", "label": "move_K2toO"}
+{"vec": [28, 27, 0, 49, 1, 0, 9, 20, 6], "n": 140, "t": 5.5, "ok": true, "nmols": 4, "max": 134, "top": [134, 2, 2, 2], "formula": "O28X27P49WK9A20", "phase": "seed", "label": "move_K2toP"}
+{"vec": [28, 27, 0, 47, 1, 0, 9, 20, 8], "n": 140, "t": 5.39, "ok": true, "nmols": 4, "max": 107, "top": [107, 29, 2, 2], "formula": "O22X21P37K7A16F4", "phase": "seed", "label": "move_K2toF"}
+{"vec": [28, 29, 0, 47, 1, 0, 9, 20, 6], "n": 140, "t": 5.4, "ok": true, "nmols": 3, "max": 108, "top": [108, 17, 15], "formula": "O22X21P37WK7A18F2", "phase": "seed", "label": "move_K2toX"}
+{"vec": [28, 27, 2, 47, 1, 0, 9, 20, 6], "n": 140, "t": 5.36, "ok": true, "nmols": 4, "max": 107, "top": [107, 29, 2, 2], "formula": "O22X21P37K7A16F4", "phase": "seed", "label": "move_K2toC"}
+{"vec": [30, 27, 0, 47, 1, 0, 11, 20, 4], "n": 140, "t": 5.4, "ok": true, "nmols": 2, "max": 104, "top": [104, 36], "formula": "O24X17P37K9A17", "phase": "seed", "label": "move_F2toO"}
+{"vec": [28, 27, 0, 47, 1, 0, 13, 20, 4], "n": 140, "t": 5.53, "ok": true, "nmols": 2, "max": 104, "top": [104, 36], "formula": "O21X20P35WK10A15F2", "phase": "seed", "label": "move_F2toK"}
+{"vec": [28, 27, 2, 47, 1, 0, 11, 20, 4], "n": 140, "t": 5.35, "ok": true, "nmols": 1, "max": 140, "top": [140], "formula": "O28X27C2P47WK11A20F4", "phase": "seed", "label": "move_F2toC"}
+{"vec": [30, 25, 0, 47, 1, 0, 11, 20, 6], "n": 140, "t": 5.32, "ok": true, "nmols": 5, "max": 54, "top": [54, 28, 28, 28, 2], "formula": "O12X10P17WK5A5F4", "phase": "seed", "label": "move_X2toO"}
+{"vec": [28, 25, 0, 49, 1, 0, 11, 20, 6], "n": 140, "t": 5.51, "ok": true, "nmols": 4, "max": 94, "top": [94, 42, 2, 2], "formula": "O19X16P33K8A16F2", "phase": "seed", "label": "move_X2toP"}
+{"vec": [28, 25, 0, 47, 1, 0, 13, 20, 6], "n": 140, "t": 5.47, "ok": true, "nmols": 3, "max": 72, "top": [72, 66, 2], "formula": "O14X14P24K6A10F4", "phase": "seed", "label": "move_X2toK"}
+{"vec": [28, 25, 0, 47, 1, 0, 11, 20, 8], "n": 140, "t": 5.49, "ok": true, "nmols": 4, "max": 134, "top": [134, 2, 2, 2], "formula": "O28X25P47WK11A20F2", "phase": "seed", "label": "move_X2toF"}
+{"vec": [28, 25, 2, 47, 1, 0, 11, 20, 6], "n": 140, "t": 5.29, "ok": true, "nmols": 4, "max": 134, "top": [134, 2, 2, 2], "formula": "O28X25P47WK11A20F2", "phase": "seed", "label": "move_X2toC"}
+{"vec": [24, 27, 0, 51, 1, 0, 11, 20, 6], "n": 140, "t": 3.76, "ok": true, "nmols": 8, "max": 30, "top": [30, 30, 19, 16, 13], "formula": "O5X6P11K4A2F2", "phase": "seed", "label": "move_O4toP"}
+{"vec": [24, 27, 0, 47, 1, 0, 15, 20, 6], "n": 140, "t": 3.77, "ok": true, "nmols": 7, "max": 73, "top": [73, 25, 18, 18, 2], "formula": "O14X14P27K11A7", "phase": "seed", "label": "move_O4toK"}
+{"vec": [24, 27, 0, 47, 1, 0, 11, 20, 10], "n": 140, "t": 3.66, "ok": true, "nmols": 11, "max": 48, "top": [48, 22, 19, 17, 7], "formula": "O10X10P19K7A2", "phase": "seed", "label": "move_O4toF"}
+{"vec": [24, 31, 0, 47, 1, 0, 11, 20, 6], "n": 140, "t": 3.66, "ok": true, "nmols": 9, "max": 45, "top": [45, 18, 18, 18, 18], "formula": "O9X11P17WK5AF", "phase": "seed", "label": "move_O4toX"}
+{"vec": [24, 27, 4, 47, 1, 0, 11, 20, 6], "n": 140, "t": 3.56, "ok": true, "nmols": 11, "max": 48, "top": [48, 22, 19, 17, 7], "formula": "O10X10P19K7A2", "phase": "seed", "label": "move_O4toC"}
+{"vec": [32, 27, 0, 43, 1, 0, 11, 20, 6], "n": 140, "t": 3.7, "ok": true, "nmols": 5, "max": 93, "top": [93, 31, 12, 2, 2], "formula": "O23X16P30WK8A14F", "phase": "seed", "label": "move_P4toO"}
+{"vec": [28, 27, 0, 43, 1, 0, 15, 20, 6], "n": 140, "t": 3.62, "ok": true, "nmols": 8, "max": 59, "top": [59, 18, 12, 12, 12], "formula": "O12X14P19K7A7", "phase": "seed", "label": "move_P4toK"}
+{"vec": [28, 27, 0, 43, 1, 0, 11, 20, 10], "n": 140, "t": 3.5, "ok": true, "nmols": 8, "max": 53, "top": [53, 44, 33, 2, 2], "formula": "O12X10P17WK5A8", "phase": "seed", "label": "move_P4toF"}
+{"vec": [28, 31, 0, 43, 1, 0, 11, 20, 6], "n": 140, "t": 5.17, "ok": true, "nmols": 6, "max": 93, "top": [93, 33, 8, 2, 2], "formula": "O20X20P30WK8A14", "phase": "seed", "label": "move_P4toX"}
+{"vec": [28, 27, 4, 43, 1, 0, 11, 20, 6], "n": 140, "t": 5.18, "ok": true, "nmols": 8, "max": 53, "top": [53, 44, 33, 2, 2], "formula": "O12X10P17WK5A8", "phase": "seed", "label": "move_P4toC"}
+{"vec": [32, 27, 0, 47, 1, 0, 7, 20, 6], "n": 140, "t": 5.25, "ok": true, "nmols": 5, "max": 84, "top": [84, 50, 2, 2, 2], "formula": "O21X16P30K5A12", "phase": "seed", "label": "move_K4toO"}
+{"vec": [28, 27, 0, 51, 1, 0, 7, 20, 6], "n": 140, "t": 5.4, "ok": true, "nmols": 4, "max": 60, "top": [60, 48, 17, 15], "formula": "O11X11P20WK3A12F2", "phase": "seed", "label": "move_K4toP"}
+{"vec": [28, 27, 0, 47, 1, 0, 7, 20, 10], "n": 140, "t": 5.21, "ok": true, "nmols": 6, "max": 130, "top": [130, 2, 2, 2, 2], "formula": "O28X27P47WK7A20", "phase": "seed", "label": "move_K4toF"}
+{"vec": [28, 31, 0, 47, 1, 0, 7, 20, 6], "n": 140, "t": 5.31, "ok": true, "nmols": 3, "max": 54, "top": [54, 44, 42], "formula": "O12X10P18K4A8F2", "phase": "seed", "label": "move_K4toX"}
+{"vec": [28, 27, 4, 47, 1, 0, 7, 20, 6], "n": 140, "t": 5.24, "ok": true, "nmols": 6, "max": 130, "top": [130, 2, 2, 2, 2], "formula": "O28X27P47WK7A20", "phase": "seed", "label": "move_K4toC"}
+{"vec": [32, 27, 0, 47, 1, 0, 11, 20, 2], "n": 140, "t": 5.45, "ok": true, "nmols": 3, "max": 74, "top": [74, 54, 12], "formula": "O17X15P25WK6A10", "phase": "seed", "label": "move_F4toO"}
+{"vec": [28, 27, 0, 51, 1, 0, 11, 20, 2], "n": 140, "t": 5.58, "ok": true, "nmols": 2, "max": 81, "top": [81, 59], "formula": "O17X17P31K7A8F", "phase": "seed", "label": "move_F4toP"}
+{"vec": [28, 27, 0, 47, 1, 0, 15, 20, 2], "n": 140, "t": 5.47, "ok": true, "nmols": 1, "max": 140, "top": [140], "formula": "O28X27P47WK15A20F2", "phase": "seed", "label": "move_F4toK"}
+{"vec": [28, 31, 0, 47, 1, 0, 11, 20, 2], "n": 140, "t": 5.46, "ok": true, "nmols": 2, "max": 102, "top": [102, 38], "formula": "O21X19P35WK8A16F2", "phase": "seed", "label": "move_F4toX"}
+{"vec": [28, 27, 4, 47, 1, 0, 11, 20, 2], "n": 140, "t": 5.42, "ok": true, "nmols": 1, "max": 140, "top": [140], "formula": "O28X27C4P47WK11A20F2", "phase": "seed", "label": "move_F4toC"}
+{"vec": [32, 23, 0, 47, 1, 0, 11, 20, 6], "n": 140, "t": 5.54, "ok": true, "nmols": 4, "max": 134, "top": [134, 2, 2, 2], "formula": "O32X23P47WK11A20", "phase": "seed", "label": "move_X4toO"}
+{"vec": [28, 23, 0, 51, 1, 0, 11, 20, 6], "n": 140, "t": 5.46, "ok": true, "nmols": 2, "max": 71, "top": [71, 69], "formula": "O14X13P26WK4A7F6", "phase": "seed", "label": "move_X4toP"}
+{"vec": [28, 23, 0, 47, 1, 0, 15, 20, 6], "n": 140, "t": 5.43, "ok": true, "nmols": 3, "max": 136, "top": [136, 2, 2], "formula": "O28X23P47WK15A20F2", "phase": "seed", "label": "move_X4toK"}
+{"vec": [28, 23, 0, 47, 1, 0, 11, 20, 10], "n": 140, "t": 5.42, "ok": true, "nmols": 6, "max": 130, "top": [130, 2, 2, 2, 2], "formula": "O28X23P47WK11A20", "phase": "seed", "label": "move_X4toF"}
+{"vec": [28, 23, 4, 47, 1, 0, 11, 20, 6], "n": 140, "t": 3.64, "ok": true, "nmols": 6, "max": 130, "top": [130, 2, 2, 2, 2], "formula": "O28X23P47WK11A20", "phase": "seed", "label": "move_X4toC"}
+{"vec": [20, 27, 0, 55, 1, 0, 11, 20, 6], "n": 140, "t": 3.77, "ok": true, "nmols": 10, "max": 42, "top": [42, 36, 27, 7, 7], "formula": "O6X10P17K5A4", "phase": "seed", "label": "move_O8toP"}
+{"vec": [20, 27, 0, 47, 1, 0, 19, 20, 6], "n": 140, "t": 3.66, "ok": true, "nmols": 5, "max": 36, "top": [36, 30, 30, 29, 15], "formula": "O5X7P12WK5A4F2", "phase": "seed", "label": "move_O8toK"}
+{"vec": [20, 27, 0, 47, 1, 0, 11, 20, 14], "n": 140, "t": 3.66, "ok": true, "nmols": 6, "max": 34, "top": [34, 28, 21, 21, 21], "formula": "O5X9P12WK3A4", "phase": "seed", "label": "move_O8toF"}
+{"vec": [20, 35, 0, 47, 1, 0, 11, 20, 6], "n": 140, "t": 3.52, "ok": true, "nmols": 6, "max": 72, "top": [72, 36, 26, 2, 2], "formula": "O10X18P24WK6A13", "phase": "seed", "label": "move_O8toX"}
+{"vec": [20, 27, 8, 47, 1, 0, 11, 20, 6], "n": 140, "t": 3.53, "ok": true, "nmols": 6, "max": 34, "top": [34, 28, 21, 21, 21], "formula": "O5X9P12WK3A4", "phase": "seed", "label": "move_O8toC"}
+{"vec": [28, 27, 0, 39, 1, 0, 19, 20, 6], "n": 140, "t": 3.63, "ok": true, "nmols": 10, "max": 28, "top": [28, 18, 18, 18, 12], "formula": "O6X4P9WK5A3", "phase": "seed", "label": "move_P8toK"}
+{"vec": [28, 27, 0, 39, 1, 0, 11, 20, 14], "n": 140, "t": 3.47, "ok": true, "nmols": 9, "max": 44, "top": [44, 41, 33, 12, 2], "formula": "O13X5P15K6A5", "phase": "seed", "label": "move_P8toF"}
+{"vec": [28, 27, 8, 39, 1, 0, 11, 20, 6], "n": 140, "t": 4.93, "ok": true, "nmols": 9, "max": 44, "top": [44, 41, 33, 12, 2], "formula": "O13X5P15K6A5", "phase": "seed", "label": "move_P8toC"}
+{"vec": [28, 27, 0, 47, 1, 0, 3, 20, 14], "n": 140, "t": 5.05, "ok": true, "nmols": 10, "max": 36, "top": [36, 32, 28, 14, 11], "formula": "O7X8P12KA8", "phase": "seed", "label": "move_K8toF"}
+{"vec": [28, 35, 0, 47, 1, 0, 3, 20, 6], "n": 140, "t": 5.11, "ok": true, "nmols": 6, "max": 36, "top": [36, 36, 32, 16, 11], "formula": "O7X8P12KA8", "phase": "seed", "label": "move_K8toX"}
+{"vec": [28, 27, 8, 47, 1, 0, 3, 20, 6], "n": 140, "t": 5.08, "ok": true, "nmols": 10, "max": 36, "top": [36, 32, 28, 14, 11], "formula": "O7X8P12KA8", "phase": "seed", "label": "move_K8toC"}
+{"vec": [36, 19, 0, 47, 1, 0, 11, 20, 6], "n": 140, "t": 5.38, "ok": true, "nmols": 3, "max": 88, "top": [88, 34, 18], "formula": "O23X12P29K8A14F2", "phase": "seed", "label": "move_X8toO"}
+{"vec": [28, 19, 0, 47, 1, 0, 11, 20, 14], "n": 140, "t": 5.27, "ok": true, "nmols": 6, "max": 80, "top": [80, 35, 19, 2, 2], "formula": "O16X12P27WK6A15F3", "phase": "seed", "label": "move_X8toF"}
+{"vec": [28, 19, 8, 47, 1, 0, 11, 20, 6], "n": 140, "t": 5.25, "ok": true, "nmols": 6, "max": 80, "top": [80, 35, 19, 2, 2], "formula": "O16X12C3P27WK6A15", "phase": "seed", "label": "move_X8toC"}
+{"vec": [12, 27, 0, 47, 1, 0, 27, 20, 6], "n": 140, "t": 5.29, "ok": true, "nmols": 5, "max": 67, "top": [67, 35, 30, 6, 2], "formula": "O7X13P23WK13A9F", "phase": "seed", "label": "move_O16toK"}
+{"vec": [12, 27, 0, 47, 1, 0, 11, 20, 22], "n": 140, "t": 4.87, "ok": true, "nmols": 23, "max": 10, "top": [10, 10, 10, 10, 10], "formula": "OX4P4K", "phase": "seed", "label": "move_O16toF"}
+{"vec": [12, 27, 16, 47, 1, 0, 11, 20, 6], "n": 140, "t": 4.81, "ok": true, "nmols": 23, "max": 10, "top": [10, 10, 10, 10, 10], "formula": "OX4P4K", "phase": "seed", "label": "move_O16toC"}
+{"vec": [28, 27, 0, 31, 1, 0, 27, 20, 6], "n": 140, "t": 5.27, "ok": true, "nmols": 16, "max": 18, "top": [18, 13, 13, 11, 10], "formula": "O4X4P5K3A2", "phase": "seed", "label": "move_P16toK"}
+{"vec": [28, 27, 0, 31, 1, 0, 11, 20, 22], "n": 140, "t": 4.58, "ok": true, "nmols": 22, "max": 29, "top": [29, 29, 19, 15, 8], "formula": "O8X6P9K3A3", "phase": "seed", "label": "move_P16toF"}
+{"vec": [28, 43, 0, 31, 1, 0, 11, 20, 6], "n": 140, "t": 4.73, "ok": true, "nmols": 29, "max": 14, "top": [14, 12, 12, 12, 12], "formula": "O4X4P5K", "phase": "seed", "label": "move_P16toX"}
+{"vec": [28, 27, 16, 31, 1, 0, 11, 20, 6], "n": 140, "t": 4.63, "ok": true, "nmols": 22, "max": 29, "top": [29, 29, 19, 15, 8], "formula": "O8X6P9K3A3", "phase": "seed", "label": "move_P16toC"}
+{"vec": [28, 11, 0, 63, 1, 0, 11, 20, 6], "n": 140, "t": 5.47, "ok": true, "nmols": 18, "max": 16, "top": [16, 8, 8, 8, 8], "formula": "O3P7WK2A3", "phase": "seed", "label": "move_X16toP"}
+{"vec": [28, 11, 0, 47, 1, 0, 27, 20, 6], "n": 140, "t": 5.51, "ok": true, "nmols": 8, "max": 28, "top": [28, 22, 15, 15, 15], "formula": "O5X4P9WK4A5", "phase": "seed", "label": "move_X16toK"}
+{"vec": [28, 11, 0, 47, 1, 0, 11, 20, 22], "n": 140, "t": 2.91, "ok": true, "nmols": 8, "max": 59, "top": [59, 35, 19, 19, 2], "formula": "O13X7P22WK5A7F4", "phase": "seed", "label": "move_X16toF"}
+{"vec": [28, 11, 16, 47, 1, 0, 11, 20, 6], "n": 140, "t": 2.88, "ok": true, "nmols": 8, "max": 59, "top": [59, 35, 19, 19, 2], "formula": "O13X7C4P22WK5A7", "phase": "seed", "label": "move_X16toC"}
+{"vec": [17, 12, 17, 11, 12, 13, 14, 8, 16], "n": 120, "t": 2.0, "ok": true, "nmols": 41, "max": 8, "top": [8, 8, 8, 6, 6], "formula": "O2XCP2WK", "phase": "rand", "label": "unif0_n120"}
+{"vec": [14, 18, 21, 12, 12, 17, 13, 10, 13], "n": 130, "t": 2.49, "ok": true, "nmols": 41, "max": 8, "top": [8, 7, 7, 6, 6], "formula": "O2XCP2WK", "phase": "rand", "label": "unif0_n130"}
+{"vec": [16, 11, 14, 16, 19, 17, 12, 13, 21], "n": 139, "t": 3.13, "ok": true, "nmols": 40, "max": 11, "top": [11, 8, 8, 8, 7], "formula": "O3XP3WK2A", "phase": "rand", "label": "unif0_n140"}
+{"vec": [22, 16, 16, 17, 10, 18, 22, 11, 17], "n": 149, "t": 4.39, "ok": true, "nmols": 39, "max": 10, "top": [10, 10, 10, 10, 10], "formula": "O2X2P2WK2A", "phase": "rand", "label": "unif0_n150"}
+{"vec": [23, 16, 17, 13, 18, 16, 21, 18, 18], "n": 160, "t": 5.26, "ok": true, "nmols": 53, "max": 8, "top": [8, 8, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "unif0_n160"}
+{"vec": [22, 15, 17, 25, 22, 19, 17, 16, 18], "n": 171, "t": 6.54, "ok": true, "nmols": 41, "max": 18, "top": [18, 18, 15, 8, 8], "formula": "O4X2P5W2K3A2", "phase": "rand", "label": "unif0_n170"}
+{"vec": [23, 14, 23, 17, 18, 27, 28, 16, 14], "n": 180, "t": 7.46, "ok": true, "nmols": 62, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "unif0_n180"}
+{"vec": [18, 23, 26, 22, 25, 18, 21, 16, 21], "n": 190, "t": 8.4, "ok": true, "nmols": 58, "max": 10, "top": [10, 7, 7, 6, 6], "formula": "O2XCP3WK2", "phase": "rand", "label": "unif0_n190"}
+{"vec": [20, 20, 24, 20, 21, 18, 22, 32, 24], "n": 201, "t": 10.1, "ok": true, "nmols": 60, "max": 11, "top": [11, 11, 11, 11, 11], "formula": "O2X2P2WK2A2", "phase": "rand", "label": "unif0_n200"}
+{"vec": [17, 19, 21, 27, 21, 30, 28, 21, 31], "n": 215, "t": 12.06, "ok": true, "nmols": 69, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "unif0_n215"}
+{"vec": [22, 26, 25, 30, 30, 24, 34, 21, 19], "n": 231, "t": 15.39, "ok": true, "nmols": 79, "max": 7, "top": [7, 6, 6, 6, 6], "formula": "OXCPWKA", "phase": "rand", "label": "unif0_n230"}
+{"vec": [27, 34, 24, 21, 24, 20, 32, 32, 30], "n": 244, "t": 17.43, "ok": true, "nmols": 87, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "unif0_n245"}
+{"vec": [29, 30, 27, 33, 32, 27, 31, 30, 21], "n": 260, "t": 19.74, "ok": true, "nmols": 61, "max": 10, "top": [10, 10, 7, 7, 7], "formula": "O2XCP3WK2", "phase": "rand", "label": "unif0_n260"}
+{"vec": [27, 30, 34, 29, 26, 33, 29, 37, 34], "n": 279, "t": 22.22, "ok": true, "nmols": 76, "max": 11, "top": [11, 11, 11, 11, 11], "formula": "O2X2P2WK2A2", "phase": "rand", "label": "unif0_n280"}
+{"vec": [31, 38, 26, 31, 25, 39, 38, 34, 37], "n": 299, "t": 25.86, "ok": true, "nmols": 92, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "unif0_n300"}
+{"vec": [27, 31, 44, 51, 37, 40, 33, 28, 29], "n": 320, "t": 31.27, "ok": true, "nmols": 81, "max": 12, "top": [12, 12, 12, 12, 12], "formula": "OX2C2P2W2KA2", "phase": "rand", "label": "unif0_n320"}
+{"vec": [41, 50, 49, 32, 21, 31, 40, 41, 39], "n": 344, "t": 38.96, "ok": true, "nmols": 103, "max": 11, "top": [11, 10, 10, 10, 10], "formula": "O3X2P3K2A", "phase": "rand", "label": "unif0_n345"}
+{"vec": [44, 37, 40, 44, 40, 37, 50, 34, 43], "n": 369, "t": 49.1, "ok": true, "nmols": 94, "max": 10, "top": [10, 7, 7, 7, 7], "formula": "O2XP2WK2A2", "phase": "rand", "label": "unif0_n370"}
+{"vec": [42, 37, 55, 50, 40, 41, 46, 40, 50], "n": 401, "t": 58.08, "ok": true, "nmols": 99, "max": 14, "top": [14, 11, 11, 10, 7], "formula": "O3XP4WK3A2", "phase": "rand", "label": "unif0_n400"}
+{"vec": [11, 10, 16, 9, 15, 19, 16, 12, 11], "n": 119, "t": 1.98, "ok": true, "nmols": 49, "max": 6, "top": [6, 6, 6, 6, 3], "formula": "OXCPWK", "phase": "rand", "label": "unif1_n120"}
+{"vec": [15, 16, 17, 10, 9, 13, 17, 21, 12], "n": 130, "t": 2.72, "ok": true, "nmols": 47, "max": 11, "top": [11, 11, 11, 11, 2], "formula": "O2X2P2WK2A2", "phase": "rand", "label": "unif1_n130"}
+{"vec": [18, 14, 18, 21, 10, 9, 12, 17, 20], "n": 139, "t": 3.45, "ok": true, "nmols": 30, "max": 24, "top": [24, 22, 22, 12, 9], "formula": "O5X4P6W2K3A4", "phase": "rand", "label": "unif1_n140"}
+{"vec": [15, 15, 16, 24, 15, 16, 13, 24, 12], "n": 150, "t": 4.32, "ok": true, "nmols": 32, "max": 88, "top": [88, 2, 2, 2, 2], "formula": "O15X14C2P24W6K13A14", "phase": "rand", "label": "unif1_n150"}
+{"vec": [30, 10, 19, 18, 15, 17, 16, 21, 14], "n": 160, "t": 4.92, "ok": true, "nmols": 55, "max": 52, "top": [52, 2, 2, 2, 2], "formula": "O12X10P12W4K4A10", "phase": "rand", "label": "unif1_n160"}
+{"vec": [17, 18, 29, 11, 24, 15, 24, 11, 20], "n": 169, "t": 6.67, "ok": true, "nmols": 62, "max": 6, "top": [6, 6, 6, 6, 6], "formula": "OXCPWK", "phase": "rand", "label": "unif1_n170"}
+{"vec": [12, 33, 27, 11, 14, 18, 19, 25, 21], "n": 180, "t": 8.01, "ok": true, "nmols": 71, "max": 7, "top": [7, 7, 7, 7, 6], "formula": "X2C2W2A", "phase": "rand", "label": "unif1_n180"}
+{"vec": [21, 25, 21, 19, 26, 16, 21, 22, 18], "n": 189, "t": 10.66, "ok": true, "nmols": 52, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "unif1_n190"}
+{"vec": [22, 18, 23, 21, 18, 17, 32, 21, 27], "n": 199, "t": 12.02, "ok": true, "nmols": 74, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "unif1_n200"}
+{"vec": [23, 14, 20, 26, 19, 31, 30, 22, 30], "n": 215, "t": 15.23, "ok": true, "nmols": 66, "max": 10, "top": [10, 10, 10, 10, 10], "formula": "O2XP2WK2A2", "phase": "rand", "label": "unif1_n215"}
+{"vec": [22, 22, 27, 24, 35, 31, 30, 21, 18], "n": 230, "t": 18.56, "ok": true, "nmols": 81, "max": 6, "top": [6, 6, 6, 6, 6], "formula": "OXCPWK", "phase": "rand", "label": "unif1_n230"}
+{"vec": [27, 21, 18, 17, 27, 36, 30, 34, 34], "n": 244, "t": 20.73, "ok": true, "nmols": 87, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "unif1_n245"}
+{"vec": [37, 32, 33, 25, 26, 21, 28, 24, 34], "n": 260, "t": 26.28, "ok": true, "nmols": 88, "max": 8, "top": [8, 8, 8, 8, 8], "formula": "O2XCP2WK", "phase": "rand", "label": "unif1_n260"}
+{"vec": [30, 33, 25, 35, 22, 27, 38, 30, 41], "n": 281, "t": 32.76, "ok": true, "nmols": 77, "max": 10, "top": [10, 9, 9, 7, 7], "formula": "O2X2P2WK2A", "phase": "rand", "label": "unif1_n280"}
+{"vec": [35, 27, 37, 42, 31, 39, 29, 28, 32], "n": 300, "t": 37.11, "ok": true, "nmols": 69, "max": 20, "top": [20, 18, 18, 15, 12], "formula": "O4X2P5W2K3A4", "phase": "rand", "label": "unif1_n300"}
+{"vec": [34, 40, 21, 38, 36, 33, 47, 37, 35], "n": 321, "t": 45.44, "ok": true, "nmols": 105, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "unif1_n320"}
+{"vec": [50, 46, 42, 31, 24, 39, 42, 37, 34], "n": 345, "t": 51.68, "ok": true, "nmols": 112, "max": 8, "top": [8, 8, 8, 8, 8], "formula": "O2XCP2WK", "phase": "rand", "label": "unif1_n345"}
+{"vec": [48, 44, 37, 35, 40, 43, 38, 43, 43], "n": 371, "t": 59.68, "ok": true, "nmols": 121, "max": 8, "top": [8, 8, 8, 8, 8], "formula": "O2XCP2WK", "phase": "rand", "label": "unif1_n370"}
+{"vec": [51, 47, 36, 50, 42, 50, 43, 42, 40], "n": 401, "t": 73.11, "ok": true, "nmols": 90, "max": 9, "top": [9, 9, 9, 8, 8], "formula": "O2XCP2WKA", "phase": "rand", "label": "unif1_n400"}
+{"vec": [17, 13, 18, 12, 11, 21, 7, 10, 11], "n": 120, "t": 2.23, "ok": true, "nmols": 45, "max": 16, "top": [16, 16, 3, 3, 2], "formula": "O3X3C3P3W3K", "phase": "rand", "label": "unif2_n120"}
+{"vec": [19, 16, 12, 11, 11, 17, 18, 12, 15], "n": 131, "t": 3.3, "ok": true, "nmols": 42, "max": 8, "top": [8, 7, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "unif2_n130"}
+{"vec": [20, 13, 15, 14, 12, 11, 19, 22, 15], "n": 141, "t": 4.26, "ok": true, "nmols": 42, "max": 11, "top": [11, 11, 11, 8, 6], "formula": "O2X2P2WK2A2", "phase": "rand", "label": "unif2_n140"}
+{"vec": [15, 19, 23, 19, 12, 17, 14, 15, 16], "n": 150, "t": 4.91, "ok": true, "nmols": 40, "max": 12, "top": [12, 11, 10, 10, 7], "formula": "O2X2C2P3W2K", "phase": "rand", "label": "unif2_n150"}
+{"vec": [12, 17, 16, 20, 16, 18, 21, 16, 25], "n": 161, "t": 6.26, "ok": true, "nmols": 56, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "unif2_n160"}
+{"vec": [12, 17, 19, 24, 23, 15, 19, 25, 17], "n": 171, "t": 7.48, "ok": true, "nmols": 61, "max": 10, "top": [10, 10, 10, 10, 10], "formula": "O2XCP3WK2", "phase": "rand", "label": "unif2_n170"}
+{"vec": [14, 33, 19, 18, 23, 17, 11, 26, 19], "n": 180, "t": 7.75, "ok": true, "nmols": 57, "max": 12, "top": [12, 12, 12, 10, 6], "formula": "O2X2C2P3W2K", "phase": "rand", "label": "unif2_n180"}
+{"vec": [25, 25, 13, 17, 14, 19, 32, 17, 28], "n": 190, "t": 10.32, "ok": true, "nmols": 74, "max": 6, "top": [6, 6, 6, 6, 6], "formula": "OXCPWK", "phase": "rand", "label": "unif2_n190"}
+{"vec": [31, 20, 23, 19, 17, 24, 23, 21, 22], "n": 200, "t": 11.59, "ok": true, "nmols": 67, "max": 9, "top": [9, 9, 9, 8, 8], "formula": "O2XCP2WKA", "phase": "rand", "label": "unif2_n200"}
+{"vec": [13, 17, 23, 30, 23, 23, 30, 33, 23], "n": 215, "t": 13.15, "ok": true, "nmols": 78, "max": 11, "top": [11, 11, 11, 11, 11], "formula": "O2X2P2WK2A2", "phase": "rand", "label": "unif2_n215"}
+{"vec": [21, 21, 33, 18, 27, 29, 20, 26, 35], "n": 230, "t": 15.93, "ok": true, "nmols": 74, "max": 8, "top": [8, 7, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "unif2_n230"}
+{"vec": [26, 27, 34, 33, 24, 27, 21, 31, 23], "n": 246, "t": 22.75, "ok": true, "nmols": 56, "max": 22, "top": [22, 22, 14, 14, 14], "formula": "O4X4P5W2K3A4", "phase": "rand", "label": "unif2_n245"}
+{"vec": [27, 27, 27, 26, 33, 36, 25, 28, 31], "n": 260, "t": 24.3, "ok": true, "nmols": 72, "max": 8, "top": [8, 8, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "unif2_n260"}
+{"vec": [31, 42, 25, 31, 27, 32, 27, 36, 28], "n": 279, "t": 32.25, "ok": true, "nmols": 71, "max": 8, "top": [8, 8, 8, 8, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "unif2_n280"}
+{"vec": [34, 36, 30, 37, 24, 34, 42, 30, 33], "n": 300, "t": 42.81, "ok": true, "nmols": 83, "max": 10, "top": [10, 10, 10, 10, 10], "formula": "O2X2P2WK2A", "phase": "rand", "label": "unif2_n300"}
+{"vec": [36, 16, 38, 49, 36, 44, 31, 32, 38], "n": 320, "t": 47.53, "ok": true, "nmols": 89, "max": 26, "top": [26, 18, 18, 18, 18], "formula": "O6X2P9W2K5A2", "phase": "rand", "label": "unif2_n320"}
+{"vec": [42, 43, 38, 37, 37, 32, 41, 37, 38], "n": 345, "t": 57.51, "ok": true, "nmols": 85, "max": 8, "top": [8, 7, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "unif2_n345"}
+{"vec": [37, 39, 50, 44, 31, 35, 56, 34, 44], "n": 370, "t": 71.28, "ok": true, "nmols": 128, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "unif2_n370"}
+{"vec": [54, 40, 43, 36, 36, 54, 41, 50, 46], "n": 400, "t": 83.27, "ok": true, "nmols": 131, "max": 9, "top": [9, 9, 9, 9, 9], "formula": "O2XCP2WKA", "phase": "rand", "label": "unif2_n400"}
+{"vec": [17, 12, 8, 17, 9, 18, 11, 17, 11], "n": 120, "t": 2.62, "ok": true, "nmols": 30, "max": 13, "top": [13, 13, 13, 11, 8], "formula": "O3X2P3WK2A2", "phase": "rand", "label": "unif3_n120"}
+{"vec": [11, 9, 18, 18, 14, 14, 14, 15, 17], "n": 130, "t": 3.2, "ok": true, "nmols": 40, "max": 11, "top": [11, 11, 11, 10, 7], "formula": "O2XCP3WK2A", "phase": "rand", "label": "unif3_n130"}
+{"vec": [21, 17, 14, 8, 20, 17, 13, 15, 15], "n": 140, "t": 3.88, "ok": true, "nmols": 58, "max": 6, "top": [6, 5, 5, 3, 3], "formula": "XC2W2A", "phase": "rand", "label": "unif3_n140"}
+{"vec": [20, 15, 16, 19, 20, 8, 17, 24, 12], "n": 151, "t": 5.45, "ok": true, "nmols": 35, "max": 13, "top": [13, 13, 13, 10, 7], "formula": "O3X2P3WK2A2", "phase": "rand", "label": "unif3_n150"}
+{"vec": [18, 18, 12, 16, 15, 22, 19, 19, 21], "n": 160, "t": 5.96, "ok": true, "nmols": 43, "max": 11, "top": [11, 7, 7, 7, 7], "formula": "O2X2P2WK2A2", "phase": "rand", "label": "unif3_n160"}
+{"vec": [18, 23, 22, 11, 21, 10, 16, 25, 25], "n": 171, "t": 6.64, "ok": true, "nmols": 65, "max": 8, "top": [8, 8, 6, 6, 6], "formula": "O2XCP2WK", "phase": "rand", "label": "unif3_n170"}
+{"vec": [15, 17, 19, 21, 18, 24, 23, 23, 20], "n": 180, "t": 9.04, "ok": true, "nmols": 58, "max": 11, "top": [11, 7, 7, 7, 7], "formula": "O2X2P2WK2A2", "phase": "rand", "label": "unif3_n180"}
+{"vec": [23, 20, 24, 22, 18, 27, 17, 12, 27], "n": 190, "t": 9.33, "ok": true, "nmols": 54, "max": 8, "top": [8, 8, 8, 8, 8], "formula": "O2XCP2WK", "phase": "rand", "label": "unif3_n190"}
+{"vec": [22, 23, 17, 25, 25, 19, 26, 21, 21], "n": 199, "t": 14.99, "ok": true, "nmols": 50, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "unif3_n200"}
+{"vec": [25, 29, 27, 19, 26, 14, 24, 35, 17], "n": 216, "t": 14.31, "ok": true, "nmols": 63, "max": 8, "top": [8, 7, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "unif3_n215"}
+{"vec": [32, 23, 26, 26, 27, 22, 20, 26, 28], "n": 230, "t": 17.15, "ok": true, "nmols": 73, "max": 9, "top": [9, 9, 8, 8, 8], "formula": "O2XCP2WKA", "phase": "rand", "label": "unif3_n230"}
+{"vec": [23, 33, 26, 26, 23, 23, 36, 26, 30], "n": 246, "t": 20.97, "ok": true, "nmols": 95, "max": 6, "top": [6, 6, 6, 6, 6], "formula": "OXCPWK", "phase": "rand", "label": "unif3_n245"}
+{"vec": [32, 26, 31, 34, 20, 28, 24, 33, 31], "n": 259, "t": 23.54, "ok": true, "nmols": 63, "max": 22, "top": [22, 22, 13, 13, 13], "formula": "O4X4P5W2K3A4", "phase": "rand", "label": "unif3_n260"}
+{"vec": [29, 34, 31, 35, 43, 25, 32, 29, 22], "n": 280, "t": 29.6, "ok": true, "nmols": 80, "max": 10, "top": [10, 10, 10, 7, 7], "formula": "O2XCP3WK2", "phase": "rand", "label": "unif3_n280"}
+{"vec": [26, 32, 29, 39, 31, 29, 36, 35, 43], "n": 300, "t": 33.69, "ok": true, "nmols": 89, "max": 10, "top": [10, 10, 10, 7, 7], "formula": "O2XCP3WK2", "phase": "rand", "label": "unif3_n300"}
+{"vec": [32, 34, 40, 31, 36, 37, 49, 34, 27], "n": 320, "t": 56.81, "ok": true, "nmols": 128, "max": 6, "top": [6, 6, 6, 6, 6], "formula": "OXCPWK", "phase": "rand", "label": "unif3_n320"}
+{"vec": [44, 27, 47, 35, 44, 42, 29, 33, 45], "n": 346, "t": 65.28, "ok": true, "nmols": 117, "max": 8, "top": [8, 8, 8, 8, 8], "formula": "O2XCP2WK", "phase": "rand", "label": "unif3_n345"}
+{"vec": [39, 36, 41, 45, 56, 36, 42, 32, 43], "n": 370, "t": 79.26, "ok": true, "nmols": 101, "max": 10, "top": [10, 10, 10, 7, 7], "formula": "O2XCP3WK2", "phase": "rand", "label": "unif3_n370"}
+{"vec": [47, 36, 54, 51, 43, 40, 42, 36, 52], "n": 401, "t": 94.68, "ok": true, "nmols": 99, "max": 18, "top": [18, 18, 18, 18, 11], "formula": "O4X2P5W2K3A2", "phase": "rand", "label": "unif3_n400"}
+{"vec": [45, 52, 57, 55, 55, 43, 44, 42, 48], "n": 441, "t": 117.08, "ok": true, "nmols": 126, "max": 12, "top": [12, 10, 10, 10, 10], "formula": "O2X2C2P3W2K", "phase": "rand", "label": "unif_hi_n440"}
+{"vec": [51, 55, 54, 55, 58, 58, 52, 56, 62], "n": 501, "t": 158.27, "ok": true, "nmols": 129, "max": 10, "top": [10, 10, 10, 7, 7], "formula": "O2XCP3WK2", "phase": "rand", "label": "unif_hi_n500"}
+{"vec": [14, 14, 14, 13, 15, 12, 14, 15, 15], "n": 126, "t": 5.25, "ok": true, "nmols": 31, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n126"}
+{"vec": [14, 14, 14, 14, 14, 14, 14, 14, 14], "n": 126, "t": 5.3, "ok": true, "nmols": 28, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n126"}
+{"vec": [14, 14, 14, 13, 15, 13, 15, 14, 13], "n": 125, "t": 5.16, "ok": true, "nmols": 34, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n126"}
+{"vec": [14, 14, 14, 14, 14, 16, 14, 13, 14], "n": 127, "t": 5.34, "ok": true, "nmols": 29, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n126"}
+{"vec": [13, 13, 15, 14, 14, 15, 13, 14, 14], "n": 125, "t": 5.05, "ok": true, "nmols": 31, "max": 10, "top": [10, 7, 7, 7, 7], "formula": "O2XCP3WK2", "phase": "rand", "label": "bal_n126"}
+{"vec": [16, 15, 13, 16, 15, 15, 15, 16, 15], "n": 136, "t": 6.67, "ok": true, "nmols": 30, "max": 13, "top": [13, 7, 7, 7, 7], "formula": "O3X2P3WK2A2", "phase": "rand", "label": "bal_n135"}
+{"vec": [15, 15, 15, 14, 15, 15, 16, 15, 15], "n": 135, "t": 6.43, "ok": true, "nmols": 36, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n135"}
+{"vec": [16, 15, 15, 14, 16, 16, 14, 15, 15], "n": 136, "t": 6.49, "ok": true, "nmols": 38, "max": 8, "top": [8, 8, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "bal_n135"}
+{"vec": [15, 15, 15, 15, 15, 15, 15, 15, 15], "n": 135, "t": 6.51, "ok": true, "nmols": 30, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n135"}
+{"vec": [14, 15, 15, 15, 14, 16, 17, 15, 15], "n": 136, "t": 6.64, "ok": true, "nmols": 39, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n135"}
+{"vec": [15, 15, 15, 16, 16, 15, 14, 15, 15], "n": 136, "t": 6.65, "ok": true, "nmols": 30, "max": 13, "top": [13, 7, 7, 7, 7], "formula": "O2X2C2P3W2KA", "phase": "rand", "label": "bal_n135"}
+{"vec": [16, 16, 17, 16, 16, 16, 14, 16, 17], "n": 144, "t": 7.67, "ok": true, "nmols": 36, "max": 8, "top": [8, 8, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "bal_n144"}
+{"vec": [16, 16, 16, 17, 16, 17, 16, 15, 16], "n": 145, "t": 8.1, "ok": true, "nmols": 34, "max": 10, "top": [10, 7, 7, 7, 7], "formula": "O2XCP3WK2", "phase": "rand", "label": "bal_n144"}
+{"vec": [16, 16, 16, 16, 16, 16, 16, 16, 16], "n": 144, "t": 7.8, "ok": true, "nmols": 32, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n144"}
+{"vec": [16, 16, 16, 16, 16, 16, 15, 16, 17], "n": 144, "t": 7.78, "ok": true, "nmols": 34, "max": 8, "top": [8, 7, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "bal_n144"}
+{"vec": [17, 15, 16, 16, 16, 16, 17, 16, 16], "n": 145, "t": 8.0, "ok": true, "nmols": 34, "max": 10, "top": [10, 7, 7, 7, 7], "formula": "O2XP2WK2A2", "phase": "rand", "label": "bal_n144"}
+{"vec": [16, 16, 16, 17, 16, 16, 17, 15, 16], "n": 145, "t": 6.4, "ok": true, "nmols": 33, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n144"}
+{"vec": [17, 17, 16, 17, 17, 17, 18, 16, 17], "n": 152, "t": 7.02, "ok": true, "nmols": 37, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n153"}
+{"vec": [17, 17, 19, 17, 17, 17, 17, 16, 17], "n": 154, "t": 8.26, "ok": true, "nmols": 35, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n153"}
+{"vec": [17, 17, 17, 17, 17, 17, 17, 17, 17], "n": 153, "t": 8.16, "ok": true, "nmols": 34, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n153"}
+{"vec": [18, 16, 18, 17, 17, 18, 16, 16, 17], "n": 153, "t": 8.17, "ok": true, "nmols": 38, "max": 8, "top": [8, 8, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "bal_n153"}
+{"vec": [18, 17, 17, 17, 16, 17, 17, 17, 18], "n": 154, "t": 8.32, "ok": true, "nmols": 36, "max": 9, "top": [9, 7, 7, 7, 7], "formula": "O2XCP2WKA", "phase": "rand", "label": "bal_n153"}
+{"vec": [17, 16, 17, 18, 18, 17, 17, 17, 16], "n": 153, "t": 8.31, "ok": true, "nmols": 35, "max": 10, "top": [10, 7, 7, 7, 7], "formula": "O2XCP3WK2", "phase": "rand", "label": "bal_n153"}
+{"vec": [19, 18, 18, 19, 17, 17, 18, 19, 17], "n": 162, "t": 9.96, "ok": true, "nmols": 36, "max": 13, "top": [13, 11, 7, 7, 7], "formula": "O3X2P3WK2A2", "phase": "rand", "label": "bal_n162"}
+{"vec": [18, 18, 18, 18, 18, 18, 18, 18, 18], "n": 162, "t": 9.78, "ok": true, "nmols": 36, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n162"}
+{"vec": [18, 19, 19, 18, 17, 17, 18, 19, 18], "n": 163, "t": 9.92, "ok": true, "nmols": 37, "max": 11, "top": [11, 7, 7, 7, 7], "formula": "O2X2P2WK2A2", "phase": "rand", "label": "bal_n162"}
+{"vec": [18, 18, 19, 19, 17, 18, 16, 19, 18], "n": 162, "t": 9.67, "ok": true, "nmols": 39, "max": 9, "top": [9, 9, 7, 7, 7], "formula": "O2XCP2WKA", "phase": "rand", "label": "bal_n162"}
+{"vec": [17, 18, 18, 18, 18, 18, 18, 18, 19], "n": 162, "t": 9.63, "ok": true, "nmols": 39, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n162"}
+{"vec": [19, 20, 21, 20, 20, 21, 20, 19, 19], "n": 179, "t": 13.12, "ok": true, "nmols": 43, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n180"}
+{"vec": [20, 20, 20, 20, 20, 20, 20, 20, 20], "n": 180, "t": 13.24, "ok": true, "nmols": 40, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n180"}
+{"vec": [20, 20, 19, 20, 20, 21, 20, 20, 20], "n": 180, "t": 13.32, "ok": true, "nmols": 40, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n180"}
+{"vec": [21, 19, 20, 20, 20, 20, 21, 20, 20], "n": 181, "t": 13.71, "ok": true, "nmols": 42, "max": 10, "top": [10, 7, 7, 7, 7], "formula": "O2XP2WK2A2", "phase": "rand", "label": "bal_n180"}
+{"vec": [22, 23, 22, 22, 22, 21, 23, 21, 22], "n": 198, "t": 15.05, "ok": true, "nmols": 48, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n198"}
+{"vec": [22, 22, 22, 22, 22, 22, 22, 22, 22], "n": 198, "t": 14.94, "ok": true, "nmols": 44, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n198"}
+{"vec": [22, 22, 21, 25, 21, 20, 23, 22, 21], "n": 197, "t": 14.96, "ok": true, "nmols": 45, "max": 11, "top": [11, 10, 7, 7, 7], "formula": "O2XCP3WK2A", "phase": "rand", "label": "bal_n198"}
+{"vec": [23, 22, 22, 23, 22, 22, 22, 20, 22], "n": 198, "t": 14.98, "ok": true, "nmols": 44, "max": 8, "top": [8, 7, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "bal_n198"}
+{"vec": [22, 22, 21, 22, 22, 22, 21, 23, 22], "n": 197, "t": 14.56, "ok": true, "nmols": 45, "max": 9, "top": [9, 7, 7, 7, 7], "formula": "O2XCP2WKA", "phase": "rand", "label": "bal_n198"}
+{"vec": [24, 25, 24, 24, 24, 25, 24, 23, 23], "n": 216, "t": 16.58, "ok": true, "nmols": 49, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n216"}
+{"vec": [24, 24, 24, 24, 23, 24, 25, 24, 23], "n": 215, "t": 16.53, "ok": true, "nmols": 50, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n216"}
+{"vec": [24, 26, 24, 24, 24, 24, 24, 24, 22], "n": 216, "t": 16.62, "ok": true, "nmols": 49, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n216"}
+{"vec": [25, 24, 24, 24, 24, 23, 24, 23, 24], "n": 215, "t": 16.43, "ok": true, "nmols": 50, "max": 8, "top": [8, 7, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "bal_n216"}
+{"vec": [23, 24, 24, 22, 24, 24, 24, 25, 25], "n": 215, "t": 16.09, "ok": true, "nmols": 56, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n216"}
+{"vec": [22, 25, 24, 24, 24, 24, 23, 24, 25], "n": 215, "t": 22.82, "ok": true, "nmols": 55, "max": 10, "top": [10, 7, 7, 7, 7], "formula": "O2XCP3WK2", "phase": "rand", "label": "bal_n216"}
+{"vec": [26, 28, 30, 27, 28, 27, 28, 29, 28], "n": 251, "t": 36.08, "ok": true, "nmols": 64, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n252"}
+{"vec": [27, 28, 29, 27, 27, 29, 27, 29, 29], "n": 252, "t": 36.53, "ok": true, "nmols": 59, "max": 11, "top": [11, 7, 7, 7, 7], "formula": "O2X2P2WK2A2", "phase": "rand", "label": "bal_n252"}
+{"vec": [28, 28, 27, 27, 29, 27, 29, 29, 28], "n": 252, "t": 37.23, "ok": true, "nmols": 62, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n252"}
+{"vec": [28, 28, 28, 28, 28, 28, 28, 28, 28], "n": 252, "t": 37.23, "ok": true, "nmols": 56, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n252"}
+{"vec": [26, 28, 28, 28, 28, 28, 28, 29, 28], "n": 251, "t": 36.49, "ok": true, "nmols": 61, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n252"}
+{"vec": [26, 27, 28, 28, 28, 29, 29, 28, 28], "n": 251, "t": 36.42, "ok": true, "nmols": 64, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n252"}
+{"vec": [33, 32, 31, 32, 33, 31, 33, 32, 32], "n": 289, "t": 56.51, "ok": true, "nmols": 65, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n288"}
+{"vec": [32, 33, 32, 32, 31, 32, 32, 32, 32], "n": 288, "t": 55.83, "ok": true, "nmols": 65, "max": 10, "top": [10, 7, 7, 7, 7], "formula": "O2X2P2WK2A", "phase": "rand", "label": "bal_n288"}
+{"vec": [32, 31, 33, 32, 33, 33, 31, 31, 31], "n": 287, "t": 55.04, "ok": true, "nmols": 66, "max": 8, "top": [8, 7, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "bal_n288"}
+{"vec": [32, 32, 32, 32, 32, 32, 32, 32, 32], "n": 288, "t": 55.77, "ok": true, "nmols": 64, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n288"}
+{"vec": [33, 32, 34, 31, 31, 32, 32, 32, 32], "n": 289, "t": 55.98, "ok": true, "nmols": 69, "max": 8, "top": [8, 7, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "bal_n288"}
+{"vec": [33, 34, 30, 32, 32, 32, 31, 32, 32], "n": 288, "t": 55.9, "ok": true, "nmols": 69, "max": 8, "top": [8, 8, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "bal_n288"}
+{"vec": [38, 40, 39, 39, 39, 39, 39, 39, 38], "n": 350, "t": 92.04, "ok": true, "nmols": 81, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n351"}
+{"vec": [39, 39, 38, 38, 39, 41, 39, 39, 39], "n": 351, "t": 84.9, "ok": true, "nmols": 81, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n351"}
+{"vec": [39, 39, 39, 39, 39, 40, 38, 39, 39], "n": 351, "t": 78.7, "ok": true, "nmols": 80, "max": 8, "top": [8, 7, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "bal_n351"}
+{"vec": [40, 38, 38, 39, 39, 39, 39, 39, 39], "n": 350, "t": 78.94, "ok": true, "nmols": 79, "max": 9, "top": [9, 7, 7, 7, 7], "formula": "O2XCP2WKA", "phase": "rand", "label": "bal_n351"}
+{"vec": [39, 39, 39, 39, 39, 39, 39, 39, 39], "n": 351, "t": 79.33, "ok": true, "nmols": 78, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n351"}
+{"vec": [39, 39, 41, 39, 40, 40, 38, 39, 37], "n": 352, "t": 79.2, "ok": true, "nmols": 81, "max": 8, "top": [8, 7, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "bal_n351"}
+{"vec": [49, 49, 48, 48, 47, 47, 48, 48, 48], "n": 432, "t": 121.46, "ok": true, "nmols": 98, "max": 8, "top": [8, 7, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "bal_n432"}
+{"vec": [48, 49, 46, 48, 49, 49, 47, 49, 48], "n": 433, "t": 121.25, "ok": true, "nmols": 99, "max": 8, "top": [8, 7, 7, 7, 7], "formula": "O2XCP2WK", "phase": "rand", "label": "bal_n432"}
+{"vec": [48, 48, 48, 48, 48, 48, 48, 48, 48], "n": 432, "t": 110.63, "ok": true, "nmols": 96, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n432"}
+{"vec": [48, 48, 48, 48, 49, 48, 48, 48, 48], "n": 433, "t": 111.36, "ok": true, "nmols": 97, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n432"}
+{"vec": [47, 48, 47, 48, 48, 48, 48, 49, 48], "n": 431, "t": 110.26, "ok": true, "nmols": 98, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n432"}
+{"vec": [48, 49, 49, 48, 48, 47, 48, 48, 48], "n": 433, "t": 102.77, "ok": true, "nmols": 97, "max": 7, "top": [7, 7, 7, 7, 7], "formula": "OXCPWKA", "phase": "rand", "label": "bal_n432"}
+{"vec": [5, 6, 6, 7, 78, 8, 4, 4, 2], "n": 120, "t": 2.94, "ok": true, "nmols": 39, "max": 11, "top": [11, 10, 7, 4, 4], "formula": "O2XCP3W2K2", "phase": "rand", "label": "skew_W_n120"}
+{"vec": [4, 5, 2, 7, 2, 8, 4, 85, 3], "n": 120, "t": 3.05, "ok": true, "nmols": 42, "max": 12, "top": [12, 8, 8, 4, 4], "formula": "O2XCP3K2A3", "phase": "rand", "label": "skew_A_n120"}
+{"vec": [3, 3, 5, 2, 4, 2, 95, 3, 3], "n": 120, "t": 4.76, "ok": true, "nmols": 42, "max": 8, "top": [8, 6, 6, 6, 6], "formula": "OCK5F", "phase": "rand", "label": "skew_K_n120"}
+{"vec": [112, 3, 5, 5, 7, 4, 6, 3, 6], "n": 151, "t": 9.21, "ok": true, "nmols": 45, "max": 6, "top": [6, 6, 6, 6, 6], "formula": "O4CK", "phase": "rand", "label": "skew_O_n150"}
+{"vec": [8, 8, 3, 102, 4, 7, 6, 5, 6], "n": 149, "t": 8.32, "ok": true, "nmols": 43, "max": 6, "top": [6, 6, 6, 6, 6], "formula": "OP4K", "phase": "rand", "label": "skew_P_n150"}
+{"vec": [11, 4, 99, 4, 5, 12, 7, 6, 3], "n": 151, "t": 4.21, "ok": true, "nmols": 74, "max": 3, "top": [3, 3, 3, 2, 2], "formula": "XWA", "phase": "rand", "label": "skew_C_n150"}
+{"vec": [13, 8, 10, 10, 5, 3, 9, 110, 11], "n": 179, "t": 10.16, "ok": true, "nmols": 58, "max": 9, "top": [9, 9, 9, 9, 7], "formula": "O2XCP2KA2", "phase": "rand", "label": "skew_A_n180"}
+{"vec": [3, 9, 10, 10, 6, 5, 11, 120, 7], "n": 181, "t": 10.53, "ok": true, "nmols": 69, "max": 7, "top": [7, 7, 4, 4, 4], "formula": "OXCPKA2", "phase": "rand", "label": "skew_A_n180"}
+{"vec": [8, 8, 11, 111, 4, 9, 10, 12, 7], "n": 180, "t": 13.96, "ok": true, "nmols": 45, "max": 8, "top": [8, 6, 6, 6, 6], "formula": "OP5LK", "phase": "rand", "label": "skew_P_n180"}
+{"vec": [9, 10, 8, 6, 3, 1, 8, 159, 6], "n": 210, "t": 17.43, "ok": true, "nmols": 82, "max": 10, "top": [10, 7, 7, 7, 7], "formula": "O2XCP2KA3", "phase": "rand", "label": "skew_A_n210"}
+{"vec": [9, 11, 1, 7, 135, 9, 11, 15, 11], "n": 209, "t": 16.29, "ok": true, "nmols": 73, "max": 8, "top": [8, 7, 7, 7, 7], "formula": "OXCPW3K", "phase": "rand", "label": "skew_W_n210"}
+{"vec": [9, 7, 4, 7, 6, 162, 9, 3, 3], "n": 210, "t": 10.41, "ok": true, "nmols": 90, "max": 10, "top": [10, 7, 7, 6, 6], "formula": "O2X2P2WK2A", "phase": "rand", "label": "skew_L_n210"}
+{"vec": [7, 154, 14, 9, 10, 13, 9, 16, 8], "n": 240, "t": 23.53, "ok": true, "nmols": 79, "max": 6, "top": [6, 6, 6, 6, 6], "formula": "OX2CPK", "phase": "rand", "label": "skew_X_n240"}
+{"vec": [11, 6, 10, 4, 10, 164, 11, 10, 14], "n": 240, "t": 15.72, "ok": true, "nmols": 111, "max": 7, "top": [7, 7, 6, 6, 2], "formula": "OXCPWKA", "phase": "rand", "label": "skew_L_n240"}
+{"vec": [9, 7, 10, 158, 13, 10, 9, 9, 14], "n": 239, "t": 28.86, "ok": true, "nmols": 70, "max": 6, "top": [6, 6, 6, 6, 6], "formula": "OP4K", "phase": "rand", "label": "skew_P_n240"}
+{"vec": [10, 191, 8, 13, 12, 8, 14, 15, 9], "n": 280, "t": 34.39, "ok": true, "nmols": 100, "max": 7, "top": [7, 6, 6, 6, 6], "formula": "OX3CPK", "phase": "rand", "label": "skew_X_n280"}
+{"vec": [4, 10, 7, 12, 9, 202, 12, 8, 15], "n": 279, "t": 22.18, "ok": true, "nmols": 130, "max": 6, "top": [6, 6, 6, 6, 3], "formula": "OXCPWK", "phase": "rand", "label": "skew_L_n280"}
+{"vec": [8, 6, 11, 9, 207, 14, 5, 13, 7], "n": 280, "t": 31.35, "ok": true, "nmols": 103, "max": 11, "top": [11, 9, 9, 7, 7], "formula": "O2X2P3W3K", "phase": "rand", "label": "skew_W_n280"}
+{"vec": [11, 13, 22, 13, 15, 221, 10, 15, 9], "n": 329, "t": 32.61, "ok": true, "nmols": 138, "max": 12, "top": [12, 10, 7, 7, 7], "formula": "O2X2C2P3W2K", "phase": "rand", "label": "skew_L_n330"}
+{"vec": [12, 13, 247, 12, 13, 11, 14, 3, 6], "n": 331, "t": 31.87, "ok": true, "nmols": 144, "max": 6, "top": [6, 6, 6, 6, 6], "formula": "OXCPWK", "phase": "rand", "label": "skew_C_n330"}
+{"vec": [21, 9, 23, 10, 210, 13, 19, 13, 12], "n": 330, "t": 43.3, "ok": true, "nmols": 116, "max": 9, "top": [9, 9, 7, 7, 7], "formula": "O2XCP2W2K", "phase": "rand", "label": "skew_W_n330"}
+{"vec": [255, 17, 18, 15, 26, 17, 16, 17, 19], "n": 400, "t": 91.06, "ok": true, "nmols": 96, "max": 8, "top": [8, 6, 6, 6, 6], "formula": "O5CLK", "phase": "rand", "label": "skew_O_n400"}
+{"vec": [5, 16, 13, 12, 317, 10, 7, 10, 11], "n": 401, "t": 70.14, "ok": true, "nmols": 160, "max": 9, "top": [9, 8, 8, 8, 8], "formula": "OX2P2W3K", "phase": "rand", "label": "skew_W_n400"}
+{"vec": [15, 24, 14, 16, 26, 11, 253, 19, 21], "n": 399, "t": 82.43, "ok": true, "nmols": 94, "max": 15, "top": [15, 8, 6, 6, 6], "formula": "OCL2K7A3F", "phase": "rand", "label": "skew_K_n400"}
+{"vec": [18, 20, 19, 16, 24, 17, 17, 310, 19], "n": 460, "t": 90.61, "ok": true, "nmols": 157, "max": 9, "top": [9, 7, 7, 7, 7], "formula": "O2XCP2KA2", "phase": "rand", "label": "skew_A_n460"}
+{"vec": [38, 21, 24, 269, 21, 23, 18, 23, 22], "n": 459, "t": 121.42, "ok": true, "nmols": 86, "max": 20, "top": [20, 18, 18, 18, 18], "formula": "OC2P9W4LKF2", "phase": "rand", "label": "skew_P_n460"}
+{"vec": [20, 28, 22, 14, 18, 15, 302, 24, 17], "n": 460, "t": 124.09, "ok": true, "nmols": 117, "max": 6, "top": [6, 6, 6, 6, 6], "formula": "OCK4", "phase": "rand", "label": "skew_K_n460"}

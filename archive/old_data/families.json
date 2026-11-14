@@ -1,0 +1,15887 @@
+{
+ "O/X/K": {
+  "elems": [
+   "O",
+   "X",
+   "K"
+  ],
+  "Nmax": 24,
+  "pure_onepot": [
+   {
+    "vec": [
+     0,
+     0,
+     2
+    ],
+    "formula": "K2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     2,
+     0
+    ],
+    "formula": "X2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     1,
+     0,
+     1
+    ],
+    "formula": "OK",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     2,
+     0,
+     0
+    ],
+    "formula": "O2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     1,
+     2
+    ],
+    "formula": "XK2",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     3,
+     0
+    ],
+    "formula": "X3",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     2,
+     1,
+     0
+    ],
+    "formula": "O2X",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     2,
+     2
+    ],
+    "formula": "X2K2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     1,
+     0,
+     3
+    ],
+    "formula": "OK3",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     2,
+     2,
+     0
+    ],
+    "formula": "O2X2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     3,
+     0,
+     1
+    ],
+    "formula": "O3K",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     0,
+     3,
+     2
+    ],
+    "formula": "X3K2",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     1,
+     1,
+     3
+    ],
+    "formula": "OXK3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     2,
+     3,
+     0
+    ],
+    "formula": "O2X3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     3,
+     1,
+     1
+    ],
+    "formula": "O3XK",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     0,
+     4,
+     2
+    ],
+    "formula": "X4K2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     1,
+     2,
+     3
+    ],
+    "formula": "OX2K3",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     0,
+     4
+    ],
+    "formula": "O2K4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     4,
+     0
+    ],
+    "formula": "O2X4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     3,
+     2,
+     1
+    ],
+    "formula": "O3X2K",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     4,
+     0,
+     2
+    ],
+    "formula": "O4K2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     0,
+     5,
+     2
+    ],
+    "formula": "X5K2",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     1,
+     3,
+     3
+    ],
+    "formula": "OX3K3",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     2,
+     1,
+     4
+    ],
+    "formula": "O2XK4",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     2,
+     5,
+     0
+    ],
+    "formula": "O2X5",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     3,
+     3,
+     1
+    ],
+    "formula": "O3X3K",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     4,
+     1,
+     2
+    ],
+    "formula": "O4XK2",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     0,
+     6,
+     2
+    ],
+    "formula": "X6K2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     1,
+     4,
+     3
+    ],
+    "formula": "OX4K3",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     0,
+     6
+    ],
+    "formula": "O2K6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     2,
+     4
+    ],
+    "formula": "O2X2K4",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     6,
+     0
+    ],
+    "formula": "O2X6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     3,
+     0,
+     5
+    ],
+    "formula": "O3K5",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     3,
+     4,
+     1
+    ],
+    "formula": "O3X4K",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     4,
+     2,
+     2
+    ],
+    "formula": "O4X2K2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     5,
+     0,
+     3
+    ],
+    "formula": "O5K3",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     6,
+     0,
+     2
+    ],
+    "formula": "O6K2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     0,
+     7,
+     2
+    ],
+    "formula": "X7K2",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     5,
+     3
+    ],
+    "formula": "OX5K3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     1,
+     6
+    ],
+    "formula": "O2XK6",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     3,
+     4
+    ],
+    "formula": "O2X3K4",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     7,
+     0
+    ],
+    "formula": "O2X7",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     1,
+     5
+    ],
+    "formula": "O3XK5",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     5,
+     1
+    ],
+    "formula": "O3X5K",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     4,
+     3,
+     2
+    ],
+    "formula": "O4X3K2",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     5,
+     1,
+     3
+    ],
+    "formula": "O5XK3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     6,
+     1,
+     2
+    ],
+    "formula": "O6XK2",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     6,
+     3
+    ],
+    "formula": "OX6K3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     2,
+     6
+    ],
+    "formula": "O2X2K6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     4,
+     4
+    ],
+    "formula": "O2X4K4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     0,
+     7
+    ],
+    "formula": "O3K7",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     2,
+     5
+    ],
+    "formula": "O3X2K5",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     6,
+     1
+    ],
+    "formula": "O3X6K",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     0,
+     6
+    ],
+    "formula": "O4K6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     4,
+     2
+    ],
+    "formula": "O4X4K2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     5,
+     2,
+     3
+    ],
+    "formula": "O5X2K3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     0,
+     4
+    ],
+    "formula": "O6K4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     2,
+     2
+    ],
+    "formula": "O6X2K2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     7,
+     0,
+     3
+    ],
+    "formula": "O7K3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     1,
+     7,
+     3
+    ],
+    "formula": "OX7K3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     3,
+     6
+    ],
+    "formula": "O2X3K6",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     5,
+     4
+    ],
+    "formula": "O2X5K4",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     1,
+     7
+    ],
+    "formula": "O3XK7",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     3,
+     5
+    ],
+    "formula": "O3X3K5",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     7,
+     1
+    ],
+    "formula": "O3X7K",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     4,
+     1,
+     6
+    ],
+    "formula": "O4XK6",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     4,
+     5,
+     2
+    ],
+    "formula": "O4X5K2",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     5,
+     3,
+     3
+    ],
+    "formula": "O5X3K3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     6,
+     1,
+     4
+    ],
+    "formula": "O6XK4",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     6,
+     3,
+     2
+    ],
+    "formula": "O6X3K2",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     7,
+     1,
+     3
+    ],
+    "formula": "O7XK3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     4,
+     6
+    ],
+    "formula": "O2X4K6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     6,
+     4
+    ],
+    "formula": "O2X6K4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     2,
+     7
+    ],
+    "formula": "O3X2K7",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     4,
+     5
+    ],
+    "formula": "O3X4K5",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     2,
+     6
+    ],
+    "formula": "O4X2K6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     6,
+     2
+    ],
+    "formula": "O4X6K2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     5,
+     4,
+     3
+    ],
+    "formula": "O5X4K3",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     2,
+     4
+    ],
+    "formula": "O6X2K4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     4,
+     2
+    ],
+    "formula": "O6X4K2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     7,
+     2,
+     3
+    ],
+    "formula": "O7X2K3",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     7,
+     4
+    ],
+    "formula": "O2X7K4",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     3,
+     7
+    ],
+    "formula": "O3X3K7",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     5,
+     5
+    ],
+    "formula": "O3X5K5",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     4,
+     3,
+     6
+    ],
+    "formula": "O4X3K6",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     4,
+     7,
+     2
+    ],
+    "formula": "O4X7K2",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     5,
+     5,
+     3
+    ],
+    "formula": "O5X5K3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     6,
+     3,
+     4
+    ],
+    "formula": "O6X3K4",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     7,
+     3,
+     3
+    ],
+    "formula": "O7X3K3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     4,
+     7
+    ],
+    "formula": "O3X4K7",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     3,
+     6,
+     5
+    ],
+    "formula": "O3X6K5",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     0,
+     10
+    ],
+    "formula": "O4K10",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     4,
+     6
+    ],
+    "formula": "O4X4K6",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     5,
+     6,
+     3
+    ],
+    "formula": "O5X6K3",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     6,
+     4,
+     4
+    ],
+    "formula": "O6X4K4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     7,
+     4,
+     3
+    ],
+    "formula": "O7X4K3",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     10,
+     0,
+     4
+    ],
+    "formula": "O10K4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     3,
+     7,
+     5
+    ],
+    "formula": "O3X7K5",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     4,
+     1,
+     10
+    ],
+    "formula": "O4XK10",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     4,
+     5,
+     6
+    ],
+    "formula": "O4X5K6",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     5,
+     7,
+     3
+    ],
+    "formula": "O5X7K3",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     6,
+     5,
+     4
+    ],
+    "formula": "O6X5K4",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     10,
+     1,
+     4
+    ],
+    "formula": "O10XK4",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     3,
+     6,
+     7
+    ],
+    "formula": "O3X6K7",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     4,
+     2,
+     10
+    ],
+    "formula": "O4X2K10",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     4,
+     6,
+     6
+    ],
+    "formula": "O4X6K6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     6,
+     6,
+     4
+    ],
+    "formula": "O6X6K4",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     7,
+     6,
+     3
+    ],
+    "formula": "O7X6K3",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     10,
+     2,
+     4
+    ],
+    "formula": "O10X2K4",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     3,
+     7,
+     7
+    ],
+    "formula": "O3X7K7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     3,
+     10
+    ],
+    "formula": "O4X3K10",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     7,
+     6
+    ],
+    "formula": "O4X7K6",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     6,
+     7,
+     4
+    ],
+    "formula": "O6X7K4",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     7,
+     7,
+     3
+    ],
+    "formula": "O7X7K3",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     10,
+     3,
+     4
+    ],
+    "formula": "O10X3K4",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     3,
+     8,
+     7
+    ],
+    "formula": "O3X8K7",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     4,
+     10
+    ],
+    "formula": "O4X4K10",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     6,
+     8
+    ],
+    "formula": "O4X6K8",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     7,
+     8,
+     3
+    ],
+    "formula": "O7X8K3",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     8,
+     6,
+     4
+    ],
+    "formula": "O8X6K4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     10,
+     4,
+     4
+    ],
+    "formula": "O10X4K4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     3,
+     9,
+     7
+    ],
+    "formula": "O3X9K7",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     4,
+     7,
+     8
+    ],
+    "formula": "O4X7K8",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     5,
+     3,
+     11
+    ],
+    "formula": "O5X3K11",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     7,
+     9,
+     3
+    ],
+    "formula": "O7X9K3",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     8,
+     7,
+     4
+    ],
+    "formula": "O8X7K4",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     11,
+     3,
+     5
+    ],
+    "formula": "O11X3K5",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     3,
+     10,
+     7
+    ],
+    "formula": "O3X10K7",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     4,
+     8,
+     8
+    ],
+    "formula": "O4X8K8",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     4,
+     11
+    ],
+    "formula": "O5X4K11",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     6,
+     9
+    ],
+    "formula": "O5X6K9",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     7,
+     10,
+     3
+    ],
+    "formula": "O7X10K3",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     8,
+     8,
+     4
+    ],
+    "formula": "O8X8K4",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     9,
+     6,
+     5
+    ],
+    "formula": "O9X6K5",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     11,
+     4,
+     5
+    ],
+    "formula": "O11X4K5",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     7,
+     9
+    ],
+    "formula": "O5X7K9",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     6,
+     5,
+     10
+    ],
+    "formula": "O6X5K10",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     9,
+     7,
+     5
+    ],
+    "formula": "O9X7K5",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     10,
+     5,
+     6
+    ],
+    "formula": "O10X5K6",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     5,
+     8,
+     9
+    ],
+    "formula": "O5X8K9",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     6,
+     6,
+     10
+    ],
+    "formula": "O6X6K10",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     7,
+     4,
+     11
+    ],
+    "formula": "O7X4K11",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     9,
+     8,
+     5
+    ],
+    "formula": "O9X8K5",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     10,
+     6,
+     6
+    ],
+    "formula": "O10X6K6",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     11,
+     4,
+     7
+    ],
+    "formula": "O11X4K7",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     5,
+     5,
+     13
+    ],
+    "formula": "O5X5K13",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     6,
+     3,
+     14
+    ],
+    "formula": "O6X3K14",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     6,
+     7,
+     10
+    ],
+    "formula": "O6X7K10",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     7,
+     5,
+     11
+    ],
+    "formula": "O7X5K11",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     10,
+     7,
+     6
+    ],
+    "formula": "O10X7K6",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     11,
+     5,
+     7
+    ],
+    "formula": "O11X5K7",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     13,
+     5,
+     5
+    ],
+    "formula": "O13X5K5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     14,
+     3,
+     6
+    ],
+    "formula": "O14X3K6",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     5,
+     6,
+     13
+    ],
+    "formula": "O5X6K13",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     4,
+     14
+    ],
+    "formula": "O6X4K14",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     8,
+     10
+    ],
+    "formula": "O6X8K10",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     7,
+     6,
+     11
+    ],
+    "formula": "O7X6K11",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     10,
+     8,
+     6
+    ],
+    "formula": "O10X8K6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     11,
+     6,
+     7
+    ],
+    "formula": "O11X6K7",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     13,
+     6,
+     5
+    ],
+    "formula": "O13X6K5",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     14,
+     4,
+     6
+    ],
+    "formula": "O14X4K6",
+    "natoms": 24
+   }
+  ],
+  "families": [
+   {
+    "dir": [
+     0,
+     1,
+     0
+    ],
+    "elems": [
+     "O",
+     "X",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       0,
+       1,
+       2
+      ],
+      "formula": "XK2",
+      "natoms": 3
+     },
+     {
+      "vec": [
+       0,
+       2,
+       2
+      ],
+      "formula": "X2K2",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       0,
+       3,
+       2
+      ],
+      "formula": "X3K2",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       0,
+       4,
+       2
+      ],
+      "formula": "X4K2",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       0,
+       5,
+       2
+      ],
+      "formula": "X5K2",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       0,
+       6,
+       2
+      ],
+      "formula": "X6K2",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       0,
+       7,
+       2
+      ],
+      "formula": "X7K2",
+      "natoms": 9
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     0,
+     1
+    ],
+    "elems": [
+     "O",
+     "X",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       0,
+       3
+      ],
+      "formula": "OK3",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       2,
+       0,
+       4
+      ],
+      "formula": "O2K4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       3,
+       0,
+       5
+      ],
+      "formula": "O3K5",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       4,
+       0,
+       6
+      ],
+      "formula": "O4K6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     -1,
+     1
+    ],
+    "elems": [
+     "O",
+     "X",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       4,
+       2
+      ],
+      "formula": "X4K2",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       1,
+       3,
+       3
+      ],
+      "formula": "OX3K3",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       2,
+       2,
+       4
+      ],
+      "formula": "O2X2K4",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       1,
+       5
+      ],
+      "formula": "O3XK5",
+      "natoms": 9
+     },
+     {
+      "vec": [
+       4,
+       0,
+       6
+      ],
+      "formula": "O4K6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     1
+    ],
+    "elems": [
+     "O",
+     "X",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       1,
+       3
+      ],
+      "formula": "OXK3",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       2,
+       2,
+       4
+      ],
+      "formula": "O2X2K4",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       3,
+       5
+      ],
+      "formula": "O3X3K5",
+      "natoms": 11
+     },
+     {
+      "vec": [
+       4,
+       4,
+       6
+      ],
+      "formula": "O4X4K6",
+      "natoms": 14
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     0,
+     -1
+    ],
+    "elems": [
+     "O",
+     "X",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       0,
+       1
+      ],
+      "formula": "OK",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       2,
+       0,
+       0
+      ],
+      "formula": "O2",
+      "natoms": 2
+     }
+    ]
+   }
+  ]
+ },
+ "O/K/A": {
+  "elems": [
+   "O",
+   "K",
+   "A"
+  ],
+  "Nmax": 24,
+  "pure_onepot": [
+   {
+    "vec": [
+     0,
+     0,
+     2
+    ],
+    "formula": "A2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     2,
+     0
+    ],
+    "formula": "K2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     1,
+     1,
+     0
+    ],
+    "formula": "OK",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     2,
+     0,
+     0
+    ],
+    "formula": "O2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     0,
+     3
+    ],
+    "formula": "A3",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     2,
+     1
+    ],
+    "formula": "K2A",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     2,
+     0,
+     1
+    ],
+    "formula": "O2A",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     2,
+     2
+    ],
+    "formula": "K2A2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     1,
+     3,
+     0
+    ],
+    "formula": "OK3",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     2,
+     0,
+     2
+    ],
+    "formula": "O2A2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     3,
+     1,
+     0
+    ],
+    "formula": "O3K",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     0,
+     2,
+     3
+    ],
+    "formula": "K2A3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     1,
+     3,
+     1
+    ],
+    "formula": "OK3A",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     2,
+     0,
+     3
+    ],
+    "formula": "O2A3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     3,
+     1,
+     1
+    ],
+    "formula": "O3KA",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     0,
+     2,
+     4
+    ],
+    "formula": "K2A4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     1,
+     3,
+     2
+    ],
+    "formula": "OK3A2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     0,
+     4
+    ],
+    "formula": "O2A4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     4,
+     0
+    ],
+    "formula": "O2K4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     3,
+     1,
+     2
+    ],
+    "formula": "O3KA2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     4,
+     2,
+     0
+    ],
+    "formula": "O4K2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     0,
+     2,
+     5
+    ],
+    "formula": "K2A5",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     1,
+     3,
+     3
+    ],
+    "formula": "OK3A3",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     2,
+     0,
+     5
+    ],
+    "formula": "O2A5",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     2,
+     4,
+     1
+    ],
+    "formula": "O2K4A",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     3,
+     1,
+     3
+    ],
+    "formula": "O3KA3",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     4,
+     2,
+     1
+    ],
+    "formula": "O4K2A",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     0,
+     2,
+     6
+    ],
+    "formula": "K2A6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     1,
+     3,
+     4
+    ],
+    "formula": "OK3A4",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     0,
+     6
+    ],
+    "formula": "O2A6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     4,
+     2
+    ],
+    "formula": "O2K4A2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     6,
+     0
+    ],
+    "formula": "O2K6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     3,
+     1,
+     4
+    ],
+    "formula": "O3KA4",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     3,
+     5,
+     0
+    ],
+    "formula": "O3K5",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     4,
+     2,
+     2
+    ],
+    "formula": "O4K2A2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     5,
+     3,
+     0
+    ],
+    "formula": "O5K3",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     6,
+     2,
+     0
+    ],
+    "formula": "O6K2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     0,
+     2,
+     7
+    ],
+    "formula": "K2A7",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     3,
+     5
+    ],
+    "formula": "OK3A5",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     0,
+     7
+    ],
+    "formula": "O2A7",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     4,
+     3
+    ],
+    "formula": "O2K4A3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     6,
+     1
+    ],
+    "formula": "O2K6A",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     1,
+     5
+    ],
+    "formula": "O3KA5",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     5,
+     1
+    ],
+    "formula": "O3K5A",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     4,
+     2,
+     3
+    ],
+    "formula": "O4K2A3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     5,
+     3,
+     1
+    ],
+    "formula": "O5K3A",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     6,
+     2,
+     1
+    ],
+    "formula": "O6K2A",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     3,
+     6
+    ],
+    "formula": "OK3A6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     4,
+     4
+    ],
+    "formula": "O2K4A4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     6,
+     2
+    ],
+    "formula": "O2K6A2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     1,
+     6
+    ],
+    "formula": "O3KA6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     5,
+     2
+    ],
+    "formula": "O3K5A2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     7,
+     0
+    ],
+    "formula": "O3K7",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     2,
+     4
+    ],
+    "formula": "O4K2A4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     6,
+     0
+    ],
+    "formula": "O4K6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     5,
+     3,
+     2
+    ],
+    "formula": "O5K3A2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     2,
+     2
+    ],
+    "formula": "O6K2A2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     4,
+     0
+    ],
+    "formula": "O6K4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     7,
+     3,
+     0
+    ],
+    "formula": "O7K3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     1,
+     3,
+     7
+    ],
+    "formula": "OK3A7",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     4,
+     5
+    ],
+    "formula": "O2K4A5",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     6,
+     3
+    ],
+    "formula": "O2K6A3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     1,
+     7
+    ],
+    "formula": "O3KA7",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     5,
+     3
+    ],
+    "formula": "O3K5A3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     7,
+     1
+    ],
+    "formula": "O3K7A",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     4,
+     2,
+     5
+    ],
+    "formula": "O4K2A5",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     4,
+     6,
+     1
+    ],
+    "formula": "O4K6A",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     5,
+     3,
+     3
+    ],
+    "formula": "O5K3A3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     6,
+     2,
+     3
+    ],
+    "formula": "O6K2A3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     6,
+     4,
+     1
+    ],
+    "formula": "O6K4A",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     7,
+     3,
+     1
+    ],
+    "formula": "O7K3A",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     4,
+     6
+    ],
+    "formula": "O2K4A6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     6,
+     4
+    ],
+    "formula": "O2K6A4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     5,
+     4
+    ],
+    "formula": "O3K5A4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     7,
+     2
+    ],
+    "formula": "O3K7A2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     2,
+     6
+    ],
+    "formula": "O4K2A6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     6,
+     2
+    ],
+    "formula": "O4K6A2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     5,
+     3,
+     4
+    ],
+    "formula": "O5K3A4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     2,
+     4
+    ],
+    "formula": "O6K2A4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     4,
+     2
+    ],
+    "formula": "O6K4A2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     7,
+     3,
+     2
+    ],
+    "formula": "O7K3A2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     4,
+     7
+    ],
+    "formula": "O2K4A7",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     5,
+     5
+    ],
+    "formula": "O3K5A5",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     7,
+     3
+    ],
+    "formula": "O3K7A3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     4,
+     2,
+     7
+    ],
+    "formula": "O4K2A7",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     4,
+     6,
+     3
+    ],
+    "formula": "O4K6A3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     5,
+     3,
+     5
+    ],
+    "formula": "O5K3A5",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     6,
+     4,
+     3
+    ],
+    "formula": "O6K4A3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     7,
+     3,
+     3
+    ],
+    "formula": "O7K3A3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     5,
+     6
+    ],
+    "formula": "O3K5A6",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     3,
+     7,
+     4
+    ],
+    "formula": "O3K7A4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     6,
+     4
+    ],
+    "formula": "O4K6A4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     10,
+     0
+    ],
+    "formula": "O4K10",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     5,
+     3,
+     6
+    ],
+    "formula": "O5K3A6",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     6,
+     4,
+     4
+    ],
+    "formula": "O6K4A4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     7,
+     3,
+     4
+    ],
+    "formula": "O7K3A4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     10,
+     4,
+     0
+    ],
+    "formula": "O10K4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     3,
+     5,
+     7
+    ],
+    "formula": "O3K5A7",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     4,
+     6,
+     5
+    ],
+    "formula": "O4K6A5",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     4,
+     10,
+     1
+    ],
+    "formula": "O4K10A",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     5,
+     3,
+     7
+    ],
+    "formula": "O5K3A7",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     6,
+     4,
+     5
+    ],
+    "formula": "O6K4A5",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     10,
+     4,
+     1
+    ],
+    "formula": "O10K4A",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     3,
+     7,
+     6
+    ],
+    "formula": "O3K7A6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     4,
+     6,
+     6
+    ],
+    "formula": "O4K6A6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     4,
+     10,
+     2
+    ],
+    "formula": "O4K10A2",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     6,
+     4,
+     6
+    ],
+    "formula": "O6K4A6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     7,
+     3,
+     6
+    ],
+    "formula": "O7K3A6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     10,
+     4,
+     2
+    ],
+    "formula": "O10K4A2",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     3,
+     7,
+     7
+    ],
+    "formula": "O3K7A7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     6,
+     7
+    ],
+    "formula": "O4K6A7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     10,
+     3
+    ],
+    "formula": "O4K10A3",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     6,
+     4,
+     7
+    ],
+    "formula": "O6K4A7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     7,
+     3,
+     7
+    ],
+    "formula": "O7K3A7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     10,
+     4,
+     3
+    ],
+    "formula": "O10K4A3",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     3,
+     7,
+     8
+    ],
+    "formula": "O3K7A8",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     8,
+     6
+    ],
+    "formula": "O4K8A6",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     10,
+     4
+    ],
+    "formula": "O4K10A4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     7,
+     3,
+     8
+    ],
+    "formula": "O7K3A8",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     8,
+     4,
+     6
+    ],
+    "formula": "O8K4A6",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     10,
+     4,
+     4
+    ],
+    "formula": "O10K4A4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     3,
+     7,
+     9
+    ],
+    "formula": "O3K7A9",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     4,
+     8,
+     7
+    ],
+    "formula": "O4K8A7",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     5,
+     11,
+     3
+    ],
+    "formula": "O5K11A3",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     7,
+     3,
+     9
+    ],
+    "formula": "O7K3A9",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     8,
+     4,
+     7
+    ],
+    "formula": "O8K4A7",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     11,
+     5,
+     3
+    ],
+    "formula": "O11K5A3",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     3,
+     7,
+     10
+    ],
+    "formula": "O3K7A10",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     4,
+     8,
+     8
+    ],
+    "formula": "O4K8A8",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     9,
+     6
+    ],
+    "formula": "O5K9A6",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     11,
+     4
+    ],
+    "formula": "O5K11A4",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     7,
+     3,
+     10
+    ],
+    "formula": "O7K3A10",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     8,
+     4,
+     8
+    ],
+    "formula": "O8K4A8",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     9,
+     5,
+     6
+    ],
+    "formula": "O9K5A6",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     11,
+     5,
+     4
+    ],
+    "formula": "O11K5A4",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     9,
+     7
+    ],
+    "formula": "O5K9A7",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     6,
+     10,
+     5
+    ],
+    "formula": "O6K10A5",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     9,
+     5,
+     7
+    ],
+    "formula": "O9K5A7",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     10,
+     6,
+     5
+    ],
+    "formula": "O10K6A5",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     5,
+     9,
+     8
+    ],
+    "formula": "O5K9A8",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     6,
+     10,
+     6
+    ],
+    "formula": "O6K10A6",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     7,
+     11,
+     4
+    ],
+    "formula": "O7K11A4",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     9,
+     5,
+     8
+    ],
+    "formula": "O9K5A8",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     10,
+     6,
+     6
+    ],
+    "formula": "O10K6A6",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     11,
+     7,
+     4
+    ],
+    "formula": "O11K7A4",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     5,
+     13,
+     5
+    ],
+    "formula": "O5K13A5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     6,
+     10,
+     7
+    ],
+    "formula": "O6K10A7",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     6,
+     14,
+     3
+    ],
+    "formula": "O6K14A3",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     7,
+     11,
+     5
+    ],
+    "formula": "O7K11A5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     10,
+     6,
+     7
+    ],
+    "formula": "O10K6A7",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     11,
+     7,
+     5
+    ],
+    "formula": "O11K7A5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     13,
+     5,
+     5
+    ],
+    "formula": "O13K5A5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     14,
+     6,
+     3
+    ],
+    "formula": "O14K6A3",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     5,
+     13,
+     6
+    ],
+    "formula": "O5K13A6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     10,
+     8
+    ],
+    "formula": "O6K10A8",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     14,
+     4
+    ],
+    "formula": "O6K14A4",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     7,
+     11,
+     6
+    ],
+    "formula": "O7K11A6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     10,
+     6,
+     8
+    ],
+    "formula": "O10K6A8",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     11,
+     7,
+     6
+    ],
+    "formula": "O11K7A6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     13,
+     5,
+     6
+    ],
+    "formula": "O13K5A6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     14,
+     6,
+     4
+    ],
+    "formula": "O14K6A4",
+    "natoms": 24
+   }
+  ],
+  "families": [
+   {
+    "dir": [
+     0,
+     0,
+     1
+    ],
+    "elems": [
+     "O",
+     "K",
+     "A"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       0,
+       2,
+       1
+      ],
+      "formula": "K2A",
+      "natoms": 3
+     },
+     {
+      "vec": [
+       0,
+       2,
+       2
+      ],
+      "formula": "K2A2",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       0,
+       2,
+       3
+      ],
+      "formula": "K2A3",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       0,
+       2,
+       4
+      ],
+      "formula": "K2A4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       0,
+       2,
+       5
+      ],
+      "formula": "K2A5",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       0,
+       2,
+       6
+      ],
+      "formula": "K2A6",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       0,
+       2,
+       7
+      ],
+      "formula": "K2A7",
+      "natoms": 9
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     0
+    ],
+    "elems": [
+     "O",
+     "K",
+     "A"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       3,
+       0
+      ],
+      "formula": "OK3",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       2,
+       4,
+       0
+      ],
+      "formula": "O2K4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       3,
+       5,
+       0
+      ],
+      "formula": "O3K5",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       4,
+       6,
+       0
+      ],
+      "formula": "O4K6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     -1
+    ],
+    "elems": [
+     "O",
+     "K",
+     "A"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       4
+      ],
+      "formula": "K2A4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       1,
+       3,
+       3
+      ],
+      "formula": "OK3A3",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       2,
+       4,
+       2
+      ],
+      "formula": "O2K4A2",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       5,
+       1
+      ],
+      "formula": "O3K5A",
+      "natoms": 9
+     },
+     {
+      "vec": [
+       4,
+       6,
+       0
+      ],
+      "formula": "O4K6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     1
+    ],
+    "elems": [
+     "O",
+     "K",
+     "A"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       3,
+       1
+      ],
+      "formula": "OK3A",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       2,
+       4,
+       2
+      ],
+      "formula": "O2K4A2",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       5,
+       3
+      ],
+      "formula": "O3K5A3",
+      "natoms": 11
+     },
+     {
+      "vec": [
+       4,
+       6,
+       4
+      ],
+      "formula": "O4K6A4",
+      "natoms": 14
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     -1,
+     0
+    ],
+    "elems": [
+     "O",
+     "K",
+     "A"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       1,
+       0
+      ],
+      "formula": "OK",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       2,
+       0,
+       0
+      ],
+      "formula": "O2",
+      "natoms": 2
+     }
+    ]
+   }
+  ]
+ },
+ "O/X/P": {
+  "elems": [
+   "O",
+   "X",
+   "P"
+  ],
+  "Nmax": 24,
+  "pure_onepot": [
+   {
+    "vec": [
+     0,
+     0,
+     2
+    ],
+    "formula": "P2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     2,
+     0
+    ],
+    "formula": "X2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     1,
+     0,
+     1
+    ],
+    "formula": "OP",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     2,
+     0,
+     0
+    ],
+    "formula": "O2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     1,
+     2
+    ],
+    "formula": "XP2",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     3,
+     0
+    ],
+    "formula": "X3",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     2,
+     1,
+     0
+    ],
+    "formula": "O2X",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     2,
+     2
+    ],
+    "formula": "X2P2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     1,
+     0,
+     3
+    ],
+    "formula": "OP3",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     2,
+     2,
+     0
+    ],
+    "formula": "O2X2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     3,
+     0,
+     1
+    ],
+    "formula": "O3P",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     0,
+     3,
+     2
+    ],
+    "formula": "X3P2",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     1,
+     1,
+     3
+    ],
+    "formula": "OXP3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     2,
+     3,
+     0
+    ],
+    "formula": "O2X3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     3,
+     1,
+     1
+    ],
+    "formula": "O3XP",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     0,
+     4,
+     2
+    ],
+    "formula": "X4P2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     1,
+     2,
+     3
+    ],
+    "formula": "OX2P3",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     0,
+     4
+    ],
+    "formula": "O2P4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     4,
+     0
+    ],
+    "formula": "O2X4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     3,
+     2,
+     1
+    ],
+    "formula": "O3X2P",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     4,
+     0,
+     2
+    ],
+    "formula": "O4P2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     0,
+     5,
+     2
+    ],
+    "formula": "X5P2",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     1,
+     3,
+     3
+    ],
+    "formula": "OX3P3",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     2,
+     1,
+     4
+    ],
+    "formula": "O2XP4",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     2,
+     5,
+     0
+    ],
+    "formula": "O2X5",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     3,
+     3,
+     1
+    ],
+    "formula": "O3X3P",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     4,
+     1,
+     2
+    ],
+    "formula": "O4XP2",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     0,
+     6,
+     2
+    ],
+    "formula": "X6P2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     1,
+     4,
+     3
+    ],
+    "formula": "OX4P3",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     0,
+     6
+    ],
+    "formula": "O2P6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     2,
+     4
+    ],
+    "formula": "O2X2P4",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     6,
+     0
+    ],
+    "formula": "O2X6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     3,
+     0,
+     5
+    ],
+    "formula": "O3P5",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     3,
+     4,
+     1
+    ],
+    "formula": "O3X4P",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     4,
+     2,
+     2
+    ],
+    "formula": "O4X2P2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     5,
+     0,
+     3
+    ],
+    "formula": "O5P3",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     6,
+     0,
+     2
+    ],
+    "formula": "O6P2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     0,
+     7,
+     2
+    ],
+    "formula": "X7P2",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     5,
+     3
+    ],
+    "formula": "OX5P3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     1,
+     6
+    ],
+    "formula": "O2XP6",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     3,
+     4
+    ],
+    "formula": "O2X3P4",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     7,
+     0
+    ],
+    "formula": "O2X7",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     1,
+     5
+    ],
+    "formula": "O3XP5",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     5,
+     1
+    ],
+    "formula": "O3X5P",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     4,
+     3,
+     2
+    ],
+    "formula": "O4X3P2",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     5,
+     1,
+     3
+    ],
+    "formula": "O5XP3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     6,
+     1,
+     2
+    ],
+    "formula": "O6XP2",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     6,
+     3
+    ],
+    "formula": "OX6P3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     2,
+     6
+    ],
+    "formula": "O2X2P6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     4,
+     4
+    ],
+    "formula": "O2X4P4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     0,
+     7
+    ],
+    "formula": "O3P7",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     2,
+     5
+    ],
+    "formula": "O3X2P5",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     6,
+     1
+    ],
+    "formula": "O3X6P",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     0,
+     6
+    ],
+    "formula": "O4P6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     4,
+     2
+    ],
+    "formula": "O4X4P2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     5,
+     2,
+     3
+    ],
+    "formula": "O5X2P3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     0,
+     4
+    ],
+    "formula": "O6P4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     2,
+     2
+    ],
+    "formula": "O6X2P2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     7,
+     0,
+     3
+    ],
+    "formula": "O7P3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     1,
+     7,
+     3
+    ],
+    "formula": "OX7P3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     3,
+     6
+    ],
+    "formula": "O2X3P6",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     5,
+     4
+    ],
+    "formula": "O2X5P4",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     1,
+     7
+    ],
+    "formula": "O3XP7",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     3,
+     5
+    ],
+    "formula": "O3X3P5",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     7,
+     1
+    ],
+    "formula": "O3X7P",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     4,
+     1,
+     6
+    ],
+    "formula": "O4XP6",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     4,
+     5,
+     2
+    ],
+    "formula": "O4X5P2",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     5,
+     3,
+     3
+    ],
+    "formula": "O5X3P3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     6,
+     1,
+     4
+    ],
+    "formula": "O6XP4",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     6,
+     3,
+     2
+    ],
+    "formula": "O6X3P2",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     7,
+     1,
+     3
+    ],
+    "formula": "O7XP3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     4,
+     6
+    ],
+    "formula": "O2X4P6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     6,
+     4
+    ],
+    "formula": "O2X6P4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     2,
+     7
+    ],
+    "formula": "O3X2P7",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     4,
+     5
+    ],
+    "formula": "O3X4P5",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     2,
+     6
+    ],
+    "formula": "O4X2P6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     6,
+     2
+    ],
+    "formula": "O4X6P2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     5,
+     4,
+     3
+    ],
+    "formula": "O5X4P3",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     2,
+     4
+    ],
+    "formula": "O6X2P4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     4,
+     2
+    ],
+    "formula": "O6X4P2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     7,
+     2,
+     3
+    ],
+    "formula": "O7X2P3",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     7,
+     4
+    ],
+    "formula": "O2X7P4",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     3,
+     7
+    ],
+    "formula": "O3X3P7",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     5,
+     5
+    ],
+    "formula": "O3X5P5",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     4,
+     3,
+     6
+    ],
+    "formula": "O4X3P6",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     4,
+     7,
+     2
+    ],
+    "formula": "O4X7P2",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     5,
+     5,
+     3
+    ],
+    "formula": "O5X5P3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     6,
+     3,
+     4
+    ],
+    "formula": "O6X3P4",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     7,
+     3,
+     3
+    ],
+    "formula": "O7X3P3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     4,
+     7
+    ],
+    "formula": "O3X4P7",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     3,
+     6,
+     5
+    ],
+    "formula": "O3X6P5",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     0,
+     10
+    ],
+    "formula": "O4P10",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     4,
+     6
+    ],
+    "formula": "O4X4P6",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     5,
+     6,
+     3
+    ],
+    "formula": "O5X6P3",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     6,
+     4,
+     4
+    ],
+    "formula": "O6X4P4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     7,
+     4,
+     3
+    ],
+    "formula": "O7X4P3",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     10,
+     0,
+     4
+    ],
+    "formula": "O10P4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     3,
+     7,
+     5
+    ],
+    "formula": "O3X7P5",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     4,
+     1,
+     10
+    ],
+    "formula": "O4XP10",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     4,
+     5,
+     6
+    ],
+    "formula": "O4X5P6",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     5,
+     7,
+     3
+    ],
+    "formula": "O5X7P3",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     6,
+     5,
+     4
+    ],
+    "formula": "O6X5P4",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     10,
+     1,
+     4
+    ],
+    "formula": "O10XP4",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     3,
+     6,
+     7
+    ],
+    "formula": "O3X6P7",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     4,
+     2,
+     10
+    ],
+    "formula": "O4X2P10",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     4,
+     6,
+     6
+    ],
+    "formula": "O4X6P6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     6,
+     6,
+     4
+    ],
+    "formula": "O6X6P4",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     7,
+     6,
+     3
+    ],
+    "formula": "O7X6P3",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     10,
+     2,
+     4
+    ],
+    "formula": "O10X2P4",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     3,
+     7,
+     7
+    ],
+    "formula": "O3X7P7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     3,
+     10
+    ],
+    "formula": "O4X3P10",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     7,
+     6
+    ],
+    "formula": "O4X7P6",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     6,
+     7,
+     4
+    ],
+    "formula": "O6X7P4",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     7,
+     7,
+     3
+    ],
+    "formula": "O7X7P3",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     10,
+     3,
+     4
+    ],
+    "formula": "O10X3P4",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     3,
+     8,
+     7
+    ],
+    "formula": "O3X8P7",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     4,
+     10
+    ],
+    "formula": "O4X4P10",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     6,
+     8
+    ],
+    "formula": "O4X6P8",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     7,
+     8,
+     3
+    ],
+    "formula": "O7X8P3",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     8,
+     6,
+     4
+    ],
+    "formula": "O8X6P4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     10,
+     4,
+     4
+    ],
+    "formula": "O10X4P4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     3,
+     9,
+     7
+    ],
+    "formula": "O3X9P7",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     4,
+     7,
+     8
+    ],
+    "formula": "O4X7P8",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     5,
+     3,
+     11
+    ],
+    "formula": "O5X3P11",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     7,
+     9,
+     3
+    ],
+    "formula": "O7X9P3",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     8,
+     7,
+     4
+    ],
+    "formula": "O8X7P4",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     11,
+     3,
+     5
+    ],
+    "formula": "O11X3P5",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     3,
+     10,
+     7
+    ],
+    "formula": "O3X10P7",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     4,
+     8,
+     8
+    ],
+    "formula": "O4X8P8",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     4,
+     11
+    ],
+    "formula": "O5X4P11",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     6,
+     9
+    ],
+    "formula": "O5X6P9",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     7,
+     10,
+     3
+    ],
+    "formula": "O7X10P3",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     8,
+     8,
+     4
+    ],
+    "formula": "O8X8P4",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     9,
+     6,
+     5
+    ],
+    "formula": "O9X6P5",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     11,
+     4,
+     5
+    ],
+    "formula": "O11X4P5",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     7,
+     9
+    ],
+    "formula": "O5X7P9",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     6,
+     5,
+     10
+    ],
+    "formula": "O6X5P10",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     9,
+     7,
+     5
+    ],
+    "formula": "O9X7P5",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     10,
+     5,
+     6
+    ],
+    "formula": "O10X5P6",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     5,
+     8,
+     9
+    ],
+    "formula": "O5X8P9",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     6,
+     6,
+     10
+    ],
+    "formula": "O6X6P10",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     7,
+     4,
+     11
+    ],
+    "formula": "O7X4P11",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     9,
+     8,
+     5
+    ],
+    "formula": "O9X8P5",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     10,
+     6,
+     6
+    ],
+    "formula": "O10X6P6",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     11,
+     4,
+     7
+    ],
+    "formula": "O11X4P7",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     5,
+     5,
+     13
+    ],
+    "formula": "O5X5P13",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     6,
+     3,
+     14
+    ],
+    "formula": "O6X3P14",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     6,
+     7,
+     10
+    ],
+    "formula": "O6X7P10",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     7,
+     5,
+     11
+    ],
+    "formula": "O7X5P11",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     10,
+     7,
+     6
+    ],
+    "formula": "O10X7P6",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     11,
+     5,
+     7
+    ],
+    "formula": "O11X5P7",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     13,
+     5,
+     5
+    ],
+    "formula": "O13X5P5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     14,
+     3,
+     6
+    ],
+    "formula": "O14X3P6",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     5,
+     6,
+     13
+    ],
+    "formula": "O5X6P13",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     4,
+     14
+    ],
+    "formula": "O6X4P14",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     8,
+     10
+    ],
+    "formula": "O6X8P10",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     7,
+     6,
+     11
+    ],
+    "formula": "O7X6P11",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     10,
+     8,
+     6
+    ],
+    "formula": "O10X8P6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     11,
+     6,
+     7
+    ],
+    "formula": "O11X6P7",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     13,
+     6,
+     5
+    ],
+    "formula": "O13X6P5",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     14,
+     4,
+     6
+    ],
+    "formula": "O14X4P6",
+    "natoms": 24
+   }
+  ],
+  "families": [
+   {
+    "dir": [
+     0,
+     1,
+     0
+    ],
+    "elems": [
+     "O",
+     "X",
+     "P"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "P2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       0,
+       1,
+       2
+      ],
+      "formula": "XP2",
+      "natoms": 3
+     },
+     {
+      "vec": [
+       0,
+       2,
+       2
+      ],
+      "formula": "X2P2",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       0,
+       3,
+       2
+      ],
+      "formula": "X3P2",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       0,
+       4,
+       2
+      ],
+      "formula": "X4P2",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       0,
+       5,
+       2
+      ],
+      "formula": "X5P2",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       0,
+       6,
+       2
+      ],
+      "formula": "X6P2",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       0,
+       7,
+       2
+      ],
+      "formula": "X7P2",
+      "natoms": 9
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     0,
+     1
+    ],
+    "elems": [
+     "O",
+     "X",
+     "P"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "P2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       0,
+       3
+      ],
+      "formula": "OP3",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       2,
+       0,
+       4
+      ],
+      "formula": "O2P4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       3,
+       0,
+       5
+      ],
+      "formula": "O3P5",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       4,
+       0,
+       6
+      ],
+      "formula": "O4P6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     -1,
+     1
+    ],
+    "elems": [
+     "O",
+     "X",
+     "P"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       4,
+       2
+      ],
+      "formula": "X4P2",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       1,
+       3,
+       3
+      ],
+      "formula": "OX3P3",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       2,
+       2,
+       4
+      ],
+      "formula": "O2X2P4",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       1,
+       5
+      ],
+      "formula": "O3XP5",
+      "natoms": 9
+     },
+     {
+      "vec": [
+       4,
+       0,
+       6
+      ],
+      "formula": "O4P6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     1
+    ],
+    "elems": [
+     "O",
+     "X",
+     "P"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "P2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       1,
+       3
+      ],
+      "formula": "OXP3",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       2,
+       2,
+       4
+      ],
+      "formula": "O2X2P4",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       3,
+       5
+      ],
+      "formula": "O3X3P5",
+      "natoms": 11
+     },
+     {
+      "vec": [
+       4,
+       4,
+       6
+      ],
+      "formula": "O4X4P6",
+      "natoms": 14
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     0,
+     -1
+    ],
+    "elems": [
+     "O",
+     "X",
+     "P"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "P2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       0,
+       1
+      ],
+      "formula": "OP",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       2,
+       0,
+       0
+      ],
+      "formula": "O2",
+      "natoms": 2
+     }
+    ]
+   }
+  ]
+ },
+ "O/P/W": {
+  "elems": [
+   "O",
+   "P",
+   "W"
+  ],
+  "Nmax": 24,
+  "pure_onepot": [
+   {
+    "vec": [
+     0,
+     0,
+     2
+    ],
+    "formula": "W2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     2,
+     0
+    ],
+    "formula": "P2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     1,
+     1,
+     0
+    ],
+    "formula": "OP",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     2,
+     0,
+     0
+    ],
+    "formula": "O2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     0,
+     3
+    ],
+    "formula": "W3",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     2,
+     1
+    ],
+    "formula": "P2W",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     2,
+     0,
+     1
+    ],
+    "formula": "O2W",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     2,
+     2
+    ],
+    "formula": "P2W2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     1,
+     3,
+     0
+    ],
+    "formula": "OP3",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     2,
+     0,
+     2
+    ],
+    "formula": "O2W2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     3,
+     1,
+     0
+    ],
+    "formula": "O3P",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     0,
+     2,
+     3
+    ],
+    "formula": "P2W3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     1,
+     3,
+     1
+    ],
+    "formula": "OP3W",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     2,
+     0,
+     3
+    ],
+    "formula": "O2W3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     3,
+     1,
+     1
+    ],
+    "formula": "O3PW",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     0,
+     2,
+     4
+    ],
+    "formula": "P2W4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     1,
+     3,
+     2
+    ],
+    "formula": "OP3W2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     0,
+     4
+    ],
+    "formula": "O2W4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     4,
+     0
+    ],
+    "formula": "O2P4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     3,
+     1,
+     2
+    ],
+    "formula": "O3PW2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     4,
+     2,
+     0
+    ],
+    "formula": "O4P2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     0,
+     2,
+     5
+    ],
+    "formula": "P2W5",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     1,
+     3,
+     3
+    ],
+    "formula": "OP3W3",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     2,
+     0,
+     5
+    ],
+    "formula": "O2W5",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     2,
+     4,
+     1
+    ],
+    "formula": "O2P4W",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     3,
+     1,
+     3
+    ],
+    "formula": "O3PW3",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     4,
+     2,
+     1
+    ],
+    "formula": "O4P2W",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     0,
+     2,
+     6
+    ],
+    "formula": "P2W6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     1,
+     3,
+     4
+    ],
+    "formula": "OP3W4",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     0,
+     6
+    ],
+    "formula": "O2W6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     4,
+     2
+    ],
+    "formula": "O2P4W2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     6,
+     0
+    ],
+    "formula": "O2P6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     3,
+     1,
+     4
+    ],
+    "formula": "O3PW4",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     3,
+     5,
+     0
+    ],
+    "formula": "O3P5",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     4,
+     2,
+     2
+    ],
+    "formula": "O4P2W2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     5,
+     3,
+     0
+    ],
+    "formula": "O5P3",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     6,
+     2,
+     0
+    ],
+    "formula": "O6P2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     0,
+     2,
+     7
+    ],
+    "formula": "P2W7",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     3,
+     5
+    ],
+    "formula": "OP3W5",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     0,
+     7
+    ],
+    "formula": "O2W7",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     4,
+     3
+    ],
+    "formula": "O2P4W3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     6,
+     1
+    ],
+    "formula": "O2P6W",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     1,
+     5
+    ],
+    "formula": "O3PW5",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     5,
+     1
+    ],
+    "formula": "O3P5W",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     4,
+     2,
+     3
+    ],
+    "formula": "O4P2W3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     5,
+     3,
+     1
+    ],
+    "formula": "O5P3W",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     6,
+     2,
+     1
+    ],
+    "formula": "O6P2W",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     3,
+     6
+    ],
+    "formula": "OP3W6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     4,
+     4
+    ],
+    "formula": "O2P4W4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     6,
+     2
+    ],
+    "formula": "O2P6W2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     1,
+     6
+    ],
+    "formula": "O3PW6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     5,
+     2
+    ],
+    "formula": "O3P5W2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     7,
+     0
+    ],
+    "formula": "O3P7",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     2,
+     4
+    ],
+    "formula": "O4P2W4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     6,
+     0
+    ],
+    "formula": "O4P6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     5,
+     3,
+     2
+    ],
+    "formula": "O5P3W2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     2,
+     2
+    ],
+    "formula": "O6P2W2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     4,
+     0
+    ],
+    "formula": "O6P4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     7,
+     3,
+     0
+    ],
+    "formula": "O7P3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     1,
+     3,
+     7
+    ],
+    "formula": "OP3W7",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     4,
+     5
+    ],
+    "formula": "O2P4W5",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     6,
+     3
+    ],
+    "formula": "O2P6W3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     1,
+     7
+    ],
+    "formula": "O3PW7",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     5,
+     3
+    ],
+    "formula": "O3P5W3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     7,
+     1
+    ],
+    "formula": "O3P7W",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     4,
+     2,
+     5
+    ],
+    "formula": "O4P2W5",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     4,
+     6,
+     1
+    ],
+    "formula": "O4P6W",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     5,
+     3,
+     3
+    ],
+    "formula": "O5P3W3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     6,
+     2,
+     3
+    ],
+    "formula": "O6P2W3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     6,
+     4,
+     1
+    ],
+    "formula": "O6P4W",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     7,
+     3,
+     1
+    ],
+    "formula": "O7P3W",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     4,
+     6
+    ],
+    "formula": "O2P4W6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     6,
+     4
+    ],
+    "formula": "O2P6W4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     5,
+     4
+    ],
+    "formula": "O3P5W4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     7,
+     2
+    ],
+    "formula": "O3P7W2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     2,
+     6
+    ],
+    "formula": "O4P2W6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     6,
+     2
+    ],
+    "formula": "O4P6W2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     5,
+     3,
+     4
+    ],
+    "formula": "O5P3W4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     2,
+     4
+    ],
+    "formula": "O6P2W4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     4,
+     2
+    ],
+    "formula": "O6P4W2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     7,
+     3,
+     2
+    ],
+    "formula": "O7P3W2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     4,
+     7
+    ],
+    "formula": "O2P4W7",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     5,
+     5
+    ],
+    "formula": "O3P5W5",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     7,
+     3
+    ],
+    "formula": "O3P7W3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     4,
+     2,
+     7
+    ],
+    "formula": "O4P2W7",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     4,
+     6,
+     3
+    ],
+    "formula": "O4P6W3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     5,
+     3,
+     5
+    ],
+    "formula": "O5P3W5",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     6,
+     4,
+     3
+    ],
+    "formula": "O6P4W3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     7,
+     3,
+     3
+    ],
+    "formula": "O7P3W3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     5,
+     6
+    ],
+    "formula": "O3P5W6",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     3,
+     7,
+     4
+    ],
+    "formula": "O3P7W4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     6,
+     4
+    ],
+    "formula": "O4P6W4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     10,
+     0
+    ],
+    "formula": "O4P10",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     5,
+     3,
+     6
+    ],
+    "formula": "O5P3W6",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     6,
+     4,
+     4
+    ],
+    "formula": "O6P4W4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     7,
+     3,
+     4
+    ],
+    "formula": "O7P3W4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     10,
+     4,
+     0
+    ],
+    "formula": "O10P4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     3,
+     5,
+     7
+    ],
+    "formula": "O3P5W7",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     4,
+     6,
+     5
+    ],
+    "formula": "O4P6W5",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     4,
+     10,
+     1
+    ],
+    "formula": "O4P10W",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     5,
+     3,
+     7
+    ],
+    "formula": "O5P3W7",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     6,
+     4,
+     5
+    ],
+    "formula": "O6P4W5",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     10,
+     4,
+     1
+    ],
+    "formula": "O10P4W",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     3,
+     7,
+     6
+    ],
+    "formula": "O3P7W6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     4,
+     6,
+     6
+    ],
+    "formula": "O4P6W6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     4,
+     10,
+     2
+    ],
+    "formula": "O4P10W2",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     6,
+     4,
+     6
+    ],
+    "formula": "O6P4W6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     7,
+     3,
+     6
+    ],
+    "formula": "O7P3W6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     10,
+     4,
+     2
+    ],
+    "formula": "O10P4W2",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     3,
+     7,
+     7
+    ],
+    "formula": "O3P7W7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     6,
+     7
+    ],
+    "formula": "O4P6W7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     10,
+     3
+    ],
+    "formula": "O4P10W3",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     6,
+     4,
+     7
+    ],
+    "formula": "O6P4W7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     7,
+     3,
+     7
+    ],
+    "formula": "O7P3W7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     10,
+     4,
+     3
+    ],
+    "formula": "O10P4W3",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     3,
+     7,
+     8
+    ],
+    "formula": "O3P7W8",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     8,
+     6
+    ],
+    "formula": "O4P8W6",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     10,
+     4
+    ],
+    "formula": "O4P10W4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     7,
+     3,
+     8
+    ],
+    "formula": "O7P3W8",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     8,
+     4,
+     6
+    ],
+    "formula": "O8P4W6",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     10,
+     4,
+     4
+    ],
+    "formula": "O10P4W4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     3,
+     7,
+     9
+    ],
+    "formula": "O3P7W9",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     4,
+     8,
+     7
+    ],
+    "formula": "O4P8W7",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     5,
+     11,
+     3
+    ],
+    "formula": "O5P11W3",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     7,
+     3,
+     9
+    ],
+    "formula": "O7P3W9",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     8,
+     4,
+     7
+    ],
+    "formula": "O8P4W7",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     11,
+     5,
+     3
+    ],
+    "formula": "O11P5W3",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     3,
+     7,
+     10
+    ],
+    "formula": "O3P7W10",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     4,
+     8,
+     8
+    ],
+    "formula": "O4P8W8",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     9,
+     6
+    ],
+    "formula": "O5P9W6",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     11,
+     4
+    ],
+    "formula": "O5P11W4",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     7,
+     3,
+     10
+    ],
+    "formula": "O7P3W10",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     8,
+     4,
+     8
+    ],
+    "formula": "O8P4W8",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     9,
+     5,
+     6
+    ],
+    "formula": "O9P5W6",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     11,
+     5,
+     4
+    ],
+    "formula": "O11P5W4",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     9,
+     7
+    ],
+    "formula": "O5P9W7",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     6,
+     10,
+     5
+    ],
+    "formula": "O6P10W5",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     9,
+     5,
+     7
+    ],
+    "formula": "O9P5W7",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     10,
+     6,
+     5
+    ],
+    "formula": "O10P6W5",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     5,
+     9,
+     8
+    ],
+    "formula": "O5P9W8",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     6,
+     10,
+     6
+    ],
+    "formula": "O6P10W6",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     7,
+     11,
+     4
+    ],
+    "formula": "O7P11W4",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     9,
+     5,
+     8
+    ],
+    "formula": "O9P5W8",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     10,
+     6,
+     6
+    ],
+    "formula": "O10P6W6",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     11,
+     7,
+     4
+    ],
+    "formula": "O11P7W4",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     5,
+     13,
+     5
+    ],
+    "formula": "O5P13W5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     6,
+     10,
+     7
+    ],
+    "formula": "O6P10W7",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     6,
+     14,
+     3
+    ],
+    "formula": "O6P14W3",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     7,
+     11,
+     5
+    ],
+    "formula": "O7P11W5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     10,
+     6,
+     7
+    ],
+    "formula": "O10P6W7",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     11,
+     7,
+     5
+    ],
+    "formula": "O11P7W5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     13,
+     5,
+     5
+    ],
+    "formula": "O13P5W5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     14,
+     6,
+     3
+    ],
+    "formula": "O14P6W3",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     5,
+     13,
+     6
+    ],
+    "formula": "O5P13W6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     10,
+     8
+    ],
+    "formula": "O6P10W8",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     14,
+     4
+    ],
+    "formula": "O6P14W4",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     7,
+     11,
+     6
+    ],
+    "formula": "O7P11W6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     10,
+     6,
+     8
+    ],
+    "formula": "O10P6W8",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     11,
+     7,
+     6
+    ],
+    "formula": "O11P7W6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     13,
+     5,
+     6
+    ],
+    "formula": "O13P5W6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     14,
+     6,
+     4
+    ],
+    "formula": "O14P6W4",
+    "natoms": 24
+   }
+  ],
+  "families": [
+   {
+    "dir": [
+     0,
+     0,
+     1
+    ],
+    "elems": [
+     "O",
+     "P",
+     "W"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "P2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       0,
+       2,
+       1
+      ],
+      "formula": "P2W",
+      "natoms": 3
+     },
+     {
+      "vec": [
+       0,
+       2,
+       2
+      ],
+      "formula": "P2W2",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       0,
+       2,
+       3
+      ],
+      "formula": "P2W3",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       0,
+       2,
+       4
+      ],
+      "formula": "P2W4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       0,
+       2,
+       5
+      ],
+      "formula": "P2W5",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       0,
+       2,
+       6
+      ],
+      "formula": "P2W6",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       0,
+       2,
+       7
+      ],
+      "formula": "P2W7",
+      "natoms": 9
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     0
+    ],
+    "elems": [
+     "O",
+     "P",
+     "W"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "P2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       3,
+       0
+      ],
+      "formula": "OP3",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       2,
+       4,
+       0
+      ],
+      "formula": "O2P4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       3,
+       5,
+       0
+      ],
+      "formula": "O3P5",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       4,
+       6,
+       0
+      ],
+      "formula": "O4P6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     -1
+    ],
+    "elems": [
+     "O",
+     "P",
+     "W"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       4
+      ],
+      "formula": "P2W4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       1,
+       3,
+       3
+      ],
+      "formula": "OP3W3",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       2,
+       4,
+       2
+      ],
+      "formula": "O2P4W2",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       5,
+       1
+      ],
+      "formula": "O3P5W",
+      "natoms": 9
+     },
+     {
+      "vec": [
+       4,
+       6,
+       0
+      ],
+      "formula": "O4P6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     1
+    ],
+    "elems": [
+     "O",
+     "P",
+     "W"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "P2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       3,
+       1
+      ],
+      "formula": "OP3W",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       2,
+       4,
+       2
+      ],
+      "formula": "O2P4W2",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       5,
+       3
+      ],
+      "formula": "O3P5W3",
+      "natoms": 11
+     },
+     {
+      "vec": [
+       4,
+       6,
+       4
+      ],
+      "formula": "O4P6W4",
+      "natoms": 14
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     -1,
+     0
+    ],
+    "elems": [
+     "O",
+     "P",
+     "W"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "P2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       1,
+       0
+      ],
+      "formula": "OP",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       2,
+       0,
+       0
+      ],
+      "formula": "O2",
+      "natoms": 2
+     }
+    ]
+   }
+  ]
+ },
+ "P/W/K": {
+  "elems": [
+   "P",
+   "W",
+   "K"
+  ],
+  "Nmax": 24,
+  "pure_onepot": [
+   {
+    "vec": [
+     0,
+     0,
+     2
+    ],
+    "formula": "K2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     2,
+     0
+    ],
+    "formula": "W2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     1,
+     0,
+     1
+    ],
+    "formula": "PK",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     2,
+     0,
+     0
+    ],
+    "formula": "P2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     1,
+     2
+    ],
+    "formula": "WK2",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     3,
+     0
+    ],
+    "formula": "W3",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     2,
+     1,
+     0
+    ],
+    "formula": "P2W",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     2,
+     2
+    ],
+    "formula": "W2K2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     1,
+     0,
+     3
+    ],
+    "formula": "PK3",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     2,
+     2,
+     0
+    ],
+    "formula": "P2W2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     3,
+     0,
+     1
+    ],
+    "formula": "P3K",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     0,
+     3,
+     2
+    ],
+    "formula": "W3K2",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     1,
+     1,
+     3
+    ],
+    "formula": "PWK3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     2,
+     3,
+     0
+    ],
+    "formula": "P2W3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     3,
+     1,
+     1
+    ],
+    "formula": "P3WK",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     0,
+     4,
+     2
+    ],
+    "formula": "W4K2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     1,
+     2,
+     3
+    ],
+    "formula": "PW2K3",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     0,
+     4
+    ],
+    "formula": "P2K4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     4,
+     0
+    ],
+    "formula": "P2W4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     3,
+     2,
+     1
+    ],
+    "formula": "P3W2K",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     4,
+     0,
+     2
+    ],
+    "formula": "P4K2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     0,
+     5,
+     2
+    ],
+    "formula": "W5K2",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     1,
+     3,
+     3
+    ],
+    "formula": "PW3K3",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     2,
+     1,
+     4
+    ],
+    "formula": "P2WK4",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     2,
+     5,
+     0
+    ],
+    "formula": "P2W5",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     3,
+     3,
+     1
+    ],
+    "formula": "P3W3K",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     4,
+     1,
+     2
+    ],
+    "formula": "P4WK2",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     0,
+     6,
+     2
+    ],
+    "formula": "W6K2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     1,
+     4,
+     3
+    ],
+    "formula": "PW4K3",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     0,
+     6
+    ],
+    "formula": "P2K6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     2,
+     4
+    ],
+    "formula": "P2W2K4",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     6,
+     0
+    ],
+    "formula": "P2W6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     3,
+     0,
+     5
+    ],
+    "formula": "P3K5",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     3,
+     4,
+     1
+    ],
+    "formula": "P3W4K",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     4,
+     2,
+     2
+    ],
+    "formula": "P4W2K2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     5,
+     0,
+     3
+    ],
+    "formula": "P5K3",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     6,
+     0,
+     2
+    ],
+    "formula": "P6K2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     0,
+     7,
+     2
+    ],
+    "formula": "W7K2",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     5,
+     3
+    ],
+    "formula": "PW5K3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     1,
+     6
+    ],
+    "formula": "P2WK6",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     3,
+     4
+    ],
+    "formula": "P2W3K4",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     7,
+     0
+    ],
+    "formula": "P2W7",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     1,
+     5
+    ],
+    "formula": "P3WK5",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     5,
+     1
+    ],
+    "formula": "P3W5K",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     4,
+     3,
+     2
+    ],
+    "formula": "P4W3K2",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     5,
+     1,
+     3
+    ],
+    "formula": "P5WK3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     6,
+     1,
+     2
+    ],
+    "formula": "P6WK2",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     6,
+     3
+    ],
+    "formula": "PW6K3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     2,
+     6
+    ],
+    "formula": "P2W2K6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     4,
+     4
+    ],
+    "formula": "P2W4K4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     0,
+     7
+    ],
+    "formula": "P3K7",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     2,
+     5
+    ],
+    "formula": "P3W2K5",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     6,
+     1
+    ],
+    "formula": "P3W6K",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     0,
+     6
+    ],
+    "formula": "P4K6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     4,
+     2
+    ],
+    "formula": "P4W4K2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     5,
+     2,
+     3
+    ],
+    "formula": "P5W2K3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     0,
+     4
+    ],
+    "formula": "P6K4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     2,
+     2
+    ],
+    "formula": "P6W2K2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     7,
+     0,
+     3
+    ],
+    "formula": "P7K3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     1,
+     7,
+     3
+    ],
+    "formula": "PW7K3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     3,
+     6
+    ],
+    "formula": "P2W3K6",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     5,
+     4
+    ],
+    "formula": "P2W5K4",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     1,
+     7
+    ],
+    "formula": "P3WK7",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     3,
+     5
+    ],
+    "formula": "P3W3K5",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     7,
+     1
+    ],
+    "formula": "P3W7K",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     4,
+     1,
+     6
+    ],
+    "formula": "P4WK6",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     4,
+     5,
+     2
+    ],
+    "formula": "P4W5K2",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     5,
+     3,
+     3
+    ],
+    "formula": "P5W3K3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     6,
+     1,
+     4
+    ],
+    "formula": "P6WK4",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     6,
+     3,
+     2
+    ],
+    "formula": "P6W3K2",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     7,
+     1,
+     3
+    ],
+    "formula": "P7WK3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     4,
+     6
+    ],
+    "formula": "P2W4K6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     6,
+     4
+    ],
+    "formula": "P2W6K4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     2,
+     7
+    ],
+    "formula": "P3W2K7",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     4,
+     5
+    ],
+    "formula": "P3W4K5",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     2,
+     6
+    ],
+    "formula": "P4W2K6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     6,
+     2
+    ],
+    "formula": "P4W6K2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     5,
+     4,
+     3
+    ],
+    "formula": "P5W4K3",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     2,
+     4
+    ],
+    "formula": "P6W2K4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     4,
+     2
+    ],
+    "formula": "P6W4K2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     7,
+     2,
+     3
+    ],
+    "formula": "P7W2K3",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     7,
+     4
+    ],
+    "formula": "P2W7K4",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     3,
+     7
+    ],
+    "formula": "P3W3K7",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     5,
+     5
+    ],
+    "formula": "P3W5K5",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     4,
+     3,
+     6
+    ],
+    "formula": "P4W3K6",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     4,
+     7,
+     2
+    ],
+    "formula": "P4W7K2",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     5,
+     5,
+     3
+    ],
+    "formula": "P5W5K3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     6,
+     3,
+     4
+    ],
+    "formula": "P6W3K4",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     7,
+     3,
+     3
+    ],
+    "formula": "P7W3K3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     4,
+     7
+    ],
+    "formula": "P3W4K7",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     3,
+     6,
+     5
+    ],
+    "formula": "P3W6K5",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     0,
+     10
+    ],
+    "formula": "P4K10",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     4,
+     6
+    ],
+    "formula": "P4W4K6",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     5,
+     6,
+     3
+    ],
+    "formula": "P5W6K3",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     6,
+     4,
+     4
+    ],
+    "formula": "P6W4K4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     7,
+     4,
+     3
+    ],
+    "formula": "P7W4K3",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     10,
+     0,
+     4
+    ],
+    "formula": "P10K4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     3,
+     7,
+     5
+    ],
+    "formula": "P3W7K5",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     4,
+     1,
+     10
+    ],
+    "formula": "P4WK10",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     4,
+     5,
+     6
+    ],
+    "formula": "P4W5K6",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     5,
+     7,
+     3
+    ],
+    "formula": "P5W7K3",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     6,
+     5,
+     4
+    ],
+    "formula": "P6W5K4",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     10,
+     1,
+     4
+    ],
+    "formula": "P10WK4",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     3,
+     6,
+     7
+    ],
+    "formula": "P3W6K7",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     4,
+     2,
+     10
+    ],
+    "formula": "P4W2K10",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     4,
+     6,
+     6
+    ],
+    "formula": "P4W6K6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     6,
+     6,
+     4
+    ],
+    "formula": "P6W6K4",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     7,
+     6,
+     3
+    ],
+    "formula": "P7W6K3",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     10,
+     2,
+     4
+    ],
+    "formula": "P10W2K4",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     3,
+     7,
+     7
+    ],
+    "formula": "P3W7K7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     3,
+     10
+    ],
+    "formula": "P4W3K10",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     7,
+     6
+    ],
+    "formula": "P4W7K6",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     6,
+     7,
+     4
+    ],
+    "formula": "P6W7K4",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     7,
+     7,
+     3
+    ],
+    "formula": "P7W7K3",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     10,
+     3,
+     4
+    ],
+    "formula": "P10W3K4",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     3,
+     8,
+     7
+    ],
+    "formula": "P3W8K7",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     4,
+     10
+    ],
+    "formula": "P4W4K10",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     6,
+     8
+    ],
+    "formula": "P4W6K8",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     7,
+     8,
+     3
+    ],
+    "formula": "P7W8K3",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     8,
+     6,
+     4
+    ],
+    "formula": "P8W6K4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     10,
+     4,
+     4
+    ],
+    "formula": "P10W4K4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     3,
+     9,
+     7
+    ],
+    "formula": "P3W9K7",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     4,
+     7,
+     8
+    ],
+    "formula": "P4W7K8",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     5,
+     3,
+     11
+    ],
+    "formula": "P5W3K11",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     7,
+     9,
+     3
+    ],
+    "formula": "P7W9K3",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     8,
+     7,
+     4
+    ],
+    "formula": "P8W7K4",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     11,
+     3,
+     5
+    ],
+    "formula": "P11W3K5",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     3,
+     10,
+     7
+    ],
+    "formula": "P3W10K7",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     4,
+     8,
+     8
+    ],
+    "formula": "P4W8K8",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     4,
+     11
+    ],
+    "formula": "P5W4K11",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     6,
+     9
+    ],
+    "formula": "P5W6K9",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     7,
+     10,
+     3
+    ],
+    "formula": "P7W10K3",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     8,
+     8,
+     4
+    ],
+    "formula": "P8W8K4",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     9,
+     6,
+     5
+    ],
+    "formula": "P9W6K5",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     11,
+     4,
+     5
+    ],
+    "formula": "P11W4K5",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     7,
+     9
+    ],
+    "formula": "P5W7K9",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     6,
+     5,
+     10
+    ],
+    "formula": "P6W5K10",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     9,
+     7,
+     5
+    ],
+    "formula": "P9W7K5",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     10,
+     5,
+     6
+    ],
+    "formula": "P10W5K6",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     5,
+     8,
+     9
+    ],
+    "formula": "P5W8K9",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     6,
+     6,
+     10
+    ],
+    "formula": "P6W6K10",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     7,
+     4,
+     11
+    ],
+    "formula": "P7W4K11",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     9,
+     8,
+     5
+    ],
+    "formula": "P9W8K5",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     10,
+     6,
+     6
+    ],
+    "formula": "P10W6K6",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     11,
+     4,
+     7
+    ],
+    "formula": "P11W4K7",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     5,
+     5,
+     13
+    ],
+    "formula": "P5W5K13",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     6,
+     3,
+     14
+    ],
+    "formula": "P6W3K14",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     6,
+     7,
+     10
+    ],
+    "formula": "P6W7K10",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     7,
+     5,
+     11
+    ],
+    "formula": "P7W5K11",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     10,
+     7,
+     6
+    ],
+    "formula": "P10W7K6",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     11,
+     5,
+     7
+    ],
+    "formula": "P11W5K7",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     13,
+     5,
+     5
+    ],
+    "formula": "P13W5K5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     14,
+     3,
+     6
+    ],
+    "formula": "P14W3K6",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     5,
+     6,
+     13
+    ],
+    "formula": "P5W6K13",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     4,
+     14
+    ],
+    "formula": "P6W4K14",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     8,
+     10
+    ],
+    "formula": "P6W8K10",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     7,
+     6,
+     11
+    ],
+    "formula": "P7W6K11",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     10,
+     8,
+     6
+    ],
+    "formula": "P10W8K6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     11,
+     6,
+     7
+    ],
+    "formula": "P11W6K7",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     13,
+     6,
+     5
+    ],
+    "formula": "P13W6K5",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     14,
+     4,
+     6
+    ],
+    "formula": "P14W4K6",
+    "natoms": 24
+   }
+  ],
+  "families": [
+   {
+    "dir": [
+     0,
+     1,
+     0
+    ],
+    "elems": [
+     "P",
+     "W",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       0,
+       1,
+       2
+      ],
+      "formula": "WK2",
+      "natoms": 3
+     },
+     {
+      "vec": [
+       0,
+       2,
+       2
+      ],
+      "formula": "W2K2",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       0,
+       3,
+       2
+      ],
+      "formula": "W3K2",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       0,
+       4,
+       2
+      ],
+      "formula": "W4K2",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       0,
+       5,
+       2
+      ],
+      "formula": "W5K2",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       0,
+       6,
+       2
+      ],
+      "formula": "W6K2",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       0,
+       7,
+       2
+      ],
+      "formula": "W7K2",
+      "natoms": 9
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     0,
+     1
+    ],
+    "elems": [
+     "P",
+     "W",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       0,
+       3
+      ],
+      "formula": "PK3",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       2,
+       0,
+       4
+      ],
+      "formula": "P2K4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       3,
+       0,
+       5
+      ],
+      "formula": "P3K5",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       4,
+       0,
+       6
+      ],
+      "formula": "P4K6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     -1,
+     1
+    ],
+    "elems": [
+     "P",
+     "W",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       4,
+       2
+      ],
+      "formula": "W4K2",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       1,
+       3,
+       3
+      ],
+      "formula": "PW3K3",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       2,
+       2,
+       4
+      ],
+      "formula": "P2W2K4",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       1,
+       5
+      ],
+      "formula": "P3WK5",
+      "natoms": 9
+     },
+     {
+      "vec": [
+       4,
+       0,
+       6
+      ],
+      "formula": "P4K6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     1
+    ],
+    "elems": [
+     "P",
+     "W",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       1,
+       3
+      ],
+      "formula": "PWK3",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       2,
+       2,
+       4
+      ],
+      "formula": "P2W2K4",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       3,
+       5
+      ],
+      "formula": "P3W3K5",
+      "natoms": 11
+     },
+     {
+      "vec": [
+       4,
+       4,
+       6
+      ],
+      "formula": "P4W4K6",
+      "natoms": 14
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     0,
+     -1
+    ],
+    "elems": [
+     "P",
+     "W",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       0,
+       1
+      ],
+      "formula": "PK",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       2,
+       0,
+       0
+      ],
+      "formula": "P2",
+      "natoms": 2
+     }
+    ]
+   }
+  ]
+ },
+ "P/K/A": {
+  "elems": [
+   "P",
+   "K",
+   "A"
+  ],
+  "Nmax": 24,
+  "pure_onepot": [
+   {
+    "vec": [
+     0,
+     0,
+     2
+    ],
+    "formula": "A2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     2,
+     0
+    ],
+    "formula": "K2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     1,
+     1,
+     0
+    ],
+    "formula": "PK",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     2,
+     0,
+     0
+    ],
+    "formula": "P2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     0,
+     3
+    ],
+    "formula": "A3",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     2,
+     1
+    ],
+    "formula": "K2A",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     2,
+     0,
+     1
+    ],
+    "formula": "P2A",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     2,
+     2
+    ],
+    "formula": "K2A2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     1,
+     3,
+     0
+    ],
+    "formula": "PK3",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     2,
+     0,
+     2
+    ],
+    "formula": "P2A2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     3,
+     1,
+     0
+    ],
+    "formula": "P3K",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     0,
+     2,
+     3
+    ],
+    "formula": "K2A3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     1,
+     3,
+     1
+    ],
+    "formula": "PK3A",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     2,
+     0,
+     3
+    ],
+    "formula": "P2A3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     3,
+     1,
+     1
+    ],
+    "formula": "P3KA",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     0,
+     2,
+     4
+    ],
+    "formula": "K2A4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     1,
+     3,
+     2
+    ],
+    "formula": "PK3A2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     0,
+     4
+    ],
+    "formula": "P2A4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     4,
+     0
+    ],
+    "formula": "P2K4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     3,
+     1,
+     2
+    ],
+    "formula": "P3KA2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     4,
+     2,
+     0
+    ],
+    "formula": "P4K2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     0,
+     2,
+     5
+    ],
+    "formula": "K2A5",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     1,
+     3,
+     3
+    ],
+    "formula": "PK3A3",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     2,
+     0,
+     5
+    ],
+    "formula": "P2A5",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     2,
+     4,
+     1
+    ],
+    "formula": "P2K4A",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     3,
+     1,
+     3
+    ],
+    "formula": "P3KA3",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     4,
+     2,
+     1
+    ],
+    "formula": "P4K2A",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     0,
+     2,
+     6
+    ],
+    "formula": "K2A6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     1,
+     3,
+     4
+    ],
+    "formula": "PK3A4",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     0,
+     6
+    ],
+    "formula": "P2A6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     4,
+     2
+    ],
+    "formula": "P2K4A2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     6,
+     0
+    ],
+    "formula": "P2K6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     3,
+     1,
+     4
+    ],
+    "formula": "P3KA4",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     3,
+     5,
+     0
+    ],
+    "formula": "P3K5",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     4,
+     2,
+     2
+    ],
+    "formula": "P4K2A2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     5,
+     3,
+     0
+    ],
+    "formula": "P5K3",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     6,
+     2,
+     0
+    ],
+    "formula": "P6K2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     0,
+     2,
+     7
+    ],
+    "formula": "K2A7",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     3,
+     5
+    ],
+    "formula": "PK3A5",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     0,
+     7
+    ],
+    "formula": "P2A7",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     4,
+     3
+    ],
+    "formula": "P2K4A3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     6,
+     1
+    ],
+    "formula": "P2K6A",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     1,
+     5
+    ],
+    "formula": "P3KA5",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     5,
+     1
+    ],
+    "formula": "P3K5A",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     4,
+     2,
+     3
+    ],
+    "formula": "P4K2A3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     5,
+     3,
+     1
+    ],
+    "formula": "P5K3A",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     6,
+     2,
+     1
+    ],
+    "formula": "P6K2A",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     3,
+     6
+    ],
+    "formula": "PK3A6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     4,
+     4
+    ],
+    "formula": "P2K4A4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     6,
+     2
+    ],
+    "formula": "P2K6A2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     1,
+     6
+    ],
+    "formula": "P3KA6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     5,
+     2
+    ],
+    "formula": "P3K5A2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     7,
+     0
+    ],
+    "formula": "P3K7",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     2,
+     4
+    ],
+    "formula": "P4K2A4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     6,
+     0
+    ],
+    "formula": "P4K6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     5,
+     3,
+     2
+    ],
+    "formula": "P5K3A2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     2,
+     2
+    ],
+    "formula": "P6K2A2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     4,
+     0
+    ],
+    "formula": "P6K4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     7,
+     3,
+     0
+    ],
+    "formula": "P7K3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     1,
+     3,
+     7
+    ],
+    "formula": "PK3A7",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     4,
+     5
+    ],
+    "formula": "P2K4A5",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     6,
+     3
+    ],
+    "formula": "P2K6A3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     1,
+     7
+    ],
+    "formula": "P3KA7",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     5,
+     3
+    ],
+    "formula": "P3K5A3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     7,
+     1
+    ],
+    "formula": "P3K7A",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     4,
+     2,
+     5
+    ],
+    "formula": "P4K2A5",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     4,
+     6,
+     1
+    ],
+    "formula": "P4K6A",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     5,
+     3,
+     3
+    ],
+    "formula": "P5K3A3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     6,
+     2,
+     3
+    ],
+    "formula": "P6K2A3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     6,
+     4,
+     1
+    ],
+    "formula": "P6K4A",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     7,
+     3,
+     1
+    ],
+    "formula": "P7K3A",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     4,
+     6
+    ],
+    "formula": "P2K4A6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     6,
+     4
+    ],
+    "formula": "P2K6A4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     5,
+     4
+    ],
+    "formula": "P3K5A4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     7,
+     2
+    ],
+    "formula": "P3K7A2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     2,
+     6
+    ],
+    "formula": "P4K2A6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     6,
+     2
+    ],
+    "formula": "P4K6A2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     5,
+     3,
+     4
+    ],
+    "formula": "P5K3A4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     2,
+     4
+    ],
+    "formula": "P6K2A4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     4,
+     2
+    ],
+    "formula": "P6K4A2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     7,
+     3,
+     2
+    ],
+    "formula": "P7K3A2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     4,
+     7
+    ],
+    "formula": "P2K4A7",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     5,
+     5
+    ],
+    "formula": "P3K5A5",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     7,
+     3
+    ],
+    "formula": "P3K7A3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     4,
+     2,
+     7
+    ],
+    "formula": "P4K2A7",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     4,
+     6,
+     3
+    ],
+    "formula": "P4K6A3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     5,
+     3,
+     5
+    ],
+    "formula": "P5K3A5",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     6,
+     4,
+     3
+    ],
+    "formula": "P6K4A3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     7,
+     3,
+     3
+    ],
+    "formula": "P7K3A3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     5,
+     6
+    ],
+    "formula": "P3K5A6",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     3,
+     7,
+     4
+    ],
+    "formula": "P3K7A4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     6,
+     4
+    ],
+    "formula": "P4K6A4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     10,
+     0
+    ],
+    "formula": "P4K10",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     5,
+     3,
+     6
+    ],
+    "formula": "P5K3A6",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     6,
+     4,
+     4
+    ],
+    "formula": "P6K4A4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     7,
+     3,
+     4
+    ],
+    "formula": "P7K3A4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     10,
+     4,
+     0
+    ],
+    "formula": "P10K4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     3,
+     5,
+     7
+    ],
+    "formula": "P3K5A7",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     4,
+     6,
+     5
+    ],
+    "formula": "P4K6A5",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     4,
+     10,
+     1
+    ],
+    "formula": "P4K10A",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     5,
+     3,
+     7
+    ],
+    "formula": "P5K3A7",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     6,
+     4,
+     5
+    ],
+    "formula": "P6K4A5",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     10,
+     4,
+     1
+    ],
+    "formula": "P10K4A",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     3,
+     7,
+     6
+    ],
+    "formula": "P3K7A6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     4,
+     6,
+     6
+    ],
+    "formula": "P4K6A6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     4,
+     10,
+     2
+    ],
+    "formula": "P4K10A2",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     6,
+     4,
+     6
+    ],
+    "formula": "P6K4A6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     7,
+     3,
+     6
+    ],
+    "formula": "P7K3A6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     10,
+     4,
+     2
+    ],
+    "formula": "P10K4A2",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     3,
+     7,
+     7
+    ],
+    "formula": "P3K7A7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     6,
+     7
+    ],
+    "formula": "P4K6A7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     10,
+     3
+    ],
+    "formula": "P4K10A3",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     6,
+     4,
+     7
+    ],
+    "formula": "P6K4A7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     7,
+     3,
+     7
+    ],
+    "formula": "P7K3A7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     10,
+     4,
+     3
+    ],
+    "formula": "P10K4A3",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     3,
+     7,
+     8
+    ],
+    "formula": "P3K7A8",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     8,
+     6
+    ],
+    "formula": "P4K8A6",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     10,
+     4
+    ],
+    "formula": "P4K10A4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     7,
+     3,
+     8
+    ],
+    "formula": "P7K3A8",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     8,
+     4,
+     6
+    ],
+    "formula": "P8K4A6",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     10,
+     4,
+     4
+    ],
+    "formula": "P10K4A4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     3,
+     7,
+     9
+    ],
+    "formula": "P3K7A9",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     4,
+     8,
+     7
+    ],
+    "formula": "P4K8A7",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     5,
+     11,
+     3
+    ],
+    "formula": "P5K11A3",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     7,
+     3,
+     9
+    ],
+    "formula": "P7K3A9",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     8,
+     4,
+     7
+    ],
+    "formula": "P8K4A7",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     11,
+     5,
+     3
+    ],
+    "formula": "P11K5A3",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     3,
+     7,
+     10
+    ],
+    "formula": "P3K7A10",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     4,
+     8,
+     8
+    ],
+    "formula": "P4K8A8",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     9,
+     6
+    ],
+    "formula": "P5K9A6",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     11,
+     4
+    ],
+    "formula": "P5K11A4",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     7,
+     3,
+     10
+    ],
+    "formula": "P7K3A10",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     8,
+     4,
+     8
+    ],
+    "formula": "P8K4A8",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     9,
+     5,
+     6
+    ],
+    "formula": "P9K5A6",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     11,
+     5,
+     4
+    ],
+    "formula": "P11K5A4",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     9,
+     7
+    ],
+    "formula": "P5K9A7",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     6,
+     10,
+     5
+    ],
+    "formula": "P6K10A5",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     9,
+     5,
+     7
+    ],
+    "formula": "P9K5A7",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     10,
+     6,
+     5
+    ],
+    "formula": "P10K6A5",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     5,
+     9,
+     8
+    ],
+    "formula": "P5K9A8",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     6,
+     10,
+     6
+    ],
+    "formula": "P6K10A6",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     7,
+     11,
+     4
+    ],
+    "formula": "P7K11A4",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     9,
+     5,
+     8
+    ],
+    "formula": "P9K5A8",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     10,
+     6,
+     6
+    ],
+    "formula": "P10K6A6",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     11,
+     7,
+     4
+    ],
+    "formula": "P11K7A4",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     5,
+     13,
+     5
+    ],
+    "formula": "P5K13A5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     6,
+     10,
+     7
+    ],
+    "formula": "P6K10A7",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     6,
+     14,
+     3
+    ],
+    "formula": "P6K14A3",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     7,
+     11,
+     5
+    ],
+    "formula": "P7K11A5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     10,
+     6,
+     7
+    ],
+    "formula": "P10K6A7",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     11,
+     7,
+     5
+    ],
+    "formula": "P11K7A5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     13,
+     5,
+     5
+    ],
+    "formula": "P13K5A5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     14,
+     6,
+     3
+    ],
+    "formula": "P14K6A3",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     5,
+     13,
+     6
+    ],
+    "formula": "P5K13A6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     10,
+     8
+    ],
+    "formula": "P6K10A8",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     14,
+     4
+    ],
+    "formula": "P6K14A4",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     7,
+     11,
+     6
+    ],
+    "formula": "P7K11A6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     10,
+     6,
+     8
+    ],
+    "formula": "P10K6A8",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     11,
+     7,
+     6
+    ],
+    "formula": "P11K7A6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     13,
+     5,
+     6
+    ],
+    "formula": "P13K5A6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     14,
+     6,
+     4
+    ],
+    "formula": "P14K6A4",
+    "natoms": 24
+   }
+  ],
+  "families": [
+   {
+    "dir": [
+     0,
+     0,
+     1
+    ],
+    "elems": [
+     "P",
+     "K",
+     "A"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       0,
+       2,
+       1
+      ],
+      "formula": "K2A",
+      "natoms": 3
+     },
+     {
+      "vec": [
+       0,
+       2,
+       2
+      ],
+      "formula": "K2A2",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       0,
+       2,
+       3
+      ],
+      "formula": "K2A3",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       0,
+       2,
+       4
+      ],
+      "formula": "K2A4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       0,
+       2,
+       5
+      ],
+      "formula": "K2A5",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       0,
+       2,
+       6
+      ],
+      "formula": "K2A6",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       0,
+       2,
+       7
+      ],
+      "formula": "K2A7",
+      "natoms": 9
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     0
+    ],
+    "elems": [
+     "P",
+     "K",
+     "A"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       3,
+       0
+      ],
+      "formula": "PK3",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       2,
+       4,
+       0
+      ],
+      "formula": "P2K4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       3,
+       5,
+       0
+      ],
+      "formula": "P3K5",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       4,
+       6,
+       0
+      ],
+      "formula": "P4K6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     -1
+    ],
+    "elems": [
+     "P",
+     "K",
+     "A"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       4
+      ],
+      "formula": "K2A4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       1,
+       3,
+       3
+      ],
+      "formula": "PK3A3",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       2,
+       4,
+       2
+      ],
+      "formula": "P2K4A2",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       5,
+       1
+      ],
+      "formula": "P3K5A",
+      "natoms": 9
+     },
+     {
+      "vec": [
+       4,
+       6,
+       0
+      ],
+      "formula": "P4K6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     1
+    ],
+    "elems": [
+     "P",
+     "K",
+     "A"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       3,
+       1
+      ],
+      "formula": "PK3A",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       2,
+       4,
+       2
+      ],
+      "formula": "P2K4A2",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       5,
+       3
+      ],
+      "formula": "P3K5A3",
+      "natoms": 11
+     },
+     {
+      "vec": [
+       4,
+       6,
+       4
+      ],
+      "formula": "P4K6A4",
+      "natoms": 14
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     -1,
+     0
+    ],
+    "elems": [
+     "P",
+     "K",
+     "A"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       1,
+       0
+      ],
+      "formula": "PK",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       2,
+       0,
+       0
+      ],
+      "formula": "P2",
+      "natoms": 2
+     }
+    ]
+   }
+  ]
+ },
+ "O/P/A": {
+  "elems": [
+   "O",
+   "P",
+   "A"
+  ],
+  "Nmax": 24,
+  "pure_onepot": [
+   {
+    "vec": [
+     0,
+     0,
+     2
+    ],
+    "formula": "A2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     2,
+     0
+    ],
+    "formula": "P2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     1,
+     1,
+     0
+    ],
+    "formula": "OP",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     2,
+     0,
+     0
+    ],
+    "formula": "O2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     0,
+     3
+    ],
+    "formula": "A3",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     2,
+     1
+    ],
+    "formula": "P2A",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     2,
+     0,
+     1
+    ],
+    "formula": "O2A",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     2,
+     2
+    ],
+    "formula": "P2A2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     1,
+     3,
+     0
+    ],
+    "formula": "OP3",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     2,
+     0,
+     2
+    ],
+    "formula": "O2A2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     3,
+     1,
+     0
+    ],
+    "formula": "O3P",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     0,
+     2,
+     3
+    ],
+    "formula": "P2A3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     1,
+     3,
+     1
+    ],
+    "formula": "OP3A",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     2,
+     0,
+     3
+    ],
+    "formula": "O2A3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     3,
+     1,
+     1
+    ],
+    "formula": "O3PA",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     0,
+     2,
+     4
+    ],
+    "formula": "P2A4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     1,
+     3,
+     2
+    ],
+    "formula": "OP3A2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     0,
+     4
+    ],
+    "formula": "O2A4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     4,
+     0
+    ],
+    "formula": "O2P4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     3,
+     1,
+     2
+    ],
+    "formula": "O3PA2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     4,
+     2,
+     0
+    ],
+    "formula": "O4P2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     0,
+     2,
+     5
+    ],
+    "formula": "P2A5",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     1,
+     3,
+     3
+    ],
+    "formula": "OP3A3",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     2,
+     0,
+     5
+    ],
+    "formula": "O2A5",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     2,
+     4,
+     1
+    ],
+    "formula": "O2P4A",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     3,
+     1,
+     3
+    ],
+    "formula": "O3PA3",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     4,
+     2,
+     1
+    ],
+    "formula": "O4P2A",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     0,
+     2,
+     6
+    ],
+    "formula": "P2A6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     1,
+     3,
+     4
+    ],
+    "formula": "OP3A4",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     0,
+     6
+    ],
+    "formula": "O2A6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     4,
+     2
+    ],
+    "formula": "O2P4A2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     6,
+     0
+    ],
+    "formula": "O2P6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     3,
+     1,
+     4
+    ],
+    "formula": "O3PA4",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     3,
+     5,
+     0
+    ],
+    "formula": "O3P5",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     4,
+     2,
+     2
+    ],
+    "formula": "O4P2A2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     5,
+     3,
+     0
+    ],
+    "formula": "O5P3",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     6,
+     2,
+     0
+    ],
+    "formula": "O6P2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     0,
+     2,
+     7
+    ],
+    "formula": "P2A7",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     3,
+     5
+    ],
+    "formula": "OP3A5",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     0,
+     7
+    ],
+    "formula": "O2A7",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     4,
+     3
+    ],
+    "formula": "O2P4A3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     6,
+     1
+    ],
+    "formula": "O2P6A",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     1,
+     5
+    ],
+    "formula": "O3PA5",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     5,
+     1
+    ],
+    "formula": "O3P5A",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     4,
+     2,
+     3
+    ],
+    "formula": "O4P2A3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     5,
+     3,
+     1
+    ],
+    "formula": "O5P3A",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     6,
+     2,
+     1
+    ],
+    "formula": "O6P2A",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     3,
+     6
+    ],
+    "formula": "OP3A6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     4,
+     4
+    ],
+    "formula": "O2P4A4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     6,
+     2
+    ],
+    "formula": "O2P6A2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     1,
+     6
+    ],
+    "formula": "O3PA6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     5,
+     2
+    ],
+    "formula": "O3P5A2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     7,
+     0
+    ],
+    "formula": "O3P7",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     2,
+     4
+    ],
+    "formula": "O4P2A4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     6,
+     0
+    ],
+    "formula": "O4P6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     5,
+     3,
+     2
+    ],
+    "formula": "O5P3A2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     2,
+     2
+    ],
+    "formula": "O6P2A2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     4,
+     0
+    ],
+    "formula": "O6P4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     7,
+     3,
+     0
+    ],
+    "formula": "O7P3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     1,
+     3,
+     7
+    ],
+    "formula": "OP3A7",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     4,
+     5
+    ],
+    "formula": "O2P4A5",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     6,
+     3
+    ],
+    "formula": "O2P6A3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     1,
+     7
+    ],
+    "formula": "O3PA7",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     5,
+     3
+    ],
+    "formula": "O3P5A3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     7,
+     1
+    ],
+    "formula": "O3P7A",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     4,
+     2,
+     5
+    ],
+    "formula": "O4P2A5",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     4,
+     6,
+     1
+    ],
+    "formula": "O4P6A",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     5,
+     3,
+     3
+    ],
+    "formula": "O5P3A3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     6,
+     2,
+     3
+    ],
+    "formula": "O6P2A3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     6,
+     4,
+     1
+    ],
+    "formula": "O6P4A",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     7,
+     3,
+     1
+    ],
+    "formula": "O7P3A",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     4,
+     6
+    ],
+    "formula": "O2P4A6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     6,
+     4
+    ],
+    "formula": "O2P6A4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     5,
+     4
+    ],
+    "formula": "O3P5A4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     7,
+     2
+    ],
+    "formula": "O3P7A2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     2,
+     6
+    ],
+    "formula": "O4P2A6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     6,
+     2
+    ],
+    "formula": "O4P6A2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     5,
+     3,
+     4
+    ],
+    "formula": "O5P3A4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     2,
+     4
+    ],
+    "formula": "O6P2A4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     4,
+     2
+    ],
+    "formula": "O6P4A2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     7,
+     3,
+     2
+    ],
+    "formula": "O7P3A2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     4,
+     7
+    ],
+    "formula": "O2P4A7",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     5,
+     5
+    ],
+    "formula": "O3P5A5",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     7,
+     3
+    ],
+    "formula": "O3P7A3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     4,
+     2,
+     7
+    ],
+    "formula": "O4P2A7",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     4,
+     6,
+     3
+    ],
+    "formula": "O4P6A3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     5,
+     3,
+     5
+    ],
+    "formula": "O5P3A5",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     6,
+     4,
+     3
+    ],
+    "formula": "O6P4A3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     7,
+     3,
+     3
+    ],
+    "formula": "O7P3A3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     5,
+     6
+    ],
+    "formula": "O3P5A6",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     3,
+     7,
+     4
+    ],
+    "formula": "O3P7A4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     6,
+     4
+    ],
+    "formula": "O4P6A4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     10,
+     0
+    ],
+    "formula": "O4P10",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     5,
+     3,
+     6
+    ],
+    "formula": "O5P3A6",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     6,
+     4,
+     4
+    ],
+    "formula": "O6P4A4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     7,
+     3,
+     4
+    ],
+    "formula": "O7P3A4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     10,
+     4,
+     0
+    ],
+    "formula": "O10P4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     3,
+     5,
+     7
+    ],
+    "formula": "O3P5A7",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     4,
+     6,
+     5
+    ],
+    "formula": "O4P6A5",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     4,
+     10,
+     1
+    ],
+    "formula": "O4P10A",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     5,
+     3,
+     7
+    ],
+    "formula": "O5P3A7",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     6,
+     4,
+     5
+    ],
+    "formula": "O6P4A5",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     10,
+     4,
+     1
+    ],
+    "formula": "O10P4A",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     3,
+     7,
+     6
+    ],
+    "formula": "O3P7A6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     4,
+     6,
+     6
+    ],
+    "formula": "O4P6A6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     4,
+     10,
+     2
+    ],
+    "formula": "O4P10A2",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     6,
+     4,
+     6
+    ],
+    "formula": "O6P4A6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     7,
+     3,
+     6
+    ],
+    "formula": "O7P3A6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     10,
+     4,
+     2
+    ],
+    "formula": "O10P4A2",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     3,
+     7,
+     7
+    ],
+    "formula": "O3P7A7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     6,
+     7
+    ],
+    "formula": "O4P6A7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     10,
+     3
+    ],
+    "formula": "O4P10A3",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     6,
+     4,
+     7
+    ],
+    "formula": "O6P4A7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     7,
+     3,
+     7
+    ],
+    "formula": "O7P3A7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     10,
+     4,
+     3
+    ],
+    "formula": "O10P4A3",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     3,
+     7,
+     8
+    ],
+    "formula": "O3P7A8",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     8,
+     6
+    ],
+    "formula": "O4P8A6",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     10,
+     4
+    ],
+    "formula": "O4P10A4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     7,
+     3,
+     8
+    ],
+    "formula": "O7P3A8",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     8,
+     4,
+     6
+    ],
+    "formula": "O8P4A6",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     10,
+     4,
+     4
+    ],
+    "formula": "O10P4A4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     3,
+     7,
+     9
+    ],
+    "formula": "O3P7A9",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     4,
+     8,
+     7
+    ],
+    "formula": "O4P8A7",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     5,
+     11,
+     3
+    ],
+    "formula": "O5P11A3",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     7,
+     3,
+     9
+    ],
+    "formula": "O7P3A9",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     8,
+     4,
+     7
+    ],
+    "formula": "O8P4A7",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     11,
+     5,
+     3
+    ],
+    "formula": "O11P5A3",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     3,
+     7,
+     10
+    ],
+    "formula": "O3P7A10",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     4,
+     8,
+     8
+    ],
+    "formula": "O4P8A8",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     9,
+     6
+    ],
+    "formula": "O5P9A6",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     11,
+     4
+    ],
+    "formula": "O5P11A4",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     7,
+     3,
+     10
+    ],
+    "formula": "O7P3A10",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     8,
+     4,
+     8
+    ],
+    "formula": "O8P4A8",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     9,
+     5,
+     6
+    ],
+    "formula": "O9P5A6",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     11,
+     5,
+     4
+    ],
+    "formula": "O11P5A4",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     9,
+     7
+    ],
+    "formula": "O5P9A7",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     6,
+     10,
+     5
+    ],
+    "formula": "O6P10A5",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     9,
+     5,
+     7
+    ],
+    "formula": "O9P5A7",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     10,
+     6,
+     5
+    ],
+    "formula": "O10P6A5",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     5,
+     9,
+     8
+    ],
+    "formula": "O5P9A8",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     6,
+     10,
+     6
+    ],
+    "formula": "O6P10A6",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     7,
+     11,
+     4
+    ],
+    "formula": "O7P11A4",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     9,
+     5,
+     8
+    ],
+    "formula": "O9P5A8",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     10,
+     6,
+     6
+    ],
+    "formula": "O10P6A6",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     11,
+     7,
+     4
+    ],
+    "formula": "O11P7A4",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     5,
+     13,
+     5
+    ],
+    "formula": "O5P13A5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     6,
+     10,
+     7
+    ],
+    "formula": "O6P10A7",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     6,
+     14,
+     3
+    ],
+    "formula": "O6P14A3",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     7,
+     11,
+     5
+    ],
+    "formula": "O7P11A5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     10,
+     6,
+     7
+    ],
+    "formula": "O10P6A7",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     11,
+     7,
+     5
+    ],
+    "formula": "O11P7A5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     13,
+     5,
+     5
+    ],
+    "formula": "O13P5A5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     14,
+     6,
+     3
+    ],
+    "formula": "O14P6A3",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     5,
+     13,
+     6
+    ],
+    "formula": "O5P13A6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     10,
+     8
+    ],
+    "formula": "O6P10A8",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     14,
+     4
+    ],
+    "formula": "O6P14A4",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     7,
+     11,
+     6
+    ],
+    "formula": "O7P11A6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     10,
+     6,
+     8
+    ],
+    "formula": "O10P6A8",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     11,
+     7,
+     6
+    ],
+    "formula": "O11P7A6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     13,
+     5,
+     6
+    ],
+    "formula": "O13P5A6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     14,
+     6,
+     4
+    ],
+    "formula": "O14P6A4",
+    "natoms": 24
+   }
+  ],
+  "families": [
+   {
+    "dir": [
+     0,
+     0,
+     1
+    ],
+    "elems": [
+     "O",
+     "P",
+     "A"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "P2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       0,
+       2,
+       1
+      ],
+      "formula": "P2A",
+      "natoms": 3
+     },
+     {
+      "vec": [
+       0,
+       2,
+       2
+      ],
+      "formula": "P2A2",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       0,
+       2,
+       3
+      ],
+      "formula": "P2A3",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       0,
+       2,
+       4
+      ],
+      "formula": "P2A4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       0,
+       2,
+       5
+      ],
+      "formula": "P2A5",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       0,
+       2,
+       6
+      ],
+      "formula": "P2A6",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       0,
+       2,
+       7
+      ],
+      "formula": "P2A7",
+      "natoms": 9
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     0
+    ],
+    "elems": [
+     "O",
+     "P",
+     "A"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "P2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       3,
+       0
+      ],
+      "formula": "OP3",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       2,
+       4,
+       0
+      ],
+      "formula": "O2P4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       3,
+       5,
+       0
+      ],
+      "formula": "O3P5",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       4,
+       6,
+       0
+      ],
+      "formula": "O4P6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     -1
+    ],
+    "elems": [
+     "O",
+     "P",
+     "A"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       4
+      ],
+      "formula": "P2A4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       1,
+       3,
+       3
+      ],
+      "formula": "OP3A3",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       2,
+       4,
+       2
+      ],
+      "formula": "O2P4A2",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       5,
+       1
+      ],
+      "formula": "O3P5A",
+      "natoms": 9
+     },
+     {
+      "vec": [
+       4,
+       6,
+       0
+      ],
+      "formula": "O4P6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     1
+    ],
+    "elems": [
+     "O",
+     "P",
+     "A"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "P2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       3,
+       1
+      ],
+      "formula": "OP3A",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       2,
+       4,
+       2
+      ],
+      "formula": "O2P4A2",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       5,
+       3
+      ],
+      "formula": "O3P5A3",
+      "natoms": 11
+     },
+     {
+      "vec": [
+       4,
+       6,
+       4
+      ],
+      "formula": "O4P6A4",
+      "natoms": 14
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     -1,
+     0
+    ],
+    "elems": [
+     "O",
+     "P",
+     "A"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "P2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       1,
+       0
+      ],
+      "formula": "OP",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       2,
+       0,
+       0
+      ],
+      "formula": "O2",
+      "natoms": 2
+     }
+    ]
+   }
+  ]
+ },
+ "O/W/K": {
+  "elems": [
+   "O",
+   "W",
+   "K"
+  ],
+  "Nmax": 24,
+  "pure_onepot": [
+   {
+    "vec": [
+     0,
+     0,
+     2
+    ],
+    "formula": "K2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     2,
+     0
+    ],
+    "formula": "W2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     1,
+     0,
+     1
+    ],
+    "formula": "OK",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     2,
+     0,
+     0
+    ],
+    "formula": "O2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     1,
+     2
+    ],
+    "formula": "WK2",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     3,
+     0
+    ],
+    "formula": "W3",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     2,
+     1,
+     0
+    ],
+    "formula": "O2W",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     2,
+     2
+    ],
+    "formula": "W2K2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     1,
+     0,
+     3
+    ],
+    "formula": "OK3",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     2,
+     2,
+     0
+    ],
+    "formula": "O2W2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     3,
+     0,
+     1
+    ],
+    "formula": "O3K",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     0,
+     3,
+     2
+    ],
+    "formula": "W3K2",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     1,
+     1,
+     3
+    ],
+    "formula": "OWK3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     2,
+     3,
+     0
+    ],
+    "formula": "O2W3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     3,
+     1,
+     1
+    ],
+    "formula": "O3WK",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     0,
+     4,
+     2
+    ],
+    "formula": "W4K2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     1,
+     2,
+     3
+    ],
+    "formula": "OW2K3",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     0,
+     4
+    ],
+    "formula": "O2K4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     4,
+     0
+    ],
+    "formula": "O2W4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     3,
+     2,
+     1
+    ],
+    "formula": "O3W2K",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     4,
+     0,
+     2
+    ],
+    "formula": "O4K2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     0,
+     5,
+     2
+    ],
+    "formula": "W5K2",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     1,
+     3,
+     3
+    ],
+    "formula": "OW3K3",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     2,
+     1,
+     4
+    ],
+    "formula": "O2WK4",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     2,
+     5,
+     0
+    ],
+    "formula": "O2W5",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     3,
+     3,
+     1
+    ],
+    "formula": "O3W3K",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     4,
+     1,
+     2
+    ],
+    "formula": "O4WK2",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     0,
+     6,
+     2
+    ],
+    "formula": "W6K2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     1,
+     4,
+     3
+    ],
+    "formula": "OW4K3",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     0,
+     6
+    ],
+    "formula": "O2K6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     2,
+     4
+    ],
+    "formula": "O2W2K4",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     6,
+     0
+    ],
+    "formula": "O2W6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     3,
+     0,
+     5
+    ],
+    "formula": "O3K5",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     3,
+     4,
+     1
+    ],
+    "formula": "O3W4K",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     4,
+     2,
+     2
+    ],
+    "formula": "O4W2K2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     5,
+     0,
+     3
+    ],
+    "formula": "O5K3",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     6,
+     0,
+     2
+    ],
+    "formula": "O6K2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     0,
+     7,
+     2
+    ],
+    "formula": "W7K2",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     5,
+     3
+    ],
+    "formula": "OW5K3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     1,
+     6
+    ],
+    "formula": "O2WK6",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     3,
+     4
+    ],
+    "formula": "O2W3K4",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     2,
+     7,
+     0
+    ],
+    "formula": "O2W7",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     1,
+     5
+    ],
+    "formula": "O3WK5",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     5,
+     1
+    ],
+    "formula": "O3W5K",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     4,
+     3,
+     2
+    ],
+    "formula": "O4W3K2",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     5,
+     1,
+     3
+    ],
+    "formula": "O5WK3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     6,
+     1,
+     2
+    ],
+    "formula": "O6WK2",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     6,
+     3
+    ],
+    "formula": "OW6K3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     2,
+     6
+    ],
+    "formula": "O2W2K6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     4,
+     4
+    ],
+    "formula": "O2W4K4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     0,
+     7
+    ],
+    "formula": "O3K7",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     2,
+     5
+    ],
+    "formula": "O3W2K5",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     3,
+     6,
+     1
+    ],
+    "formula": "O3W6K",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     0,
+     6
+    ],
+    "formula": "O4K6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     4,
+     2
+    ],
+    "formula": "O4W4K2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     5,
+     2,
+     3
+    ],
+    "formula": "O5W2K3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     0,
+     4
+    ],
+    "formula": "O6K4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     2,
+     2
+    ],
+    "formula": "O6W2K2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     7,
+     0,
+     3
+    ],
+    "formula": "O7K3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     1,
+     7,
+     3
+    ],
+    "formula": "OW7K3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     3,
+     6
+    ],
+    "formula": "O2W3K6",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     5,
+     4
+    ],
+    "formula": "O2W5K4",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     1,
+     7
+    ],
+    "formula": "O3WK7",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     3,
+     5
+    ],
+    "formula": "O3W3K5",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     7,
+     1
+    ],
+    "formula": "O3W7K",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     4,
+     1,
+     6
+    ],
+    "formula": "O4WK6",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     4,
+     5,
+     2
+    ],
+    "formula": "O4W5K2",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     5,
+     3,
+     3
+    ],
+    "formula": "O5W3K3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     6,
+     1,
+     4
+    ],
+    "formula": "O6WK4",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     6,
+     3,
+     2
+    ],
+    "formula": "O6W3K2",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     7,
+     1,
+     3
+    ],
+    "formula": "O7WK3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     4,
+     6
+    ],
+    "formula": "O2W4K6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     6,
+     4
+    ],
+    "formula": "O2W6K4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     2,
+     7
+    ],
+    "formula": "O3W2K7",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     4,
+     5
+    ],
+    "formula": "O3W4K5",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     2,
+     6
+    ],
+    "formula": "O4W2K6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     6,
+     2
+    ],
+    "formula": "O4W6K2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     5,
+     4,
+     3
+    ],
+    "formula": "O5W4K3",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     2,
+     4
+    ],
+    "formula": "O6W2K4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     4,
+     2
+    ],
+    "formula": "O6W4K2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     7,
+     2,
+     3
+    ],
+    "formula": "O7W2K3",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     7,
+     4
+    ],
+    "formula": "O2W7K4",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     3,
+     7
+    ],
+    "formula": "O3W3K7",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     5,
+     5
+    ],
+    "formula": "O3W5K5",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     4,
+     3,
+     6
+    ],
+    "formula": "O4W3K6",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     4,
+     7,
+     2
+    ],
+    "formula": "O4W7K2",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     5,
+     5,
+     3
+    ],
+    "formula": "O5W5K3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     6,
+     3,
+     4
+    ],
+    "formula": "O6W3K4",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     7,
+     3,
+     3
+    ],
+    "formula": "O7W3K3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     4,
+     7
+    ],
+    "formula": "O3W4K7",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     3,
+     6,
+     5
+    ],
+    "formula": "O3W6K5",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     0,
+     10
+    ],
+    "formula": "O4K10",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     4,
+     6
+    ],
+    "formula": "O4W4K6",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     5,
+     6,
+     3
+    ],
+    "formula": "O5W6K3",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     6,
+     4,
+     4
+    ],
+    "formula": "O6W4K4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     7,
+     4,
+     3
+    ],
+    "formula": "O7W4K3",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     10,
+     0,
+     4
+    ],
+    "formula": "O10K4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     3,
+     7,
+     5
+    ],
+    "formula": "O3W7K5",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     4,
+     1,
+     10
+    ],
+    "formula": "O4WK10",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     4,
+     5,
+     6
+    ],
+    "formula": "O4W5K6",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     5,
+     7,
+     3
+    ],
+    "formula": "O5W7K3",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     6,
+     5,
+     4
+    ],
+    "formula": "O6W5K4",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     10,
+     1,
+     4
+    ],
+    "formula": "O10WK4",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     3,
+     6,
+     7
+    ],
+    "formula": "O3W6K7",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     4,
+     2,
+     10
+    ],
+    "formula": "O4W2K10",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     4,
+     6,
+     6
+    ],
+    "formula": "O4W6K6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     6,
+     6,
+     4
+    ],
+    "formula": "O6W6K4",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     7,
+     6,
+     3
+    ],
+    "formula": "O7W6K3",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     10,
+     2,
+     4
+    ],
+    "formula": "O10W2K4",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     3,
+     7,
+     7
+    ],
+    "formula": "O3W7K7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     3,
+     10
+    ],
+    "formula": "O4W3K10",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     7,
+     6
+    ],
+    "formula": "O4W7K6",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     6,
+     7,
+     4
+    ],
+    "formula": "O6W7K4",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     7,
+     7,
+     3
+    ],
+    "formula": "O7W7K3",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     10,
+     3,
+     4
+    ],
+    "formula": "O10W3K4",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     3,
+     8,
+     7
+    ],
+    "formula": "O3W8K7",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     4,
+     10
+    ],
+    "formula": "O4W4K10",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     6,
+     8
+    ],
+    "formula": "O4W6K8",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     7,
+     8,
+     3
+    ],
+    "formula": "O7W8K3",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     8,
+     6,
+     4
+    ],
+    "formula": "O8W6K4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     10,
+     4,
+     4
+    ],
+    "formula": "O10W4K4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     3,
+     9,
+     7
+    ],
+    "formula": "O3W9K7",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     4,
+     7,
+     8
+    ],
+    "formula": "O4W7K8",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     5,
+     3,
+     11
+    ],
+    "formula": "O5W3K11",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     7,
+     9,
+     3
+    ],
+    "formula": "O7W9K3",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     8,
+     7,
+     4
+    ],
+    "formula": "O8W7K4",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     11,
+     3,
+     5
+    ],
+    "formula": "O11W3K5",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     3,
+     10,
+     7
+    ],
+    "formula": "O3W10K7",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     4,
+     8,
+     8
+    ],
+    "formula": "O4W8K8",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     4,
+     11
+    ],
+    "formula": "O5W4K11",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     6,
+     9
+    ],
+    "formula": "O5W6K9",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     7,
+     10,
+     3
+    ],
+    "formula": "O7W10K3",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     8,
+     8,
+     4
+    ],
+    "formula": "O8W8K4",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     9,
+     6,
+     5
+    ],
+    "formula": "O9W6K5",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     11,
+     4,
+     5
+    ],
+    "formula": "O11W4K5",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     7,
+     9
+    ],
+    "formula": "O5W7K9",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     6,
+     5,
+     10
+    ],
+    "formula": "O6W5K10",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     9,
+     7,
+     5
+    ],
+    "formula": "O9W7K5",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     10,
+     5,
+     6
+    ],
+    "formula": "O10W5K6",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     5,
+     8,
+     9
+    ],
+    "formula": "O5W8K9",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     6,
+     6,
+     10
+    ],
+    "formula": "O6W6K10",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     7,
+     4,
+     11
+    ],
+    "formula": "O7W4K11",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     9,
+     8,
+     5
+    ],
+    "formula": "O9W8K5",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     10,
+     6,
+     6
+    ],
+    "formula": "O10W6K6",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     11,
+     4,
+     7
+    ],
+    "formula": "O11W4K7",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     5,
+     5,
+     13
+    ],
+    "formula": "O5W5K13",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     6,
+     3,
+     14
+    ],
+    "formula": "O6W3K14",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     6,
+     7,
+     10
+    ],
+    "formula": "O6W7K10",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     7,
+     5,
+     11
+    ],
+    "formula": "O7W5K11",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     10,
+     7,
+     6
+    ],
+    "formula": "O10W7K6",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     11,
+     5,
+     7
+    ],
+    "formula": "O11W5K7",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     13,
+     5,
+     5
+    ],
+    "formula": "O13W5K5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     14,
+     3,
+     6
+    ],
+    "formula": "O14W3K6",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     5,
+     6,
+     13
+    ],
+    "formula": "O5W6K13",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     4,
+     14
+    ],
+    "formula": "O6W4K14",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     8,
+     10
+    ],
+    "formula": "O6W8K10",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     7,
+     6,
+     11
+    ],
+    "formula": "O7W6K11",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     10,
+     8,
+     6
+    ],
+    "formula": "O10W8K6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     11,
+     6,
+     7
+    ],
+    "formula": "O11W6K7",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     13,
+     6,
+     5
+    ],
+    "formula": "O13W6K5",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     14,
+     4,
+     6
+    ],
+    "formula": "O14W4K6",
+    "natoms": 24
+   }
+  ],
+  "families": [
+   {
+    "dir": [
+     0,
+     1,
+     0
+    ],
+    "elems": [
+     "O",
+     "W",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       0,
+       1,
+       2
+      ],
+      "formula": "WK2",
+      "natoms": 3
+     },
+     {
+      "vec": [
+       0,
+       2,
+       2
+      ],
+      "formula": "W2K2",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       0,
+       3,
+       2
+      ],
+      "formula": "W3K2",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       0,
+       4,
+       2
+      ],
+      "formula": "W4K2",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       0,
+       5,
+       2
+      ],
+      "formula": "W5K2",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       0,
+       6,
+       2
+      ],
+      "formula": "W6K2",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       0,
+       7,
+       2
+      ],
+      "formula": "W7K2",
+      "natoms": 9
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     0,
+     1
+    ],
+    "elems": [
+     "O",
+     "W",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       0,
+       3
+      ],
+      "formula": "OK3",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       2,
+       0,
+       4
+      ],
+      "formula": "O2K4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       3,
+       0,
+       5
+      ],
+      "formula": "O3K5",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       4,
+       0,
+       6
+      ],
+      "formula": "O4K6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     -1,
+     1
+    ],
+    "elems": [
+     "O",
+     "W",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       4,
+       2
+      ],
+      "formula": "W4K2",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       1,
+       3,
+       3
+      ],
+      "formula": "OW3K3",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       2,
+       2,
+       4
+      ],
+      "formula": "O2W2K4",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       1,
+       5
+      ],
+      "formula": "O3WK5",
+      "natoms": 9
+     },
+     {
+      "vec": [
+       4,
+       0,
+       6
+      ],
+      "formula": "O4K6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     1
+    ],
+    "elems": [
+     "O",
+     "W",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       1,
+       3
+      ],
+      "formula": "OWK3",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       2,
+       2,
+       4
+      ],
+      "formula": "O2W2K4",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       3,
+       5
+      ],
+      "formula": "O3W3K5",
+      "natoms": 11
+     },
+     {
+      "vec": [
+       4,
+       4,
+       6
+      ],
+      "formula": "O4W4K6",
+      "natoms": 14
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     0,
+     -1
+    ],
+    "elems": [
+     "O",
+     "W",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       0,
+       1
+      ],
+      "formula": "OK",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       2,
+       0,
+       0
+      ],
+      "formula": "O2",
+      "natoms": 2
+     }
+    ]
+   }
+  ]
+ },
+ "X/P/K": {
+  "elems": [
+   "X",
+   "P",
+   "K"
+  ],
+  "Nmax": 24,
+  "pure_onepot": [
+   {
+    "vec": [
+     0,
+     0,
+     2
+    ],
+    "formula": "K2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     1,
+     1
+    ],
+    "formula": "PK",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     0,
+     2,
+     0
+    ],
+    "formula": "P2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     2,
+     0,
+     0
+    ],
+    "formula": "X2",
+    "natoms": 2
+   },
+   {
+    "vec": [
+     1,
+     0,
+     2
+    ],
+    "formula": "XK2",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     1,
+     2,
+     0
+    ],
+    "formula": "XP2",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     3,
+     0,
+     0
+    ],
+    "formula": "X3",
+    "natoms": 3
+   },
+   {
+    "vec": [
+     0,
+     1,
+     3
+    ],
+    "formula": "PK3",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     0,
+     3,
+     1
+    ],
+    "formula": "P3K",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     2,
+     0,
+     2
+    ],
+    "formula": "X2K2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     2,
+     2,
+     0
+    ],
+    "formula": "X2P2",
+    "natoms": 4
+   },
+   {
+    "vec": [
+     1,
+     1,
+     3
+    ],
+    "formula": "XPK3",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     1,
+     3,
+     1
+    ],
+    "formula": "XP3K",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     3,
+     0,
+     2
+    ],
+    "formula": "X3K2",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     3,
+     2,
+     0
+    ],
+    "formula": "X3P2",
+    "natoms": 5
+   },
+   {
+    "vec": [
+     0,
+     2,
+     4
+    ],
+    "formula": "P2K4",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     0,
+     4,
+     2
+    ],
+    "formula": "P4K2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     1,
+     3
+    ],
+    "formula": "X2PK3",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     2,
+     3,
+     1
+    ],
+    "formula": "X2P3K",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     4,
+     0,
+     2
+    ],
+    "formula": "X4K2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     4,
+     2,
+     0
+    ],
+    "formula": "X4P2",
+    "natoms": 6
+   },
+   {
+    "vec": [
+     1,
+     2,
+     4
+    ],
+    "formula": "XP2K4",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     1,
+     4,
+     2
+    ],
+    "formula": "XP4K2",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     3,
+     1,
+     3
+    ],
+    "formula": "X3PK3",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     3,
+     3,
+     1
+    ],
+    "formula": "X3P3K",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     5,
+     0,
+     2
+    ],
+    "formula": "X5K2",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     5,
+     2,
+     0
+    ],
+    "formula": "X5P2",
+    "natoms": 7
+   },
+   {
+    "vec": [
+     0,
+     2,
+     6
+    ],
+    "formula": "P2K6",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     0,
+     3,
+     5
+    ],
+    "formula": "P3K5",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     0,
+     5,
+     3
+    ],
+    "formula": "P5K3",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     0,
+     6,
+     2
+    ],
+    "formula": "P6K2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     2,
+     4
+    ],
+    "formula": "X2P2K4",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     2,
+     4,
+     2
+    ],
+    "formula": "X2P4K2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     4,
+     1,
+     3
+    ],
+    "formula": "X4PK3",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     4,
+     3,
+     1
+    ],
+    "formula": "X4P3K",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     6,
+     0,
+     2
+    ],
+    "formula": "X6K2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     6,
+     2,
+     0
+    ],
+    "formula": "X6P2",
+    "natoms": 8
+   },
+   {
+    "vec": [
+     1,
+     2,
+     6
+    ],
+    "formula": "XP2K6",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     3,
+     5
+    ],
+    "formula": "XP3K5",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     5,
+     3
+    ],
+    "formula": "XP5K3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     1,
+     6,
+     2
+    ],
+    "formula": "XP6K2",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     2,
+     4
+    ],
+    "formula": "X3P2K4",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     3,
+     4,
+     2
+    ],
+    "formula": "X3P4K2",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     5,
+     1,
+     3
+    ],
+    "formula": "X5PK3",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     5,
+     3,
+     1
+    ],
+    "formula": "X5P3K",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     7,
+     0,
+     2
+    ],
+    "formula": "X7K2",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     7,
+     2,
+     0
+    ],
+    "formula": "X7P2",
+    "natoms": 9
+   },
+   {
+    "vec": [
+     0,
+     3,
+     7
+    ],
+    "formula": "P3K7",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     0,
+     4,
+     6
+    ],
+    "formula": "P4K6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     0,
+     6,
+     4
+    ],
+    "formula": "P6K4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     0,
+     7,
+     3
+    ],
+    "formula": "P7K3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     2,
+     6
+    ],
+    "formula": "X2P2K6",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     3,
+     5
+    ],
+    "formula": "X2P3K5",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     5,
+     3
+    ],
+    "formula": "X2P5K3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     2,
+     6,
+     2
+    ],
+    "formula": "X2P6K2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     2,
+     4
+    ],
+    "formula": "X4P2K4",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     4,
+     4,
+     2
+    ],
+    "formula": "X4P4K2",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     1,
+     3
+    ],
+    "formula": "X6PK3",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     6,
+     3,
+     1
+    ],
+    "formula": "X6P3K",
+    "natoms": 10
+   },
+   {
+    "vec": [
+     1,
+     3,
+     7
+    ],
+    "formula": "XP3K7",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     1,
+     4,
+     6
+    ],
+    "formula": "XP4K6",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     1,
+     6,
+     4
+    ],
+    "formula": "XP6K4",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     1,
+     7,
+     3
+    ],
+    "formula": "XP7K3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     2,
+     6
+    ],
+    "formula": "X3P2K6",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     3,
+     5
+    ],
+    "formula": "X3P3K5",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     5,
+     3
+    ],
+    "formula": "X3P5K3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     3,
+     6,
+     2
+    ],
+    "formula": "X3P6K2",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     5,
+     2,
+     4
+    ],
+    "formula": "X5P2K4",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     5,
+     4,
+     2
+    ],
+    "formula": "X5P4K2",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     7,
+     1,
+     3
+    ],
+    "formula": "X7PK3",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     7,
+     3,
+     1
+    ],
+    "formula": "X7P3K",
+    "natoms": 11
+   },
+   {
+    "vec": [
+     2,
+     3,
+     7
+    ],
+    "formula": "X2P3K7",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     4,
+     6
+    ],
+    "formula": "X2P4K6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     6,
+     4
+    ],
+    "formula": "X2P6K4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     2,
+     7,
+     3
+    ],
+    "formula": "X2P7K3",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     2,
+     6
+    ],
+    "formula": "X4P2K6",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     3,
+     5
+    ],
+    "formula": "X4P3K5",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     5,
+     3
+    ],
+    "formula": "X4P5K3",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     4,
+     6,
+     2
+    ],
+    "formula": "X4P6K2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     2,
+     4
+    ],
+    "formula": "X6P2K4",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     6,
+     4,
+     2
+    ],
+    "formula": "X6P4K2",
+    "natoms": 12
+   },
+   {
+    "vec": [
+     3,
+     3,
+     7
+    ],
+    "formula": "X3P3K7",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     4,
+     6
+    ],
+    "formula": "X3P4K6",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     6,
+     4
+    ],
+    "formula": "X3P6K4",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     3,
+     7,
+     3
+    ],
+    "formula": "X3P7K3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     5,
+     3,
+     5
+    ],
+    "formula": "X5P3K5",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     5,
+     5,
+     3
+    ],
+    "formula": "X5P5K3",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     7,
+     2,
+     4
+    ],
+    "formula": "X7P2K4",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     7,
+     4,
+     2
+    ],
+    "formula": "X7P4K2",
+    "natoms": 13
+   },
+   {
+    "vec": [
+     0,
+     4,
+     10
+    ],
+    "formula": "P4K10",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     0,
+     10,
+     4
+    ],
+    "formula": "P10K4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     3,
+     7
+    ],
+    "formula": "X4P3K7",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     4,
+     6
+    ],
+    "formula": "X4P4K6",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     6,
+     4
+    ],
+    "formula": "X4P6K4",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     4,
+     7,
+     3
+    ],
+    "formula": "X4P7K3",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     6,
+     3,
+     5
+    ],
+    "formula": "X6P3K5",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     6,
+     5,
+     3
+    ],
+    "formula": "X6P5K3",
+    "natoms": 14
+   },
+   {
+    "vec": [
+     1,
+     4,
+     10
+    ],
+    "formula": "XP4K10",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     1,
+     10,
+     4
+    ],
+    "formula": "XP10K4",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     5,
+     4,
+     6
+    ],
+    "formula": "X5P4K6",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     5,
+     6,
+     4
+    ],
+    "formula": "X5P6K4",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     7,
+     3,
+     5
+    ],
+    "formula": "X7P3K5",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     7,
+     5,
+     3
+    ],
+    "formula": "X7P5K3",
+    "natoms": 15
+   },
+   {
+    "vec": [
+     2,
+     4,
+     10
+    ],
+    "formula": "X2P4K10",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     2,
+     10,
+     4
+    ],
+    "formula": "X2P10K4",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     6,
+     3,
+     7
+    ],
+    "formula": "X6P3K7",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     6,
+     4,
+     6
+    ],
+    "formula": "X6P4K6",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     6,
+     6,
+     4
+    ],
+    "formula": "X6P6K4",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     6,
+     7,
+     3
+    ],
+    "formula": "X6P7K3",
+    "natoms": 16
+   },
+   {
+    "vec": [
+     3,
+     4,
+     10
+    ],
+    "formula": "X3P4K10",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     3,
+     10,
+     4
+    ],
+    "formula": "X3P10K4",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     7,
+     3,
+     7
+    ],
+    "formula": "X7P3K7",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     7,
+     4,
+     6
+    ],
+    "formula": "X7P4K6",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     7,
+     6,
+     4
+    ],
+    "formula": "X7P6K4",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     7,
+     7,
+     3
+    ],
+    "formula": "X7P7K3",
+    "natoms": 17
+   },
+   {
+    "vec": [
+     4,
+     4,
+     10
+    ],
+    "formula": "X4P4K10",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     4,
+     10,
+     4
+    ],
+    "formula": "X4P10K4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     6,
+     4,
+     8
+    ],
+    "formula": "X6P4K8",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     6,
+     8,
+     4
+    ],
+    "formula": "X6P8K4",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     8,
+     3,
+     7
+    ],
+    "formula": "X8P3K7",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     8,
+     7,
+     3
+    ],
+    "formula": "X8P7K3",
+    "natoms": 18
+   },
+   {
+    "vec": [
+     3,
+     5,
+     11
+    ],
+    "formula": "X3P5K11",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     3,
+     11,
+     5
+    ],
+    "formula": "X3P11K5",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     7,
+     4,
+     8
+    ],
+    "formula": "X7P4K8",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     7,
+     8,
+     4
+    ],
+    "formula": "X7P8K4",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     9,
+     3,
+     7
+    ],
+    "formula": "X9P3K7",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     9,
+     7,
+     3
+    ],
+    "formula": "X9P7K3",
+    "natoms": 19
+   },
+   {
+    "vec": [
+     4,
+     5,
+     11
+    ],
+    "formula": "X4P5K11",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     4,
+     11,
+     5
+    ],
+    "formula": "X4P11K5",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     6,
+     5,
+     9
+    ],
+    "formula": "X6P5K9",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     6,
+     9,
+     5
+    ],
+    "formula": "X6P9K5",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     8,
+     4,
+     8
+    ],
+    "formula": "X8P4K8",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     8,
+     8,
+     4
+    ],
+    "formula": "X8P8K4",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     10,
+     3,
+     7
+    ],
+    "formula": "X10P3K7",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     10,
+     7,
+     3
+    ],
+    "formula": "X10P7K3",
+    "natoms": 20
+   },
+   {
+    "vec": [
+     5,
+     6,
+     10
+    ],
+    "formula": "X5P6K10",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     5,
+     10,
+     6
+    ],
+    "formula": "X5P10K6",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     7,
+     5,
+     9
+    ],
+    "formula": "X7P5K9",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     7,
+     9,
+     5
+    ],
+    "formula": "X7P9K5",
+    "natoms": 21
+   },
+   {
+    "vec": [
+     4,
+     7,
+     11
+    ],
+    "formula": "X4P7K11",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     4,
+     11,
+     7
+    ],
+    "formula": "X4P11K7",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     6,
+     6,
+     10
+    ],
+    "formula": "X6P6K10",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     6,
+     10,
+     6
+    ],
+    "formula": "X6P10K6",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     8,
+     5,
+     9
+    ],
+    "formula": "X8P5K9",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     8,
+     9,
+     5
+    ],
+    "formula": "X8P9K5",
+    "natoms": 22
+   },
+   {
+    "vec": [
+     3,
+     6,
+     14
+    ],
+    "formula": "X3P6K14",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     3,
+     14,
+     6
+    ],
+    "formula": "X3P14K6",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     5,
+     5,
+     13
+    ],
+    "formula": "X5P5K13",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     5,
+     7,
+     11
+    ],
+    "formula": "X5P7K11",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     5,
+     11,
+     7
+    ],
+    "formula": "X5P11K7",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     5,
+     13,
+     5
+    ],
+    "formula": "X5P13K5",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     7,
+     6,
+     10
+    ],
+    "formula": "X7P6K10",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     7,
+     10,
+     6
+    ],
+    "formula": "X7P10K6",
+    "natoms": 23
+   },
+   {
+    "vec": [
+     4,
+     6,
+     14
+    ],
+    "formula": "X4P6K14",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     4,
+     14,
+     6
+    ],
+    "formula": "X4P14K6",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     5,
+     13
+    ],
+    "formula": "X6P5K13",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     7,
+     11
+    ],
+    "formula": "X6P7K11",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     11,
+     7
+    ],
+    "formula": "X6P11K7",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     6,
+     13,
+     5
+    ],
+    "formula": "X6P13K5",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     8,
+     6,
+     10
+    ],
+    "formula": "X8P6K10",
+    "natoms": 24
+   },
+   {
+    "vec": [
+     8,
+     10,
+     6
+    ],
+    "formula": "X8P10K6",
+    "natoms": 24
+   }
+  ],
+  "families": [
+   {
+    "dir": [
+     1,
+     0,
+     0
+    ],
+    "elems": [
+     "X",
+     "P",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       0,
+       2
+      ],
+      "formula": "XK2",
+      "natoms": 3
+     },
+     {
+      "vec": [
+       2,
+       0,
+       2
+      ],
+      "formula": "X2K2",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       3,
+       0,
+       2
+      ],
+      "formula": "X3K2",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       4,
+       0,
+       2
+      ],
+      "formula": "X4K2",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       5,
+       0,
+       2
+      ],
+      "formula": "X5K2",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       6,
+       0,
+       2
+      ],
+      "formula": "X6K2",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       7,
+       0,
+       2
+      ],
+      "formula": "X7K2",
+      "natoms": 9
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     -1,
+     -1
+    ],
+    "elems": [
+     "X",
+     "P",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       4,
+       6
+      ],
+      "formula": "P4K6",
+      "natoms": 10
+     },
+     {
+      "vec": [
+       1,
+       3,
+       5
+      ],
+      "formula": "XP3K5",
+      "natoms": 9
+     },
+     {
+      "vec": [
+       2,
+       2,
+       4
+      ],
+      "formula": "X2P2K4",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       1,
+       3
+      ],
+      "formula": "X3PK3",
+      "natoms": 7
+     },
+     {
+      "vec": [
+       4,
+       0,
+       2
+      ],
+      "formula": "X4K2",
+      "natoms": 6
+     }
+    ]
+   },
+   {
+    "dir": [
+     1,
+     1,
+     1
+    ],
+    "elems": [
+     "X",
+     "P",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       1,
+       1,
+       3
+      ],
+      "formula": "XPK3",
+      "natoms": 5
+     },
+     {
+      "vec": [
+       2,
+       2,
+       4
+      ],
+      "formula": "X2P2K4",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       3,
+       3,
+       5
+      ],
+      "formula": "X3P3K5",
+      "natoms": 11
+     },
+     {
+      "vec": [
+       4,
+       4,
+       6
+      ],
+      "formula": "X4P4K6",
+      "natoms": 14
+     }
+    ]
+   },
+   {
+    "dir": [
+     0,
+     1,
+     1
+    ],
+    "elems": [
+     "X",
+     "P",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       0,
+       1,
+       3
+      ],
+      "formula": "PK3",
+      "natoms": 4
+     },
+     {
+      "vec": [
+       0,
+       2,
+       4
+      ],
+      "formula": "P2K4",
+      "natoms": 6
+     },
+     {
+      "vec": [
+       0,
+       3,
+       5
+      ],
+      "formula": "P3K5",
+      "natoms": 8
+     },
+     {
+      "vec": [
+       0,
+       4,
+       6
+      ],
+      "formula": "P4K6",
+      "natoms": 10
+     }
+    ]
+   },
+   {
+    "dir": [
+     0,
+     1,
+     -1
+    ],
+    "elems": [
+     "X",
+     "P",
+     "K"
+    ],
+    "members": [
+     {
+      "vec": [
+       0,
+       0,
+       2
+      ],
+      "formula": "K2",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       0,
+       1,
+       1
+      ],
+      "formula": "PK",
+      "natoms": 2
+     },
+     {
+      "vec": [
+       0,
+       2,
+       0
+      ],
+      "formula": "P2",
+      "natoms": 2
+     }
+    ]
+   }
+  ]
+ }
+}

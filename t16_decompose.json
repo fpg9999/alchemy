@@ -1,0 +1,7946 @@
+[
+{
+"example": "CP2K",
+"n": 3,
+"covered": 2,
+"parts": 1,
+"frac": 0.667,
+"parts_desc": [
+"PP"
+]
+},
+{
+"example": "CPK2",
+"n": 3,
+"covered": 2,
+"parts": 1,
+"frac": 0.667,
+"parts_desc": [
+"KK"
+]
+},
+{
+"example": "O2CK",
+"n": 3,
+"covered": 2,
+"parts": 1,
+"frac": 0.667,
+"parts_desc": [
+"OO"
+]
+},
+{
+"example": "O2CP",
+"n": 3,
+"covered": 2,
+"parts": 1,
+"frac": 0.667,
+"parts_desc": [
+"OO"
+]
+},
+{
+"example": "O3P",
+"n": 4,
+"covered": 3,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"OOO"
+]
+},
+{
+"example": "OCK2",
+"n": 3,
+"covered": 2,
+"parts": -1,
+"frac": 0.667,
+"parts_desc": [
+"KK"
+]
+},
+{
+"example": "OCP2",
+"n": 3,
+"covered": 2,
+"parts": -1,
+"frac": 0.667,
+"parts_desc": [
+"PP"
+]
+},
+{
+"example": "OP2K",
+"n": 4,
+"covered": 2,
+"parts": 1,
+"frac": 0.5,
+"parts_desc": [
+"PP"
+]
+},
+{
+"example": "OP3",
+"n": 4,
+"covered": 3,
+"parts": -1,
+"frac": 0.75,
+"parts_desc": [
+"PPP"
+]
+},
+{
+"example": "O3PA",
+"n": 4,
+"covered": 3,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"OOO"
+]
+},
+{
+"example": "O3WK",
+"n": 4,
+"covered": 3,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"OOO"
+]
+},
+{
+"example": "OP3A",
+"n": 4,
+"covered": 3,
+"parts": -1,
+"frac": 0.75,
+"parts_desc": [
+"PPP"
+]
+},
+{
+"example": "C2P3K",
+"n": 4,
+"covered": 3,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"PPP"
+]
+},
+{
+"example": "C2PK3",
+"n": 4,
+"covered": 3,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"KKK"
+]
+},
+{
+"example": "CP2K3",
+"n": 5,
+"covered": 3,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"KPK"
+]
+},
+{
+"example": "CP3K2",
+"n": 5,
+"covered": 3,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"PKP"
+]
+},
+{
+"example": "CP4K",
+"n": 5,
+"covered": 4,
+"parts": 2,
+"frac": 0.8,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "CPK4",
+"n": 5,
+"covered": 4,
+"parts": 2,
+"frac": 0.8,
+"parts_desc": [
+"KK",
+"KK"
+]
+},
+{
+"example": "O2CK3",
+"n": 5,
+"covered": 3,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"OKK"
+]
+},
+{
+"example": "O2CP3",
+"n": 5,
+"covered": 3,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"OPP"
+]
+},
+{
+"example": "O2K4",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KOK",
+"OKK"
+]
+},
+{
+"example": "O2P2K2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POK",
+"OKP"
+]
+},
+{
+"example": "O2P3K",
+"n": 6,
+"covered": 2,
+"parts": -1,
+"frac": 0.333,
+"parts_desc": [
+"PP"
+]
+},
+{
+"example": "O2P4",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POP",
+"OPP"
+]
+},
+{
+"example": "O3CK2",
+"n": 5,
+"covered": 3,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"OKO"
+]
+},
+{
+"example": "O3CP2",
+"n": 5,
+"covered": 3,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"OPO"
+]
+},
+{
+"example": "O3CPK",
+"n": 5,
+"covered": 3,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"OKO"
+]
+},
+{
+"example": "O3KA2",
+"n": 4,
+"covered": 2,
+"parts": 1,
+"frac": 0.5,
+"parts_desc": [
+"OO"
+]
+},
+{
+"example": "O3PA2",
+"n": 4,
+"covered": 2,
+"parts": 1,
+"frac": 0.5,
+"parts_desc": [
+"OO"
+]
+},
+{
+"example": "O4CK",
+"n": 5,
+"covered": 4,
+"parts": 2,
+"frac": 0.8,
+"parts_desc": [
+"OO",
+"OO"
+]
+},
+{
+"example": "O4CP",
+"n": 5,
+"covered": 4,
+"parts": 2,
+"frac": 0.8,
+"parts_desc": [
+"OO",
+"OO"
+]
+},
+{
+"example": "O4K2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OKO",
+"OKO"
+]
+},
+{
+"example": "O4P2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OPO"
+]
+},
+{
+"example": "O4PK",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OKO"
+]
+},
+{
+"example": "OC2K3",
+"n": 4,
+"covered": 3,
+"parts": -1,
+"frac": 0.75,
+"parts_desc": [
+"KKK"
+]
+},
+{
+"example": "OCK4",
+"n": 5,
+"covered": 4,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"KK",
+"KK"
+]
+},
+{
+"example": "OCP3K",
+"n": 5,
+"covered": 3,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"PPP"
+]
+},
+{
+"example": "OCP4",
+"n": 5,
+"covered": 4,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "OCPK3",
+"n": 5,
+"covered": 3,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"OKK"
+]
+},
+{
+"example": "OK3A2",
+"n": 4,
+"covered": 2,
+"parts": -1,
+"frac": 0.5,
+"parts_desc": [
+"KK"
+]
+},
+{
+"example": "OP3A2",
+"n": 4,
+"covered": 2,
+"parts": -1,
+"frac": 0.5,
+"parts_desc": [
+"PP"
+]
+},
+{
+"example": "OP4K",
+"n": 6,
+"covered": 4,
+"parts": 0,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "OPK4",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"OKK"
+]
+},
+{
+"example": "P2K4",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"PKK"
+]
+},
+{
+"example": "P3KA2",
+"n": 4,
+"covered": 2,
+"parts": 1,
+"frac": 0.5,
+"parts_desc": [
+"PP"
+]
+},
+{
+"example": "P4K2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"PKP"
+]
+},
+{
+"example": "PK3A2",
+"n": 4,
+"covered": 2,
+"parts": -1,
+"frac": 0.5,
+"parts_desc": [
+"KK"
+]
+},
+{
+"example": "CP4KA",
+"n": 5,
+"covered": 4,
+"parts": 2,
+"frac": 0.8,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "CP4WK",
+"n": 5,
+"covered": 4,
+"parts": 2,
+"frac": 0.8,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "CPK4A",
+"n": 5,
+"covered": 4,
+"parts": 2,
+"frac": 0.8,
+"parts_desc": [
+"KK",
+"KK"
+]
+},
+{
+"example": "CPWK4",
+"n": 5,
+"covered": 4,
+"parts": 2,
+"frac": 0.8,
+"parts_desc": [
+"KK",
+"KK"
+]
+},
+{
+"example": "O4CKA",
+"n": 5,
+"covered": 4,
+"parts": 2,
+"frac": 0.8,
+"parts_desc": [
+"OO",
+"OO"
+]
+},
+{
+"example": "O4CPA",
+"n": 5,
+"covered": 4,
+"parts": 2,
+"frac": 0.8,
+"parts_desc": [
+"OO",
+"OO"
+]
+},
+{
+"example": "O4XCK",
+"n": 5,
+"covered": 4,
+"parts": 2,
+"frac": 0.8,
+"parts_desc": [
+"OO",
+"OO"
+]
+},
+{
+"example": "O4XCP",
+"n": 5,
+"covered": 4,
+"parts": 2,
+"frac": 0.8,
+"parts_desc": [
+"OO",
+"OO"
+]
+},
+{
+"example": "OCK4A",
+"n": 5,
+"covered": 4,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"KK",
+"KK"
+]
+},
+{
+"example": "OCP3KA",
+"n": 5,
+"covered": 2,
+"parts": -1,
+"frac": 0.4,
+"parts_desc": [
+"PP"
+]
+},
+{
+"example": "OCP4A",
+"n": 5,
+"covered": 4,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "OCP4W",
+"n": 5,
+"covered": 4,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "OCWK4",
+"n": 5,
+"covered": 4,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"KK",
+"KK"
+]
+},
+{
+"example": "OP4KA",
+"n": 6,
+"covered": 4,
+"parts": 0,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "C2P5K",
+"n": 6,
+"covered": 5,
+"parts": 2,
+"frac": 0.833,
+"parts_desc": [
+"PPP",
+"PP"
+]
+},
+{
+"example": "C2PK5",
+"n": 6,
+"covered": 5,
+"parts": 2,
+"frac": 0.833,
+"parts_desc": [
+"KKK",
+"KK"
+]
+},
+{
+"example": "CP2K5",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"KK",
+"KKK"
+]
+},
+{
+"example": "CP4KA2",
+"n": 5,
+"covered": 4,
+"parts": 2,
+"frac": 0.8,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "CP5K2",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"PP",
+"PPP"
+]
+},
+{
+"example": "CPK4A2",
+"n": 5,
+"covered": 4,
+"parts": 2,
+"frac": 0.8,
+"parts_desc": [
+"KK",
+"KK"
+]
+},
+{
+"example": "O2CK5",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"KK",
+"KKK"
+]
+},
+{
+"example": "O2CP5",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"PP",
+"PPP"
+]
+},
+{
+"example": "O2K4A2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KOK",
+"OKK"
+]
+},
+{
+"example": "O2K6",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O2P4A2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POP",
+"OPP"
+]
+},
+{
+"example": "O2P5K",
+"n": 8,
+"covered": 5,
+"parts": 0,
+"frac": 0.625,
+"parts_desc": [
+"PPP",
+"PP"
+]
+},
+{
+"example": "O2P6",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2PK5",
+"n": 8,
+"covered": 5,
+"parts": 0,
+"frac": 0.625,
+"parts_desc": [
+"KK",
+"KPK"
+]
+},
+{
+"example": "O3CP3K",
+"n": 7,
+"covered": 6,
+"parts": 0,
+"frac": 0.857,
+"parts_desc": [
+"PP",
+"OKOO"
+]
+},
+{
+"example": "O3K5",
+"n": 8,
+"covered": 5,
+"parts": 0,
+"frac": 0.625,
+"parts_desc": [
+"KK",
+"KOK"
+]
+},
+{
+"example": "O3P3K2",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POK",
+"OKPOP"
+]
+},
+{
+"example": "O3P4K",
+"n": 8,
+"covered": 4,
+"parts": 2,
+"frac": 0.5,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "O3P5",
+"n": 8,
+"covered": 5,
+"parts": 0,
+"frac": 0.625,
+"parts_desc": [
+"PP",
+"POP"
+]
+},
+{
+"example": "O4CKA2",
+"n": 5,
+"covered": 4,
+"parts": 2,
+"frac": 0.8,
+"parts_desc": [
+"OO",
+"OO"
+]
+},
+{
+"example": "O4CPA2",
+"n": 5,
+"covered": 4,
+"parts": 2,
+"frac": 0.8,
+"parts_desc": [
+"OO",
+"OO"
+]
+},
+{
+"example": "O4K2A2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OKO",
+"OKO"
+]
+},
+{
+"example": "O4P2A2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OPO"
+]
+},
+{
+"example": "O4PKA2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OKO"
+]
+},
+{
+"example": "O5C2K",
+"n": 6,
+"covered": 5,
+"parts": 2,
+"frac": 0.833,
+"parts_desc": [
+"OO",
+"OOO"
+]
+},
+{
+"example": "O5C2P",
+"n": 6,
+"covered": 5,
+"parts": 2,
+"frac": 0.833,
+"parts_desc": [
+"OO",
+"OOO"
+]
+},
+{
+"example": "O5CK2",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"OO",
+"OOO"
+]
+},
+{
+"example": "O5CP2",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"OO",
+"OOO"
+]
+},
+{
+"example": "O5CPK",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"OO",
+"OOO"
+]
+},
+{
+"example": "O5K3",
+"n": 8,
+"covered": 5,
+"parts": 0,
+"frac": 0.625,
+"parts_desc": [
+"OO",
+"OKO"
+]
+},
+{
+"example": "O5P2K",
+"n": 8,
+"covered": 5,
+"parts": 0,
+"frac": 0.625,
+"parts_desc": [
+"OO",
+"OPO"
+]
+},
+{
+"example": "O5P3",
+"n": 8,
+"covered": 5,
+"parts": 0,
+"frac": 0.625,
+"parts_desc": [
+"OO",
+"OPO"
+]
+},
+{
+"example": "O5PK2",
+"n": 8,
+"covered": 5,
+"parts": 0,
+"frac": 0.625,
+"parts_desc": [
+"OO",
+"OPO"
+]
+},
+{
+"example": "O6K2",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O6P2",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O6PK",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "OC2K5",
+"n": 6,
+"covered": 5,
+"parts": 0,
+"frac": 0.833,
+"parts_desc": [
+"KK",
+"KKK"
+]
+},
+{
+"example": "OC2P4K",
+"n": 6,
+"covered": 4,
+"parts": 0,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "OC2P5",
+"n": 6,
+"covered": 5,
+"parts": 0,
+"frac": 0.833,
+"parts_desc": [
+"PP",
+"PPP"
+]
+},
+{
+"example": "OCK4A2",
+"n": 5,
+"covered": 4,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"KK",
+"KK"
+]
+},
+{
+"example": "OCP4A2",
+"n": 5,
+"covered": 4,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "OCP5K",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"PP",
+"PPP"
+]
+},
+{
+"example": "OCPK5",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"KK",
+"KKK"
+]
+},
+{
+"example": "OP2K5",
+"n": 8,
+"covered": 5,
+"parts": 0,
+"frac": 0.625,
+"parts_desc": [
+"KK",
+"KPK"
+]
+},
+{
+"example": "OP4KA2",
+"n": 6,
+"covered": 4,
+"parts": 0,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "OP5K2",
+"n": 8,
+"covered": 5,
+"parts": 0,
+"frac": 0.625,
+"parts_desc": [
+"PPP",
+"PP"
+]
+},
+{
+"example": "OPK4A2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"OKK"
+]
+},
+{
+"example": "OPK6",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "P2K4A2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"PKK"
+]
+},
+{
+"example": "P2K6",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "P3K5",
+"n": 8,
+"covered": 5,
+"parts": 0,
+"frac": 0.625,
+"parts_desc": [
+"KK",
+"KPK"
+]
+},
+{
+"example": "P4K2A2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"PKP"
+]
+},
+{
+"example": "P5K3",
+"n": 8,
+"covered": 5,
+"parts": 0,
+"frac": 0.625,
+"parts_desc": [
+"PP",
+"PKP"
+]
+},
+{
+"example": "P6K2",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "X2P4K2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"PKP"
+]
+},
+{
+"example": "C2P2WK4",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"KPK"
+]
+},
+{
+"example": "C2P4K2A",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"PKP"
+]
+},
+{
+"example": "C2PK5A",
+"n": 6,
+"covered": 5,
+"parts": 2,
+"frac": 0.833,
+"parts_desc": [
+"KKK",
+"KK"
+]
+},
+{
+"example": "CP2K5A",
+"n": 7,
+"covered": 5,
+"parts": 2,
+"frac": 0.714,
+"parts_desc": [
+"KKK",
+"KK"
+]
+},
+{
+"example": "CP4KA3",
+"n": 5,
+"covered": 4,
+"parts": 1,
+"frac": 0.8,
+"parts_desc": [
+"PKPP"
+]
+},
+{
+"example": "CP5K2A",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"PP",
+"PPP"
+]
+},
+{
+"example": "CPK4A3",
+"n": 5,
+"covered": 4,
+"parts": -1,
+"frac": 0.8,
+"parts_desc": [
+"KPKK"
+]
+},
+{
+"example": "O2C2P4A",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POP",
+"OPP"
+]
+},
+{
+"example": "O2C2WK4",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KOK",
+"OKK"
+]
+},
+{
+"example": "O2CK5A",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"KKK",
+"KK"
+]
+},
+{
+"example": "O2CP4KA",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POP",
+"OKPP"
+]
+},
+{
+"example": "O2CP5A",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"PPP",
+"PP"
+]
+},
+{
+"example": "O2K6A",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O2P5KA",
+"n": 8,
+"covered": 5,
+"parts": 0,
+"frac": 0.625,
+"parts_desc": [
+"PPP",
+"PP"
+]
+},
+{
+"example": "O2P6A",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2PK5A",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"KOK",
+"KPK"
+]
+},
+{
+"example": "O3K5A",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"KOK",
+"KOK"
+]
+},
+{
+"example": "O3P4KA",
+"n": 8,
+"covered": 5,
+"parts": 2,
+"frac": 0.625,
+"parts_desc": [
+"POP",
+"PP"
+]
+},
+{
+"example": "O3P5A",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"POP",
+"POP"
+]
+},
+{
+"example": "O4C2K2A",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OKO",
+"OKO"
+]
+},
+{
+"example": "O4C2P2A",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OPO"
+]
+},
+{
+"example": "O4C2PKA",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OKO"
+]
+},
+{
+"example": "O4CKA3",
+"n": 5,
+"covered": 4,
+"parts": 1,
+"frac": 0.8,
+"parts_desc": [
+"OKOO"
+]
+},
+{
+"example": "O4CPA3",
+"n": 5,
+"covered": 4,
+"parts": 1,
+"frac": 0.8,
+"parts_desc": [
+"OPOO"
+]
+},
+{
+"example": "O5CK2A",
+"n": 7,
+"covered": 5,
+"parts": 2,
+"frac": 0.714,
+"parts_desc": [
+"OOO",
+"OO"
+]
+},
+{
+"example": "O5CP2A",
+"n": 7,
+"covered": 5,
+"parts": 2,
+"frac": 0.714,
+"parts_desc": [
+"OOO",
+"OO"
+]
+},
+{
+"example": "O5CPKA",
+"n": 7,
+"covered": 5,
+"parts": 2,
+"frac": 0.714,
+"parts_desc": [
+"OOO",
+"OO"
+]
+},
+{
+"example": "O5K3A",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"OKO",
+"OKO"
+]
+},
+{
+"example": "O5P2KA",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"OPO",
+"OPO"
+]
+},
+{
+"example": "O5P3A",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"OPO",
+"OPO"
+]
+},
+{
+"example": "O5PK2A",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"OKO",
+"OPO"
+]
+},
+{
+"example": "O5X2KA",
+"n": 6,
+"covered": 5,
+"parts": 2,
+"frac": 0.833,
+"parts_desc": [
+"OOO",
+"OO"
+]
+},
+{
+"example": "O5X2PA",
+"n": 6,
+"covered": 5,
+"parts": 2,
+"frac": 0.833,
+"parts_desc": [
+"OOO",
+"OO"
+]
+},
+{
+"example": "O5XC2P",
+"n": 6,
+"covered": 5,
+"parts": 2,
+"frac": 0.833,
+"parts_desc": [
+"OO",
+"OOO"
+]
+},
+{
+"example": "O6K2A",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O6P2A",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O6PKA",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "OC2K5A",
+"n": 6,
+"covered": 5,
+"parts": 0,
+"frac": 0.833,
+"parts_desc": [
+"KK",
+"KKK"
+]
+},
+{
+"example": "OC2P5W",
+"n": 6,
+"covered": 5,
+"parts": 0,
+"frac": 0.833,
+"parts_desc": [
+"PP",
+"PPP"
+]
+},
+{
+"example": "OC2PWK4",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"OKK"
+]
+},
+{
+"example": "OCK4A3",
+"n": 5,
+"covered": 4,
+"parts": 1,
+"frac": 0.8,
+"parts_desc": [
+"OKKK"
+]
+},
+{
+"example": "OCP4A3",
+"n": 5,
+"covered": 4,
+"parts": 1,
+"frac": 0.8,
+"parts_desc": [
+"OPPP"
+]
+},
+{
+"example": "OCP4K2A",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"OKPP"
+]
+},
+{
+"example": "OCP5KA",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"PP",
+"PPP"
+]
+},
+{
+"example": "OCP5WK",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"PP",
+"PPP"
+]
+},
+{
+"example": "OCPK5A",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"KKK",
+"KK"
+]
+},
+{
+"example": "OP2K5A",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"KPK",
+"KPK"
+]
+},
+{
+"example": "OP4KA3",
+"n": 6,
+"covered": 2,
+"parts": 1,
+"frac": 0.333,
+"parts_desc": [
+"PP"
+]
+},
+{
+"example": "OP4W2KA",
+"n": 6,
+"covered": 2,
+"parts": 1,
+"frac": 0.333,
+"parts_desc": [
+"PP"
+]
+},
+{
+"example": "OP5K2A",
+"n": 8,
+"covered": 5,
+"parts": 0,
+"frac": 0.625,
+"parts_desc": [
+"PPP",
+"PP"
+]
+},
+{
+"example": "OP5W2A",
+"n": 6,
+"covered": 5,
+"parts": 0,
+"frac": 0.833,
+"parts_desc": [
+"PPP",
+"PP"
+]
+},
+{
+"example": "OPK6A",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "OWK5A2",
+"n": 6,
+"covered": 5,
+"parts": 0,
+"frac": 0.833,
+"parts_desc": [
+"KKK",
+"KK"
+]
+},
+{
+"example": "OXP4KA2",
+"n": 6,
+"covered": 2,
+"parts": 1,
+"frac": 0.333,
+"parts_desc": [
+"PP"
+]
+},
+{
+"example": "P2K6A",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "P3K5A",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"KPK",
+"KPK"
+]
+},
+{
+"example": "P5K3A",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"PKP",
+"PKP"
+]
+},
+{
+"example": "P5W2KA",
+"n": 6,
+"covered": 5,
+"parts": 2,
+"frac": 0.833,
+"parts_desc": [
+"PPP",
+"PP"
+]
+},
+{
+"example": "P6K2A",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "PWK5A2",
+"n": 6,
+"covered": 5,
+"parts": 0,
+"frac": 0.833,
+"parts_desc": [
+"KKK",
+"KK"
+]
+},
+{
+"example": "C2P5KF2",
+"n": 6,
+"covered": 5,
+"parts": 2,
+"frac": 0.833,
+"parts_desc": [
+"PPP",
+"PP"
+]
+},
+{
+"example": "CP2WK5A",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"KK",
+"KPK"
+]
+},
+{
+"example": "CP5WK2A",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"PP",
+"PKP"
+]
+},
+{
+"example": "O2CP5WA",
+"n": 7,
+"covered": 5,
+"parts": -2,
+"frac": 0.714,
+"parts_desc": [
+"POP",
+"PP"
+]
+},
+{
+"example": "O2CP6K",
+"n": 9,
+"covered": 6,
+"parts": -1,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CWK5A",
+"n": 7,
+"covered": 5,
+"parts": -2,
+"frac": 0.714,
+"parts_desc": [
+"KOK",
+"KK"
+]
+},
+{
+"example": "O2K6A2",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O2P2K6",
+"n": 10,
+"covered": 6,
+"parts": 0,
+"frac": 0.6,
+"parts_desc": [
+"KPK",
+"KPK"
+]
+},
+{
+"example": "O2P5WKA",
+"n": 8,
+"covered": 5,
+"parts": 2,
+"frac": 0.625,
+"parts_desc": [
+"POP",
+"PP"
+]
+},
+{
+"example": "O2P6A2",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2P6K2",
+"n": 10,
+"covered": 6,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2PK5A2",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KOK",
+"OKKPK"
+]
+},
+{
+"example": "O2PK7",
+"n": 10,
+"covered": 7,
+"parts": -1,
+"frac": 0.7,
+"parts_desc": [
+"KK",
+"KPK",
+"KK"
+]
+},
+{
+"example": "O3C2P4K",
+"n": 8,
+"covered": 3,
+"parts": -1,
+"frac": 0.375,
+"parts_desc": [
+"POP"
+]
+},
+{
+"example": "O3CP4K2",
+"n": 9,
+"covered": 9,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POK",
+"OKPPOP"
+]
+},
+{
+"example": "O3CP5K",
+"n": 9,
+"covered": 5,
+"parts": 0,
+"frac": 0.556,
+"parts_desc": [
+"PP",
+"POP"
+]
+},
+{
+"example": "O3K5A2",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KOK",
+"OKKOK"
+]
+},
+{
+"example": "O3K7",
+"n": 10,
+"covered": 7,
+"parts": -1,
+"frac": 0.7,
+"parts_desc": [
+"KK",
+"KOK",
+"KK"
+]
+},
+{
+"example": "O3P4K3",
+"n": 10,
+"covered": 10,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POK",
+"OKPPOKP"
+]
+},
+{
+"example": "O3P5A2",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POP",
+"OPPOP"
+]
+},
+{
+"example": "O3P5K2",
+"n": 10,
+"covered": 4,
+"parts": 2,
+"frac": 0.4,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "O3P7",
+"n": 10,
+"covered": 7,
+"parts": -1,
+"frac": 0.7,
+"parts_desc": [
+"PP",
+"POP",
+"PP"
+]
+},
+{
+"example": "O3PK6",
+"n": 10,
+"covered": 6,
+"parts": 0,
+"frac": 0.6,
+"parts_desc": [
+"KPK",
+"KOK"
+]
+},
+{
+"example": "O4K6",
+"n": 10,
+"covered": 6,
+"parts": 0,
+"frac": 0.6,
+"parts_desc": [
+"KOK",
+"KOK"
+]
+},
+{
+"example": "O4P4K2",
+"n": 10,
+"covered": 10,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POKOP",
+"OKPOP"
+]
+},
+{
+"example": "O4P5K",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"POP",
+"OKPOP"
+]
+},
+{
+"example": "O4P6",
+"n": 10,
+"covered": 6,
+"parts": 0,
+"frac": 0.6,
+"parts_desc": [
+"POP",
+"POP"
+]
+},
+{
+"example": "O5C2KF2",
+"n": 6,
+"covered": 5,
+"parts": 2,
+"frac": 0.833,
+"parts_desc": [
+"OO",
+"OOO"
+]
+},
+{
+"example": "O5K3A2",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OKO",
+"OKOKO"
+]
+},
+{
+"example": "O5P2KA2",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OKOPO"
+]
+},
+{
+"example": "O5P3A2",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OPOPO"
+]
+},
+{
+"example": "O5PK2A2",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OKO",
+"OKOPO"
+]
+},
+{
+"example": "O5XCK2A",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"OKO",
+"OO"
+]
+},
+{
+"example": "O5XCP2A",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"OPO",
+"OO"
+]
+},
+{
+"example": "O5XCPKA",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"OPO",
+"OO"
+]
+},
+{
+"example": "O6K2A2",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O6K4",
+"n": 10,
+"covered": 6,
+"parts": -1,
+"frac": 0.6,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O6P2A2",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O6P2K2",
+"n": 10,
+"covered": 6,
+"parts": -1,
+"frac": 0.6,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O6P3K",
+"n": 10,
+"covered": 6,
+"parts": -1,
+"frac": 0.6,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O6P4",
+"n": 10,
+"covered": 6,
+"parts": -1,
+"frac": 0.6,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O6PK3",
+"n": 10,
+"covered": 6,
+"parts": -1,
+"frac": 0.6,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O6PKA2",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O7K3",
+"n": 10,
+"covered": 7,
+"parts": 1,
+"frac": 0.7,
+"parts_desc": [
+"OO",
+"OKO",
+"OO"
+]
+},
+{
+"example": "O7P2K",
+"n": 10,
+"covered": 7,
+"parts": 1,
+"frac": 0.7,
+"parts_desc": [
+"OO",
+"OPO",
+"OO"
+]
+},
+{
+"example": "O7P3",
+"n": 10,
+"covered": 7,
+"parts": 1,
+"frac": 0.7,
+"parts_desc": [
+"OO",
+"OPO",
+"OO"
+]
+},
+{
+"example": "O7PK2",
+"n": 10,
+"covered": 7,
+"parts": 1,
+"frac": 0.7,
+"parts_desc": [
+"OO",
+"OPO",
+"OO"
+]
+},
+{
+"example": "OC2P5KF",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"PP",
+"PPP"
+]
+},
+{
+"example": "OCP5KA2",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"PPP",
+"PP"
+]
+},
+{
+"example": "OCP5W2K",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"PP",
+"PPP"
+]
+},
+{
+"example": "OCP5WKA",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"PP",
+"PPP"
+]
+},
+{
+"example": "OCP6K2",
+"n": 9,
+"covered": 6,
+"parts": -1,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "OCPWK5A",
+"n": 7,
+"covered": 5,
+"parts": -2,
+"frac": 0.714,
+"parts_desc": [
+"KPK",
+"KK"
+]
+},
+{
+"example": "OP2K5A2",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"OKKPK"
+]
+},
+{
+"example": "OP2K7",
+"n": 10,
+"covered": 7,
+"parts": -1,
+"frac": 0.7,
+"parts_desc": [
+"KK",
+"KPK",
+"KK"
+]
+},
+{
+"example": "OP3K6",
+"n": 10,
+"covered": 6,
+"parts": 0,
+"frac": 0.6,
+"parts_desc": [
+"KPK",
+"KPK"
+]
+},
+{
+"example": "OP5WK2A",
+"n": 8,
+"covered": 5,
+"parts": 2,
+"frac": 0.625,
+"parts_desc": [
+"PKP",
+"PP"
+]
+},
+{
+"example": "OPK6A2",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "P2K6A2",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "P3K5A2",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"PKKPK"
+]
+},
+{
+"example": "P3K7",
+"n": 10,
+"covered": 7,
+"parts": -1,
+"frac": 0.7,
+"parts_desc": [
+"KK",
+"KPK",
+"KK"
+]
+},
+{
+"example": "P4K6",
+"n": 10,
+"covered": 6,
+"parts": 0,
+"frac": 0.6,
+"parts_desc": [
+"KPK",
+"KPK"
+]
+},
+{
+"example": "P5K3A2",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"PKPKP"
+]
+},
+{
+"example": "P6K2A2",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "P6K4",
+"n": 10,
+"covered": 6,
+"parts": -1,
+"frac": 0.6,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "P7K3",
+"n": 10,
+"covered": 7,
+"parts": 1,
+"frac": 0.7,
+"parts_desc": [
+"PP",
+"PKP",
+"PP"
+]
+},
+{
+"example": "C2P3WK5",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"KPKPK"
+]
+},
+{
+"example": "C2P5K3A",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"PKPKP"
+]
+},
+{
+"example": "CP2K5A3",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"KPKK"
+]
+},
+{
+"example": "CP5W2K2A",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"PKPP"
+]
+},
+{
+"example": "O2C2PWK5",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KOK",
+"OKKPK"
+]
+},
+{
+"example": "O2CK5A3",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KOK",
+"OKKK"
+]
+},
+{
+"example": "O2CP5W2A",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POP",
+"OPPP"
+]
+},
+{
+"example": "O2CP6KA",
+"n": 9,
+"covered": 6,
+"parts": -1,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CP6WK",
+"n": 9,
+"covered": 6,
+"parts": -1,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2K6A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KOKK",
+"OKKK"
+]
+},
+{
+"example": "O2P2K6A",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"KPK",
+"OKKPK"
+]
+},
+{
+"example": "O2P5KA3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POP",
+"OKPPP"
+]
+},
+{
+"example": "O2P6A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POPP",
+"OPPP"
+]
+},
+{
+"example": "O2P6K2A",
+"n": 10,
+"covered": 6,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2P6W2A",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2PK7A",
+"n": 10,
+"covered": 7,
+"parts": -1,
+"frac": 0.7,
+"parts_desc": [
+"KK",
+"KPK",
+"KK"
+]
+},
+{
+"example": "O2W2K6A",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O3C2P5A",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POP",
+"OPPOP"
+]
+},
+{
+"example": "O3C2WK5",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KOK",
+"OKKOK"
+]
+},
+{
+"example": "O3CP5KA",
+"n": 9,
+"covered": 6,
+"parts": 0,
+"frac": 0.667,
+"parts_desc": [
+"POP",
+"POP"
+]
+},
+{
+"example": "O3CP5WK",
+"n": 9,
+"covered": 6,
+"parts": 0,
+"frac": 0.667,
+"parts_desc": [
+"POP",
+"POP"
+]
+},
+{
+"example": "O3K7A",
+"n": 10,
+"covered": 7,
+"parts": -1,
+"frac": 0.7,
+"parts_desc": [
+"KK",
+"KOK",
+"KK"
+]
+},
+{
+"example": "O3P5K2A",
+"n": 10,
+"covered": 5,
+"parts": 2,
+"frac": 0.5,
+"parts_desc": [
+"POP",
+"PP"
+]
+},
+{
+"example": "O3P7A",
+"n": 10,
+"covered": 7,
+"parts": -1,
+"frac": 0.7,
+"parts_desc": [
+"PP",
+"POP",
+"PP"
+]
+},
+{
+"example": "O3PK6A",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"KPKOK",
+"KOK"
+]
+},
+{
+"example": "O4K6A",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"KOK",
+"OKKOK"
+]
+},
+{
+"example": "O4P6A",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"POP",
+"OPPOP"
+]
+},
+{
+"example": "O5C2K3A",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OKO",
+"OKOKO"
+]
+},
+{
+"example": "O5C2P2KA",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OKOPO"
+]
+},
+{
+"example": "O5C2P3A",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OPOPO"
+]
+},
+{
+"example": "O5C2PK2A",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OKO",
+"OKOPO"
+]
+},
+{
+"example": "O5X2CK2A",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OKO",
+"OKOO"
+]
+},
+{
+"example": "O5X2CP2A",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OPOO"
+]
+},
+{
+"example": "O5X2CPKA",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OKOO"
+]
+},
+{
+"example": "O6K2A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OKOO",
+"OKOO"
+]
+},
+{
+"example": "O6K4A",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"OKO",
+"OKOKO"
+]
+},
+{
+"example": "O6P2A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPOO",
+"OPOO"
+]
+},
+{
+"example": "O6P2K2A",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"OPO",
+"OKOPO"
+]
+},
+{
+"example": "O6P3KA",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"OPO",
+"OKOPO"
+]
+},
+{
+"example": "O6P4A",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"OPO",
+"OPOPO"
+]
+},
+{
+"example": "O6PK3A",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"OPOKO",
+"OKO"
+]
+},
+{
+"example": "O6PKA3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPOO",
+"OKOO"
+]
+},
+{
+"example": "O6X2K2A",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O6X2P2A",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O6X2PKA",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O7K3A",
+"n": 10,
+"covered": 7,
+"parts": 1,
+"frac": 0.7,
+"parts_desc": [
+"OO",
+"OKO",
+"OO"
+]
+},
+{
+"example": "O7P2KA",
+"n": 10,
+"covered": 7,
+"parts": 1,
+"frac": 0.7,
+"parts_desc": [
+"OO",
+"OPO",
+"OO"
+]
+},
+{
+"example": "O7P3A",
+"n": 10,
+"covered": 7,
+"parts": 1,
+"frac": 0.7,
+"parts_desc": [
+"OO",
+"OPO",
+"OO"
+]
+},
+{
+"example": "O7PK2A",
+"n": 10,
+"covered": 7,
+"parts": 1,
+"frac": 0.7,
+"parts_desc": [
+"OO",
+"OPO",
+"OO"
+]
+},
+{
+"example": "OC2P2WK5",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"OKKPK"
+]
+},
+{
+"example": "OCP5KA3",
+"n": 7,
+"covered": 4,
+"parts": 0,
+"frac": 0.571,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "OCP5WKA2",
+"n": 7,
+"covered": 4,
+"parts": 0,
+"frac": 0.571,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "OCP6K2A",
+"n": 9,
+"covered": 6,
+"parts": 1,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "OCP6WK2",
+"n": 9,
+"covered": 6,
+"parts": -1,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "OCPK5A3",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"OKKK"
+]
+},
+{
+"example": "OP2K7A",
+"n": 10,
+"covered": 7,
+"parts": -1,
+"frac": 0.7,
+"parts_desc": [
+"KK",
+"KPK",
+"KK"
+]
+},
+{
+"example": "OP3K6A",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"KPK",
+"OKKPK"
+]
+},
+{
+"example": "OP5K2A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"OKPPP"
+]
+},
+{
+"example": "OPK6A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPKK",
+"OKKK"
+]
+},
+{
+"example": "OPW2K6A",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "P2K6A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPKK",
+"PKKK"
+]
+},
+{
+"example": "P2W2K6A",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "P3K7A",
+"n": 10,
+"covered": 7,
+"parts": -1,
+"frac": 0.7,
+"parts_desc": [
+"KK",
+"KPK",
+"KK"
+]
+},
+{
+"example": "P4K6A",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"KPK",
+"PKKPK"
+]
+},
+{
+"example": "P6K2A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKPP",
+"PKPP"
+]
+},
+{
+"example": "P6K4A",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"PKP",
+"PKPKP"
+]
+},
+{
+"example": "P6W2K2A",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "P7K3A",
+"n": 10,
+"covered": 7,
+"parts": 1,
+"frac": 0.7,
+"parts_desc": [
+"PP",
+"PKP",
+"PP"
+]
+},
+{
+"example": "X2P2WK6",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KKPK",
+"KPKK"
+]
+},
+{
+"example": "X2P6K2A",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PPKP",
+"PKPP"
+]
+},
+{
+"example": "XC2P3K5",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"KPK",
+"KPK"
+]
+},
+{
+"example": "XC2P5K3",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"PKP",
+"PKP"
+]
+},
+{
+"example": "C2P2W2K5F",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"KPKK"
+]
+},
+{
+"example": "C2P2W4K3F",
+"n": 5,
+"covered": 3,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"KPK"
+]
+},
+{
+"example": "C2P2WK6A",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "C2P3K2A4F",
+"n": 5,
+"covered": 3,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"PKP"
+]
+},
+{
+"example": "C2P4K6",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"KPK",
+"KPKPK"
+]
+},
+{
+"example": "C2P5K2A2F",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"PKPP"
+]
+},
+{
+"example": "C2P6K4",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"PKP",
+"PKPKP"
+]
+},
+{
+"example": "C2P6WK2A",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "CP3K8",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"KPK",
+"KK",
+"KK"
+]
+},
+{
+"example": "CP3W2K6",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"KPK"
+]
+},
+{
+"example": "CP6K3A2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"PKP"
+]
+},
+{
+"example": "CP8K3",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"PKP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2C2P2K6",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"KPK",
+"OKKPK"
+]
+},
+{
+"example": "O2C2P5A2F",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POP",
+"OPPP"
+]
+},
+{
+"example": "O2C2P5KA2",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POP",
+"OKPPP"
+]
+},
+{
+"example": "O2C2W2K5F",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KOK",
+"OKKK"
+]
+},
+{
+"example": "O2CP6KA2",
+"n": 9,
+"covered": 9,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POPP",
+"OKPPP"
+]
+},
+{
+"example": "O2CP6W2K",
+"n": 9,
+"covered": 6,
+"parts": -1,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CP7K2",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"PPP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CPK8",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"KPK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O2CPW2K6",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KOK",
+"OKK"
+]
+},
+{
+"example": "O2K6A4",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"OKKK"
+]
+},
+{
+"example": "O2P6A4",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"PP",
+"OPPP"
+]
+},
+{
+"example": "O2P6K2A2",
+"n": 10,
+"covered": 10,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POKPP",
+"OKPPP"
+]
+},
+{
+"example": "O2P6WA3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POPP",
+"OPPP"
+]
+},
+{
+"example": "O2P6WK2A",
+"n": 10,
+"covered": 6,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2W3K6A",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KOKK",
+"OKKK"
+]
+},
+{
+"example": "O3C2P5K2",
+"n": 10,
+"covered": 3,
+"parts": 1,
+"frac": 0.3,
+"parts_desc": [
+"POP"
+]
+},
+{
+"example": "O3C2P5KF",
+"n": 9,
+"covered": 6,
+"parts": 0,
+"frac": 0.667,
+"parts_desc": [
+"POP",
+"POP"
+]
+},
+{
+"example": "O3C2PK6",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"KOPKK",
+"KOK"
+]
+},
+{
+"example": "O3CK8",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"KOK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O3CP6A2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POP",
+"OPP"
+]
+},
+{
+"example": "O3CP7K",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"POP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O3CP8",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"POP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O3P8K",
+"n": 12,
+"covered": 7,
+"parts": 3,
+"frac": 0.583,
+"parts_desc": [
+"POP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O4C2K6",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"KOK",
+"OKKOK"
+]
+},
+{
+"example": "O4C2P6",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"POP",
+"OPPOP"
+]
+},
+{
+"example": "O4CP5K2",
+"n": 11,
+"covered": 8,
+"parts": 2,
+"frac": 0.727,
+"parts_desc": [
+"OKPOP",
+"POP"
+]
+},
+{
+"example": "O4P7K",
+"n": 12,
+"covered": 7,
+"parts": 3,
+"frac": 0.583,
+"parts_desc": [
+"PPP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O5C2K2A2F",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OKO",
+"OKOO"
+]
+},
+{
+"example": "O5C2P2A2F",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OPOO"
+]
+},
+{
+"example": "O5C2PKA2F",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OKOO"
+]
+},
+{
+"example": "O5P5K2",
+"n": 12,
+"covered": 11,
+"parts": 3,
+"frac": 0.917,
+"parts_desc": [
+"POKOP",
+"OKOO",
+"PP"
+]
+},
+{
+"example": "O5P6K",
+"n": 12,
+"covered": 9,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"OKOO",
+"POP",
+"PP"
+]
+},
+{
+"example": "O6C2K4",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"OKO",
+"OKOKO"
+]
+},
+{
+"example": "O6C2P2K2",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"OPO",
+"OKOPO"
+]
+},
+{
+"example": "O6C2P3K",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"OPO",
+"OKOPO"
+]
+},
+{
+"example": "O6C2P4",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"OPO",
+"OPOPO"
+]
+},
+{
+"example": "O6C2PK3",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"OKPOO",
+"OKO"
+]
+},
+{
+"example": "O6CK3A2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OKO",
+"OKO"
+]
+},
+{
+"example": "O6CP2KA2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OKO"
+]
+},
+{
+"example": "O6CP3A2",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OPO"
+]
+},
+{
+"example": "O6K2A4",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OKOO"
+]
+},
+{
+"example": "O6P2A4",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OPOO"
+]
+},
+{
+"example": "O6PKA4",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OKOO"
+]
+},
+{
+"example": "O6X2PKA2",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"OPOO",
+"OO"
+]
+},
+{
+"example": "O6XK2A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OKOO",
+"OKOO"
+]
+},
+{
+"example": "O6XP2A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPOO",
+"OPOO"
+]
+},
+{
+"example": "O6XPKA3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPOO",
+"OKOO"
+]
+},
+{
+"example": "O8CK3",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"OKO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O8CP2K",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"OPO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O8CP3",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"OPO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O8CPK2",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"OPO",
+"OO",
+"OO"
+]
+},
+{
+"example": "OC2P3K6",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"KPK",
+"OKKPK"
+]
+},
+{
+"example": "OC2P5K2A2",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"OKPPP"
+]
+},
+{
+"example": "OC2PW2K5F",
+"n": 7,
+"covered": 7,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"OKKK"
+]
+},
+{
+"example": "OCP2K8",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"KPK",
+"KK",
+"KK"
+]
+},
+{
+"example": "OCP2W2K6",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"OKK"
+]
+},
+{
+"example": "OCP5KA4",
+"n": 7,
+"covered": 6,
+"parts": 1,
+"frac": 0.857,
+"parts_desc": [
+"OKPPPP"
+]
+},
+{
+"example": "OCP5W3KA",
+"n": 7,
+"covered": 6,
+"parts": 1,
+"frac": 0.857,
+"parts_desc": [
+"OKPPPP"
+]
+},
+{
+"example": "OCP7K3",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"PKP",
+"PP",
+"PP"
+]
+},
+{
+"example": "OPK6A4",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"OKKK"
+]
+},
+{
+"example": "OPW2K6A2",
+"n": 8,
+"covered": 6,
+"parts": -2,
+"frac": 0.75,
+"parts_desc": [
+"KPKK",
+"KK"
+]
+},
+{
+"example": "OPW3K6A",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPKK",
+"OKKK"
+]
+},
+{
+"example": "P2K6A4",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"PKKK"
+]
+},
+{
+"example": "P2W3K6A",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPKK",
+"PKKK"
+]
+},
+{
+"example": "P6K2A4",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"PP",
+"PKPP"
+]
+},
+{
+"example": "P6WK2A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKPP",
+"PKPP"
+]
+},
+{
+"example": "CP2WK7A2",
+"n": 9,
+"covered": 7,
+"parts": 3,
+"frac": 0.778,
+"parts_desc": [
+"KKK",
+"KK",
+"KK"
+]
+},
+{
+"example": "CP3K8A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"KPK",
+"KK",
+"KK"
+]
+},
+{
+"example": "CP4WK7",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"KPK",
+"KPK"
+]
+},
+{
+"example": "CP7K4A",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"PKP",
+"PKP"
+]
+},
+{
+"example": "CP7W2K2A",
+"n": 9,
+"covered": 7,
+"parts": 3,
+"frac": 0.778,
+"parts_desc": [
+"PPP",
+"PP",
+"PP"
+]
+},
+{
+"example": "CP8K3A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"PKP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CP2WK7",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"KOK",
+"KPK"
+]
+},
+{
+"example": "O2CP6KA3",
+"n": 9,
+"covered": 9,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POPP",
+"OKPPP"
+]
+},
+{
+"example": "O2CP6W2KA",
+"n": 9,
+"covered": 6,
+"parts": 2,
+"frac": 0.667,
+"parts_desc": [
+"POPP",
+"PP"
+]
+},
+{
+"example": "O2CP7K2A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"PPP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CP7W2A",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"PPP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CP7WK2",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"PPP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CP8KA",
+"n": 11,
+"covered": 8,
+"parts": 4,
+"frac": 0.727,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CPK8A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"KPK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O2CWK7A2",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"KKK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O2P6K2A3",
+"n": 10,
+"covered": 7,
+"parts": 2,
+"frac": 0.7,
+"parts_desc": [
+"PP",
+"OKPPP"
+]
+},
+{
+"example": "O2P6W2A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POPP",
+"OPPP"
+]
+},
+{
+"example": "O2P6WK2A2",
+"n": 10,
+"covered": 10,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POKPP",
+"OKPPP"
+]
+},
+{
+"example": "O2W2K6A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KOKK",
+"OKKK"
+]
+},
+{
+"example": "O3CK8A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"KOK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O3CP8A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"POP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O3P8KA",
+"n": 12,
+"covered": 7,
+"parts": 3,
+"frac": 0.583,
+"parts_desc": [
+"POP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O4CP6KA",
+"n": 11,
+"covered": 6,
+"parts": 2,
+"frac": 0.545,
+"parts_desc": [
+"POP",
+"POP"
+]
+},
+{
+"example": "O4CP7A",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"POP",
+"POP"
+]
+},
+{
+"example": "O4CWK7",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"KOK",
+"KOK"
+]
+},
+{
+"example": "O4K6A3",
+"n": 5,
+"covered": 3,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"KOK"
+]
+},
+{
+"example": "O4P6A3",
+"n": 5,
+"covered": 3,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"POP"
+]
+},
+{
+"example": "O4P7KA",
+"n": 12,
+"covered": 7,
+"parts": 3,
+"frac": 0.583,
+"parts_desc": [
+"POP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O5P5K2A",
+"n": 12,
+"covered": 9,
+"parts": 2,
+"frac": 0.75,
+"parts_desc": [
+"POKOP",
+"OKOO"
+]
+},
+{
+"example": "O5P6KA",
+"n": 12,
+"covered": 7,
+"parts": 2,
+"frac": 0.583,
+"parts_desc": [
+"OKOO",
+"POP"
+]
+},
+{
+"example": "O6P2W2A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPOO",
+"OPOO"
+]
+},
+{
+"example": "O6PW2KA3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPOO",
+"OKOO"
+]
+},
+{
+"example": "O6W2K2A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OKOO",
+"OKOO"
+]
+},
+{
+"example": "O6X2K2A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OKOO",
+"OKOO"
+]
+},
+{
+"example": "O6X2P2A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPOO",
+"OPOO"
+]
+},
+{
+"example": "O7CK4A",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"OKO",
+"OKO"
+]
+},
+{
+"example": "O7CP2K2A",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"OKO",
+"OPO"
+]
+},
+{
+"example": "O7CP3KA",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"OPO",
+"OPO"
+]
+},
+{
+"example": "O7CP4A",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"OPO",
+"OPO"
+]
+},
+{
+"example": "O7X2CK2A",
+"n": 9,
+"covered": 7,
+"parts": 3,
+"frac": 0.778,
+"parts_desc": [
+"OOO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O7X2CP2A",
+"n": 9,
+"covered": 7,
+"parts": 3,
+"frac": 0.778,
+"parts_desc": [
+"OOO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O7X2CPKA",
+"n": 9,
+"covered": 7,
+"parts": 3,
+"frac": 0.778,
+"parts_desc": [
+"OOO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O8CK3A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"OKO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O8CP2KA",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"OPO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O8CP3A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"OPO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O8CPK2A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"OPO",
+"OO",
+"OO"
+]
+},
+{
+"example": "OCP2K8A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"KPK",
+"KK",
+"KK"
+]
+},
+{
+"example": "OCP3WK7",
+"n": 8,
+"covered": 6,
+"parts": 0,
+"frac": 0.75,
+"parts_desc": [
+"KPK",
+"KPK"
+]
+},
+{
+"example": "OCP6K2A3",
+"n": 9,
+"covered": 5,
+"parts": 0,
+"frac": 0.556,
+"parts_desc": [
+"PP",
+"PKP"
+]
+},
+{
+"example": "OCP6W2K2A",
+"n": 9,
+"covered": 5,
+"parts": 0,
+"frac": 0.556,
+"parts_desc": [
+"PKP",
+"PP"
+]
+},
+{
+"example": "OCP8K2A",
+"n": 11,
+"covered": 8,
+"parts": 4,
+"frac": 0.727,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "OCPWK7A2",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"KKK",
+"KK",
+"KK"
+]
+},
+{
+"example": "OPW2K6A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPKK",
+"OKKK"
+]
+},
+{
+"example": "OXCP6K2A2",
+"n": 9,
+"covered": 5,
+"parts": 0,
+"frac": 0.556,
+"parts_desc": [
+"PKP",
+"PP"
+]
+},
+{
+"example": "P2W2K6A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KPKK",
+"PKKK"
+]
+},
+{
+"example": "P6W2K2A3",
+"n": 8,
+"covered": 8,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKPP",
+"PKPP"
+]
+},
+{
+"example": "C2P2K7F3",
+"n": 9,
+"covered": 7,
+"parts": 3,
+"frac": 0.778,
+"parts_desc": [
+"KK",
+"KK",
+"KKK"
+]
+},
+{
+"example": "C2P7K2F3",
+"n": 9,
+"covered": 7,
+"parts": 3,
+"frac": 0.778,
+"parts_desc": [
+"PP",
+"PP",
+"PPP"
+]
+},
+{
+"example": "CP3WK8A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"KPK",
+"KK",
+"KK"
+]
+},
+{
+"example": "CP8WK3A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"PKP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O10K4",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"OKO",
+"OKO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O10P2K2",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"OPO",
+"OPO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O10P3K",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"OPO",
+"OPO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O10P4",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"OPO",
+"OPO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O10PK3",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"OPO",
+"OKO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O2C2K7F3",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"KK",
+"KK",
+"KKK"
+]
+},
+{
+"example": "O2C2P7F3",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"PP",
+"PP",
+"PPP"
+]
+},
+{
+"example": "O2C2PW2K6F",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"KOK",
+"KPK"
+]
+},
+{
+"example": "O2CP6W2KA2",
+"n": 9,
+"covered": 9,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POPP",
+"OKPPP"
+]
+},
+{
+"example": "O2CP8K3",
+"n": 13,
+"covered": 7,
+"parts": 3,
+"frac": 0.538,
+"parts_desc": [
+"PKP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CP8KA2",
+"n": 11,
+"covered": 8,
+"parts": 4,
+"frac": 0.727,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CP8WKA",
+"n": 11,
+"covered": 8,
+"parts": 4,
+"frac": 0.727,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CPWK8A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"KPK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O2P2K10",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"KPK",
+"KPK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O2P6K2A4",
+"n": 10,
+"covered": 10,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKOPP",
+"OKPPP"
+]
+},
+{
+"example": "O2P7KA4",
+"n": 10,
+"covered": 10,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POPP",
+"OKPPPP"
+]
+},
+{
+"example": "O2P7W3KA",
+"n": 10,
+"covered": 6,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2P7WKA3",
+"n": 10,
+"covered": 6,
+"parts": 0,
+"frac": 0.6,
+"parts_desc": [
+"PP",
+"POPP"
+]
+},
+{
+"example": "O2PK7A4",
+"n": 10,
+"covered": 10,
+"parts": 1,
+"frac": 1.0,
+"parts_desc": [
+"KOK",
+"KPK",
+"OKKK"
+]
+},
+{
+"example": "O3CP7KA2",
+"n": 8,
+"covered": 5,
+"parts": 0,
+"frac": 0.625,
+"parts_desc": [
+"POP",
+"PP"
+]
+},
+{
+"example": "O3CP8K2",
+"n": 13,
+"covered": 7,
+"parts": 3,
+"frac": 0.538,
+"parts_desc": [
+"POP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O3CP8WA",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"POP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O3CWK8A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"KOK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O3K7A4",
+"n": 10,
+"covered": 10,
+"parts": 1,
+"frac": 1.0,
+"parts_desc": [
+"KOK",
+"KOK",
+"OKKK"
+]
+},
+{
+"example": "O3P7A4",
+"n": 10,
+"covered": 10,
+"parts": 1,
+"frac": 1.0,
+"parts_desc": [
+"POP",
+"POP",
+"OPPP"
+]
+},
+{
+"example": "O3P8WKA",
+"n": 12,
+"covered": 7,
+"parts": 3,
+"frac": 0.583,
+"parts_desc": [
+"POP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O3PK10",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"KPK",
+"KOK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O4CP6KA2",
+"n": 11,
+"covered": 6,
+"parts": 2,
+"frac": 0.545,
+"parts_desc": [
+"POP",
+"POP"
+]
+},
+{
+"example": "O4CP7K2",
+"n": 13,
+"covered": 7,
+"parts": 3,
+"frac": 0.538,
+"parts_desc": [
+"POP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O4K10",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"KOK",
+"KOK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O4P10",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"POP",
+"POP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O4P6K4",
+"n": 14,
+"covered": 8,
+"parts": 2,
+"frac": 0.571,
+"parts_desc": [
+"OKPP",
+"POKP"
+]
+},
+{
+"example": "O4P7KA2",
+"n": 12,
+"covered": 8,
+"parts": 3,
+"frac": 0.667,
+"parts_desc": [
+"POP",
+"POP",
+"PP"
+]
+},
+{
+"example": "O5CP6K2",
+"n": 13,
+"covered": 8,
+"parts": 2,
+"frac": 0.615,
+"parts_desc": [
+"POKOP",
+"POP"
+]
+},
+{
+"example": "O5CP7K",
+"n": 13,
+"covered": 6,
+"parts": 2,
+"frac": 0.462,
+"parts_desc": [
+"POP",
+"POP"
+]
+},
+{
+"example": "O5P7K2",
+"n": 14,
+"covered": 9,
+"parts": 3,
+"frac": 0.643,
+"parts_desc": [
+"OKPOP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O6C2PK2A2F",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OKO",
+"OPO"
+]
+},
+{
+"example": "O6P6K2",
+"n": 14,
+"covered": 14,
+"parts": 5,
+"frac": 1.0,
+"parts_desc": [
+"OKOO",
+"OKOO",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O7C2K2F3",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"OO",
+"OO",
+"OOO"
+]
+},
+{
+"example": "O7C2P2F3",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"OO",
+"OO",
+"OOO"
+]
+},
+{
+"example": "O7C2PKF3",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"OO",
+"OO",
+"OOO"
+]
+},
+{
+"example": "O7K3A4",
+"n": 10,
+"covered": 10,
+"parts": 1,
+"frac": 1.0,
+"parts_desc": [
+"OKO",
+"OKO",
+"OKOO"
+]
+},
+{
+"example": "O7P2KA4",
+"n": 10,
+"covered": 10,
+"parts": 1,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OPO",
+"OKOO"
+]
+},
+{
+"example": "O7P3A4",
+"n": 10,
+"covered": 10,
+"parts": 1,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OPO",
+"OPOO"
+]
+},
+{
+"example": "O7PK2A4",
+"n": 10,
+"covered": 10,
+"parts": 1,
+"frac": 1.0,
+"parts_desc": [
+"OKO",
+"OPO",
+"OKOO"
+]
+},
+{
+"example": "O8XCK3A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"OKO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O8XCP2KA",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"OPO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O8XCP3A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"OPO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O8XCPK2A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"OPO",
+"OO",
+"OO"
+]
+},
+{
+"example": "OC2P6W4K",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"OKPPPP"
+]
+},
+{
+"example": "OC2PK7F3",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"KK",
+"KK",
+"KKK"
+]
+},
+{
+"example": "OCP2WK8A",
+"n": 11,
+"covered": 7,
+"parts": 3,
+"frac": 0.636,
+"parts_desc": [
+"KPK",
+"KK",
+"KK"
+]
+},
+{
+"example": "OCP6K2A4",
+"n": 9,
+"covered": 9,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"OKPPPP"
+]
+},
+{
+"example": "OCP6W3K2A",
+"n": 9,
+"covered": 9,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"OKPPPP"
+]
+},
+{
+"example": "OCP6W4K2",
+"n": 9,
+"covered": 9,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"OKPPPP"
+]
+},
+{
+"example": "OCP7K3A2",
+"n": 8,
+"covered": 5,
+"parts": 0,
+"frac": 0.625,
+"parts_desc": [
+"PKP",
+"PP"
+]
+},
+{
+"example": "OCP8K2A2",
+"n": 11,
+"covered": 8,
+"parts": 4,
+"frac": 0.727,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "OCP8WK2A",
+"n": 11,
+"covered": 8,
+"parts": 4,
+"frac": 0.727,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "OP2K7A4",
+"n": 10,
+"covered": 10,
+"parts": 1,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"KPK",
+"OKKK"
+]
+},
+{
+"example": "OP3K10",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"KPK",
+"KPK",
+"KK",
+"KK"
+]
+},
+{
+"example": "OP7K2A4",
+"n": 10,
+"covered": 10,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKPP",
+"OKPPPP"
+]
+},
+{
+"example": "OP7W3K2A",
+"n": 10,
+"covered": 6,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "OP7WK2A3",
+"n": 10,
+"covered": 6,
+"parts": 0,
+"frac": 0.6,
+"parts_desc": [
+"PP",
+"PKPP"
+]
+},
+{
+"example": "OXCP6WK2A2",
+"n": 9,
+"covered": 9,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"OKPPPP"
+]
+},
+{
+"example": "OXP7WK2A2",
+"n": 10,
+"covered": 6,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "P10K4",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"PKP",
+"PKP",
+"PP",
+"PP"
+]
+},
+{
+"example": "P3K7A4",
+"n": 10,
+"covered": 10,
+"parts": 1,
+"frac": 1.0,
+"parts_desc": [
+"KPK",
+"KPK",
+"PKKK"
+]
+},
+{
+"example": "P4K10",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"KPK",
+"KPK",
+"KK",
+"KK"
+]
+},
+{
+"example": "P7K3A4",
+"n": 10,
+"covered": 10,
+"parts": 1,
+"frac": 1.0,
+"parts_desc": [
+"PKP",
+"PKP",
+"PKPP"
+]
+},
+{
+"example": "C2P2K7AF3",
+"n": 9,
+"covered": 7,
+"parts": 3,
+"frac": 0.778,
+"parts_desc": [
+"KK",
+"KK",
+"KKK"
+]
+},
+{
+"example": "C2P2W3K7F",
+"n": 9,
+"covered": 6,
+"parts": 0,
+"frac": 0.667,
+"parts_desc": [
+"KPKK",
+"KK"
+]
+},
+{
+"example": "C2P7K2A3F",
+"n": 9,
+"covered": 6,
+"parts": 0,
+"frac": 0.667,
+"parts_desc": [
+"PKPP",
+"PP"
+]
+},
+{
+"example": "C2P7WK2F3",
+"n": 9,
+"covered": 7,
+"parts": 3,
+"frac": 0.778,
+"parts_desc": [
+"PP",
+"PP",
+"PPP"
+]
+},
+{
+"example": "O10K4A",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"OKO",
+"OKO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O10P2K2A",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"OPO",
+"OPO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O10P3KA",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"OPO",
+"OPO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O10P4A",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"OPO",
+"OPO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O10PK3A",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"OPO",
+"OKO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O2C2K7AF3",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"KK",
+"KK",
+"KKK"
+]
+},
+{
+"example": "O2C2P6K2AF2",
+"n": 10,
+"covered": 7,
+"parts": 2,
+"frac": 0.7,
+"parts_desc": [
+"POKPP",
+"PP"
+]
+},
+{
+"example": "O2C2P6WKF3",
+"n": 9,
+"covered": 7,
+"parts": 0,
+"frac": 0.778,
+"parts_desc": [
+"PP",
+"OKPPP"
+]
+},
+{
+"example": "O2C2P7A3F",
+"n": 9,
+"covered": 6,
+"parts": -1,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2C2P7WF3",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"PP",
+"PP",
+"PPP"
+]
+},
+{
+"example": "O2C2W3K7F",
+"n": 9,
+"covered": 6,
+"parts": -1,
+"frac": 0.667,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O2CP7K2A3",
+"n": 11,
+"covered": 6,
+"parts": 3,
+"frac": 0.545,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CP7W2K2A",
+"n": 11,
+"covered": 6,
+"parts": 3,
+"frac": 0.545,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CP7W3K2",
+"n": 11,
+"covered": 5,
+"parts": 1,
+"frac": 0.455,
+"parts_desc": [
+"PKOPP"
+]
+},
+{
+"example": "O2CP8K3A",
+"n": 13,
+"covered": 7,
+"parts": 3,
+"frac": 0.538,
+"parts_desc": [
+"PKP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CP8W2KA",
+"n": 11,
+"covered": 8,
+"parts": 4,
+"frac": 0.727,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CP8WKA2",
+"n": 11,
+"covered": 8,
+"parts": 4,
+"frac": 0.727,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2P2K10A",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"KPK",
+"KPK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O2P7KA5",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"PP",
+"OKPPPP"
+]
+},
+{
+"example": "O2P7W2KA3",
+"n": 10,
+"covered": 6,
+"parts": 0,
+"frac": 0.6,
+"parts_desc": [
+"PP",
+"POPP"
+]
+},
+{
+"example": "O2P7WKA4",
+"n": 10,
+"covered": 10,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POPP",
+"OKPPPP"
+]
+},
+{
+"example": "O2P8K2A3",
+"n": 12,
+"covered": 8,
+"parts": 4,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2P8W2K2A",
+"n": 12,
+"covered": 8,
+"parts": 4,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2X2C2P6KAF",
+"n": 9,
+"covered": 9,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POPP",
+"OKPPP"
+]
+},
+{
+"example": "O2X3CP7A2",
+"n": 9,
+"covered": 8,
+"parts": 0,
+"frac": 0.889,
+"parts_desc": [
+"POPP",
+"OPPP"
+]
+},
+{
+"example": "O2X3CW2K7",
+"n": 9,
+"covered": 8,
+"parts": 0,
+"frac": 0.889,
+"parts_desc": [
+"KOKK",
+"OKKK"
+]
+},
+{
+"example": "O2X3P7KA2",
+"n": 10,
+"covered": 10,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POPP",
+"OKPPPP"
+]
+},
+{
+"example": "O2XCP7K2A2",
+"n": 11,
+"covered": 5,
+"parts": 1,
+"frac": 0.455,
+"parts_desc": [
+"POKPP"
+]
+},
+{
+"example": "O3CP7KA3",
+"n": 11,
+"covered": 11,
+"parts": 3,
+"frac": 1.0,
+"parts_desc": [
+"OKPPP",
+"POP",
+"POP"
+]
+},
+{
+"example": "O3CP8K2A",
+"n": 13,
+"covered": 7,
+"parts": 3,
+"frac": 0.538,
+"parts_desc": [
+"POP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O3PK10A",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"KPK",
+"KOK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O4C2P6KAF",
+"n": 11,
+"covered": 6,
+"parts": 2,
+"frac": 0.545,
+"parts_desc": [
+"POP",
+"POP"
+]
+},
+{
+"example": "O4C2P7KA",
+"n": 12,
+"covered": 9,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"POP",
+"POP",
+"POP"
+]
+},
+{
+"example": "O4CP7K2A",
+"n": 13,
+"covered": 8,
+"parts": 3,
+"frac": 0.615,
+"parts_desc": [
+"POP",
+"POP",
+"PP"
+]
+},
+{
+"example": "O4CP7WK2",
+"n": 13,
+"covered": 8,
+"parts": 3,
+"frac": 0.615,
+"parts_desc": [
+"POP",
+"POP",
+"PP"
+]
+},
+{
+"example": "O4K10A",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"KOK",
+"KOK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O4P10A",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"POP",
+"POP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O4P7KA3",
+"n": 12,
+"covered": 9,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"POP",
+"POP",
+"POP"
+]
+},
+{
+"example": "O5CP6K2A",
+"n": 13,
+"covered": 8,
+"parts": 2,
+"frac": 0.615,
+"parts_desc": [
+"POKOP",
+"POP"
+]
+},
+{
+"example": "O5CP7KA",
+"n": 13,
+"covered": 6,
+"parts": 2,
+"frac": 0.462,
+"parts_desc": [
+"POP",
+"POP"
+]
+},
+{
+"example": "O5P7K2A",
+"n": 14,
+"covered": 10,
+"parts": 3,
+"frac": 0.714,
+"parts_desc": [
+"OKPOP",
+"POP",
+"PP"
+]
+},
+{
+"example": "O6P3W2KA3",
+"n": 5,
+"covered": 3,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"OPO"
+]
+},
+{
+"example": "O6P6K2A",
+"n": 14,
+"covered": 12,
+"parts": 4,
+"frac": 0.857,
+"parts_desc": [
+"OKOO",
+"OKOO",
+"PP",
+"PP"
+]
+},
+{
+"example": "O6W2K4A3",
+"n": 5,
+"covered": 3,
+"parts": 1,
+"frac": 0.6,
+"parts_desc": [
+"OKO"
+]
+},
+{
+"example": "O7C2K2A3F",
+"n": 9,
+"covered": 6,
+"parts": -1,
+"frac": 0.667,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O7C2P2A3F",
+"n": 9,
+"covered": 6,
+"parts": -1,
+"frac": 0.667,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O7C2PKA3F",
+"n": 9,
+"covered": 6,
+"parts": -1,
+"frac": 0.667,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O7CP2W2A3",
+"n": 9,
+"covered": 8,
+"parts": 0,
+"frac": 0.889,
+"parts_desc": [
+"OPOO",
+"OPOO"
+]
+},
+{
+"example": "O7CPW2KA3",
+"n": 9,
+"covered": 8,
+"parts": 0,
+"frac": 0.889,
+"parts_desc": [
+"OPOO",
+"OKOO"
+]
+},
+{
+"example": "O7CW2K2A3",
+"n": 9,
+"covered": 8,
+"parts": 0,
+"frac": 0.889,
+"parts_desc": [
+"OKOO",
+"OKOO"
+]
+},
+{
+"example": "O7XC2K2F3",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"OO",
+"OO",
+"OOO"
+]
+},
+{
+"example": "O7XC2P2F3",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"OO",
+"OO",
+"OOO"
+]
+},
+{
+"example": "O7XC2PKF3",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"OO",
+"OO",
+"OOO"
+]
+},
+{
+"example": "O7XK3A4",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OKO",
+"OKO"
+]
+},
+{
+"example": "O7XP2KA4",
+"n": 6,
+"covered": 6,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"OPO",
+"OPO"
+]
+},
+{
+"example": "OC2P7W3KF",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"PP",
+"PP",
+"PPP"
+]
+},
+{
+"example": "OC2PK7AF3",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"KK",
+"KK",
+"KKK"
+]
+},
+{
+"example": "OC2PW3K7F",
+"n": 9,
+"covered": 6,
+"parts": -1,
+"frac": 0.667,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "OCP7K3A3",
+"n": 11,
+"covered": 11,
+"parts": 3,
+"frac": 1.0,
+"parts_desc": [
+"OKPPP",
+"PKP",
+"PKP"
+]
+},
+{
+"example": "OCP8W2K2A",
+"n": 11,
+"covered": 8,
+"parts": 4,
+"frac": 0.727,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "OCP8WK2A2",
+"n": 11,
+"covered": 8,
+"parts": 4,
+"frac": 0.727,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "OP3K10A",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"KPK",
+"KPK",
+"KK",
+"KK"
+]
+},
+{
+"example": "OP7K2A5",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"PP",
+"OKPPPP"
+]
+},
+{
+"example": "OP7W2K2A3",
+"n": 10,
+"covered": 6,
+"parts": 0,
+"frac": 0.6,
+"parts_desc": [
+"PP",
+"PKPP"
+]
+},
+{
+"example": "OP7WK2A4",
+"n": 10,
+"covered": 10,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKPP",
+"OKPPPP"
+]
+},
+{
+"example": "OX3CPW2K7",
+"n": 9,
+"covered": 8,
+"parts": 0,
+"frac": 0.889,
+"parts_desc": [
+"KPKK",
+"OKKK"
+]
+},
+{
+"example": "OX3P7K2A2",
+"n": 10,
+"covered": 10,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKPP",
+"OKPPPP"
+]
+},
+{
+"example": "OXP7W2K2A2",
+"n": 10,
+"covered": 6,
+"parts": 0,
+"frac": 0.6,
+"parts_desc": [
+"PKPP",
+"PP"
+]
+},
+{
+"example": "P10K4A",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"PKP",
+"PKP",
+"PP",
+"PP"
+]
+},
+{
+"example": "P2K7AF5",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"KK",
+"KK",
+"KKK"
+]
+},
+{
+"example": "P4K10A",
+"n": 14,
+"covered": 10,
+"parts": 4,
+"frac": 0.714,
+"parts_desc": [
+"KPK",
+"KPK",
+"KK",
+"KK"
+]
+},
+{
+"example": "P7WK2F5",
+"n": 9,
+"covered": 7,
+"parts": 1,
+"frac": 0.778,
+"parts_desc": [
+"PP",
+"PP",
+"PPP"
+]
+},
+{
+"example": "X3CP2W2K7",
+"n": 9,
+"covered": 8,
+"parts": 0,
+"frac": 0.889,
+"parts_desc": [
+"KPKK",
+"KPKK"
+]
+},
+{
+"example": "X3CP7K2A2",
+"n": 9,
+"covered": 8,
+"parts": 0,
+"frac": 0.889,
+"parts_desc": [
+"PKPP",
+"PKPP"
+]
+},
+{
+"example": "CP3WK8A3",
+"n": 11,
+"covered": 9,
+"parts": 3,
+"frac": 0.818,
+"parts_desc": [
+"KPKK",
+"KPK",
+"KK"
+]
+},
+{
+"example": "CP8W3K3A",
+"n": 11,
+"covered": 9,
+"parts": 3,
+"frac": 0.818,
+"parts_desc": [
+"PKPP",
+"PKP",
+"PP"
+]
+},
+{
+"example": "O2C2P6K2A2F2",
+"n": 10,
+"covered": 10,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POKPP",
+"OKPPP"
+]
+},
+{
+"example": "O2C2P6KF5",
+"n": 9,
+"covered": 7,
+"parts": 0,
+"frac": 0.778,
+"parts_desc": [
+"PP",
+"OKPPP"
+]
+},
+{
+"example": "O2C2P7KA2F2",
+"n": 10,
+"covered": 6,
+"parts": -1,
+"frac": 0.6,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CP7K2A4",
+"n": 11,
+"covered": 4,
+"parts": 2,
+"frac": 0.364,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "O2CP7W3K2A",
+"n": 11,
+"covered": 7,
+"parts": 2,
+"frac": 0.636,
+"parts_desc": [
+"PKOPP",
+"PP"
+]
+},
+{
+"example": "O2CP7WK2A3",
+"n": 11,
+"covered": 7,
+"parts": 2,
+"frac": 0.636,
+"parts_desc": [
+"PKOPP",
+"PP"
+]
+},
+{
+"example": "O2CP8KA4",
+"n": 11,
+"covered": 6,
+"parts": 2,
+"frac": 0.545,
+"parts_desc": [
+"POPP",
+"PP"
+]
+},
+{
+"example": "O2CPWK8A3",
+"n": 11,
+"covered": 9,
+"parts": 3,
+"frac": 0.818,
+"parts_desc": [
+"KOKK",
+"KPK",
+"KK"
+]
+},
+{
+"example": "O2P7W2KA4",
+"n": 10,
+"covered": 10,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POPP",
+"OKPPPP"
+]
+},
+{
+"example": "O2P7WKA5",
+"n": 10,
+"covered": 10,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"POPP",
+"OKPPPP"
+]
+},
+{
+"example": "O2P8K2A4",
+"n": 12,
+"covered": 8,
+"parts": 4,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2P8W3K2A",
+"n": 12,
+"covered": 8,
+"parts": 4,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2P8WK2A3",
+"n": 12,
+"covered": 8,
+"parts": 4,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2X2CP7K2A2",
+"n": 11,
+"covered": 4,
+"parts": 2,
+"frac": 0.364,
+"parts_desc": [
+"PP",
+"PP"
+]
+},
+{
+"example": "O2X2P8K2A2",
+"n": 12,
+"covered": 8,
+"parts": 4,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O2XCP7WK2A2",
+"n": 11,
+"covered": 5,
+"parts": 1,
+"frac": 0.455,
+"parts_desc": [
+"POKPP"
+]
+},
+{
+"example": "O2XP8WK2A2",
+"n": 12,
+"covered": 8,
+"parts": 4,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O3C2P7KA2F",
+"n": 11,
+"covered": 11,
+"parts": 3,
+"frac": 1.0,
+"parts_desc": [
+"OKPPP",
+"POP",
+"POP"
+]
+},
+{
+"example": "O3CP10K2",
+"n": 15,
+"covered": 10,
+"parts": 5,
+"frac": 0.667,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O3CP8W3A",
+"n": 11,
+"covered": 9,
+"parts": 3,
+"frac": 0.818,
+"parts_desc": [
+"POPP",
+"POP",
+"PP"
+]
+},
+{
+"example": "O3CWK8A3",
+"n": 11,
+"covered": 9,
+"parts": 3,
+"frac": 0.818,
+"parts_desc": [
+"KOKK",
+"KOK",
+"KK"
+]
+},
+{
+"example": "O3P8W2KA2",
+"n": 9,
+"covered": 6,
+"parts": 2,
+"frac": 0.667,
+"parts_desc": [
+"POPP",
+"PP"
+]
+},
+{
+"example": "O3P8W3KA",
+"n": 12,
+"covered": 9,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"POPP",
+"POP",
+"PP"
+]
+},
+{
+"example": "O3P9W2A2",
+"n": 12,
+"covered": 9,
+"parts": 4,
+"frac": 0.75,
+"parts_desc": [
+"PPP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O3W2K9A2",
+"n": 12,
+"covered": 9,
+"parts": 4,
+"frac": 0.75,
+"parts_desc": [
+"KKK",
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O4C2P7K2F",
+"n": 13,
+"covered": 6,
+"parts": 2,
+"frac": 0.462,
+"parts_desc": [
+"POP",
+"POP"
+]
+},
+{
+"example": "O4C2P7KA2",
+"n": 12,
+"covered": 9,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"POP",
+"POP",
+"POP"
+]
+},
+{
+"example": "O4CP10K",
+"n": 15,
+"covered": 10,
+"parts": 4,
+"frac": 0.667,
+"parts_desc": [
+"POP",
+"POP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O4CP7K2A2",
+"n": 13,
+"covered": 8,
+"parts": 3,
+"frac": 0.615,
+"parts_desc": [
+"POP",
+"POP",
+"PP"
+]
+},
+{
+"example": "O4CP7WK2A",
+"n": 13,
+"covered": 6,
+"parts": 2,
+"frac": 0.462,
+"parts_desc": [
+"POP",
+"POP"
+]
+},
+{
+"example": "O5C2P6K2F",
+"n": 13,
+"covered": 8,
+"parts": 2,
+"frac": 0.615,
+"parts_desc": [
+"POKOP",
+"POP"
+]
+},
+{
+"example": "O5C2P7K2",
+"n": 14,
+"covered": 11,
+"parts": 3,
+"frac": 0.786,
+"parts_desc": [
+"OKPOP",
+"POP",
+"POP"
+]
+},
+{
+"example": "O5C2P7KF",
+"n": 13,
+"covered": 6,
+"parts": 2,
+"frac": 0.462,
+"parts_desc": [
+"POP",
+"POP"
+]
+},
+{
+"example": "O5P7K2A2",
+"n": 14,
+"covered": 11,
+"parts": 3,
+"frac": 0.786,
+"parts_desc": [
+"OKPOP",
+"POP",
+"POP"
+]
+},
+{
+"example": "O5P9K2",
+"n": 16,
+"covered": 9,
+"parts": 4,
+"frac": 0.562,
+"parts_desc": [
+"PPP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O6P6K2A2",
+"n": 7,
+"covered": 6,
+"parts": 0,
+"frac": 0.857,
+"parts_desc": [
+"PP",
+"OKOO"
+]
+},
+{
+"example": "O7C2K2F5",
+"n": 9,
+"covered": 7,
+"parts": 3,
+"frac": 0.778,
+"parts_desc": [
+"OO",
+"OOO",
+"OO"
+]
+},
+{
+"example": "O7C2P2F5",
+"n": 9,
+"covered": 7,
+"parts": 3,
+"frac": 0.778,
+"parts_desc": [
+"OO",
+"OOO",
+"OO"
+]
+},
+{
+"example": "O8X3CK3A",
+"n": 11,
+"covered": 9,
+"parts": 3,
+"frac": 0.818,
+"parts_desc": [
+"OKOO",
+"OKO",
+"OO"
+]
+},
+{
+"example": "O8X3CP2KA",
+"n": 11,
+"covered": 9,
+"parts": 3,
+"frac": 0.818,
+"parts_desc": [
+"OPOO",
+"OPO",
+"OO"
+]
+},
+{
+"example": "O8X3CP3A",
+"n": 11,
+"covered": 9,
+"parts": 3,
+"frac": 0.818,
+"parts_desc": [
+"OPOO",
+"OPO",
+"OO"
+]
+},
+{
+"example": "O8X3CPK2A",
+"n": 11,
+"covered": 9,
+"parts": 3,
+"frac": 0.818,
+"parts_desc": [
+"OKOO",
+"OPO",
+"OO"
+]
+},
+{
+"example": "O9X2K3A2",
+"n": 12,
+"covered": 9,
+"parts": 4,
+"frac": 0.75,
+"parts_desc": [
+"OOO",
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O9X2P2KA2",
+"n": 12,
+"covered": 9,
+"parts": 4,
+"frac": 0.75,
+"parts_desc": [
+"OOO",
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O9X2P3A2",
+"n": 12,
+"covered": 9,
+"parts": 4,
+"frac": 0.75,
+"parts_desc": [
+"OOO",
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "OC2P7K2A2F2",
+"n": 10,
+"covered": 6,
+"parts": -1,
+"frac": 0.6,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "OC2P7K3A2F",
+"n": 11,
+"covered": 11,
+"parts": 3,
+"frac": 1.0,
+"parts_desc": [
+"OKPPP",
+"PKP",
+"PKP"
+]
+},
+{
+"example": "OCP2WK8A3",
+"n": 11,
+"covered": 9,
+"parts": 3,
+"frac": 0.818,
+"parts_desc": [
+"KPKK",
+"KPK",
+"KK"
+]
+},
+{
+"example": "OCP8K2A4",
+"n": 11,
+"covered": 6,
+"parts": 2,
+"frac": 0.545,
+"parts_desc": [
+"PKPP",
+"PP"
+]
+},
+{
+"example": "OCP8W3K2A",
+"n": 11,
+"covered": 6,
+"parts": 2,
+"frac": 0.545,
+"parts_desc": [
+"PKPP",
+"PP"
+]
+},
+{
+"example": "OP2W2K9A2",
+"n": 12,
+"covered": 9,
+"parts": 4,
+"frac": 0.75,
+"parts_desc": [
+"KKK",
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "OP7W2K2A4",
+"n": 10,
+"covered": 10,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKPP",
+"OKPPPP"
+]
+},
+{
+"example": "OP7WK2A5",
+"n": 10,
+"covered": 10,
+"parts": 0,
+"frac": 1.0,
+"parts_desc": [
+"PKPP",
+"OKPPPP"
+]
+},
+{
+"example": "OP8K5A2",
+"n": 9,
+"covered": 7,
+"parts": 0,
+"frac": 0.778,
+"parts_desc": [
+"PKP",
+"OKPP"
+]
+},
+{
+"example": "OX2CP8K2A2",
+"n": 11,
+"covered": 8,
+"parts": 4,
+"frac": 0.727,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "P3W2K9A2",
+"n": 12,
+"covered": 9,
+"parts": 4,
+"frac": 0.75,
+"parts_desc": [
+"KKK",
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "P7L2K2F5",
+"n": 9,
+"covered": 7,
+"parts": 3,
+"frac": 0.778,
+"parts_desc": [
+"PP",
+"PPP",
+"PP"
+]
+},
+{
+"example": "P9W2K3A2",
+"n": 12,
+"covered": 9,
+"parts": 4,
+"frac": 0.75,
+"parts_desc": [
+"PPP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O3X4P10K",
+"n": 14,
+"covered": 8,
+"parts": 3,
+"frac": 0.571,
+"parts_desc": [
+"POPP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O6P10K2",
+"n": 18,
+"covered": 10,
+"parts": 5,
+"frac": 0.556,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O6P10K4",
+"n": 20,
+"covered": 10,
+"parts": 4,
+"frac": 0.5,
+"parts_desc": [
+"POKP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "OC4P7L6K2",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"PP",
+"OKPPPP"
+]
+},
+{
+"example": "O7P12K3",
+"n": 22,
+"covered": 12,
+"parts": 6,
+"frac": 0.545,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O11K7A5",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"OKOKO",
+"OKO"
+]
+},
+{
+"example": "O11P7A5",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"OPOPO",
+"OPO"
+]
+},
+{
+"example": "O7K11A5",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"KOKOK",
+"KOK"
+]
+},
+{
+"example": "O7P11A5",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"POPOP",
+"POP"
+]
+},
+{
+"example": "P11K7A5",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"PKPKP",
+"PKP"
+]
+},
+{
+"example": "P7K11A5",
+"n": 10,
+"covered": 8,
+"parts": 0,
+"frac": 0.8,
+"parts_desc": [
+"KPKPK",
+"KPK"
+]
+},
+{
+"example": "O8P14K4",
+"n": 26,
+"covered": 14,
+"parts": 7,
+"frac": 0.538,
+"parts_desc": [
+"PP",
+"PP",
+"PP",
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O12C6W4LK5",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"OO",
+"OKO"
+]
+},
+{
+"example": "O6X4P16K2",
+"n": 18,
+"covered": 13,
+"parts": 4,
+"frac": 0.722,
+"parts_desc": [
+"PKOPP",
+"POPP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O5XP12W2L3A2F4",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"PP",
+"POP"
+]
+},
+{
+"example": "O6X4P18K2",
+"n": 26,
+"covered": 22,
+"parts": 6,
+"frac": 0.846,
+"parts_desc": [
+"OKPPP",
+"PKOPP",
+"POPP",
+"POPP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O8P14K4F6",
+"n": 26,
+"covered": 14,
+"parts": 6,
+"frac": 0.538,
+"parts_desc": [
+"POP",
+"POP",
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "P18W6LK7",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O20K8A7",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O20P8A7",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O8K20A7",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O8P20A7",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "P8K20A7",
+"n": 8,
+"covered": 6,
+"parts": 3,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O18X2P2W4L2K6A2",
+"n": 11,
+"covered": 9,
+"parts": 3,
+"frac": 0.818,
+"parts_desc": [
+"OKOO",
+"OKO",
+"OO"
+]
+},
+{
+"example": "O20K8A8",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O20P8A8",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"OO",
+"OO",
+"OO"
+]
+},
+{
+"example": "O8P20A8",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O8W8K20",
+"n": 8,
+"covered": 6,
+"parts": 1,
+"frac": 0.75,
+"parts_desc": [
+"KK",
+"KK",
+"KK"
+]
+},
+{
+"example": "O4X9P19W4K5",
+"n": 28,
+"covered": 14,
+"parts": 6,
+"frac": 0.5,
+"parts_desc": [
+"PKPP",
+"PP",
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O8X4W3K19F7",
+"n": 7,
+"covered": 5,
+"parts": -2,
+"frac": 0.714,
+"parts_desc": [
+"KOK",
+"KK"
+]
+},
+{
+"example": "O12P21W4LK6",
+"n": 26,
+"covered": 15,
+"parts": 7,
+"frac": 0.577,
+"parts_desc": [
+"POP",
+"PP",
+"PP",
+"PP",
+"PP",
+"PP",
+"PP"
+]
+},
+{
+"example": "O23C6P3K6A10",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"OPO",
+"OO"
+]
+},
+{
+"example": "O23C6P3K6A10",
+"n": 12,
+"covered": 12,
+"parts": 3,
+"frac": 1.0,
+"parts_desc": [
+"OKOO",
+"OKOO",
+"OKOO"
+]
+},
+{
+"example": "X4P22L9K9A4",
+"n": 7,
+"covered": 5,
+"parts": 0,
+"frac": 0.714,
+"parts_desc": [
+"PKP",
+"PP"
+]
+},
+{
+"example": "O6C7P4W11K25",
+"n": 7,
+"covered": 5,
+"parts": -2,
+"frac": 0.714,
+"parts_desc": [
+"KPK",
+"KK"
+]
+},
+{
+"example": "O5C26P23W8K6",
+"n": 12,
+"covered": 4,
+"parts": 2,
+"frac": 0.333,
+"parts_desc": [
+"PP",
+"PP"
+]
+}
+]

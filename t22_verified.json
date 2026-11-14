@@ -1,0 +1,130 @@
+[
+ {
+  "parent": "CWLK2",
+  "product": "WK2A",
+  "validate": true,
+  "msg": "ok",
+  "in_catalog": true
+ },
+ {
+  "parent": "P2WA5",
+  "product": "CP2WLA4",
+  "validate": true,
+  "msg": "ok",
+  "in_catalog": false
+ },
+ {
+  "parent": "X2P3KA2",
+  "product": "XP3L2KA2",
+  "validate": true,
+  "msg": "ok",
+  "in_catalog": false
+ },
+ {
+  "product": "O2X3A",
+  "attach": false
+ },
+ {
+  "parent": "O2X5",
+  "product": "O2X4CL",
+  "validate": true,
+  "msg": "ok",
+  "in_catalog": false
+ },
+ {
+  "product": "OXP2K",
+  "attach": false
+ },
+ {
+  "parent": "P5LKF",
+  "product": "XP5K",
+  "validate": true,
+  "msg": "ok",
+  "in_catalog": false
+ },
+ {
+  "parent": "OX2K3A2",
+  "product": "OXLK3A2F",
+  "validate": true,
+  "msg": "ok",
+  "in_catalog": true
+ },
+ {
+  "parent": "WLA2F",
+  "product": "W2A2",
+  "validate": true,
+  "msg": "ok",
+  "in_catalog": false
+ },
+ {
+  "parent": "XP2W3",
+  "product": "XP2W2LF",
+  "validate": true,
+  "msg": "ok",
+  "in_catalog": true
+ },
+ {
+  "parent": "OXP3A3",
+  "product": "OXC2P3A2",
+  "validate": true,
+  "msg": "ok",
+  "in_catalog": false
+ },
+ {
+  "product": "O2X2A2",
+  "attach": false
+ },
+ {
+  "parent": "W3LAF",
+  "product": "W3A2",
+  "validate": true,
+  "msg": "ok",
+  "in_catalog": false
+ },
+ {
+  "parent": "P2WA5",
+  "product": "P2WLA4F",
+  "validate": true,
+  "msg": "ok",
+  "in_catalog": false
+ },
+ {
+  "parent": "X3W2K2A",
+  "product": "X2W2L2K2A",
+  "validate": true,
+  "msg": "ok",
+  "in_catalog": false
+ },
+ {
+  "product": "OXK5",
+  "attach": false
+ },
+ {
+  "parent": "CWK2A3F",
+  "product": "W2K2A3",
+  "validate": true,
+  "msg": "ok",
+  "in_catalog": true
+ },
+ {
+  "parent": "W5K2",
+  "product": "CW4K2F",
+  "validate": true,
+  "msg": "ok",
+  "in_catalog": false
+ },
+ {
+  "parent": "XC2W2",
+  "product": "X2W2",
+  "validate": true,
+  "msg": "ok",
+  "in_catalog": false
+ },
+ {
+  "parent": "X4P2WA",
+  "product": "X3C2P2WA",
+  "validate": true,
+  "msg": "ok",
+  "in_catalog": false
+ }
+]

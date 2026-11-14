@@ -1,0 +1,44 @@
+{
+ "4": {
+  "6": {
+   "count": 225,
+   "maxatoms": 6
+  },
+  "8": {
+   "count": 537,
+   "maxatoms": 8
+  },
+  "10": {
+   "count": 999,
+   "maxatoms": 10
+  }
+ },
+ "5": {
+  "6": {
+   "count": 217,
+   "maxatoms": 6
+  },
+  "8": {
+   "count": 529,
+   "maxatoms": 8
+  },
+  "10": {
+   "count": 988,
+   "maxatoms": 10
+  }
+ },
+ "6": {
+  "6": {
+   "count": 1118,
+   "maxatoms": 6
+  },
+  "8": {
+   "count": 3922,
+   "maxatoms": 8
+  },
+  "10": {
+   "count": 10224,
+   "maxatoms": 10
+  }
+ }
+}

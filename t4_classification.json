@@ -1,0 +1,8444 @@
+{
+ "note": "修正版：可摆放性用 pot_v2 严格校验；≤16 原子为全枚举；三元组为 T≤48 完备枚举；4+ 元素的最大分子为搜索到的合法下界。",
+ "n_total": 511,
+ "n_infinite": 0,
+ "n_finite": 511,
+ "rows": [
+  {
+   "elements": [
+    "O"
+   ],
+   "n": 1,
+   "key": "O",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 2,
+   "max_formula": null,
+   "count_pool": 1,
+   "count_exact": 1
+  },
+  {
+   "elements": [
+    "X"
+   ],
+   "n": 1,
+   "key": "X",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 3,
+   "max_formula": null,
+   "count_pool": 2,
+   "count_exact": 2
+  },
+  {
+   "elements": [
+    "C"
+   ],
+   "n": 1,
+   "key": "C",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 2,
+   "max_formula": null,
+   "count_pool": 1,
+   "count_exact": 1
+  },
+  {
+   "elements": [
+    "P"
+   ],
+   "n": 1,
+   "key": "P",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 2,
+   "max_formula": null,
+   "count_pool": 1,
+   "count_exact": 1
+  },
+  {
+   "elements": [
+    "W"
+   ],
+   "n": 1,
+   "key": "W",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 3,
+   "max_formula": null,
+   "count_pool": 2,
+   "count_exact": 2
+  },
+  {
+   "elements": [
+    "L"
+   ],
+   "n": 1,
+   "key": "L",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 2,
+   "max_formula": null,
+   "count_pool": 1,
+   "count_exact": 1
+  },
+  {
+   "elements": [
+    "K"
+   ],
+   "n": 1,
+   "key": "K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 2,
+   "max_formula": null,
+   "count_pool": 1,
+   "count_exact": 1
+  },
+  {
+   "elements": [
+    "A"
+   ],
+   "n": 1,
+   "key": "A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 3,
+   "max_formula": null,
+   "count_pool": 2,
+   "count_exact": 2
+  },
+  {
+   "elements": [
+    "F"
+   ],
+   "n": 1,
+   "key": "F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 2,
+   "max_formula": null,
+   "count_pool": 1,
+   "count_exact": 1
+  },
+  {
+   "elements": [
+    "O",
+    "X"
+   ],
+   "n": 2,
+   "key": "O/X",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 10,
+   "count_exact": 7
+  },
+  {
+   "elements": [
+    "O",
+    "C"
+   ],
+   "n": 2,
+   "key": "O/C",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": null,
+   "count_pool": 8,
+   "count_exact": 6
+  },
+  {
+   "elements": [
+    "O",
+    "P"
+   ],
+   "n": 2,
+   "key": "O/P",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 14,
+   "max_formula": null,
+   "count_pool": 17,
+   "count_exact": 15
+  },
+  {
+   "elements": [
+    "O",
+    "W"
+   ],
+   "n": 2,
+   "key": "O/W",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 10,
+   "count_exact": 7
+  },
+  {
+   "elements": [
+    "O",
+    "L"
+   ],
+   "n": 2,
+   "key": "O/L",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": null,
+   "count_pool": 8,
+   "count_exact": 6
+  },
+  {
+   "elements": [
+    "O",
+    "K"
+   ],
+   "n": 2,
+   "key": "O/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 14,
+   "max_formula": null,
+   "count_pool": 15,
+   "count_exact": 13
+  },
+  {
+   "elements": [
+    "O",
+    "A"
+   ],
+   "n": 2,
+   "key": "O/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 10,
+   "count_exact": 7
+  },
+  {
+   "elements": [
+    "O",
+    "F"
+   ],
+   "n": 2,
+   "key": "O/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": null,
+   "count_pool": 8,
+   "count_exact": 6
+  },
+  {
+   "elements": [
+    "X",
+    "C"
+   ],
+   "n": 2,
+   "key": "X/C",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": null,
+   "count_pool": 6,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "X",
+    "P"
+   ],
+   "n": 2,
+   "key": "X/P",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 10,
+   "count_exact": 7
+  },
+  {
+   "elements": [
+    "X",
+    "W"
+   ],
+   "n": 2,
+   "key": "X/W",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 4,
+   "max_formula": null,
+   "count_pool": 9,
+   "count_exact": 5
+  },
+  {
+   "elements": [
+    "X",
+    "L"
+   ],
+   "n": 2,
+   "key": "X/L",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": null,
+   "count_pool": 6,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "X",
+    "K"
+   ],
+   "n": 2,
+   "key": "X/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 10,
+   "count_exact": 7
+  },
+  {
+   "elements": [
+    "X",
+    "A"
+   ],
+   "n": 2,
+   "key": "X/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 4,
+   "max_formula": null,
+   "count_pool": 9,
+   "count_exact": 5
+  },
+  {
+   "elements": [
+    "X",
+    "F"
+   ],
+   "n": 2,
+   "key": "X/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": null,
+   "count_pool": 6,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "C",
+    "P"
+   ],
+   "n": 2,
+   "key": "C/P",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": null,
+   "count_pool": 8,
+   "count_exact": 6
+  },
+  {
+   "elements": [
+    "C",
+    "W"
+   ],
+   "n": 2,
+   "key": "C/W",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": null,
+   "count_pool": 6,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "C",
+    "L"
+   ],
+   "n": 2,
+   "key": "C/L",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 2,
+   "max_formula": null,
+   "count_pool": 3,
+   "count_exact": 1
+  },
+  {
+   "elements": [
+    "C",
+    "K"
+   ],
+   "n": 2,
+   "key": "C/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": null,
+   "count_pool": 8,
+   "count_exact": 6
+  },
+  {
+   "elements": [
+    "C",
+    "A"
+   ],
+   "n": 2,
+   "key": "C/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": null,
+   "count_pool": 6,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "C",
+    "F"
+   ],
+   "n": 2,
+   "key": "C/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 2,
+   "max_formula": null,
+   "count_pool": 3,
+   "count_exact": 1
+  },
+  {
+   "elements": [
+    "P",
+    "W"
+   ],
+   "n": 2,
+   "key": "P/W",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 10,
+   "count_exact": 7
+  },
+  {
+   "elements": [
+    "P",
+    "L"
+   ],
+   "n": 2,
+   "key": "P/L",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": null,
+   "count_pool": 8,
+   "count_exact": 6
+  },
+  {
+   "elements": [
+    "P",
+    "K"
+   ],
+   "n": 2,
+   "key": "P/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 14,
+   "max_formula": null,
+   "count_pool": 15,
+   "count_exact": 13
+  },
+  {
+   "elements": [
+    "P",
+    "A"
+   ],
+   "n": 2,
+   "key": "P/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 10,
+   "count_exact": 7
+  },
+  {
+   "elements": [
+    "P",
+    "F"
+   ],
+   "n": 2,
+   "key": "P/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": null,
+   "count_pool": 8,
+   "count_exact": 6
+  },
+  {
+   "elements": [
+    "W",
+    "L"
+   ],
+   "n": 2,
+   "key": "W/L",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": null,
+   "count_pool": 6,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "W",
+    "K"
+   ],
+   "n": 2,
+   "key": "W/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 10,
+   "count_exact": 7
+  },
+  {
+   "elements": [
+    "W",
+    "A"
+   ],
+   "n": 2,
+   "key": "W/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 4,
+   "max_formula": null,
+   "count_pool": 9,
+   "count_exact": 5
+  },
+  {
+   "elements": [
+    "W",
+    "F"
+   ],
+   "n": 2,
+   "key": "W/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": null,
+   "count_pool": 6,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "L",
+    "K"
+   ],
+   "n": 2,
+   "key": "L/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": null,
+   "count_pool": 8,
+   "count_exact": 6
+  },
+  {
+   "elements": [
+    "L",
+    "A"
+   ],
+   "n": 2,
+   "key": "L/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": null,
+   "count_pool": 6,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "L",
+    "F"
+   ],
+   "n": 2,
+   "key": "L/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 2,
+   "max_formula": null,
+   "count_pool": 3,
+   "count_exact": 1
+  },
+  {
+   "elements": [
+    "K",
+    "A"
+   ],
+   "n": 2,
+   "key": "K/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 10,
+   "count_exact": 7
+  },
+  {
+   "elements": [
+    "K",
+    "F"
+   ],
+   "n": 2,
+   "key": "K/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": null,
+   "count_pool": 8,
+   "count_exact": 6
+  },
+  {
+   "elements": [
+    "A",
+    "F"
+   ],
+   "n": 2,
+   "key": "A/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": null,
+   "count_pool": 6,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C"
+   ],
+   "n": 3,
+   "key": "O/X/C",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": "O2X3C4",
+   "count_pool": 30,
+   "count_exact": 10
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P"
+   ],
+   "n": 3,
+   "key": "O/X/P",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 42,
+   "max_formula": "O23X10P9",
+   "count_pool": 209,
+   "count_exact": 176
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W"
+   ],
+   "n": 3,
+   "key": "O/X/W",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 31,
+   "max_formula": "O6X9W16",
+   "count_pool": 67,
+   "count_exact": 43
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "L"
+   ],
+   "n": 3,
+   "key": "O/X/L",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": "O2X3L4",
+   "count_pool": 30,
+   "count_exact": 10
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "K"
+   ],
+   "n": 3,
+   "key": "O/X/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 42,
+   "max_formula": "O23X10K9",
+   "count_pool": 204,
+   "count_exact": 173
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "A"
+   ],
+   "n": 3,
+   "key": "O/X/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 31,
+   "max_formula": "O6X9A16",
+   "count_pool": 67,
+   "count_exact": 43
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "F"
+   ],
+   "n": 3,
+   "key": "O/X/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": "O2X3F4",
+   "count_pool": 30,
+   "count_exact": 10
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P"
+   ],
+   "n": 3,
+   "key": "O/C/P",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 16,
+   "max_formula": "O10C2P4",
+   "count_pool": 86,
+   "count_exact": 56
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W"
+   ],
+   "n": 3,
+   "key": "O/C/W",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "O2C2W6",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "L"
+   ],
+   "n": 3,
+   "key": "O/C/L",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": "O3C2L3",
+   "count_pool": 28,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "K"
+   ],
+   "n": 3,
+   "key": "O/C/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 16,
+   "max_formula": "O10C2K4",
+   "count_pool": 84,
+   "count_exact": 56
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "A"
+   ],
+   "n": 3,
+   "key": "O/C/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "O2C2A6",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "F"
+   ],
+   "n": 3,
+   "key": "O/C/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": "O3C2F3",
+   "count_pool": 28,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W"
+   ],
+   "n": 3,
+   "key": "O/P/W",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 42,
+   "max_formula": "O23P9W10",
+   "count_pool": 205,
+   "count_exact": 172
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "L"
+   ],
+   "n": 3,
+   "key": "O/P/L",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 16,
+   "max_formula": "O10P4L2",
+   "count_pool": 86,
+   "count_exact": 56
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "K"
+   ],
+   "n": 3,
+   "key": "O/P/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 26,
+   "max_formula": "O8P14K4",
+   "count_pool": 93,
+   "count_exact": 49
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "A"
+   ],
+   "n": 3,
+   "key": "O/P/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 42,
+   "max_formula": "O23P9A10",
+   "count_pool": 209,
+   "count_exact": 176
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "F"
+   ],
+   "n": 3,
+   "key": "O/P/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 16,
+   "max_formula": "O10P4F2",
+   "count_pool": 86,
+   "count_exact": 56
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "L"
+   ],
+   "n": 3,
+   "key": "O/W/L",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "O2W6L2",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "K"
+   ],
+   "n": 3,
+   "key": "O/W/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 42,
+   "max_formula": "O23W10K9",
+   "count_pool": 205,
+   "count_exact": 174
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "A"
+   ],
+   "n": 3,
+   "key": "O/W/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 23,
+   "max_formula": "O4W8A11",
+   "count_pool": 77,
+   "count_exact": 53
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "F"
+   ],
+   "n": 3,
+   "key": "O/W/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "O2W6F2",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "O",
+    "L",
+    "K"
+   ],
+   "n": 3,
+   "key": "O/L/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 16,
+   "max_formula": "O10L2K4",
+   "count_pool": 84,
+   "count_exact": 56
+  },
+  {
+   "elements": [
+    "O",
+    "L",
+    "A"
+   ],
+   "n": 3,
+   "key": "O/L/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "O2L2A6",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "O",
+    "L",
+    "F"
+   ],
+   "n": 3,
+   "key": "O/L/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": "O3F5",
+   "count_pool": 28,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "O",
+    "K",
+    "A"
+   ],
+   "n": 3,
+   "key": "O/K/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 42,
+   "max_formula": "O23K9A10",
+   "count_pool": 201,
+   "count_exact": 170
+  },
+  {
+   "elements": [
+    "O",
+    "K",
+    "F"
+   ],
+   "n": 3,
+   "key": "O/K/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 16,
+   "max_formula": "O10K4F2",
+   "count_pool": 84,
+   "count_exact": 56
+  },
+  {
+   "elements": [
+    "O",
+    "A",
+    "F"
+   ],
+   "n": 3,
+   "key": "O/A/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "O2A6F2",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P"
+   ],
+   "n": 3,
+   "key": "X/C/P",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "X6C2P2",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W"
+   ],
+   "n": 3,
+   "key": "X/C/W",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 6,
+   "max_formula": "X3C2W",
+   "count_pool": 20,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "L"
+   ],
+   "n": 3,
+   "key": "X/C/L",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": "X3C2",
+   "count_pool": 14,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "K"
+   ],
+   "n": 3,
+   "key": "X/C/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "X6C2K2",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "A"
+   ],
+   "n": 3,
+   "key": "X/C/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 6,
+   "max_formula": "X3C2A",
+   "count_pool": 20,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "F"
+   ],
+   "n": 3,
+   "key": "X/C/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": "X3C2",
+   "count_pool": 14,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W"
+   ],
+   "n": 3,
+   "key": "X/P/W",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 31,
+   "max_formula": "X16P6W9",
+   "count_pool": 67,
+   "count_exact": 43
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "L"
+   ],
+   "n": 3,
+   "key": "X/P/L",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "X6P2L2",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "K"
+   ],
+   "n": 3,
+   "key": "X/P/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 42,
+   "max_formula": "X10P23K9",
+   "count_pool": 204,
+   "count_exact": 173
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "A"
+   ],
+   "n": 3,
+   "key": "X/P/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 23,
+   "max_formula": "X11P4A8",
+   "count_pool": 77,
+   "count_exact": 53
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "F"
+   ],
+   "n": 3,
+   "key": "X/P/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "X6P2F2",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "L"
+   ],
+   "n": 3,
+   "key": "X/W/L",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 6,
+   "max_formula": "X3WL2",
+   "count_pool": 20,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "K"
+   ],
+   "n": 3,
+   "key": "X/W/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 23,
+   "max_formula": "X11W8K4",
+   "count_pool": 77,
+   "count_exact": 53
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "A"
+   ],
+   "n": 3,
+   "key": "X/W/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": "X2W2A",
+   "count_pool": 25,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "F"
+   ],
+   "n": 3,
+   "key": "X/W/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 6,
+   "max_formula": "X3WF2",
+   "count_pool": 20,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "X",
+    "L",
+    "K"
+   ],
+   "n": 3,
+   "key": "X/L/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "X6L2K2",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "X",
+    "L",
+    "A"
+   ],
+   "n": 3,
+   "key": "X/L/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 6,
+   "max_formula": "X3L2A",
+   "count_pool": 20,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "X",
+    "L",
+    "F"
+   ],
+   "n": 3,
+   "key": "X/L/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": "X3F2",
+   "count_pool": 14,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "X",
+    "K",
+    "A"
+   ],
+   "n": 3,
+   "key": "X/K/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 31,
+   "max_formula": "X16K6A9",
+   "count_pool": 67,
+   "count_exact": 43
+  },
+  {
+   "elements": [
+    "X",
+    "K",
+    "F"
+   ],
+   "n": 3,
+   "key": "X/K/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "X6K2F2",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "X",
+    "A",
+    "F"
+   ],
+   "n": 3,
+   "key": "X/A/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 6,
+   "max_formula": "X3AF2",
+   "count_pool": 20,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W"
+   ],
+   "n": 3,
+   "key": "C/P/W",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": "C4P2W3",
+   "count_pool": 30,
+   "count_exact": 10
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "L"
+   ],
+   "n": 3,
+   "key": "C/P/L",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": "C2P3L3",
+   "count_pool": 28,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "K"
+   ],
+   "n": 3,
+   "key": "C/P/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 16,
+   "max_formula": "C2P10K4",
+   "count_pool": 84,
+   "count_exact": 56
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "A"
+   ],
+   "n": 3,
+   "key": "C/P/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "C2P2A6",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "F"
+   ],
+   "n": 3,
+   "key": "C/P/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": "C2P3F3",
+   "count_pool": 28,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "L"
+   ],
+   "n": 3,
+   "key": "C/W/L",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": "C2W3",
+   "count_pool": 14,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "K"
+   ],
+   "n": 3,
+   "key": "C/W/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "C2W6K2",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "A"
+   ],
+   "n": 3,
+   "key": "C/W/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 6,
+   "max_formula": "C2W3A",
+   "count_pool": 20,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "F"
+   ],
+   "n": 3,
+   "key": "C/W/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": "C2W3",
+   "count_pool": 14,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "C",
+    "L",
+    "K"
+   ],
+   "n": 3,
+   "key": "C/L/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": "C2L3K3",
+   "count_pool": 28,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "C",
+    "L",
+    "A"
+   ],
+   "n": 3,
+   "key": "C/L/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": "C2A3",
+   "count_pool": 14,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "C",
+    "L",
+    "F"
+   ],
+   "n": 3,
+   "key": "C/L/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 2,
+   "max_formula": "C2",
+   "count_pool": 6,
+   "count_exact": 0
+  },
+  {
+   "elements": [
+    "C",
+    "K",
+    "A"
+   ],
+   "n": 3,
+   "key": "C/K/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": "C4K2A3",
+   "count_pool": 30,
+   "count_exact": 10
+  },
+  {
+   "elements": [
+    "C",
+    "K",
+    "F"
+   ],
+   "n": 3,
+   "key": "C/K/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": "C2K3F3",
+   "count_pool": 28,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "C",
+    "A",
+    "F"
+   ],
+   "n": 3,
+   "key": "C/A/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": "A3F2",
+   "count_pool": 14,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "L"
+   ],
+   "n": 3,
+   "key": "P/W/L",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": "P2W3L4",
+   "count_pool": 30,
+   "count_exact": 10
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "K"
+   ],
+   "n": 3,
+   "key": "P/W/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 42,
+   "max_formula": "P9W10K23",
+   "count_pool": 202,
+   "count_exact": 171
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "A"
+   ],
+   "n": 3,
+   "key": "P/W/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 31,
+   "max_formula": "P6W9A16",
+   "count_pool": 67,
+   "count_exact": 43
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "F"
+   ],
+   "n": 3,
+   "key": "P/W/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": "P2W3F4",
+   "count_pool": 30,
+   "count_exact": 10
+  },
+  {
+   "elements": [
+    "P",
+    "L",
+    "K"
+   ],
+   "n": 3,
+   "key": "P/L/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 16,
+   "max_formula": "P10L2K4",
+   "count_pool": 84,
+   "count_exact": 56
+  },
+  {
+   "elements": [
+    "P",
+    "L",
+    "A"
+   ],
+   "n": 3,
+   "key": "P/L/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "P2L2A6",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "P",
+    "L",
+    "F"
+   ],
+   "n": 3,
+   "key": "P/L/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": "P3F5",
+   "count_pool": 28,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "P",
+    "K",
+    "A"
+   ],
+   "n": 3,
+   "key": "P/K/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 42,
+   "max_formula": "P23K9A10",
+   "count_pool": 203,
+   "count_exact": 172
+  },
+  {
+   "elements": [
+    "P",
+    "K",
+    "F"
+   ],
+   "n": 3,
+   "key": "P/K/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 16,
+   "max_formula": "P10K4F2",
+   "count_pool": 84,
+   "count_exact": 56
+  },
+  {
+   "elements": [
+    "P",
+    "A",
+    "F"
+   ],
+   "n": 3,
+   "key": "P/A/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "P2A6F2",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 3,
+   "key": "W/L/K",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "W6L2K2",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 3,
+   "key": "W/L/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 6,
+   "max_formula": "W3L2A",
+   "count_pool": 20,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 3,
+   "key": "W/L/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": "W3F2",
+   "count_pool": 14,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 3,
+   "key": "W/K/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 31,
+   "max_formula": "W16K6A9",
+   "count_pool": 67,
+   "count_exact": 43
+  },
+  {
+   "elements": [
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 3,
+   "key": "W/K/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 10,
+   "max_formula": "W6K2F2",
+   "count_pool": 36,
+   "count_exact": 16
+  },
+  {
+   "elements": [
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 3,
+   "key": "W/A/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 6,
+   "max_formula": "W3AF2",
+   "count_pool": 20,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 3,
+   "key": "L/K/A",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": "K2A7",
+   "count_pool": 30,
+   "count_exact": 10
+  },
+  {
+   "elements": [
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 3,
+   "key": "L/K/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 8,
+   "max_formula": "K3F5",
+   "count_pool": 28,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 3,
+   "key": "L/A/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 5,
+   "max_formula": "A3F2",
+   "count_pool": 14,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 3,
+   "key": "K/A/F",
+   "verdict": "finite",
+   "completeness": "complete",
+   "max_molecule": 9,
+   "max_formula": "K2A3F4",
+   "count_pool": 30,
+   "count_exact": 10
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P"
+   ],
+   "n": 4,
+   "key": "O/X/C/P",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 48,
+   "max_formula": "O21X10C4P13",
+   "count_pool": 380,
+   "count_exact": 173
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W"
+   ],
+   "n": 4,
+   "key": "O/X/C/W",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "O4X3W9",
+   "count_pool": 150,
+   "count_exact": 53
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "L"
+   ],
+   "n": 4,
+   "key": "O/X/C/L",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 78,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "K"
+   ],
+   "n": 4,
+   "key": "O/X/C/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O14X6C4K8",
+   "count_pool": 375,
+   "count_exact": 172
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "A"
+   ],
+   "n": 4,
+   "key": "O/X/C/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O6X8C2A16",
+   "count_pool": 149,
+   "count_exact": 52
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/X/C/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 78,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W"
+   ],
+   "n": 4,
+   "key": "O/X/P/W",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 50,
+   "max_formula": "O18X18P8W6",
+   "count_pool": 505,
+   "count_exact": 239
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "L"
+   ],
+   "n": 4,
+   "key": "O/X/P/L",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "O8X6P18L2",
+   "count_pool": 380,
+   "count_exact": 173
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "K"
+   ],
+   "n": 4,
+   "key": "O/X/P/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 39,
+   "max_formula": "OX15P16K7",
+   "count_pool": 567,
+   "count_exact": 231
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "A"
+   ],
+   "n": 4,
+   "key": "O/X/P/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 57,
+   "max_formula": "O28X6P12A11",
+   "count_pool": 545,
+   "count_exact": 267
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/X/P/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 29,
+   "max_formula": "O4X3P10F12",
+   "count_pool": 380,
+   "count_exact": 173
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "L"
+   ],
+   "n": 4,
+   "key": "O/X/W/L",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 24,
+   "max_formula": "O5X5W13L",
+   "count_pool": 150,
+   "count_exact": 53
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "K"
+   ],
+   "n": 4,
+   "key": "O/X/W/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 30,
+   "max_formula": "O11X4W8K7",
+   "count_pool": 540,
+   "count_exact": 267
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "A"
+   ],
+   "n": 4,
+   "key": "O/X/W/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 40,
+   "max_formula": "O10X6W3A21",
+   "count_pool": 310,
+   "count_exact": 161
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/X/W/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 150,
+   "count_exact": 53
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "key": "O/X/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O8X6K18",
+   "count_pool": 375,
+   "count_exact": 172
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "key": "O/X/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 29,
+   "max_formula": "O9X5L11A4",
+   "count_pool": 149,
+   "count_exact": 52
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/X/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 78,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "key": "O/X/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 40,
+   "max_formula": "O15X2K7A16",
+   "count_pool": 499,
+   "count_exact": 239
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/X/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 25,
+   "max_formula": "O4X3K9F9",
+   "count_pool": 375,
+   "count_exact": 172
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/X/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "O2X6A6F2",
+   "count_pool": 149,
+   "count_exact": 52
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W"
+   ],
+   "n": 4,
+   "key": "O/C/P/W",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 40,
+   "max_formula": "O18C8P8W6",
+   "count_pool": 378,
+   "count_exact": 171
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "L"
+   ],
+   "n": 4,
+   "key": "O/C/P/L",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "O7C6P2L",
+   "count_pool": 322,
+   "count_exact": 142
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "K"
+   ],
+   "n": 4,
+   "key": "O/C/P/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 26,
+   "max_formula": "O8P14K4",
+   "count_pool": 385,
+   "count_exact": 109
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "A"
+   ],
+   "n": 4,
+   "key": "O/C/P/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 28,
+   "max_formula": "O5C2P11A10",
+   "count_pool": 395,
+   "count_exact": 182
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/C/P/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "O7CP2F6",
+   "count_pool": 322,
+   "count_exact": 142
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "L"
+   ],
+   "n": 4,
+   "key": "O/C/W/L",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "K"
+   ],
+   "n": 4,
+   "key": "O/C/W/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "O14CW10K9",
+   "count_pool": 392,
+   "count_exact": 182
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "A"
+   ],
+   "n": 4,
+   "key": "O/C/W/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 169,
+   "count_exact": 54
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/C/W/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "key": "O/C/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "O7CL6K2",
+   "count_pool": 320,
+   "count_exact": 142
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "key": "O/C/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/C/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 8,
+   "max_formula": null,
+   "count_pool": 72,
+   "count_exact": 11
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "key": "O/C/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 20,
+   "max_formula": "O9K5A6",
+   "count_pool": 373,
+   "count_exact": 170
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/C/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "O7C3K2F4",
+   "count_pool": 320,
+   "count_exact": 142
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/C/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "L"
+   ],
+   "n": 4,
+   "key": "O/P/W/L",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 31,
+   "max_formula": "O3P10W7L11",
+   "count_pool": 378,
+   "count_exact": 171
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "K"
+   ],
+   "n": 4,
+   "key": "O/P/W/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "O15P6W12K",
+   "count_pool": 569,
+   "count_exact": 232
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "A"
+   ],
+   "n": 4,
+   "key": "O/P/W/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 48,
+   "max_formula": "O17P11W9A11",
+   "count_pool": 544,
+   "count_exact": 266
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/P/W/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "O15P7W12",
+   "count_pool": 378,
+   "count_exact": 171
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "key": "O/P/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O8P14L6K4",
+   "count_pool": 385,
+   "count_exact": 109
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "key": "O/P/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 36,
+   "max_formula": "O5P13L12A6",
+   "count_pool": 395,
+   "count_exact": 182
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/P/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "O2P6L2F6",
+   "count_pool": 322,
+   "count_exact": 142
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "key": "O/P/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O2P6K18A6",
+   "count_pool": 568,
+   "count_exact": 232
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/P/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 26,
+   "max_formula": "O8P14K4",
+   "count_pool": 385,
+   "count_exact": 109
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/P/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O8P18A6",
+   "count_pool": 395,
+   "count_exact": 182
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "key": "O/W/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 36,
+   "max_formula": "O5W6L12K13",
+   "count_pool": 392,
+   "count_exact": 182
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "key": "O/W/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 169,
+   "count_exact": 54
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/W/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "key": "O/W/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 50,
+   "max_formula": "O7W11K21A11",
+   "count_pool": 538,
+   "count_exact": 265
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/W/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 39,
+   "max_formula": "O5W7K14F13",
+   "count_pool": 392,
+   "count_exact": 182
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/W/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 19,
+   "max_formula": "O4W6A9",
+   "count_pool": 169,
+   "count_exact": 54
+  },
+  {
+   "elements": [
+    "O",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "key": "O/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "O15K7A12",
+   "count_pool": 373,
+   "count_exact": 170
+  },
+  {
+   "elements": [
+    "O",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "O2L7K7",
+   "count_pool": 320,
+   "count_exact": 142
+  },
+  {
+   "elements": [
+    "O",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "O",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "O/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 22,
+   "max_formula": "O12K5A4F",
+   "count_pool": 373,
+   "count_exact": 170
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W"
+   ],
+   "n": 4,
+   "key": "X/C/P/W",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "X6C2P2W6",
+   "count_pool": 150,
+   "count_exact": 53
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "L"
+   ],
+   "n": 4,
+   "key": "X/C/P/L",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "K"
+   ],
+   "n": 4,
+   "key": "X/C/P/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 38,
+   "max_formula": "X10C2P16K10",
+   "count_pool": 391,
+   "count_exact": 182
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "A"
+   ],
+   "n": 4,
+   "key": "X/C/P/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 19,
+   "max_formula": "X9P4A6",
+   "count_pool": 169,
+   "count_exact": 54
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "F"
+   ],
+   "n": 4,
+   "key": "X/C/P/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "L"
+   ],
+   "n": 4,
+   "key": "X/C/W/L",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 6,
+   "max_formula": "X3WL2",
+   "count_pool": 42,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "K"
+   ],
+   "n": 4,
+   "key": "X/C/W/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 169,
+   "count_exact": 54
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "A"
+   ],
+   "n": 4,
+   "key": "X/C/W/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 7,
+   "max_formula": "X2C2W2A",
+   "count_pool": 50,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "F"
+   ],
+   "n": 4,
+   "key": "X/C/W/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 6,
+   "max_formula": "XCW3F",
+   "count_pool": 42,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "key": "X/C/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "key": "X/C/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 6,
+   "max_formula": "X3L2A",
+   "count_pool": 42,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "key": "X/C/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 5,
+   "max_formula": null,
+   "count_pool": 26,
+   "count_exact": 0
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "key": "X/C/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 19,
+   "max_formula": "X4C5K7A3",
+   "count_pool": 150,
+   "count_exact": 53
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "key": "X/C/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "X/C/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 6,
+   "max_formula": null,
+   "count_pool": 42,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "L"
+   ],
+   "n": 4,
+   "key": "X/P/W/L",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 150,
+   "count_exact": 53
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "K"
+   ],
+   "n": 4,
+   "key": "X/P/W/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "X12P7W10K3",
+   "count_pool": 539,
+   "count_exact": 267
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "A"
+   ],
+   "n": 4,
+   "key": "X/P/W/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 28,
+   "max_formula": "X10P4W6A8",
+   "count_pool": 290,
+   "count_exact": 141
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "F"
+   ],
+   "n": 4,
+   "key": "X/P/W/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 150,
+   "count_exact": 53
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "key": "X/P/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "X6P18K8",
+   "count_pool": 391,
+   "count_exact": 182
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "key": "X/P/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 169,
+   "count_exact": 54
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "key": "X/P/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "key": "X/P/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 36,
+   "max_formula": "X6P8K18A4",
+   "count_pool": 539,
+   "count_exact": 267
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "key": "X/P/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "X4P5K13F10",
+   "count_pool": 391,
+   "count_exact": 182
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "X/P/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 169,
+   "count_exact": 54
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "key": "X/W/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 19,
+   "max_formula": "X9W6K4",
+   "count_pool": 169,
+   "count_exact": 54
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "key": "X/W/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 7,
+   "max_formula": "X2W2L2A",
+   "count_pool": 50,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "key": "X/W/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 6,
+   "max_formula": null,
+   "count_pool": 42,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "key": "X/W/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 20,
+   "max_formula": "X6W6K2A6",
+   "count_pool": 313,
+   "count_exact": 164
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "key": "X/W/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 169,
+   "count_exact": 54
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "X/W/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 7,
+   "max_formula": "XW3AF2",
+   "count_pool": 50,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "X",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "key": "X/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "X9K4A3",
+   "count_pool": 150,
+   "count_exact": 53
+  },
+  {
+   "elements": [
+    "X",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "key": "X/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "X",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "X/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 6,
+   "max_formula": null,
+   "count_pool": 42,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "X",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "X/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 22,
+   "max_formula": "X13K5A3F",
+   "count_pool": 150,
+   "count_exact": 53
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "L"
+   ],
+   "n": 4,
+   "key": "C/P/W/L",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 78,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "K"
+   ],
+   "n": 4,
+   "key": "C/P/W/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 40,
+   "max_formula": "C8P8W6K18",
+   "count_pool": 375,
+   "count_exact": 172
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "A"
+   ],
+   "n": 4,
+   "key": "C/P/W/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "C2P2W6A6",
+   "count_pool": 149,
+   "count_exact": 52
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "F"
+   ],
+   "n": 4,
+   "key": "C/P/W/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 78,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "key": "C/P/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "C7P7K2",
+   "count_pool": 320,
+   "count_exact": 142
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "key": "C/P/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "key": "C/P/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 8,
+   "max_formula": null,
+   "count_pool": 72,
+   "count_exact": 11
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "key": "C/P/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 25,
+   "max_formula": "C9P9K4A3",
+   "count_pool": 375,
+   "count_exact": 172
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "key": "C/P/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "CP6K2F7",
+   "count_pool": 320,
+   "count_exact": 142
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "C/P/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "key": "C/W/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "key": "C/W/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 6,
+   "max_formula": "CWLA3",
+   "count_pool": 42,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "key": "C/W/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 5,
+   "max_formula": null,
+   "count_pool": 26,
+   "count_exact": 0
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "key": "C/W/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 25,
+   "max_formula": "CW13K5A6",
+   "count_pool": 150,
+   "count_exact": 53
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "key": "C/W/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "C/W/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 6,
+   "max_formula": null,
+   "count_pool": 42,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "C",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "key": "C/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 78,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "C",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "key": "C/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 8,
+   "max_formula": null,
+   "count_pool": 72,
+   "count_exact": 11
+  },
+  {
+   "elements": [
+    "C",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "C/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 5,
+   "max_formula": null,
+   "count_pool": 26,
+   "count_exact": 0
+  },
+  {
+   "elements": [
+    "C",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "C/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 78,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 4,
+   "key": "P/W/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "P18W6LK7",
+   "count_pool": 375,
+   "count_exact": 172
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 4,
+   "key": "P/W/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 149,
+   "count_exact": 52
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 4,
+   "key": "P/W/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 78,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "key": "P/W/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 48,
+   "max_formula": "P11W11K3A23",
+   "count_pool": 499,
+   "count_exact": 239
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "key": "P/W/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 40,
+   "max_formula": "P8W6K18F8",
+   "count_pool": 375,
+   "count_exact": 172
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "P/W/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 149,
+   "count_exact": 52
+  },
+  {
+   "elements": [
+    "P",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "key": "P/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 375,
+   "count_exact": 172
+  },
+  {
+   "elements": [
+    "P",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "key": "P/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "P2K7F7",
+   "count_pool": 320,
+   "count_exact": 142
+  },
+  {
+   "elements": [
+    "P",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "P/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "P",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "P/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 27,
+   "max_formula": "P3K10A3F11",
+   "count_pool": 375,
+   "count_exact": 172
+  },
+  {
+   "elements": [
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 4,
+   "key": "W/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 150,
+   "count_exact": 53
+  },
+  {
+   "elements": [
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 4,
+   "key": "W/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 96,
+   "count_exact": 18
+  },
+  {
+   "elements": [
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "W/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 6,
+   "max_formula": "W3LAF",
+   "count_pool": 42,
+   "count_exact": 4
+  },
+  {
+   "elements": [
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "W/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "W9K4A3",
+   "count_pool": 150,
+   "count_exact": 53
+  },
+  {
+   "elements": [
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 4,
+   "key": "L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 78,
+   "count_exact": 12
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W"
+   ],
+   "n": 5,
+   "key": "O/X/C/P/W",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 26,
+   "max_formula": "O7X4C4P3W8",
+   "count_pool": 1453,
+   "count_exact": 367
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "L"
+   ],
+   "n": 5,
+   "key": "O/X/C/P/L",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 39,
+   "max_formula": "O5X7C4P14L9",
+   "count_pool": 1103,
+   "count_exact": 252
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "K"
+   ],
+   "n": 5,
+   "key": "O/X/C/P/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 23,
+   "max_formula": "O12X3C3PK4",
+   "count_pool": 1756,
+   "count_exact": 321
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/X/C/P/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 52,
+   "max_formula": "O7X9C6P17A13",
+   "count_pool": 1550,
+   "count_exact": 407
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/X/C/P/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 29,
+   "max_formula": "O4X3C8P10F4",
+   "count_pool": 1103,
+   "count_exact": 252
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "L"
+   ],
+   "n": 5,
+   "key": "O/X/C/W/L",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "O4X3W9",
+   "count_pool": 354,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "K"
+   ],
+   "n": 5,
+   "key": "O/X/C/W/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 29,
+   "max_formula": "O4X5C6W2K12",
+   "count_pool": 1544,
+   "count_exact": 406
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/X/C/W/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 26,
+   "max_formula": "O4X6W4A12",
+   "count_pool": 709,
+   "count_exact": 167
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/X/C/W/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 20,
+   "max_formula": "O4X5W11",
+   "count_pool": 354,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "key": "O/X/C/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O9X8LK14",
+   "count_pool": 1096,
+   "count_exact": 251
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/X/C/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 352,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/X/C/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 175,
+   "count_exact": 10
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/X/C/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 55,
+   "max_formula": "O21X7C13K8A6",
+   "count_pool": 1444,
+   "count_exact": 367
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/X/C/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 31,
+   "max_formula": "O4X5CK11F10",
+   "count_pool": 1096,
+   "count_exact": 251
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/X/C/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 27,
+   "max_formula": "O9X3C2A4F9",
+   "count_pool": 352,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "L"
+   ],
+   "n": 5,
+   "key": "O/X/P/W/L",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 64,
+   "max_formula": "O10X7P25W17L5",
+   "count_pool": 1453,
+   "count_exact": 367
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "K"
+   ],
+   "n": 5,
+   "key": "O/X/P/W/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 52,
+   "max_formula": "O16X9P16W5K6",
+   "count_pool": 2445,
+   "count_exact": 518
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/X/P/W/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 64,
+   "max_formula": "O4X3P16W13A28",
+   "count_pool": 2192,
+   "count_exact": 602
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/X/P/W/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 64,
+   "max_formula": "O23X16P9W10F6",
+   "count_pool": 1452,
+   "count_exact": 366
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "key": "O/X/P/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 49,
+   "max_formula": "O5X17P18L3K6",
+   "count_pool": 1756,
+   "count_exact": 321
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/X/P/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 48,
+   "max_formula": "O9X7P22L9A",
+   "count_pool": 1550,
+   "count_exact": 407
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/X/P/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O5X6P13L3F5",
+   "count_pool": 1103,
+   "count_exact": 252
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/X/P/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 42,
+   "max_formula": "OX16P10KA14",
+   "count_pool": 2515,
+   "count_exact": 589
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/X/P/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O13X12P5KF",
+   "count_pool": 1756,
+   "count_exact": 321
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/X/P/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 48,
+   "max_formula": "O18X8P7F15",
+   "count_pool": 1550,
+   "count_exact": 407
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "key": "O/X/W/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 20,
+   "max_formula": "O9X2W2LK6",
+   "count_pool": 1544,
+   "count_exact": 406
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/X/W/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 709,
+   "count_exact": 167
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/X/W/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O6X8W16L2",
+   "count_pool": 354,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/X/W/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 44,
+   "max_formula": "O4X18W4K10A8",
+   "count_pool": 2238,
+   "count_exact": 633
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/X/W/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 41,
+   "max_formula": "O8X4W3K19F7",
+   "count_pool": 1544,
+   "count_exact": 406
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/X/W/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 39,
+   "max_formula": "O7X9W5A17F",
+   "count_pool": 709,
+   "count_exact": 167
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/X/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 41,
+   "max_formula": "O17X10LK4A9",
+   "count_pool": 1444,
+   "count_exact": 367
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/X/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O12X10K5F5",
+   "count_pool": 1096,
+   "count_exact": 251
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/X/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 19,
+   "max_formula": "O7X3A4F5",
+   "count_pool": 352,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/X/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 55,
+   "max_formula": "O5X7K20A12F11",
+   "count_pool": 1444,
+   "count_exact": 367
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "L"
+   ],
+   "n": 5,
+   "key": "O/C/P/W/L",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 28,
+   "max_formula": "O5C2P14W6L",
+   "count_pool": 1095,
+   "count_exact": 248
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "K"
+   ],
+   "n": 5,
+   "key": "O/C/P/W/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 53,
+   "max_formula": "O6C7P4W11K25",
+   "count_pool": 1744,
+   "count_exact": 309
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/C/P/W/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 25,
+   "max_formula": "O9C3P4A9",
+   "count_pool": 1543,
+   "count_exact": 403
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/C/P/W/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "O15P7W12",
+   "count_pool": 1095,
+   "count_exact": 248
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "key": "O/C/P/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 20,
+   "max_formula": "OC4P7L6K2",
+   "count_pool": 1349,
+   "count_exact": 205
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/C/P/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 18,
+   "max_formula": "O6P2L8A2",
+   "count_pool": 1123,
+   "count_exact": 236
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/C/P/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "O7C2P2F5",
+   "count_pool": 973,
+   "count_exact": 226
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/C/P/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 48,
+   "max_formula": "O23C6P3K6A10",
+   "count_pool": 1752,
+   "count_exact": 319
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/C/P/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O8P14K4F6",
+   "count_pool": 1349,
+   "count_exact": 205
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/C/P/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 18,
+   "max_formula": "O6C2P2A2F6",
+   "count_pool": 1123,
+   "count_exact": 236
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "key": "O/C/W/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 28,
+   "max_formula": "O12C6W4LK5",
+   "count_pool": 1120,
+   "count_exact": 236
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/C/W/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 19,
+   "max_formula": "O4W6A9",
+   "count_pool": 372,
+   "count_exact": 41
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/C/W/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 214,
+   "count_exact": 13
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/C/W/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O6CW9K9A7",
+   "count_pool": 1537,
+   "count_exact": 403
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/C/W/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 22,
+   "max_formula": "O3C4W8K7",
+   "count_pool": 1120,
+   "count_exact": 236
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/C/W/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 372,
+   "count_exact": 41
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/C/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 21,
+   "max_formula": "O3L2K11A5",
+   "count_pool": 1089,
+   "count_exact": 248
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/C/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "O8CLK3F3",
+   "count_pool": 971,
+   "count_exact": 226
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/C/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 214,
+   "count_exact": 13
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/C/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 30,
+   "max_formula": "O11C6K4A6F3",
+   "count_pool": 1089,
+   "count_exact": 248
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "key": "O/P/W/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 44,
+   "max_formula": "O12P21W4LK6",
+   "count_pool": 1744,
+   "count_exact": 309
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/P/W/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 44,
+   "max_formula": "O16P6W7L14A",
+   "count_pool": 1543,
+   "count_exact": 403
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/P/W/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 23,
+   "max_formula": "O12P5W3L2F",
+   "count_pool": 1095,
+   "count_exact": 248
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/P/W/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 48,
+   "max_formula": "O21P3W3K10A11",
+   "count_pool": 2443,
+   "count_exact": 518
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/P/W/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "P20W6K8",
+   "count_pool": 1744,
+   "count_exact": 309
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/P/W/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 26,
+   "max_formula": "O6P9W3A7F",
+   "count_pool": 1543,
+   "count_exact": 403
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/P/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 25,
+   "max_formula": "O9P3L9KA3",
+   "count_pool": 1752,
+   "count_exact": 319
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/P/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 20,
+   "max_formula": "O4P7K2F7",
+   "count_pool": 1349,
+   "count_exact": 205
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/P/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "O7P15A12",
+   "count_pool": 1123,
+   "count_exact": 236
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/P/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 49,
+   "max_formula": "O2P21K9A17",
+   "count_pool": 1752,
+   "count_exact": 319
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "O/W/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 37,
+   "max_formula": "O12W2L5K5A13",
+   "count_pool": 1537,
+   "count_exact": 403
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/W/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 18,
+   "max_formula": "O6W2K2F8",
+   "count_pool": 1120,
+   "count_exact": 236
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/W/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 372,
+   "count_exact": 41
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/W/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 29,
+   "max_formula": "O8W7K13F",
+   "count_pool": 1537,
+   "count_exact": 403
+  },
+  {
+   "elements": [
+    "O",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "O/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "O7L7K2",
+   "count_pool": 1089,
+   "count_exact": 248
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "L"
+   ],
+   "n": 5,
+   "key": "X/C/P/W/L",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 27,
+   "max_formula": "X4P9W3L11",
+   "count_pool": 354,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "K"
+   ],
+   "n": 5,
+   "key": "X/C/P/W/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 69,
+   "max_formula": "X7C19P6W20K17",
+   "count_pool": 1544,
+   "count_exact": 407
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "A"
+   ],
+   "n": 5,
+   "key": "X/C/P/W/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "X6C2P2W6",
+   "count_pool": 670,
+   "count_exact": 148
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/C/P/W/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 29,
+   "max_formula": "X4C2P9W5F9",
+   "count_pool": 354,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "key": "X/C/P/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 36,
+   "max_formula": "X6C12P13K5",
+   "count_pool": 1119,
+   "count_exact": 236
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "key": "X/C/P/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 372,
+   "count_exact": 41
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/C/P/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 214,
+   "count_exact": 13
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "X/C/P/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 40,
+   "max_formula": "X18CP3K10A8",
+   "count_pool": 1544,
+   "count_exact": 407
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/C/P/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 20,
+   "max_formula": "X10P3K7",
+   "count_pool": 1119,
+   "count_exact": 236
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/C/P/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 372,
+   "count_exact": 41
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "key": "X/C/W/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 18,
+   "max_formula": "X8W6K4",
+   "count_pool": 372,
+   "count_exact": 41
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "key": "X/C/W/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 7,
+   "max_formula": "XC2W3A",
+   "count_pool": 100,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/C/W/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 6,
+   "max_formula": null,
+   "count_pool": 75,
+   "count_exact": 0
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "X/C/W/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 18,
+   "max_formula": "X4CW5K3A5",
+   "count_pool": 731,
+   "count_exact": 185
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/C/W/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 372,
+   "count_exact": 41
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/C/W/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 7,
+   "max_formula": "X2CW2AF",
+   "count_pool": 100,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "X/C/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 19,
+   "max_formula": "X10L2K4A3",
+   "count_pool": 354,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/C/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 214,
+   "count_exact": 13
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/C/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 6,
+   "max_formula": null,
+   "count_pool": 75,
+   "count_exact": 0
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/C/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 18,
+   "max_formula": "X10K4A4",
+   "count_pool": 354,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "key": "X/P/W/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 44,
+   "max_formula": "X8P16L14K6",
+   "count_pool": 1544,
+   "count_exact": 407
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "key": "X/P/W/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 20,
+   "max_formula": "X4P4W5A7",
+   "count_pool": 670,
+   "count_exact": 148
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/P/W/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 19,
+   "max_formula": "X10P4W3F2",
+   "count_pool": 354,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "X/P/W/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 48,
+   "max_formula": "X12P9W7K15A5",
+   "count_pool": 2205,
+   "count_exact": 619
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/P/W/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 36,
+   "max_formula": "X8P10W2K16",
+   "count_pool": 1544,
+   "count_exact": 407
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/P/W/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 24,
+   "max_formula": "X8P4W3A9",
+   "count_pool": 670,
+   "count_exact": 148
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "X/P/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 48,
+   "max_formula": "X4P22L9K9A4",
+   "count_pool": 1544,
+   "count_exact": 407
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/P/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 18,
+   "max_formula": "X2P2L8K6",
+   "count_pool": 1119,
+   "count_exact": 236
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/P/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 372,
+   "count_exact": 41
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/P/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 25,
+   "max_formula": "X13PK7A4",
+   "count_pool": 1544,
+   "count_exact": 407
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "X/W/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 35,
+   "max_formula": "X13W5LK5A11",
+   "count_pool": 731,
+   "count_exact": 185
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/W/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 18,
+   "max_formula": "X8W6K4",
+   "count_pool": 372,
+   "count_exact": 41
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/W/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 7,
+   "max_formula": "X2W2AF2",
+   "count_pool": 100,
+   "count_exact": 3
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/W/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 731,
+   "count_exact": 185
+  },
+  {
+   "elements": [
+    "X",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "X/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 354,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 5,
+   "key": "C/P/W/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 20,
+   "max_formula": "C6P9W2LK2",
+   "count_pool": 1096,
+   "count_exact": 251
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 5,
+   "key": "C/P/W/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 20,
+   "max_formula": "P4W5A11",
+   "count_pool": 352,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 5,
+   "key": "C/P/W/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 175,
+   "count_exact": 10
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "C/P/W/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 45,
+   "max_formula": "C4P17W13K7A4",
+   "count_pool": 1451,
+   "count_exact": 372
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "C/P/W/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 38,
+   "max_formula": "C2P10W10K16",
+   "count_pool": 1096,
+   "count_exact": 251
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "C/P/W/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 19,
+   "max_formula": "C2P4W3A10",
+   "count_pool": 352,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "C/P/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "P15K7A12",
+   "count_pool": 1097,
+   "count_exact": 252
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "C/P/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "C3P2L2K6F3",
+   "count_pool": 971,
+   "count_exact": 226
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "C/P/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 214,
+   "count_exact": 13
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "C/P/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 36,
+   "max_formula": "CP6K14A6F9",
+   "count_pool": 1097,
+   "count_exact": 252
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "C/W/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 354,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "C/W/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 10,
+   "max_formula": null,
+   "count_pool": 214,
+   "count_exact": 13
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "C/W/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 6,
+   "max_formula": "CW3LA",
+   "count_pool": 75,
+   "count_exact": 0
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "C/W/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 19,
+   "max_formula": "C2W10K4A3",
+   "count_pool": 354,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "C",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "C/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 9,
+   "max_formula": null,
+   "count_pool": 175,
+   "count_exact": 10
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 5,
+   "key": "P/W/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 50,
+   "max_formula": "P8W6K18A18",
+   "count_pool": 1450,
+   "count_exact": 371
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 5,
+   "key": "P/W/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 25,
+   "max_formula": "P4W3L9K9",
+   "count_pool": 1096,
+   "count_exact": 251
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "P/W/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 33,
+   "max_formula": "P11W7A6F9",
+   "count_pool": 352,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "P/W/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 39,
+   "max_formula": "P8W7K17A6F",
+   "count_pool": 1449,
+   "count_exact": 370
+  },
+  {
+   "elements": [
+    "P",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "P/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 25,
+   "max_formula": "P2L5K8A5F5",
+   "count_pool": 1097,
+   "count_exact": 252
+  },
+  {
+   "elements": [
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 5,
+   "key": "W/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 354,
+   "count_exact": 55
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L"
+   ],
+   "n": 6,
+   "key": "O/X/C/P/W/L",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 29,
+   "max_formula": "O4X3C12P10",
+   "count_pool": 3588,
+   "count_exact": 340
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "K"
+   ],
+   "n": 6,
+   "key": "O/X/C/P/W/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 66,
+   "max_formula": "O11X4C2P25W16K8",
+   "count_pool": 6397,
+   "count_exact": 540
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "A"
+   ],
+   "n": 6,
+   "key": "O/X/C/P/W/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 36,
+   "max_formula": "O7X11P3W3A12",
+   "count_pool": 5311,
+   "count_exact": 606
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/C/P/W/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 25,
+   "max_formula": "O9P4W3F9",
+   "count_pool": 3587,
+   "count_exact": 340
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "L",
+    "K"
+   ],
+   "n": 6,
+   "key": "O/X/C/P/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 4712,
+   "count_exact": 309
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "L",
+    "A"
+   ],
+   "n": 6,
+   "key": "O/X/C/P/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 28,
+   "max_formula": "O6X4C4P2A12",
+   "count_pool": 3735,
+   "count_exact": 353
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "L",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/C/P/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 30,
+   "max_formula": "O8X8P13F",
+   "count_pool": 2825,
+   "count_exact": 276
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "key": "O/X/C/P/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 30,
+   "max_formula": "OX8C2PK12A6",
+   "count_pool": 6525,
+   "count_exact": 589
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/C/P/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 31,
+   "max_formula": "OX7P14K9",
+   "count_pool": 4712,
+   "count_exact": 309
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/C/P/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O13XP6A11F",
+   "count_pool": 3735,
+   "count_exact": 353
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 6,
+   "key": "O/X/C/W/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 28,
+   "max_formula": "O5X7W9L5K2",
+   "count_pool": 3727,
+   "count_exact": 353
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 6,
+   "key": "O/X/C/W/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 1451,
+   "count_exact": 107
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/C/W/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 751,
+   "count_exact": 51
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "key": "O/X/C/W/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 57,
+   "max_formula": "O16X5W10K6A20",
+   "count_pool": 5426,
+   "count_exact": 640
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/C/W/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 22,
+   "max_formula": "OX6C6W6K3",
+   "count_pool": 3727,
+   "count_exact": 353
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/C/W/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 60,
+   "max_formula": "O13X13CW30A3",
+   "count_pool": 1451,
+   "count_exact": 107
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "key": "O/X/C/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 45,
+   "max_formula": "O16L16K6A7",
+   "count_pool": 3575,
+   "count_exact": 340
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/C/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 31,
+   "max_formula": "O4X5C11K11",
+   "count_pool": 2815,
+   "count_exact": 276
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/C/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 20,
+   "max_formula": "O4X5A11",
+   "count_pool": 748,
+   "count_exact": 51
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/C/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 45,
+   "max_formula": "O16C5K6A7F11",
+   "count_pool": 3575,
+   "count_exact": 340
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 6,
+   "key": "O/X/P/W/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 64,
+   "max_formula": "O2X17P27W9L2K7",
+   "count_pool": 6397,
+   "count_exact": 540
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 6,
+   "key": "O/X/P/W/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 51,
+   "max_formula": "O15X7P7W16L2A4",
+   "count_pool": 5311,
+   "count_exact": 606
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/P/W/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "O13X3P6W11F",
+   "count_pool": 3582,
+   "count_exact": 335
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "key": "O/X/P/W/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O2XP3W2K11A13",
+   "count_pool": 9045,
+   "count_exact": 933
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/P/W/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "O2X4P11K3F14",
+   "count_pool": 6396,
+   "count_exact": 540
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/P/W/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 36,
+   "max_formula": "O8X5P18W2AF2",
+   "count_pool": 5310,
+   "count_exact": 606
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "key": "O/X/P/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 24,
+   "max_formula": "O4X5P7LK4A3",
+   "count_pool": 6525,
+   "count_exact": 589
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/P/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 50,
+   "max_formula": "O5X8P17K2F18",
+   "count_pool": 4712,
+   "count_exact": 309
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/P/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 20,
+   "max_formula": "O6X8P2L4",
+   "count_pool": 3735,
+   "count_exact": 353
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/P/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 64,
+   "max_formula": "O29X10P12K7A6",
+   "count_pool": 6525,
+   "count_exact": 589
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "key": "O/X/W/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 22,
+   "max_formula": "O2X4W3LK5A7",
+   "count_pool": 5426,
+   "count_exact": 640
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/W/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "O15W12K7",
+   "count_pool": 3727,
+   "count_exact": 353
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/W/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 41,
+   "max_formula": "O13X7W4L2A2F13",
+   "count_pool": 1451,
+   "count_exact": 107
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/W/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 60,
+   "max_formula": "O10X14W7K15A13F",
+   "count_pool": 5426,
+   "count_exact": 640
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/X/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 29,
+   "max_formula": "O10K4A3F12",
+   "count_pool": 3575,
+   "count_exact": 340
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 6,
+   "key": "O/C/P/W/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 68,
+   "max_formula": "O5C26P23W8K6",
+   "count_pool": 4707,
+   "count_exact": 334
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 6,
+   "key": "O/C/P/W/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "O7P2L7",
+   "count_pool": 3715,
+   "count_exact": 350
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/C/P/W/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O5P12W4L3F8",
+   "count_pool": 2805,
+   "count_exact": 274
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "key": "O/C/P/W/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 72,
+   "max_formula": "O29C2P10W5K3A23",
+   "count_pool": 6385,
+   "count_exact": 538
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/C/P/W/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 30,
+   "max_formula": "O2C9P2W6K11",
+   "count_pool": 4707,
+   "count_exact": 334
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/C/P/W/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 18,
+   "max_formula": "O2C8P6A2",
+   "count_pool": 3715,
+   "count_exact": 350
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "key": "O/C/P/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 26,
+   "max_formula": "O2P11K5A8",
+   "count_pool": 4697,
+   "count_exact": 306
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/C/P/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 26,
+   "max_formula": "O8P14K4",
+   "count_pool": 3984,
+   "count_exact": 292
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/C/P/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 18,
+   "max_formula": "O6C6P2A2F2",
+   "count_pool": 2777,
+   "count_exact": 210
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/C/P/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 30,
+   "max_formula": "OC3P6K12A8",
+   "count_pool": 4697,
+   "count_exact": 306
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "key": "O/C/W/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "O15W3K7A9",
+   "count_pool": 3708,
+   "count_exact": 349
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/C/W/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 18,
+   "max_formula": "O6W2K2F8",
+   "count_pool": 2774,
+   "count_exact": 210
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/C/W/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 726,
+   "count_exact": 14
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/C/W/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 35,
+   "max_formula": "O13WK5A6F10",
+   "count_pool": 3708,
+   "count_exact": 349
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/C/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "O15K7A12",
+   "count_pool": 2798,
+   "count_exact": 274
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "key": "O/P/W/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 29,
+   "max_formula": "OP8W7K3A10",
+   "count_pool": 6384,
+   "count_exact": 538
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/P/W/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 31,
+   "max_formula": "O13P5W11KF",
+   "count_pool": 4707,
+   "count_exact": 334
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/P/W/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 55,
+   "max_formula": "O20P13W10LA11",
+   "count_pool": 3715,
+   "count_exact": 350
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/P/W/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 38,
+   "max_formula": "OP13K5A4F15",
+   "count_pool": 6383,
+   "count_exact": 538
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/P/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 43,
+   "max_formula": "O4P15L2K3A9F10",
+   "count_pool": 4697,
+   "count_exact": 306
+  },
+  {
+   "elements": [
+    "O",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "O/W/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 20,
+   "max_formula": "O5W6K9",
+   "count_pool": 3708,
+   "count_exact": 349
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 6,
+   "key": "X/C/P/W/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 39,
+   "max_formula": "X7CP9W8K14",
+   "count_pool": 3728,
+   "count_exact": 353
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 6,
+   "key": "X/C/P/W/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 26,
+   "max_formula": "X10P4W3A9",
+   "count_pool": 1378,
+   "count_exact": 92
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 6,
+   "key": "X/C/P/W/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 751,
+   "count_exact": 51
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "key": "X/C/P/W/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 35,
+   "max_formula": "C10P5W4K13A3",
+   "count_pool": 5360,
+   "count_exact": 614
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "key": "X/C/P/W/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 62,
+   "max_formula": "X9C2P28W5K11F7",
+   "count_pool": 3728,
+   "count_exact": 353
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "X/C/P/W/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "X5CP2W6AF",
+   "count_pool": 1378,
+   "count_exact": 92
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "key": "X/C/P/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 82,
+   "max_formula": "X12C4P24L14K10A18",
+   "count_pool": 3729,
+   "count_exact": 353
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "key": "X/C/P/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 23,
+   "max_formula": "X5C2P10K6",
+   "count_pool": 2773,
+   "count_exact": 210
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "X/C/P/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 19,
+   "max_formula": "X9P4A6",
+   "count_pool": 726,
+   "count_exact": 14
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "X/C/P/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 52,
+   "max_formula": "X9P10K24AF8",
+   "count_pool": 3729,
+   "count_exact": 353
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "key": "X/C/W/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 1510,
+   "count_exact": 125
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "key": "X/C/W/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 726,
+   "count_exact": 14
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "X/C/W/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 7,
+   "max_formula": null,
+   "count_pool": 175,
+   "count_exact": 0
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "X/C/W/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 31,
+   "max_formula": "X4C4W2K11A5F5",
+   "count_pool": 1510,
+   "count_exact": 125
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "X/C/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 751,
+   "count_exact": 51
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "key": "X/P/W/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 78,
+   "max_formula": "X24P5W12LK14A22",
+   "count_pool": 5359,
+   "count_exact": 614
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "key": "X/P/W/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 18,
+   "max_formula": "XPW7L4K4F",
+   "count_pool": 3728,
+   "count_exact": 353
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "X/P/W/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 33,
+   "max_formula": "X3P11W7L7A3F2",
+   "count_pool": 1378,
+   "count_exact": 92
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "X/P/W/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 35,
+   "max_formula": "X3P5W11K12A3F",
+   "count_pool": 5358,
+   "count_exact": 614
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "X/P/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "X12P7K15",
+   "count_pool": 3729,
+   "count_exact": 353
+  },
+  {
+   "elements": [
+    "X",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "X/W/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": "X8WK4A3",
+   "count_pool": 1510,
+   "count_exact": 125
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 6,
+   "key": "C/P/W/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 18,
+   "max_formula": "CP8K5A4",
+   "count_pool": 3596,
+   "count_exact": 344
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 6,
+   "key": "C/P/W/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 36,
+   "max_formula": "C6P5W6L6K13",
+   "count_pool": 2815,
+   "count_exact": 276
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "C/P/W/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 29,
+   "max_formula": "C3P9W5L4A4F4",
+   "count_pool": 748,
+   "count_exact": 51
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "C/P/W/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 43,
+   "max_formula": "C3P7W16K16A",
+   "count_pool": 3595,
+   "count_exact": 344
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "C/P/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 2818,
+   "count_exact": 276
+  },
+  {
+   "elements": [
+    "C",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "C/W/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 751,
+   "count_exact": 51
+  },
+  {
+   "elements": [
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 6,
+   "key": "P/W/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 58,
+   "max_formula": "P4W27K13A13F",
+   "count_pool": 3594,
+   "count_exact": 344
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n": 7,
+   "key": "O/X/C/P/W/L/K",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 38,
+   "max_formula": "O4X6C7P13L6K2",
+   "count_pool": 14801,
+   "count_exact": 364
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "A"
+   ],
+   "n": 7,
+   "key": "O/X/C/P/W/L/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 70,
+   "max_formula": "O4X30C5P15W16",
+   "count_pool": 11343,
+   "count_exact": 346
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/X/C/P/W/L/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "O8X4C5P3W14",
+   "count_pool": 8088,
+   "count_exact": 238
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "K",
+    "A"
+   ],
+   "n": 7,
+   "key": "O/X/C/P/W/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 30,
+   "max_formula": "O11X10P3WK2A3",
+   "count_pool": 20756,
+   "count_exact": 696
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "K",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/X/C/P/W/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 24,
+   "max_formula": "O3X2C10P8K",
+   "count_pool": 14800,
+   "count_exact": 364
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/X/C/P/W/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 41,
+   "max_formula": "O4X5C4P11WA11F5",
+   "count_pool": 11342,
+   "count_exact": 346
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 7,
+   "key": "O/X/C/P/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 29,
+   "max_formula": "O11X2C2P3K4A7",
+   "count_pool": 14971,
+   "count_exact": 375
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/X/C/P/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 20,
+   "max_formula": "O4X2C2P10LK",
+   "count_pool": 11466,
+   "count_exact": 230
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/X/C/P/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O4X4C6P12A4F2",
+   "count_pool": 8165,
+   "count_exact": 217
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/X/C/P/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 43,
+   "max_formula": "O16XCP5K2A16F2",
+   "count_pool": 14971,
+   "count_exact": 375
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 7,
+   "key": "O/X/C/W/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 11594,
+   "count_exact": 382
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/X/C/W/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 28,
+   "max_formula": "O5X7W9K2F5",
+   "count_pool": 8154,
+   "count_exact": 217
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/X/C/W/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 16,
+   "max_formula": null,
+   "count_pool": 2732,
+   "count_exact": 33
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/X/C/W/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 50,
+   "max_formula": "O11X5W6K2A21F5",
+   "count_pool": 11594,
+   "count_exact": 382
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/X/C/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 27,
+   "max_formula": "O2X3K14A6F2",
+   "count_pool": 8079,
+   "count_exact": 241
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 7,
+   "key": "O/X/P/W/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 36,
+   "max_formula": "O18X2P2W4L2K6A2",
+   "count_pool": 20755,
+   "count_exact": 696
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/X/P/W/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 31,
+   "max_formula": "OX8P4W9L7KF",
+   "count_pool": 14795,
+   "count_exact": 364
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/X/P/W/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 39,
+   "max_formula": "O16X3P10W2A8",
+   "count_pool": 11337,
+   "count_exact": 346
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/X/P/W/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 48,
+   "max_formula": "O5X7P14WA12F9",
+   "count_pool": 20753,
+   "count_exact": 696
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/X/P/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 46,
+   "max_formula": "O16XP7L5A17",
+   "count_pool": 14971,
+   "count_exact": 375
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/X/W/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "O3X8W4L3K7A8F",
+   "count_pool": 11594,
+   "count_exact": 382
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 7,
+   "key": "O/C/P/W/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 39,
+   "max_formula": "O17C8P7W3A4",
+   "count_pool": 14768,
+   "count_exact": 363
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/C/P/W/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 70,
+   "max_formula": "O6P23W10L11K5F15",
+   "count_pool": 11503,
+   "count_exact": 246
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/C/P/W/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 25,
+   "max_formula": "O9P4A3F9",
+   "count_pool": 8120,
+   "count_exact": 214
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/C/P/W/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 44,
+   "max_formula": "O2CP13W7K8A13",
+   "count_pool": 14767,
+   "count_exact": 363
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/C/P/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 46,
+   "max_formula": "OP20K9A16",
+   "count_pool": 11430,
+   "count_exact": 228
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/C/W/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 29,
+   "max_formula": "O4C4W3L8K10",
+   "count_pool": 8111,
+   "count_exact": 214
+  },
+  {
+   "elements": [
+    "O",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "O/P/W/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 44,
+   "max_formula": "O5P14W3L2K5A15",
+   "count_pool": 14766,
+   "count_exact": 363
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 7,
+   "key": "X/C/P/W/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 34,
+   "max_formula": "X11CP7L3K3A9",
+   "count_pool": 11471,
+   "count_exact": 362
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 7,
+   "key": "X/C/P/W/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 36,
+   "max_formula": "X16P2W8K8F2",
+   "count_pool": 8156,
+   "count_exact": 217
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "X/C/P/W/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 30,
+   "max_formula": "X15P7W4A3F",
+   "count_pool": 2607,
+   "count_exact": 30
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "X/C/P/W/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 54,
+   "max_formula": "X19P8W4K19AF3",
+   "count_pool": 11470,
+   "count_exact": 362
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "X/C/P/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 45,
+   "max_formula": "X7C16P6K16",
+   "count_pool": 8159,
+   "count_exact": 217
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "X/C/W/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 20,
+   "max_formula": "X8W6K4A2",
+   "count_pool": 2849,
+   "count_exact": 36
+  },
+  {
+   "elements": [
+    "X",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "X/P/W/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 49,
+   "max_formula": "X8P5W8LK13A9F5",
+   "count_pool": 11469,
+   "count_exact": 362
+  },
+  {
+   "elements": [
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 7,
+   "key": "C/P/W/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 36,
+   "max_formula": "P8W11K12A5",
+   "count_pool": 8126,
+   "count_exact": 244
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n": 8,
+   "key": "O/X/C/P/W/L/K/A",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 41,
+   "max_formula": "X15CP2W8K7A8",
+   "count_pool": 42868,
+   "count_exact": 303
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "F"
+   ],
+   "n": 8,
+   "key": "O/X/C/P/W/L/K/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 42,
+   "max_formula": "O6X14P17K5",
+   "count_pool": 31709,
+   "count_exact": 197
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "A",
+    "F"
+   ],
+   "n": 8,
+   "key": "O/X/C/P/W/L/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 36,
+   "max_formula": "O12X4C4P8W4A4",
+   "count_pool": 22439,
+   "count_exact": 113
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 8,
+   "key": "O/X/C/P/W/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 52,
+   "max_formula": "O5X10P3W10K18F6",
+   "count_pool": 42866,
+   "count_exact": 303
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 8,
+   "key": "O/X/C/P/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 68,
+   "max_formula": "O14X13P24K4A13",
+   "count_pool": 31870,
+   "count_exact": 171
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 8,
+   "key": "O/X/C/W/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 22,
+   "max_formula": "OX6C6W6K3",
+   "count_pool": 22923,
+   "count_exact": 128
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 8,
+   "key": "O/X/P/W/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 32,
+   "max_formula": "O13XP5W8LKA3",
+   "count_pool": 42860,
+   "count_exact": 303
+  },
+  {
+   "elements": [
+    "O",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 8,
+   "key": "O/C/P/W/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 46,
+   "max_formula": "OP20K9A16",
+   "count_pool": 31646,
+   "count_exact": 197
+  },
+  {
+   "elements": [
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 8,
+   "key": "X/C/P/W/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 87,
+   "max_formula": "X12C3P24W15K9A24",
+   "count_pool": 22715,
+   "count_exact": 119
+  },
+  {
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n": 9,
+   "key": "O/X/C/P/W/L/K/A/F",
+   "verdict": "finite",
+   "completeness": "empirical",
+   "max_molecule": 97,
+   "max_formula": "O3X8C15P10WK36A22F2",
+   "count_pool": 82961,
+   "count_exact": 98
+  }
+ ]
+}

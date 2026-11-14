@@ -1,0 +1,506 @@
+{
+ "stats": {
+  "复原": 1318,
+  "变化": 182,
+  "含新分子式": 137
+ },
+ "by_class": {
+  "(0, -1, 3)": 84,
+  "(3, -1, 1)": 9,
+  "(1, -1, 1)": 6,
+  "(0, -2, 3)": 2,
+  "(0, -1, 2)": 68,
+  "(2, -1, 1)": 5,
+  "(4, -1, 1)": 4,
+  "(1, -1, 2)": 4
+ },
+ "by_prodcount": {
+  "1": 70,
+  "2": 104,
+  "3": 7,
+  "4": 1
+ },
+ "tag_count": {
+  "合并_新": 66,
+  "交换_新": 70,
+  "交换_旧": 34,
+  "裂解_旧": 7,
+  "裂解_新": 1,
+  "合并_旧": 4
+ },
+ "examples": {
+  "合并_新": [
+   {
+    "A": "O3CWA",
+    "B": "XC2P3F",
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O3XC3P3WAF"
+    ],
+    "new": [
+     "O3XC3P3WAF"
+    ],
+    "nprod": 1
+   },
+   {
+    "A": "O4X2LK",
+    "B": "P2W2K4",
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O4X2P2W2LK5"
+    ],
+    "new": [
+     "O4X2P2W2LK5"
+    ],
+    "nprod": 1
+   },
+   {
+    "A": "P2WL2",
+    "B": "O4XPAF",
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O4XP3WL2AF"
+    ],
+    "new": [
+     "O4XP3WL2AF"
+    ],
+    "nprod": 1
+   },
+   {
+    "A": "CLK2",
+    "B": "CP2L",
+    "class": [
+     0,
+     -2,
+     3
+    ],
+    "products": [
+     "C2P2L2K2"
+    ],
+    "new": [
+     "C2P2L2K2"
+    ],
+    "nprod": 1
+   },
+   {
+    "A": "O3PL2A",
+    "B": "OX2P4L",
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O4X2P5L3A"
+    ],
+    "new": [
+     "O4X2P5L3A"
+    ],
+    "nprod": 1
+   },
+   {
+    "A": "P2WLF",
+    "B": "OCPK3",
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "OCP3WLK3F"
+    ],
+    "new": [
+     "OCP3WLK3F"
+    ],
+    "nprod": 1
+   }
+  ],
+  "交换_新": [
+   {
+    "A": "O2XPW2L",
+    "B": "O2P2WKAF",
+    "class": [
+     3,
+     -1,
+     1
+    ],
+    "products": [
+     "LF",
+     "O4XP3W3KA"
+    ],
+    "new": [
+     "O4XP3W3KA"
+    ],
+    "nprod": 2
+   },
+   {
+    "A": "XP3L2AF",
+    "B": "P3WL3",
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "P2WL2",
+     "XP4L3AF"
+    ],
+    "new": [
+     "XP4L3AF"
+    ],
+    "nprod": 2
+   },
+   {
+    "A": "O3XCWA",
+    "B": "O3WL",
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O2W",
+     "O4XCWLA"
+    ],
+    "new": [
+     "O4XCWLA"
+    ],
+    "nprod": 2
+   },
+   {
+    "A": "P3WL2F",
+    "B": "O3WL2F",
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O2P2W2L3F",
+     "OPLF"
+    ],
+    "new": [
+     "O2P2W2L3F",
+     "OPLF"
+    ],
+    "nprod": 2
+   },
+   {
+    "A": "CW2K3",
+    "B": "P5K3",
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "CP2WK3",
+     "P3WK3"
+    ],
+    "new": [
+     "P3WK3"
+    ],
+    "nprod": 2
+   },
+   {
+    "A": "XP4WLK",
+    "B": "CL2K2F",
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "P3WL2K2F",
+     "XCPLK"
+    ],
+    "new": [
+     "P3WL2K2F",
+     "XCPLK"
+    ],
+    "nprod": 2
+   }
+  ],
+  "交换_旧": [
+   {
+    "A": "OX2K2AF",
+    "B": "X2CPWK2",
+    "class": [
+     1,
+     -1,
+     1
+    ],
+    "products": [
+     "CF",
+     "OX4PWK4A"
+    ],
+    "new": [],
+    "nprod": 2
+   },
+   {
+    "A": "OK3F4",
+    "B": "WLK3A",
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "OLK4F4",
+     "WK2A"
+    ],
+    "new": [],
+    "nprod": 2
+   },
+   {
+    "A": "XCPA5",
+    "B": "OW3L",
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "OW3LA",
+     "XCPA4"
+    ],
+    "new": [],
+    "nprod": 2
+   },
+   {
+    "A": "O2WLKA2",
+    "B": "WF2",
+    "class": [
+     3,
+     -1,
+     1
+    ],
+    "products": [
+     "LF",
+     "O2W2KA2F"
+    ],
+    "new": [],
+    "nprod": 2
+   },
+   {
+    "A": "XCK3A",
+    "B": "XK3A2F",
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "XCK4A2F",
+     "XK2A"
+    ],
+    "new": [],
+    "nprod": 2
+   },
+   {
+    "A": "X2CKA3",
+    "B": "WK2A2F2",
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "WK2A3F2",
+     "X2CKA2"
+    ],
+    "new": [],
+    "nprod": 2
+   }
+  ],
+  "裂解_旧": [
+   {
+    "A": "X2PW3L",
+    "B": "PW3F",
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "PW2F",
+     "W2",
+     "X2PW2L"
+    ],
+    "new": [],
+    "nprod": 3
+   },
+   {
+    "A": "O3AF",
+    "B": "O3X2L",
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O2A",
+     "O2LF",
+     "O2X2"
+    ],
+    "new": [],
+    "nprod": 3
+   },
+   {
+    "A": "OXPLKA3",
+    "B": "OK2A3F",
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "A2",
+     "OK2A2F",
+     "OXPLKA2"
+    ],
+    "new": [],
+    "nprod": 3
+   },
+   {
+    "A": "OXPW3KF",
+    "B": "XW5KF",
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "OXPW2KF",
+     "W2",
+     "XW4KF"
+    ],
+    "new": [],
+    "nprod": 3
+   },
+   {
+    "A": "O2X3WL2",
+    "B": "O2X3W2",
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "O2X2W2",
+     "O2X2WL2",
+     "X2"
+    ],
+    "new": [],
+    "nprod": 3
+   },
+   {
+    "A": "OXP2KA3",
+    "B": "XCPA5",
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "A2",
+     "OXP2KA2",
+     "XCPA4"
+    ],
+    "new": [],
+    "nprod": 3
+   }
+  ],
+  "裂解_新": [
+   {
+    "A": "OL3K2",
+    "B": "O3PL2KF",
+    "class": [
+     4,
+     -1,
+     1
+    ],
+    "products": [
+     "L2",
+     "L2",
+     "LF",
+     "O4PK3"
+    ],
+    "new": [
+     "O4PK3"
+    ],
+    "nprod": 4
+   }
+  ],
+  "合并_旧": [
+   {
+    "A": "O2W2",
+    "B": "CWL2K3",
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O2CW3L2K3"
+    ],
+    "new": [],
+    "nprod": 1
+   },
+   {
+    "A": "O3XCPAF",
+    "B": "O2XCLF2",
+    "class": [
+     1,
+     -1,
+     2
+    ],
+    "products": [
+     "O5X2C2PLAF3"
+    ],
+    "new": [],
+    "nprod": 1
+   },
+   {
+    "A": "X2CF",
+    "B": "X2PW2K3",
+    "class": [
+     0,
+     -1,
+     2
+    ],
+    "products": [
+     "X4CPW2K3F"
+    ],
+    "new": [],
+    "nprod": 1
+   },
+   {
+    "A": "X2CP3",
+    "B": "O3XKF2",
+    "class": [
+     0,
+     -1,
+     3
+    ],
+    "products": [
+     "O3X3CP3KF2"
+    ],
+    "new": [],
+    "nprod": 1
+   }
+  ]
+ }
+}

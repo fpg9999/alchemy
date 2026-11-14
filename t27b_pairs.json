@@ -1,0 +1,268 @@
+{
+ "pair_stats": {
+  "pairs": 500,
+  "无变化": 366,
+  "有变化": 131,
+  "重结合失败": 3,
+  "含新分子式": 101
+ },
+ "examples": [
+  {
+   "A": "OXW3AF",
+   "B": "PL2K3F2",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 2,
+   "out": [
+    "OXPW3L2K3AF3"
+   ]
+  },
+  {
+   "A": "O3CW2",
+   "B": "OX2P2KA2",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 3,
+   "out": [
+    "O4X2CP2W2KA2"
+   ]
+  },
+  {
+   "A": "X5KF",
+   "B": "PWL2K3",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 4,
+   "out": [
+    "X4KF",
+    "XPWL2K3"
+   ]
+  },
+  {
+   "A": "OW4K2F",
+   "B": "O3L2F",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 5,
+   "out": [
+    "O4W4L2K2F2"
+   ]
+  },
+  {
+   "A": "CP2W2AF",
+   "B": "C4P2",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 2,
+   "out": [
+    "C5P4W2AF"
+   ]
+  },
+  {
+   "A": "OX2W2K2F",
+   "B": "X2P2LK3",
+   "class": [
+    3,
+    1
+   ],
+   "broken": 2,
+   "out": [
+    "OX4P2W2K5",
+    "LF"
+   ]
+  },
+  {
+   "A": "O2C2F2",
+   "B": "O2X2CLF2",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 2,
+   "out": [
+    "O2XCLF2",
+    "O2XC2F2"
+   ]
+  },
+  {
+   "A": "C2A3",
+   "B": "O2XW",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 3,
+   "out": [
+    "C2A2",
+    "O2XWA"
+   ]
+  },
+  {
+   "A": "O3W2F",
+   "B": "X2C2P3F",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 3,
+   "out": [
+    "O2XPWF",
+    "OXC2P2WF"
+   ]
+  },
+  {
+   "A": "OXCP3L",
+   "B": "CW4L2K",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 2,
+   "out": [
+    "OXC2P3W4L3K"
+   ]
+  },
+  {
+   "A": "XCK3A2",
+   "B": "P2L3F",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 2,
+   "out": [
+    "XCP2L3K3A2F"
+   ]
+  },
+  {
+   "A": "O3CL4",
+   "B": "O3XL",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 5,
+   "out": [
+    "O2CL3",
+    "O2L2",
+    "O2X"
+   ]
+  },
+  {
+   "A": "P2W3A2",
+   "B": "O3C2WLA",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 3,
+   "out": [
+    "P2W2A2",
+    "O3C2W2LA"
+   ]
+  },
+  {
+   "A": "C2L2K3F",
+   "B": "XCP4KA",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 4,
+   "out": [
+    "C2P3L2K3A",
+    "XCPKF"
+   ]
+  },
+  {
+   "A": "OXWLK2A2",
+   "B": "O3LA",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 4,
+   "out": [
+    "O4XWL2K2A3"
+   ]
+  },
+  {
+   "A": "O3XKAF2",
+   "B": "X2CPK2",
+   "class": [
+    1,
+    1
+   ],
+   "broken": 3,
+   "out": [
+    "O3X3CPK3AF2"
+   ]
+  },
+  {
+   "A": "LA3F",
+   "B": "C3P2W2F",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 3,
+   "out": [
+    "CPWLA2F",
+    "C2PWAF"
+   ]
+  },
+  {
+   "A": "OL2A4F",
+   "B": "W3LF",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 3,
+   "out": [
+    "OWL2A4F",
+    "W2LF"
+   ]
+  },
+  {
+   "A": "PK3AF2",
+   "B": "O3X2AF",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 2,
+   "out": [
+    "O3X2PK3A2F3"
+   ]
+  },
+  {
+   "A": "C3PLK3",
+   "B": "O2X2PLA2",
+   "class": [
+    0,
+    1
+   ],
+   "broken": 2,
+   "out": [
+    "O2X2C3P2L2K3A2"
+   ]
+  }
+ ],
+ "iter_stats": {
+  "tested": 100,
+  "fixed": 100,
+  "changed": 0,
+  "fail": 0
+ }
+}

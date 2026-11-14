@@ -1,0 +1,44 @@
+{
+ "3": {
+  "ncase": 73,
+  "runs": 12,
+  "rule9e_ambiguous": 0,
+  "examples": []
+ },
+ "4": {
+  "ncase": 267,
+  "runs": 12,
+  "rule9e_ambiguous": 0,
+  "examples": []
+ },
+ "5": {
+  "ncase": 609,
+  "runs": 12,
+  "rule9e_ambiguous": 0,
+  "examples": []
+ },
+ "6": {
+  "ncase": 1561,
+  "runs": 12,
+  "rule9e_ambiguous": 0,
+  "examples": []
+ },
+ "7": {
+  "ncase": 3123,
+  "runs": 12,
+  "rule9e_ambiguous": 0,
+  "examples": []
+ },
+ "8": {
+  "ncase": 6582,
+  "runs": 12,
+  "rule9e_ambiguous": 0,
+  "examples": []
+ },
+ "9": {
+  "ncase": 11938,
+  "runs": 12,
+  "rule9e_ambiguous": 0,
+  "examples": []
+ }
+}

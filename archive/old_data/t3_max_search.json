@@ -1,0 +1,446 @@
+{
+ "records": [
+  {
+   "stage": "random",
+   "T": 40,
+   "max": 21,
+   "sizes": [
+    21,
+    7,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "pot_ok": true,
+   "formula": "OX3C2P2W4K7A2",
+   "feed": [
+    1,
+    3,
+    9,
+    3,
+    7,
+    5,
+    10,
+    2,
+    0
+   ],
+   "elements": [
+    "A",
+    "C",
+    "K",
+    "O",
+    "P",
+    "W",
+    "X"
+   ]
+  },
+  {
+   "stage": "random",
+   "T": 40,
+   "max": 26,
+   "sizes": [
+    26,
+    8,
+    2,
+    2,
+    2
+   ],
+   "pot_ok": true,
+   "formula": "OX4P9L4K3F5",
+   "feed": [
+    1,
+    4,
+    0,
+    12,
+    0,
+    12,
+    4,
+    2,
+    5
+   ],
+   "elements": [
+    "F",
+    "K",
+    "L",
+    "O",
+    "P",
+    "X"
+   ]
+  },
+  {
+   "stage": "random",
+   "T": 40,
+   "max": 38,
+   "sizes": [
+    38,
+    2
+   ],
+   "pot_ok": true,
+   "formula": "O2X3C2P7W9A10F5",
+   "feed": [
+    2,
+    3,
+    2,
+    7,
+    9,
+    1,
+    0,
+    10,
+    6
+   ],
+   "elements": [
+    "A",
+    "C",
+    "F",
+    "O",
+    "P",
+    "W",
+    "X"
+   ]
+  },
+  {
+   "stage": "random",
+   "T": 64,
+   "max": 40,
+   "sizes": [
+    40,
+    6,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "pot_ok": false,
+   "formula": "O10X8PWK3A17",
+   "feed": [
+    12,
+    8,
+    3,
+    2,
+    2,
+    16,
+    3,
+    18,
+    0
+   ],
+   "elements": [
+    "A",
+    "K",
+    "O",
+    "P",
+    "W",
+    "X"
+   ]
+  },
+  {
+   "stage": "hill",
+   "it": 346,
+   "max": 40,
+   "sizes": [
+    40,
+    20,
+    13,
+    13,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3
+   ],
+   "pot_ok": true,
+   "formula": "O5X4P5W6K16A2F2",
+   "feed": [
+    10,
+    16,
+    17,
+    13,
+    6,
+    2,
+    37,
+    23,
+    5
+   ],
+   "elements": [
+    "A",
+    "F",
+    "K",
+    "O",
+    "P",
+    "W",
+    "X"
+   ]
+  },
+  {
+   "stage": "random",
+   "T": 64,
+   "max": 46,
+   "sizes": [
+    46,
+    7,
+    7,
+    2,
+    2
+   ],
+   "pot_ok": true,
+   "formula": "O3X6CP2W13L4K14A3",
+   "feed": [
+    4,
+    7,
+    1,
+    3,
+    18,
+    8,
+    20,
+    3,
+    0
+   ],
+   "elements": [
+    "A",
+    "C",
+    "K",
+    "L",
+    "O",
+    "P",
+    "W",
+    "X"
+   ]
+  },
+  {
+   "stage": "hill",
+   "it": 156,
+   "max": 51,
+   "sizes": [
+    51,
+    42
+   ],
+   "pot_ok": false,
+   "formula": "O2X6P6K18A17F2",
+   "feed": [
+    4,
+    10,
+    13,
+    10,
+    2,
+    0,
+    33,
+    17,
+    4
+   ],
+   "elements": [
+    "A",
+    "F",
+    "K",
+    "O",
+    "P",
+    "X"
+   ]
+  },
+  {
+   "stage": "hill",
+   "it": 175,
+   "max": 51,
+   "sizes": [
+    51,
+    25,
+    19
+   ],
+   "pot_ok": false,
+   "formula": "O2X6C4P6K18A11F4",
+   "feed": [
+    4,
+    10,
+    13,
+    11,
+    2,
+    0,
+    34,
+    17,
+    4
+   ],
+   "elements": [
+    "A",
+    "C",
+    "F",
+    "K",
+    "O",
+    "P",
+    "X"
+   ]
+  },
+  {
+   "stage": "hill",
+   "it": 262,
+   "max": 51,
+   "sizes": [
+    51,
+    46
+   ],
+   "pot_ok": false,
+   "formula": "O2X4C13P5W3K18A2F4",
+   "feed": [
+    4,
+    10,
+    13,
+    11,
+    3,
+    0,
+    36,
+    16,
+    4
+   ],
+   "elements": [
+    "A",
+    "C",
+    "F",
+    "K",
+    "O",
+    "P",
+    "W",
+    "X"
+   ]
+  },
+  {
+   "stage": "random",
+   "T": 80,
+   "max": 66,
+   "sizes": [
+    66,
+    14
+   ],
+   "pot_ok": true,
+   "formula": "O2X6C10P6W2K24A14F2",
+   "feed": [
+    3,
+    9,
+    10,
+    7,
+    2,
+    0,
+    30,
+    17,
+    2
+   ],
+   "elements": [
+    "A",
+    "C",
+    "F",
+    "K",
+    "O",
+    "P",
+    "W",
+    "X"
+   ]
+  },
+  {
+   "stage": "hill",
+   "it": 23,
+   "max": 67,
+   "sizes": [
+    67,
+    16
+   ],
+   "pot_ok": false,
+   "formula": "O3X7C10P7W2K24A12F2",
+   "feed": [
+    4,
+    10,
+    10,
+    8,
+    2,
+    0,
+    30,
+    17,
+    2
+   ],
+   "elements": [
+    "A",
+    "C",
+    "F",
+    "K",
+    "O",
+    "P",
+    "W",
+    "X"
+   ]
+  },
+  {
+   "stage": "hill",
+   "it": 60,
+   "max": 68,
+   "sizes": [
+    68,
+    17
+   ],
+   "pot_ok": false,
+   "formula": "O3X7C10P7W2LK24A11F3",
+   "feed": [
+    4,
+    10,
+    10,
+    8,
+    2,
+    1,
+    30,
+    17,
+    3
+   ],
+   "elements": [
+    "A",
+    "C",
+    "F",
+    "K",
+    "L",
+    "O",
+    "P",
+    "W",
+    "X"
+   ]
+  },
+  {
+   "stage": "hill",
+   "it": 274,
+   "max": 68,
+   "sizes": [
+    68,
+    29
+   ],
+   "pot_ok": true,
+   "formula": "O3X7CP8W2K26A17F4",
+   "feed": [
+    4,
+    10,
+    13,
+    11,
+    2,
+    0,
+    36,
+    17,
+    4
+   ],
+   "elements": [
+    "A",
+    "C",
+    "F",
+    "K",
+    "O",
+    "P",
+    "W",
+    "X"
+   ]
+  }
+ ]
+}

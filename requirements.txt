@@ -1,0 +1,4 @@
+# 核心模拟器为纯标准库；绘图/渲染脚本需要 Pillow
+Pillow>=9.0
+# 部分旧图脚本可选使用 matplotlib
+# matplotlib>=3.5
