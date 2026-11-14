@@ -1,0 +1,1636 @@
+{
+ "library": {
+  "t8_total": 38,
+  "n_single_atoms": 3,
+  "n_multi": 35,
+  "multi_by_typesets": {
+   "KO": 7,
+   "KOP": 14,
+   "KP": 7,
+   "OP": 7
+  },
+  "multi_sizes": {
+   "2": 3,
+   "3": 7,
+   "4": 7,
+   "5": 10,
+   "6": 2,
+   "7": 2,
+   "8": 1,
+   "9": 1,
+   "10": 1,
+   "13": 1
+  },
+  "multi_active_dist": {
+   "0": 3,
+   "1": 3,
+   "2": 8,
+   "3": 16,
+   "4": 3,
+   "5": 1,
+   "7": 1
+  },
+  "multi_unique_under_mol_label": true,
+  "n_single_templates": 7,
+  "max_multi_size": 13
+ },
+ "wl_key_bug": {
+  "wl_key_non_invariant_forms": [
+   "O2K3",
+   "O3K2",
+   "O3P3K",
+   "O3P4K",
+   "P2K3",
+   "P3K2",
+   "O2P3",
+   "O3P2"
+  ],
+  "n_bad": 8,
+  "of_total": 38,
+  "demo": {
+   "formula": "O2P3",
+   "wl_key_library_form": "(5, ('O', 'O', 'P', 'P', 'P'), ((0, 2, 1), (0, 3, 2), (1, 2, 1), (1, 4, 2)))",
+   "wl_key_alt_order": "(5, ('O', 'O', 'P', 'P', 'P'), ((0, 2, 1), (0, 4, 2), (1, 2, 1), (1, 3, 2)))",
+   "mol_label_library_form": "OPPPO|0210002001",
+   "mol_label_alt_order": "OPPPO|0210002001",
+   "same_under_mol_label": true
+  }
+ },
+ "level6_closure": {
+  "max_trivalent_total": 10,
+  "bad_per_total": {
+   "2": 0,
+   "3": 0,
+   "4": 0,
+   "5": 0,
+   "6": 0,
+   "7": 0,
+   "8": 0,
+   "9": 0,
+   "10": 1
+  },
+  "bad_blocks": [
+   {
+    "atoms": [
+     "O",
+     "O",
+     "O",
+     "P",
+     "P",
+     "P",
+     "P",
+     "P",
+     "K",
+     "K"
+    ],
+    "edges": [
+     [
+      0,
+      4,
+      2
+     ],
+     [
+      0,
+      8,
+      1
+     ],
+     [
+      1,
+      5,
+      1
+     ],
+     [
+      1,
+      7,
+      1
+     ],
+     [
+      1,
+      9,
+      1
+     ],
+     [
+      2,
+      3,
+      2
+     ],
+     [
+      2,
+      6,
+      1
+     ],
+     [
+      5,
+      9,
+      1
+     ],
+     [
+      6,
+      9,
+      1
+     ],
+     [
+      7,
+      8,
+      2
+     ]
+    ],
+    "formula": "KKOOOPPPPP",
+    "counts": [
+     3,
+     5,
+     2
+    ]
+   }
+  ],
+  "seconds": 54.4
+ },
+ "t38_original": {
+  "substances": 100,
+  "runs_each": 20,
+  "blocks_by_mol_label": {
+   "single": 1560,
+   "multi": 1480
+  },
+  "blocks_by_wl_key": {
+   "single": 1560,
+   "BAD": 97,
+   "multi": 1383
+  },
+  "mol_bad_total": 0,
+  "wl_bad_total": 97
+ },
+ "t38b": {
+  "stats": {
+   "n_substances": 200,
+   "wl_bad_substances": 14
+  },
+  "wl_bad_substances": [
+   "XP2W3K3F",
+   "O3XCP2A3",
+   "P3LK2A4",
+   "O3P2L3",
+   "O3WLK2A2",
+   "O2X2CWK3",
+   "O3CK2",
+   "XP3LK2A",
+   "O3CK2F2",
+   "XP3WK2A2F",
+   "O3P3LKA",
+   "XP2LK3",
+   "O2XP3AF",
+   "P3W2LK2"
+  ],
+  "mol_bad_substances": [],
+  "ten_atom_examples": {
+   "O5X3KA": {
+    "blocks": 78,
+    "wl_bad": 0,
+    "mol_bad": 0
+   },
+   "O5X3PA": {
+    "blocks": 78,
+    "wl_bad": 0,
+    "mol_bad": 0
+   },
+   "OCP7W2KA2": {
+    "blocks": 104,
+    "wl_bad": 0,
+    "mol_bad": 0
+   }
+  }
+ },
+ "t15": {
+  "t15_total": 695,
+  "genuine_new": 689,
+  "false_positive": 6,
+  "genuine_sizes": {
+   "3": 6,
+   "4": 15,
+   "5": 40,
+   "6": 64,
+   "7": 61,
+   "8": 151,
+   "9": 74,
+   "10": 110,
+   "11": 77,
+   "12": 31,
+   "13": 16,
+   "14": 32,
+   "15": 2,
+   "16": 1,
+   "18": 2,
+   "20": 1,
+   "22": 1,
+   "26": 4,
+   "28": 1
+  },
+  "smallest_examples": [
+   {
+    "n": 3,
+    "tset": "KP",
+    "example": "CP2K",
+    "atoms": [
+     "P",
+     "K",
+     "P"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      2
+     ]
+    ]
+   },
+   {
+    "n": 3,
+    "tset": "KP",
+    "example": "CPK2",
+    "atoms": [
+     "K",
+     "P",
+     "K"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      2
+     ]
+    ]
+   },
+   {
+    "n": 3,
+    "tset": "KO",
+    "example": "O2CK",
+    "atoms": [
+     "O",
+     "K",
+     "O"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "n": 3,
+    "tset": "OP",
+    "example": "O2CP",
+    "atoms": [
+     "O",
+     "P",
+     "O"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "n": 3,
+    "tset": "KO",
+    "example": "OCK2",
+    "atoms": [
+     "O",
+     "K",
+     "K"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "n": 3,
+    "tset": "OP",
+    "example": "OCP2",
+    "atoms": [
+     "O",
+     "P",
+     "P"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      1
+     ]
+    ]
+   },
+   {
+    "n": 4,
+    "tset": "KP",
+    "example": "C2P3K",
+    "atoms": [
+     "P",
+     "K",
+     "P",
+     "P"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      1
+     ],
+     [
+      1,
+      3,
+      1
+     ],
+     [
+      2,
+      3,
+      1
+     ]
+    ]
+   },
+   {
+    "n": 4,
+    "tset": "KP",
+    "example": "C2PK3",
+    "atoms": [
+     "K",
+     "P",
+     "K",
+     "K"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      1
+     ],
+     [
+      1,
+      3,
+      1
+     ],
+     [
+      2,
+      3,
+      1
+     ]
+    ]
+   }
+  ]
+ },
+ "t15_full_rescan": {
+  "catalog_records": 84225,
+  "terminal_components": 149750,
+  "distinct_genuine_new_forms": 671,
+  "size_dist": {
+   "3": 6,
+   "4": 15,
+   "5": 40,
+   "6": 61,
+   "7": 60,
+   "8": 142,
+   "9": 69,
+   "10": 110,
+   "11": 77,
+   "12": 31,
+   "13": 16,
+   "14": 32,
+   "15": 2,
+   "16": 1,
+   "18": 2,
+   "20": 1,
+   "22": 1,
+   "26": 4,
+   "28": 1
+  },
+  "t15_entries": 695,
+  "t15_entries_distinct_mol_label": 677,
+  "t15_entries_genuine_distinct": 671,
+  "t15_entries_duplicate_isomorphic": 18,
+  "smallest_examples": [
+   {
+    "atoms": [
+     "P",
+     "K",
+     "P"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      2
+     ]
+    ],
+    "n": 3,
+    "example": "CP2K"
+   },
+   {
+    "atoms": [
+     "K",
+     "P",
+     "K"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      2
+     ]
+    ],
+    "n": 3,
+    "example": "CPK2"
+   },
+   {
+    "atoms": [
+     "O",
+     "K",
+     "O"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      1
+     ]
+    ],
+    "n": 3,
+    "example": "O2CK"
+   },
+   {
+    "atoms": [
+     "O",
+     "P",
+     "O"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      1
+     ]
+    ],
+    "n": 3,
+    "example": "O2CP"
+   },
+   {
+    "atoms": [
+     "O",
+     "K",
+     "K"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      1
+     ]
+    ],
+    "n": 3,
+    "example": "OCK2"
+   },
+   {
+    "atoms": [
+     "O",
+     "P",
+     "P"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      1
+     ]
+    ],
+    "n": 3,
+    "example": "OCP2"
+   },
+   {
+    "atoms": [
+     "P",
+     "K",
+     "P",
+     "P"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      1
+     ],
+     [
+      1,
+      3,
+      1
+     ],
+     [
+      2,
+      3,
+      1
+     ]
+    ],
+    "n": 4,
+    "example": "C2P3K"
+   },
+   {
+    "atoms": [
+     "K",
+     "P",
+     "K",
+     "K"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      1
+     ],
+     [
+      1,
+      3,
+      1
+     ],
+     [
+      2,
+      3,
+      1
+     ]
+    ],
+    "n": 4,
+    "example": "C2PK3"
+   },
+   {
+    "atoms": [
+     "O",
+     "K",
+     "O",
+     "O"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      1,
+      2,
+      1
+     ],
+     [
+      1,
+      3,
+      1
+     ]
+    ],
+    "n": 4,
+    "example": "O3KA2"
+   },
+   {
+    "atoms": [
+     "O",
+     "P",
+     "O",
+     "O"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      2,
+      1
+     ],
+     [
+      0,
+      3,
+      1
+     ],
+     [
+      1,
+      2,
+      1
+     ],
+     [
+      1,
+      3,
+      1
+     ],
+     [
+      2,
+      3,
+      1
+     ]
+    ],
+    "n": 4,
+    "example": "O3P"
+   }
+  ],
+  "seconds": 10.9
+ },
+ "t37": {
+  "O5X3KA": {
+   "outcomes_wl_key": 4,
+   "outcomes_mol_label": 2
+  },
+  "O5X3PA": {
+   "outcomes_wl_key": 4,
+   "outcomes_mol_label": 2
+  },
+  "OP5W3A": {
+   "outcomes_wl_key": 2,
+   "outcomes_mol_label": 2
+  },
+  "OWK5A3": {
+   "outcomes_wl_key": 2,
+   "outcomes_mol_label": 2
+  },
+  "OCP7W2KA2": {
+   "outcomes_wl_key": 8,
+   "outcomes_mol_label": 8
+  }
+ },
+ "genuine_example": {
+  "substance": "O3P5K2",
+  "atoms": [
+   "O",
+   "K",
+   "P",
+   "P",
+   "O",
+   "K",
+   "P",
+   "P",
+   "O",
+   "P"
+  ],
+  "n_atoms": 10,
+  "bad_branch_path": [
+   [
+    6,
+    0
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    8,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    1,
+    0
+   ]
+  ],
+  "expected_block": {
+   "atoms": [
+    "O",
+    "K",
+    "P",
+    "P",
+    "O",
+    "K",
+    "P",
+    "P",
+    "O",
+    "P"
+   ],
+   "edges": [
+    [
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     3,
+     2
+    ],
+    [
+     1,
+     9,
+     2
+    ],
+    [
+     2,
+     8,
+     2
+    ],
+    [
+     4,
+     5,
+     1
+    ],
+    [
+     4,
+     6,
+     1
+    ],
+    [
+     4,
+     9,
+     1
+    ],
+    [
+     5,
+     6,
+     1
+    ],
+    [
+     5,
+     7,
+     1
+    ],
+    [
+     7,
+     8,
+     1
+    ]
+   ]
+  },
+  "default_product_equals_catalog": true,
+  "alt_ok": true,
+  "alt_product": {
+   "atoms": [
+    "O",
+    "K",
+    "P",
+    "P",
+    "O",
+    "K",
+    "P",
+    "O",
+    "P",
+    "P"
+   ],
+   "edges": [
+    [
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     2,
+     2
+    ],
+    [
+     1,
+     9,
+     2
+    ],
+    [
+     2,
+     3,
+     1
+    ],
+    [
+     3,
+     4,
+     1
+    ],
+    [
+     3,
+     5,
+     1
+    ],
+    [
+     4,
+     5,
+     1
+    ],
+    [
+     4,
+     9,
+     1
+    ],
+    [
+     5,
+     6,
+     1
+    ],
+    [
+     6,
+     7,
+     1
+    ],
+    [
+     6,
+     8,
+     1
+    ],
+    [
+     7,
+     8,
+     2
+    ]
+   ],
+   "formula": "O3P5K2"
+  },
+  "alt_product_embeddable": true,
+  "alt_product_place": {
+   "0": [
+    2,
+    -2
+   ],
+   "1": [
+    1,
+    -1
+   ],
+   "2": [
+    2,
+    -1
+   ],
+   "3": [
+    0,
+    0
+   ],
+   "4": [
+    -2,
+    1
+   ],
+   "5": [
+    -2,
+    0
+   ],
+   "6": [
+    -3,
+    -1
+   ],
+   "7": [
+    -4,
+    -2
+   ],
+   "8": [
+    -5,
+    0
+   ],
+   "9": [
+    -1,
+    -1
+   ]
+  },
+  "alt_block_structures": [
+   {
+    "atoms": [
+     "O",
+     "K",
+     "P",
+     "P",
+     "O",
+     "K",
+     "P",
+     "P",
+     "O",
+     "P"
+    ],
+    "edges": [
+     [
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      3,
+      2
+     ],
+     [
+      1,
+      9,
+      2
+     ],
+     [
+      2,
+      8,
+      2
+     ],
+     [
+      4,
+      5,
+      1
+     ],
+     [
+      4,
+      6,
+      1
+     ],
+     [
+      4,
+      9,
+      1
+     ],
+     [
+      5,
+      6,
+      1
+     ],
+     [
+      5,
+      7,
+      1
+     ],
+     [
+      7,
+      8,
+      1
+     ]
+    ],
+    "rems": [
+     0,
+     0,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1,
+     0,
+     0
+    ],
+    "kind": "BAD",
+    "label": "OOOPPPPPKK|000200010020010000010101000000000000001001200",
+    "place": {
+     "0": [
+      1,
+      2
+     ],
+     "1": [
+      2,
+      1
+     ],
+     "2": [
+      -4,
+      -1
+     ],
+     "3": [
+      0,
+      4
+     ],
+     "4": [
+      0,
+      0
+     ],
+     "5": [
+      -1,
+      0
+     ],
+     "6": [
+      0,
+      1
+     ],
+     "7": [
+      -2,
+      -1
+     ],
+     "8": [
+      -3,
+      -2
+     ],
+     "9": [
+      2,
+      -1
+     ]
+    }
+   }
+  ],
+  "alt_block_matches_expected": true,
+  "alt_product_is_default_fixed_point": false,
+  "default_product_formula": "O3P5K2",
+  "variants": [
+   {
+    "formula": "O3P5K2A",
+    "alt_ok": true,
+    "found_bad_branch": true,
+    "out_of_library_blocks": 1,
+    "product_embeddable": true,
+    "product_formula": "O3P5K2A"
+   },
+   {
+    "formula": "O3P5WK2",
+    "alt_ok": true,
+    "found_bad_branch": true,
+    "out_of_library_blocks": 1,
+    "product_embeddable": true,
+    "product_formula": "O3P5WK2"
+   },
+   {
+    "formula": "O3XP5K2",
+    "alt_ok": true,
+    "found_bad_branch": true,
+    "out_of_library_blocks": 1,
+    "product_embeddable": true,
+    "product_formula": "O3XP5K2"
+   },
+   {
+    "formula": "O3C2P5K2",
+    "alt_ok": true,
+    "found_bad_branch": true,
+    "out_of_library_blocks": 1,
+    "product_embeddable": true,
+    "product_formula": "O3C2P5K2"
+   },
+   {
+    "formula": "O3CP5K2F",
+    "alt_ok": true,
+    "found_bad_branch": true,
+    "out_of_library_blocks": 1,
+    "product_embeddable": true,
+    "product_formula": "O3CP5K2F"
+   }
+  ],
+  "terminal_out_of_library": [
+   {
+    "formula": "O3P",
+    "n": 4,
+    "stable": true,
+    "components": [
+     {
+      "atoms": [
+       "O",
+       "P",
+       "O",
+       "O"
+      ],
+      "edges": [
+       [
+        0,
+        1,
+        1
+       ],
+       [
+        0,
+        2,
+        1
+       ],
+       [
+        0,
+        3,
+        1
+       ],
+       [
+        1,
+        2,
+        1
+       ],
+       [
+        1,
+        3,
+        1
+       ],
+       [
+        2,
+        3,
+        1
+       ]
+      ],
+      "rems": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "in_library": false,
+      "has_same_element_bond": true
+     }
+    ]
+   },
+   {
+    "formula": "O2CK",
+    "n": 4,
+    "stable": true,
+    "components": [
+     {
+      "atoms": [
+       "O",
+       "K",
+       "O"
+      ],
+      "edges": [
+       [
+        0,
+        1,
+        2
+       ],
+       [
+        0,
+        2,
+        1
+       ],
+       [
+        1,
+        2,
+        1
+       ]
+      ],
+      "rems": [
+       0,
+       0,
+       1
+      ],
+      "in_library": false,
+      "has_same_element_bond": true
+     }
+    ]
+   },
+   {
+    "formula": "OCK2",
+    "n": 4,
+    "stable": true,
+    "components": [
+     {
+      "atoms": [
+       "O",
+       "K",
+       "K"
+      ],
+      "edges": [
+       [
+        0,
+        1,
+        2
+       ],
+       [
+        0,
+        2,
+        1
+       ],
+       [
+        1,
+        2,
+        1
+       ]
+      ],
+      "rems": [
+       0,
+       0,
+       1
+      ],
+      "in_library": false,
+      "has_same_element_bond": true
+     }
+    ]
+   },
+   {
+    "formula": "OCP2",
+    "n": 4,
+    "stable": true,
+    "components": [
+     {
+      "atoms": [
+       "O",
+       "P",
+       "P"
+      ],
+      "edges": [
+       [
+        0,
+        1,
+        2
+       ],
+       [
+        0,
+        2,
+        1
+       ],
+       [
+        1,
+        2,
+        1
+       ]
+      ],
+      "rems": [
+       0,
+       0,
+       1
+      ],
+      "in_library": false,
+      "has_same_element_bond": true
+     }
+    ]
+   },
+   {
+    "formula": "O2CP",
+    "n": 4,
+    "stable": true,
+    "components": [
+     {
+      "atoms": [
+       "O",
+       "P",
+       "O"
+      ],
+      "edges": [
+       [
+        0,
+        1,
+        2
+       ],
+       [
+        0,
+        2,
+        1
+       ],
+       [
+        1,
+        2,
+        1
+       ]
+      ],
+      "rems": [
+       0,
+       0,
+       1
+      ],
+      "in_library": false,
+      "has_same_element_bond": true
+     }
+    ]
+   },
+   {
+    "formula": "CPK2",
+    "n": 4,
+    "stable": true,
+    "components": [
+     {
+      "atoms": [
+       "K",
+       "P",
+       "K"
+      ],
+      "edges": [
+       [
+        0,
+        1,
+        1
+       ],
+       [
+        0,
+        2,
+        1
+       ],
+       [
+        1,
+        2,
+        2
+       ]
+      ],
+      "rems": [
+       1,
+       0,
+       0
+      ],
+      "in_library": false,
+      "has_same_element_bond": true
+     }
+    ]
+   },
+   {
+    "formula": "CP2K",
+    "n": 4,
+    "stable": true,
+    "components": [
+     {
+      "atoms": [
+       "P",
+       "K",
+       "P"
+      ],
+      "edges": [
+       [
+        0,
+        1,
+        1
+       ],
+       [
+        0,
+        2,
+        1
+       ],
+       [
+        1,
+        2,
+        2
+       ]
+      ],
+      "rems": [
+       1,
+       0,
+       0
+      ],
+      "in_library": false,
+      "has_same_element_bond": true
+     }
+    ]
+   },
+   {
+    "formula": "C2P3K",
+    "n": 6,
+    "stable": true,
+    "components": [
+     {
+      "atoms": [
+       "P",
+       "K",
+       "P",
+       "P"
+      ],
+      "edges": [
+       [
+        0,
+        1,
+        1
+       ],
+       [
+        0,
+        2,
+        1
+       ],
+       [
+        1,
+        2,
+        1
+       ],
+       [
+        1,
+        3,
+        1
+       ],
+       [
+        2,
+        3,
+        1
+       ]
+      ],
+      "rems": [
+       1,
+       0,
+       0,
+       1
+      ],
+      "in_library": false,
+      "has_same_element_bond": true
+     }
+    ]
+   },
+   {
+    "formula": "O3KA2",
+    "n": 6,
+    "stable": true,
+    "components": [
+     {
+      "atoms": [
+       "O",
+       "K",
+       "O",
+       "O"
+      ],
+      "edges": [
+       [
+        0,
+        1,
+        1
+       ],
+       [
+        0,
+        2,
+        1
+       ],
+       [
+        1,
+        2,
+        1
+       ],
+       [
+        1,
+        3,
+        1
+       ]
+      ],
+      "rems": [
+       1,
+       0,
+       1,
+       2
+      ],
+      "in_library": false,
+      "has_same_element_bond": true
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 81.0
+}

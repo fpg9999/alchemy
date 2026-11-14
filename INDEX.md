@@ -59,3 +59,6 @@
 - images/t28_bond_hierarchy.png、images/t28_decomposition_process.png、images/t28_energy_rule.png：规则分级、分解流程、能量模型图
 - 	19_big_forms.json（超大分子 6 级块）、	19_extended_forms.json（扩展枚举）
 - 复核脚本：	12_verify_big.py（140/108 原子严格摆放复核）、	12_theory.py（幂等性）
+- **T39（2026-11-15）骨架库复核**：`t39_library_verify.py`、`t39_render.py`、`docs/T39_SKELETON_LIBRARY_VERIFY.md`、`t39_library_verify.json`、`t39_t15_rescan.json`、`images/t39_library_outside.png`
+  - 发现 `wl_key` 不是同构不变量（T38 的库外例子全为假阳性；T15 的 695→671）；
+  - 真·库外 6 级块仅 `O3P5K2` 一族（三价 ≤10 穷举）；终态库外形态 671 个（全目录重扫）。
