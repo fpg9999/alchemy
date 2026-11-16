@@ -1,0 +1,109 @@
+{
+ "seed": 20261117,
+ "runs": [
+  {
+   "T0": 12,
+   "final_N": 5250,
+   "events": 12438,
+   "reactions": {
+    "complete": 21693,
+    "incomplete": 11716,
+    "none": 1312
+   },
+   "decomp": 17,
+   "n_final": 379,
+   "n_new_total": 112,
+   "n_new_final": 79,
+   "max_atoms": 19,
+   "top": [
+    [
+     "CF",
+     1289
+    ],
+    [
+     "F2",
+     428
+    ],
+    [
+     "C2",
+     416
+    ],
+    [
+     "XA",
+     243
+    ],
+    [
+     "C2A",
+     222
+    ],
+    [
+     "XF2",
+     220
+    ]
+   ],
+   "new_examples": [
+    "OK3",
+    "O3K",
+    "O3X4K3",
+    "X2C2KA2F",
+    "XC2KAF",
+    "OX2C2A2F",
+    "OXC2AF",
+    "XCKA2"
+   ],
+   "file": "G:\\AI work\\deepseek\\work1\\alchemy\\t56_sens_T12.json"
+  },
+  {
+   "T0": 20,
+   "final_N": 5539,
+   "events": 17107,
+   "reactions": {
+    "complete": 45903,
+    "incomplete": 12253,
+    "none": 1364
+   },
+   "decomp": 7,
+   "n_final": 270,
+   "n_new_total": 96,
+   "n_new_final": 81,
+   "max_atoms": 23,
+   "top": [
+    [
+     "CF",
+     2782
+    ],
+    [
+     "F2",
+     365
+    ],
+    [
+     "C2",
+     348
+    ],
+    [
+     "XA",
+     319
+    ],
+    [
+     "OK",
+     167
+    ],
+    [
+     "XC2A2",
+     129
+    ]
+   ],
+   "new_examples": [
+    "OK3",
+    "O3K",
+    "O3XCA",
+    "O4XK4A",
+    "O3X2CK4A",
+    "O3XC3K4A",
+    "OX5CK3A2F",
+    "O5XK4A2F"
+   ],
+   "file": "G:\\AI work\\deepseek\\work1\\alchemy\\t56_sens_T20.json"
+  }
+ ]
+}

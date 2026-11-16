@@ -41,6 +41,7 @@ if BASE not in sys.path:
     sys.path.insert(0, BASE)
 
 import natural_engine as E
+import pot_all as P
 
 # ------------------------------------------------------------------ 参数
 L = 10000.0                 # 正方形边长（单位）
@@ -54,6 +55,40 @@ TARGET_CROSSINGS = 750      # 前 500 分钟的设计穿越次数（要求 >=500
 N_BATCH = 1500              # 每批每元素单质数量
 SPECIES = ["C2", "X2", "O2"]  # 冰-冰、晶-晶、秩-秩（聚素单质）
 BATCHES = [("A", "元素单质"), ("B", "聚素单质")]
+
+
+def default_load_spec(n_batch=N_BATCH):
+    """T55 默认投料：两批聚素单质（A 批元素单质 + B 批聚素单质）。"""
+    spec = []
+    for tag, desc in BATCHES:
+        for f in SPECIES:
+            spec.append((tag, desc, f, n_batch))
+    return spec
+
+
+def build_templates(load_spec):
+    """按投料清单构建分子模板（formula -> Mol）。
+
+    优先使用 substances.json 的权威结构；其余（如散素 K2/A2/F2）用 F(v) 的单分子产物。
+    """
+    import pot_all as P
+    subs = json.load(open(BASE + r"\substances.json", encoding="utf-8"))
+    byf = {r["formula"]: r for r in subs}
+    templates = {}
+    for item in load_spec:
+        formula = item[2]
+        if formula in templates:
+            continue
+        if formula in byf:
+            templates[formula] = E.mol_from_record(byf[formula])
+            continue
+        vec = P.parse_formula(formula)
+        prods = E.complete_products(tuple(vec))
+        if not prods:
+            raise ValueError("无法为单质 %s 生成结构" % formula)
+        mol = next((m for m in prods if m["formula"] == formula), prods[0])
+        templates[formula] = mol
+    return templates, byf
 
 SNAP_MINUTES = [0, 25, 50, 100, 200, 300, 400, 500,
                 600, 700, 800, 900, 950, 980, 995, 1000]
@@ -126,11 +161,15 @@ def fold_axis(x, d):
 
 class KineticEnvironment:
     def __init__(self, minutes=MINUTES, n_batch=N_BATCH, seed=20261116,
-                 event_limit=EVENT_SAMPLE_LIMIT, snap_minutes=None, t0=T0):
+                 event_limit=EVENT_SAMPLE_LIMIT, snap_minutes=None, t0=T0,
+                 load_spec=None, known_formulas=None, color_mode="elementset"):
         self.rng = random.Random(seed)
         self.minutes = minutes
         self.t0 = t0
         self.n_batch = n_batch
+        self.load_spec = list(load_spec) if load_spec is not None else default_load_spec(n_batch)
+        self.known_override = known_formulas
+        self.color_mode = color_mode
         self.event_limit = event_limit
         self.snap_minutes = set(snap_minutes if snap_minutes is not None else SNAP_MINUTES)
         self.seed = seed
@@ -163,32 +202,31 @@ class KineticEnvironment:
 
     # -------------------------------------------------------------- 初始化
     def _load_templates(self):
-        subs = json.load(open(BASE + r"\substances.json", encoding="utf-8"))
-        byf = {r["formula"]: r for r in subs}
-        for f in SPECIES:
-            self._templates[f] = E.mol_from_record(byf[f])
-        # 初始即为已知（29 聚素）物质
-        self.known = set(r["formula"] for r in subs)
+        templates, byf = build_templates(self.load_spec)
+        self._templates = dict(templates)
+        # 已知物质集合：默认 29 聚素；T56 等混合体系可传入 84,225 目录分子式集合
+        self.known = set(self.known_override) if self.known_override is not None \
+            else set(byf)
 
     def _init_particles(self):
         self._load_templates()
         rng = self.rng
-        v0 = design_v0(self.n_batch * len(SPECIES) * len(BATCHES))
+        total = sum(int(item[3]) for item in self.load_spec)
+        v0 = design_v0(total)
         self.v0 = v0
-        for bi, (tag, _desc) in enumerate(BATCHES):
-            for f in SPECIES:
-                mol = self._templates[f]
-                for _ in range(self.n_batch):
-                    ang = rng.random() * 2.0 * math.pi
-                    x = rng.random() * L
-                    y = rng.random() * L
-                    p = Particle(self.next_pid, mol, x, y,
-                                 v0 * math.cos(ang), v0 * math.sin(ang),
-                                 f, 0)
-                    self.next_pid += 1
-                    self.particles[p.pid] = p
-                    self.fcnt[f] += 1
-                    self.atom_count += len(mol["atoms"])
+        for tag, _desc, f, count in self.load_spec:
+            mol = self._templates[f]
+            for _ in range(int(count)):
+                ang = rng.random() * 2.0 * math.pi
+                x = rng.random() * L
+                y = rng.random() * L
+                p = Particle(self.next_pid, mol, x, y,
+                             v0 * math.cos(ang), v0 * math.sin(ang),
+                             f, 0)
+                self.next_pid += 1
+                self.particles[p.pid] = p
+                self.fcnt[f] += 1
+                self.atom_count += len(mol["atoms"])
         self.n0 = len(self.particles)
         self.atoms0 = self.atom_count
 
@@ -332,6 +370,7 @@ class KineticEnvironment:
             self.next_pid += 1
             self.particles[np_.pid] = np_
             self.fcnt[m["formula"]] += 1
+            self._templates.setdefault(m["formula"], m)
             self._record_new(m["formula"], t, info, m)
         # 事件样本（蓄水池）
         self.events_total += 1
@@ -445,8 +484,21 @@ class KineticEnvironment:
         if len(ps) > 3000:
             ps = rng.sample(ps, 3000)
         pts = []
+        if self.color_mode == "bitmask":
+            # 6+ 元素体系：按元素集合的 9 位掩码着色（legend 自动给出元素组合）
+            legend = {}
+            for p in ps:
+                elems = set(p.mol["atoms"])
+                code = 0
+                for e in elems:
+                    code |= 1 << P.ORDER.index(e)
+                key = str(code)
+                if key not in legend:
+                    legend[key] = "+".join(P.CN[e] for e in P.ORDER if e in elems)
+                pts.append([round(p.x, 1), round(p.y, 1), code])
+            return {"t": t, "points": pts, "legend": legend,
+                    "color_mode": "element_bitmask"}
         for p in ps:
-            f = p.mol["formula"]
             elems = set(p.mol["atoms"])
             if elems == {"O"}:
                 col = 0
@@ -507,9 +559,8 @@ class KineticEnvironment:
         cfg = {
             "L": L, "diagonal": round(DIAG, 3), "radius": RADIUS, "eps": EPS,
             "T0": self.t0, "T_end": T_END, "minutes": self.minutes,
-            "species": SPECIES,
-            "batches": [{"tag": tag, "desc": desc,
-                         "per_species": self.n_batch} for tag, desc in BATCHES],
+            "load_spec": [{"tag": tag, "desc": desc, "formula": f, "count": int(c)}
+                          for tag, desc, f, c in self.load_spec],
             "initial_particles": self.n0, "initial_atoms": self.atoms0,
             "v0": round(self.v0, 1),
             "design_target_crossings": TARGET_CROSSINGS,
@@ -567,17 +618,18 @@ class KineticEnvironment:
 
 
 # ================================================================== 对照组
-def run_control(minutes=500, n_batch=N_BATCH, seed=20261116):
+def run_control(minutes=500, n_batch=N_BATCH, seed=20261116, load_spec=None):
     """关闭化学反应的对照：验证 500 次角-对角穿越要求。"""
     rng = random.Random(seed)
-    subs = json.load(open(BASE + r"\substances.json", encoding="utf-8"))
-    byf = {r["formula"]: r for r in subs}
-    mols = [E.mol_from_record(byf[f]) for f in SPECIES]
-    n0 = n_batch * len(SPECIES) * len(BATCHES)
+    if load_spec is None:
+        load_spec = default_load_spec(n_batch)
+    templates, _byf = build_templates(load_spec)
+    n0 = sum(int(item[3]) for item in load_spec)
     v0 = design_v0(n0)
     particles = []
-    for f, mol in zip(SPECIES, mols):
-        for _ in range(n_batch * len(BATCHES)):
+    for tag, desc, f, count in load_spec:
+        mol = templates[f]
+        for _ in range(int(count)):
             ang = rng.random() * 2.0 * math.pi
             particles.append(Particle(len(particles), mol, rng.random() * L,
                                       rng.random() * L, v0 * math.cos(ang),
@@ -638,7 +690,9 @@ def run_control(minutes=500, n_batch=N_BATCH, seed=20261116):
         "config": {"minutes": minutes, "n_particles": n0, "v0": round(v0, 1),
                    "radius": RADIUS, "eps": EPS, "L": L, "seed": seed,
                    "chemical_reactions": False,
-                   "mean_free_path": round(lam, 2)},
+                   "mean_free_path": round(lam, 2),
+                   "load_spec": [{"tag": t, "desc": d, "formula": f,
+                                  "count": int(c)} for t, d, f, c in load_spec]},
         "stats": stats,
         "timeseries": ts,
         "runtime_s": round(time.time() - t_start, 1),
