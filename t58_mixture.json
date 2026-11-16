@@ -1,0 +1,403 @@
+{
+ "meta": {
+  "seed": 20261120,
+  "selection": "从 84,225 目录按原子数 2..12 每档随机抽 4 种，并补足缺失元素",
+  "n_species": 44,
+  "total_molecules": 14000,
+  "total_atoms": 73216,
+  "mean_atoms": 5.23,
+  "elements_covered": [
+   "A",
+   "C",
+   "F",
+   "K",
+   "L",
+   "O",
+   "P",
+   "W",
+   "X"
+  ],
+  "element_atoms": {
+   "O": 9966,
+   "X": 8764,
+   "C": 4909,
+   "P": 10574,
+   "W": 9805,
+   "L": 3504,
+   "K": 6537,
+   "A": 9937,
+   "F": 9220
+  },
+  "size_range": [
+   2,
+   12
+  ],
+  "area_range": [
+   0.1257,
+   0.754
+  ],
+  "count_range": [
+   139,
+   832
+  ],
+  "strict_larger_area_fewer_count": true,
+  "area_model": "A = π·R0²·(n/2)，R = R0·sqrt(n/2)，R0=0.2（T57 规则）",
+  "count_model": "count = max(20, round(K/n_atoms))，K = total/Σ(1/n)",
+  "max_reaction_atoms": 20,
+  "env_L": 400000.0
+ },
+ "species": [
+  {
+   "formula": "F2",
+   "atoms": 2,
+   "radius": 0.2,
+   "area": 0.1257,
+   "count": 832,
+   "zh": "焰焰"
+  },
+  {
+   "formula": "PK",
+   "atoms": 2,
+   "radius": 0.2,
+   "area": 0.1257,
+   "count": 832,
+   "zh": "势沌"
+  },
+  {
+   "formula": "WA",
+   "atoms": 2,
+   "radius": 0.2,
+   "area": 0.1257,
+   "count": 832,
+   "zh": "流气"
+  },
+  {
+   "formula": "XA",
+   "atoms": 2,
+   "radius": 0.2,
+   "area": 0.1257,
+   "count": 832,
+   "zh": "晶气"
+  },
+  {
+   "formula": "KAF",
+   "atoms": 3,
+   "radius": 0.2449,
+   "area": 0.1885,
+   "count": 555,
+   "zh": "沌气焰"
+  },
+  {
+   "formula": "O2A",
+   "atoms": 3,
+   "radius": 0.2449,
+   "area": 0.1885,
+   "count": 555,
+   "zh": "秩秩气"
+  },
+  {
+   "formula": "OXF",
+   "atoms": 3,
+   "radius": 0.2449,
+   "area": 0.1885,
+   "count": 555,
+   "zh": "秩晶焰"
+  },
+  {
+   "formula": "XF2",
+   "atoms": 3,
+   "radius": 0.2449,
+   "area": 0.1885,
+   "count": 555,
+   "zh": "晶焰焰"
+  },
+  {
+   "formula": "CW2L",
+   "atoms": 4,
+   "radius": 0.2828,
+   "area": 0.2513,
+   "count": 416,
+   "zh": "冰流流电"
+  },
+  {
+   "formula": "K2F2",
+   "atoms": 4,
+   "radius": 0.2828,
+   "area": 0.2513,
+   "count": 416,
+   "zh": "沌沌焰焰"
+  },
+  {
+   "formula": "OCPK",
+   "atoms": 4,
+   "radius": 0.2828,
+   "area": 0.2513,
+   "count": 416,
+   "zh": "秩冰势沌"
+  },
+  {
+   "formula": "P2W2",
+   "atoms": 4,
+   "radius": 0.2828,
+   "area": 0.2513,
+   "count": 416,
+   "zh": "势势流流"
+  },
+  {
+   "formula": "OCP2A",
+   "atoms": 5,
+   "radius": 0.3162,
+   "area": 0.3142,
+   "count": 333,
+   "zh": "秩冰势势气"
+  },
+  {
+   "formula": "P2W3",
+   "atoms": 5,
+   "radius": 0.3162,
+   "area": 0.3142,
+   "count": 333,
+   "zh": "势势流流流"
+  },
+  {
+   "formula": "PWLA2",
+   "atoms": 5,
+   "radius": 0.3162,
+   "area": 0.3142,
+   "count": 333,
+   "zh": "势流电气气"
+  },
+  {
+   "formula": "X2WLK",
+   "atoms": 5,
+   "radius": 0.3162,
+   "area": 0.3142,
+   "count": 333,
+   "zh": "晶晶流电沌"
+  },
+  {
+   "formula": "O2W4",
+   "atoms": 6,
+   "radius": 0.3464,
+   "area": 0.377,
+   "count": 277,
+   "zh": "秩秩流流流流"
+  },
+  {
+   "formula": "OP2F3",
+   "atoms": 6,
+   "radius": 0.3464,
+   "area": 0.377,
+   "count": 277,
+   "zh": "秩势势焰焰焰"
+  },
+  {
+   "formula": "XCA3F",
+   "atoms": 6,
+   "radius": 0.3464,
+   "area": 0.377,
+   "count": 277,
+   "zh": "晶冰气气气焰"
+  },
+  {
+   "formula": "XP2WL2",
+   "atoms": 6,
+   "radius": 0.3464,
+   "area": 0.377,
+   "count": 277,
+   "zh": "晶势势流电电"
+  },
+  {
+   "formula": "CWK2F3",
+   "atoms": 7,
+   "radius": 0.3742,
+   "area": 0.4398,
+   "count": 238,
+   "zh": "冰流沌沌焰焰焰"
+  },
+  {
+   "formula": "O2P3WK",
+   "atoms": 7,
+   "radius": 0.3742,
+   "area": 0.4398,
+   "count": 238,
+   "zh": "秩秩势势势流沌"
+  },
+  {
+   "formula": "O2XC2LF",
+   "atoms": 7,
+   "radius": 0.3742,
+   "area": 0.4398,
+   "count": 238,
+   "zh": "秩秩晶冰冰电焰"
+  },
+  {
+   "formula": "OX3WAF",
+   "atoms": 7,
+   "radius": 0.3742,
+   "area": 0.4398,
+   "count": 238,
+   "zh": "秩晶晶晶流气焰"
+  },
+  {
+   "formula": "O4X2KF",
+   "atoms": 8,
+   "radius": 0.4,
+   "area": 0.5027,
+   "count": 208,
+   "zh": "秩秩秩秩晶晶沌焰"
+  },
+  {
+   "formula": "OXW3LA2",
+   "atoms": 8,
+   "radius": 0.4,
+   "area": 0.5027,
+   "count": 208,
+   "zh": "秩晶流流流电气气"
+  },
+  {
+   "formula": "X3P3KA",
+   "atoms": 8,
+   "radius": 0.4,
+   "area": 0.5027,
+   "count": 208,
+   "zh": "晶晶晶势势势沌气"
+  },
+  {
+   "formula": "XP2WA4",
+   "atoms": 8,
+   "radius": 0.4,
+   "area": 0.5027,
+   "count": 208,
+   "zh": "晶势势流气气气气"
+  },
+  {
+   "formula": "OCW3K4",
+   "atoms": 9,
+   "radius": 0.4243,
+   "area": 0.5655,
+   "count": 185,
+   "zh": "秩冰流流流沌沌沌沌"
+  },
+  {
+   "formula": "OX2P2W3F",
+   "atoms": 9,
+   "radius": 0.4243,
+   "area": 0.5655,
+   "count": 185,
+   "zh": "秩晶晶势势流流流焰"
+  },
+  {
+   "formula": "OX3C3K2",
+   "atoms": 9,
+   "radius": 0.4243,
+   "area": 0.5655,
+   "count": 185,
+   "zh": "秩晶晶晶冰冰冰沌沌"
+  },
+  {
+   "formula": "OXC2P4F",
+   "atoms": 9,
+   "radius": 0.4243,
+   "area": 0.5655,
+   "count": 185,
+   "zh": "秩晶冰冰势势势势焰"
+  },
+  {
+   "formula": "C2PW3LA3",
+   "atoms": 10,
+   "radius": 0.4472,
+   "area": 0.6283,
+   "count": 166,
+   "zh": "冰冰势流流流电气气气"
+  },
+  {
+   "formula": "O4XWKA2F",
+   "atoms": 10,
+   "radius": 0.4472,
+   "area": 0.6283,
+   "count": 166,
+   "zh": "秩秩秩秩晶流沌气气焰"
+  },
+  {
+   "formula": "O4XWLKA2",
+   "atoms": 10,
+   "radius": 0.4472,
+   "area": 0.6283,
+   "count": 166,
+   "zh": "秩秩秩秩晶流电沌气气"
+  },
+  {
+   "formula": "P3W2L3A2",
+   "atoms": 10,
+   "radius": 0.4472,
+   "area": 0.6283,
+   "count": 166,
+   "zh": "势势势流流电电电气气"
+  },
+  {
+   "formula": "O4XC3KF2",
+   "atoms": 11,
+   "radius": 0.469,
+   "area": 0.6912,
+   "count": 151,
+   "zh": "秩秩秩秩晶冰冰冰沌焰焰"
+  },
+  {
+   "formula": "OP4W2LAF2",
+   "atoms": 11,
+   "radius": 0.469,
+   "area": 0.6912,
+   "count": 151,
+   "zh": "秩势势势势流流电气焰焰"
+  },
+  {
+   "formula": "X5C2P3K",
+   "atoms": 11,
+   "radius": 0.469,
+   "area": 0.6912,
+   "count": 151,
+   "zh": "晶晶晶晶晶冰冰势势势沌"
+  },
+  {
+   "formula": "XP2L2A4F2",
+   "atoms": 11,
+   "radius": 0.469,
+   "area": 0.6912,
+   "count": 151,
+   "zh": "晶势势电电气气气气焰焰"
+  },
+  {
+   "formula": "O2C2P3A4F",
+   "atoms": 12,
+   "radius": 0.4899,
+   "area": 0.754,
+   "count": 139,
+   "zh": "秩秩冰冰势势势气气气气焰"
+  },
+  {
+   "formula": "O3X2PWLA3F",
+   "atoms": 12,
+   "radius": 0.4899,
+   "area": 0.754,
+   "count": 139,
+   "zh": "秩秩秩晶晶势流电气气气焰"
+  },
+  {
+   "formula": "O6X3CPA",
+   "atoms": 12,
+   "radius": 0.4899,
+   "area": 0.754,
+   "count": 139,
+   "zh": "秩秩秩秩秩秩晶晶晶冰势气"
+  },
+  {
+   "formula": "OCPK5A2F2",
+   "atoms": 12,
+   "radius": 0.4899,
+   "area": 0.754,
+   "count": 139,
+   "zh": "秩冰势沌沌沌沌沌气气焰焰"
+  }
+ ]
+}

@@ -68,6 +68,13 @@
   9000/9000 达标，min 696.7）、`t55_sensitivity.py`（T0=6/8/12/20°C 敏感性）、`t55_analysis.py`/`t55_render.py`、
   `docs/T55_KINETIC_ENV.md`、`docs/T55_ENGINE_AUDIT.md`、`images/t55_*.png`（8 张）；
   结论：主实验快速退火到 99.5% `OXC`；温度标度敏感性下出现不完全反应/自分解/新物质。
+- **T58（2026-11-16）九元素随机物质库大投料实验**：`t58_nine_elements.py`、`t58_analysis.py`、
+  `t58_render.py`、`t58_mixture.json`、`t58_result.json`、`t58_control_no_chem.json`、
+  `docs/T58_NINE_ELEMENTS.md`、`images/t58_*.png`（11 张）；从 84,225 目录随机抽 44 种物质
+  （2~12 原子、九元素全覆盖）、14000 分子/73216 原子（史上最大）、L=400000²；
+  终态 15,823 分子、**937 种分子式、99 种元素组合、1,927 种目录外新物质**；
+  尺寸双峰（2 原子 11,252 + 6~20 原子 4,571）；capped（>20 原子保护）占 21.8%（末段 25.8%）；
+  穿越 14000/14000 全部 ≥500（min 730.3）。
 - **T57（2026-11-16）全部29种聚素 + 面积模型实验**：`t57_all29_area.py`、`t57_sensitivity.py`、
   `t57_analysis.py`、`t57_render.py`、`t57_area_result.json`、`t57_area_control.json`、
   `t57_uniform_result.json`、`t57_design.json`、`t57_sensitivity.json`、

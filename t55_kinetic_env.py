@@ -98,6 +98,17 @@ EVENT_SAMPLE_LIMIT = 20000
 DT = 1.0                       # 每分钟一步
 
 
+def set_geometry(new_L):
+    """切换环境边长（T58 等需要更大区域/更稀薄气体时使用）。
+
+    所有函数都从模块全局读取 L / DIAG，因此必须在创建 KineticEnvironment 之前调用。
+    """
+    global L, DIAG
+    L = float(new_L)
+    DIAG = math.sqrt(2.0) * L
+    return L, DIAG
+
+
 def mean_free_path(n):
     """2D 硬圆平均自由程：λ = L²/(2√2 N r)。"""
     if n <= 1:
@@ -198,7 +209,8 @@ class KineticEnvironment:
     def __init__(self, minutes=MINUTES, n_batch=N_BATCH, seed=20261116,
                  event_limit=EVENT_SAMPLE_LIMIT, snap_minutes=None, t0=T0,
                  load_spec=None, known_formulas=None, color_mode="elementset",
-                 area_model="uniform", weighted_partner=False):
+                 area_model="uniform", weighted_partner=False,
+                 max_reaction_atoms=None):
         self.rng = random.Random(seed)
         self.minutes = minutes
         self.t0 = t0
@@ -208,6 +220,8 @@ class KineticEnvironment:
         self.color_mode = color_mode
         self.area_model = area_model
         self.weighted_partner = weighted_partner
+        # 计算保护：合并后原子数超过上限的碰撞不执行反应（弹性），用于 >16 原子大分子体系
+        self.max_reaction_atoms = max_reaction_atoms
         self.event_limit = event_limit
         self.snap_minutes = set(snap_minutes if snap_minutes is not None else SNAP_MINUTES)
         self.seed = seed
@@ -394,6 +408,17 @@ class KineticEnvironment:
         rng = self.rng
         mi = p.mol
         mj = q.mol
+        if self.max_reaction_atoms is not None and \
+                len(mi["atoms"]) + len(mj["atoms"]) > self.max_reaction_atoms:
+            # 计算保护：超大合并体系不做反应，只做弹性碰撞 + 衰减
+            self.reaction_counts["capped"] += 1
+            for z in (p, q):
+                s = z.speed * (1.0 - EPS)
+                ang = rng.random() * 2.0 * math.pi
+                z.vx = s * math.cos(ang)
+                z.vy = s * math.sin(ang)
+                z.speed = s
+            return
         res = E.resolve([mi, mj], T)
         typ = res["type"]
         state = res["state"]
@@ -523,6 +548,7 @@ class KineticEnvironment:
                             default=0)
             row = {
                 "t": t, "T": T, "N": len(self.particles),
+                "capped": self.reaction_counts["capped"],
                 "atoms": self.atom_count,
                 "mean_atoms": round(self.atom_count / len(self.particles), 3) if self.particles else 0,
                 "max_atoms": max_atoms,
@@ -544,9 +570,11 @@ class KineticEnvironment:
             row["d_complete"] = self.reaction_counts["complete"] - getattr(self, "_last_c", 0)
             row["d_incomplete"] = self.reaction_counts["incomplete"] - getattr(self, "_last_i", 0)
             row["d_none"] = self.reaction_counts["none"] - getattr(self, "_last_n", 0)
+            row["d_capped"] = self.reaction_counts["capped"] - getattr(self, "_last_capped", 0)
             self._last_c = self.reaction_counts["complete"]
             self._last_i = self.reaction_counts["incomplete"]
             self._last_n = self.reaction_counts["none"]
+            self._last_capped = self.reaction_counts["capped"]
             row["top"] = {f: c for f, c in self.fcnt.most_common(8) if c > 0}
             self.time_series.append(row)
             if t % FORMULA_SAMPLE_MINUTES == 0 or t in self.snap_minutes:
@@ -662,6 +690,7 @@ class KineticEnvironment:
             "v0": round(self.v0, 1),
             "area_model": self.area_model,
             "weighted_partner": self.weighted_partner,
+            "max_reaction_atoms": self.max_reaction_atoms,
             "radius_base": RADIUS,
             "area_formula": ("A = π·RADIUS²·(n_atoms/2)，R = RADIUS·sqrt(n/2)"
                              if self.area_model == "count" else "A = π·RADIUS²（固定）"),
