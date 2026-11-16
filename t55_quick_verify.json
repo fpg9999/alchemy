@@ -1,0 +1,13 @@
+{
+ "total13": {
+  "compositions": 105,
+  "ambiguous": [],
+  "nonlibrary_hits": 0
+ },
+ "random30": {
+  "max_block": 13,
+  "classes": 36,
+  "nonlibrary_hits": 0
+ },
+ "seconds": 443.0
+}
