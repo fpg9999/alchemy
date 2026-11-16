@@ -124,6 +124,8 @@
 
 ![速度 / 分子数 / 平均与最大原子数（cap=20）](../images/t58_state_sizes.png)
 
+![2D 粒子环境快照（8 帧，element_bitmask 着色）](../images/t58_snapshots.png)
+
 ### 2.3 终态组成
 
 终态：**15,823 个分子、937 种分子式、99 种元素组合**。
