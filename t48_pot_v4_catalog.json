@@ -1,0 +1,78 @@
+{
+ "catalog": 84225,
+ "stats": {
+  "v4_same_as_v3": 69610,
+  "v4_equals_catalog": 69480,
+  "substances": 84225,
+  "v4_differs_from_v3": 14615,
+  "v4_differs_catalog_structure": 14745
+ },
+ "examples": [
+  {
+   "formula": "C2P3KA",
+   "v3": [
+    "CCPPPKA|000100010000111011100"
+   ],
+   "v4": [
+    "CPPKACP|010000011011010001010"
+   ]
+  },
+  {
+   "formula": "C2P3KA",
+   "kind": "struct_diff"
+  },
+  {
+   "formula": "C2PWK3",
+   "v3": [
+    "CCPWKKK|000001000100111101100"
+   ],
+   "v4": [
+    "CPWKKCK|000100011011001001100"
+   ]
+  },
+  {
+   "formula": "C2PWK3",
+   "kind": "struct_diff"
+  },
+  {
+   "formula": "CLK3AF",
+   "kind": "struct_diff"
+  },
+  {
+   "formula": "CP3KAF",
+   "v3": [
+    "CPPPKAF|001000001111110100000"
+   ],
+   "v4": [
+    "CPPKAFP|010000011011010001010"
+   ]
+  },
+  {
+   "formula": "CP3KAF",
+   "kind": "struct_diff"
+  },
+  {
+   "formula": "CP3LKA",
+   "v3": [
+    "CPPPLKA|001000001111011010000"
+   ],
+   "v4": [
+    "CPPLKAP|010000001111100000011"
+   ]
+  },
+  {
+   "formula": "CP3LKA",
+   "kind": "struct_diff"
+  },
+  {
+   "formula": "CPWK3F",
+   "v3": [
+    "CPWKKKF|000010011101100001100"
+   ],
+   "v4": [
+    "CPWKKFK|000100011011001001100"
+   ]
+  }
+ ],
+ "seconds": 1059.7
+}
