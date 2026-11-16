@@ -36,6 +36,8 @@ if BASE not in sys.path:
 
 DEFAULT_A = os.path.join(BASE, "t59_phaseA_result.json")
 DEFAULT_B = os.path.join(BASE, "t59_phaseB_result.json")
+DEFAULT_A_HF = os.path.join(BASE, "t59_phaseA_hf_result.json")
+DEFAULT_B_HF = os.path.join(BASE, "t59_phaseB_hf_result.json")
 DEFAULT_STATE = os.path.join(BASE, "t59_stateA.json")
 DEFAULT_LOADS = os.path.join(BASE, "t59_loads.json")
 DEFAULT_CONTROL = os.path.join(BASE, "t59_control_A.json")
@@ -586,8 +588,150 @@ def analyze_history(t58_path, A, B, loads):
     }
 
 
+# ---------------------------------------------------------------- cap60 对照
+def _cap_metrics(result, catalog, catalog_zh):
+    """从 phase 结果提取 cap 对照需要的指标（HF 结果直接读，cap40 复用 phase dict）。"""
+    cfg = result.get("config") or {}
+    sm = result.get("summary") or {}
+    final = result.get("final_composition") or {}
+    total_m = sum(v.get("count", 0) for v in final.values())
+    total_a = sum((v.get("atoms") or formula_atoms(f)) * v.get("count", 0)
+                  for f, v in final.items())
+    size_dist = Counter()
+    for f, v in final.items():
+        size_dist[v.get("atoms") or formula_atoms(f)] += v.get("count", 0)
+    rc = {k: int((sm.get("reaction_counts") or {}).get(k, 0))
+          for k in ("complete", "incomplete", "none", "capped")}
+    total_rc = sum(rc.values()) or 1
+    top = []
+    for f, v in sorted(final.items(), key=lambda kv: -kv[1].get("count", 0))[:13]:
+        top.append({"formula": f, "zh": formula_zh(f, catalog_zh),
+                    "count": v.get("count", 0),
+                    "atoms": v.get("atoms") or formula_atoms(f),
+                    "in_catalog": f in catalog})
+    giant = sum(c for a, c in size_dist.items() if a >= 39)
+    giant_atoms = sum(a * c for a, c in size_dist.items() if a >= 39)
+    return {
+        "max_reaction_atoms": cfg.get("max_reaction_atoms"),
+        "final_N": sm.get("final_N", total_m),
+        "final_atoms": sm.get("final_atoms", total_a),
+        "distinct_formulas": len(final),
+        "mean_atoms": rnd(total_a / total_m, 3) if total_m else None,
+        "max_atoms": max(size_dist) if size_dist else None,
+        "capped_total": rc.get("capped", 0),
+        "capped_share": rnd(rc.get("capped", 0) / total_rc, 5),
+        "complete": rc.get("complete", 0),
+        "incomplete": rc.get("incomplete", 0),
+        "none": rc.get("none", 0),
+        "net_events": int(sm.get("events_total") or 0),
+        "decomp_events": sm.get("decomp_events"),
+        "new_substances": len(result.get("new_substances") or {}),
+        "giant_molecules_ge39": giant,
+        "giant_atoms": giant_atoms,
+        "size_distribution": [{"atoms": a, "molecules": size_dist[a]}
+                              for a in sorted(size_dist)],
+        "top10": top[:10],
+        "top13": top,
+        "runtime_s": sm.get("runtime_s"),
+        "config": {k: cfg.get(k) for k in
+                   ("L", "T0", "minutes", "max_reaction_atoms",
+                    "initial_particles", "initial_atoms", "seed_initial_count")},
+    }
+
+
+def analyze_cap60(a_path, b_path, A40, B40, catalog, catalog_zh):
+    if not (os.path.exists(a_path) and os.path.exists(b_path)):
+        return None
+    a60 = _cap_metrics(load_json(a_path), catalog, catalog_zh)
+    b60 = _cap_metrics(load_json(b_path), catalog, catalog_zh)
+    a40 = _cap_metrics({"config": A40.get("config"),
+                        "summary": A40.get("summary"),
+                        "final_composition": {
+                            r["formula"]: {"count": r["count"],
+                                           "atoms": r["atoms"]}
+                            for r in (A40.get("final_table") or [])},
+                        "new_substances": {}},
+                       catalog, catalog_zh)
+    b40 = _cap_metrics({"config": B40.get("config"),
+                        "summary": B40.get("summary"),
+                        "final_composition": {
+                            r["formula"]: {"count": r["count"],
+                                           "atoms": r["atoms"]}
+                            for r in (B40.get("final_table") or [])},
+                        "new_substances": {}},
+                       catalog, catalog_zh)
+    # new_substances 修正（_cap_metrics 传入的是空 dict）
+    a40["new_substances"] = A40.get("new_substances_count")
+    b40["new_substances"] = B40.get("new_substances_count")
+
+    def cmp_rows(m40, m60):
+        keys = [
+            ("终态分子数", "final_N"), ("终态原子数", "final_atoms"),
+            ("终态结构种数", "distinct_formulas"), ("平均原子数", "mean_atoms"),
+            ("最大原子数", "max_atoms"), ("capped 次数", "capped_total"),
+            ("capped 占判定比例", "capped_share"),
+            ("complete", "complete"), ("incomplete", "incomplete"),
+            ("none", "none"), ("净变化事件", "net_events"),
+            ("新物质数", "new_substances"), ("39/40+ 巨型分子", "giant_molecules_ge39"),
+        ]
+        rows = []
+        for lab, k in keys:
+            v40, v60 = m40.get(k), m60.get(k)
+            rows.append({"metric": lab, "cap40": v40, "cap60": v60,
+                         "delta": (round(v60 - v40, 6)
+                                   if isinstance(v40, (int, float)) and
+                                   isinstance(v60, (int, float)) else None)})
+        return rows
+
+    def size_cmp(m40, m60):
+        d40 = {d["atoms"]: d["molecules"] for d in m40["size_distribution"]}
+        d60 = {d["atoms"]: d["molecules"] for d in m60["size_distribution"]}
+        return [{"atoms": a,
+                 "cap40": d40.get(a, 0), "cap60": d60.get(a, 0)}
+                for a in sorted(set(d40) | set(d60))]
+
+    def giant_label(m):
+        sd = {d["atoms"]: d["molecules"] for d in m["size_distribution"]}
+        return [(a, sd[a]) for a in sorted(sd) if a >= 39]
+
+    conclusion = [
+        "cap40 下 A 43 种 / B 67 种，39/40 原子巨型 A 33 个（另 1 个 37 原子）/ B 56 个；"
+        "cap60 下 A 只剩 9 种（最大 18 原子）、B 13 种（3 个 59/60 原子巨型）。",
+        "capped 次数：A 32,985→%s（占判定 %.3f%%→%.3f%%），B 94,949→%s（%.3f%%→%.3f%%）；"
+        "cap40 的巨型堆积与额外结构主要是 cap 边界效应，不是化学稳定产物。"
+        % (fmt_c(a60["capped_total"]), 100.0 * a40["capped_share"],
+           100.0 * a60["capped_share"], fmt_c(b60["capped_total"]),
+           100.0 * b40["capped_share"], 100.0 * b60["capped_share"]),
+        "真正稳定核心：CF、O2XP2WK2A、O2XP2WK2A2、OXCPWK、L2、LF、O4X2P5W2K3A2、"
+        "O3XP4WK3A、OXCPWKA、OCPKA（cap60 B top13 除 3 个 59/60 巨型外均属这些）。",
+        "A cap60 最大仅 18 原子（O4X2P5W2K3A2），说明 1000→0°C 完全退火后化学稳定上限约 18 原子；"
+        "B cap60 的 3 个 59/60 原子巨型是极少数未拆解的巨大 F 产物（各 1 个），不影响整体结论。",
+    ]
+    return {
+        "files": {"A_cap60": os.path.basename(a_path),
+                  "B_cap60": os.path.basename(b_path),
+                  "A_cap40": "t59_phaseA_result.json",
+                  "B_cap40": "t59_phaseB_result.json"},
+        "A": a60, "B": b60,
+        "cap40": {"A": a40, "B": b40},
+        "compare": {"A": cmp_rows(a40, a60), "B": cmp_rows(b40, b60)},
+        "size_distribution_compare": {"A": size_cmp(a40, a60),
+                                      "B": size_cmp(b40, b60)},
+        "giant_compare": {"A": {"cap40": giant_label(a40),
+                                "cap60": giant_label(a60)},
+                          "B": {"cap40": giant_label(b40),
+                                "cap60": giant_label(b60)}},
+        "conclusion": conclusion,
+    }
+
+
+def fmt_c(v):
+    return "{:,}".format(int(v or 0))
+
+
 # ---------------------------------------------------------------- 主流程
-def analyze_main(a_path, b_path, state_path, loads_path, control_path, t58_path):
+def analyze_main(a_path, b_path, state_path, loads_path, control_path, t58_path,
+                 a_hf_path=None, b_hf_path=None):
     catalog, catalog_zh = load_catalog(BASE)
     known29 = [r.get("formula") for r in
                (load_json(os.path.join(BASE, "substances.json"))
@@ -663,6 +807,9 @@ def analyze_main(a_path, b_path, state_path, loads_path, control_path, t58_path)
     analysis["structures"] = {"top30": structures, **structure_stats}
     analysis["history"] = history
     analysis["control"] = control
+    cap60 = analyze_cap60(a_hf_path or DEFAULT_A_HF, b_hf_path or DEFAULT_B_HF,
+                          A, B, catalog, catalog_zh)
+    analysis["cap60"] = cap60
 
     key = OrderedDict()
     key["loads"] = {
@@ -717,6 +864,18 @@ def analyze_main(a_path, b_path, state_path, loads_path, control_path, t58_path)
     }
     key["structures"] = structure_stats
     key["history"] = history["table"]
+    if cap60:
+        key["cap60"] = {
+            "A": {k: cap60["A"][k] for k in
+                  ("max_reaction_atoms", "final_N", "final_atoms",
+                   "distinct_formulas", "mean_atoms", "max_atoms",
+                   "capped_total", "capped_share", "giant_molecules_ge39")},
+            "B": {k: cap60["B"][k] for k in
+                  ("max_reaction_atoms", "final_N", "final_atoms",
+                   "distinct_formulas", "mean_atoms", "max_atoms",
+                   "capped_total", "capped_share", "giant_molecules_ge39")},
+            "conclusion": cap60["conclusion"],
+        }
     analysis["key_numbers"] = key
     caveats = [
         "event_samples 为蓄水池抽样（50000 上限）：A 174,549 / B 206,740 净事件，"
@@ -751,6 +910,8 @@ def main(argv=None):
     ap.add_argument("--loads", default=DEFAULT_LOADS)
     ap.add_argument("--control", default=DEFAULT_CONTROL)
     ap.add_argument("--t58", default=DEFAULT_T58)
+    ap.add_argument("--a-hf", default=DEFAULT_A_HF)
+    ap.add_argument("--b-hf", default=DEFAULT_B_HF)
     ap.add_argument("--out", default=DEFAULT_OUT)
     args = ap.parse_args(argv)
     if not os.path.exists(args.a) or not os.path.exists(args.b):
@@ -758,7 +919,7 @@ def main(argv=None):
         return 2
     t0 = datetime.datetime.now()
     analysis = analyze_main(args.a, args.b, args.state, args.loads,
-                            args.control, args.t58)
+                            args.control, args.t58, args.a_hf, args.b_hf)
     with open(args.out, "w", encoding="utf-8") as fh:
         json.dump(analysis, fh, ensure_ascii=False, indent=1)
     print("[saved] %s (%.1fs) size %.1f MB"

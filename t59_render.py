@@ -617,9 +617,9 @@ def chart_top20_compare(a, out):
         c.txt(X, y1 + 10, "%g" % v, size=13, anchor="ma")
     c.d.rectangle(box, outline="#333", width=2)
     c.txt((x0 + x1) / 2, y1 + 42, "终态分子数（对数轴）", size=16, anchor="ma")
-    n = len(rows)
+    n = len(top)
     row_h = (y1 - y0) / max(1, n)
-    for i, r in enumerate(rows):
+    for i, r in enumerate(top):
         cy = y0 + row_h * (i + 0.5)
         label = "%s  %s（%s 原子）%s" % (
             r["formula"], r.get("zh") or "",
@@ -1185,7 +1185,7 @@ def chart_conservation(a, out):
         c.d.line([x0, Y, x1, Y], fill="#eee", width=1)
         c.txt(x0 - 8, Y, fmt_num(v), size=12, anchor="rm")
     bw = (x1 - x0) / len(els) * 0.18
-    for i, r in enumerate(rows):
+    for i, r in enumerate(top):
         X = x0 + (x1 - x0) / len(els) * (i + 0.5)
         for val, colr, off in ((r["A_initial"], BLUE, -1.5 * bw),
                                (r["A_final"], "#1abc9c", -0.5 * bw),
@@ -1259,6 +1259,145 @@ def chart_conservation(a, out):
     return c.save(out)
 
 
+# ---------------------------------------------------------------- ⑫ cap40 vs cap60
+def chart_cap_compare(a, out):
+    c60 = a.get("cap60") or {}
+    if not c60:
+        raise RuntimeError("analysis.cap60 为空")
+    A40 = (c60.get("cap40") or {}).get("A") or {}
+    B40 = (c60.get("cap40") or {}).get("B") or {}
+    A60 = c60.get("A") or {}
+    B60 = c60.get("B") or {}
+    W, H = 1600, 1060
+    c = Chart(W, H,
+              "12 cap=40（主实验）vs cap=60（高保真对照）：结构数/max/capped/尺寸分布",
+              "同一投料与种子，仅 max_reaction_atoms 40→60；cap40 的 43/67 种与 39/40 原子巨型堆积"
+              "主要是 cap 边界效应")
+    for idx, (tag, m40, m60, xoff) in enumerate((("A", A40, A60, 100),
+                                                 ("B", B40, B60, 850))):
+        c.txt(xoff, 108, "phase %s" % tag, size=19, bold=True, fill="#111")
+        # 三个指标盒
+        metrics = [
+            ("终态结构种数", m40.get("distinct_formulas"), m60.get("distinct_formulas"),
+             lambda v: "%d 种" % v),
+            ("最大原子数", m40.get("max_atoms"), m60.get("max_atoms"),
+             lambda v: "%d" % v),
+            ("capped 次数", m40.get("capped_total"), m60.get("capped_total"),
+             lambda v: fmt_num(v)),
+        ]
+        for i, (lab, v40, v60, fmt) in enumerate(metrics):
+            bx = xoff + i * 235
+            box = (bx, 150, bx + 218, 330)
+            c.d.rectangle(box, outline="#ddd", width=1)
+            c.txt(bx + 12, 158, lab, size=14, bold=True)
+            vmax = max([v40 or 0, v60 or 0, 1]) * 1.3
+            c.d.rectangle([bx + 30, 215, bx + 30, 300], outline="#ccc")
+            for j, (val, colr) in enumerate(((v40 or 0, "#95a5a6"),
+                                             (v60 or 0, "#2e86de"))):
+                X = bx + 70 + j * 70
+                h = (val / vmax) * 70
+                c.d.rectangle([X - 22, 300 - h, X + 22, 300], fill=colr,
+                              outline="#333")
+                c.txt(X, 302, fmt(val), size=11, anchor="ma")
+            c.legend(bx + 20, 318, [("#95a5a6", "cap40"), ("#2e86de", "cap60")],
+                     size=10, row_h=0, cols=2, col_w=80, swatch=9)
+        # 尺寸分布
+        box2 = (xoff, 380, xoff + 720, 700)
+        sd40 = {d["atoms"]: d["molecules"] for d in
+                (m40.get("size_distribution") or [])}
+        sd60 = {d["atoms"]: d["molecules"] for d in
+                (m60.get("size_distribution") or [])}
+        xs = sorted(set(sd40) | set(sd60))
+        ymax = max(list(sd40.values()) + list(sd60.values()) + [1]) * 2.0
+        yt = [1, 10, 100, 1000, 10000]
+        v = 100000
+        while v <= ymax:
+            yt.append(v)
+            v *= 10
+        mx, my = c.frame(box2, (0.5, max(xs) + 0.5), (1, ymax),
+                         ([2, 5, 9, 18, 39] if tag == "A"
+                          else [2, 6, 10, 18, 39, 60]), yt,
+                         logy=True, ytick_fmt=lambda v: "%g" % v)
+        bw = (mx(2) - mx(1)) * 0.32
+        for x in xs:
+            for val, colr, off in ((sd40.get(x, 0), "#95a5a6", -bw / 2),
+                                   (sd60.get(x, 0), "#2e86de", bw / 2)):
+                if val <= 0:
+                    continue
+                X = mx(x) + off
+                Y = my(val)
+                c.d.rectangle([X - bw / 2, Y, X + bw / 2, box2[3]],
+                              fill=colr, outline="#333", width=1)
+        c.rot(box2[0] - 50, (box2[1] + box2[3]) / 2, "分子数（对数）", size=13)
+        c.txt((box2[0] + box2[2]) / 2, box2[3] + 34, "分子原子数", size=14,
+              anchor="ma")
+        c.txt(box2[0] + 8, box2[1] - 22, "尺寸分布：cap40（灰）vs cap60（蓝）",
+              size=13, bold=True)
+    data_note(c, [
+        "A：结构 43→9 种、最大 40→18 原子、capped 32,985→11 次（占判定 0.403%→0.000%）；"
+        "B：67→13 种、最大 40→60 原子、capped 94,949→4,947（0.441%→0.026%）。",
+        "cap60 下 A 无 39/40 原子巨型；B 仅 3 个 59/60 原子巨型（各 1 个）。"
+        "真正稳定核心：CF、O2XP2WK2A/O2XP2WK2A2、OXCPWK、L2、LF、O4X2P5W2K3A2、"
+        "O3XP4WK3A、OXCPWKA、OCPKA。",
+        "结论：cap40 的额外结构与 39/40 原子巨型主要是 cap 边界造成的；提高 cap 后体系收敛到 9/13 种。",
+    ], y=900)
+    return c.save(out)
+
+
+# ---------------------------------------------------------------- ⑬ cap60 top13
+def chart_cap_top(a, out):
+    c60 = a.get("cap60") or {}
+    B60 = c60.get("B") or {}
+    top = B60.get("top13") or B60.get("top10") or []
+    W, H = 1600, 920
+    c = Chart(W, H,
+              "13 cap=60 的 B 终态 top13（高保真）：稳定核心与残余 59/60 巨型",
+              "cap60 B 共 13 种结构；数量条形（对数）+ 原子数标注；"
+              "59/60 原子巨型各 1 个，是 cap 边界内残余的巨大 F 产物")
+    if not top:
+        raise RuntimeError("cap60 B top13 为空")
+    box = (520, 170, 1450, 780)
+    vmax = max([r.get("count") or 1 for r in top] + [1]) * 2.2
+    x0, y0, x1, y1 = box
+    logmin, logmax = 0.0, math.log10(max(vmax, 10))
+
+    def mx(v):
+        v = max(1.0, float(v))
+        return max(x0 + 2.0, x0 + (math.log10(v) - logmin) /
+                   (logmax - logmin) * (x1 - x0))
+
+    yt = [1, 10, 100, 1000, 10000]
+    for v in yt:
+        if v > vmax:
+            continue
+        X = mx(v)
+        c.d.line([X, y0, X, y1], fill="#e9e9e9", width=1)
+        c.d.line([X, y1, X, y1 + 6], fill="#333", width=1)
+        c.txt(X, y1 + 10, "%g" % v, size=12, anchor="ma")
+    c.d.rectangle(box, outline="#333", width=2)
+    c.txt((x0 + x1) / 2, y1 + 40, "终态数量（对数轴）", size=15, anchor="ma")
+    n = len(top)
+    row_h = (y1 - y0) / max(1, n)
+    for i, r in enumerate(top):
+        cy = y0 + row_h * (i + 0.5)
+        giant = (r.get("atoms") or 0) >= 59
+        colr = ORANGE if giant else BLUE
+        c.d.rectangle([x0, cy - row_h * 0.32, mx(r.get("count") or 0),
+                       cy + row_h * 0.32], fill=colr, outline="#333", width=1)
+        c.txt(x0 - 10, cy, "#%d %s（%d 原子）"
+              % (i + 1, r.get("formula"), r.get("atoms") or 0),
+              size=12, anchor="rm")
+        c.txt(mx(r.get("count") or 0) + 6, cy, fmt_commas(r.get("count")),
+              size=12, anchor="lm")
+    data_note(c, [
+        "cap60 B：13 种结构 / 38,528 分子 / 230,133 原子；前 8 种（CF、O2XP2WK2A2、L2、LF、"
+        "OXCPWK、O4X2P5W2K3A2、O3XP4WK3A、OXCPWKA）即稳定核心，随后是 O2XP2K2A、WA。",
+        "剩余 3 个为 59/60 原子巨型（各 1 个），是 cap=60 边界内残余的巨大 F 产物；"
+        "cap40 下相应位置是 39/40 原子巨型（33+56 个），说明巨型堆积由 cap 边界决定。",
+    ], y=870)
+    return c.save(out)
+
+
 # ---------------------------------------------------------------- main
 CHARTS = [
     ("loads", "t59_loads.png", chart_loads),
@@ -1272,6 +1411,8 @@ CHARTS = [
     ("top30_bars", "t59_top30_bars.png", chart_top30_bars),
     ("reaction_capped", "t59_reaction_capped.png", chart_reaction_capped),
     ("conservation", "t59_conservation.png", chart_conservation),
+    ("cap_compare", "t59_cap_compare.png", chart_cap_compare),
+    ("cap_top", "t59_cap_top.png", chart_cap_top),
 ]
 
 
@@ -1327,3 +1468,5 @@ def main(argv=None):
 
 if __name__ == "__main__":
     sys.exit(main())
+
+

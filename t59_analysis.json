@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-11-17 00:20:33",
+  "generated": "2026-11-17 00:33:45",
   "files": {
    "phaseA": "t59_phaseA_result.json",
    "phaseB": "t59_phaseB_result.json",
@@ -30646,6 +30646,1222 @@
    }
   ]
  },
+ "cap60": {
+  "files": {
+   "A_cap60": "t59_phaseA_hf_result.json",
+   "B_cap60": "t59_phaseB_hf_result.json",
+   "A_cap40": "t59_phaseA_result.json",
+   "B_cap40": "t59_phaseB_result.json"
+  },
+  "A": {
+   "max_reaction_atoms": 60,
+   "final_N": 27351,
+   "final_atoms": 150103,
+   "distinct_formulas": 9,
+   "mean_atoms": 5.488,
+   "max_atoms": 18,
+   "capped_total": 11,
+   "capped_share": 0.0,
+   "complete": 8107678,
+   "incomplete": 64968,
+   "none": 3764,
+   "net_events": 176664,
+   "decomp_events": 3,
+   "new_substances": 5520,
+   "giant_molecules_ge39": 0,
+   "giant_atoms": 0,
+   "size_distribution": [
+    {
+     "atoms": 2,
+     "molecules": 15981
+    },
+    {
+     "atoms": 5,
+     "molecules": 1742
+    },
+    {
+     "atoms": 9,
+     "molecules": 6063
+    },
+    {
+     "atoms": 10,
+     "molecules": 388
+    },
+    {
+     "atoms": 11,
+     "molecules": 886
+    },
+    {
+     "atoms": 18,
+     "molecules": 2291
+    }
+   ],
+   "top10": [
+    {
+     "formula": "CF",
+     "zh": "冰焰",
+     "count": 9403,
+     "atoms": 2,
+     "in_catalog": true
+    },
+    {
+     "formula": "O2XP2WK2A",
+     "zh": "秩2晶势2流沌2气",
+     "count": 6063,
+     "atoms": 9,
+     "in_catalog": true
+    },
+    {
+     "formula": "L2",
+     "zh": "电2",
+     "count": 3755,
+     "atoms": 2,
+     "in_catalog": true
+    },
+    {
+     "formula": "O4X2P5W2K3A2",
+     "zh": "秩4晶2势5流2沌3气2",
+     "count": 2291,
+     "atoms": 18,
+     "in_catalog": false
+    },
+    {
+     "formula": "LF",
+     "zh": "电焰",
+     "count": 2057,
+     "atoms": 2,
+     "in_catalog": true
+    },
+    {
+     "formula": "OCPKA",
+     "zh": "秩冰势沌气",
+     "count": 1742,
+     "atoms": 5,
+     "in_catalog": true
+    },
+    {
+     "formula": "O3XP3WK2A",
+     "zh": "秩3晶势3流沌2气",
+     "count": 886,
+     "atoms": 11,
+     "in_catalog": true
+    },
+    {
+     "formula": "WA",
+     "zh": "流气",
+     "count": 766,
+     "atoms": 2,
+     "in_catalog": true
+    },
+    {
+     "formula": "O2XP2WK2A2",
+     "zh": "秩2晶势2流沌2气2",
+     "count": 388,
+     "atoms": 10,
+     "in_catalog": true
+    }
+   ],
+   "top13": [
+    {
+     "formula": "CF",
+     "zh": "冰焰",
+     "count": 9403,
+     "atoms": 2,
+     "in_catalog": true
+    },
+    {
+     "formula": "O2XP2WK2A",
+     "zh": "秩2晶势2流沌2气",
+     "count": 6063,
+     "atoms": 9,
+     "in_catalog": true
+    },
+    {
+     "formula": "L2",
+     "zh": "电2",
+     "count": 3755,
+     "atoms": 2,
+     "in_catalog": true
+    },
+    {
+     "formula": "O4X2P5W2K3A2",
+     "zh": "秩4晶2势5流2沌3气2",
+     "count": 2291,
+     "atoms": 18,
+     "in_catalog": false
+    },
+    {
+     "formula": "LF",
+     "zh": "电焰",
+     "count": 2057,
+     "atoms": 2,
+     "in_catalog": true
+    },
+    {
+     "formula": "OCPKA",
+     "zh": "秩冰势沌气",
+     "count": 1742,
+     "atoms": 5,
+     "in_catalog": true
+    },
+    {
+     "formula": "O3XP3WK2A",
+     "zh": "秩3晶势3流沌2气",
+     "count": 886,
+     "atoms": 11,
+     "in_catalog": true
+    },
+    {
+     "formula": "WA",
+     "zh": "流气",
+     "count": 766,
+     "atoms": 2,
+     "in_catalog": true
+    },
+    {
+     "formula": "O2XP2WK2A2",
+     "zh": "秩2晶势2流沌2气2",
+     "count": 388,
+     "atoms": 10,
+     "in_catalog": true
+    }
+   ],
+   "runtime_s": 203.4,
+   "config": {
+    "L": 60000.0,
+    "T0": 1000,
+    "minutes": 1000,
+    "max_reaction_atoms": 60,
+    "initial_particles": 13174,
+    "initial_atoms": 150103,
+    "seed_initial_count": 0
+   }
+  },
+  "B": {
+   "max_reaction_atoms": 60,
+   "final_N": 38528,
+   "final_atoms": 230133,
+   "distinct_formulas": 13,
+   "mean_atoms": 5.973,
+   "max_atoms": 60,
+   "capped_total": 4947,
+   "capped_share": 0.00026,
+   "complete": 18562731,
+   "incomplete": 115511,
+   "none": 6193,
+   "net_events": 207061,
+   "decomp_events": 0,
+   "new_substances": 2667,
+   "giant_molecules_ge39": 3,
+   "giant_atoms": 178,
+   "size_distribution": [
+    {
+     "atoms": 2,
+     "molecules": 21461
+    },
+    {
+     "atoms": 6,
+     "molecules": 4648
+    },
+    {
+     "atoms": 7,
+     "molecules": 909
+    },
+    {
+     "atoms": 8,
+     "molecules": 57
+    },
+    {
+     "atoms": 10,
+     "molecules": 6143
+    },
+    {
+     "atoms": 13,
+     "molecules": 926
+    },
+    {
+     "atoms": 18,
+     "molecules": 4381
+    },
+    {
+     "atoms": 59,
+     "molecules": 2
+    },
+    {
+     "atoms": 60,
+     "molecules": 1
+    }
+   ],
+   "top10": [
+    {
+     "formula": "CF",
+     "zh": "冰焰",
+     "count": 11867,
+     "atoms": 2,
+     "in_catalog": true
+    },
+    {
+     "formula": "O2XP2WK2A2",
+     "zh": "秩2晶势2流沌2气2",
+     "count": 6143,
+     "atoms": 10,
+     "in_catalog": true
+    },
+    {
+     "formula": "L2",
+     "zh": "电2",
+     "count": 4842,
+     "atoms": 2,
+     "in_catalog": true
+    },
+    {
+     "formula": "LF",
+     "zh": "电焰",
+     "count": 4728,
+     "atoms": 2,
+     "in_catalog": true
+    },
+    {
+     "formula": "OXCPWK",
+     "zh": "秩晶冰势流沌",
+     "count": 4648,
+     "atoms": 6,
+     "in_catalog": true
+    },
+    {
+     "formula": "O4X2P5W2K3A2",
+     "zh": "秩4晶2势5流2沌3气2",
+     "count": 4381,
+     "atoms": 18,
+     "in_catalog": false
+    },
+    {
+     "formula": "O3XP4WK3A",
+     "zh": "秩3晶势4流沌3气",
+     "count": 926,
+     "atoms": 13,
+     "in_catalog": true
+    },
+    {
+     "formula": "OXCPWKA",
+     "zh": "秩晶冰势流沌气",
+     "count": 909,
+     "atoms": 7,
+     "in_catalog": true
+    },
+    {
+     "formula": "O2XP2K2A",
+     "zh": "秩2晶势2沌2气",
+     "count": 57,
+     "atoms": 8,
+     "in_catalog": true
+    },
+    {
+     "formula": "WA",
+     "zh": "流气",
+     "count": 24,
+     "atoms": 2,
+     "in_catalog": true
+    }
+   ],
+   "top13": [
+    {
+     "formula": "CF",
+     "zh": "冰焰",
+     "count": 11867,
+     "atoms": 2,
+     "in_catalog": true
+    },
+    {
+     "formula": "O2XP2WK2A2",
+     "zh": "秩2晶势2流沌2气2",
+     "count": 6143,
+     "atoms": 10,
+     "in_catalog": true
+    },
+    {
+     "formula": "L2",
+     "zh": "电2",
+     "count": 4842,
+     "atoms": 2,
+     "in_catalog": true
+    },
+    {
+     "formula": "LF",
+     "zh": "电焰",
+     "count": 4728,
+     "atoms": 2,
+     "in_catalog": true
+    },
+    {
+     "formula": "OXCPWK",
+     "zh": "秩晶冰势流沌",
+     "count": 4648,
+     "atoms": 6,
+     "in_catalog": true
+    },
+    {
+     "formula": "O4X2P5W2K3A2",
+     "zh": "秩4晶2势5流2沌3气2",
+     "count": 4381,
+     "atoms": 18,
+     "in_catalog": false
+    },
+    {
+     "formula": "O3XP4WK3A",
+     "zh": "秩3晶势4流沌3气",
+     "count": 926,
+     "atoms": 13,
+     "in_catalog": true
+    },
+    {
+     "formula": "OXCPWKA",
+     "zh": "秩晶冰势流沌气",
+     "count": 909,
+     "atoms": 7,
+     "in_catalog": true
+    },
+    {
+     "formula": "O2XP2K2A",
+     "zh": "秩2晶势2沌2气",
+     "count": 57,
+     "atoms": 8,
+     "in_catalog": true
+    },
+    {
+     "formula": "WA",
+     "zh": "流气",
+     "count": 24,
+     "atoms": 2,
+     "in_catalog": true
+    },
+    {
+     "formula": "O10X8CP16W8K7A10",
+     "zh": "秩10晶8冰势16流8沌7气10",
+     "count": 1,
+     "atoms": 60,
+     "in_catalog": false
+    },
+    {
+     "formula": "O12X7C3P19W3K10A5",
+     "zh": "秩12晶7冰3势19流3沌10气5",
+     "count": 1,
+     "atoms": 59,
+     "in_catalog": false
+    },
+    {
+     "formula": "O13X7CP21W3K9A5",
+     "zh": "秩13晶7冰势21流3沌9气5",
+     "count": 1,
+     "atoms": 59,
+     "in_catalog": false
+    }
+   ],
+   "runtime_s": 301.3,
+   "config": {
+    "L": 60000.0,
+    "T0": 1000,
+    "minutes": 1000,
+    "max_reaction_atoms": 60,
+    "initial_particles": 34246,
+    "initial_atoms": 230133,
+    "seed_initial_count": 27351
+   }
+  },
+  "cap40": {
+   "A": {
+    "max_reaction_atoms": 40,
+    "final_N": 27431,
+    "final_atoms": 150103,
+    "distinct_formulas": 43,
+    "mean_atoms": 5.472,
+    "max_atoms": 40,
+    "capped_total": 32985,
+    "capped_share": 0.00403,
+    "complete": 8089903,
+    "incomplete": 64113,
+    "none": 3636,
+    "net_events": 174549,
+    "decomp_events": 1,
+    "new_substances": 5597,
+    "giant_molecules_ge39": 33,
+    "giant_atoms": 1303,
+    "size_distribution": [
+     {
+      "atoms": 2,
+      "molecules": 16011
+     },
+     {
+      "atoms": 5,
+      "molecules": 1756
+     },
+     {
+      "atoms": 9,
+      "molecules": 6204
+     },
+     {
+      "atoms": 10,
+      "molecules": 331
+     },
+     {
+      "atoms": 11,
+      "molecules": 985
+     },
+     {
+      "atoms": 18,
+      "molecules": 2110
+     },
+     {
+      "atoms": 37,
+      "molecules": 1
+     },
+     {
+      "atoms": 39,
+      "molecules": 17
+     },
+     {
+      "atoms": 40,
+      "molecules": 16
+     }
+    ],
+    "top10": [
+     {
+      "formula": "CF",
+      "zh": "冰焰",
+      "count": 9349,
+      "atoms": 2,
+      "in_catalog": true
+     },
+     {
+      "formula": "O2XP2WK2A",
+      "zh": "秩2晶势2流沌2气",
+      "count": 6204,
+      "atoms": 9,
+      "in_catalog": true
+     },
+     {
+      "formula": "L2",
+      "zh": "电2",
+      "count": 3733,
+      "atoms": 2,
+      "in_catalog": true
+     },
+     {
+      "formula": "O4X2P5W2K3A2",
+      "zh": "秩4晶2势5流2沌3气2",
+      "count": 2110,
+      "atoms": 18,
+      "in_catalog": false
+     },
+     {
+      "formula": "LF",
+      "zh": "电焰",
+      "count": 2089,
+      "atoms": 2,
+      "in_catalog": true
+     },
+     {
+      "formula": "OCPKA",
+      "zh": "秩冰势沌气",
+      "count": 1756,
+      "atoms": 5,
+      "in_catalog": true
+     },
+     {
+      "formula": "O3XP3WK2A",
+      "zh": "秩3晶势3流沌2气",
+      "count": 985,
+      "atoms": 11,
+      "in_catalog": true
+     },
+     {
+      "formula": "WA",
+      "zh": "流气",
+      "count": 840,
+      "atoms": 2,
+      "in_catalog": true
+     },
+     {
+      "formula": "O2XP2WK2A2",
+      "zh": "秩2晶势2流沌2气2",
+      "count": 331,
+      "atoms": 10,
+      "in_catalog": true
+     },
+     {
+      "formula": "O4X2C2P14W3K3A6F5",
+      "zh": "秩4晶2冰2势14流3沌3气6焰5",
+      "count": 1,
+      "atoms": 39,
+      "in_catalog": false
+     }
+    ],
+    "top13": [
+     {
+      "formula": "CF",
+      "zh": "冰焰",
+      "count": 9349,
+      "atoms": 2,
+      "in_catalog": true
+     },
+     {
+      "formula": "O2XP2WK2A",
+      "zh": "秩2晶势2流沌2气",
+      "count": 6204,
+      "atoms": 9,
+      "in_catalog": true
+     },
+     {
+      "formula": "L2",
+      "zh": "电2",
+      "count": 3733,
+      "atoms": 2,
+      "in_catalog": true
+     },
+     {
+      "formula": "O4X2P5W2K3A2",
+      "zh": "秩4晶2势5流2沌3气2",
+      "count": 2110,
+      "atoms": 18,
+      "in_catalog": false
+     },
+     {
+      "formula": "LF",
+      "zh": "电焰",
+      "count": 2089,
+      "atoms": 2,
+      "in_catalog": true
+     },
+     {
+      "formula": "OCPKA",
+      "zh": "秩冰势沌气",
+      "count": 1756,
+      "atoms": 5,
+      "in_catalog": true
+     },
+     {
+      "formula": "O3XP3WK2A",
+      "zh": "秩3晶势3流沌2气",
+      "count": 985,
+      "atoms": 11,
+      "in_catalog": true
+     },
+     {
+      "formula": "WA",
+      "zh": "流气",
+      "count": 840,
+      "atoms": 2,
+      "in_catalog": true
+     },
+     {
+      "formula": "O2XP2WK2A2",
+      "zh": "秩2晶势2流沌2气2",
+      "count": 331,
+      "atoms": 10,
+      "in_catalog": true
+     },
+     {
+      "formula": "O4X2C2P14W3K3A6F5",
+      "zh": "秩4晶2冰2势14流3沌3气6焰5",
+      "count": 1,
+      "atoms": 39,
+      "in_catalog": false
+     },
+     {
+      "formula": "O3X4CP16W5LK5A3F2",
+      "zh": "秩3晶4冰势16流5电沌5气3焰2",
+      "count": 1,
+      "atoms": 40,
+      "in_catalog": false
+     },
+     {
+      "formula": "O7X5C2P13W3LK5A3",
+      "zh": "秩7晶5冰2势13流3电沌5气3",
+      "count": 1,
+      "atoms": 39,
+      "in_catalog": false
+     },
+     {
+      "formula": "O3X4C5P14W3LK5A3F2",
+      "zh": "秩3晶4冰5势14流3电沌5气3焰2",
+      "count": 1,
+      "atoms": 40,
+      "in_catalog": false
+     }
+    ],
+    "runtime_s": 207.3,
+    "config": {
+     "L": 60000.0,
+     "T0": 1000,
+     "minutes": 1000,
+     "max_reaction_atoms": 40,
+     "initial_particles": 13174,
+     "initial_atoms": 150103,
+     "seed_initial_count": 0
+    }
+   },
+   "B": {
+    "max_reaction_atoms": 40,
+    "final_N": 38609,
+    "final_atoms": 230133,
+    "distinct_formulas": 67,
+    "mean_atoms": 5.961,
+    "max_atoms": 40,
+    "capped_total": 94949,
+    "capped_share": 0.00441,
+    "complete": 21297049,
+    "incomplete": 117698,
+    "none": 6564,
+    "net_events": 206740,
+    "decomp_events": 1,
+    "new_substances": 2504,
+    "giant_molecules_ge39": 56,
+    "giant_atoms": 2213,
+    "size_distribution": [
+     {
+      "atoms": 2,
+      "molecules": 21644
+     },
+     {
+      "atoms": 6,
+      "molecules": 5152
+     },
+     {
+      "atoms": 7,
+      "molecules": 83
+     },
+     {
+      "atoms": 8,
+      "molecules": 10
+     },
+     {
+      "atoms": 9,
+      "molecules": 12
+     },
+     {
+      "atoms": 10,
+      "molecules": 6615
+     },
+     {
+      "atoms": 13,
+      "molecules": 781
+     },
+     {
+      "atoms": 18,
+      "molecules": 4254
+     },
+     {
+      "atoms": 38,
+      "molecules": 2
+     },
+     {
+      "atoms": 39,
+      "molecules": 27
+     },
+     {
+      "atoms": 40,
+      "molecules": 29
+     }
+    ],
+    "top10": [
+     {
+      "formula": "CF",
+      "zh": "冰焰",
+      "count": 12131,
+      "atoms": 2,
+      "in_catalog": true
+     },
+     {
+      "formula": "O2XP2WK2A2",
+      "zh": "秩2晶势2流沌2气2",
+      "count": 6615,
+      "atoms": 10,
+      "in_catalog": true
+     },
+     {
+      "formula": "OXCPWK",
+      "zh": "秩晶冰势流沌",
+      "count": 5152,
+      "atoms": 6,
+      "in_catalog": true
+     },
+     {
+      "formula": "L2",
+      "zh": "电2",
+      "count": 4981,
+      "atoms": 2,
+      "in_catalog": true
+     },
+     {
+      "formula": "LF",
+      "zh": "电焰",
+      "count": 4435,
+      "atoms": 2,
+      "in_catalog": true
+     },
+     {
+      "formula": "O4X2P5W2K3A2",
+      "zh": "秩4晶2势5流2沌3气2",
+      "count": 4254,
+      "atoms": 18,
+      "in_catalog": false
+     },
+     {
+      "formula": "O3XP4WK3A",
+      "zh": "秩3晶势4流沌3气",
+      "count": 781,
+      "atoms": 13,
+      "in_catalog": true
+     },
+     {
+      "formula": "WA",
+      "zh": "流气",
+      "count": 97,
+      "atoms": 2,
+      "in_catalog": true
+     },
+     {
+      "formula": "OXCPWKA",
+      "zh": "秩晶冰势流沌气",
+      "count": 83,
+      "atoms": 7,
+      "in_catalog": true
+     },
+     {
+      "formula": "O2XP2WK2A",
+      "zh": "秩2晶势2流沌2气",
+      "count": 12,
+      "atoms": 9,
+      "in_catalog": true
+     }
+    ],
+    "top13": [
+     {
+      "formula": "CF",
+      "zh": "冰焰",
+      "count": 12131,
+      "atoms": 2,
+      "in_catalog": true
+     },
+     {
+      "formula": "O2XP2WK2A2",
+      "zh": "秩2晶势2流沌2气2",
+      "count": 6615,
+      "atoms": 10,
+      "in_catalog": true
+     },
+     {
+      "formula": "OXCPWK",
+      "zh": "秩晶冰势流沌",
+      "count": 5152,
+      "atoms": 6,
+      "in_catalog": true
+     },
+     {
+      "formula": "L2",
+      "zh": "电2",
+      "count": 4981,
+      "atoms": 2,
+      "in_catalog": true
+     },
+     {
+      "formula": "LF",
+      "zh": "电焰",
+      "count": 4435,
+      "atoms": 2,
+      "in_catalog": true
+     },
+     {
+      "formula": "O4X2P5W2K3A2",
+      "zh": "秩4晶2势5流2沌3气2",
+      "count": 4254,
+      "atoms": 18,
+      "in_catalog": false
+     },
+     {
+      "formula": "O3XP4WK3A",
+      "zh": "秩3晶势4流沌3气",
+      "count": 781,
+      "atoms": 13,
+      "in_catalog": true
+     },
+     {
+      "formula": "WA",
+      "zh": "流气",
+      "count": 97,
+      "atoms": 2,
+      "in_catalog": true
+     },
+     {
+      "formula": "OXCPWKA",
+      "zh": "秩晶冰势流沌气",
+      "count": 83,
+      "atoms": 7,
+      "in_catalog": true
+     },
+     {
+      "formula": "O2XP2WK2A",
+      "zh": "秩2晶势2流沌2气",
+      "count": 12,
+      "atoms": 9,
+      "in_catalog": true
+     },
+     {
+      "formula": "O2XP2K2A",
+      "zh": "秩2晶势2沌2气",
+      "count": 10,
+      "atoms": 8,
+      "in_catalog": true
+     },
+     {
+      "formula": "O7X5CP11W4LK5A5F",
+      "zh": "秩7晶5冰势11流4电沌5气5焰",
+      "count": 2,
+      "atoms": 40,
+      "in_catalog": false
+     },
+     {
+      "formula": "O9X4P14W2K7A4",
+      "zh": "秩9晶4势14流2沌7气4",
+      "count": 2,
+      "atoms": 40,
+      "in_catalog": false
+     }
+    ],
+    "runtime_s": 324.0,
+    "config": {
+     "L": 60000.0,
+     "T0": 1000,
+     "minutes": 1000,
+     "max_reaction_atoms": 40,
+     "initial_particles": 34326,
+     "initial_atoms": 230133,
+     "seed_initial_count": 27431
+    }
+   }
+  },
+  "compare": {
+   "A": [
+    {
+     "metric": "终态分子数",
+     "cap40": 27431,
+     "cap60": 27351,
+     "delta": -80
+    },
+    {
+     "metric": "终态原子数",
+     "cap40": 150103,
+     "cap60": 150103,
+     "delta": 0
+    },
+    {
+     "metric": "终态结构种数",
+     "cap40": 43,
+     "cap60": 9,
+     "delta": -34
+    },
+    {
+     "metric": "平均原子数",
+     "cap40": 5.472,
+     "cap60": 5.488,
+     "delta": 0.016
+    },
+    {
+     "metric": "最大原子数",
+     "cap40": 40,
+     "cap60": 18,
+     "delta": -22
+    },
+    {
+     "metric": "capped 次数",
+     "cap40": 32985,
+     "cap60": 11,
+     "delta": -32974
+    },
+    {
+     "metric": "capped 占判定比例",
+     "cap40": 0.00403,
+     "cap60": 0.0,
+     "delta": -0.00403
+    },
+    {
+     "metric": "complete",
+     "cap40": 8089903,
+     "cap60": 8107678,
+     "delta": 17775
+    },
+    {
+     "metric": "incomplete",
+     "cap40": 64113,
+     "cap60": 64968,
+     "delta": 855
+    },
+    {
+     "metric": "none",
+     "cap40": 3636,
+     "cap60": 3764,
+     "delta": 128
+    },
+    {
+     "metric": "净变化事件",
+     "cap40": 174549,
+     "cap60": 176664,
+     "delta": 2115
+    },
+    {
+     "metric": "新物质数",
+     "cap40": 5597,
+     "cap60": 5520,
+     "delta": -77
+    },
+    {
+     "metric": "39/40+ 巨型分子",
+     "cap40": 33,
+     "cap60": 0,
+     "delta": -33
+    }
+   ],
+   "B": [
+    {
+     "metric": "终态分子数",
+     "cap40": 38609,
+     "cap60": 38528,
+     "delta": -81
+    },
+    {
+     "metric": "终态原子数",
+     "cap40": 230133,
+     "cap60": 230133,
+     "delta": 0
+    },
+    {
+     "metric": "终态结构种数",
+     "cap40": 67,
+     "cap60": 13,
+     "delta": -54
+    },
+    {
+     "metric": "平均原子数",
+     "cap40": 5.961,
+     "cap60": 5.973,
+     "delta": 0.012
+    },
+    {
+     "metric": "最大原子数",
+     "cap40": 40,
+     "cap60": 60,
+     "delta": 20
+    },
+    {
+     "metric": "capped 次数",
+     "cap40": 94949,
+     "cap60": 4947,
+     "delta": -90002
+    },
+    {
+     "metric": "capped 占判定比例",
+     "cap40": 0.00441,
+     "cap60": 0.00026,
+     "delta": -0.00415
+    },
+    {
+     "metric": "complete",
+     "cap40": 21297049,
+     "cap60": 18562731,
+     "delta": -2734318
+    },
+    {
+     "metric": "incomplete",
+     "cap40": 117698,
+     "cap60": 115511,
+     "delta": -2187
+    },
+    {
+     "metric": "none",
+     "cap40": 6564,
+     "cap60": 6193,
+     "delta": -371
+    },
+    {
+     "metric": "净变化事件",
+     "cap40": 206740,
+     "cap60": 207061,
+     "delta": 321
+    },
+    {
+     "metric": "新物质数",
+     "cap40": 2504,
+     "cap60": 2667,
+     "delta": 163
+    },
+    {
+     "metric": "39/40+ 巨型分子",
+     "cap40": 56,
+     "cap60": 3,
+     "delta": -53
+    }
+   ]
+  },
+  "size_distribution_compare": {
+   "A": [
+    {
+     "atoms": 2,
+     "cap40": 16011,
+     "cap60": 15981
+    },
+    {
+     "atoms": 5,
+     "cap40": 1756,
+     "cap60": 1742
+    },
+    {
+     "atoms": 9,
+     "cap40": 6204,
+     "cap60": 6063
+    },
+    {
+     "atoms": 10,
+     "cap40": 331,
+     "cap60": 388
+    },
+    {
+     "atoms": 11,
+     "cap40": 985,
+     "cap60": 886
+    },
+    {
+     "atoms": 18,
+     "cap40": 2110,
+     "cap60": 2291
+    },
+    {
+     "atoms": 37,
+     "cap40": 1,
+     "cap60": 0
+    },
+    {
+     "atoms": 39,
+     "cap40": 17,
+     "cap60": 0
+    },
+    {
+     "atoms": 40,
+     "cap40": 16,
+     "cap60": 0
+    }
+   ],
+   "B": [
+    {
+     "atoms": 2,
+     "cap40": 21644,
+     "cap60": 21461
+    },
+    {
+     "atoms": 6,
+     "cap40": 5152,
+     "cap60": 4648
+    },
+    {
+     "atoms": 7,
+     "cap40": 83,
+     "cap60": 909
+    },
+    {
+     "atoms": 8,
+     "cap40": 10,
+     "cap60": 57
+    },
+    {
+     "atoms": 9,
+     "cap40": 12,
+     "cap60": 0
+    },
+    {
+     "atoms": 10,
+     "cap40": 6615,
+     "cap60": 6143
+    },
+    {
+     "atoms": 13,
+     "cap40": 781,
+     "cap60": 926
+    },
+    {
+     "atoms": 18,
+     "cap40": 4254,
+     "cap60": 4381
+    },
+    {
+     "atoms": 38,
+     "cap40": 2,
+     "cap60": 0
+    },
+    {
+     "atoms": 39,
+     "cap40": 27,
+     "cap60": 0
+    },
+    {
+     "atoms": 40,
+     "cap40": 29,
+     "cap60": 0
+    },
+    {
+     "atoms": 59,
+     "cap40": 0,
+     "cap60": 2
+    },
+    {
+     "atoms": 60,
+     "cap40": 0,
+     "cap60": 1
+    }
+   ]
+  },
+  "giant_compare": {
+   "A": {
+    "cap40": [
+     [
+      39,
+      17
+     ],
+     [
+      40,
+      16
+     ]
+    ],
+    "cap60": []
+   },
+   "B": {
+    "cap40": [
+     [
+      39,
+      27
+     ],
+     [
+      40,
+      29
+     ]
+    ],
+    "cap60": [
+     [
+      59,
+      2
+     ],
+     [
+      60,
+      1
+     ]
+    ]
+   }
+  },
+  "conclusion": [
+   "cap40 下 A 43 种 / B 67 种，39/40 原子巨型 A 33 个（另 1 个 37 原子）/ B 56 个；cap60 下 A 只剩 9 种（最大 18 原子）、B 13 种（3 个 59/60 原子巨型）。",
+   "capped 次数：A 32,985→11（占判定 0.403%→0.000%），B 94,949→4,947（0.441%→0.026%）；cap40 的巨型堆积与额外结构主要是 cap 边界效应，不是化学稳定产物。",
+   "真正稳定核心：CF、O2XP2WK2A、O2XP2WK2A2、OXCPWK、L2、LF、O4X2P5W2K3A2、O3XP4WK3A、OXCPWKA、OCPKA（cap60 B top13 除 3 个 59/60 巨型外均属这些）。",
+   "A cap60 最大仅 18 原子（O4X2P5W2K3A2），说明 1000→0°C 完全退火后化学稳定上限约 18 原子；B cap60 的 3 个 59/60 原子巨型是极少数未拆解的巨大 F 产物（各 1 个），不影响整体结论。"
+  ]
+ },
  "key_numbers": {
   "loads": {
    "A": {
@@ -30796,7 +32012,37 @@
     "new_substances": 2504,
     "L": 60000.0
    }
-  ]
+  ],
+  "cap60": {
+   "A": {
+    "max_reaction_atoms": 60,
+    "final_N": 27351,
+    "final_atoms": 150103,
+    "distinct_formulas": 9,
+    "mean_atoms": 5.488,
+    "max_atoms": 18,
+    "capped_total": 11,
+    "capped_share": 0.0,
+    "giant_molecules_ge39": 0
+   },
+   "B": {
+    "max_reaction_atoms": 60,
+    "final_N": 38528,
+    "final_atoms": 230133,
+    "distinct_formulas": 13,
+    "mean_atoms": 5.973,
+    "max_atoms": 60,
+    "capped_total": 4947,
+    "capped_share": 0.00026,
+    "giant_molecules_ge39": 3
+   },
+   "conclusion": [
+    "cap40 下 A 43 种 / B 67 种，39/40 原子巨型 A 33 个（另 1 个 37 原子）/ B 56 个；cap60 下 A 只剩 9 种（最大 18 原子）、B 13 种（3 个 59/60 原子巨型）。",
+    "capped 次数：A 32,985→11（占判定 0.403%→0.000%），B 94,949→4,947（0.441%→0.026%）；cap40 的巨型堆积与额外结构主要是 cap 边界效应，不是化学稳定产物。",
+    "真正稳定核心：CF、O2XP2WK2A、O2XP2WK2A2、OXCPWK、L2、LF、O4X2P5W2K3A2、O3XP4WK3A、OXCPWKA、OCPKA（cap60 B top13 除 3 个 59/60 巨型外均属这些）。",
+    "A cap60 最大仅 18 原子（O4X2P5W2K3A2），说明 1000→0°C 完全退火后化学稳定上限约 18 原子；B cap60 的 3 个 59/60 原子巨型是极少数未拆解的巨大 F 产物（各 1 个），不影响整体结论。"
+   ]
+  }
  },
  "caveats": [
   "event_samples 为蓄水池抽样（50000 上限）：A 174,549 / B 206,740 净事件，类型拆分按抽样比例估计，逐分钟净事件总数由 events_total 差分精确。",

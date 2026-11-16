@@ -52,7 +52,7 @@ def spec_from_rows(rows):
     return [("T59", r["formula"], r["formula"], int(r["count"])) for r in rows]
 
 
-def run_phase(phase, minutes):
+def run_phase(phase, minutes, cap=MAX_REACTION_ATOMS, tag=""):
     d = load_design()
     known = {r["formula"] for r in json.load(open(BASE + r"\t4_catalog_index.json",
                                                   encoding="utf-8"))}
@@ -65,25 +65,25 @@ def run_phase(phase, minutes):
                                  load_spec=spec_from_rows(rows),
                                  known_formulas=known,
                                  area_model="count", weighted_partner=True,
-                                 max_reaction_atoms=MAX_REACTION_ATOMS,
+                                 max_reaction_atoms=cap,
                                  color_mode="bitmask",
                                  event_limit=EVENT_LIMIT, snap_minutes=SNAP_MINUTES)
         res = env.run()
         res["phase"] = "A"
         res["load_summary"] = d["batchA"]["summary"]
-        res["config"]["experiment"] = "T59 phaseA：120 种物质、三价最多/一价最少、L=60000"
+        res["config"]["experiment"] = "T59 phaseA：120 种物质、三价最多/一价最少、L=60000、cap=%d" % cap
         res["summary"]["runtime_s"] = round(time.time() - t_start, 1)
-        json.dump(res, open(BASE + r"\t59_phaseA_result.json", "w", encoding="utf-8"),
+        json.dump(res, open(BASE + r"\t59_phaseA%s_result.json" % tag, "w", encoding="utf-8"),
                   ensure_ascii=False, indent=1)
         state = env.export_state()
-        json.dump(state, open(BASE + r"\t59_stateA.json", "w", encoding="utf-8"),
+        json.dump(state, open(BASE + r"\t59_stateA%s.json" % tag, "w", encoding="utf-8"),
                   ensure_ascii=False, indent=1)
-        print("saved t59_phaseA_result.json / t59_stateA.json, runtime",
+        print("saved t59_phaseA%s_result.json / t59_stateA%s.json, runtime" % (tag, tag),
               res["summary"]["runtime_s"], "s")
         print(json.dumps(res["summary"], ensure_ascii=False, indent=1)[:2000])
         return res
     if phase == "B":
-        state = json.load(open(BASE + r"\t59_stateA.json", encoding="utf-8"))
+        state = json.load(open(BASE + r"\t59_stateA%s.json" % tag, encoding="utf-8"))
         rows = d["batchB"]["rows"]
         print("整理后底物：分子", state["total_molecules"], "原子", state["total_atoms"],
               "结构种数", state["distinct_structures"])
@@ -92,7 +92,7 @@ def run_phase(phase, minutes):
                                  load_spec=spec_from_rows(rows),
                                  known_formulas=known,
                                  area_model="count", weighted_partner=True,
-                                 max_reaction_atoms=MAX_REACTION_ATOMS,
+                                 max_reaction_atoms=cap,
                                  color_mode="bitmask",
                                  event_limit=EVENT_LIMIT, snap_minutes=SNAP_MINUTES)
         res = env.run()
@@ -101,14 +101,15 @@ def run_phase(phase, minutes):
         res["seed_state_summary"] = {k: state[k] for k in
                                      ("total_molecules", "total_atoms",
                                       "distinct_formulas", "distinct_structures", "t", "T")}
-        res["config"]["experiment"] = "T59 phaseB：phaseA 整理后底物 + 120 种随机物质、T 重置 1000°C、L=60000"
+        res["config"]["experiment"] = ("T59 phaseB：phaseA 整理后底物 + 120 种随机物质、"
+                                       "T 重置 1000°C、L=60000、cap=%d" % cap)
         res["summary"]["runtime_s"] = round(time.time() - t_start, 1)
-        json.dump(res, open(BASE + r"\t59_phaseB_result.json", "w", encoding="utf-8"),
+        json.dump(res, open(BASE + r"\t59_phaseB%s_result.json" % tag, "w", encoding="utf-8"),
                   ensure_ascii=False, indent=1)
         stateB = env.export_state()
-        json.dump(stateB, open(BASE + r"\t59_stateB.json", "w", encoding="utf-8"),
+        json.dump(stateB, open(BASE + r"\t59_stateB%s.json" % tag, "w", encoding="utf-8"),
                   ensure_ascii=False, indent=1)
-        print("saved t59_phaseB_result.json / t59_stateB.json, runtime",
+        print("saved t59_phaseB%s_result.json / t59_stateB%s.json, runtime" % (tag, tag),
               res["summary"]["runtime_s"], "s")
         print(json.dumps(res["summary"], ensure_ascii=False, indent=1)[:2000])
         return res
@@ -119,12 +120,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--phase", default="both", choices=["A", "B", "both"])
     ap.add_argument("--minutes", type=int, default=MINUTES)
+    ap.add_argument("--cap", type=int, default=MAX_REACTION_ATOMS)
+    ap.add_argument("--tag", default="")
     args = ap.parse_args()
     t0 = time.time()
     if args.phase in ("A", "both"):
-        run_phase("A", args.minutes)
+        run_phase("A", args.minutes, cap=args.cap, tag=args.tag)
     if args.phase in ("B", "both"):
-        run_phase("B", args.minutes)
+        run_phase("B", args.minutes, cap=args.cap, tag=args.tag)
     print("all done", round(time.time() - t0, 1), "s")
 
 
