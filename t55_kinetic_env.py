@@ -1,0 +1,684 @@
+# -*- coding: utf-8 -*-
+"""t55_kinetic_env.py —— T55：2D 粒子环境中的自然环境反应实验
+
+实验设定（详细推导见 docs/T55_KINETIC_ENV.md）：
+* 环境：正方形平面 L×L（反射边界），初始温度 1000°，每分钟 -1°，最低 0°。
+* 投料：两批"元素单质"（冰-冰 C2、晶-晶 X2、秩-秩 O2）：
+    A 批：元素单质 各 1500 个（共 4500 个分子 / 9000 原子）
+    B 批：聚素单质 各 1500 个（共 4500 个分子 / 9000 原子）
+  合计 9000 个双原子分子 / 18000 原子。
+* 运动：每个分子以极高初速度弹道运动 + 镜面反射；初速度按"前 500 分钟内
+  每个单质至少完成 500 次角-对角穿越"设计（对称目标 750 次，留统计余量）。
+* 碰撞：稀薄气体动理学蒙特卡洛（DSMC 近似）：
+    平均自由程 λ = L² / (2√2 N r)，每个分子碰撞率 ν = v/λ；
+    每分钟按泊松采样碰撞事件，再按速度加权选分子、在空间网格邻域选伙伴。
+* 衰减：每次分子-分子碰撞后，双方速率 × (1-ε)，ε=0.2%（"衰减一点点"）。
+* 化学：每次碰撞调用 natural_engine.resolve(接触集合, T)：
+    完全反应 -> pot_v4（规则 1~11）F；不稳定中间体自分解优先；再判不完全反应
+    （t28 v2 + 规则 1~11）；都不满足则弹性碰撞。产物继承质量加权平均速度。
+* 对照组：关闭化学反应（只做弹性碰撞 + 衰减），验证 500 次穿越要求。
+
+输出：
+  t55_kinetic_result.json   主实验（时间序列 / 终态组成 / 快照 / 事件样本 / 统计）
+  t55_control_no_chem.json  无化学对照组
+
+用法：
+  python t55_kinetic_env.py --quick          # 冒烟
+  python t55_kinetic_env.py                  # 主实验（1000 分钟）
+  python t55_kinetic_env.py --control        # 对照组（500 分钟）
+"""
+import argparse
+import json
+import math
+import random
+import sys
+import time
+from bisect import bisect
+from collections import Counter
+
+BASE = r"G:\AI work\deepseek\work1\alchemy"
+if BASE not in sys.path:
+    sys.path.insert(0, BASE)
+
+import natural_engine as E
+
+# ------------------------------------------------------------------ 参数
+L = 10000.0                 # 正方形边长（单位）
+DIAG = math.sqrt(2.0) * L   # 角-对角距离
+RADIUS = 0.2                # 分子碰撞半径（决定平均自由程）
+EPS = 0.002                 # 每次碰撞后速率损失比例
+T0 = 1000                   # 初始温度
+T_END = 0                   # 终温
+MINUTES = 1000              # 1000 分钟 -> 1000°C 降到 0°C
+TARGET_CROSSINGS = 750      # 前 500 分钟的设计穿越次数（要求 >=500）
+N_BATCH = 1500              # 每批每元素单质数量
+SPECIES = ["C2", "X2", "O2"]  # 冰-冰、晶-晶、秩-秩（聚素单质）
+BATCHES = [("A", "元素单质"), ("B", "聚素单质")]
+
+SNAP_MINUTES = [0, 25, 50, 100, 200, 300, 400, 500,
+                600, 700, 800, 900, 950, 980, 995, 1000]
+FORMULA_SAMPLE_MINUTES = 5     # 每 5 分钟记录一次完整组成
+EVENT_SAMPLE_LIMIT = 20000
+
+DT = 1.0                       # 每分钟一步
+
+
+def mean_free_path(n):
+    """2D 硬圆平均自由程：λ = L²/(2√2 N r)。"""
+    if n <= 1:
+        return float("inf")
+    return L * L / (2.0 * math.sqrt(2.0) * n * RADIUS)
+
+
+def design_v0(n_particles, target_crossings=TARGET_CROSSINGS, t_ref=500.0):
+    """按 s(t_ref)=target*D 反解初速度：
+        s = (λ/ε) ln(1 + ε v0 t / λ)  ->  v0 = λ/(ε t) (e^{ε s/λ} - 1)
+    """
+    lam = mean_free_path(n_particles)
+    s = target_crossings * DIAG
+    k = s / lam
+    return lam / (EPS * t_ref) * (math.exp(EPS * k) - 1.0)
+
+
+def poisson(rng, lam):
+    """泊松采样（大均值用正态近似）。"""
+    if lam <= 0:
+        return 0
+    if lam < 30.0:
+        Lk = math.exp(-lam)
+        k = 0
+        p = 1.0
+        while True:
+            p *= rng.random()
+            if p <= Lk:
+                return k
+            k += 1
+    v = int(round(rng.gauss(lam, math.sqrt(lam))))
+    return max(0, v)
+
+
+class Particle:
+    __slots__ = ("pid", "mol", "x", "y", "vx", "vy", "speed",
+                 "path", "origin", "birth_t")
+
+    def __init__(self, pid, mol, x, y, vx, vy, origin, birth_t):
+        self.pid = pid
+        self.mol = mol
+        self.x = x
+        self.y = y
+        self.vx = vx
+        self.vy = vy
+        self.speed = math.hypot(vx, vy)
+        self.path = 0.0
+        self.origin = origin
+        self.birth_t = birth_t
+
+
+def fold_axis(x, d):
+    """[0,L] 反射折叠。返回 (新坐标, 是否翻转该轴速度)。"""
+    u = x + d
+    L2 = 2.0 * L
+    r = u - math.floor(u / L2) * L2
+    par = math.floor(u / L) - math.floor(x / L)
+    nx = r if r <= L else L2 - r
+    return nx, (par & 1)
+
+
+class KineticEnvironment:
+    def __init__(self, minutes=MINUTES, n_batch=N_BATCH, seed=20261116,
+                 event_limit=EVENT_SAMPLE_LIMIT, snap_minutes=None, t0=T0):
+        self.rng = random.Random(seed)
+        self.minutes = minutes
+        self.t0 = t0
+        self.n_batch = n_batch
+        self.event_limit = event_limit
+        self.snap_minutes = set(snap_minutes if snap_minutes is not None else SNAP_MINUTES)
+        self.seed = seed
+        self.particles = {}
+        self.next_pid = 0
+        self.fcnt = Counter()
+        self.atom_count = 0
+        self.path_sum = 0.0
+        self.time_series = []
+        self.formula_series = []
+        self.snapshots = []
+        self.events = []
+        self.events_total = 0
+        self.reaction_counts = Counter()
+        self.net_change_counts = Counter()
+        self.decomp_count = 0
+        self.new_substances = {}
+        self.initial_deaths = []      # 初始单质在反应前的 path/D
+        self.all_particle_paths = []  # 所有粒子寿命 path/D（可能很多，做直方图）
+        self.path_hist = Counter()    # path/D 分桶直方图
+        self.path_stats = {"n": 0, "sum": 0.0, "min": None, "max": None}
+        self.initial_survivors = 0
+        self._last_c = 0
+        self._last_i = 0
+        self._last_n = 0
+        self._templates = {}
+        self._grid = {}
+        self._cell = L / 10.0
+        self._init_particles()
+
+    # -------------------------------------------------------------- 初始化
+    def _load_templates(self):
+        subs = json.load(open(BASE + r"\substances.json", encoding="utf-8"))
+        byf = {r["formula"]: r for r in subs}
+        for f in SPECIES:
+            self._templates[f] = E.mol_from_record(byf[f])
+        # 初始即为已知（29 聚素）物质
+        self.known = set(r["formula"] for r in subs)
+
+    def _init_particles(self):
+        self._load_templates()
+        rng = self.rng
+        v0 = design_v0(self.n_batch * len(SPECIES) * len(BATCHES))
+        self.v0 = v0
+        for bi, (tag, _desc) in enumerate(BATCHES):
+            for f in SPECIES:
+                mol = self._templates[f]
+                for _ in range(self.n_batch):
+                    ang = rng.random() * 2.0 * math.pi
+                    x = rng.random() * L
+                    y = rng.random() * L
+                    p = Particle(self.next_pid, mol, x, y,
+                                 v0 * math.cos(ang), v0 * math.sin(ang),
+                                 f, 0)
+                    self.next_pid += 1
+                    self.particles[p.pid] = p
+                    self.fcnt[f] += 1
+                    self.atom_count += len(mol["atoms"])
+        self.n0 = len(self.particles)
+        self.atoms0 = self.atom_count
+
+    # -------------------------------------------------------------- 运动
+    def move_all(self):
+        path_sum = 0.0
+        speed_sum = 0.0
+        for p in self.particles.values():
+            p.path += p.speed * DT
+            path_sum += p.speed * DT
+            speed_sum += p.speed
+            p.x, fx = fold_axis(p.x, p.vx * DT)
+            p.y, fy = fold_axis(p.y, p.vy * DT)
+            if fx:
+                p.vx = -p.vx
+            if fy:
+                p.vy = -p.vy
+        self.path_sum += path_sum
+        return len(self.particles), speed_sum
+
+    # -------------------------------------------------------------- 空间网格
+    def build_grid(self):
+        g = {}
+        cs = self._cell
+        for p in self.particles.values():
+            key = (int(p.x // cs), int(p.y // cs))
+            lst = g.get(key)
+            if lst is None:
+                g[key] = [p]
+            else:
+                lst.append(p)
+        self._grid = g
+        self._grid_n = int(L // cs) + 2
+
+    def pick_partner(self, p):
+        rng = self.rng
+        cs = self._cell
+        cx = int(p.x // cs)
+        cy = int(p.y // cs)
+        parts = self.particles
+        g = self._grid
+        for radius in (1, 2, 3):
+            for _try in range(10):
+                ox = rng.randint(-radius, radius)
+                oy = rng.randint(-radius, radius)
+                lst = g.get((cx + ox, cy + oy))
+                if not lst:
+                    continue
+                q = lst[rng.randrange(len(lst))]
+                if q is p or q.pid not in parts:
+                    continue
+                return q
+        # 兜底：从全场随机取（极少数情况）
+        if len(parts) <= 1:
+            return None
+        for _ in range(8):
+            q = parts[rng.choice(list(parts.keys()))]
+            if q is not p:
+                return q
+        return None
+
+    # -------------------------------------------------------------- 反应/碰撞
+    def _record_new(self, f, t, info, mol=None):
+        if f not in self.known and f not in self.new_substances:
+            rec = {"first_t": t, "event": info}
+            if mol is not None:
+                rec["label"] = mol["label"]
+                rec["atoms"] = list(mol["atoms"])
+                rec["edges"] = [list(e) for e in mol["edges"]]
+                rec["c"] = mol["c"]
+            self.new_substances[f] = rec
+
+    def _record_path(self, p):
+        val = p.path / DIAG
+        st = self.path_stats
+        st["n"] += 1
+        st["sum"] += val
+        if st["min"] is None or val < st["min"]:
+            st["min"] = val
+        if st["max"] is None or val > st["max"]:
+            st["max"] = val
+        b = int(val)
+        self.path_hist[b] += 1
+
+    def process_collision(self, p, q, T, t):
+        rng = self.rng
+        mi = p.mol
+        mj = q.mol
+        res = E.resolve([mi, mj], T)
+        typ = res["type"]
+        state = res["state"]
+        self.reaction_counts[typ] += 1
+        if res["stages"]:
+            self.decomp_count += len(res["stages"])
+        in_labels = sorted((mi["label"], mj["label"]))
+        out_labels = sorted(m["label"] for m in state)
+        changed = in_labels != out_labels
+        if not changed:
+            # 弹性碰撞（含"完全反应但净结果不变"、自分解产物恰好同构等情况）
+            for z in (p, q):
+                s = z.speed * (1.0 - EPS)
+                ang = rng.random() * 2.0 * math.pi
+                z.vx = s * math.cos(ang)
+                z.vy = s * math.sin(ang)
+                z.speed = s
+            return
+        # ---- 净变化：替换两个分子为 state ----
+        x = 0.5 * (p.x + q.x)
+        y = 0.5 * (p.y + q.y)
+        m1 = len(mi["atoms"])
+        m2 = len(mj["atoms"])
+        wmean = (m1 * p.speed + m2 * q.speed) / (m1 + m2) * (1.0 - EPS)
+        # 记录寿命路径
+        self._record_path(p)
+        self._record_path(q)
+        if p.origin is not None:
+            self.initial_deaths.append(p.path / DIAG)
+        if q.origin is not None:
+            self.initial_deaths.append(q.path / DIAG)
+        # 更新组成计数
+        self.fcnt[mi["formula"]] -= 1
+        self.fcnt[mj["formula"]] -= 1
+        del self.particles[p.pid]
+        del self.particles[q.pid]
+        info = {
+            "t": t, "T": T, "type": typ,
+            "inputs": [mi["formula"], mj["formula"]],
+            "products": [m["formula"] for m in state],
+            "class": list(res["class"]) if res["class"] else None,
+            "csum": res["csum"], "isum": res["isum"],
+            "x": round(x, 1), "y": round(y, 1),
+        }
+        for m in state:
+            s = wmean * rng.uniform(0.8, 1.2)
+            ang = rng.random() * 2.0 * math.pi
+            np_ = Particle(self.next_pid, m,
+                           min(L, max(0.0, x + rng.uniform(-1.0, 1.0))),
+                           min(L, max(0.0, y + rng.uniform(-1.0, 1.0))),
+                           s * math.cos(ang), s * math.sin(ang),
+                           None, t)
+            self.next_pid += 1
+            self.particles[np_.pid] = np_
+            self.fcnt[m["formula"]] += 1
+            self._record_new(m["formula"], t, info, m)
+        # 事件样本（蓄水池）
+        self.events_total += 1
+        if len(self.events) < self.event_limit:
+            self.events.append(info)
+        else:
+            j = rng.randrange(self.events_total)
+            if j < self.event_limit:
+                self.events[j] = info
+
+    # -------------------------------------------------------------- 主循环
+    def run(self):
+        t_start = time.time()
+        log_every = 50
+        for t in range(self.minutes):
+            T = max(T_END, self.t0 - t)
+            n, speed_sum = self.move_all()
+            if n <= 1:
+                self.time_series.append(self._ts_row(t, T, 0))
+                continue
+            lam = mean_free_path(n)
+            # 按当前存活粒子建列表 + 累计权重
+            plist = list(self.particles.values())
+            cum = []
+            total = 0.0
+            for p in plist:
+                total += p.speed * DT / lam
+                cum.append(total)
+            self.build_grid()
+            k_total = poisson(self.rng, 0.5 * total)
+            rng = self.rng
+            collisions = 0
+            for _ in range(k_total):
+                r = rng.random() * total
+                i = bisect(cum, r)
+                if i >= len(plist):
+                    i = len(plist) - 1
+                p = plist[i]
+                if p.pid not in self.particles:
+                    continue
+                q = self.pick_partner(p)
+                if q is None:
+                    continue
+                self.process_collision(p, q, T, t)
+                collisions += 1
+            # ---------------- 统计记录 ----------------
+            speeds = [p.speed for p in self.particles.values()]
+            mean_speed = sum(speeds) / len(speeds) if speeds else 0.0
+            samp = speeds if len(speeds) <= 600 else rng.sample(speeds, 600)
+            samp.sort()
+            med = samp[len(samp) // 2] if samp else 0.0
+            p90 = samp[int(len(samp) * 0.9)] if samp else 0.0
+            max_atoms = max((len(p.mol["atoms"]) for p in self.particles.values()),
+                            default=0)
+            row = {
+                "t": t, "T": T, "N": len(self.particles),
+                "atoms": self.atom_count,
+                "mean_atoms": round(self.atom_count / len(self.particles), 3) if self.particles else 0,
+                "max_atoms": max_atoms,
+                "speed_mean": round(mean_speed, 1),
+                "speed_median": round(med, 1),
+                "speed_p90": round(p90, 1),
+                "free_path": round(lam, 1),
+                "collisions": collisions,
+                "complete": self.reaction_counts["complete"],
+                "incomplete": self.reaction_counts["incomplete"],
+                "none": self.reaction_counts["none"],
+                "decomp": self.decomp_count,
+                "path_D": round(self.path_sum / DIAG, 1),
+                "distinct": len(self.fcnt),
+                "events_total": self.events_total,
+            }
+            # 每分钟的类型增量（用差分另存）
+            row["d_complete"] = self.reaction_counts["complete"] - getattr(self, "_last_c", 0)
+            row["d_incomplete"] = self.reaction_counts["incomplete"] - getattr(self, "_last_i", 0)
+            row["d_none"] = self.reaction_counts["none"] - getattr(self, "_last_n", 0)
+            self._last_c = self.reaction_counts["complete"]
+            self._last_i = self.reaction_counts["incomplete"]
+            self._last_n = self.reaction_counts["none"]
+            row["top"] = {f: c for f, c in self.fcnt.most_common(8) if c > 0}
+            self.time_series.append(row)
+            if t % FORMULA_SAMPLE_MINUTES == 0 or t in self.snap_minutes:
+                self.formula_series.append({
+                    "t": t, "T": T,
+                    "counts": {f: c for f, c in self.fcnt.items() if c > 0},
+                })
+            if t in self.snap_minutes:
+                self.snapshots.append(self._snapshot(t))
+            if t % log_every == 0:
+                print("[t=%4d T=%4d] N=%5d atoms=%5d speed=%.0f coll/min=%5d ev=%d "
+                      "comp=%d inc=%d dec=%d path/D=%.0f  (%.0fs)" % (
+                          t, T, len(self.particles), self.atom_count, mean_speed,
+                          collisions, self.events_total,
+                          self.reaction_counts["complete"],
+                          self.reaction_counts["incomplete"],
+                          self.decomp_count, self.path_sum / DIAG,
+                          time.time() - t_start), flush=True)
+        # 终态
+        self.final_snapshot = self._snapshot(self.minutes)
+        self.result = self._build_result(t_start)
+        return self.result
+
+    # -------------------------------------------------------------- 统计/输出
+    def _ts_row(self, t, T, collisions):
+        return {"t": t, "T": T, "N": 0, "atoms": self.atom_count,
+                "collisions": collisions}
+
+    def _snapshot(self, t):
+        rng = self.rng
+        ps = list(self.particles.values())
+        if len(ps) > 3000:
+            ps = rng.sample(ps, 3000)
+        pts = []
+        for p in ps:
+            f = p.mol["formula"]
+            elems = set(p.mol["atoms"])
+            if elems == {"O"}:
+                col = 0
+            elif elems == {"X"}:
+                col = 1
+            elif elems == {"C"}:
+                col = 2
+            elif elems == {"O", "X"}:
+                col = 3
+            elif elems == {"O", "C"}:
+                col = 4
+            elif elems == {"X", "C"}:
+                col = 5
+            else:
+                col = 6
+            pts.append([round(p.x, 1), round(p.y, 1), col])
+        return {"t": t, "points": pts,
+                "legend": {"0": "O(秩)", "1": "X(晶)", "2": "C(冰)",
+                           "3": "O+X", "4": "O+C", "5": "X+C", "6": "O+X+C"}}
+
+    def _build_result(self, t_start):
+        # 初始单质路径统计
+        init = sorted(self.initial_deaths)
+        survivors = 0
+        for p in self.particles.values():
+            if p.origin is not None:
+                survivors += 1
+                init.append(p.path / DIAG)
+        def pct(a, q):
+            if not a:
+                return None
+            return round(a[min(len(a) - 1, int(q * len(a)))], 1)
+        init_stats = {"n": len(init),
+                      "min": round(init[0], 1) if init else None,
+                      "p1": pct(init, 0.01),
+                      "median": pct(init, 0.5),
+                      "max": round(init[-1], 1) if init else None,
+                      "survivors": survivors}
+        # 全部粒子寿命路径分桶
+        hist = {str(k): v for k, v in sorted(self.path_hist.items())}
+        comp = {}
+        for f, c in self.fcnt.items():
+            if c <= 0:
+                continue
+            mol = self._structure(f)
+            comp[f] = {"count": c,
+                       "atoms": len(mol["atoms"]) if mol else None,
+                       "zh": E.formula_zh(f),
+                       "known29": f in self.known}
+        top = sorted(comp.items(), key=lambda kv: -kv[1]["count"])
+        samples = {}
+        for f, _ in top[:24]:
+            mol = self._structure(f)
+            if mol:
+                samples[f] = {"label": mol["label"], "atoms": list(mol["atoms"]),
+                              "edges": [list(e) for e in mol["edges"]],
+                              "c": mol["c"]}
+        cfg = {
+            "L": L, "diagonal": round(DIAG, 3), "radius": RADIUS, "eps": EPS,
+            "T0": self.t0, "T_end": T_END, "minutes": self.minutes,
+            "species": SPECIES,
+            "batches": [{"tag": tag, "desc": desc,
+                         "per_species": self.n_batch} for tag, desc in BATCHES],
+            "initial_particles": self.n0, "initial_atoms": self.atoms0,
+            "v0": round(self.v0, 1),
+            "design_target_crossings": TARGET_CROSSINGS,
+            "design_window_minutes": 500,
+            "formula_sample_minutes": FORMULA_SAMPLE_MINUTES,
+            "snap_minutes": sorted(self.snap_minutes),
+            "seed": self.seed,
+            "mean_free_path0": round(mean_free_path(self.n0), 2),
+        }
+        return {
+            "config": cfg,
+            "summary": {
+                "runtime_s": round(time.time() - t_start, 1),
+                "final_T": max(T_END, self.t0 - self.minutes),
+                "final_N": len(self.particles),
+                "final_atoms": self.atom_count,
+                "final_path_D": round(self.path_sum / DIAG, 1),
+                "events_total": self.events_total,
+                "reaction_counts": dict(self.reaction_counts),
+                "decomp_events": self.decomp_count,
+                "initial_single_path_stats": init_stats,
+                "lifetime_path_stats": self.path_stats,
+                "lifetime_path_hist": hist,
+            },
+            "final_composition": comp,
+            "final_top_structures": samples,
+            "new_substances": self.new_substances,
+            "time_series": self.time_series,
+            "formula_series": self.formula_series,
+            "snapshots": self.snapshots,
+            "event_samples": self.events,
+        }
+
+    def _structure(self, f):
+        mol = self._templates.get(f)
+        if mol is not None:
+            return mol
+        rec = self.new_substances.get(f)
+        if rec and "atoms" in rec:
+            mol = E.make_mol(rec["atoms"], rec["edges"])
+            self._templates[f] = mol
+            return mol
+        return self._reconstruct_mol(f)
+
+    def _reconstruct_mol(self, f):
+        """按分子式重建一个代表结构：优先用 F(v)。"""
+        import pot_all as P
+        vec = P.parse_formula(f)
+        prods = E.complete_products(tuple(vec))
+        if prods:
+            mol = next((m for m in prods if m["formula"] == f), prods[0])
+            self._templates[f] = mol
+            return mol
+        raise KeyError(f)
+
+
+# ================================================================== 对照组
+def run_control(minutes=500, n_batch=N_BATCH, seed=20261116):
+    """关闭化学反应的对照：验证 500 次角-对角穿越要求。"""
+    rng = random.Random(seed)
+    subs = json.load(open(BASE + r"\substances.json", encoding="utf-8"))
+    byf = {r["formula"]: r for r in subs}
+    mols = [E.mol_from_record(byf[f]) for f in SPECIES]
+    n0 = n_batch * len(SPECIES) * len(BATCHES)
+    v0 = design_v0(n0)
+    particles = []
+    for f, mol in zip(SPECIES, mols):
+        for _ in range(n_batch * len(BATCHES)):
+            ang = rng.random() * 2.0 * math.pi
+            particles.append(Particle(len(particles), mol, rng.random() * L,
+                                      rng.random() * L, v0 * math.cos(ang),
+                                      v0 * math.sin(ang), f, 0))
+    ts = []
+    path_sum = 0.0
+    t_start = time.time()
+    # 碰撞率用 n0 恒定；每 10 分钟记录
+    lam = mean_free_path(n0)
+    for t in range(minutes):
+        floor = math.floor
+        L2 = 2.0 * L
+        sp_sum = 0.0
+        for p in particles:
+            p.path += p.speed * DT
+            path_sum += p.speed * DT
+            sp_sum += p.speed
+            p.x, fx = fold_axis(p.x, p.vx * DT)
+            p.y, fy = fold_axis(p.y, p.vy * DT)
+            if fx:
+                p.vx = -p.vx
+            if fy:
+                p.vy = -p.vy
+        cum = []
+        total = 0.0
+        for p in particles:
+            total += p.speed * DT / lam
+            cum.append(total)
+        # 每个"碰撞参与事件"按 v/λ 采样，衰减一个粒子；与主实验成对事件的
+        # 每人碰撞次数等价（主：0.5Σν 次成对事件 × 2 参与 = Σν 次参与）。
+        k = poisson(rng, total)
+        for _ in range(k):
+            i = bisect(cum, rng.random() * total)
+            p = particles[i]
+            ang = rng.random() * 2.0 * math.pi
+            s = p.speed * (1.0 - EPS)
+            p.vx = s * math.cos(ang)
+            p.vy = s * math.sin(ang)
+            p.speed = s
+        if t % 10 == 0:
+            ts.append({"t": t, "path_D_mean": round(path_sum / DIAG / n0, 2),
+                       "speed_mean": round(sp_sum / n0, 1)})
+        if t % 100 == 0:
+            print("[control t=%4d] path/D per particle=%.1f speed=%.0f (%.0fs)" % (
+                t, path_sum / DIAG / n0, sp_sum / n0, time.time() - t_start), flush=True)
+    cross = sorted(p.path / DIAG for p in particles)
+    def pct(a, q):
+        return round(a[min(len(a) - 1, int(q * len(a)))], 1)
+    stats = {
+        "n": len(cross),
+        "min": round(cross[0], 1), "p1": pct(cross, 0.01),
+        "p5": pct(cross, 0.05), "median": pct(cross, 0.5),
+        "p95": pct(cross, 0.95), "max": round(cross[-1], 1),
+        "fraction_ge_500": round(sum(1 for c in cross if c >= 500) / len(cross), 4),
+        "mean": round(sum(cross) / len(cross), 1),
+    }
+    return {
+        "config": {"minutes": minutes, "n_particles": n0, "v0": round(v0, 1),
+                   "radius": RADIUS, "eps": EPS, "L": L, "seed": seed,
+                   "chemical_reactions": False,
+                   "mean_free_path": round(lam, 2)},
+        "stats": stats,
+        "timeseries": ts,
+        "runtime_s": round(time.time() - t_start, 1),
+    }
+
+
+# ================================================================== main
+def main(argv=None):
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--minutes", type=int, default=MINUTES)
+    ap.add_argument("--t0", type=float, default=T0, help="初始温度（°C）")
+    ap.add_argument("--per-species-batch", type=int, default=N_BATCH)
+    ap.add_argument("--seed", type=int, default=20261116)
+    ap.add_argument("--out", default=BASE + r"\t55_kinetic_result.json")
+    ap.add_argument("--control", action="store_true")
+    ap.add_argument("--quick", action="store_true")
+    args = ap.parse_args(argv)
+    if args.control:
+        res = run_control(minutes=500 if not args.quick else 60,
+                          n_batch=args.per_species_batch,
+                          seed=args.seed)
+        out = args.out if args.control is not True else BASE + r"\t55_control_no_chem.json"
+        if args.out != BASE + r"\t55_kinetic_result.json":
+            out = args.out
+        json.dump(res, open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        print("saved", out)
+        print(json.dumps(res["stats"], ensure_ascii=False, indent=1))
+        return
+    env = KineticEnvironment(minutes=args.minutes,
+                             n_batch=args.per_species_batch,
+                             seed=args.seed,
+                             t0=args.t0,
+                             snap_minutes=SNAP_MINUTES if not args.quick else [0, 30, 60])
+    if args.quick:
+        env.minutes = args.minutes
+    res = env.run()
+    json.dump(res, open(args.out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print("saved", args.out)
+    print(json.dumps(res["summary"], ensure_ascii=False, indent=1)[:2000])
+
+
+if __name__ == "__main__":
+    main()

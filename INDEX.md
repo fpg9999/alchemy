@@ -62,6 +62,12 @@
 - **T39（2026-11-15）骨架库复核**：`t39_library_verify.py`、`t39_render.py`、`docs/T39_SKELETON_LIBRARY_VERIFY.md`、`t39_library_verify.json`、`t39_t15_rescan.json`、`images/t39_library_outside.png`
   - 发现 `wl_key` 不是同构不变量（T38 的库外例子全为假阳性；T15 的 695→671）；
   - 真·库外 6 级块仅 `O3P5K2` 一族（三价 ≤10 穷举）；671 个终态形态 = 库内块融合（670/670 宿主结构定理通过，不算库外）。
+- **T55（2026-11-16）2D 粒子环境实验**：`natural_engine.py`（T35 判定 + pot_v4 规则 1~11 完全反应 +
+  t28 不完全反应 + 自分解）；`t55_kinetic_env.py`（10000×10000 反射边界、9000 个聚素单质、
+  初速 38197/分钟、每次碰撞 -0.2%、1000→0°C）、`t55_control_no_chem.json`（500 次穿越验证：
+  9000/9000 达标，min 696.7）、`t55_sensitivity.py`（T0=6/8/12/20°C 敏感性）、`t55_analysis.py`/`t55_render.py`、
+  `docs/T55_KINETIC_ENV.md`、`docs/T55_ENGINE_AUDIT.md`、`images/t55_*.png`（8 张）；
+  结论：主实验快速退火到 99.5% `OXC`；温度标度敏感性下出现不完全反应/自分解/新物质。
 - **T45（2026-11-16）规则 10/11 纳入**：`pot_v4.py`（规则 1~11）、`t50_scan_block_ambiguity.py`、`docs/T45_RULES_10_11.md`
   - ≤11 三价全组合全分支：6 级骨架歧义 0、库外块 0；O3P5K2 库外变体被规则 11 排除；
   - 目录结构影响：14,615/84,225（17.4%）结构与 pot_v3 不同（分子式不变），数据迁移待做。

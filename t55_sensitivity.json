@@ -1,0 +1,191 @@
+{
+ "seed": 20261116,
+ "runs": [
+  {
+   "T0": 6,
+   "minutes": 6,
+   "final_N": 5148,
+   "events_total": 4133,
+   "reaction_counts": {
+    "complete": 6114,
+    "incomplete": 12811,
+    "none": 557
+   },
+   "decomp_events": 0,
+   "new_substances": [],
+   "n_distinct_final": 11,
+   "n_known29_final": 11,
+   "n_new_final": 0,
+   "top_final": [
+    [
+     "O2X2",
+     1134
+    ],
+    [
+     "O2C2",
+     1090
+    ],
+    [
+     "X2C2",
+     1044
+    ],
+    [
+     "O2",
+     570
+    ],
+    [
+     "X2",
+     504
+    ],
+    [
+     "XC2",
+     379
+    ]
+   ],
+   "file": "G:\\AI work\\deepseek\\work1\\alchemy\\t55_sens_T6.json"
+  },
+  {
+   "T0": 8,
+   "minutes": 8,
+   "final_N": 4630,
+   "events_total": 5677,
+   "reaction_counts": {
+    "complete": 7827,
+    "incomplete": 12826,
+    "none": 687
+   },
+   "decomp_events": 82,
+   "new_substances": [
+    "OX2C3",
+    "O2X3C2",
+    "OX4C",
+    "OX3C3"
+   ],
+   "n_distinct_final": 27,
+   "n_known29_final": 23,
+   "n_new_final": 4,
+   "top_final": [
+    [
+     "O2X2",
+     817
+    ],
+    [
+     "OXC",
+     803
+    ],
+    [
+     "O2C2",
+     628
+    ],
+    [
+     "X2C2",
+     367
+    ],
+    [
+     "O2",
+     264
+    ],
+    [
+     "X2",
+     262
+    ]
+   ],
+   "file": "G:\\AI work\\deepseek\\work1\\alchemy\\t55_sens_T8.json"
+  },
+  {
+   "T0": 12,
+   "minutes": 12,
+   "final_N": 3888,
+   "events_total": 8227,
+   "reaction_counts": {
+    "complete": 12097,
+    "incomplete": 10936,
+    "none": 861
+   },
+   "decomp_events": 133,
+   "new_substances": [
+    "O2X3C2",
+    "OX2C3",
+    "O2X4C2",
+    "OX4C",
+    "OX3C3"
+   ],
+   "n_distinct_final": 34,
+   "n_known29_final": 29,
+   "n_new_final": 5,
+   "top_final": [
+    [
+     "OXC",
+     668
+    ],
+    [
+     "OX2C",
+     414
+    ],
+    [
+     "O2X2",
+     312
+    ],
+    [
+     "O2XC2",
+     299
+    ],
+    [
+     "O3XC3",
+     267
+    ],
+    [
+     "X2",
+     235
+    ]
+   ],
+   "file": "G:\\AI work\\deepseek\\work1\\alchemy\\t55_sens_T12.json"
+  },
+  {
+   "T0": 20,
+   "minutes": 20,
+   "final_N": 4585,
+   "events_total": 11053,
+   "reaction_counts": {
+    "complete": 28502,
+    "incomplete": 14116,
+    "none": 1241
+   },
+   "decomp_events": 49,
+   "new_substances": [
+    "O2X3C2",
+    "O2X4C2"
+   ],
+   "n_distinct_final": 22,
+   "n_known29_final": 20,
+   "n_new_final": 2,
+   "top_final": [
+    [
+     "OXC",
+     2774
+    ],
+    [
+     "O2XC2",
+     477
+    ],
+    [
+     "OX2C",
+     414
+    ],
+    [
+     "O2XC4",
+     174
+    ],
+    [
+     "O2X2",
+     159
+    ],
+    [
+     "O2X2C4",
+     152
+    ]
+   ],
+   "file": "G:\\AI work\\deepseek\\work1\\alchemy\\t55_sens_T20.json"
+  }
+ ]
+}

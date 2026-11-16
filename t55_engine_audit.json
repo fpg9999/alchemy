@@ -1,0 +1,1263 @@
+{
+ "meta": {
+  "script": "t55_engine_audit.py",
+  "generated": "2026-11-16 18:56:55",
+  "catalog_size": 84225,
+  "small_catalog_size": 3931,
+  "unstable_found": 8,
+  "unstable_search_tries": 98,
+  "unstable_formulas": [
+   "XP2W3K2",
+   "X2PW2KA",
+   "O3C3W2K2",
+   "XCWK3",
+   "X2P2W2L2A2",
+   "XW2KA2F",
+   "O3XP2KA",
+   "OX2P2W2KA"
+  ],
+  "seconds": 13.3,
+  "all_pass": true
+ },
+ "test1_complete": {
+  "pass": true,
+  "exhaustive_vectors": 11440,
+  "random_vectors": 3003,
+  "checked": 14444,
+  "none_both": 7547,
+  "even_valence_failures": 321,
+  "mismatch_count": 0,
+  "mismatch_examples": [],
+  "seconds": 9.0,
+  "note": "穷举总原子 0..7 全向量；随机总原子 8..12 共 3000 条；另加单原子边界。"
+ },
+ "test2_greedy_bonds": {
+  "pass": true,
+  "checked": 508,
+  "mismatch_count": 0,
+  "mismatch_examples": [],
+  "seconds": 0.17
+ },
+ "test3_incomplete": {
+  "pass": true,
+  "pass_formula_core": true,
+  "pairs": 420,
+  "stats": {
+   "pairs": 420,
+   "t28_restored": 378,
+   "ne_restored": 378,
+   "formula_same": 420,
+   "t28_changed": 42,
+   "ne_changed": 42,
+   "structure_diff": 3
+  },
+  "class_mismatch_count": 0,
+  "class_mismatch_examples": [],
+  "r19_vs_t28_mismatch_count": 0,
+  "r19_vs_t28_mismatch_examples": [],
+  "fail_parity_count": 0,
+  "fail_parity_examples": [],
+  "formula_diff_count": 0,
+  "formula_diff_examples": [],
+  "structure_diff_count": 3,
+  "structure_diff_examples": [
+   {
+    "A": "X2PLK4",
+    "B": "XWLK",
+    "forms": [
+     "X2PLK4",
+     "XWLK"
+    ],
+    "ne_labels": [
+     "XWLK|002110",
+     "XXPLKKKK|0000200000011010111000001100"
+    ],
+    "t28_labels": [
+     "XWLK|002110",
+     "XXPLKKKK|0000200000011010111000100001"
+    ]
+   },
+   {
+    "A": "OXK2F",
+    "B": "XPK3A2",
+    "forms": [
+     "OXK2F",
+     "XPK3A2"
+    ],
+    "ne_labels": [
+     "OXKKF|0210020010",
+     "XPKKAAK|001001110010110010010"
+    ],
+    "t28_labels": [
+     "OXKKF|0210020010",
+     "XPKKAAK|001001110010200010001"
+    ]
+   },
+   {
+    "A": "XCPK4A",
+    "B": "OPLK",
+    "forms": [
+     "OPLK",
+     "XCPK4A"
+    ],
+    "ne_labels": [
+     "OPLK|102110",
+     "XCPKKKKA|0000020000100111000011101000"
+    ],
+    "t28_labels": [
+     "OPLK|102110",
+     "XCPKKKAK|0000200001000110010011100001"
+    ]
+   }
+  ],
+  "rules10_11_effect_count": 3,
+  "order_flip_count": 0,
+  "order_flip_examples": [],
+  "seconds": 0.66,
+  "note": "r19 = 同一 greedy 代码关闭规则 10/11（TRI=set/ring_flags 全 False）得到规则 1~9 口径；r19 与 t28 的差异可判定为移植 bug；natural(规则1~11) 与 t28 的差异属设计预期。"
+ },
+ "test4_thresholds": {
+  "pass": true,
+  "c_bad_count": 0,
+  "c_bad_examples": [],
+  "i_bad_count": 0,
+  "i_bad_examples": [],
+  "triple_pair_i": {
+   "formula": "O2",
+   "classes": {
+    "(0, 3, 3)": 1
+   },
+   "i": 1,
+   "expect": 1,
+   "ok": true
+  },
+  "select_class_unit_tests": [
+   {
+    "case": "d 优先(0 小于 4)",
+    "expect": [
+     0,
+     3,
+     3
+    ],
+    "got": [
+     0,
+     3,
+     3
+    ],
+    "ok": true
+   },
+   {
+    "case": "m 优先(同 d=0: 3>1)",
+    "expect": [
+     0,
+     3,
+     3
+    ],
+    "got": [
+     0,
+     3,
+     3
+    ],
+    "ok": true
+   },
+   {
+    "case": "v 优先(同 d=4,m=1: 1<2)",
+    "expect": [
+     4,
+     1,
+     1
+    ],
+    "got": [
+     4,
+     1,
+     1
+    ],
+    "ok": true
+   },
+   {
+    "case": "同 d=0 时 m 大者优先(2>1)",
+    "expect": [
+     0,
+     2,
+     2
+    ],
+    "got": [
+     0,
+     2,
+     2
+    ],
+    "ok": true
+   }
+  ],
+  "seconds": 0.35,
+  "note": "c(M)=Σ边键级；i(M)=选中键类的元素对数（每元素对 1，与键级无关）；select_class=(d 小, m 大, v 小)，已与 t28_rule_v2.select_class 在任务 3 的 420 对上交叉验证。"
+ },
+ "test5_t35": {
+  "5a_complete_priority": {
+   "pass": true,
+   "stable_pair": {
+    "mols": [
+     "C2",
+     "XC2"
+    ],
+    "T": 3,
+    "type": "complete",
+    "products": [
+     "C2",
+     "XC2"
+    ],
+    "expected": [
+     "C2",
+     "XC2"
+    ],
+    "stages": []
+   },
+   "unstable_plus_stable": {
+    "mols": [
+     "XP2W3K2",
+     "C2"
+    ],
+    "T": 11,
+    "type": "complete",
+    "products": [
+     "PK",
+     "PK",
+     "XC2W3"
+    ],
+    "expected": [
+     "PK",
+     "PK",
+     "XC2W3"
+    ],
+    "stages": []
+   }
+  },
+  "5b_self_decomp_priority": {
+   "pass": true,
+   "cases": [
+    {
+     "U": "XP2W3K2",
+     "B": "C2",
+     "c(U)": 10,
+     "c(B)": 1,
+     "T": 10,
+     "csum": 11,
+     "old_isum": 1,
+     "preempted_incomplete": true,
+     "decomp_stage": [
+      {
+       "op": "self_decomp",
+       "from": "XP2W3K2",
+       "from_label": "XPWWWKKP|1000001001010000200200001010",
+       "to": [
+        "XW3",
+        "PK",
+        "PK"
+       ],
+       "c": 10
+      }
+     ],
+     "final_type": "incomplete",
+     "final_products": [
+      "C2",
+      "PK",
+      "PK",
+      "XW3"
+     ],
+     "ok": true
+    },
+    {
+     "U": "X2PW2KA",
+     "B": "C2",
+     "c(U)": 8,
+     "c(B)": 1,
+     "T": 8,
+     "csum": 9,
+     "old_isum": 1,
+     "preempted_incomplete": true,
+     "decomp_stage": [
+      {
+       "op": "self_decomp",
+       "from": "X2PW2KA",
+       "from_label": "XXPWWKA|010001101000001020100",
+       "to": [
+        "X2W2A",
+        "PK"
+       ],
+       "c": 8
+      }
+     ],
+     "final_type": "incomplete",
+     "final_products": [
+      "C2",
+      "PK",
+      "X2W2A"
+     ],
+     "ok": true
+    },
+    {
+     "U": "O3C3W2K2",
+     "B": "C2",
+     "c(U)": 11,
+     "c(B)": 1,
+     "T": 11,
+     "csum": 12,
+     "old_isum": 1,
+     "preempted_incomplete": true,
+     "decomp_stage": [
+      {
+       "op": "self_decomp",
+       "from": "O3C3W2K2",
+       "from_label": "OOCCCWWKKO|100100010100000010000000000001000000020200010",
+       "to": [
+        "O3CW2K2",
+        "C2"
+       ],
+       "c": 11
+      }
+     ],
+     "final_type": "incomplete",
+     "final_products": [
+      "C2",
+      "C2",
+      "O3CW2K2"
+     ],
+     "ok": true
+    },
+    {
+     "U": "XCWK3",
+     "B": "C2",
+     "c(U)": 7,
+     "c(B)": 1,
+     "T": 7,
+     "csum": 8,
+     "old_isum": 1,
+     "preempted_incomplete": true,
+     "decomp_stage": [
+      {
+       "op": "self_decomp",
+       "from": "XCWK3",
+       "from_label": "XCWKKK|000020010110110",
+       "to": [
+        "XCWK3"
+       ],
+       "c": 7
+      }
+     ],
+     "final_type": "incomplete",
+     "final_products": [
+      "C2",
+      "XCWK3"
+     ],
+     "ok": true
+    },
+    {
+     "U": "X2P2W2L2A2",
+     "B": "C2",
+     "c(U)": 10,
+     "c(B)": 1,
+     "T": 10,
+     "csum": 11,
+     "old_isum": 1,
+     "preempted_incomplete": true,
+     "decomp_stage": [
+      {
+       "op": "self_decomp",
+       "from": "X2P2W2L2A2",
+       "from_label": "XPPWWLLAAX|000100010001011001010100000001000000000000001",
+       "to": [
+        "XPWLA",
+        "XPWLA"
+       ],
+       "c": 10
+      }
+     ],
+     "final_type": "incomplete",
+     "final_products": [
+      "C2",
+      "XPWLA",
+      "XPWLA"
+     ],
+     "ok": true
+    },
+    {
+     "U": "XW2KA2F",
+     "B": "C2",
+     "c(U)": 7,
+     "c(B)": 1,
+     "T": 7,
+     "csum": 8,
+     "old_isum": 1,
+     "preempted_incomplete": true,
+     "decomp_stage": [
+      {
+       "op": "self_decomp",
+       "from": "XW2KA2F",
+       "from_label": "XWWKAAF|002000001101010000010",
+       "to": [
+        "XW2KA2F"
+       ],
+       "c": 7
+      }
+     ],
+     "final_type": "incomplete",
+     "final_products": [
+      "C2",
+      "XW2KA2F"
+     ],
+     "ok": true
+    },
+    {
+     "U": "O3XP2KA",
+     "B": "C2",
+     "c(U)": 11,
+     "c(B)": 1,
+     "T": 11,
+     "csum": 12,
+     "old_isum": 1,
+     "preempted_incomplete": true,
+     "decomp_stage": [
+      {
+       "op": "self_decomp",
+       "from": "O3XP2KA",
+       "from_label": "OOOXPPKA|0000201002010011010020000000",
+       "to": [
+        "OK",
+        "OP",
+        "OP",
+        "XA"
+       ],
+       "c": 11
+      }
+     ],
+     "final_type": "incomplete",
+     "final_products": [
+      "C2",
+      "OK",
+      "OP",
+      "OP",
+      "XA"
+     ],
+     "ok": true
+    },
+    {
+     "U": "OX2P2W2KA",
+     "B": "C2",
+     "c(U)": 11,
+     "c(B)": 1,
+     "T": 11,
+     "csum": 12,
+     "old_isum": 1,
+     "preempted_incomplete": true,
+     "decomp_stage": [
+      {
+       "op": "self_decomp",
+       "from": "OX2P2W2KA",
+       "from_label": "OXXPPWWKA|000200100000101001001001201000000000",
+       "to": [
+        "OX2P2W2KA"
+       ],
+       "c": 11
+      }
+     ],
+     "final_type": "incomplete",
+     "final_products": [
+      "C2",
+      "OX2P2W2KA"
+     ],
+     "ok": true
+    }
+   ]
+  },
+  "5c_rejudge": {
+   "pass_semantics": true,
+   "rejudge_semantics": [
+    {
+     "U": "XP2W3K2",
+     "T": 10,
+     "stage": [
+      "XP2W3K2"
+     ],
+     "S2": [
+      "XW3",
+      "PK",
+      "PK",
+      "C2"
+     ],
+     "engine": {
+      "type": "incomplete",
+      "products": [
+       "C2",
+       "PK",
+       "PK",
+       "XW3"
+      ]
+     },
+     "resolve_S2": {
+      "type": "incomplete",
+      "products": [
+       "C2",
+       "PK",
+       "PK",
+       "XW3"
+      ]
+     },
+     "hypothetical_no_decomp_incomplete": [
+      "C2",
+      "XP2W3K2"
+     ],
+     "rejudge_changed_outcome": true,
+     "ok": true
+    },
+    {
+     "U": "X2PW2KA",
+     "T": 8,
+     "stage": [
+      "X2PW2KA"
+     ],
+     "S2": [
+      "X2W2A",
+      "PK",
+      "C2"
+     ],
+     "engine": {
+      "type": "incomplete",
+      "products": [
+       "C2",
+       "PK",
+       "X2W2A"
+      ]
+     },
+     "resolve_S2": {
+      "type": "incomplete",
+      "products": [
+       "C2",
+       "PK",
+       "X2W2A"
+      ]
+     },
+     "hypothetical_no_decomp_incomplete": [
+      "C2",
+      "X2PW2KA"
+     ],
+     "rejudge_changed_outcome": true,
+     "ok": true
+    },
+    {
+     "U": "O3C3W2K2",
+     "T": 11,
+     "stage": [
+      "O3C3W2K2"
+     ],
+     "S2": [
+      "O3CW2K2",
+      "C2",
+      "C2"
+     ],
+     "engine": {
+      "type": "incomplete",
+      "products": [
+       "C2",
+       "C2",
+       "O3CW2K2"
+      ]
+     },
+     "resolve_S2": {
+      "type": "incomplete",
+      "products": [
+       "C2",
+       "C2",
+       "O3CW2K2"
+      ]
+     },
+     "hypothetical_no_decomp_incomplete": [
+      "C2",
+      "O3C3W2K2"
+     ],
+     "rejudge_changed_outcome": true,
+     "ok": true
+    },
+    {
+     "U": "XCWK3",
+     "T": 7,
+     "stage": [
+      "XCWK3"
+     ],
+     "S2": [
+      "XCWK3",
+      "C2"
+     ],
+     "engine": {
+      "type": "incomplete",
+      "products": [
+       "C2",
+       "XCWK3"
+      ]
+     },
+     "resolve_S2": {
+      "type": "incomplete",
+      "products": [
+       "C2",
+       "XCWK3"
+      ]
+     },
+     "hypothetical_no_decomp_incomplete": [
+      "C2",
+      "XCWK3"
+     ],
+     "rejudge_changed_outcome": true,
+     "ok": true
+    },
+    {
+     "U": "X2P2W2L2A2",
+     "T": 10,
+     "stage": [
+      "X2P2W2L2A2"
+     ],
+     "S2": [
+      "XPWLA",
+      "XPWLA",
+      "C2"
+     ],
+     "engine": {
+      "type": "incomplete",
+      "products": [
+       "C2",
+       "XPWLA",
+       "XPWLA"
+      ]
+     },
+     "resolve_S2": {
+      "type": "incomplete",
+      "products": [
+       "C2",
+       "XPWLA",
+       "XPWLA"
+      ]
+     },
+     "hypothetical_no_decomp_incomplete": [
+      "C2",
+      "X2P2W2L2A2"
+     ],
+     "rejudge_changed_outcome": true,
+     "ok": true
+    },
+    {
+     "U": "XW2KA2F",
+     "T": 7,
+     "stage": [
+      "XW2KA2F"
+     ],
+     "S2": [
+      "XW2KA2F",
+      "C2"
+     ],
+     "engine": {
+      "type": "incomplete",
+      "products": [
+       "C2",
+       "XW2KA2F"
+      ]
+     },
+     "resolve_S2": {
+      "type": "incomplete",
+      "products": [
+       "C2",
+       "XW2KA2F"
+      ]
+     },
+     "hypothetical_no_decomp_incomplete": [
+      "C2",
+      "XW2KA2F"
+     ],
+     "rejudge_changed_outcome": true,
+     "ok": true
+    }
+   ],
+   "incomplete_unlock_examples": [],
+   "complete_unlock_possible": false,
+   "c_invariance": [
+    {
+     "U": "XP2W3K2",
+     "c(U)": 10,
+     "sum_c_F": 10,
+     "invariant": true
+    },
+    {
+     "U": "X2PW2KA",
+     "c(U)": 8,
+     "sum_c_F": 8,
+     "invariant": true
+    },
+    {
+     "U": "O3C3W2K2",
+     "c(U)": 11,
+     "sum_c_F": 11,
+     "invariant": true
+    },
+    {
+     "U": "XCWK3",
+     "c(U)": 7,
+     "sum_c_F": 7,
+     "invariant": true
+    },
+    {
+     "U": "X2P2W2L2A2",
+     "c(U)": 10,
+     "sum_c_F": 10,
+     "invariant": true
+    },
+    {
+     "U": "XW2KA2F",
+     "c(U)": 7,
+     "sum_c_F": 7,
+     "invariant": true
+    },
+    {
+     "U": "O3XP2KA",
+     "c(U)": 11,
+     "sum_c_F": 11,
+     "invariant": true
+    },
+    {
+     "U": "OX2P2W2KA",
+     "c(U)": 11,
+     "sum_c_F": 11,
+     "invariant": true
+    }
+   ],
+   "note": "Σc 由元素计数唯一决定（2c=Σ价数），自分解不改变 Σc，因此“自分解后解锁完全反应”在该模型中不可能（与 T35 §3/§6.3 的举例不符，属文档层面问题，不是引擎 bug）；重判循环本身正确，且可改变后续不完全反应的键类/阈值。"
+  },
+  "5d_multi_decomp": {
+   "pass": true,
+   "case": {
+    "mols": [
+     "XP2W3K2",
+     "X2PW2KA"
+    ],
+    "c": [
+     10,
+     8
+    ],
+    "T": 10,
+    "all_staged": [
+     "XP2W3K2",
+     "X2PW2KA"
+    ],
+    "final_type": "incomplete",
+    "final_products": [
+     "PK",
+     "PK",
+     "PK",
+     "X2W3A",
+     "XW2"
+    ],
+    "ok": true
+   }
+  },
+  "5e_below_threshold": {
+   "pass": true,
+   "cases": [
+    {
+     "case": "stable pair T=0",
+     "T": 0,
+     "type": "none",
+     "products": null,
+     "stages": [],
+     "ok": true
+    },
+    {
+     "case": "stable pair T=1 (<isum=2)",
+     "T": 1,
+     "type": "none",
+     "products": null,
+     "stages": [],
+     "ok": true
+    },
+    {
+     "case": "unstable U+B T=0",
+     "T": 0,
+     "type": "none",
+     "products": null,
+     "stages": [],
+     "ok": true
+    }
+   ]
+  },
+  "t33_w2a_wa3f2": {
+   "cA": 3,
+   "cB": 5,
+   "csum": 8,
+   "class": [
+    0,
+    1,
+    2
+   ],
+   "iA": 1,
+   "iB": 1,
+   "table": [
+    {
+     "T": 0,
+     "sum_rule": {
+      "type": "none",
+      "products": null,
+      "isum": null,
+      "csum": 8
+     },
+     "max_rule": {
+      "type": "none",
+      "products": null
+     }
+    },
+    {
+     "T": 1,
+     "sum_rule": {
+      "type": "none",
+      "products": null,
+      "isum": null,
+      "csum": 8
+     },
+     "max_rule": {
+      "type": "incomplete",
+      "products": [
+       "W3A4F2"
+      ]
+     }
+    },
+    {
+     "T": 2,
+     "sum_rule": {
+      "type": "incomplete",
+      "products": [
+       "W3A4F2"
+      ],
+      "isum": 2,
+      "csum": 8
+     },
+     "max_rule": {
+      "type": "incomplete",
+      "products": [
+       "W3A4F2"
+      ]
+     }
+    },
+    {
+     "T": 3,
+     "sum_rule": {
+      "type": "incomplete",
+      "products": [
+       "W3A4F2"
+      ],
+      "isum": 2,
+      "csum": 8
+     },
+     "max_rule": {
+      "type": "incomplete",
+      "products": [
+       "W3A4F2"
+      ]
+     }
+    },
+    {
+     "T": 4,
+     "sum_rule": {
+      "type": "incomplete",
+      "products": [
+       "W3A4F2"
+      ],
+      "isum": 2,
+      "csum": 8
+     },
+     "max_rule": {
+      "type": "incomplete",
+      "products": [
+       "W3A4F2"
+      ]
+     }
+    },
+    {
+     "T": 5,
+     "sum_rule": {
+      "type": "incomplete",
+      "products": [
+       "W3A4F2"
+      ],
+      "isum": 2,
+      "csum": 8
+     },
+     "max_rule": {
+      "type": "complete",
+      "products": [
+       "WA",
+       "WA",
+       "WA2F2"
+      ]
+     }
+    },
+    {
+     "T": 6,
+     "sum_rule": {
+      "type": "incomplete",
+      "products": [
+       "W3A4F2"
+      ],
+      "isum": 2,
+      "csum": 8
+     },
+     "max_rule": {
+      "type": "complete",
+      "products": [
+       "WA",
+       "WA",
+       "WA2F2"
+      ]
+     }
+    },
+    {
+     "T": 7,
+     "sum_rule": {
+      "type": "incomplete",
+      "products": [
+       "W3A4F2"
+      ],
+      "isum": 2,
+      "csum": 8
+     },
+     "max_rule": {
+      "type": "complete",
+      "products": [
+       "WA",
+       "WA",
+       "WA2F2"
+      ]
+     }
+    },
+    {
+     "T": 8,
+     "sum_rule": {
+      "type": "complete",
+      "products": [
+       "WA",
+       "WA",
+       "WA2F2"
+      ],
+      "isum": null,
+      "csum": 8
+     },
+     "max_rule": {
+      "type": "complete",
+      "products": [
+       "WA",
+       "WA",
+       "WA2F2"
+      ]
+     }
+    },
+    {
+     "T": 9,
+     "sum_rule": {
+      "type": "complete",
+      "products": [
+       "WA",
+       "WA",
+       "WA2F2"
+      ],
+      "isum": null,
+      "csum": 8
+     },
+     "max_rule": {
+      "type": "complete",
+      "products": [
+       "WA",
+       "WA",
+       "WA2F2"
+      ]
+     }
+    }
+   ],
+   "checks": {
+    "T3_incomplete_W3A4F2": true,
+    "T5_sum_incomplete": true,
+    "T5_max_complete": true,
+    "T8_sum_complete_WA_WA_WA2F2": true
+   },
+   "pass": true
+  },
+  "pass": true,
+  "seconds": 0.4
+ },
+ "test6_stability": {
+  "pass": true,
+  "catalog_sample_stable": {
+   "sample": 300,
+   "unstable_count": 0,
+   "examples": []
+  },
+  "unstable_checks": [
+   {
+    "U": "XP2W3K2",
+    "c": 10,
+    "unstable": true,
+    "direct_F_not_self": true,
+    "F": [
+     "PK",
+     "PK",
+     "XW3"
+    ],
+    "c_sum_F": 10,
+    "subs_all_stable": true,
+    "c_invariant": true,
+    "T_ge_c_products": [
+     "PK",
+     "PK",
+     "XW3"
+    ],
+    "T_ge_c_type": "complete",
+    "T_ge_c_ok": true,
+    "T_lt_c_type": "incomplete",
+    "T_lt_c_no_decomp": true,
+    "products_are_F_fixed_points": true,
+    "ok": true
+   },
+   {
+    "U": "X2PW2KA",
+    "c": 8,
+    "unstable": true,
+    "direct_F_not_self": true,
+    "F": [
+     "PK",
+     "X2W2A"
+    ],
+    "c_sum_F": 8,
+    "subs_all_stable": true,
+    "c_invariant": true,
+    "T_ge_c_products": [
+     "PK",
+     "X2W2A"
+    ],
+    "T_ge_c_type": "complete",
+    "T_ge_c_ok": true,
+    "T_lt_c_type": "incomplete",
+    "T_lt_c_no_decomp": true,
+    "products_are_F_fixed_points": true,
+    "ok": true
+   },
+   {
+    "U": "O3C3W2K2",
+    "c": 11,
+    "unstable": true,
+    "direct_F_not_self": true,
+    "F": [
+     "C2",
+     "O3CW2K2"
+    ],
+    "c_sum_F": 11,
+    "subs_all_stable": true,
+    "c_invariant": true,
+    "T_ge_c_products": [
+     "C2",
+     "O3CW2K2"
+    ],
+    "T_ge_c_type": "complete",
+    "T_ge_c_ok": true,
+    "T_lt_c_type": "incomplete",
+    "T_lt_c_no_decomp": true,
+    "products_are_F_fixed_points": true,
+    "ok": true
+   },
+   {
+    "U": "XCWK3",
+    "c": 7,
+    "unstable": true,
+    "direct_F_not_self": true,
+    "F": [
+     "XCWK3"
+    ],
+    "c_sum_F": 7,
+    "subs_all_stable": true,
+    "c_invariant": true,
+    "T_ge_c_products": [
+     "XCWK3"
+    ],
+    "T_ge_c_type": "complete",
+    "T_ge_c_ok": true,
+    "T_lt_c_type": "incomplete",
+    "T_lt_c_no_decomp": true,
+    "products_are_F_fixed_points": true,
+    "ok": true
+   },
+   {
+    "U": "X2P2W2L2A2",
+    "c": 10,
+    "unstable": true,
+    "direct_F_not_self": true,
+    "F": [
+     "XPWLA",
+     "XPWLA"
+    ],
+    "c_sum_F": 10,
+    "subs_all_stable": true,
+    "c_invariant": true,
+    "T_ge_c_products": [
+     "XPWLA",
+     "XPWLA"
+    ],
+    "T_ge_c_type": "complete",
+    "T_ge_c_ok": true,
+    "T_lt_c_type": "incomplete",
+    "T_lt_c_no_decomp": true,
+    "products_are_F_fixed_points": true,
+    "ok": true
+   },
+   {
+    "U": "XW2KA2F",
+    "c": 7,
+    "unstable": true,
+    "direct_F_not_self": true,
+    "F": [
+     "XW2KA2F"
+    ],
+    "c_sum_F": 7,
+    "subs_all_stable": true,
+    "c_invariant": true,
+    "T_ge_c_products": [
+     "XW2KA2F"
+    ],
+    "T_ge_c_type": "complete",
+    "T_ge_c_ok": true,
+    "T_lt_c_type": "incomplete",
+    "T_lt_c_no_decomp": true,
+    "products_are_F_fixed_points": true,
+    "ok": true
+   },
+   {
+    "U": "O3XP2KA",
+    "c": 11,
+    "unstable": true,
+    "direct_F_not_self": true,
+    "F": [
+     "OK",
+     "OP",
+     "OP",
+     "XA"
+    ],
+    "c_sum_F": 11,
+    "subs_all_stable": true,
+    "c_invariant": true,
+    "T_ge_c_products": [
+     "OK",
+     "OP",
+     "OP",
+     "XA"
+    ],
+    "T_ge_c_type": "complete",
+    "T_ge_c_ok": true,
+    "T_lt_c_type": "incomplete",
+    "T_lt_c_no_decomp": true,
+    "products_are_F_fixed_points": true,
+    "ok": true
+   },
+   {
+    "U": "OX2P2W2KA",
+    "c": 11,
+    "unstable": true,
+    "direct_F_not_self": true,
+    "F": [
+     "OX2P2W2KA"
+    ],
+    "c_sum_F": 11,
+    "subs_all_stable": true,
+    "c_invariant": true,
+    "T_ge_c_products": [
+     "OX2P2W2KA"
+    ],
+    "T_ge_c_type": "complete",
+    "T_ge_c_ok": true,
+    "T_lt_c_type": "incomplete",
+    "T_lt_c_no_decomp": true,
+    "products_are_F_fixed_points": true,
+    "ok": true
+   }
+  ],
+  "F_idempotence_bad": [],
+  "clear_caches_consistent": true,
+  "seconds": 1.55,
+  "note": "单分子不稳定物在 T>=c 时由 resolve 第 1 步（完全反应，Σc=c）完成，产物与自分解 F(v_M) 相同；T<c 时不走自分解分支（单分子不完全反应仅复原自身）。"
+ },
+ "test7_defects": {
+  "pass": true,
+  "ring_flags_random_bad": 0,
+  "ring_flags_bad_examples": [],
+  "ring_flags_fixed_cases": [
+   {
+    "name": "链 0-1-2",
+    "ring": [
+     false,
+     false,
+     false
+    ],
+    "expect": [
+     false,
+     false,
+     false
+    ],
+    "ok": true
+   },
+   {
+    "name": "三角 0-1-2-0",
+    "ring": [
+     true,
+     true,
+     true
+    ],
+    "expect": [
+     true,
+     true,
+     true
+    ],
+    "ok": true
+   },
+   {
+    "name": "四元环+尾",
+    "ring": [
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "expect": [
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "ok": true
+   }
+  ],
+  "c_invariance_bad": 0,
+  "edge_cases": {
+   "lone_X_is_stable": false,
+   "lone_X_resolve_type": "none",
+   "lone_X_products": null,
+   "empty_F": [],
+   "empty_greedy": []
+  },
+  "level6_note": [
+   {
+    "U": "XP2W3K2",
+    "note": "自分解产物由 F(v_U) 给出，走 greedy_bond 空 base_edges，与 pot_v4 完全同口径；规则 10 的 level6 块捕获在空 base 下与 pot_v4 相同。"
+   },
+   {
+    "U": "X2PW2KA",
+    "note": "自分解产物由 F(v_U) 给出，走 greedy_bond 空 base_edges，与 pot_v4 完全同口径；规则 10 的 level6 块捕获在空 base 下与 pot_v4 相同。"
+   },
+   {
+    "U": "O3C3W2K2",
+    "note": "自分解产物由 F(v_U) 给出，走 greedy_bond 空 base_edges，与 pot_v4 完全同口径；规则 10 的 level6 块捕获在空 base 下与 pot_v4 相同。"
+   }
+  ],
+  "seconds": 0.01
+ }
+}
