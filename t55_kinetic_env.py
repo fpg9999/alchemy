@@ -210,7 +210,7 @@ class KineticEnvironment:
                  event_limit=EVENT_SAMPLE_LIMIT, snap_minutes=None, t0=T0,
                  load_spec=None, known_formulas=None, color_mode="elementset",
                  area_model="uniform", weighted_partner=False,
-                 max_reaction_atoms=None):
+                 max_reaction_atoms=None, seed_particles=None):
         self.rng = random.Random(seed)
         self.minutes = minutes
         self.t0 = t0
@@ -220,6 +220,8 @@ class KineticEnvironment:
         self.color_mode = color_mode
         self.area_model = area_model
         self.weighted_partner = weighted_partner
+        # 多阶段实验：从上一阶段导出的分子作为初始“底物”（整理后的环境）
+        self.seed_particles = list(seed_particles) if seed_particles else None
         # 计算保护：合并后原子数超过上限的碰撞不执行反应（弹性），用于 >16 原子大分子体系
         self.max_reaction_atoms = max_reaction_atoms
         self.event_limit = event_limit
@@ -263,32 +265,68 @@ class KineticEnvironment:
     def _init_particles(self):
         self._load_templates()
         rng = self.rng
-        total = sum(int(item[3]) for item in self.load_spec)
+        # 组织初始投料：seed_particles（上一阶段整理后的分子）+ load_spec（新批次）
+        items = []   # (mol, count, origin)
+        seed_n = 0
+        if self.seed_particles:
+            for rec in self.seed_particles:
+                mol = rec if isinstance(rec, dict) and "formula" in rec and "label" in rec \
+                    else E.make_mol(rec["atoms"], rec["edges"])
+                c = int(rec.get("count", 1)) if isinstance(rec, dict) else 1
+                items.append((mol, c, None))
+                seed_n += c
+        for _tag, _desc, f, count in self.load_spec:
+            items.append((self._templates[f], int(count), f))
+        for mol, _c, _o in items:
+            self._templates.setdefault(mol["formula"], mol)
+        total = sum(c for _m, c, _o in items)
         if self.area_model == "uniform" and not self.weighted_partner:
             v0 = design_v0(total)
             self.design_info = {"area_model": "uniform", "v0": v0,
                                 "lambda": mean_free_path(total)}
         else:
             radii = []
-            for _tag, _desc, f, count in self.load_spec:
-                radii += [radius_for(self._templates[f], self.area_model)] * int(count)
+            for mol, c, _o in items:
+                radii += [radius_for(mol, self.area_model)] * c
             v0, self.design_info = design_v0_area(radii)
         self.v0 = v0
-        for tag, _desc, f, count in self.load_spec:
-            mol = self._templates[f]
-            for _ in range(int(count)):
+        self.seed_initial_count = seed_n
+        for mol, c, origin in items:
+            for _ in range(c):
                 ang = rng.random() * 2.0 * math.pi
                 x = rng.random() * L
                 y = rng.random() * L
                 p = Particle(self.next_pid, mol, x, y,
                              v0 * math.cos(ang), v0 * math.sin(ang),
-                             f, 0)
+                             origin, 0)
                 self.next_pid += 1
                 self.particles[p.pid] = p
-                self.fcnt[f] += 1
+                self.fcnt[mol["formula"]] += 1
                 self.atom_count += len(mol["atoms"])
         self.n0 = len(self.particles)
         self.atoms0 = self.atom_count
+
+    def export_state(self):
+        """导出当前环境全部物质（按结构聚合），用于多阶段实验的“整理”。"""
+        agg = {}
+        for p in self.particles.values():
+            key = (p.mol["atoms"], p.mol["edges"])
+            rec = agg.get(key)
+            if rec is None:
+                agg[key] = {"atoms": list(p.mol["atoms"]),
+                            "edges": [list(e) for e in p.mol["edges"]],
+                            "formula": p.mol["formula"],
+                            "count": 1}
+            else:
+                rec["count"] += 1
+        mols = sorted(agg.values(), key=lambda r: (-r["count"], r["formula"]))
+        return {"molecules": mols,
+                "total_molecules": len(self.particles),
+                "total_atoms": self.atom_count,
+                "distinct_formulas": len(self.fcnt),
+                "distinct_structures": len(mols),
+                "t": self.minutes,
+                "T": max(T_END, self.t0 - self.minutes)}
 
     # -------------------------------------------------------------- 运动
     def move_all(self):
@@ -687,6 +725,7 @@ class KineticEnvironment:
             "load_spec": [{"tag": tag, "desc": desc, "formula": f, "count": int(c)}
                           for tag, desc, f, c in self.load_spec],
             "initial_particles": self.n0, "initial_atoms": self.atoms0,
+            "seed_initial_count": getattr(self, "seed_initial_count", 0),
             "v0": round(self.v0, 1),
             "area_model": self.area_model,
             "weighted_partner": self.weighted_partner,
@@ -747,7 +786,7 @@ class KineticEnvironment:
             mol = next((m for m in prods if m["formula"] == f), prods[0])
             self._templates[f] = mol
             return mol
-        raise KeyError(f)
+        return None
 
 
 # ================================================================== 对照组

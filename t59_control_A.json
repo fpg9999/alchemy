@@ -1,0 +1,1186 @@
+{
+ "config": {
+  "minutes": 500,
+  "n_particles": 13174,
+  "v0": 180289.8,
+  "radius": 0.2,
+  "eps": 0.002,
+  "L": 60000.0,
+  "seed": 20261122,
+  "chemical_reactions": false,
+  "area_model": "count",
+  "area_formula": "A = π·RADIUS²·(n_atoms/2)",
+  "mean_free_path": 204218.54,
+  "design": {
+   "n": 13174,
+   "r_bar": 0.473091,
+   "r_max": 0.52915,
+   "lambda_min": 192795.800961,
+   "lambda_mean": 204218.543293,
+   "target_crossings": 750,
+   "v0": 180289.810062
+  },
+  "load_spec": [
+   {
+    "tag": "T59A",
+    "desc": "P3F",
+    "formula": "P3F",
+    "count": 429,
+    "atoms": 4
+   },
+   {
+    "tag": "T59A",
+    "desc": "X2F2",
+    "formula": "X2F2",
+    "count": 200,
+    "atoms": 4
+   },
+   {
+    "tag": "T59A",
+    "desc": "C3WLK2",
+    "formula": "C3WLK2",
+    "count": 115,
+    "atoms": 7
+   },
+   {
+    "tag": "T59A",
+    "desc": "CK2AF3",
+    "formula": "CK2AF3",
+    "count": 115,
+    "atoms": 7
+   },
+   {
+    "tag": "T59A",
+    "desc": "O2AF4",
+    "formula": "O2AF4",
+    "count": 115,
+    "atoms": 7
+   },
+   {
+    "tag": "T59A",
+    "desc": "O2C3WL",
+    "formula": "O2C3WL",
+    "count": 115,
+    "atoms": 7
+   },
+   {
+    "tag": "T59A",
+    "desc": "OXP3F2",
+    "formula": "OXP3F2",
+    "count": 245,
+    "atoms": 7
+   },
+   {
+    "tag": "T59A",
+    "desc": "P2WA4",
+    "formula": "P2WA4",
+    "count": 112,
+    "atoms": 7
+   },
+   {
+    "tag": "T59A",
+    "desc": "PK3A3",
+    "formula": "PK3A3",
+    "count": 245,
+    "atoms": 7
+   },
+   {
+    "tag": "T59A",
+    "desc": "O2X2L3F",
+    "formula": "O2X2L3F",
+    "count": 100,
+    "atoms": 8
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3CLF3",
+    "formula": "O3CLF3",
+    "count": 100,
+    "atoms": 8
+   },
+   {
+    "tag": "T59A",
+    "desc": "O4PA2F",
+    "formula": "O4PA2F",
+    "count": 213,
+    "atoms": 8
+   },
+   {
+    "tag": "T59A",
+    "desc": "OX2WK2AF",
+    "formula": "OX2WK2AF",
+    "count": 97,
+    "atoms": 8
+   },
+   {
+    "tag": "T59A",
+    "desc": "O6PKA",
+    "formula": "O6PKA",
+    "count": 190,
+    "atoms": 9
+   },
+   {
+    "tag": "T59A",
+    "desc": "OCP3W2AF",
+    "formula": "OCP3W2AF",
+    "count": 87,
+    "atoms": 9
+   },
+   {
+    "tag": "T59A",
+    "desc": "PLK4A3",
+    "formula": "PLK4A3",
+    "count": 190,
+    "atoms": 9
+   },
+   {
+    "tag": "T59A",
+    "desc": "XC2K3F3",
+    "formula": "XC2K3F3",
+    "count": 89,
+    "atoms": 9
+   },
+   {
+    "tag": "T59A",
+    "desc": "XP4W2K2",
+    "formula": "XP4W2K2",
+    "count": 190,
+    "atoms": 9
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3C6K",
+    "formula": "O3C6K",
+    "count": 80,
+    "atoms": 10
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3X4CPL",
+    "formula": "O3X4CPL",
+    "count": 78,
+    "atoms": 10
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3XCAF4",
+    "formula": "O3XCAF4",
+    "count": 80,
+    "atoms": 10
+   },
+   {
+    "tag": "T59A",
+    "desc": "O4C4LK",
+    "formula": "O4C4LK",
+    "count": 172,
+    "atoms": 10
+   },
+   {
+    "tag": "T59A",
+    "desc": "OP3W4KF",
+    "formula": "OP3W4KF",
+    "count": 172,
+    "atoms": 10
+   },
+   {
+    "tag": "T59A",
+    "desc": "OW2K4A2F",
+    "formula": "OW2K4A2F",
+    "count": 172,
+    "atoms": 10
+   },
+   {
+    "tag": "T59A",
+    "desc": "OX5W3F",
+    "formula": "OX5W3F",
+    "count": 78,
+    "atoms": 10
+   },
+   {
+    "tag": "T59A",
+    "desc": "OXCP2A3F2",
+    "formula": "OXCP2A3F2",
+    "count": 78,
+    "atoms": 10
+   },
+   {
+    "tag": "T59A",
+    "desc": "CPWLK5F2",
+    "formula": "CPWLK5F2",
+    "count": 156,
+    "atoms": 11
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3P5A3",
+    "formula": "O3P5A3",
+    "count": 156,
+    "atoms": 11
+   },
+   {
+    "tag": "T59A",
+    "desc": "O4X2PLA3",
+    "formula": "O4X2PLA3",
+    "count": 72,
+    "atoms": 11
+   },
+   {
+    "tag": "T59A",
+    "desc": "O4XCL2KA2",
+    "formula": "O4XCL2KA2",
+    "count": 72,
+    "atoms": 11
+   },
+   {
+    "tag": "T59A",
+    "desc": "O5L4KA",
+    "formula": "O5L4KA",
+    "count": 156,
+    "atoms": 11
+   },
+   {
+    "tag": "T59A",
+    "desc": "OX2CP4W2A",
+    "formula": "OX2CP4W2A",
+    "count": 72,
+    "atoms": 11
+   },
+   {
+    "tag": "T59A",
+    "desc": "OXCPW4K3",
+    "formula": "OXCPW4K3",
+    "count": 72,
+    "atoms": 11
+   },
+   {
+    "tag": "T59A",
+    "desc": "X2P3W3L2F",
+    "formula": "X2P3W3L2F",
+    "count": 72,
+    "atoms": 11
+   },
+   {
+    "tag": "T59A",
+    "desc": "X3P3K5",
+    "formula": "X3P3K5",
+    "count": 156,
+    "atoms": 11
+   },
+   {
+    "tag": "T59A",
+    "desc": "XCP3A6",
+    "formula": "XCP3A6",
+    "count": 72,
+    "atoms": 11
+   },
+   {
+    "tag": "T59A",
+    "desc": "C3WLK3A3F",
+    "formula": "C3WLK3A3F",
+    "count": 66,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "CPL3K4F3",
+    "formula": "CPL3K4F3",
+    "count": 67,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "O2X2CP5L2",
+    "formula": "O2X2CP5L2",
+    "count": 143,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "O2XCP5LAF",
+    "formula": "O2XCP5LAF",
+    "count": 143,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3PW6F2",
+    "formula": "O3PW6F2",
+    "count": 66,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3X3CWK2A2",
+    "formula": "O3X3CWK2A2",
+    "count": 66,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3XP5WK2",
+    "formula": "O3XP5WK2",
+    "count": 143,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3XPW2A5",
+    "formula": "O3XPW2A5",
+    "count": 66,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "O4C2P6",
+    "formula": "O4C2P6",
+    "count": 143,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "O4X2CWL2KA",
+    "formula": "O4X2CWL2KA",
+    "count": 66,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "O4X3C2PWL",
+    "formula": "O4X3C2PWL",
+    "count": 66,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "O5P2WL3A",
+    "formula": "O5P2WL3A",
+    "count": 143,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "O6XCPWKF",
+    "formula": "O6XCPWKF",
+    "count": 143,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "OX2CP4WK2A",
+    "formula": "OX2CP4WK2A",
+    "count": 143,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "OX2PW4K4",
+    "formula": "OX2PW4K4",
+    "count": 143,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "OXP2W3K5",
+    "formula": "OXP2W3K5",
+    "count": 143,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "OXP3KA3F3",
+    "formula": "OXP3KA3F3",
+    "count": 66,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "P4L2KF5",
+    "formula": "P4L2KF5",
+    "count": 67,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "P6L2K2A2",
+    "formula": "P6L2K2A2",
+    "count": 143,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "X2C3P2W3KA",
+    "formula": "X2C3P2W3KA",
+    "count": 66,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "X2P6WK2A",
+    "formula": "X2P6WK2A",
+    "count": 143,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "XP4K2A5",
+    "formula": "XP4K2A5",
+    "count": 143,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "XP5W3KA2",
+    "formula": "XP5W3KA2",
+    "count": 143,
+    "atoms": 12
+   },
+   {
+    "tag": "T59A",
+    "desc": "C3PL2K4AF2",
+    "formula": "C3PL2K4AF2",
+    "count": 62,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "C3PL3K4AF",
+    "formula": "C3PL3K4AF",
+    "count": 62,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "C5P4WL2K",
+    "formula": "C5P4WL2K",
+    "count": 62,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "CP2K6AF3",
+    "formula": "CP2K6AF3",
+    "count": 131,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3CW2KA5F",
+    "formula": "O3CW2KA5F",
+    "count": 60,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3X3C2W2KA2",
+    "formula": "O3X3C2W2KA2",
+    "count": 60,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "O4XL2KF5",
+    "formula": "O4XL2KF5",
+    "count": 62,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "O5X2CLK3A",
+    "formula": "O5X2CLK3A",
+    "count": 131,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "O6C5WK",
+    "formula": "O6C5WK",
+    "count": 131,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "O6XC2P2A2",
+    "formula": "O6XC2P2A2",
+    "count": 131,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "O6XC3P2F",
+    "formula": "O6XC3P2F",
+    "count": 131,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "O6XPWK2AF",
+    "formula": "O6XPWK2AF",
+    "count": 131,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "O7K2A3F",
+    "formula": "O7K2A3F",
+    "count": 131,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "OCP4W2L3KA",
+    "formula": "OCP4W2L3KA",
+    "count": 60,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "OCP4WKF5",
+    "formula": "OCP4WKF5",
+    "count": 60,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "OCPLK6AF2",
+    "formula": "OCPLK6AF2",
+    "count": 131,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "OL2K4AF5",
+    "formula": "OL2K4AF5",
+    "count": 62,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "OX4CK3A3F",
+    "formula": "OX4CK3A3F",
+    "count": 60,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "PW4L2K3A3",
+    "formula": "PW4L2K3A3",
+    "count": 60,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "W5K2A4F2",
+    "formula": "W5K2A4F2",
+    "count": 60,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "X2P5WL3K2",
+    "formula": "X2P5WL3K2",
+    "count": 131,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "XPWLK4A5",
+    "formula": "XPWLK4A5",
+    "count": 60,
+    "atoms": 13
+   },
+   {
+    "tag": "T59A",
+    "desc": "C5P4W2KF2",
+    "formula": "C5P4W2KF2",
+    "count": 57,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O2CP7WK2A",
+    "formula": "O2CP7WK2A",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O2CW2L3K5F",
+    "formula": "O2CW2L3K5F",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O2X3W4K4A",
+    "formula": "O2X3W4K4A",
+    "count": 56,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O2X6W4A2",
+    "formula": "O2X6W4A2",
+    "count": 56,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3CP5W2L2K",
+    "formula": "O3CP5W2L2K",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3P2W4L3A2",
+    "formula": "O3P2W4L3A2",
+    "count": 56,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3P5W2K2F2",
+    "formula": "O3P5W2K2F2",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3P7W2KF",
+    "formula": "O3P7W2KF",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3W5L4KA",
+    "formula": "O3W5L4KA",
+    "count": 56,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O3XCP6W2A",
+    "formula": "O3XCP6W2A",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O4X2CL6K",
+    "formula": "O4X2CL6K",
+    "count": 57,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O5C2P2KA4",
+    "formula": "O5C2P2KA4",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O5C2P3W2A2",
+    "formula": "O5C2P3W2A2",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O5C2WL3K2A",
+    "formula": "O5C2WL3K2A",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O5X2CPL2KA2",
+    "formula": "O5X2CPL2KA2",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O6C2P2F4",
+    "formula": "O6C2P2F4",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O6WL3K3A",
+    "formula": "O6WL3K3A",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "O6XP2AF4",
+    "formula": "O6XP2AF4",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "OC3P4L5K",
+    "formula": "OC3P4L5K",
+    "count": 57,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "OC3P5WKAF2",
+    "formula": "OC3P5WKAF2",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "OC3P6W2KF",
+    "formula": "OC3P6W2KF",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "OCP5K2A2F3",
+    "formula": "OCP5K2A2F3",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "OPW2K5A2F3",
+    "formula": "OPW2K5A2F3",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "OPWK6A3F2",
+    "formula": "OPWK6A3F2",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "OX2PL4K6",
+    "formula": "OX2PL4K6",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "OX4P2WK5A",
+    "formula": "OX4P2WK5A",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "OX4P3W4A2",
+    "formula": "OX4P3W4A2",
+    "count": 56,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "OXC4K6AF",
+    "formula": "OXC4K6AF",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "OXCP3WKA4F2",
+    "formula": "OXCP3WKA4F2",
+    "count": 56,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "OXP5W2L2AF2",
+    "formula": "OXP5W2L2AF2",
+    "count": 56,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "OXPW3L2K6",
+    "formula": "OXPW3L2K6",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "OXW2L2K5A3",
+    "formula": "OXW2L2K5A3",
+    "count": 56,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "X2CP6LK2A2",
+    "formula": "X2CP6LK2A2",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "X3CP6LK2A",
+    "formula": "X3CP6LK2A",
+    "count": 122,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "X5PW2LK4A",
+    "formula": "X5PW2LK4A",
+    "count": 56,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "X6CP3W2KF",
+    "formula": "X6CP3W2KF",
+    "count": 56,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "X6P4LK2F",
+    "formula": "X6P4LK2F",
+    "count": 56,
+    "atoms": 14
+   },
+   {
+    "tag": "T59A",
+    "desc": "X6W3K2A3",
+    "formula": "X6W3K2A3",
+    "count": 56,
+    "atoms": 14
+   }
+  ]
+ },
+ "stats": {
+  "n": 13174,
+  "min": 709.5,
+  "p1": 725.6,
+  "p5": 735.4,
+  "median": 759.9,
+  "p95": 797.1,
+  "max": 839.1,
+  "fraction_ge_500": 1.0,
+  "mean": 762.0
+ },
+ "by_size": {
+  "4": {
+   "n": 629,
+   "min": 766.3,
+   "median": 803.5,
+   "max": 839.1
+  },
+  "7": {
+   "n": 1062,
+   "min": 740.2,
+   "median": 783.3,
+   "max": 820.8
+  },
+  "8": {
+   "n": 510,
+   "min": 743.7,
+   "median": 777.1,
+   "max": 810.8
+  },
+  "9": {
+   "n": 746,
+   "min": 732.2,
+   "median": 771.4,
+   "max": 814.0
+  },
+  "10": {
+   "n": 910,
+   "min": 709.5,
+   "median": 767.6,
+   "max": 817.2
+  },
+  "11": {
+   "n": 1056,
+   "min": 718.5,
+   "median": 763.3,
+   "max": 798.1
+  },
+  "12": {
+   "n": 2521,
+   "min": 719.0,
+   "median": 758.2,
+   "max": 798.6
+  },
+  "13": {
+   "n": 1969,
+   "min": 717.6,
+   "median": 753.9,
+   "max": 798.1
+  },
+  "14": {
+   "n": 3771,
+   "min": 712.0,
+   "median": 750.1,
+   "max": 794.6
+  }
+ },
+ "timeseries": [
+  {
+   "t": 0,
+   "path_D_mean": 2.12,
+   "speed_mean": 180289.8
+  },
+  {
+   "t": 10,
+   "path_D_mean": 23.17,
+   "speed_mean": 177141.1
+  },
+  {
+   "t": 20,
+   "path_D_mean": 43.84,
+   "speed_mean": 174099.7
+  },
+  {
+   "t": 30,
+   "path_D_mean": 64.17,
+   "speed_mean": 171165.3
+  },
+  {
+   "t": 40,
+   "path_D_mean": 84.16,
+   "speed_mean": 168342.0
+  },
+  {
+   "t": 50,
+   "path_D_mean": 103.82,
+   "speed_mean": 165601.4
+  },
+  {
+   "t": 60,
+   "path_D_mean": 123.16,
+   "speed_mean": 162943.9
+  },
+  {
+   "t": 70,
+   "path_D_mean": 142.2,
+   "speed_mean": 160380.6
+  },
+  {
+   "t": 80,
+   "path_D_mean": 160.94,
+   "speed_mean": 157886.6
+  },
+  {
+   "t": 90,
+   "path_D_mean": 179.39,
+   "speed_mean": 155491.4
+  },
+  {
+   "t": 100,
+   "path_D_mean": 197.56,
+   "speed_mean": 153176.6
+  },
+  {
+   "t": 110,
+   "path_D_mean": 215.47,
+   "speed_mean": 150928.6
+  },
+  {
+   "t": 120,
+   "path_D_mean": 233.11,
+   "speed_mean": 148727.9
+  },
+  {
+   "t": 130,
+   "path_D_mean": 250.5,
+   "speed_mean": 146595.8
+  },
+  {
+   "t": 140,
+   "path_D_mean": 267.65,
+   "speed_mean": 144530.5
+  },
+  {
+   "t": 150,
+   "path_D_mean": 284.55,
+   "speed_mean": 142523.3
+  },
+  {
+   "t": 160,
+   "path_D_mean": 301.22,
+   "speed_mean": 140571.8
+  },
+  {
+   "t": 170,
+   "path_D_mean": 317.66,
+   "speed_mean": 138675.0
+  },
+  {
+   "t": 180,
+   "path_D_mean": 333.88,
+   "speed_mean": 136822.1
+  },
+  {
+   "t": 190,
+   "path_D_mean": 349.89,
+   "speed_mean": 135006.6
+  },
+  {
+   "t": 200,
+   "path_D_mean": 365.69,
+   "speed_mean": 133248.1
+  },
+  {
+   "t": 210,
+   "path_D_mean": 381.28,
+   "speed_mean": 131531.3
+  },
+  {
+   "t": 220,
+   "path_D_mean": 396.67,
+   "speed_mean": 129866.1
+  },
+  {
+   "t": 230,
+   "path_D_mean": 411.87,
+   "speed_mean": 128239.4
+  },
+  {
+   "t": 240,
+   "path_D_mean": 426.88,
+   "speed_mean": 126657.1
+  },
+  {
+   "t": 250,
+   "path_D_mean": 441.71,
+   "speed_mean": 125108.3
+  },
+  {
+   "t": 260,
+   "path_D_mean": 456.35,
+   "speed_mean": 123599.0
+  },
+  {
+   "t": 270,
+   "path_D_mean": 470.82,
+   "speed_mean": 122120.5
+  },
+  {
+   "t": 280,
+   "path_D_mean": 485.12,
+   "speed_mean": 120680.0
+  },
+  {
+   "t": 290,
+   "path_D_mean": 499.25,
+   "speed_mean": 119273.4
+  },
+  {
+   "t": 300,
+   "path_D_mean": 513.22,
+   "speed_mean": 117898.2
+  },
+  {
+   "t": 310,
+   "path_D_mean": 527.02,
+   "speed_mean": 116554.2
+  },
+  {
+   "t": 320,
+   "path_D_mean": 540.67,
+   "speed_mean": 115242.2
+  },
+  {
+   "t": 330,
+   "path_D_mean": 554.17,
+   "speed_mean": 113960.8
+  },
+  {
+   "t": 340,
+   "path_D_mean": 567.52,
+   "speed_mean": 112702.6
+  },
+  {
+   "t": 350,
+   "path_D_mean": 580.72,
+   "speed_mean": 111464.2
+  },
+  {
+   "t": 360,
+   "path_D_mean": 593.78,
+   "speed_mean": 110258.4
+  },
+  {
+   "t": 370,
+   "path_D_mean": 606.7,
+   "speed_mean": 109088.2
+  },
+  {
+   "t": 380,
+   "path_D_mean": 619.48,
+   "speed_mean": 107929.3
+  },
+  {
+   "t": 390,
+   "path_D_mean": 632.13,
+   "speed_mean": 106805.0
+  },
+  {
+   "t": 400,
+   "path_D_mean": 644.64,
+   "speed_mean": 105699.4
+  },
+  {
+   "t": 410,
+   "path_D_mean": 657.03,
+   "speed_mean": 104612.5
+  },
+  {
+   "t": 420,
+   "path_D_mean": 669.29,
+   "speed_mean": 103556.7
+  },
+  {
+   "t": 430,
+   "path_D_mean": 681.43,
+   "speed_mean": 102519.3
+  },
+  {
+   "t": 440,
+   "path_D_mean": 693.44,
+   "speed_mean": 101500.3
+  },
+  {
+   "t": 450,
+   "path_D_mean": 705.34,
+   "speed_mean": 100505.9
+  },
+  {
+   "t": 460,
+   "path_D_mean": 717.12,
+   "speed_mean": 99524.8
+  },
+  {
+   "t": 470,
+   "path_D_mean": 728.79,
+   "speed_mean": 98564.8
+  },
+  {
+   "t": 480,
+   "path_D_mean": 740.34,
+   "speed_mean": 97627.3
+  },
+  {
+   "t": 490,
+   "path_D_mean": 751.79,
+   "speed_mean": 96707.8
+  }
+ ],
+ "runtime_s": 6.8
+}

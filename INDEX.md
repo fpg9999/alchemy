@@ -68,6 +68,15 @@
   9000/9000 达标，min 696.7）、`t55_sensitivity.py`（T0=6/8/12/20°C 敏感性）、`t55_analysis.py`/`t55_render.py`、
   `docs/T55_KINETIC_ENV.md`、`docs/T55_ENGINE_AUDIT.md`、`images/t55_*.png`（8 张）；
   结论：主实验快速退火到 99.5% `OXC`；温度标度敏感性下出现不完全反应/自分解/新物质。
+- **T59（2026-11-17）九元素两阶段实验 + fast_pot 加速**：`fast_pot.py`（增量并查集+分层筛选，
+  与 pot_v4 等价，F 3.6~6.3×，审计 27,315 向量 0 差异）、`natural_engine.set_fast`、
+  `t59_mixture.py`、`t59_two_phase.py`、`t59_analysis.py`、`t59_render.py`、
+  `t59_loads.json`、`t59_phaseA_result.json`、`t59_stateA.json`、`t59_phaseB_result.json`、
+  `t59_stateB.json`、`t59_control_A.json`、`t59_analysis.json`、`docs/T59_TWO_PHASE.md`、
+  `docs/T59_FAST_ENGINE_AUDIT.md`、`images/t59_*.png`（11 张，含 top30 结构图）；
+  L 400000→60000（面积 1/44.4×）；A 120 种/三价最多 → 27,431 分子/43 种结构；
+  整理后加 batchB、重置 1000°C → 38,609 分子/230,133 原子/67 种结构；两阶段守恒；
+  top30 = 11 常规 + 19 巨型（39/40 原子）；两阶段运行 207+324 秒。
 - **T58（2026-11-16）九元素随机物质库大投料实验**：`t58_nine_elements.py`、`t58_analysis.py`、
   `t58_render.py`、`t58_mixture.json`、`t58_result.json`、`t58_control_no_chem.json`、
   `docs/T58_NINE_ELEMENTS.md`、`images/t58_*.png`（11 张）；从 84,225 目录随机抽 44 种物质

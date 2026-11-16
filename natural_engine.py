@@ -47,6 +47,16 @@ VAL = P.VAL
 ORDER = P.ORDER
 TRI = {"O", "P", "K"}
 
+# 快速引擎开关（T59 起）：complete/incomplete 的贪心重结合改用 fast_pot（与 pot_v4 等价，
+# 增量并查集 + 分层字典序筛选，约 4~8 倍加速）。默认 False，保证历史口径不变。
+_USE_FAST = False
+
+
+def set_fast(flag=True):
+    global _USE_FAST
+    _USE_FAST = bool(flag)
+    return _USE_FAST
+
 # ---------------------------------------------------------------- 分子
 _MOL_CACHE = {}
 
@@ -261,7 +271,12 @@ def complete_products(vec):
     if key in _F_CACHE:
         return _F_CACHE[key]
     atoms = P.vec_to_atoms(key, ORDER)
-    prods = greedy_bond(atoms)
+    if _USE_FAST:
+        import fast_pot
+        raw = fast_pot.simulate(atoms)
+        prods = None if raw is None else [make_mol(m["atoms"], m["edges"]) for m in raw]
+    else:
+        prods = greedy_bond(atoms)
     _F_CACHE[key] = prods
     return prods
 
@@ -368,7 +383,12 @@ def incomplete_products(mols):
     if broken == 0:
         _INC_CACHE[key] = None
         return None
-    prods = greedy_bond(atom_list, kept)
+    if _USE_FAST:
+        import fast_pot
+        raw = fast_pot.simulate(atom_list, base_edges=kept)
+        prods = None if raw is None else [make_mol(m["atoms"], m["edges"]) for m in raw]
+    else:
+        prods = greedy_bond(atom_list, kept)
     _INC_CACHE[key] = prods
     return prods
 

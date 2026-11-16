@@ -1,0 +1,2143 @@
+{
+ "batchA": {
+  "rows": [
+   {
+    "formula": "P3F",
+    "atoms": 4,
+    "count": 429,
+    "valence_group": 0,
+    "v3": 3,
+    "v2": 0,
+    "v1": 1
+   },
+   {
+    "formula": "X2F2",
+    "atoms": 4,
+    "count": 200,
+    "valence_group": 2,
+    "v3": 0,
+    "v2": 2,
+    "v1": 2
+   },
+   {
+    "formula": "C3WLK2",
+    "atoms": 7,
+    "count": 115,
+    "valence_group": 2,
+    "v3": 2,
+    "v2": 1,
+    "v1": 4
+   },
+   {
+    "formula": "CK2AF3",
+    "atoms": 7,
+    "count": 115,
+    "valence_group": 2,
+    "v3": 2,
+    "v2": 1,
+    "v1": 4
+   },
+   {
+    "formula": "O2AF4",
+    "atoms": 7,
+    "count": 115,
+    "valence_group": 2,
+    "v3": 2,
+    "v2": 1,
+    "v1": 4
+   },
+   {
+    "formula": "O2C3WL",
+    "atoms": 7,
+    "count": 115,
+    "valence_group": 2,
+    "v3": 2,
+    "v2": 1,
+    "v1": 4
+   },
+   {
+    "formula": "OXP3F2",
+    "atoms": 7,
+    "count": 245,
+    "valence_group": 0,
+    "v3": 4,
+    "v2": 1,
+    "v1": 2
+   },
+   {
+    "formula": "P2WA4",
+    "atoms": 7,
+    "count": 112,
+    "valence_group": 1,
+    "v3": 2,
+    "v2": 5,
+    "v1": 0
+   },
+   {
+    "formula": "PK3A3",
+    "atoms": 7,
+    "count": 245,
+    "valence_group": 0,
+    "v3": 4,
+    "v2": 3,
+    "v1": 0
+   },
+   {
+    "formula": "O2X2L3F",
+    "atoms": 8,
+    "count": 100,
+    "valence_group": 2,
+    "v3": 2,
+    "v2": 2,
+    "v1": 4
+   },
+   {
+    "formula": "O3CLF3",
+    "atoms": 8,
+    "count": 100,
+    "valence_group": 2,
+    "v3": 3,
+    "v2": 0,
+    "v1": 5
+   },
+   {
+    "formula": "O4PA2F",
+    "atoms": 8,
+    "count": 213,
+    "valence_group": 0,
+    "v3": 5,
+    "v2": 2,
+    "v1": 1
+   },
+   {
+    "formula": "OX2WK2AF",
+    "atoms": 8,
+    "count": 97,
+    "valence_group": 1,
+    "v3": 3,
+    "v2": 4,
+    "v1": 1
+   },
+   {
+    "formula": "O6PKA",
+    "atoms": 9,
+    "count": 190,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 1,
+    "v1": 0
+   },
+   {
+    "formula": "OCP3W2AF",
+    "atoms": 9,
+    "count": 87,
+    "valence_group": 1,
+    "v3": 4,
+    "v2": 3,
+    "v1": 2
+   },
+   {
+    "formula": "PLK4A3",
+    "atoms": 9,
+    "count": 190,
+    "valence_group": 0,
+    "v3": 5,
+    "v2": 3,
+    "v1": 1
+   },
+   {
+    "formula": "XC2K3F3",
+    "atoms": 9,
+    "count": 89,
+    "valence_group": 2,
+    "v3": 3,
+    "v2": 1,
+    "v1": 5
+   },
+   {
+    "formula": "XP4W2K2",
+    "atoms": 9,
+    "count": 190,
+    "valence_group": 0,
+    "v3": 6,
+    "v2": 3,
+    "v1": 0
+   },
+   {
+    "formula": "O3C6K",
+    "atoms": 10,
+    "count": 80,
+    "valence_group": 2,
+    "v3": 4,
+    "v2": 0,
+    "v1": 6
+   },
+   {
+    "formula": "O3X4CPL",
+    "atoms": 10,
+    "count": 78,
+    "valence_group": 1,
+    "v3": 4,
+    "v2": 4,
+    "v1": 2
+   },
+   {
+    "formula": "O3XCAF4",
+    "atoms": 10,
+    "count": 80,
+    "valence_group": 2,
+    "v3": 3,
+    "v2": 2,
+    "v1": 5
+   },
+   {
+    "formula": "O4C4LK",
+    "atoms": 10,
+    "count": 172,
+    "valence_group": 0,
+    "v3": 5,
+    "v2": 0,
+    "v1": 5
+   },
+   {
+    "formula": "OP3W4KF",
+    "atoms": 10,
+    "count": 172,
+    "valence_group": 0,
+    "v3": 5,
+    "v2": 4,
+    "v1": 1
+   },
+   {
+    "formula": "OW2K4A2F",
+    "atoms": 10,
+    "count": 172,
+    "valence_group": 0,
+    "v3": 5,
+    "v2": 4,
+    "v1": 1
+   },
+   {
+    "formula": "OX5W3F",
+    "atoms": 10,
+    "count": 78,
+    "valence_group": 1,
+    "v3": 1,
+    "v2": 8,
+    "v1": 1
+   },
+   {
+    "formula": "OXCP2A3F2",
+    "atoms": 10,
+    "count": 78,
+    "valence_group": 1,
+    "v3": 3,
+    "v2": 4,
+    "v1": 3
+   },
+   {
+    "formula": "CPWLK5F2",
+    "atoms": 11,
+    "count": 156,
+    "valence_group": 0,
+    "v3": 6,
+    "v2": 1,
+    "v1": 4
+   },
+   {
+    "formula": "O3P5A3",
+    "atoms": 11,
+    "count": 156,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 3,
+    "v1": 0
+   },
+   {
+    "formula": "O4X2PLA3",
+    "atoms": 11,
+    "count": 72,
+    "valence_group": 1,
+    "v3": 5,
+    "v2": 5,
+    "v1": 1
+   },
+   {
+    "formula": "O4XCL2KA2",
+    "atoms": 11,
+    "count": 72,
+    "valence_group": 1,
+    "v3": 5,
+    "v2": 3,
+    "v1": 3
+   },
+   {
+    "formula": "O5L4KA",
+    "atoms": 11,
+    "count": 156,
+    "valence_group": 0,
+    "v3": 6,
+    "v2": 1,
+    "v1": 4
+   },
+   {
+    "formula": "OX2CP4W2A",
+    "atoms": 11,
+    "count": 72,
+    "valence_group": 1,
+    "v3": 5,
+    "v2": 5,
+    "v1": 1
+   },
+   {
+    "formula": "OXCPW4K3",
+    "atoms": 11,
+    "count": 72,
+    "valence_group": 1,
+    "v3": 5,
+    "v2": 5,
+    "v1": 1
+   },
+   {
+    "formula": "X2P3W3L2F",
+    "atoms": 11,
+    "count": 72,
+    "valence_group": 1,
+    "v3": 3,
+    "v2": 5,
+    "v1": 3
+   },
+   {
+    "formula": "X3P3K5",
+    "atoms": 11,
+    "count": 156,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 3,
+    "v1": 0
+   },
+   {
+    "formula": "XCP3A6",
+    "atoms": 11,
+    "count": 72,
+    "valence_group": 1,
+    "v3": 3,
+    "v2": 7,
+    "v1": 1
+   },
+   {
+    "formula": "C3WLK3A3F",
+    "atoms": 12,
+    "count": 66,
+    "valence_group": 1,
+    "v3": 3,
+    "v2": 4,
+    "v1": 5
+   },
+   {
+    "formula": "CPL3K4F3",
+    "atoms": 12,
+    "count": 67,
+    "valence_group": 2,
+    "v3": 5,
+    "v2": 0,
+    "v1": 7
+   },
+   {
+    "formula": "O2X2CP5L2",
+    "atoms": 12,
+    "count": 143,
+    "valence_group": 0,
+    "v3": 7,
+    "v2": 2,
+    "v1": 3
+   },
+   {
+    "formula": "O2XCP5LAF",
+    "atoms": 12,
+    "count": 143,
+    "valence_group": 0,
+    "v3": 7,
+    "v2": 2,
+    "v1": 3
+   },
+   {
+    "formula": "O3PW6F2",
+    "atoms": 12,
+    "count": 66,
+    "valence_group": 1,
+    "v3": 4,
+    "v2": 6,
+    "v1": 2
+   },
+   {
+    "formula": "O3X3CWK2A2",
+    "atoms": 12,
+    "count": 66,
+    "valence_group": 1,
+    "v3": 5,
+    "v2": 6,
+    "v1": 1
+   },
+   {
+    "formula": "O3XP5WK2",
+    "atoms": 12,
+    "count": 143,
+    "valence_group": 0,
+    "v3": 10,
+    "v2": 2,
+    "v1": 0
+   },
+   {
+    "formula": "O3XPW2A5",
+    "atoms": 12,
+    "count": 66,
+    "valence_group": 1,
+    "v3": 4,
+    "v2": 8,
+    "v1": 0
+   },
+   {
+    "formula": "O4C2P6",
+    "atoms": 12,
+    "count": 143,
+    "valence_group": 0,
+    "v3": 10,
+    "v2": 0,
+    "v1": 2
+   },
+   {
+    "formula": "O4X2CWL2KA",
+    "atoms": 12,
+    "count": 66,
+    "valence_group": 1,
+    "v3": 5,
+    "v2": 4,
+    "v1": 3
+   },
+   {
+    "formula": "O4X3C2PWL",
+    "atoms": 12,
+    "count": 66,
+    "valence_group": 1,
+    "v3": 5,
+    "v2": 4,
+    "v1": 3
+   },
+   {
+    "formula": "O5P2WL3A",
+    "atoms": 12,
+    "count": 143,
+    "valence_group": 0,
+    "v3": 7,
+    "v2": 2,
+    "v1": 3
+   },
+   {
+    "formula": "O6XCPWKF",
+    "atoms": 12,
+    "count": 143,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 2,
+    "v1": 2
+   },
+   {
+    "formula": "OX2CP4WK2A",
+    "atoms": 12,
+    "count": 143,
+    "valence_group": 0,
+    "v3": 7,
+    "v2": 4,
+    "v1": 1
+   },
+   {
+    "formula": "OX2PW4K4",
+    "atoms": 12,
+    "count": 143,
+    "valence_group": 0,
+    "v3": 6,
+    "v2": 6,
+    "v1": 0
+   },
+   {
+    "formula": "OXP2W3K5",
+    "atoms": 12,
+    "count": 143,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 4,
+    "v1": 0
+   },
+   {
+    "formula": "OXP3KA3F3",
+    "atoms": 12,
+    "count": 66,
+    "valence_group": 1,
+    "v3": 5,
+    "v2": 4,
+    "v1": 3
+   },
+   {
+    "formula": "P4L2KF5",
+    "atoms": 12,
+    "count": 67,
+    "valence_group": 2,
+    "v3": 5,
+    "v2": 0,
+    "v1": 7
+   },
+   {
+    "formula": "P6L2K2A2",
+    "atoms": 12,
+    "count": 143,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 2,
+    "v1": 2
+   },
+   {
+    "formula": "X2C3P2W3KA",
+    "atoms": 12,
+    "count": 66,
+    "valence_group": 1,
+    "v3": 3,
+    "v2": 6,
+    "v1": 3
+   },
+   {
+    "formula": "X2P6WK2A",
+    "atoms": 12,
+    "count": 143,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 4,
+    "v1": 0
+   },
+   {
+    "formula": "XP4K2A5",
+    "atoms": 12,
+    "count": 143,
+    "valence_group": 0,
+    "v3": 6,
+    "v2": 6,
+    "v1": 0
+   },
+   {
+    "formula": "XP5W3KA2",
+    "atoms": 12,
+    "count": 143,
+    "valence_group": 0,
+    "v3": 6,
+    "v2": 6,
+    "v1": 0
+   },
+   {
+    "formula": "C3PL2K4AF2",
+    "atoms": 13,
+    "count": 62,
+    "valence_group": 2,
+    "v3": 5,
+    "v2": 1,
+    "v1": 7
+   },
+   {
+    "formula": "C3PL3K4AF",
+    "atoms": 13,
+    "count": 62,
+    "valence_group": 2,
+    "v3": 5,
+    "v2": 1,
+    "v1": 7
+   },
+   {
+    "formula": "C5P4WL2K",
+    "atoms": 13,
+    "count": 62,
+    "valence_group": 2,
+    "v3": 5,
+    "v2": 1,
+    "v1": 7
+   },
+   {
+    "formula": "CP2K6AF3",
+    "atoms": 13,
+    "count": 131,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 1,
+    "v1": 4
+   },
+   {
+    "formula": "O3CW2KA5F",
+    "atoms": 13,
+    "count": 60,
+    "valence_group": 1,
+    "v3": 4,
+    "v2": 7,
+    "v1": 2
+   },
+   {
+    "formula": "O3X3C2W2KA2",
+    "atoms": 13,
+    "count": 60,
+    "valence_group": 1,
+    "v3": 4,
+    "v2": 7,
+    "v1": 2
+   },
+   {
+    "formula": "O4XL2KF5",
+    "atoms": 13,
+    "count": 62,
+    "valence_group": 2,
+    "v3": 5,
+    "v2": 1,
+    "v1": 7
+   },
+   {
+    "formula": "O5X2CLK3A",
+    "atoms": 13,
+    "count": 131,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 3,
+    "v1": 2
+   },
+   {
+    "formula": "O6C5WK",
+    "atoms": 13,
+    "count": 131,
+    "valence_group": 0,
+    "v3": 7,
+    "v2": 1,
+    "v1": 5
+   },
+   {
+    "formula": "O6XC2P2A2",
+    "atoms": 13,
+    "count": 131,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 3,
+    "v1": 2
+   },
+   {
+    "formula": "O6XC3P2F",
+    "atoms": 13,
+    "count": 131,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 1,
+    "v1": 4
+   },
+   {
+    "formula": "O6XPWK2AF",
+    "atoms": 13,
+    "count": 131,
+    "valence_group": 0,
+    "v3": 9,
+    "v2": 3,
+    "v1": 1
+   },
+   {
+    "formula": "O7K2A3F",
+    "atoms": 13,
+    "count": 131,
+    "valence_group": 0,
+    "v3": 9,
+    "v2": 3,
+    "v1": 1
+   },
+   {
+    "formula": "OCP4W2L3KA",
+    "atoms": 13,
+    "count": 60,
+    "valence_group": 1,
+    "v3": 6,
+    "v2": 3,
+    "v1": 4
+   },
+   {
+    "formula": "OCP4WKF5",
+    "atoms": 13,
+    "count": 60,
+    "valence_group": 1,
+    "v3": 6,
+    "v2": 1,
+    "v1": 6
+   },
+   {
+    "formula": "OCPLK6AF2",
+    "atoms": 13,
+    "count": 131,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 1,
+    "v1": 4
+   },
+   {
+    "formula": "OL2K4AF5",
+    "atoms": 13,
+    "count": 62,
+    "valence_group": 2,
+    "v3": 5,
+    "v2": 1,
+    "v1": 7
+   },
+   {
+    "formula": "OX4CK3A3F",
+    "atoms": 13,
+    "count": 60,
+    "valence_group": 1,
+    "v3": 4,
+    "v2": 7,
+    "v1": 2
+   },
+   {
+    "formula": "PW4L2K3A3",
+    "atoms": 13,
+    "count": 60,
+    "valence_group": 1,
+    "v3": 4,
+    "v2": 7,
+    "v1": 2
+   },
+   {
+    "formula": "W5K2A4F2",
+    "atoms": 13,
+    "count": 60,
+    "valence_group": 1,
+    "v3": 2,
+    "v2": 9,
+    "v1": 2
+   },
+   {
+    "formula": "X2P5WL3K2",
+    "atoms": 13,
+    "count": 131,
+    "valence_group": 0,
+    "v3": 7,
+    "v2": 3,
+    "v1": 3
+   },
+   {
+    "formula": "XPWLK4A5",
+    "atoms": 13,
+    "count": 60,
+    "valence_group": 1,
+    "v3": 5,
+    "v2": 7,
+    "v1": 1
+   },
+   {
+    "formula": "C5P4W2KF2",
+    "atoms": 14,
+    "count": 57,
+    "valence_group": 2,
+    "v3": 5,
+    "v2": 2,
+    "v1": 7
+   },
+   {
+    "formula": "O2CP7WK2A",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 11,
+    "v2": 2,
+    "v1": 1
+   },
+   {
+    "formula": "O2CW2L3K5F",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 7,
+    "v2": 2,
+    "v1": 5
+   },
+   {
+    "formula": "O2X3W4K4A",
+    "atoms": 14,
+    "count": 56,
+    "valence_group": 1,
+    "v3": 6,
+    "v2": 8,
+    "v1": 0
+   },
+   {
+    "formula": "O2X6W4A2",
+    "atoms": 14,
+    "count": 56,
+    "valence_group": 1,
+    "v3": 2,
+    "v2": 12,
+    "v1": 0
+   },
+   {
+    "formula": "O3CP5W2L2K",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 9,
+    "v2": 2,
+    "v1": 3
+   },
+   {
+    "formula": "O3P2W4L3A2",
+    "atoms": 14,
+    "count": 56,
+    "valence_group": 1,
+    "v3": 5,
+    "v2": 6,
+    "v1": 3
+   },
+   {
+    "formula": "O3P5W2K2F2",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 10,
+    "v2": 2,
+    "v1": 2
+   },
+   {
+    "formula": "O3P7W2KF",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 11,
+    "v2": 2,
+    "v1": 1
+   },
+   {
+    "formula": "O3W5L4KA",
+    "atoms": 14,
+    "count": 56,
+    "valence_group": 1,
+    "v3": 4,
+    "v2": 6,
+    "v1": 4
+   },
+   {
+    "formula": "O3XCP6W2A",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 9,
+    "v2": 4,
+    "v1": 1
+   },
+   {
+    "formula": "O4X2CL6K",
+    "atoms": 14,
+    "count": 57,
+    "valence_group": 2,
+    "v3": 5,
+    "v2": 2,
+    "v1": 7
+   },
+   {
+    "formula": "O5C2P2KA4",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 4,
+    "v1": 2
+   },
+   {
+    "formula": "O5C2P3W2A2",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 4,
+    "v1": 2
+   },
+   {
+    "formula": "O5C2WL3K2A",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 7,
+    "v2": 2,
+    "v1": 5
+   },
+   {
+    "formula": "O5X2CPL2KA2",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 7,
+    "v2": 4,
+    "v1": 3
+   },
+   {
+    "formula": "O6C2P2F4",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 0,
+    "v1": 6
+   },
+   {
+    "formula": "O6WL3K3A",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 9,
+    "v2": 2,
+    "v1": 3
+   },
+   {
+    "formula": "O6XP2AF4",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 2,
+    "v1": 4
+   },
+   {
+    "formula": "OC3P4L5K",
+    "atoms": 14,
+    "count": 57,
+    "valence_group": 2,
+    "v3": 6,
+    "v2": 0,
+    "v1": 8
+   },
+   {
+    "formula": "OC3P5WKAF2",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 7,
+    "v2": 2,
+    "v1": 5
+   },
+   {
+    "formula": "OC3P6W2KF",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 2,
+    "v1": 4
+   },
+   {
+    "formula": "OCP5K2A2F3",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 2,
+    "v1": 4
+   },
+   {
+    "formula": "OPW2K5A2F3",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 7,
+    "v2": 4,
+    "v1": 3
+   },
+   {
+    "formula": "OPWK6A3F2",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 4,
+    "v1": 2
+   },
+   {
+    "formula": "OX2PL4K6",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 2,
+    "v1": 4
+   },
+   {
+    "formula": "OX4P2WK5A",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 6,
+    "v1": 0
+   },
+   {
+    "formula": "OX4P3W4A2",
+    "atoms": 14,
+    "count": 56,
+    "valence_group": 1,
+    "v3": 4,
+    "v2": 10,
+    "v1": 0
+   },
+   {
+    "formula": "OXC4K6AF",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 7,
+    "v2": 2,
+    "v1": 5
+   },
+   {
+    "formula": "OXCP3WKA4F2",
+    "atoms": 14,
+    "count": 56,
+    "valence_group": 1,
+    "v3": 5,
+    "v2": 6,
+    "v1": 3
+   },
+   {
+    "formula": "OXP5W2L2AF2",
+    "atoms": 14,
+    "count": 56,
+    "valence_group": 1,
+    "v3": 6,
+    "v2": 4,
+    "v1": 4
+   },
+   {
+    "formula": "OXPW3L2K6",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 4,
+    "v1": 2
+   },
+   {
+    "formula": "OXW2L2K5A3",
+    "atoms": 14,
+    "count": 56,
+    "valence_group": 1,
+    "v3": 6,
+    "v2": 6,
+    "v1": 2
+   },
+   {
+    "formula": "X2CP6LK2A2",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 4,
+    "v1": 2
+   },
+   {
+    "formula": "X3CP6LK2A",
+    "atoms": 14,
+    "count": 122,
+    "valence_group": 0,
+    "v3": 8,
+    "v2": 4,
+    "v1": 2
+   },
+   {
+    "formula": "X5PW2LK4A",
+    "atoms": 14,
+    "count": 56,
+    "valence_group": 1,
+    "v3": 5,
+    "v2": 8,
+    "v1": 1
+   },
+   {
+    "formula": "X6CP3W2KF",
+    "atoms": 14,
+    "count": 56,
+    "valence_group": 1,
+    "v3": 4,
+    "v2": 8,
+    "v1": 2
+   },
+   {
+    "formula": "X6P4LK2F",
+    "atoms": 14,
+    "count": 56,
+    "valence_group": 1,
+    "v3": 6,
+    "v2": 6,
+    "v1": 2
+   },
+   {
+    "formula": "X6W3K2A3",
+    "atoms": 14,
+    "count": 56,
+    "valence_group": 1,
+    "v3": 2,
+    "v2": 12,
+    "v1": 0
+   }
+  ],
+  "summary": {
+   "n_species": 120,
+   "molecules": 13174,
+   "atoms": 150103,
+   "mean_atoms": 11.394,
+   "element_atoms": {
+    "O": 26466,
+    "X": 11919,
+    "C": 11145,
+    "P": 28757,
+    "W": 12685,
+    "L": 9567,
+    "K": 23289,
+    "A": 14815,
+    "F": 11460
+   },
+   "elements_covered": [
+    "A",
+    "C",
+    "F",
+    "K",
+    "L",
+    "O",
+    "P",
+    "W",
+    "X"
+   ],
+   "valence_atoms": {
+    "v3": 78512,
+    "v2": 39419,
+    "v1": 32172
+   },
+   "valence_shares": [
+    0.5231,
+    0.2626,
+    0.2143
+   ],
+   "strict_order": true
+  }
+ },
+ "batchB": {
+  "rows": [
+   {
+    "formula": "P2W2A2",
+    "atoms": 6,
+    "count": 111,
+    "v3": 2,
+    "v2": 4,
+    "v1": 0
+   },
+   {
+    "formula": "XPK3A",
+    "atoms": 6,
+    "count": 111,
+    "v3": 4,
+    "v2": 2,
+    "v1": 0
+   },
+   {
+    "formula": "P4WLK",
+    "atoms": 7,
+    "count": 95,
+    "v3": 5,
+    "v2": 1,
+    "v1": 1
+   },
+   {
+    "formula": "PL2A3F",
+    "atoms": 7,
+    "count": 95,
+    "v3": 1,
+    "v2": 3,
+    "v1": 3
+   },
+   {
+    "formula": "XW3K2A",
+    "atoms": 7,
+    "count": 95,
+    "v3": 2,
+    "v2": 5,
+    "v1": 0
+   },
+   {
+    "formula": "O4PL2F",
+    "atoms": 8,
+    "count": 83,
+    "v3": 5,
+    "v2": 0,
+    "v1": 3
+   },
+   {
+    "formula": "O4PLA2",
+    "atoms": 8,
+    "count": 83,
+    "v3": 5,
+    "v2": 2,
+    "v1": 1
+   },
+   {
+    "formula": "OCPW2K3",
+    "atoms": 8,
+    "count": 83,
+    "v3": 5,
+    "v2": 2,
+    "v1": 1
+   },
+   {
+    "formula": "OX2P3F2",
+    "atoms": 8,
+    "count": 83,
+    "v3": 4,
+    "v2": 2,
+    "v1": 2
+   },
+   {
+    "formula": "P3K2A2F",
+    "atoms": 8,
+    "count": 83,
+    "v3": 5,
+    "v2": 2,
+    "v1": 1
+   },
+   {
+    "formula": "X2P2A4",
+    "atoms": 8,
+    "count": 83,
+    "v3": 2,
+    "v2": 6,
+    "v1": 0
+   },
+   {
+    "formula": "C2P3KAF2",
+    "atoms": 9,
+    "count": 74,
+    "v3": 4,
+    "v2": 1,
+    "v1": 4
+   },
+   {
+    "formula": "C2W5K2",
+    "atoms": 9,
+    "count": 74,
+    "v3": 2,
+    "v2": 5,
+    "v1": 2
+   },
+   {
+    "formula": "O3PWL2F2",
+    "atoms": 9,
+    "count": 74,
+    "v3": 4,
+    "v2": 1,
+    "v1": 4
+   },
+   {
+    "formula": "O4C2WK2",
+    "atoms": 9,
+    "count": 74,
+    "v3": 6,
+    "v2": 1,
+    "v1": 2
+   },
+   {
+    "formula": "P3WL2A2F",
+    "atoms": 9,
+    "count": 74,
+    "v3": 3,
+    "v2": 3,
+    "v1": 3
+   },
+   {
+    "formula": "X6WK2",
+    "atoms": 9,
+    "count": 74,
+    "v3": 2,
+    "v2": 7,
+    "v1": 0
+   },
+   {
+    "formula": "C4P4LK",
+    "atoms": 10,
+    "count": 67,
+    "v3": 5,
+    "v2": 0,
+    "v1": 5
+   },
+   {
+    "formula": "O3C2PL4",
+    "atoms": 10,
+    "count": 67,
+    "v3": 4,
+    "v2": 0,
+    "v1": 6
+   },
+   {
+    "formula": "O3X2CKF3",
+    "atoms": 10,
+    "count": 67,
+    "v3": 4,
+    "v2": 2,
+    "v1": 4
+   },
+   {
+    "formula": "O5CPKA2",
+    "atoms": 10,
+    "count": 67,
+    "v3": 7,
+    "v2": 2,
+    "v1": 1
+   },
+   {
+    "formula": "OC2P4LKF",
+    "atoms": 10,
+    "count": 67,
+    "v3": 6,
+    "v2": 0,
+    "v1": 4
+   },
+   {
+    "formula": "OC2W3A3F",
+    "atoms": 10,
+    "count": 67,
+    "v3": 1,
+    "v2": 6,
+    "v1": 3
+   },
+   {
+    "formula": "CP5LK3A",
+    "atoms": 11,
+    "count": 61,
+    "v3": 8,
+    "v2": 1,
+    "v1": 2
+   },
+   {
+    "formula": "O2K6AF2",
+    "atoms": 11,
+    "count": 61,
+    "v3": 8,
+    "v2": 1,
+    "v1": 2
+   },
+   {
+    "formula": "O3C2LK2A3",
+    "atoms": 11,
+    "count": 61,
+    "v3": 5,
+    "v2": 3,
+    "v1": 3
+   },
+   {
+    "formula": "O3P2W2LA3",
+    "atoms": 11,
+    "count": 61,
+    "v3": 5,
+    "v2": 5,
+    "v1": 1
+   },
+   {
+    "formula": "O4X4PLA",
+    "atoms": 11,
+    "count": 61,
+    "v3": 5,
+    "v2": 5,
+    "v1": 1
+   },
+   {
+    "formula": "O4X5K2",
+    "atoms": 11,
+    "count": 61,
+    "v3": 6,
+    "v2": 5,
+    "v1": 0
+   },
+   {
+    "formula": "O4XCW2LKF",
+    "atoms": 11,
+    "count": 61,
+    "v3": 5,
+    "v2": 3,
+    "v1": 3
+   },
+   {
+    "formula": "O5P2WLKF",
+    "atoms": 11,
+    "count": 61,
+    "v3": 8,
+    "v2": 1,
+    "v1": 2
+   },
+   {
+    "formula": "OC3P4L2A",
+    "atoms": 11,
+    "count": 61,
+    "v3": 5,
+    "v2": 1,
+    "v1": 5
+   },
+   {
+    "formula": "OXCPK4A2F",
+    "atoms": 11,
+    "count": 61,
+    "v3": 6,
+    "v2": 3,
+    "v1": 2
+   },
+   {
+    "formula": "X3CP5K2",
+    "atoms": 11,
+    "count": 61,
+    "v3": 7,
+    "v2": 3,
+    "v1": 1
+   },
+   {
+    "formula": "X3P3K5",
+    "atoms": 11,
+    "count": 61,
+    "v3": 8,
+    "v2": 3,
+    "v1": 0
+   },
+   {
+    "formula": "X4P3LKAF",
+    "atoms": 11,
+    "count": 61,
+    "v3": 4,
+    "v2": 5,
+    "v1": 2
+   },
+   {
+    "formula": "C3P5W2K2",
+    "atoms": 12,
+    "count": 55,
+    "v3": 7,
+    "v2": 2,
+    "v1": 3
+   },
+   {
+    "formula": "C4PL2K5",
+    "atoms": 12,
+    "count": 55,
+    "v3": 6,
+    "v2": 0,
+    "v1": 6
+   },
+   {
+    "formula": "CP4W4KA2",
+    "atoms": 12,
+    "count": 55,
+    "v3": 5,
+    "v2": 6,
+    "v1": 1
+   },
+   {
+    "formula": "O2X5PA3F",
+    "atoms": 12,
+    "count": 55,
+    "v3": 3,
+    "v2": 8,
+    "v1": 1
+   },
+   {
+    "formula": "O3W2K6F",
+    "atoms": 12,
+    "count": 55,
+    "v3": 9,
+    "v2": 2,
+    "v1": 1
+   },
+   {
+    "formula": "O3X3W3KA2",
+    "atoms": 12,
+    "count": 55,
+    "v3": 4,
+    "v2": 8,
+    "v1": 0
+   },
+   {
+    "formula": "O4L3KF4",
+    "atoms": 12,
+    "count": 55,
+    "v3": 5,
+    "v2": 0,
+    "v1": 7
+   },
+   {
+    "formula": "O4X2PWL3A",
+    "atoms": 12,
+    "count": 55,
+    "v3": 5,
+    "v2": 4,
+    "v1": 3
+   },
+   {
+    "formula": "O4X3C2PLA",
+    "atoms": 12,
+    "count": 55,
+    "v3": 5,
+    "v2": 4,
+    "v1": 3
+   },
+   {
+    "formula": "O5XCP3WF",
+    "atoms": 12,
+    "count": 55,
+    "v3": 8,
+    "v2": 2,
+    "v1": 2
+   },
+   {
+    "formula": "OCP5W2KF2",
+    "atoms": 12,
+    "count": 55,
+    "v3": 7,
+    "v2": 2,
+    "v1": 3
+   },
+   {
+    "formula": "OP5WLAF3",
+    "atoms": 12,
+    "count": 55,
+    "v3": 6,
+    "v2": 2,
+    "v1": 4
+   },
+   {
+    "formula": "OW3LK4A3",
+    "atoms": 12,
+    "count": 55,
+    "v3": 5,
+    "v2": 6,
+    "v1": 1
+   },
+   {
+    "formula": "OX4PK3F3",
+    "atoms": 12,
+    "count": 55,
+    "v3": 5,
+    "v2": 4,
+    "v1": 3
+   },
+   {
+    "formula": "OX5P3WLK",
+    "atoms": 12,
+    "count": 55,
+    "v3": 5,
+    "v2": 6,
+    "v1": 1
+   },
+   {
+    "formula": "X2C2P2W3LKA",
+    "atoms": 12,
+    "count": 55,
+    "v3": 3,
+    "v2": 6,
+    "v1": 3
+   },
+   {
+    "formula": "X3C2P2KA3F",
+    "atoms": 12,
+    "count": 55,
+    "v3": 3,
+    "v2": 6,
+    "v1": 3
+   },
+   {
+    "formula": "X4C2P3LK2",
+    "atoms": 12,
+    "count": 55,
+    "v3": 5,
+    "v2": 4,
+    "v1": 3
+   },
+   {
+    "formula": "X5P2W5",
+    "atoms": 12,
+    "count": 55,
+    "v3": 2,
+    "v2": 10,
+    "v1": 0
+   },
+   {
+    "formula": "X6PWK3A",
+    "atoms": 12,
+    "count": 55,
+    "v3": 4,
+    "v2": 8,
+    "v1": 0
+   },
+   {
+    "formula": "XP4WL2KF3",
+    "atoms": 12,
+    "count": 55,
+    "v3": 5,
+    "v2": 2,
+    "v1": 5
+   },
+   {
+    "formula": "C2P4WL3KF2",
+    "atoms": 13,
+    "count": 51,
+    "v3": 5,
+    "v2": 1,
+    "v1": 7
+   },
+   {
+    "formula": "O3C2W2KA5",
+    "atoms": 13,
+    "count": 51,
+    "v3": 4,
+    "v2": 7,
+    "v1": 2
+   },
+   {
+    "formula": "O3X3C2PW2A2",
+    "atoms": 13,
+    "count": 51,
+    "v3": 4,
+    "v2": 7,
+    "v1": 2
+   },
+   {
+    "formula": "O4X2WL6",
+    "atoms": 13,
+    "count": 51,
+    "v3": 4,
+    "v2": 3,
+    "v1": 6
+   },
+   {
+    "formula": "O4XP5W2K",
+    "atoms": 13,
+    "count": 51,
+    "v3": 10,
+    "v2": 3,
+    "v1": 0
+   },
+   {
+    "formula": "O4XW5K2A",
+    "atoms": 13,
+    "count": 51,
+    "v3": 6,
+    "v2": 7,
+    "v1": 0
+   },
+   {
+    "formula": "O5K2A3F3",
+    "atoms": 13,
+    "count": 51,
+    "v3": 7,
+    "v2": 3,
+    "v1": 3
+   },
+   {
+    "formula": "O5X4CWK2",
+    "atoms": 13,
+    "count": 51,
+    "v3": 7,
+    "v2": 5,
+    "v1": 1
+   },
+   {
+    "formula": "O5XCPKA2F2",
+    "atoms": 13,
+    "count": 51,
+    "v3": 7,
+    "v2": 3,
+    "v1": 3
+   },
+   {
+    "formula": "O5XP2WL2AF",
+    "atoms": 13,
+    "count": 51,
+    "v3": 7,
+    "v2": 3,
+    "v1": 3
+   },
+   {
+    "formula": "O6CPWL3K",
+    "atoms": 13,
+    "count": 51,
+    "v3": 8,
+    "v2": 1,
+    "v1": 4
+   },
+   {
+    "formula": "O6X2P4W",
+    "atoms": 13,
+    "count": 51,
+    "v3": 10,
+    "v2": 3,
+    "v1": 0
+   },
+   {
+    "formula": "OC3P4W3LF",
+    "atoms": 13,
+    "count": 51,
+    "v3": 5,
+    "v2": 3,
+    "v1": 5
+   },
+   {
+    "formula": "OCP5W2A3F",
+    "atoms": 13,
+    "count": 51,
+    "v3": 6,
+    "v2": 5,
+    "v1": 2
+   },
+   {
+    "formula": "OLK6A3F2",
+    "atoms": 13,
+    "count": 51,
+    "v3": 7,
+    "v2": 3,
+    "v1": 3
+   },
+   {
+    "formula": "OP8LK2A",
+    "atoms": 13,
+    "count": 51,
+    "v3": 11,
+    "v2": 1,
+    "v1": 1
+   },
+   {
+    "formula": "OX3CPW2K5",
+    "atoms": 13,
+    "count": 51,
+    "v3": 7,
+    "v2": 5,
+    "v1": 1
+   },
+   {
+    "formula": "OXP2W4L3A2",
+    "atoms": 13,
+    "count": 51,
+    "v3": 3,
+    "v2": 7,
+    "v1": 3
+   },
+   {
+    "formula": "X3CP7K2",
+    "atoms": 13,
+    "count": 51,
+    "v3": 9,
+    "v2": 3,
+    "v1": 1
+   },
+   {
+    "formula": "X3PW3L2K3A",
+    "atoms": 13,
+    "count": 51,
+    "v3": 4,
+    "v2": 7,
+    "v1": 2
+   },
+   {
+    "formula": "X4P3W2KAF2",
+    "atoms": 13,
+    "count": 51,
+    "v3": 4,
+    "v2": 7,
+    "v1": 2
+   },
+   {
+    "formula": "X5W3K2A3",
+    "atoms": 13,
+    "count": 51,
+    "v3": 2,
+    "v2": 11,
+    "v1": 0
+   },
+   {
+    "formula": "X6C2P3WK",
+    "atoms": 13,
+    "count": 51,
+    "v3": 4,
+    "v2": 7,
+    "v1": 2
+   },
+   {
+    "formula": "XCP6L2KF2",
+    "atoms": 13,
+    "count": 51,
+    "v3": 7,
+    "v2": 1,
+    "v1": 5
+   },
+   {
+    "formula": "O2C2P5LA2F2",
+    "atoms": 14,
+    "count": 48,
+    "v3": 7,
+    "v2": 2,
+    "v1": 5
+   },
+   {
+    "formula": "O2C2P6WK2A",
+    "atoms": 14,
+    "count": 48,
+    "v3": 10,
+    "v2": 2,
+    "v1": 2
+   },
+   {
+    "formula": "O2C4P6A2",
+    "atoms": 14,
+    "count": 48,
+    "v3": 8,
+    "v2": 2,
+    "v1": 4
+   },
+   {
+    "formula": "O2P6K2A2F2",
+    "atoms": 14,
+    "count": 48,
+    "v3": 10,
+    "v2": 2,
+    "v1": 2
+   },
+   {
+    "formula": "O2X3CP5WA2",
+    "atoms": 14,
+    "count": 48,
+    "v3": 7,
+    "v2": 6,
+    "v1": 1
+   },
+   {
+    "formula": "O2XC2WLK5F2",
+    "atoms": 14,
+    "count": 48,
+    "v3": 7,
+    "v2": 2,
+    "v1": 5
+   },
+   {
+    "formula": "O2XC3WLK5F",
+    "atoms": 14,
+    "count": 48,
+    "v3": 7,
+    "v2": 2,
+    "v1": 5
+   },
+   {
+    "formula": "O2XC4P6A",
+    "atoms": 14,
+    "count": 48,
+    "v3": 8,
+    "v2": 2,
+    "v1": 4
+   },
+   {
+    "formula": "O3CW7LAF",
+    "atoms": 14,
+    "count": 48,
+    "v3": 3,
+    "v2": 8,
+    "v1": 3
+   },
+   {
+    "formula": "O3X3CW4KAF",
+    "atoms": 14,
+    "count": 48,
+    "v3": 4,
+    "v2": 8,
+    "v1": 2
+   },
+   {
+    "formula": "O3X3W5KF2",
+    "atoms": 14,
+    "count": 48,
+    "v3": 4,
+    "v2": 8,
+    "v1": 2
+   },
+   {
+    "formula": "O3X4P4WKA",
+    "atoms": 14,
+    "count": 48,
+    "v3": 8,
+    "v2": 6,
+    "v1": 0
+   },
+   {
+    "formula": "O4CP2W2A4F",
+    "atoms": 14,
+    "count": 48,
+    "v3": 6,
+    "v2": 6,
+    "v1": 2
+   },
+   {
+    "formula": "O5CP3W3AF",
+    "atoms": 14,
+    "count": 48,
+    "v3": 8,
+    "v2": 4,
+    "v1": 2
+   },
+   {
+    "formula": "O5L2K2A2F3",
+    "atoms": 14,
+    "count": 48,
+    "v3": 7,
+    "v2": 2,
+    "v1": 5
+   },
+   {
+    "formula": "O5X2CPLA2F2",
+    "atoms": 14,
+    "count": 48,
+    "v3": 6,
+    "v2": 4,
+    "v1": 4
+   },
+   {
+    "formula": "O6C2PWK3A",
+    "atoms": 14,
+    "count": 48,
+    "v3": 10,
+    "v2": 2,
+    "v1": 2
+   },
+   {
+    "formula": "O6W2K4A2",
+    "atoms": 14,
+    "count": 48,
+    "v3": 10,
+    "v2": 4,
+    "v1": 0
+   },
+   {
+    "formula": "O6XCPWF4",
+    "atoms": 14,
+    "count": 48,
+    "v3": 7,
+    "v2": 2,
+    "v1": 5
+   },
+   {
+    "formula": "OX2C3P5LKF",
+    "atoms": 14,
+    "count": 48,
+    "v3": 7,
+    "v2": 2,
+    "v1": 5
+   },
+   {
+    "formula": "OX6CWLK3A",
+    "atoms": 14,
+    "count": 48,
+    "v3": 4,
+    "v2": 8,
+    "v1": 2
+   },
+   {
+    "formula": "OXC2W5K3F2",
+    "atoms": 14,
+    "count": 48,
+    "v3": 4,
+    "v2": 6,
+    "v1": 4
+   },
+   {
+    "formula": "OXCP2K5A3F",
+    "atoms": 14,
+    "count": 48,
+    "v3": 8,
+    "v2": 4,
+    "v1": 2
+   },
+   {
+    "formula": "OXCP4L2K2A3",
+    "atoms": 14,
+    "count": 48,
+    "v3": 7,
+    "v2": 4,
+    "v1": 3
+   },
+   {
+    "formula": "OXCPL2K6AF",
+    "atoms": 14,
+    "count": 48,
+    "v3": 8,
+    "v2": 2,
+    "v1": 4
+   },
+   {
+    "formula": "OXP3W4A5",
+    "atoms": 14,
+    "count": 48,
+    "v3": 4,
+    "v2": 10,
+    "v1": 0
+   },
+   {
+    "formula": "X2C3P5W3A",
+    "atoms": 14,
+    "count": 48,
+    "v3": 5,
+    "v2": 6,
+    "v1": 3
+   },
+   {
+    "formula": "X2CP2WK5A3",
+    "atoms": 14,
+    "count": 48,
+    "v3": 7,
+    "v2": 6,
+    "v1": 1
+   },
+   {
+    "formula": "X2P2K6F4",
+    "atoms": 14,
+    "count": 48,
+    "v3": 8,
+    "v2": 2,
+    "v1": 4
+   },
+   {
+    "formula": "X2P2W4A4F2",
+    "atoms": 14,
+    "count": 48,
+    "v3": 2,
+    "v2": 10,
+    "v1": 2
+   },
+   {
+    "formula": "X2P4KA6F",
+    "atoms": 14,
+    "count": 48,
+    "v3": 5,
+    "v2": 8,
+    "v1": 1
+   },
+   {
+    "formula": "X3P2W3L3KA2",
+    "atoms": 14,
+    "count": 48,
+    "v3": 3,
+    "v2": 8,
+    "v1": 3
+   },
+   {
+    "formula": "X4CPW2LK3A2",
+    "atoms": 14,
+    "count": 48,
+    "v3": 4,
+    "v2": 8,
+    "v1": 2
+   },
+   {
+    "formula": "XC2P5W3K3",
+    "atoms": 14,
+    "count": 48,
+    "v3": 8,
+    "v2": 4,
+    "v1": 2
+   },
+   {
+    "formula": "XC3P5W3KF",
+    "atoms": 14,
+    "count": 48,
+    "v3": 6,
+    "v2": 4,
+    "v1": 4
+   },
+   {
+    "formula": "XC3P6K3A",
+    "atoms": 14,
+    "count": 48,
+    "v3": 9,
+    "v2": 2,
+    "v1": 3
+   },
+   {
+    "formula": "XC4P5W3K",
+    "atoms": 14,
+    "count": 48,
+    "v3": 6,
+    "v2": 4,
+    "v1": 4
+   },
+   {
+    "formula": "XP2W5LA4F",
+    "atoms": 14,
+    "count": 48,
+    "v3": 2,
+    "v2": 10,
+    "v1": 2
+   },
+   {
+    "formula": "XP2WL2K5A2F",
+    "atoms": 14,
+    "count": 48,
+    "v3": 7,
+    "v2": 4,
+    "v1": 3
+   }
+  ],
+  "summary": {
+   "n_species": 120,
+   "molecules": 6895,
+   "atoms": 80030,
+   "mean_atoms": 11.607,
+   "element_atoms": {
+    "O": 11828,
+    "X": 9548,
+    "C": 6284,
+    "P": 14865,
+    "W": 8741,
+    "L": 4845,
+    "K": 10615,
+    "A": 8169,
+    "F": 5135
+   },
+   "elements_covered": [
+    "A",
+    "C",
+    "F",
+    "K",
+    "L",
+    "O",
+    "P",
+    "W",
+    "X"
+   ],
+   "valence_atoms": {
+    "v3": 37308,
+    "v2": 26458,
+    "v1": 16264
+   },
+   "valence_shares": [
+    0.4662,
+    0.3306,
+    0.2032
+   ],
+   "strict_order": true
+  }
+ },
+ "config": {
+  "seedA": 20261122,
+  "seedB": 20261123,
+  "target_atoms_A": 150000,
+  "valence_shares": [
+   0.55,
+   0.3,
+   0.15
+  ],
+  "groups": [
+   60,
+   40,
+   20
+  ]
+ }
+}
