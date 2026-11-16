@@ -10,10 +10,10 @@
  {
   "path": "t4_catalog_all_validated.json",
   "gz": "_data_gz/t4_catalog_all_validated.json.gz",
-  "orig_bytes": 114160669,
-  "gz_bytes": 4730181,
-  "orig_sha256": "9221912d03f7185752966731993cc04776bb5144fc8ffae0d04d0c5884745300",
-  "gz_sha256": "0a10235aaac8761b42f033f7e8fd9e393a8e70450d8875cb493cfaf02b62a420"
+  "orig_bytes": 39150742,
+  "gz_bytes": 3075532,
+  "orig_sha256": "2049a0cf22416cf55526dff955e6abe7cf3d31f78221d955870daf4ab1f4f2ab",
+  "gz_sha256": "4623968d3b03269fb64bcc0d9b7e661f8cf296f2f35e023b72d37290e1523c8d"
  },
  {
   "path": "t12b_vec_v3.json",

@@ -142,11 +142,12 @@ def enum_block_sigs(counts, cap=3_000_000):
 def main():
     t0 = time.time()
     max_total = int(sys.argv[1]) if len(sys.argv) > 1 else 12
+    start_total = int(sys.argv[2]) if len(sys.argv) > 2 else 1
     lib = V.load_library()
     libkeys = set(lib["multi"]) | set(lib["single"])
     out = {"max_total": max_total, "ambiguous": [], "out_of_library": [],
            "per_total": {}}
-    for total in range(1, max_total + 1):
+    for total in range(start_total, max_total + 1):
         t1 = time.time()
         amb = 0
         nonlib = 0

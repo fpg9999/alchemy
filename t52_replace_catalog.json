@@ -1,0 +1,11 @@
+{
+ "records": 84225,
+ "unchanged": 69480,
+ "replaced": 14745,
+ "place_computed": 14717,
+ "place_none": 28,
+ "sim_fail": 0,
+ "single_product": 84225,
+ "other": 0,
+ "seconds": 952.7
+}
