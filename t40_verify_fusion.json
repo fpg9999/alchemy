@@ -1,0 +1,25 @@
+{
+ "substances": 84225,
+ "sim_fail": 0,
+ "level6_all_in_lib": 84225,
+ "level6_bad": 0,
+ "final_cover_ok": 84225,
+ "final_cover_bad": 0,
+ "distinct_level6_blocks": 36,
+ "block_sizes": {
+  "1": 50159,
+  "2": 3,
+  "3": 41102,
+  "4": 67334,
+  "5": 16299,
+  "6": 4599,
+  "7": 626,
+  "8": 514,
+  "9": 414,
+  "10": 146,
+  "13": 57
+ },
+ "bad_blocks": [],
+ "cover_bad": [],
+ "seconds": 309.2
+}
