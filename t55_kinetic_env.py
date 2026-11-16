@@ -115,6 +115,41 @@ def design_v0(n_particles, target_crossings=TARGET_CROSSINGS, t_ref=500.0):
     return lam / (EPS * t_ref) * (math.exp(EPS * k) - 1.0)
 
 
+def radius_for(mol, area_model="uniform"):
+    """分子的碰撞半径 / 面积模型。
+
+    uniform : 所有分子半径 = RADIUS（T55/T56 口径）
+    count   : 面积 ∝ 原子数（用户 T57 要求"元素数越多面积越大"）：
+              A = π R²，R = RADIUS · sqrt(n/2)  =>  A ∝ n，n=2 时 R=RADIUS。
+    """
+    if area_model == "count":
+        return RADIUS * math.sqrt(len(mol["atoms"]) / 2.0)
+    return RADIUS
+
+
+def design_v0_area(radii, target_crossings=TARGET_CROSSINGS, t_ref=500.0):
+    """变截面（面积随分子大小变化）时的初速度设计。
+
+    每人碰撞率 ν_i = v_i·√2·N·(R_i+R̄)/L²  =>  λ_i = L²/(√2·N·(R_i+R̄))。
+    取最小 λ（最大分子，衰减最快），保证它也能达到 target 次穿越。
+    返回 (v0, 设计信息 dict)。
+    """
+    n = len(radii)
+    r_bar = sum(radii) / n
+    r_max = max(radii)
+    lam_min = L * L / (math.sqrt(2.0) * n * (r_max + r_bar))
+    lam_mean = L * L / (math.sqrt(2.0) * n * (r_bar + r_bar))
+    s = target_crossings * DIAG
+    k_min = s / lam_min
+    v0 = lam_min / (EPS * t_ref) * (math.exp(EPS * k_min) - 1.0)
+    return v0, {
+        "n": n, "r_bar": r_bar, "r_max": r_max,
+        "lambda_min": lam_min, "lambda_mean": lam_mean,
+        "target_crossings": target_crossings,
+        "v0": v0,
+    }
+
+
 def poisson(rng, lam):
     """泊松采样（大均值用正态近似）。"""
     if lam <= 0:
@@ -162,7 +197,8 @@ def fold_axis(x, d):
 class KineticEnvironment:
     def __init__(self, minutes=MINUTES, n_batch=N_BATCH, seed=20261116,
                  event_limit=EVENT_SAMPLE_LIMIT, snap_minutes=None, t0=T0,
-                 load_spec=None, known_formulas=None, color_mode="elementset"):
+                 load_spec=None, known_formulas=None, color_mode="elementset",
+                 area_model="uniform", weighted_partner=False):
         self.rng = random.Random(seed)
         self.minutes = minutes
         self.t0 = t0
@@ -170,6 +206,8 @@ class KineticEnvironment:
         self.load_spec = list(load_spec) if load_spec is not None else default_load_spec(n_batch)
         self.known_override = known_formulas
         self.color_mode = color_mode
+        self.area_model = area_model
+        self.weighted_partner = weighted_partner
         self.event_limit = event_limit
         self.snap_minutes = set(snap_minutes if snap_minutes is not None else SNAP_MINUTES)
         self.seed = seed
@@ -212,7 +250,15 @@ class KineticEnvironment:
         self._load_templates()
         rng = self.rng
         total = sum(int(item[3]) for item in self.load_spec)
-        v0 = design_v0(total)
+        if self.area_model == "uniform" and not self.weighted_partner:
+            v0 = design_v0(total)
+            self.design_info = {"area_model": "uniform", "v0": v0,
+                                "lambda": mean_free_path(total)}
+        else:
+            radii = []
+            for _tag, _desc, f, count in self.load_spec:
+                radii += [radius_for(self._templates[f], self.area_model)] * int(count)
+            v0, self.design_info = design_v0_area(radii)
         self.v0 = v0
         for tag, _desc, f, count in self.load_spec:
             mol = self._templates[f]
@@ -280,6 +326,39 @@ class KineticEnvironment:
                     continue
                 return q
         # 兜底：从全场随机取（极少数情况）
+        if len(parts) <= 1:
+            return None
+        for _ in range(8):
+            q = parts[rng.choice(list(parts.keys()))]
+            if q is not p:
+                return q
+        return None
+
+    def pick_partner_weighted(self, p, r_max):
+        """按碰撞截面 (r_p + r_q) 加权选伙伴（T57 面积模型）。
+
+        在邻域内随机取候选，按 (r_p+r_q)/(r_p+r_max) 接受（拒绝采样）。
+        """
+        rng = self.rng
+        cs = self._cell
+        cx = int(p.x // cs)
+        cy = int(p.y // cs)
+        parts = self.particles
+        g = self._grid
+        rp = radius_for(p.mol, self.area_model)
+        for radius in (1, 2, 3):
+            for _try in range(14):
+                ox = rng.randint(-radius, radius)
+                oy = rng.randint(-radius, radius)
+                lst = g.get((cx + ox, cy + oy))
+                if not lst:
+                    continue
+                q = lst[rng.randrange(len(lst))]
+                if q is p or q.pid not in parts:
+                    continue
+                rq = radius_for(q.mol, self.area_model)
+                if rp + r_max <= 0 or rng.random() < (rp + rq) / (rp + r_max):
+                    return q
         if len(parts) <= 1:
             return None
         for _ in range(8):
@@ -391,14 +470,28 @@ class KineticEnvironment:
             if n <= 1:
                 self.time_series.append(self._ts_row(t, T, 0))
                 continue
-            lam = mean_free_path(n)
-            # 按当前存活粒子建列表 + 累计权重
             plist = list(self.particles.values())
-            cum = []
-            total = 0.0
-            for p in plist:
-                total += p.speed * DT / lam
-                cum.append(total)
+            # ---------------- 碰撞率：固定半径（T55/T56 口径）或 面积∝原子数（T57） ----------------
+            if self.area_model == "uniform":
+                lam = mean_free_path(n)
+                r_bar = RADIUS
+                r_max = RADIUS
+                cum = []
+                total = 0.0
+                for p in plist:
+                    total += p.speed * DT / lam
+                    cum.append(total)
+            else:
+                radii = [radius_for(p.mol, self.area_model) for p in plist]
+                r_bar = sum(radii) / n
+                r_max = max(radii)
+                factor = math.sqrt(2.0) * n / (L * L)
+                lam = L * L / (math.sqrt(2.0) * n * (r_bar + r_bar))  # 代表平均自由程
+                cum = []
+                total = 0.0
+                for p, r in zip(plist, radii):
+                    total += p.speed * factor * (r + r_bar) * DT
+                    cum.append(total)
             self.build_grid()
             k_total = poisson(self.rng, 0.5 * total)
             rng = self.rng
@@ -411,7 +504,10 @@ class KineticEnvironment:
                 p = plist[i]
                 if p.pid not in self.particles:
                     continue
-                q = self.pick_partner(p)
+                if self.weighted_partner:
+                    q = self.pick_partner_weighted(p, r_max)
+                else:
+                    q = self.pick_partner(p)
                 if q is None:
                     continue
                 self.process_collision(p, q, T, t)
@@ -434,6 +530,7 @@ class KineticEnvironment:
                 "speed_median": round(med, 1),
                 "speed_p90": round(p90, 1),
                 "free_path": round(lam, 1),
+                "r_bar": round(r_bar, 4),
                 "collisions": collisions,
                 "complete": self.reaction_counts["complete"],
                 "incomplete": self.reaction_counts["incomplete"],
@@ -563,6 +660,13 @@ class KineticEnvironment:
                           for tag, desc, f, c in self.load_spec],
             "initial_particles": self.n0, "initial_atoms": self.atoms0,
             "v0": round(self.v0, 1),
+            "area_model": self.area_model,
+            "weighted_partner": self.weighted_partner,
+            "radius_base": RADIUS,
+            "area_formula": ("A = π·RADIUS²·(n_atoms/2)，R = RADIUS·sqrt(n/2)"
+                             if self.area_model == "count" else "A = π·RADIUS²（固定）"),
+            "design": {k: (round(v, 6) if isinstance(v, float) else v)
+                       for k, v in (self.design_info or {}).items()},
             "design_target_crossings": TARGET_CROSSINGS,
             "design_window_minutes": 500,
             "formula_sample_minutes": FORMULA_SAMPLE_MINUTES,
@@ -618,16 +722,34 @@ class KineticEnvironment:
 
 
 # ================================================================== 对照组
-def run_control(minutes=500, n_batch=N_BATCH, seed=20261116, load_spec=None):
-    """关闭化学反应的对照：验证 500 次角-对角穿越要求。"""
+def run_control(minutes=500, n_batch=N_BATCH, seed=20261116, load_spec=None,
+                area_model="uniform"):
+    """关闭化学反应的对照：验证 500 次角-对角穿越要求。
+
+    area_model="count" 时按 T57 面积模型变截面：ν_i = v_i·√2·N·(R_i+R̄)/L²。
+    每个"碰撞参与事件"衰减一个粒子（与主实验成对事件在每人碰撞次数上等价）。
+    """
     rng = random.Random(seed)
     if load_spec is None:
         load_spec = default_load_spec(n_batch)
     templates, _byf = build_templates(load_spec)
     n0 = sum(int(item[3]) for item in load_spec)
-    v0 = design_v0(n0)
+    radii = []
+    for _tag, _desc, f, count in load_spec:
+        radii += [radius_for(templates[f], area_model)] * int(count)
+    if area_model == "uniform":
+        v0 = design_v0(n0)
+        design = {"area_model": "uniform", "lambda": mean_free_path(n0), "v0": v0}
+        lam = mean_free_path(n0)
+        r_bar = RADIUS
+        factor = None
+    else:
+        v0, design = design_v0_area(radii)
+        r_bar = sum(radii) / n0
+        lam = L * L / (math.sqrt(2.0) * n0 * (r_bar + r_bar))
+        factor = math.sqrt(2.0) * n0 / (L * L)
     particles = []
-    for tag, desc, f, count in load_spec:
+    for _tag, _desc, f, count in load_spec:
         mol = templates[f]
         for _ in range(int(count)):
             ang = rng.random() * 2.0 * math.pi
@@ -637,11 +759,7 @@ def run_control(minutes=500, n_batch=N_BATCH, seed=20261116, load_spec=None):
     ts = []
     path_sum = 0.0
     t_start = time.time()
-    # 碰撞率用 n0 恒定；每 10 分钟记录
-    lam = mean_free_path(n0)
     for t in range(minutes):
-        floor = math.floor
-        L2 = 2.0 * L
         sp_sum = 0.0
         for p in particles:
             p.path += p.speed * DT
@@ -655,11 +773,14 @@ def run_control(minutes=500, n_batch=N_BATCH, seed=20261116, load_spec=None):
                 p.vy = -p.vy
         cum = []
         total = 0.0
-        for p in particles:
-            total += p.speed * DT / lam
-            cum.append(total)
-        # 每个"碰撞参与事件"按 v/λ 采样，衰减一个粒子；与主实验成对事件的
-        # 每人碰撞次数等价（主：0.5Σν 次成对事件 × 2 参与 = Σν 次参与）。
+        if area_model == "uniform":
+            for p in particles:
+                total += p.speed * DT / lam
+                cum.append(total)
+        else:
+            for p, r in zip(particles, radii):
+                total += p.speed * factor * (r + r_bar) * DT
+                cum.append(total)
         k = poisson(rng, total)
         for _ in range(k):
             i = bisect(cum, rng.random() * total)
@@ -686,14 +807,32 @@ def run_control(minutes=500, n_batch=N_BATCH, seed=20261116, load_spec=None):
         "fraction_ge_500": round(sum(1 for c in cross if c >= 500) / len(cross), 4),
         "mean": round(sum(cross) / len(cross), 1),
     }
+    # 按初始分子大小分组的穿越统计（T57 用于核对"大分子也 ≥500 次"）
+    by_size = {}
+    for p in particles:
+        n_at = len(p.mol["atoms"])
+        by_size.setdefault(str(n_at), []).append(p.path / DIAG)
+    by_size_stats = {}
+    for k_, arr in sorted(by_size.items(), key=lambda kv: int(kv[0])):
+        arr = sorted(arr)
+        by_size_stats[k_] = {"n": len(arr), "min": round(arr[0], 1),
+                             "median": pct(arr, 0.5), "max": round(arr[-1], 1)}
     return {
         "config": {"minutes": minutes, "n_particles": n0, "v0": round(v0, 1),
                    "radius": RADIUS, "eps": EPS, "L": L, "seed": seed,
                    "chemical_reactions": False,
+                   "area_model": area_model,
+                   "area_formula": ("A = π·RADIUS²·(n_atoms/2)" if area_model == "count"
+                                    else "A = π·RADIUS²（固定）"),
                    "mean_free_path": round(lam, 2),
-                   "load_spec": [{"tag": t, "desc": d, "formula": f,
-                                  "count": int(c)} for t, d, f, c in load_spec]},
+                   "design": {k: (round(v, 6) if isinstance(v, float) else v)
+                              for k, v in design.items()},
+                   "load_spec": [{"tag": it[0], "desc": it[1], "formula": it[2],
+                                  "count": int(it[3]),
+                                  "atoms": len(templates[it[2]]["atoms"])}
+                                 for it in load_spec]},
         "stats": stats,
+        "by_size": by_size_stats,
         "timeseries": ts,
         "runtime_s": round(time.time() - t_start, 1),
     }

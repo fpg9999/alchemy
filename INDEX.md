@@ -68,6 +68,13 @@
   9000/9000 达标，min 696.7）、`t55_sensitivity.py`（T0=6/8/12/20°C 敏感性）、`t55_analysis.py`/`t55_render.py`、
   `docs/T55_KINETIC_ENV.md`、`docs/T55_ENGINE_AUDIT.md`、`images/t55_*.png`（8 张）；
   结论：主实验快速退火到 99.5% `OXC`；温度标度敏感性下出现不完全反应/自分解/新物质。
+- **T57（2026-11-16）全部29种聚素 + 面积模型实验**：`t57_all29_area.py`、`t57_sensitivity.py`、
+  `t57_analysis.py`、`t57_render.py`、`t57_area_result.json`、`t57_area_control.json`、
+  `t57_uniform_result.json`、`t57_design.json`、`t57_sensitivity.json`、
+  `docs/T57_ALL29_AREA.md`、`images/t57_*.png`（11 张）；面积∝原子数、数量∝1/面积、
+  面积加权碰撞截面；主实验与固定半径对照都收敛到 OXC 80.9%+OX2C 19.0%（平均 3.197 vs 3.200、
+  终态最大 8、≥5 原子 17 vs 29）——面积是动力学旋钮，不改变 F+配比决定的热力学终态；
+  低温窗口 T0=12°C 才保留大分子（平均 4.09、26.3% ≥5 原子、18 种分子式、7 新物质）。
 - **T56（2026-11-16）价数比例 + 散素六元素实验**：`t56_ratio_6elem.py`、`t56_sensitivity.py`、
   `t56_analysis.py`、`t56_render.py`、`t56_kinetic_result.json`、`t56_control_no_chem.json`、
   `t56_sensitivity.json`、`docs/T56_RATIO_6ELEM.md`、`images/t56_*.png`（10 张）；价数比

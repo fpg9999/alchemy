@@ -1,0 +1,58 @@
+{
+ "seed": 20261118,
+ "area_model": "count",
+ "runs": [
+  {
+   "T0": 12,
+   "final_N": 9416,
+   "atoms": 38532,
+   "events": 13464,
+   "reactions": {
+    "complete": 52682,
+    "incomplete": 144054,
+    "none": 10993
+   },
+   "decomp": 1017,
+   "mean_size": 4.092,
+   "max_atoms": 8,
+   "big5": 2473,
+   "n_formulas": 18,
+   "new": 7,
+   "size_dist": {
+    "2": 8,
+    "3": 4426,
+    "4": 2509,
+    "5": 1205,
+    "6": 92,
+    "7": 783,
+    "8": 393
+   },
+   "file": "G:\\AI work\\deepseek\\work1\\alchemy\\t57_sens_T12.json"
+  },
+  {
+   "T0": 20,
+   "final_N": 11730,
+   "atoms": 38532,
+   "events": 15503,
+   "reactions": {
+    "complete": 323770,
+    "incomplete": 139037,
+    "none": 17968
+   },
+   "decomp": 162,
+   "mean_size": 3.285,
+   "max_atoms": 8,
+   "big5": 341,
+   "n_formulas": 6,
+   "new": 3,
+   "size_dist": {
+    "3": 9420,
+    "4": 1969,
+    "6": 103,
+    "7": 126,
+    "8": 112
+   },
+   "file": "G:\\AI work\\deepseek\\work1\\alchemy\\t57_sens_T20.json"
+  }
+ ]
+}

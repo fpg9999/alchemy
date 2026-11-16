@@ -1,0 +1,543 @@
+{
+ "config": {
+  "minutes": 500,
+  "n_particles": 9002,
+  "v0": 64138.3,
+  "radius": 0.2,
+  "eps": 0.002,
+  "L": 10000.0,
+  "seed": 20261118,
+  "chemical_reactions": false,
+  "area_model": "count",
+  "area_formula": "A = π·RADIUS²·(n_atoms/2)",
+  "mean_free_path": 13773.91,
+  "design": {
+   "n": 9002,
+   "r_bar": 0.28514,
+   "r_max": 0.424264,
+   "lambda_min": 11072.66148,
+   "lambda_mean": 13773.906046,
+   "target_crossings": 750,
+   "v0": 64138.306729
+  },
+  "load_spec": [
+   {
+    "tag": "29聚素",
+    "desc": "C2(2原子)",
+    "formula": "C2",
+    "count": 664,
+    "atoms": 2
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O2(2原子)",
+    "formula": "O2",
+    "count": 664,
+    "atoms": 2
+   },
+   {
+    "tag": "29聚素",
+    "desc": "X2(2原子)",
+    "formula": "X2",
+    "count": 664,
+    "atoms": 2
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O2X(3原子)",
+    "formula": "O2X",
+    "count": 443,
+    "atoms": 3
+   },
+   {
+    "tag": "29聚素",
+    "desc": "OXC(3原子)",
+    "formula": "OXC",
+    "count": 443,
+    "atoms": 3
+   },
+   {
+    "tag": "29聚素",
+    "desc": "X3(3原子)",
+    "formula": "X3",
+    "count": 443,
+    "atoms": 3
+   },
+   {
+    "tag": "29聚素",
+    "desc": "XC2(3原子)",
+    "formula": "XC2",
+    "count": 443,
+    "atoms": 3
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O2C2(4原子)",
+    "formula": "O2C2",
+    "count": 332,
+    "atoms": 4
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O2X2(4原子)",
+    "formula": "O2X2",
+    "count": 332,
+    "atoms": 4
+   },
+   {
+    "tag": "29聚素",
+    "desc": "OC3(4原子)",
+    "formula": "OC3",
+    "count": 332,
+    "atoms": 4
+   },
+   {
+    "tag": "29聚素",
+    "desc": "OX2C(4原子)",
+    "formula": "OX2C",
+    "count": 332,
+    "atoms": 4
+   },
+   {
+    "tag": "29聚素",
+    "desc": "X2C2(4原子)",
+    "formula": "X2C2",
+    "count": 332,
+    "atoms": 4
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O2X3(5原子)",
+    "formula": "O2X3",
+    "count": 266,
+    "atoms": 5
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O2XC2(5原子)",
+    "formula": "O2XC2",
+    "count": 266,
+    "atoms": 5
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O3XC(5原子)",
+    "formula": "O3XC",
+    "count": 266,
+    "atoms": 5
+   },
+   {
+    "tag": "29聚素",
+    "desc": "OX3C(5原子)",
+    "formula": "OX3C",
+    "count": 266,
+    "atoms": 5
+   },
+   {
+    "tag": "29聚素",
+    "desc": "X3C2(5原子)",
+    "formula": "X3C2",
+    "count": 266,
+    "atoms": 5
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O2C4(6原子)",
+    "formula": "O2C4",
+    "count": 221,
+    "atoms": 6
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O2X4(6原子)",
+    "formula": "O2X4",
+    "count": 221,
+    "atoms": 6
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O3C3(6原子)",
+    "formula": "O3C3",
+    "count": 221,
+    "atoms": 6
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O3X2C(6原子)",
+    "formula": "O3X2C",
+    "count": 221,
+    "atoms": 6
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O2X5(7原子)",
+    "formula": "O2X5",
+    "count": 190,
+    "atoms": 7
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O2XC4(7原子)",
+    "formula": "O2XC4",
+    "count": 190,
+    "atoms": 7
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O3XC3(7原子)",
+    "formula": "O3XC3",
+    "count": 190,
+    "atoms": 7
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O2X2C4(8原子)",
+    "formula": "O2X2C4",
+    "count": 166,
+    "atoms": 8
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O2X6(8原子)",
+    "formula": "O2X6",
+    "count": 166,
+    "atoms": 8
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O3C5(8原子)",
+    "formula": "O3C5",
+    "count": 166,
+    "atoms": 8
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O2X3C4(9原子)",
+    "formula": "O2X3C4",
+    "count": 148,
+    "atoms": 9
+   },
+   {
+    "tag": "29聚素",
+    "desc": "O2X7(9原子)",
+    "formula": "O2X7",
+    "count": 148,
+    "atoms": 9
+   }
+  ]
+ },
+ "stats": {
+  "n": 9002,
+  "min": 694.8,
+  "p1": 739.9,
+  "p5": 759.9,
+  "median": 847.5,
+  "p95": 930.6,
+  "max": 981.7,
+  "fraction_ge_500": 1.0,
+  "mean": 847.9
+ },
+ "by_size": {
+  "2": {
+   "n": 1992,
+   "min": 854.1,
+   "median": 916.7,
+   "max": 981.7
+  },
+  "3": {
+   "n": 1772,
+   "min": 817.8,
+   "median": 876.1,
+   "max": 937.0
+  },
+  "4": {
+   "n": 1660,
+   "min": 794.4,
+   "median": 846.3,
+   "max": 909.6
+  },
+  "5": {
+   "n": 1330,
+   "min": 763.5,
+   "median": 821.1,
+   "max": 877.3
+  },
+  "6": {
+   "n": 884,
+   "min": 758.0,
+   "median": 799.3,
+   "max": 844.0
+  },
+  "7": {
+   "n": 570,
+   "min": 734.5,
+   "median": 780.5,
+   "max": 834.1
+  },
+  "8": {
+   "n": 498,
+   "min": 714.7,
+   "median": 765.8,
+   "max": 809.4
+  },
+  "9": {
+   "n": 296,
+   "min": 694.8,
+   "median": 749.1,
+   "max": 790.4
+  }
+ },
+ "timeseries": [
+  {
+   "t": 0,
+   "path_D_mean": 4.54,
+   "speed_mean": 64138.3
+  },
+  {
+   "t": 10,
+   "path_D_mean": 47.7,
+   "speed_mean": 58644.2
+  },
+  {
+   "t": 20,
+   "path_D_mean": 87.33,
+   "speed_mean": 54047.0
+  },
+  {
+   "t": 30,
+   "path_D_mean": 123.99,
+   "speed_mean": 50124.9
+  },
+  {
+   "t": 40,
+   "path_D_mean": 158.08,
+   "speed_mean": 46732.7
+  },
+  {
+   "t": 50,
+   "path_D_mean": 189.95,
+   "speed_mean": 43765.4
+  },
+  {
+   "t": 60,
+   "path_D_mean": 219.87,
+   "speed_mean": 41155.1
+  },
+  {
+   "t": 70,
+   "path_D_mean": 248.05,
+   "speed_mean": 38845.1
+  },
+  {
+   "t": 80,
+   "path_D_mean": 274.71,
+   "speed_mean": 36782.3
+  },
+  {
+   "t": 90,
+   "path_D_mean": 299.98,
+   "speed_mean": 34922.8
+  },
+  {
+   "t": 100,
+   "path_D_mean": 324.01,
+   "speed_mean": 33249.5
+  },
+  {
+   "t": 110,
+   "path_D_mean": 346.92,
+   "speed_mean": 31726.7
+  },
+  {
+   "t": 120,
+   "path_D_mean": 368.81,
+   "speed_mean": 30340.8
+  },
+  {
+   "t": 130,
+   "path_D_mean": 389.77,
+   "speed_mean": 29071.1
+  },
+  {
+   "t": 140,
+   "path_D_mean": 409.86,
+   "speed_mean": 27899.5
+  },
+  {
+   "t": 150,
+   "path_D_mean": 429.16,
+   "speed_mean": 26818.9
+  },
+  {
+   "t": 160,
+   "path_D_mean": 447.73,
+   "speed_mean": 25820.3
+  },
+  {
+   "t": 170,
+   "path_D_mean": 465.63,
+   "speed_mean": 24891.3
+  },
+  {
+   "t": 180,
+   "path_D_mean": 482.89,
+   "speed_mean": 24032.8
+  },
+  {
+   "t": 190,
+   "path_D_mean": 499.57,
+   "speed_mean": 23228.3
+  },
+  {
+   "t": 200,
+   "path_D_mean": 515.7,
+   "speed_mean": 22477.7
+  },
+  {
+   "t": 210,
+   "path_D_mean": 531.32,
+   "speed_mean": 21774.5
+  },
+  {
+   "t": 220,
+   "path_D_mean": 546.45,
+   "speed_mean": 21111.4
+  },
+  {
+   "t": 230,
+   "path_D_mean": 561.14,
+   "speed_mean": 20488.7
+  },
+  {
+   "t": 240,
+   "path_D_mean": 575.39,
+   "speed_mean": 19904.3
+  },
+  {
+   "t": 250,
+   "path_D_mean": 589.25,
+   "speed_mean": 19350.5
+  },
+  {
+   "t": 260,
+   "path_D_mean": 602.73,
+   "speed_mean": 18824.4
+  },
+  {
+   "t": 270,
+   "path_D_mean": 615.84,
+   "speed_mean": 18329.9
+  },
+  {
+   "t": 280,
+   "path_D_mean": 628.62,
+   "speed_mean": 17858.3
+  },
+  {
+   "t": 290,
+   "path_D_mean": 641.07,
+   "speed_mean": 17411.7
+  },
+  {
+   "t": 300,
+   "path_D_mean": 653.22,
+   "speed_mean": 16986.1
+  },
+  {
+   "t": 310,
+   "path_D_mean": 665.07,
+   "speed_mean": 16582.5
+  },
+  {
+   "t": 320,
+   "path_D_mean": 676.65,
+   "speed_mean": 16195.2
+  },
+  {
+   "t": 330,
+   "path_D_mean": 687.95,
+   "speed_mean": 15828.1
+  },
+  {
+   "t": 340,
+   "path_D_mean": 699.01,
+   "speed_mean": 15476.5
+  },
+  {
+   "t": 350,
+   "path_D_mean": 709.82,
+   "speed_mean": 15140.2
+  },
+  {
+   "t": 360,
+   "path_D_mean": 720.4,
+   "speed_mean": 14818.5
+  },
+  {
+   "t": 370,
+   "path_D_mean": 730.76,
+   "speed_mean": 14510.9
+  },
+  {
+   "t": 380,
+   "path_D_mean": 740.9,
+   "speed_mean": 14213.6
+  },
+  {
+   "t": 390,
+   "path_D_mean": 750.84,
+   "speed_mean": 13929.8
+  },
+  {
+   "t": 400,
+   "path_D_mean": 760.58,
+   "speed_mean": 13654.8
+  },
+  {
+   "t": 410,
+   "path_D_mean": 770.14,
+   "speed_mean": 13392.3
+  },
+  {
+   "t": 420,
+   "path_D_mean": 779.51,
+   "speed_mean": 13140.2
+  },
+  {
+   "t": 430,
+   "path_D_mean": 788.7,
+   "speed_mean": 12896.9
+  },
+  {
+   "t": 440,
+   "path_D_mean": 797.73,
+   "speed_mean": 12663.7
+  },
+  {
+   "t": 450,
+   "path_D_mean": 806.6,
+   "speed_mean": 12436.7
+  },
+  {
+   "t": 460,
+   "path_D_mean": 815.31,
+   "speed_mean": 12217.8
+  },
+  {
+   "t": 470,
+   "path_D_mean": 823.86,
+   "speed_mean": 12007.7
+  },
+  {
+   "t": 480,
+   "path_D_mean": 832.28,
+   "speed_mean": 11804.0
+  },
+  {
+   "t": 490,
+   "path_D_mean": 840.55,
+   "speed_mean": 11609.0
+  }
+ ],
+ "runtime_s": 6.5
+}
