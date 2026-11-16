@@ -339,6 +339,11 @@ resolve(接触集合 S, T):
 - `t38b_policies.py`：不同并列策略下"骨架是否在库"的统计。
 - `t39_library_verify.py`：骨架库复核（库组成、wl_key 不变性、6 级全分支枚举、T38/T15/T37 复核、真·库外实例复现）。
 - `t39_render.py`：T39 对比图脚本（需 Pillow）。
+- `t40_verify_fusion.py`：全目录 84,225 物质的「6 级块库内性 + 终态=块之并」复核。
+- `t41_all_intermediate.py`：三价总数 ≤12、全计数组合、全并列分支的中间态骨架穷举。
+- `t42_random_ties.py`：任意并列裁决下的结构定理与库外块统计。
+- `t43_trace_o3p5k2.py`：O3P5K2 逐步演算与规则 5 口径对账。
+- `t44_block_sampling.py`：三价总数 14~60 的大投料 6 级块抽样。
 
 ### 8.2 数据（根目录）
 - `t4_catalog_all_validated.json`：84,225 条权威目录（**大文件，已压缩到 `_data_gz/`**）。
@@ -375,6 +380,8 @@ resolve(接触集合 S, T):
 - 分解/新物质/多分子/循环：`T27_BREAK_RULE.md`、`T28_RULE_V2.md`、`T29_NEW_SUBSTANCE_RULES.md`、`T30_SELF_DECOMPOSITION_RULE.md`、`T31_MULTI_REACTIONS.md`、`T32_NATURAL_CYCLES.md`
 - 温度/骨架共存/并列：`T33_TEMPERATURE_THRESHOLDS.md`、`T34_TEMP_RULE_COMPARISON.md`、`T35_PRIORITY_SELF_DECOMP.md`、`T36_BOTH_SKELETONS.md`、`T37_TIE_RULE_ANALYSIS.md`
 - 骨架库复核：`T39_SKELETON_LIBRARY_VERIFY.md`（库组成、wl_key bug 修正、真·库外 6 级块、671 终态融合形态 + 结构定理）
+- O3P5K2 演算：`T43_O3P5K2_TRACE.md`（逐步 trace；规则 5 第二项方向是唯一分叉点）
+- 中间态骨架全量：`T44_INTERMEDIATE_SKELETONS.md`（≤12 全分支 36 类 + 1 库外；全目录/任意并列的结构定理复核）
 - 设计：`T18D_DESIGN_DIMENSIONS.md`（属性/呈现/能力三维度）
 
 ### 8.4 图（images/，53 张）
