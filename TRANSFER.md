@@ -227,7 +227,7 @@ G:\AI work\deepseek\work1\alchemy_repo.bundle
 | 推送时间 | 2026-11-17（T65 完成后追加推送） |
 | 远程 | `https://github.com/fpg9999/alchemy` |
 | 分支 | `main`（已建立 `origin/main` 跟踪） |
-| 远程 HEAD | **T65 主提交 `e2b8112` 已推送**（`e9c5f19..e2b8112  main -> main`） |
+| 远程 HEAD | **T65 主提交 `e2b8112` + 文档提交 `e46dc6c` 已推送**（`e9c5f19..e46dc6c  main -> main`） |
 | 本次提交 | `e2b8112` — `T65: 生态群系第二轮（10 群系 × 每群系 ≥4 元素、退火 + 25°C 恒温浮动、端帽/F 作用与 T64 对比、独立验证 88 PASS）` |
 | 之前历史 | `e9c5f19`（T64 报告结构修正）→ `9322c02`（T64 TRANSFER）→ `fb1a77d`（T64 主提交）→ `8625a94`（T63 文档）→ `233cb1c`（T63 主提交）→ `9f88d9f`（T62 文档）→ `39aeb50` → `83429a0`（T62 主提交）→ `f01e88e`（T61）→ … → T01 全部已上传 |
 | 说明 | 日常同步继续用 `git add -A && git commit && git push origin main`；本环境偶发 `Failed to connect to github.com:443`（网络抖动，重试即成功） |
