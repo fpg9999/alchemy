@@ -1,0 +1,130 @@
+{
+ "source": "t61_hex_layouts.json",
+ "n_total": 66,
+ "n_medium": 9,
+ "n_giants": 57,
+ "n_giant_pages": 10,
+ "n_repaired_at_render": 0,
+ "figures": [
+  {
+   "file": "t61_hex_medium.png",
+   "type": "medium",
+   "n": 9,
+   "bytes": 188260,
+   "width": 1600,
+   "height": 1650
+  },
+  {
+   "file": "t61_hex_giants_01.png",
+   "type": "giants",
+   "page": 1,
+   "n": 6,
+   "bytes": 157817,
+   "width": 1600,
+   "height": 1130
+  },
+  {
+   "file": "t61_hex_giants_02.png",
+   "type": "giants",
+   "page": 2,
+   "n": 6,
+   "bytes": 168597,
+   "width": 1600,
+   "height": 1130
+  },
+  {
+   "file": "t61_hex_giants_03.png",
+   "type": "giants",
+   "page": 3,
+   "n": 6,
+   "bytes": 155912,
+   "width": 1600,
+   "height": 1130
+  },
+  {
+   "file": "t61_hex_giants_04.png",
+   "type": "giants",
+   "page": 4,
+   "n": 6,
+   "bytes": 153556,
+   "width": 1600,
+   "height": 1130
+  },
+  {
+   "file": "t61_hex_giants_05.png",
+   "type": "giants",
+   "page": 5,
+   "n": 6,
+   "bytes": 155482,
+   "width": 1600,
+   "height": 1130
+  },
+  {
+   "file": "t61_hex_giants_06.png",
+   "type": "giants",
+   "page": 6,
+   "n": 6,
+   "bytes": 159563,
+   "width": 1600,
+   "height": 1130
+  },
+  {
+   "file": "t61_hex_giants_07.png",
+   "type": "giants",
+   "page": 7,
+   "n": 6,
+   "bytes": 163082,
+   "width": 1600,
+   "height": 1130
+  },
+  {
+   "file": "t61_hex_giants_08.png",
+   "type": "giants",
+   "page": 8,
+   "n": 6,
+   "bytes": 162185,
+   "width": 1600,
+   "height": 1130
+  },
+  {
+   "file": "t61_hex_giants_09.png",
+   "type": "giants",
+   "page": 9,
+   "n": 6,
+   "bytes": 157544,
+   "width": 1600,
+   "height": 1130
+  },
+  {
+   "file": "t61_hex_giants_10.png",
+   "type": "giants",
+   "page": 10,
+   "n": 3,
+   "bytes": 97039,
+   "width": 1600,
+   "height": 1130
+  },
+  {
+   "file": "t61_hex_summary.png",
+   "type": "summary",
+   "n": 66,
+   "bytes": 312384,
+   "width": 1600,
+   "height": 1580
+  },
+  {
+   "file": "t61_hex_legend.png",
+   "type": "legend",
+   "bytes": 124523,
+   "width": 1600,
+   "height": 950
+  }
+ ],
+ "notes": [
+  "t61_hex_layouts.json 全部 66 种大分子（≥5 原子，按结构去重，T59A/T59B 合并）。",
+  "中等=5~18 原子；巨型=37~40 原子，按数量/原子数排序分页。",
+  "键型 S/C/L 与多重键取自数据 bonds，不重算；L 中点格用紫虚线。",
+  "数据已修正（place/bonds 一致，n_valid=66）；渲染器保留不一致检测作为安全网，本次未触发。"
+ ],
+ "generated": "2026-11-17 09:31:28"
+}

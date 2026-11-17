@@ -68,6 +68,11 @@
   9000/9000 达标，min 696.7）、`t55_sensitivity.py`（T0=6/8/12/20°C 敏感性）、`t55_analysis.py`/`t55_render.py`、
   `docs/T55_KINETIC_ENV.md`、`docs/T55_ENGINE_AUDIT.md`、`images/t55_*.png`（8 张）；
   结论：主实验快速退火到 99.5% `OXC`；温度标度敏感性下出现不完全反应/自分解/新物质。
+- **T61（2026-11-17）T59 最后两次实验全部大分子六边形棋盘格**：`docs/T61_HEX_LARGE.md`、
+  `t61_hex_layouts.py`、`t61_refix.py`、`t61_render.py`、`t61_hex_layouts.json`、
+  `t61_hex_manifest.json`、`images/t61_hex_*.png`（13 张）；T59A/B 全部 ≥5 原子大分子
+  66 种（9 中等 + 57 巨型），66/66 严格六边形摆放并 validate 通过；中等 1 页 + 巨型 10 页
+  + 索引 + 图例。
 - **T60（2026-11-17）全系列总汇报**：`docs/T60_SERIES_SUMMARY.md`、`t60_top20_data.json`、
   `t60_top20_extract.py`、`t60_fill_report.py`、`t60_render.py`、`t60_figures_manifest.json`；
   T55~T59 各实验对比 + 每轮 top20 图摆盘（`images/t60_top20_*.png` 8 张）+ 67 种重要物质图鉴
