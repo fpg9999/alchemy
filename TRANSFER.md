@@ -14,7 +14,7 @@
 | 本地仓库 | `G:\AI work\deepseek\work1\alchemy`，分支 `main` |
 | 远程仓库 | `https://github.com/fpg9999/alchemy`（**已推送，含 T01~T63 全部提交**） |
 | 认证 | Git Credential Manager 已存 `fpg9999` 的 GitHub 凭据（`cmdkey` 中 `git:https://github.com`）；`gh` CLI 未登录，但不影响 git push |
-| 推送 | **已完成**：`main → origin/main`（T62 提交 `83429a0` + 文档 `39aeb50`；T63 提交见 §6；最新 HEAD 以 GitHub 页面为准） |
+| 推送 | **已完成**：`main → origin/main`（T62 提交 `83429a0` + 文档 `39aeb50` + `9f88d9f`；**T63 提交 `233cb1c` 已推送**） |
 | 最新实验 | **T63 聚素熔体逐级价数滴定**（纯聚素退火 → F2 → A2 → K2 三次单质投放；报告 `docs/T63_STAGED_TITRATION.md`） |
 | 本地 commit 历史 | T01 → … → T60 总汇报 → T61 六边形摆放 → T62 等量价数 → **T63 逐级价数滴定**（最新，见 §6） |
 
@@ -190,7 +190,7 @@ G:\AI work\deepseek\work1\alchemy_repo.bundle
 | 推送时间 | 2026-11-17（T63 完成后追加推送） |
 | 远程 | `https://github.com/fpg9999/alchemy` |
 | 分支 | `main`（已建立 `origin/main` 跟踪） |
-| 远程 HEAD | T62 阶段：`9f88d9f`（`39aeb50` 文档提交后）；T63 提交见下方"本次提交"，最新以 GitHub 页面为准 |
-| 本次提交 | `T63: 聚素熔体逐级价数滴定…`（代码/数据/图/文档，见 `git log -1 --stat`） |
+| 远程 HEAD | T62 阶段：`9f88d9f`；**T63 提交 `233cb1c` 已推送**（`9f88d9f..233cb1c  main -> main`） |
+| 本次提交 | `233cb1c` — `T63: 聚素熔体逐级价数滴定（F2→A2→K2 三次单质投放、四阶段全景换代、独立验证）`（42 files） |
 | 之前历史 | `9f88d9f`（T62 文档）→ `39aeb50` → `83429a0`（T62 主提交）→ `f01e88e`（T61）→ … → T01 全部已上传 |
 | 说明 | 日常同步继续用 `git add -A && git commit && git push origin main` |
