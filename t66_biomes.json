@@ -1,0 +1,1139 @@
+{
+ "experiment": "T66 生态群系（10 群系 × 化合物播种，退火 + 恒温浮动，每群系 ≥4 元素）",
+ "seed_base": 20261129,
+ "feed_mode": "化合物混合投放（非双原子单质）",
+ "compare_to": "t65_biomes.json（同元素集/同原子数/同温度日程，单质播种）",
+ "schedule": {
+  "model": "t66_biome_compound",
+  "T0": 1000.0,
+  "T_mid": 25.0,
+  "anneal_minutes": 975,
+  "hold_minutes": 600,
+  "anneal_rate_c_per_min": 1.0,
+  "minutes": 1575,
+  "day_amp": 8.0,
+  "day_period": 240.0,
+  "year_amp": 3.0,
+  "year_period": 900.0,
+  "year_phase": 0.7,
+  "hold_T_min": 14.0,
+  "hold_T_max": 36.0
+ },
+ "cap": 40,
+ "event_limit": 30000,
+ "area_model": "count（A∝原子数，同 T57/T63）",
+ "snap_minutes": [
+  0,
+  25,
+  50,
+  100,
+  200,
+  300,
+  400,
+  500,
+  600,
+  700,
+  800,
+  900,
+  950,
+  975,
+  1000,
+  1050,
+  1100,
+  1150,
+  1200,
+  1300,
+  1400,
+  1500,
+  1560,
+  1570,
+  1574
+ ],
+ "biomes": [
+  {
+   "id": "E01",
+   "name": "双盐平原",
+   "tag": "OP+XW 盐各半 + 游离 O2/P2/X2/W2（对应 T65 C01）",
+   "elements": [
+    "O",
+    "P",
+    "X",
+    "W"
+   ],
+   "n_elements": 4,
+   "trivalent": [
+    "O",
+    "P"
+   ],
+   "L": 18000,
+   "atoms_per_element": 3500,
+   "total_atoms": 14000,
+   "total_molecules": 7000,
+   "feeds": [
+    {
+     "formula": "OP",
+     "count": 1750,
+     "atoms": 2
+    },
+    {
+     "formula": "XW",
+     "count": 1750,
+     "atoms": 2
+    },
+    {
+     "formula": "O2",
+     "count": 875,
+     "atoms": 2
+    },
+    {
+     "formula": "P2",
+     "count": 875,
+     "atoms": 2
+    },
+    {
+     "formula": "X2",
+     "count": 875,
+     "atoms": 2
+    },
+    {
+     "formula": "W2",
+     "count": 875,
+     "atoms": 2
+    }
+   ],
+   "element_totals": {
+    "O": 3500,
+    "P": 3500,
+    "X": 3500,
+    "W": 3500
+   },
+   "feed_valid": true,
+   "load_spec": [
+    {
+     "desc": "1号化合物 OP",
+     "formula": "OP",
+     "count": 1750
+    },
+    {
+     "desc": "2号化合物 XW",
+     "formula": "XW",
+     "count": 1750
+    },
+    {
+     "desc": "3号化合物 O2",
+     "formula": "O2",
+     "count": 875
+    },
+    {
+     "desc": "4号化合物 P2",
+     "formula": "P2",
+     "count": 875
+    },
+    {
+     "desc": "5号化合物 X2",
+     "formula": "X2",
+     "count": 875
+    },
+    {
+     "desc": "6号化合物 W2",
+     "formula": "W2",
+     "count": 875
+    }
+   ],
+   "density_atoms_per_area": 4.321e-05
+  },
+  {
+   "id": "E02",
+   "name": "双盐配位谷",
+   "tag": "OK+CL 盐各半 + 游离 O2/K2/C2/L2（对应 T65 C02）",
+   "elements": [
+    "O",
+    "K",
+    "C",
+    "L"
+   ],
+   "n_elements": 4,
+   "trivalent": [
+    "O",
+    "K"
+   ],
+   "L": 18000,
+   "atoms_per_element": 3500,
+   "total_atoms": 14000,
+   "total_molecules": 7000,
+   "feeds": [
+    {
+     "formula": "OK",
+     "count": 1750,
+     "atoms": 2
+    },
+    {
+     "formula": "CL",
+     "count": 1750,
+     "atoms": 2
+    },
+    {
+     "formula": "O2",
+     "count": 875,
+     "atoms": 2
+    },
+    {
+     "formula": "K2",
+     "count": 875,
+     "atoms": 2
+    },
+    {
+     "formula": "C2",
+     "count": 875,
+     "atoms": 2
+    },
+    {
+     "formula": "L2",
+     "count": 875,
+     "atoms": 2
+    }
+   ],
+   "element_totals": {
+    "O": 3500,
+    "K": 3500,
+    "C": 3500,
+    "L": 3500
+   },
+   "feed_valid": true,
+   "load_spec": [
+    {
+     "desc": "1号化合物 OK",
+     "formula": "OK",
+     "count": 1750
+    },
+    {
+     "desc": "2号化合物 CL",
+     "formula": "CL",
+     "count": 1750
+    },
+    {
+     "desc": "3号化合物 O2",
+     "formula": "O2",
+     "count": 875
+    },
+    {
+     "desc": "4号化合物 K2",
+     "formula": "K2",
+     "count": 875
+    },
+    {
+     "desc": "5号化合物 C2",
+     "formula": "C2",
+     "count": 875
+    },
+    {
+     "desc": "6号化合物 L2",
+     "formula": "L2",
+     "count": 875
+    }
+   ],
+   "density_atoms_per_area": 4.321e-05
+  },
+  {
+   "id": "E03",
+   "name": "四元盐台地",
+   "tag": "XPLA 四元盐半量 + 游离 P2/X2/A2/L2（对应 T65 C03）",
+   "elements": [
+    "P",
+    "X",
+    "A",
+    "L"
+   ],
+   "n_elements": 4,
+   "trivalent": [
+    "P"
+   ],
+   "L": 18000,
+   "atoms_per_element": 3500,
+   "total_atoms": 14000,
+   "total_molecules": 5250,
+   "feeds": [
+    {
+     "formula": "XPLA",
+     "count": 1750,
+     "atoms": 4
+    },
+    {
+     "formula": "P2",
+     "count": 875,
+     "atoms": 2
+    },
+    {
+     "formula": "X2",
+     "count": 875,
+     "atoms": 2
+    },
+    {
+     "formula": "A2",
+     "count": 875,
+     "atoms": 2
+    },
+    {
+     "formula": "L2",
+     "count": 875,
+     "atoms": 2
+    }
+   ],
+   "element_totals": {
+    "P": 3500,
+    "X": 3500,
+    "A": 3500,
+    "L": 3500
+   },
+   "feed_valid": true,
+   "load_spec": [
+    {
+     "desc": "1号化合物 XPLA",
+     "formula": "XPLA",
+     "count": 1750
+    },
+    {
+     "desc": "2号化合物 P2",
+     "formula": "P2",
+     "count": 875
+    },
+    {
+     "desc": "3号化合物 X2",
+     "formula": "X2",
+     "count": 875
+    },
+    {
+     "desc": "4号化合物 A2",
+     "formula": "A2",
+     "count": 875
+    },
+    {
+     "desc": "5号化合物 L2",
+     "formula": "L2",
+     "count": 875
+    }
+   ],
+   "density_atoms_per_area": 4.321e-05
+  },
+  {
+   "id": "E04",
+   "name": "盐晶原",
+   "tag": "KAF 盐半量 + 游离 K2/A2/F2 与 X2（对应 T65 C04）",
+   "elements": [
+    "K",
+    "A",
+    "F",
+    "X"
+   ],
+   "n_elements": 4,
+   "trivalent": [
+    "K"
+   ],
+   "L": 18000,
+   "atoms_per_element": 3500,
+   "total_atoms": 14000,
+   "total_molecules": 6125,
+   "feeds": [
+    {
+     "formula": "KAF",
+     "count": 1750,
+     "atoms": 3
+    },
+    {
+     "formula": "K2",
+     "count": 875,
+     "atoms": 2
+    },
+    {
+     "formula": "A2",
+     "count": 875,
+     "atoms": 2
+    },
+    {
+     "formula": "F2",
+     "count": 875,
+     "atoms": 2
+    },
+    {
+     "formula": "X2",
+     "count": 1750,
+     "atoms": 2
+    }
+   ],
+   "element_totals": {
+    "K": 3500,
+    "A": 3500,
+    "F": 3500,
+    "X": 3500
+   },
+   "feed_valid": true,
+   "load_spec": [
+    {
+     "desc": "1号化合物 KAF",
+     "formula": "KAF",
+     "count": 1750
+    },
+    {
+     "desc": "2号化合物 K2",
+     "formula": "K2",
+     "count": 875
+    },
+    {
+     "desc": "3号化合物 A2",
+     "formula": "A2",
+     "count": 875
+    },
+    {
+     "desc": "4号化合物 F2",
+     "formula": "F2",
+     "count": 875
+    },
+    {
+     "desc": "5号化合物 X2",
+     "formula": "X2",
+     "count": 1750
+    }
+   ],
+   "density_atoms_per_area": 4.321e-05
+  },
+  {
+   "id": "E05",
+   "name": "聚动盐林",
+   "tag": "OXC/OP/XW 聚素盐半量 + 游离单质（对应 T65 C05）",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W"
+   ],
+   "n_elements": 5,
+   "trivalent": [
+    "O",
+    "P"
+   ],
+   "L": 19000,
+   "atoms_per_element": 3000,
+   "total_atoms": 15000,
+   "total_molecules": 6750,
+   "feeds": [
+    {
+     "formula": "OXC",
+     "count": 1500,
+     "atoms": 3
+    },
+    {
+     "formula": "OP",
+     "count": 750,
+     "atoms": 2
+    },
+    {
+     "formula": "XW",
+     "count": 750,
+     "atoms": 2
+    },
+    {
+     "formula": "O2",
+     "count": 375,
+     "atoms": 2
+    },
+    {
+     "formula": "X2",
+     "count": 375,
+     "atoms": 2
+    },
+    {
+     "formula": "C2",
+     "count": 750,
+     "atoms": 2
+    },
+    {
+     "formula": "P2",
+     "count": 1125,
+     "atoms": 2
+    },
+    {
+     "formula": "W2",
+     "count": 1125,
+     "atoms": 2
+    }
+   ],
+   "element_totals": {
+    "O": 3000,
+    "X": 3000,
+    "C": 3000,
+    "P": 3000,
+    "W": 3000
+   },
+   "feed_valid": true,
+   "load_spec": [
+    {
+     "desc": "1号化合物 OXC",
+     "formula": "OXC",
+     "count": 1500
+    },
+    {
+     "desc": "2号化合物 OP",
+     "formula": "OP",
+     "count": 750
+    },
+    {
+     "desc": "3号化合物 XW",
+     "formula": "XW",
+     "count": 750
+    },
+    {
+     "desc": "4号化合物 O2",
+     "formula": "O2",
+     "count": 375
+    },
+    {
+     "desc": "5号化合物 X2",
+     "formula": "X2",
+     "count": 375
+    },
+    {
+     "desc": "6号化合物 C2",
+     "formula": "C2",
+     "count": 750
+    },
+    {
+     "desc": "7号化合物 P2",
+     "formula": "P2",
+     "count": 1125
+    },
+    {
+     "desc": "8号化合物 W2",
+     "formula": "W2",
+     "count": 1125
+    }
+   ],
+   "density_atoms_per_area": 4.155e-05
+  },
+  {
+   "id": "E06",
+   "name": "盐骨架麓",
+   "tag": "OP/OK/PK/XA 盐半量 + 游离单质（对应 T65 C06，检验十原子簇）",
+   "elements": [
+    "O",
+    "P",
+    "K",
+    "X",
+    "A"
+   ],
+   "n_elements": 5,
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 19000,
+   "atoms_per_element": 3000,
+   "total_atoms": 15000,
+   "total_molecules": 7500,
+   "feeds": [
+    {
+     "formula": "OP",
+     "count": 1000,
+     "atoms": 2
+    },
+    {
+     "formula": "OK",
+     "count": 1000,
+     "atoms": 2
+    },
+    {
+     "formula": "PK",
+     "count": 1000,
+     "atoms": 2
+    },
+    {
+     "formula": "XA",
+     "count": 1500,
+     "atoms": 2
+    },
+    {
+     "formula": "O2",
+     "count": 500,
+     "atoms": 2
+    },
+    {
+     "formula": "P2",
+     "count": 500,
+     "atoms": 2
+    },
+    {
+     "formula": "K2",
+     "count": 500,
+     "atoms": 2
+    },
+    {
+     "formula": "X2",
+     "count": 750,
+     "atoms": 2
+    },
+    {
+     "formula": "A2",
+     "count": 750,
+     "atoms": 2
+    }
+   ],
+   "element_totals": {
+    "O": 3000,
+    "P": 3000,
+    "K": 3000,
+    "X": 3000,
+    "A": 3000
+   },
+   "feed_valid": true,
+   "load_spec": [
+    {
+     "desc": "1号化合物 OP",
+     "formula": "OP",
+     "count": 1000
+    },
+    {
+     "desc": "2号化合物 OK",
+     "formula": "OK",
+     "count": 1000
+    },
+    {
+     "desc": "3号化合物 PK",
+     "formula": "PK",
+     "count": 1000
+    },
+    {
+     "desc": "4号化合物 XA",
+     "formula": "XA",
+     "count": 1500
+    },
+    {
+     "desc": "5号化合物 O2",
+     "formula": "O2",
+     "count": 500
+    },
+    {
+     "desc": "6号化合物 P2",
+     "formula": "P2",
+     "count": 500
+    },
+    {
+     "desc": "7号化合物 K2",
+     "formula": "K2",
+     "count": 500
+    },
+    {
+     "desc": "8号化合物 X2",
+     "formula": "X2",
+     "count": 750
+    },
+    {
+     "desc": "9号化合物 A2",
+     "formula": "A2",
+     "count": 750
+    }
+   ],
+   "density_atoms_per_area": 4.155e-05
+  },
+  {
+   "id": "E07",
+   "name": "六元盐坡",
+   "tag": "OXCPKA 六元盐半量 + 游离单质（对应 T65 C07）",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "K",
+    "A"
+   ],
+   "n_elements": 6,
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 19000,
+   "atoms_per_element": 2500,
+   "total_atoms": 15000,
+   "total_molecules": 5000,
+   "feeds": [
+    {
+     "formula": "OXCPKA",
+     "count": 1250,
+     "atoms": 6
+    },
+    {
+     "formula": "O2",
+     "count": 625,
+     "atoms": 2
+    },
+    {
+     "formula": "X2",
+     "count": 625,
+     "atoms": 2
+    },
+    {
+     "formula": "C2",
+     "count": 625,
+     "atoms": 2
+    },
+    {
+     "formula": "P2",
+     "count": 625,
+     "atoms": 2
+    },
+    {
+     "formula": "K2",
+     "count": 625,
+     "atoms": 2
+    },
+    {
+     "formula": "A2",
+     "count": 625,
+     "atoms": 2
+    }
+   ],
+   "element_totals": {
+    "O": 2500,
+    "X": 2500,
+    "C": 2500,
+    "P": 2500,
+    "K": 2500,
+    "A": 2500
+   },
+   "feed_valid": true,
+   "load_spec": [
+    {
+     "desc": "1号化合物 OXCPKA",
+     "formula": "OXCPKA",
+     "count": 1250
+    },
+    {
+     "desc": "2号化合物 O2",
+     "formula": "O2",
+     "count": 625
+    },
+    {
+     "desc": "3号化合物 X2",
+     "formula": "X2",
+     "count": 625
+    },
+    {
+     "desc": "4号化合物 C2",
+     "formula": "C2",
+     "count": 625
+    },
+    {
+     "desc": "5号化合物 P2",
+     "formula": "P2",
+     "count": 625
+    },
+    {
+     "desc": "6号化合物 K2",
+     "formula": "K2",
+     "count": 625
+    },
+    {
+     "desc": "7号化合物 A2",
+     "formula": "A2",
+     "count": 625
+    }
+   ],
+   "density_atoms_per_area": 4.155e-05
+  },
+  {
+   "id": "E08",
+   "name": "七元盐湖带",
+   "tag": "OXCPWK 六元盐半量 + 游离单质（对应 T65 C08）",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n_elements": 7,
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 20000,
+   "atoms_per_element": 2400,
+   "total_atoms": 16800,
+   "total_molecules": 6000,
+   "feeds": [
+    {
+     "formula": "OXCPWK",
+     "count": 1200,
+     "atoms": 6
+    },
+    {
+     "formula": "O2",
+     "count": 600,
+     "atoms": 2
+    },
+    {
+     "formula": "X2",
+     "count": 600,
+     "atoms": 2
+    },
+    {
+     "formula": "C2",
+     "count": 600,
+     "atoms": 2
+    },
+    {
+     "formula": "P2",
+     "count": 600,
+     "atoms": 2
+    },
+    {
+     "formula": "W2",
+     "count": 600,
+     "atoms": 2
+    },
+    {
+     "formula": "K2",
+     "count": 600,
+     "atoms": 2
+    },
+    {
+     "formula": "L2",
+     "count": 1200,
+     "atoms": 2
+    }
+   ],
+   "element_totals": {
+    "O": 2400,
+    "X": 2400,
+    "C": 2400,
+    "P": 2400,
+    "W": 2400,
+    "L": 2400,
+    "K": 2400
+   },
+   "feed_valid": true,
+   "load_spec": [
+    {
+     "desc": "1号化合物 OXCPWK",
+     "formula": "OXCPWK",
+     "count": 1200
+    },
+    {
+     "desc": "2号化合物 O2",
+     "formula": "O2",
+     "count": 600
+    },
+    {
+     "desc": "3号化合物 X2",
+     "formula": "X2",
+     "count": 600
+    },
+    {
+     "desc": "4号化合物 C2",
+     "formula": "C2",
+     "count": 600
+    },
+    {
+     "desc": "5号化合物 P2",
+     "formula": "P2",
+     "count": 600
+    },
+    {
+     "desc": "6号化合物 W2",
+     "formula": "W2",
+     "count": 600
+    },
+    {
+     "desc": "7号化合物 K2",
+     "formula": "K2",
+     "count": 600
+    },
+    {
+     "desc": "8号化合物 L2",
+     "formula": "L2",
+     "count": 1200
+    }
+   ],
+   "density_atoms_per_area": 4.2e-05
+  },
+  {
+   "id": "E09",
+   "name": "八元盐雨林",
+   "tag": "OXCPWKA 七元盐半量 + 游离单质（对应 T65 C09）",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n_elements": 8,
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 20000,
+   "atoms_per_element": 2100,
+   "total_atoms": 16800,
+   "total_molecules": 5775,
+   "feeds": [
+    {
+     "formula": "OXCPWKA",
+     "count": 1050,
+     "atoms": 7
+    },
+    {
+     "formula": "O2",
+     "count": 525,
+     "atoms": 2
+    },
+    {
+     "formula": "X2",
+     "count": 525,
+     "atoms": 2
+    },
+    {
+     "formula": "C2",
+     "count": 525,
+     "atoms": 2
+    },
+    {
+     "formula": "P2",
+     "count": 525,
+     "atoms": 2
+    },
+    {
+     "formula": "W2",
+     "count": 525,
+     "atoms": 2
+    },
+    {
+     "formula": "K2",
+     "count": 525,
+     "atoms": 2
+    },
+    {
+     "formula": "A2",
+     "count": 525,
+     "atoms": 2
+    },
+    {
+     "formula": "L2",
+     "count": 1050,
+     "atoms": 2
+    }
+   ],
+   "element_totals": {
+    "O": 2100,
+    "X": 2100,
+    "C": 2100,
+    "P": 2100,
+    "W": 2100,
+    "L": 2100,
+    "K": 2100,
+    "A": 2100
+   },
+   "feed_valid": true,
+   "load_spec": [
+    {
+     "desc": "1号化合物 OXCPWKA",
+     "formula": "OXCPWKA",
+     "count": 1050
+    },
+    {
+     "desc": "2号化合物 O2",
+     "formula": "O2",
+     "count": 525
+    },
+    {
+     "desc": "3号化合物 X2",
+     "formula": "X2",
+     "count": 525
+    },
+    {
+     "desc": "4号化合物 C2",
+     "formula": "C2",
+     "count": 525
+    },
+    {
+     "desc": "5号化合物 P2",
+     "formula": "P2",
+     "count": 525
+    },
+    {
+     "desc": "6号化合物 W2",
+     "formula": "W2",
+     "count": 525
+    },
+    {
+     "desc": "7号化合物 K2",
+     "formula": "K2",
+     "count": 525
+    },
+    {
+     "desc": "8号化合物 A2",
+     "formula": "A2",
+     "count": 525
+    },
+    {
+     "desc": "9号化合物 L2",
+     "formula": "L2",
+     "count": 1050
+    }
+   ],
+   "density_atoms_per_area": 4.2e-05
+  },
+  {
+   "id": "E10",
+   "name": "九元盐穹顶",
+   "tag": "OXCPWKA 七元盐半量 + 游离单质（对应 T65 C10/T64 B11，检验终态记忆）",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n_elements": 9,
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 20000,
+   "atoms_per_element": 2000,
+   "total_atoms": 18000,
+   "total_molecules": 6500,
+   "feeds": [
+    {
+     "formula": "OXCPWKA",
+     "count": 1000,
+     "atoms": 7
+    },
+    {
+     "formula": "O2",
+     "count": 500,
+     "atoms": 2
+    },
+    {
+     "formula": "X2",
+     "count": 500,
+     "atoms": 2
+    },
+    {
+     "formula": "C2",
+     "count": 500,
+     "atoms": 2
+    },
+    {
+     "formula": "P2",
+     "count": 500,
+     "atoms": 2
+    },
+    {
+     "formula": "W2",
+     "count": 500,
+     "atoms": 2
+    },
+    {
+     "formula": "K2",
+     "count": 500,
+     "atoms": 2
+    },
+    {
+     "formula": "A2",
+     "count": 500,
+     "atoms": 2
+    },
+    {
+     "formula": "L2",
+     "count": 1000,
+     "atoms": 2
+    },
+    {
+     "formula": "F2",
+     "count": 1000,
+     "atoms": 2
+    }
+   ],
+   "element_totals": {
+    "O": 2000,
+    "X": 2000,
+    "C": 2000,
+    "P": 2000,
+    "W": 2000,
+    "L": 2000,
+    "K": 2000,
+    "A": 2000,
+    "F": 2000
+   },
+   "feed_valid": true,
+   "load_spec": [
+    {
+     "desc": "1号化合物 OXCPWKA",
+     "formula": "OXCPWKA",
+     "count": 1000
+    },
+    {
+     "desc": "2号化合物 O2",
+     "formula": "O2",
+     "count": 500
+    },
+    {
+     "desc": "3号化合物 X2",
+     "formula": "X2",
+     "count": 500
+    },
+    {
+     "desc": "4号化合物 C2",
+     "formula": "C2",
+     "count": 500
+    },
+    {
+     "desc": "5号化合物 P2",
+     "formula": "P2",
+     "count": 500
+    },
+    {
+     "desc": "6号化合物 W2",
+     "formula": "W2",
+     "count": 500
+    },
+    {
+     "desc": "7号化合物 K2",
+     "formula": "K2",
+     "count": 500
+    },
+    {
+     "desc": "8号化合物 A2",
+     "formula": "A2",
+     "count": 500
+    },
+    {
+     "desc": "9号化合物 L2",
+     "formula": "L2",
+     "count": 1000
+    },
+    {
+     "desc": "10号化合物 F2",
+     "formula": "F2",
+     "count": 1000
+    }
+   ],
+   "density_atoms_per_area": 4.5e-05
+  }
+ ]
+}

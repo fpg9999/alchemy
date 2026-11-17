@@ -1,0 +1,378 @@
+{
+ "config": {
+  "minutes": 500,
+  "n_particles": 7000,
+  "v0": 48657.3,
+  "radius": 0.2,
+  "eps": 0.002,
+  "L": 18000.0,
+  "seed": 20261129,
+  "chemical_reactions": false,
+  "area_model": "count",
+  "area_formula": "A = π·RADIUS²·(n_atoms/2)",
+  "mean_free_path": 81822.36,
+  "design": {
+   "n": 7000,
+   "r_bar": 0.2,
+   "r_max": 0.2,
+   "lambda_min": 81822.356109,
+   "lambda_mean": 81822.356109,
+   "target_crossings": 750,
+   "v0": 48657.280725
+  },
+  "load_spec": [
+   {
+    "tag": "化合物底物",
+    "desc": "1号化合物 OP",
+    "formula": "OP",
+    "count": 1750,
+    "atoms": 2
+   },
+   {
+    "tag": "化合物底物",
+    "desc": "2号化合物 XW",
+    "formula": "XW",
+    "count": 1750,
+    "atoms": 2
+   },
+   {
+    "tag": "化合物底物",
+    "desc": "3号化合物 O2",
+    "formula": "O2",
+    "count": 875,
+    "atoms": 2
+   },
+   {
+    "tag": "化合物底物",
+    "desc": "4号化合物 P2",
+    "formula": "P2",
+    "count": 875,
+    "atoms": 2
+   },
+   {
+    "tag": "化合物底物",
+    "desc": "5号化合物 X2",
+    "formula": "X2",
+    "count": 875,
+    "atoms": 2
+   },
+   {
+    "tag": "化合物底物",
+    "desc": "6号化合物 W2",
+    "formula": "W2",
+    "count": 875,
+    "atoms": 2
+   }
+  ],
+  "experiment": "T66 E01 无化学对照：OP+XW 化合物播种、L=18000、500 分钟"
+ },
+ "stats": {
+  "n": 7000,
+  "min": 706.4,
+  "p1": 722.9,
+  "p5": 731.3,
+  "median": 750.1,
+  "p95": 768.2,
+  "max": 789.0,
+  "fraction_ge_500": 1.0,
+  "mean": 750.0
+ },
+ "by_size": {
+  "2": {
+   "n": 7000,
+   "min": 706.4,
+   "median": 750.1,
+   "max": 789.0
+  }
+ },
+ "timeseries": [
+  {
+   "t": 0,
+   "path_D_mean": 1.91,
+   "speed_mean": 48657.3
+  },
+  {
+   "t": 10,
+   "path_D_mean": 20.9,
+   "speed_mean": 48087.5
+  },
+  {
+   "t": 20,
+   "path_D_mean": 39.67,
+   "speed_mean": 47525.5
+  },
+  {
+   "t": 30,
+   "path_D_mean": 58.22,
+   "speed_mean": 46974.3
+  },
+  {
+   "t": 40,
+   "path_D_mean": 76.56,
+   "speed_mean": 46443.3
+  },
+  {
+   "t": 50,
+   "path_D_mean": 94.69,
+   "speed_mean": 45920.3
+  },
+  {
+   "t": 60,
+   "path_D_mean": 112.62,
+   "speed_mean": 45407.2
+  },
+  {
+   "t": 70,
+   "path_D_mean": 130.35,
+   "speed_mean": 44910.0
+  },
+  {
+   "t": 80,
+   "path_D_mean": 147.89,
+   "speed_mean": 44421.3
+  },
+  {
+   "t": 90,
+   "path_D_mean": 165.23,
+   "speed_mean": 43938.3
+  },
+  {
+   "t": 100,
+   "path_D_mean": 182.39,
+   "speed_mean": 43472.6
+  },
+  {
+   "t": 110,
+   "path_D_mean": 199.37,
+   "speed_mean": 43013.9
+  },
+  {
+   "t": 120,
+   "path_D_mean": 216.17,
+   "speed_mean": 42564.3
+  },
+  {
+   "t": 130,
+   "path_D_mean": 232.79,
+   "speed_mean": 42121.0
+  },
+  {
+   "t": 140,
+   "path_D_mean": 249.25,
+   "speed_mean": 41687.1
+  },
+  {
+   "t": 150,
+   "path_D_mean": 265.53,
+   "speed_mean": 41264.5
+  },
+  {
+   "t": 160,
+   "path_D_mean": 281.65,
+   "speed_mean": 40853.3
+  },
+  {
+   "t": 170,
+   "path_D_mean": 297.61,
+   "speed_mean": 40447.2
+  },
+  {
+   "t": 180,
+   "path_D_mean": 313.42,
+   "speed_mean": 40049.4
+  },
+  {
+   "t": 190,
+   "path_D_mean": 329.06,
+   "speed_mean": 39661.6
+  },
+  {
+   "t": 200,
+   "path_D_mean": 344.56,
+   "speed_mean": 39280.6
+  },
+  {
+   "t": 210,
+   "path_D_mean": 359.91,
+   "speed_mean": 38905.9
+  },
+  {
+   "t": 220,
+   "path_D_mean": 375.12,
+   "speed_mean": 38538.9
+  },
+  {
+   "t": 230,
+   "path_D_mean": 390.18,
+   "speed_mean": 38180.3
+  },
+  {
+   "t": 240,
+   "path_D_mean": 405.1,
+   "speed_mean": 37828.4
+  },
+  {
+   "t": 250,
+   "path_D_mean": 419.88,
+   "speed_mean": 37481.2
+  },
+  {
+   "t": 260,
+   "path_D_mean": 434.54,
+   "speed_mean": 37141.4
+  },
+  {
+   "t": 270,
+   "path_D_mean": 449.05,
+   "speed_mean": 36806.7
+  },
+  {
+   "t": 280,
+   "path_D_mean": 463.44,
+   "speed_mean": 36475.1
+  },
+  {
+   "t": 290,
+   "path_D_mean": 477.7,
+   "speed_mean": 36153.3
+  },
+  {
+   "t": 300,
+   "path_D_mean": 491.83,
+   "speed_mean": 35836.1
+  },
+  {
+   "t": 310,
+   "path_D_mean": 505.84,
+   "speed_mean": 35524.9
+  },
+  {
+   "t": 320,
+   "path_D_mean": 519.73,
+   "speed_mean": 35219.7
+  },
+  {
+   "t": 330,
+   "path_D_mean": 533.5,
+   "speed_mean": 34916.7
+  },
+  {
+   "t": 340,
+   "path_D_mean": 547.16,
+   "speed_mean": 34623.4
+  },
+  {
+   "t": 350,
+   "path_D_mean": 560.69,
+   "speed_mean": 34335.8
+  },
+  {
+   "t": 360,
+   "path_D_mean": 574.12,
+   "speed_mean": 34047.6
+  },
+  {
+   "t": 370,
+   "path_D_mean": 587.44,
+   "speed_mean": 33769.3
+  },
+  {
+   "t": 380,
+   "path_D_mean": 600.64,
+   "speed_mean": 33492.1
+  },
+  {
+   "t": 390,
+   "path_D_mean": 613.74,
+   "speed_mean": 33220.8
+  },
+  {
+   "t": 400,
+   "path_D_mean": 626.73,
+   "speed_mean": 32949.5
+  },
+  {
+   "t": 410,
+   "path_D_mean": 639.62,
+   "speed_mean": 32685.7
+  },
+  {
+   "t": 420,
+   "path_D_mean": 652.4,
+   "speed_mean": 32424.7
+  },
+  {
+   "t": 430,
+   "path_D_mean": 665.08,
+   "speed_mean": 32169.1
+  },
+  {
+   "t": 440,
+   "path_D_mean": 677.67,
+   "speed_mean": 31917.4
+  },
+  {
+   "t": 450,
+   "path_D_mean": 690.15,
+   "speed_mean": 31668.5
+  },
+  {
+   "t": 460,
+   "path_D_mean": 702.54,
+   "speed_mean": 31425.0
+  },
+  {
+   "t": 470,
+   "path_D_mean": 714.83,
+   "speed_mean": 31187.7
+  },
+  {
+   "t": 480,
+   "path_D_mean": 727.03,
+   "speed_mean": 30949.7
+  },
+  {
+   "t": 490,
+   "path_D_mean": 739.14,
+   "speed_mean": 30716.2
+  }
+ ],
+ "runtime_s": 2.9,
+ "biome": {
+  "id": "E01",
+  "name": "双盐平原",
+  "L": 18000,
+  "elements": [
+   "O",
+   "P",
+   "X",
+   "W"
+  ],
+  "feeds": [
+   [
+    "OP",
+    1750
+   ],
+   [
+    "XW",
+    1750
+   ],
+   [
+    "O2",
+    875
+   ],
+   [
+    "P2",
+    875
+   ],
+   [
+    "X2",
+    875
+   ],
+   [
+    "W2",
+    875
+   ]
+  ]
+ }
+}
