@@ -1,0 +1,581 @@
+{
+ "experiment": "T65 生态群系（10 群系 × 退火 + 恒温浮动，每群系 ≥4 元素）",
+ "seed_base": 20261128,
+ "schedule": {
+  "model": "t65_biome",
+  "T0": 1000.0,
+  "T_mid": 25.0,
+  "anneal_minutes": 975,
+  "hold_minutes": 600,
+  "anneal_rate_c_per_min": 1.0,
+  "minutes": 1575,
+  "day_amp": 8.0,
+  "day_period": 240.0,
+  "year_amp": 3.0,
+  "year_period": 900.0,
+  "year_phase": 0.7,
+  "hold_T_min": 14.0,
+  "hold_T_max": 36.0
+ },
+ "cap": 40,
+ "event_limit": 30000,
+ "area_model": "count（A∝原子数，同 T57/T63）",
+ "snap_minutes": [
+  0,
+  25,
+  50,
+  100,
+  200,
+  300,
+  400,
+  500,
+  600,
+  700,
+  800,
+  900,
+  950,
+  975,
+  1000,
+  1050,
+  1100,
+  1150,
+  1200,
+  1300,
+  1400,
+  1500,
+  1560,
+  1570,
+  1574
+ ],
+ "biomes": [
+  {
+   "id": "C01",
+   "name": "双骨架平原",
+   "tag": "两种三价（O/P）+ 两种二价（X/W），无低价端帽",
+   "elements": [
+    "O",
+    "P",
+    "X",
+    "W"
+   ],
+   "n_elements": 4,
+   "trivalent": [
+    "O",
+    "P"
+   ],
+   "L": 18000,
+   "atoms_per_element": 3500,
+   "total_atoms": 14000,
+   "total_molecules": 7000,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 1750
+    },
+    {
+     "desc": "P单质",
+     "formula": "P2",
+     "count": 1750
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 1750
+    },
+    {
+     "desc": "W单质",
+     "formula": "W2",
+     "count": 1750
+    }
+   ],
+   "density_atoms_per_area": 4.321e-05
+  },
+  {
+   "id": "C02",
+   "name": "散素配位谷",
+   "tag": "两种三价（O/K）+ 两种一价（C/L），无二价",
+   "elements": [
+    "O",
+    "K",
+    "C",
+    "L"
+   ],
+   "n_elements": 4,
+   "trivalent": [
+    "O",
+    "K"
+   ],
+   "L": 18000,
+   "atoms_per_element": 3500,
+   "total_atoms": 14000,
+   "total_molecules": 7000,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 1750
+    },
+    {
+     "desc": "K单质",
+     "formula": "K2",
+     "count": 1750
+    },
+    {
+     "desc": "C单质",
+     "formula": "C2",
+     "count": 1750
+    },
+    {
+     "desc": "L单质",
+     "formula": "L2",
+     "count": 1750
+    }
+   ],
+   "density_atoms_per_area": 4.321e-05
+  },
+  {
+   "id": "C03",
+   "name": "动素配位台地",
+   "tag": "三价 P + 二价 X/A + 一价 L（无 O，P 主导）",
+   "elements": [
+    "P",
+    "X",
+    "A",
+    "L"
+   ],
+   "n_elements": 4,
+   "trivalent": [
+    "P"
+   ],
+   "L": 18000,
+   "atoms_per_element": 3500,
+   "total_atoms": 14000,
+   "total_molecules": 7000,
+   "load_spec": [
+    {
+     "desc": "P单质",
+     "formula": "P2",
+     "count": 1750
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 1750
+    },
+    {
+     "desc": "A单质",
+     "formula": "A2",
+     "count": 1750
+    },
+    {
+     "desc": "L单质",
+     "formula": "L2",
+     "count": 1750
+    }
+   ],
+   "density_atoms_per_area": 4.321e-05
+  },
+  {
+   "id": "C04",
+   "name": "散素晶原",
+   "tag": "K 三价 + 二价 A/X + 一价 F（KAF 与 X 竞争）",
+   "elements": [
+    "K",
+    "A",
+    "F",
+    "X"
+   ],
+   "n_elements": 4,
+   "trivalent": [
+    "K"
+   ],
+   "L": 18000,
+   "atoms_per_element": 3500,
+   "total_atoms": 14000,
+   "total_molecules": 7000,
+   "load_spec": [
+    {
+     "desc": "K单质",
+     "formula": "K2",
+     "count": 1750
+    },
+    {
+     "desc": "A单质",
+     "formula": "A2",
+     "count": 1750
+    },
+    {
+     "desc": "F单质",
+     "formula": "F2",
+     "count": 1750
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 1750
+    }
+   ],
+   "density_atoms_per_area": 4.321e-05
+  },
+  {
+   "id": "C05",
+   "name": "聚动五元林",
+   "tag": "聚素全 + 动素 P/W（无 L/A；B09 缺端帽）",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W"
+   ],
+   "n_elements": 5,
+   "trivalent": [
+    "O",
+    "P"
+   ],
+   "L": 19000,
+   "atoms_per_element": 3000,
+   "total_atoms": 15000,
+   "total_molecules": 7500,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 1500
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 1500
+    },
+    {
+     "desc": "C单质",
+     "formula": "C2",
+     "count": 1500
+    },
+    {
+     "desc": "P单质",
+     "formula": "P2",
+     "count": 1500
+    },
+    {
+     "desc": "W单质",
+     "formula": "W2",
+     "count": 1500
+    }
+   ],
+   "density_atoms_per_area": 4.155e-05
+  },
+  {
+   "id": "C06",
+   "name": "三骨架麓",
+   "tag": "三种三价齐全 + 两种二价（无低价端帽，检验大簇）",
+   "elements": [
+    "O",
+    "P",
+    "K",
+    "X",
+    "A"
+   ],
+   "n_elements": 5,
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 19000,
+   "atoms_per_element": 3000,
+   "total_atoms": 15000,
+   "total_molecules": 7500,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 1500
+    },
+    {
+     "desc": "P单质",
+     "formula": "P2",
+     "count": 1500
+    },
+    {
+     "desc": "K单质",
+     "formula": "K2",
+     "count": 1500
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 1500
+    },
+    {
+     "desc": "A单质",
+     "formula": "A2",
+     "count": 1500
+    }
+   ],
+   "density_atoms_per_area": 4.155e-05
+  },
+  {
+   "id": "C07",
+   "name": "聚动散混合坡",
+   "tag": "B10 的 F→P 替换（一价端帽换成第三骨架）",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "K",
+    "A"
+   ],
+   "n_elements": 6,
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 19000,
+   "atoms_per_element": 2500,
+   "total_atoms": 15000,
+   "total_molecules": 7500,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 1250
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 1250
+    },
+    {
+     "desc": "C单质",
+     "formula": "C2",
+     "count": 1250
+    },
+    {
+     "desc": "P单质",
+     "formula": "P2",
+     "count": 1250
+    },
+    {
+     "desc": "K单质",
+     "formula": "K2",
+     "count": 1250
+    },
+    {
+     "desc": "A单质",
+     "formula": "A2",
+     "count": 1250
+    }
+   ],
+   "density_atoms_per_area": 4.155e-05
+  },
+  {
+   "id": "C08",
+   "name": "七元雨林带",
+   "tag": "B09 六元雨林 + K（多骨架、无散素 A/F）",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "n_elements": 7,
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 20000,
+   "atoms_per_element": 2400,
+   "total_atoms": 16800,
+   "total_molecules": 8400,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 1200
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 1200
+    },
+    {
+     "desc": "C单质",
+     "formula": "C2",
+     "count": 1200
+    },
+    {
+     "desc": "P单质",
+     "formula": "P2",
+     "count": 1200
+    },
+    {
+     "desc": "W单质",
+     "formula": "W2",
+     "count": 1200
+    },
+    {
+     "desc": "L单质",
+     "formula": "L2",
+     "count": 1200
+    },
+    {
+     "desc": "K单质",
+     "formula": "K2",
+     "count": 1200
+    }
+   ],
+   "density_atoms_per_area": 4.2e-05
+  },
+  {
+   "id": "C09",
+   "name": "缺焰八元生态",
+   "tag": "九元素缺 F（检验一价端帽 F 的作用）",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "n_elements": 8,
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 20000,
+   "atoms_per_element": 2100,
+   "total_atoms": 16800,
+   "total_molecules": 8400,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 1050
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 1050
+    },
+    {
+     "desc": "C单质",
+     "formula": "C2",
+     "count": 1050
+    },
+    {
+     "desc": "P单质",
+     "formula": "P2",
+     "count": 1050
+    },
+    {
+     "desc": "W单质",
+     "formula": "W2",
+     "count": 1050
+    },
+    {
+     "desc": "L单质",
+     "formula": "L2",
+     "count": 1050
+    },
+    {
+     "desc": "K单质",
+     "formula": "K2",
+     "count": 1050
+    },
+    {
+     "desc": "A单质",
+     "formula": "A2",
+     "count": 1050
+    }
+   ],
+   "density_atoms_per_area": 4.2e-05
+  },
+  {
+   "id": "C10",
+   "name": "九元大生态复现",
+   "tag": "与 T64 B11 同条件复现（检验可重复性）",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n_elements": 9,
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 20000,
+   "atoms_per_element": 2000,
+   "total_atoms": 18000,
+   "total_molecules": 9000,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 1000
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 1000
+    },
+    {
+     "desc": "C单质",
+     "formula": "C2",
+     "count": 1000
+    },
+    {
+     "desc": "P单质",
+     "formula": "P2",
+     "count": 1000
+    },
+    {
+     "desc": "W单质",
+     "formula": "W2",
+     "count": 1000
+    },
+    {
+     "desc": "L单质",
+     "formula": "L2",
+     "count": 1000
+    },
+    {
+     "desc": "K单质",
+     "formula": "K2",
+     "count": 1000
+    },
+    {
+     "desc": "A单质",
+     "formula": "A2",
+     "count": 1000
+    },
+    {
+     "desc": "F单质",
+     "formula": "F2",
+     "count": 1000
+    }
+   ],
+   "density_atoms_per_area": 4.5e-05
+  }
+ ]
+}

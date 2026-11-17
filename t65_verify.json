@@ -1,0 +1,2593 @@
+{
+ "script": "t65_verify.py",
+ "generated_at": "2026-11-17T17:05:01+08:00",
+ "base": "G:\\AI work\\deepseek\\work1\\alchemy",
+ "experiment": "T65 生态群系（10 群系 C01~C10，双原子单质投料，1000→25°C 退火 975min + 浮动 600min）",
+ "inputs": {
+  "design": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biomes.json",
+   "exists": true,
+   "size_bytes": 9916,
+   "mtime": "2026-11-17T16:56:26",
+   "sha256": "eb757dc906e60b0a6c6f4b9be0d82eaf7d4ee6da96df67710302dd4f59bc8889"
+  },
+  "index": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_index.json",
+   "exists": true,
+   "size_bytes": 4658,
+   "mtime": "2026-11-17T17:03:19",
+   "sha256": "f3f4bbc0daa6e7caca97c688723f8543d4ee4ea202c38e773a9071f4bac4c30b"
+  },
+  "control": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_control_C01.json",
+   "exists": true,
+   "size_bytes": 5433,
+   "mtime": "2026-11-17T17:03:23",
+   "sha256": "2effab4154a5fdff4d0e2273e1df88e7a03553e39eedda611913e1afe06c3344"
+  },
+  "result_C01": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C01_result.json",
+   "exists": true,
+   "size_bytes": 9674409,
+   "mtime": "2026-11-17T16:57:26",
+   "sha256": "7d44943d41665b880a32164d3ee1b950956a54ff5801c213cf3f29f0c02ecd43"
+  },
+  "state_C01": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C01_state.json",
+   "exists": true,
+   "size_bytes": 20341,
+   "mtime": "2026-11-17T16:57:26",
+   "sha256": "2e4d42433e14dcdcec95d2b1e100c969b5c78cf32f3f64a39fe838fc6829386f"
+  },
+  "result_C02": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C02_result.json",
+   "exists": true,
+   "size_bytes": 8376589,
+   "mtime": "2026-11-17T16:58:17",
+   "sha256": "03ed8c7bc487180992110bc7ceb456ab89f5970b083f5a5765d5c464ba619889"
+  },
+  "state_C02": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C02_state.json",
+   "exists": true,
+   "size_bytes": 1703,
+   "mtime": "2026-11-17T16:58:17",
+   "sha256": "155dac3b6fa61e56f9a1b41b5d3bcb71cfa2227550f31013bf8675c96c784fc5"
+  },
+  "result_C03": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C03_result.json",
+   "exists": true,
+   "size_bytes": 8636116,
+   "mtime": "2026-11-17T16:58:41",
+   "sha256": "35c7faee69da518dbaf047ab4ce3a95fbd20b2a9869f29a0302e18d200f4fce4"
+  },
+  "state_C03": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C03_state.json",
+   "exists": true,
+   "size_bytes": 3883,
+   "mtime": "2026-11-17T16:58:41",
+   "sha256": "50ffd6cc37d0cfde3268efdf07a7d02c53c7ddb5da896a4d6e880b396e58b9b8"
+  },
+  "result_C04": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C04_result.json",
+   "exists": true,
+   "size_bytes": 8549569,
+   "mtime": "2026-11-17T16:59:17",
+   "sha256": "33dd6fa5749590b09938e329084ff28fdd536b524ce4be6d4b4bf14ec6c54096"
+  },
+  "state_C04": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C04_state.json",
+   "exists": true,
+   "size_bytes": 2814,
+   "mtime": "2026-11-17T16:59:17",
+   "sha256": "b5ce5bb67fbdf9f610821d88b3b87b517525db95a0fe26e3160294e3e8d8a40a"
+  },
+  "result_C05": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C05_result.json",
+   "exists": true,
+   "size_bytes": 9930735,
+   "mtime": "2026-11-17T17:00:21",
+   "sha256": "4e0a123b47b2b2b9622533e0f081060273f94ece1c1e3d69e18934f6d24db533"
+  },
+  "state_C05": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C05_state.json",
+   "exists": true,
+   "size_bytes": 19856,
+   "mtime": "2026-11-17T17:00:21",
+   "sha256": "24c075590f8cdcfe688cfe80d60c15c06e82eec9e2c6f86265af7e4910c4c997"
+  },
+  "result_C06": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C06_result.json",
+   "exists": true,
+   "size_bytes": 9775776,
+   "mtime": "2026-11-17T17:00:42",
+   "sha256": "d92e698db684f370abcda378751ce0e404e3d694d375264f3f283df53a9e1f94"
+  },
+  "state_C06": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C06_state.json",
+   "exists": true,
+   "size_bytes": 12218,
+   "mtime": "2026-11-17T17:00:42",
+   "sha256": "bc899acc0830217f69603fca8a8dd454d8d5f493cf47927820d4f54c8a65cd3a"
+  },
+  "result_C07": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C07_result.json",
+   "exists": true,
+   "size_bytes": 11171599,
+   "mtime": "2026-11-17T17:01:07",
+   "sha256": "511a71ac0a26a0d67205e351497131d476ce38e45ab4371560a4bc64ad906cbb"
+  },
+  "state_C07": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C07_state.json",
+   "exists": true,
+   "size_bytes": 12779,
+   "mtime": "2026-11-17T17:01:07",
+   "sha256": "01e12bfd555339afe05cff30e1097c6ee3a5de6abd65977ab49e8a75485835d8"
+  },
+  "result_C08": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C08_result.json",
+   "exists": true,
+   "size_bytes": 12198307,
+   "mtime": "2026-11-17T17:01:45",
+   "sha256": "82bd48087d061baff85a47210f1448190ef0842dd4fe2562995e2b59140231af"
+  },
+  "state_C08": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C08_state.json",
+   "exists": true,
+   "size_bytes": 7677,
+   "mtime": "2026-11-17T17:01:45",
+   "sha256": "e1d661caef09c92c46ea95adfee924fac97d925093f884e202379e90c5597b1a"
+  },
+  "result_C09": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C09_result.json",
+   "exists": true,
+   "size_bytes": 13851696,
+   "mtime": "2026-11-17T17:02:27",
+   "sha256": "177ff58cf4a76b37494b0e33d9b8f1545d30e29dc150e532d571e00ce4aec8fd"
+  },
+  "state_C09": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C09_state.json",
+   "exists": true,
+   "size_bytes": 13752,
+   "mtime": "2026-11-17T17:02:27",
+   "sha256": "40b4a303cd2f3eb52ec4e21109585bcbbd137c8977fdc77655d7b92a79d54fc3"
+  },
+  "result_C10": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C10_result.json",
+   "exists": true,
+   "size_bytes": 13764879,
+   "mtime": "2026-11-17T17:03:17",
+   "sha256": "089d22374fe367f35b71ba13afed43fe1d237615eb502f41d90339784895476d"
+  },
+  "state_C10": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_biome_C10_state.json",
+   "exists": true,
+   "size_bytes": 14908,
+   "mtime": "2026-11-17T17:03:17",
+   "sha256": "39873a9194a9c93bf4224b77d7abdb36cb16414867c71dcd7f663a9ca6aefe52"
+  }
+ },
+ "tolerances": {
+  "T_recompute_abs": 1e-06,
+  "final_T_rounding": 0.011,
+  "hold_T_range": [
+   14.0,
+   36.0
+  ],
+  "hold_fluct_min": 8.0,
+  "control_min": 500.0,
+  "control_fraction_ge_500": 0.9999,
+  "capped_note_threshold": 0.05,
+  "scan_cap": 30000,
+  "event_limit": 30000
+ },
+ "groups": [
+  {
+   "id": 1,
+   "name": "设计与投料合规（t65_biomes.json）",
+   "subchecks": [
+    {
+     "id": "1.1",
+     "name": "10 群系 id 完整且顺序正确",
+     "status": "PASS",
+     "detail": "C01~C10 共 10 个群系"
+    },
+    {
+     "id": "1.2",
+     "name": "群系设计字段（元素/每元素原子数/L/名称）",
+     "status": "PASS",
+     "detail": "10 群系 elements/atoms_per_element/L/name 与独立预期一致",
+     "values": {
+      "rows": {
+       "C01": [
+        {
+         "ok": true,
+         "why": "字段不一致: elements=['O', 'P', 'X', 'W'] ape=3500 L=18000 name='双骨架平原'"
+        }
+       ],
+       "C02": [
+        {
+         "ok": true,
+         "why": "字段不一致: elements=['O', 'K', 'C', 'L'] ape=3500 L=18000 name='散素配位谷'"
+        }
+       ],
+       "C03": [
+        {
+         "ok": true,
+         "why": "字段不一致: elements=['P', 'X', 'A', 'L'] ape=3500 L=18000 name='动素配位台地'"
+        }
+       ],
+       "C04": [
+        {
+         "ok": true,
+         "why": "字段不一致: elements=['K', 'A', 'F', 'X'] ape=3500 L=18000 name='散素晶原'"
+        }
+       ],
+       "C05": [
+        {
+         "ok": true,
+         "why": "字段不一致: elements=['O', 'X', 'C', 'P', 'W'] ape=3000 L=19000 name='聚动五元林'"
+        }
+       ],
+       "C06": [
+        {
+         "ok": true,
+         "why": "字段不一致: elements=['O', 'P', 'K', 'X', 'A'] ape=3000 L=19000 name='三骨架麓'"
+        }
+       ],
+       "C07": [
+        {
+         "ok": true,
+         "why": "字段不一致: elements=['O', 'X', 'C', 'P', 'K', 'A'] ape=2500 L=19000 name='聚动散混合坡'"
+        }
+       ],
+       "C08": [
+        {
+         "ok": true,
+         "why": "字段不一致: elements=['O', 'X', 'C', 'P', 'W', 'L', 'K'] ape=2400 L=20000 name='七元雨林带'"
+        }
+       ],
+       "C09": [
+        {
+         "ok": true,
+         "why": "字段不一致: elements=['O', 'X', 'C', 'P', 'W', 'L', 'K', 'A'] ape=2100 L=20000 name='缺焰八元生态'"
+        }
+       ],
+       "C10": [
+        {
+         "ok": true,
+         "why": "字段不一致: elements=['O', 'X', 'C', 'P', 'W', 'L', 'K', 'A', 'F'] ape=2000 L=20000 name='九元大生态复现'"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "1.3",
+     "name": "投料只含声明元素的 X2 双原子单质，count==每元素原子数/2",
+     "status": "PASS",
+     "detail": "10 群系均只投声明元素的双原子单质，每元素 count=atoms_per_element//2",
+     "values": {
+      "rows": {
+       "C01": {
+        "formulas": [
+         "O2",
+         "P2",
+         "X2",
+         "W2"
+        ],
+        "molecules": 7000,
+        "atoms": 14000
+       },
+       "C02": {
+        "formulas": [
+         "O2",
+         "K2",
+         "C2",
+         "L2"
+        ],
+        "molecules": 7000,
+        "atoms": 14000
+       },
+       "C03": {
+        "formulas": [
+         "P2",
+         "X2",
+         "A2",
+         "L2"
+        ],
+        "molecules": 7000,
+        "atoms": 14000
+       },
+       "C04": {
+        "formulas": [
+         "K2",
+         "A2",
+         "F2",
+         "X2"
+        ],
+        "molecules": 7000,
+        "atoms": 14000
+       },
+       "C05": {
+        "formulas": [
+         "O2",
+         "X2",
+         "C2",
+         "P2",
+         "W2"
+        ],
+        "molecules": 7500,
+        "atoms": 15000
+       },
+       "C06": {
+        "formulas": [
+         "O2",
+         "P2",
+         "K2",
+         "X2",
+         "A2"
+        ],
+        "molecules": 7500,
+        "atoms": 15000
+       },
+       "C07": {
+        "formulas": [
+         "O2",
+         "X2",
+         "C2",
+         "P2",
+         "K2",
+         "A2"
+        ],
+        "molecules": 7500,
+        "atoms": 15000
+       },
+       "C08": {
+        "formulas": [
+         "O2",
+         "X2",
+         "C2",
+         "P2",
+         "W2",
+         "L2",
+         "K2"
+        ],
+        "molecules": 8400,
+        "atoms": 16800
+       },
+       "C09": {
+        "formulas": [
+         "O2",
+         "X2",
+         "C2",
+         "P2",
+         "W2",
+         "L2",
+         "K2",
+         "A2"
+        ],
+        "molecules": 8400,
+        "atoms": 16800
+       },
+       "C10": {
+        "formulas": [
+         "O2",
+         "X2",
+         "C2",
+         "P2",
+         "W2",
+         "L2",
+         "K2",
+         "A2",
+         "F2"
+        ],
+        "molecules": 9000,
+        "atoms": 18000
+       }
+      }
+     }
+    },
+    {
+     "id": "1.4",
+     "name": "total_atoms/total_molecules/n_elements 复算一致",
+     "status": "PASS",
+     "detail": "10 群系 total_atoms=n×ape、total_molecules=n×(ape/2) 一致；原子数 14000~18000",
+     "values": {
+      "rows": {
+       "C01": {
+        "total_atoms": 14000,
+        "total_molecules": 7000,
+        "declared_atoms": 14000,
+        "declared_molecules": 7000
+       },
+       "C02": {
+        "total_atoms": 14000,
+        "total_molecules": 7000,
+        "declared_atoms": 14000,
+        "declared_molecules": 7000
+       },
+       "C03": {
+        "total_atoms": 14000,
+        "total_molecules": 7000,
+        "declared_atoms": 14000,
+        "declared_molecules": 7000
+       },
+       "C04": {
+        "total_atoms": 14000,
+        "total_molecules": 7000,
+        "declared_atoms": 14000,
+        "declared_molecules": 7000
+       },
+       "C05": {
+        "total_atoms": 15000,
+        "total_molecules": 7500,
+        "declared_atoms": 15000,
+        "declared_molecules": 7500
+       },
+       "C06": {
+        "total_atoms": 15000,
+        "total_molecules": 7500,
+        "declared_atoms": 15000,
+        "declared_molecules": 7500
+       },
+       "C07": {
+        "total_atoms": 15000,
+        "total_molecules": 7500,
+        "declared_atoms": 15000,
+        "declared_molecules": 7500
+       },
+       "C08": {
+        "total_atoms": 16800,
+        "total_molecules": 8400,
+        "declared_atoms": 16800,
+        "declared_molecules": 8400
+       },
+       "C09": {
+        "total_atoms": 16800,
+        "total_molecules": 8400,
+        "declared_atoms": 16800,
+        "declared_molecules": 8400
+       },
+       "C10": {
+        "total_atoms": 18000,
+        "total_molecules": 9000,
+        "declared_atoms": 18000,
+        "declared_molecules": 9000
+       }
+      }
+     }
+    },
+    {
+     "id": "1.5",
+     "name": "schedule 与独立预期一致",
+     "status": "PASS",
+     "detail": "T0=1000、T_mid=25、anneal=975、hold=600、day±8/240、year±3/900、hold∈[14,36]、minutes=1575",
+     "values": {
+      "schedule": {
+       "model": "t65_biome",
+       "T0": 1000.0,
+       "T_mid": 25.0,
+       "anneal_minutes": 975,
+       "hold_minutes": 600,
+       "anneal_rate_c_per_min": 1.0,
+       "minutes": 1575,
+       "day_amp": 8.0,
+       "day_period": 240.0,
+       "year_amp": 3.0,
+       "year_period": 900.0,
+       "year_phase": 0.7,
+       "hold_T_min": 14.0,
+       "hold_T_max": 36.0
+      }
+     }
+    },
+    {
+     "id": "1.6",
+     "name": "cap/event_limit/snap_minutes/seed_base/area_model 一致",
+     "status": "PASS",
+     "detail": "cap=40、event_limit=30000、snap 25 点、seed_base=20261128、area_model=count",
+     "values": {
+      "snap_minutes": [
+       0,
+       25,
+       50,
+       100,
+       200,
+       300,
+       400,
+       500,
+       600,
+       700,
+       800,
+       900,
+       950,
+       975,
+       1000,
+       1050,
+       1100,
+       1150,
+       1200,
+       1300,
+       1400,
+       1500,
+       1560,
+       1570,
+       1574
+      ]
+     }
+    },
+    {
+     "id": "1.7",
+     "name": "元素种数 4~9、元素互不重复，且至少含一种 O/P/K 三价元素",
+     "status": "PASS",
+     "detail": "10 群系元素种数 4~9、无重复元素、trivalent 字段与复算一致"
+    },
+    {
+     "id": "1.8",
+     "name": "atoms_per_element 为偶数且 density 字段自洽",
+     "status": "PASS",
+     "detail": "10 群系 atoms_per_element 全为偶数、density=total_atoms/L² 一致（8 位小数）"
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 2,
+   "name": "每群系投料（result config/load_spec/biome 元数据）",
+   "subchecks": [
+    {
+     "id": "2.1",
+     "name": "C01 投料合规",
+     "status": "PASS",
+     "detail": "L=18000，4 种元素、每元素 3500 原子；装载 [('O2', 1750), ('P2', 1750), ('X2', 1750), ('W2', 1750)]；初始 7000 分子/14000 原子；cap=40、seed=20261128",
+     "values": {
+      "load_spec": [
+       [
+        "O2",
+        1750
+       ],
+       [
+        "P2",
+        1750
+       ],
+       [
+        "X2",
+        1750
+       ],
+       [
+        "W2",
+        1750
+       ]
+      ]
+     }
+    },
+    {
+     "id": "2.2",
+     "name": "C02 投料合规",
+     "status": "PASS",
+     "detail": "L=18000，4 种元素、每元素 3500 原子；装载 [('O2', 1750), ('K2', 1750), ('C2', 1750), ('L2', 1750)]；初始 7000 分子/14000 原子；cap=40、seed=20261129",
+     "values": {
+      "load_spec": [
+       [
+        "O2",
+        1750
+       ],
+       [
+        "K2",
+        1750
+       ],
+       [
+        "C2",
+        1750
+       ],
+       [
+        "L2",
+        1750
+       ]
+      ]
+     }
+    },
+    {
+     "id": "2.3",
+     "name": "C03 投料合规",
+     "status": "PASS",
+     "detail": "L=18000，4 种元素、每元素 3500 原子；装载 [('P2', 1750), ('X2', 1750), ('A2', 1750), ('L2', 1750)]；初始 7000 分子/14000 原子；cap=40、seed=20261130",
+     "values": {
+      "load_spec": [
+       [
+        "P2",
+        1750
+       ],
+       [
+        "X2",
+        1750
+       ],
+       [
+        "A2",
+        1750
+       ],
+       [
+        "L2",
+        1750
+       ]
+      ]
+     }
+    },
+    {
+     "id": "2.4",
+     "name": "C04 投料合规",
+     "status": "PASS",
+     "detail": "L=18000，4 种元素、每元素 3500 原子；装载 [('K2', 1750), ('A2', 1750), ('F2', 1750), ('X2', 1750)]；初始 7000 分子/14000 原子；cap=40、seed=20261131",
+     "values": {
+      "load_spec": [
+       [
+        "K2",
+        1750
+       ],
+       [
+        "A2",
+        1750
+       ],
+       [
+        "F2",
+        1750
+       ],
+       [
+        "X2",
+        1750
+       ]
+      ]
+     }
+    },
+    {
+     "id": "2.5",
+     "name": "C05 投料合规",
+     "status": "PASS",
+     "detail": "L=19000，5 种元素、每元素 3000 原子；装载 [('O2', 1500), ('X2', 1500), ('C2', 1500), ('P2', 1500), ('W2', 1500)]；初始 7500 分子/15000 原子；cap=40、seed=20261132",
+     "values": {
+      "load_spec": [
+       [
+        "O2",
+        1500
+       ],
+       [
+        "X2",
+        1500
+       ],
+       [
+        "C2",
+        1500
+       ],
+       [
+        "P2",
+        1500
+       ],
+       [
+        "W2",
+        1500
+       ]
+      ]
+     }
+    },
+    {
+     "id": "2.6",
+     "name": "C06 投料合规",
+     "status": "PASS",
+     "detail": "L=19000，5 种元素、每元素 3000 原子；装载 [('O2', 1500), ('P2', 1500), ('K2', 1500), ('X2', 1500), ('A2', 1500)]；初始 7500 分子/15000 原子；cap=40、seed=20261133",
+     "values": {
+      "load_spec": [
+       [
+        "O2",
+        1500
+       ],
+       [
+        "P2",
+        1500
+       ],
+       [
+        "K2",
+        1500
+       ],
+       [
+        "X2",
+        1500
+       ],
+       [
+        "A2",
+        1500
+       ]
+      ]
+     }
+    },
+    {
+     "id": "2.7",
+     "name": "C07 投料合规",
+     "status": "PASS",
+     "detail": "L=19000，6 种元素、每元素 2500 原子；装载 [('O2', 1250), ('X2', 1250), ('C2', 1250), ('P2', 1250), ('K2', 1250), ('A2', 1250)]；初始 7500 分子/15000 原子；cap=40、seed=20261134",
+     "values": {
+      "load_spec": [
+       [
+        "O2",
+        1250
+       ],
+       [
+        "X2",
+        1250
+       ],
+       [
+        "C2",
+        1250
+       ],
+       [
+        "P2",
+        1250
+       ],
+       [
+        "K2",
+        1250
+       ],
+       [
+        "A2",
+        1250
+       ]
+      ]
+     }
+    },
+    {
+     "id": "2.8",
+     "name": "C08 投料合规",
+     "status": "PASS",
+     "detail": "L=20000，7 种元素、每元素 2400 原子；装载 [('O2', 1200), ('X2', 1200), ('C2', 1200), ('P2', 1200), ('W2', 1200), ('L2', 1200), ('K2', 1200)]；初始 8400 分子/16800 原子；cap=40、seed=20261135",
+     "values": {
+      "load_spec": [
+       [
+        "O2",
+        1200
+       ],
+       [
+        "X2",
+        1200
+       ],
+       [
+        "C2",
+        1200
+       ],
+       [
+        "P2",
+        1200
+       ],
+       [
+        "W2",
+        1200
+       ],
+       [
+        "L2",
+        1200
+       ],
+       [
+        "K2",
+        1200
+       ]
+      ]
+     }
+    },
+    {
+     "id": "2.9",
+     "name": "C09 投料合规",
+     "status": "PASS",
+     "detail": "L=20000，8 种元素、每元素 2100 原子；装载 [('O2', 1050), ('X2', 1050), ('C2', 1050), ('P2', 1050), ('W2', 1050), ('L2', 1050), ('K2', 1050), ('A2', 1050)]；初始 8400 分子/16800 原子；cap=40、seed=20261136",
+     "values": {
+      "load_spec": [
+       [
+        "O2",
+        1050
+       ],
+       [
+        "X2",
+        1050
+       ],
+       [
+        "C2",
+        1050
+       ],
+       [
+        "P2",
+        1050
+       ],
+       [
+        "W2",
+        1050
+       ],
+       [
+        "L2",
+        1050
+       ],
+       [
+        "K2",
+        1050
+       ],
+       [
+        "A2",
+        1050
+       ]
+      ]
+     }
+    },
+    {
+     "id": "2.10",
+     "name": "C10 投料合规",
+     "status": "PASS",
+     "detail": "L=20000，9 种元素、每元素 2000 原子；装载 [('O2', 1000), ('X2', 1000), ('C2', 1000), ('P2', 1000), ('W2', 1000), ('L2', 1000), ('K2', 1000), ('A2', 1000), ('F2', 1000)]；初始 9000 分子/18000 原子；cap=40、seed=20261137",
+     "values": {
+      "load_spec": [
+       [
+        "O2",
+        1000
+       ],
+       [
+        "X2",
+        1000
+       ],
+       [
+        "C2",
+        1000
+       ],
+       [
+        "P2",
+        1000
+       ],
+       [
+        "W2",
+        1000
+       ],
+       [
+        "L2",
+        1000
+       ],
+       [
+        "K2",
+        1000
+       ],
+       [
+        "A2",
+        1000
+       ],
+       [
+        "F2",
+        1000
+       ]
+      ]
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 3,
+   "name": "质量与元素守恒（终态分子/原子/逐元素/state 汇总）",
+   "subchecks": [
+    {
+     "id": "3.1",
+     "name": "C01 质量/元素守恒",
+     "status": "PASS",
+     "detail": "final_N=6714（Σcomp、state 一致）、final_atoms=14000（设计值、逐元素 O/X/C/... 全对）价数占比 v3/v2/v1=[0.5, 0.5, 0.0]；state 组成与 result 一致",
+     "values": {
+      "final_N": 6714,
+      "final_atoms": 14000,
+      "design_atoms": 14000,
+      "element_atoms": {
+       "O": 3500,
+       "X": 3500,
+       "C": 0,
+       "P": 3500,
+       "W": 3500,
+       "L": 0,
+       "K": 0,
+       "A": 0,
+       "F": 0
+      },
+      "valence_atoms": {
+       "v3": 7000,
+       "v2": 7000,
+       "v1": 0
+      },
+      "valence_shares": [
+       0.5,
+       0.5,
+       0.0
+      ],
+      "state_total_molecules": 6714,
+      "state_total_atoms": 14000
+     }
+    },
+    {
+     "id": "3.2",
+     "name": "C02 质量/元素守恒",
+     "status": "PASS",
+     "detail": "final_N=6952（Σcomp、state 一致）、final_atoms=14000（设计值、逐元素 O/X/C/... 全对）价数占比 v3/v2/v1=[0.5, 0.0, 0.5]；state 组成与 result 一致",
+     "values": {
+      "final_N": 6952,
+      "final_atoms": 14000,
+      "design_atoms": 14000,
+      "element_atoms": {
+       "O": 3500,
+       "X": 0,
+       "C": 3500,
+       "P": 0,
+       "W": 0,
+       "L": 3500,
+       "K": 3500,
+       "A": 0,
+       "F": 0
+      },
+      "valence_atoms": {
+       "v3": 7000,
+       "v2": 0,
+       "v1": 7000
+      },
+      "valence_shares": [
+       0.5,
+       0.0,
+       0.5
+      ],
+      "state_total_molecules": 6952,
+      "state_total_atoms": 14000
+     }
+    },
+    {
+     "id": "3.3",
+     "name": "C03 质量/元素守恒",
+     "status": "PASS",
+     "detail": "final_N=3498（Σcomp、state 一致）、final_atoms=14000（设计值、逐元素 O/X/C/... 全对）价数占比 v3/v2/v1=[0.25, 0.5, 0.25]；state 组成与 result 一致",
+     "values": {
+      "final_N": 3498,
+      "final_atoms": 14000,
+      "design_atoms": 14000,
+      "element_atoms": {
+       "O": 0,
+       "X": 3500,
+       "C": 0,
+       "P": 3500,
+       "W": 0,
+       "L": 3500,
+       "K": 0,
+       "A": 3500,
+       "F": 0
+      },
+      "valence_atoms": {
+       "v3": 3500,
+       "v2": 7000,
+       "v1": 3500
+      },
+      "valence_shares": [
+       0.25,
+       0.5,
+       0.25
+      ],
+      "state_total_molecules": 3498,
+      "state_total_atoms": 14000
+     }
+    },
+    {
+     "id": "3.4",
+     "name": "C04 质量/元素守恒",
+     "status": "PASS",
+     "detail": "final_N=5214（Σcomp、state 一致）、final_atoms=14000（设计值、逐元素 O/X/C/... 全对）价数占比 v3/v2/v1=[0.25, 0.5, 0.25]；state 组成与 result 一致",
+     "values": {
+      "final_N": 5214,
+      "final_atoms": 14000,
+      "design_atoms": 14000,
+      "element_atoms": {
+       "O": 0,
+       "X": 3500,
+       "C": 0,
+       "P": 0,
+       "W": 0,
+       "L": 0,
+       "K": 3500,
+       "A": 3500,
+       "F": 3500
+      },
+      "valence_atoms": {
+       "v3": 3500,
+       "v2": 7000,
+       "v1": 3500
+      },
+      "valence_shares": [
+       0.25,
+       0.5,
+       0.25
+      ],
+      "state_total_molecules": 5214,
+      "state_total_atoms": 14000
+     }
+    },
+    {
+     "id": "3.5",
+     "name": "C05 质量/元素守恒",
+     "status": "PASS",
+     "detail": "final_N=7178（Σcomp、state 一致）、final_atoms=15000（设计值、逐元素 O/X/C/... 全对）价数占比 v3/v2/v1=[0.4, 0.4, 0.2]；state 组成与 result 一致",
+     "values": {
+      "final_N": 7178,
+      "final_atoms": 15000,
+      "design_atoms": 15000,
+      "element_atoms": {
+       "O": 3000,
+       "X": 3000,
+       "C": 3000,
+       "P": 3000,
+       "W": 3000,
+       "L": 0,
+       "K": 0,
+       "A": 0,
+       "F": 0
+      },
+      "valence_atoms": {
+       "v3": 6000,
+       "v2": 6000,
+       "v1": 3000
+      },
+      "valence_shares": [
+       0.4,
+       0.4,
+       0.2
+      ],
+      "state_total_molecules": 7178,
+      "state_total_atoms": 15000
+     }
+    },
+    {
+     "id": "3.6",
+     "name": "C06 质量/元素守恒",
+     "status": "PASS",
+     "detail": "final_N=1546（Σcomp、state 一致）、final_atoms=15000（设计值、逐元素 O/X/C/... 全对）价数占比 v3/v2/v1=[0.6, 0.4, 0.0]；state 组成与 result 一致",
+     "values": {
+      "final_N": 1546,
+      "final_atoms": 15000,
+      "design_atoms": 15000,
+      "element_atoms": {
+       "O": 3000,
+       "X": 3000,
+       "C": 0,
+       "P": 3000,
+       "W": 0,
+       "L": 0,
+       "K": 3000,
+       "A": 3000,
+       "F": 0
+      },
+      "valence_atoms": {
+       "v3": 9000,
+       "v2": 6000,
+       "v1": 0
+      },
+      "valence_shares": [
+       0.6,
+       0.4,
+       0.0
+      ],
+      "state_total_molecules": 1546,
+      "state_total_atoms": 15000
+     }
+    },
+    {
+     "id": "3.7",
+     "name": "C07 质量/元素守恒",
+     "status": "PASS",
+     "detail": "final_N=2530（Σcomp、state 一致）、final_atoms=15000（设计值、逐元素 O/X/C/... 全对）价数占比 v3/v2/v1=[0.5, 0.3333, 0.1667]；state 组成与 result 一致",
+     "values": {
+      "final_N": 2530,
+      "final_atoms": 15000,
+      "design_atoms": 15000,
+      "element_atoms": {
+       "O": 2500,
+       "X": 2500,
+       "C": 2500,
+       "P": 2500,
+       "W": 0,
+       "L": 0,
+       "K": 2500,
+       "A": 2500,
+       "F": 0
+      },
+      "valence_atoms": {
+       "v3": 7500,
+       "v2": 5000,
+       "v1": 2500
+      },
+      "valence_shares": [
+       0.5,
+       0.3333,
+       0.1667
+      ],
+      "state_total_molecules": 2530,
+      "state_total_atoms": 15000
+     }
+    },
+    {
+     "id": "3.8",
+     "name": "C08 质量/元素守恒",
+     "status": "PASS",
+     "detail": "final_N=3824（Σcomp、state 一致）、final_atoms=16800（设计值、逐元素 O/X/C/... 全对）价数占比 v3/v2/v1=[0.4286, 0.2857, 0.2857]；state 组成与 result 一致",
+     "values": {
+      "final_N": 3824,
+      "final_atoms": 16800,
+      "design_atoms": 16800,
+      "element_atoms": {
+       "O": 2400,
+       "X": 2400,
+       "C": 2400,
+       "P": 2400,
+       "W": 2400,
+       "L": 2400,
+       "K": 2400,
+       "A": 0,
+       "F": 0
+      },
+      "valence_atoms": {
+       "v3": 7200,
+       "v2": 4800,
+       "v1": 4800
+      },
+      "valence_shares": [
+       0.4286,
+       0.2857,
+       0.2857
+      ],
+      "state_total_molecules": 3824,
+      "state_total_atoms": 16800
+     }
+    },
+    {
+     "id": "3.9",
+     "name": "C09 质量/元素守恒",
+     "status": "PASS",
+     "detail": "final_N=3338（Σcomp、state 一致）、final_atoms=16800（设计值、逐元素 O/X/C/... 全对）价数占比 v3/v2/v1=[0.375, 0.375, 0.25]；state 组成与 result 一致",
+     "values": {
+      "final_N": 3338,
+      "final_atoms": 16800,
+      "design_atoms": 16800,
+      "element_atoms": {
+       "O": 2100,
+       "X": 2100,
+       "C": 2100,
+       "P": 2100,
+       "W": 2100,
+       "L": 2100,
+       "K": 2100,
+       "A": 2100,
+       "F": 0
+      },
+      "valence_atoms": {
+       "v3": 6300,
+       "v2": 6300,
+       "v1": 4200
+      },
+      "valence_shares": [
+       0.375,
+       0.375,
+       0.25
+      ],
+      "state_total_molecules": 3338,
+      "state_total_atoms": 16800
+     }
+    },
+    {
+     "id": "3.10",
+     "name": "C10 质量/元素守恒",
+     "status": "PASS",
+     "detail": "final_N=4185（Σcomp、state 一致）、final_atoms=18000（设计值、逐元素 O/X/C/... 全对）价数占比 v3/v2/v1=[0.3333, 0.3333, 0.3333]；state 组成与 result 一致",
+     "values": {
+      "final_N": 4185,
+      "final_atoms": 18000,
+      "design_atoms": 18000,
+      "element_atoms": {
+       "O": 2000,
+       "X": 2000,
+       "C": 2000,
+       "P": 2000,
+       "W": 2000,
+       "L": 2000,
+       "K": 2000,
+       "A": 2000,
+       "F": 2000
+      },
+      "valence_atoms": {
+       "v3": 6000,
+       "v2": 6000,
+       "v1": 6000
+      },
+      "valence_shares": [
+       0.3333,
+       0.3333,
+       0.3333
+      ],
+      "state_total_molecules": 4185,
+      "state_total_atoms": 18000
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 4,
+   "name": "温度日程（1000→25°C 退火 975 + 25°C 浮动 600）",
+   "subchecks": [
+    {
+     "id": "4.1",
+     "name": "C01 温度日程",
+     "status": "PASS",
+     "detail": "config.temp_schedule 一致；1575 行 T 逐分钟复算一致（max|ΔT|<1e-6）；hold 段 15.56~35.71°C（波动 20.15°C）；final_T=22.25 == 日程末值",
+     "values": {
+      "T0": 1000.0,
+      "T_mid": 25.0,
+      "anneal_minutes": 975,
+      "hold_minutes": 600,
+      "hold_T_min": 15.5562,
+      "hold_T_max": 35.7059,
+      "hold_fluct": 20.1497,
+      "final_T": 22.25,
+      "max_abs_dT": 0.0
+     }
+    },
+    {
+     "id": "4.2",
+     "name": "C02 温度日程",
+     "status": "PASS",
+     "detail": "config.temp_schedule 一致；1575 行 T 逐分钟复算一致（max|ΔT|<1e-6）；hold 段 15.56~35.71°C（波动 20.15°C）；final_T=22.25 == 日程末值",
+     "values": {
+      "T0": 1000.0,
+      "T_mid": 25.0,
+      "anneal_minutes": 975,
+      "hold_minutes": 600,
+      "hold_T_min": 15.5562,
+      "hold_T_max": 35.7059,
+      "hold_fluct": 20.1497,
+      "final_T": 22.25,
+      "max_abs_dT": 0.0
+     }
+    },
+    {
+     "id": "4.3",
+     "name": "C03 温度日程",
+     "status": "PASS",
+     "detail": "config.temp_schedule 一致；1575 行 T 逐分钟复算一致（max|ΔT|<1e-6）；hold 段 15.56~35.71°C（波动 20.15°C）；final_T=22.25 == 日程末值",
+     "values": {
+      "T0": 1000.0,
+      "T_mid": 25.0,
+      "anneal_minutes": 975,
+      "hold_minutes": 600,
+      "hold_T_min": 15.5562,
+      "hold_T_max": 35.7059,
+      "hold_fluct": 20.1497,
+      "final_T": 22.25,
+      "max_abs_dT": 0.0
+     }
+    },
+    {
+     "id": "4.4",
+     "name": "C04 温度日程",
+     "status": "PASS",
+     "detail": "config.temp_schedule 一致；1575 行 T 逐分钟复算一致（max|ΔT|<1e-6）；hold 段 15.56~35.71°C（波动 20.15°C）；final_T=22.25 == 日程末值",
+     "values": {
+      "T0": 1000.0,
+      "T_mid": 25.0,
+      "anneal_minutes": 975,
+      "hold_minutes": 600,
+      "hold_T_min": 15.5562,
+      "hold_T_max": 35.7059,
+      "hold_fluct": 20.1497,
+      "final_T": 22.25,
+      "max_abs_dT": 0.0
+     }
+    },
+    {
+     "id": "4.5",
+     "name": "C05 温度日程",
+     "status": "PASS",
+     "detail": "config.temp_schedule 一致；1575 行 T 逐分钟复算一致（max|ΔT|<1e-6）；hold 段 15.56~35.71°C（波动 20.15°C）；final_T=22.25 == 日程末值",
+     "values": {
+      "T0": 1000.0,
+      "T_mid": 25.0,
+      "anneal_minutes": 975,
+      "hold_minutes": 600,
+      "hold_T_min": 15.5562,
+      "hold_T_max": 35.7059,
+      "hold_fluct": 20.1497,
+      "final_T": 22.25,
+      "max_abs_dT": 0.0
+     }
+    },
+    {
+     "id": "4.6",
+     "name": "C06 温度日程",
+     "status": "PASS",
+     "detail": "config.temp_schedule 一致；1575 行 T 逐分钟复算一致（max|ΔT|<1e-6）；hold 段 15.56~35.71°C（波动 20.15°C）；final_T=22.25 == 日程末值",
+     "values": {
+      "T0": 1000.0,
+      "T_mid": 25.0,
+      "anneal_minutes": 975,
+      "hold_minutes": 600,
+      "hold_T_min": 15.5562,
+      "hold_T_max": 35.7059,
+      "hold_fluct": 20.1497,
+      "final_T": 22.25,
+      "max_abs_dT": 0.0
+     }
+    },
+    {
+     "id": "4.7",
+     "name": "C07 温度日程",
+     "status": "PASS",
+     "detail": "config.temp_schedule 一致；1575 行 T 逐分钟复算一致（max|ΔT|<1e-6）；hold 段 15.56~35.71°C（波动 20.15°C）；final_T=22.25 == 日程末值",
+     "values": {
+      "T0": 1000.0,
+      "T_mid": 25.0,
+      "anneal_minutes": 975,
+      "hold_minutes": 600,
+      "hold_T_min": 15.5562,
+      "hold_T_max": 35.7059,
+      "hold_fluct": 20.1497,
+      "final_T": 22.25,
+      "max_abs_dT": 0.0
+     }
+    },
+    {
+     "id": "4.8",
+     "name": "C08 温度日程",
+     "status": "PASS",
+     "detail": "config.temp_schedule 一致；1575 行 T 逐分钟复算一致（max|ΔT|<1e-6）；hold 段 15.56~35.71°C（波动 20.15°C）；final_T=22.25 == 日程末值",
+     "values": {
+      "T0": 1000.0,
+      "T_mid": 25.0,
+      "anneal_minutes": 975,
+      "hold_minutes": 600,
+      "hold_T_min": 15.5562,
+      "hold_T_max": 35.7059,
+      "hold_fluct": 20.1497,
+      "final_T": 22.25,
+      "max_abs_dT": 0.0
+     }
+    },
+    {
+     "id": "4.9",
+     "name": "C09 温度日程",
+     "status": "PASS",
+     "detail": "config.temp_schedule 一致；1575 行 T 逐分钟复算一致（max|ΔT|<1e-6）；hold 段 15.56~35.71°C（波动 20.15°C）；final_T=22.25 == 日程末值",
+     "values": {
+      "T0": 1000.0,
+      "T_mid": 25.0,
+      "anneal_minutes": 975,
+      "hold_minutes": 600,
+      "hold_T_min": 15.5562,
+      "hold_T_max": 35.7059,
+      "hold_fluct": 20.1497,
+      "final_T": 22.25,
+      "max_abs_dT": 0.0
+     }
+    },
+    {
+     "id": "4.10",
+     "name": "C10 温度日程",
+     "status": "PASS",
+     "detail": "config.temp_schedule 一致；1575 行 T 逐分钟复算一致（max|ΔT|<1e-6）；hold 段 15.56~35.71°C（波动 20.15°C）；final_T=22.25 == 日程末值",
+     "values": {
+      "T0": 1000.0,
+      "T_mid": 25.0,
+      "anneal_minutes": 975,
+      "hold_minutes": 600,
+      "hold_T_min": 15.5562,
+      "hold_T_max": 35.7059,
+      "hold_fluct": 20.1497,
+      "final_T": 22.25,
+      "max_abs_dT": 0.0
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 5,
+   "name": "判定自洽（reaction_counts/events_total/抽样事件/cap）",
+   "subchecks": [
+    {
+     "id": "5.1",
+     "name": "C01 判定自洽",
+     "status": "PASS",
+     "detail": "判定总数=1599283（complete=1592133/incomplete=2903/none=0/capped=4247，capped 占比 0.266%）；events_total=15360、抽样 15360 条 0 违规；max atoms=39/39 ≤40；decomp=1",
+     "values": {
+      "reaction_counts": {
+       "complete": 1592133,
+       "incomplete": 2903,
+       "capped": 4247
+      },
+      "total_judgements": 1599283,
+      "events_total": 15360,
+      "event_samples": 15360,
+      "event_types": {
+       "complete": 15349,
+       "incomplete": 11
+      },
+      "capped": 4247,
+      "capped_frac": 0.002656,
+      "comp_max_atoms": 39,
+      "ts_max_atoms": 39,
+      "decomp_events": 1
+     }
+    },
+    {
+     "id": "5.2",
+     "name": "C02 判定自洽",
+     "status": "PASS",
+     "detail": "判定总数=1755113（complete=1755113/incomplete=0/none=0/capped=0，capped 占比 0.000%）；events_total=13514、抽样 13514 条 0 违规；max atoms=8/16 ≤40；decomp=0",
+     "values": {
+      "reaction_counts": {
+       "complete": 1755113
+      },
+      "total_judgements": 1755113,
+      "events_total": 13514,
+      "event_samples": 13514,
+      "event_types": {
+       "complete": 13514
+      },
+      "capped": 0,
+      "capped_frac": 0.0,
+      "comp_max_atoms": 8,
+      "ts_max_atoms": 16,
+      "decomp_events": 0
+     }
+    },
+    {
+     "id": "5.3",
+     "name": "C03 判定自洽",
+     "status": "PASS",
+     "detail": "判定总数=726189（complete=726189/incomplete=0/none=0/capped=0，capped 占比 0.000%）；events_total=13956、抽样 13956 条 0 违规；max atoms=11/19 ≤40；decomp=0",
+     "values": {
+      "reaction_counts": {
+       "complete": 726189
+      },
+      "total_judgements": 726189,
+      "events_total": 13956,
+      "event_samples": 13956,
+      "event_types": {
+       "complete": 13956
+      },
+      "capped": 0,
+      "capped_frac": 0.0,
+      "comp_max_atoms": 11,
+      "ts_max_atoms": 19,
+      "decomp_events": 0
+     }
+    },
+    {
+     "id": "5.4",
+     "name": "C04 判定自洽",
+     "status": "PASS",
+     "detail": "判定总数=1207755（complete=1207409/incomplete=346/none=0/capped=0，capped 占比 0.000%）；events_total=13649、抽样 13649 条 0 违规；max atoms=7/22 ≤40；decomp=0",
+     "values": {
+      "reaction_counts": {
+       "complete": 1207409,
+       "incomplete": 346
+      },
+      "total_judgements": 1207755,
+      "events_total": 13649,
+      "event_samples": 13649,
+      "event_types": {
+       "complete": 13649
+      },
+      "capped": 0,
+      "capped_frac": 0.0,
+      "comp_max_atoms": 7,
+      "ts_max_atoms": 22,
+      "decomp_events": 0
+     }
+    },
+    {
+     "id": "5.5",
+     "name": "C05 判定自洽",
+     "status": "PASS",
+     "detail": "判定总数=1754801（complete=1745692/incomplete=1796/none=0/capped=7313，capped 占比 0.417%）；events_total=16720、抽样 16720 条 0 违规；max atoms=39/39 ≤40；decomp=0",
+     "values": {
+      "reaction_counts": {
+       "complete": 1745692,
+       "incomplete": 1796,
+       "capped": 7313
+      },
+      "total_judgements": 1754801,
+      "events_total": 16720,
+      "event_samples": 16720,
+      "event_types": {
+       "complete": 16719,
+       "incomplete": 1
+      },
+      "capped": 7313,
+      "capped_frac": 0.004167,
+      "comp_max_atoms": 39,
+      "ts_max_atoms": 39,
+      "decomp_events": 0
+     }
+    },
+    {
+     "id": "5.6",
+     "name": "C06 判定自洽",
+     "status": "PASS",
+     "detail": "判定总数=282491（complete=251544/incomplete=30935/none=0/capped=12，capped 占比 0.004%）；events_total=22402、抽样 22402 条 0 违规；max atoms=19/34 ≤40；decomp=1",
+     "values": {
+      "reaction_counts": {
+       "complete": 251544,
+       "incomplete": 30935,
+       "capped": 12
+      },
+      "total_judgements": 282491,
+      "events_total": 22402,
+      "event_samples": 22402,
+      "event_types": {
+       "complete": 22386,
+       "incomplete": 16
+      },
+      "capped": 12,
+      "capped_frac": 4.2e-05,
+      "comp_max_atoms": 19,
+      "ts_max_atoms": 34,
+      "decomp_events": 1
+     }
+    },
+    {
+     "id": "5.7",
+     "name": "C07 判定自洽",
+     "status": "PASS",
+     "detail": "判定总数=498608（complete=496767/incomplete=1238/none=0/capped=603，capped 占比 0.121%）；events_total=23809、抽样 23809 条 0 违规；max atoms=39/39 ≤40；decomp=0",
+     "values": {
+      "reaction_counts": {
+       "complete": 496767,
+       "incomplete": 1238,
+       "capped": 603
+      },
+      "total_judgements": 498608,
+      "events_total": 23809,
+      "event_samples": 23809,
+      "event_types": {
+       "complete": 23809
+      },
+      "capped": 603,
+      "capped_frac": 0.001209,
+      "comp_max_atoms": 39,
+      "ts_max_atoms": 39,
+      "decomp_events": 0
+     }
+    },
+    {
+     "id": "5.8",
+     "name": "C08 判定自洽",
+     "status": "PASS",
+     "detail": "判定总数=834836（complete=828142/incomplete=6693/none=0/capped=1，capped 占比 0.000%）；events_total=26556、抽样 26556 条 0 违规；max atoms=18/28 ≤40；decomp=0",
+     "values": {
+      "reaction_counts": {
+       "complete": 828142,
+       "incomplete": 6693,
+       "capped": 1
+      },
+      "total_judgements": 834836,
+      "events_total": 26556,
+      "event_samples": 26556,
+      "event_types": {
+       "complete": 26549,
+       "incomplete": 7
+      },
+      "capped": 1,
+      "capped_frac": 1e-06,
+      "comp_max_atoms": 18,
+      "ts_max_atoms": 28,
+      "decomp_events": 0
+     }
+    },
+    {
+     "id": "5.9",
+     "name": "C09 判定自洽",
+     "status": "PASS",
+     "detail": "判定总数=756754（complete=750997/incomplete=5756/none=0/capped=1，capped 占比 0.000%）；events_total=33971、抽样 30000 条 0 违规；max atoms=17/35 ≤40；decomp=0",
+     "values": {
+      "reaction_counts": {
+       "complete": 750997,
+       "incomplete": 5756,
+       "capped": 1
+      },
+      "total_judgements": 756754,
+      "events_total": 33971,
+      "event_samples": 30000,
+      "event_types": {
+       "complete": 29993,
+       "incomplete": 7
+      },
+      "capped": 1,
+      "capped_frac": 1e-06,
+      "comp_max_atoms": 17,
+      "ts_max_atoms": 35,
+      "decomp_events": 0
+     }
+    },
+    {
+     "id": "5.10",
+     "name": "C10 判定自洽",
+     "status": "PASS",
+     "detail": "判定总数=1027003（complete=1020307/incomplete=5059/none=0/capped=1637，capped 占比 0.159%）；events_total=41116、抽样 30000 条 0 违规；max atoms=39/39 ≤40；decomp=0",
+     "values": {
+      "reaction_counts": {
+       "complete": 1020307,
+       "incomplete": 5059,
+       "capped": 1637
+      },
+      "total_judgements": 1027003,
+      "events_total": 41116,
+      "event_samples": 30000,
+      "event_types": {
+       "complete": 29992,
+       "incomplete": 8
+      },
+      "capped": 1637,
+      "capped_frac": 0.001594,
+      "comp_max_atoms": 39,
+      "ts_max_atoms": 39,
+      "decomp_events": 0
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 6,
+   "name": "快照（snapshots 数量/时间点/每帧点数）",
+   "subchecks": [
+    {
+     "id": "6.1",
+     "name": "C01 快照",
+     "status": "PASS",
+     "detail": "25 帧（时间点与 snap_minutes 完全一致），每帧点数 3000~3000，合计 75000 点",
+     "values": {
+      "snapshots": 25,
+      "expected": 25,
+      "points_min": 3000,
+      "points_max": 3000,
+      "points_total": 75000,
+      "time_points": [
+       0,
+       25,
+       50,
+       100,
+       200,
+       300,
+       400,
+       500,
+       600,
+       700,
+       800,
+       900,
+       950,
+       975,
+       1000,
+       1050,
+       1100,
+       1150,
+       1200,
+       1300,
+       1400,
+       1500,
+       1560,
+       1570,
+       1574
+      ]
+     }
+    },
+    {
+     "id": "6.2",
+     "name": "C02 快照",
+     "status": "PASS",
+     "detail": "25 帧（时间点与 snap_minutes 完全一致），每帧点数 3000~3000，合计 75000 点",
+     "values": {
+      "snapshots": 25,
+      "expected": 25,
+      "points_min": 3000,
+      "points_max": 3000,
+      "points_total": 75000,
+      "time_points": [
+       0,
+       25,
+       50,
+       100,
+       200,
+       300,
+       400,
+       500,
+       600,
+       700,
+       800,
+       900,
+       950,
+       975,
+       1000,
+       1050,
+       1100,
+       1150,
+       1200,
+       1300,
+       1400,
+       1500,
+       1560,
+       1570,
+       1574
+      ]
+     }
+    },
+    {
+     "id": "6.3",
+     "name": "C03 快照",
+     "status": "PASS",
+     "detail": "25 帧（时间点与 snap_minutes 完全一致），每帧点数 3000~3000，合计 75000 点",
+     "values": {
+      "snapshots": 25,
+      "expected": 25,
+      "points_min": 3000,
+      "points_max": 3000,
+      "points_total": 75000,
+      "time_points": [
+       0,
+       25,
+       50,
+       100,
+       200,
+       300,
+       400,
+       500,
+       600,
+       700,
+       800,
+       900,
+       950,
+       975,
+       1000,
+       1050,
+       1100,
+       1150,
+       1200,
+       1300,
+       1400,
+       1500,
+       1560,
+       1570,
+       1574
+      ]
+     }
+    },
+    {
+     "id": "6.4",
+     "name": "C04 快照",
+     "status": "PASS",
+     "detail": "25 帧（时间点与 snap_minutes 完全一致），每帧点数 3000~3000，合计 75000 点",
+     "values": {
+      "snapshots": 25,
+      "expected": 25,
+      "points_min": 3000,
+      "points_max": 3000,
+      "points_total": 75000,
+      "time_points": [
+       0,
+       25,
+       50,
+       100,
+       200,
+       300,
+       400,
+       500,
+       600,
+       700,
+       800,
+       900,
+       950,
+       975,
+       1000,
+       1050,
+       1100,
+       1150,
+       1200,
+       1300,
+       1400,
+       1500,
+       1560,
+       1570,
+       1574
+      ]
+     }
+    },
+    {
+     "id": "6.5",
+     "name": "C05 快照",
+     "status": "PASS",
+     "detail": "25 帧（时间点与 snap_minutes 完全一致），每帧点数 3000~3000，合计 75000 点",
+     "values": {
+      "snapshots": 25,
+      "expected": 25,
+      "points_min": 3000,
+      "points_max": 3000,
+      "points_total": 75000,
+      "time_points": [
+       0,
+       25,
+       50,
+       100,
+       200,
+       300,
+       400,
+       500,
+       600,
+       700,
+       800,
+       900,
+       950,
+       975,
+       1000,
+       1050,
+       1100,
+       1150,
+       1200,
+       1300,
+       1400,
+       1500,
+       1560,
+       1570,
+       1574
+      ]
+     }
+    },
+    {
+     "id": "6.6",
+     "name": "C06 快照",
+     "status": "PASS",
+     "detail": "25 帧（时间点与 snap_minutes 完全一致），每帧点数 1546~3000，合计 44004 点",
+     "values": {
+      "snapshots": 25,
+      "expected": 25,
+      "points_min": 1546,
+      "points_max": 3000,
+      "points_total": 44004,
+      "time_points": [
+       0,
+       25,
+       50,
+       100,
+       200,
+       300,
+       400,
+       500,
+       600,
+       700,
+       800,
+       900,
+       950,
+       975,
+       1000,
+       1050,
+       1100,
+       1150,
+       1200,
+       1300,
+       1400,
+       1500,
+       1560,
+       1570,
+       1574
+      ]
+     }
+    },
+    {
+     "id": "6.7",
+     "name": "C07 快照",
+     "status": "PASS",
+     "detail": "25 帧（时间点与 snap_minutes 完全一致），每帧点数 2530~3000，合计 65848 点",
+     "values": {
+      "snapshots": 25,
+      "expected": 25,
+      "points_min": 2530,
+      "points_max": 3000,
+      "points_total": 65848,
+      "time_points": [
+       0,
+       25,
+       50,
+       100,
+       200,
+       300,
+       400,
+       500,
+       600,
+       700,
+       800,
+       900,
+       950,
+       975,
+       1000,
+       1050,
+       1100,
+       1150,
+       1200,
+       1300,
+       1400,
+       1500,
+       1560,
+       1570,
+       1574
+      ]
+     }
+    },
+    {
+     "id": "6.8",
+     "name": "C08 快照",
+     "status": "PASS",
+     "detail": "25 帧（时间点与 snap_minutes 完全一致），每帧点数 3000~3000，合计 75000 点",
+     "values": {
+      "snapshots": 25,
+      "expected": 25,
+      "points_min": 3000,
+      "points_max": 3000,
+      "points_total": 75000,
+      "time_points": [
+       0,
+       25,
+       50,
+       100,
+       200,
+       300,
+       400,
+       500,
+       600,
+       700,
+       800,
+       900,
+       950,
+       975,
+       1000,
+       1050,
+       1100,
+       1150,
+       1200,
+       1300,
+       1400,
+       1500,
+       1560,
+       1570,
+       1574
+      ]
+     }
+    },
+    {
+     "id": "6.9",
+     "name": "C09 快照",
+     "status": "PASS",
+     "detail": "25 帧（时间点与 snap_minutes 完全一致），每帧点数 3000~3000，合计 75000 点",
+     "values": {
+      "snapshots": 25,
+      "expected": 25,
+      "points_min": 3000,
+      "points_max": 3000,
+      "points_total": 75000,
+      "time_points": [
+       0,
+       25,
+       50,
+       100,
+       200,
+       300,
+       400,
+       500,
+       600,
+       700,
+       800,
+       900,
+       950,
+       975,
+       1000,
+       1050,
+       1100,
+       1150,
+       1200,
+       1300,
+       1400,
+       1500,
+       1560,
+       1570,
+       1574
+      ]
+     }
+    },
+    {
+     "id": "6.10",
+     "name": "C10 快照",
+     "status": "PASS",
+     "detail": "25 帧（时间点与 snap_minutes 完全一致），每帧点数 3000~3000，合计 75000 点",
+     "values": {
+      "snapshots": 25,
+      "expected": 25,
+      "points_min": 3000,
+      "points_max": 3000,
+      "points_total": 75000,
+      "time_points": [
+       0,
+       25,
+       50,
+       100,
+       200,
+       300,
+       400,
+       500,
+       600,
+       700,
+       800,
+       900,
+       950,
+       975,
+       1000,
+       1050,
+       1100,
+       1150,
+       1200,
+       1300,
+       1400,
+       1500,
+       1560,
+       1570,
+       1574
+      ]
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 7,
+   "name": "终态表 sanity（final_composition / top structures）",
+   "subchecks": [
+    {
+     "id": "7.1",
+     "name": "C01 终态表",
+     "status": "PASS",
+     "detail": "final_composition 16 个分子式（atoms 字段全一致、0 个 None）；top 结构 16 个全部合法（价数填满/无自环/重复边/越界），最大 atoms=39",
+     "values": {
+      "n_comp": 16,
+      "n_top": 16,
+      "atoms_mismatch": 0,
+      "atoms_none": 0,
+      "invalid_tops": 0,
+      "comp_max_atoms": 39
+     }
+    },
+    {
+     "id": "7.2",
+     "name": "C02 终态表",
+     "status": "PASS",
+     "detail": "final_composition 6 个分子式（atoms 字段全一致、0 个 None）；top 结构 6 个全部合法（价数填满/无自环/重复边/越界），最大 atoms=8",
+     "values": {
+      "n_comp": 6,
+      "n_top": 6,
+      "atoms_mismatch": 0,
+      "atoms_none": 0,
+      "invalid_tops": 0,
+      "comp_max_atoms": 8
+     }
+    },
+    {
+     "id": "7.3",
+     "name": "C03 终态表",
+     "status": "PASS",
+     "detail": "final_composition 11 个分子式（atoms 字段全一致、0 个 None）；top 结构 11 个全部合法（价数填满/无自环/重复边/越界），最大 atoms=11",
+     "values": {
+      "n_comp": 11,
+      "n_top": 11,
+      "atoms_mismatch": 0,
+      "atoms_none": 0,
+      "invalid_tops": 0,
+      "comp_max_atoms": 11
+     }
+    },
+    {
+     "id": "7.4",
+     "name": "C04 终态表",
+     "status": "PASS",
+     "detail": "final_composition 9 个分子式（atoms 字段全一致、0 个 None）；top 结构 9 个全部合法（价数填满/无自环/重复边/越界），最大 atoms=7",
+     "values": {
+      "n_comp": 9,
+      "n_top": 9,
+      "atoms_mismatch": 0,
+      "atoms_none": 0,
+      "invalid_tops": 0,
+      "comp_max_atoms": 7
+     }
+    },
+    {
+     "id": "7.5",
+     "name": "C05 终态表",
+     "status": "PASS",
+     "detail": "final_composition 20 个分子式（atoms 字段全一致、0 个 None）；top 结构 20 个全部合法（价数填满/无自环/重复边/越界），最大 atoms=39",
+     "values": {
+      "n_comp": 20,
+      "n_top": 20,
+      "atoms_mismatch": 0,
+      "atoms_none": 0,
+      "invalid_tops": 0,
+      "comp_max_atoms": 39
+     }
+    },
+    {
+     "id": "7.6",
+     "name": "C06 终态表",
+     "status": "PASS",
+     "detail": "final_composition 17 个分子式（atoms 字段全一致、0 个 None）；top 结构 17 个全部合法（价数填满/无自环/重复边/越界），最大 atoms=19",
+     "values": {
+      "n_comp": 17,
+      "n_top": 17,
+      "atoms_mismatch": 0,
+      "atoms_none": 0,
+      "invalid_tops": 0,
+      "comp_max_atoms": 19
+     }
+    },
+    {
+     "id": "7.7",
+     "name": "C07 终态表",
+     "status": "PASS",
+     "detail": "final_composition 22 个分子式（atoms 字段全一致、0 个 None）；top 结构 22 个全部合法（价数填满/无自环/重复边/越界），最大 atoms=39",
+     "values": {
+      "n_comp": 22,
+      "n_top": 22,
+      "atoms_mismatch": 0,
+      "atoms_none": 0,
+      "invalid_tops": 0,
+      "comp_max_atoms": 39
+     }
+    },
+    {
+     "id": "7.8",
+     "name": "C08 终态表",
+     "status": "PASS",
+     "detail": "final_composition 17 个分子式（atoms 字段全一致、0 个 None）；top 结构 17 个全部合法（价数填满/无自环/重复边/越界），最大 atoms=18",
+     "values": {
+      "n_comp": 17,
+      "n_top": 17,
+      "atoms_mismatch": 0,
+      "atoms_none": 0,
+      "invalid_tops": 0,
+      "comp_max_atoms": 18
+     }
+    },
+    {
+     "id": "7.9",
+     "name": "C09 终态表",
+     "status": "PASS",
+     "detail": "final_composition 26 个分子式（atoms 字段全一致、0 个 None）；top 结构 24 个全部合法（价数填满/无自环/重复边/越界），最大 atoms=17",
+     "values": {
+      "n_comp": 26,
+      "n_top": 24,
+      "atoms_mismatch": 0,
+      "atoms_none": 0,
+      "invalid_tops": 0,
+      "comp_max_atoms": 17
+     }
+    },
+    {
+     "id": "7.10",
+     "name": "C10 终态表",
+     "status": "PASS",
+     "detail": "final_composition 24 个分子式（atoms 字段全一致、0 个 None）；top 结构 24 个全部合法（价数填满/无自环/重复边/越界），最大 atoms=39",
+     "values": {
+      "n_comp": 24,
+      "n_top": 24,
+      "atoms_mismatch": 0,
+      "atoms_none": 0,
+      "invalid_tops": 0,
+      "comp_max_atoms": 39
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 8,
+   "name": "state 与 result 一致性（总数/组成/逐元素/结构合法性）",
+   "subchecks": [
+    {
+     "id": "8.1",
+     "name": "C01 state 一致性",
+     "status": "PASS",
+     "detail": "state 6714 分子/14000 原子、17 种结构（distinct_formulas=789），组成/逐元素与 result 一致，结构全部合法",
+     "values": {
+      "state_molecules": 6714,
+      "state_atoms": 14000,
+      "structures": 17,
+      "distinct_formulas": 789,
+      "invalid_structures": 0
+     }
+    },
+    {
+     "id": "8.2",
+     "name": "C02 state 一致性",
+     "status": "PASS",
+     "detail": "state 6952 分子/14000 原子、6 种结构（distinct_formulas=253），组成/逐元素与 result 一致，结构全部合法",
+     "values": {
+      "state_molecules": 6952,
+      "state_atoms": 14000,
+      "structures": 6,
+      "distinct_formulas": 253,
+      "invalid_structures": 0
+     }
+    },
+    {
+     "id": "8.3",
+     "name": "C03 state 一致性",
+     "status": "PASS",
+     "detail": "state 3498 分子/14000 原子、11 种结构（distinct_formulas=163），组成/逐元素与 result 一致，结构全部合法",
+     "values": {
+      "state_molecules": 3498,
+      "state_atoms": 14000,
+      "structures": 11,
+      "distinct_formulas": 163,
+      "invalid_structures": 0
+     }
+    },
+    {
+     "id": "8.4",
+     "name": "C04 state 一致性",
+     "status": "PASS",
+     "detail": "state 5214 分子/14000 原子、9 种结构（distinct_formulas=141），组成/逐元素与 result 一致，结构全部合法",
+     "values": {
+      "state_molecules": 5214,
+      "state_atoms": 14000,
+      "structures": 9,
+      "distinct_formulas": 141,
+      "invalid_structures": 0
+     }
+    },
+    {
+     "id": "8.5",
+     "name": "C05 state 一致性",
+     "status": "PASS",
+     "detail": "state 7178 分子/15000 原子、21 种结构（distinct_formulas=1090），组成/逐元素与 result 一致，结构全部合法",
+     "values": {
+      "state_molecules": 7178,
+      "state_atoms": 15000,
+      "structures": 21,
+      "distinct_formulas": 1090,
+      "invalid_structures": 0
+     }
+    },
+    {
+     "id": "8.6",
+     "name": "C06 state 一致性",
+     "status": "PASS",
+     "detail": "state 1546 分子/15000 原子、20 种结构（distinct_formulas=1348），组成/逐元素与 result 一致，结构全部合法",
+     "values": {
+      "state_molecules": 1546,
+      "state_atoms": 15000,
+      "structures": 20,
+      "distinct_formulas": 1348,
+      "invalid_structures": 0
+     }
+    },
+    {
+     "id": "8.7",
+     "name": "C07 state 一致性",
+     "status": "PASS",
+     "detail": "state 2530 分子/15000 原子、22 种结构（distinct_formulas=1655），组成/逐元素与 result 一致，结构全部合法",
+     "values": {
+      "state_molecules": 2530,
+      "state_atoms": 15000,
+      "structures": 22,
+      "distinct_formulas": 1655,
+      "invalid_structures": 0
+     }
+    },
+    {
+     "id": "8.8",
+     "name": "C08 state 一致性",
+     "status": "PASS",
+     "detail": "state 3824 分子/16800 原子、17 种结构（distinct_formulas=2273），组成/逐元素与 result 一致，结构全部合法",
+     "values": {
+      "state_molecules": 3824,
+      "state_atoms": 16800,
+      "structures": 17,
+      "distinct_formulas": 2273,
+      "invalid_structures": 0
+     }
+    },
+    {
+     "id": "8.9",
+     "name": "C09 state 一致性",
+     "status": "PASS",
+     "detail": "state 3338 分子/16800 原子、26 种结构（distinct_formulas=3727），组成/逐元素与 result 一致，结构全部合法",
+     "values": {
+      "state_molecules": 3338,
+      "state_atoms": 16800,
+      "structures": 26,
+      "distinct_formulas": 3727,
+      "invalid_structures": 0
+     }
+    },
+    {
+     "id": "8.10",
+     "name": "C10 state 一致性",
+     "status": "PASS",
+     "detail": "state 4185 分子/18000 原子、24 种结构（distinct_formulas=4277），组成/逐元素与 result 一致，结构全部合法",
+     "values": {
+      "state_molecules": 4185,
+      "state_atoms": 18000,
+      "structures": 24,
+      "distinct_formulas": 4277,
+      "invalid_structures": 0
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 9,
+   "name": "无化学对照（t65_control_C01.json）",
+   "subchecks": [
+    {
+     "id": "9.1",
+     "name": "对照组化学开关关闭",
+     "status": "PASS",
+     "detail": "config.chemical_reactions=False"
+    },
+    {
+     "id": "9.2",
+     "name": "对照组装载与 C01 投料一致",
+     "status": "PASS",
+     "detail": "7000 分子（O2/P2/X2/W2 各 1750，14000 原子）、L=18000、500 分钟",
+     "values": {
+      "n_particles": 7000,
+      "L": 18000.0,
+      "minutes": 500,
+      "load_spec": [
+       [
+        "O2",
+        1750
+       ],
+       [
+        "P2",
+        1750
+       ],
+       [
+        "X2",
+        1750
+       ],
+       [
+        "W2",
+        1750
+       ]
+      ]
+     }
+    },
+    {
+     "id": "9.3",
+     "name": "stats.n == 7000",
+     "status": "PASS",
+     "detail": "stats.n=7000"
+    },
+    {
+     "id": "9.4",
+     "name": "stats.min ≥ 500",
+     "status": "PASS",
+     "detail": "stats.min=706.1"
+    },
+    {
+     "id": "9.5",
+     "name": "fraction_ge_500 ≥ 0.9999",
+     "status": "PASS",
+     "detail": "fraction_ge_500=1.0"
+    },
+    {
+     "id": "9.6",
+     "name": "by_size 每组 min ≥ 500 且分组总数=7000",
+     "status": "PASS",
+     "detail": "1 个大小组，每组 min ≥500（全部 ≥500），Σn=7000",
+     "values": {
+      "by_size": {
+       "2": {
+        "n": 7000,
+        "min": 706.1
+       }
+      }
+     }
+    },
+    {
+     "id": "9.7",
+     "name": "对照路径统计概览",
+     "status": "INFO",
+     "detail": "min=706.1 p1=723.9 median=750.3 p95=768.7 max=788.0 mean=750.1 fraction_ge_500=1.0",
+     "values": {
+      "stats": {
+       "n": 7000,
+       "min": 706.1,
+       "p1": 723.9,
+       "p5": 731.7,
+       "median": 750.3,
+       "p95": 768.7,
+       "max": 788.0,
+       "fraction_ge_500": 1.0,
+       "mean": 750.1
+      }
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 10,
+   "name": "index 与 result 一致性（t65_biome_index.json）",
+   "subchecks": [
+    {
+     "id": "10.1",
+     "name": "index 10 行完成状态与 result 一致",
+     "status": "PASS",
+     "detail": "10 行均 done，final_N/final_atoms/final_T/reaction_counts 与 result 一致",
+     "values": {
+      "rows": {
+       "C01": {
+        "status": "done",
+        "final_N": 6714,
+        "final_atoms": 14000,
+        "final_T": 22.25
+       },
+       "C02": {
+        "status": "done",
+        "final_N": 6952,
+        "final_atoms": 14000,
+        "final_T": 22.25
+       },
+       "C03": {
+        "status": "done",
+        "final_N": 3498,
+        "final_atoms": 14000,
+        "final_T": 22.25
+       },
+       "C04": {
+        "status": "done",
+        "final_N": 5214,
+        "final_atoms": 14000,
+        "final_T": 22.25
+       },
+       "C05": {
+        "status": "done",
+        "final_N": 7178,
+        "final_atoms": 15000,
+        "final_T": 22.25
+       },
+       "C06": {
+        "status": "done",
+        "final_N": 1546,
+        "final_atoms": 15000,
+        "final_T": 22.25
+       },
+       "C07": {
+        "status": "done",
+        "final_N": 2530,
+        "final_atoms": 15000,
+        "final_T": 22.25
+       },
+       "C08": {
+        "status": "done",
+        "final_N": 3824,
+        "final_atoms": 16800,
+        "final_T": 22.25
+       },
+       "C09": {
+        "status": "done",
+        "final_N": 3338,
+        "final_atoms": 16800,
+        "final_T": 22.25
+       },
+       "C10": {
+        "status": "done",
+        "final_N": 4185,
+        "final_atoms": 18000,
+        "final_T": 22.25
+       }
+      }
+     }
+    },
+    {
+     "id": "10.2",
+     "name": "index 元数据与设计一致",
+     "status": "PASS",
+     "detail": "10 行 elements/L/total_atoms 与 t65_biomes.json 一致"
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 11,
+   "name": "输入文件 SHA256（10 result + 10 state + design + index + control）",
+   "subchecks": [
+    {
+     "id": "11.1",
+     "name": "全部输入文件存在",
+     "status": "PASS",
+     "detail": "23 个输入文件全部存在"
+    },
+    {
+     "id": "11.2",
+     "name": "10 个 result 文件 SHA256 已记录",
+     "status": "PASS",
+     "detail": "10 个 result SHA256（64 位 hex）、共 23 个输入文件（含 state/design/index/control）",
+     "values": {
+      "sha256": {
+       "control": "2effab4154a5fdff4d0e2273e1df88e7a03553e39eedda611913e1afe06c3344",
+       "design": "eb757dc906e60b0a6c6f4b9be0d82eaf7d4ee6da96df67710302dd4f59bc8889",
+       "index": "f3f4bbc0daa6e7caca97c688723f8543d4ee4ea202c38e773a9071f4bac4c30b",
+       "result_C01": "7d44943d41665b880a32164d3ee1b950956a54ff5801c213cf3f29f0c02ecd43",
+       "result_C02": "03ed8c7bc487180992110bc7ceb456ab89f5970b083f5a5765d5c464ba619889",
+       "result_C03": "35c7faee69da518dbaf047ab4ce3a95fbd20b2a9869f29a0302e18d200f4fce4",
+       "result_C04": "33dd6fa5749590b09938e329084ff28fdd536b524ce4be6d4b4bf14ec6c54096",
+       "result_C05": "4e0a123b47b2b2b9622533e0f081060273f94ece1c1e3d69e18934f6d24db533",
+       "result_C06": "d92e698db684f370abcda378751ce0e404e3d694d375264f3f283df53a9e1f94",
+       "result_C07": "511a71ac0a26a0d67205e351497131d476ce38e45ab4371560a4bc64ad906cbb",
+       "result_C08": "82bd48087d061baff85a47210f1448190ef0842dd4fe2562995e2b59140231af",
+       "result_C09": "177ff58cf4a76b37494b0e33d9b8f1545d30e29dc150e532d571e00ce4aec8fd",
+       "result_C10": "089d22374fe367f35b71ba13afed43fe1d237615eb502f41d90339784895476d",
+       "state_C01": "2e4d42433e14dcdcec95d2b1e100c969b5c78cf32f3f64a39fe838fc6829386f",
+       "state_C02": "155dac3b6fa61e56f9a1b41b5d3bcb71cfa2227550f31013bf8675c96c784fc5",
+       "state_C03": "50ffd6cc37d0cfde3268efdf07a7d02c53c7ddb5da896a4d6e880b396e58b9b8",
+       "state_C04": "b5ce5bb67fbdf9f610821d88b3b87b517525db95a0fe26e3160294e3e8d8a40a",
+       "state_C05": "24c075590f8cdcfe688cfe80d60c15c06e82eec9e2c6f86265af7e4910c4c997",
+       "state_C06": "bc899acc0830217f69603fca8a8dd454d8d5f493cf47927820d4f54c8a65cd3a",
+       "state_C07": "01e12bfd555339afe05cff30e1097c6ee3a5de6abd65977ab49e8a75485835d8",
+       "state_C08": "e1d661caef09c92c46ea95adfee924fac97d925093f884e202379e90c5597b1a",
+       "state_C09": "40b4a303cd2f3eb52ec4e21109585bcbbd137c8977fdc77655d7b92a79d54fc3",
+       "state_C10": "39873a9194a9c93bf4224b77d7abdb36cb16414867c71dcd7f663a9ca6aefe52"
+      }
+     }
+    },
+    {
+     "id": "11.3",
+     "name": "t65_analysis.json（可选）",
+     "status": "INFO",
+     "detail": "已生成，size=327472 bytes，sha256=333b95287528d87e",
+     "values": {
+      "meta": {
+       "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t65_analysis.json",
+       "exists": true,
+       "size_bytes": 327472,
+       "mtime": "2026-11-17T17:04:49",
+       "sha256": "333b95287528d87e979dc22843ad02cfe722663e3a88b3390f3eadc4964f3838"
+      }
+     }
+    },
+    {
+     "id": "11.4",
+     "name": "C10 与 T64 B11 确定性复现旁证（同条件同种子）",
+     "status": "INFO",
+     "detail": "T64 B11 seed=20261137 final_N=4185 公式数=24；C10 seed=20261137 final_N=4185 公式数=24；组成余弦=1.000000000；完全一致=True",
+     "values": {
+      "seed_t64": 20261137,
+      "seed_c10": 20261137,
+      "final_N_t64": 4185,
+      "final_N_c10": 4185,
+      "n_formula_t64": 24,
+      "n_formula_c10": 24,
+      "cosine": 1.0000000000000002,
+      "identical": true
+     }
+    }
+   ],
+   "status": "PASS"
+  }
+ ],
+ "summary": {
+  "PASS": 88,
+  "FAIL": 0,
+  "PENDING": 0,
+  "SKIP": 0,
+  "INFO": 3
+ },
+ "pending": [],
+ "notes": [],
+ "overall": "PASS",
+ "elapsed_s": 3.4
+}

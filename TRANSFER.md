@@ -1,6 +1,6 @@
 # 跨电脑交接方案（ALCHEMY）· 最新成果版
 
-> 最后更新：**2026-11-17**（T64 生态群系完成后整理）
+> 最后更新：**2026-11-17**（T65 生态群系第二轮完成后整理）
 > 工作目录：`G:\AI work\deepseek\work1\alchemy`
 > 交接入口：`HANDOFF.md`（最新结论以它为准）；本文件负责"如何迁移/同步"。
 > 远程仓库：**https://github.com/fpg9999/alchemy**
@@ -12,17 +12,17 @@
 | 项目 | 状态 |
 |---|---|
 | 本地仓库 | `G:\AI work\deepseek\work1\alchemy`，分支 `main` |
-| 远程仓库 | `https://github.com/fpg9999/alchemy`（**已推送，含 T01~T64 全部提交**） |
+| 远程仓库 | `https://github.com/fpg9999/alchemy`（**已推送，含 T01~T65 全部提交**） |
 | 认证 | Git Credential Manager 已存 `fpg9999` 的 GitHub 凭据（`cmdkey` 中 `git:https://github.com`）；`gh` CLI 未登录，但不影响 git push |
-| 推送 | **已完成**：`main → origin/main`（T62 `83429a0`/`39aeb50`/`9f88d9f`、T63 `233cb1c`/`8625a94`；T64 提交见 §6） |
-| 最新实验 | **T64 生态群系**（12 个元素社区 × 退火 + 25°C 恒温浮动；报告 `docs/T64_BIOMES.md`） |
-| 本地 commit 历史 | T01 → … → T60 总汇报 → T61 六边形摆放 → T62 等量价数 → T63 逐级价数滴定 → **T64 生态群系**（最新，见 §6） |
+| 推送 | **已完成**：`main → origin/main`（T62 `83429a0`/`39aeb50`/`9f88d9f`、T63 `233cb1c`/`8625a94`、T64 `fb1a77d`/`9322c02`/`e9c5f19`；T65 提交见 §6） |
+| 最新实验 | **T65 生态群系第二轮**（10 群系 × 每群系 ≥4 元素 × 退火 + 25°C 恒温浮动；报告 `docs/T65_BIOMES.md`） |
+| 本地 commit 历史 | T01 → … → T61 六边形摆放 → T62 等量价数 → T63 逐级价数滴定 → T64 生态群系（12 群系）→ **T65 生态群系第二轮（10 群系，最新，见 §6）** |
 
 > 如果是新电脑 clone：`git clone https://github.com/fpg9999/alchemy` → `python unpack_data.py` → 读 `HANDOFF.md`。
 
 ---
 
-## 1. 最新成果摘要（T55 → T64，全部 2D 粒子环境实验）
+## 1. 最新成果摘要（T55 → T65，全部 2D 粒子环境实验）
 
 | 实验 | 投料 / 环境 | 核心结论 |
 |---|---|---|
@@ -35,9 +35,25 @@
 | T61 | T59 终态 66 种 ≥5 原子大分子 | **66/66 严格六边形棋盘格摆放**（`embed_mol2`+`validate_place`）；13 张图 |
 | T62 | 九元素 120+120 种，三/二/一价等量 ≈33.4:33.3:33.3（9 元素各 ≈11.1%），L=60000，cap40，两阶段 | A 34,476 分子/43 种 → B 51,937 分子/230,046 原子/43 种；体系收敛到 `LF` + `OXCPWKA` 1:1 等摩尔双组分（A 88.5%、B 94.0% 分子）；二次投放只"提纯"不"洗牌"；cap40→60：A 43→41、B 43→38、max 40→19/20、capped 0.095%/0.063%→0 |
 | T63 | 29 种纯聚素 9,002 分子 → 0°C 整理后依次加 F2/A2/K2 各 8,000 分子（16,000 原子），L=30000，cap40，四阶段 | 终态 4/7/5/14 种分子式；**每次投放把上一终态完全熔断换代（retained=0）**，家族依次 OXC 盐 → F 端帽 → A 桥 → K 骨架；K 阶段 O≡K 把 F 挤回 F2（81.5% F 再生）+ 24 个 39/40 原子巨型；终态价数 32.4:35.1:32.5 回弹 ~1:1:1（印证 T62 吸引子）；capped 仅 K 阶段 0.435%，独立验证 39 项 PASS |
-| **T64（最新）** | **12 群系 × 3~9 种元素（双原子单质、每元素 2,000~4,000 原子），L=17,000~20,000，cap40；1000→25°C 退火 975 分钟 + 25°C 恒温浮动 600 分钟（日 ±8°C + 季节 ±3°C）** | **12 群系全部形成稳定群落**：B01/B02/B03 纯族→单一三元分子 OXC/PWL/KAF（99%+）；B04~B07/B12 配对双产物；**B08 形成 `O2X2P2W2K2` 十原子封闭簇（94.4%、9.73 原子/分子）**；B09/B10 三对双原子各 1/3（镜像）；**B11 复现 T62 的 `LF`+`OXCPWKA` 双组分（24 种/417 新物质）**；合计 59,714 分子/165,000 原子；**价数结构决定终态、元素身份只改符号**；独立验证 102 项 PASS |
+| **T65（最新）** | **10 群系，每群系 ≥4 种元素（4/4/4/4/5/5/6/7/8/9；双原子单质、每元素 2,000~3,500 原子），L=18,000~20,000，cap40；温度日程同 T64（1000→25°C 退火 975 分钟 + 25°C 恒温浮动 600 分钟）** | **产物整体更杂更大更多新物质**（对 T64：终态种数 12→16.8、聚合度 3.27→4.22、新物质 106→224、capped 490→1,381、混合家族 63.1%→92.8%）；但纯杂由价数互补与端帽决定：C03 仅 4 元素就 98.4% 单一 `XPLA`、C06 93.6% 原子锁进十原子簇 `O2X2P2K2A2`（9.70 原子/分子）、C07 93.9% `OXCPKA`；缺端帽的 C01/C05 出现 19~22 原子巨型簇（capped 4,247/7,313）；缺 F 的 C09"杂而不大"（26 种/488 新物质/max 17）；C10 与 T64 B11 同条件同种子（20261137）逐项一致（余弦 1.0000）；合计 44,979 分子/152,600 原子；独立验证 88 项 PASS |
+| T64（保留） | 12 群系 × 3~9 种元素（双原子单质、每元素 2,000~4,000 原子），L=17,000~20,000，cap40；1000→25°C 退火 975 分钟 + 25°C 恒温浮动 600 分钟（日 ±8°C + 季节 ±3°C） | 12 群系全部形成稳定群落：B01/B02/B03 纯族→单一三元分子 OXC/PWL/KAF（99%+）；B04~B07/B12 配对双产物；**B08 形成 `O2X2P2W2K2` 十原子封闭簇（94.4%、9.73 原子/分子）**；B09/B10 三对双原子各 1/3（镜像）；**B11 复现 T62 的 `LF`+`OXCPWKA` 双组分（24 种/417 新物质）**；合计 59,714 分子/165,000 原子；**价数结构决定终态、元素身份只改符号**；独立验证 102 项 PASS |
 
-最新核心资产（T64 新增）：
+最新核心资产（T65 新增）：
+
+- 代码：`t65_biomes.py`（10 群系主脚本，`--list/--biome/--all/--control`）、`t65_analysis.py`、
+  `t65_render.py`、`t65_verify.py`（复用引擎 `t55_kinetic_env.py` 的 `temp_schedule`）；
+- 数据：`t65_biomes.json`、`t65_biome_C01..C10_result.json`、`t65_biome_C01..C10_state.json`、
+  `t65_control_C01.json`、`t65_biome_index.json`、`t65_analysis.json`、`t65_verify.json`；
+- 报告：`docs/T65_BIOMES.md`、`docs/T65_VERIFY.md`；
+- 图：`images/t65_*.png`（14 张：13 主图 + T64 对比图）。
+
+**T65 一句话**：把元素数下限抬到 4 再做 10 个生态群系——产物整体变得更杂更大更多新物质，
+但"纯不纯"由**价数互补与端帽**决定而非元素数：价数链一次闭合就极纯（C03 98.4% XPLA、
+C06 93.6% 十原子簇、C07 93.9% OXCPKA），端帽缺失 + 骨架过量会长巨型簇（C01/C05），
+端帽缺失 + 骨架不足则"杂而不大"（C09 26 种/488 新物质）。F 的角色被精确定位为"把 L 从 L2
+拉出来"的端帽；C10 与 T64 B11 同条件同种子逐项复现（组成余弦 1.0000）。
+
+最新核心资产（T64，保留）：
 
 - 代码：`t64_biomes.py`（12 群系主脚本，`--list/--biome/--all/--control`）、`t64_analysis.py`、
   `t64_render.py`、`t64_verify.py`、`t64_hex_layouts.py`、`t64_hex_render.py`；
@@ -100,7 +116,7 @@ cd "G:\AI work\deepseek\work1\alchemy"
 
 git remote add origin https://github.com/fpg9999/alchemy.git   # 已配置过则跳过
 git add -A
-git commit -m "T64: 生态群系（12 群系 × 1000→25°C 退火 + 25°C 恒温浮动、家族/聚合度/特色群系分析、独立验证 102 PASS）"
+git commit -m "T65: 生态群系第二轮（10 群系 × 每群系 ≥4 元素、退火 + 25°C 恒温浮动、端帽/F 作用与 T64 对比、独立验证 88 PASS）"
 git push -u origin main
 ```
 
@@ -182,7 +198,8 @@ G:\AI work\deepseek\work1\alchemy_repo.bundle
 `t58_result.json`、`t59_phaseA_result.json`、`t59_phaseB_result.json`、`t59_phaseA_hf_result.json`、
 `t59_phaseB_hf_result.json`、`t62_phaseA_result.json`、`t62_phaseB_result.json`、
 `t62_phaseA_hf_result.json`、`t62_phaseB_hf_result.json`、`t63_phase1_result.json` ~
-`t63_phase4_result.json`、`t64_biome_B01_result.json` ~ `t64_biome_B12_result.json` 等，单个 20~28MB。
+`t63_phase4_result.json`、`t64_biome_B01_result.json` ~ `t64_biome_B12_result.json`、
+`t65_biome_C01_result.json` ~ `t65_biome_C10_result.json` 等，单个 20~28MB。
 其余 >16MB 的中间数据（`t12b_*` 等）仍走 `_data_gz/`。
 
 ---
@@ -197,8 +214,9 @@ G:\AI work\deepseek\work1\alchemy_repo.bundle
    python -c "import pot_v4; print(pot_v4.simulate(['O','K']))"
    ```
 5. 读 `HANDOFF.md` 第 0 节的新对话启动语；
-6. 需要最新实验时直接跑：`python t64_biomes.py`（或复用 `t64_analysis.py` / `t64_render.py` / `t64_verify.py`
-   / `t64_hex_layouts.py` / `t64_hex_render.py`）；T63 用 `python t63_staged.py --phase all`。
+6. 需要最新实验时直接跑：`python t65_biomes.py --all`（或复用 `t65_analysis.py` / `t65_render.py` /
+   `t65_verify.py`）；上一轮 T64 用 `python t64_biomes.py --all`（+ `t64_hex_*`）；T63 用
+   `python t63_staged.py --phase all`。
 
 ---
 

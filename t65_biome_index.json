@@ -1,0 +1,262 @@
+{
+ "experiment": "T65 生态群系",
+ "schedule": {
+  "model": "t65_biome",
+  "T0": 1000.0,
+  "T_mid": 25.0,
+  "anneal_minutes": 975,
+  "hold_minutes": 600,
+  "anneal_rate_c_per_min": 1.0,
+  "minutes": 1575,
+  "day_amp": 8.0,
+  "day_period": 240.0,
+  "year_amp": 3.0,
+  "year_period": 900.0,
+  "year_phase": 0.7,
+  "hold_T_min": 14.0,
+  "hold_T_max": 36.0
+ },
+ "biomes": [
+  {
+   "id": "C01",
+   "name": "双骨架平原",
+   "status": "done",
+   "file": "t65_biome_C01_result.json",
+   "elements": [
+    "O",
+    "P",
+    "X",
+    "W"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "runtime_s": 58.9,
+   "final_N": 6714,
+   "final_atoms": 14000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 1592133,
+    "incomplete": 2903,
+    "capped": 4247
+   }
+  },
+  {
+   "id": "C02",
+   "name": "散素配位谷",
+   "status": "done",
+   "file": "t65_biome_C02_result.json",
+   "elements": [
+    "O",
+    "K",
+    "C",
+    "L"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "runtime_s": 50.8,
+   "final_N": 6952,
+   "final_atoms": 14000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 1755113
+   }
+  },
+  {
+   "id": "C03",
+   "name": "动素配位台地",
+   "status": "done",
+   "file": "t65_biome_C03_result.json",
+   "elements": [
+    "P",
+    "X",
+    "A",
+    "L"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "runtime_s": 22.7,
+   "final_N": 3498,
+   "final_atoms": 14000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 726189
+   }
+  },
+  {
+   "id": "C04",
+   "name": "散素晶原",
+   "status": "done",
+   "file": "t65_biome_C04_result.json",
+   "elements": [
+    "K",
+    "A",
+    "F",
+    "X"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "runtime_s": 34.6,
+   "final_N": 5214,
+   "final_atoms": 14000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 1207409,
+    "incomplete": 346
+   }
+  },
+  {
+   "id": "C05",
+   "name": "聚动五元林",
+   "status": "done",
+   "file": "t65_biome_C05_result.json",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W"
+   ],
+   "L": 19000,
+   "total_atoms": 15000,
+   "runtime_s": 62.0,
+   "final_N": 7178,
+   "final_atoms": 15000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 1745692,
+    "incomplete": 1796,
+    "capped": 7313
+   }
+  },
+  {
+   "id": "C06",
+   "name": "三骨架麓",
+   "status": "done",
+   "file": "t65_biome_C06_result.json",
+   "elements": [
+    "O",
+    "P",
+    "K",
+    "X",
+    "A"
+   ],
+   "L": 19000,
+   "total_atoms": 15000,
+   "runtime_s": 18.8,
+   "final_N": 1546,
+   "final_atoms": 15000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 251544,
+    "incomplete": 30935,
+    "capped": 12
+   }
+  },
+  {
+   "id": "C07",
+   "name": "聚动散混合坡",
+   "status": "done",
+   "file": "t65_biome_C07_result.json",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "K",
+    "A"
+   ],
+   "L": 19000,
+   "total_atoms": 15000,
+   "runtime_s": 23.5,
+   "final_N": 2530,
+   "final_atoms": 15000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 496767,
+    "incomplete": 1238,
+    "capped": 603
+   }
+  },
+  {
+   "id": "C08",
+   "name": "七元雨林带",
+   "status": "done",
+   "file": "t65_biome_C08_result.json",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "L": 20000,
+   "total_atoms": 16800,
+   "runtime_s": 35.1,
+   "final_N": 3824,
+   "final_atoms": 16800,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 828142,
+    "incomplete": 6693,
+    "capped": 1
+   }
+  },
+  {
+   "id": "C09",
+   "name": "缺焰八元生态",
+   "status": "done",
+   "file": "t65_biome_C09_result.json",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "L": 20000,
+   "total_atoms": 16800,
+   "runtime_s": 39.2,
+   "final_N": 3338,
+   "final_atoms": 16800,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 750997,
+    "incomplete": 5756,
+    "capped": 1
+   }
+  },
+  {
+   "id": "C10",
+   "name": "九元大生态复现",
+   "status": "done",
+   "file": "t65_biome_C10_result.json",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "L": 20000,
+   "total_atoms": 18000,
+   "runtime_s": 46.4,
+   "final_N": 4185,
+   "final_atoms": 18000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 1020307,
+    "incomplete": 5059,
+    "capped": 1637
+   }
+  }
+ ]
+}
