@@ -209,7 +209,7 @@ G:\AI work\deepseek\work1\alchemy_repo.bundle
 | 推送时间 | 2026-11-17（T64 完成后追加推送） |
 | 远程 | `https://github.com/fpg9999/alchemy` |
 | 分支 | `main`（已建立 `origin/main` 跟踪） |
-| 远程 HEAD | T63 阶段：`8625a94`；**T64 提交待推送后回填** |
-| 本次提交 | T64 主提交（待推送后回填 hash） |
+| 远程 HEAD | T63 阶段：`8625a94`；**T64 主提交 `fb1a77d` 已推送**（`8625a94..fb1a77d  main -> main`） |
+| 本次提交 | `fb1a77d` — `T64: 生态群系（12 群系 × 1000→25°C 退火 + 25°C 恒温浮动、家族/聚合度/特色群系分析、独立验证 102 PASS）` |
 | 之前历史 | `8625a94`（T63 文档）→ `233cb1c`（T63 主提交）→ `9f88d9f`（T62 文档）→ `39aeb50` → `83429a0`（T62 主提交）→ `f01e88e`（T61）→ … → T01 全部已上传 |
-| 说明 | 日常同步继续用 `git add -A && git commit && git push origin main` |
+| 说明 | 日常同步继续用 `git add -A && git commit && git push origin main`；本环境偶发 `Failed to connect to github.com:443`（网络抖动，重试即成功） |
