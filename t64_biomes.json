@@ -1,0 +1,596 @@
+{
+ "experiment": "T64 生态群系（12 群系 × 退火 + 恒温浮动）",
+ "seed_base": 20261127,
+ "schedule": {
+  "model": "t64_biome",
+  "T0": 1000.0,
+  "T_mid": 25.0,
+  "anneal_minutes": 975,
+  "hold_minutes": 600,
+  "anneal_rate_c_per_min": 1.0,
+  "minutes": 1575,
+  "day_amp": 8.0,
+  "day_period": 240.0,
+  "year_amp": 3.0,
+  "year_period": 900.0,
+  "year_phase": 0.7,
+  "hold_T_min": 14.0,
+  "hold_T_max": 36.0
+ },
+ "cap": 40,
+ "event_limit": 30000,
+ "area_model": "count（A∝原子数，同 T57/T63）",
+ "snap_minutes": [
+  0,
+  25,
+  50,
+  100,
+  200,
+  300,
+  400,
+  500,
+  600,
+  700,
+  800,
+  900,
+  950,
+  975,
+  1000,
+  1050,
+  1100,
+  1150,
+  1200,
+  1300,
+  1400,
+  1500,
+  1560,
+  1570,
+  1574
+ ],
+ "biomes": [
+  {
+   "id": "B01",
+   "name": "聚素平原",
+   "tag": "对照组 / 经典聚素三元素",
+   "elements": [
+    "O",
+    "X",
+    "C"
+   ],
+   "n_elements": 3,
+   "trivalent": [
+    "O"
+   ],
+   "L": 17000,
+   "atoms_per_element": 4000,
+   "total_atoms": 12000,
+   "total_molecules": 6000,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 2000
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 2000
+    },
+    {
+     "desc": "C单质",
+     "formula": "C2",
+     "count": 2000
+    }
+   ],
+   "density_atoms_per_area": 4.152e-05
+  },
+  {
+   "id": "B02",
+   "name": "动素沼泽",
+   "tag": "纯动素三元素（P 三价 + W 二价 + L 一价）",
+   "elements": [
+    "P",
+    "W",
+    "L"
+   ],
+   "n_elements": 3,
+   "trivalent": [
+    "P"
+   ],
+   "L": 17000,
+   "atoms_per_element": 4000,
+   "total_atoms": 12000,
+   "total_molecules": 6000,
+   "load_spec": [
+    {
+     "desc": "P单质",
+     "formula": "P2",
+     "count": 2000
+    },
+    {
+     "desc": "W单质",
+     "formula": "W2",
+     "count": 2000
+    },
+    {
+     "desc": "L单质",
+     "formula": "L2",
+     "count": 2000
+    }
+   ],
+   "density_atoms_per_area": 4.152e-05
+  },
+  {
+   "id": "B03",
+   "name": "散素荒原",
+   "tag": "纯散素三元素（K 三价 + A 二价 + F 一价）",
+   "elements": [
+    "K",
+    "A",
+    "F"
+   ],
+   "n_elements": 3,
+   "trivalent": [
+    "K"
+   ],
+   "L": 17000,
+   "atoms_per_element": 4000,
+   "total_atoms": 12000,
+   "total_molecules": 6000,
+   "load_spec": [
+    {
+     "desc": "K单质",
+     "formula": "K2",
+     "count": 2000
+    },
+    {
+     "desc": "A单质",
+     "formula": "A2",
+     "count": 2000
+    },
+    {
+     "desc": "F单质",
+     "formula": "F2",
+     "count": 2000
+    }
+   ],
+   "density_atoms_per_area": 4.152e-05
+  },
+  {
+   "id": "B04",
+   "name": "氧晶气焰溪谷",
+   "tag": "混乱四元素（含 F 端帽）",
+   "elements": [
+    "O",
+    "X",
+    "A",
+    "F"
+   ],
+   "n_elements": 4,
+   "trivalent": [
+    "O"
+   ],
+   "L": 18000,
+   "atoms_per_element": 3500,
+   "total_atoms": 14000,
+   "total_molecules": 7000,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 1750
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 1750
+    },
+    {
+     "desc": "A单质",
+     "formula": "A2",
+     "count": 1750
+    },
+    {
+     "desc": "F单质",
+     "formula": "F2",
+     "count": 1750
+    }
+   ],
+   "density_atoms_per_area": 4.321e-05
+  },
+  {
+   "id": "B05",
+   "name": "双骨架丘陵",
+   "tag": "双三价（O+P）+ 二价 X",
+   "elements": [
+    "O",
+    "P",
+    "X"
+   ],
+   "n_elements": 3,
+   "trivalent": [
+    "O",
+    "P"
+   ],
+   "L": 17000,
+   "atoms_per_element": 4000,
+   "total_atoms": 12000,
+   "total_molecules": 6000,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 2000
+    },
+    {
+     "desc": "P单质",
+     "formula": "P2",
+     "count": 2000
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 2000
+    }
+   ],
+   "density_atoms_per_area": 4.152e-05
+  },
+  {
+   "id": "B06",
+   "name": "秩沌冰火山",
+   "tag": "双三价（O+K）+ 一价 C",
+   "elements": [
+    "O",
+    "K",
+    "C"
+   ],
+   "n_elements": 3,
+   "trivalent": [
+    "O",
+    "K"
+   ],
+   "L": 17000,
+   "atoms_per_element": 4000,
+   "total_atoms": 12000,
+   "total_molecules": 6000,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 2000
+    },
+    {
+     "desc": "K单质",
+     "formula": "K2",
+     "count": 2000
+    },
+    {
+     "desc": "C单质",
+     "formula": "C2",
+     "count": 2000
+    }
+   ],
+   "density_atoms_per_area": 4.152e-05
+  },
+  {
+   "id": "B07",
+   "name": "聚动混合林",
+   "tag": "聚素三元素 + 动素 P",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P"
+   ],
+   "n_elements": 4,
+   "trivalent": [
+    "O",
+    "P"
+   ],
+   "L": 18000,
+   "atoms_per_element": 3500,
+   "total_atoms": 14000,
+   "total_molecules": 7000,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 1750
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 1750
+    },
+    {
+     "desc": "C单质",
+     "formula": "C2",
+     "count": 1750
+    },
+    {
+     "desc": "P单质",
+     "formula": "P2",
+     "count": 1750
+    }
+   ],
+   "density_atoms_per_area": 4.321e-05
+  },
+  {
+   "id": "B08",
+   "name": "三骨架湖",
+   "tag": "三种三价元素齐全 + 二价 X/W",
+   "elements": [
+    "O",
+    "P",
+    "K",
+    "X",
+    "W"
+   ],
+   "n_elements": 5,
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 19000,
+   "atoms_per_element": 3000,
+   "total_atoms": 15000,
+   "total_molecules": 7500,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 1500
+    },
+    {
+     "desc": "P单质",
+     "formula": "P2",
+     "count": 1500
+    },
+    {
+     "desc": "K单质",
+     "formula": "K2",
+     "count": 1500
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 1500
+    },
+    {
+     "desc": "W单质",
+     "formula": "W2",
+     "count": 1500
+    }
+   ],
+   "density_atoms_per_area": 4.155e-05
+  },
+  {
+   "id": "B09",
+   "name": "六元雨林",
+   "tag": "聚素全 + 动素全，无散素",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L"
+   ],
+   "n_elements": 6,
+   "trivalent": [
+    "O",
+    "P"
+   ],
+   "L": 19000,
+   "atoms_per_element": 2500,
+   "total_atoms": 15000,
+   "total_molecules": 7500,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 1250
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 1250
+    },
+    {
+     "desc": "C单质",
+     "formula": "C2",
+     "count": 1250
+    },
+    {
+     "desc": "P单质",
+     "formula": "P2",
+     "count": 1250
+    },
+    {
+     "desc": "W单质",
+     "formula": "W2",
+     "count": 1250
+    },
+    {
+     "desc": "L单质",
+     "formula": "L2",
+     "count": 1250
+    }
+   ],
+   "density_atoms_per_area": 4.155e-05
+  },
+  {
+   "id": "B10",
+   "name": "双族海岸",
+   "tag": "聚素全 + 散素全，无动素",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "K",
+    "A",
+    "F"
+   ],
+   "n_elements": 6,
+   "trivalent": [
+    "O",
+    "K"
+   ],
+   "L": 19000,
+   "atoms_per_element": 2500,
+   "total_atoms": 15000,
+   "total_molecules": 7500,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 1250
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 1250
+    },
+    {
+     "desc": "C单质",
+     "formula": "C2",
+     "count": 1250
+    },
+    {
+     "desc": "K单质",
+     "formula": "K2",
+     "count": 1250
+    },
+    {
+     "desc": "A单质",
+     "formula": "A2",
+     "count": 1250
+    },
+    {
+     "desc": "F单质",
+     "formula": "F2",
+     "count": 1250
+    }
+   ],
+   "density_atoms_per_area": 4.155e-05
+  },
+  {
+   "id": "B11",
+   "name": "九元素大生态",
+   "tag": "九元素全（完整生态）",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n_elements": 9,
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 20000,
+   "atoms_per_element": 2000,
+   "total_atoms": 18000,
+   "total_molecules": 9000,
+   "load_spec": [
+    {
+     "desc": "O单质",
+     "formula": "O2",
+     "count": 1000
+    },
+    {
+     "desc": "X单质",
+     "formula": "X2",
+     "count": 1000
+    },
+    {
+     "desc": "C单质",
+     "formula": "C2",
+     "count": 1000
+    },
+    {
+     "desc": "P单质",
+     "formula": "P2",
+     "count": 1000
+    },
+    {
+     "desc": "W单质",
+     "formula": "W2",
+     "count": 1000
+    },
+    {
+     "desc": "L单质",
+     "formula": "L2",
+     "count": 1000
+    },
+    {
+     "desc": "K单质",
+     "formula": "K2",
+     "count": 1000
+    },
+    {
+     "desc": "A单质",
+     "formula": "A2",
+     "count": 1000
+    },
+    {
+     "desc": "F单质",
+     "formula": "F2",
+     "count": 1000
+    }
+   ],
+   "density_atoms_per_area": 4.5e-05
+  },
+  {
+   "id": "B12",
+   "name": "无氧双骨架地热泉",
+   "tag": "无氧（P+K 三价 + A 二价 + L 一价）",
+   "elements": [
+    "P",
+    "K",
+    "A",
+    "L"
+   ],
+   "n_elements": 4,
+   "trivalent": [
+    "P",
+    "K"
+   ],
+   "L": 18000,
+   "atoms_per_element": 3500,
+   "total_atoms": 14000,
+   "total_molecules": 7000,
+   "load_spec": [
+    {
+     "desc": "P单质",
+     "formula": "P2",
+     "count": 1750
+    },
+    {
+     "desc": "K单质",
+     "formula": "K2",
+     "count": 1750
+    },
+    {
+     "desc": "A单质",
+     "formula": "A2",
+     "count": 1750
+    },
+    {
+     "desc": "L单质",
+     "formula": "L2",
+     "count": 1750
+    }
+   ],
+   "density_atoms_per_area": 4.321e-05
+  }
+ ]
+}

@@ -1,0 +1,295 @@
+{
+ "experiment": "T64 生态群系",
+ "schedule": {
+  "model": "t64_biome",
+  "T0": 1000.0,
+  "T_mid": 25.0,
+  "anneal_minutes": 975,
+  "hold_minutes": 600,
+  "anneal_rate_c_per_min": 1.0,
+  "minutes": 1575,
+  "day_amp": 8.0,
+  "day_period": 240.0,
+  "year_amp": 3.0,
+  "year_period": 900.0,
+  "year_phase": 0.7,
+  "hold_T_min": 14.0,
+  "hold_T_max": 36.0
+ },
+ "biomes": [
+  {
+   "id": "B01",
+   "name": "聚素平原",
+   "status": "done",
+   "file": "t64_biome_B01_result.json",
+   "elements": [
+    "O",
+    "X",
+    "C"
+   ],
+   "L": 17000,
+   "total_atoms": 12000,
+   "runtime_s": 13.1,
+   "final_N": 3980,
+   "final_atoms": 12000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 824361,
+    "incomplete": 481
+   }
+  },
+  {
+   "id": "B02",
+   "name": "动素沼泽",
+   "status": "done",
+   "file": "t64_biome_B02_result.json",
+   "elements": [
+    "P",
+    "W",
+    "L"
+   ],
+   "L": 17000,
+   "total_atoms": 12000,
+   "runtime_s": 12.9,
+   "final_N": 3979,
+   "final_atoms": 12000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 830337,
+    "incomplete": 298
+   }
+  },
+  {
+   "id": "B03",
+   "name": "散素荒原",
+   "status": "done",
+   "file": "t64_biome_B03_result.json",
+   "elements": [
+    "K",
+    "A",
+    "F"
+   ],
+   "L": 17000,
+   "total_atoms": 12000,
+   "runtime_s": 13.2,
+   "final_N": 3979,
+   "final_atoms": 12000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 828621,
+    "incomplete": 289
+   }
+  },
+  {
+   "id": "B04",
+   "name": "氧晶气焰溪谷",
+   "status": "done",
+   "file": "t64_biome_B04_result.json",
+   "elements": [
+    "O",
+    "X",
+    "A",
+    "F"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "runtime_s": 36.6,
+   "final_N": 5213,
+   "final_atoms": 14000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 1198409,
+    "incomplete": 297
+   }
+  },
+  {
+   "id": "B05",
+   "name": "双骨架丘陵",
+   "status": "done",
+   "file": "t64_biome_B05_result.json",
+   "elements": [
+    "O",
+    "P",
+    "X"
+   ],
+   "L": 17000,
+   "total_atoms": 12000,
+   "runtime_s": 44.4,
+   "final_N": 5872,
+   "final_atoms": 12000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 1337281,
+    "incomplete": 1374,
+    "capped": 3
+   }
+  },
+  {
+   "id": "B06",
+   "name": "秩沌冰火山",
+   "status": "done",
+   "file": "t64_biome_B06_result.json",
+   "elements": [
+    "O",
+    "K",
+    "C"
+   ],
+   "L": 17000,
+   "total_atoms": 12000,
+   "runtime_s": 36.8,
+   "final_N": 5952,
+   "final_atoms": 12000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 1379503,
+    "incomplete": 1
+   }
+  },
+  {
+   "id": "B07",
+   "name": "聚动混合林",
+   "status": "done",
+   "file": "t64_biome_B07_result.json",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "runtime_s": 34.5,
+   "final_N": 5226,
+   "final_atoms": 14000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 1186985,
+    "incomplete": 179
+   }
+  },
+  {
+   "id": "B08",
+   "name": "三骨架湖",
+   "status": "done",
+   "file": "t64_biome_B08_result.json",
+   "elements": [
+    "O",
+    "P",
+    "K",
+    "X",
+    "W"
+   ],
+   "L": 19000,
+   "total_atoms": 15000,
+   "runtime_s": 17.7,
+   "final_N": 1542,
+   "final_atoms": 15000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 251145,
+    "incomplete": 30891,
+    "capped": 7
+   }
+  },
+  {
+   "id": "B09",
+   "name": "六元雨林",
+   "status": "done",
+   "file": "t64_biome_B09_result.json",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L"
+   ],
+   "L": 19000,
+   "total_atoms": 15000,
+   "runtime_s": 58.3,
+   "final_N": 7288,
+   "final_atoms": 15000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 1799752,
+    "incomplete": 1604,
+    "capped": 3275
+   }
+  },
+  {
+   "id": "B10",
+   "name": "双族海岸",
+   "status": "done",
+   "file": "t64_biome_B10_result.json",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "K",
+    "A",
+    "F"
+   ],
+   "L": 19000,
+   "total_atoms": 15000,
+   "runtime_s": 57.5,
+   "final_N": 7296,
+   "final_atoms": 15000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 1803223,
+    "incomplete": 1948,
+    "capped": 963
+   }
+  },
+  {
+   "id": "B11",
+   "name": "九元素大生态",
+   "status": "done",
+   "file": "t64_biome_B11_result.json",
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "L": 20000,
+   "total_atoms": 18000,
+   "runtime_s": 45.1,
+   "final_N": 4185,
+   "final_atoms": 18000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 1020307,
+    "incomplete": 5059,
+    "capped": 1637
+   }
+  },
+  {
+   "id": "B12",
+   "name": "无氧双骨架地热泉",
+   "status": "done",
+   "file": "t64_biome_B12_result.json",
+   "elements": [
+    "P",
+    "K",
+    "A",
+    "L"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "runtime_s": 33.9,
+   "final_N": 5202,
+   "final_atoms": 14000,
+   "final_T": 22.25,
+   "reaction_counts": {
+    "complete": 1185199,
+    "incomplete": 179
+   }
+  }
+ ]
+}

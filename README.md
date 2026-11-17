@@ -4,11 +4,13 @@
 
 **第一次接手请先读 [`HANDOFF.md`](HANDOFF.md)。**
 
-> **最新进展（2026-11-17）**：2D 粒子环境实验已完成 **T55~T63** 系列——T59 两阶段九元素
+> **最新进展（2026-11-17）**：2D 粒子环境实验已完成 **T55~T64** 系列——T59 两阶段九元素
 > （三价最多）、T62 两阶段九元素（三/二/一价等量，收敛到 `OXCPWKA`+`LF` 1:1 双组分）、
-> **T63 聚素熔体逐级价数滴定**（纯聚素退火 → 加 F2 → 加 A2 → 加 K2，每次投放都整体换代，
-> 产物家族依次 F 端帽/A 桥/K 骨架，K 阶段 F 被 O≡K 挤回 F2）；T61/T62/T63 另有全部大分子的
-> 严格六边形棋盘格摆放图。详见 [`docs/T63_STAGED_TITRATION.md`](docs/T63_STAGED_TITRATION.md)
+> T63 聚素熔体逐级价数滴定（纯聚素退火 → 加 F2 → 加 A2 → 加 K2，每次投放都整体换代）、
+> **T64 生态群系**（12 个"元素社区"：3~9 种元素、1000→25°C 退火 + 25°C 恒温浮动，
+> 纯族收敛为单一三元分子，B08 形成 `O2X2P2W2K2` 十原子簇，B11 复现 `LF`+`OXCPWKA` 双组分）；
+> T61/T62/T63/T64 另有全部大分子的严格六边形棋盘格摆放图。详见
+> [`docs/T64_BIOMES.md`](docs/T64_BIOMES.md)、[`docs/T63_STAGED_TITRATION.md`](docs/T63_STAGED_TITRATION.md)
 > 与 [`docs/T62_EQUAL_VALENCE.md`](docs/T62_EQUAL_VALENCE.md)、[`docs/T60_SERIES_SUMMARY.md`](docs/T60_SERIES_SUMMARY.md)。
 
 ## 快速开始

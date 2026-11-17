@@ -210,10 +210,14 @@ class KineticEnvironment:
                  event_limit=EVENT_SAMPLE_LIMIT, snap_minutes=None, t0=T0,
                  load_spec=None, known_formulas=None, color_mode="elementset",
                  area_model="uniform", weighted_partner=False,
-                 max_reaction_atoms=None, seed_particles=None):
+                 max_reaction_atoms=None, seed_particles=None,
+                 temp_schedule=None):
         self.rng = random.Random(seed)
         self.minutes = minutes
         self.t0 = t0
+        # T64 生态群系：可选自定义温度日程（t -> °C）。None 时沿用 T55 线性退火
+        # T(t) = max(T_END, t0 - t)。schedule 函数可带 .info dict（写入 config）。
+        self.temp_schedule = temp_schedule
         self.n_batch = n_batch
         self.load_spec = list(load_spec) if load_spec is not None else default_load_spec(n_batch)
         self.known_override = known_formulas
@@ -528,7 +532,11 @@ class KineticEnvironment:
         t_start = time.time()
         log_every = 50
         for t in range(self.minutes):
-            T = max(T_END, self.t0 - t)
+            if self.temp_schedule is None:
+                T = max(T_END, self.t0 - t)
+            else:
+                # 自定义日程（T64 群系：1000→T_mid 退火 + 恒温上下浮动）
+                T = max(0.0, float(self.temp_schedule(t)))
             n, speed_sum = self.move_all()
             if n <= 1:
                 self.time_series.append(self._ts_row(t, T, 0))
@@ -742,11 +750,17 @@ class KineticEnvironment:
             "seed": self.seed,
             "mean_free_path0": round(mean_free_path(self.n0), 2),
         }
+        if self.temp_schedule is not None:
+            cfg["temp_schedule"] = getattr(self.temp_schedule, "info", None) or {}
+            cfg["T_end"] = "custom"
+        final_T = (round(max(0.0, float(self.temp_schedule(self.minutes - 1))), 2)
+                   if self.temp_schedule is not None
+                   else max(T_END, self.t0 - self.minutes))
         return {
             "config": cfg,
             "summary": {
                 "runtime_s": round(time.time() - t_start, 1),
-                "final_T": max(T_END, self.t0 - self.minutes),
+                "final_T": final_T,
                 "final_N": len(self.particles),
                 "final_atoms": self.atom_count,
                 "final_path_D": round(self.path_sum / DIAG, 1),

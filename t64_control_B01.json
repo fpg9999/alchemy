@@ -1,0 +1,330 @@
+{
+ "config": {
+  "minutes": 500,
+  "n_particles": 6000,
+  "v0": 44901.9,
+  "radius": 0.2,
+  "eps": 0.002,
+  "L": 17000.0,
+  "seed": 20261127,
+  "chemical_reactions": false,
+  "area_model": "count",
+  "area_formula": "A = π·RADIUS²·(n_atoms/2)",
+  "mean_free_path": 85147.44,
+  "design": {
+   "n": 6000,
+   "r_bar": 0.2,
+   "r_max": 0.2,
+   "lambda_min": 85147.441568,
+   "lambda_mean": 85147.441568,
+   "target_crossings": 750,
+   "v0": 44901.879618
+  },
+  "load_spec": [
+   {
+    "tag": "群系底物",
+    "desc": "O单质",
+    "formula": "O2",
+    "count": 2000,
+    "atoms": 2
+   },
+   {
+    "tag": "群系底物",
+    "desc": "X单质",
+    "formula": "X2",
+    "count": 2000,
+    "atoms": 2
+   },
+   {
+    "tag": "群系底物",
+    "desc": "C单质",
+    "formula": "C2",
+    "count": 2000,
+    "atoms": 2
+   }
+  ],
+  "experiment": "T64 B01 无化学对照：O/X/C 双原子单质、L=17000、500 分钟"
+ },
+ "stats": {
+  "n": 6000,
+  "min": 706.5,
+  "p1": 725.2,
+  "p5": 732.7,
+  "median": 750.4,
+  "p95": 767.8,
+  "max": 789.8,
+  "fraction_ge_500": 1.0,
+  "mean": 750.2
+ },
+ "by_size": {
+  "2": {
+   "n": 6000,
+   "min": 706.5,
+   "median": 750.4,
+   "max": 789.8
+  }
+ },
+ "timeseries": [
+  {
+   "t": 0,
+   "path_D_mean": 1.87,
+   "speed_mean": 44901.9
+  },
+  {
+   "t": 10,
+   "path_D_mean": 20.44,
+   "speed_mean": 44434.7
+  },
+  {
+   "t": 20,
+   "path_D_mean": 38.81,
+   "speed_mean": 43968.2
+  },
+  {
+   "t": 30,
+   "path_D_mean": 57.0,
+   "speed_mean": 43521.0
+  },
+  {
+   "t": 40,
+   "path_D_mean": 75.0,
+   "speed_mean": 43077.2
+  },
+  {
+   "t": 50,
+   "path_D_mean": 92.82,
+   "speed_mean": 42642.7
+  },
+  {
+   "t": 60,
+   "path_D_mean": 110.46,
+   "speed_mean": 42221.0
+  },
+  {
+   "t": 70,
+   "path_D_mean": 127.92,
+   "speed_mean": 41799.7
+  },
+  {
+   "t": 80,
+   "path_D_mean": 145.22,
+   "speed_mean": 41392.1
+  },
+  {
+   "t": 90,
+   "path_D_mean": 162.34,
+   "speed_mean": 40994.9
+  },
+  {
+   "t": 100,
+   "path_D_mean": 179.3,
+   "speed_mean": 40602.6
+  },
+  {
+   "t": 110,
+   "path_D_mean": 196.1,
+   "speed_mean": 40218.6
+  },
+  {
+   "t": 120,
+   "path_D_mean": 212.75,
+   "speed_mean": 39841.3
+  },
+  {
+   "t": 130,
+   "path_D_mean": 229.23,
+   "speed_mean": 39473.6
+  },
+  {
+   "t": 140,
+   "path_D_mean": 245.57,
+   "speed_mean": 39110.9
+  },
+  {
+   "t": 150,
+   "path_D_mean": 261.75,
+   "speed_mean": 38756.9
+  },
+  {
+   "t": 160,
+   "path_D_mean": 277.8,
+   "speed_mean": 38406.7
+  },
+  {
+   "t": 170,
+   "path_D_mean": 293.69,
+   "speed_mean": 38063.0
+  },
+  {
+   "t": 180,
+   "path_D_mean": 309.45,
+   "speed_mean": 37728.6
+  },
+  {
+   "t": 190,
+   "path_D_mean": 325.06,
+   "speed_mean": 37398.0
+  },
+  {
+   "t": 200,
+   "path_D_mean": 340.54,
+   "speed_mean": 37069.1
+  },
+  {
+   "t": 210,
+   "path_D_mean": 355.89,
+   "speed_mean": 36751.1
+  },
+  {
+   "t": 220,
+   "path_D_mean": 371.1,
+   "speed_mean": 36436.9
+  },
+  {
+   "t": 230,
+   "path_D_mean": 386.19,
+   "speed_mean": 36131.4
+  },
+  {
+   "t": 240,
+   "path_D_mean": 401.15,
+   "speed_mean": 35826.2
+  },
+  {
+   "t": 250,
+   "path_D_mean": 415.98,
+   "speed_mean": 35524.3
+  },
+  {
+   "t": 260,
+   "path_D_mean": 430.69,
+   "speed_mean": 35229.0
+  },
+  {
+   "t": 270,
+   "path_D_mean": 445.28,
+   "speed_mean": 34939.2
+  },
+  {
+   "t": 280,
+   "path_D_mean": 459.74,
+   "speed_mean": 34657.5
+  },
+  {
+   "t": 290,
+   "path_D_mean": 474.1,
+   "speed_mean": 34379.4
+  },
+  {
+   "t": 300,
+   "path_D_mean": 488.33,
+   "speed_mean": 34106.2
+  },
+  {
+   "t": 310,
+   "path_D_mean": 502.46,
+   "speed_mean": 33837.3
+  },
+  {
+   "t": 320,
+   "path_D_mean": 516.47,
+   "speed_mean": 33570.0
+  },
+  {
+   "t": 330,
+   "path_D_mean": 530.37,
+   "speed_mean": 33308.8
+  },
+  {
+   "t": 340,
+   "path_D_mean": 544.17,
+   "speed_mean": 33052.7
+  },
+  {
+   "t": 350,
+   "path_D_mean": 557.86,
+   "speed_mean": 32798.2
+  },
+  {
+   "t": 360,
+   "path_D_mean": 571.45,
+   "speed_mean": 32548.2
+  },
+  {
+   "t": 370,
+   "path_D_mean": 584.93,
+   "speed_mean": 32302.8
+  },
+  {
+   "t": 380,
+   "path_D_mean": 598.31,
+   "speed_mean": 32061.9
+  },
+  {
+   "t": 390,
+   "path_D_mean": 611.59,
+   "speed_mean": 31820.9
+  },
+  {
+   "t": 400,
+   "path_D_mean": 624.77,
+   "speed_mean": 31586.5
+  },
+  {
+   "t": 410,
+   "path_D_mean": 637.86,
+   "speed_mean": 31353.4
+  },
+  {
+   "t": 420,
+   "path_D_mean": 650.84,
+   "speed_mean": 31125.1
+  },
+  {
+   "t": 430,
+   "path_D_mean": 663.74,
+   "speed_mean": 30899.4
+  },
+  {
+   "t": 440,
+   "path_D_mean": 676.54,
+   "speed_mean": 30674.5
+  },
+  {
+   "t": 450,
+   "path_D_mean": 689.25,
+   "speed_mean": 30455.7
+  },
+  {
+   "t": 460,
+   "path_D_mean": 701.87,
+   "speed_mean": 30243.2
+  },
+  {
+   "t": 470,
+   "path_D_mean": 714.4,
+   "speed_mean": 30027.4
+  },
+  {
+   "t": 480,
+   "path_D_mean": 726.84,
+   "speed_mean": 29815.2
+  },
+  {
+   "t": 490,
+   "path_D_mean": 739.19,
+   "speed_mean": 29607.8
+  }
+ ],
+ "runtime_s": 2.3,
+ "biome": {
+  "id": "B01",
+  "name": "聚素平原",
+  "L": 17000,
+  "elements": [
+   "O",
+   "X",
+   "C"
+  ]
+ }
+}
