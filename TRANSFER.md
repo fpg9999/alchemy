@@ -14,7 +14,7 @@
 | 本地仓库 | `G:\AI work\deepseek\work1\alchemy`，分支 `main` |
 | 远程仓库 | `https://github.com/fpg9999/alchemy`（**已推送，含 T01~T62 全部提交**） |
 | 认证 | Git Credential Manager 已存 `fpg9999` 的 GitHub 凭据（`cmdkey` 中 `git:https://github.com`）；`gh` CLI 未登录，但不影响 git push |
-| 推送 | **已完成**：`main → origin/main`，HEAD = `83429a0`（2026-11-17） |
+| 推送 | **已完成**：`main → origin/main`（首次推送 T62 提交 `83429a0`，随后本文件更新提交 `39aeb50`；最新 HEAD 以 GitHub 页面为准） |
 | 最新实验 | **T62 等量价数两阶段实验**（九元素、三/二/一价≈1:1:1、0°C 后二次投放；报告 `docs/T62_EQUAL_VALENCE.md`） |
 | 本地 commit 历史 | T01 → … → T59 → T60 总汇报 → T61 六边形摆放 → **T62 等量价数**（最新，`83429a0`） |
 
@@ -173,7 +173,7 @@ G:\AI work\deepseek\work1\alchemy_repo.bundle
 | 推送时间 | 2026-11-17（T62 完成后整理推送） |
 | 远程 | `https://github.com/fpg9999/alchemy` |
 | 分支 | `main`（首次推送，已建立 `origin/main` 跟踪） |
-| 远程 HEAD | `83429a079690df8c1c19c3525a4b502fa109b029`（`83429a0`） |
+| 远程 HEAD | 首次推送：`83429a079690df8c1c19c3525a4b502fa109b029`（`83429a0`）；随后文档更新：`39aeb50`（`docs: TRANSFER 记录 T62 推送完成`）；最新以 GitHub 页面为准 |
 | 本次提交 | `T62: 九元素等量价数两阶段实验…`（44 files，+6,896,564 行/88MB 数据与图） |
 | 之前历史 | `f01e88e`（T61 六边形摆放）→ `06888e4`（T60 全系列汇报）→ T59/T58/… 全部随本次推送一并上传 |
 | 说明 | 首次把本地 T01~T62 全部提交推送到远程；后续日常同步用 `git pull` / `git push origin main` |
