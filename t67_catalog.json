@@ -1,0 +1,2111 @@
+{
+ "meta": {
+  "experiment": "T67",
+  "title": "生态群系总目录（T64 12 + T65 10 + T66 10 = 32 群系）",
+  "date": "2026-11-17",
+  "category_rule": "top1_share>=0.90 A单主；0.50~0.90 B主辅；0.40~0.50 C双主；<0.40 D多主",
+  "note": "聚合度=终态原子/分子；专一性=top1分子数/终态分子数；capped 为合并>40原子弹性截断"
+ },
+ "category_counts": {
+  "A": 10,
+  "B": 11,
+  "C": 7,
+  "D": 4
+ },
+ "round_counts": {
+  "T64": 12,
+  "T65": 10,
+  "T66": 10
+ },
+ "biomes": [
+  {
+   "round": "T64",
+   "id": "B01",
+   "name": "聚素平原",
+   "tag": "对照组 / 经典聚素三元素",
+   "n_elements": 3,
+   "elements": [
+    "O",
+    "X",
+    "C"
+   ],
+   "trivalent": [
+    "O"
+   ],
+   "L": 17000,
+   "total_atoms": 12000,
+   "final_N": 3980,
+   "species": 9,
+   "mean_atoms": 3.015,
+   "max_atoms": 8,
+   "capped": 0,
+   "capped_share": 0.0,
+   "new_substances": 0,
+   "effective_species": 1.048,
+   "top1": "OXC",
+   "top1_count": 3957,
+   "top1_share": 0.994221,
+   "groups": {
+    "poly": {
+     "molecules": 3980,
+     "atoms": 12000,
+     "molecule_share": 1.0,
+     "atoms_share": 1.0
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    }
+   },
+   "hold_activity": 0.012,
+   "trivalent_util": 1.0,
+   "conversion": 1.0,
+   "runtime_s": 13.1,
+   "cat": "A",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T64",
+   "id": "B02",
+   "name": "动素沼泽",
+   "tag": "纯动素三元素（P 三价 + W 二价 + L 一价）",
+   "n_elements": 3,
+   "elements": [
+    "P",
+    "W",
+    "L"
+   ],
+   "trivalent": [
+    "P"
+   ],
+   "L": 17000,
+   "total_atoms": 12000,
+   "final_N": 3979,
+   "species": 9,
+   "mean_atoms": 3.016,
+   "max_atoms": 8,
+   "capped": 0,
+   "capped_share": 0.0,
+   "new_substances": 0,
+   "effective_species": 1.048,
+   "top1": "PWL",
+   "top1_count": 3956,
+   "top1_share": 0.99422,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 3979,
+     "atoms": 12000,
+     "molecule_share": 1.0,
+     "atoms_share": 1.0
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    }
+   },
+   "hold_activity": 0.008,
+   "trivalent_util": 1.0,
+   "conversion": 1.0,
+   "runtime_s": 12.9,
+   "cat": "A",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T64",
+   "id": "B03",
+   "name": "散素荒原",
+   "tag": "纯散素三元素（K 三价 + A 二价 + F 一价）",
+   "n_elements": 3,
+   "elements": [
+    "K",
+    "A",
+    "F"
+   ],
+   "trivalent": [
+    "K"
+   ],
+   "L": 17000,
+   "total_atoms": 12000,
+   "final_N": 3979,
+   "species": 9,
+   "mean_atoms": 3.016,
+   "max_atoms": 8,
+   "capped": 0,
+   "capped_share": 0.0,
+   "new_substances": 0,
+   "effective_species": 1.054,
+   "top1": "KAF",
+   "top1_count": 3953,
+   "top1_share": 0.993466,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 3979,
+     "atoms": 12000,
+     "molecule_share": 1.0,
+     "atoms_share": 1.0
+    },
+    "mixed": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    }
+   },
+   "hold_activity": 0.005,
+   "trivalent_util": 1.0,
+   "conversion": 1.0,
+   "runtime_s": 13.2,
+   "cat": "A",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T64",
+   "id": "B04",
+   "name": "氧晶气焰溪谷",
+   "tag": "混乱四元素（含 F 端帽）",
+   "n_elements": 4,
+   "elements": [
+    "O",
+    "X",
+    "A",
+    "F"
+   ],
+   "trivalent": [
+    "O"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "final_N": 5213,
+   "species": 9,
+   "mean_atoms": 2.686,
+   "max_atoms": 7,
+   "capped": 0,
+   "capped_share": 0.0,
+   "new_substances": 3,
+   "effective_species": 1.981,
+   "top1": "OAF",
+   "top1_count": 3452,
+   "top1_share": 0.662191,
+   "groups": {
+    "poly": {
+     "molecules": 1729,
+     "atoms": 3460,
+     "molecule_share": 0.331671,
+     "atoms_share": 0.247143
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 3484,
+     "atoms": 10540,
+     "molecule_share": 0.668329,
+     "atoms_share": 0.752857
+    }
+   },
+   "hold_activity": 0.01,
+   "trivalent_util": 1.0,
+   "conversion": 0.752857,
+   "runtime_s": 36.6,
+   "cat": "B",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T64",
+   "id": "B05",
+   "name": "双骨架丘陵",
+   "tag": "双三价（O+P）+ 二价 X",
+   "n_elements": 3,
+   "elements": [
+    "O",
+    "P",
+    "X"
+   ],
+   "trivalent": [
+    "O",
+    "P"
+   ],
+   "L": 17000,
+   "total_atoms": 12000,
+   "final_N": 5872,
+   "species": 5,
+   "mean_atoms": 2.044,
+   "max_atoms": 17,
+   "capped": 3,
+   "capped_share": 2e-06,
+   "new_substances": 4,
+   "effective_species": 1.93,
+   "top1": "OP",
+   "top1_count": 3910,
+   "top1_share": 0.665872,
+   "groups": {
+    "poly": {
+     "molecules": 1944,
+     "atoms": 3888,
+     "molecule_share": 0.331063,
+     "atoms_share": 0.324
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 3928,
+     "atoms": 8112,
+     "molecule_share": 0.668937,
+     "atoms_share": 0.676
+    }
+   },
+   "hold_activity": 0.007,
+   "trivalent_util": 1.0,
+   "conversion": 0.676,
+   "runtime_s": 44.4,
+   "cat": "B",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T64",
+   "id": "B06",
+   "name": "秩沌冰火山",
+   "tag": "双三价（O+K）+ 一价 C",
+   "n_elements": 3,
+   "elements": [
+    "O",
+    "K",
+    "C"
+   ],
+   "trivalent": [
+    "O",
+    "K"
+   ],
+   "L": 17000,
+   "total_atoms": 12000,
+   "final_N": 5952,
+   "species": 4,
+   "mean_atoms": 2.016,
+   "max_atoms": 8,
+   "capped": 0,
+   "capped_share": 0.0,
+   "new_substances": 2,
+   "effective_species": 1.925,
+   "top1": "OK",
+   "top1_count": 3960,
+   "top1_share": 0.665323,
+   "groups": {
+    "poly": {
+     "molecules": 1976,
+     "atoms": 3952,
+     "molecule_share": 0.331989,
+     "atoms_share": 0.329333
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 3976,
+     "atoms": 8048,
+     "molecule_share": 0.668011,
+     "atoms_share": 0.670667
+    }
+   },
+   "hold_activity": 0.002,
+   "trivalent_util": 1.0,
+   "conversion": 0.670667,
+   "runtime_s": 36.8,
+   "cat": "B",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T64",
+   "id": "B07",
+   "name": "聚动混合林",
+   "tag": "聚素三元素 + 动素 P",
+   "n_elements": 4,
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P"
+   ],
+   "trivalent": [
+    "O",
+    "P"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "final_N": 5226,
+   "species": 9,
+   "mean_atoms": 2.679,
+   "max_atoms": 11,
+   "capped": 0,
+   "capped_share": 0.0,
+   "new_substances": 55,
+   "effective_species": 1.987,
+   "top1": "OP",
+   "top1_count": 3470,
+   "top1_share": 0.663988,
+   "groups": {
+    "poly": {
+     "molecules": 1744,
+     "atoms": 6950,
+     "molecule_share": 0.333716,
+     "atoms_share": 0.496429
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 3482,
+     "atoms": 7050,
+     "molecule_share": 0.666284,
+     "atoms_share": 0.503571
+    }
+   },
+   "hold_activity": 0.023,
+   "trivalent_util": 1.0,
+   "conversion": 0.999,
+   "runtime_s": 34.5,
+   "cat": "B",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T64",
+   "id": "B08",
+   "name": "三骨架湖",
+   "tag": "三种三价元素齐全 + 二价 X/W",
+   "n_elements": 5,
+   "elements": [
+    "O",
+    "P",
+    "K",
+    "X",
+    "W"
+   ],
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 19000,
+   "total_atoms": 15000,
+   "final_N": 1542,
+   "species": 17,
+   "mean_atoms": 9.728,
+   "max_atoms": 19,
+   "capped": 7,
+   "capped_share": 2.5e-05,
+   "new_substances": 298,
+   "effective_species": 1.398,
+   "top1": "O2X2P2W2K2",
+   "top1_count": 1456,
+   "top1_share": 0.944228,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 2,
+     "atoms": 4,
+     "molecule_share": 0.001297,
+     "atoms_share": 0.000267
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 1540,
+     "atoms": 14996,
+     "molecule_share": 0.998703,
+     "atoms_share": 0.999733
+    }
+   },
+   "hold_activity": 0.105,
+   "trivalent_util": 1.0,
+   "conversion": 0.999733,
+   "runtime_s": 17.7,
+   "cat": "A",
+   "cluster": true,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T64",
+   "id": "B09",
+   "name": "六元雨林",
+   "tag": "聚素全 + 动素全，无散素",
+   "n_elements": 6,
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L"
+   ],
+   "trivalent": [
+    "O",
+    "P"
+   ],
+   "L": 19000,
+   "total_atoms": 15000,
+   "final_N": 7288,
+   "species": 20,
+   "mean_atoms": 2.058,
+   "max_atoms": 39,
+   "capped": 3275,
+   "capped_share": 0.001815,
+   "new_substances": 233,
+   "effective_species": 3.178,
+   "top1": "CL",
+   "top1_count": 2448,
+   "top1_share": 0.335895,
+   "groups": {
+    "poly": {
+     "molecules": 15,
+     "atoms": 30,
+     "molecule_share": 0.002058,
+     "atoms_share": 0.002
+    },
+    "dyn": {
+     "molecules": 15,
+     "atoms": 30,
+     "molecule_share": 0.002058,
+     "atoms_share": 0.002
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 7258,
+     "atoms": 14940,
+     "molecule_share": 0.995884,
+     "atoms_share": 0.996
+    }
+   },
+   "hold_activity": 0.022,
+   "trivalent_util": 1.0,
+   "conversion": 0.996,
+   "runtime_s": 58.3,
+   "cat": "D",
+   "cluster": false,
+   "capped_heavy": true,
+   "mixed_share": null
+  },
+  {
+   "round": "T64",
+   "id": "B10",
+   "name": "双族海岸",
+   "tag": "聚素全 + 散素全，无动素",
+   "n_elements": 6,
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "K",
+    "A",
+    "F"
+   ],
+   "trivalent": [
+    "O",
+    "K"
+   ],
+   "L": 19000,
+   "total_atoms": 15000,
+   "final_N": 7296,
+   "species": 20,
+   "mean_atoms": 2.056,
+   "max_atoms": 39,
+   "capped": 963,
+   "capped_share": 0.000533,
+   "new_substances": 213,
+   "effective_species": 3.174,
+   "top1": "CF",
+   "top1_count": 2452,
+   "top1_share": 0.336075,
+   "groups": {
+    "poly": {
+     "molecules": 14,
+     "atoms": 28,
+     "molecule_share": 0.001919,
+     "atoms_share": 0.001867
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 14,
+     "atoms": 28,
+     "molecule_share": 0.001919,
+     "atoms_share": 0.001867
+    },
+    "mixed": {
+     "molecules": 7268,
+     "atoms": 14944,
+     "molecule_share": 0.996162,
+     "atoms_share": 0.996267
+    }
+   },
+   "hold_activity": 0.022,
+   "trivalent_util": 1.0,
+   "conversion": 0.996267,
+   "runtime_s": 57.5,
+   "cat": "D",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T64",
+   "id": "B11",
+   "name": "九元素大生态",
+   "tag": "九元素全（完整生态）",
+   "n_elements": 9,
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 20000,
+   "total_atoms": 18000,
+   "final_N": 4185,
+   "species": 24,
+   "mean_atoms": 4.301,
+   "max_atoms": 39,
+   "capped": 1637,
+   "capped_share": 0.001594,
+   "new_substances": 417,
+   "effective_species": 3.924,
+   "top1": "OXCPWKA",
+   "top1_count": 1772,
+   "top1_share": 0.423417,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 119,
+     "atoms": 238,
+     "molecule_share": 0.028435,
+     "atoms_share": 0.013222
+    },
+    "scat": {
+     "molecules": 34,
+     "atoms": 68,
+     "molecule_share": 0.008124,
+     "atoms_share": 0.003778
+    },
+    "mixed": {
+     "molecules": 4032,
+     "atoms": 17694,
+     "molecule_share": 0.963441,
+     "atoms_share": 0.983
+    }
+   },
+   "hold_activity": 1.205,
+   "trivalent_util": 1.0,
+   "conversion": 0.983,
+   "runtime_s": 45.1,
+   "cat": "C",
+   "cluster": false,
+   "capped_heavy": true,
+   "mixed_share": null
+  },
+  {
+   "round": "T64",
+   "id": "B12",
+   "name": "无氧双骨架地热泉",
+   "tag": "无氧（P+K 三价 + A 二价 + L 一价）",
+   "n_elements": 4,
+   "elements": [
+    "P",
+    "K",
+    "A",
+    "L"
+   ],
+   "trivalent": [
+    "P",
+    "K"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "final_N": 5202,
+   "species": 9,
+   "mean_atoms": 2.691,
+   "max_atoms": 12,
+   "capped": 0,
+   "capped_share": 0.0,
+   "new_substances": 52,
+   "effective_species": 1.978,
+   "top1": "PK",
+   "top1_count": 3450,
+   "top1_share": 0.663206,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 4,
+     "atoms": 8,
+     "molecule_share": 0.000769,
+     "atoms_share": 0.000571
+    },
+    "mixed": {
+     "molecules": 5198,
+     "atoms": 13992,
+     "molecule_share": 0.999231,
+     "atoms_share": 0.999429
+    }
+   },
+   "hold_activity": 0.013,
+   "trivalent_util": 1.0,
+   "conversion": 0.999429,
+   "runtime_s": 33.9,
+   "cat": "B",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T65",
+   "id": "C01",
+   "name": "双骨架平原",
+   "tag": "两种三价（O/P）+ 两种二价（X/W），无低价端帽",
+   "n_elements": 4,
+   "elements": [
+    "O",
+    "P",
+    "X",
+    "W"
+   ],
+   "trivalent": [
+    "O",
+    "P"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "final_N": 6714,
+   "species": 16,
+   "mean_atoms": 2.085,
+   "max_atoms": 39,
+   "capped": 4247,
+   "capped_share": 0.002656,
+   "new_substances": 326,
+   "effective_species": 2.088,
+   "top1": "OP",
+   "top1_count": 3341,
+   "top1_share": 0.497617,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 6714,
+     "atoms": 14000,
+     "molecule_share": 1.0,
+     "atoms_share": 1.0
+    }
+   },
+   "hold_activity": 0.013,
+   "trivalent_util": 1.0,
+   "conversion": 1.0,
+   "runtime_s": 58.9,
+   "cat": "C",
+   "cluster": false,
+   "capped_heavy": true,
+   "mixed_share": null
+  },
+  {
+   "round": "T65",
+   "id": "C02",
+   "name": "散素配位谷",
+   "tag": "两种三价（O/K）+ 两种一价（C/L），无二价",
+   "n_elements": 4,
+   "elements": [
+    "O",
+    "K",
+    "C",
+    "L"
+   ],
+   "trivalent": [
+    "O",
+    "K"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "final_N": 6952,
+   "species": 6,
+   "mean_atoms": 2.014,
+   "max_atoms": 8,
+   "capped": 0,
+   "capped_share": 0.0,
+   "new_substances": 2,
+   "effective_species": 2.084,
+   "top1": "OK",
+   "top1_count": 3460,
+   "top1_share": 0.497699,
+   "groups": {
+    "poly": {
+     "molecules": 13,
+     "atoms": 26,
+     "molecule_share": 0.00187,
+     "atoms_share": 0.001857
+    },
+    "dyn": {
+     "molecules": 13,
+     "atoms": 26,
+     "molecule_share": 0.00187,
+     "atoms_share": 0.001857
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 6926,
+     "atoms": 13948,
+     "molecule_share": 0.99626,
+     "atoms_share": 0.996286
+    }
+   },
+   "hold_activity": 0.008,
+   "trivalent_util": 1.0,
+   "conversion": 0.996286,
+   "runtime_s": 50.8,
+   "cat": "C",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T65",
+   "id": "C03",
+   "name": "动素配位台地",
+   "tag": "三价 P + 二价 X/A + 一价 L（无 O，P 主导）",
+   "n_elements": 4,
+   "elements": [
+    "P",
+    "X",
+    "A",
+    "L"
+   ],
+   "trivalent": [
+    "P"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "final_N": 3498,
+   "species": 11,
+   "mean_atoms": 4.002,
+   "max_atoms": 11,
+   "capped": 0,
+   "capped_share": 0.0,
+   "new_substances": 3,
+   "effective_species": 1.118,
+   "top1": "XPLA",
+   "top1_count": 3443,
+   "top1_share": 0.984277,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 21,
+     "atoms": 42,
+     "molecule_share": 0.006003,
+     "atoms_share": 0.003
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 3477,
+     "atoms": 13958,
+     "molecule_share": 0.993997,
+     "atoms_share": 0.997
+    }
+   },
+   "hold_activity": 0.027,
+   "trivalent_util": 1.0,
+   "conversion": 0.997,
+   "runtime_s": 22.7,
+   "cat": "A",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T65",
+   "id": "C04",
+   "name": "散素晶原",
+   "tag": "K 三价 + 二价 A/X + 一价 F（KAF 与 X 竞争）",
+   "n_elements": 4,
+   "elements": [
+    "K",
+    "A",
+    "F",
+    "X"
+   ],
+   "trivalent": [
+    "K"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "final_N": 5214,
+   "species": 9,
+   "mean_atoms": 2.685,
+   "max_atoms": 7,
+   "capped": 0,
+   "capped_share": 0.0,
+   "new_substances": 3,
+   "effective_species": 1.985,
+   "top1": "XKF",
+   "top1_count": 3448,
+   "top1_share": 0.661297,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 1740,
+     "atoms": 3499,
+     "molecule_share": 0.333717,
+     "atoms_share": 0.249929
+    },
+    "mixed": {
+     "molecules": 3474,
+     "atoms": 10501,
+     "molecule_share": 0.666283,
+     "atoms_share": 0.750071
+    }
+   },
+   "hold_activity": 0.018,
+   "trivalent_util": 1.0,
+   "conversion": 0.752429,
+   "runtime_s": 34.6,
+   "cat": "B",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T65",
+   "id": "C05",
+   "name": "聚动五元林",
+   "tag": "聚素全 + 动素 P/W（无 L/A；B09 缺端帽）",
+   "n_elements": 5,
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W"
+   ],
+   "trivalent": [
+    "O",
+    "P"
+   ],
+   "L": 19000,
+   "total_atoms": 15000,
+   "final_N": 7178,
+   "species": 20,
+   "mean_atoms": 2.09,
+   "max_atoms": 39,
+   "capped": 7313,
+   "capped_share": 0.004167,
+   "new_substances": 287,
+   "effective_species": 3.009,
+   "top1": "XW",
+   "top1_count": 2844,
+   "top1_share": 0.396211,
+   "groups": {
+    "poly": {
+     "molecules": 1472,
+     "atoms": 2944,
+     "molecule_share": 0.205071,
+     "atoms_share": 0.196267
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 5706,
+     "atoms": 12056,
+     "molecule_share": 0.794929,
+     "atoms_share": 0.803733
+    }
+   },
+   "hold_activity": 0.015,
+   "trivalent_util": 1.0,
+   "conversion": 0.803733,
+   "runtime_s": 62.0,
+   "cat": "D",
+   "cluster": false,
+   "capped_heavy": true,
+   "mixed_share": null
+  },
+  {
+   "round": "T65",
+   "id": "C06",
+   "name": "三骨架麓",
+   "tag": "三种三价齐全 + 两种二价（无低价端帽，检验大簇）",
+   "n_elements": 5,
+   "elements": [
+    "O",
+    "P",
+    "K",
+    "X",
+    "A"
+   ],
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 19000,
+   "total_atoms": 15000,
+   "final_N": 1546,
+   "species": 17,
+   "mean_atoms": 9.702,
+   "max_atoms": 19,
+   "capped": 12,
+   "capped_share": 4.2e-05,
+   "new_substances": 299,
+   "effective_species": 1.463,
+   "top1": "O2X2P2K2A2",
+   "top1_count": 1447,
+   "top1_share": 0.935964,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 3,
+     "atoms": 6,
+     "molecule_share": 0.00194,
+     "atoms_share": 0.0004
+    },
+    "mixed": {
+     "molecules": 1543,
+     "atoms": 14994,
+     "molecule_share": 0.99806,
+     "atoms_share": 0.9996
+    }
+   },
+   "hold_activity": 0.108,
+   "trivalent_util": 1.0,
+   "conversion": 0.9996,
+   "runtime_s": 18.8,
+   "cat": "A",
+   "cluster": true,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T65",
+   "id": "C07",
+   "name": "聚动散混合坡",
+   "tag": "B10 的 F→P 替换（一价端帽换成第三骨架）",
+   "n_elements": 6,
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "K",
+    "A"
+   ],
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 19000,
+   "total_atoms": 15000,
+   "final_N": 2530,
+   "species": 22,
+   "mean_atoms": 5.929,
+   "max_atoms": 39,
+   "capped": 603,
+   "capped_share": 0.001209,
+   "new_substances": 212,
+   "effective_species": 1.457,
+   "top1": "OXCPKA",
+   "top1_count": 2375,
+   "top1_share": 0.938735,
+   "groups": {
+    "poly": {
+     "molecules": 39,
+     "atoms": 78,
+     "molecule_share": 0.015415,
+     "atoms_share": 0.0052
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 2491,
+     "atoms": 14922,
+     "molecule_share": 0.984585,
+     "atoms_share": 0.9948
+    }
+   },
+   "hold_activity": 0.252,
+   "trivalent_util": 1.0,
+   "conversion": 0.9948,
+   "runtime_s": 23.5,
+   "cat": "A",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T65",
+   "id": "C08",
+   "name": "七元雨林带",
+   "tag": "B09 六元雨林 + K（多骨架、无散素 A/F）",
+   "n_elements": 7,
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 20000,
+   "total_atoms": 16800,
+   "final_N": 3824,
+   "species": 17,
+   "mean_atoms": 4.393,
+   "max_atoms": 18,
+   "capped": 1,
+   "capped_share": 1e-06,
+   "new_substances": 198,
+   "effective_species": 3.752,
+   "top1": "OXCPWK",
+   "top1_count": 2021,
+   "top1_share": 0.528504,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 1079,
+     "atoms": 2158,
+     "molecule_share": 0.282165,
+     "atoms_share": 0.128452
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 2745,
+     "atoms": 14642,
+     "molecule_share": 0.717835,
+     "atoms_share": 0.871548
+    }
+   },
+   "hold_activity": 0.27,
+   "trivalent_util": 1.0,
+   "conversion": 0.871548,
+   "runtime_s": 35.1,
+   "cat": "B",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T65",
+   "id": "C09",
+   "name": "缺焰八元生态",
+   "tag": "九元素缺 F（检验一价端帽 F 的作用）",
+   "n_elements": 8,
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 20000,
+   "total_atoms": 16800,
+   "final_N": 3338,
+   "species": 26,
+   "mean_atoms": 5.033,
+   "max_atoms": 17,
+   "capped": 1,
+   "capped_share": 1e-06,
+   "new_substances": 488,
+   "effective_species": 3.642,
+   "top1": "OXCPWKA",
+   "top1_count": 1857,
+   "top1_share": 0.556321,
+   "groups": {
+    "poly": {
+     "molecules": 2,
+     "atoms": 4,
+     "molecule_share": 0.000599,
+     "atoms_share": 0.000238
+    },
+    "dyn": {
+     "molecules": 973,
+     "atoms": 1946,
+     "molecule_share": 0.291492,
+     "atoms_share": 0.115833
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 2363,
+     "atoms": 14850,
+     "molecule_share": 0.707909,
+     "atoms_share": 0.883929
+    }
+   },
+   "hold_activity": 0.788,
+   "trivalent_util": 1.0,
+   "conversion": 0.883929,
+   "runtime_s": 39.2,
+   "cat": "B",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T65",
+   "id": "C10",
+   "name": "九元大生态复现",
+   "tag": "与 T64 B11 同条件复现（检验可重复性）",
+   "n_elements": 9,
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 20000,
+   "total_atoms": 18000,
+   "final_N": 4185,
+   "species": 24,
+   "mean_atoms": 4.301,
+   "max_atoms": 39,
+   "capped": 1637,
+   "capped_share": 0.001594,
+   "new_substances": 417,
+   "effective_species": 3.924,
+   "top1": "OXCPWKA",
+   "top1_count": 1772,
+   "top1_share": 0.423417,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 119,
+     "atoms": 238,
+     "molecule_share": 0.028435,
+     "atoms_share": 0.013222
+    },
+    "scat": {
+     "molecules": 34,
+     "atoms": 68,
+     "molecule_share": 0.008124,
+     "atoms_share": 0.003778
+    },
+    "mixed": {
+     "molecules": 4032,
+     "atoms": 17694,
+     "molecule_share": 0.963441,
+     "atoms_share": 0.983
+    }
+   },
+   "hold_activity": 1.205,
+   "trivalent_util": 1.0,
+   "conversion": 0.983,
+   "runtime_s": 46.4,
+   "cat": "C",
+   "cluster": false,
+   "capped_heavy": true,
+   "mixed_share": null
+  },
+  {
+   "round": "T66",
+   "id": "E01",
+   "name": "双盐平原",
+   "tag": "OP+XW 盐各半 + 游离 O2/P2/X2/W2（对应 T65 C01）",
+   "n_elements": 4,
+   "elements": [
+    "O",
+    "P",
+    "X",
+    "W"
+   ],
+   "trivalent": [
+    "O",
+    "P"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "final_N": 6739,
+   "species": 14,
+   "mean_atoms": 2.077,
+   "max_atoms": 40,
+   "capped": 2250,
+   "capped_share": 0.00139,
+   "new_substances": 293,
+   "effective_species": 2.075,
+   "top1": "OP",
+   "top1_count": 3359,
+   "top1_share": 0.498442,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 6739,
+     "atoms": 14000,
+     "molecule_share": 1.0,
+     "atoms_share": 1.0
+    }
+   },
+   "hold_activity": 0.008,
+   "trivalent_util": 1.0,
+   "conversion": 1.0,
+   "runtime_s": 34.9,
+   "cat": "C",
+   "cluster": false,
+   "capped_heavy": true,
+   "mixed_share": null
+  },
+  {
+   "round": "T66",
+   "id": "E02",
+   "name": "双盐配位谷",
+   "tag": "OK+CL 盐各半 + 游离 O2/K2/C2/L2（对应 T65 C02）",
+   "n_elements": 4,
+   "elements": [
+    "O",
+    "K",
+    "C",
+    "L"
+   ],
+   "trivalent": [
+    "O",
+    "K"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "final_N": 6946,
+   "species": 6,
+   "mean_atoms": 2.016,
+   "max_atoms": 8,
+   "capped": 0,
+   "capped_share": 0.0,
+   "new_substances": 2,
+   "effective_species": 2.097,
+   "top1": "OK",
+   "top1_count": 3455,
+   "top1_share": 0.497409,
+   "groups": {
+    "poly": {
+     "molecules": 16,
+     "atoms": 32,
+     "molecule_share": 0.002303,
+     "atoms_share": 0.002286
+    },
+    "dyn": {
+     "molecules": 16,
+     "atoms": 32,
+     "molecule_share": 0.002303,
+     "atoms_share": 0.002286
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 6914,
+     "atoms": 13936,
+     "molecule_share": 0.995393,
+     "atoms_share": 0.995429
+    }
+   },
+   "hold_activity": 0.01,
+   "trivalent_util": 1.0,
+   "conversion": 0.995429,
+   "runtime_s": 28.2,
+   "cat": "C",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T66",
+   "id": "E03",
+   "name": "四元盐台地",
+   "tag": "XPLA 四元盐半量 + 游离 P2/X2/A2/L2（对应 T65 C03）",
+   "n_elements": 4,
+   "elements": [
+    "P",
+    "X",
+    "A",
+    "L"
+   ],
+   "trivalent": [
+    "P"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "final_N": 3498,
+   "species": 11,
+   "mean_atoms": 4.002,
+   "max_atoms": 11,
+   "capped": 0,
+   "capped_share": 0.0,
+   "new_substances": 2,
+   "effective_species": 1.085,
+   "top1": "XPLA",
+   "top1_count": 3459,
+   "top1_share": 0.988851,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 17,
+     "atoms": 34,
+     "molecule_share": 0.00486,
+     "atoms_share": 0.002429
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 3481,
+     "atoms": 13966,
+     "molecule_share": 0.99514,
+     "atoms_share": 0.997571
+    }
+   },
+   "hold_activity": 0.043,
+   "trivalent_util": 1.0,
+   "conversion": 0.997571,
+   "runtime_s": 12.1,
+   "cat": "A",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T66",
+   "id": "E04",
+   "name": "盐晶原",
+   "tag": "KAF 盐半量 + 游离 K2/A2/F2 与 X2（对应 T65 C04）",
+   "n_elements": 4,
+   "elements": [
+    "K",
+    "A",
+    "F",
+    "X"
+   ],
+   "trivalent": [
+    "K"
+   ],
+   "L": 18000,
+   "total_atoms": 14000,
+   "final_N": 5210,
+   "species": 9,
+   "mean_atoms": 2.687,
+   "max_atoms": 7,
+   "capped": 0,
+   "capped_share": 0.0,
+   "new_substances": 3,
+   "effective_species": 1.989,
+   "top1": "XKF",
+   "top1_count": 3448,
+   "top1_share": 0.661804,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 1736,
+     "atoms": 3493,
+     "molecule_share": 0.333205,
+     "atoms_share": 0.2495
+    },
+    "mixed": {
+     "molecules": 3474,
+     "atoms": 10507,
+     "molecule_share": 0.666795,
+     "atoms_share": 0.7505
+    }
+   },
+   "hold_activity": 0.005,
+   "trivalent_util": 1.0,
+   "conversion": 0.752857,
+   "runtime_s": 19.7,
+   "cat": "B",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T66",
+   "id": "E05",
+   "name": "聚动盐林",
+   "tag": "OXC/OP/XW 聚素盐半量 + 游离单质（对应 T65 C05）",
+   "n_elements": 5,
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W"
+   ],
+   "trivalent": [
+    "O",
+    "P"
+   ],
+   "L": 19000,
+   "total_atoms": 15000,
+   "final_N": 7333,
+   "species": 18,
+   "mean_atoms": 2.046,
+   "max_atoms": 39,
+   "capped": 1009,
+   "capped_share": 0.000561,
+   "new_substances": 255,
+   "effective_species": 2.971,
+   "top1": "OP",
+   "top1_count": 2915,
+   "top1_share": 0.397518,
+   "groups": {
+    "poly": {
+     "molecules": 1473,
+     "atoms": 2946,
+     "molecule_share": 0.200873,
+     "atoms_share": 0.1964
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 5860,
+     "atoms": 12054,
+     "molecule_share": 0.799127,
+     "atoms_share": 0.8036
+    }
+   },
+   "hold_activity": 0.003,
+   "trivalent_util": 1.0,
+   "conversion": 0.8036,
+   "runtime_s": 36.7,
+   "cat": "D",
+   "cluster": false,
+   "capped_heavy": true,
+   "mixed_share": null
+  },
+  {
+   "round": "T66",
+   "id": "E06",
+   "name": "盐骨架麓",
+   "tag": "OP/OK/PK/XA 盐半量 + 游离单质（对应 T65 C06，检验十原子簇）",
+   "n_elements": 5,
+   "elements": [
+    "O",
+    "P",
+    "K",
+    "X",
+    "A"
+   ],
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 19000,
+   "total_atoms": 15000,
+   "final_N": 1535,
+   "species": 17,
+   "mean_atoms": 9.772,
+   "max_atoms": 19,
+   "capped": 3,
+   "capped_share": 1.1e-05,
+   "new_substances": 231,
+   "effective_species": 1.381,
+   "top1": "O2X2P2K2A2",
+   "top1_count": 1455,
+   "top1_share": 0.947883,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 2,
+     "atoms": 4,
+     "molecule_share": 0.001303,
+     "atoms_share": 0.000267
+    },
+    "mixed": {
+     "molecules": 1533,
+     "atoms": 14996,
+     "molecule_share": 0.998697,
+     "atoms_share": 0.999733
+    }
+   },
+   "hold_activity": 0.123,
+   "trivalent_util": 1.0,
+   "conversion": 0.999733,
+   "runtime_s": 9.4,
+   "cat": "A",
+   "cluster": true,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T66",
+   "id": "E07",
+   "name": "六元盐坡",
+   "tag": "OXCPKA 六元盐半量 + 游离单质（对应 T65 C07）",
+   "n_elements": 6,
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "K",
+    "A"
+   ],
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 19000,
+   "total_atoms": 15000,
+   "final_N": 2533,
+   "species": 20,
+   "mean_atoms": 5.922,
+   "max_atoms": 15,
+   "capped": 1,
+   "capped_share": 2e-06,
+   "new_substances": 138,
+   "effective_species": 1.382,
+   "top1": "OXCPKA",
+   "top1_count": 2403,
+   "top1_share": 0.948677,
+   "groups": {
+    "poly": {
+     "molecules": 32,
+     "atoms": 64,
+     "molecule_share": 0.012633,
+     "atoms_share": 0.004267
+    },
+    "dyn": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 2501,
+     "atoms": 14936,
+     "molecule_share": 0.987367,
+     "atoms_share": 0.995733
+    }
+   },
+   "hold_activity": 0.198,
+   "trivalent_util": 1.0,
+   "conversion": 0.995733,
+   "runtime_s": 11.5,
+   "cat": "A",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T66",
+   "id": "E08",
+   "name": "七元盐湖带",
+   "tag": "OXCPWK 六元盐半量 + 游离单质（对应 T65 C08）",
+   "n_elements": 7,
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K"
+   ],
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 20000,
+   "total_atoms": 16800,
+   "final_N": 3814,
+   "species": 15,
+   "mean_atoms": 4.405,
+   "max_atoms": 18,
+   "capped": 1,
+   "capped_share": 1e-06,
+   "new_substances": 136,
+   "effective_species": 3.673,
+   "top1": "OXCPWK",
+   "top1_count": 2031,
+   "top1_share": 0.532512,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 1086,
+     "atoms": 2172,
+     "molecule_share": 0.28474,
+     "atoms_share": 0.129286
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 2728,
+     "atoms": 14628,
+     "molecule_share": 0.71526,
+     "atoms_share": 0.870714
+    }
+   },
+   "hold_activity": 0.208,
+   "trivalent_util": 1.0,
+   "conversion": 0.870714,
+   "runtime_s": 18.9,
+   "cat": "B",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T66",
+   "id": "E09",
+   "name": "八元盐雨林",
+   "tag": "OXCPWKA 七元盐半量 + 游离单质（对应 T65 C09）",
+   "n_elements": 8,
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A"
+   ],
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 20000,
+   "total_atoms": 16800,
+   "final_N": 3343,
+   "species": 27,
+   "mean_atoms": 5.025,
+   "max_atoms": 39,
+   "capped": 746,
+   "capped_share": 0.000988,
+   "new_substances": 345,
+   "effective_species": 3.55,
+   "top1": "OXCPWKA",
+   "top1_count": 1877,
+   "top1_share": 0.561472,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 977,
+     "atoms": 1954,
+     "molecule_share": 0.292252,
+     "atoms_share": 0.11631
+    },
+    "scat": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "mixed": {
+     "molecules": 2366,
+     "atoms": 14846,
+     "molecule_share": 0.707748,
+     "atoms_share": 0.88369
+    }
+   },
+   "hold_activity": 0.8,
+   "trivalent_util": 1.0,
+   "conversion": 0.88369,
+   "runtime_s": 20.9,
+   "cat": "B",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  },
+  {
+   "round": "T66",
+   "id": "E10",
+   "name": "九元盐穹顶",
+   "tag": "OXCPWKA 七元盐半量 + 游离单质（对应 T65 C10/T64 B11，检验终态记忆）",
+   "n_elements": 9,
+   "elements": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "trivalent": [
+    "O",
+    "P",
+    "K"
+   ],
+   "L": 20000,
+   "total_atoms": 18000,
+   "final_N": 4201,
+   "species": 29,
+   "mean_atoms": 4.285,
+   "max_atoms": 17,
+   "capped": 1,
+   "capped_share": 1e-06,
+   "new_substances": 330,
+   "effective_species": 4.125,
+   "top1": "LF",
+   "top1_count": 1752,
+   "top1_share": 0.417044,
+   "groups": {
+    "poly": {
+     "molecules": 0,
+     "atoms": 0,
+     "molecule_share": 0.0,
+     "atoms_share": 0.0
+    },
+    "dyn": {
+     "molecules": 123,
+     "atoms": 246,
+     "molecule_share": 0.029279,
+     "atoms_share": 0.013667
+    },
+    "scat": {
+     "molecules": 30,
+     "atoms": 60,
+     "molecule_share": 0.007141,
+     "atoms_share": 0.003333
+    },
+    "mixed": {
+     "molecules": 4048,
+     "atoms": 17694,
+     "molecule_share": 0.96358,
+     "atoms_share": 0.983
+    }
+   },
+   "hold_activity": 1.318,
+   "trivalent_util": 1.0,
+   "conversion": 0.983,
+   "runtime_s": 24.4,
+   "cat": "C",
+   "cluster": false,
+   "capped_heavy": false,
+   "mixed_share": null
+  }
+ ]
+}
