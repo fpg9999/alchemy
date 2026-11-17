@@ -1,0 +1,1610 @@
+{
+ "script": "t63_verify.py",
+ "description": "T63 四阶段独立验证：投料/跨阶段守恒/价数/对照/判定自洽/终态表/state",
+ "generated_at": "2026-11-17T13:04:34+08:00",
+ "elapsed_s": 1.5,
+ "base_dir": "G:\\AI work\\deepseek\\work1\\alchemy",
+ "args": {
+  "loads": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_loads.json",
+  "r1": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_phase1_result.json",
+  "r2": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_phase2_result.json",
+  "r3": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_phase3_result.json",
+  "r4": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_phase4_result.json",
+  "s1": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_state1.json",
+  "s2": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_state2.json",
+  "s3": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_state3.json",
+  "s4": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_state4.json",
+  "control": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_control_s1.json",
+  "out": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_verify.json",
+  "cap": 40,
+  "control_min": 500.0,
+  "control_frac": 0.9999,
+  "no_events_scan": false
+ },
+ "tolerances": {
+  "control_min": 500.0,
+  "control_fraction_ge_500": 0.9999,
+  "capped_frac_max": 0.01,
+  "cap": 40,
+  "sample_scan_cap": 50000
+ },
+ "inputs": {
+  "loads": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_loads.json",
+   "exists": true,
+   "size_bytes": 8902,
+   "mtime": "2026-11-17T12:59:03",
+   "sha256": "d50261a12760b297cc3a91d1ee3485e4240940fa57917b85c92e1c4b0550298a"
+  },
+  "phase1": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_phase1_result.json",
+   "exists": true,
+   "size_bytes": 7472335,
+   "mtime": "2026-11-17T12:59:45",
+   "sha256": "852c48017ebe29ea6db9f42b46d89ee197e6e7f33c08820bfa52c284d7c848c6"
+  },
+  "phase2": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_phase2_result.json",
+   "exists": true,
+   "size_bytes": 10947009,
+   "mtime": "2026-11-17T13:00:33",
+   "sha256": "a6f413f992fe287e5d4d19c93e5d350283591d97aed02b15329f0496980008ac"
+  },
+  "phase3": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_phase3_result.json",
+   "exists": true,
+   "size_bytes": 10962073,
+   "mtime": "2026-11-17T13:02:13",
+   "sha256": "7c8bbc33b2e6d7418f7f7a592f688950df84d8ca040e0a737a4212fb79080e7e"
+  },
+  "phase4": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_phase4_result.json",
+   "exists": true,
+   "size_bytes": 12138234,
+   "mtime": "2026-11-17T13:04:05",
+   "sha256": "0526b349044005f852cc98c9647055b731dbd0d726b1d857f3c223665ec200d9"
+  },
+  "state1": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_state1.json",
+   "exists": true,
+   "size_bytes": 1973,
+   "mtime": "2026-11-17T12:59:45",
+   "sha256": "1354949657174e637857f74ac37472f87223c2af85129885572662ea09e33a0c"
+  },
+  "state2": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_state2.json",
+   "exists": true,
+   "size_bytes": 2770,
+   "mtime": "2026-11-17T13:00:33",
+   "sha256": "21eeebcd4a007b86fbad6a181bce5f70f78584bf26b233844dcd49fa0bfa199f"
+  },
+  "state3": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_state3.json",
+   "exists": true,
+   "size_bytes": 1386,
+   "mtime": "2026-11-17T13:02:13",
+   "sha256": "440245dbfb99352ddf5d050008b49b70d77f938d9c9a5d69627e4a1c5bd5c425"
+  },
+  "state4": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_state4.json",
+   "exists": true,
+   "size_bytes": 17696,
+   "mtime": "2026-11-17T13:04:05",
+   "sha256": "8cd20e6ce0c2f8393fad17e0983fdd7a1d8cb4a080cd90cceee5657dc042da83"
+  },
+  "control_s1": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t63_control_s1.json",
+   "exists": true,
+   "size_bytes": 9080,
+   "mtime": "2026-11-17T13:04:22",
+   "sha256": "d5316e198371416e1beb71d41f330be2b5e99a4a35d804fd3da36a893fa8e030"
+  }
+ },
+ "groups": [
+  {
+   "id": 1,
+   "name": "投料设计（stage1 聚素 + 三次单质投放）",
+   "subchecks": [
+    {
+     "id": "1.1",
+     "name": "stage1 投料 = 29 种 / 9002 分子 / 38532 原子",
+     "status": "PASS",
+     "detail": "复算 n_species=29 molecules=9002 atoms=38532",
+     "values": {
+      "n_species": 29,
+      "molecules": 9002,
+      "atoms": 38532,
+      "issues": []
+     }
+    },
+    {
+     "id": "1.2",
+     "name": "stage1 元素只含 O/X/C（其余 6 元素为 0）",
+     "status": "PASS",
+     "detail": "元素原子={'O': 12071, 'X': 14368, 'C': 12093, 'P': 0, 'W': 0, 'L': 0, 'K': 0, 'A': 0, 'F': 0}",
+     "values": {
+      "element_atoms": {
+       "O": 12071,
+       "X": 14368,
+       "C": 12093,
+       "P": 0,
+       "W": 0,
+       "L": 0,
+       "K": 0,
+       "A": 0,
+       "F": 0
+      },
+      "off_elements": {},
+      "covered": [
+       "O",
+       "X",
+       "C"
+      ]
+     }
+    },
+    {
+     "id": "1.3",
+     "name": "三次投放各 8000 分子 / 16000 原子（F2/A2/K2）",
+     "status": "PASS",
+     "detail": "F2(F) 8000/16000；A2(A) 8000/16000；K2(K) 8000/16000",
+     "values": {
+      "additions": [
+       {
+        "stage": 2,
+        "element": "F",
+        "formula": "F2",
+        "name": "焰单质",
+        "molecules": 8000,
+        "atoms": 16000
+       },
+       {
+        "stage": 3,
+        "element": "A",
+        "formula": "A2",
+        "name": "气单质",
+        "molecules": 8000,
+        "atoms": 16000
+       },
+       {
+        "stage": 4,
+        "element": "K",
+        "formula": "K2",
+        "name": "沌单质",
+        "molecules": 8000,
+        "atoms": 16000
+       }
+      ]
+     }
+    },
+    {
+     "id": "1.4",
+     "name": "loads.stage_design 与复算一致",
+     "status": "PASS",
+     "detail": "一致",
+     "values": {
+      "issues": []
+     }
+    },
+    {
+     "id": "1.5",
+     "name": "loads.stage1.meta 与 species rows 复算一致",
+     "status": "PASS",
+     "detail": "一致",
+     "values": {
+      "issues": [],
+      "meta": {
+       "n_species": 29,
+       "total_molecules": 9002,
+       "total_atoms": 38532,
+       "area_model": "A = π·R0²·(n_atoms/2)，R = R0·sqrt(n/2)，R0=0.2",
+       "count_model": "count = max(30, round(K/n_atoms))，K = total/Σ(1/n)",
+       "K": 1328.258,
+       "strict_larger_area_fewer_count": true,
+       "molecule_range": [
+        2,
+        9
+       ],
+       "area_range": [
+        0.1257,
+        0.5655
+       ],
+       "count_range": [
+        148,
+        664
+       ],
+       "mean_atoms": 4.28
+      }
+     }
+    },
+    {
+     "id": "1.6",
+     "name": "stage1 species rows 字段自洽（formula/atoms/count）",
+     "status": "PASS",
+     "detail": "无问题",
+     "values": {
+      "issues": []
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 2,
+   "name": "跨阶段质量与元素守恒",
+   "subchecks": [
+    {
+     "id": "2.1",
+     "name": "stage1 初始粒子/原子 == 设计投料",
+     "status": "PASS",
+     "detail": "initial_particles=9002（设计 9002）；initial_atoms=38532（设计 38532）",
+     "values": {
+      "initial_particles": 9002,
+      "initial_atoms": 38532
+     }
+    },
+    {
+     "id": "2.2",
+     "name": "stage1 终态分子数/原子数 == 设计（质量守恒）",
+     "status": "PASS",
+     "detail": "final_N=12032（Σcount=12032）；final_atoms=38532（Σcount*atoms=38532）",
+     "values": {
+      "summary": {
+       "final_N": 12032,
+       "final_atoms": 38532,
+       "events_total": 16106,
+       "decomp_events": 0,
+       "reaction_counts": {
+        "complete": 2913039,
+        "incomplete": 9289,
+        "none": 1284
+       },
+       "final_T": 0,
+       "runtime_s": 41.9
+      },
+      "comp_molecules": 12032,
+      "comp_atoms": 38532
+     }
+    },
+    {
+     "id": "2.3",
+     "name": "stage1 终态逐元素 == 聚素设计",
+     "status": "PASS",
+     "detail": "逐元素一致",
+     "values": {
+      "diff": {},
+      "final": {
+       "O": 12071,
+       "X": 14368,
+       "C": 12093,
+       "P": 0,
+       "W": 0,
+       "L": 0,
+       "K": 0,
+       "A": 0,
+       "F": 0
+      },
+      "expected": {
+       "O": 12071,
+       "X": 14368,
+       "C": 12093,
+       "P": 0,
+       "W": 0,
+       "L": 0,
+       "K": 0,
+       "A": 0,
+       "F": 0
+      }
+     }
+    },
+    {
+     "id": "2.4",
+     "name": "各阶段初始 == 上阶段 state + 投放（8000 分子/16000 原子）",
+     "status": "PASS",
+     "detail": "stage2 初始 20032/54532（期望 20032/54532）；stage3 初始 19129/70532（期望 19129/70532）；stage4 初始 28082/86532（期望 28082/86532）",
+     "values": {
+      "phases": {
+       "2": {
+        "expected_particles": 20032,
+        "initial_particles": 20032,
+        "expected_atoms": 54532,
+        "initial_atoms": 54532,
+        "state_prev": {
+         "molecules": 12032,
+         "atoms": 38532
+        }
+       },
+       "3": {
+        "expected_particles": 19129,
+        "initial_particles": 19129,
+        "expected_atoms": 70532,
+        "initial_atoms": 70532,
+        "state_prev": {
+         "molecules": 11129,
+         "atoms": 54532
+        }
+       },
+       "4": {
+        "expected_particles": 28082,
+        "initial_particles": 28082,
+        "expected_atoms": 86532,
+        "initial_atoms": 86532,
+        "state_prev": {
+         "molecules": 20082,
+         "atoms": 70532
+        }
+       }
+      }
+     }
+    },
+    {
+     "id": "2.5",
+     "name": "各阶段终态分子数 == Σfinal_composition.count == final_N",
+     "status": "PASS",
+     "detail": "stage1 final_N=12032 Σcount=12032；stage2 final_N=11129 Σcount=11129；stage3 final_N=20082 Σcount=20082；stage4 final_N=17227 Σcount=17227",
+     "values": {
+      "phases": {
+       "1": {
+        "final_N": 12032,
+        "comp_molecules": 12032
+       },
+       "2": {
+        "final_N": 11129,
+        "comp_molecules": 11129
+       },
+       "3": {
+        "final_N": 20082,
+        "comp_molecules": 20082
+       },
+       "4": {
+        "final_N": 17227,
+        "comp_molecules": 17227
+       }
+      }
+     }
+    },
+    {
+     "id": "2.6",
+     "name": "各阶段终态原子数 == initial_atoms == Σcount*atoms",
+     "status": "PASS",
+     "detail": "stage1 final_atoms=38532 Σcomp=38532 initial=38532；stage2 final_atoms=54532 Σcomp=54532 initial=54532；stage3 final_atoms=70532 Σcomp=70532 initial=70532；stage4 final_atoms=86532 Σcomp=86532 initial=86532",
+     "values": {
+      "phases": {
+       "1": {
+        "summary_final_atoms": 38532,
+        "comp_atoms": 38532,
+        "initial_atoms": 38532,
+        "expected": 38532
+       },
+       "2": {
+        "summary_final_atoms": 54532,
+        "comp_atoms": 54532,
+        "initial_atoms": 54532,
+        "expected": 54532
+       },
+       "3": {
+        "summary_final_atoms": 70532,
+        "comp_atoms": 70532,
+        "initial_atoms": 70532,
+        "expected": 70532
+       },
+       "4": {
+        "summary_final_atoms": 86532,
+        "comp_atoms": 86532,
+        "initial_atoms": 86532,
+        "expected": 86532
+       }
+      }
+     }
+    },
+    {
+     "id": "2.7",
+     "name": "跨阶段逐元素守恒：stage k == stage k-1 + 投放元素 16,000",
+     "status": "PASS",
+     "detail": "stage2 元素原子={'O': 12071, 'X': 14368, 'C': 12093, 'P': 0, 'W': 0, 'L': 0, 'K': 0, 'A': 0, 'F': 16000}；stage3 元素原子={'O': 12071, 'X': 14368, 'C': 12093, 'P': 0, 'W': 0, 'L': 0, 'K': 0, 'A': 16000, 'F': 16000}；stage4 元素原子={'O': 12071, 'X': 14368, 'C': 12093, 'P': 0, 'W': 0, 'L': 0, 'K': 16000, 'A': 16000, 'F': 16000}",
+     "values": {
+      "phases": {
+       "2": {
+        "diff": {},
+        "final": {
+         "O": 12071,
+         "X": 14368,
+         "C": 12093,
+         "P": 0,
+         "W": 0,
+         "L": 0,
+         "K": 0,
+         "A": 0,
+         "F": 16000
+        },
+        "expected": {
+         "O": 12071,
+         "X": 14368,
+         "C": 12093,
+         "P": 0,
+         "W": 0,
+         "L": 0,
+         "K": 0,
+         "A": 0,
+         "F": 16000
+        }
+       },
+       "3": {
+        "diff": {},
+        "final": {
+         "O": 12071,
+         "X": 14368,
+         "C": 12093,
+         "P": 0,
+         "W": 0,
+         "L": 0,
+         "K": 0,
+         "A": 16000,
+         "F": 16000
+        },
+        "expected": {
+         "O": 12071,
+         "X": 14368,
+         "C": 12093,
+         "P": 0,
+         "W": 0,
+         "L": 0,
+         "K": 0,
+         "A": 16000,
+         "F": 16000
+        }
+       },
+       "4": {
+        "diff": {},
+        "final": {
+         "O": 12071,
+         "X": 14368,
+         "C": 12093,
+         "P": 0,
+         "W": 0,
+         "L": 0,
+         "K": 16000,
+         "A": 16000,
+         "F": 16000
+        },
+        "expected": {
+         "O": 12071,
+         "X": 14368,
+         "C": 12093,
+         "P": 0,
+         "W": 0,
+         "L": 0,
+         "K": 16000,
+         "A": 16000,
+         "F": 16000
+        }
+       }
+      }
+     }
+    },
+    {
+     "id": "2.8",
+     "name": "各阶段 time_series 末行 N/原子数 == summary",
+     "status": "PASS",
+     "detail": "stage1 末行 t=999 N=12032 atoms=38532，与 summary 一致；stage2 末行 t=999 N=11129 atoms=54532，与 summary 一致；stage3 末行 t=999 N=20082 atoms=70532，与 summary 一致；stage4 末行 t=999 N=17227 atoms=86532，与 summary 一致",
+     "values": {
+      "phases": {
+       "1": {
+        "last_t": 999,
+        "N": 12032,
+        "atoms": 38532
+       },
+       "2": {
+        "last_t": 999,
+        "N": 11129,
+        "atoms": 54532
+       },
+       "3": {
+        "last_t": 999,
+        "N": 20082,
+        "atoms": 70532
+       },
+       "4": {
+        "last_t": 999,
+        "N": 17227,
+        "atoms": 86532
+       }
+      }
+     }
+    },
+    {
+     "id": "2.9",
+     "name": "各阶段 config.load_spec 与投放设计一致",
+     "status": "PASS",
+     "detail": "一致",
+     "values": {
+      "phases": {
+       "1": {
+        "spec_len": 29,
+        "rows_len": 29,
+        "issues": []
+       },
+       "2": {
+        "spec": [
+         {
+          "tag": "添加焰单质",
+          "formula": "F2",
+          "count": 8000
+         }
+        ],
+        "expected": [
+         {
+          "formula": "F2",
+          "count": 8000
+         }
+        ]
+       },
+       "3": {
+        "spec": [
+         {
+          "tag": "添加气单质",
+          "formula": "A2",
+          "count": 8000
+         }
+        ],
+        "expected": [
+         {
+          "formula": "A2",
+          "count": 8000
+         }
+        ]
+       },
+       "4": {
+        "spec": [
+         {
+          "tag": "添加沌单质",
+          "formula": "K2",
+          "count": 8000
+         }
+        ],
+        "expected": [
+         {
+          "formula": "K2",
+          "count": 8000
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "id": "2.10",
+     "name": "全程原子总量闭合（stage4 == 38532 + 3×16000，逐元素）",
+     "status": "PASS",
+     "detail": "stage4 终态原子数=86532（期望 86532）",
+     "values": {
+      "phases": {
+       "4": {
+        "final_atoms": 86532,
+        "expected_atoms": 86532,
+        "final_elements": {
+         "O": 12071,
+         "X": 14368,
+         "C": 12093,
+         "P": 0,
+         "W": 0,
+         "L": 0,
+         "K": 16000,
+         "A": 16000,
+         "F": 16000
+        },
+        "expected_elements": {
+         "O": 12071,
+         "X": 14368,
+         "C": 12093,
+         "P": 0,
+         "W": 0,
+         "L": 0,
+         "K": 16000,
+         "A": 16000,
+         "F": 16000
+        }
+       }
+      }
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 3,
+   "name": "价数守恒（F=1价 / A=2价 / K=3价）",
+   "subchecks": [
+    {
+     "id": "3.1",
+     "name": "stage1 终态 v3/v2/v1 == 聚素设计",
+     "status": "PASS",
+     "detail": "终态 {'v3': 12071, 'v2': 14368, 'v1': 12093}；设计 {'v3': 12071, 'v2': 14368, 'v1': 12093}",
+     "values": {
+      "diff": {},
+      "final": {
+       "v3": 12071,
+       "v2": 14368,
+       "v1": 12093
+      },
+      "expected": {
+       "v3": 12071,
+       "v2": 14368,
+       "v1": 12093
+      }
+     }
+    },
+    {
+     "id": "3.2",
+     "name": "各阶段价数 == 上阶段 + 投放元素价数（F→v1/A→v2/K→v3）",
+     "status": "PASS",
+     "detail": "stage2 价数={'v3': 12071, 'v2': 14368, 'v1': 28093}（期望 {'v3': 12071, 'v2': 14368, 'v1': 28093}）；stage3 价数={'v3': 12071, 'v2': 30368, 'v1': 28093}（期望 {'v3': 12071, 'v2': 30368, 'v1': 28093}）；stage4 价数={'v3': 28071, 'v2': 30368, 'v1': 28093}（期望 {'v3': 28071, 'v2': 30368, 'v1': 28093}）",
+     "values": {
+      "phases": {
+       "2": {
+        "diff": {},
+        "final": {
+         "v3": 12071,
+         "v2": 14368,
+         "v1": 28093
+        },
+        "expected": {
+         "v3": 12071,
+         "v2": 14368,
+         "v1": 28093
+        }
+       },
+       "3": {
+        "diff": {},
+        "final": {
+         "v3": 12071,
+         "v2": 30368,
+         "v1": 28093
+        },
+        "expected": {
+         "v3": 12071,
+         "v2": 30368,
+         "v1": 28093
+        }
+       },
+       "4": {
+        "diff": {},
+        "final": {
+         "v3": 28071,
+         "v2": 30368,
+         "v1": 28093
+        },
+        "expected": {
+         "v3": 28071,
+         "v2": 30368,
+         "v1": 28093
+        }
+       }
+      }
+     }
+    },
+    {
+     "id": "3.3",
+     "name": "各阶段 Σ价数原子数 == 总原子数",
+     "status": "PASS",
+     "detail": "stage1 Σv=38532 atoms=38532；stage2 Σv=54532 atoms=54532；stage3 Σv=70532 atoms=70532；stage4 Σv=86532 atoms=86532",
+     "values": {
+      "phases": {
+       "1": {
+        "sum_valence": 38532,
+        "atoms": 38532
+       },
+       "2": {
+        "sum_valence": 54532,
+        "atoms": 54532
+       },
+       "3": {
+        "sum_valence": 70532,
+        "atoms": 70532
+       },
+       "4": {
+        "sum_valence": 86532,
+        "atoms": 86532
+       }
+      }
+     }
+    },
+    {
+     "id": "3.4",
+     "name": "各阶段价数占比概览",
+     "status": "INFO",
+     "detail": "stage1 v3/v2/v1 占比=['0.3133', '0.3729', '0.3138']；stage2 v3/v2/v1 占比=['0.2214', '0.2635', '0.5152']；stage3 v3/v2/v1 占比=['0.1711', '0.4306', '0.3983']；stage4 v3/v2/v1 占比=['0.3244', '0.3509', '0.3247']",
+     "values": {
+      "stages": {
+       "1": {
+        "valence_atoms": {
+         "v3": 12071,
+         "v2": 14368,
+         "v1": 12093
+        },
+        "shares": [
+         0.31327208553929203,
+         0.3728848749091664,
+         0.3138430395515416
+        ]
+       },
+       "2": {
+        "valence_atoms": {
+         "v3": 12071,
+         "v2": 14368,
+         "v1": 28093
+        },
+        "shares": [
+         0.22135626787941026,
+         0.26347832465341453,
+         0.5151654074671752
+        ]
+       },
+       "3": {
+        "valence_atoms": {
+         "v3": 12071,
+         "v2": 30368,
+         "v1": 28093
+        },
+        "shares": [
+         0.1711421766006919,
+         0.43055634322009867,
+         0.3983014801792094
+        ]
+       },
+       "4": {
+        "valence_atoms": {
+         "v3": 28071,
+         "v2": 30368,
+         "v1": 28093
+        },
+        "shares": [
+         0.324400221883234,
+         0.35094531502796655,
+         0.3246544630887995
+        ]
+       }
+      }
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 4,
+   "name": "无化学对照（stage1 500 次穿越要求）",
+   "subchecks": [
+    {
+     "id": "4.1",
+     "name": "对照组化学开关关闭",
+     "status": "PASS",
+     "detail": "config.chemical_reactions=False",
+     "values": {
+      "chemical_reactions": false
+     }
+    },
+    {
+     "id": "4.2",
+     "name": "stats.min ≥500",
+     "status": "PASS",
+     "detail": "stats.min=717.8（要求 ≥500）",
+     "values": {
+      "min": 717.8
+     }
+    },
+    {
+     "id": "4.3",
+     "name": "stats.fraction_ge_500 ≥0.9999",
+     "status": "PASS",
+     "detail": "fraction_ge_500=1.0（要求 ≥0.9999）",
+     "values": {
+      "fraction_ge_500": 1.0
+     }
+    },
+    {
+     "id": "4.4",
+     "name": "by_size 每组 min ≥500",
+     "status": "PASS",
+     "detail": "共 8 组，全部 min ≥500",
+     "values": {
+      "by_size_min": {
+       "2": 771.6,
+       "3": 766.5,
+       "4": 748.9,
+       "5": 745.3,
+       "6": 735.7,
+       "7": 724.4,
+       "8": 720.6,
+       "9": 717.8
+      },
+      "issues": []
+     }
+    },
+    {
+     "id": "4.5",
+     "name": "对照组装载与 stage1 一致且统计分组完备",
+     "status": "PASS",
+     "detail": "一致",
+     "values": {
+      "issues": [],
+      "vals": {
+       "n_particles": 9002,
+       "expected_particles": 9002,
+       "stats_n": 9002
+      },
+      "sum_by_size_n": 9002
+     }
+    },
+    {
+     "id": "4.6",
+     "name": "对照路径统计概览",
+     "status": "INFO",
+     "detail": "min=717.8 p1=737.7 median=792.8 p95=829.4 max=854.3 mean=792.1",
+     "values": {
+      "stats": {
+       "n": 9002,
+       "min": 717.8,
+       "p1": 737.7,
+       "p5": 751.0,
+       "median": 792.8,
+       "p95": 829.4,
+       "max": 854.3,
+       "fraction_ge_500": 1.0,
+       "mean": 792.1
+      }
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 5,
+   "name": "反应判定自洽（四阶段）",
+   "subchecks": [
+    {
+     "id": "5.1",
+     "name": "reaction_counts 类型合法且非负",
+     "status": "PASS",
+     "detail": "一致",
+     "values": {
+      "phases": {
+       "1": {
+        "reaction_counts": {
+         "complete": 2913039,
+         "incomplete": 9289,
+         "none": 1284
+        },
+        "missing_types": [
+         "capped"
+        ]
+       },
+       "2": {
+        "reaction_counts": {
+         "incomplete": 43558,
+         "complete": 3599979,
+         "none": 653
+        },
+        "missing_types": [
+         "capped"
+        ]
+       },
+       "3": {
+        "reaction_counts": {
+         "complete": 8344631,
+         "incomplete": 20115,
+         "none": 1615
+        },
+        "missing_types": [
+         "capped"
+        ]
+       },
+       "4": {
+        "reaction_counts": {
+         "complete": 7433838,
+         "incomplete": 32178,
+         "capped": 32610,
+         "none": 3316
+        },
+        "missing_types": []
+       }
+      }
+     }
+    },
+    {
+     "id": "5.2",
+     "name": "逐类型累计判定数自洽（Σd_* == reaction_counts == 末行累计）",
+     "status": "PASS",
+     "detail": "一致",
+     "values": {
+      "phases": {
+       "1": {
+        "complete": {
+         "sum_delta": 2913039,
+         "summary": 2913039,
+         "last_cumulative": 2913039
+        },
+        "incomplete": {
+         "sum_delta": 9289,
+         "summary": 9289,
+         "last_cumulative": 9289
+        },
+        "none": {
+         "sum_delta": 1284,
+         "summary": 1284,
+         "last_cumulative": 1284
+        },
+        "capped": {
+         "sum_delta": 0,
+         "summary": 0,
+         "last_cumulative": 0
+        }
+       },
+       "2": {
+        "complete": {
+         "sum_delta": 3599979,
+         "summary": 3599979,
+         "last_cumulative": 3599979
+        },
+        "incomplete": {
+         "sum_delta": 43558,
+         "summary": 43558,
+         "last_cumulative": 43558
+        },
+        "none": {
+         "sum_delta": 653,
+         "summary": 653,
+         "last_cumulative": 653
+        },
+        "capped": {
+         "sum_delta": 0,
+         "summary": 0,
+         "last_cumulative": 0
+        }
+       },
+       "3": {
+        "complete": {
+         "sum_delta": 8344631,
+         "summary": 8344631,
+         "last_cumulative": 8344631
+        },
+        "incomplete": {
+         "sum_delta": 20115,
+         "summary": 20115,
+         "last_cumulative": 20115
+        },
+        "none": {
+         "sum_delta": 1615,
+         "summary": 1615,
+         "last_cumulative": 1615
+        },
+        "capped": {
+         "sum_delta": 0,
+         "summary": 0,
+         "last_cumulative": 0
+        }
+       },
+       "4": {
+        "complete": {
+         "sum_delta": 7433838,
+         "summary": 7433838,
+         "last_cumulative": 7433838
+        },
+        "incomplete": {
+         "sum_delta": 32178,
+         "summary": 32178,
+         "last_cumulative": 32178
+        },
+        "none": {
+         "sum_delta": 3316,
+         "summary": 3316,
+         "last_cumulative": 3316
+        },
+        "capped": {
+         "sum_delta": 32610,
+         "summary": 32610,
+         "last_cumulative": 32610
+        }
+       }
+      }
+     }
+    },
+    {
+     "id": "5.3",
+     "name": "四类判定数之和 == 碰撞判定总数（Σd_*）",
+     "status": "PASS",
+     "detail": "stage1 合计=2923612；stage2 合计=3644190；stage3 合计=8366361；stage4 合计=7501942",
+     "values": {
+      "phases": {
+       "1": {
+        "sum_reaction_counts": 2923612,
+        "sum_deltas": 2923612
+       },
+       "2": {
+        "sum_reaction_counts": 3644190,
+        "sum_deltas": 3644190
+       },
+       "3": {
+        "sum_reaction_counts": 8366361,
+        "sum_deltas": 8366361
+       },
+       "4": {
+        "sum_reaction_counts": 7501942,
+        "sum_deltas": 7501942
+       }
+      }
+     }
+    },
+    {
+     "id": "5.4",
+     "name": "capped 占比 <1%",
+     "status": "PASS",
+     "detail": "stage1 capped=0/2923612 (0.0000%)；stage2 capped=0/3644190 (0.0000%)；stage3 capped=0/8366361 (0.0000%)；stage4 capped=32610/7501942 (0.4347%)",
+     "values": {
+      "phases": {
+       "1": {
+        "capped": 0,
+        "total": 2923612,
+        "frac": 0.0
+       },
+       "2": {
+        "capped": 0,
+        "total": 3644190,
+        "frac": 0.0
+       },
+       "3": {
+        "capped": 0,
+        "total": 8366361,
+        "frac": 0.0
+       },
+       "4": {
+        "capped": 32610,
+        "total": 7501942,
+        "frac": 0.004346874449309259
+       }
+      }
+     }
+    },
+    {
+     "id": "5.5",
+     "name": "events_total 与 time_series/蓄水池抽样一致（上限 ≤50,000）",
+     "status": "PASS",
+     "detail": "stage1 events_total=16106 末行=16106 抽样=16106；stage2 events_total=37883 末行=37883 抽样=30000；stage3 events_total=51602 末行=51602 抽样=30000；stage4 events_total=80107 末行=80107 抽样=30000",
+     "values": {
+      "reservoir_limit_inferred": 30000,
+      "phases": {
+       "1": {
+        "events_total": 16106,
+        "last_ts_events_total": 16106,
+        "event_samples": 16106,
+        "expected_samples": 16106
+       },
+       "2": {
+        "events_total": 37883,
+        "last_ts_events_total": 37883,
+        "event_samples": 30000,
+        "expected_samples": 30000
+       },
+       "3": {
+        "events_total": 51602,
+        "last_ts_events_total": 51602,
+        "event_samples": 30000,
+        "expected_samples": 30000
+       },
+       "4": {
+        "events_total": 80107,
+        "last_ts_events_total": 80107,
+        "event_samples": 30000,
+        "expected_samples": 30000
+       }
+      }
+     }
+    },
+    {
+     "id": "5.6",
+     "name": "抽样事件逐条原子/价数守恒（≤50,000 条/阶段，无空产物）",
+     "status": "PASS",
+     "detail": "stage1 scanned=16106 atom_bad=0 valence_bad=0 parse_bad=0 empty=0；stage2 scanned=30000 atom_bad=0 valence_bad=0 parse_bad=0 empty=0；stage3 scanned=30000 atom_bad=0 valence_bad=0 parse_bad=0 empty=0；stage4 scanned=30000 atom_bad=0 valence_bad=0 parse_bad=0 empty=0",
+     "values": {
+      "phases": {
+       "1": {
+        "n": 16106,
+        "scanned": 16106,
+        "atom_conserv_bad": 0,
+        "valence_conserv_bad": 0,
+        "parse_bad": 0,
+        "empty_products": 0,
+        "type_counts": {
+         "complete": 16106
+        }
+       },
+       "2": {
+        "n": 30000,
+        "scanned": 30000,
+        "atom_conserv_bad": 0,
+        "valence_conserv_bad": 0,
+        "parse_bad": 0,
+        "empty_products": 0,
+        "type_counts": {
+         "complete": 30000
+        }
+       },
+       "3": {
+        "n": 30000,
+        "scanned": 30000,
+        "atom_conserv_bad": 0,
+        "valence_conserv_bad": 0,
+        "parse_bad": 0,
+        "empty_products": 0,
+        "type_counts": {
+         "complete": 30000
+        }
+       },
+       "4": {
+        "n": 30000,
+        "scanned": 30000,
+        "atom_conserv_bad": 0,
+        "valence_conserv_bad": 0,
+        "parse_bad": 0,
+        "empty_products": 0,
+        "type_counts": {
+         "complete": 30000
+        }
+       }
+      }
+     }
+    },
+    {
+     "id": "5.7",
+     "name": "各阶段终态最大原子数 ≤ cap",
+     "status": "PASS",
+     "detail": "stage1 cap=40 comp_max=8 ts_max=9；stage2 cap=40 comp_max=9 ts_max=9；stage3 cap=40 comp_max=5 ts_max=18；stage4 cap=40 comp_max=40 ts_max=40",
+     "values": {
+      "phases": {
+       "1": {
+        "cap": 40,
+        "comp_max_atoms": 8,
+        "ts_max_atoms": 9,
+        "top_max_atoms": 8
+       },
+       "2": {
+        "cap": 40,
+        "comp_max_atoms": 9,
+        "ts_max_atoms": 9,
+        "top_max_atoms": 9
+       },
+       "3": {
+        "cap": 40,
+        "comp_max_atoms": 5,
+        "ts_max_atoms": 18,
+        "top_max_atoms": 5
+       },
+       "4": {
+        "cap": 40,
+        "comp_max_atoms": 40,
+        "ts_max_atoms": 40,
+        "top_max_atoms": 40
+       }
+      }
+     }
+    },
+    {
+     "id": "5.8",
+     "name": "decomp 事件与 time_series 一致",
+     "status": "PASS",
+     "detail": "stage1 decomp summary=0 ts=0；stage2 decomp summary=0 ts=0；stage3 decomp summary=0 ts=0；stage4 decomp summary=0 ts=0",
+     "values": {
+      "phases": {
+       "1": {
+        "summary_decomp": 0,
+        "ts_decomp": 0
+       },
+       "2": {
+        "summary_decomp": 0,
+        "ts_decomp": 0
+       },
+       "3": {
+        "summary_decomp": 0,
+        "ts_decomp": 0
+       },
+       "4": {
+        "summary_decomp": 0,
+        "ts_decomp": 0
+       }
+      }
+     }
+    },
+    {
+     "id": "5.9",
+     "name": "各阶段 cap == 40",
+     "status": "PASS",
+     "detail": "stage1 cap=40；stage2 cap=40；stage3 cap=40；stage4 cap=40",
+     "values": {
+      "phases": {
+       "1": {
+        "cap": 40
+       },
+       "2": {
+        "cap": 40
+       },
+       "3": {
+        "cap": 40
+       },
+       "4": {
+        "cap": 40
+       }
+      }
+     }
+    },
+    {
+     "id": "5.10",
+     "name": "ΔN 与抽样事件一致性概览",
+     "status": "INFO",
+     "detail": "stage1 ΔN=3030 精确均值=0.18813 抽样均值=0.18813 SE=0.00710；stage2 ΔN=-8903 精确均值=-0.23501 抽样均值=-0.23557 SE=0.00407；stage3 ΔN=953 精确均值=0.01847 抽样均值=0.02237 SE=0.00430；stage4 ΔN=-10855 精确均值=-0.13551 抽样均值=-0.13180 SE=0.00701",
+     "values": {
+      "stages": {
+       "1": {
+        "dN": 3030,
+        "events_total": 16106,
+        "exact_mean_delta": 0.188129,
+        "sample_mean_delta": 0.188129,
+        "se": 0.0071,
+        "diff": 0.0
+       },
+       "2": {
+        "dN": -8903,
+        "events_total": 37883,
+        "exact_mean_delta": -0.235013,
+        "sample_mean_delta": -0.235567,
+        "se": 0.004075,
+        "diff": 0.000554
+       },
+       "3": {
+        "dN": 953,
+        "events_total": 51602,
+        "exact_mean_delta": 0.018468,
+        "sample_mean_delta": 0.022367,
+        "se": 0.004301,
+        "diff": 0.003898
+       },
+       "4": {
+        "dN": -10855,
+        "events_total": 80107,
+        "exact_mean_delta": -0.135506,
+        "sample_mean_delta": -0.1318,
+        "se": 0.007009,
+        "diff": 0.003706
+       }
+      }
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 6,
+   "name": "终态表 sanity（final_composition / top structures）",
+   "subchecks": [
+    {
+     "id": "6.1",
+     "name": "final_composition.atoms 与公式原子数一致",
+     "status": "PASS",
+     "detail": "stage1 分子式=4 atoms=None=0 不一致=0 解析错误=0；stage2 分子式=7 atoms=None=0 不一致=0 解析错误=0；stage3 分子式=5 atoms=None=0 不一致=0 解析错误=0；stage4 分子式=14 atoms=None=0 不一致=0 解析错误=0",
+     "values": {
+      "phases": {
+       "1": {
+        "n_formula": 4,
+        "atoms_none": 0,
+        "atoms_field_mismatch": 0,
+        "parse_errors": 0
+       },
+       "2": {
+        "n_formula": 7,
+        "atoms_none": 0,
+        "atoms_field_mismatch": 0,
+        "parse_errors": 0
+       },
+       "3": {
+        "n_formula": 5,
+        "atoms_none": 0,
+        "atoms_field_mismatch": 0,
+        "parse_errors": 0
+       },
+       "4": {
+        "n_formula": 14,
+        "atoms_none": 0,
+        "atoms_field_mismatch": 0,
+        "parse_errors": 0
+       }
+      }
+     }
+    },
+    {
+     "id": "6.2",
+     "name": "final_top_structures atoms/edges 合法（价数填满、无自环/重复边/越界）",
+     "status": "PASS",
+     "detail": "stage1 top=4 非法=0；stage2 top=7 非法=0；stage3 top=5 非法=0；stage4 top=14 非法=0",
+     "values": {
+      "phases": {
+       "1": {
+        "n_top": 4,
+        "bad": []
+       },
+       "2": {
+        "n_top": 7,
+        "bad": []
+       },
+       "3": {
+        "n_top": 5,
+        "bad": []
+       },
+       "4": {
+        "n_top": 14,
+        "bad": []
+       }
+      }
+     }
+    },
+    {
+     "id": "6.3",
+     "name": "top 结构公式均在 final_composition 中",
+     "status": "PASS",
+     "detail": "一致",
+     "values": {
+      "issues": []
+     }
+    },
+    {
+     "id": "6.4",
+     "name": "final_composition atoms=None 概览",
+     "status": "INFO",
+     "detail": "stage1: 0/4；stage2: 0/7；stage3: 0/5；stage4: 0/14",
+     "values": {
+      "stages": {
+       "1": {
+        "n_formula": 4,
+        "atoms_none": [],
+        "n_atoms_none": 0
+       },
+       "2": {
+        "n_formula": 7,
+        "atoms_none": [],
+        "n_atoms_none": 0
+       },
+       "3": {
+        "n_formula": 5,
+        "atoms_none": [],
+        "n_atoms_none": 0
+       },
+       "4": {
+        "n_formula": 14,
+        "atoms_none": [],
+        "n_atoms_none": 0
+       }
+      }
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 7,
+   "name": "state 与 result 一致性",
+   "subchecks": [
+    {
+     "id": "7.1",
+     "name": "各阶段 state 总分子/总原子/组成 == result 终态",
+     "status": "PASS",
+     "detail": "stage1 state 总数/组成与结果一致；stage2 state 总数/组成与结果一致；stage3 state 总数/组成与结果一致；stage4 state 总数/组成与结果一致",
+     "values": {
+      "phases": {
+       "1": {
+        "state_total_molecules": 12032,
+        "state_total_atoms": 38532,
+        "sum_counts": 12032,
+        "sum_atoms": 38532
+       },
+       "2": {
+        "state_total_molecules": 11129,
+        "state_total_atoms": 54532,
+        "sum_counts": 11129,
+        "sum_atoms": 54532
+       },
+       "3": {
+        "state_total_molecules": 20082,
+        "state_total_atoms": 70532,
+        "sum_counts": 20082,
+        "sum_atoms": 70532
+       },
+       "4": {
+        "state_total_molecules": 17227,
+        "state_total_atoms": 86532,
+        "sum_counts": 17227,
+        "sum_atoms": 86532
+       }
+      }
+     }
+    },
+    {
+     "id": "7.2",
+     "name": "state_k.molecules 元素计数 == result_k 元素计数",
+     "status": "PASS",
+     "detail": "stage1 元素计数一致；stage2 元素计数一致；stage3 元素计数一致；stage4 元素计数一致",
+     "values": {
+      "phases": {
+       "1": {
+        "diff": {},
+        "state": {
+         "O": 12071,
+         "X": 14368,
+         "C": 12093,
+         "P": 0,
+         "W": 0,
+         "L": 0,
+         "K": 0,
+         "A": 0,
+         "F": 0
+        },
+        "result": {
+         "O": 12071,
+         "X": 14368,
+         "C": 12093,
+         "P": 0,
+         "W": 0,
+         "L": 0,
+         "K": 0,
+         "A": 0,
+         "F": 0
+        }
+       },
+       "2": {
+        "diff": {},
+        "state": {
+         "O": 12071,
+         "X": 14368,
+         "C": 12093,
+         "P": 0,
+         "W": 0,
+         "L": 0,
+         "K": 0,
+         "A": 0,
+         "F": 16000
+        },
+        "result": {
+         "O": 12071,
+         "X": 14368,
+         "C": 12093,
+         "P": 0,
+         "W": 0,
+         "L": 0,
+         "K": 0,
+         "A": 0,
+         "F": 16000
+        }
+       },
+       "3": {
+        "diff": {},
+        "state": {
+         "O": 12071,
+         "X": 14368,
+         "C": 12093,
+         "P": 0,
+         "W": 0,
+         "L": 0,
+         "K": 0,
+         "A": 16000,
+         "F": 16000
+        },
+        "result": {
+         "O": 12071,
+         "X": 14368,
+         "C": 12093,
+         "P": 0,
+         "W": 0,
+         "L": 0,
+         "K": 0,
+         "A": 16000,
+         "F": 16000
+        }
+       },
+       "4": {
+        "diff": {},
+        "state": {
+         "O": 12071,
+         "X": 14368,
+         "C": 12093,
+         "P": 0,
+         "W": 0,
+         "L": 0,
+         "K": 16000,
+         "A": 16000,
+         "F": 16000
+        },
+        "result": {
+         "O": 12071,
+         "X": 14368,
+         "C": 12093,
+         "P": 0,
+         "W": 0,
+         "L": 0,
+         "K": 16000,
+         "A": 16000,
+         "F": 16000
+        }
+       }
+      }
+     }
+    },
+    {
+     "id": "7.3",
+     "name": "各阶段 state.molecules 结构合法（价数填满/无重复边/越界）",
+     "status": "PASS",
+     "detail": "stage1 结构=6 非法=0；stage2 结构=7 非法=0；stage3 结构=5 非法=0；stage4 结构=14 非法=0",
+     "values": {
+      "phases": {
+       "1": {
+        "n_structures": 6,
+        "bad": []
+       },
+       "2": {
+        "n_structures": 7,
+        "bad": []
+       },
+       "3": {
+        "n_structures": 5,
+        "bad": []
+       },
+       "4": {
+        "n_structures": 14,
+        "bad": []
+       }
+      }
+     }
+    },
+    {
+     "id": "7.4",
+     "name": "各阶段 state 概览",
+     "status": "INFO",
+     "detail": "stage1 12032 分子/38532 原子/6 结构；stage2 11129 分子/54532 原子/7 结构；stage3 20082 分子/70532 原子/5 结构；stage4 17227 分子/86532 原子/14 结构",
+     "values": {
+      "stages": {
+       "1": {
+        "total_molecules": 12032,
+        "total_atoms": 38532,
+        "distinct_structures": 6,
+        "distinct_formulas": 29
+       },
+       "2": {
+        "total_molecules": 11129,
+        "total_atoms": 54532,
+        "distinct_structures": 7,
+        "distinct_formulas": 40
+       },
+       "3": {
+        "total_molecules": 20082,
+        "total_atoms": 70532,
+        "distinct_structures": 5,
+        "distinct_formulas": 152
+       },
+       "4": {
+        "total_molecules": 17227,
+        "total_atoms": 86532,
+        "distinct_structures": 14,
+        "distinct_formulas": 1372
+       }
+      }
+     }
+    }
+   ],
+   "status": "PASS"
+  }
+ ],
+ "summary": {
+  "PASS": 39,
+  "FAIL": 0,
+  "SKIP": 0,
+  "INFO": 5,
+  "PENDING": 0
+ },
+ "overall": "PASS",
+ "pending": [],
+ "notes": []
+}

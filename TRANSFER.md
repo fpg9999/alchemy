@@ -1,6 +1,6 @@
 # 跨电脑交接方案（ALCHEMY）· 最新成果版
 
-> 最后更新：**2026-11-17**（T62 等量价数两阶段实验完成后整理）
+> 最后更新：**2026-11-17**（T63 聚素熔体逐级价数滴定完成后整理）
 > 工作目录：`G:\AI work\deepseek\work1\alchemy`
 > 交接入口：`HANDOFF.md`（最新结论以它为准）；本文件负责"如何迁移/同步"。
 > 远程仓库：**https://github.com/fpg9999/alchemy**
@@ -12,17 +12,17 @@
 | 项目 | 状态 |
 |---|---|
 | 本地仓库 | `G:\AI work\deepseek\work1\alchemy`，分支 `main` |
-| 远程仓库 | `https://github.com/fpg9999/alchemy`（**已推送，含 T01~T62 全部提交**） |
+| 远程仓库 | `https://github.com/fpg9999/alchemy`（**已推送，含 T01~T63 全部提交**） |
 | 认证 | Git Credential Manager 已存 `fpg9999` 的 GitHub 凭据（`cmdkey` 中 `git:https://github.com`）；`gh` CLI 未登录，但不影响 git push |
-| 推送 | **已完成**：`main → origin/main`（首次推送 T62 提交 `83429a0`，随后本文件更新提交 `39aeb50`；最新 HEAD 以 GitHub 页面为准） |
-| 最新实验 | **T62 等量价数两阶段实验**（九元素、三/二/一价≈1:1:1、0°C 后二次投放；报告 `docs/T62_EQUAL_VALENCE.md`） |
-| 本地 commit 历史 | T01 → … → T59 → T60 总汇报 → T61 六边形摆放 → **T62 等量价数**（最新，`83429a0`） |
+| 推送 | **已完成**：`main → origin/main`（T62 提交 `83429a0` + 文档 `39aeb50`；T63 提交见 §6；最新 HEAD 以 GitHub 页面为准） |
+| 最新实验 | **T63 聚素熔体逐级价数滴定**（纯聚素退火 → F2 → A2 → K2 三次单质投放；报告 `docs/T63_STAGED_TITRATION.md`） |
+| 本地 commit 历史 | T01 → … → T60 总汇报 → T61 六边形摆放 → T62 等量价数 → **T63 逐级价数滴定**（最新，见 §6） |
 
 > 如果是新电脑 clone：`git clone https://github.com/fpg9999/alchemy` → `python unpack_data.py` → 读 `HANDOFF.md`。
 
 ---
 
-## 1. 最新成果摘要（T55 → T62，全部 2D 粒子环境实验）
+## 1. 最新成果摘要（T55 → T63，全部 2D 粒子环境实验）
 
 | 实验 | 投料 / 环境 | 核心结论 |
 |---|---|---|
@@ -33,9 +33,25 @@
 | T59 | 九元素 120+120 种，三价最多（52.3:26.3:21.4），L=60000，cap40，两阶段 | A 27,431 分子/43 种 → B 38,609 分子/67 种；`CF`+`O2XP2WK2A(2)` 等；cap60 后收敛到 9/13 种 |
 | T60 | T55~T59 总汇报 | 12 张图 + 67 种重要物质图鉴；跨系列机制总结 |
 | T61 | T59 终态 66 种 ≥5 原子大分子 | **66/66 严格六边形棋盘格摆放**（`embed_mol2`+`validate_place`）；13 张图 |
-| **T62（最新）** | **九元素 120+120 种，三/二/一价等量 ≈33.4:33.3:33.3（9 元素各 ≈11.1%），L=60000，cap40，两阶段** | **A 34,476 分子/43 种 → B 51,937 分子/230,046 原子/43 种；体系收敛到 `LF` + `OXCPWKA` 1:1 等摩尔双组分（A 88.5%、B 94.0% 分子）；二次投放只"提纯"不"洗牌"；cap40→60：A 43→41、B 43→38、max 40→19/20、capped 0.095%/0.063%→0** |
+| **T62** | 九元素 120+120 种，三/二/一价等量 ≈33.4:33.3:33.3（9 元素各 ≈11.1%），L=60000，cap40，两阶段 | A 34,476 分子/43 种 → B 51,937 分子/230,046 原子/43 种；体系收敛到 `LF` + `OXCPWKA` 1:1 等摩尔双组分（A 88.5%、B 94.0% 分子）；二次投放只"提纯"不"洗牌"；cap40→60：A 43→41、B 43→38、max 40→19/20、capped 0.095%/0.063%→0 |
+| **T63（最新）** | **29 种纯聚素 9,002 分子 → 0°C 整理后依次加 F2/A2/K2 各 8,000 分子（16,000 原子），L=30000，cap40，四阶段** | 终态 4/7/5/14 种分子式；**每次投放把上一终态完全熔断换代（retained=0）**，家族依次 OXC 盐 → F 端帽 → A 桥 → K 骨架；K 阶段 O≡K 把 F 挤回 F2（81.5% F 再生）+ 24 个 39/40 原子巨型；终态价数 32.4:35.1:32.5 回弹 ~1:1:1（印证 T62 吸引子）；capped 仅 K 阶段 0.435%，独立验证 39 项 PASS |
 
-最新核心资产（T62 新增）：
+最新核心资产（T63 新增）：
+
+- 代码：`t63_staged.py`（四阶段单质滴定主脚本，`--phase 1..4/all`、`--control`）、
+  `t63_analysis.py`、`t63_render.py`、`t63_verify.py`、`t63_hex_layouts.py`、`t63_hex_render.py`；
+- 数据：`t63_loads.json`、`t63_phase1..4_result.json`、`t63_state1..4.json`、`t63_control_s1.json`、
+  `t63_analysis.json`、`t63_verify.json`、`t63_hex_layouts.json`；
+- 报告：`docs/T63_STAGED_TITRATION.md`、`docs/T63_VERIFY.md`；
+- 图：`images/t63_*.png`（12 张主图）+ `images/t63_hex_*.png`（5 张严格六边形摆放图）。
+
+**T63 一句话**：先只投 29 种纯聚素退火，再逐级投放"大量单质"（1 价 F2 → 2 价 A2 → 3 价 K2），
+每一次投放都把上一阶段终态**完全熔断、整体换代**（top20 保留数 0），产物家族严格按元素角色接力
+（聚素盐 OXC 80.8% → F 端帽 → A 桥 → K 骨架）；K 阶段 O≡K 三键把 F 挤回单质（F2 6,521，81.5% F），
+并首次触发 capped（0.435%）与 24 个 39/40 原子巨型；终态价数 32.4:35.1:32.5 回弹到 ~1:1:1，
+与 T62 的"等量价数吸引子"互相印证——**投放顺序本身就是配方变量**。
+
+T62 核心资产（保留）：
 
 - 代码：`t62_mixture.py`（IPF 等量投料）、`t62_two_phase.py`（两阶段主脚本，支持 cap/control）、
   `t62_analysis.py`、`t62_render.py`、`t62_verify.py`、`t62_hex_layouts.py`、`t62_hex_render.py`；
@@ -66,7 +82,7 @@ cd "G:\AI work\deepseek\work1\alchemy"
 
 git remote add origin https://github.com/fpg9999/alchemy.git   # 已配置过则跳过
 git add -A
-git commit -m "T62: 九元素等量价数两阶段实验（LF+OXCPWKA 1:1 双组分、cap40/60 对照、独立验证）"
+git commit -m "T63: 聚素熔体逐级价数滴定（F2→A2→K2 三次单质投放、四阶段全景换代、独立验证）"
 git push -u origin main
 ```
 
@@ -147,7 +163,8 @@ G:\AI work\deepseek\work1\alchemy_repo.bundle
 
 `t58_result.json`、`t59_phaseA_result.json`、`t59_phaseB_result.json`、`t59_phaseA_hf_result.json`、
 `t59_phaseB_hf_result.json`、`t62_phaseA_result.json`、`t62_phaseB_result.json`、
-`t62_phaseA_hf_result.json`、`t62_phaseB_hf_result.json` 等，单个 20~28MB。
+`t62_phaseA_hf_result.json`、`t62_phaseB_hf_result.json`、`t63_phase1_result.json` ~
+`t63_phase4_result.json` 等，单个 20~28MB。
 其余 >16MB 的中间数据（`t12b_*` 等）仍走 `_data_gz/`。
 
 ---
@@ -162,7 +179,7 @@ G:\AI work\deepseek\work1\alchemy_repo.bundle
    python -c "import pot_v4; print(pot_v4.simulate(['O','K']))"
    ```
 5. 读 `HANDOFF.md` 第 0 节的新对话启动语；
-6. 需要最新实验时直接跑：`python t62_two_phase.py --phase both`（或复用 `t62_analysis.py` / `t62_render.py`）。
+6. 需要最新实验时直接跑：`python t63_staged.py --phase all`（或复用 `t63_analysis.py` / `t63_render.py` / `t63_verify.py`）。
 
 ---
 
@@ -170,10 +187,10 @@ G:\AI work\deepseek\work1\alchemy_repo.bundle
 
 | 项目 | 内容 |
 |---|---|
-| 推送时间 | 2026-11-17（T62 完成后整理推送） |
+| 推送时间 | 2026-11-17（T63 完成后追加推送） |
 | 远程 | `https://github.com/fpg9999/alchemy` |
-| 分支 | `main`（首次推送，已建立 `origin/main` 跟踪） |
-| 远程 HEAD | 首次推送：`83429a079690df8c1c19c3525a4b502fa109b029`（`83429a0`）；随后文档更新：`39aeb50`（`docs: TRANSFER 记录 T62 推送完成`）；最新以 GitHub 页面为准 |
-| 本次提交 | `T62: 九元素等量价数两阶段实验…`（44 files，+6,896,564 行/88MB 数据与图） |
-| 之前历史 | `f01e88e`（T61 六边形摆放）→ `06888e4`（T60 全系列汇报）→ T59/T58/… 全部随本次推送一并上传 |
-| 说明 | 首次把本地 T01~T62 全部提交推送到远程；后续日常同步用 `git pull` / `git push origin main` |
+| 分支 | `main`（已建立 `origin/main` 跟踪） |
+| 远程 HEAD | T62 阶段：`9f88d9f`（`39aeb50` 文档提交后）；T63 提交见下方"本次提交"，最新以 GitHub 页面为准 |
+| 本次提交 | `T63: 聚素熔体逐级价数滴定…`（代码/数据/图/文档，见 `git log -1 --stat`） |
+| 之前历史 | `9f88d9f`（T62 文档）→ `39aeb50` → `83429a0`（T62 主提交）→ `f01e88e`（T61）→ … → T01 全部已上传 |
+| 说明 | 日常同步继续用 `git add -A && git commit && git push origin main` |

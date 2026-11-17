@@ -1,0 +1,539 @@
+{
+ "experiment": "T63 聚素退火 + F2/A2/K2 三次单质投放",
+ "seed": 20261126,
+ "L": 30000.0,
+ "minutes": 1000,
+ "max_reaction_atoms": 40,
+ "area_model": "A = π·R0²·(n/2)，R0=0.2（同 T57）",
+ "stage1": {
+  "name": "全部 29 种纯聚素（O/X/C）",
+  "load_spec": [
+   [
+    "29聚素",
+    "C2(2原子)",
+    "C2",
+    664
+   ],
+   [
+    "29聚素",
+    "O2(2原子)",
+    "O2",
+    664
+   ],
+   [
+    "29聚素",
+    "X2(2原子)",
+    "X2",
+    664
+   ],
+   [
+    "29聚素",
+    "O2X(3原子)",
+    "O2X",
+    443
+   ],
+   [
+    "29聚素",
+    "OXC(3原子)",
+    "OXC",
+    443
+   ],
+   [
+    "29聚素",
+    "X3(3原子)",
+    "X3",
+    443
+   ],
+   [
+    "29聚素",
+    "XC2(3原子)",
+    "XC2",
+    443
+   ],
+   [
+    "29聚素",
+    "O2C2(4原子)",
+    "O2C2",
+    332
+   ],
+   [
+    "29聚素",
+    "O2X2(4原子)",
+    "O2X2",
+    332
+   ],
+   [
+    "29聚素",
+    "OC3(4原子)",
+    "OC3",
+    332
+   ],
+   [
+    "29聚素",
+    "OX2C(4原子)",
+    "OX2C",
+    332
+   ],
+   [
+    "29聚素",
+    "X2C2(4原子)",
+    "X2C2",
+    332
+   ],
+   [
+    "29聚素",
+    "O2X3(5原子)",
+    "O2X3",
+    266
+   ],
+   [
+    "29聚素",
+    "O2XC2(5原子)",
+    "O2XC2",
+    266
+   ],
+   [
+    "29聚素",
+    "O3XC(5原子)",
+    "O3XC",
+    266
+   ],
+   [
+    "29聚素",
+    "OX3C(5原子)",
+    "OX3C",
+    266
+   ],
+   [
+    "29聚素",
+    "X3C2(5原子)",
+    "X3C2",
+    266
+   ],
+   [
+    "29聚素",
+    "O2C4(6原子)",
+    "O2C4",
+    221
+   ],
+   [
+    "29聚素",
+    "O2X4(6原子)",
+    "O2X4",
+    221
+   ],
+   [
+    "29聚素",
+    "O3C3(6原子)",
+    "O3C3",
+    221
+   ],
+   [
+    "29聚素",
+    "O3X2C(6原子)",
+    "O3X2C",
+    221
+   ],
+   [
+    "29聚素",
+    "O2X5(7原子)",
+    "O2X5",
+    190
+   ],
+   [
+    "29聚素",
+    "O2XC4(7原子)",
+    "O2XC4",
+    190
+   ],
+   [
+    "29聚素",
+    "O3XC3(7原子)",
+    "O3XC3",
+    190
+   ],
+   [
+    "29聚素",
+    "O2X2C4(8原子)",
+    "O2X2C4",
+    166
+   ],
+   [
+    "29聚素",
+    "O2X6(8原子)",
+    "O2X6",
+    166
+   ],
+   [
+    "29聚素",
+    "O3C5(8原子)",
+    "O3C5",
+    166
+   ],
+   [
+    "29聚素",
+    "O2X3C4(9原子)",
+    "O2X3C4",
+    148
+   ],
+   [
+    "29聚素",
+    "O2X7(9原子)",
+    "O2X7",
+    148
+   ]
+  ],
+  "species": [
+   {
+    "formula": "C2",
+    "zh": "冰2",
+    "atoms": 2,
+    "radius": 0.2,
+    "area": 0.1257,
+    "count": 664,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O2",
+    "zh": "秩2",
+    "atoms": 2,
+    "radius": 0.2,
+    "area": 0.1257,
+    "count": 664,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "X2",
+    "zh": "晶2",
+    "atoms": 2,
+    "radius": 0.2,
+    "area": 0.1257,
+    "count": 664,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O2X",
+    "zh": "秩2晶",
+    "atoms": 3,
+    "radius": 0.2449,
+    "area": 0.1885,
+    "count": 443,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "OXC",
+    "zh": "秩晶冰",
+    "atoms": 3,
+    "radius": 0.2449,
+    "area": 0.1885,
+    "count": 443,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "X3",
+    "zh": "晶3",
+    "atoms": 3,
+    "radius": 0.2449,
+    "area": 0.1885,
+    "count": 443,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "XC2",
+    "zh": "晶冰2",
+    "atoms": 3,
+    "radius": 0.2449,
+    "area": 0.1885,
+    "count": 443,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O2C2",
+    "zh": "秩2冰2",
+    "atoms": 4,
+    "radius": 0.2828,
+    "area": 0.2513,
+    "count": 332,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O2X2",
+    "zh": "秩2晶2",
+    "atoms": 4,
+    "radius": 0.2828,
+    "area": 0.2513,
+    "count": 332,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "OC3",
+    "zh": "秩冰3",
+    "atoms": 4,
+    "radius": 0.2828,
+    "area": 0.2513,
+    "count": 332,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "OX2C",
+    "zh": "秩晶2冰",
+    "atoms": 4,
+    "radius": 0.2828,
+    "area": 0.2513,
+    "count": 332,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "X2C2",
+    "zh": "晶2冰2",
+    "atoms": 4,
+    "radius": 0.2828,
+    "area": 0.2513,
+    "count": 332,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O2X3",
+    "zh": "秩2晶3",
+    "atoms": 5,
+    "radius": 0.3162,
+    "area": 0.3142,
+    "count": 266,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O2XC2",
+    "zh": "秩2晶冰2",
+    "atoms": 5,
+    "radius": 0.3162,
+    "area": 0.3142,
+    "count": 266,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O3XC",
+    "zh": "秩3晶冰",
+    "atoms": 5,
+    "radius": 0.3162,
+    "area": 0.3142,
+    "count": 266,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "OX3C",
+    "zh": "秩晶3冰",
+    "atoms": 5,
+    "radius": 0.3162,
+    "area": 0.3142,
+    "count": 266,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "X3C2",
+    "zh": "晶3冰2",
+    "atoms": 5,
+    "radius": 0.3162,
+    "area": 0.3142,
+    "count": 266,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O2C4",
+    "zh": "秩2冰4",
+    "atoms": 6,
+    "radius": 0.3464,
+    "area": 0.377,
+    "count": 221,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O2X4",
+    "zh": "秩2晶4",
+    "atoms": 6,
+    "radius": 0.3464,
+    "area": 0.377,
+    "count": 221,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O3C3",
+    "zh": "秩3冰3",
+    "atoms": 6,
+    "radius": 0.3464,
+    "area": 0.377,
+    "count": 221,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O3X2C",
+    "zh": "秩3晶2冰",
+    "atoms": 6,
+    "radius": 0.3464,
+    "area": 0.377,
+    "count": 221,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O2X5",
+    "zh": "秩2晶5",
+    "atoms": 7,
+    "radius": 0.3742,
+    "area": 0.4398,
+    "count": 190,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O2XC4",
+    "zh": "秩2晶冰4",
+    "atoms": 7,
+    "radius": 0.3742,
+    "area": 0.4398,
+    "count": 190,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O3XC3",
+    "zh": "秩3晶冰3",
+    "atoms": 7,
+    "radius": 0.3742,
+    "area": 0.4398,
+    "count": 190,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O2X2C4",
+    "zh": "秩2晶2冰4",
+    "atoms": 8,
+    "radius": 0.4,
+    "area": 0.5027,
+    "count": 166,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O2X6",
+    "zh": "秩2晶6",
+    "atoms": 8,
+    "radius": 0.4,
+    "area": 0.5027,
+    "count": 166,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O3C5",
+    "zh": "秩3冰5",
+    "atoms": 8,
+    "radius": 0.4,
+    "area": 0.5027,
+    "count": 166,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O2X3C4",
+    "zh": "秩2晶3冰4",
+    "atoms": 9,
+    "radius": 0.4243,
+    "area": 0.5655,
+    "count": 148,
+    "area_per_atom": 0.0628
+   },
+   {
+    "formula": "O2X7",
+    "zh": "秩2晶7",
+    "atoms": 9,
+    "radius": 0.4243,
+    "area": 0.5655,
+    "count": 148,
+    "area_per_atom": 0.0628
+   }
+  ],
+  "meta": {
+   "n_species": 29,
+   "total_molecules": 9002,
+   "total_atoms": 38532,
+   "area_model": "A = π·R0²·(n_atoms/2)，R = R0·sqrt(n/2)，R0=0.2",
+   "count_model": "count = max(30, round(K/n_atoms))，K = total/Σ(1/n)",
+   "K": 1328.258,
+   "strict_larger_area_fewer_count": true,
+   "molecule_range": [
+    2,
+    9
+   ],
+   "area_range": [
+    0.1257,
+    0.5655
+   ],
+   "count_range": [
+    148,
+    664
+   ],
+   "mean_atoms": 4.28
+  }
+ },
+ "additions": [
+  {
+   "stage": 2,
+   "element": "F",
+   "name": "焰单质",
+   "formula": "F2",
+   "molecules": 8000,
+   "atoms": 16000
+  },
+  {
+   "stage": 3,
+   "element": "A",
+   "name": "气单质",
+   "formula": "A2",
+   "molecules": 8000,
+   "atoms": 16000
+  },
+  {
+   "stage": 4,
+   "element": "K",
+   "name": "沌单质",
+   "formula": "K2",
+   "molecules": 8000,
+   "atoms": 16000
+  }
+ ],
+ "stage_design": [
+  {
+   "stage": 1,
+   "add": null,
+   "initial_molecules": 9002,
+   "initial_atoms": 38532
+  },
+  {
+   "stage": 2,
+   "add": {
+    "stage": 2,
+    "element": "F",
+    "name": "焰单质",
+    "formula": "F2",
+    "molecules": 8000,
+    "atoms": 16000
+   }
+  },
+  {
+   "stage": 3,
+   "add": {
+    "stage": 3,
+    "element": "A",
+    "name": "气单质",
+    "formula": "A2",
+    "molecules": 8000,
+    "atoms": 16000
+   }
+  },
+  {
+   "stage": 4,
+   "add": {
+    "stage": 4,
+    "element": "K",
+    "name": "沌单质",
+    "formula": "K2",
+    "molecules": 8000,
+    "atoms": 16000
+   }
+  }
+ ]
+}
