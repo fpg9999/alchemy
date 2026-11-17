@@ -68,6 +68,12 @@
   9000/9000 达标，min 696.7）、`t55_sensitivity.py`（T0=6/8/12/20°C 敏感性）、`t55_analysis.py`/`t55_render.py`、
   `docs/T55_KINETIC_ENV.md`、`docs/T55_ENGINE_AUDIT.md`、`images/t55_*.png`（8 张）；
   结论：主实验快速退火到 99.5% `OXC`；温度标度敏感性下出现不完全反应/自分解/新物质。
+- **T60（2026-11-17）全系列总汇报**：`docs/T60_SERIES_SUMMARY.md`、`t60_top20_data.json`、
+  `t60_top20_extract.py`、`t60_fill_report.py`、`t60_render.py`、`t60_figures_manifest.json`；
+  T55~T59 各实验对比 + 每轮 top20 图摆盘（`images/t60_top20_*.png` 8 张）+ 67 种重要物质图鉴
+  （`t60_important_1/2.png`）+ 全系列总览（`t60_series_overview.png`）+ top20 数量条形；
+  跨系列结论：温度尺度、F+元素配比决定终态、面积是动力学旋钮、区域/cap 决定退火干净度、
+  cap60 后真实稳定核心 9~13 种。
 - **T59（2026-11-17）九元素两阶段实验 + fast_pot 加速**：`fast_pot.py`（增量并查集+分层筛选，
   与 pot_v4 等价，F 3.6~6.3×，审计 27,315 向量 0 差异）、`natural_engine.set_fast`、
   `t59_mixture.py`、`t59_two_phase.py`、`t59_analysis.py`、`t59_render.py`、

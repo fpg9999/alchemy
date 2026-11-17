@@ -1,0 +1,140 @@
+{
+ "generated": "2026-11-17 08:50:12",
+ "source": "t60_top20_data.json",
+ "figures": [
+  {
+   "file": "t60_top20_T55.png",
+   "type": "top20",
+   "experiment": "T55",
+   "title": "T55 · 等比例聚素单质（O/X/C）",
+   "subtitle": "投料 9,000 分子 / 18,000 原子 · L=10,000 · 无 cap · 终态 5,974 分子 / 18,000 原子 / 9 种结构 / 最大 8 原子  （终态仅 9 种，已全部展示）",
+   "n_panels": 9,
+   "bytes": 101149,
+   "width": 1600,
+   "height": 1361
+  },
+  {
+   "file": "t60_top20_T56.png",
+   "type": "top20",
+   "experiment": "T56",
+   "title": "T56 · 价数比 3<2<1 + 散素 K/A/F",
+   "subtitle": "投料 9,200 分子 / 18,400 原子 · L=10,000 · 无 cap · 终态 9,020 分子 / 18,400 原子 / 22 种结构 / 最大 22 原子  ",
+   "n_panels": 20,
+   "bytes": 184599,
+   "width": 1600,
+   "height": 2111
+  },
+  {
+   "file": "t60_top20_T57.png",
+   "type": "top20",
+   "experiment": "T57",
+   "title": "T57 · 全部 29 种聚素 + 面积∝元素数",
+   "subtitle": "投料 9,002 分子 / 38,532 原子 · L=10,000 · 无 cap · 终态 12,054 分子 / 38,532 原子 / 4 种结构 / 最大 8 原子  （终态仅 4 种，已全部展示）",
+   "n_panels": 4,
+   "bytes": 60192,
+   "width": 1600,
+   "height": 611
+  },
+  {
+   "file": "t60_top20_T58.png",
+   "type": "top20",
+   "experiment": "T58",
+   "title": "T58 · 九元素 + 物质库随机 44 种大投料",
+   "subtitle": "投料 14,000 分子 / 73,216 原子 · L=400,000 · cap=20 · 终态 15,823 分子 / 73,216 原子 / 937 种结构 / 最大 20 原子  ",
+   "n_panels": 20,
+   "bytes": 173544,
+   "width": 1600,
+   "height": 2111
+  },
+  {
+   "file": "t60_top20_T59A.png",
+   "type": "top20",
+   "experiment": "T59A",
+   "title": "T59A · 第一阶段：120 种、三价最多/一价最少",
+   "subtitle": "投料 13,174 分子 / 150,103 原子 · L=60,000 · cap=40 · 终态 27,431 分子 / 150,103 原子 / 43 种结构 / 最大 40 原子  ",
+   "n_panels": 20,
+   "bytes": 188978,
+   "width": 1600,
+   "height": 2111
+  },
+  {
+   "file": "t60_top20_T59B.png",
+   "type": "top20",
+   "experiment": "T59B",
+   "title": "T59B · 第二阶段：整理底物 + batchB、T 重置",
+   "subtitle": "投料 34,326 分子 / 230,133 原子 · L=60,000 · cap=40 · 终态 38,609 分子 / 230,133 原子 / 67 种结构 / 最大 40 原子  ",
+   "n_panels": 20,
+   "bytes": 190843,
+   "width": 1600,
+   "height": 2111
+  },
+  {
+   "file": "t60_top20_T59A_hf.png",
+   "type": "top20",
+   "experiment": "T59A_hf",
+   "title": "T59A_hf · 第一阶段 cap=60 高保真",
+   "subtitle": "投料 13,174 分子 / 150,103 原子 · L=60,000 · cap=60 · 终态 27,351 分子 / 150,103 原子 / 9 种结构 / 最大 18 原子  （终态仅 9 种，已全部展示）",
+   "n_panels": 9,
+   "bytes": 117565,
+   "width": 1600,
+   "height": 1361
+  },
+  {
+   "file": "t60_top20_T59B_hf.png",
+   "type": "top20",
+   "experiment": "T59B_hf",
+   "title": "T59B_hf · 第二阶段 cap=60 高保真",
+   "subtitle": "投料 34,246 分子 / 230,133 原子 · L=60,000 · cap=60 · 终态 38,528 分子 / 230,133 原子 / 13 种结构 / 最大 60 原子  （终态仅 13 种，已全部展示）",
+   "n_panels": 13,
+   "bytes": 153956,
+   "width": 1600,
+   "height": 1736
+  },
+  {
+   "file": "t60_important_1.png",
+   "type": "important",
+   "page": 1,
+   "n_items": 36,
+   "bytes": 204390,
+   "title": "T60 重要物质图鉴 1/2（36 个）",
+   "description": "跨实验重要物质并集（67 个）第 1 页；按出现实验数/最佳排名/最大数量排序。",
+   "width": 1600,
+   "height": 1948
+  },
+  {
+   "file": "t60_important_2.png",
+   "type": "important",
+   "page": 2,
+   "n_items": 31,
+   "bytes": 212681,
+   "title": "T60 重要物质图鉴 2/2（31 个）",
+   "description": "跨实验重要物质并集（67 个）第 2 页；按出现实验数/最佳排名/最大数量排序。",
+   "width": 1600,
+   "height": 1948
+  },
+  {
+   "file": "t60_series_overview.png",
+   "type": "overview",
+   "bytes": 113694,
+   "title": "T60 全系列总览：T55 → T59B（含 cap60 高保真）",
+   "description": "8 个实验的初始分子/原子、环境 L、终态分子/结构数/最大原子数对比。",
+   "width": 1600,
+   "height": 1210
+  },
+  {
+   "file": "t60_top20_counts.png",
+   "type": "counts",
+   "bytes": 151693,
+   "title": "T60 各实验 top20 数量（对数）",
+   "description": "8 个实验 top20 数量条形拼图；橙色为 39/40/59/60 原子巨型。",
+   "width": 1600,
+   "height": 1380
+  }
+ ],
+ "notes": [
+  "所有图仅由 t60_top20_data.json 生成；结构布局复用 t59_render.layout_mol。",
+  "top20 摆盘：4 列动态行；T55（9 种）/T57（4 种）/T59A_hf（9 种）展示全部并注明。",
+  "重要物质 67 个分 2 页（36+31），按出现实验数/最佳排名/最大数量排序。",
+  "tag 29内=29 聚素库、目录内=84,225 目录、新物质=目录外。"
+ ]
+}

@@ -1,6 +1,6 @@
 # ALCHEMY 项目总交接文档
 
-> 最后更新：2026-11-17（T55→T59 粒子环境实验完成）
+> 最后更新：2026-11-17（T55→T60 系列实验与总汇报完成）
 > 工作目录：`G:\AI work\deepseek\work1\alchemy`
 > 本文件是新对话/新接手者的**唯一入口**；读完它再读 `INDEX.md` 和对应主题的 `docs/T*.md`。
 
@@ -385,6 +385,11 @@ resolve(接触集合 S, T):
 - `t59_two_phase.py`：T59 两阶段实验（A 1000→0°C；整理归档；加 batchB；重置 1000→0°C）。
 - `t59_analysis.py` / `t59_render.py`：T59 两阶段对比、top30 结构重建与出图。
 - `t59_fast_engine_audit.py`：快速引擎独立审计脚本。
+- `t60_top20_extract.py`：汇总 T55~T59 各实验 top20/重要物质并集（`t60_top20_data.json`）。
+- `t60_fill_report.py` / `t60_report_template.md`：生成全系列总汇报
+  `docs/T60_SERIES_SUMMARY.md`。
+- `t60_render.py`：生成每次实验 top20 图摆盘、67 种重要物质图鉴、全系列总览
+  （`images/t60_*.png`、`t60_figures_manifest.json`）。
 
 ### 8.2 数据（根目录）
 - `t4_catalog_all_validated.json`：84,225 条权威目录（**大文件，已压缩到 `_data_gz/`**）；2026-11-16 起结构为**规则 1~11（pot_v4）**口径（14,745 条被替换）。
@@ -448,6 +453,8 @@ resolve(接触集合 S, T):
 - `t59_phaseA_hf_result.json` / `t59_phaseB_hf_result.json` / `t59_stateA_hf.json` /
   `t59_stateB_hf.json`：**cap=60 高保真对照**（同投料/种子；A 9 种结构/最大 18、B 13 种结构/
   最大 60（3 个 59/60 原子巨型）/capped 仅 0.01%~0.03%，证明 cap40 的巨型堆积是人工边界）。
+- `t60_top20_data.json`：T55~T59 各实验 top20（结构/数量/原子/元素/目录归属）+ 67 种重要物质并集。
+- `t60_figures_manifest.json`：T60 全部 12 张汇报图清单。
 
 ### 8.3 报告（docs/）
 - 基础规则：`T4_FINAL_REPORT.md`、`T13_OFFICIAL_RULES.md`
@@ -471,6 +478,9 @@ resolve(接触集合 S, T):
   OXC 80.9% + OX2C 19.0%，平均 3.197 vs 3.200 原子、最大 8、≥5 原子 17 vs 29 个；
   面积模型使碰撞 +37%、大分子反而更快被完全反应拆掉。低温窗口 T0=12°C 才能保留大分子：
   平均 4.09、26.3% ≥5 原子、18 种分子式、7 新物质、1017 次自分解）
+- **T60 全系列总汇报**：`T60_SERIES_SUMMARY.md`（T55~T59 全部实验对比、每轮 top20、67 种重要物质、
+  机制结论、图索引；12 张图：8 张每轮 top20 结构摆盘 + 2 页重要物质图鉴 + 全系列总览 +
+  top20 数量条形）。
 - T59 两阶段九元素实验：`T59_TWO_PHASE.md`（快速引擎 fast_pot 3.6~6.3× 加速；L 从 400000
   缩小到 60000；两阶段：A 120 种/三价最多 → 27,431 分子/43 种结构；整理后加 batchB 120 种
   随机物质并重置 1000°C → 38,609 分子/230,133 原子/67 种结构；两阶段守恒；top30 结构图
@@ -512,6 +522,8 @@ resolve(接触集合 S, T):
 - `t59_*.png`（13 张，T59）：两批投料/价数比例、两阶段组成演化、A/B top20 对比、尺寸分布、
   多样性对比、两阶段 timeline、2D 快照、**top30 分子结构图**、top30 数量/元素组成、
   反应判定/capped、九元素与质量守恒；补充 **cap40 vs cap60 对照图** 与 **cap60 稳定 top13 图**。
+- `t60_*.png`（12 张，T60 总汇报）：8 张每轮 top20 结构图摆盘（T55/T56/T57/T58/T59A/T59B +
+  cap60 两张）、2 页 67 种重要物质图鉴、全系列总览、各实验 top20 数量条形。
 
 ### 8.5 其他
 - `INDEX.md`：旧版目录索引（部分内容较旧，以 HANDOFF 为准）。
@@ -652,3 +664,7 @@ python t30_self_decomp.py
   最大 60 原子（3 个 59/60 巨型），capped 占比从 cap40 的 0.40%/0.44% 降到 0.01%/0.03%，
   巨型堆积消失——cap40 的 43/67 种结构与 19 个 top30 巨型主要是人工边界，真正稳定核心是
   CF、O2XP2WK2A/O2XP2WK2A2、OXCPWK、L2、LF、O4X2P5W2K3A2、O3XP4WK3A、OXCPWKA、OCPKA。
+- **T60 全系列汇报**：`docs/T60_SERIES_SUMMARY.md` 汇总 T55~T59 六/八个实验；每轮 top20 图摆盘
+  （`images/t60_top20_*.png`）；67 种跨实验重要物质图鉴（`t60_important_1/2.png`）；
+  跨系列结论：温度尺度（1000°C ≫ Σc）、F+配比决定终态、面积是动力学旋钮、区域/碰撞/cap 决定
+  退火干净度、cap60 后真实稳定核心 9~13 种；数据 `t60_top20_data.json`。
