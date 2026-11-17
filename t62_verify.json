@@ -1,0 +1,1234 @@
+{
+ "script": "t62_verify.py",
+ "description": "T62 独立验证：投料等量性/守恒/价数/对照/判定自洽/cap对比/终态表",
+ "generated_at": "2026-11-17T09:49:57+08:00",
+ "elapsed_s": 4.4,
+ "base_dir": "G:\\AI work\\deepseek\\work1\\alchemy",
+ "args": {
+  "loads": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_loads.json",
+  "a": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_phaseA_result.json",
+  "stateA": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_stateA.json",
+  "b": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_phaseB_result.json",
+  "stateB": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_stateB.json",
+  "control": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_control_A.json",
+  "a_hf": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_phaseA_hf_result.json",
+  "b_hf": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_phaseB_hf_result.json",
+  "stateA_hf": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_stateA_hf.json",
+  "stateB_hf": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_stateB_hf.json",
+  "out": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_verify.json",
+  "cap_main": 40,
+  "cap_hf": 60,
+  "val_tol_pp": 1.0,
+  "elem_tol_pp": 1.0,
+  "control_min": 500.0,
+  "control_frac": 0.9999,
+  "no_events_scan": false
+ },
+ "tolerances": {
+  "valence_dev_pp": 1.0,
+  "element_dev_pp": 1.0,
+  "control_min": 500.0,
+  "control_fraction_ge_500": 0.9999,
+  "capped_frac_max": 0.01,
+  "cap_main": 40,
+  "cap_hf": 60,
+  "event_reservoir": 50000
+ },
+ "inputs": {
+  "loads": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_loads.json",
+   "exists": true,
+   "size_bytes": 38906,
+   "mtime": "2026-11-17T09:31:05",
+   "sha256_16": "3c3c0d649148bfe4"
+  },
+  "phaseA": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_phaseA_result.json",
+   "exists": true,
+   "size_bytes": 24543218,
+   "mtime": "2026-11-17T09:39:53",
+   "sha256_16": "62ae43a4bfde8fe3"
+  },
+  "stateA": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_stateA.json",
+   "exists": true,
+   "size_bytes": 44203,
+   "mtime": "2026-11-17T09:39:53",
+   "sha256_16": "fb9ea1e4bb580540"
+  },
+  "phaseB": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_phaseB_result.json",
+   "exists": true,
+   "size_bytes": 19900168,
+   "mtime": "2026-11-17T09:48:55",
+   "sha256_16": "e4c190140477744e"
+  },
+  "stateB": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_stateB.json",
+   "exists": true,
+   "size_bytes": 44384,
+   "mtime": "2026-11-17T09:48:56",
+   "sha256_16": "822c388c60b1dedf"
+  },
+  "control_A": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_control_A.json",
+   "exists": true,
+   "size_bytes": 20106,
+   "mtime": "2026-11-17T09:38:06",
+   "sha256_16": "199e0eaddba2097f"
+  },
+  "phaseA_hf": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_phaseA_hf_result.json",
+   "exists": true,
+   "size_bytes": 24174812,
+   "mtime": "2026-11-17T09:42:31",
+   "sha256_16": "9d9992bbc7614036"
+  },
+  "phaseB_hf": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_phaseB_hf_result.json",
+   "exists": true,
+   "size_bytes": 19776076,
+   "mtime": "2026-11-17T09:49:40",
+   "sha256_16": "1f0221fec0ae19b2"
+  },
+  "stateA_hf": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_stateA_hf.json",
+   "exists": true,
+   "size_bytes": 30876,
+   "mtime": "2026-11-17T09:42:31",
+   "sha256_16": "d6c3dc1e3653763f"
+  },
+  "stateB_hf": {
+   "path": "G:\\AI work\\deepseek\\work1\\alchemy\\t62_stateB_hf.json",
+   "exists": true,
+   "size_bytes": 24696,
+   "mtime": "2026-11-17T09:49:40",
+   "sha256_16": "bd21a828572ce4ee"
+  }
+ },
+ "groups": [
+  {
+   "id": 1,
+   "name": "投料等量性（batchA / batchB / 合计）",
+   "subchecks": [
+    {
+     "id": "1.1",
+     "name": "batchA/batchB 物种数 ≥100",
+     "status": "PASS",
+     "detail": "batchA=120 种，batchB=120 种",
+     "values": {
+      "batchA_n_species": 120,
+      "batchB_n_species": 120
+     }
+    },
+    {
+     "id": "1.2",
+     "name": "batchA 三/二/一价原子各 ≈1/3（偏差 ≤1.0pp）",
+     "status": "PASS",
+     "detail": "batchA 价数原子 v3/v2/v1=[50122, 49963, 49934]，占比=['0.3341', '0.3330', '0.3329']，最大偏差=0.077pp",
+     "values": {
+      "valence_atoms": {
+       "v3": 50122,
+       "v2": 49963,
+       "v1": 49934
+      },
+      "valence_shares": [
+       0.33410434678274087,
+       0.3330444810324026,
+       0.3328511721848566
+      ],
+      "max_dev_pp": 0.0771
+     }
+    },
+    {
+     "id": "1.3",
+     "name": "batchB 三/二/一价原子各 ≈1/3（偏差 ≤1.0pp）",
+     "status": "PASS",
+     "detail": "batchB 价数原子 v3/v2/v1=[26768, 26631, 26628]，占比=['0.3345', '0.3328', '0.3327']，最大偏差=0.115pp",
+     "values": {
+      "valence_atoms": {
+       "v3": 26768,
+       "v2": 26631,
+       "v1": 26628
+      },
+      "valence_shares": [
+       0.33448711060017244,
+       0.3327751883739238,
+       0.3327377010259038
+      ],
+      "max_dev_pp": 0.1154
+     }
+    },
+    {
+     "id": "1.4",
+     "name": "合计 三/二/一价原子各 ≈1/3（偏差 ≤1.0pp）",
+     "status": "PASS",
+     "detail": "合计 价数原子 v3/v2/v1=[76890, 76594, 76562]，占比=['0.3342', '0.3330', '0.3328']，最大偏差=0.090pp",
+     "values": {
+      "valence_atoms": {
+       "v3": 76890,
+       "v2": 76594,
+       "v1": 76562
+      },
+      "valence_shares": [
+       0.33423750032602173,
+       0.332950801144119,
+       0.33281169852985926
+      ],
+      "max_dev_pp": 0.0904
+     }
+    },
+    {
+     "id": "1.5",
+     "name": "batchA 9 元素原子各 ≈1/9（偏差 ≤1.0pp）",
+     "status": "PASS",
+     "detail": "batchA 元素原子={'O': 16691, 'X': 16637, 'C': 16645, 'P': 16708, 'W': 16654, 'L': 16657, 'K': 16723, 'A': 16672, 'F': 16632}，最大偏差=0.036pp",
+     "values": {
+      "element_atoms": {
+       "O": 16691,
+       "X": 16637,
+       "C": 16645,
+       "P": 16708,
+       "W": 16654,
+       "L": 16657,
+       "K": 16723,
+       "A": 16672,
+       "F": 16632
+      },
+      "element_shares": {
+       "O": 0.11125924049620381,
+       "X": 0.11089928609042854,
+       "C": 0.11095261266906192,
+       "P": 0.11137255947579973,
+       "W": 0.11101260507002446,
+       "L": 0.11103260253701198,
+       "K": 0.1114725468107373,
+       "A": 0.11113258987194956,
+       "F": 0.11086595697878268
+      },
+      "max_dev_pp": 0.0361
+     }
+    },
+    {
+     "id": "1.6",
+     "name": "batchB 9 元素原子各 ≈1/9（偏差 ≤1.0pp）",
+     "status": "PASS",
+     "detail": "batchB 元素原子={'O': 8925, 'X': 8867, 'C': 8875, 'P': 8922, 'W': 8889, 'L': 8896, 'K': 8921, 'A': 8875, 'F': 8857}，最大偏差=0.044pp",
+     "values": {
+      "element_atoms": {
+       "O": 8925,
+       "X": 8867,
+       "C": 8875,
+       "P": 8922,
+       "W": 8889,
+       "L": 8896,
+       "K": 8921,
+       "A": 8875,
+       "F": 8857
+      },
+      "element_shares": {
+       "O": 0.11152486035962862,
+       "X": 0.11080010496457446,
+       "C": 0.11090007122596124,
+       "P": 0.11148737301160858,
+       "W": 0.11107501218338811,
+       "L": 0.11116248266210155,
+       "K": 0.11147487722893523,
+       "A": 0.11090007122596124,
+       "F": 0.11067514713784098
+      },
+      "max_dev_pp": 0.0436
+     }
+    },
+    {
+     "id": "1.7",
+     "name": "合计 9 元素原子各 ≈1/9（偏差 ≤1.0pp）",
+     "status": "PASS",
+     "detail": "合计 元素原子={'O': 25616, 'X': 25504, 'C': 25520, 'P': 25630, 'W': 25543, 'L': 25553, 'K': 25644, 'A': 25547, 'F': 25489}，最大偏差=0.036pp",
+     "values": {
+      "element_atoms": {
+       "O": 25616,
+       "X": 25504,
+       "C": 25520,
+       "P": 25630,
+       "W": 25543,
+       "L": 25553,
+       "K": 25644,
+       "A": 25547,
+       "F": 25489
+      },
+      "element_shares": {
+       "O": 0.11135164271493528,
+       "X": 0.11086478356502613,
+       "C": 0.11093433487215601,
+       "P": 0.11141250010867391,
+       "W": 0.1110343148761552,
+       "L": 0.11107778444311138,
+       "K": 0.11147335750241257,
+       "A": 0.11105170270293767,
+       "F": 0.11079957921459187
+      },
+      "max_dev_pp": 0.0362
+     }
+    },
+    {
+     "id": "1.8",
+     "name": "九元素全覆盖",
+     "status": "PASS",
+     "detail": "batchA 覆盖=['A', 'C', 'F', 'K', 'L', 'O', 'P', 'W', 'X']；batchB 覆盖=['A', 'C', 'F', 'K', 'L', 'O', 'P', 'W', 'X']；应为全部 9 种",
+     "values": {
+      "batchA_covered": [
+       "A",
+       "C",
+       "F",
+       "K",
+       "L",
+       "O",
+       "P",
+       "W",
+       "X"
+      ],
+      "batchB_covered": [
+       "A",
+       "C",
+       "F",
+       "K",
+       "L",
+       "O",
+       "P",
+       "W",
+       "X"
+      ],
+      "expected": [
+       "O",
+       "X",
+       "C",
+       "P",
+       "W",
+       "L",
+       "K",
+       "A",
+       "F"
+      ]
+     }
+    },
+    {
+     "id": "1.9",
+     "name": "投料 rows 字段自洽（atoms/v3/v2/v1/count）",
+     "status": "PASS",
+     "detail": "batchA issues=无；batchB issues=无",
+     "values": {
+      "batchA_issues": [],
+      "batchB_issues": []
+     }
+    },
+    {
+     "id": "1.10",
+     "name": "loads summary 与 rows 复算一致",
+     "status": "PASS",
+     "detail": "batchA/batchB summary 的 species/分子/原子/元素/价数统计均与 rows 复算一致"
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 2,
+   "name": "质量/元素守恒",
+   "subchecks": [
+    {
+     "id": "2.1",
+     "name": "phaseA 初始粒子/原子 == batchA 投料",
+     "status": "PASS",
+     "detail": "config.initial_particles=14752（batchA=14752）；initial_atoms=150019（batchA=150019）",
+     "values": {
+      "initial_particles": 14752,
+      "batchA_molecules": 14752,
+      "initial_atoms": 150019,
+      "batchA_atoms": 150019
+     }
+    },
+    {
+     "id": "2.2",
+     "name": "phaseA load_spec 与 batchA rows 一致",
+     "status": "PASS",
+     "detail": "共 120 项",
+     "values": {
+      "spec_len": 120,
+      "rows_len": 120,
+      "issues": []
+     }
+    },
+    {
+     "id": "2.3",
+     "name": "phaseA 终态分子数 == Σfinal_composition.count == summary.final_N",
+     "status": "PASS",
+     "detail": "summary.final_N=34476；Σcount=34476",
+     "values": {
+      "final_N": 34476,
+      "comp_molecules": 34476
+     }
+    },
+    {
+     "id": "2.4",
+     "name": "phaseA 终态原子数 == Σcount*atoms == batchA 原子数 == summary.final_atoms",
+     "status": "PASS",
+     "detail": "summary.final_atoms=150019；Σcomp=150019；batchA=150019",
+     "values": {
+      "final_atoms": 150019,
+      "comp_atoms": 150019,
+      "batchA_atoms": 150019
+     }
+    },
+    {
+     "id": "2.5",
+     "name": "phaseA 终态逐元素原子数 == batchA",
+     "status": "PASS",
+     "detail": "逐元素一致",
+     "values": {
+      "diff": {},
+      "final": {
+       "O": 16691,
+       "X": 16637,
+       "C": 16645,
+       "P": 16708,
+       "W": 16654,
+       "L": 16657,
+       "K": 16723,
+       "A": 16672,
+       "F": 16632
+      },
+      "expected": {
+       "O": 16691,
+       "X": 16637,
+       "C": 16645,
+       "P": 16708,
+       "W": 16654,
+       "L": 16657,
+       "K": 16723,
+       "A": 16672,
+       "F": 16632
+      }
+     }
+    },
+    {
+     "id": "2.6",
+     "name": "phaseA time_series 末行 N/原子数 == summary",
+     "status": "PASS",
+     "detail": "末行 t=999 N=34476 atoms=150019，与 summary 一致",
+     "values": {
+      "last_t": 999,
+      "N": 34476,
+      "atoms": 150019
+     }
+    },
+    {
+     "id": "2.7",
+     "name": "stateA 与 phaseA 结果一致（总数/组成/守恒）",
+     "status": "PASS",
+     "detail": "state 总数/组成与结果一致",
+     "values": {
+      "state_total_molecules": 34476,
+      "state_total_atoms": 150019,
+      "sum_counts": 34476,
+      "sum_atoms": 150019
+     }
+    },
+    {
+     "id": "2.8",
+     "name": "phaseB 初始装载 == stateA + batchB",
+     "status": "PASS",
+     "detail": "config.initial_particles=42600（期望 34476+8124=42600）；initial_atoms=230046（期望 150019+80027=230046）",
+     "values": {
+      "initial_particles": 42600,
+      "expected_particles": 42600,
+      "initial_atoms": 230046,
+      "expected_atoms": 230046
+     }
+    },
+    {
+     "id": "2.9",
+     "name": "phaseB seed_state_summary / seed_initial_count == stateA",
+     "status": "PASS",
+     "detail": "一致",
+     "values": {
+      "seed_state_summary": {
+       "total_molecules": 34476,
+       "total_atoms": 150019,
+       "distinct_formulas": 13376,
+       "distinct_structures": 48,
+       "t": 1000,
+       "T": 0
+      },
+      "seed_initial_count": 34476
+     }
+    },
+    {
+     "id": "2.10",
+     "name": "phaseB load_spec 与 batchB rows 一致",
+     "status": "PASS",
+     "detail": "共 120 项",
+     "values": {
+      "issues": []
+     }
+    },
+    {
+     "id": "2.11",
+     "name": "phaseB 终态分子数 == Σfinal_composition.count == summary.final_N",
+     "status": "PASS",
+     "detail": "summary.final_N=51937；Σcount=51937",
+     "values": {
+      "final_N": 51937,
+      "comp_molecules": 51937
+     }
+    },
+    {
+     "id": "2.12",
+     "name": "phaseB 终态原子数 == Σcount*atoms == initial_atoms == summary.final_atoms",
+     "status": "PASS",
+     "detail": "summary.final_atoms=230046；Σcomp=230046；initial_atoms=230046",
+     "values": {
+      "final_atoms": 230046,
+      "comp_atoms": 230046,
+      "initial_atoms": 230046
+     }
+    },
+    {
+     "id": "2.13",
+     "name": "phaseB 终态逐元素 == phaseA 终态 + batchB",
+     "status": "PASS",
+     "detail": "逐元素一致",
+     "values": {
+      "diff": {},
+      "final": {
+       "O": 25616,
+       "X": 25504,
+       "C": 25520,
+       "P": 25630,
+       "W": 25543,
+       "L": 25553,
+       "K": 25644,
+       "A": 25547,
+       "F": 25489
+      },
+      "expected": {
+       "O": 25616,
+       "X": 25504,
+       "C": 25520,
+       "P": 25630,
+       "W": 25543,
+       "L": 25553,
+       "K": 25644,
+       "A": 25547,
+       "F": 25489
+      }
+     }
+    },
+    {
+     "id": "2.14",
+     "name": "phaseB time_series 末行 N/原子数 == summary",
+     "status": "PASS",
+     "detail": "末行 t=999 N=51937 atoms=230046，与 summary 一致",
+     "values": {
+      "last_t": 999,
+      "N": 51937,
+      "atoms": 230046
+     }
+    },
+    {
+     "id": "2.15",
+     "name": "stateB 与 phaseB 结果一致（总数/组成/守恒）",
+     "status": "PASS",
+     "detail": "state 总数/组成与结果一致",
+     "values": {
+      "state_total_molecules": 51937,
+      "state_total_atoms": 230046,
+      "sum_counts": 51937,
+      "sum_atoms": 230046
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 3,
+   "name": "价数原子守恒与 ≈1/3",
+   "subchecks": [
+    {
+     "id": "3.1",
+     "name": "phaseA 终态 v3:v2:v1 原子数 == batchA 初始",
+     "status": "PASS",
+     "detail": "终态 {'v3': 50122, 'v2': 49963, 'v1': 49934}；batchA {'v3': 50122, 'v2': 49963, 'v1': 49934}",
+     "values": {
+      "diff": {},
+      "final": {
+       "v3": 50122,
+       "v2": 49963,
+       "v1": 49934
+      },
+      "expected": {
+       "v3": 50122,
+       "v2": 49963,
+       "v1": 49934
+      }
+     }
+    },
+    {
+     "id": "3.2",
+     "name": "phaseA 终态价数占比仍 ≈1/3（≤1pp）",
+     "status": "PASS",
+     "detail": "占比=['0.3341', '0.3330', '0.3329']，最大偏差=0.077pp",
+     "values": {
+      "shares": [
+       0.33410434678274087,
+       0.3330444810324026,
+       0.3328511721848566
+      ],
+      "max_dev_pp": 0.0771
+     }
+    },
+    {
+     "id": "3.3",
+     "name": "phaseB 终态价数 == phaseA 终态 + batchB",
+     "status": "PASS",
+     "detail": "终态 {'v3': 76890, 'v2': 76594, 'v1': 76562}；期望 {'v3': 76890, 'v2': 76594, 'v1': 76562}",
+     "values": {
+      "diff": {},
+      "final": {
+       "v3": 76890,
+       "v2": 76594,
+       "v1": 76562
+      },
+      "expected": {
+       "v3": 76890,
+       "v2": 76594,
+       "v1": 76562
+      }
+     }
+    },
+    {
+     "id": "3.4",
+     "name": "phaseB 终态价数占比仍 ≈1/3（≤1pp）",
+     "status": "PASS",
+     "detail": "占比=['0.3342', '0.3330', '0.3328']，最大偏差=0.090pp",
+     "values": {
+      "shares": [
+       0.33423750032602173,
+       0.332950801144119,
+       0.33281169852985926
+      ],
+      "max_dev_pp": 0.0904
+     }
+    },
+    {
+     "id": "3.5",
+     "name": "价数原子总数 == 总原子数（A/B 终态）",
+     "status": "PASS",
+     "detail": "一致"
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 4,
+   "name": "无化学对照（500 次穿越要求）",
+   "subchecks": [
+    {
+     "id": "4.1",
+     "name": "对照组化学开关关闭",
+     "status": "PASS",
+     "detail": "config.chemical_reactions=False",
+     "values": {
+      "chemical_reactions": false
+     }
+    },
+    {
+     "id": "4.2",
+     "name": "stats.min ≥500",
+     "status": "PASS",
+     "detail": "stats.min=703.5（要求 ≥500）",
+     "values": {
+      "min": 703.5
+     }
+    },
+    {
+     "id": "4.3",
+     "name": "stats.fraction_ge_500 ≥0.9999",
+     "status": "PASS",
+     "detail": "fraction_ge_500=1.0（要求 ≥0.9999）",
+     "values": {
+      "fraction_ge_500": 1.0
+     }
+    },
+    {
+     "id": "4.4",
+     "name": "by_size 每组 min ≥500",
+     "status": "PASS",
+     "detail": "共 10 组，全部 min ≥500",
+     "values": {
+      "by_size_min": {
+       "4": 769.0,
+       "6": 753.4,
+       "7": 745.7,
+       "8": 744.6,
+       "9": 731.1,
+       "10": 717.5,
+       "11": 723.3,
+       "12": 717.0,
+       "13": 704.1,
+       "14": 703.5
+      },
+      "issues": []
+     }
+    },
+    {
+     "id": "4.5",
+     "name": "对照组装载与 batchA 一致且统计分组完备",
+     "status": "PASS",
+     "detail": "一致",
+     "values": {
+      "issues": [],
+      "n_particles": 14752,
+      "stats_n": 14752,
+      "sum_by_size_n": 14752
+     }
+    },
+    {
+     "id": "4.6",
+     "name": "对照路径统计概览",
+     "status": "INFO",
+     "detail": "min=703.5 p1=727.9 median=766.5 p95=816.1 max=864.8 mean=770.4",
+     "values": {
+      "stats": {
+       "n": 14752,
+       "min": 703.5,
+       "p1": 727.9,
+       "p5": 737.6,
+       "median": 766.5,
+       "p95": 816.1,
+       "max": 864.8,
+       "fraction_ge_500": 1.0,
+       "mean": 770.4
+      }
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 5,
+   "name": "反应判定自洽",
+   "subchecks": [
+    {
+     "id": "5.1",
+     "name": "reaction_counts 类型齐全且非负",
+     "status": "PASS",
+     "detail": "一致",
+     "values": {
+      "phases": {
+       "phaseA": {
+        "reaction_counts": {
+         "complete": 12085845,
+         "incomplete": 59269,
+         "capped": 11563,
+         "none": 2606
+        },
+        "missing_types": []
+       },
+       "phaseB": {
+        "reaction_counts": {
+         "complete": 36610997,
+         "incomplete": 118184,
+         "capped": 23202,
+         "none": 5349
+        },
+        "missing_types": []
+       }
+      }
+     }
+    },
+    {
+     "id": "5.2",
+     "name": "逐类型累计判定数自洽（Σd_* == reaction_counts == 末行累计）",
+     "status": "PASS",
+     "detail": "一致",
+     "values": {
+      "phases": {
+       "phaseA": {
+        "complete": {
+         "sum_delta": 12085845,
+         "summary": 12085845,
+         "last_cumulative": 12085845
+        },
+        "incomplete": {
+         "sum_delta": 59269,
+         "summary": 59269,
+         "last_cumulative": 59269
+        },
+        "none": {
+         "sum_delta": 2606,
+         "summary": 2606,
+         "last_cumulative": 2606
+        },
+        "capped": {
+         "sum_delta": 11563,
+         "summary": 11563,
+         "last_cumulative": 11563
+        }
+       },
+       "phaseB": {
+        "complete": {
+         "sum_delta": 36610997,
+         "summary": 36610997,
+         "last_cumulative": 36610997
+        },
+        "incomplete": {
+         "sum_delta": 118184,
+         "summary": 118184,
+         "last_cumulative": 118184
+        },
+        "none": {
+         "sum_delta": 5349,
+         "summary": 5349,
+         "last_cumulative": 5349
+        },
+        "capped": {
+         "sum_delta": 23202,
+         "summary": 23202,
+         "last_cumulative": 23202
+        }
+       }
+      }
+     }
+    },
+    {
+     "id": "5.3",
+     "name": "四类判定数之和 == 碰撞判定总数（Σd_*）",
+     "status": "PASS",
+     "detail": "一致",
+     "values": {
+      "phases": {
+       "phaseA": {
+        "sum_reaction_counts": 12159283,
+        "sum_deltas": 12159283
+       },
+       "phaseB": {
+        "sum_reaction_counts": 36757732,
+        "sum_deltas": 36757732
+       }
+      }
+     }
+    },
+    {
+     "id": "5.4",
+     "name": "capped 占比 <1%",
+     "status": "PASS",
+     "detail": "phaseA capped=11563/12159283 (0.0951%)；phaseB capped=23202/36757732 (0.0631%)",
+     "values": {
+      "phases": {
+       "phaseA": {
+        "capped": 11563,
+        "total": 12159283,
+        "frac": 0.000950960677533371
+       },
+       "phaseB": {
+        "capped": 23202,
+        "total": 36757732,
+        "frac": 0.0006312141347567363
+       }
+      }
+     }
+    },
+    {
+     "id": "5.5",
+     "name": "events_total 与蓄水池抽样一致",
+     "status": "PASS",
+     "detail": "phaseA events_total=266450 末行=266450 抽样数=50000 期望=50000；phaseB events_total=345295 末行=345295 抽样数=50000 期望=50000",
+     "values": {
+      "phases": {
+       "phaseA": {
+        "events_total": 266450,
+        "last_ts_events_total": 266450,
+        "event_samples": 50000,
+        "expected_samples": 50000
+       },
+       "phaseB": {
+        "events_total": 345295,
+        "last_ts_events_total": 345295,
+        "event_samples": 50000,
+        "expected_samples": 50000
+       }
+      }
+     }
+    },
+    {
+     "id": "5.6",
+     "name": "抽样事件逐条原子/价数守恒（无空产物）",
+     "status": "PASS",
+     "detail": "phaseA n=50000 atom_bad=0 valence_bad=0 parse_bad=0 empty=0；phaseB n=50000 atom_bad=0 valence_bad=0 parse_bad=0 empty=0",
+     "values": {
+      "phases": {
+       "phaseA": {
+        "n": 50000,
+        "atom_conserv_bad": 0,
+        "valence_conserv_bad": 0,
+        "parse_bad": 0,
+        "empty_products": 0,
+        "type_counts": {
+         "complete": 49997,
+         "incomplete": 3
+        }
+       },
+       "phaseB": {
+        "n": 50000,
+        "atom_conserv_bad": 0,
+        "valence_conserv_bad": 0,
+        "parse_bad": 0,
+        "empty_products": 0,
+        "type_counts": {
+         "complete": 50000
+        }
+       }
+      },
+      "bad_examples": []
+     }
+    },
+    {
+     "id": "5.7",
+     "name": "ΔN 与抽样事件一致（蓄水池抽样均匀性）",
+     "status": "PASS",
+     "detail": "phaseA ΔN=19724 精确均值=0.07403 抽样均值=0.07054 |差|=0.00349 容差(8SE)=0.03929；phaseB ΔN=9337 精确均值=0.02704 抽样均值=0.03640 |差|=0.00936 容差(8SE)=0.03167",
+     "values": {
+      "phases": {
+       "phaseA": {
+        "dN": 19724,
+        "events_total": 266450,
+        "exact_mean_delta": 0.074025,
+        "sample_mean_delta": 0.07054,
+        "se": 0.004911,
+        "diff": 0.003485,
+        "tolerance": 0.039289,
+        "sample_n": 50000
+       },
+       "phaseB": {
+        "dN": 9337,
+        "events_total": 345295,
+        "exact_mean_delta": 0.027041,
+        "sample_mean_delta": 0.0364,
+        "se": 0.003959,
+        "diff": 0.009359,
+        "tolerance": 0.031671,
+        "sample_n": 50000
+       }
+      }
+     }
+    },
+    {
+     "id": "5.8",
+     "name": "终态最大原子数 ≤ cap",
+     "status": "PASS",
+     "detail": "phaseA cap=40 comp_max=40 ts_max=40 top_max=15；phaseB cap=40 comp_max=40 ts_max=40 top_max=15",
+     "values": {
+      "phases": {
+       "phaseA": {
+        "cap": 40,
+        "comp_max_atoms": 40,
+        "ts_max_atoms": 40,
+        "top_max_atoms": 15
+       },
+       "phaseB": {
+        "cap": 40,
+        "comp_max_atoms": 40,
+        "ts_max_atoms": 40,
+        "top_max_atoms": 15
+       }
+      }
+     }
+    },
+    {
+     "id": "5.9",
+     "name": "decomp_events 与 time_series 一致",
+     "status": "PASS",
+     "detail": "phaseA summary=0 ts=0；phaseB summary=1 ts=1",
+     "values": {
+      "phases": {
+       "phaseA": {
+        "summary_decomp": 0,
+        "ts_decomp": 0
+       },
+       "phaseB": {
+        "summary_decomp": 1,
+        "ts_decomp": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "5.10",
+     "name": "主实验 cap == 40",
+     "status": "PASS",
+     "detail": "A/B cap={'phaseA': 40, 'phaseB': 40}",
+     "values": {
+      "caps": {
+       "phaseA": 40,
+       "phaseB": 40
+      }
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 6,
+   "name": "cap40 vs cap60 对比",
+   "subchecks": [
+    {
+     "id": "6.1",
+     "name": "主实验 cap==40、hf cap==60",
+     "status": "PASS",
+     "detail": "实测 cap={'mainA': 40, 'mainB': 40, 'hfA': 60, 'hfB': 60}",
+     "values": {
+      "caps": {
+       "mainA": 40,
+       "mainB": 40,
+       "hfA": 60,
+       "hfB": 60
+      }
+     }
+    },
+    {
+     "id": "6.2",
+     "name": "hf phaseA 质量/元素/价数守恒 == batchA",
+     "status": "PASS",
+     "detail": "一致",
+     "values": {
+      "issues": [],
+      "final_N": 34293,
+      "final_atoms": 150019,
+      "formula_species": 41,
+      "max_atoms": 19
+     }
+    },
+    {
+     "id": "6.3",
+     "name": "hf phaseB 初始 == hfA+ batchB、终态守恒",
+     "status": "PASS",
+     "detail": "一致",
+     "values": {
+      "issues": [],
+      "seed_state_summary": {
+       "total_molecules": 34293,
+       "total_atoms": 150019,
+       "distinct_formulas": 13193,
+       "distinct_structures": 51,
+       "t": 1000,
+       "T": 0
+      },
+      "hfB_final_N": 51974,
+      "hfB_final_atoms": 230046
+     }
+    },
+    {
+     "id": "6.4",
+     "name": "hf capped 占比显著低于 cap40",
+     "status": "PASS",
+     "detail": "A: 主实验 0.09510% → hf 0.00000%；B: 主实验 0.06312% → hf 0.00000%",
+     "values": {
+      "compare": {
+       "A": {
+        "main_capped": 11563,
+        "main_total": 12159283,
+        "main_frac": 0.000950960677533371,
+        "hf_capped": 0,
+        "hf_total": 12085472,
+        "hf_frac": 0.0,
+        "reduction_ratio": null
+       },
+       "B": {
+        "main_capped": 23202,
+        "main_total": 36757732,
+        "main_frac": 0.0006312141347567363,
+        "hf_capped": 0,
+        "hf_total": 31598728,
+        "hf_frac": 0.0,
+        "reduction_ratio": null
+       }
+      }
+     }
+    },
+    {
+     "id": "6.5",
+     "name": "cap40 vs cap60 终态结构数/最大原子数/≥39 原子数量对比",
+     "status": "PASS",
+     "detail": "A: 主实验 species=43 max=40 ≥39=10；hf species=41 max=19 ≥39=0；B: 主实验 species=43 max=40 ≥39=11；hf species=38 max=20 ≥39=0",
+     "values": {
+      "compare": {
+       "A": {
+        "main": {
+         "formula_species": 43,
+         "max_atoms": 40,
+         "n_ge39": 10
+        },
+        "hf": {
+         "formula_species": 41,
+         "max_atoms": 19,
+         "n_ge39": 0
+        }
+       },
+       "B": {
+        "main": {
+         "formula_species": 43,
+         "max_atoms": 40,
+         "n_ge39": 11
+        },
+        "hf": {
+         "formula_species": 38,
+         "max_atoms": 20,
+         "n_ge39": 0
+        }
+       }
+      },
+      "issues": []
+     }
+    },
+    {
+     "id": "6.6",
+     "name": "hf top 结构合法（价数填满/原子与公式一致）",
+     "status": "PASS",
+     "detail": "全部合法（hfA 24 个，hfB 24 个）",
+     "values": {
+      "issues": []
+     }
+    },
+    {
+     "id": "6.7",
+     "name": "hf stateA 与 hf phaseA 结果一致（可选）",
+     "status": "PASS",
+     "detail": "state 总数/组成与结果一致",
+     "values": {
+      "state_total_molecules": 34293,
+      "state_total_atoms": 150019,
+      "sum_counts": 34293,
+      "sum_atoms": 150019
+     }
+    },
+    {
+     "id": "6.8",
+     "name": "hf stateB 与 hf phaseB 结果一致（可选）",
+     "status": "PASS",
+     "detail": "state 总数/组成与结果一致",
+     "values": {
+      "state_total_molecules": 51974,
+      "state_total_atoms": 230046,
+      "sum_counts": 51974,
+      "sum_atoms": 230046
+     }
+    }
+   ],
+   "status": "PASS"
+  },
+  {
+   "id": 7,
+   "name": "终态表 sanity",
+   "subchecks": [
+    {
+     "id": "7.1",
+     "name": "final_composition.atoms 与公式原子数一致",
+     "status": "PASS",
+     "detail": "一致",
+     "values": {
+      "phases": {
+       "phaseA": {
+        "n_formula": 43,
+        "atoms_none": 0,
+        "atoms_field_mismatch": 0,
+        "parse_errors": 0
+       },
+       "phaseB": {
+        "n_formula": 43,
+        "atoms_none": 0,
+        "atoms_field_mismatch": 0,
+        "parse_errors": 0
+       }
+      }
+     }
+    },
+    {
+     "id": "7.2",
+     "name": "final_top_structures atoms/edges 合法（价数填满、无重复原子/边）",
+     "status": "PASS",
+     "detail": "全部合法（phaseA 24 个，phaseB 24 个）",
+     "values": {
+      "phases": {
+       "phaseA": {
+        "n_top": 24,
+        "bad": []
+       },
+       "phaseB": {
+        "n_top": 24,
+        "bad": []
+       }
+      }
+     }
+    },
+    {
+     "id": "7.3",
+     "name": "stateA/stateB 全部结构合法（atoms/edges/价数）",
+     "status": "PASS",
+     "detail": "全部合法（stateA 48 种，stateB 47 种）",
+     "values": {
+      "phases": {
+       "stateA": {
+        "n_structures": 48,
+        "bad": []
+       },
+       "stateB": {
+        "n_structures": 47,
+        "bad": []
+       }
+      }
+     }
+    },
+    {
+     "id": "7.4",
+     "name": "top 结构公式均在 final_composition 中",
+     "status": "PASS",
+     "detail": "一致",
+     "values": {
+      "issues": []
+     }
+    },
+    {
+     "id": "7.5",
+     "name": "final_composition 无未重建结构（atoms=None）",
+     "status": "INFO",
+     "detail": "phaseA: atoms=None 0/43；phaseB: atoms=None 0/43",
+     "values": {
+      "phases": {
+       "phaseA": {
+        "n_formula": 43,
+        "atoms_none": 0,
+        "formulas": []
+       },
+       "phaseB": {
+        "n_formula": 43,
+        "atoms_none": 0,
+        "formulas": []
+       }
+      }
+     }
+    }
+   ],
+   "status": "PASS"
+  }
+ ],
+ "summary": {
+  "PASS": 57,
+  "FAIL": 0,
+  "SKIP": 0,
+  "INFO": 2,
+  "PENDING": 0
+ },
+ "overall": "PASS",
+ "pending": [],
+ "notes": []
+}
