@@ -15,6 +15,9 @@
   "bond_release": 0.8,
   "c_min": 0.5,
   "charge_rate": 0.05,
+  "contact_base": 3,
+  "contact_div": 8,
+  "contacts_per_pair": 1,
   "d0": 0.01,
   "delta_t": 1,
   "e_rep": 1.0,
@@ -27,6 +30,8 @@
   "kappa0": 2.5,
   "lam_d": 0.5,
   "lam_s": 1.0,
+  "maint_rate": 0.4,
+  "max_organs_per_mol": 2,
   "max_sites": 12,
   "min_organ_mols": 2,
   "move_cost": 0.02,
@@ -45,5 +50,20 @@
   "tau_org": 60,
   "tau_sys": 50,
   "theta_keep_ratio": 0.8,
-  "w_ref": 0.8
+  "theta_scale": 1.0,
+  "w_ref": 0.8,
+  "calibration": {
+    "_evidence": "task-10 第二轮标定。扫描与原始输出：intake/tmp/calib/{r2_base,sweep_round1,configs_a,configs_b,configs_c,configs_final,configs_alt}.json；报告 intake/calibration.md。终选配置在两 seed（20261119/20261120，800×800，L=58，791 分子）复验：组装率 68.5/68.5%，尺寸中位 8/9，器官系统 1/4，四档「活性无机」10/20 份；2000×800 全量见 big_2000x800 (final)。B 仍恒 False（壳/膜子图结构性不出现），拟生命/有机生命不可达——见报告的数据化瓶颈分析。",
+    "bond_cost": 0.5,
+    "contact_base": 6,
+    "contacts_per_pair": 3,
+    "k_off0": 0.01,
+    "k_on0": 0.25,
+    "maint_rate": 1.15,
+    "max_organs_per_mol": 3,
+    "Q_min": 0.3,
+    "rupture_p": 0.35,
+    "theta_scale": 0.8,
+    "W0": 0.25
+  }
 }

@@ -1,6 +1,6 @@
 # 跨电脑交接方案（ALCHEMY）· 最新成果版
 
-> 最后更新：**2026-11-19**（第三轮：能力维度 v5 + 涌现原型已本地提交 `b15ae4a`，测试 **149 项全绿**；远端仍为 `cf9d01b`，本地领先 4 个提交待推）
+> 最后更新：**2026-11-19**（第三轮：能力维度 v5 + 涌现原型 + 参数标定，已本地提交 `b15ae4a`/`e9b178c`，测试 **151 项全绿**；远端仍为 `cf9d01b`，本地领先 5 个提交待推）
 > 工作目录：`G:\AI work\deepseek\work1\alchemy`
 > 交接入口：`HANDOFF.md`（最新结论以它为准）；本文件负责"如何迁移/同步"。
 > 远程仓库：**https://github.com/fpg9999/alchemy**
@@ -14,8 +14,8 @@
 | 本地仓库 | `G:\AI work\deepseek\work1\alchemy`，分支 `main` |
 | 远程仓库 | `https://github.com/fpg9999/alchemy`（远端 HEAD = `cf9d01b`，含 T01~T76 与 kernel `4a2e4d6`、第二轮 `facb162`/`cf9d01b` 全部提交） |
 | 认证 | Git Credential Manager 已存 `fpg9999` 的 GitHub 凭据（`cmdkey` 中 `git:https://github.com`）；`gh` CLI 未登录，但不影响 git push |
-| 推送 | **未推送**：本地 `main` 领先 `origin/main` 4 个文档/原型提交（`3d45357` 内核整理、`becbd06` 第二轮同步、`2916777` 第二轮分析、`b15ae4a` 第三轮 v5+涌现），tag `kernel-0.2.0` 亦未推（用户要求"先不着急推"） |
-| 最新成果 | **第三轮（2026-11-19）**：`docs/ABILITY_EMERGENCE.md` 总纲 + `alchemy/ops.py`（9 操作能力）+ `alchemy/emergence.py`（L1~L4 涌现原型，无 alive 标志）+ 25 新测试（共 **149 项**）+ demo/参数文件；stale-sweeper 覆盖 35 文件旧口径；首轮实测见 `HANDOFF.md` §14.4（组装率 36.9~38.5%、系统 0，标定中）；上一轮第二轮 `facb162` 见 `docs/INTAKE_R2.md` |
+| 推送 | **未推送**：本地 `main` 领先 `origin/main` 5 个文档/原型提交（`3d45357` 内核整理、`becbd06` 第二轮同步、`2916777` 第二轮分析、`b15ae4a` 第三轮 v5+涌现、`e9b178c` 第三轮根文档同步），tag `kernel-0.2.0` 亦未推（用户要求"先不着急推"） |
+| 最新成果 | **第三轮（2026-11-19）**：`docs/ABILITY_EMERGENCE.md` 总纲 + `alchemy/ops.py`（9 操作能力）+ `alchemy/emergence.py`（L1~L4 涌现原型，无 alive 标志）+ 27 新测试（共 **151 项**）+ demo/参数文件 + 参数标定（800×800 组装率 68.5%、器官系统 1~4、活性无机档出现；B/H 判据仍 0）；stale-sweeper 覆盖 35 文件旧口径；结果见 `HANDOFF.md` §14.4 与 `intake/calibration.md`；上一轮第二轮 `facb162` 见 `docs/INTAKE_R2.md` |
 | 本地 commit 历史 | T01 → … → T61 六边形摆放 → T62 等量价数 → T63 逐级价数滴定 → T64~T66 生态群系三轮 → T67 生态群系总目录 → T68~T70b 图形阶段 → **T71~T76（`8877e8d`）→ kernel 内核入库（`4a2e4d6`）→ 整理（`7dd324c`）→ 第二轮（`7516ce0`→rebase 后 `3d45357`/`becbd06`）→ 第二轮分析（`2916777`）→ 第三轮 v5+涌现（`b15ae4a`，最新）** |
 
 > 2026-11-18 工作区整理：已删除未跟踪的根目录日志/调试图/`__pycache__` 与工作区根的 2026-11-14 旧 ZIP/bundle 快照；
@@ -246,9 +246,9 @@ T67 无大结果文件（`t67_catalog.json` 约 40KB，直接入库）。
    ```powershell
    $env:PYTHONIOENCODING="utf-8"
    python examples/demo_kernel.py      # 四入口演示（GBK 控制台需上一行，否则 ✓/→ 报 UnicodeEncodeError）
-   python tests/run_all.py             # 149 项测试全绿（约 16~27s）
+   python tests/run_all.py             # 151 项测试全绿（约 16~27s）
    ```
-   涌现原型冒烟（可选）：`python examples/emergence_demo.py --sample 600 --steps 600`（约 10~12s，输出 JSON）。
+   涌现原型冒烟（可选）：`python examples/emergence_demo.py --sample 600 --steps 600`（约 13s，输出 JSON；组装率约 57%、器官 22、器官系统 3）。
    兼容旧根脚本：`python -c "import pot_v4; print(pot_v4.simulate(['O','K']))"`。
 5. 读 `HANDOFF.md` 第 0 节的新对话启动语、§13（内核包与新规则体系）；
 6. 需要最新实验时：`python t67_catalog.py`（汇总 32 群系总目录，不跑模拟）；要跑模拟：化合物播种
@@ -269,10 +269,12 @@ T67 无大结果文件（`t67_catalog.json` 约 40KB，直接入库）。
 | 项目 | 内容 |
 |---|---|
 | 远程 HEAD | **`cf9d01b`**（未变；本轮全部为本地提交，用户要求"先不着急推"） |
-| 本地提交 | **`b15ae4a`** `T77: 能力维度 v5（9 操作核）与涌现原型 + 过时口径清扫`（新增 `alchemy/ops.py`、`alchemy/emergence.py`、`tests/test_ops.py`、`tests/test_emergence.py`、`examples/emergence_demo.py`、`alchemy/data/emergence_params.json`、`docs/ABILITY_EMERGENCE.md`；stale-sweeper 改 35 文件；根 README 同步）；其前 `2916777`（第二轮分析）、`becbd06`、`3d45357` |
+| 本地提交 | **`b15ae4a`** `T77: 能力维度 v5（9 操作核）与涌现原型 + 过时口径清扫`（新增 `alchemy/ops.py`、`alchemy/emergence.py`、`tests/test_ops.py`、`tests/test_emergence.py`、`examples/emergence_demo.py`、`alchemy/data/emergence_params.json`、`docs/ABILITY_EMERGENCE.md`；stale-sweeper 改 35 文件；根 README 同步）；**`e9b178c`** 第三轮根文档同步；其前 `2916777`（第二轮分析）、`becbd06`、`3d45357` |
 | tag | `kernel-0.2.0`（annotated，本地，未推） |
-| 测试 | `python tests/run_all.py` → **149/149 PASS**（16.2s）；`python examples/emergence_demo.py --sample 600 --steps 600` → rc=0，约 10~12s |
-| 说明 | 首轮涌现实测偏低（组装率 36.9~38.5%、器官系统 0、四档全 0），参数标定 task-10 进行中，结果将补进 `HANDOFF.md` §14.4 |
+| 测试 | `python tests/run_all.py` → **151/151 PASS**（15.9s）；`python examples/emergence_demo.py --sample 600 --steps 600` → rc=0，13.3s |
+| 参数标定 | task-10 完成：推荐参数在 `alchemy/data/emergence_params.json` 的 `calibration` 段（`contacts_per_pair=3`、`k_on0=0.25`、`W0=0.25`、`rupture_p=0.35`、`Q_min=0.3`、`theta_scale=0.8`、`maint_rate=1.15` 等），报告 `intake/calibration.md`；修掉 8 个实现缺陷 |
+| 标定后实测 | 800×800 两 seed：组装率 68.5%（预注册 55~70% ✓）、器官/组装体 1.38~1.58、器官系统 1/4、四档首次出现「活性无机」10/20；2000×800：72.2%、系统 10、器官 60；demo 600×600：57.1%、系统 3、器官 22 |
+| 未达项 | B（边界维持）判据恒 0（1 格 footprint 下为稀疏树状团，`shell_subgraph` 命中 0）→ 拟生命/有机生命仍 0；H 依赖 B；R 偏高；贯通巨团两态未根除（详见 `HANDOFF.md` §14.4） |
 
 ### 6.2 2026-11-19（第二轮：属性/能力改造）
 

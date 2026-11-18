@@ -21,3 +21,6 @@ _compression_test/
 # 绯荤粺鏂囦欢
 .DS_Store
 Thumbs.db
+
+# intake 调试临时目录（teammate 中间产物）
+/intake/tmp/

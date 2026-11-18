@@ -21,7 +21,7 @@
   `simulate` / `embed`+`validate` / `get_catalog` / `classify`；`core/` 为 elements/canon/geometry/reactor/catalog/classify，
   上层为 `phase`（三轴判相）/`ability`（能力 v3 三项数值 + v4 九项次级三阶；512 冻结作历史）/`attrs`（密度/粘性/温度 → 3³ = 27 格物性）/
   `biome`（群系物种表）、`ops`（v5 9 操作能力：撑/锁/黏/分/捕/断/蓄/移/传）、`emergence`（L1 分子→L2 组装体→L3 器官→L4 生命系统原型）；`rules=8|9|11` 单份参数化；
-  见 `alchemy/README.md`、`docs/KERNEL_INTAKE.md`、`docs/ABILITY_EMERGENCE.md`；测试 `tests/run_all.py`（**149 项**）
+  见 `alchemy/README.md`、`docs/KERNEL_INTAKE.md`、`docs/ABILITY_EMERGENCE.md`；测试 `tests/run_all.py`（**151 项**）
 - `pot_all.py`：规则 1~8 通用模拟器（历史，已由 `alchemy` 覆盖）
 - `pot_v2.py`：严格摆放校验（embed_mol2 / validate_place；历史，对应内核 `alchemy.embed/validate`）
 - `pot_v3.py`：历史口径（规则 1~9；正式口径已改为规则 1~11）
@@ -69,8 +69,9 @@
 ## 最新补充
 - **第三轮（2026-11-19，最新）能力维度 v5 + 涌现原型**：`docs/ABILITY_EMERGENCE.md` 总纲（9 操作能力/9×9 矩阵/
   L1~L4/9 器官原型/B·M·R·I·H 判据/S1~S8 动力学/E·T 实验）；原型 `alchemy/ops.py` + `alchemy/emergence.py`（~2330 行，纯标准库，无 alive 标志）；
-  测试 **149 项全绿**（`tests/test_ops.py` 11 + `tests/test_emergence.py` 14 新增）；`examples/emergence_demo.py`（`--sample/--steps/--seed/--out`）；
-  需求文档 `intake/ability_spec.md`、`intake/emergence_spec.md`；首轮实测组装率 36.9~38.5%、器官 2~15、器官系统 0、四档全 0（标定中）
+  测试 **151 项全绿**（`tests/test_ops.py` 11 + `tests/test_emergence.py` 16 新增）；`examples/emergence_demo.py`（`--sample/--steps/--seed/--out`）；
+  需求文档 `intake/ability_spec.md`、`intake/emergence_spec.md`；参数标定见 `intake/calibration.md` 与 `alchemy/data/emergence_params.json`（`calibration` 段）：
+  标定后 800×800 两 seed 组装率 68.5%、器官系统 1~4、首次出现「活性无机」档；B/H 判据仍为 0，拟生命/有机生命待后续（`HANDOFF.md` §14.4）
 - **内核入库（2026-11-18）**：`alchemy/` 内核包（11 模块 + data，纯标准库）；`tests/`（106 项全绿）；
   `examples/`（`demo_kernel.py` 四入口演示、`build_biome_candidates.py` 复算候选群系、`render_species_sheets.py` 46 种物种图）；
   `data/biomes/`（12 组模板物种表 + 5 个候选 + `_union` 121 种）；`images/biome_candidates/`（索引图/图例/4 页物种图）；
@@ -226,6 +227,7 @@
 
 - **第三轮（2026-11-19，最新）能力维度 v5 + 涌现原型**：`docs/ABILITY_EMERGENCE.md`（总纲）；
   `alchemy/ops.py`（9 元素↔9 操作：撑/锁/黏/分/捕/断/蓄/移/传，p33/p67 阈值、9×9 `LINKAGE`）、
-  `alchemy/emergence.py`（L1~L4 动力学，无 `alive` 标志，`M` 由 LINKAGE 派生）、`tests/test_ops.py`+`test_emergence.py`（+25 → **149 项全绿**）、
-  `examples/emergence_demo.py`、`alchemy/data/emergence_params.json`；stale-sweeper 覆盖 35 文件旧口径（含 `data/biomes` 120 处旧快照字段）；
-  本地提交 `b15ae4a`，tag `kernel-0.2.0`，**未 push**。
+  `alchemy/emergence.py`（L1~L4 动力学，无 `alive` 标志，`M` 由 LINKAGE 派生）、`tests/test_ops.py`+`test_emergence.py`（+27 → **151 项全绿**）、
+  `examples/emergence_demo.py`、`alchemy/data/emergence_params.json`（`calibration` 段：标定后组装率 68.5%、器官系统 1~10、活性无机档出现；
+  B/H 仍 0）；stale-sweeper 覆盖 35 文件旧口径（含 `data/biomes` 120 处旧快照字段）；
+  本地提交 `b15ae4a`/`e9b178c`，tag `kernel-0.2.0`，**未 push**。

@@ -40,14 +40,18 @@ def test_params_json_roundtrip():
     path = REPO / "alchemy" / "data" / "emergence_params.json"
     assert path.is_file(), "缺少 alchemy/data/emergence_params.json"
     raw = json.loads(path.read_text(encoding="utf-8"))
+    cal = raw.get("calibration") or {}
+    assert isinstance(cal, dict)
     P = E.load_params()
     for key in ("N", "L", "steps", "T_obs", "kappa0", "M_MIN", "W_MIN",
                 "E_min", "c_min", "k_on0", "k_off0", "beta", "p_move"):
         assert key in raw
-        assert abs(float(P[key]) - float(raw[key])) < 1e-12
+        # task-10：标定段覆盖顶层同名键，加载值应与覆盖后的值一致
+        expect = float(cal.get(key, raw[key]))
+        assert abs(float(P[key]) - expect) < 1e-12
     # 矩阵不写进 JSON（由 LINKAGE 派生）
     for key in ("M", "M_eff", "M_dir", "K", "psi"):
-        assert key not in raw
+        assert key not in raw and key not in cal
     assert P["M"] and P["M_eff"] and P["M_dir"]
 
 
@@ -277,3 +281,34 @@ def test_cli_help():
     assert res.returncode == 0, res.stderr
     assert "--sample" in res.stdout
     assert "--steps" in res.stdout
+
+
+# ---------------------------------------------------------------------------
+# task-10 标定：壳子图检测 / 多接触界面键
+# ---------------------------------------------------------------------------
+
+def test_shell_subgraph_ring_and_chain():
+    # 中心 + 六角环：外层格成闭合环、内部 1 格 → 壳子图
+    ring = [(0, 0), (1, 0), (0, 1), (-1, 1), (-1, 0), (0, -1), (1, -1)]
+    closed, interior = E.shell_subgraph(ring, 58)
+    assert closed is True and interior == 1
+    # 直链：无内部格 → 不是壳
+    chain = [(i, 0) for i in range(8)]
+    closed2, interior2 = E.shell_subgraph(chain, 58)
+    assert closed2 is False and interior2 == 0
+
+
+def test_multicontact_bonds_site_exclusive():
+    world, _reports, _P = _small_world(steps=12, contacts_per_pair=3, contact_base=6)
+    assert world.bonds, "小世界应形成界面键"
+    for bd in world.bonds.values():
+        assert bd.contacts, "每条界面键都记录 contacts"
+        pairs = {(si, sj) for si, sj, _w in bd.contacts}
+        assert len(pairs) == len(bd.contacts), "同一键内接触对不重复"
+    # 位点独占：每个 (uid, site) 至多属于一条界面键
+    seen = {}
+    for key, bd in world.bonds.items():
+        for si, sj, _w in bd.contacts:
+            for u, s in ((bd.a, si), (bd.b, sj)):
+                assert (u, s) not in seen, "位点被两条键重复占用"
+                seen[(u, s)] = key

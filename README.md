@@ -12,7 +12,7 @@
 > 能力（[`docs/ABILITY.md`](docs/ABILITY.md)：聚/散/动 三项数值 + 9 项次级能力三阶，旧 512 体系冻结作历史）、外观（[`docs/APPEARANCE.md`](docs/APPEARANCE.md)）、
 > 物性（[`docs/TRAITS.md`](docs/TRAITS.md)：密度/粘性/温度 → 3³ = 27 格）+
 > 群系规格/候选（[`docs/BIOME_SPEC.md`](docs/BIOME_SPEC.md)、[`docs/BIOME_CANDIDATES.md`](docs/BIOME_CANDIDATES.md)）。
-> **124 项测试全绿**（`python tests/run_all.py`，约 17~27s），另有 3 个示例脚本与群系物种图；整理分析见
+> **151 项测试全绿**（`python tests/run_all.py`，约 16~27s），另有 4 个示例脚本与群系物种图；整理分析见
 > [`docs/KERNEL_INTAKE.md`](docs/KERNEL_INTAKE.md)。
 
 > **第二轮同步（2026-11-19，最新）**：远端 `facb162`（三价轴属性 硬度→**密度**、物性改成 **3³ = 27 格**、能力改成**类别辐条三项数值**
@@ -72,7 +72,7 @@
    ```powershell
    $env:PYTHONIOENCODING="utf-8"      # Windows GBK 控制台需要，否则 demo 的 ✓/→ 会报 UnicodeEncodeError
    python examples/demo_kernel.py     # 四入口演示 + 骨架分类表
-   python tests/run_all.py            # 124 项测试（约 17~27s）
+   python tests/run_all.py            # 151 项测试（约 16~27s）
    ```
 4. 兼容旧根脚本的大锅反应示例：
    ```powershell

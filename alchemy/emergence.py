@@ -166,6 +166,15 @@ DEFAULT_PARAMS: dict = {
     "move_cost": 0.02, "charge_rate": 0.05, "i_e_scale": 0.3,
     # 位点
     "max_sites": 12, "affinity": 1.0,
+    # 标定（task-10 的 `calibration` 段可覆盖；默认值与 task-8 行为一致）
+    # contacts_per_pair：同一分子对在未用位点上的界面接触上限（1 = 每对一条键）
+    "contacts_per_pair": 1,
+    # 每分子接触上限 = min(n_sites, contact_base + natoms // contact_div)
+    "contact_base": 3, "contact_div": 8,
+    # 器官：θ 的整体缩放（<1 更易形成）、每个分子最多登记器官数
+    "theta_scale": 1.0, "max_organs_per_mol": 2,
+    # M 判据的维持消耗率（每分子每 tick 的 E_maint；用于把 harvest−dissip 归一化）
+    "maint_rate": 0.4,
 }
 
 #: 参数的 "JSON 化" 边界：矩阵不写进 JSON（由 LINKAGE 派生）
@@ -184,16 +193,31 @@ def default_params(**overrides) -> dict:
 
 
 def load_params(path: str | os.PathLike | None = None) -> dict:
-    """加载 ``alchemy/data/emergence_params.json``（可被 path 覆盖）并派生矩阵。"""
+    """加载 ``alchemy/data/emergence_params.json``（可被 path 覆盖）并派生矩阵。
+
+    JSON 支持两种写法：
+
+    * 顶层直接放参数键（task-8 的写法，作为默认配置）；
+    * ``"calibration": {...}``——参数标定段，覆盖顶层同名键（task-10）。
+      只接受 ``DEFAULT_PARAMS`` 里的标量键以及 ``theta``（九类器官阈值），
+      矩阵一律由 ``ops.LINKAGE`` 派生，不写进 JSON。
+    """
     if path is None:
         path = Path(__file__).resolve().parent / "data" / "emergence_params.json"
     raw = {}
     if path and Path(path).is_file():
         with open(path, "r", encoding="utf-8") as fh:
             raw = json.load(fh)
-    P = default_params(**{k: v for k, v in raw.items() if k in _PARAM_JSON_KEYS})
+    overrides = {k: v for k, v in raw.items() if k in _PARAM_JSON_KEYS}
+    cal = raw.get("calibration") or {}
+    if not isinstance(cal, dict):
+        raise ValueError("`calibration` 必须是 JSON 对象")
+    overrides.update({k: v for k, v in cal.items() if k in _PARAM_JSON_KEYS})
+    P = default_params(**overrides)
     if "theta" in raw:
         P["theta"].update(raw["theta"])
+    if isinstance(cal.get("theta"), dict):
+        P["theta"].update(cal["theta"])
     P["M"], P["M_eff"], P["M_dir"] = build_matrices()
     return P
 
@@ -289,6 +313,10 @@ class InterfaceBond:
     pair: tuple
     born: int
     loop: float = 0.0
+    #: 该界面上的多个位点接触：[(sa, sb, w_contact), ...]。``w`` 为它们的和。
+    #: 规范允许同一对分子在未用位点上形成多条界面键；本实现在一个无向对上
+    #: 聚合成一条 ``InterfaceBond``（site_a/site_b 记最强接触），以控制计算量。
+    contacts: list = dc_field(default_factory=list)
 
 
 @dataclass
@@ -417,7 +445,11 @@ class ObsBuffer:
         for p in pts:
             keys |= set(p.keys())
         for k in keys:
-            vals = [p.get(k, 0.0) for p in pts]
+            # 采样里可能混有分类标签（如 shape 字符串），这里只聚合数值键。
+            vals = [p.get(k) for p in pts]
+            vals = [v for v in vals if isinstance(v, (int, float))]
+            if not vals:
+                continue
             out[k] = sum(vals) / len(vals)
             out[k + "_last"] = vals[-1]
             out[k + "_first"] = vals[0]
@@ -471,6 +503,33 @@ def _rot(cell, rot):
 def _hex_dist(a, b) -> int:
     dq, dr = a[0] - b[0], a[1] - b[1]
     return (abs(dq) + abs(dr) + abs(dq + dr)) // 2
+
+
+def _cells_touch(ca, cb, L: int) -> bool:
+    """两分子的骨牌格是否接触（边相邻或顶点相邻），对环面做 wrap。
+
+    注意不能用 ``_hex_dist`` 直接比较世界格坐标：位于环面接缝两侧的两个格
+    在坐标上相差 L-1，但实际相邻。这是 §4.1 接触判定的正确实现。
+    """
+    sb = set(cb)
+    for c in ca:
+        for off in _NEIGH12:
+            if _wrap(_add(c, off), L) in sb:
+                return True
+    return False
+
+
+def _unwrap_cells(cells, L: int) -> list:
+    """把环面格集合展开到以首格为原点的连续坐标系（用于形态几何）。"""
+    if not cells:
+        return []
+    q0, r0 = cells[0]
+    out = []
+    for q, r in cells:
+        dq = ((q - q0 + L // 2) % L) - L // 2
+        dr = ((r - r0 + L // 2) % L) - L // 2
+        out.append((q0 + dq, r0 + dr))
+    return out
 
 
 def _wrap(cell, L):
@@ -758,7 +817,8 @@ def make_molecule(rec: dict, uid: int, params: dict, parent: int = -1) -> Molecu
     for a in atoms:
         vec[ELEM.ORDER.index(a)] += 1
     natoms = len(atoms)
-    max_contacts = min(len(sites), 3 + natoms // 8)
+    max_contacts = min(len(sites),
+                       int(params.get("contact_base", 3)) + natoms // int(params.get("contact_div", 8)))
     mol = MoleculeInst(
         uid=uid, formula=formula, atoms=atoms, edges=edges, cells=[],
         sites=sites, profile=profile, attrs=sattrs, units=units,
@@ -890,8 +950,58 @@ def _asm_cells(world: World, asm: Assemblage) -> list:
     return out
 
 
-def classify_shape(mols, bonds, cells) -> str:
-    """§4.4 六类形态判定（按顺序首个命中）。cells: mol→格集合 或 扁平格列表。"""
+def shell_subgraph(cells, L: int | None = None) -> tuple[bool, int]:
+    """检测闭合外层子图；返回 (是否闭合壳子图, 内部格数)。纯几何，O(n)。
+
+    §6.2 的 B 判据要求"存在壳/膜子图"——注意是**子图**，不是整个组装体的
+    §4.4 形态：紧凑组装体的外表层本身就是把内外隔开的一圈闭合边界（细胞
+    膜的原型）。判定：取有边相邻空格的外层格，若内部格 ≥1 且外层格在边邻接
+    图上连通、每格至少有 2 个外层邻格（成环），则存在壳子图。
+    """
+    cs = list(cells or [])
+    if L:
+        cs = _unwrap_cells(cs, L)
+    occ = set(cs)
+    if len(occ) < 7:
+        return False, 0
+    boundary = set()
+    for c in occ:
+        for off in _HEX_EDGE:
+            if (c[0] + off[0], c[1] + off[1]) not in occ:
+                boundary.add(c)
+                break
+    interior = occ - boundary
+    if not interior or len(boundary) < 6:
+        return False, len(interior)
+    # 外层格在边邻接图上的连通性 + 每格度数 ≥2（闭合环）
+    deg = {}
+    for c in boundary:
+        d = 0
+        for off in _HEX_EDGE:
+            if (c[0] + off[0], c[1] + off[1]) in boundary:
+                d += 1
+        deg[c] = d
+    if min(deg.values()) < 2:
+        return False, len(interior)
+    start = next(iter(boundary))
+    seen = {start}
+    stack = [start]
+    while stack:
+        u = stack.pop()
+        for off in _HEX_EDGE:
+            v = (u[0] + off[0], u[1] + off[1])
+            if v in boundary and v not in seen:
+                seen.add(v)
+                stack.append(v)
+    return (len(seen) == len(boundary)), len(interior)
+
+
+def classify_shape(mols, bonds, cells, L: int | None = None) -> str:
+    """§4.4 六类形态判定（按顺序首个命中）。cells: mol→格集合 或 扁平格列表。
+
+    ``L`` 给定时把环面坐标展开成连续坐标再算几何量（否则跨接缝的组装体
+    包围盒会被算成 L×L 的假大团）。
+    """
     n = len(mols)
     if n <= 1:
         return "簇" if n == 1 else "团"
@@ -941,6 +1051,8 @@ def classify_shape(mols, bonds, cells) -> str:
             cs.extend(v)
     else:
         cs = list(cells or [])
+    if cs and L:
+        cs = _unwrap_cells(cs, L)
     if not cs:
         occ_area = n
         width_q = width_r = width_s = 1
@@ -1051,7 +1163,7 @@ def rebuild_assemblies(world: World) -> None:
     world.mol_asm = mol_asm
     for asm in world.assemblies.values():
         asm.cells = []
-        asm.shape = classify_shape(asm.mols, asm.bonds, _asm_cells(world, asm))
+        asm.shape = classify_shape(asm.mols, asm.bonds, _asm_cells(world, asm), L=world.env.L)
         if world.t - asm.born >= int(P.get("tau_min", 30)):
             asm.mature = True
 
@@ -1085,7 +1197,11 @@ def organ_flux(asm: Assemblage, world: World, window: tuple) -> dict:
     # 支撑：界面能密度
     F["sup"] = min(1.0, (asm.E / (n * kappa0 * 0.5)) if n else 0.0)
     # 边界：闭合率 × (1 - 泄漏/入流)
-    closure = 1.0 if asm.shape in ("壳", "膜") else 0.0
+    if asm.shape in ("壳", "膜"):
+        closure = 1.0
+    else:
+        closed, _n_in = shell_subgraph(_asm_cells(world, asm), world.env.L)
+        closure = 1.0 if closed else 0.0
     leak_in = cnt.get("leak_in", 0.0)
     leak_out = cnt.get("leak_out", 0.0)
     F["bnd"] = max(0.0, min(1.0, closure * (1.0 - leak_out / (leak_in + eps)))) if closure else 0.0
@@ -1117,6 +1233,17 @@ def organ_flux(asm: Assemblage, world: World, window: tuple) -> dict:
     return F
 
 
+def _bond_ability_pairs(bd: InterfaceBond, ma: MoleculeInst, mb: MoleculeInst) -> list[tuple]:
+    """界面键上的能力对（每个接触一对）；兼容没有 contacts 的旧键。"""
+    if bd.contacts:
+        return [(ma.sites[si].ability, mb.sites[sj].ability)
+                for si, sj, _wi in bd.contacts
+                if si < len(ma.sites) and sj < len(mb.sites)]
+    if bd.site_a < len(ma.sites) and bd.site_b < len(mb.sites):
+        return [(ma.sites[bd.site_a].ability, mb.sites[bd.site_b].ability)]
+    return []
+
+
 def _organ_bond_ids(asm: Assemblage, world: World, kind: str) -> list[int]:
     """候选边：两端位点能力覆盖原型必需集合、且 M_dir 对应项 ≥ 0.4。"""
     P = world.params
@@ -1129,14 +1256,14 @@ def _organ_bond_ids(asm: Assemblage, world: World, kind: str) -> list[int]:
         mb = world.molecules.get(bd.b)
         if ma is None or mb is None:
             continue
-        if bd.site_a >= len(ma.sites) or bd.site_b >= len(mb.sites):
+        pairs = [pr for pr in _bond_ability_pairs(bd, ma, mb) if ({pr[0], pr[1]} & need)]
+        if not pairs:
             continue
-        ab_a = ma.sites[bd.site_a].ability
-        ab_b = mb.sites[bd.site_b].ability
-        if not ({ab_a, ab_b} & need):
-            continue
-        dir_val = max(abs(M_dir[_OP_INDEX.get(ab_a, 0)][_OP_INDEX.get(ab_b, 0)]),
-                      abs(M_dir[_OP_INDEX.get(ab_b, 0)][_OP_INDEX.get(ab_a, 0)]))
+        dir_val = 0.0
+        for ab_a, ab_b in pairs:
+            i1 = _OP_INDEX.get(ab_a, 0)
+            i2 = _OP_INDEX.get(ab_b, 0)
+            dir_val = max(dir_val, abs(M_dir[i1][i2]), abs(M_dir[i2][i1]))
         if dir_val >= 0.4:
             out.append(i)
     return out
@@ -1149,6 +1276,8 @@ def classify_organs(world: World) -> None:
     keep_ratio = float(P.get("theta_keep_ratio", 0.8))
     tau_org = int(P.get("tau_org", 60))
     Q_min = float(P.get("Q_min", 0.6))
+    theta_scale = float(P.get("theta_scale", 1.0))
+    max_org_per_mol = int(P.get("max_organs_per_mol", 2))
     new_organs: dict[int, Organ] = {}
     old_by_key = {(o.aid, o.kind): o for o in world.organs.values()}
     for asm in world.assemblies.values():
@@ -1173,7 +1302,7 @@ def classify_organs(world: World) -> None:
             sustained = world.t - born
             active = prev.active if prev else False
             degraded = prev.degraded if prev else 0
-            threshold = keep_ratio * th if active else th
+            threshold = (keep_ratio * th if active else th) * theta_scale
             if Fk >= threshold and Q >= Q_min:
                 active = True
                 degraded = 0
@@ -1205,7 +1334,7 @@ def classify_organs(world: World) -> None:
         for o in list(new_organs.values()):
             if o.aid != asm.aid:
                 continue
-            if any(per_mol[u] > 2 for u in o.mols):
+            if any(per_mol[u] > max_org_per_mol for u in o.mols):
                 new_organs.pop(o.oid, None)
         # 同一组装体内共享 >70% 边的同类器官合并（保留 Q 高者）
         by_kind: dict[str, list[Organ]] = defaultdict(list)
@@ -1251,11 +1380,13 @@ def update_systems(world: World) -> None:
             if not oa or not ob:
                 continue
             ma, mb = world.molecules.get(a), world.molecules.get(b)
-            if ma is None or mb is None or bd.site_a >= len(ma.sites) or bd.site_b >= len(mb.sites):
+            if ma is None or mb is None:
                 continue
-            ab_a = ma.sites[bd.site_a].ability
-            ab_b = mb.sites[bd.site_b].ability
-            md = abs(M_dir[_OP_INDEX.get(ab_a, 0)][_OP_INDEX.get(ab_b, 0)])
+            pairs = _bond_ability_pairs(bd, ma, mb)
+            if not pairs:
+                continue
+            md = max(abs(M_dir[_OP_INDEX.get(ab_a, 0)][_OP_INDEX.get(ab_b, 0)])
+                     for ab_a, ab_b in pairs)
             for o1 in oa:
                 for o2 in ob:
                     if o1.oid == o2.oid:
@@ -1336,42 +1467,45 @@ def _sys_obs(world: World, system: OrganSystem, window: tuple) -> dict:
     return dict(cnt)
 
 
-def life_report(world: World, sid: int, window: tuple) -> LifeReport:
-    """§6.2：只读观测窗口，输出 B/M/R/I/H(+A) 判据向量。**不写任何世界状态**（A0）。"""
-    P = world.params
-    system = world.systems.get(sid)
+def _criteria_from_counts(world: World, cnt: dict, organs: list, aids) -> tuple[dict, dict]:
+    """由窗口事件计数算 B/M/R/I/H(+A) 判据（纯读取；系统级与组装体级共用）。"""
     values: dict[str, float] = {}
     criteria = {"B": False, "M": False, "R": False, "I": False, "H": False, "A": False}
-    if system is None:
-        return LifeReport(sid=sid, tier="无机晶体", criteria=criteria,
-                          values=values, window=window)
-    cnt = _sys_obs(world, system, window)
-    organs = [world.organs[o] for o in system.organs if o in world.organs]
-    kinds = {o.kind for o in organs}
-    aids = {o.aid for o in organs}
+    aids = list(dict.fromkeys(aids))
     # 窗口内的组装体采样：能量/键数变化
     first_last = {}
     for aid in aids:
-        w = world.obs.window(aid, n=world.obs.maxlen)
-        first_last[aid] = w
+        first_last[aid] = world.obs.window(aid, n=world.obs.maxlen)
     E_last = sum(v.get("E_last", 0.0) for v in first_last.values())
     E_first = sum(v.get("E_first", 0.0) for v in first_last.values())
-    bonds_last = sum(v.get("bonds_last", 0.0) for v in first_last.values())
-    bonds_first = sum(v.get("bonds_first", 0.0) for v in first_last.values())
-    mols_last = sum(v.get("mols_last", 0.0) for v in first_last.values())
     # 边界维持 B
     leak_in = cnt.get("leak_in", 0.0)
     leak_out = cnt.get("leak_out", 0.0)
-    has_shell = any(o.kind == "bnd" for o in organs) or any(
-        world.assemblies.get(aid) and world.assemblies[aid].shape in ("壳", "膜") for aid in aids)
-    B = (1.0 - leak_out / (leak_in + leak_in * 0.0 + 1e-9)) if (leak_in > 0) else 0.0
+    has_shell = any(o.kind == "bnd" for o in organs)
+    if not has_shell:
+        for aid in aids:
+            asm = world.assemblies.get(aid)
+            if asm is None:
+                continue
+            if asm.shape in ("壳", "膜") or shell_subgraph(
+                    _asm_cells(world, asm), world.env.L)[0]:
+                has_shell = True
+                break
+    B = (1.0 - leak_out / (leak_in + 1e-9)) if (leak_in > 0) else 0.0
     B = max(0.0, min(1.0, B)) if has_shell else 0.0
     values["B"] = round(B, 4)
     criteria["B"] = bool(B >= B_TH)
-    # 代谢 M
+    # 代谢 M：harvest=环境能量捕获(含 ads)，dissip=运动/成键耗散；E_maint=基础维持消耗
     harvest = cnt.get("nrg_in", 0.0)
     dissip = cnt.get("nrg_out", 0.0)
-    maint = max(1.0, len(organs))
+    n_mols = 0
+    for aid in aids:
+        asm = world.assemblies.get(aid)
+        if asm is not None:
+            n_mols += len(asm.mols)
+    n_mols = max(1, n_mols)
+    maint_rate = float(world.params.get("maint_rate", 0.4))
+    maint = maint_rate * n_mols * float(world.params.get("T_obs", 600))
     M = (harvest - dissip) / (maint + 1e-9)
     values["M"] = round(M, 4)
     values["energy_ratio"] = round(E_last / (E_first + 1e-9), 4) if E_first > 0 else 0.0
@@ -1408,8 +1542,49 @@ def life_report(world: World, sid: int, window: tuple) -> LifeReport:
     values["A"] = 0.0
     criteria["A"] = False
     values["n_organs"] = float(len(organs))
-    values["organ_kinds"] = float(len(kinds))
+    values["organ_kinds"] = float(len({o.kind for o in organs}))
+    return values, criteria
+
+
+def life_report(world: World, sid: int, window: tuple) -> LifeReport:
+    """§6.2：只读观测窗口，输出 B/M/R/I/H(+A) 判据向量。**不写任何世界状态**（A0）。"""
+    system = world.systems.get(sid)
+    criteria = {"B": False, "M": False, "R": False, "I": False, "H": False, "A": False}
+    if system is None:
+        return LifeReport(sid=sid, tier="无机晶体", criteria=criteria,
+                          values={}, window=window)
+    organs = [world.organs[o] for o in system.organs if o in world.organs]
+    cnt = _sys_obs(world, system, window)
+    values, criteria = _criteria_from_counts(world, cnt, organs,
+                                            {o.aid for o in organs})
     values["cycle_rank"] = float(system.cycle_rank)
+    rep_obj = LifeReport(sid=sid, tier="", criteria=criteria, values=values, window=window)
+    rep_obj.tier = tier_from_criteria(rep_obj, world)
+    return rep_obj
+
+
+def assembly_life_report(world: World, aid: int, window: tuple) -> LifeReport:
+    """组装体级（无器官系统）的只读判据：§6.3 的"活性无机"档需要它。
+
+    规范里「无机晶体 / 活性无机」按“有无器官”区分，不要求器官系统；
+    只有「拟生命 / 有机生命」才要求系统连通。故四档统计同时覆盖系统与
+    含器官但尚未成系统的组装体。sid 用 ``-(aid+1)`` 表示组装体级报告。
+    """
+    asm = world.assemblies.get(aid)
+    criteria = {"B": False, "M": False, "R": False, "I": False, "H": False, "A": False}
+    sid = -(aid + 1)
+    if asm is None:
+        return LifeReport(sid=sid, tier="无机晶体", criteria=criteria, values={}, window=window)
+    organs = [o for o in world.organs.values() if o.aid == aid and o.active]
+    cnt: dict = defaultdict(float)
+    for uid in asm.mols:
+        mc = world.obs.mol_counters.get(uid)
+        if mc:
+            for k, v in mc.items():
+                cnt[k] += v
+    values, criteria = _criteria_from_counts(world, dict(cnt), organs, [aid])
+    values["cycle_rank"] = 0.0
+    values["aid"] = float(aid)
     rep_obj = LifeReport(sid=sid, tier="", criteria=criteria, values=values, window=window)
     rep_obj.tier = tier_from_criteria(rep_obj, world)
     return rep_obj
@@ -1420,39 +1595,51 @@ def tier_from_criteria(rep: LifeReport, world: World) -> str:
     crit = rep.criteria
     vals = rep.values
     n_organs = int(vals.get("n_organs", 0))
-    n_kinds = int(vals.get("organ_kinds", 0))
     cycle = int(vals.get("cycle_rank", 0))
     fertile = int(vals.get("H_fertile", 0))
     passed = sum(1 for k in ("B", "M", "R", "I", "H") if crit.get(k))
     if n_organs <= 0:
         return "无机晶体"
-    if crit.get("B") and crit.get("M") and crit.get("R") and crit.get("I") and crit.get("H"):
+    system = world.systems.get(rep.sid) if rep.sid >= 0 else None
+    kinds = set()
+    if system:
+        for oid in system.organs:
+            o = world.organs.get(oid)
+            if o:
+                kinds.add(o.kind)
+    if system is not None and crit.get("B") and crit.get("M") and crit.get("R") and crit.get("I") and crit.get("H"):
         # 至少 3 类器官，且含边界/能量/信息中的 2 类
-        kinds = set()
-        system = world.systems.get(rep.sid)
-        if system:
-            for oid in system.organs:
-                o = world.organs.get(oid)
-                if o:
-                    kinds.add(o.kind)
         trio = {"bnd", "nrg", "int"}
         if cycle >= 1 and fertile >= 1 and len(kinds) >= 3 and len(kinds & trio) >= 2:
             return "有机生命"
-    if n_organs >= 2 and crit.get("B") and crit.get("M") and 1 <= (passed - 2) <= 2:
+    # 「拟生命」要求系统连通（§6.3）；组装体级最多到「活性无机」
+    if system is not None and n_organs >= 2 and crit.get("B") and crit.get("M") \
+            and 1 <= (passed - 2) <= 2:
         return "拟生命"
-    if n_organs >= 1 and 1 <= passed <= 2:
+    if n_organs >= 1:
         return "活性无机"
-    return "活性无机" if n_organs >= 1 else "无机晶体"
+    return "无机晶体"
 
 
 def life_report_all(world: World, P: dict | None = None) -> list[LifeReport]:
-    """对每个器官系统输出 LifeReport（world 只读）。"""
+    """对每个器官系统 + 含器官但未成系统的组装体输出 LifeReport（world 只读）。"""
     P = P or world.params
     T_obs = int(P.get("T_obs", 600))
     window = (world.t - T_obs, world.t)
     reports = []
+    covered: set[int] = set()
     for sid in sorted(world.systems):
         reports.append(life_report(world, sid, window))
+        for oid in world.systems[sid].organs:
+            org = world.organs.get(oid)
+            if org is not None:
+                covered.add(org.aid)
+    for aid in sorted(world.assemblies):
+        if aid in covered:
+            continue
+        if not any(o.aid == aid and o.active for o in world.organs.values()):
+            continue
+        reports.append(assembly_life_report(world, aid, window))
     return reports
 
 
@@ -1529,11 +1716,50 @@ def _move_molecule(world: World, mol: MoleculeInst) -> None:
     cells = world_mol_cells(world, mol)
     base = sum(world.env.rho_at(c) for c in cells) / max(1, len(cells))
     px, py = mol.pos
+    nb_uid = mol.uid
+    bond_keys = _bonds_of(world, nb_uid) if nb else ()
+    # 内聚约束（task-10 标定）：已键合分子移动时优先朝键合邻居质心收敛——
+    # 要求移动后到所有键合邻居的六角距离之和不劣于移动前，否则组装体在随机
+    # 行走下会退化成松散随机链（R/n 随 tick 增长），壳/膜子图不可能出现。
+    bonded_pos = []
+    if bond_keys:
+        for bd in bond_keys:
+            other = bd.b if bd.a == nb_uid else bd.a
+            om = world.molecules.get(other)
+            if om is not None:
+                bonded_pos.append(om.pos)
+
+    def _neighbor_dsum(p):
+        tot = 0.0
+        for op in bonded_pos:
+            dq = ((p[0] - op[0] + L // 2) % L) - L // 2
+            dr = ((p[1] - op[1] + L // 2) % L) - L // 2
+            tot += (abs(dq) + abs(dr) + abs(dq + dr)) * 0.5
+        return tot
+
+    metric0 = _neighbor_dsum(mol.pos) if bonded_pos else 0.0
     best, best_w = None, -1e9
     for dx, dy in _HEX_EDGE:
         npos = ((px + dx) % L, (py + dy) % L)
         new_cells = [((npos[0] + c[0]) % L, (npos[1] + c[1]) % L) for c in body]
         if not _can_place(world, new_cells, mol.uid):
+            continue
+        # 界面键的物理约束：移动后必须仍与所有已键合邻居保持几何接触，
+        # 否则组装体会被分子随机行走拉成散开的随机链（无法形成壳/膜结构）。
+        keep = True
+        if bond_keys:
+            for bd in bond_keys:
+                other = bd.b if bd.a == nb_uid else bd.a
+                om = world.molecules.get(other)
+                if om is None:
+                    continue
+                if not _cells_touch(new_cells, world_mol_cells(world, om), L):
+                    keep = False
+                    break
+        if not keep:
+            continue
+        # 严格收缩：只接受使到键合邻居距离和严格下降的候选，链会卷成紧凑团
+        if bonded_pos and _neighbor_dsum(npos) >= metric0 - 1e-9:
             continue
         val = sum(world.env.rho_at(c) for c in new_cells) / max(1, len(new_cells))
         score = math.exp(beta_m * w_val * (val - base))
@@ -1546,12 +1772,15 @@ def _move_molecule(world: World, mol: MoleculeInst) -> None:
     mol.cells = cells_new
     _occupy(world, mol)
     mol.energy = max(0.0, mol.energy - float(P.get("move_cost", 0.02)))
+    world.obs.bump_mol(mol.uid, "nrg_out", float(P.get("move_cost", 0.02)))
     # 移动后界面键可能被拉断（简化：距离过远的断键在 S3 处理）
 
 
 def _push_apart(world: World, a: MoleculeInst, b: MoleculeInst) -> None:
     L = world.env.L
-    d = (b.pos[0] - a.pos[0], b.pos[1] - a.pos[1])
+    dq = ((b.pos[0] - a.pos[0] + L // 2) % L) - L // 2
+    dr = ((b.pos[1] - a.pos[1] + L // 2) % L) - L // 2
+    d = (dq, dr)
     steps = _HEX_EDGE
     best = None
     bestd = -1
@@ -1576,7 +1805,13 @@ def _wrap_cells_mol(world: World, mol: MoleculeInst, pos, rot):
     return [_wrap(_add(_rot(c, rot), pos), L) for c in local]
 
 
-def _add_bond(world: World, a: MoleculeInst, b: MoleculeInst, sa: int, sb: int, w: float) -> bool:
+def _add_bond(world: World, a: MoleculeInst, b: MoleculeInst, sa: int, sb: int, w: float,
+              contacts: list | None = None) -> bool:
+    """建立一条无向界面键；``contacts`` 给出 [(a 侧位点, b 侧位点, w_i), ...]。
+
+    ``w`` 是各接触的界面能之和（一个 InterfaceBond 可含多个位点接触）。
+    能量按接触数计费（每个接触 ``bond_cost``）。
+    """
     key = _bond_key(a.uid, b.uid)
     if key in world.bonds:
         return False
@@ -1584,24 +1819,30 @@ def _add_bond(world: World, a: MoleculeInst, b: MoleculeInst, sa: int, sb: int, 
         return False
     if len(_bonds_of(world, b.uid)) >= _max_contacts(b):
         return False
-    if (a.uid, sa) in world.site_use or (b.uid, sb) in world.site_use:
-        return False
-    cost = float(world.params.get("bond_cost", 1.0))
-    if a.energy < cost or b.energy < cost:
-        return False
-    a.energy -= cost
-    b.energy -= cost
     # 规范里 InterfaceBond 以 (a,b) 为无向对；这里固定 a<b，同时把 site 索引
     # 对齐到 (site_a ↔ a, site_b ↔ b)，避免两个方向的索引错位。
     if a.uid < b.uid:
         ua, ub, ia, ib = a.uid, b.uid, sa, sb
+        cl = [(si, sj, wi) for si, sj, wi in (contacts or [(sa, sb, w)])]
     else:
         ua, ub, ia, ib = b.uid, a.uid, sb, sa
+        cl = [(sj, si, wi) for si, sj, wi in (contacts or [(sa, sb, w)])]
+    for si, sj, _wi in cl:
+        if (ua, si) in world.site_use or (ub, sj) in world.site_use:
+            return False
+    cost = float(world.params.get("bond_cost", 1.0)) * len(cl)
+    if a.energy < cost or b.energy < cost:
+        return False
+    a.energy -= cost
+    b.energy -= cost
+    world.obs.bump_mol(a.uid, "nrg_out", cost)
+    world.obs.bump_mol(b.uid, "nrg_out", cost)
     bond = InterfaceBond(a=ua, b=ub, site_a=ia, site_b=ib, w=w,
-                         pair=(sa, sb), born=world.t)
+                         pair=(sa, sb), born=world.t, contacts=cl)
     world.bonds[key] = bond
-    world.site_use[(a.uid, sa)] = key
-    world.site_use[(b.uid, sb)] = key
+    for si, sj, _wi in cl:
+        world.site_use[(ua, si)] = key
+        world.site_use[(ub, sj)] = key
     idx = getattr(world, "mol_bonds", None)
     if idx is None:
         world.mol_bonds = idx = defaultdict(set)
@@ -1618,8 +1859,13 @@ def _remove_bond(world: World, key, reason: str = "break") -> None:
     bond = world.bonds.pop(key, None)
     if bond is None:
         return
-    world.site_use.pop((bond.a, bond.site_a), None)
-    world.site_use.pop((bond.b, bond.site_b), None)
+    if bond.contacts:
+        for si, sj, _wi in bond.contacts:
+            world.site_use.pop((bond.a, si), None)
+            world.site_use.pop((bond.b, sj), None)
+    else:  # pragma: no cover - 兼容旧数据
+        world.site_use.pop((bond.a, bond.site_a), None)
+        world.site_use.pop((bond.b, bond.site_b), None)
     idx = getattr(world, "mol_bonds", None)
     if idx is not None:
         idx[bond.a].discard(key)
@@ -1679,7 +1925,7 @@ def _rupture(world: World) -> None:
             continue
         ca = world_mol_cells(world, ma)
         cb = world_mol_cells(world, mb)
-        near = any(_hex_dist(c1, c2) <= 1 for c1 in ca for c2 in cb)
+        near = _cells_touch(ca, cb, world.env.L)
         if not near and rng.random() < float(world.params.get("rupture_p", 0.2)):
             _remove_bond(world, key, "break")
 
@@ -1698,12 +1944,17 @@ def step_world(world: World) -> None:
     # S2.5 几何断裂（移动后失去接触的界面键）
     _rupture(world)
     # S3 界面动力学
-    _site_use = dict(world.site_use)
     pairs = neighbor_pairs(world)
+    pair_cap = max(1, int(P.get("contacts_per_pair", 1)))
+    W_MIN = float(P.get("W_MIN", 0.15))
     for (ua, ub) in pairs:
         a = world.molecules.get(ua)
         b = world.molecules.get(ub)
         if a is None or b is None:
+            continue
+        # pairs 列表是在本 tick 开头算的；S3 内的排斥可能已经把 b 推开若干格，
+        # 因此成键前必须重新确认几何接触（否则会造出远距离的假界面键）。
+        if not _cells_touch(world_mol_cells(world, a), world_mol_cells(world, b), world.env.L):
             continue
         key = _bond_key(ua, ub)
         shear = world.env.shear
@@ -1712,28 +1963,42 @@ def step_world(world: World) -> None:
             if rng.random() < p_off(bond.w, shear, P):
                 _remove_bond(world, key, "break")
             continue
-        cost = float(P.get("bond_cost", 0.2))
-        if a.energy < cost or b.energy < cost:
+        if len(_bonds_of(world, a.uid)) >= _max_contacts(a):
+            continue
+        if len(_bonds_of(world, b.uid)) >= _max_contacts(b):
             continue
         P["_site_use"] = world.site_use
         cands = candidate_sites(a, b, P)
         if not cands:
             continue
-        # 取界面能最大的候选位点对（最多 8 组），而不是固定第一组
-        best = None
-        for si, sj in cands:
-            wv = interface_energy(a, b, a.sites[si], b.sites[sj], world.env, P)
-            if best is None or wv > best[0]:
-                best = (wv, si, sj)
-        w, sa_i, sb_i = best
-        if w < 0:
+        # 逐候选位点对算界面能；w<0 的候选对先触发排斥
+        ws = [(interface_energy(a, b, a.sites[si], b.sites[sj], world.env, P), si, sj)
+              for si, sj in cands]
+        if max(t[0] for t in ws) < 0.0:
             _push_apart(world, a, b)
             world.obs.bump("repulse", 1.0)
             continue
-        if w < float(P.get("W_MIN", 0.15)):
+        # 一对分子可在多个未用位点上同时接触（§3.2 每位点 1 键），
+        # 聚合为一条 InterfaceBond；同一键内位点不得重复（同一位点 1 条键）。
+        chosen_all = sorted((t for t in ws if t[0] >= W_MIN),
+                            key=lambda t: t[0], reverse=True)
+        chosen = []
+        used_a: set = set()
+        used_b: set = set()
+        for wi, si, sj in chosen_all:
+            if si in used_a or sj in used_b:
+                continue
+            used_a.add(si)
+            used_b.add(sj)
+            chosen.append((wi, si, sj))
+            if len(chosen) >= pair_cap:
+                break
+        if not chosen:
             continue
-        if rng.random() < p_on(w, P):
-            _add_bond(world, a, b, sa_i, sb_i, w)
+        w_sum = sum(t[0] for t in chosen)
+        contacts = [(si, sj, wi) for wi, si, sj in chosen]
+        if rng.random() < p_on(w_sum, P):
+            _add_bond(world, a, b, chosen[0][1], chosen[0][2], w_sum, contacts=contacts)
     P.pop("_site_use", None)
     # S4 物质交换：吸附/切割/充能
     _exchange(world)
@@ -1766,23 +2031,27 @@ def _exchange(world: World) -> None:
     W_MIN = float(P.get("W_MIN", 0.15))
     for mol in world.molecules.values():
         counts = getattr(mol, "site_counts", None) or {}
-        if not counts:
-            continue
         # S1 的局域能量输入 I_E = ρ_E·η（按格点注入；i_e_scale 为时间步标定系数）
         rho = world.env.rho_at(mol.pos)
-        mol.energy = min(10.0, mol.energy + eta * rho * ie_scale)
+        intake = eta * rho * ie_scale
+        mol.energy = min(10.0, mol.energy + intake)
+        world.obs.bump_mol(mol.uid, "nrg_in", intake)
+        if not counts:
+            continue
         na = counts.get("ads", 0)
         if na:
-            mol.energy = min(10.0, mol.energy + 0.02 * na * rho)
+            gained = 0.02 * na * rho
+            mol.energy = min(10.0, mol.energy + gained)
+            world.obs.bump_mol(mol.uid, "nrg_in", gained)
             world.obs.bump_mol(mol.uid, "ads_in", float(na))
         ns = counts.get("sto", 0)
         if ns and rho > 0.2:
             mol.energy = min(10.0, mol.energy + charge * ns)
-            world.obs.bump_mol(mol.uid, "nrg_in", float(ns))
         nm = counts.get("mov", 0)
         if nm:
-            mol.energy = max(0.0, mol.energy - 0.002 * nm)
-            world.obs.bump_mol(mol.uid, "nrg_out", 0.3 * nm)
+            spent = 0.002 * nm
+            mol.energy = max(0.0, mol.energy - spent)
+            world.obs.bump_mol(mol.uid, "nrg_out", spent)
         nd = counts.get("dif", 0)
         if nd:
             world.obs.bump_mol(mol.uid, "resp", 0.2 * nd)
@@ -2046,6 +2315,11 @@ def run_world(records, seed: int, P: dict | None = None):
     steps = int(P.get("steps", 1200))
     for _ in range(steps):
         step_world(world)
+    # 收尾：t=steps 不一定是 τ_asm/τ_org/τ_sys 的公倍数，跑一次 L2→L4 识别，
+    # 否则器官会指向已经重排掉的旧 aid，四档统计为空（只重建观测，不改动力学）。
+    rebuild_assemblies(world)
+    classify_organs(world)
+    update_systems(world)
     reports = life_report_all(world, P)
     return world, reports
 
@@ -2156,8 +2430,15 @@ def _summarize(world: World, reports: list[LifeReport], P: dict) -> dict:
     tiers = {t: 0 for t in TIERS}
     for rep in reports:
         tiers[rep.tier] = tiers.get(rep.tier, 0) + 1
-    # 说明：没有器官系统的组装体不进入四档（四档只判器官系统），
-    # 因此这里只统计 reports（系统）里的档位，不把组装体折算成档位。
+    # 说明：四档统计覆盖「器官系统」与「含器官但未成系统的组装体」两层；
+    # 无机晶体/活性无机按有无器官区分（§6.3），拟生命/有机生命要求系统连通。
+    tiers_system = {t: 0 for t in TIERS}
+    tiers_assembly = {t: 0 for t in TIERS}
+    for rep in reports:
+        if rep.sid >= 0:
+            tiers_system[rep.tier] = tiers_system.get(rep.tier, 0) + 1
+        else:
+            tiers_assembly[rep.tier] = tiers_assembly.get(rep.tier, 0) + 1
     assemblies = []
     for aid in sorted(world.assemblies)[:50]:
         a = world.assemblies[aid]
@@ -2193,6 +2474,8 @@ def _summarize(world: World, reports: list[LifeReport], P: dict) -> dict:
         "system_cycle_rank": {sid: s.cycle_rank for sid, s in world.systems.items()},
         "rates": rate,
         "tiers": tiers,
+        "tiers_system": tiers_system,
+        "tiers_assembly": tiers_assembly,
         "reports": [
             {"sid": r.sid, "tier": r.tier, "criteria": r.criteria,
              "values": {k: (round(v, 4) if isinstance(v, float) else v)
