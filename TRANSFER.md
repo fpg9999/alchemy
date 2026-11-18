@@ -1,22 +1,22 @@
 # 跨电脑交接方案（ALCHEMY）· 最新成果版
 
-> 最后更新：**2026-11-19**（第二轮同步：远端 `facb162` 属性/能力改造 + `cf9d01b` SYNC 钩子说明已拉到本地；内核测试 124 项）
+> 最后更新：**2026-11-19**（第三轮：能力维度 v5 + 涌现原型已本地提交 `b15ae4a`，测试 **149 项全绿**；远端仍为 `cf9d01b`，本地领先 4 个提交待推）
 > 工作目录：`G:\AI work\deepseek\work1\alchemy`
 > 交接入口：`HANDOFF.md`（最新结论以它为准）；本文件负责"如何迁移/同步"。
 > 远程仓库：**https://github.com/fpg9999/alchemy**
 
 ---
 
-## 0. 当前状态（2026-11-18）
+## 0. 当前状态（2026-11-19）
 
 | 项目 | 状态 |
 |---|---|
 | 本地仓库 | `G:\AI work\deepseek\work1\alchemy`，分支 `main` |
-| 远程仓库 | `https://github.com/fpg9999/alchemy`（**已推送，含 T01~T76 与 kernel `4a2e4d6`、第二轮 `facb162`/`cf9d01b` 全部提交**） |
+| 远程仓库 | `https://github.com/fpg9999/alchemy`（远端 HEAD = `cf9d01b`，含 T01~T76 与 kernel `4a2e4d6`、第二轮 `facb162`/`cf9d01b` 全部提交） |
 | 认证 | Git Credential Manager 已存 `fpg9999` 的 GitHub 凭据（`cmdkey` 中 `git:https://github.com`）；`gh` CLI 未登录，但不影响 git push |
-| 推送 | **远端已同步**：`main → origin/main`（见 §6）；本地另有整理提交 `7dd324c`/`7516ce0` 未 push（本轮网络受限） |
-| 最新成果 | **第二轮 `facb162`（2026-11-19 00:18 +08）**：三价轴属性 硬度→**密度**、物性改成 **3³=27 格**、能力改成**类别辐条三项数值**（聚/散/动）+ **9 项次级能力三阶**、旧 512 冻结；新增 `docs/REPO_SLIM.md` 体积治理；测试 106→**124 项**。本地整理分析见 `docs/INTAKE_R2.md`；上一轮 kernel `4a2e4d6` 见 `docs/KERNEL_INTAKE.md` |
-| 本地 commit 历史 | T01 → … → T61 六边形摆放 → T62 等量价数 → T63 逐级价数滴定 → T64~T66 生态群系三轮 → T67 生态群系总目录 → T68~T70b 图形阶段 → **T71~T76（`8877e8d`）→ kernel 内核入库（`4a2e4d6`）→ 整理提交（`7dd324c`）→ 第二轮同步（`7516ce0`，最新）** |
+| 推送 | **未推送**：本地 `main` 领先 `origin/main` 4 个文档/原型提交（`3d45357` 内核整理、`becbd06` 第二轮同步、`2916777` 第二轮分析、`b15ae4a` 第三轮 v5+涌现），tag `kernel-0.2.0` 亦未推（用户要求"先不着急推"） |
+| 最新成果 | **第三轮（2026-11-19）**：`docs/ABILITY_EMERGENCE.md` 总纲 + `alchemy/ops.py`（9 操作能力）+ `alchemy/emergence.py`（L1~L4 涌现原型，无 alive 标志）+ 25 新测试（共 **149 项**）+ demo/参数文件；stale-sweeper 覆盖 35 文件旧口径；首轮实测见 `HANDOFF.md` §14.4（组装率 36.9~38.5%、系统 0，标定中）；上一轮第二轮 `facb162` 见 `docs/INTAKE_R2.md` |
+| 本地 commit 历史 | T01 → … → T61 六边形摆放 → T62 等量价数 → T63 逐级价数滴定 → T64~T66 生态群系三轮 → T67 生态群系总目录 → T68~T70b 图形阶段 → **T71~T76（`8877e8d`）→ kernel 内核入库（`4a2e4d6`）→ 整理（`7dd324c`）→ 第二轮（`7516ce0`→rebase 后 `3d45357`/`becbd06`）→ 第二轮分析（`2916777`）→ 第三轮 v5+涌现（`b15ae4a`，最新）** |
 
 > 2026-11-18 工作区整理：已删除未跟踪的根目录日志/调试图/`__pycache__` 与工作区根的 2026-11-14 旧 ZIP/bundle 快照；
 > `archive/` 已按阶段分子文件夹；传输工具在 `tools/`；详见 `docs/CLEANUP_LOG.md` 末节。
@@ -246,8 +246,9 @@ T67 无大结果文件（`t67_catalog.json` 约 40KB，直接入库）。
    ```powershell
    $env:PYTHONIOENCODING="utf-8"
    python examples/demo_kernel.py      # 四入口演示（GBK 控制台需上一行，否则 ✓/→ 报 UnicodeEncodeError）
-   python tests/run_all.py             # 124 项测试全绿（约 17~27s）
+   python tests/run_all.py             # 149 项测试全绿（约 16~27s）
    ```
+   涌现原型冒烟（可选）：`python examples/emergence_demo.py --sample 600 --steps 600`（约 10~12s，输出 JSON）。
    兼容旧根脚本：`python -c "import pot_v4; print(pot_v4.simulate(['O','K']))"`。
 5. 读 `HANDOFF.md` 第 0 节的新对话启动语、§13（内核包与新规则体系）；
 6. 需要最新实验时：`python t67_catalog.py`（汇总 32 群系总目录，不跑模拟）；要跑模拟：化合物播种
@@ -263,7 +264,17 @@ T67 无大结果文件（`t67_catalog.json` 约 40KB，直接入库）。
 
 ## 6. 推送记录
 
-### 6.1 2026-11-19（第二轮：属性/能力改造）
+### 6.1 2026-11-19（第三轮：能力维度 v5 + 涌现原型，本地，未推送）
+
+| 项目 | 内容 |
+|---|---|
+| 远程 HEAD | **`cf9d01b`**（未变；本轮全部为本地提交，用户要求"先不着急推"） |
+| 本地提交 | **`b15ae4a`** `T77: 能力维度 v5（9 操作核）与涌现原型 + 过时口径清扫`（新增 `alchemy/ops.py`、`alchemy/emergence.py`、`tests/test_ops.py`、`tests/test_emergence.py`、`examples/emergence_demo.py`、`alchemy/data/emergence_params.json`、`docs/ABILITY_EMERGENCE.md`；stale-sweeper 改 35 文件；根 README 同步）；其前 `2916777`（第二轮分析）、`becbd06`、`3d45357` |
+| tag | `kernel-0.2.0`（annotated，本地，未推） |
+| 测试 | `python tests/run_all.py` → **149/149 PASS**（16.2s）；`python examples/emergence_demo.py --sample 600 --steps 600` → rc=0，约 10~12s |
+| 说明 | 首轮涌现实测偏低（组装率 36.9~38.5%、器官系统 0、四档全 0），参数标定 task-10 进行中，结果将补进 `HANDOFF.md` §14.4 |
+
+### 6.2 2026-11-19（第二轮：属性/能力改造）
 
 | 项目 | 内容 |
 |---|---|
@@ -272,7 +283,7 @@ T67 无大结果文件（`t67_catalog.json` 约 40KB，直接入库）。
 | 本地同步 | 2026-11-19 00:30 本机 `git fetch` 重试第 8 次成功，`git rebase origin/main --empty=drop` 接入（本地整理提交重放为 `3d45357`/`becbd06`，领先 origin 2 个文档提交，未 push）；复跑 `python tests/run_all.py` → **124/124 PASS** |
 | 说明 | 本轮期间本机直连 GitHub `git fetch` 多次 `Connection was reset`，先用 GitHub API/raw 逐文件取回（内容与上游逐字节一致）再 fetch 成功并入正式历史；以后遇到同类情况优先重试 fetch |
 
-### 6.2 2026-11-18（内核入库）
+### 6.3 2026-11-18（内核入库）
 
 | 项目 | 内容 |
 |---|---|
@@ -282,7 +293,7 @@ T67 无大结果文件（`t67_catalog.json` 约 40KB，直接入库）。
 | 再上 | `4c79217` — `T68-T70b: 大分子图形阶段成果入库` |
 | 本地核对 | 拉取后 `main...origin/main` 同步、工作树干净；`python tests/run_all.py` → 106/106 PASS |
 
-### 6.3 历史推送记录（T67 及以前）
+### 6.4 历史推送记录（T67 及以前）
 
 | 项目 | 内容 |
 |---|---|

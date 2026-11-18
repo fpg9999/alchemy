@@ -447,13 +447,13 @@ T75/T76 仍有效，但只到接口/先验级，尚未与实现连线。
 
 ## 10. 实现状态与接口边界
 
-### 10.1 仓库实测（2026-11-19）
+### 10.1 仓库实测（2026-11-19 02:08 复核）
 
-截至本文写作，`alchemy/alchemy/` 包内实有：`__init__.py`、`ability.py`（v3/v4）、`attrs.py`（27 格）、
-`phase.py`、`biome.py`、`README.md` 与 `core/`。**`alchemy/ops.py`、`alchemy/emergence.py` 尚未出现**
-（原型实现由 prototype-builder 进行中，测试 `tests/test_ops.py` / `tests/test_emergence.py` 同样未落地）。现有测试套件 `tests/run_all.py` 124 项为回归基线。
-因此本节只写**设计边界与预期 API**，任何分布/性能数字均不得视为已跑通结果；实现完成后应以实际模块与
-`tests/run_all.py` 输出回填，并在此处标注版本与日期。`alchemy/__init__.py` 当前也未导出新层。
+原型已落地并跑通：`alchemy/ops.py`（26 KB）、`alchemy/emergence.py`（约 2,330 行）、`tests/test_ops.py`（11 项）、
+`tests/test_emergence.py`（14 项）、`examples/emergence_demo.py`、`alchemy/data/emergence_params.json`（含 3 个标定参数）。
+`python tests/run_all.py` → **149/149 PASSED（16.2s）**（124 基线 + 25 新增）；`python examples/emergence_demo.py
+--sample 600 --steps 600` → rc=0，约 10~12s，输出 JSON。`alchemy/__init__.py` 仍未导出新层（`ops`/`emergence` 需显式 import）。
+下文 10.2/10.3 的 API 与实现一致（细节见模块 docstring）；10.5 记录首轮真实分布（与 §8.3 预注册有明显差距，标定中）。
 
 ### 10.2 `alchemy/ops.py`（v5 物质操作层，依赖 mol 结构，不依赖 catalog）
 
@@ -497,6 +497,21 @@ A1（空间哈希 1 环局域）、A5（窗口化）；随机数用 `random.Rand
 2. 实现 `emergence.py` → M0 小规模端到端（T76 36 大分子 + 200 随机分子，300 tick）；
 3. 跑 E0/E1/E2（§8），报告装配率/器官均值/四档占比 vs §8.3 预注册值，不做调参；
 4. 测试通过后，再把 `project_blocks`、`biome` 消费、`__init__` 导出接线——当前均未接线。
+
+### 10.5 首轮真实运行结果（2026-11-19，seed 20261119）
+
+| 规模 | 耗时 | 组装率 | 尺寸 中位/p90/max | 器官 | 器官系统 | 四档 |
+|---|---|---|---|---|---|---|
+| 600×600 | 12.4s | 36.9% | 13 / 143 / 143 | 2（支撑/运输） | 0 | 全 0 |
+| 6000×1200 | 256.9s | 38.5% | 10 / 29 / 1227 | 15（支撑9/运输5/信息1） | 0 | 全 0 |
+
+- 形态几乎全为「团」；6000 规模出现 1 个贯通巨团（max 1227），呈「亚临界小团 / 贯通巨团」两态。
+- 与 §8.3 预注册（组装率 55~70%、器官/组装体 1.8±0.9、器官系统 1~3%、四档有分布）差距明显；
+  键/分子仅 0.51，器官通量不足以形成系统。
+- 根因初判：每对分子至多 1 键、界面键寿命短、footprint 压缩、ρ_E 场均匀、器官通量按总通量归一后过小；
+  另有 3 个设计稿未规定的临时参数（`rupture_p=0.05`、`bond_damp=1.0`、`i_e_scale=0.3`）。
+- **参数标定（task-10）进行中**：目标是让器官系统与「活性无机/拟生命」档位真实出现，而不是把预注册数字硬凑；
+  标定后本节与 `HANDOFF.md` §14.4 将回填推荐参数与最终结果。
 
 ---
 
