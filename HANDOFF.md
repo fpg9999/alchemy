@@ -1,6 +1,6 @@
 # ALCHEMY 项目总交接文档
 
-> 最后更新：2026-11-18（**内核入库**：规则 1~11 抽成 `alchemy/` 纯标准库包，四入口 + 106 项测试全绿；三轴判相/物相规则/口径分歧/能力/外观/性状/群系规格共 9 份新文档入库；目录 84,225 条已全部切到规则 1~11 口径）
+> 最后更新：2026-11-19（**第二轮同步**：远端 `facb162` + `cf9d01b` 接入——物性三轴改为**密度/粘性/温度**（3³ = 27 格）、能力改为**类别辐条三项数值 + 9 项次级能力三阶**（旧 512 体系冻结为历史接口）、新增 `docs/REPO_SLIM.md` 仓库体积治理；测试增至 **124 项全绿**。上一轮 2026-11-18 内核入库：规则 1~11 抽成 `alchemy/` 纯标准库包，四入口 + 三轴判相/物相规则/口径分歧/能力/外观/性状/群系规格文档，目录 84,225 条已全部切到规则 1~11 口径）
 > 工作目录：`G:\AI work\deepseek\work1\alchemy`
 > 本文件是新对话/新接手者的**唯一入口**；读完它再读 `INDEX.md` 和对应主题的 `docs/T*.md`。
 
@@ -1035,8 +1035,8 @@ python t30_self_decomp.py
 | `core/catalog.py` | 84,225 条目录加载/查询/缓存；缺文件提示 `python unpack_data.py` |
 | `core/classify.py` | 骨架分类：38 库、6 级块、三层拆解、结构定理 |
 | `phase.py` | 三轴判相：`phase_of` / `describe` / `physical_name`（三模式 hybrid/hierarchy/cycle） |
-| `ability.py` | 8 情形 × 3 轴 = 512 能力编号 |
-| `attrs.py` | 硬度/黏性/温度三数值属性与档位 |
+| `ability.py` | 能力：v3 三项数值（聚/散/动 = 3O+2X+1C / 3K+2A+1F / 3P+2W+1L）+ v4 九项次级能力三阶（`profile`/`abilities_of`）；旧 8 情形 × 3 轴 = 512 编号保留为历史接口 |
+| `attrs.py` | 物性：密度/粘性/温度三数值 + 阈值三档 → 3³ = 27 格（`property_of`/`cell_of`/`grid`）；骨架分解 `skeleton_units` 供外观层 |
 | `biome.py` | 群系物种表、物性、分层、CSV/JSON/MD 导出 |
 | `data/forms38.json` | 38 形态库（与根 `t8_forms.json` 字节级相同）；`data/biome_names.json` 名称映射 |
 
@@ -1067,10 +1067,17 @@ python t30_self_decomp.py
 
 ### 13.5 能力 / 外观 / 性状（`docs/ABILITY.md`、`APPEARANCE.md`、`TRAITS.md`）
 
-- 能力 = 每轴 8 情形（3 单主导 + 3 双主导 + 三合 + 无）= **512**，取代 T74 的并列裁断 27 型分类；全目录实际 308/512；
+- **能力 v3（现行，2026-11-18 晚 `facb162`）** = 三项可量化数值，按**类别辐条**取权重（价数）：聚 = 3O+2X+1C、散 = 3K+2A+1F、动 = 3P+2W+1L；
+  主方向各用两阈值切三阶（聚 6/13、散 6/12、动 6/13；6000 抽样 低/中/高 ≈ 33%/32%/35%），六项均已实现（`ability.scores`）；
+- **能力 v4 同上改造**：9 项次级能力（结构支撑O 6/12、刚性X 2/6、粘合C 1/2；分化K 3/12、吸附A 2/6、切割F 1/2；储能P 6/12、移动W 2/6、信号L 1/2），
+  每项独立三阶（≤t1 低 含 0、≤t2 中、否则高），**无并入低、不做组合、九项并存互不影响**（`profile`/`abilities_of`）；
+  全目录实测：9 项"低"占 52%~79%（一价元素约一半分子无端帽）；
+- **旧 512 体系**（每轴 8 情形：3 单主导 + 3 双主导 + 三合 + 无）= 8³，已冻结为历史接口（`ability_of`/`distribution`/`catalog_combos` 仍可用，全目录实际 308/512）；
 - 外观采用 `T75_BLOCK_WORLD.md` 为唯一主规范，接口只依赖 `alchemy.attrs.skeleton_units`，**当前仅记录不实现**；
-- 性状 = **整分子**三数值累加（取代 T75b 逐骨架口径）：硬度 O3/K2/P1（阈值 10/16）、黏性 X3/W2/A1（6/11）、温度 F3/L2/C1（3/6），
-  阈值取 6000 样本 33%/67% 分位。
+- **性状/物性 v3（现行）** = 整分子三数值累加：**密度** O3/K2/P1（阈值 10/16）、**粘性** X3/W2/A1（6/11）、**温度** F3/L2/C1（3/6），
+  每轴三档 → **3³ = 27 格物性网格**（`property_of` 返回 `cell`/`index`；27 格全非空，最多 7.3%、最少 1.0%）。
+  三价轴原为「硬度」，因与固态语义重合（产生 254 例"刚性液体"、无三价元素时恒 0）改为密度（`TRAITS.md`）；
+  温度 0 = 绝对零度、无负值；旧 T75b 逐骨架口径（硬度/粘性/温度逐骨架算、桥不计）已被整分子口径取代，仅 `skeleton_units` 仍给外观层用。
 
 ### 13.6 群系数据与示例（`docs/BIOME_SPEC.md`、`docs/BIOME_CANDIDATES.md`）
 
@@ -1087,6 +1094,10 @@ python t30_self_decomp.py
 4. `phase.py` 模块 docstring 仍写 v2/cycle/第四相、`__all__` 漏 6 个符号；`unpack_data.py` 校验失败退出码仍 0；
 5. 测试硬依赖仓库根 `t57/t58/t62/t63_*` 与 39MB 目录（无 skip 守卫）；`data/biomes/t*` 是旧内核快照（13 处 shape/label 为旧「孤核」）。
    详细清单见 `docs/KERNEL_INTAKE.md` §6。
+6. 上游文档/代码内仍有过期表述（2026-11-19 复核，未改上游文件）：`alchemy/attrs.py` 模块 docstring 示例写 `OXC` → `温-中`，实际 `温-低`；
+   `alchemy/ability.py` 模块 docstring 仍以 512 为现行口径；`docs/ABILITY.md` §5 三层表仍写「物性 = 硬度/粘性/温度」；`docs/APPEARANCE.md` §1/§4 仍写「能力 = 512 种（已冻结）」与「物性 = 硬度」；
+   `docs/T75_BLOCK_WORLD.md` 与 `T76_BRIDGE_FUNCTIONS.md` 仍是「硬度」旧口径（历史文保留）。
+7. 仓库体积 694.3MB/1199 跟踪文件（`.git` 173.6MB，50 个 `*_result.json` 占 75%），治理方案见新增 `docs/REPO_SLIM.md`（Tier1 `git gc` + Tier2 result 走 gz/manifest）；尚未执行。
 
 ---
 
@@ -1165,3 +1176,12 @@ python t30_self_decomp.py
   整理分析报告 `docs/KERNEL_INTAKE.md`（拉取核对 / 包结构 / 规则体系 / 与 T71~T76 承接 / 质量核对 / 风险与待办）；
   根 `README.md`、`INDEX.md`、`TRANSFER.md` 已同步更新；目录 84,225 条确认 100% 为规则 1~11 口径。
   **已知 P1 问题**：`get_catalog` 缓存无锁、`place` 键类型双轨、demo GBK 崩溃（详见 §13.7 与 `KERNEL_INTAKE.md` §6）。
+
+- **第二轮同步（最新，2026-11-19）**：远端新增 `facb162`「rules: 三价轴改密度、能力改类别辐条、27 格物性、能力三阶」与
+  `cf9d01b`「docs: SYNC 记录 post-commit 自动推送钩子」。本地因网络（git fetch 持续 `Connection was reset`，直连与代理均不可用）
+  改用 GitHub API/raw 逐文件取回，内容与上游逐字节一致（diff stat 与上游 `+752/−172` 对齐），已本地提交 `7516ce0`，**尚未 push**。
+  内容：① `attrs.py` 三价轴属性 硬度→**密度**，三数值 × 阈值三档 → **27 格**（`cell_of`/`grid`/`N_CELLS=27`，`skeleton_units` 不再输出逐骨架属性）；
+  ② `ability.py` 新增 v3 三项数值（聚/散/动，权重=价数）+ v4 九项次级能力三阶（`SUB_ABILITIES`/`profile`/`abilities_of`），512 冻结；
+  ③ `docs/ABILITY.md`、`docs/TRAITS.md` 改口径；④ 新增 `docs/REPO_SLIM.md`（694.3MB/1199 文件体积治理方案）；
+  ⑤ `docs/SYNC.md` 记 post-commit 自动推送钩子；⑥ 测试 106 → **124 项全绿**（复跑 17.1s）。
+  本地另写第二轮整理分析（属性/能力/表现层）与根文档同步，详见 `docs/INTAKE_R2.md`。

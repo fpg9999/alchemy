@@ -9,10 +9,16 @@
 > 84,225 条目录**已 100% 切到规则 1~11 口径**（14,745 条 = 17.51% 结构被替换，分子式不变）；同时把新规则写成 9 份正式文档：
 > 三轴判相（[`docs/THREE_AXES_FINAL.md`](docs/THREE_AXES_FINAL.md)：概念族 刚/粘/松 × 物态 固/液/气 × 能量 冰/焰/电，27 型全覆盖）、
 > 物相规则（[`docs/PHASE_RULE.md`](docs/PHASE_RULE.md)）、口径分歧（[`docs/CALIBER_DIVERGENCE.md`](docs/CALIBER_DIVERGENCE.md)）、
-> 能力 512（[`docs/ABILITY.md`](docs/ABILITY.md)）、外观（[`docs/APPEARANCE.md`](docs/APPEARANCE.md)）、性状三数值（[`docs/TRAITS.md`](docs/TRAITS.md)）+
+> 能力（[`docs/ABILITY.md`](docs/ABILITY.md)：聚/散/动 三项数值 + 9 项次级能力三阶，旧 512 体系冻结作历史）、外观（[`docs/APPEARANCE.md`](docs/APPEARANCE.md)）、
+> 物性（[`docs/TRAITS.md`](docs/TRAITS.md)：密度/粘性/温度 → 3³ = 27 格）+
 > 群系规格/候选（[`docs/BIOME_SPEC.md`](docs/BIOME_SPEC.md)、[`docs/BIOME_CANDIDATES.md`](docs/BIOME_CANDIDATES.md)）。
-> **106 项测试全绿**（`python tests/run_all.py`，约 21~27s），另有 3 个示例脚本与群系物种图；整理分析见
+> **124 项测试全绿**（`python tests/run_all.py`，约 17~27s），另有 3 个示例脚本与群系物种图；整理分析见
 > [`docs/KERNEL_INTAKE.md`](docs/KERNEL_INTAKE.md)。
+
+> **第二轮同步（2026-11-19，最新）**：远端 `facb162`（三价轴属性 硬度→**密度**、物性改成 **3³ = 27 格**、能力改成**类别辐条三项数值**
+> 并加 **9 项次级能力三阶**）+ `cf9d01b`（`docs/SYNC.md` 记 post-commit 自动推送钩子）已拉到本地（网络受限，经 GitHub API/raw 逐文件取回，
+> 内容与上游一致；本地提交 `7516ce0`，未 push）。另新增 [`docs/REPO_SLIM.md`](docs/REPO_SLIM.md)（694.3MB 仓库体积治理），
+> 第二轮整理分析（属性/能力/表现层）见 [`docs/INTAKE_R2.md`](docs/INTAKE_R2.md)。
 
 > **最新进展（2026-11-18）**：2D 粒子环境实验已完成 **T55~T67** 系列——T59 两阶段九元素
 > （三价最多）、T62 两阶段九元素（三/二/一价等量，收敛到 `OXCPWKA`+`LF` 1:1 双组分）、

@@ -1,6 +1,6 @@
 # 跨电脑交接方案（ALCHEMY）· 最新成果版
 
-> 最后更新：**2026-11-18**（内核入库：`alchemy/` 包 + 106 项测试 + 9 份规则文档 + 群系数据，远程提交 `4a2e4d6`）
+> 最后更新：**2026-11-19**（第二轮同步：远端 `facb162` 属性/能力改造 + `cf9d01b` SYNC 钩子说明已拉到本地；内核测试 124 项）
 > 工作目录：`G:\AI work\deepseek\work1\alchemy`
 > 交接入口：`HANDOFF.md`（最新结论以它为准）；本文件负责"如何迁移/同步"。
 > 远程仓库：**https://github.com/fpg9999/alchemy**
@@ -12,11 +12,11 @@
 | 项目 | 状态 |
 |---|---|
 | 本地仓库 | `G:\AI work\deepseek\work1\alchemy`，分支 `main` |
-| 远程仓库 | `https://github.com/fpg9999/alchemy`（**已推送，含 T01~T76 与 kernel `4a2e4d6` 全部提交**） |
+| 远程仓库 | `https://github.com/fpg9999/alchemy`（**已推送，含 T01~T76 与 kernel `4a2e4d6`、第二轮 `facb162`/`cf9d01b` 全部提交**） |
 | 认证 | Git Credential Manager 已存 `fpg9999` 的 GitHub 凭据（`cmdkey` 中 `git:https://github.com`）；`gh` CLI 未登录，但不影响 git push |
-| 推送 | **已完成**：`main → origin/main`（T68~T70b / T71~T76 / kernel 提交见 §6） |
-| 最新成果 | **内核入库 `4a2e4d6`（2026-11-18 22:48）**：规则 1~11 抽成 `alchemy/` 纯标准库包（四入口 + 106 项测试全绿），9 份规则文档（三轴判相 v4 / 物相规则 / 口径分歧 / 能力 512 / 外貌 / 性状三数值 / 群系规格与候选）+ `data/biomes/` + `examples/` + `images/biome_candidates/`；整理分析见 `docs/KERNEL_INTAKE.md` |
-| 本地 commit 历史 | T01 → … → T61 六边形摆放 → T62 等量价数 → T63 逐级价数滴定 → T64 生态群系（12 群系）→ T65 生态群系第二轮（10 群系）→ T66 生态群系第三轮（化合物播种）→ T67 生态群系总目录（32 群系分类）→ T68~T70b 图形阶段 → **T71~T76 能力/形态/方块世界（`8877e8d`）→ kernel 内核入库（`4a2e4d6`，最新）** |
+| 推送 | **远端已同步**：`main → origin/main`（见 §6）；本地另有整理提交 `7dd324c`/`7516ce0` 未 push（本轮网络受限） |
+| 最新成果 | **第二轮 `facb162`（2026-11-19 00:18 +08）**：三价轴属性 硬度→**密度**、物性改成 **3³=27 格**、能力改成**类别辐条三项数值**（聚/散/动）+ **9 项次级能力三阶**、旧 512 冻结；新增 `docs/REPO_SLIM.md` 体积治理；测试 106→**124 项**。本地整理分析见 `docs/INTAKE_R2.md`；上一轮 kernel `4a2e4d6` 见 `docs/KERNEL_INTAKE.md` |
+| 本地 commit 历史 | T01 → … → T61 六边形摆放 → T62 等量价数 → T63 逐级价数滴定 → T64~T66 生态群系三轮 → T67 生态群系总目录 → T68~T70b 图形阶段 → **T71~T76（`8877e8d`）→ kernel 内核入库（`4a2e4d6`）→ 整理提交（`7dd324c`）→ 第二轮同步（`7516ce0`，最新）** |
 
 > 2026-11-18 工作区整理：已删除未跟踪的根目录日志/调试图/`__pycache__` 与工作区根的 2026-11-14 旧 ZIP/bundle 快照；
 > `archive/` 已按阶段分子文件夹；传输工具在 `tools/`；详见 `docs/CLEANUP_LOG.md` 末节。

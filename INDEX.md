@@ -19,8 +19,9 @@
 
 - **`alchemy/`（内核包，纯标准库，2026-11-18 入库）**：规则 1~11 大锅反应 / 摆放 / 目录 / 分类的正式实现，四入口
   `simulate` / `embed`+`validate` / `get_catalog` / `classify`；`core/` 为 elements/canon/geometry/reactor/catalog/classify，
-  上层为 `phase`（三轴判相）/`ability`（512 能力）/`attrs`（三数值性状）/`biome`（群系物种表）；`rules=8|9|11` 单份参数化；
-  见 `alchemy/README.md`、`docs/KERNEL_INTAKE.md`；测试 `tests/run_all.py`（106 项）
+  上层为 `phase`（三轴判相）/`ability`（能力 v3 三项数值 + v4 九项次级三阶；512 冻结作历史）/`attrs`（密度/粘性/温度 → 3³ = 27 格物性）/
+  `biome`（群系物种表）；`rules=8|9|11` 单份参数化；
+  见 `alchemy/README.md`、`docs/KERNEL_INTAKE.md`；测试 `tests/run_all.py`（**124 项**）
 - `pot_all.py`：规则 1~8 通用模拟器（历史，已由 `alchemy` 覆盖）
 - `pot_v2.py`：严格摆放校验（embed_mol2 / validate_place；历史，对应内核 `alchemy.embed/validate`）
 - `pot_v3.py`：历史口径（规则 1~9；正式口径已改为规则 1~11）
@@ -43,9 +44,10 @@
 ## 主要报告（docs/）
 
 - **2026-11-18 内核入库新文档**：`THREE_AXES_FINAL.md`（三轴判相 v4 定稿）、`PHASE_RULE.md`（物相规则 v1/v2）、
-  `CALIBER_DIVERGENCE.md`（规则 1~8/1~9/1~11 口径分歧审计）、`ABILITY.md`（512 能力）、`APPEARANCE.md`（外观，仅记录）、
-  `TRAITS.md`（硬度/黏性/温度三数值）、`BIOME_SPEC.md`（群系物种规格）、`BIOME_CANDIDATES.md`（候选群系清单）、
-  `SYNC.md`（同步约定）、`KERNEL_INTAKE.md`（本次整理分析总报告）
+  `CALIBER_DIVERGENCE.md`（规则 1~8/1~9/1~11 口径分歧审计）、`ABILITY.md`（能力：v3 三项数值 + v4 九项次级三阶；512 作历史）、
+  `APPEARANCE.md`（外观，仅记录）、`TRAITS.md`（密度/粘性/温度 → 27 格物性）、`BIOME_SPEC.md`（群系物种规格）、
+  `BIOME_CANDIDATES.md`（候选群系清单）、`SYNC.md`（同步约定 + 自动推送钩子）、`REPO_SLIM.md`（仓库体积治理）、
+  `KERNEL_INTAKE.md`（内核入库整理分析总报告）、`INTAKE_R2.md`（第二轮：属性/能力/表现层整理分析）
 - `T12_FINAL_REPORT.md`：二元反应总报告（最新）
 - `T12A_CHAINS.md` / `T12B_PAIRWISE.md` / `T12C_LARGE_SAMPLE.md`：三条主线
 - `T11_BINARY_REACTIONS.md` / `T11B_REACTION_CYCLES.md`：二元反应与循环
@@ -210,3 +212,9 @@
   `t76_bridge_fn.py` + `t76_render.py`（桥的 13 种功用标签，114 条桥分布）。
   报告：`docs/T71_ABILITIES.md`、`T72_ABILITIES_MORPHS.md`、`T73_MORPH_GEOMETRY.md`、`T74_CLASSIFICATION.md`、
   `T75_BLOCK_WORLD.md`、`T76_BRIDGE_FUNCTIONS.md`；图：`images/t71_*` ~ `images/t76_*`。
+
+- **第二轮同步（2026-11-19）属性/能力改造**：远端 `facb162`（`alchemy/attrs.py` 三价轴 硬度→密度、物性 3³=27 格新增
+  `cell_of`/`grid`/`N_CELLS`；`alchemy/ability.py` 新增 v3 三项数值 `scores`/`category_score` 与 v4 九项次级 `SUB_ABILITIES`/`profile`/`abilities_of`；
+  `docs/ABILITY.md`、`docs/TRAITS.md` 改口径；新增 `docs/REPO_SLIM.md`；测试 +18 → 124）+ `cf9d01b`（`docs/SYNC.md`
+  记 post-commit 自动推送钩子）。本地经 GitHub API/raw 取回并提交 `7516ce0`（网络受限未能 `git fetch`，未 push）。
+  第二轮整理分析见 `docs/INTAKE_R2.md`（属性/能力/表现层）。
