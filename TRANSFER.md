@@ -246,7 +246,7 @@ T67 无大结果文件（`t67_catalog.json` 约 40KB，直接入库）。
    ```powershell
    $env:PYTHONIOENCODING="utf-8"
    python examples/demo_kernel.py      # 四入口演示（GBK 控制台需上一行，否则 ✓/→ 报 UnicodeEncodeError）
-   python tests/run_all.py             # 106 项测试全绿（约 21~27s）
+   python tests/run_all.py             # 124 项测试全绿（约 17~27s）
    ```
    兼容旧根脚本：`python -c "import pot_v4; print(pot_v4.simulate(['O','K']))"`。
 5. 读 `HANDOFF.md` 第 0 节的新对话启动语、§13（内核包与新规则体系）；
@@ -263,7 +263,16 @@ T67 无大结果文件（`t67_catalog.json` 约 40KB，直接入库）。
 
 ## 6. 推送记录
 
-### 6.1 2026-11-18（最新两次）
+### 6.1 2026-11-19（第二轮：属性/能力改造）
+
+| 项目 | 内容 |
+|---|---|
+| 远程 HEAD | **`cf9d01b`** `docs: SYNC 记录 post-commit 自动推送钩子`（+11 行，仅 `docs/SYNC.md`）；父提交 **`facb162`** `rules: 三价轴改密度、能力改类别辐条、27 格物性、能力三阶`（7 files：`alchemy/ability.py` +188、`alchemy/attrs.py` +87/−70、`docs/ABILITY.md` +85/−4、`docs/REPO_SLIM.md` 新增 118、`docs/TRAITS.md` +88/−58、`tests/test_ability.py` +136、`tests/test_attrs.py` +50/−40） |
+| 自动推送钩子 | 作者本机 `.git/hooks/post-commit`：每次 commit 后自动 `git push origin <当前分支>`；失败提示 `[post-commit] 自动推送失败`，删钩子即关闭（只在本机生效，不进版本库） |
+| 本地同步 | 2026-11-19 00:30 本机 `git fetch` 重试第 8 次成功，`git rebase origin/main --empty=drop` 接入（本地整理提交重放为 `3d45357`/`becbd06`，领先 origin 2 个文档提交，未 push）；复跑 `python tests/run_all.py` → **124/124 PASS** |
+| 说明 | 本轮期间本机直连 GitHub `git fetch` 多次 `Connection was reset`，先用 GitHub API/raw 逐文件取回（内容与上游逐字节一致）再 fetch 成功并入正式历史；以后遇到同类情况优先重试 fetch |
+
+### 6.2 2026-11-18（内核入库）
 
 | 项目 | 内容 |
 |---|---|
@@ -273,7 +282,7 @@ T67 无大结果文件（`t67_catalog.json` 约 40KB，直接入库）。
 | 再上 | `4c79217` — `T68-T70b: 大分子图形阶段成果入库` |
 | 本地核对 | 拉取后 `main...origin/main` 同步、工作树干净；`python tests/run_all.py` → 106/106 PASS |
 
-### 6.2 本次推送记录（T67 及以前）
+### 6.3 历史推送记录（T67 及以前）
 
 | 项目 | 内容 |
 |---|---|

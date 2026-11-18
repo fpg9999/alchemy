@@ -234,3 +234,22 @@
 | 图 | `images/biome_candidates/species_01~04.png`、`species_index.png`、`species_legend.png` |
 | 测试 | `tests/`（11 个 `test_*.py` + `run_all.py` + `_util.py`，106 用例） |
 | 打包 | `pyproject.toml`（package-data 含 `alchemy/data/*.json`；catalog 39MB 按设计不入包） |
+
+---
+
+## 8. 第二轮增量（2026-11-19，上游 facb162 + cf9d01b）
+
+本文写成后，上游又推了两个提交，本节的增量以 `docs/INTAKE_R2.md` 为准（详细展开见该文）：
+
+- **物性改口径**：`alchemy/attrs.py` 由「硬度/粘性/温度」改为 **密度/粘性/温度**，
+  权重 O3/K2/P1、X3/W2/A1、F3/L2/C1，阈值 (10,16)/(6,11)/(3,6)，3³ = **27 格**；
+  硬度与固态重合会产生「刚性液体」，故弃用。
+- **能力改口径**：`alchemy/ability.py` 新增 v3 三项数值（聚 O/X/C、散 K/A/F、动 P/W/L，权重=价数）
+  与 v4 九项次级能力三阶（结构支撑/刚性/粘合/分化/吸附/切割/储能/移动/信号）；
+  512 种复合分类冻结为历史接口（实际 308/512）。
+- **外观层**：仍不新设计，主规范 = `docs/T75_BLOCK_WORLD.md` 方块世界；内核侧只提供
+  `attrs.skeleton_units` 作为唯一接口，渲染仍在上游 `t68~t76` 脚本。
+- **测试**：106 → **124**（新增 `tests/test_attrs.py`、`tests/test_ability.py`）。
+- **仓库体积**：新增 `docs/REPO_SLIM.md`（1199 文件 694.3MB，先 Tier1+Tier2）。
+- **同步方式**：本机已装 `.git/hooks/post-commit` 自动推送钩子（见 `docs/SYNC.md`）。
+- 本轮同时修正 `docs/APPEARANCE.md` 中 512/硬度旧口径与重复 §4 编号。

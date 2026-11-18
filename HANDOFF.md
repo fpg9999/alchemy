@@ -1073,7 +1073,12 @@ python t30_self_decomp.py
   每项独立三阶（≤t1 低 含 0、≤t2 中、否则高），**无并入低、不做组合、九项并存互不影响**（`profile`/`abilities_of`）；
   全目录实测：9 项"低"占 52%~79%（一价元素约一半分子无端帽）；
 - **旧 512 体系**（每轴 8 情形：3 单主导 + 3 双主导 + 三合 + 无）= 8³，已冻结为历史接口（`ability_of`/`distribution`/`catalog_combos` 仍可用，全目录实际 308/512）；
-- 外观采用 `T75_BLOCK_WORLD.md` 为唯一主规范，接口只依赖 `alchemy.attrs.skeleton_units`，**当前仅记录不实现**；
+- 外观采用 `T75_BLOCK_WORLD.md` 为唯一主规范（谱系 T68 字形 → T69 轮廓 → T70 涌现 → T70b 整身 → T75 方块；
+  T71/T72/T73 是被规则改版废掉的支线，T76 桥 13 功能有效但未接入）；上游 `t75_tiles.py`(380 行)/`t75_render.py`(188 行)/`t75b_*` 已实现并出 6 张图，
+  **内核侧仅记录、不实现**；接口只依赖 `alchemy.attrs.skeleton_units`（给 members/atoms/size/bridge_members），
+  但缺坐标 `place`、家族/38 库块形态、融合对、装饰角色，需另写适配器（估算 150~250 行）才能由内核直接出图；
+  新 27 格物性与聚/散/动能力在外观层**零使用**（方块色只按 7 家族，T75b 色条是 36 分子内 min-max 归一），
+  且外观权重 1.20/0.90/0.60 与内核 3/2/1 两套并存、无换算表；完整缺口清单见 `docs/INTAKE_R2.md` §4.4 与 `intake/appearance.md`；
 - **性状/物性 v3（现行）** = 整分子三数值累加：**密度** O3/K2/P1（阈值 10/16）、**粘性** X3/W2/A1（6/11）、**温度** F3/L2/C1（3/6），
   每轴三档 → **3³ = 27 格物性网格**（`property_of` 返回 `cell`/`index`；27 格全非空，最多 7.3%、最少 1.0%）。
   三价轴原为「硬度」，因与固态语义重合（产生 254 例"刚性液体"、无三价元素时恒 0）改为密度（`TRAITS.md`）；
@@ -1094,10 +1099,13 @@ python t30_self_decomp.py
 4. `phase.py` 模块 docstring 仍写 v2/cycle/第四相、`__all__` 漏 6 个符号；`unpack_data.py` 校验失败退出码仍 0；
 5. 测试硬依赖仓库根 `t57/t58/t62/t63_*` 与 39MB 目录（无 skip 守卫）；`data/biomes/t*` 是旧内核快照（13 处 shape/label 为旧「孤核」）。
    详细清单见 `docs/KERNEL_INTAKE.md` §6。
-6. 上游文档/代码内仍有过期表述（2026-11-19 复核，未改上游文件）：`alchemy/attrs.py` 模块 docstring 示例写 `OXC` → `温-中`，实际 `温-低`；
-   `alchemy/ability.py` 模块 docstring 仍以 512 为现行口径；`docs/ABILITY.md` §5 三层表仍写「物性 = 硬度/粘性/温度」；`docs/APPEARANCE.md` §1/§4 仍写「能力 = 512 种（已冻结）」与「物性 = 硬度」；
-   `docs/T75_BLOCK_WORLD.md` 与 `T76_BRIDGE_FUNCTIONS.md` 仍是「硬度」旧口径（历史文保留）。
+6. 上游文档/代码内仍有过期表述（2026-11-19 复核）：`alchemy/attrs.py` 模块 docstring 示例写 `OXC` → `温-中`，实际 `温-低`；
+   `alchemy/ability.py` 模块 docstring 仍以 512 为现行口径；`docs/ABILITY.md` §5 三层表仍写「物性 = 硬度/粘性/温度」；
+   `docs/APPEARANCE.md` §1/§4 的 512/硬度旧口径已由本轮本地整理修正（并修掉重复的 §4 编号），但 T75/T76 历史文仍保留「硬度」；
 7. 仓库体积 694.3MB/1199 跟踪文件（`.git` 173.6MB，50 个 `*_result.json` 占 75%），治理方案见新增 `docs/REPO_SLIM.md`（Tier1 `git gc` + Tier2 result 走 gz/manifest）；尚未执行。
+8. 外观层断层（2026-11-19 实测）：内核 `skeleton_units` → `t75_tiles` 缺适配器（G1~G9，见 `docs/INTAKE_R2.md` §4.4）；
+   T75b 色条文档写「右下」代码画「右上」且与块数点争位；混合元素桥（56/114）被压成单一图形；
+   `APPEARANCE.md` 的「156 张候选物质图谱」实际是 121 种。
 
 ---
 
