@@ -11,6 +11,7 @@ from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
 import t68_shapes as S
 import t69_pieces as P
+import t72_morphs as M
 import t69_draw as D
 import t70_glyphs as G
 
@@ -100,7 +101,35 @@ def _smooth_mask(mask, W, H, close_r, blur_r, thresh=120):
     return sm.point(lambda v: 255 if v > 128 else 0)
 
 
-def draw_body_molecule(cv, mol, box, max_s=52, show_badges=True):
+def _morph_img(key, fam, w, angle=0.0):
+    """按最终像素尺寸画一个形态（朝 angle），返回 (RGB, 蒙版)。"""
+    w = max(36, int(w))
+    sc = S.Canvas(w, w, (255, 255, 255))
+    M.draw_morph(sc, w / 2.0, w / 2.0, w * 0.58, w * 0.58, key, fam)
+    rot = sc.img.rotate(-math.degrees(angle), expand=True, resample=Image.BICUBIC,
+                        fillcolor=(255, 255, 255))
+    mask = rot.convert("L").point(lambda v: 255 if v < 236 else 0)
+    return rot, mask
+
+
+def _surface_point(body_big, c_final, dv, SS):
+    """从块心沿 dv 走出身体蒙版，返回体表点（最终像素）。"""
+    W, H = body_big.size
+    x, y = c_final[0] * SS, c_final[1] * SS
+    for i in range(1, 1200):
+        px = int(x + dv[0] * i)
+        py = int(y + dv[1] * i)
+        if px < 0 or py < 0 or px >= W or py >= H:
+            i -= 1
+            break
+        if body_big.getpixel((px, py)) == 0:
+            i -= 1
+            break
+    return ((x + dv[0] * i) / SS, (y + dv[1] * i) / SS)
+
+
+def draw_body_molecule(cv, mol, box, max_s=52, show_badges=True, auto_organs=False):
+    import os as _os
     bodies, bridges, fusion, idx_of, adj, skel_of, kinds = D.build(mol)
     s, ox, oy = D.fit_scale(bodies, box, max_s=max_s)
     W, H = cv.img.size
@@ -111,6 +140,11 @@ def draw_body_molecule(cv, mol, box, max_s=52, show_badges=True):
     polys = [to_px(b) for b in bodies]
     poly_by_block = {b.k: polys[i] for i, b in enumerate(bodies)}
     center = lambda b: (b.cx * s + ox, b.cy * s + oy)
+    geoms = D.attach_geoms(mol, bodies, idx_of, adj, skel_of)
+    organs = []
+    if auto_organs:
+        import t73_organs as O73
+        organs = O73.analyze(mol, bodies, [b.poly() for b in bodies], geoms, fusion, adj)
 
     # ---------- 1) 身体蒙版：骨架块 + 桥 + 融合（不含端帽）
     body_mask = Image.new("L", (W * SS, H * SS), 0)
@@ -150,10 +184,38 @@ def draw_body_molecule(cv, mol, box, max_s=52, show_badges=True):
     sb = sb.point(lambda v: 255 if v > 100 else 0)
     body_big = sb.resize((BW, BH), Image.LANCZOS).point(lambda v: 255 if v > 128 else 0)
 
+    # ---------- 1b) 器官形态：在体表长成外轮廓的一部分（全部用最终像素坐标）
+    organ_mask = Image.new("L", (BW, BH), 0)
+    organ_d = ImageDraw.Draw(organ_mask)
+    organ_outer, organ_inner = [], []
+    for o in organs:
+        b = bodies[o["k"]]
+        w = b.r * s * 2.15
+        if o["on_hull"]:
+            dv = o["out_dir"]
+            c = center(b)
+            p_f = _surface_point(body_big, c, dv, SS)
+            rot, mk = _morph_img(o["morph"], o["fam"], w, math.atan2(dv[1], dv[0]))
+            cx2 = p_f[0] + dv[0] * w * 0.26
+            cy2 = p_f[1] + dv[1] * w * 0.26
+            # 颈：体表点 → 形态中心
+            _mask_thick(organ_d, p_f, (cx2, cy2), w * 0.16)
+            mk_big = mk.resize((max(2, mk.width * SS), max(2, mk.height * SS)), Image.BICUBIC)
+            _bx = int((cx2 - mk.width / 2.0) * SS)
+            _by = int((cy2 - mk.height / 2.0) * SS)
+            if _os.environ.get('T73_DEBUG'):
+                print('PASTE #%d %s pos=(%.0f,%.0f) mk=%s big=%s box=(%d,%d)' % (
+                    o["num"], o["morph"], cx2, cy2, mk.size, mk_big.size, _bx, _by))
+            organ_mask.paste(255, (_bx, _by), mk_big)
+            organ_outer.append({"o": o, "rot": rot, "m": mk, "pos": (cx2, cy2)})
+        else:
+            c = center(b)
+            rot, mk = _morph_img(o["morph"], o["fam"], w * 0.8, 0.0)
+            organ_inner.append({"o": o, "rot": rot, "m": mk, "pos": c})
+
     # ---------- 2) 端帽 / 支臂：加到身体上（成为刺与触须）
     term_mask = Image.new("L", (W * SS, H * SS), 0)
     dt = ImageDraw.Draw(term_mask)
-    geoms = D.attach_geoms(mol, bodies, idx_of, adj, skel_of)
     term_geo = []
     for m in geoms["mono"]:
         kb = m["kb"]
@@ -192,7 +254,7 @@ def draw_body_molecule(cv, mol, box, max_s=52, show_badges=True):
         tip = (base[0] + dv[0] * L, base[1] + dv[1] * L)
         arm_geo.append((base, dv, L, nn))
         _mask_thick(dt, base, tip, s * 0.5)
-    full_big = ImageChops.lighter(body_big, term_mask)
+    full_big = ImageChops.lighter(ImageChops.lighter(body_big, term_mask), organ_mask)
     full = full_big.resize((W, H), Image.LANCZOS)
     solid = full.point(lambda v: 255 if v > 128 else 0)
 
@@ -282,13 +344,32 @@ def draw_body_molecule(cv, mol, box, max_s=52, show_badges=True):
             px, py = mid[0] + n[0] * i * Lw * 0.34, mid[1] + n[1] * i * Lw * 0.34
             d.line([(px + u[0] * Lw * 0.22, py + u[1] * Lw * 0.22),
                     (px - u[0] * Lw * 0.22, py - u[1] * Lw * 0.22)], fill=(70, 86, 104), width=3)
+    # ---------- 4b) 器官形态图样：身体色的突起 + 深色轮廓 + 内部纹线
+    def _paint_morph(og, alpha=1.0):
+        mk = og["m"]
+        px = int(og["pos"][0] - mk.size[0] / 2.0)
+        py = int(og["pos"][1] - mk.size[1] / 2.0)
+        fill = (236, 242, 248) if alpha >= 1.0 else (240, 245, 250)
+        cv.img.paste(Image.new("RGB", mk.size, fill), (px, py), mk)
+        band = ImageChops.subtract(mk.filter(ImageFilter.MaxFilter(5)), mk)
+        cv.img.paste(Image.new("RGB", mk.size, (30, 42, 56)), (px, py),
+                     band.point(lambda v: int(v * alpha)))
+        lines = og["rot"].convert("L").point(lambda v: 255 if v < 200 else 0)
+        cv.img.paste(Image.new("RGB", mk.size, (62, 76, 92)), (px, py),
+                     lines.point(lambda v: int(v * (0.85 * alpha))))
+
+    for og in organ_inner:
+        _paint_morph(og, 0.7)
+    for og in organ_outer:
+        _paint_morph(og, 1.0)
+
     # 徽章
     if show_badges:
         for b in bodies:
             c = center(b)
             P.badge(cv, (c[0] + b.r * s * 0.45, c[1] - b.r * s * 0.45), str(b.k + 1),
                     r=max(9, int(0.20 * s)), size=max(10, int(0.24 * s)))
-    return {"s": s, "bodies": bodies, "ox": ox, "oy": oy}
+    return {"s": s, "bodies": bodies, "ox": ox, "oy": oy, "organs": organs, "outer": organ_outer}
 
 
 def page_bodies(picks=("G13", "G24", "G16", "G26")):

@@ -141,3 +141,51 @@
 - **T70b（2026-11-18）大分子整体图**：`t70b_body.py`（把所有骨架块/桥/端帽并进同一蒙版 → 闭运算得到单一外轮廓 →
   渐变填充 + 一条外轮廓 + 内膜 + 体内器官核/骨纹/脉络），报告 `docs/T70B_WHOLE_BODY.md`，
   图 `images/t70b_bodies.png`（4 例）、`images/t70b_all36.png`（36 个）。解决"大分子看起来像零散零件拼凑"的问题。
+
+- **T71（2026-11-18）骨架能力与涌现生命**：`t71_abilities.py`（30 项能力 / 材料层元素能力 / 6 种分化形态 /
+  固液气判定 / 结构门控生命度 / 物种命名）、`t71_render.py`（4 张图）；报告 `docs/T71_ABILITIES.md`；
+  图 `images/t71_abilities.png`、`t71_skeletons38.png`、`t71_organisms.png`、`t71_gallery.png`。
+  结果：36 个稳定大分子 → 有机生命 14 / 拟生命 12 / 活性无机物 7 / 无机晶体 3。
+  刚性/松散/粘性暂用 S/C/L 键占比推断，等同事正式分类规则上传后替换 `t71_abilities.softness()`。
+
+- **T72（2026-11-18）能力系统 72 项 + 骨架分化形态 28 种**：`t72_abilities.py`（72 能力/9 大类、按元素占比算强度、
+  家族签名加成）、`t72_morphs.py`（7 家族 × 4 形态 = 28、每块按组成+编号长 3 种）、`t72_render.py`（5 张图）；
+  报告 `docs/T72_ABILITIES_MORPHS.md`；图 `images/t72_abilities.png`、`t72_morphs.png`、`t72_blocks38.png`、
+  `t72_species.png`、`t72_small.png`。
+
+- **T73（2026-11-18）器官形态的几何判定 + 小分子物质化**：`t73_organs.py`（凸包/离心距离/载荷/触肢数 →
+  承力型/感受抓握型/表面型/内脏型/过渡型，每家族一套对应形态）、`t70b_body.draw_body_molecule(auto_organs=True)`
+  （器官形态真的长在身体表面，带颈、统一配色）、`t73_small.py`（元素字形+键带+端帽并成一个身体，再按 S/C/L/X
+  加表面纹理）、`t73_render.py`（规则页 + 6 张分化形体卡）；报告 `docs/T73_MORPH_GEOMETRY.md`；
+  图 `images/t73_rules.png`、`t73_organs.png`、`t73_small.png`。
+
+- **T73b（2026-11-18）修正**：强化"分化形态就是器官整个外形"——新增 `t73_body.py`（用 28 形态的整张剪影
+  替代骨架块，桥接器官打包压叠 0.56/融合 0.42 连成一身体，端帽/支臂并入蒙版，只留一条外轮廓）。
+  `t73_render.page_organs` 已切换；图 `images/t73_organs.png` 更新。
+
+- **T74（2026-11-18）分类规则订正**：`t74_rules.py`——固/液/气按 X>W>A 数量；刚/粘/松按 O>P>K 数量；
+  高温/低温/导电按一价 C>L>F 数量；有机/无机按能力与结构（T71 结构门控生命度 ≥5 有机、3~5 活性无机、<3 无机晶体），
+  不再用"有没有端帽"判断。报告 `docs/T74_CLASSIFICATION.md`，无机大分子图 `images/t73_inorganic.png` 已按新规则重算
+  （18 个大分子无机：活性 13 + 晶体 5）。
+
+- **T75（2026-11-18）方块世界改造**：`t75_attrs.py`（硬度=三价 O1.2/P0.9/K0.6、粘性=二价 X1.0/W1.4/A0.4、
+  温度=一价 C−2.0/L0.5/F3.0，均为数值属性）、`t75_tiles.py`（每个骨架 = 1 个单位方块；BFS 四邻接嵌成多格骨牌；
+  方块内部家族纹样；共用边上画 X 焊块 / W 肌腱 / A 薄膜 / 融合焊纹；外缘小方钉=一价端帽）、
+  `t75_render.py`（规则页 + 18 张方块分子卡 + 36 个总览）；报告 `docs/T75_BLOCK_WORLD.md`；
+  图 `images/t75_rules.png`、`t75_molecules.png`、`t75_overview.png`。
+
+- **T75b（2026-11-18）逐骨架属性**：`t75b_attrs.py` 的 `skeleton_attrs(mol)` 为每个骨架单独算 硬度（三价）/
+  粘性（挂在它身上的二价）/ 温度（挂在它身上的一价），**连接两个骨架的二价桥不计入任何属性**；
+  方块右下角三色小条与卡片右侧逐骨架表展示。图 `images/t75b_rules.png`、`t75b_molecules.png`、`t75b_overview.png`。
+
+
+- **T71~T76（2026-11-18）能力/形态/方块世界/桥功用**：
+  `t71_abilities.py` + `t71_render.py`（30 项能力、6 分化形态、结构门控生命度，36 分子 14/12/7/3）、
+  `t72_abilities.py` + `t72_morphs.py` + `t72_render.py`（72 项能力 × 9 类、28 种分化形态、小分子 12 例）、
+  `t73_organs.py` + `t73_body.py` + `t73_small.py` + `t73_render.py`（器官按位置/朝向选形态，形态直接代替器官外形；
+  小分子物质形态）、`t74_rules.py`（固液气/刚粘松/热电/有机无机判定）、
+  `t75_attrs.py` + `t75_tiles.py` + `t75_render.py`（方块世界：每个骨架 = 1 单位方块）、
+  `t75b_attrs.py` + `t75b_render.py`（属性按每个骨架算，桥不计入）、
+  `t76_bridge_fn.py` + `t76_render.py`（桥的 13 种功用标签，114 条桥分布）。
+  报告：`docs/T71_ABILITIES.md`、`T72_ABILITIES_MORPHS.md`、`T73_MORPH_GEOMETRY.md`、`T74_CLASSIFICATION.md`、
+  `T75_BLOCK_WORLD.md`、`T76_BRIDGE_FUNCTIONS.md`；图：`images/t71_*` ~ `images/t76_*`。

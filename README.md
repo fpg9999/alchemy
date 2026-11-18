@@ -31,6 +31,13 @@
 > [`docs/T70_EMERGENT_GLYPHS.md`](docs/T70_EMERGENT_GLYPHS.md)）、
 > T70b 整体形体画法（块/桥/端帽并入同一剪影，一个分子看起来像一件完整物质，
 > [`docs/T70B_WHOLE_BODY.md`](docs/T70B_WHOLE_BODY.md)）。
+>
+> **能力与方块世界阶段（2026-11-18，最新）**：T71 每种骨架的能力与分化（30 能力/6 形态，结构门控生命度）、
+> T72 能力扩到 72 项 ×9 类 + 28 种分化形态 + 小分子形态；T73 器官按位置/朝向选形态、形态**直接代替器官外形**
+> （[`docs/T73_MORPH_GEOMETRY.md`](docs/T73_MORPH_GEOMETRY.md)）；T74 分类规则改为按价数元素判定；
+> **T75 方块世界**：每个骨架 = 1 个单位方块，物质 = 若干方块拼成，属性改为硬度/粘性/温度
+> （[`docs/T75_BLOCK_WORLD.md`](docs/T75_BLOCK_WORLD.md)）；**T75b** 属性改为**逐骨架**计算、连接桥不计入；
+> **T76 桥的功用标签**（刚性焊接/铰接/定距隔空/多点编织…，[`docs/T76_BRIDGE_FUNCTIONS.md`](docs/T76_BRIDGE_FUNCTIONS.md)）。
 
 ## 快速开始
 
@@ -51,7 +58,7 @@
 
 - `pot_all.py` / `pot_v2.py` / `pot_v3.py` / `pot_v4.py`：大锅反应与几何校验核心（规则 1~11 以 `pot_v4.py` 为准）；
 - `natural_engine.py` / `fast_pot.py` / `t55_kinetic_env.py`：自然环境引擎与 2D 粒子环境；
-- `t4_*` ~ `t70b_*`：各阶段研究脚本/数据（编号=任务阶段）；
+- `t4_*` ~ `t76_*`：各阶段研究脚本/数据（编号=任务阶段；T71~T76 为能力/形态/方块世界）；
 - `docs/`：全部研究报告（`T*.md`）；`docs/templates/` 放报告模板（如 `t60_report_template.md`）；
 - `images/`：全部结果图（T68~T70b 的图册按 `t68_*`/`t69_*`/`t70_*`/`t70b_*` 命名）；
 - `_data_gz/`：大数据的 gzip 版本 + `manifest.json`（GitHub 传输用）；
