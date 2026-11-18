@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alchemy-core"
+version = "0.1.0"
+description = "炼金术化学内核：元素/价数/六边形几何/大锅反应/物质目录/骨架分类"
+readme = "alchemy/README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+dependencies = []
+
+[project.optional-dependencies]
+# 绘图脚本（t*_render.py 等）需要 Pillow；内核本身只依赖标准库
+plots = ["Pillow>=9.0"]
+
+[tool.setuptools]
+packages = ["alchemy", "alchemy.core"]
+
+[tool.setuptools.package-data]
+alchemy = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

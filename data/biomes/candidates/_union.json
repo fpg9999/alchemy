@@ -1,0 +1,4575 @@
+{
+ "candidates": {
+  "T55": {
+   "desc": "纯聚素单质碰撞，退火到单一物质",
+   "file": "t55_kinetic_result.json",
+   "n_species": 9,
+   "spec": {
+    "source": "D:\\Alchemistry DeepSeek工作区\\alchemy\\t55_kinetic_result.json",
+    "name": "t55_kinetic",
+    "phase": null,
+    "element_atoms": null,
+    "element_shares": null,
+    "valence_shares": null,
+    "L": 10000.0,
+    "T0": 1000,
+    "T_end": 0,
+    "minutes": 1000,
+    "max_reaction_atoms": null,
+    "n_molecules": 5974,
+    "n_atoms": 18000,
+    "n_species": 9
+   }
+  },
+  "T57": {
+   "desc": "29 种聚素 + 面积模型，同样收敛到 OXC",
+   "file": "t57_area_result.json",
+   "n_species": 4,
+   "spec": {
+    "source": "D:\\Alchemistry DeepSeek工作区\\alchemy\\t57_area_result.json",
+    "name": "t57_area",
+    "phase": null,
+    "element_atoms": null,
+    "element_shares": null,
+    "valence_shares": null,
+    "L": 10000.0,
+    "T0": 1000,
+    "T_end": 0,
+    "minutes": 1000,
+    "max_reaction_atoms": null,
+    "n_molecules": 12054,
+    "n_atoms": 38532,
+    "n_species": 4
+   }
+  },
+  "T63S4": {
+   "desc": "逐级价数滴定的最后一阶段（K 骨架世界）",
+   "file": "t63_phase4_result.json",
+   "n_species": 14,
+   "spec": {
+    "source": "D:\\Alchemistry DeepSeek工作区\\alchemy\\t63_phase4_result.json",
+    "name": "t63_phase4",
+    "phase": 4,
+    "element_atoms": null,
+    "element_shares": null,
+    "valence_shares": null,
+    "L": 30000.0,
+    "T0": 1000,
+    "T_end": 0,
+    "minutes": 1000,
+    "max_reaction_atoms": 40,
+    "n_molecules": 17227,
+    "n_atoms": 86532,
+    "n_species": 14
+   }
+  },
+  "T62B": {
+   "desc": "九元素等量价数，收敛到等摩尔双组分",
+   "file": "t62_phaseB_result.json",
+   "n_species": 43,
+   "spec": {
+    "source": "D:\\Alchemistry DeepSeek工作区\\alchemy\\t62_phaseB_result.json",
+    "name": "t62_phaseB",
+    "phase": "B",
+    "element_atoms": {
+     "O": 8925,
+     "X": 8867,
+     "C": 8875,
+     "P": 8922,
+     "W": 8889,
+     "L": 8896,
+     "K": 8921,
+     "A": 8875,
+     "F": 8857
+    },
+    "element_shares": {
+     "O": 0.1115,
+     "X": 0.1108,
+     "C": 0.1109,
+     "P": 0.1115,
+     "W": 0.1111,
+     "L": 0.1112,
+     "K": 0.1115,
+     "A": 0.1109,
+     "F": 0.1107
+    },
+    "valence_shares": [
+     0.3345,
+     0.3328,
+     0.3327
+    ],
+    "L": 60000.0,
+    "T0": 1000,
+    "T_end": 0,
+    "minutes": 1000,
+    "max_reaction_atoms": 40,
+    "n_molecules": 51937,
+    "n_atoms": 230046,
+    "n_species": 43
+   }
+  },
+  "T59B": {
+   "desc": "九元素三价最多，尾部最丰富的可用世界",
+   "file": "t59_phaseB_result.json",
+   "n_species": 67,
+   "spec": {
+    "source": "D:\\Alchemistry DeepSeek工作区\\alchemy\\t59_phaseB_result.json",
+    "name": "t59_phaseB",
+    "phase": "B",
+    "element_atoms": {
+     "O": 11828,
+     "X": 9548,
+     "C": 6284,
+     "P": 14865,
+     "W": 8741,
+     "L": 4845,
+     "K": 10615,
+     "A": 8169,
+     "F": 5135
+    },
+    "element_shares": null,
+    "valence_shares": [
+     0.4662,
+     0.3306,
+     0.2032
+    ],
+    "L": 60000.0,
+    "T0": 1000,
+    "T_end": 0,
+    "minutes": 1000,
+    "max_reaction_atoms": 40,
+    "n_molecules": 38609,
+    "n_atoms": 230133,
+    "n_species": 67
+   }
+  }
+ },
+ "n_union": 121,
+ "species": [
+  {
+   "formula": "OXC",
+   "label": "秩晶冰·链",
+   "natoms": 3,
+   "shape": "链",
+   "category": "single_trivalent",
+   "skeleton_blocks": "O",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T55": 0.995146,
+    "T57": 0.808528
+   },
+   "count": {
+    "T55": 5945,
+    "T57": 9746
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 2,
+   "max_abundance": 0.995146,
+   "dominant_in": [
+    "T55",
+    "T57"
+   ],
+   "props": {
+    "mass": 8,
+    "hp": 100,
+    "strength": 10,
+    "flex": 2,
+    "resist": 6,
+    "energy": 2,
+    "mobility": 1,
+    "sense": 2,
+    "attack": 4,
+    "slots": 1
+   }
+  },
+  {
+   "formula": "OXCPWKA",
+   "label": "秩晶冰势流沌气·环",
+   "natoms": 7,
+   "shape": "环",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.470609,
+    "T59B": 0.00215
+   },
+   "count": {
+    "T62B": 24442,
+    "T59B": 83
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 2,
+   "max_abundance": 0.470609,
+   "dominant_in": [
+    "T62B"
+   ],
+   "props": {
+    "mass": 17,
+    "hp": 168.0,
+    "strength": 21,
+    "flex": 9,
+    "resist": 13,
+    "energy": 6,
+    "mobility": 8,
+    "sense": 3,
+    "attack": 8,
+    "slots": 1
+   }
+  },
+  {
+   "formula": "LF",
+   "label": "电焰·链",
+   "natoms": 2,
+   "shape": "链",
+   "category": "no_trivalent",
+   "skeleton_blocks": "—",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.469319,
+    "T59B": 0.11487
+   },
+   "count": {
+    "T62B": 24375,
+    "T59B": 4435
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "焰",
+   "物性名": "刚性高温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/F",
+   "相型_无层单列": "O/X/F",
+   "第四相来源": "",
+   "裁决轴数": 3,
+   "草稿名": "",
+   "n_biomes": 2,
+   "max_abundance": 0.469319,
+   "dominant_in": [
+    "T62B",
+    "T59B"
+   ],
+   "props": {
+    "mass": 3,
+    "hp": 0,
+    "strength": 2,
+    "flex": 3,
+    "resist": 1,
+    "energy": 9,
+    "mobility": 1,
+    "sense": 4,
+    "attack": 9,
+    "slots": 2
+   }
+  },
+  {
+   "formula": "F2",
+   "label": "焰2·链",
+   "natoms": 2,
+   "shape": "链",
+   "category": "no_trivalent",
+   "skeleton_blocks": "—",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T63S4": 0.378534,
+    "T62B": 0.003081
+   },
+   "count": {
+    "T63S4": 6521,
+    "T62B": 160
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "焰",
+   "物性名": "刚性高温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/F",
+   "相型_无层单列": "O/X/F",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 2,
+   "max_abundance": 0.378534,
+   "dominant_in": [
+    "T63S4"
+   ],
+   "props": {
+    "mass": 4,
+    "hp": 0,
+    "strength": 2,
+    "flex": 2,
+    "resist": 0,
+    "energy": 8,
+    "mobility": 0,
+    "sense": 0,
+    "attack": 14,
+    "slots": 2
+   }
+  },
+  {
+   "formula": "CF",
+   "label": "冰焰·链",
+   "natoms": 2,
+   "shape": "链",
+   "category": "no_trivalent",
+   "skeleton_blocks": "—",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.013497,
+    "T59B": 0.314201
+   },
+   "count": {
+    "T62B": 701,
+    "T59B": 12131
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 3,
+   "草稿名": "",
+   "n_biomes": 2,
+   "max_abundance": 0.314201,
+   "dominant_in": [
+    "T59B"
+   ],
+   "props": {
+    "mass": 3,
+    "hp": 10,
+    "strength": 1,
+    "flex": 3,
+    "resist": 1,
+    "energy": 6,
+    "mobility": 1,
+    "sense": 1,
+    "attack": 10,
+    "slots": 2
+   }
+  },
+  {
+   "formula": "OK",
+   "label": "秩沌·链",
+   "natoms": 2,
+   "shape": "链",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T63S4": 0.245777,
+    "T62B": 0.004582
+   },
+   "count": {
+    "T63S4": 4234,
+    "T62B": 238
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 3,
+   "草稿名": "",
+   "n_biomes": 2,
+   "max_abundance": 0.245777,
+   "dominant_in": [
+    "T63S4"
+   ],
+   "props": {
+    "mass": 6,
+    "hp": 70,
+    "strength": 12,
+    "flex": 1,
+    "resist": 4,
+    "energy": 1,
+    "mobility": 1,
+    "sense": 2,
+    "attack": 1,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "OX2C",
+   "label": "秩晶2冰·环",
+   "natoms": 4,
+   "shape": "环",
+   "category": "single_trivalent",
+   "skeleton_blocks": "O",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T55": 0.000502,
+    "T57": 0.190061
+   },
+   "count": {
+    "T55": 3,
+    "T57": 2291
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 2,
+   "max_abundance": 0.190061,
+   "dominant_in": [
+    "T57"
+   ],
+   "props": {
+    "mass": 12,
+    "hp": 168.0,
+    "strength": 7,
+    "flex": 2,
+    "resist": 13,
+    "energy": 2,
+    "mobility": 1,
+    "sense": 2,
+    "attack": 5,
+    "slots": 1
+   }
+  },
+  {
+   "formula": "O2XP2WK2A2",
+   "label": "秩2晶势2流沌2气2·环",
+   "natoms": 10,
+   "shape": "环",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OPK+OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.000462,
+    "T59B": 0.171333
+   },
+   "count": {
+    "T62B": 24,
+    "T59B": 6615
+   },
+   "骨架": "秩",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "刚性低温气体",
+   "典型对应": "气湖 / 沉气",
+   "相型": "O/A/C",
+   "相型_无层单列": "O/A/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 2,
+   "max_abundance": 0.171333,
+   "dominant_in": [
+    "T59B"
+   ],
+   "props": {
+    "mass": 26,
+    "hp": 252.0,
+    "strength": 39,
+    "flex": 11,
+    "resist": 19,
+    "energy": 7,
+    "mobility": 11,
+    "sense": 4,
+    "attack": 8,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "OXCPWK",
+   "label": "秩晶冰势流沌·环",
+   "natoms": 6,
+   "shape": "环",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.004775,
+    "T59B": 0.13344
+   },
+   "count": {
+    "T62B": 248,
+    "T59B": 5152
+   },
+   "骨架": "秩",
+   "状态": "液",
+   "能量": "冰",
+   "物性名": "刚性低温液体",
+   "典型对应": "液态金属",
+   "相型": "O/W/C",
+   "相型_无层单列": "O/W/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 2,
+   "max_abundance": 0.13344,
+   "dominant_in": [
+    "T59B"
+   ],
+   "props": {
+    "mass": 16,
+    "hp": 168.0,
+    "strength": 21,
+    "flex": 7,
+    "resist": 12,
+    "energy": 6,
+    "mobility": 6,
+    "sense": 3,
+    "attack": 8,
+    "slots": 1
+   }
+  },
+  {
+   "formula": "L2",
+   "label": "电2·链",
+   "natoms": 2,
+   "shape": "链",
+   "category": "no_trivalent",
+   "skeleton_blocks": "—",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.011302,
+    "T59B": 0.129011
+   },
+   "count": {
+    "T62B": 587,
+    "T59B": 4981
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "电",
+   "物性名": "刚性带电固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/L",
+   "相型_无层单列": "O/X/L",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 2,
+   "max_abundance": 0.129011,
+   "dominant_in": [
+    "T59B"
+   ],
+   "props": {
+    "mass": 2,
+    "hp": 0,
+    "strength": 2,
+    "flex": 4,
+    "resist": 2,
+    "energy": 10,
+    "mobility": 2,
+    "sense": 8,
+    "attack": 4,
+    "slots": 2
+   }
+  },
+  {
+   "formula": "XA",
+   "label": "晶气·链",
+   "natoms": 2,
+   "shape": "链",
+   "category": "no_trivalent",
+   "skeleton_blocks": "—",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T63S4": 0.049573,
+    "T62B": 0.005661
+   },
+   "count": {
+    "T63S4": 854,
+    "T62B": 294
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 3,
+   "草稿名": "",
+   "n_biomes": 2,
+   "max_abundance": 0.049573,
+   "dominant_in": [],
+   "props": {
+    "mass": 5,
+    "hp": 40,
+    "strength": 7,
+    "flex": 2,
+    "resist": 4,
+    "energy": 0,
+    "mobility": 2,
+    "sense": 0,
+    "attack": 1,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O3XP4WK3A",
+   "label": "秩3晶势4流沌3气·团",
+   "natoms": 13,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2P3K2+OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 9.6e-05,
+    "T59B": 0.020228
+   },
+   "count": {
+    "T62B": 5,
+    "T59B": 781
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 2,
+   "max_abundance": 0.020228,
+   "dominant_in": [],
+   "props": {
+    "mass": 37,
+    "hp": 436.8,
+    "strength": 70,
+    "flex": 12,
+    "resist": 22,
+    "energy": 12,
+    "mobility": 12,
+    "sense": 6,
+    "attack": 13,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "WA",
+   "label": "流气·链",
+   "natoms": 2,
+   "shape": "链",
+   "category": "no_trivalent",
+   "skeleton_blocks": "—",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.009088,
+    "T59B": 0.002512
+   },
+   "count": {
+    "T62B": 472,
+    "T59B": 97
+   },
+   "骨架": "秩",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "刚性低温气体",
+   "典型对应": "气湖 / 沉气",
+   "相型": "O/A/C",
+   "相型_无层单列": "O/A/C",
+   "第四相来源": "",
+   "裁决轴数": 3,
+   "草稿名": "",
+   "n_biomes": 2,
+   "max_abundance": 0.009088,
+   "dominant_in": [],
+   "props": {
+    "mass": 3,
+    "hp": 10,
+    "strength": 6,
+    "flex": 5,
+    "resist": 1,
+    "energy": 1,
+    "mobility": 5,
+    "sense": 0,
+    "attack": 1,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O2X2C4",
+   "label": "秩2晶2冰4·链",
+   "natoms": 8,
+   "shape": "链",
+   "category": "single_trivalent",
+   "skeleton_blocks": "O+O",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T55": 0.000837,
+    "T57": 0.001161
+   },
+   "count": {
+    "T55": 5,
+    "T57": 14
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 2,
+   "max_abundance": 0.001161,
+   "dominant_in": [],
+   "props": {
+    "mass": 18,
+    "hp": 220,
+    "strength": 10,
+    "flex": 8,
+    "resist": 14,
+    "energy": 8,
+    "mobility": 4,
+    "sense": 6,
+    "attack": 14,
+    "slots": 4
+   }
+  },
+  {
+   "formula": "O2X4",
+   "label": "秩2晶4·链",
+   "natoms": 6,
+   "shape": "链",
+   "category": "single_trivalent",
+   "skeleton_blocks": "O+O",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T55": 0.000502,
+    "T57": 0.000249
+   },
+   "count": {
+    "T55": 3,
+    "T57": 3
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 2,
+   "max_abundance": 0.000502,
+   "dominant_in": [],
+   "props": {
+    "mass": 22,
+    "hp": 260,
+    "strength": 24,
+    "flex": 0,
+    "resist": 16,
+    "energy": 0,
+    "mobility": 0,
+    "sense": 2,
+    "attack": 4,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O2XP2K2A",
+   "label": "秩2晶势2沌2气·环",
+   "natoms": 8,
+   "shape": "环",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OPK+OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.00025,
+    "T59B": 0.000259
+   },
+   "count": {
+    "T62B": 13,
+    "T59B": 10
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 3,
+   "草稿名": "",
+   "n_biomes": 2,
+   "max_abundance": 0.000259,
+   "dominant_in": [],
+   "props": {
+    "mass": 23,
+    "hp": 240.0,
+    "strength": 38,
+    "flex": 6,
+    "resist": 18,
+    "energy": 6,
+    "mobility": 6,
+    "sense": 4,
+    "attack": 7,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O2X3C3K3A3",
+   "label": "秩2晶3冰3沌3气3·团",
+   "natoms": 14,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2K3",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T63S4": 0.221919
+   },
+   "count": {
+    "T63S4": 3823
+   },
+   "骨架": "沌",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "黏性低温固体",
+   "典型对应": "泥土、杂项",
+   "相型": "K/X/C",
+   "相型_无层单列": "K/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.221919,
+   "dominant_in": [
+    "T63S4"
+   ],
+   "props": {
+    "mass": 33,
+    "hp": 377.0,
+    "strength": 36,
+    "flex": 15,
+    "resist": 25,
+    "energy": 9,
+    "mobility": 12,
+    "sense": 8,
+    "attack": 15,
+    "slots": 3
+   }
+  },
+  {
+   "formula": "O4X2P5W2K3A2",
+   "label": "秩4晶2势5流2沌3气2·稠环",
+   "natoms": 18,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2P3K+OPK+OPK",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T59B": 0.110182
+   },
+   "count": {
+    "T59B": 4254
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.110182,
+   "dominant_in": [
+    "T59B"
+   ],
+   "props": {
+    "mass": 50,
+    "hp": 608.4,
+    "strength": 82,
+    "flex": 18,
+    "resist": 30,
+    "energy": 15,
+    "mobility": 18,
+    "sense": 7,
+    "attack": 17,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "XA2F2",
+   "label": "晶气2焰2·链",
+   "natoms": 5,
+   "shape": "链",
+   "category": "no_trivalent",
+   "skeleton_blocks": "—",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T63S4": 0.084925
+   },
+   "count": {
+    "T63S4": 1463
+   },
+   "骨架": "秩",
+   "状态": "气",
+   "能量": "焰",
+   "物性名": "刚性高温气体",
+   "典型对应": "气湖 / 沉气",
+   "相型": "O/A/F",
+   "相型_无层单列": "O/A/F",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.084925,
+   "dominant_in": [],
+   "props": {
+    "mass": 10,
+    "hp": 40,
+    "strength": 4,
+    "flex": 6,
+    "resist": 5,
+    "energy": 8,
+    "mobility": 4,
+    "sense": 0,
+    "attack": 15,
+    "slots": 2
+   }
+  },
+  {
+   "formula": "XC2A2",
+   "label": "晶冰2气2·链",
+   "natoms": 5,
+   "shape": "链",
+   "category": "no_trivalent",
+   "skeleton_blocks": "—",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T63S4": 0.016428
+   },
+   "count": {
+    "T63S4": 283
+   },
+   "骨架": "秩",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "刚性低温气体",
+   "典型对应": "气湖 / 沉气",
+   "相型": "O/A/C",
+   "相型_无层单列": "O/A/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.016428,
+   "dominant_in": [],
+   "props": {
+    "mass": 8,
+    "hp": 60,
+    "strength": 2,
+    "flex": 8,
+    "resist": 7,
+    "energy": 4,
+    "mobility": 6,
+    "sense": 2,
+    "attack": 7,
+    "slots": 2
+   }
+  },
+  {
+   "formula": "O2XCP3WK2",
+   "label": "秩2晶冰势3流沌2·团",
+   "natoms": 10,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2P3K2",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.001694
+   },
+   "count": {
+    "T62B": 88
+   },
+   "骨架": "势",
+   "状态": "液",
+   "能量": "冰",
+   "物性名": "松散低温液体",
+   "典型对应": "水",
+   "相型": "P/W/C",
+   "相型_无层单列": "P/W/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.001694,
+   "dominant_in": [],
+   "props": {
+    "mass": 28,
+    "hp": 327.6,
+    "strength": 52,
+    "flex": 10,
+    "resist": 16,
+    "energy": 11,
+    "mobility": 9,
+    "sense": 5,
+    "attack": 13,
+    "slots": 1
+   }
+  },
+  {
+   "formula": "XCA2F",
+   "label": "晶冰气2焰·链",
+   "natoms": 5,
+   "shape": "链",
+   "category": "no_trivalent",
+   "skeleton_blocks": "—",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T63S4": 0.001451
+   },
+   "count": {
+    "T63S4": 25
+   },
+   "骨架": "秩",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "刚性低温气体",
+   "典型对应": "气湖 / 沉气",
+   "相型": "O/A/C",
+   "相型_无层单列": "O/A/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.001451,
+   "dominant_in": [],
+   "props": {
+    "mass": 9,
+    "hp": 50,
+    "strength": 3,
+    "flex": 7,
+    "resist": 6,
+    "energy": 6,
+    "mobility": 5,
+    "sense": 1,
+    "attack": 11,
+    "slots": 2
+   }
+  },
+  {
+   "formula": "PK",
+   "label": "势沌·链",
+   "natoms": 2,
+   "shape": "链",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "PK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.001348
+   },
+   "count": {
+    "T62B": 70
+   },
+   "骨架": "沌",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "黏性低温固体",
+   "典型对应": "泥土、杂项",
+   "相型": "K/X/C",
+   "相型_无层单列": "K/X/C",
+   "第四相来源": "",
+   "裁决轴数": 3,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.001348,
+   "dominant_in": [],
+   "props": {
+    "mass": 6,
+    "hp": 50,
+    "strength": 15,
+    "flex": 2,
+    "resist": 2,
+    "energy": 3,
+    "mobility": 2,
+    "sense": 1,
+    "attack": 3,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "OXPWKAF",
+   "label": "秩晶势流沌气焰·环",
+   "natoms": 7,
+   "shape": "环",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.001174
+   },
+   "count": {
+    "T62B": 61
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "焰",
+   "物性名": "刚性高温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/F",
+   "相型_无层单列": "O/X/F",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.001174,
+   "dominant_in": [],
+   "props": {
+    "mass": 18,
+    "hp": 156.0,
+    "strength": 22,
+    "flex": 8,
+    "resist": 12,
+    "energy": 8,
+    "mobility": 7,
+    "sense": 2,
+    "attack": 12,
+    "slots": 1
+   }
+  },
+  {
+   "formula": "O2X2P2WK2A2",
+   "label": "秩2晶2势2流沌2气2·环",
+   "natoms": 11,
+   "shape": "环",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OPK+OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.000886
+   },
+   "count": {
+    "T62B": 46
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 3,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.000886,
+   "dominant_in": [],
+   "props": {
+    "mass": 30,
+    "hp": 300.0,
+    "strength": 41,
+    "flex": 11,
+    "resist": 22,
+    "energy": 7,
+    "mobility": 11,
+    "sense": 4,
+    "attack": 9,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O2X2",
+   "label": "秩2晶2·链",
+   "natoms": 4,
+   "shape": "链",
+   "category": "single_trivalent",
+   "skeleton_blocks": "O+O",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T55": 0.000837
+   },
+   "count": {
+    "T55": 5
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.000837,
+   "dominant_in": [],
+   "props": {
+    "mass": 14,
+    "hp": 195,
+    "strength": 20,
+    "flex": 0,
+    "resist": 10,
+    "energy": 0,
+    "mobility": 0,
+    "sense": 2,
+    "attack": 2,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O2XC2",
+   "label": "秩2晶冰2·环",
+   "natoms": 5,
+   "shape": "环",
+   "category": "single_trivalent",
+   "skeleton_blocks": "O+O",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T55": 0.00067
+   },
+   "count": {
+    "T55": 4
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.00067,
+   "dominant_in": [],
+   "props": {
+    "mass": 12,
+    "hp": 210.0,
+    "strength": 8,
+    "flex": 4,
+    "resist": 16,
+    "energy": 4,
+    "mobility": 1,
+    "sense": 4,
+    "attack": 7,
+    "slots": 2
+   }
+  },
+  {
+   "formula": "O2XC4",
+   "label": "秩2晶冰4·链",
+   "natoms": 7,
+   "shape": "链",
+   "category": "single_trivalent",
+   "skeleton_blocks": "O+O",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T55": 0.00067
+   },
+   "count": {
+    "T55": 4
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.00067,
+   "dominant_in": [],
+   "props": {
+    "mass": 14,
+    "hp": 210,
+    "strength": 8,
+    "flex": 8,
+    "resist": 11,
+    "energy": 8,
+    "mobility": 4,
+    "sense": 6,
+    "attack": 13,
+    "slots": 5
+   }
+  },
+  {
+   "formula": "O8X11C2K12A6",
+   "label": "秩8晶11冰2沌12气6·团",
+   "natoms": 39,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2K3+O2K3+O2K3+O2K3",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T63S4": 0.00058
+   },
+   "count": {
+    "T63S4": 10
+   },
+   "骨架": "沌",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "黏性低温固体",
+   "典型对应": "泥土、杂项",
+   "相型": "K/X/C",
+   "相型_无层单列": "K/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.00058,
+   "dominant_in": [],
+   "props": {
+    "mass": 112,
+    "hp": 1591.2,
+    "strength": 136,
+    "flex": 28,
+    "resist": 90,
+    "energy": 16,
+    "mobility": 25,
+    "sense": 22,
+    "attack": 29,
+    "slots": 2
+   }
+  },
+  {
+   "formula": "O2X2P2WK2A",
+   "label": "秩2晶2势2流沌2气·环",
+   "natoms": 10,
+   "shape": "环",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OPK+OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.00052
+   },
+   "count": {
+    "T62B": 27
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.00052,
+   "dominant_in": [],
+   "props": {
+    "mass": 29,
+    "hp": 300.0,
+    "strength": 41,
+    "flex": 9,
+    "resist": 21,
+    "energy": 7,
+    "mobility": 9,
+    "sense": 4,
+    "attack": 9,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O2X3",
+   "label": "秩2晶3·链",
+   "natoms": 5,
+   "shape": "链",
+   "category": "single_trivalent",
+   "skeleton_blocks": "O+O",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T55": 0.000502
+   },
+   "count": {
+    "T55": 3
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.000502,
+   "dominant_in": [],
+   "props": {
+    "mass": 18,
+    "hp": 250,
+    "strength": 22,
+    "flex": 0,
+    "resist": 13,
+    "energy": 0,
+    "mobility": 0,
+    "sense": 2,
+    "attack": 3,
+    "slots": 1
+   }
+  },
+  {
+   "formula": "OXPWKF",
+   "label": "秩晶势流沌焰·环",
+   "natoms": 6,
+   "shape": "环",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.000424
+   },
+   "count": {
+    "T62B": 22
+   },
+   "骨架": "秩",
+   "状态": "液",
+   "能量": "焰",
+   "物性名": "刚性高温液体",
+   "典型对应": "液态金属",
+   "相型": "O/W/F",
+   "相型_无层单列": "O/W/F",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.000424,
+   "dominant_in": [],
+   "props": {
+    "mass": 17,
+    "hp": 156.0,
+    "strength": 22,
+    "flex": 6,
+    "resist": 11,
+    "energy": 8,
+    "mobility": 5,
+    "sense": 2,
+    "attack": 12,
+    "slots": 1
+   }
+  },
+  {
+   "formula": "O2C4",
+   "label": "秩2冰4·链",
+   "natoms": 6,
+   "shape": "链",
+   "category": "single_trivalent",
+   "skeleton_blocks": "O+O",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T55": 0.000335
+   },
+   "count": {
+    "T55": 2
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.000335,
+   "dominant_in": [],
+   "props": {
+    "mass": 10,
+    "hp": 155,
+    "strength": 6,
+    "flex": 8,
+    "resist": 8,
+    "energy": 8,
+    "mobility": 4,
+    "sense": 6,
+    "attack": 12,
+    "slots": 4
+   }
+  },
+  {
+   "formula": "O2XP2WK2A",
+   "label": "秩2晶势2流沌2气·环",
+   "natoms": 9,
+   "shape": "环",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OPK+OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T59B": 0.000311
+   },
+   "count": {
+    "T59B": 12
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 3,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.000311,
+   "dominant_in": [],
+   "props": {
+    "mass": 25,
+    "hp": 252.0,
+    "strength": 39,
+    "flex": 9,
+    "resist": 18,
+    "energy": 7,
+    "mobility": 9,
+    "sense": 4,
+    "attack": 8,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O8X11CK12A6F",
+   "label": "秩8晶11冰沌12气6焰·团",
+   "natoms": 39,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2K3+O2K3+O2K3+O2K3",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T63S4": 0.00029
+   },
+   "count": {
+    "T63S4": 5
+   },
+   "骨架": "沌",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "黏性低温固体",
+   "典型对应": "泥土、杂项",
+   "相型": "K/X/C",
+   "相型_无层单列": "K/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.00029,
+   "dominant_in": [],
+   "props": {
+    "mass": 113,
+    "hp": 1575.6,
+    "strength": 137,
+    "flex": 27,
+    "resist": 89,
+    "energy": 18,
+    "mobility": 24,
+    "sense": 21,
+    "attack": 33,
+    "slots": 2
+   }
+  },
+  {
+   "formula": "O9X11CK14A4",
+   "label": "秩9晶11冰沌14气4·团",
+   "natoms": 39,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2K3+O2K3+O2K3+O2K3+OK2",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T63S4": 0.000232
+   },
+   "count": {
+    "T63S4": 4
+   },
+   "骨架": "沌",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "黏性低温固体",
+   "典型对应": "泥土、杂项",
+   "相型": "K/X/C",
+   "相型_无层单列": "K/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.000232,
+   "dominant_in": [],
+   "props": {
+    "mass": 118,
+    "hp": 1809.6,
+    "strength": 157,
+    "flex": 24,
+    "resist": 93,
+    "energy": 16,
+    "mobility": 22,
+    "sense": 24,
+    "attack": 28,
+    "slots": 3
+   }
+  },
+  {
+   "formula": "O3X2P4WK3",
+   "label": "秩3晶2势4流沌3·团",
+   "natoms": 13,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2P3K2+OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.000173
+   },
+   "count": {
+    "T62B": 9
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.000173,
+   "dominant_in": [],
+   "props": {
+    "mass": 40,
+    "hp": 499.2,
+    "strength": 72,
+    "flex": 10,
+    "resist": 24,
+    "energy": 12,
+    "mobility": 10,
+    "sense": 6,
+    "attack": 14,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O2XCP2WK",
+   "label": "秩2晶冰势2流沌·团",
+   "natoms": 8,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2P2K",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.000173
+   },
+   "count": {
+    "T62B": 9
+   },
+   "骨架": "势",
+   "状态": "液",
+   "能量": "冰",
+   "物性名": "松散低温液体",
+   "典型对应": "水",
+   "相型": "P/W/C",
+   "相型_无层单列": "P/W/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.000173,
+   "dominant_in": [],
+   "props": {
+    "mass": 22,
+    "hp": 280.8,
+    "strength": 37,
+    "flex": 8,
+    "resist": 14,
+    "energy": 8,
+    "mobility": 7,
+    "sense": 4,
+    "attack": 10,
+    "slots": 1
+   }
+  },
+  {
+   "formula": "O3X2P4WK3A",
+   "label": "秩3晶2势4流沌3气·团",
+   "natoms": 14,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2P3K2+OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.000154
+   },
+   "count": {
+    "T62B": 8
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.000154,
+   "dominant_in": [],
+   "props": {
+    "mass": 41,
+    "hp": 499.2,
+    "strength": 72,
+    "flex": 12,
+    "resist": 25,
+    "energy": 12,
+    "mobility": 12,
+    "sense": 6,
+    "attack": 14,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O8X12CK13A5",
+   "label": "秩8晶12冰沌13气5·团",
+   "natoms": 39,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2K3+O2K3+O2K3+OK2+OK2",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T63S4": 0.000116
+   },
+   "count": {
+    "T63S4": 2
+   },
+   "骨架": "沌",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "黏性低温固体",
+   "典型对应": "泥土、杂项",
+   "相型": "K/X/C",
+   "相型_无层单列": "K/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.000116,
+   "dominant_in": [],
+   "props": {
+    "mass": 117,
+    "hp": 1747.2,
+    "strength": 152,
+    "flex": 25,
+    "resist": 88,
+    "energy": 15,
+    "mobility": 24,
+    "sense": 22,
+    "attack": 28,
+    "slots": 2
+   }
+  },
+  {
+   "formula": "O2XCP3WK2A",
+   "label": "秩2晶冰势3流沌2气·团",
+   "natoms": 11,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2P3K2",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.000116
+   },
+   "count": {
+    "T62B": 6
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.000116,
+   "dominant_in": [],
+   "props": {
+    "mass": 29,
+    "hp": 327.6,
+    "strength": 52,
+    "flex": 12,
+    "resist": 17,
+    "energy": 11,
+    "mobility": 11,
+    "sense": 5,
+    "attack": 13,
+    "slots": 1
+   }
+  },
+  {
+   "formula": "O2X2P2K2A",
+   "label": "秩2晶2势2沌2气·环",
+   "natoms": 9,
+   "shape": "环",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OPK+OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 0.000116
+   },
+   "count": {
+    "T62B": 6
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 0.000116,
+   "dominant_in": [],
+   "props": {
+    "mass": 27,
+    "hp": 288.0,
+    "strength": 40,
+    "flex": 6,
+    "resist": 21,
+    "energy": 6,
+    "mobility": 6,
+    "sense": 4,
+    "attack": 8,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O5X16CK12A6",
+   "label": "秩5晶16冰沌12气6·稠环",
+   "natoms": 40,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OK3+OK3+OK2+OK2+OK2",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T63S4": 5.8e-05
+   },
+   "count": {
+    "T63S4": 1
+   },
+   "骨架": "沌",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "黏性低温固体",
+   "典型对应": "泥土、杂项",
+   "相型": "K/X/C",
+   "相型_无层单列": "K/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 5.8e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 122,
+    "hp": 1872.0,
+    "strength": 127,
+    "flex": 26,
+    "resist": 97,
+    "energy": 14,
+    "mobility": 25,
+    "sense": 18,
+    "attack": 31,
+    "slots": 3
+   }
+  },
+  {
+   "formula": "O6X14CK11A7",
+   "label": "秩6晶14冰沌11气7·团",
+   "natoms": 39,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2K3+OK2+OK2+OK2+OK2",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T63S4": 5.8e-05
+   },
+   "count": {
+    "T63S4": 1
+   },
+   "骨架": "沌",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "黏性低温固体",
+   "典型对应": "泥土、杂项",
+   "相型": "K/X/C",
+   "相型_无层单列": "K/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 5.8e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 115,
+    "hp": 1669.2,
+    "strength": 127,
+    "flex": 27,
+    "resist": 90,
+    "energy": 13,
+    "mobility": 26,
+    "sense": 18,
+    "attack": 28,
+    "slots": 1
+   }
+  },
+  {
+   "formula": "O8X11K12A6F2",
+   "label": "秩8晶11沌12气6焰2·团",
+   "natoms": 39,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2K3+O2K3+O2K3+O2K3",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T63S4": 5.8e-05
+   },
+   "count": {
+    "T63S4": 1
+   },
+   "骨架": "沌",
+   "状态": "固",
+   "能量": "焰",
+   "物性名": "黏性高温固体",
+   "典型对应": "泥土、杂项",
+   "相型": "K/X/F",
+   "相型_无层单列": "K/X/F",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 5.8e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 114,
+    "hp": 1560.0,
+    "strength": 138,
+    "flex": 26,
+    "resist": 88,
+    "energy": 20,
+    "mobility": 23,
+    "sense": 20,
+    "attack": 37,
+    "slots": 2
+   }
+  },
+  {
+   "formula": "O3X2P4WK3A2",
+   "label": "秩3晶2势4流沌3气2·团",
+   "natoms": 15,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2P3K2+OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 5.8e-05
+   },
+   "count": {
+    "T62B": 3
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 5.8e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 42,
+    "hp": 499.2,
+    "strength": 72,
+    "flex": 14,
+    "resist": 26,
+    "energy": 12,
+    "mobility": 14,
+    "sense": 6,
+    "attack": 14,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O2X2C2P3W2K",
+   "label": "秩2晶2冰2势3流2沌·团",
+   "natoms": 12,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2P3K",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 5.8e-05
+   },
+   "count": {
+    "T62B": 3
+   },
+   "骨架": "势",
+   "状态": "液",
+   "能量": "冰",
+   "物性名": "松散低温液体",
+   "典型对应": "水",
+   "相型": "P/W/C",
+   "相型_无层单列": "P/W/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 5.8e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 32,
+    "hp": 390.0,
+    "strength": 46,
+    "flex": 14,
+    "resist": 18,
+    "energy": 13,
+    "mobility": 12,
+    "sense": 5,
+    "attack": 17,
+    "slots": 2
+   }
+  },
+  {
+   "formula": "O7X5CP11W4LK5A5F",
+   "label": "秩7晶5冰势11流4电沌5气5焰·稠环",
+   "natoms": 40,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O3P5K2+O2P3K2+O2P3K",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T59B": 5.2e-05
+   },
+   "count": {
+    "T59B": 2
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 5.2e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 106,
+    "hp": 1138.8,
+    "strength": 165,
+    "flex": 43,
+    "resist": 54,
+    "energy": 42,
+    "mobility": 40,
+    "sense": 17,
+    "attack": 48,
+    "slots": 3
+   }
+  },
+  {
+   "formula": "O9X4P14W2K7A4",
+   "label": "秩9晶4势14流2沌7气4·稠环",
+   "natoms": 40,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O3P5K2+O2P3K2+O2P3K2+O2P3K",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T59B": 5.2e-05
+   },
+   "count": {
+    "T59B": 2
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 5.2e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 114,
+    "hp": 1263.6,
+    "strength": 206,
+    "flex": 35,
+    "resist": 60,
+    "energy": 37,
+    "mobility": 35,
+    "sense": 16,
+    "attack": 41,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O3X2P3WK2A2",
+   "label": "秩3晶2势3流沌2气2·团",
+   "natoms": 13,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2P2K+OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 3.9e-05
+   },
+   "count": {
+    "T62B": 2
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 3,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 3.9e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 36,
+    "hp": 452.4,
+    "strength": 57,
+    "flex": 12,
+    "resist": 24,
+    "energy": 9,
+    "mobility": 12,
+    "sense": 5,
+    "attack": 11,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O3X3CP4W2K2A",
+   "label": "秩3晶3冰势4流2沌2气·团",
+   "natoms": 16,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2P3K+OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 3.9e-05
+   },
+   "count": {
+    "T62B": 2
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 3.9e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 45,
+    "hp": 561.6,
+    "strength": 66,
+    "flex": 16,
+    "resist": 27,
+    "energy": 14,
+    "mobility": 15,
+    "sense": 6,
+    "attack": 18,
+    "slots": 1
+   }
+  },
+  {
+   "formula": "O10X3P10W3LK4A7F",
+   "label": "秩10晶3势10流3电沌4气7焰·团",
+   "natoms": 39,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O3P3K+O3P3K+O2P2K+O2P2K",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "气",
+   "能量": "焰",
+   "物性名": "松散高温气体",
+   "典型对应": "空气、清风",
+   "相型": "P/A/F",
+   "相型_无层单列": "P/A/F",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 100,
+    "hp": 1107.6,
+    "strength": 169,
+    "flex": 40,
+    "resist": 51,
+    "energy": 36,
+    "mobility": 38,
+    "sense": 18,
+    "attack": 39,
+    "slots": 2
+   }
+  },
+  {
+   "formula": "O10X4P14W3K5A3F",
+   "label": "秩10晶4势14流3沌5气3焰·稠环",
+   "natoms": 40,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2P2K+O2P3K+O2P3K+O2P3K+O2P3K",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "焰",
+   "物性名": "松散高温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/F",
+   "相型_无层单列": "P/X/F",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 114,
+    "hp": 1388.4,
+    "strength": 198,
+    "flex": 35,
+    "resist": 57,
+    "energy": 40,
+    "mobility": 34,
+    "sense": 15,
+    "attack": 47,
+    "slots": 3
+   }
+  },
+  {
+   "formula": "O11X2CP13W3K5A5",
+   "label": "秩11晶2冰势13流3沌5气5·稠环",
+   "natoms": 40,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2P2K+O2P2K+O2P2K+O2P2K+O3P5K",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "松散低温气体",
+   "典型对应": "空气、清风",
+   "相型": "P/A/C",
+   "相型_无层单列": "P/A/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 107,
+    "hp": 1310.4,
+    "strength": 190,
+    "flex": 39,
+    "resist": 56,
+    "energy": 36,
+    "mobility": 38,
+    "sense": 17,
+    "attack": 39,
+    "slots": 3
+   }
+  },
+  {
+   "formula": "O11X6P12W2K5A3",
+   "label": "秩11晶6势12流2沌5气3·稠环",
+   "natoms": 39,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O3P4K+O2P2K+O2P2K+O2P2K+O2P2K",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 115,
+    "hp": 1419.6,
+    "strength": 196,
+    "flex": 29,
+    "resist": 63,
+    "energy": 31,
+    "mobility": 29,
+    "sense": 16,
+    "attack": 37,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O12X5CP14WK5A2",
+   "label": "秩12晶5冰势14流沌5气2·稠环",
+   "natoms": 40,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O3P4K+O3P4K+O2P2K+O2P2K+O2P2K",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 118,
+    "hp": 1575.6,
+    "strength": 213,
+    "flex": 28,
+    "resist": 65,
+    "energy": 36,
+    "mobility": 26,
+    "sense": 18,
+    "attack": 42,
+    "slots": 4
+   }
+  },
+  {
+   "formula": "O3X4C5P14W3LK5A3F2",
+   "label": "秩3晶4冰5势14流3电沌5气3焰2·团",
+   "natoms": 40,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OP4K+OP3K+OP3K+P2K+P2K",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 101,
+    "hp": 988.0,
+    "strength": 169,
+    "flex": 48,
+    "resist": 37,
+    "energy": 59,
+    "mobility": 40,
+    "sense": 17,
+    "attack": 71,
+    "slots": 11
+   }
+  },
+  {
+   "formula": "O3X4CP16W5LK5A3F2",
+   "label": "秩3晶4冰势16流5电沌5气3焰2·稠环",
+   "natoms": 40,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OP4K+OP4K+OP4K+P2K+P2K",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "液",
+   "能量": "焰",
+   "物性名": "松散高温液体",
+   "典型对应": "水",
+   "相型": "P/W/F",
+   "相型_无层单列": "P/W/F",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 107,
+    "hp": 1396.2,
+    "strength": 153,
+    "flex": 48,
+    "resist": 68,
+    "energy": 57,
+    "mobility": 39,
+    "sense": 13,
+    "attack": 65,
+    "slots": 11
+   }
+  },
+  {
+   "formula": "O4X10CP11W4K4A3F2",
+   "label": "秩4晶10冰势11流4沌4气3焰2·稠环",
+   "natoms": 39,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OP3K+OP3K+OP3K+OP2K",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "焰",
+   "物性名": "松散高温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/F",
+   "相型_无层单列": "P/X/F",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 113,
+    "hp": 1404.0,
+    "strength": 152,
+    "flex": 37,
+    "resist": 61,
+    "energy": 40,
+    "mobility": 33,
+    "sense": 9,
+    "attack": 57,
+    "slots": 5
+   }
+  },
+  {
+   "formula": "O4X2C2P14W3K3A6F5",
+   "label": "秩4晶2冰2势14流3沌3气6焰5·稠环",
+   "natoms": 39,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OP4K+OP4K+OP3K+OP3",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "气",
+   "能量": "焰",
+   "物性名": "松散高温气体",
+   "典型对应": "空气、清风",
+   "相型": "P/A/F",
+   "相型_无层单列": "P/A/F",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 95,
+    "hp": 1060.8,
+    "strength": 142,
+    "flex": 47,
+    "resist": 41,
+    "energy": 58,
+    "mobility": 39,
+    "sense": 9,
+    "attack": 77,
+    "slots": 12
+   }
+  },
+  {
+   "formula": "O4X3C4P14W3L3K3A3F2",
+   "label": "秩4晶3冰4势14流3电3沌3气3焰2·稠环",
+   "natoms": 39,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OP4K+OP4K+OP3K+OP3",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 95,
+    "hp": 1201.2,
+    "strength": 129,
+    "flex": 48,
+    "resist": 56,
+    "energy": 65,
+    "mobility": 36,
+    "sense": 23,
+    "attack": 69,
+    "slots": 15
+   }
+  },
+  {
+   "formula": "O4X6CP11W6K4A7",
+   "label": "秩4晶6冰势11流6沌4气7·稠环",
+   "natoms": 39,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OP3K+OP3K+OP3K+OP2K",
+   "in_catalog": false,
+   "stable": true,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "松散低温气体",
+   "典型对应": "空气、清风",
+   "相型": "P/A/C",
+   "相型_无层单列": "P/A/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 101,
+    "hp": 1185.6,
+    "strength": 144,
+    "flex": 49,
+    "resist": 55,
+    "energy": 34,
+    "mobility": 47,
+    "sense": 9,
+    "attack": 41,
+    "slots": 3
+   }
+  },
+  {
+   "formula": "O4X8CP12W5K5A4",
+   "label": "秩4晶8冰势12流5沌5气4·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O5X3C2P14W4LK5A2F3",
+   "label": "秩5晶3冰2势14流4电沌5气2焰3·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "液",
+   "能量": "焰",
+   "物性名": "松散高温液体",
+   "典型对应": "水",
+   "相型": "P/W/F",
+   "相型_无层单列": "P/W/F",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O6X6C3P10W4LK4A6",
+   "label": "秩6晶6冰3势10流4电沌4气6·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O6X7CP11W3K4A8",
+   "label": "秩6晶7冰势11流3沌4气8·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "松散低温气体",
+   "典型对应": "空气、清风",
+   "相型": "P/A/C",
+   "相型_无层单列": "P/A/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O7X4CP11W4K5A7",
+   "label": "秩7晶4冰势11流4沌5气7·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "松散低温气体",
+   "典型对应": "空气、清风",
+   "相型": "P/A/C",
+   "相型_无层单列": "P/A/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O7X5C2P13W3LK5A3",
+   "label": "秩7晶5冰2势13流3电沌5气3·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O7X5CP11W3LK5A5F",
+   "label": "秩7晶5冰势11流3电沌5气5焰·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O7X6C2P12W3K5A5",
+   "label": "秩7晶6冰2势12流3沌5气5·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O7X6P13WK6A6",
+   "label": "秩7晶6势13流沌6气6·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O7X7P12W2LK4A7",
+   "label": "秩7晶7势12流2电沌4气7·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "电",
+   "物性名": "松散带电固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/L",
+   "相型_无层单列": "P/X/L",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X5CP13W3K6A4",
+   "label": "秩8晶5冰势13流3沌6气4·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X5P14W2K6A5",
+   "label": "秩8晶5势14流2沌6气5·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X6C2P11W4K3A5",
+   "label": "秩8晶6冰2势11流4沌3气5·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X6CP13W3K6A2",
+   "label": "秩8晶6冰势13流3沌6气2·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X6P13W4K6AF",
+   "label": "秩8晶6势13流4沌6气焰·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "焰",
+   "物性名": "松散高温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/F",
+   "相型_无层单列": "P/X/F",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X7P13WK5A6",
+   "label": "秩8晶7势13流沌5气6·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X8P13WK5A4",
+   "label": "秩8晶8势13流沌5气4·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O9X5C2P11W3K4A6",
+   "label": "秩9晶5冰2势11流3沌4气6·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "松散低温气体",
+   "典型对应": "空气、清风",
+   "相型": "P/A/C",
+   "相型_无层单列": "P/A/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O9X5CP12W4K4A5",
+   "label": "秩9晶5冰势12流4沌4气5·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O9X5P14W2K6A2F",
+   "label": "秩9晶5势14流2沌6气2焰·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "焰",
+   "物性名": "松散高温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/F",
+   "相型_无层单列": "P/X/F",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O9X6CP15W2K5A2",
+   "label": "秩9晶6冰势15流2沌5气2·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O9X5CP12W3K4A5",
+   "label": "秩9晶5冰势12流3沌4气5·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X7CP13W3K4A4",
+   "label": "秩8晶7冰势13流3沌4气4·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X6CP13W2K5A4F",
+   "label": "秩8晶6冰势13流2沌5气4焰·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X5P13W3K7A3",
+   "label": "秩8晶5势13流3沌7气3·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X5P13W2K6A5F",
+   "label": "秩8晶5势13流2沌6气5焰·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "焰",
+   "物性名": "松散高温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/F",
+   "相型_无层单列": "P/X/F",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O7X4C2P11W4K6A4",
+   "label": "秩7晶4冰2势11流4沌6气4·?",
+   "natoms": 38,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O6X6CP11W4K4A7",
+   "label": "秩6晶6冰势11流4沌4气7·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "松散低温气体",
+   "典型对应": "空气、清风",
+   "相型": "P/A/C",
+   "相型_无层单列": "P/A/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X3C2P14WK6A6",
+   "label": "秩8晶3冰2势14流沌6气6·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "松散低温气体",
+   "典型对应": "空气、清风",
+   "相型": "P/A/C",
+   "相型_无层单列": "P/A/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O9X5P13WK6A6",
+   "label": "秩9晶5势13流沌6气6·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "松散低温气体",
+   "典型对应": "空气、清风",
+   "相型": "P/A/C",
+   "相型_无层单列": "P/A/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X6P13W2K5A6",
+   "label": "秩8晶6势13流2沌5气6·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O7X5C2P11W4K5A4F",
+   "label": "秩7晶5冰2势11流4沌5气4焰·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O7X6P12W2LK5A6F",
+   "label": "秩7晶6势12流2电沌5气6焰·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "焰",
+   "物性名": "松散高温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/F",
+   "相型_无层单列": "P/X/F",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X5P13W4K5A4",
+   "label": "秩8晶5势13流4沌5气4·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O7X5CP11W4LK5A4F",
+   "label": "秩7晶5冰势11流4电沌5气4焰·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O6X7C3P11W4K4A5",
+   "label": "秩6晶7冰3势11流4沌4气5·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X4P13W3K7A5",
+   "label": "秩8晶4势13流3沌7气5·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "松散低温气体",
+   "典型对应": "空气、清风",
+   "相型": "P/A/C",
+   "相型_无层单列": "P/A/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O7X7CP12W2K4A6",
+   "label": "秩7晶7冰势12流2沌4气6·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O7X5CP11W4K5A6",
+   "label": "秩7晶5冰势11流4沌5气6·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "松散低温气体",
+   "典型对应": "空气、清风",
+   "相型": "P/A/C",
+   "相型_无层单列": "P/A/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X6CP13W4K6A2",
+   "label": "秩8晶6冰势13流4沌6气2·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O6X6C4P10W5K4A3",
+   "label": "秩6晶6冰4势10流5沌4气3·?",
+   "natoms": 38,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O6X5C2P10W4K5A6F",
+   "label": "秩6晶5冰2势10流4沌5气6焰·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "松散低温气体",
+   "典型对应": "空气、清风",
+   "相型": "P/A/C",
+   "相型_无层单列": "P/A/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O7X5CP12W4K6A4",
+   "label": "秩7晶5冰势12流4沌6气4·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T59B": 2.6e-05
+   },
+   "count": {
+    "T59B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 2.6e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O2X2P2W2K2A2",
+   "label": "秩2晶2势2流2沌2气2·环",
+   "natoms": 12,
+   "shape": "环",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "OPK+OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 1.9e-05
+   },
+   "count": {
+    "T62B": 1
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "刚性低温固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/C",
+   "相型_无层单列": "O/X/C",
+   "第四相来源": "",
+   "裁决轴数": 3,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 1.9e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 32,
+    "hp": 312.0,
+    "strength": 42,
+    "flex": 14,
+    "resist": 22,
+    "energy": 8,
+    "mobility": 14,
+    "sense": 4,
+    "attack": 10,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O2X5CP10W7LK2A12",
+   "label": "秩2晶5冰势10流7电沌2气12·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T62B": 1.9e-05
+   },
+   "count": {
+    "T62B": 1
+   },
+   "骨架": "势",
+   "状态": "气",
+   "能量": "电",
+   "物性名": "松散带电气体",
+   "典型对应": "空气、清风",
+   "相型": "P/A/L",
+   "相型_无层单列": "P/A/L",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 1.9e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O2XCP2WKA",
+   "label": "秩2晶冰势2流沌气·团",
+   "natoms": 9,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2P2K",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 1.9e-05
+   },
+   "count": {
+    "T62B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 1.9e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 23,
+    "hp": 280.8,
+    "strength": 37,
+    "flex": 10,
+    "resist": 15,
+    "energy": 8,
+    "mobility": 9,
+    "sense": 4,
+    "attack": 10,
+    "slots": 1
+   }
+  },
+  {
+   "formula": "O4X10P13W3K5A4",
+   "label": "秩4晶10势13流3沌5气4·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T62B": 1.9e-05
+   },
+   "count": {
+    "T62B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 1.9e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O4X7C4P7W7L2K2A6F",
+   "label": "秩4晶7冰4势7流7电2沌2气6焰·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T62B": 1.9e-05
+   },
+   "count": {
+    "T62B": 1
+   },
+   "骨架": "势",
+   "状态": "液",
+   "能量": "冰",
+   "物性名": "松散低温液体",
+   "典型对应": "水",
+   "相型": "P/W/C",
+   "相型_无层单列": "P/W/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 1.9e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O6X7CP11W5K4A6",
+   "label": "秩6晶7冰势11流5沌4气6·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T62B": 1.9e-05
+   },
+   "count": {
+    "T62B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 1.9e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O6X8CP10W6K4A2F3",
+   "label": "秩6晶8冰势10流6沌4气2焰3·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T62B": 1.9e-05
+   },
+   "count": {
+    "T62B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "焰",
+   "物性名": "松散高温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/F",
+   "相型_无层单列": "P/X/F",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 1.9e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O7X6CP11W4K6A4F",
+   "label": "秩7晶6冰势11流4沌6气4焰·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T62B": 1.9e-05
+   },
+   "count": {
+    "T62B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 1.9e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O7X7C4P10W5K3A3",
+   "label": "秩7晶7冰4势10流5沌3气3·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T62B": 1.9e-05
+   },
+   "count": {
+    "T62B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 1.9e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O7X7CP11W4K5A4",
+   "label": "秩7晶7冰势11流4沌5气4·?",
+   "natoms": 39,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T62B": 1.9e-05
+   },
+   "count": {
+    "T62B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 0,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 1.9e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X5P11W5K3A8",
+   "label": "秩8晶5势11流5沌3气8·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T62B": 1.9e-05
+   },
+   "count": {
+    "T62B": 1
+   },
+   "骨架": "势",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "松散低温气体",
+   "典型对应": "空气、清风",
+   "相型": "P/A/C",
+   "相型_无层单列": "P/A/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 1.9e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "O8X5P13W5K3A6",
+   "label": "秩8晶5势13流5沌3气6·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T62B": 1.9e-05
+   },
+   "count": {
+    "T62B": 1
+   },
+   "骨架": "势",
+   "状态": "气",
+   "能量": "冰",
+   "物性名": "松散低温气体",
+   "典型对应": "空气、清风",
+   "相型": "P/A/C",
+   "相型_无层单列": "P/A/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 1.9e-05,
+   "dominant_in": [],
+   "props": null
+  },
+  {
+   "formula": "CL",
+   "label": "冰电·链",
+   "natoms": 2,
+   "shape": "链",
+   "category": "no_trivalent",
+   "skeleton_blocks": "—",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 1.9e-05
+   },
+   "count": {
+    "T62B": 1
+   },
+   "骨架": "秩",
+   "状态": "固",
+   "能量": "电",
+   "物性名": "刚性带电固体",
+   "典型对应": "岩石、金属、水晶",
+   "相型": "O/X/L",
+   "相型_无层单列": "O/X/L",
+   "第四相来源": "",
+   "裁决轴数": 3,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 1.9e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 2,
+    "hp": 10,
+    "strength": 1,
+    "flex": 4,
+    "resist": 2,
+    "energy": 7,
+    "mobility": 2,
+    "sense": 5,
+    "attack": 5,
+    "slots": 2
+   }
+  },
+  {
+   "formula": "O3X2P3WK2",
+   "label": "秩3晶2势3流沌2·团",
+   "natoms": 11,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2P2K+OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 1.9e-05
+   },
+   "count": {
+    "T62B": 1
+   },
+   "骨架": "势",
+   "状态": "固",
+   "能量": "冰",
+   "物性名": "松散低温固体",
+   "典型对应": "沙子、沙砾",
+   "相型": "P/X/C",
+   "相型_无层单列": "P/X/C",
+   "第四相来源": "",
+   "裁决轴数": 2,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 1.9e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 34,
+    "hp": 452.4,
+    "strength": 57,
+    "flex": 8,
+    "resist": 22,
+    "energy": 9,
+    "mobility": 8,
+    "sense": 5,
+    "attack": 11,
+    "slots": 0
+   }
+  },
+  {
+   "formula": "O3X2CP4W2K2A",
+   "label": "秩3晶2冰势4流2沌2气·团",
+   "natoms": 15,
+   "shape": "团",
+   "category": "multi_trivalent",
+   "skeleton_blocks": "O2P3K+OPK",
+   "in_catalog": true,
+   "stable": true,
+   "abundance": {
+    "T62B": 1.9e-05
+   },
+   "count": {
+    "T62B": 1
+   },
+   "骨架": "势",
+   "状态": "液",
+   "能量": "冰",
+   "物性名": "松散低温液体",
+   "典型对应": "水",
+   "相型": "P/W/C",
+   "相型_无层单列": "P/W/C",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 1.9e-05,
+   "dominant_in": [],
+   "props": {
+    "mass": 41,
+    "hp": 499.2,
+    "strength": 64,
+    "flex": 16,
+    "resist": 24,
+    "energy": 14,
+    "mobility": 15,
+    "sense": 6,
+    "attack": 17,
+    "slots": 1
+   }
+  },
+  {
+   "formula": "O5X4C2P14W4K4A2F5",
+   "label": "秩5晶4冰2势14流4沌4气2焰5·?",
+   "natoms": 40,
+   "shape": "?",
+   "category": null,
+   "skeleton_blocks": "—",
+   "in_catalog": false,
+   "stable": null,
+   "abundance": {
+    "T62B": 1.9e-05
+   },
+   "count": {
+    "T62B": 1
+   },
+   "骨架": "势",
+   "状态": "液",
+   "能量": "焰",
+   "物性名": "松散高温液体",
+   "典型对应": "水",
+   "相型": "P/W/F",
+   "相型_无层单列": "P/W/F",
+   "第四相来源": "",
+   "裁决轴数": 1,
+   "草稿名": "",
+   "n_biomes": 1,
+   "max_abundance": 1.9e-05,
+   "dominant_in": [],
+   "props": null
+  }
+ ]
+}

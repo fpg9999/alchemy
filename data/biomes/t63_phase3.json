@@ -1,0 +1,237 @@
+{
+ "spec": {
+  "source": "t63_phase3_result.json",
+  "name": "t63_phase3",
+  "phase": 3,
+  "element_atoms": null,
+  "element_shares": null,
+  "valence_shares": null,
+  "L": 30000.0,
+  "T0": 1000,
+  "T_end": 0,
+  "minutes": 1000,
+  "max_reaction_atoms": 40,
+  "n_molecules": 20082,
+  "n_atoms": 70532,
+  "n_species": 5
+ },
+ "n_species": 5,
+ "species": [
+  {
+   "formula": "XCF",
+   "label": "晶冰焰·链",
+   "natoms": 3,
+   "count": 9512,
+   "abundance": 0.473658,
+   "atom_abundance": 0.404582,
+   "reserve_units": 28536,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "no_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "链",
+   "layer_counts": {
+    "skeleton": 0,
+    "bridge": 1,
+    "cap": 2
+   },
+   "divalent_roles": {
+    "O+O": 1
+   },
+   "props": {
+    "mass": 7,
+    "hp": 50,
+    "strength": 3,
+    "flex": 3,
+    "resist": 4,
+    "energy": 6,
+    "mobility": 1,
+    "sense": 1,
+    "attack": 11,
+    "slots": 2
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 0
+   }
+  },
+  {
+   "formula": "OAF",
+   "label": "秩气焰·孤核",
+   "natoms": 3,
+   "count": 4213,
+   "abundance": 0.20979,
+   "atom_abundance": 0.179195,
+   "reserve_units": 12639,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "single_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O"
+   ],
+   "level6_sizes": [
+    1
+   ],
+   "shape": "孤核",
+   "layer_counts": {
+    "skeleton": 1,
+    "bridge": 1,
+    "cap": 1
+   },
+   "divalent_roles": {
+    "同一T原子 x2": 1
+   },
+   "props": {
+    "mass": 6,
+    "hp": 50,
+    "strength": 9,
+    "flex": 3,
+    "resist": 3,
+    "energy": 4,
+    "mobility": 2,
+    "sense": 1,
+    "attack": 7,
+    "slots": 1
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 1
+   }
+  },
+  {
+   "formula": "O2A3",
+   "label": "秩2气3·孤核",
+   "natoms": 5,
+   "count": 3929,
+   "abundance": 0.195648,
+   "atom_abundance": 0.278526,
+   "reserve_units": 19645,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "single_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O",
+    "O"
+   ],
+   "level6_sizes": [
+    1,
+    1
+   ],
+   "shape": "孤核",
+   "layer_counts": {
+    "skeleton": 2,
+    "bridge": 3,
+    "cap": 0
+   },
+   "divalent_roles": {
+    "同一T原子 x2": 2,
+    "真桥(跨块)": 1
+   },
+   "props": {
+    "mass": 9,
+    "hp": 130,
+    "strength": 16,
+    "flex": 6,
+    "resist": 7,
+    "energy": 0,
+    "mobility": 6,
+    "sense": 2,
+    "attack": 0,
+    "slots": 1
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 2
+   }
+  },
+  {
+   "formula": "X2CF",
+   "label": "晶2冰焰·链",
+   "natoms": 4,
+   "count": 2275,
+   "abundance": 0.113286,
+   "atom_abundance": 0.129019,
+   "reserve_units": 9100,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "no_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "链",
+   "layer_counts": {
+    "skeleton": 0,
+    "bridge": 2,
+    "cap": 2
+   },
+   "divalent_roles": {
+    "O+W": 2
+   },
+   "props": {
+    "mass": 11,
+    "hp": 90,
+    "strength": 5,
+    "flex": 3,
+    "resist": 7,
+    "energy": 6,
+    "mobility": 1,
+    "sense": 1,
+    "attack": 12,
+    "slots": 2
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 0
+   }
+  },
+  {
+   "formula": "X2C2",
+   "label": "晶2冰2·链",
+   "natoms": 4,
+   "count": 153,
+   "abundance": 0.007619,
+   "atom_abundance": 0.008677,
+   "reserve_units": 612,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "no_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "链",
+   "layer_counts": {
+    "skeleton": 0,
+    "bridge": 2,
+    "cap": 2
+   },
+   "divalent_roles": {
+    "O+W": 2
+   },
+   "props": {
+    "mass": 10,
+    "hp": 100,
+    "strength": 4,
+    "flex": 4,
+    "resist": 8,
+    "energy": 4,
+    "mobility": 2,
+    "sense": 2,
+    "attack": 8,
+    "slots": 2
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 0
+   }
+  }
+ ]
+}

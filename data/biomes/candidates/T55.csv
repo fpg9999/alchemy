@@ -1,0 +1,10 @@
+﻿formula,label,natoms,count,abundance,atom_abundance,reserve_units,shape,category,skeleton_blocks,骨架,状态,能量,相型,in_catalog,stable
+OXC,秩晶冰·链,3,5945,0.995146,0.990833,17835,链,single_trivalent,O,秩,固,冰,O/X/C,True,True
+O2X2,秩2晶2·链,4,5,0.000837,0.001111,20,链,single_trivalent,O+O,秩,固,冰,O/X/C,True,True
+O2X2C4,秩2晶2冰4·链,8,5,0.000837,0.002222,40,链,single_trivalent,O+O,秩,固,冰,O/X/C,True,True
+O2XC2,秩2晶冰2·环,5,4,0.00067,0.001111,20,环,single_trivalent,O+O,秩,固,冰,O/X/C,True,True
+O2XC4,秩2晶冰4·链,7,4,0.00067,0.001556,28,链,single_trivalent,O+O,秩,固,冰,O/X/C,True,True
+O2X4,秩2晶4·链,6,3,0.000502,0.001,18,链,single_trivalent,O+O,秩,固,冰,O/X/C,True,True
+OX2C,秩晶2冰·环,4,3,0.000502,0.000667,12,环,single_trivalent,O,秩,固,冰,O/X/C,True,True
+O2X3,秩2晶3·链,5,3,0.000502,0.000833,15,链,single_trivalent,O+O,秩,固,冰,O/X/C,True,True
+O2C4,秩2冰4·链,6,2,0.000335,0.000667,12,链,single_trivalent,O+O,秩,固,冰,O/X/C,True,True

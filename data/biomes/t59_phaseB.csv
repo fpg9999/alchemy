@@ -1,0 +1,68 @@
+﻿formula,label,natoms,count,abundance,atom_abundance,reserve_units,stable,in_catalog,category,in_library,shape,skeleton_blocks,structure_source,divalent_roles,props,attrs
+CF,冰焰·链,2,12131,0.314201,0.105426,24262,True,True,no_trivalent,True,链,[],experiment,{},"{""mass"": 3, ""hp"": 10, ""strength"": 1, ""flex"": 3, ""resist"": 1, ""energy"": 6, ""mobility"": 1, ""sense"": 1, ""attack"": 10, ""slots"": 2}","{""ring_count"": 0, ""multibond"": 0}"
+O2XP2WK2A2,秩2晶势2流沌2气2·环,10,6615,0.171333,0.287442,66150,True,True,multi_trivalent,True,环,"[""OPK"", ""OPK""]",experiment,"{""T+W"": 2, ""W+W"": 2}","{""mass"": 26, ""hp"": 252.0, ""strength"": 39, ""flex"": 11, ""resist"": 19, ""energy"": 7, ""mobility"": 11, ""sense"": 4, ""attack"": 8, ""slots"": 0}","{""ring_count"": 2, ""multibond"": 2}"
+OXCPWK,秩晶冰势流沌·环,6,5152,0.13344,0.134322,30912,True,True,multi_trivalent,True,环,"[""OPK""]",experiment,"{""T+W"": 1, ""O+W"": 1}","{""mass"": 16, ""hp"": 168.0, ""strength"": 21, ""flex"": 7, ""resist"": 12, ""energy"": 6, ""mobility"": 6, ""sense"": 3, ""attack"": 8, ""slots"": 1}","{""ring_count"": 1, ""multibond"": 1}"
+L2,电2·链,2,4981,0.129011,0.043288,9962,True,True,no_trivalent,True,链,[],experiment,{},"{""mass"": 2, ""hp"": 0, ""strength"": 2, ""flex"": 4, ""resist"": 2, ""energy"": 10, ""mobility"": 2, ""sense"": 8, ""attack"": 4, ""slots"": 2}","{""ring_count"": 0, ""multibond"": 0}"
+LF,电焰·链,2,4435,0.11487,0.038543,8870,True,True,no_trivalent,True,链,[],experiment,{},"{""mass"": 3, ""hp"": 0, ""strength"": 2, ""flex"": 3, ""resist"": 1, ""energy"": 9, ""mobility"": 1, ""sense"": 4, ""attack"": 9, ""slots"": 2}","{""ring_count"": 0, ""multibond"": 0}"
+O4X2P5W2K3A2,秩4晶2势5流2沌3气2·稠环,18,4254,0.110182,0.332729,76572,True,False,multi_trivalent,True,团,"[""O2P3K"", ""OPK"", ""OPK""]",experiment,"{""T+W"": 4, ""W+W"": 2}","{""mass"": 50, ""hp"": 608.4, ""strength"": 82, ""flex"": 18, ""resist"": 30, ""energy"": 15, ""mobility"": 18, ""sense"": 7, ""attack"": 17, ""slots"": 0}","{""ring_count"": 3, ""multibond"": 4}"
+O3XP4WK3A,秩3晶势4流沌3气·团,13,781,0.020228,0.044118,10153,True,True,multi_trivalent,True,团,"[""O2P3K2"", ""OPK""]",experiment,"{""T+W"": 2, ""W+W"": 1}","{""mass"": 37, ""hp"": 436.8, ""strength"": 70, ""flex"": 12, ""resist"": 22, ""energy"": 12, ""mobility"": 12, ""sense"": 6, ""attack"": 13, ""slots"": 0}","{""ring_count"": 2, ""multibond"": 4}"
+WA,流气·链,2,97,0.002512,0.000843,194,True,True,no_trivalent,True,链,[],experiment,"{""同一W原子 x2"": 2}","{""mass"": 3, ""hp"": 10, ""strength"": 6, ""flex"": 5, ""resist"": 1, ""energy"": 1, ""mobility"": 5, ""sense"": 0, ""attack"": 1, ""slots"": 0}","{""ring_count"": 0, ""multibond"": 1}"
+OXCPWKA,秩晶冰势流沌气·环,7,83,0.00215,0.002525,581,True,True,multi_trivalent,True,环,"[""OPK""]",experiment,"{""T+W"": 1, ""O+W"": 1, ""W+W"": 1}","{""mass"": 17, ""hp"": 168.0, ""strength"": 21, ""flex"": 9, ""resist"": 13, ""energy"": 6, ""mobility"": 8, ""sense"": 3, ""attack"": 8, ""slots"": 1}","{""ring_count"": 1, ""multibond"": 1}"
+O2XP2WK2A,秩2晶势2流沌2气·环,9,12,0.000311,0.000469,108,True,True,multi_trivalent,True,环,"[""OPK"", ""OPK""]",experiment,"{""T+W"": 2, ""W+W"": 1}","{""mass"": 25, ""hp"": 252.0, ""strength"": 39, ""flex"": 9, ""resist"": 18, ""energy"": 7, ""mobility"": 9, ""sense"": 4, ""attack"": 8, ""slots"": 0}","{""ring_count"": 2, ""multibond"": 2}"
+O2XP2K2A,秩2晶势2沌2气·环,8,10,0.000259,0.000348,80,True,True,multi_trivalent,True,环,"[""OPK"", ""OPK""]",experiment,"{""T+W"": 2}","{""mass"": 23, ""hp"": 240.0, ""strength"": 38, ""flex"": 6, ""resist"": 18, ""energy"": 6, ""mobility"": 6, ""sense"": 4, ""attack"": 7, ""slots"": 0}","{""ring_count"": 2, ""multibond"": 2}"
+O7X5CP11W4LK5A5F,秩7晶5冰势11流4电沌5气5焰·稠环,40,2,5.2e-05,0.000348,80,True,False,multi_trivalent,True,团,"[""O3P5K2"", ""O2P3K2"", ""O2P3K""]",experiment,"{""T+W"": 7, ""W+W"": 4, ""O+W"": 3}","{""mass"": 106, ""hp"": 1138.8, ""strength"": 165, ""flex"": 43, ""resist"": 54, ""energy"": 42, ""mobility"": 40, ""sense"": 17, ""attack"": 48, ""slots"": 3}","{""ring_count"": 3, ""multibond"": 8}"
+O9X4P14W2K7A4,秩9晶4势14流2沌7气4·稠环,40,2,5.2e-05,0.000348,80,True,False,multi_trivalent,True,团,"[""O3P5K2"", ""O2P3K2"", ""O2P3K2"", ""O2P3K""]",experiment,"{""T+W"": 8, ""W+W"": 2}","{""mass"": 114, ""hp"": 1263.6, ""strength"": 206, ""flex"": 35, ""resist"": 60, ""energy"": 37, ""mobility"": 35, ""sense"": 16, ""attack"": 41, ""slots"": 0}","{""ring_count"": 5, ""multibond"": 11}"
+O10X3P10W3LK4A7F,秩10晶3势10流3电沌4气7焰·团,39,1,2.6e-05,0.000169,39,True,False,multi_trivalent,True,团,"[""O3P3K"", ""O3P3K"", ""O2P2K"", ""O2P2K""]",experiment,"{""T+W"": 6, ""W+W"": 5, ""O+T"": 2}","{""mass"": 100, ""hp"": 1107.6, ""strength"": 169, ""flex"": 40, ""resist"": 51, ""energy"": 36, ""mobility"": 38, ""sense"": 18, ""attack"": 39, ""slots"": 2}","{""ring_count"": 2, ""multibond"": 10}"
+O10X4P14W3K5A3F,秩10晶4势14流3沌5气3焰·稠环,40,1,2.6e-05,0.000174,40,True,False,multi_trivalent,True,团,"[""O2P2K"", ""O2P3K"", ""O2P3K"", ""O2P3K"", ""O2P3K""]",experiment,"{""真桥(跨块)"": 2, ""T+W"": 5, ""W+W"": 2, ""O+W"": 1}","{""mass"": 114, ""hp"": 1388.4, ""strength"": 198, ""flex"": 35, ""resist"": 57, ""energy"": 40, ""mobility"": 34, ""sense"": 15, ""attack"": 47, ""slots"": 3}","{""ring_count"": 5, ""multibond"": 10}"
+O11X2CP13W3K5A5,秩11晶2冰势13流3沌5气5·稠环,40,1,2.6e-05,0.000174,40,True,False,multi_trivalent,True,团,"[""O2P2K"", ""O2P2K"", ""O2P2K"", ""O2P2K"", ""O3P5K""]",experiment,"{""真桥(跨块)"": 2, ""W+W"": 2, ""O+W"": 1, ""T+W"": 5}","{""mass"": 107, ""hp"": 1310.4, ""strength"": 190, ""flex"": 39, ""resist"": 56, ""energy"": 36, ""mobility"": 38, ""sense"": 17, ""attack"": 39, ""slots"": 3}","{""ring_count"": 5, ""multibond"": 10}"
+O11X6P12W2K5A3,秩11晶6势12流2沌5气3·稠环,39,1,2.6e-05,0.000169,39,True,False,multi_trivalent,True,团,"[""O3P4K"", ""O2P2K"", ""O2P2K"", ""O2P2K"", ""O2P2K""]",experiment,"{""T+W"": 8, ""W+W"": 3}","{""mass"": 115, ""hp"": 1419.6, ""strength"": 196, ""flex"": 29, ""resist"": 63, ""energy"": 31, ""mobility"": 29, ""sense"": 16, ""attack"": 37, ""slots"": 0}","{""ring_count"": 4, ""multibond"": 11}"
+O12X5CP14WK5A2,秩12晶5冰势14流沌5气2·稠环,40,1,2.6e-05,0.000174,40,True,False,multi_trivalent,True,团,"[""O3P4K"", ""O3P4K"", ""O2P2K"", ""O2P2K"", ""O2P2K""]",experiment,"{""真桥(跨块)"": 3, ""T+W"": 2, ""骨架内桥"": 1, ""W+W"": 1, ""O+T"": 1}","{""mass"": 118, ""hp"": 1575.6, ""strength"": 213, ""flex"": 28, ""resist"": 65, ""energy"": 36, ""mobility"": 26, ""sense"": 18, ""attack"": 42, ""slots"": 4}","{""ring_count"": 4, ""multibond"": 12}"
+O3X4C5P14W3LK5A3F2,秩3晶4冰5势14流3电沌5气3焰2·团,40,1,2.6e-05,0.000174,40,True,False,multi_trivalent,True,团,"[""OP4K"", ""OP3K"", ""OP3K"", ""P2K"", ""P2K""]",experiment,"{""真桥(跨块)"": 3, ""同一T原子 x2"": 4, ""T+W"": 2, ""W+W"": 1}","{""mass"": 101, ""hp"": 988.0, ""strength"": 169, ""flex"": 48, ""resist"": 37, ""energy"": 59, ""mobility"": 40, ""sense"": 17, ""attack"": 71, ""slots"": 11}","{""ring_count"": 0, ""multibond"": 8}"
+O3X4CP16W5LK5A3F2,秩3晶4冰势16流5电沌5气3焰2·稠环,40,1,2.6e-05,0.000174,40,True,False,multi_trivalent,True,团,"[""OP4K"", ""OP4K"", ""OP4K"", ""P2K"", ""P2K""]",experiment,"{""真桥(跨块)"": 7, ""骨架内桥"": 5}","{""mass"": 107, ""hp"": 1396.2, ""strength"": 153, ""flex"": 48, ""resist"": 68, ""energy"": 57, ""mobility"": 39, ""sense"": 13, ""attack"": 65, ""slots"": 11}","{""ring_count"": 9, ""multibond"": 2}"
+O4X10CP11W4K4A3F2,秩4晶10冰势11流4沌4气3焰2·稠环,39,1,2.6e-05,0.000169,39,True,False,multi_trivalent,True,团,"[""OP3K"", ""OP3K"", ""OP3K"", ""OP2K""]",experiment,"{""T+W"": 9, ""真桥(跨块)"": 2, ""骨架内桥"": 1, ""同一T原子 x2"": 1, ""W+W"": 1, ""O+W"": 3}","{""mass"": 113, ""hp"": 1404.0, ""strength"": 152, ""flex"": 37, ""resist"": 61, ""energy"": 40, ""mobility"": 33, ""sense"": 9, ""attack"": 57, ""slots"": 5}","{""ring_count"": 3, ""multibond"": 6}"
+O4X2C2P14W3K3A6F5,秩4晶2冰2势14流3沌3气6焰5·稠环,39,1,2.6e-05,0.000169,39,True,False,multi_trivalent,True,团,"[""OP4K"", ""OP4K"", ""OP3K"", ""OP3""]",experiment,"{""真桥(跨块)"": 5, ""骨架内桥"": 1, ""T+W"": 2, ""同一T原子 x2"": 3}","{""mass"": 95, ""hp"": 1060.8, ""strength"": 142, ""flex"": 47, ""resist"": 41, ""energy"": 58, ""mobility"": 39, ""sense"": 9, ""attack"": 77, ""slots"": 12}","{""ring_count"": 4, ""multibond"": 4}"
+O4X3C4P14W3L3K3A3F2,秩4晶3冰4势14流3电3沌3气3焰2·稠环,39,1,2.6e-05,0.000169,39,True,False,multi_trivalent,True,团,"[""OP4K"", ""OP4K"", ""OP3K"", ""OP3""]",experiment,"{""真桥(跨块)"": 6, ""骨架内桥"": 3}","{""mass"": 95, ""hp"": 1201.2, ""strength"": 129, ""flex"": 48, ""resist"": 56, ""energy"": 65, ""mobility"": 36, ""sense"": 23, ""attack"": 69, ""slots"": 15}","{""ring_count"": 6, ""multibond"": 1}"
+O4X6CP11W6K4A7,秩4晶6冰势11流6沌4气7·稠环,39,1,2.6e-05,0.000169,39,True,False,multi_trivalent,True,团,"[""OP3K"", ""OP3K"", ""OP3K"", ""OP2K""]",experiment,"{""真桥(跨块)"": 2, ""T+W"": 9, ""骨架内桥"": 1, ""同一T原子 x2"": 1, ""W+W"": 5, ""O+W"": 1}","{""mass"": 101, ""hp"": 1185.6, ""strength"": 144, ""flex"": 49, ""resist"": 55, ""energy"": 34, ""mobility"": 47, ""sense"": 9, ""attack"": 41, ""slots"": 3}","{""ring_count"": 4, ""multibond"": 6}"
+O4X8CP12W5K5A4,秩4晶8冰势12流5沌5气4·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O5X3C2P14W4LK5A2F3,秩5晶3冰2势14流4电沌5气2焰3·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O6X6C3P10W4LK4A6,秩6晶6冰3势10流4电沌4气6·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O6X7CP11W3K4A8,秩6晶7冰势11流3沌4气8·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O7X4CP11W4K5A7,秩7晶4冰势11流4沌5气7·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O7X5C2P13W3LK5A3,秩7晶5冰2势13流3电沌5气3·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O7X5CP11W3LK5A5F,秩7晶5冰势11流3电沌5气5焰·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O7X6C2P12W3K5A5,秩7晶6冰2势12流3沌5气5·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O7X6P13WK6A6,秩7晶6势13流沌6气6·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O7X7P12W2LK4A7,秩7晶7势12流2电沌4气7·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O8X5CP13W3K6A4,秩8晶5冰势13流3沌6气4·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O8X5P14W2K6A5,秩8晶5势14流2沌6气5·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O8X6C2P11W4K3A5,秩8晶6冰2势11流4沌3气5·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O8X6CP13W3K6A2,秩8晶6冰势13流3沌6气2·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O8X6P13W4K6AF,秩8晶6势13流4沌6气焰·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O8X7P13WK5A6,秩8晶7势13流沌5气6·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O8X8P13WK5A4,秩8晶8势13流沌5气4·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O9X5C2P11W3K4A6,秩9晶5冰2势11流3沌4气6·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O9X5CP12W4K4A5,秩9晶5冰势12流4沌4气5·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O9X5P14W2K6A2F,秩9晶5势14流2沌6气2焰·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O9X6CP15W2K5A2,秩9晶6冰势15流2沌5气2·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O9X5CP12W3K4A5,秩9晶5冰势12流3沌4气5·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O8X7CP13W3K4A4,秩8晶7冰势13流3沌4气4·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O8X6CP13W2K5A4F,秩8晶6冰势13流2沌5气4焰·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O8X5P13W3K7A3,秩8晶5势13流3沌7气3·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O8X5P13W2K6A5F,秩8晶5势13流2沌6气5焰·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O7X4C2P11W4K6A4,秩7晶4冰2势11流4沌6气4·?,38,1,2.6e-05,0.000165,38,,False,,,?,[],,,,
+O6X6CP11W4K4A7,秩6晶6冰势11流4沌4气7·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O8X3C2P14WK6A6,秩8晶3冰2势14流沌6气6·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O9X5P13WK6A6,秩9晶5势13流沌6气6·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O8X6P13W2K5A6,秩8晶6势13流2沌5气6·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O7X5C2P11W4K5A4F,秩7晶5冰2势11流4沌5气4焰·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O7X6P12W2LK5A6F,秩7晶6势12流2电沌5气6焰·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O8X5P13W4K5A4,秩8晶5势13流4沌5气4·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O7X5CP11W4LK5A4F,秩7晶5冰势11流4电沌5气4焰·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O6X7C3P11W4K4A5,秩6晶7冰3势11流4沌4气5·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O8X4P13W3K7A5,秩8晶4势13流3沌7气5·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O7X7CP12W2K4A6,秩7晶7冰势12流2沌4气6·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O7X5CP11W4K5A6,秩7晶5冰势11流4沌5气6·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O8X6CP13W4K6A2,秩8晶6冰势13流4沌6气2·?,40,1,2.6e-05,0.000174,40,,False,,,?,[],,,,
+O6X6C4P10W5K4A3,秩6晶6冰4势10流5沌4气3·?,38,1,2.6e-05,0.000165,38,,False,,,?,[],,,,
+O6X5C2P10W4K5A6F,秩6晶5冰2势10流4沌5气6焰·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,
+O7X5CP12W4K6A4,秩7晶5冰势12流4沌6气4·?,39,1,2.6e-05,0.000169,39,,False,,,?,[],,,,

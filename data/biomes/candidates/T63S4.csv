@@ -1,0 +1,15 @@
+﻿formula,label,natoms,count,abundance,atom_abundance,reserve_units,shape,category,skeleton_blocks,骨架,状态,能量,相型,in_catalog,stable
+F2,焰2·链,2,6521,0.378534,0.150719,13042,链,no_trivalent,—,秩,固,焰,O/X/F,True,True
+OK,秩沌·链,2,4234,0.245777,0.09786,8468,链,multi_trivalent,OK,秩,固,冰,O/X/C,True,True
+O2X3C3K3A3,秩2晶3冰3沌3气3·团,14,3823,0.221919,0.618523,53522,团,multi_trivalent,O2K3,沌,固,冰,K/X/C,True,True
+XA2F2,晶气2焰2·链,5,1463,0.084925,0.084535,7315,链,no_trivalent,—,秩,气,焰,O/A/F,True,True
+XA,晶气·链,2,854,0.049573,0.019738,1708,链,no_trivalent,—,秩,固,冰,O/X/C,True,True
+XC2A2,晶冰2气2·链,5,283,0.016428,0.016352,1415,链,no_trivalent,—,秩,气,冰,O/A/C,True,True
+XCA2F,晶冰气2焰·链,5,25,0.001451,0.001445,125,链,no_trivalent,—,秩,气,冰,O/A/C,True,True
+O8X11C2K12A6,秩8晶11冰2沌12气6·团,39,10,0.00058,0.004507,390,团,multi_trivalent,O2K3+O2K3+O2K3+O2K3,沌,固,冰,K/X/C,False,True
+O8X11CK12A6F,秩8晶11冰沌12气6焰·团,39,5,0.00029,0.002254,195,团,multi_trivalent,O2K3+O2K3+O2K3+O2K3,沌,固,冰,K/X/C,False,True
+O9X11CK14A4,秩9晶11冰沌14气4·团,39,4,0.000232,0.001803,156,团,multi_trivalent,O2K3+O2K3+O2K3+O2K3+OK2,沌,固,冰,K/X/C,False,True
+O8X12CK13A5,秩8晶12冰沌13气5·团,39,2,0.000116,0.000901,78,团,multi_trivalent,O2K3+O2K3+O2K3+OK2+OK2,沌,固,冰,K/X/C,False,True
+O5X16CK12A6,秩5晶16冰沌12气6·稠环,40,1,5.8e-05,0.000462,40,团,multi_trivalent,OK3+OK3+OK2+OK2+OK2,沌,固,冰,K/X/C,False,True
+O6X14CK11A7,秩6晶14冰沌11气7·团,39,1,5.8e-05,0.000451,39,团,multi_trivalent,O2K3+OK2+OK2+OK2+OK2,沌,固,冰,K/X/C,False,True
+O8X11K12A6F2,秩8晶11沌12气6焰2·团,39,1,5.8e-05,0.000451,39,团,multi_trivalent,O2K3+O2K3+O2K3+O2K3,沌,固,焰,K/X/F,False,True

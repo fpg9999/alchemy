@@ -1,0 +1,1730 @@
+{
+ "spec": {
+  "source": "t62_phaseB_result.json",
+  "name": "t62_phaseB",
+  "phase": "B",
+  "element_atoms": {
+   "O": 8925,
+   "X": 8867,
+   "C": 8875,
+   "P": 8922,
+   "W": 8889,
+   "L": 8896,
+   "K": 8921,
+   "A": 8875,
+   "F": 8857
+  },
+  "element_shares": {
+   "O": 0.1115,
+   "X": 0.1108,
+   "C": 0.1109,
+   "P": 0.1115,
+   "W": 0.1111,
+   "L": 0.1112,
+   "K": 0.1115,
+   "A": 0.1109,
+   "F": 0.1107
+  },
+  "valence_shares": [
+   0.3345,
+   0.3328,
+   0.3327
+  ],
+  "L": 60000.0,
+  "T0": 1000,
+  "T_end": 0,
+  "minutes": 1000,
+  "max_reaction_atoms": 40,
+  "n_molecules": 51937,
+  "n_atoms": 230046,
+  "n_species": 43
+ },
+ "n_species": 43,
+ "species": [
+  {
+   "formula": "OXCPWKA",
+   "label": "秩晶冰势流沌气·环",
+   "natoms": 7,
+   "count": 24442,
+   "abundance": 0.470609,
+   "atom_abundance": 0.743738,
+   "reserve_units": 171094,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "OPK"
+   ],
+   "level6_sizes": [
+    3
+   ],
+   "shape": "环",
+   "layer_counts": {
+    "skeleton": 3,
+    "bridge": 3,
+    "cap": 1
+   },
+   "divalent_roles": {
+    "T+W": 1,
+    "O+W": 1,
+    "W+W": 1
+   },
+   "props": {
+    "mass": 17,
+    "hp": 168.0,
+    "strength": 21,
+    "flex": 9,
+    "resist": 13,
+    "energy": 6,
+    "mobility": 8,
+    "sense": 3,
+    "attack": 8,
+    "slots": 1
+   },
+   "attrs": {
+    "ring_count": 1,
+    "multibond": 1
+   }
+  },
+  {
+   "formula": "LF",
+   "label": "电焰·链",
+   "natoms": 2,
+   "count": 24375,
+   "abundance": 0.469319,
+   "atom_abundance": 0.211914,
+   "reserve_units": 48750,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "no_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "链",
+   "layer_counts": {
+    "skeleton": 0,
+    "bridge": 0,
+    "cap": 2
+   },
+   "divalent_roles": {},
+   "props": {
+    "mass": 3,
+    "hp": 0,
+    "strength": 2,
+    "flex": 3,
+    "resist": 1,
+    "energy": 9,
+    "mobility": 1,
+    "sense": 4,
+    "attack": 9,
+    "slots": 2
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 0
+   }
+  },
+  {
+   "formula": "CF",
+   "label": "冰焰·链",
+   "natoms": 2,
+   "count": 701,
+   "abundance": 0.013497,
+   "atom_abundance": 0.006094,
+   "reserve_units": 1402,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "no_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "链",
+   "layer_counts": {
+    "skeleton": 0,
+    "bridge": 0,
+    "cap": 2
+   },
+   "divalent_roles": {},
+   "props": {
+    "mass": 3,
+    "hp": 10,
+    "strength": 1,
+    "flex": 3,
+    "resist": 1,
+    "energy": 6,
+    "mobility": 1,
+    "sense": 1,
+    "attack": 10,
+    "slots": 2
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 0
+   }
+  },
+  {
+   "formula": "L2",
+   "label": "电2·链",
+   "natoms": 2,
+   "count": 587,
+   "abundance": 0.011302,
+   "atom_abundance": 0.005103,
+   "reserve_units": 1174,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "no_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "链",
+   "layer_counts": {
+    "skeleton": 0,
+    "bridge": 0,
+    "cap": 2
+   },
+   "divalent_roles": {},
+   "props": {
+    "mass": 2,
+    "hp": 0,
+    "strength": 2,
+    "flex": 4,
+    "resist": 2,
+    "energy": 10,
+    "mobility": 2,
+    "sense": 8,
+    "attack": 4,
+    "slots": 2
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 0
+   }
+  },
+  {
+   "formula": "WA",
+   "label": "流气·链",
+   "natoms": 2,
+   "count": 472,
+   "abundance": 0.009088,
+   "atom_abundance": 0.004104,
+   "reserve_units": 944,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "no_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "链",
+   "layer_counts": {
+    "skeleton": 0,
+    "bridge": 2,
+    "cap": 0
+   },
+   "divalent_roles": {
+    "同一W原子 x2": 2
+   },
+   "props": {
+    "mass": 3,
+    "hp": 10,
+    "strength": 6,
+    "flex": 5,
+    "resist": 1,
+    "energy": 1,
+    "mobility": 5,
+    "sense": 0,
+    "attack": 1,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 1
+   }
+  },
+  {
+   "formula": "XA",
+   "label": "晶气·链",
+   "natoms": 2,
+   "count": 294,
+   "abundance": 0.005661,
+   "atom_abundance": 0.002556,
+   "reserve_units": 588,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "no_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "链",
+   "layer_counts": {
+    "skeleton": 0,
+    "bridge": 2,
+    "cap": 0
+   },
+   "divalent_roles": {
+    "同一W原子 x2": 2
+   },
+   "props": {
+    "mass": 5,
+    "hp": 40,
+    "strength": 7,
+    "flex": 2,
+    "resist": 4,
+    "energy": 0,
+    "mobility": 2,
+    "sense": 0,
+    "attack": 1,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 1
+   }
+  },
+  {
+   "formula": "OXCPWK",
+   "label": "秩晶冰势流沌·环",
+   "natoms": 6,
+   "count": 248,
+   "abundance": 0.004775,
+   "atom_abundance": 0.006468,
+   "reserve_units": 1488,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "OPK"
+   ],
+   "level6_sizes": [
+    3
+   ],
+   "shape": "环",
+   "layer_counts": {
+    "skeleton": 3,
+    "bridge": 2,
+    "cap": 1
+   },
+   "divalent_roles": {
+    "T+W": 1,
+    "O+W": 1
+   },
+   "props": {
+    "mass": 16,
+    "hp": 168.0,
+    "strength": 21,
+    "flex": 7,
+    "resist": 12,
+    "energy": 6,
+    "mobility": 6,
+    "sense": 3,
+    "attack": 8,
+    "slots": 1
+   },
+   "attrs": {
+    "ring_count": 1,
+    "multibond": 1
+   }
+  },
+  {
+   "formula": "OK",
+   "label": "秩沌·孤核",
+   "natoms": 2,
+   "count": 238,
+   "abundance": 0.004582,
+   "atom_abundance": 0.002069,
+   "reserve_units": 476,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "OK"
+   ],
+   "level6_sizes": [
+    2
+   ],
+   "shape": "孤核",
+   "layer_counts": {
+    "skeleton": 2,
+    "bridge": 0,
+    "cap": 0
+   },
+   "divalent_roles": {},
+   "props": {
+    "mass": 6,
+    "hp": 70,
+    "strength": 12,
+    "flex": 1,
+    "resist": 4,
+    "energy": 1,
+    "mobility": 1,
+    "sense": 2,
+    "attack": 1,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 1
+   }
+  },
+  {
+   "formula": "F2",
+   "label": "焰2·链",
+   "natoms": 2,
+   "count": 160,
+   "abundance": 0.003081,
+   "atom_abundance": 0.001391,
+   "reserve_units": 320,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "no_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "链",
+   "layer_counts": {
+    "skeleton": 0,
+    "bridge": 0,
+    "cap": 2
+   },
+   "divalent_roles": {},
+   "props": {
+    "mass": 4,
+    "hp": 0,
+    "strength": 2,
+    "flex": 2,
+    "resist": 0,
+    "energy": 8,
+    "mobility": 0,
+    "sense": 0,
+    "attack": 14,
+    "slots": 2
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 0
+   }
+  },
+  {
+   "formula": "O2XCP3WK2",
+   "label": "秩2晶冰势3流沌2·团",
+   "natoms": 10,
+   "count": 88,
+   "abundance": 0.001694,
+   "atom_abundance": 0.003825,
+   "reserve_units": 880,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O2P3K2"
+   ],
+   "level6_sizes": [
+    7
+   ],
+   "shape": "团",
+   "layer_counts": {
+    "skeleton": 7,
+    "bridge": 2,
+    "cap": 1
+   },
+   "divalent_roles": {
+    "T+W": 1,
+    "O+W": 1
+   },
+   "props": {
+    "mass": 28,
+    "hp": 327.6,
+    "strength": 52,
+    "flex": 10,
+    "resist": 16,
+    "energy": 11,
+    "mobility": 9,
+    "sense": 5,
+    "attack": 13,
+    "slots": 1
+   },
+   "attrs": {
+    "ring_count": 1,
+    "multibond": 3
+   }
+  },
+  {
+   "formula": "PK",
+   "label": "势沌·孤核",
+   "natoms": 2,
+   "count": 70,
+   "abundance": 0.001348,
+   "atom_abundance": 0.000609,
+   "reserve_units": 140,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "PK"
+   ],
+   "level6_sizes": [
+    2
+   ],
+   "shape": "孤核",
+   "layer_counts": {
+    "skeleton": 2,
+    "bridge": 0,
+    "cap": 0
+   },
+   "divalent_roles": {},
+   "props": {
+    "mass": 6,
+    "hp": 50,
+    "strength": 15,
+    "flex": 2,
+    "resist": 2,
+    "energy": 3,
+    "mobility": 2,
+    "sense": 1,
+    "attack": 3,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 1
+   }
+  },
+  {
+   "formula": "OXPWKAF",
+   "label": "秩晶势流沌气焰·环",
+   "natoms": 7,
+   "count": 61,
+   "abundance": 0.001174,
+   "atom_abundance": 0.001856,
+   "reserve_units": 427,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "OPK"
+   ],
+   "level6_sizes": [
+    3
+   ],
+   "shape": "环",
+   "layer_counts": {
+    "skeleton": 3,
+    "bridge": 3,
+    "cap": 1
+   },
+   "divalent_roles": {
+    "T+W": 1,
+    "O+W": 1,
+    "W+W": 1
+   },
+   "props": {
+    "mass": 18,
+    "hp": 156.0,
+    "strength": 22,
+    "flex": 8,
+    "resist": 12,
+    "energy": 8,
+    "mobility": 7,
+    "sense": 2,
+    "attack": 12,
+    "slots": 1
+   },
+   "attrs": {
+    "ring_count": 1,
+    "multibond": 1
+   }
+  },
+  {
+   "formula": "O2X2P2WK2A2",
+   "label": "秩2晶2势2流沌2气2·环",
+   "natoms": 11,
+   "count": 46,
+   "abundance": 0.000886,
+   "atom_abundance": 0.0022,
+   "reserve_units": 506,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "OPK",
+    "OPK"
+   ],
+   "level6_sizes": [
+    3,
+    3
+   ],
+   "shape": "环",
+   "layer_counts": {
+    "skeleton": 6,
+    "bridge": 5,
+    "cap": 0
+   },
+   "divalent_roles": {
+    "T+W": 2,
+    "W+W": 3
+   },
+   "props": {
+    "mass": 30,
+    "hp": 300.0,
+    "strength": 41,
+    "flex": 11,
+    "resist": 22,
+    "energy": 7,
+    "mobility": 11,
+    "sense": 4,
+    "attack": 9,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 2,
+    "multibond": 2
+   }
+  },
+  {
+   "formula": "O2X2P2WK2A",
+   "label": "秩2晶2势2流沌2气·环",
+   "natoms": 10,
+   "count": 27,
+   "abundance": 0.00052,
+   "atom_abundance": 0.001174,
+   "reserve_units": 270,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "OPK",
+    "OPK"
+   ],
+   "level6_sizes": [
+    3,
+    3
+   ],
+   "shape": "环",
+   "layer_counts": {
+    "skeleton": 6,
+    "bridge": 4,
+    "cap": 0
+   },
+   "divalent_roles": {
+    "T+W": 2,
+    "W+W": 2
+   },
+   "props": {
+    "mass": 29,
+    "hp": 300.0,
+    "strength": 41,
+    "flex": 9,
+    "resist": 21,
+    "energy": 7,
+    "mobility": 9,
+    "sense": 4,
+    "attack": 9,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 2,
+    "multibond": 2
+   }
+  },
+  {
+   "formula": "O2XP2WK2A2",
+   "label": "秩2晶势2流沌2气2·环",
+   "natoms": 10,
+   "count": 24,
+   "abundance": 0.000462,
+   "atom_abundance": 0.001043,
+   "reserve_units": 240,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "OPK",
+    "OPK"
+   ],
+   "level6_sizes": [
+    3,
+    3
+   ],
+   "shape": "环",
+   "layer_counts": {
+    "skeleton": 6,
+    "bridge": 4,
+    "cap": 0
+   },
+   "divalent_roles": {
+    "T+W": 2,
+    "W+W": 2
+   },
+   "props": {
+    "mass": 26,
+    "hp": 252.0,
+    "strength": 39,
+    "flex": 11,
+    "resist": 19,
+    "energy": 7,
+    "mobility": 11,
+    "sense": 4,
+    "attack": 8,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 2,
+    "multibond": 2
+   }
+  },
+  {
+   "formula": "OXPWKF",
+   "label": "秩晶势流沌焰·环",
+   "natoms": 6,
+   "count": 22,
+   "abundance": 0.000424,
+   "atom_abundance": 0.000574,
+   "reserve_units": 132,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "OPK"
+   ],
+   "level6_sizes": [
+    3
+   ],
+   "shape": "环",
+   "layer_counts": {
+    "skeleton": 3,
+    "bridge": 2,
+    "cap": 1
+   },
+   "divalent_roles": {
+    "T+W": 1,
+    "O+W": 1
+   },
+   "props": {
+    "mass": 17,
+    "hp": 156.0,
+    "strength": 22,
+    "flex": 6,
+    "resist": 11,
+    "energy": 8,
+    "mobility": 5,
+    "sense": 2,
+    "attack": 12,
+    "slots": 1
+   },
+   "attrs": {
+    "ring_count": 1,
+    "multibond": 1
+   }
+  },
+  {
+   "formula": "O2XP2K2A",
+   "label": "秩2晶势2沌2气·环",
+   "natoms": 8,
+   "count": 13,
+   "abundance": 0.00025,
+   "atom_abundance": 0.000452,
+   "reserve_units": 104,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "OPK",
+    "OPK"
+   ],
+   "level6_sizes": [
+    3,
+    3
+   ],
+   "shape": "环",
+   "layer_counts": {
+    "skeleton": 6,
+    "bridge": 2,
+    "cap": 0
+   },
+   "divalent_roles": {
+    "T+W": 2
+   },
+   "props": {
+    "mass": 23,
+    "hp": 240.0,
+    "strength": 38,
+    "flex": 6,
+    "resist": 18,
+    "energy": 6,
+    "mobility": 6,
+    "sense": 4,
+    "attack": 7,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 2,
+    "multibond": 2
+   }
+  },
+  {
+   "formula": "O3X2P4WK3",
+   "label": "秩3晶2势4流沌3·团",
+   "natoms": 13,
+   "count": 9,
+   "abundance": 0.000173,
+   "atom_abundance": 0.000509,
+   "reserve_units": 117,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O2P3K2",
+    "OPK"
+   ],
+   "level6_sizes": [
+    7,
+    3
+   ],
+   "shape": "团",
+   "layer_counts": {
+    "skeleton": 10,
+    "bridge": 3,
+    "cap": 0
+   },
+   "divalent_roles": {
+    "T+W": 2,
+    "W+W": 1
+   },
+   "props": {
+    "mass": 40,
+    "hp": 499.2,
+    "strength": 72,
+    "flex": 10,
+    "resist": 24,
+    "energy": 12,
+    "mobility": 10,
+    "sense": 6,
+    "attack": 14,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 2,
+    "multibond": 4
+   }
+  },
+  {
+   "formula": "O2XCP2WK",
+   "label": "秩2晶冰势2流沌·团",
+   "natoms": 8,
+   "count": 9,
+   "abundance": 0.000173,
+   "atom_abundance": 0.000313,
+   "reserve_units": 72,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O2P2K"
+   ],
+   "level6_sizes": [
+    5
+   ],
+   "shape": "团",
+   "layer_counts": {
+    "skeleton": 5,
+    "bridge": 2,
+    "cap": 1
+   },
+   "divalent_roles": {
+    "T+W": 1,
+    "O+W": 1
+   },
+   "props": {
+    "mass": 22,
+    "hp": 280.8,
+    "strength": 37,
+    "flex": 8,
+    "resist": 14,
+    "energy": 8,
+    "mobility": 7,
+    "sense": 4,
+    "attack": 10,
+    "slots": 1
+   },
+   "attrs": {
+    "ring_count": 1,
+    "multibond": 2
+   }
+  },
+  {
+   "formula": "O3X2P4WK3A",
+   "label": "秩3晶2势4流沌3气·团",
+   "natoms": 14,
+   "count": 8,
+   "abundance": 0.000154,
+   "atom_abundance": 0.000487,
+   "reserve_units": 112,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O2P3K2",
+    "OPK"
+   ],
+   "level6_sizes": [
+    7,
+    3
+   ],
+   "shape": "团",
+   "layer_counts": {
+    "skeleton": 10,
+    "bridge": 4,
+    "cap": 0
+   },
+   "divalent_roles": {
+    "T+W": 2,
+    "W+W": 2
+   },
+   "props": {
+    "mass": 41,
+    "hp": 499.2,
+    "strength": 72,
+    "flex": 12,
+    "resist": 25,
+    "energy": 12,
+    "mobility": 12,
+    "sense": 6,
+    "attack": 14,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 2,
+    "multibond": 4
+   }
+  },
+  {
+   "formula": "O2XCP3WK2A",
+   "label": "秩2晶冰势3流沌2气·团",
+   "natoms": 11,
+   "count": 6,
+   "abundance": 0.000116,
+   "atom_abundance": 0.000287,
+   "reserve_units": 66,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O2P3K2"
+   ],
+   "level6_sizes": [
+    7
+   ],
+   "shape": "团",
+   "layer_counts": {
+    "skeleton": 7,
+    "bridge": 3,
+    "cap": 1
+   },
+   "divalent_roles": {
+    "T+W": 1,
+    "O+W": 1,
+    "W+W": 1
+   },
+   "props": {
+    "mass": 29,
+    "hp": 327.6,
+    "strength": 52,
+    "flex": 12,
+    "resist": 17,
+    "energy": 11,
+    "mobility": 11,
+    "sense": 5,
+    "attack": 13,
+    "slots": 1
+   },
+   "attrs": {
+    "ring_count": 1,
+    "multibond": 3
+   }
+  },
+  {
+   "formula": "O2X2P2K2A",
+   "label": "秩2晶2势2沌2气·环",
+   "natoms": 9,
+   "count": 6,
+   "abundance": 0.000116,
+   "atom_abundance": 0.000235,
+   "reserve_units": 54,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "OPK",
+    "OPK"
+   ],
+   "level6_sizes": [
+    3,
+    3
+   ],
+   "shape": "环",
+   "layer_counts": {
+    "skeleton": 6,
+    "bridge": 3,
+    "cap": 0
+   },
+   "divalent_roles": {
+    "T+W": 2,
+    "W+W": 1
+   },
+   "props": {
+    "mass": 27,
+    "hp": 288.0,
+    "strength": 40,
+    "flex": 6,
+    "resist": 21,
+    "energy": 6,
+    "mobility": 6,
+    "sense": 4,
+    "attack": 8,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 2,
+    "multibond": 2
+   }
+  },
+  {
+   "formula": "O3XP4WK3A",
+   "label": "秩3晶势4流沌3气·团",
+   "natoms": 13,
+   "count": 5,
+   "abundance": 9.6e-05,
+   "atom_abundance": 0.000283,
+   "reserve_units": 65,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O2P3K2",
+    "OPK"
+   ],
+   "level6_sizes": [
+    7,
+    3
+   ],
+   "shape": "团",
+   "layer_counts": {
+    "skeleton": 10,
+    "bridge": 3,
+    "cap": 0
+   },
+   "divalent_roles": {
+    "T+W": 2,
+    "W+W": 1
+   },
+   "props": {
+    "mass": 37,
+    "hp": 436.8,
+    "strength": 70,
+    "flex": 12,
+    "resist": 22,
+    "energy": 12,
+    "mobility": 12,
+    "sense": 6,
+    "attack": 13,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 2,
+    "multibond": 4
+   }
+  },
+  {
+   "formula": "O3X2P4WK3A2",
+   "label": "秩3晶2势4流沌3气2·团",
+   "natoms": 15,
+   "count": 3,
+   "abundance": 5.8e-05,
+   "atom_abundance": 0.000196,
+   "reserve_units": 45,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O2P3K2",
+    "OPK"
+   ],
+   "level6_sizes": [
+    7,
+    3
+   ],
+   "shape": "团",
+   "layer_counts": {
+    "skeleton": 10,
+    "bridge": 5,
+    "cap": 0
+   },
+   "divalent_roles": {
+    "T+W": 2,
+    "W+W": 3
+   },
+   "props": {
+    "mass": 42,
+    "hp": 499.2,
+    "strength": 72,
+    "flex": 14,
+    "resist": 26,
+    "energy": 12,
+    "mobility": 14,
+    "sense": 6,
+    "attack": 14,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 2,
+    "multibond": 4
+   }
+  },
+  {
+   "formula": "O2X2C2P3W2K",
+   "label": "秩2晶2冰2势3流2沌·团",
+   "natoms": 12,
+   "count": 3,
+   "abundance": 5.8e-05,
+   "atom_abundance": 0.000156,
+   "reserve_units": 36,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "catalog",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O2P3K"
+   ],
+   "level6_sizes": [
+    6
+   ],
+   "shape": "团",
+   "layer_counts": {
+    "skeleton": 6,
+    "bridge": 4,
+    "cap": 2
+   },
+   "divalent_roles": {
+    "T+W": 2,
+    "O+W": 2
+   },
+   "props": {
+    "mass": 32,
+    "hp": 390.0,
+    "strength": 46,
+    "flex": 14,
+    "resist": 18,
+    "energy": 13,
+    "mobility": 12,
+    "sense": 5,
+    "attack": 17,
+    "slots": 2
+   },
+   "attrs": {
+    "ring_count": 1,
+    "multibond": 2
+   }
+  },
+  {
+   "formula": "O3X2P3WK2A2",
+   "label": "秩3晶2势3流沌2气2·团",
+   "natoms": 13,
+   "count": 2,
+   "abundance": 3.9e-05,
+   "atom_abundance": 0.000113,
+   "reserve_units": 26,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "catalog",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O2P2K",
+    "OPK"
+   ],
+   "level6_sizes": [
+    5,
+    3
+   ],
+   "shape": "团",
+   "layer_counts": {
+    "skeleton": 8,
+    "bridge": 5,
+    "cap": 0
+   },
+   "divalent_roles": {
+    "T+W": 2,
+    "W+W": 3
+   },
+   "props": {
+    "mass": 36,
+    "hp": 452.4,
+    "strength": 57,
+    "flex": 12,
+    "resist": 24,
+    "energy": 9,
+    "mobility": 12,
+    "sense": 5,
+    "attack": 11,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 2,
+    "multibond": 3
+   }
+  },
+  {
+   "formula": "O3X3CP4W2K2A",
+   "label": "秩3晶3冰势4流2沌2气·团",
+   "natoms": 16,
+   "count": 2,
+   "abundance": 3.9e-05,
+   "atom_abundance": 0.000139,
+   "reserve_units": 32,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "catalog",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O2P3K",
+    "OPK"
+   ],
+   "level6_sizes": [
+    6,
+    3
+   ],
+   "shape": "团",
+   "layer_counts": {
+    "skeleton": 9,
+    "bridge": 6,
+    "cap": 1
+   },
+   "divalent_roles": {
+    "T+W": 3,
+    "W+W": 2,
+    "O+W": 1
+   },
+   "props": {
+    "mass": 45,
+    "hp": 561.6,
+    "strength": 66,
+    "flex": 16,
+    "resist": 27,
+    "energy": 14,
+    "mobility": 15,
+    "sense": 6,
+    "attack": 18,
+    "slots": 1
+   },
+   "attrs": {
+    "ring_count": 2,
+    "multibond": 3
+   }
+  },
+  {
+   "formula": "O2X2P2W2K2A2",
+   "label": "秩2晶2势2流2沌2气2·环",
+   "natoms": 12,
+   "count": 1,
+   "abundance": 1.9e-05,
+   "atom_abundance": 5.2e-05,
+   "reserve_units": 12,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "catalog",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "OPK",
+    "OPK"
+   ],
+   "level6_sizes": [
+    3,
+    3
+   ],
+   "shape": "环",
+   "layer_counts": {
+    "skeleton": 6,
+    "bridge": 6,
+    "cap": 0
+   },
+   "divalent_roles": {
+    "T+W": 2,
+    "W+W": 4
+   },
+   "props": {
+    "mass": 32,
+    "hp": 312.0,
+    "strength": 42,
+    "flex": 14,
+    "resist": 22,
+    "energy": 8,
+    "mobility": 14,
+    "sense": 4,
+    "attack": 10,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 2,
+    "multibond": 2
+   }
+  },
+  {
+   "formula": "O2X5CP10W7LK2A12",
+   "label": "秩2晶5冰势10流7电沌2气12·?",
+   "natoms": 40,
+   "count": 1,
+   "abundance": 1.9e-05,
+   "atom_abundance": 0.000174,
+   "reserve_units": 40,
+   "stable": null,
+   "in_catalog": false,
+   "structure_source": null,
+   "category": null,
+   "in_library": null,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "?",
+   "layer_counts": null,
+   "divalent_roles": null,
+   "props": null,
+   "attrs": null
+  },
+  {
+   "formula": "O2XCP2WKA",
+   "label": "秩2晶冰势2流沌气·团",
+   "natoms": 9,
+   "count": 1,
+   "abundance": 1.9e-05,
+   "atom_abundance": 3.9e-05,
+   "reserve_units": 9,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "catalog",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O2P2K"
+   ],
+   "level6_sizes": [
+    5
+   ],
+   "shape": "团",
+   "layer_counts": {
+    "skeleton": 5,
+    "bridge": 3,
+    "cap": 1
+   },
+   "divalent_roles": {
+    "T+W": 1,
+    "W+W": 1,
+    "O+W": 1
+   },
+   "props": {
+    "mass": 23,
+    "hp": 280.8,
+    "strength": 37,
+    "flex": 10,
+    "resist": 15,
+    "energy": 8,
+    "mobility": 9,
+    "sense": 4,
+    "attack": 10,
+    "slots": 1
+   },
+   "attrs": {
+    "ring_count": 1,
+    "multibond": 2
+   }
+  },
+  {
+   "formula": "O4X10P13W3K5A4",
+   "label": "秩4晶10势13流3沌5气4·?",
+   "natoms": 39,
+   "count": 1,
+   "abundance": 1.9e-05,
+   "atom_abundance": 0.00017,
+   "reserve_units": 39,
+   "stable": null,
+   "in_catalog": false,
+   "structure_source": null,
+   "category": null,
+   "in_library": null,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "?",
+   "layer_counts": null,
+   "divalent_roles": null,
+   "props": null,
+   "attrs": null
+  },
+  {
+   "formula": "O4X7C4P7W7L2K2A6F",
+   "label": "秩4晶7冰4势7流7电2沌2气6焰·?",
+   "natoms": 40,
+   "count": 1,
+   "abundance": 1.9e-05,
+   "atom_abundance": 0.000174,
+   "reserve_units": 40,
+   "stable": null,
+   "in_catalog": false,
+   "structure_source": null,
+   "category": null,
+   "in_library": null,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "?",
+   "layer_counts": null,
+   "divalent_roles": null,
+   "props": null,
+   "attrs": null
+  },
+  {
+   "formula": "O6X7CP11W5K4A6",
+   "label": "秩6晶7冰势11流5沌4气6·?",
+   "natoms": 40,
+   "count": 1,
+   "abundance": 1.9e-05,
+   "atom_abundance": 0.000174,
+   "reserve_units": 40,
+   "stable": null,
+   "in_catalog": false,
+   "structure_source": null,
+   "category": null,
+   "in_library": null,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "?",
+   "layer_counts": null,
+   "divalent_roles": null,
+   "props": null,
+   "attrs": null
+  },
+  {
+   "formula": "O6X8CP10W6K4A2F3",
+   "label": "秩6晶8冰势10流6沌4气2焰3·?",
+   "natoms": 40,
+   "count": 1,
+   "abundance": 1.9e-05,
+   "atom_abundance": 0.000174,
+   "reserve_units": 40,
+   "stable": null,
+   "in_catalog": false,
+   "structure_source": null,
+   "category": null,
+   "in_library": null,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "?",
+   "layer_counts": null,
+   "divalent_roles": null,
+   "props": null,
+   "attrs": null
+  },
+  {
+   "formula": "O7X6CP11W4K6A4F",
+   "label": "秩7晶6冰势11流4沌6气4焰·?",
+   "natoms": 40,
+   "count": 1,
+   "abundance": 1.9e-05,
+   "atom_abundance": 0.000174,
+   "reserve_units": 40,
+   "stable": null,
+   "in_catalog": false,
+   "structure_source": null,
+   "category": null,
+   "in_library": null,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "?",
+   "layer_counts": null,
+   "divalent_roles": null,
+   "props": null,
+   "attrs": null
+  },
+  {
+   "formula": "O7X7C4P10W5K3A3",
+   "label": "秩7晶7冰4势10流5沌3气3·?",
+   "natoms": 39,
+   "count": 1,
+   "abundance": 1.9e-05,
+   "atom_abundance": 0.00017,
+   "reserve_units": 39,
+   "stable": null,
+   "in_catalog": false,
+   "structure_source": null,
+   "category": null,
+   "in_library": null,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "?",
+   "layer_counts": null,
+   "divalent_roles": null,
+   "props": null,
+   "attrs": null
+  },
+  {
+   "formula": "O7X7CP11W4K5A4",
+   "label": "秩7晶7冰势11流4沌5气4·?",
+   "natoms": 39,
+   "count": 1,
+   "abundance": 1.9e-05,
+   "atom_abundance": 0.00017,
+   "reserve_units": 39,
+   "stable": null,
+   "in_catalog": false,
+   "structure_source": null,
+   "category": null,
+   "in_library": null,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "?",
+   "layer_counts": null,
+   "divalent_roles": null,
+   "props": null,
+   "attrs": null
+  },
+  {
+   "formula": "O8X5P11W5K3A8",
+   "label": "秩8晶5势11流5沌3气8·?",
+   "natoms": 40,
+   "count": 1,
+   "abundance": 1.9e-05,
+   "atom_abundance": 0.000174,
+   "reserve_units": 40,
+   "stable": null,
+   "in_catalog": false,
+   "structure_source": null,
+   "category": null,
+   "in_library": null,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "?",
+   "layer_counts": null,
+   "divalent_roles": null,
+   "props": null,
+   "attrs": null
+  },
+  {
+   "formula": "O8X5P13W5K3A6",
+   "label": "秩8晶5势13流5沌3气6·?",
+   "natoms": 40,
+   "count": 1,
+   "abundance": 1.9e-05,
+   "atom_abundance": 0.000174,
+   "reserve_units": 40,
+   "stable": null,
+   "in_catalog": false,
+   "structure_source": null,
+   "category": null,
+   "in_library": null,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "?",
+   "layer_counts": null,
+   "divalent_roles": null,
+   "props": null,
+   "attrs": null
+  },
+  {
+   "formula": "CL",
+   "label": "冰电·链",
+   "natoms": 2,
+   "count": 1,
+   "abundance": 1.9e-05,
+   "atom_abundance": 9e-06,
+   "reserve_units": 2,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "catalog",
+   "category": "no_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "链",
+   "layer_counts": {
+    "skeleton": 0,
+    "bridge": 0,
+    "cap": 2
+   },
+   "divalent_roles": {},
+   "props": {
+    "mass": 2,
+    "hp": 10,
+    "strength": 1,
+    "flex": 4,
+    "resist": 2,
+    "energy": 7,
+    "mobility": 2,
+    "sense": 5,
+    "attack": 5,
+    "slots": 2
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 0
+   }
+  },
+  {
+   "formula": "O3X2P3WK2",
+   "label": "秩3晶2势3流沌2·团",
+   "natoms": 11,
+   "count": 1,
+   "abundance": 1.9e-05,
+   "atom_abundance": 4.8e-05,
+   "reserve_units": 11,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "catalog",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O2P2K",
+    "OPK"
+   ],
+   "level6_sizes": [
+    5,
+    3
+   ],
+   "shape": "团",
+   "layer_counts": {
+    "skeleton": 8,
+    "bridge": 3,
+    "cap": 0
+   },
+   "divalent_roles": {
+    "T+W": 2,
+    "W+W": 1
+   },
+   "props": {
+    "mass": 34,
+    "hp": 452.4,
+    "strength": 57,
+    "flex": 8,
+    "resist": 22,
+    "energy": 9,
+    "mobility": 8,
+    "sense": 5,
+    "attack": 11,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 2,
+    "multibond": 3
+   }
+  },
+  {
+   "formula": "O3X2CP4W2K2A",
+   "label": "秩3晶2冰势4流2沌2气·团",
+   "natoms": 15,
+   "count": 1,
+   "abundance": 1.9e-05,
+   "atom_abundance": 6.5e-05,
+   "reserve_units": 15,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "catalog",
+   "category": "multi_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O2P3K",
+    "OPK"
+   ],
+   "level6_sizes": [
+    6,
+    3
+   ],
+   "shape": "团",
+   "layer_counts": {
+    "skeleton": 9,
+    "bridge": 5,
+    "cap": 1
+   },
+   "divalent_roles": {
+    "T+W": 3,
+    "O+W": 1,
+    "W+W": 1
+   },
+   "props": {
+    "mass": 41,
+    "hp": 499.2,
+    "strength": 64,
+    "flex": 16,
+    "resist": 24,
+    "energy": 14,
+    "mobility": 15,
+    "sense": 6,
+    "attack": 17,
+    "slots": 1
+   },
+   "attrs": {
+    "ring_count": 2,
+    "multibond": 3
+   }
+  },
+  {
+   "formula": "O5X4C2P14W4K4A2F5",
+   "label": "秩5晶4冰2势14流4沌4气2焰5·?",
+   "natoms": 40,
+   "count": 1,
+   "abundance": 1.9e-05,
+   "atom_abundance": 0.000174,
+   "reserve_units": 40,
+   "stable": null,
+   "in_catalog": false,
+   "structure_source": null,
+   "category": null,
+   "in_library": null,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "?",
+   "layer_counts": null,
+   "divalent_roles": null,
+   "props": null,
+   "attrs": null
+  }
+ ]
+}

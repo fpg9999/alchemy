@@ -1,0 +1,338 @@
+{
+ "spec": {
+  "source": "t63_phase2_result.json",
+  "name": "t63_phase2",
+  "phase": 2,
+  "element_atoms": null,
+  "element_shares": null,
+  "valence_shares": null,
+  "L": 30000.0,
+  "T0": 1000,
+  "T_end": 0,
+  "minutes": 1000,
+  "max_reaction_atoms": 40,
+  "n_molecules": 11129,
+  "n_atoms": 54532,
+  "n_species": 7
+ },
+ "n_species": 7,
+ "species": [
+  {
+   "formula": "O2X2C2F2",
+   "label": "秩2晶2冰2焰2·孤核",
+   "natoms": 8,
+   "count": 4042,
+   "abundance": 0.363195,
+   "atom_abundance": 0.592973,
+   "reserve_units": 32336,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "single_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O",
+    "O"
+   ],
+   "level6_sizes": [
+    1,
+    1
+   ],
+   "shape": "孤核",
+   "layer_counts": {
+    "skeleton": 2,
+    "bridge": 2,
+    "cap": 4
+   },
+   "divalent_roles": {
+    "T+W": 2
+   },
+   "props": {
+    "mass": 20,
+    "hp": 200,
+    "strength": 12,
+    "flex": 6,
+    "resist": 12,
+    "energy": 12,
+    "mobility": 2,
+    "sense": 4,
+    "attack": 22,
+    "slots": 4
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 0
+   }
+  },
+  {
+   "formula": "OCF2",
+   "label": "秩冰焰2·孤核",
+   "natoms": 4,
+   "count": 3920,
+   "abundance": 0.352233,
+   "atom_abundance": 0.287538,
+   "reserve_units": 15680,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "single_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O"
+   ],
+   "level6_sizes": [
+    1
+   ],
+   "shape": "孤核",
+   "layer_counts": {
+    "skeleton": 1,
+    "bridge": 0,
+    "cap": 3
+   },
+   "divalent_roles": {},
+   "props": {
+    "mass": 8,
+    "hp": 60,
+    "strength": 5,
+    "flex": 4,
+    "resist": 3,
+    "energy": 10,
+    "mobility": 1,
+    "sense": 2,
+    "attack": 17,
+    "slots": 3
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 0
+   }
+  },
+  {
+   "formula": "X2",
+   "label": "晶2·链",
+   "natoms": 2,
+   "count": 3118,
+   "abundance": 0.280169,
+   "atom_abundance": 0.114355,
+   "reserve_units": 6236,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "no_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [],
+   "level6_sizes": [],
+   "shape": "链",
+   "layer_counts": {
+    "skeleton": 0,
+    "bridge": 2,
+    "cap": 0
+   },
+   "divalent_roles": {
+    "同一W原子 x2": 2
+   },
+   "props": {
+    "mass": 8,
+    "hp": 80,
+    "strength": 9,
+    "flex": 0,
+    "resist": 6,
+    "energy": 0,
+    "mobility": 0,
+    "sense": 0,
+    "attack": 2,
+    "slots": 0
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 1
+   }
+  },
+  {
+   "formula": "OC2F",
+   "label": "秩冰2焰·孤核",
+   "natoms": 4,
+   "count": 31,
+   "abundance": 0.002786,
+   "atom_abundance": 0.002274,
+   "reserve_units": 124,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "single_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O"
+   ],
+   "level6_sizes": [
+    1
+   ],
+   "shape": "孤核",
+   "layer_counts": {
+    "skeleton": 1,
+    "bridge": 0,
+    "cap": 3
+   },
+   "divalent_roles": {},
+   "props": {
+    "mass": 7,
+    "hp": 70,
+    "strength": 4,
+    "flex": 5,
+    "resist": 4,
+    "energy": 8,
+    "mobility": 2,
+    "sense": 3,
+    "attack": 13,
+    "slots": 3
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 0
+   }
+  },
+  {
+   "formula": "O2X3C2F2",
+   "label": "秩2晶3冰2焰2·孤核",
+   "natoms": 9,
+   "count": 9,
+   "abundance": 0.000809,
+   "atom_abundance": 0.001485,
+   "reserve_units": 81,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "single_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O",
+    "O"
+   ],
+   "level6_sizes": [
+    1,
+    1
+   ],
+   "shape": "孤核",
+   "layer_counts": {
+    "skeleton": 2,
+    "bridge": 3,
+    "cap": 4
+   },
+   "divalent_roles": {
+    "T+W": 2,
+    "W+W": 1
+   },
+   "props": {
+    "mass": 24,
+    "hp": 240,
+    "strength": 14,
+    "flex": 6,
+    "resist": 15,
+    "energy": 12,
+    "mobility": 2,
+    "sense": 4,
+    "attack": 23,
+    "slots": 4
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 0
+   }
+  },
+  {
+   "formula": "O2X2CF3",
+   "label": "秩2晶2冰焰3·孤核",
+   "natoms": 8,
+   "count": 6,
+   "abundance": 0.000539,
+   "atom_abundance": 0.00088,
+   "reserve_units": 48,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "single_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O",
+    "O"
+   ],
+   "level6_sizes": [
+    1,
+    1
+   ],
+   "shape": "孤核",
+   "layer_counts": {
+    "skeleton": 2,
+    "bridge": 2,
+    "cap": 4
+   },
+   "divalent_roles": {
+    "T+W": 2
+   },
+   "props": {
+    "mass": 21,
+    "hp": 190,
+    "strength": 13,
+    "flex": 5,
+    "resist": 11,
+    "energy": 14,
+    "mobility": 1,
+    "sense": 3,
+    "attack": 26,
+    "slots": 4
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 0
+   }
+  },
+  {
+   "formula": "O2X3CF3",
+   "label": "秩2晶3冰焰3·孤核",
+   "natoms": 9,
+   "count": 3,
+   "abundance": 0.00027,
+   "atom_abundance": 0.000495,
+   "reserve_units": 27,
+   "stable": true,
+   "in_catalog": true,
+   "structure_source": "experiment",
+   "category": "single_trivalent",
+   "in_library": true,
+   "skeleton_blocks": [
+    "O",
+    "O"
+   ],
+   "level6_sizes": [
+    1,
+    1
+   ],
+   "shape": "孤核",
+   "layer_counts": {
+    "skeleton": 2,
+    "bridge": 3,
+    "cap": 4
+   },
+   "divalent_roles": {
+    "T+W": 2,
+    "W+W": 1
+   },
+   "props": {
+    "mass": 25,
+    "hp": 230,
+    "strength": 15,
+    "flex": 5,
+    "resist": 14,
+    "energy": 14,
+    "mobility": 1,
+    "sense": 3,
+    "attack": 27,
+    "slots": 4
+   },
+   "attrs": {
+    "ring_count": 0,
+    "multibond": 0
+   }
+  }
+ ]
+}
