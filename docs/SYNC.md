@@ -177,3 +177,14 @@ git push
 1. **要不要现在装 git 并把本轮内容推上去？**（需要你授权安装软件 + 向你的 GitHub 推送）
 2. **`t*_result.json` 要不要改走 gz？**（仓库 500MB → 60MB，但改变现有习惯）
 3. **`HANDOFF.md` 的单写者是谁？**（不定这个，文档冲突迟早发生）
+
+---
+
+## 自动推送（2026-11-19 起）
+
+本机已安装 `post-commit` 钩子：**每次 `git commit` 成功后自动 `git push origin <当前分支>`**。
+
+- 位置：`.git/hooks/post-commit`（只在本机生效，不进版本库）
+- 失败时会在提交输出里提示 `[post-commit] 自动推送失败`，此时手动执行 `git push` 即可
+- 关闭方法：删除 `.git/hooks/post-commit`
+- 注意：钩子在**提交时**触发，所以 `git commit --amend`、`rebase` 等若产生新提交也会推送
