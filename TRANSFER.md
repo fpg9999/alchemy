@@ -1,22 +1,22 @@
 # 跨电脑交接方案（ALCHEMY）· 最新成果版
 
-> 最后更新：**2026-11-18**（T68~T70b 图形阶段完成后，工作区与仓库同步整理）
+> 最后更新：**2026-11-18**（内核入库：`alchemy/` 包 + 106 项测试 + 9 份规则文档 + 群系数据，远程提交 `4a2e4d6`）
 > 工作目录：`G:\AI work\deepseek\work1\alchemy`
 > 交接入口：`HANDOFF.md`（最新结论以它为准）；本文件负责"如何迁移/同步"。
 > 远程仓库：**https://github.com/fpg9999/alchemy**
 
 ---
 
-## 0. 当前状态（2026-11-17）
+## 0. 当前状态（2026-11-18）
 
 | 项目 | 状态 |
 |---|---|
 | 本地仓库 | `G:\AI work\deepseek\work1\alchemy`，分支 `main` |
-| 远程仓库 | `https://github.com/fpg9999/alchemy`（**已推送，含 T01~T70b 全部提交**） |
+| 远程仓库 | `https://github.com/fpg9999/alchemy`（**已推送，含 T01~T76 与 kernel `4a2e4d6` 全部提交**） |
 | 认证 | Git Credential Manager 已存 `fpg9999` 的 GitHub 凭据（`cmdkey` 中 `git:https://github.com`）；`gh` CLI 未登录，但不影响 git push |
-| 推送 | **已完成**：`main → origin/main`（T62~T67 提交见下；T68~T70b 与 2026-11-18 整理见 §6） |
-| 最新实验 | **T70b 整体形体画法**（T68 骨架形状语言/36 分子图册 → T69 连接件与端帽（元素隐去）→ T70 生成式形状语言 → T70b 把块/桥/端帽并入同一剪影；报告 `docs/T70B_WHOLE_BODY.md`，前置 `docs/T68_GIANT_ATLAS.md`、`docs/T69_SKELETON_SHAPES.md`、`docs/T70_EMERGENT_GLYPHS.md`） |
-| 本地 commit 历史 | T01 → … → T61 六边形摆放 → T62 等量价数 → T63 逐级价数滴定 → T64 生态群系（12 群系）→ T65 生态群系第二轮（10 群系）→ T66 生态群系第三轮（化合物播种）→ T67 生态群系总目录（32 群系分类）→ **T68 大分子骨架形状语言（36 个 ≥14 原子稳定分子图册）→ T69 连接件/端帽（元素隐去版）→ T70 生成式形状语言 → T70b 整体形体画法（最新，见 §6）** |
+| 推送 | **已完成**：`main → origin/main`（T68~T70b / T71~T76 / kernel 提交见 §6） |
+| 最新成果 | **内核入库 `4a2e4d6`（2026-11-18 22:48）**：规则 1~11 抽成 `alchemy/` 纯标准库包（四入口 + 106 项测试全绿），9 份规则文档（三轴判相 v4 / 物相规则 / 口径分歧 / 能力 512 / 外貌 / 性状三数值 / 群系规格与候选）+ `data/biomes/` + `examples/` + `images/biome_candidates/`；整理分析见 `docs/KERNEL_INTAKE.md` |
+| 本地 commit 历史 | T01 → … → T61 六边形摆放 → T62 等量价数 → T63 逐级价数滴定 → T64 生态群系（12 群系）→ T65 生态群系第二轮（10 群系）→ T66 生态群系第三轮（化合物播种）→ T67 生态群系总目录（32 群系分类）→ T68~T70b 图形阶段 → **T71~T76 能力/形态/方块世界（`8877e8d`）→ kernel 内核入库（`4a2e4d6`，最新）** |
 
 > 2026-11-18 工作区整理：已删除未跟踪的根目录日志/调试图/`__pycache__` 与工作区根的 2026-11-14 旧 ZIP/bundle 快照；
 > `archive/` 已按阶段分子文件夹；传输工具在 `tools/`；详见 `docs/CLEANUP_LOG.md` 末节。
@@ -242,21 +242,38 @@ T67 无大结果文件（`t67_catalog.json` 约 40KB，直接入库）。
 1. Python 3.10+ 可运行；
 2. `pip install -r requirements.txt`（Pillow）；
 3. 数据文件存在（或 `python unpack_data.py`）；
-4. 冒烟测试：
+4. 冒烟测试（内核，推荐）：
    ```powershell
-   python -c "import pot_v4; print(pot_v4.simulate(['O','K']))"
+   $env:PYTHONIOENCODING="utf-8"
+   python examples/demo_kernel.py      # 四入口演示（GBK 控制台需上一行，否则 ✓/→ 报 UnicodeEncodeError）
+   python tests/run_all.py             # 106 项测试全绿（约 21~27s）
    ```
-5. 读 `HANDOFF.md` 第 0 节的新对话启动语；
+   兼容旧根脚本：`python -c "import pot_v4; print(pot_v4.simulate(['O','K']))"`。
+5. 读 `HANDOFF.md` 第 0 节的新对话启动语、§13（内核包与新规则体系）；
 6. 需要最新实验时：`python t67_catalog.py`（汇总 32 群系总目录，不跑模拟）；要跑模拟：化合物播种
    `python t66_biomes.py --all`（或复用 `t66_analysis.py` / `t66_render.py` / `t66_verify.py`）；
    上一轮 T65 用 `python t65_biomes.py --all`；T64 用 `python t64_biomes.py --all`
    （+ `t64_hex_*`）；T63 用 `python t63_staged.py --phase all`。图形阶段（不跑模拟）：
    `python t68_atlas.py`（36 分子图册）→ `python t69_render.py`（T69 连接件版）→
    `python t70_render.py`（生成式形状语言四图）→ `python t70b_body.py`（整体形体图）。
+   内核阶段（不跑模拟）：`python examples/build_biome_candidates.py`（复算候选群系，约 26s）；
+   `python examples/render_species_sheets.py`（46 种物种图，需 Pillow）。
 
 ---
 
-## 6. 本次推送记录
+## 6. 推送记录
+
+### 6.1 2026-11-18（最新两次）
+
+| 项目 | 内容 |
+|---|---|
+| 远程 | `https://github.com/fpg9999/alchemy`，分支 `main` |
+| 远程 HEAD | **kernel 提交 `4a2e4d6`**（`kernel: 抽出 alchemy 内核（四入口 + 106 项测试）`，88 files，纯新增） |
+| 上一次 | `8877e8d` — `T71-T76: 能力体系与分化形态 / 器官几何 / 分类规则 / 方块世界 / 逐骨架属性 / 桥功用标签 + 报告与图` |
+| 再上 | `4c79217` — `T68-T70b: 大分子图形阶段成果入库` |
+| 本地核对 | 拉取后 `main...origin/main` 同步、工作树干净；`python tests/run_all.py` → 106/106 PASS |
+
+### 6.2 本次推送记录（T67 及以前）
 
 | 项目 | 内容 |
 |---|---|

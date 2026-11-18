@@ -1,6 +1,6 @@
 # ALCHEMY 项目总交接文档
 
-> 最后更新：2026-11-17（T55→T68 系列实验；T61 六边形严格摆放、T62 等量价数两阶段、T63 聚素熔体逐级价数滴定、T64 生态群系 12 群系、T65 生态群系第二轮 10 群系、T66 化合物播种 10 群系、T67 生态群系总目录（32 群系分类）完成）
+> 最后更新：2026-11-18（**内核入库**：规则 1~11 抽成 `alchemy/` 纯标准库包，四入口 + 106 项测试全绿；三轴判相/物相规则/口径分歧/能力/外观/性状/群系规格共 9 份新文档入库；目录 84,225 条已全部切到规则 1~11 口径）
 > 工作目录：`G:\AI work\deepseek\work1\alchemy`
 > 本文件是新对话/新接手者的**唯一入口**；读完它再读 `INDEX.md` 和对应主题的 `docs/T*.md`。
 
@@ -14,7 +14,9 @@
 你在接手一个"炼金术/元素反应"游戏化学项目。
 工作目录：<新电脑上的 alchemy 目录>。
 请先完整阅读 HANDOFF.md，再按需阅读 INDEX.md、TRANSFER.md 和 docs/ 下的 T*.md。
-规则实现以 pot_all.py / pot_v2.py / pot_v3.py 为准；
+规则实现以 `alchemy/` 内核包为准（规则 1~11 = `alchemy/core/reactor.py`，`rules=11` 默认；四入口 simulate/embed+validate/get_catalog/classify）；
+根目录 `pot_all.py` / `pot_v2.py` / `pot_v3.py` / `pot_v4.py` 为历史兼容实现；
+新规则文档在 `docs/THREE_AXES_FINAL.md`、`PHASE_RULE.md`、`CALIBER_DIVERGENCE.md`、`ABILITY.md`、`TRAITS.md`，整理分析见 `docs/KERNEL_INTAKE.md`；
 自然环境的"不完全反应"实现在 t28_rule_v2.py；
 并列裁决分析在 t37_tie_analysis.py / t38b_policies.py。
 不要重复造轮子，不要盲目重跑 archive/ 里的清理脚本。
@@ -34,7 +36,7 @@
 
 ---
 
-## 2. 基础模型（全部代码以 `pot_*.py` 为准）
+## 2. 基础模型（正式实现 = `alchemy/` 内核包；根目录 `pot_*.py` 为历史兼容实现）
 
 ### 2.1 元素与价数
 
@@ -783,7 +785,7 @@ python t30_self_decomp.py
 
 详见 `TRANSFER.md`。三种方式：
 
-1. **GitHub（推荐）**：仓库已在本地初始化并提交（未 push）；按 TRANSFER.md 的步骤 `gh auth login` 后创建远程并 push，或手动建 repo 后 `git remote add` + push。
+1. **GitHub（推荐，已完成）**：仓库已推送至 `https://github.com/fpg9999/alchemy`（含 T01~T76 与 kernel 提交 `4a2e4d6`）；新电脑 `git clone` 后 `python unpack_data.py` 即可。日常同步见 TRANSFER.md §6。
 2. **全量压缩包**：`alchemy_transfer_2026-11-14.zip`（在 `work1/` 下，包含所有原始大文件；不含 `.git`/`__pycache__`）。
 3. **Git bundle**：`alchemy_repo.bundle`（离线 git 历史，`git clone alchemy_repo.bundle alchemy`）。
 
@@ -800,7 +802,8 @@ python t30_self_decomp.py
 2. **并列裁决规则化**：把"第 6 级按元素序 + 同中间态骨架块优先 + 最终 fallback"写成正式规则 10/11，并统计 400/2000 样本的库内率（用 `mol_label` 而非 `wl_key`）。
 3. **库口径与 6 级库闭合（T39/T45 后更新）**：用户 2026-11-15 明确"库 = 中间态骨架（38 + 7×3），
    终态由库内块加固/融合形成，不算库外"。规则 10/11 加入后，三价 ≤11 全组合的 6 级骨架歧义=0、
-   库外块=0；**剩余工作：把历史数据迁移到规则 1~11 口径**（`pot_v4`；目录结构 17.4% 变化）。
+   库外块=0；**数据迁移已完成（2026-11-18）**：84,225 条目录已 100% 切到规则 1~11 口径（实际替换 14,745 条 = 17.51%，
+   分子式不变；`pot_all` 只能复现 69,480 条 = 82.49%），内核 `alchemy/` 与 `tests/` 已入库，详见 `docs/CALIBER_DIVERGENCE.md`。
 4. **温度+循环整合**：T32 循环 + T35 自分解优先 + 能量（如需要）做成可运行的时间步模拟器。
 5. **大分子**：>16 原子目录不完整；可继续采样 155+ 原子，但注意嵌入预算（20M/50M 节点）。
 6. **设计层**：T18D 三维度设计仍未落数值/引擎，可作为后续玩法方向。
@@ -854,7 +857,8 @@ python t30_self_decomp.py
 
 ## 12. 当前结论一句话
 
-- 大锅（完全反应）规则 1~11 稳定（正式实现 `pot_v4.py`），84,225 种物质目录可用（**结构为 1~9 口径，待迁移**）；
+- 大锅（完全反应）规则 1~11 稳定（正式实现 `alchemy/core/reactor.py`，根目录 `pot_v4.py` 为历史兼容版），
+  84,225 种物质目录可用且**已 100% 为规则 1~11 口径**（替换 14,745 条 = 17.51%，分子式不变；`place=null` 仅 245 条 = 0.29%）；
 - 骨架 = 38 库（6 级块）+ 2 价/1 价装饰；终态 = 库内 6 级块 + 0 级同类键加固/融合
   （671 个"与库不逐字同构"的融合形态，宿主 670/670 结构定理通过，**不算库外**）；
 - 自然环境不完全反应 v2 能产生新物质（两分子约 12% 变化，其中 75% 新分子式；多分子更高）；
@@ -1017,6 +1021,75 @@ python t30_self_decomp.py
   （每块=器官区+器官核，桥=骨纹+脉络，融合=焊纹）。产物 `t70b_body.py`、`images/t70b_bodies.png`、
   `images/t70b_all36.png`、`docs/T70B_WHOLE_BODY.md`。
 
+## 13. 内核包 `alchemy/` 与新规则体系（2026-11-18 入库，最新）
+
+### 13.1 包结构（纯标准库，不 import 任何根目录历史脚本）
+
+| 文件 | 职责 |
+|---|---|
+| `alchemy/__init__.py` | 公开 API 汇总（`__version__="0.1.0"`，急切导入 `phase`/`biome`） |
+| `core/elements.py` | 9 元素表、价数、周期表距离、六边形偏移、分子式解析 |
+| `core/canon.py` | 分子同构规范形（替代不稳健的 `wl_key`） |
+| `core/geometry.py` | 摆放搜索 `embed` + 严格校验 `validate` |
+| `core/reactor.py` | 大锅反应引擎，`rules=8\|9\|11` 单份参数化实现（`rules` 逐段追加 key 分量） |
+| `core/catalog.py` | 84,225 条目录加载/查询/缓存；缺文件提示 `python unpack_data.py` |
+| `core/classify.py` | 骨架分类：38 库、6 级块、三层拆解、结构定理 |
+| `phase.py` | 三轴判相：`phase_of` / `describe` / `physical_name`（三模式 hybrid/hierarchy/cycle） |
+| `ability.py` | 8 情形 × 3 轴 = 512 能力编号 |
+| `attrs.py` | 硬度/黏性/温度三数值属性与档位 |
+| `biome.py` | 群系物种表、物性、分层、CSV/JSON/MD 导出 |
+| `data/forms38.json` | 38 形态库（与根 `t8_forms.json` 字节级相同）；`data/biome_names.json` 名称映射 |
+
+### 13.2 四入口与测试
+
+- `simulate(feed, rules=11, return_level6=False)` → `[{atoms, edges}]`；失败 `None`；`rules∉{8,9,11}` → `ValueError`；
+- `embed(atoms, edges, max_nodes=None, final_check=True)` → `{int:(q,r)}`（`None` = 未判定）；`validate(place, atoms, edges)` → `(bool, 原因)`；
+- `get_catalog(path=None)` → 84,225 条只读索引；`classify(atoms, edges, rules=11, library=None, place=None, check_stable=True)`（**place 需 int 键**，
+  目录 JSON 是 str 键，`classify_record` 内部转）；
+- 测试：`python tests/run_all.py` → **106/106 PASS**（约 21~27s；11 个 `test_*.py`）；`python tests/run_all.py reactor` 单模块 0.2s；
+- 示例：`python examples/demo_kernel.py`（Windows GBK 控制台需 `PYTHONIOENCODING=utf-8`）。
+
+### 13.3 三轴判相（v4 定稿，`docs/THREE_AXES_FINAL.md`）
+
+3 价 O/K/P → 概念族 **刚体/胶体/软体**；2 价 X/A/W → 物态 **固/液/气**；1 价 C/F/L → 能量 **冰/焰/电**。
+判定 = 严格多数 ⇒ 两两并列循环压制（聚>散>动>聚）⇒ 三者全等（含全零）归聚；**永不第四相**，27 型全覆盖。
+全目录 v4 分布：概念族 软体 36.44% / 刚体 31.82% / 胶体 31.74%；物态 固 35.86% / 液 33.54% / 气 30.60%；
+能量 冰 42.70% / 焰 28.66% / 电 28.64%；46.29% 的物质至少一条轴靠并列裁决定值，**动素（P/W/L）永不赢得并列**。
+注意：`PHASE_RULE.md` 正文的 41.41/30.60/27.99 是 **hierarchy** 口径，`THREE_AXES_FINAL.md` 的 35.86/33.54/30.60 是 **hybrid** 口径（差异全部来自模式，已全量复算）。
+物态只由 X/A/W 组成决定、物质表静态、**与温度解耦**；旧 T33/T34/T35 温度规则未进内核（属移出，非等价实现）。
+恒素 E：0 价、周期表中心、只作借出—归还媒介（净消耗 0）；饱和定理 总键级 = Σ价数/2 全目录 84,225/84,225 成立。
+
+### 13.4 口径分歧（`docs/CALIBER_DIVERGENCE.md`）
+
+规则 1~8=`pot_all`、1~9=`pot_v3`、1~11=`pot_v4`（正式）。v3→v4 结构差 14,615（17.35%），目录实际替换 14,745（17.51%），分子式差 0；
+差异只在 T=n(O)+n(P)+n(K)≥4（T≤3 的 9,070 条 0 差异）；`place=null` 245 条（替换产生 28 + 历史 217，216 条现在能直接摆）；
+6 级骨架库（38）不受规则 9/10/11 影响。
+
+### 13.5 能力 / 外观 / 性状（`docs/ABILITY.md`、`APPEARANCE.md`、`TRAITS.md`）
+
+- 能力 = 每轴 8 情形（3 单主导 + 3 双主导 + 三合 + 无）= **512**，取代 T74 的并列裁断 27 型分类；全目录实际 308/512；
+- 外观采用 `T75_BLOCK_WORLD.md` 为唯一主规范，接口只依赖 `alchemy.attrs.skeleton_units`，**当前仅记录不实现**；
+- 性状 = **整分子**三数值累加（取代 T75b 逐骨架口径）：硬度 O3/K2/P1（阈值 10/16）、黏性 X3/W2/A1（6/11）、温度 F3/L2/C1（3/6），
+  阈值取 6000 样本 33%/67% 分位。
+
+### 13.6 群系数据与示例（`docs/BIOME_SPEC.md`、`docs/BIOME_CANDIDATES.md`）
+
+`data/biomes/_catalogue.json` 是 **12 条实验模板 × 20 字段**的描述性目录（不是 32 群系目录；32 群系 A10/B11/C7/D4 仍以根 `t67_catalog.json` 为准）；
+`data/biomes/t*.{csv,json}` 是 12 组模板物种表；`candidates/` 是 5 个候选群系 + `_union`（121 种 × 34 字段）。
+`examples/build_biome_candidates.py` 26.4s 可复算（5 个候选 CSV 与文档逐字节相同）；`render_species_sheets.py`（需 Pillow）出 46 种物种 4 页图。
+复算：46 种目录内物质 → 刚体 31/软体 13/胶体 2、固 35/液 6/气 5、冰 39/焰 5/电 2，与文档 0 差异（"质量份额"实为原子数占比）。
+
+### 13.7 已知问题（修复优先级）
+
+1. `get_catalog` 缓存无锁（4 线程并发重复加载 4×39MB）且返回可变共享 dict；
+2. `place` 键类型双轨（目录 str 键 vs `classify` 要求 int 键 → `KeyError: 1`）；
+3. `examples/demo_kernel.py` 在 Windows GBK 控制台崩溃（README 已提示需 `PYTHONIOENCODING=utf-8`）；
+4. `phase.py` 模块 docstring 仍写 v2/cycle/第四相、`__all__` 漏 6 个符号；`unpack_data.py` 校验失败退出码仍 0；
+5. 测试硬依赖仓库根 `t57/t58/t62/t63_*` 与 39MB 目录（无 skip 守卫）；`data/biomes/t*` 是旧内核快照（13 处 shape/label 为旧「孤核」）。
+   详细清单见 `docs/KERNEL_INTAKE.md` §6。
+
+---
+
 ## 维护记录
 
 ### 2026-11-18 · T68~T70b 完成后的工作区/仓库整理
@@ -1083,3 +1156,12 @@ python t30_self_decomp.py
   器官按"位置/朝向/受力"选形态且形态**直接代替**器官外形（T73）→ 分类规则改为按价数元素判定（T74）→
   世界改成方块世界（T75：每个骨架 = 1 个单位方块，属性为硬度/粘性/温度）→ 属性**逐骨架**计算、桥不计入（T75b）→
   桥的 13 种功用标签（T76）。详见 `docs/T75_BLOCK_WORLD.md`、`docs/T76_BRIDGE_FUNCTIONS.md`。
+
+- **内核入库（最新，2026-11-18）**：远端提交 `4a2e4d6`「kernel: 抽出 alchemy 内核（四入口 + 106 项测试）」（88 个新增文件）已拉到本地并完成整理分析。
+  内容：① `alchemy/` 纯标准库内核包（四入口 + phase/ability/attrs/biome，规则 1~11 单份参数化）；② 9 份规则文档
+  （`THREE_AXES_FINAL`/`PHASE_RULE`/`CALIBER_DIVERGENCE`/`ABILITY`/`APPEARANCE`/`TRAITS`/`BIOME_SPEC`/`BIOME_CANDIDATES`/`SYNC`）；
+  ③ `data/biomes/`（12 组模板物种表 + 5 个候选 + `_union` 121 种）、`examples/`（3 个脚本）、`images/biome_candidates/`（6 张图）；
+  ④ `tests/` 106 项（复跑全绿）；⑤ `pyproject.toml`（`alchemy-core 0.1.0`，纯标准库，`plots` extra 需 Pillow）。
+  整理分析报告 `docs/KERNEL_INTAKE.md`（拉取核对 / 包结构 / 规则体系 / 与 T71~T76 承接 / 质量核对 / 风险与待办）；
+  根 `README.md`、`INDEX.md`、`TRANSFER.md` 已同步更新；目录 84,225 条确认 100% 为规则 1~11 口径。
+  **已知 P1 问题**：`get_catalog` 缓存无锁、`place` 键类型双轨、demo GBK 崩溃（详见 §13.7 与 `KERNEL_INTAKE.md` §6）。

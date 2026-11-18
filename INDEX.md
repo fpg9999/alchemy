@@ -15,20 +15,37 @@
 - `tools/`：跨电脑传输工具（`make_transfer_archive.py`、`pack_transfer_data.py`）
 - 根目录：核心模拟器 + 权威数据 + 各阶段脚本/数据 + `unpack_data.py` + 本索引
 
-## 核心代码（根目录）
-- `pot_all.py`：规则 1~8 通用模拟器
-- `pot_v2.py`：严格摆放校验（embed_mol2 / validate_place）
-- `pot_v3.py`：正式口径（规则 1~9）
+## 核心代码（根目录 + 内核包）
+
+- **`alchemy/`（内核包，纯标准库，2026-11-18 入库）**：规则 1~11 大锅反应 / 摆放 / 目录 / 分类的正式实现，四入口
+  `simulate` / `embed`+`validate` / `get_catalog` / `classify`；`core/` 为 elements/canon/geometry/reactor/catalog/classify，
+  上层为 `phase`（三轴判相）/`ability`（512 能力）/`attrs`（三数值性状）/`biome`（群系物种表）；`rules=8|9|11` 单份参数化；
+  见 `alchemy/README.md`、`docs/KERNEL_INTAKE.md`；测试 `tests/run_all.py`（106 项）
+- `pot_all.py`：规则 1~8 通用模拟器（历史，已由 `alchemy` 覆盖）
+- `pot_v2.py`：严格摆放校验（embed_mol2 / validate_place；历史，对应内核 `alchemy.embed/validate`）
+- `pot_v3.py`：历史口径（规则 1~9；正式口径已改为规则 1~11）
+- `pot_v4.py`：规则 1~11 根目录实现（历史/兼容；正式实现在 `alchemy/core/reactor.py`）
 - `t4_*`~`t13_*`：各阶段扫描/分析脚本（文件名前缀=任务编号）
 
-## 权威数据（根目录）
-- `t4_catalog_all_validated.json`：84,225 条物质目录；`t4_catalog_index.json` 索引
+## 权威数据（根目录 + 内核）
+
+- `alchemy/data/forms38.json`：38 三价骨架库（内核版，与根 `t8_forms.json` 字节级相同，103,930B）
+- `alchemy/data/biome_names.json`：物种中文名映射（754B）
+- `data/biomes/`：群系模板物种表 `t55_kinetic`/`t56_kinetic`/`t57_area`/`t58`/`t59_phaseA|B`/`t62_phaseA|B`/`t63_phase1~4`
+  各含 `.csv`(17 列)+`.json`，`_catalogue.json`（12 条模板 × 20 字段描述性目录），`candidates/`（T55·T57·T63S4·T62B·T59B 各 `.csv` +
+  `_union.csv`/`_union.json` 121 种 × 34 字段）；根 `t67_catalog.json` 仍是 32 群系总目录（A10/B11/C7/D4）
+- `t4_catalog_all_validated.json`：84,225 条物质目录（**100% 规则 1~11 口径**）；`t4_catalog_index.json` 索引
 - `substances.json`（29 聚素）、`t9_single_trivalent.json`（单三价）、`t8_forms.json`（38 三价骨架）
 - `t10_skeletons.json`（7 骨架模块）、`t11_*.json`（二元反应/循环）、
   `t12a_chains.json`（反应链）、`t12b_*.json` + `t12b_pairs.jsonl`（7.73M 对）、
   `t12c_*.json`（全目录采样、140/108 原子纪录）、`t12b_catalog_gap.json`（212 补充产物）
 
 ## 主要报告（docs/）
+
+- **2026-11-18 内核入库新文档**：`THREE_AXES_FINAL.md`（三轴判相 v4 定稿）、`PHASE_RULE.md`（物相规则 v1/v2）、
+  `CALIBER_DIVERGENCE.md`（规则 1~8/1~9/1~11 口径分歧审计）、`ABILITY.md`（512 能力）、`APPEARANCE.md`（外观，仅记录）、
+  `TRAITS.md`（硬度/黏性/温度三数值）、`BIOME_SPEC.md`（群系物种规格）、`BIOME_CANDIDATES.md`（候选群系清单）、
+  `SYNC.md`（同步约定）、`KERNEL_INTAKE.md`（本次整理分析总报告）
 - `T12_FINAL_REPORT.md`：二元反应总报告（最新）
 - `T12A_CHAINS.md` / `T12B_PAIRWISE.md` / `T12C_LARGE_SAMPLE.md`：三条主线
 - `T11_BINARY_REACTIONS.md` / `T11B_REACTION_CYCLES.md`：二元反应与循环
@@ -47,6 +64,10 @@
   传输工具移入 `tools/`；`t60_report_template.md` 移入 `docs/templates/` 并修正 `t60_fill_report.py` 的模板路径。
 
 ## 最新补充
+- **内核入库（2026-11-18，最新）**：`alchemy/` 内核包（11 模块 + data，纯标准库）；`tests/`（106 项全绿）；
+  `examples/`（`demo_kernel.py` 四入口演示、`build_biome_candidates.py` 复算候选群系、`render_species_sheets.py` 46 种物种图）；
+  `data/biomes/`（12 组模板物种表 + 5 个候选 + `_union` 121 种）；`images/biome_candidates/`（索引图/图例/4 页物种图）；
+  9 份规则文档；整理分析 `docs/KERNEL_INTAKE.md`；推送记录见 `TRANSFER.md` §6（kernel 提交 `4a2e4d6`）
 - images/t13_140_atom_reaction.png：140 原子最大分子纪录的产生反应图（含两个反应物与产物结构）
 - docs/T13_BIG_SEARCH.md：更大分子搜索与尺寸上界验证（已完成）
 - 	13_new_record.json：最新已验证纪录 155 原子结构；	13_big_search.json：1544 个候选全量
