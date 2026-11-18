@@ -8,7 +8,8 @@
 2. README.md
 3. TRANSFER.md（如果还需要迁移/同步）
 4. INDEX.md（历史文件索引）
-5. 按需读 docs/ 下对应主题的 T*.md
+5. 按需读 docs/ 下对应主题的 T*.md（**现行口径优先**：README.md 顶部、docs/ABILITY.md、docs/TRAITS.md、
+   docs/BIOME_SPEC.md、docs/INTAKE_R2.md；T71~T76 文档已加"历史/已被取代"横幅，只作背景）
 
 当前状态摘要（读 HANDOFF 后以 HANDOFF 为准）：
 - 2D 粒子环境实验已完成 **T55~T66**：T55 三元素单质→OXC 99.5%；T56 六元素价数比→CF/XA/OK 99.6%；
@@ -42,10 +43,10 @@
   `docs/T66_BIOMES.md` 与 `docs/T66_VERIFY.md`，T65 见 `docs/T65_BIOMES.md`，
   T64 见 `docs/T64_BIOMES.md`，T63 见 `docs/T63_STAGED_TITRATION.md`，
   T62 见 `docs/T62_EQUAL_VALENCE.md`；
-- 大锅反应规则 1~11 以 pot_v4.py 为准（规则 10=同中间态骨架内优先，规则 11=链先于环）；
-  pot_v3.py 是规则 1~9 的历史实现；
+- 大锅反应规则 1~11 以 **`alchemy/` 内核为准**（`alchemy.core.reactor`，`rules=8|9|11` 为单份参数化实现；
+  规则 10=同中间态骨架内优先，规则 11=链先于环）；`pot_v4.py` 保留为兼容实现，`pot_v3.py` 是规则 1~9 的历史实现；
 - 规则 10/11 已验证：三价计数 ≤11 全部组合、全并列分支 → 6 级骨架歧义 0、库外块 0；
-  但 84,225 目录结构仍是规则 1~9 口径（pot_v4 下约 17.4% 结构变化、分子式不变），迁移待做；
+  84,225 条目录**已 100% 切到规则 1~11 口径**（14,745 条 = 17.51% 结构被替换，分子式不变），迁移已完成；
 - 自然环境不完全反应 v2 在 t28_rule_v2.py；
 - 大数据在 _data_gz/，若原始 JSON 不在，先运行 python unpack_data.py；
 - 当前温度设计采用"全加和 + 不稳定物质自分解优先"（T35）；

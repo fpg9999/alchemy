@@ -48,12 +48,15 @@
 > T70b 整体形体画法（块/桥/端帽并入同一剪影，一个分子看起来像一件完整物质，
 > [`docs/T70B_WHOLE_BODY.md`](docs/T70B_WHOLE_BODY.md)）。
 >
-> **能力与方块世界阶段（2026-11-18，最新）**：T71 每种骨架的能力与分化（30 能力/6 形态，结构门控生命度）、
+> **能力与方块世界阶段（2026-11-18，历史口径）**：T71 每种骨架的能力与分化（30 能力/6 形态，结构门控生命度）、
 > T72 能力扩到 72 项 ×9 类 + 28 种分化形态 + 小分子形态；T73 器官按位置/朝向选形态、形态**直接代替器官外形**
 > （[`docs/T73_MORPH_GEOMETRY.md`](docs/T73_MORPH_GEOMETRY.md)）；T74 分类规则改为按价数元素判定；
-> **T75 方块世界**：每个骨架 = 1 个单位方块，物质 = 若干方块拼成，属性改为硬度/粘性/温度
+> **T75 方块世界**：每个骨架 = 1 个单位方块，物质 = 若干方块拼成（外观仍以此为主规范）
 > （[`docs/T75_BLOCK_WORLD.md`](docs/T75_BLOCK_WORLD.md)）；**T75b** 属性改为**逐骨架**计算、连接桥不计入；
 > **T76 桥的功用标签**（刚性焊接/铰接/定距隔空/多点编织…，[`docs/T76_BRIDGE_FUNCTIONS.md`](docs/T76_BRIDGE_FUNCTIONS.md)）。
+> 注意：T71/T72 的能力项、T75/T75b 的「硬度」与逐骨架口径、T74 的 27 型并列序均已被新成果取代——
+> 现行能力见 [`docs/ABILITY.md`](docs/ABILITY.md)（v3 三项 + v4 九项三阶），现行物性见 [`docs/TRAITS.md`](docs/TRAITS.md)
+> （密度/粘性/温度 27 格），能力→器官→生命的新设计见 [`docs/ABILITY_EMERGENCE.md`](docs/ABILITY_EMERGENCE.md)。
 
 ## 快速开始
 
@@ -69,7 +72,7 @@
    ```powershell
    $env:PYTHONIOENCODING="utf-8"      # Windows GBK 控制台需要，否则 demo 的 ✓/→ 会报 UnicodeEncodeError
    python examples/demo_kernel.py     # 四入口演示 + 骨架分类表
-   python tests/run_all.py            # 106 项测试（约 21~27s）
+   python tests/run_all.py            # 124 项测试（约 17~27s）
    ```
 4. 兼容旧根脚本的大锅反应示例：
    ```powershell
@@ -83,8 +86,8 @@
 
 ## 目录
 
-- `alchemy/`：**内核包（纯标准库）**——四入口大锅/摆放/目录/分类，另有 `phase`（三轴判相）、`ability`（512 能力）、`attrs`（三数值性状）、`biome`（群系物种表）；见 [`alchemy/README.md`](alchemy/README.md)；
-- `tests/`：内核测试（11 个 `test_*.py` + `run_all.py`，106 用例）；`examples/`：内核/群系示例与出图；
+- `alchemy/`：**内核包（纯标准库）**——四入口大锅/摆放/目录/分类，另有 `phase`（三轴判相 v4）、`ability`（能力 v3 三项数值 + v4 九项次级三阶，512 冻结作历史）、`attrs`（密度/粘性/温度 27 格）、`biome`（群系物种表）、`ops`（9 操作能力）与 `emergence`（组装体→器官→生命原型）；见 [`alchemy/README.md`](alchemy/README.md)；
+- `tests/`：内核测试（`test_*.py` + `run_all.py`，124 用例 + 涌现原型测试）；`examples/`：内核/群系示例与出图；
 - `pot_all.py` / `pot_v2.py` / `pot_v3.py` / `pot_v4.py`：历史大锅反应与几何校验脚本（规则 1~11 已迁入 `alchemy/`，`pot_v4.py` 保留为兼容实现）；
 - `natural_engine.py` / `fast_pot.py` / `t55_kinetic_env.py`：自然环境引擎与 2D 粒子环境；
 - `t4_*` ~ `t76_*`：各阶段研究脚本/数据（编号=任务阶段；T71~T76 为能力/形态/方块世界）；

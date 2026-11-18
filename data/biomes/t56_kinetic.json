@@ -99,7 +99,7 @@
   },
   {
    "formula": "OK",
-   "label": "秩沌·孤核",
+   "label": "秩沌·链",
    "natoms": 2,
    "count": 1510,
    "abundance": 0.167406,
@@ -116,7 +116,7 @@
    "level6_sizes": [
     2
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 2,
     "bridge": 0,

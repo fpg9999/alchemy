@@ -36,7 +36,7 @@
 | `layer_counts` | 骨架/连接/终端三层原子数 | "骨—肉—刺"比例 |
 | `divalent_roles` | 桥/链段/支臂等计数 | 连接方式（刚性/铰接/软连） |
 | `props` | 9 项属性 + 接口数 | 数值平衡 |
-| `shape` | 团/环/链/星/孤核 | 地图轮廓 |
+| `shape` | 团/星/环/链/孤核（`孤核` 仅当 `natoms <= 1`） | 地图轮廓 |
 
 `props`：`mass / hp / strength / flex / resist / energy / mobility / sense / attack` +
 `slots`（接口数 = 端帽数 + 真桥数，衡量可改造性）。系数来自
@@ -94,11 +94,15 @@ cd <repo>
 # 单个模板
 python -c "import alchemy.biome as B; r=B.load_result('t62_phaseB_result.json'); rows=B.abundance_table(r); B.to_csv(rows,'data/biomes/t62B.csv'); print(B.render_markdown(rows, top=15))"
 
-# 模板目录
-python -c "import alchemy.biome as B; from pathlib import Path; import json; c=B.template_catalogue(sorted(Path('.').glob('t*_result.json')), with_props=False); json.dump(c, open('data/biomes/_catalogue.json','w',encoding='utf-8'), ensure_ascii=False, indent=1)"
+# 模板目录（只取 12 个群系模板；勿用 't*_result.json' 通配——仓库根有 50+ 个 *_result.json）
+python -c "import alchemy.biome as B; from pathlib import Path; import json; T=('t55_kinetic','t56_kinetic','t57_area','t58','t59_phaseA','t59_phaseB','t62_phaseA','t62_phaseB','t63_phase1','t63_phase2','t63_phase3','t63_phase4'); c=B.template_catalogue([Path(t+'_result.json') for t in T], with_props=False); json.dump(c, open('data/biomes/_catalogue.json','w',encoding='utf-8'), ensure_ascii=False, indent=1)"
 
 python tests/run_all.py biome
 ```
+
+> 数据口径：`data/biomes/` 下 12 个模板的 `label` / `shape` 已按**当前内核（rules=11）**
+> 复算刷新（旧快照曾把 `链` / `环` 误记为 `孤核`）；`candidates/_union.json` 的
+> `spec.source` 已统一为相对文件名。需要复核时重跑上面的复现命令即可。
 
 ## 5. 暂缓项（明确记下来，避免以后重复讨论）
 

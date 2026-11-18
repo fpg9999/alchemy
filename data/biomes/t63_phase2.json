@@ -19,7 +19,7 @@
  "species": [
   {
    "formula": "O2X2C2F2",
-   "label": "秩2晶2冰2焰2·孤核",
+   "label": "秩2晶2冰2焰2·链",
    "natoms": 8,
    "count": 4042,
    "abundance": 0.363195,
@@ -38,7 +38,7 @@
     1,
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 2,
     "bridge": 2,
@@ -66,7 +66,7 @@
   },
   {
    "formula": "OCF2",
-   "label": "秩冰焰2·孤核",
+   "label": "秩冰焰2·链",
    "natoms": 4,
    "count": 3920,
    "abundance": 0.352233,
@@ -83,7 +83,7 @@
    "level6_sizes": [
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 1,
     "bridge": 0,
@@ -150,7 +150,7 @@
   },
   {
    "formula": "OC2F",
-   "label": "秩冰2焰·孤核",
+   "label": "秩冰2焰·链",
    "natoms": 4,
    "count": 31,
    "abundance": 0.002786,
@@ -167,7 +167,7 @@
    "level6_sizes": [
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 1,
     "bridge": 0,
@@ -193,7 +193,7 @@
   },
   {
    "formula": "O2X3C2F2",
-   "label": "秩2晶3冰2焰2·孤核",
+   "label": "秩2晶3冰2焰2·链",
    "natoms": 9,
    "count": 9,
    "abundance": 0.000809,
@@ -212,7 +212,7 @@
     1,
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 2,
     "bridge": 3,
@@ -241,7 +241,7 @@
   },
   {
    "formula": "O2X2CF3",
-   "label": "秩2晶2冰焰3·孤核",
+   "label": "秩2晶2冰焰3·链",
    "natoms": 8,
    "count": 6,
    "abundance": 0.000539,
@@ -260,7 +260,7 @@
     1,
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 2,
     "bridge": 2,
@@ -288,7 +288,7 @@
   },
   {
    "formula": "O2X3CF3",
-   "label": "秩2晶3冰焰3·孤核",
+   "label": "秩2晶3冰焰3·链",
    "natoms": 9,
    "count": 3,
    "abundance": 0.00027,
@@ -307,7 +307,7 @@
     1,
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 2,
     "bridge": 3,

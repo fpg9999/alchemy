@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """相分类：三条正交轴，每条轴由该价数层的三元素"投票"决定。
 
-## 规则 v2（2026-11-17 备选方案：循环压制 + 第四相）
+## 规则 v4（2026-11-18 定稿：两两并列循环压制、三者全等归聚）
 
 物质量由三个价数层构成，每层恰好三个元素，做成三条**并列、互不冲突**的轴：
 
@@ -13,43 +13,50 @@
 能量 energy              冰 C / 焰 F / 电 L               冰 / 焰 / 电
 ======================  ==============================  ==========================
 
-**判据**
+**判据（默认 ``mode="hybrid"``）**
 
 1. 该层原子数**严格最多**的元素胜出；
 2. **两两并列**（恰好两个元素同为最大值）→ **循环压制**：
-   ``聚 > 散 > 动 > 聚``（聚压散、散压势/动、动压聚）；
-3. **三者全等**（三个同为最大值，含"全为 0"）→ **第四相**（无相）。
+   ``聚 > 散 > 动 > 聚``（聚压散、散压动、动压聚）；
+3. **三者全等**（三个同为最大值，含"全为 0"）→ 按 ``RULE9_PRIORITY`` 取聚素
+   （``聚 > 散 > 动``），**永不产生第四相**。
 
 循环压制是石头剪刀布式的三循环，没有绝对高低——这给动素留了胜出的路，
 也是它和 v1（层级 `聚>散>动`，动素永不能赢并列）最大的区别。
 
-## 两种模式
+## 三种模式
 
-``mode="cycle"``（默认，v2 方案）与 ``mode="hierarchy"``（v1 方案）只差两点：
+``hybrid``（**默认**，v4 定稿）、``hierarchy``（v1 方案）、``cycle``（v2 遗留，已弃用）：
 
 | | 两两并列 | 三者全等 |
 |---|---|---|
+| ``hybrid`` | 循环压制 聚 > 散 > 动 > 聚 | 聚（按 ``RULE9_PRIORITY``，不产生第四相） |
 | ``hierarchy`` | 按 ``RULE9_PRIORITY``：聚 > 散 > 动 | 聚（并进主相，不产生第四相） |
-| ``cycle`` | 循环压制 聚 > 散 > 动 > 聚 | **第四相** |
+| ``cycle`` | 循环压制 聚 > 散 > 动 > 聚 | **第四相**（``〇``，v2 遗留） |
 
-## 第四相与"无该层"
+## 第四相与"无该层"（仅遗留 cycle 模式）
 
-三元素全等有两种来源，**必须区分**：
+v4 的 ``hybrid`` / ``hierarchy`` **不产生第四相**：``FOURTH`` / ``FOURTH_NAMES`` 与
+``absent_mode``（``fourth`` / ``poly`` / ``none``）只为兼容 v2 的 ``cycle`` 模式保留，
+第四相 ``〇`` 在各轴显示退化为 刚体 / 固 / 冰。
 
-- **真·三者全等**（三者相等且 > 0）：三种元素等量制衡 → 物流意义上的"第四相"；
-- **该层全零**（三者都为 0）：物质根本没有这一层的元素（如 ``LF`` 没有二价原子），
-  这不是"平衡"，是"缺席"。
+cycle 下三元素全等有两种来源，必须区分：
 
-``absent_as_fourth=False`` 时把"全零"单列（``ABSENT``），第四相只剩真正的三者等量。
-全目录实测：状态轴三者全等 6.42%，其中 **4.74% 是全零、只有 1.68% 是真全等**。
-**
+- **真·三者全等**（三者相等且 > 0）：三种元素等量制衡 → 第四相；
+- **该层全零**（三者都为 0）：根本没有这一层的元素（如 ``LF`` 没有二价原子），
+  这不是"平衡"，是"缺席"；``absent_mode="none"`` 时单列为 ``ABSENT``。
+
+全目录实测（v2 口径）：状态轴三者全等 6.42%，其中 **4.74% 是全零、只有 1.68% 是真全等**。
 
 ## 用法
 
     >>> import alchemy.phase as F
+    >>> F.DEFAULT_MODE                        # v4 定稿
+    'hybrid'
     >>> F.phase_of("OXC")["label"]            # '秩·固·冰'
-    >>> F.phase_id("O2XP2WK2A2")              # 'O/A/C'
-    >>> F.phase_id("O2XP2WK2A2", mode="hierarchy")
+    >>> F.phase_of("O2XP2WK2A2")["id"]        # 'O/A/C'
+    >>> F.phase_of("OXC", mode="cycle")["n_fourth"]   # 遗留模式下才可能出现第四相
+    0
 """
 
 from __future__ import annotations
@@ -62,11 +69,12 @@ __all__ = [
     "RULE9_PRIORITY", "AXES", "AXIS_LABELS", "PHASE_NAMES", "FOURTH", "ABSENT",
     "FOURTH_PHASE_NAME", "FOURTH_NAMES", "FRAME_NAMES", "STATE_NAMES",
     "ENERGY_NAMES", "ENERGY_EFFECTS",
+    "FRAME_ADJ", "ENERGY_ADJ", "STATE_NOUN", "TYPICAL",
     "BEATS", "CATEGORY_ORDER", "SUPPORTED_MODES",
     "ABSENT_MODES", "DEFAULT_MODE", "DEFAULT_ABSENT_MODE",
     "axis_winner", "axis_vote", "phase_of", "phase_names", "phase_id",
     "phase_label", "agree_axes", "distribution", "role_of", "state_of",
-    "energy_of", "two_axis_table", "N_TYPES",
+    "energy_of", "two_axis_table", "physical_name", "describe", "N_TYPES",
 ]
 
 #: 与反应规则 9 完全相同的元素优先级（层级模式用）。不要另定一套。
@@ -313,7 +321,7 @@ def agree_axes(formula_or_vec, **kw) -> int:
 
 
 def role_of(formula_or_vec, **kw) -> dict:
-    """概念族的**骨架力学形态**：刚体 / 胶体 / 软体 / 晶体。
+    """概念族的**骨架力学形态**：刚体 / 胶体 / 软体（v4 只有这三态）。
 
     依据三价主导元素决定的骨架键型倾向（S/C/L 三者各 60%/62%/58% 分离）：
 
@@ -323,8 +331,10 @@ def role_of(formula_or_vec, **kw) -> dict:
     刚体        秩 O (聚)      S 短键（共享边）     硬、不弯、受击只断
     胶体        沌 K (散)      L 长键（隔一格）     松散、分散、可吸附
     软体        势 P (动)      C 角键（共享顶点）   铰接、可弯、形变不断
-    晶体        第四相         三种键各 1/3         对称、无主导机制
     ==========  ============  ==================  ==========
+
+    **晶体已并入刚体**（v4）：``hybrid`` / ``hierarchy`` 不产生第四相，
+    这里不会再回出"晶体"；只有遗留 ``cycle`` 模式才可能出现。
 
     返回 ``{'element','role','kind','count','counts','fourth_source'}``。
     """
@@ -340,15 +350,14 @@ def role_of(formula_or_vec, **kw) -> dict:
 
 
 def state_of(formula_or_vec, **kw) -> str:
-    """物态的相名：固 / 液 / 气 / 虚。"""
+    """物态的相名：固 / 液 / 气（``虚`` 只在遗留 ``cycle`` 模式出现）。"""
     return phase_of(formula_or_vec, **kw)["names"][1]
 
 
 def energy_of(formula_or_vec, **kw) -> dict:
-    """能量相：冰(冷) / 焰(热) / 电(电磁与光) / 无属性。
+    """能量相：冰(冷) / 焰(热) / 电(电磁与光)；``无属性`` 只在遗留 ``cycle`` 模式出现。
 
     返回 ``{'element','energy','effect','kind','count','counts','fourth_source'}``。
-    第四相（三种能量抵消）= 无属性。
     """
     p = phase_of(formula_or_vec, **kw)
     a = p["axes"]["energy"]
@@ -411,8 +420,12 @@ def physical_name(formula_or_vec, **kw) -> str:
 def describe(formula_or_vec, **kw) -> dict:
     """一次给出物质的三轴相、物性名、典型对应物。
 
-    返回 ``{'formula','frame','state','energy','name','typical',
+    返回 ``{'formula','frame','state','energy','id','name','typical',
     'hardness','density','cohesion','gravity','energy_effect'}``。
+
+    ``hardness`` / ``density`` / ``cohesion`` 是**概念族的相对展示档位（1~4）**，
+    属于历史表现层字段，与 :mod:`alchemy.attrs` 的 27 格物性**口径不同、不可混用**；
+    内核属性请直接看 :mod:`alchemy.attrs` / :mod:`alchemy.ability`。
     """
     p = phase_of(formula_or_vec, **kw)
     frame = role_of(formula_or_vec, **kw)["role"]

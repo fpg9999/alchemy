@@ -27,7 +27,12 @@
     >>> A.attrs_of("OXC")["density"]
     3.0
     >>> A.property_of(A.attrs_of("OXC"))["cell"]
-    '密-低|粘-低|温-中'
+    '密-低|粘-低|温-低'
+    >>> A.property_of(A.attrs_of("OXC"))["index"]      # 27 格里的序号
+    0
+
+档位一律以 ``property_of`` 的实际输出为准（OXC 的温度 1.0 落在 (3, 6) 之下，
+是"温-低"而不是"温-中"）。
 """
 
 from __future__ import annotations

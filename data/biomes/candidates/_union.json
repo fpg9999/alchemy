@@ -5,7 +5,7 @@
    "file": "t55_kinetic_result.json",
    "n_species": 9,
    "spec": {
-    "source": "D:\\Alchemistry DeepSeek工作区\\alchemy\\t55_kinetic_result.json",
+    "source": "t55_kinetic_result.json",
     "name": "t55_kinetic",
     "phase": null,
     "element_atoms": null,
@@ -26,7 +26,7 @@
    "file": "t57_area_result.json",
    "n_species": 4,
    "spec": {
-    "source": "D:\\Alchemistry DeepSeek工作区\\alchemy\\t57_area_result.json",
+    "source": "t57_area_result.json",
     "name": "t57_area",
     "phase": null,
     "element_atoms": null,
@@ -47,7 +47,7 @@
    "file": "t63_phase4_result.json",
    "n_species": 14,
    "spec": {
-    "source": "D:\\Alchemistry DeepSeek工作区\\alchemy\\t63_phase4_result.json",
+    "source": "t63_phase4_result.json",
     "name": "t63_phase4",
     "phase": 4,
     "element_atoms": null,
@@ -68,7 +68,7 @@
    "file": "t62_phaseB_result.json",
    "n_species": 43,
    "spec": {
-    "source": "D:\\Alchemistry DeepSeek工作区\\alchemy\\t62_phaseB_result.json",
+    "source": "t62_phaseB_result.json",
     "name": "t62_phaseB",
     "phase": "B",
     "element_atoms": {
@@ -113,7 +113,7 @@
    "file": "t59_phaseB_result.json",
    "n_species": 67,
    "spec": {
-    "source": "D:\\Alchemistry DeepSeek工作区\\alchemy\\t59_phaseB_result.json",
+    "source": "t59_phaseB_result.json",
     "name": "t59_phaseB",
     "phase": "B",
     "element_atoms": {

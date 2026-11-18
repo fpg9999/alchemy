@@ -53,13 +53,15 @@ out["stable"]                        # 是否 F(自身组成) == 自身
 
 ## 规则版本
 
-成键优先级在项目历史上有三套口径，``simulate(..., rules=8|9|11)`` 可切换：
+成键优先级在项目历史上有三套口径，``simulate(..., rules=8|9|11)`` 可切换。
+**权威实现是内核 `alchemy.core.reactor`（单份参数化实现）；`pot_all.py` / `pot_v3.py` / `pot_v4.py`
+只是保留的兼容/历史实现**：
 
-| `rules` | 权威实现 | 说明 |
+| `rules` | 内核实现（兼容脚本） | 说明 |
 |---|---|---|
-| 8 | `pot_all.simulate` | 规则 1~8，并列取第一个 |
-| 9 | `pot_v3.simulate` | 追加规则 9（元素优先级） |
-| **11** | `pot_v4.simulate` | 追加规则 10/11（骨架块优先、链先于环）— **当前正式** |
+| 8 | `alchemy.core.reactor`（兼容 `pot_all.simulate`） | 规则 1~8，并列取第一个 |
+| 9 | 同上（兼容 `pot_v3.simulate`） | 追加规则 9（元素优先级） |
+| **11** | 同上（兼容 `pot_v4.simulate`） | 追加规则 10/11（骨架块优先、链先于环）— **当前正式** |
 
 新代码一律用默认的 `rules=11`。要复现历史数据（T8/T15/T37~T44 等）时用 `rules=9`。
 
@@ -77,7 +79,7 @@ python tests/run_all.py reactor  # 只跑反应引擎
 
 ```
 alchemy/
-  __init__.py        公开 API（四个入口）
+  __init__.py        公开 API（四个入口，另有 trace）
   core/
     elements.py      元素表、价数、周期表距离、六边形偏移、分子式
     canon.py         分子同构规范形（mol_label，真·同构不变量）
@@ -85,10 +87,17 @@ alchemy/
     reactor.py       大锅反应引擎（规则 1~11，可切 8/9）
     catalog.py       84,225 条物质目录（只读索引，路径可配置）
     classify.py      骨架分类（38 库 / 6 级块 / 三层拆解 / 结构定理）
+  phase.py           三轴判相（v4 hybrid 默认：两两并列循环压制、三者全等归聚、无第四相）
+  ability.py         能力（v3 三项数值 + v4 九项次级能力 × 三阶；旧 512 离散体系冻结为历史接口）
+  attrs.py           物性（密度 / 粘性 / 温度 → 3³ = 27 格）
+  biome.py           群系物种表（模板结果 → 丰度谱 / 导出 CSV·JSON）
   data/
     forms38.json     38 形态库（= 仓库根 t8_forms.json）
-tests/               不依赖 pytest 的测试与差分验证
+tests/               不依赖 pytest 的 124 项测试与差分验证
 ```
+
+口径说明看 `docs/ABILITY.md`（能力）、`docs/TRAITS.md`（27 格物性）、`docs/BIOME_SPEC.md`（群系物种表）。
+旧口径文档 T71~T76 均已加"历史/已被取代"横幅，只作背景。
 
 ## 数据来源与口径提醒
 

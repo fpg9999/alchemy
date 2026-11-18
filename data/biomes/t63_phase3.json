@@ -60,7 +60,7 @@
   },
   {
    "formula": "OAF",
-   "label": "秩气焰·孤核",
+   "label": "秩气焰·链",
    "natoms": 3,
    "count": 4213,
    "abundance": 0.20979,
@@ -77,7 +77,7 @@
    "level6_sizes": [
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 1,
     "bridge": 1,
@@ -105,7 +105,7 @@
   },
   {
    "formula": "O2A3",
-   "label": "秩2气3·孤核",
+   "label": "秩2气3·链",
    "natoms": 5,
    "count": 3929,
    "abundance": 0.195648,
@@ -124,7 +124,7 @@
     1,
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 2,
     "bridge": 3,

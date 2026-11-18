@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-"""相分类规则：三条轴 + 两两并列循环压制 + 三者全等第四相。"""
+"""相分类规则：三条轴 + hybrid 默认（两两并列循环压制、三者全等归聚、无第四相），
+cycle/hierarchy 为历史兼容模式。"""
 
 import itertools
 import random

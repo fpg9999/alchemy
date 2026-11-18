@@ -19,7 +19,7 @@
  "species": [
   {
    "formula": "OXC",
-   "label": "秩晶冰·孤核",
+   "label": "秩晶冰·链",
    "natoms": 3,
    "count": 9724,
    "abundance": 0.808178,
@@ -36,7 +36,7 @@
    "level6_sizes": [
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 1,
     "bridge": 1,
@@ -109,7 +109,7 @@
   },
   {
    "formula": "O2X2C4",
-   "label": "秩2晶2冰4·孤核",
+   "label": "秩2晶2冰4·链",
    "natoms": 8,
    "count": 25,
    "abundance": 0.002078,
@@ -128,7 +128,7 @@
     1,
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 2,
     "bridge": 2,
@@ -156,7 +156,7 @@
   },
   {
    "formula": "O2X4",
-   "label": "秩2晶4·孤核",
+   "label": "秩2晶4·链",
    "natoms": 6,
    "count": 14,
    "abundance": 0.001164,
@@ -175,7 +175,7 @@
     1,
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 2,
     "bridge": 4,

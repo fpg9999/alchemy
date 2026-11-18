@@ -19,7 +19,7 @@
  "species": [
   {
    "formula": "OXC",
-   "label": "秩晶冰·孤核",
+   "label": "秩晶冰·链",
    "natoms": 3,
    "count": 5945,
    "abundance": 0.995146,
@@ -36,7 +36,7 @@
    "level6_sizes": [
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 1,
     "bridge": 1,
@@ -64,7 +64,7 @@
   },
   {
    "formula": "O2X2",
-   "label": "秩2晶2·孤核",
+   "label": "秩2晶2·链",
    "natoms": 4,
    "count": 5,
    "abundance": 0.000837,
@@ -83,7 +83,7 @@
     1,
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 2,
     "bridge": 2,
@@ -111,7 +111,7 @@
   },
   {
    "formula": "O2X2C4",
-   "label": "秩2晶2冰4·孤核",
+   "label": "秩2晶2冰4·链",
    "natoms": 8,
    "count": 5,
    "abundance": 0.000837,
@@ -130,7 +130,7 @@
     1,
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 2,
     "bridge": 2,
@@ -205,7 +205,7 @@
   },
   {
    "formula": "O2XC4",
-   "label": "秩2晶冰4·孤核",
+   "label": "秩2晶冰4·链",
    "natoms": 7,
    "count": 4,
    "abundance": 0.00067,
@@ -224,7 +224,7 @@
     1,
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 2,
     "bridge": 1,
@@ -252,7 +252,7 @@
   },
   {
    "formula": "O2X4",
-   "label": "秩2晶4·孤核",
+   "label": "秩2晶4·链",
    "natoms": 6,
    "count": 3,
    "abundance": 0.000502,
@@ -271,7 +271,7 @@
     1,
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 2,
     "bridge": 4,
@@ -345,7 +345,7 @@
   },
   {
    "formula": "O2X3",
-   "label": "秩2晶3·孤核",
+   "label": "秩2晶3·链",
    "natoms": 5,
    "count": 3,
    "abundance": 0.000502,
@@ -364,7 +364,7 @@
     1,
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 2,
     "bridge": 3,
@@ -393,7 +393,7 @@
   },
   {
    "formula": "O2C4",
-   "label": "秩2冰4·孤核",
+   "label": "秩2冰4·链",
    "natoms": 6,
    "count": 2,
    "abundance": 0.000335,
@@ -412,7 +412,7 @@
     1,
     1
    ],
-   "shape": "孤核",
+   "shape": "链",
    "layer_counts": {
     "skeleton": 2,
     "bridge": 0,
