@@ -28,3 +28,24 @@ cleanup_exec.py, pot_all.py, pot_v2.py, pot_v3.py, substances.json, t10_module_c
 ## failed (1)
 
 t9_reps_O.png :: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'G:\\AI work\\deepseek\\work1\\alchemy\\t9_reps_O.png'
+## 2026-11-18 整理（T68~T70b 完成后，工作区 + 仓库同步整理）
+
+### 删除（未跟踪/生成物，共 ~182MB）
+- 根目录 26 个 `*.log`（`t39_run.log` ~ `t66_run.log`，最大 t39_run.log 284KB）
+- `__pycache__/`（47 个 .pyc）
+- `images/` 12 张临时调试图：`_crop69.png` `_crop69b.png` `_dbg_all.png` `_dbg_bodies.png` `_dbg_G01.png` `_dbg_G13.png` `_dbg_G26.png` `_dbg_pieces.png` `_st1.png`~`_st4.png`
+- 工作区根（非仓库）2026-11-14 旧快照：`alchemy_transfer_2026-11-14.zip`（118.6MB）、`alchemy_repo.bundle`（62.8MB）、`alchemy_transfer_2026-11-14.sha256.txt`、`push_alchemy*.log`、`t64_run.log`
+
+### 重新分类
+- `archive/old_scripts/` → `t3/`(15) `t4p/`(11) `late/`(3) `early/`(107)，新增 `archive/README.md`
+- `archive/old_data/` → `t3/`(9) `scope/`(12) `catalog/`(6) `finite/`(8) `minimal/`(5) `misc/`(10)
+- 传输工具 → `tools/`：`make_transfer_archive.py`（BASE/OUT 改为脚本相对路径，输出按日期命名）、`pack_transfer_data.py`（BASE 改为脚本相对路径）
+- `t60_report_template.md` → `docs/templates/`，并修正 `t60_fill_report.py` 中错误的模板路径（原读不存在的 `_t60_report_template.md`）
+
+### 保留（有意不动）
+- 根目录全部 `t4_*`~`t70b_*` 脚本与数据：脚本普遍硬编码 `BASE` + 数据文件名字面引用（约 488 处），移动会破坏跨阶段依赖 → 维持平铺
+- `t11_rule9d_exact.json` 与 `t12_rule9e_exact.json`、`t4_enum_O_X_K.json` 与 `t4_enum_O_X_K_T1_64.json`：内容逐字节相同，但分别被 `t11_exact.py` / `t12_exact.py` / `t4p_analyze.py` 等按名引用，删除会破坏脚本 → 保留
+- 工作区根 `.acl-repair/`（沙箱 ACL 修复产物，权限受保护，未删）
+
+### 新增入库
+- T68~T70b 全部成果：`docs/T68_GIANT_ATLAS.md`、`docs/T68_GLYPH_SYSTEM.md`、`docs/T69_SKELETON_SHAPES.md`、`docs/T70_EMERGENT_GLYPHS.md`、`docs/T70B_WHOLE_BODY.md`；16 个脚本（`t68_*.py` 7、`t69_*.py` 6、`t70_*.py` 2、`t70b_body.py`）；数据 `t68_pool.json`、`t68_data.json`、`t68_table.md`；图 `images/t68_*`、`t69_*`、`t70_*`、`t70b_*`

@@ -1,6 +1,6 @@
 # 跨电脑交接方案（ALCHEMY）· 最新成果版
 
-> 最后更新：**2026-11-17**（T67 生态群系总目录完成后整理）
+> 最后更新：**2026-11-18**（T68~T70b 图形阶段完成后，工作区与仓库同步整理）
 > 工作目录：`G:\AI work\deepseek\work1\alchemy`
 > 交接入口：`HANDOFF.md`（最新结论以它为准）；本文件负责"如何迁移/同步"。
 > 远程仓库：**https://github.com/fpg9999/alchemy**
@@ -12,11 +12,14 @@
 | 项目 | 状态 |
 |---|---|
 | 本地仓库 | `G:\AI work\deepseek\work1\alchemy`，分支 `main` |
-| 远程仓库 | `https://github.com/fpg9999/alchemy`（**已推送，含 T01~T67 全部提交**） |
+| 远程仓库 | `https://github.com/fpg9999/alchemy`（**已推送，含 T01~T70b 全部提交**） |
 | 认证 | Git Credential Manager 已存 `fpg9999` 的 GitHub 凭据（`cmdkey` 中 `git:https://github.com`）；`gh` CLI 未登录，但不影响 git push |
-| 推送 | **已完成**：`main → origin/main`（T62 `83429a0`/`39aeb50`/`9f88d9f`、T63 `233cb1c`/`8625a94`、T64 `fb1a77d`/`9322c02`/`e9c5f19`、T65 提交；T66 提交见 §6） |
-| 最新实验 | **T67 生态群系总目录**（汇总 T64/T65/T66 共 32 群系，按终态专一性分四类：A 单主 10 / B 主辅 11 / C 双主 7 / D 多主 4；报告 `docs/T67_BIOME_CATALOG.md`） |
-| 本地 commit 历史 | T01 → … → T61 六边形摆放 → T62 等量价数 → T63 逐级价数滴定 → T64 生态群系（12 群系）→ T65 生态群系第二轮（10 群系）→ T66 生态群系第三轮（化合物播种）→ **T67 生态群系总目录（32 群系分类，最新，见 §6）** |
+| 推送 | **已完成**：`main → origin/main`（T62~T67 提交见下；T68~T70b 与 2026-11-18 整理见 §6） |
+| 最新实验 | **T70b 整体形体画法**（T68 骨架形状语言/36 分子图册 → T69 连接件与端帽（元素隐去）→ T70 生成式形状语言 → T70b 把块/桥/端帽并入同一剪影；报告 `docs/T70B_WHOLE_BODY.md`，前置 `docs/T68_GIANT_ATLAS.md`、`docs/T69_SKELETON_SHAPES.md`、`docs/T70_EMERGENT_GLYPHS.md`） |
+| 本地 commit 历史 | T01 → … → T61 六边形摆放 → T62 等量价数 → T63 逐级价数滴定 → T64 生态群系（12 群系）→ T65 生态群系第二轮（10 群系）→ T66 生态群系第三轮（化合物播种）→ T67 生态群系总目录（32 群系分类）→ **T68 大分子骨架形状语言（36 个 ≥14 原子稳定分子图册）→ T69 连接件/端帽（元素隐去版）→ T70 生成式形状语言 → T70b 整体形体画法（最新，见 §6）** |
+
+> 2026-11-18 工作区整理：已删除未跟踪的根目录日志/调试图/`__pycache__` 与工作区根的 2026-11-14 旧 ZIP/bundle 快照；
+> `archive/` 已按阶段分子文件夹；传输工具在 `tools/`；详见 `docs/CLEANUP_LOG.md` 末节。
 
 > 如果是新电脑 clone：`git clone https://github.com/fpg9999/alchemy` → `python unpack_data.py` → 读 `HANDOFF.md`。
 
@@ -178,24 +181,26 @@ python -c "import pot_v4; print(pot_v4.simulate(['O','K']))"
 
 ## 3. 方案 B/C/D（历史迁移方式；注意快照时间）
 
-> ⚠️ 下面 B/C 是 **2026-11-14** 生成的快照，**不含 T55~T62 的后续实验**（T55/T56/T57/T58/T59/T60/T61/T62 都在其后完成）。
-> 需要最新全量包时，可重新运行 `make_transfer_archive.py`（会重新打包 zip）或用方案 A 的 GitHub clone。
+> ⚠️ 2026-11-14 生成的 B/C 快照文件**已在 2026-11-18 整理时删除**（内容早已被 GitHub 上的后续提交覆盖）。
+> 需要新的离线包时，在仓库根目录运行 `python tools\make_transfer_archive.py`（输出到工作区根，
+> 文件名自动带当天日期）；方案 A 的 GitHub clone 与方案 D 的目录复制始终最新。
 > 方案 D（直接复制目录）始终是最新最稳的。
 
-### B. 全量 ZIP（2026-11-14 快照）
+### B. 全量 ZIP（按需重新生成）
 ```
-G:\AI work\deepseek\work1\alchemy_transfer_2026-11-14.zip
-G:\AI work\deepseek\work1\alchemy_transfer_2026-11-14.sha256.txt
+python tools\make_transfer_archive.py
+# → G:\AI work\deepseek\work1\alchemy_transfer_<YYYY-MM-DD>.zip（+ 脚本打印的 sha256）
 ```
-- 包含当时全部原始文件（不含 `.git`、`__pycache__`）；
+- 包含全部原始文件（不含 `.git`、`__pycache__`、`_compression_test`）；
 - 解压即得完整 `alchemy/` 目录，无需 `unpack_data.py`。
 
-### C. git bundle（2026-11-14 快照，离线 git 历史）
+### C. git bundle（按需重新生成，离线 git 历史）
 ```
-G:\AI work\deepseek\work1\alchemy_repo.bundle
+cd "G:\AI work\deepseek\work1\alchemy"
+git bundle create ..\alchemy_repo_%DATE%.bundle --all
 ```
-- 在新电脑：`git clone alchemy_repo.bundle alchemy` → `python unpack_data.py`；
-- 同样不含 T55 之后的新提交；最新历史以 GitHub 仓库为准。
+- 在新电脑：`git clone alchemy_repo_<DATE>.bundle alchemy` → `python unpack_data.py`；
+- 2026-11-14 的旧 bundle（head `4a4dca4`）已删除，最新历史以 GitHub 为准。
 
 ### D. 直接复制整个目录
 同系统/同盘直接复制 `alchemy/`（含 `_data_gz`、`archive`、`docs`、`images`）；
@@ -245,7 +250,9 @@ T67 无大结果文件（`t67_catalog.json` 约 40KB，直接入库）。
 6. 需要最新实验时：`python t67_catalog.py`（汇总 32 群系总目录，不跑模拟）；要跑模拟：化合物播种
    `python t66_biomes.py --all`（或复用 `t66_analysis.py` / `t66_render.py` / `t66_verify.py`）；
    上一轮 T65 用 `python t65_biomes.py --all`；T64 用 `python t64_biomes.py --all`
-   （+ `t64_hex_*`）；T63 用 `python t63_staged.py --phase all`。
+   （+ `t64_hex_*`）；T63 用 `python t63_staged.py --phase all`。图形阶段（不跑模拟）：
+   `python t68_atlas.py`（36 分子图册）→ `python t69_render.py`（T69 连接件版）→
+   `python t70_render.py`（生成式形状语言四图）→ `python t70b_body.py`（整体形体图）。
 
 ---
 

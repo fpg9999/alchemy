@@ -6,7 +6,7 @@ import json
 import os
 import shutil
 
-BASE = r"G:\AI work\deepseek\work1\alchemy"
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GZ = os.path.join(BASE, "_data_gz")
 os.makedirs(GZ, exist_ok=True)
 

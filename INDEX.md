@@ -1,4 +1,4 @@
-# ALCHEMY 文件索引（2026-11-14 更新）
+# ALCHEMY 文件索引（2026-11-18 更新）
 
 > **新对话/新接手：先读 HANDOFF.md、README.md、TRANSFER.md、NEW_CHAT_PROMPT.md。**
 > 本文件是历史/主题索引；最新结论与交接以 HANDOFF.md 为准。
@@ -8,11 +8,12 @@
 # alchemy 工作区索引（自动整理于 2026-11-13 10:58）
 
 ## 目录结构
-- `docs/`：全部研究报告（T4~T13、HANDOFF、PROJECT_HANDOFF 等）
-- `images/`：全部图片（结构图、反应矩阵、循环图、统计图等）
-- `archive/old_scripts/`：历史探索脚本（可复现性保留）
-- `archive/old_data/`：历史数据（旧扫描/旧分类结果）
-- 根目录：核心模拟器 + 权威数据 + 本索引
+- `docs/`：全部研究报告（T4~T70b、HANDOFF、PROJECT_HANDOFF 等）；`docs/templates/` 报告模板
+- `images/`：全部图片（结构图、反应矩阵、循环图、统计图、T68~T70b 大分子图册等）
+- `archive/old_scripts/`：历史探索脚本，已按阶段分子文件夹（`t3/` `t4p/` `late/` `early/`）
+- `archive/old_data/`：历史数据，已按主题分子文件夹（`t3/` `scope/` `catalog/` `finite/` `minimal/` `misc/`）
+- `tools/`：跨电脑传输工具（`make_transfer_archive.py`、`pack_transfer_data.py`）
+- 根目录：核心模拟器 + 权威数据 + 各阶段脚本/数据 + `unpack_data.py` + 本索引
 
 ## 核心代码（根目录）
 - `pot_all.py`：规则 1~8 通用模拟器
@@ -40,6 +41,10 @@
 - 移入 docs：17 个；images：16 个
 - 移入 archive/old_scripts：42 个；archive/old_data：10 个
 - 保留根目录：174 个
+- **2026-11-18 二次整理（T68~T70b 完成后，详见 `docs/CLEANUP_LOG.md`）**：删除根目录 26 个 `*.log`、
+  `__pycache__/`、`images/` 中 12 张临时调试图、工作区根目录约 181MB 的 2026-11-14 旧 ZIP/bundle/sha/推送日志；
+  `archive/old_scripts`、`archive/old_data` 按阶段/主题分子文件夹（见 `archive/README.md`）；
+  传输工具移入 `tools/`；`t60_report_template.md` 移入 `docs/templates/` 并修正 `t60_fill_report.py` 的模板路径。
 
 ## 最新补充
 - images/t13_140_atom_reaction.png：140 原子最大分子纪录的产生反应图（含两个反应物与产物结构）
@@ -112,3 +117,27 @@
 - **T45（2026-11-16）规则 10/11 纳入**：`pot_v4.py`（规则 1~11）、`t50_scan_block_ambiguity.py`、`docs/T45_RULES_10_11.md`
   - ≤11 三价全组合全分支：6 级骨架歧义 0、库外块 0；O3P5K2 库外变体被规则 11 排除；
   - 目录结构影响：14,615/84,225（17.4%）结构与 pot_v3 不同（分子式不变），数据迁移待做。
+
+- **T68（2026-11-17）大分子骨架形状语言 + 36 个稳定大分子图册**：`t68_shapes.py`（元素字形/家族容器/键型语法/
+  桥与融合语法绘制库）、`t68_build_data.py`、`t68_select.py`、`t68_cards.py`、`t68_atlas.py`、`t68_stats.py`、
+  `t68_stats2.py`；数据 `t68_pool.json`、`t68_data.json`；报告 `docs/T68_GLYPH_SYSTEM.md`（形状语言）、
+  `docs/T68_GIANT_ATLAS.md`（36 分子图册）；图 `images/t68_giants_01~18.png`（2 卡/页共 18 页）、
+  `t68_overview.png`（6×6 总览）、`t68_glyphs.png`、`t68_families.png`、`t68_library38.png`、`t68_connect.png`。
+  36 个 ≥14 原子稳定大分子 = 1147 原子 / 114 骨架 / 115 个 6 级块 / 114 桥（S 9·C 45·L 4·混合 56）；
+  38 库外块 0、pot_v4 稳定复核 36/36；0 级融合键仅 G13 1 根 P–P。
+- **T69（2026-11-17）大分子骨架形状语言·连接件与端帽（元素隐去版）**：`t69_bodies.py`（块/骨架/星形布局）、
+  `t69_pieces.py`（X 楔块 / W 肌腱 / A 薄膜 / C·F·L 端帽 / 支臂 / 铆钉）、`t69_draw.py`（容器、焊带、连接件、
+  装饰、面板）、`t69_render.py`（36 卡 18 页 + 总览 + 图例）；报告 `docs/T69_SKELETON_SHAPES.md`；
+  图 `images/t69_giants_01~18.png`、`images/t69_overview.png`、`images/t69_legend.png`。
+  要点：骨架 = 7 家族容器（去掉元素字形）、融合 = 边对边 + 焊带（仅 G13 1 例）、二价桥按 X/W/A 形状化、
+  多元素桥按元素顺序分段拼接、同骨架对多条桥合并标 xN、端帽 C 尖三角 / F 软四边形 / L 细椭圆。
+
+- **T70（2026-11-18）生成式形状语言（骨架 / 桥梁 / 端帽）**：`t70_glyphs.py`（超公式晶核 + 焊核 / 编织腱 / 褶皱膜 /
+  冰刺 / 飘带 / 螺旋丝生成器）、`t70_render.py`（4 张图）；报告 `docs/T70_EMERGENT_GLYPHS.md`；
+  图 `images/t70_skeletons38.png`（38 个骨架块）、`t70_bridges.png`、`t70_terminals.png`、`t70_molecules.png`。
+  思路：同一函数族按"元素计数 → 对称瓣数/圆润度/锐度、度数谱 → 相位/晶脉、哈希 → 个体指纹"生成外形，
+  同类骨架风格一致、个体互不相同；T68/T69 的手工固定多边形方案作废（T69 图件保留为历史版本）。
+
+- **T70b（2026-11-18）大分子整体图**：`t70b_body.py`（把所有骨架块/桥/端帽并进同一蒙版 → 闭运算得到单一外轮廓 →
+  渐变填充 + 一条外轮廓 + 内膜 + 体内器官核/骨纹/脉络），报告 `docs/T70B_WHOLE_BODY.md`，
+  图 `images/t70b_bodies.png`（4 例）、`images/t70b_all36.png`（36 个）。解决"大分子看起来像零散零件拼凑"的问题。

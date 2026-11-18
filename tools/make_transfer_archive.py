@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 """make_transfer_archive.py：生成全量 zip（含原始大文件与 _data_gz）"""
+import datetime
 import hashlib
 import os
 import zipfile
 
-BASE = r"G:\AI work\deepseek\work1\alchemy"
-OUT = r"G:\AI work\deepseek\work1\alchemy_transfer_2026-11-14.zip"
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT = os.path.join(os.path.dirname(BASE),
+                   "alchemy_transfer_" + datetime.date.today().isoformat() + ".zip")
 EXCLUDE_DIRS = {".git", "__pycache__", "_compression_test"}
 EXCLUDE_FILES = set()
 

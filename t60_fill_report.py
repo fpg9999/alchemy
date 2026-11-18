@@ -42,7 +42,7 @@ def important_table(rows):
 
 def main():
     data = json.load(open(BASE + r"\t60_top20_data.json", encoding="utf-8"))
-    tpl = open(BASE + r"\_t60_report_template.md", encoding="utf-8").read()
+    tpl = open(BASE + r"\docs\templates\t60_report_template.md", encoding="utf-8").read()
     by = {e["name"]: e for e in data["experiments"]}
     for key, name in (("T55_TABLE", "T55"), ("T56_TABLE", "T56"),
                       ("T57_TABLE", "T57"), ("T58_TABLE", "T58"),
