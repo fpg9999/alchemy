@@ -41,12 +41,15 @@ class ReactionLayer:
                 break
             if id(m) not in alive or id(m) in used:
                 continue
+            if grid.get((m.x, m.y)) is not m:
+                alive.discard(id(m))
+                continue
             for dx in (-1, 0, 1):
                 for dy in (-1, 0, 1):
                     if dx == 0 and dy == 0:
                         continue
                     o = grid.get((m.x + dx, m.y + dy))
-                    if o is None or id(o) in used:
+                    if o is None or id(o) in used or id(o) not in alive:
                         continue
                     res = natural_products(m.formula, o.formula)
                     if res is None:
@@ -71,6 +74,7 @@ class ReactionLayer:
                         continue
                     used.add(id(m))
                     used.add(id(o))
+                    alive = {id(x) for x in mols}      # 反应后刷新存活集合
                     self.stats["fired"] += 1
                     events.append({"reactants": [m.formula, o.formula],
                                    "products": list(prods), "breaks": breaks,
@@ -78,43 +82,49 @@ class ReactionLayer:
                     break
         return events
 
-    # ---------------- 放置产物
+    # ---------------- 放置产物（原子化：先检查全部，再改动）
     def _place(self, grid, mols, a, b, prods, efield=None):
         from lattice_sim import Mol
+        if a not in mols or b not in mols:
+            return None
+        if grid.get((a.x, a.y)) is not a or grid.get((b.x, b.y)) is not b:
+            return None
+        try:
+            from lattice_sim import GRID as GSIZE
+        except Exception:
+            GSIZE = 64
         cells = [(a.x, a.y), (b.x, b.y)]
         n = len(prods)
+
+        # ---- 检查阶段
+        if n <= 2:
+            slots = cells[:n]
+        else:
+            need = n - 2
+            cand = []
+            for dy in range(1, 7):
+                for dx in (0, -1, 1, -2, 2):
+                    p = (a.x + dx, a.y - dy)
+                    if not (0 <= p[0] < GSIZE and 0 <= p[1] < GSIZE):
+                        continue
+                    if p in grid or p in cells or p in cand:
+                        continue
+                    cand.append(p)
+                    if len(cand) >= need:
+                        break
+                if len(cand) >= need:
+                    break
+            if len(cand) < need:
+                return None
+            slots = cells + cand
+
+        # ---- 改动阶段
         for r in (a, b):
             grid.pop((r.x, r.y), None)
             if r in mols:
                 mols.remove(r)
-
-        if n <= 2:
-            # 产物少于反应物 → 剩下的格子成为空腔
-            slots = cells[:n]
-        else:
-            slots = list(cells)
-            cx = a.x
-            top = min(a.y, b.y)
-            for k in range(n - 2):
-                ty = top - 1 - k
-                if ty < 0:
-                    return None
-                # 从 ty 往上找第一个空格
-                y = ty
-                while y >= 0 and (cx, y) in grid:
-                    y -= 1
-                if y < 0:
-                    return None
-                # 把 [y, ty) 整段上移一格，腾出 ty
-                for yy in range(y, ty):
-                    mm = grid.pop((cx, yy))
-                    mm.y = yy - 1
-                    grid[(mm.x, mm.y)] = mm
-                slots.append((cx, ty))
-
         for f, (sx, sy) in zip(prods, slots):
             nm = Mol(f, sx, sy)
             grid[(sx, sy)] = nm
             mols.append(nm)
-        # 恒素净额为零：断键借入多少，成键就归还多少，无需记账
         return slots
