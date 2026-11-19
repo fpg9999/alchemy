@@ -31,8 +31,8 @@ from alchemy.core.elements import ORDER, VAL, parse_formula  # noqa: E402
 # ---------------------------------------------------------------- 参数（设计稿定稿值）
 K = 8.0
 A_MAX, R_MAX = 10.0, 10.0
-D_MIN, D_MAX = 0.5, 3.0
-W_S, W_OWN = 0.5, 0.25
+R0, R1 = 1.5, 8.0          # 作用半径下限 / 上限（格子单位）
+W_S, W_OWN = 0.4, 0.3      # 半径权重：散素 0.4，自身强度 0.3
 
 GRID = 64
 FILL = 0.40
@@ -50,10 +50,12 @@ def four_values(formula: str) -> tuple[float, float, float, float]:
     a = sp / (sp + K)
     m = sm / (sm + K)
     s = ss / (ss + K)
-    att = A_MAX * a
-    rep = R_MAX * m
-    d_att = D_MIN + (D_MAX - D_MIN) * (W_S * s + W_OWN * a)
-    d_rep = D_MIN + (D_MAX - D_MIN) * (W_S * s + W_OWN * m)
+    # ---- 幂次校准 + 温和缩放：让四种组合的分布接近均匀，同时保持力的量级
+    att = min(A_MAX, 10.8 * (a ** 2.5))
+    rep = min(R_MAX, 10.8 * (m ** 3.0))
+    # 半径与强度**解耦**：引力半径由散素决定，斥力半径由动素决定
+    d_att = R0 + (R1 - R0) * (s ** 2.0)
+    d_rep = R0 + (R1 - R0) * (m ** 3.0)
     return att, rep, d_att, d_rep
 
 
@@ -206,21 +208,24 @@ def swap_cells(grid: dict, a: tuple[int, int], b: tuple[int, int]) -> None:
 
 def pair_force(m: Mol, o: Mol, decay: bool = True, asym: bool = True,
                beta: float = 0.3) -> float:
-    """m 受到 o 的力（正=吸引，负=排斥，0=无作用）。"""
+    """m 受到 o 的力（正=吸引，负=排斥，0=无作用）。
+
+    非对称：吸引用**自己**的 A 与半径，排斥用**对方**的 R 与半径。
+    """
     d = math.hypot(o.x - m.x, o.y - m.y)
     if d == 0:
         return 0.0
-    Dij = max(m.d_att, o.d_att)
-    if d > Dij:
-        return 0.0
     if asym:
         att, rep = m.att, o.rep
+        r_att, r_rep = m.d_att, o.d_rep
     else:
         att, rep = m.att * o.att / A_MAX, m.rep * o.rep / R_MAX
+        r_att, r_rep = max(m.d_att, o.d_att), max(m.d_rep, o.d_rep)
+    if d > max(r_att, r_rep):
+        return 0.0
     if not decay:
-        return (att if d <= Dij else 0.0) - (
-            rep if d <= max(m.d_rep, o.d_rep) else 0.0)
-    return force_shape(d / Dij, att, rep, beta)
+        return (att if d <= r_att else 0.0) - (rep if d <= r_rep else 0.0)
+    return force_shape(d, att, rep, r_att, r_rep)
 
 
 def dominant_source(m: Mol, grid: dict, decay: bool = True,
@@ -239,20 +244,22 @@ def dominant_source(m: Mol, grid: dict, decay: bool = True,
     return best
 
 
-def force_shape(dn: float, att: float, rep: float, beta: float = 0.3) -> float:
-    """Particle Life 式的力形状（``dn`` = d / D，归一化距离）。
+def force_shape(d: float, att: float, rep: float,
+                r_att: float, r_rep: float) -> float:
+    """净力 = 引力 − 斥力，两项**各自线性衰减**到自己的半径。
 
-    - ``dn < beta``：**斥力**，从 ``-rep`` 线性回到 0
-    - ``beta <= dn < 1``：**引力**，三角峰，在 ``(1+beta)/2`` 达到 ``+att``
-    - ``dn >= 1``：0
+    - 引力项：``att × max(0, 1 − d/r_att)``
+    - 斥力项：``rep × max(0, 1 − d/r_rep)``
 
-    正值 = 吸引，负值 = 排斥。
+    两个半径独立，所以四种组合都会自然出现：
+    引力更强 / 斥力更强 / 引力更远 / 斥力更远。
     """
-    if dn >= 1.0:
-        return 0.0
-    if dn < beta:
-        return -rep * (dn / beta - 1.0)
-    return att * (1.0 - abs(2.0 * dn - 1.0 - beta) / (1.0 - beta))
+    f = 0.0
+    if r_att > 0.0:
+        f += att * max(0.0, 1.0 - d / r_att)
+    if r_rep > 0.0:
+        f -= rep * max(0.0, 1.0 - d / r_rep)
+    return f
 
 
 def push_chain(grid: dict, start: tuple[int, int], dx: int, dy: int,
@@ -322,17 +329,17 @@ def net_force(m: Mol, grid: dict, gravity: float = 0.0, decay: bool = False,
         d = math.hypot(dx, dy)
         if d == 0:
             continue
-        Dij = max(m.d_att, o.d_att)
-        if d > Dij:
-            continue
-        ux, uy = dx / d, dy / d
         if asym:
             att, rep = m.att, o.rep
+            r_att, r_rep = m.d_att, o.d_rep
         else:
             att, rep = m.att * o.att / A_MAX, m.rep * o.rep / R_MAX
-        f = force_shape(d / Dij, att, rep, beta) if decay else (
-            att if d <= max(m.d_att, o.d_att) else 0.0) - (
-            rep if d <= max(m.d_rep, o.d_rep) else 0.0)
+            r_att, r_rep = max(m.d_att, o.d_att), max(m.d_rep, o.d_rep)
+        if d > max(r_att, r_rep):
+            continue
+        ux, uy = dx / d, dy / d
+        f = force_shape(d, att, rep, r_att, r_rep) if decay else (
+            (att if d <= r_att else 0.0) - (rep if d <= r_rep else 0.0))
         fx += f * ux
         fy += f * uy
     fy += gravity

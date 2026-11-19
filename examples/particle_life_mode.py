@@ -25,7 +25,7 @@ from alchemy.core.elements import ORDER, parse_formula, VAL  # noqa: E402
 
 K = 8.0
 A_MAX, R_MAX = 10.0, 10.0
-D_MIN, D_MAX = 0.5, 3.0
+D_MIN, D_MAX = 1.2, 8.0
 W_S, W_OWN = 0.5, 0.25
 
 
