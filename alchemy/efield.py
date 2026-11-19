@@ -83,7 +83,21 @@ class EField:
                 new[y][x] = v + k * (acc / cnt - v)
         self.rho = new
 
-    # ---------------- 温度 → (强度, 半径)
+    # ---------------- 温度 → 平衡浓度
+    def equilibrium_density(self, temp: float, base: float | None = None,
+                            neutral: float = NEUTRAL_TEMP,
+                            slope: float = 0.5,
+                            lo: float = 0.20, hi: float = 3.0) -> float:
+        """该温度下局部的**平衡恒素浓度**。
+
+        热 → 高于基准；冷 → 低于基准；但**永远到不了 0，也不会无穷**。
+        """
+        if base is None:
+            base = self.initial_total / (self.size * self.size)
+        d = temp - neutral
+        r = 1.0 + slope * d
+        return base * max(lo, min(hi, r))
+
     def strength_radius(self, temp: float,
                         neutral: float = NEUTRAL_TEMP,
                         max_rate: float = DEFAULT_RATE,
@@ -95,18 +109,27 @@ class EField:
             return 0.0, 0.0
         return min(max_rate, d * STRENGTH_SCALE), base_radius + d * radius_scale
 
-    # ---------------- 重分布（总量守恒）
+    # ---------------- 趋于平衡（总量守恒）
     def interact(self, mols: Iterable, neutral: float = NEUTRAL_TEMP,
                  max_rate: float = DEFAULT_RATE,
                  base_radius: float = DEFAULT_RADIUS,
-                 radius_scale: float = RADIUS_SCALE) -> None:
+                 radius_scale: float = RADIUS_SCALE,
+                 approach: float = 0.12) -> None:
+        """把每个分子所在格拉向它的平衡浓度；达到平衡后不再搬运。"""
         n = self.size
+        base = self.initial_total / (n * n)
         for m in mols:
             d = m.temp_val - neutral
-            rate, radius = self.strength_radius(
-                m.temp_val, neutral, max_rate, base_radius, radius_scale)
-            if rate <= 0:
+            if abs(d) < 0.05:
                 continue
+            target = self.equilibrium_density(m.temp_val, base, neutral)
+            cur = self.rho[m.y][m.x]
+            delta = (target - cur) * approach
+            if abs(delta) < 1e-6:
+                continue
+            delta = max(-max_rate, min(max_rate, delta))
+            _, radius = self.strength_radius(
+                m.temp_val, neutral, max_rate, base_radius, radius_scale)
             r = int(round(radius))
             if r < 1:
                 continue
@@ -119,9 +142,9 @@ class EField:
                         ring.append(((m.x + dx) % n, (m.y + dy) % n))
             if not ring:
                 continue
-            if d > 0:
-                # 热：从外圈抽到中心（局部富集）
-                share = rate / len(ring)
+            if delta > 0:
+                # 需要富集：从外圈抽
+                share = delta / len(ring)
                 moved = 0.0
                 for cx, cy in ring:
                     take = min(self.rho[cy][cx], share)
@@ -131,11 +154,11 @@ class EField:
                     moved += take
                 self.rho[m.y][m.x] += moved
             else:
-                # 冷：从中心推到外圈（局部稀薄）
-                budget = min(rate, self.rho[m.y][m.x])
-                if budget <= 0:
+                # 需要稀薄：推到外圈
+                give = min(-delta, self.rho[m.y][m.x])
+                if give <= 0:
                     continue
-                self.rho[m.y][m.x] -= budget
-                share = budget / len(ring)
+                self.rho[m.y][m.x] -= give
+                share = give / len(ring)
                 for cx, cy in ring:
                     self.rho[cy][cx] += share
