@@ -49,3 +49,17 @@ t9_reps_O.png :: [WinError 32] 另一个程序正在使用此文件，进程无�
 
 ### 新增入库
 - T68~T70b 全部成果：`docs/T68_GIANT_ATLAS.md`、`docs/T68_GLYPH_SYSTEM.md`、`docs/T69_SKELETON_SHAPES.md`、`docs/T70_EMERGENT_GLYPHS.md`、`docs/T70B_WHOLE_BODY.md`；16 个脚本（`t68_*.py` 7、`t69_*.py` 6、`t70_*.py` 2、`t70b_body.py`）；数据 `t68_pool.json`、`t68_data.json`、`t68_table.md`；图 `images/t68_*`、`t69_*`、`t70_*`、`t70b_*`
+
+## 2026-11-19 整理（T77b 推送前，工作区暂存区 + 缓存清理）
+
+### 删除（未跟踪/生成物，共 ~314MB）
+- 工作区根（非仓库）`G:\AI work\deepseek\work1\intake\` 暂存区（312.2MB / 359 文件）：根下 7 个 md 与仓库 `alchemy/intake/` 同名文件 SHA256 逐一相同；`tmp/`（311.9MB / 352 文件）为入库过程中的 teammate 中间产物——包测试副本 `fake_site/`、`pkg4/`、`pkg5/`、`pkgcheck/`、`pkgcheck2/`、`pkg_no_catalog/`（各含一份 alchemy 包副本），`unpack_data.py` 解压测试 `unpack_test/`（约 260MB，6 个大原始数据副本），`exp1.py`~`exp5.py` 及输出 txt，`ability/`、`emergence/`、`appearance/` 探针脚本与截图，pip 安装日志；其中 `repro_BIOME_CANDIDATES.md`（20,087B）内容与仓库 `docs/BIOME_CANDIDATES.md` 相同。
+- 仓库 5 处 `__pycache__/`（89 个 .pyc，约 1.5MB）：根、`alchemy/`、`alchemy/core/`、`examples/`、`tests/`。
+
+### 保留（有意不动）
+- `alchemy/intake/tmp/calib/`：T77b 参数标定中间产物，`.gitignore` 已用 `/intake/tmp/` 排除，作为标定过程证据保留。
+- 6 个大原始数据（`t12b_pairs.jsonl` 等，脚本需要，已被 `.gitignore` 排除）。
+- 工作区根 `.acl-repair/`（沙箱 ACL 修复产物，权限受保护，仍无法删除）。
+
+### 推送
+- 本轮把本地领先 `origin/main` 的提交（T77b 等）连同本整理记录一起推送，详见 `TRANSFER.md` §6.1。

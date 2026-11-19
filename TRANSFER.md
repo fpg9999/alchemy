@@ -12,14 +12,17 @@
 | 项目 | 状态 |
 |---|---|
 | 本地仓库 | `G:\AI work\deepseek\work1\alchemy`，分支 `main` |
-| 远程仓库 | `https://github.com/fpg9999/alchemy`（远端 HEAD = `cf9d01b`，含 T01~T76 与 kernel `4a2e4d6`、第二轮 `facb162`/`cf9d01b` 全部提交） |
+| 远程仓库 | `https://github.com/fpg9999/alchemy`（推送前远端 HEAD = `cf9d01b`；2026-11-19 整理轮已把本地 `main` 推到最新，含 T01~T76、kernel `4a2e4d6`、第二轮 `facb162`/`cf9d01b`、第三轮 T77/T77b） |
 | 认证 | Git Credential Manager 已存 `fpg9999` 的 GitHub 凭据（`cmdkey` 中 `git:https://github.com`）；`gh` CLI 未登录，但不影响 git push |
-| 推送 | **未推送**：本地 `main` 领先 `origin/main` 5 个文档/原型提交（`3d45357` 内核整理、`becbd06` 第二轮同步、`2916777` 第二轮分析、`b15ae4a` 第三轮 v5+涌现、`e9b178c` 第三轮根文档同步），tag `kernel-0.2.0` 亦未推（用户要求"先不着急推"） |
+| 推送 | **已推送（2026-11-19 整理轮）**：本地 `main` 相对 `cf9d01b` 领先的 7 个提交（`3d45357` 内核整理、`becbd06` 第二轮同步、`2916777` 第二轮分析、`b15ae4a` 第三轮 v5+涌现、`e9b178c` 第三轮根文档同步、`02b9553` T77b 标定、2026-11-19 整理记录）一次性推送；tag `kernel-0.2.0` 仍留本地未推 |
 | 最新成果 | **第三轮（2026-11-19）**：`docs/ABILITY_EMERGENCE.md` 总纲 + `alchemy/ops.py`（9 操作能力）+ `alchemy/emergence.py`（L1~L4 涌现原型，无 alive 标志）+ 27 新测试（共 **151 项**）+ demo/参数文件 + 参数标定（800×800 组装率 68.5%、器官系统 1~4、活性无机档出现；B/H 判据仍 0）；stale-sweeper 覆盖 35 文件旧口径；结果见 `HANDOFF.md` §14.4 与 `intake/calibration.md`；上一轮第二轮 `facb162` 见 `docs/INTAKE_R2.md` |
-| 本地 commit 历史 | T01 → … → T61 六边形摆放 → T62 等量价数 → T63 逐级价数滴定 → T64~T66 生态群系三轮 → T67 生态群系总目录 → T68~T70b 图形阶段 → **T71~T76（`8877e8d`）→ kernel 内核入库（`4a2e4d6`）→ 整理（`7dd324c`）→ 第二轮（`7516ce0`→rebase 后 `3d45357`/`becbd06`）→ 第二轮分析（`2916777`）→ 第三轮 v5+涌现（`b15ae4a`，最新）** |
+| 本地 commit 历史 | T01 → … → T61 六边形摆放 → T62 等量价数 → T63 逐级价数滴定 → T64~T66 生态群系三轮 → T67 生态群系总目录 → T68~T70b 图形阶段 → **T71~T76（`8877e8d`）→ kernel 内核入库（`4a2e4d6`）→ 整理（`7dd324c`）→ 第二轮（`7516ce0`→rebase 后 `3d45357`/`becbd06`）→ 第二轮分析（`2916777`）→ 第三轮 v5+涌现（`b15ae4a`）→ 第三轮根文档同步（`e9b178c`）→ T77b 参数标定（`02b9553`）→ 2026-11-19 整理（最新）** |
 
 > 2026-11-18 工作区整理：已删除未跟踪的根目录日志/调试图/`__pycache__` 与工作区根的 2026-11-14 旧 ZIP/bundle 快照；
 > `archive/` 已按阶段分子文件夹；传输工具在 `tools/`；详见 `docs/CLEANUP_LOG.md` 末节。
+
+> 2026-11-19 工作区整理：删除工作区根 `intake/` 暂存区（312.2MB，与仓库 `alchemy/intake/` 内容重复）与仓库 5 处 `__pycache__/`；
+> 保留 `alchemy/intake/tmp/calib/`（标定中间产物，gitignore 排除）；详见 `docs/CLEANUP_LOG.md` 末节。
 
 > 如果是新电脑 clone：`git clone https://github.com/fpg9999/alchemy` → `python unpack_data.py` → 读 `HANDOFF.md`。
 
@@ -264,12 +267,12 @@ T67 无大结果文件（`t67_catalog.json` 约 40KB，直接入库）。
 
 ## 6. 推送记录
 
-### 6.1 2026-11-19（第三轮：能力维度 v5 + 涌现原型，本地，未推送）
+### 6.1 2026-11-19（第三轮：能力维度 v5 + 涌现原型 + T77b 标定，已推送）
 
 | 项目 | 内容 |
 |---|---|
-| 远程 HEAD | **`cf9d01b`**（未变；本轮全部为本地提交，用户要求"先不着急推"） |
-| 本地提交 | **`b15ae4a`** `T77: 能力维度 v5（9 操作核）与涌现原型 + 过时口径清扫`（新增 `alchemy/ops.py`、`alchemy/emergence.py`、`tests/test_ops.py`、`tests/test_emergence.py`、`examples/emergence_demo.py`、`alchemy/data/emergence_params.json`、`docs/ABILITY_EMERGENCE.md`；stale-sweeper 改 35 文件；根 README 同步）；**`e9b178c`** 第三轮根文档同步；其前 `2916777`（第二轮分析）、`becbd06`、`3d45357` |
+| 远程 HEAD | 推送前 `cf9d01b`；**2026-11-19 整理轮已推送**：`cf9d01b..main` 共 7 个提交（含 `02b9553` T77b 与本次整理记录） |
+| 本地提交 | **`b15ae4a`** `T77: 能力维度 v5（9 操作核）与涌现原型 + 过时口径清扫`（新增 `alchemy/ops.py`、`alchemy/emergence.py`、`tests/test_ops.py`、`tests/test_emergence.py`、`examples/emergence_demo.py`、`alchemy/data/emergence_params.json`、`docs/ABILITY_EMERGENCE.md`；stale-sweeper 改 35 文件；根 README 同步）；**`e9b178c`** 第三轮根文档同步；**`02b9553`** `T77b: 涌现原型参数标定（8 bug 修复 + calibration 段）+ 根文档回填 151 测试与标定结果 + intake 设计/分析报告入库`（58 文件 +8977/−211）；其前 `2916777`（第二轮分析）、`becbd06`、`3d45357` |
 | tag | `kernel-0.2.0`（annotated，本地，未推） |
 | 测试 | `python tests/run_all.py` → **151/151 PASS**（15.9s）；`python examples/emergence_demo.py --sample 600 --steps 600` → rc=0，13.3s |
 | 参数标定 | task-10 完成：推荐参数在 `alchemy/data/emergence_params.json` 的 `calibration` 段（`contacts_per_pair=3`、`k_on0=0.25`、`W0=0.25`、`rupture_p=0.35`、`Q_min=0.3`、`theta_scale=0.8`、`maint_rate=1.15` 等），报告 `intake/calibration.md`；修掉 8 个实现缺陷 |

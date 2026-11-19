@@ -65,6 +65,9 @@
   `__pycache__/`、`images/` 中 12 张临时调试图、工作区根目录约 181MB 的 2026-11-14 旧 ZIP/bundle/sha/推送日志；
   `archive/old_scripts`、`archive/old_data` 按阶段/主题分子文件夹（见 `archive/README.md`）；
   传输工具移入 `tools/`；`t60_report_template.md` 移入 `docs/templates/` 并修正 `t60_fill_report.py` 的模板路径。
+- **2026-11-19 三次整理（T77b 推送前，详见 `docs/CLEANUP_LOG.md` 末节）**：删除工作区根 `intake/` 暂存区
+  （312.2MB，7 个 md 与 `alchemy/intake/` 逐一相同、`tmp/` 为入库过程中间产物）与仓库 5 处 `__pycache__/`；
+  保留 `alchemy/intake/tmp/calib/`（标定中间产物，gitignore 排除）。
 
 ## 最新补充
 - **第三轮（2026-11-19，最新）能力维度 v5 + 涌现原型**：`docs/ABILITY_EMERGENCE.md` 总纲（9 操作能力/9×9 矩阵/
