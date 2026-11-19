@@ -1,0 +1,969 @@
+{
+ "meta": {
+  "script": "t79_life_scan.py",
+  "generated_at": "2026-11-19 20:13:18",
+  "engine": "natural_engine (rules 1-11)",
+  "seed": 20261120,
+  "max_atoms_guard": 22,
+  "quick": true,
+  "nutrient_pool": 82,
+  "elapsed_s": 34.9
+ },
+ "S1_nutrient_pairs": {
+  "pairs": 3403,
+  "ok": 3214,
+  "fail": 189,
+  "inert": 549,
+  "single": 1387,
+  "multi": 1827,
+  "amplified_pairs": 174,
+  "amplified_examples": [
+   {
+    "inputs": [
+     "A2",
+     "W2"
+    ],
+    "products": [
+     "WA",
+     "WA"
+    ],
+    "amplified": [
+     "WA"
+    ]
+   },
+   {
+    "inputs": [
+     "A2",
+     "X2"
+    ],
+    "products": [
+     "XA",
+     "XA"
+    ],
+    "amplified": [
+     "XA"
+    ]
+   },
+   {
+    "inputs": [
+     "A3",
+     "A3"
+    ],
+    "products": [
+     "A2",
+     "A2",
+     "A2"
+    ],
+    "amplified": [
+     "A2"
+    ]
+   },
+   {
+    "inputs": [
+     "A3",
+     "W2A"
+    ],
+    "products": [
+     "WA2",
+     "WA2"
+    ],
+    "amplified": [
+     "WA2"
+    ]
+   },
+   {
+    "inputs": [
+     "A3",
+     "W3"
+    ],
+    "products": [
+     "WA",
+     "WA",
+     "WA"
+    ],
+    "amplified": [
+     "WA"
+    ]
+   },
+   {
+    "inputs": [
+     "A3",
+     "X2A"
+    ],
+    "products": [
+     "XA2",
+     "XA2"
+    ],
+    "amplified": [
+     "XA2"
+    ]
+   },
+   {
+    "inputs": [
+     "A3",
+     "X2W"
+    ],
+    "products": [
+     "XA",
+     "XA",
+     "WA"
+    ],
+    "amplified": [
+     "XA"
+    ]
+   },
+   {
+    "inputs": [
+     "A3",
+     "X3"
+    ],
+    "products": [
+     "XA",
+     "XA",
+     "XA"
+    ],
+    "amplified": [
+     "XA"
+    ]
+   },
+   {
+    "inputs": [
+     "A3",
+     "XW2"
+    ],
+    "products": [
+     "XA",
+     "WA",
+     "WA"
+    ],
+    "amplified": [
+     "WA"
+    ]
+   },
+   {
+    "inputs": [
+     "AF2",
+     "C2A"
+    ],
+    "products": [
+     "CAF",
+     "CAF"
+    ],
+    "amplified": [
+     "CAF"
+    ]
+   },
+   {
+    "inputs": [
+     "AF2",
+     "C2W"
+    ],
+    "products": [
+     "CF",
+     "CF",
+     "WA"
+    ],
+    "amplified": [
+     "CF"
+    ]
+   },
+   {
+    "inputs": [
+     "AF2",
+     "K2A"
+    ],
+    "products": [
+     "KAF",
+     "KAF"
+    ],
+    "amplified": [
+     "KAF"
+    ]
+   },
+   {
+    "inputs": [
+     "AF2",
+     "L2A"
+    ],
+    "products": [
+     "LAF",
+     "LAF"
+    ],
+    "amplified": [
+     "LAF"
+    ]
+   },
+   {
+    "inputs": [
+     "AF2",
+     "O2A"
+    ],
+    "products": [
+     "OAF",
+     "OAF"
+    ],
+    "amplified": [
+     "OAF"
+    ]
+   },
+   {
+    "inputs": [
+     "AF2",
+     "P2A"
+    ],
+    "products": [
+     "PAF",
+     "PAF"
+    ],
+    "amplified": [
+     "PAF"
+    ]
+   },
+   {
+    "inputs": [
+     "AF2",
+     "W2A"
+    ],
+    "products": [
+     "WA",
+     "WA",
+     "F2"
+    ],
+    "amplified": [
+     "WA"
+    ]
+   },
+   {
+    "inputs": [
+     "AF2",
+     "WF2"
+    ],
+    "products": [
+     "WA",
+     "F2",
+     "F2"
+    ],
+    "amplified": [
+     "F2"
+    ]
+   },
+   {
+    "inputs": [
+     "AF2",
+     "WL2"
+    ],
+    "products": [
+     "WA",
+     "LF",
+     "LF"
+    ],
+    "amplified": [
+     "LF"
+    ]
+   },
+   {
+    "inputs": [
+     "AF2",
+     "X2A"
+    ],
+    "products": [
+     "XA",
+     "XA",
+     "F2"
+    ],
+    "amplified": [
+     "XA"
+    ]
+   },
+   {
+    "inputs": [
+     "AF2",
+     "XC2"
+    ],
+    "products": [
+     "XA",
+     "CF",
+     "CF"
+    ],
+    "amplified": [
+     "CF"
+    ]
+   },
+   {
+    "inputs": [
+     "AF2",
+     "XF2"
+    ],
+    "products": [
+     "XA",
+     "F2",
+     "F2"
+    ],
+    "amplified": [
+     "F2"
+    ]
+   },
+   {
+    "inputs": [
+     "AF2",
+     "XL2"
+    ],
+    "products": [
+     "XA",
+     "LF",
+     "LF"
+    ],
+    "amplified": [
+     "LF"
+    ]
+   },
+   {
+    "inputs": [
+     "C2",
+     "F2"
+    ],
+    "products": [
+     "CF",
+     "CF"
+    ],
+    "amplified": [
+     "CF"
+    ]
+   },
+   {
+    "inputs": [
+     "C2",
+     "L2"
+    ],
+    "products": [
+     "CL",
+     "CL"
+    ],
+    "amplified": [
+     "CL"
+    ]
+   },
+   {
+    "inputs": [
+     "C2A",
+     "C2W"
+    ],
+    "products": [
+     "C2",
+     "C2",
+     "WA"
+    ],
+    "amplified": [
+     "C2"
+    ]
+   },
+   {
+    "inputs": [
+     "C2A",
+     "K2A"
+    ],
+    "products": [
+     "CKA",
+     "CKA"
+    ],
+    "amplified": [
+     "CKA"
+    ]
+   },
+   {
+    "inputs": [
+     "C2A",
+     "L2A"
+    ],
+    "products": [
+     "CLA",
+     "CLA"
+    ],
+    "amplified": [
+     "CLA"
+    ]
+   },
+   {
+    "inputs": [
+     "C2A",
+     "O2A"
+    ],
+    "products": [
+     "OCA",
+     "OCA"
+    ],
+    "amplified": [
+     "OCA"
+    ]
+   },
+   {
+    "inputs": [
+     "C2A",
+     "P2A"
+    ],
+    "products": [
+     "CPA",
+     "CPA"
+    ],
+    "amplified": [
+     "CPA"
+    ]
+   },
+   {
+    "inputs": [
+     "C2A",
+     "W2A"
+    ],
+    "products": [
+     "C2",
+     "WA",
+     "WA"
+    ],
+    "amplified": [
+     "WA"
+    ]
+   },
+   {
+    "inputs": [
+     "C2A",
+     "WF2"
+    ],
+    "products": [
+     "CF",
+     "CF",
+     "WA"
+    ],
+    "amplified": [
+     "CF"
+    ]
+   },
+   {
+    "inputs": [
+     "C2A",
+     "WL2"
+    ],
+    "products": [
+     "CL",
+     "CL",
+     "WA"
+    ],
+    "amplified": [
+     "CL"
+    ]
+   },
+   {
+    "inputs": [
+     "C2A",
+     "X2A"
+    ],
+    "products": [
+     "XA",
+     "XA",
+     "C2"
+    ],
+    "amplified": [
+     "XA"
+    ]
+   },
+   {
+    "inputs": [
+     "C2A",
+     "XC2"
+    ],
+    "products": [
+     "XA",
+     "C2",
+     "C2"
+    ],
+    "amplified": [
+     "C2"
+    ]
+   },
+   {
+    "inputs": [
+     "C2A",
+     "XF2"
+    ],
+    "products": [
+     "XA",
+     "CF",
+     "CF"
+    ],
+    "amplified": [
+     "CF"
+    ]
+   },
+   {
+    "inputs": [
+     "C2A",
+     "XL2"
+    ],
+    "products": [
+     "XA",
+     "CL",
+     "CL"
+    ],
+    "amplified": [
+     "CL"
+    ]
+   },
+   {
+    "inputs": [
+     "C2W",
+     "L2A"
+    ],
+    "products": [
+     "CL",
+     "CL",
+     "WA"
+    ],
+    "amplified": [
+     "CL"
+    ]
+   },
+   {
+    "inputs": [
+     "C2W",
+     "O2W"
+    ],
+    "products": [
+     "OCW",
+     "OCW"
+    ],
+    "amplified": [
+     "OCW"
+    ]
+   },
+   {
+    "inputs": [
+     "C2W",
+     "P2W"
+    ],
+    "products": [
+     "CPW",
+     "CPW"
+    ],
+    "amplified": [
+     "CPW"
+    ]
+   },
+   {
+    "inputs": [
+     "C2W",
+     "WA2"
+    ],
+    "products": [
+     "C2",
+     "WA",
+     "WA"
+    ],
+    "amplified": [
+     "WA"
+    ]
+   }
+  ],
+  "catalytic_pairs": 0,
+  "catalytic_examples": [],
+  "max_product_atoms": 6,
+  "max_product_formula": "C2WA3",
+  "multi_share": 0.5684505289359054
+ },
+ "S2_growth_chains_greedy": {
+  "chains": [
+   {
+    "seed": "CF",
+    "steps": 5,
+    "final": "OX3C2PK3A4F",
+    "final_atoms": 15,
+    "path": [
+     "CF",
+     "A3->CA3F",
+     "CPA->C2PA4F",
+     "X3->X3C2PA4F",
+     "K2->X3C2PK2A4F",
+     "OK->OX3C2PK3A4F"
+    ]
+   },
+   {
+    "seed": "LF",
+    "steps": 5,
+    "final": "OX3CPLK3A4F",
+    "final_atoms": 15,
+    "path": [
+     "LF",
+     "A3->LA3F",
+     "CPA->CPLA4F",
+     "X3->X3CPLA4F",
+     "K2->X3CPLK2A4F",
+     "OK->OX3CPLK3A4F"
+    ]
+   },
+   {
+    "seed": "L2",
+    "steps": 5,
+    "final": "OX3CPL2K3A4",
+    "final_atoms": 15,
+    "path": [
+     "L2",
+     "A3->L2A3",
+     "CPA->CPL2A4",
+     "X3->X3CPL2A4",
+     "K2->X3CPL2K2A4",
+     "OK->OX3CPL2K3A4"
+    ]
+   },
+   {
+    "seed": "WA",
+    "steps": 7,
+    "final": "O2X3CW4K5A5F2",
+    "final_atoms": 22,
+    "path": [
+     "WA",
+     "AF2->WA2F2",
+     "K2A->WK2A3F2",
+     "CWK->CW2K3A3F2",
+     "O2W->O2CW3K3A3F2",
+     "X3->O2X3CW3K3A3F2",
+     "K2A->O2X3CW3K5A4F2",
+     "WA->O2X3CW4K5A5F2"
+    ]
+   },
+   {
+    "seed": "OK",
+    "steps": 7,
+    "final": "O2C5WK7A7",
+    "final_atoms": 22,
+    "path": [
+     "OK",
+     "CKA->OCK2A",
+     "CKA->OC2K3A2",
+     "A3->OC2K3A5",
+     "CWK->OC3WK4A5",
+     "CKA->OC4WK5A6",
+     "OK->O2C4WK6A6",
+     "CKA->O2C5WK7A7"
+    ]
+   },
+   {
+    "seed": "PK",
+    "steps": 7,
+    "final": "OC5PWK7A7",
+    "final_atoms": 22,
+    "path": [
+     "PK",
+     "CKA->CPK2A",
+     "CKA->C2PK3A2",
+     "A3->C2PK3A5",
+     "CWK->C3PWK4A5",
+     "CKA->C4PWK5A6",
+     "OK->OC4PWK6A6",
+     "CKA->OC5PWK7A7"
+    ]
+   },
+   {
+    "seed": "OP",
+    "steps": 7,
+    "final": "OC5P5KA10",
+    "final_atoms": 22,
+    "path": [
+     "OP",
+     "CKA->OCPKA",
+     "CPA->OC2P2KA2",
+     "P2A->OC2P4KA3",
+     "A3->OC2P4KA6",
+     "A3->OC2P4KA9",
+     "CPA->OC3P5KA10",
+     "C2->OC5P5KA10"
+    ]
+   },
+   {
+    "seed": "XA",
+    "steps": 7,
+    "final": "OXC4P4KA9F2",
+    "final_atoms": 22,
+    "path": [
+     "XA",
+     "AF2->XA2F2",
+     "CPA->XCPA3F2",
+     "CPA->XC2P2A4F2",
+     "OP->OXC2P3A4F2",
+     "A3->OXC2P3A7F2",
+     "CPA->OXC3P4A8F2",
+     "CKA->OXC4P4KA9F2"
+    ]
+   },
+   {
+    "seed": "C2",
+    "steps": 5,
+    "final": "OX3C3PK3A4",
+    "final_atoms": 15,
+    "path": [
+     "C2",
+     "A3->C2A3",
+     "CPA->C3PA4",
+     "X3->X3C3PA4",
+     "K2->X3C3PK2A4",
+     "OK->OX3C3PK3A4"
+    ]
+   },
+   {
+    "seed": "CL",
+    "steps": 5,
+    "final": "OX3C2PLK3A4",
+    "final_atoms": 15,
+    "path": [
+     "CL",
+     "A3->CLA3",
+     "CPA->C2PLA4",
+     "X3->X3C2PLA4",
+     "K2->X3C2PLK2A4",
+     "OK->OX3C2PLK3A4"
+    ]
+   },
+   {
+    "seed": "OXC",
+    "steps": 6,
+    "final": "OX4C2P3A7F4",
+    "final_atoms": 21,
+    "path": [
+     "OXC",
+     "A3->OXCA3",
+     "P2A->OXCP2A4",
+     "CPA->OXC2P3A5",
+     "AF2->OXC2P3A6F2",
+     "AF2->OXC2P3A7F4",
+     "X3->OX4C2P3A7F4"
+    ]
+   },
+   {
+    "seed": "OXCPWK",
+    "steps": 5,
+    "final": "OXC3PWK7A7",
+    "final_atoms": 21,
+    "path": [
+     "OXCPWK",
+     "K2A->OXCPWK3A",
+     "K2A->OXCPWK5A2",
+     "A3->OXCPWK5A5",
+     "CKA->OXC2PWK6A6",
+     "CKA->OXC3PWK7A7"
+    ]
+   },
+   {
+    "seed": "OXCPWKA",
+    "steps": 5,
+    "final": "OXC3P5W4KA7",
+    "final_atoms": 22,
+    "path": [
+     "OXCPWKA",
+     "CPW->OXC2P2W2KA",
+     "P2W->OXC2P4W3KA",
+     "A3->OXC2P4W3KA4",
+     "A3->OXC2P4W3KA7",
+     "CPW->OXC3P5W4KA7"
+    ]
+   },
+   {
+    "seed": "O2XCP3WK2",
+    "steps": 4,
+    "final": "O5X3C2P5W2K2A3",
+    "final_atoms": 22,
+    "path": [
+     "O2XCP3WK2",
+     "P2W->O2XCP5W2K2",
+     "A3->O2XCP5W2K2A3",
+     "O2X->O4X2CP5W2K2A3",
+     "OXC->O5X3C2P5W2K2A3"
+    ]
+   },
+   {
+    "seed": "O3X2P3WK2A",
+    "steps": 3,
+    "final": "O5X3CP6WK2A3",
+    "final_atoms": 21,
+    "path": [
+     "O3X2P3WK2A",
+     "CPA->O3X2CP4WK2A2",
+     "P2A->O3X2CP6WK2A3",
+     "O2X->O5X3CP6WK2A3"
+    ]
+   },
+   {
+    "seed": "X3C3P3W3K2",
+    "steps": 3,
+    "final": "O2X3C3P5W4K2A3",
+    "final_atoms": 22,
+    "path": [
+     "X3C3P3W3K2",
+     "A3->X3C3P3W3K2A3",
+     "P2W->X3C3P5W4K2A3",
+     "O2->O2X3C3P5W4K2A3"
+    ]
+   }
+  ],
+  "max_atoms": 22,
+  "max_chain": {
+   "seed": "WA",
+   "steps": 7,
+   "final": "O2X3CW4K5A5F2",
+   "final_atoms": 22,
+   "path": [
+    "WA",
+    "AF2->WA2F2",
+    "K2A->WK2A3F2",
+    "CWK->CW2K3A3F2",
+    "O2W->O2CW3K3A3F2",
+    "X3->O2X3CW3K3A3F2",
+    "K2A->O2X3CW3K5A4F2",
+    "WA->O2X3CW4K5A5F2"
+   ]
+  }
+ },
+ "S3_body_regeneration": {
+  "cases": 1476,
+  "regenerate": [],
+  "amplify": [],
+  "decomp": 61,
+  "inert": 360,
+  "unknown": 0
+ },
+ "S4_random_growth_ceiling": {
+  "chains": 40,
+  "max_atoms": 22,
+  "steps_hist": {
+   "7": 16,
+   "8": 22,
+   "6": 1,
+   "5": 1
+  },
+  "final_atoms_hist": {
+   "21": 10,
+   "22": 26,
+   "19": 2,
+   "20": 1,
+   "16": 1
+  },
+  "examples": [
+   {
+    "seed": "XA",
+    "steps": 7,
+    "final": "O3X4C2P4W4L2KA",
+    "final_atoms": 21
+   },
+   {
+    "seed": "LF",
+    "steps": 7,
+    "final": "O3CW7L3KA4F2",
+    "final_atoms": 21
+   },
+   {
+    "seed": "PK",
+    "steps": 7,
+    "final": "OXC2P7W4L2KA2F",
+    "final_atoms": 21
+   },
+   {
+    "seed": "LF",
+    "steps": 8,
+    "final": "X2CP9W3LK3AF2",
+    "final_atoms": 22
+   },
+   {
+    "seed": "CF",
+    "steps": 8,
+    "final": "O2X3C2P5W4KA3F2",
+    "final_atoms": 22
+   },
+   {
+    "seed": "OP",
+    "steps": 6,
+    "final": "OX2CP4WL2KA6F",
+    "final_atoms": 19
+   },
+   {
+    "seed": "XA",
+    "steps": 7,
+    "final": "X4P5W4LK2A3F2",
+    "final_atoms": 21
+   },
+   {
+    "seed": "CF",
+    "steps": 7,
+    "final": "X3CP2W6K6F3",
+    "final_atoms": 21
+   },
+   {
+    "seed": "LF",
+    "steps": 8,
+    "final": "O7X3C2PW3L2KF3",
+    "final_atoms": 22
+   },
+   {
+    "seed": "L2",
+    "steps": 8,
+    "final": "O3X3C2P5L3KA5",
+    "final_atoms": 22
+   },
+   {
+    "seed": "CF",
+    "steps": 8,
+    "final": "OC4PWL2K7A5F",
+    "final_atoms": 22
+   },
+   {
+    "seed": "PK",
+    "steps": 7,
+    "final": "OC3PWK7A7F2",
+    "final_atoms": 22
+   },
+   {
+    "seed": "L2",
+    "steps": 8,
+    "final": "O7X5C2P2WL2A2F",
+    "final_atoms": 22
+   },
+   {
+    "seed": "PK",
+    "steps": 8,
+    "final": "OX2C2PW2LK8A4F",
+    "final_atoms": 22
+   },
+   {
+    "seed": "XA",
+    "steps": 7,
+    "final": "O5X5CPW2K2A4F",
+    "final_atoms": 21
+   },
+   {
+    "seed": "XA",
+    "steps": 7,
+    "final": "OX5W6LK3A4F",
+    "final_atoms": 21
+   },
+   {
+    "seed": "CF",
+    "steps": 8,
+    "final": "O3X4CP5W3LKA3F",
+    "final_atoms": 22
+   },
+   {
+    "seed": "OK",
+    "steps": 8,
+    "final": "O2X6C2W3K4A5",
+    "final_atoms": 22
+   },
+   {
+    "seed": "WA",
+    "steps": 7,
+    "final": "O5XCP2W4LKA2F2",
+    "final_atoms": 19
+   },
+   {
+    "seed": "L2",
+    "steps": 8,
+    "final": "O2X2C3PWL4K8A",
+    "final_atoms": 22
+   }
+  ]
+ }
+}
