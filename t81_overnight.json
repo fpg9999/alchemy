@@ -1,0 +1,3401 @@
+{
+ "meta": {
+  "time": "2026-11-20T01:51:09",
+  "grid_ka": [
+   2.0,
+   2.25,
+   2.5,
+   2.75,
+   3.0
+  ],
+  "grid_kr": [
+   0.3,
+   0.4,
+   0.5,
+   0.6,
+   0.8
+  ],
+  "mixes": {
+   "mix0": [
+    "O2",
+    "X2",
+    "C2",
+    "K2",
+    "A2",
+    "F2"
+   ],
+   "mix1": [
+    "OXC",
+    "WCK",
+    "LAF",
+    "XA",
+    "WK",
+    "CL"
+   ],
+   "mix2": [
+    "O2",
+    "X3",
+    "C2",
+    "O3X2",
+    "X2C3",
+    "OC3"
+   ]
+  },
+  "e1_species": [
+   "O2K2A2",
+   "O2K6A2",
+   "O2K3A2F2",
+   "O2",
+   "X2",
+   "C2",
+   "XA",
+   "K2",
+   "WA",
+   "LF"
+  ],
+  "e3_species": [
+   "O2K2A2",
+   "O2K3A2F2",
+   "O2",
+   "C2",
+   "WA"
+  ],
+  "elapsed_s": 533.76
+ },
+ "e2_grid": [
+  {
+   "k_a": 2.0,
+   "k_r": 0.3,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.3,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.3,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 23,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.3,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.88,
+   "expected": 0.1597,
+   "bonds": 25,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.3,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.9062,
+   "expected": 0.1597,
+   "bonds": 32,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.3,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.8519,
+   "expected": 0.1597,
+   "bonds": 27,
+   "max_comp": 3
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.3,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5122,
+   "expected": 0.1597,
+   "bonds": 82,
+   "max_comp": 9
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.3,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.6087,
+   "expected": 0.1597,
+   "bonds": 69,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.3,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.7049,
+   "expected": 0.1597,
+   "bonds": 61,
+   "max_comp": 10
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.4,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.4,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.4,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 23,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.4,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.9091,
+   "expected": 0.1597,
+   "bonds": 22,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.4,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.84,
+   "expected": 0.1597,
+   "bonds": 25,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.4,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.7692,
+   "expected": 0.1597,
+   "bonds": 26,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.4,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5122,
+   "expected": 0.1597,
+   "bonds": 82,
+   "max_comp": 9
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.4,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.6087,
+   "expected": 0.1597,
+   "bonds": 69,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.4,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.7049,
+   "expected": 0.1597,
+   "bonds": 61,
+   "max_comp": 10
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.5,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.5,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.5,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 23,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.5,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.8519,
+   "expected": 0.1597,
+   "bonds": 27,
+   "max_comp": 7
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.5,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.7568,
+   "expected": 0.1597,
+   "bonds": 37,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.5,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.6667,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.5,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5122,
+   "expected": 0.1597,
+   "bonds": 82,
+   "max_comp": 9
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.5,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.6087,
+   "expected": 0.1597,
+   "bonds": 69,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.5,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.7049,
+   "expected": 0.1597,
+   "bonds": 61,
+   "max_comp": 10
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.6,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.6,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.6,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 23,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.6,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.7333,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.6,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.8846,
+   "expected": 0.1597,
+   "bonds": 26,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.6,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.8261,
+   "expected": 0.1597,
+   "bonds": 23,
+   "max_comp": 3
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.6,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5122,
+   "expected": 0.1597,
+   "bonds": 82,
+   "max_comp": 9
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.6,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.6087,
+   "expected": 0.1597,
+   "bonds": 69,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.6,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.7049,
+   "expected": 0.1597,
+   "bonds": 61,
+   "max_comp": 10
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.8,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.8,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.8,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 23,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.8,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.92,
+   "expected": 0.1597,
+   "bonds": 25,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.8,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.92,
+   "expected": 0.1597,
+   "bonds": 25,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.8,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.6774,
+   "expected": 0.1597,
+   "bonds": 31,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.8,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5122,
+   "expected": 0.1597,
+   "bonds": 82,
+   "max_comp": 9
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.8,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.6087,
+   "expected": 0.1597,
+   "bonds": 69,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.0,
+   "k_r": 0.8,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.7049,
+   "expected": 0.1597,
+   "bonds": 61,
+   "max_comp": 10
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.3,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 18,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.3,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 3
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.3,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 26,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.3,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.9286,
+   "expected": 0.1597,
+   "bonds": 28,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.3,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.8276,
+   "expected": 0.1597,
+   "bonds": 29,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.3,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.7143,
+   "expected": 0.1597,
+   "bonds": 35,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.3,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5679,
+   "expected": 0.1597,
+   "bonds": 81,
+   "max_comp": 7
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.3,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.697,
+   "expected": 0.1597,
+   "bonds": 66,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.3,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.6667,
+   "expected": 0.1597,
+   "bonds": 75,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.4,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 18,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.4,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 3
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.4,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 26,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.4,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.8462,
+   "expected": 0.1597,
+   "bonds": 26,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.4,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.88,
+   "expected": 0.1597,
+   "bonds": 25,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.4,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.5758,
+   "expected": 0.1597,
+   "bonds": 33,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.4,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5679,
+   "expected": 0.1597,
+   "bonds": 81,
+   "max_comp": 7
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.4,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.697,
+   "expected": 0.1597,
+   "bonds": 66,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.4,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.6667,
+   "expected": 0.1597,
+   "bonds": 75,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.5,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 18,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.5,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 3
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.5,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 26,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.5,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.8214,
+   "expected": 0.1597,
+   "bonds": 28,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.5,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.7857,
+   "expected": 0.1597,
+   "bonds": 28,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.5,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.8788,
+   "expected": 0.1597,
+   "bonds": 33,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.5,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5679,
+   "expected": 0.1597,
+   "bonds": 81,
+   "max_comp": 7
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.5,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.697,
+   "expected": 0.1597,
+   "bonds": 66,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.5,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.6667,
+   "expected": 0.1597,
+   "bonds": 75,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.6,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 18,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.6,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 3
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.6,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 26,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.6,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.697,
+   "expected": 0.1597,
+   "bonds": 33,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.6,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.8,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.6,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.6923,
+   "expected": 0.1597,
+   "bonds": 39,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.6,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5679,
+   "expected": 0.1597,
+   "bonds": 81,
+   "max_comp": 7
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.6,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.697,
+   "expected": 0.1597,
+   "bonds": 66,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.6,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.6667,
+   "expected": 0.1597,
+   "bonds": 75,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.8,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 18,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.8,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 3
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.8,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 26,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.8,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.9259,
+   "expected": 0.1597,
+   "bonds": 27,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.8,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.8,
+   "expected": 0.1597,
+   "bonds": 20,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.8,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.6667,
+   "expected": 0.1597,
+   "bonds": 33,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.8,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5679,
+   "expected": 0.1597,
+   "bonds": 81,
+   "max_comp": 7
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.8,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.697,
+   "expected": 0.1597,
+   "bonds": 66,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.25,
+   "k_r": 0.8,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.6667,
+   "expected": 0.1597,
+   "bonds": 75,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.3,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.3,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 28,
+   "max_comp": 3
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.3,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.3,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.7838,
+   "expected": 0.1597,
+   "bonds": 37,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.3,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.7073,
+   "expected": 0.1597,
+   "bonds": 41,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.3,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.8222,
+   "expected": 0.1597,
+   "bonds": 45,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.3,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5811,
+   "expected": 0.1597,
+   "bonds": 74,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.3,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.6053,
+   "expected": 0.1597,
+   "bonds": 76,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.3,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.5897,
+   "expected": 0.1597,
+   "bonds": 78,
+   "max_comp": 7
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.4,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.4,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 28,
+   "max_comp": 3
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.4,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.4,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.8421,
+   "expected": 0.1597,
+   "bonds": 38,
+   "max_comp": 8
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.4,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.8065,
+   "expected": 0.1597,
+   "bonds": 31,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.4,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.7576,
+   "expected": 0.1597,
+   "bonds": 33,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.4,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5811,
+   "expected": 0.1597,
+   "bonds": 74,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.4,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.6053,
+   "expected": 0.1597,
+   "bonds": 76,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.4,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.5897,
+   "expected": 0.1597,
+   "bonds": 78,
+   "max_comp": 7
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.5,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.5,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 28,
+   "max_comp": 3
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.5,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.5,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.6842,
+   "expected": 0.1597,
+   "bonds": 38,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.5,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.7027,
+   "expected": 0.1597,
+   "bonds": 37,
+   "max_comp": 8
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.5,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.7826,
+   "expected": 0.1597,
+   "bonds": 23,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.5,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5811,
+   "expected": 0.1597,
+   "bonds": 74,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.5,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.6053,
+   "expected": 0.1597,
+   "bonds": 76,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.5,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.5897,
+   "expected": 0.1597,
+   "bonds": 78,
+   "max_comp": 7
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.6,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.6,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 28,
+   "max_comp": 3
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.6,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.6,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.65,
+   "expected": 0.1597,
+   "bonds": 40,
+   "max_comp": 9
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.6,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.7742,
+   "expected": 0.1597,
+   "bonds": 31,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.6,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.6327,
+   "expected": 0.1597,
+   "bonds": 49,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.6,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5811,
+   "expected": 0.1597,
+   "bonds": 74,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.6,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.6053,
+   "expected": 0.1597,
+   "bonds": 76,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.6,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.5897,
+   "expected": 0.1597,
+   "bonds": 78,
+   "max_comp": 7
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.8,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.8,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 28,
+   "max_comp": 3
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.8,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 24,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.8,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.6207,
+   "expected": 0.1597,
+   "bonds": 29,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.8,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.8056,
+   "expected": 0.1597,
+   "bonds": 36,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.8,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.7931,
+   "expected": 0.1597,
+   "bonds": 29,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.8,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5811,
+   "expected": 0.1597,
+   "bonds": 74,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.8,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.6053,
+   "expected": 0.1597,
+   "bonds": 76,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.5,
+   "k_r": 0.8,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.5897,
+   "expected": 0.1597,
+   "bonds": 78,
+   "max_comp": 7
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.3,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 27,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.3,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 29,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.3,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 25,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.3,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.7333,
+   "expected": 0.1597,
+   "bonds": 45,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.3,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.75,
+   "expected": 0.1597,
+   "bonds": 40,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.3,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.8571,
+   "expected": 0.1597,
+   "bonds": 35,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.3,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.4605,
+   "expected": 0.1597,
+   "bonds": 76,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.3,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.5319,
+   "expected": 0.1597,
+   "bonds": 94,
+   "max_comp": 9
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.3,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.4949,
+   "expected": 0.1597,
+   "bonds": 99,
+   "max_comp": 8
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.4,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 27,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.4,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 29,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.4,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 25,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.4,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.7222,
+   "expected": 0.1597,
+   "bonds": 36,
+   "max_comp": 7
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.4,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.75,
+   "expected": 0.1597,
+   "bonds": 28,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.4,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.871,
+   "expected": 0.1597,
+   "bonds": 31,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.4,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.4605,
+   "expected": 0.1597,
+   "bonds": 76,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.4,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.5319,
+   "expected": 0.1597,
+   "bonds": 94,
+   "max_comp": 9
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.4,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.4949,
+   "expected": 0.1597,
+   "bonds": 99,
+   "max_comp": 8
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.5,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 27,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.5,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 29,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.5,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 25,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.5,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.6279,
+   "expected": 0.1597,
+   "bonds": 43,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.5,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.7442,
+   "expected": 0.1597,
+   "bonds": 43,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.5,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.7692,
+   "expected": 0.1597,
+   "bonds": 39,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.5,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.4605,
+   "expected": 0.1597,
+   "bonds": 76,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.5,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.5319,
+   "expected": 0.1597,
+   "bonds": 94,
+   "max_comp": 9
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.5,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.4949,
+   "expected": 0.1597,
+   "bonds": 99,
+   "max_comp": 8
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.6,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 27,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.6,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 29,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.6,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 25,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.6,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.7273,
+   "expected": 0.1597,
+   "bonds": 44,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.6,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.675,
+   "expected": 0.1597,
+   "bonds": 40,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.6,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.65,
+   "expected": 0.1597,
+   "bonds": 40,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.6,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.4605,
+   "expected": 0.1597,
+   "bonds": 76,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.6,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.5319,
+   "expected": 0.1597,
+   "bonds": 94,
+   "max_comp": 9
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.6,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.4949,
+   "expected": 0.1597,
+   "bonds": 99,
+   "max_comp": 8
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.8,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 27,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.8,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 29,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.8,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 25,
+   "max_comp": 4
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.8,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.7097,
+   "expected": 0.1597,
+   "bonds": 31,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.8,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.6098,
+   "expected": 0.1597,
+   "bonds": 41,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.8,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.65,
+   "expected": 0.1597,
+   "bonds": 40,
+   "max_comp": 6
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.8,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.4605,
+   "expected": 0.1597,
+   "bonds": 76,
+   "max_comp": 5
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.8,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.5319,
+   "expected": 0.1597,
+   "bonds": 94,
+   "max_comp": 9
+  },
+  {
+   "k_a": 2.75,
+   "k_r": 0.8,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.4949,
+   "expected": 0.1597,
+   "bonds": 99,
+   "max_comp": 8
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.3,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 25,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.3,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.3,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.3,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.7209,
+   "expected": 0.1597,
+   "bonds": 43,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.3,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.8372,
+   "expected": 0.1597,
+   "bonds": 43,
+   "max_comp": 5
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.3,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.7292,
+   "expected": 0.1597,
+   "bonds": 48,
+   "max_comp": 6
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.3,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5111,
+   "expected": 0.1597,
+   "bonds": 90,
+   "max_comp": 8
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.3,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.5778,
+   "expected": 0.1597,
+   "bonds": 90,
+   "max_comp": 8
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.3,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.5529,
+   "expected": 0.1597,
+   "bonds": 85,
+   "max_comp": 5
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.4,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 25,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.4,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.4,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.4,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.6757,
+   "expected": 0.1597,
+   "bonds": 37,
+   "max_comp": 6
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.4,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.7778,
+   "expected": 0.1597,
+   "bonds": 36,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.4,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.6857,
+   "expected": 0.1597,
+   "bonds": 35,
+   "max_comp": 6
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.4,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5111,
+   "expected": 0.1597,
+   "bonds": 90,
+   "max_comp": 8
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.4,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.5778,
+   "expected": 0.1597,
+   "bonds": 90,
+   "max_comp": 8
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.4,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.5529,
+   "expected": 0.1597,
+   "bonds": 85,
+   "max_comp": 5
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.5,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 25,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.5,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.5,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.5,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.6667,
+   "expected": 0.1597,
+   "bonds": 33,
+   "max_comp": 5
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.5,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.697,
+   "expected": 0.1597,
+   "bonds": 33,
+   "max_comp": 5
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.5,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.7179,
+   "expected": 0.1597,
+   "bonds": 39,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.5,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5111,
+   "expected": 0.1597,
+   "bonds": 90,
+   "max_comp": 8
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.5,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.5778,
+   "expected": 0.1597,
+   "bonds": 90,
+   "max_comp": 8
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.5,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.5529,
+   "expected": 0.1597,
+   "bonds": 85,
+   "max_comp": 5
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.6,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 25,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.6,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.6,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.6,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.625,
+   "expected": 0.1597,
+   "bonds": 32,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.6,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.7838,
+   "expected": 0.1597,
+   "bonds": 37,
+   "max_comp": 5
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.6,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.9091,
+   "expected": 0.1597,
+   "bonds": 33,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.6,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5111,
+   "expected": 0.1597,
+   "bonds": 90,
+   "max_comp": 8
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.6,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.5778,
+   "expected": 0.1597,
+   "bonds": 90,
+   "max_comp": 8
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.6,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.5529,
+   "expected": 0.1597,
+   "bonds": 85,
+   "max_comp": 5
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.8,
+   "mix": "mix0",
+   "seed": 31,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 25,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.8,
+   "mix": "mix0",
+   "seed": 32,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.8,
+   "mix": "mix0",
+   "seed": 33,
+   "same_frac": 1.0,
+   "expected": 0.1597,
+   "bonds": 30,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.8,
+   "mix": "mix1",
+   "seed": 31,
+   "same_frac": 0.84,
+   "expected": 0.1597,
+   "bonds": 25,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.8,
+   "mix": "mix1",
+   "seed": 32,
+   "same_frac": 0.7632,
+   "expected": 0.1597,
+   "bonds": 38,
+   "max_comp": 5
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.8,
+   "mix": "mix1",
+   "seed": 33,
+   "same_frac": 0.8276,
+   "expected": 0.1597,
+   "bonds": 29,
+   "max_comp": 4
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.8,
+   "mix": "mix2",
+   "seed": 31,
+   "same_frac": 0.5111,
+   "expected": 0.1597,
+   "bonds": 90,
+   "max_comp": 8
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.8,
+   "mix": "mix2",
+   "seed": 32,
+   "same_frac": 0.5778,
+   "expected": 0.1597,
+   "bonds": 90,
+   "max_comp": 8
+  },
+  {
+   "k_a": 3.0,
+   "k_r": 0.8,
+   "mix": "mix2",
+   "seed": 33,
+   "same_frac": 0.5529,
+   "expected": 0.1597,
+   "bonds": 85,
+   "max_comp": 5
+  }
+ ],
+ "e1": [
+  {
+   "formula": "O2K2A2",
+   "seed": 41,
+   "self_w": 2.5,
+   "final": {
+    "bonds": 43,
+    "bonds_strong": 43,
+    "max_comp": 5,
+    "max_comp_strong": 5,
+    "n_comp": 18,
+    "bond_ratio": 1.72
+   },
+   "bonds_t250": 20,
+   "bonds_t1000": 30
+  },
+  {
+   "formula": "O2K2A2",
+   "seed": 42,
+   "self_w": 2.5,
+   "final": {
+    "bonds": 43,
+    "bonds_strong": 43,
+    "max_comp": 4,
+    "max_comp_strong": 4,
+    "n_comp": 19,
+    "bond_ratio": 1.72
+   },
+   "bonds_t250": 22,
+   "bonds_t1000": 37
+  },
+  {
+   "formula": "O2K2A2",
+   "seed": 43,
+   "self_w": 2.5,
+   "final": {
+    "bonds": 41,
+    "bonds_strong": 41,
+    "max_comp": 5,
+    "max_comp_strong": 5,
+    "n_comp": 17,
+    "bond_ratio": 1.64
+   },
+   "bonds_t250": 22,
+   "bonds_t1000": 35
+  },
+  {
+   "formula": "O2K2A2",
+   "seed": 44,
+   "self_w": 2.5,
+   "final": {
+    "bonds": 49,
+    "bonds_strong": 49,
+    "max_comp": 7,
+    "max_comp_strong": 7,
+    "n_comp": 14,
+    "bond_ratio": 1.96
+   },
+   "bonds_t250": 35,
+   "bonds_t1000": 40
+  },
+  {
+   "formula": "O2K6A2",
+   "seed": 41,
+   "self_w": 2.5,
+   "final": {
+    "bonds": 44,
+    "bonds_strong": 44,
+    "max_comp": 4,
+    "max_comp_strong": 4,
+    "n_comp": 18,
+    "bond_ratio": 1.76
+   },
+   "bonds_t250": 30,
+   "bonds_t1000": 38
+  },
+  {
+   "formula": "O2K6A2",
+   "seed": 42,
+   "self_w": 2.5,
+   "final": {
+    "bonds": 51,
+    "bonds_strong": 51,
+    "max_comp": 5,
+    "max_comp_strong": 5,
+    "n_comp": 16,
+    "bond_ratio": 2.04
+   },
+   "bonds_t250": 29,
+   "bonds_t1000": 43
+  },
+  {
+   "formula": "O2K6A2",
+   "seed": 43,
+   "self_w": 2.5,
+   "final": {
+    "bonds": 58,
+    "bonds_strong": 58,
+    "max_comp": 7,
+    "max_comp_strong": 7,
+    "n_comp": 14,
+    "bond_ratio": 2.32
+   },
+   "bonds_t250": 37,
+   "bonds_t1000": 49
+  },
+  {
+   "formula": "O2K6A2",
+   "seed": 44,
+   "self_w": 2.5,
+   "final": {
+    "bonds": 44,
+    "bonds_strong": 44,
+    "max_comp": 5,
+    "max_comp_strong": 5,
+    "n_comp": 17,
+    "bond_ratio": 1.76
+   },
+   "bonds_t250": 30,
+   "bonds_t1000": 37
+  },
+  {
+   "formula": "O2K3A2F2",
+   "seed": 41,
+   "self_w": 2.5,
+   "final": {
+    "bonds": 43,
+    "bonds_strong": 43,
+    "max_comp": 5,
+    "max_comp_strong": 5,
+    "n_comp": 18,
+    "bond_ratio": 1.72
+   },
+   "bonds_t250": 20,
+   "bonds_t1000": 30
+  },
+  {
+   "formula": "O2K3A2F2",
+   "seed": 42,
+   "self_w": 2.5,
+   "final": {
+    "bonds": 43,
+    "bonds_strong": 43,
+    "max_comp": 4,
+    "max_comp_strong": 4,
+    "n_comp": 19,
+    "bond_ratio": 1.72
+   },
+   "bonds_t250": 22,
+   "bonds_t1000": 37
+  },
+  {
+   "formula": "O2K3A2F2",
+   "seed": 43,
+   "self_w": 2.5,
+   "final": {
+    "bonds": 41,
+    "bonds_strong": 41,
+    "max_comp": 5,
+    "max_comp_strong": 5,
+    "n_comp": 17,
+    "bond_ratio": 1.64
+   },
+   "bonds_t250": 22,
+   "bonds_t1000": 35
+  },
+  {
+   "formula": "O2K3A2F2",
+   "seed": 44,
+   "self_w": 2.5,
+   "final": {
+    "bonds": 49,
+    "bonds_strong": 49,
+    "max_comp": 7,
+    "max_comp_strong": 7,
+    "n_comp": 14,
+    "bond_ratio": 1.96
+   },
+   "bonds_t250": 35,
+   "bonds_t1000": 40
+  },
+  {
+   "formula": "O2",
+   "seed": 41,
+   "self_w": 2.5,
+   "final": {
+    "bonds": 34,
+    "bonds_strong": 34,
+    "max_comp": 4,
+    "max_comp_strong": 4,
+    "n_comp": 19,
+    "bond_ratio": 1.36
+   },
+   "bonds_t250": 16,
+   "bonds_t1000": 26
+  },
+  {
+   "formula": "O2",
+   "seed": 42,
+   "self_w": 2.5,
+   "final": {
+    "bonds": 41,
+    "bonds_strong": 41,
+    "max_comp": 4,
+    "max_comp_strong": 4,
+    "n_comp": 18,
+    "bond_ratio": 1.64
+   },
+   "bonds_t250": 15,
+   "bonds_t1000": 26
+  },
+  {
+   "formula": "O2",
+   "seed": 43,
+   "self_w": 2.5,
+   "final": {
+    "bonds": 39,
+    "bonds_strong": 39,
+    "max_comp": 5,
+    "max_comp_strong": 5,
+    "n_comp": 19,
+    "bond_ratio": 1.56
+   },
+   "bonds_t250": 21,
+   "bonds_t1000": 30
+  },
+  {
+   "formula": "O2",
+   "seed": 44,
+   "self_w": 2.5,
+   "final": {
+    "bonds": 35,
+    "bonds_strong": 35,
+    "max_comp": 5,
+    "max_comp_strong": 5,
+    "n_comp": 18,
+    "bond_ratio": 1.4
+   },
+   "bonds_t250": 19,
+   "bonds_t1000": 28
+  },
+  {
+   "formula": "X2",
+   "seed": 41,
+   "self_w": 1.667,
+   "final": {
+    "bonds": 37,
+    "bonds_strong": 37,
+    "max_comp": 4,
+    "max_comp_strong": 4,
+    "n_comp": 17,
+    "bond_ratio": 1.48
+   },
+   "bonds_t250": 16,
+   "bonds_t1000": 26
+  },
+  {
+   "formula": "X2",
+   "seed": 42,
+   "self_w": 1.667,
+   "final": {
+    "bonds": 41,
+    "bonds_strong": 41,
+    "max_comp": 4,
+    "max_comp_strong": 4,
+    "n_comp": 18,
+    "bond_ratio": 1.64
+   },
+   "bonds_t250": 15,
+   "bonds_t1000": 26
+  },
+  {
+   "formula": "X2",
+   "seed": 43,
+   "self_w": 1.667,
+   "final": {
+    "bonds": 46,
+    "bonds_strong": 46,
+    "max_comp": 5,
+    "max_comp_strong": 5,
+    "n_comp": 16,
+    "bond_ratio": 1.84
+   },
+   "bonds_t250": 16,
+   "bonds_t1000": 35
+  },
+  {
+   "formula": "X2",
+   "seed": 44,
+   "self_w": 1.667,
+   "final": {
+    "bonds": 48,
+    "bonds_strong": 48,
+    "max_comp": 5,
+    "max_comp_strong": 5,
+    "n_comp": 16,
+    "bond_ratio": 1.92
+   },
+   "bonds_t250": 18,
+   "bonds_t1000": 35
+  },
+  {
+   "formula": "C2",
+   "seed": 41,
+   "self_w": 0.833,
+   "final": {
+    "bonds": 24,
+    "bonds_strong": 0,
+    "max_comp": 5,
+    "max_comp_strong": 0,
+    "n_comp": 10,
+    "bond_ratio": 0.96
+   },
+   "bonds_t250": 9,
+   "bonds_t1000": 13
+  },
+  {
+   "formula": "C2",
+   "seed": 42,
+   "self_w": 0.833,
+   "final": {
+    "bonds": 11,
+    "bonds_strong": 0,
+    "max_comp": 4,
+    "max_comp_strong": 0,
+    "n_comp": 6,
+    "bond_ratio": 0.44
+   },
+   "bonds_t250": 8,
+   "bonds_t1000": 13
+  },
+  {
+   "formula": "C2",
+   "seed": 43,
+   "self_w": 0.833,
+   "final": {
+    "bonds": 19,
+    "bonds_strong": 0,
+    "max_comp": 5,
+    "max_comp_strong": 0,
+    "n_comp": 10,
+    "bond_ratio": 0.76
+   },
+   "bonds_t250": 11,
+   "bonds_t1000": 17
+  },
+  {
+   "formula": "C2",
+   "seed": 44,
+   "self_w": 0.833,
+   "final": {
+    "bonds": 22,
+    "bonds_strong": 0,
+    "max_comp": 6,
+    "max_comp_strong": 0,
+    "n_comp": 12,
+    "bond_ratio": 0.88
+   },
+   "bonds_t250": 7,
+   "bonds_t1000": 16
+  },
+  {
+   "formula": "XA",
+   "seed": 41,
+   "self_w": 1.667,
+   "final": {
+    "bonds": 37,
+    "bonds_strong": 37,
+    "max_comp": 4,
+    "max_comp_strong": 4,
+    "n_comp": 17,
+    "bond_ratio": 1.48
+   },
+   "bonds_t250": 16,
+   "bonds_t1000": 26
+  },
+  {
+   "formula": "XA",
+   "seed": 42,
+   "self_w": 1.667,
+   "final": {
+    "bonds": 41,
+    "bonds_strong": 41,
+    "max_comp": 4,
+    "max_comp_strong": 4,
+    "n_comp": 18,
+    "bond_ratio": 1.64
+   },
+   "bonds_t250": 15,
+   "bonds_t1000": 26
+  },
+  {
+   "formula": "XA",
+   "seed": 43,
+   "self_w": 1.667,
+   "final": {
+    "bonds": 46,
+    "bonds_strong": 46,
+    "max_comp": 5,
+    "max_comp_strong": 5,
+    "n_comp": 16,
+    "bond_ratio": 1.84
+   },
+   "bonds_t250": 16,
+   "bonds_t1000": 35
+  },
+  {
+   "formula": "XA",
+   "seed": 44,
+   "self_w": 1.667,
+   "final": {
+    "bonds": 48,
+    "bonds_strong": 48,
+    "max_comp": 5,
+    "max_comp_strong": 5,
+    "n_comp": 16,
+    "bond_ratio": 1.92
+   },
+   "bonds_t250": 18,
+   "bonds_t1000": 35
+  },
+  {
+   "formula": "K2",
+   "seed": 41,
+   "self_w": 0.0,
+   "final": {
+    "bonds": 0,
+    "bonds_strong": 0,
+    "max_comp": 0,
+    "max_comp_strong": 0,
+    "n_comp": 0,
+    "bond_ratio": 0.0
+   },
+   "bonds_t250": 0,
+   "bonds_t1000": 0
+  },
+  {
+   "formula": "K2",
+   "seed": 42,
+   "self_w": 0.0,
+   "final": {
+    "bonds": 0,
+    "bonds_strong": 0,
+    "max_comp": 0,
+    "max_comp_strong": 0,
+    "n_comp": 0,
+    "bond_ratio": 0.0
+   },
+   "bonds_t250": 0,
+   "bonds_t1000": 0
+  },
+  {
+   "formula": "K2",
+   "seed": 43,
+   "self_w": 0.0,
+   "final": {
+    "bonds": 0,
+    "bonds_strong": 0,
+    "max_comp": 0,
+    "max_comp_strong": 0,
+    "n_comp": 0,
+    "bond_ratio": 0.0
+   },
+   "bonds_t250": 0,
+   "bonds_t1000": 0
+  },
+  {
+   "formula": "K2",
+   "seed": 44,
+   "self_w": 0.0,
+   "final": {
+    "bonds": 0,
+    "bonds_strong": 0,
+    "max_comp": 0,
+    "max_comp_strong": 0,
+    "n_comp": 0,
+    "bond_ratio": 0.0
+   },
+   "bonds_t250": 0,
+   "bonds_t1000": 0
+  },
+  {
+   "formula": "WA",
+   "seed": 41,
+   "self_w": -0.333,
+   "final": {
+    "bonds": 0,
+    "bonds_strong": 0,
+    "max_comp": 0,
+    "max_comp_strong": 0,
+    "n_comp": 0,
+    "bond_ratio": 0.0
+   },
+   "bonds_t250": 0,
+   "bonds_t1000": 0
+  },
+  {
+   "formula": "WA",
+   "seed": 42,
+   "self_w": -0.333,
+   "final": {
+    "bonds": 0,
+    "bonds_strong": 0,
+    "max_comp": 0,
+    "max_comp_strong": 0,
+    "n_comp": 0,
+    "bond_ratio": 0.0
+   },
+   "bonds_t250": 0,
+   "bonds_t1000": 0
+  },
+  {
+   "formula": "WA",
+   "seed": 43,
+   "self_w": -0.333,
+   "final": {
+    "bonds": 0,
+    "bonds_strong": 0,
+    "max_comp": 0,
+    "max_comp_strong": 0,
+    "n_comp": 0,
+    "bond_ratio": 0.0
+   },
+   "bonds_t250": 0,
+   "bonds_t1000": 0
+  },
+  {
+   "formula": "WA",
+   "seed": 44,
+   "self_w": -0.333,
+   "final": {
+    "bonds": 0,
+    "bonds_strong": 0,
+    "max_comp": 0,
+    "max_comp_strong": 0,
+    "n_comp": 0,
+    "bond_ratio": 0.0
+   },
+   "bonds_t250": 0,
+   "bonds_t1000": 0
+  },
+  {
+   "formula": "LF",
+   "seed": 41,
+   "self_w": -0.167,
+   "final": {
+    "bonds": 0,
+    "bonds_strong": 0,
+    "max_comp": 0,
+    "max_comp_strong": 0,
+    "n_comp": 0,
+    "bond_ratio": 0.0
+   },
+   "bonds_t250": 0,
+   "bonds_t1000": 0
+  },
+  {
+   "formula": "LF",
+   "seed": 42,
+   "self_w": -0.167,
+   "final": {
+    "bonds": 0,
+    "bonds_strong": 0,
+    "max_comp": 0,
+    "max_comp_strong": 0,
+    "n_comp": 0,
+    "bond_ratio": 0.0
+   },
+   "bonds_t250": 0,
+   "bonds_t1000": 0
+  },
+  {
+   "formula": "LF",
+   "seed": 43,
+   "self_w": -0.167,
+   "final": {
+    "bonds": 0,
+    "bonds_strong": 0,
+    "max_comp": 0,
+    "max_comp_strong": 0,
+    "n_comp": 0,
+    "bond_ratio": 0.0
+   },
+   "bonds_t250": 0,
+   "bonds_t1000": 0
+  },
+  {
+   "formula": "LF",
+   "seed": 44,
+   "self_w": -0.167,
+   "final": {
+    "bonds": 0,
+    "bonds_strong": 0,
+    "max_comp": 0,
+    "max_comp_strong": 0,
+    "n_comp": 0,
+    "bond_ratio": 0.0
+   },
+   "bonds_t250": 0,
+   "bonds_t1000": 0
+  }
+ ],
+ "e3": [
+  {
+   "A": "O2K2A2",
+   "use_force": true,
+   "seed": 51,
+   "self_w": 2.5,
+   "body_n": 8,
+   "body_n_max": 8,
+   "tails": [
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "bonds_final": 36
+  },
+  {
+   "A": "O2K2A2",
+   "use_force": true,
+   "seed": 52,
+   "self_w": 2.5,
+   "body_n": 8,
+   "body_n_max": 8,
+   "tails": [
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "bonds_final": 33
+  },
+  {
+   "A": "O2K2A2",
+   "use_force": true,
+   "seed": 53,
+   "self_w": 2.5,
+   "body_n": 7,
+   "body_n_max": 7,
+   "tails": [
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "bonds_final": 30
+  },
+  {
+   "A": "O2K2A2",
+   "use_force": false,
+   "seed": 51,
+   "self_w": 2.5,
+   "body_n": 8,
+   "body_n_max": 8,
+   "tails": [
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "bonds_final": 38
+  },
+  {
+   "A": "O2K2A2",
+   "use_force": false,
+   "seed": 52,
+   "self_w": 2.5,
+   "body_n": 10,
+   "body_n_max": 10,
+   "tails": [
+    8,
+    9,
+    9,
+    9,
+    10
+   ],
+   "bonds_final": 29
+  },
+  {
+   "A": "O2K2A2",
+   "use_force": false,
+   "seed": 53,
+   "self_w": 2.5,
+   "body_n": 8,
+   "body_n_max": 8,
+   "tails": [
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "bonds_final": 31
+  },
+  {
+   "A": "O2K3A2F2",
+   "use_force": true,
+   "seed": 51,
+   "self_w": 2.5,
+   "body_n": 8,
+   "body_n_max": 8,
+   "tails": [
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "bonds_final": 36
+  },
+  {
+   "A": "O2K3A2F2",
+   "use_force": true,
+   "seed": 52,
+   "self_w": 2.5,
+   "body_n": 8,
+   "body_n_max": 8,
+   "tails": [
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "bonds_final": 33
+  },
+  {
+   "A": "O2K3A2F2",
+   "use_force": true,
+   "seed": 53,
+   "self_w": 2.5,
+   "body_n": 7,
+   "body_n_max": 7,
+   "tails": [
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "bonds_final": 30
+  },
+  {
+   "A": "O2K3A2F2",
+   "use_force": false,
+   "seed": 51,
+   "self_w": 2.5,
+   "body_n": 8,
+   "body_n_max": 8,
+   "tails": [
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "bonds_final": 38
+  },
+  {
+   "A": "O2K3A2F2",
+   "use_force": false,
+   "seed": 52,
+   "self_w": 2.5,
+   "body_n": 10,
+   "body_n_max": 10,
+   "tails": [
+    8,
+    9,
+    9,
+    9,
+    10
+   ],
+   "bonds_final": 29
+  },
+  {
+   "A": "O2K3A2F2",
+   "use_force": false,
+   "seed": 53,
+   "self_w": 2.5,
+   "body_n": 8,
+   "body_n_max": 8,
+   "tails": [
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "bonds_final": 31
+  },
+  {
+   "A": "O2",
+   "use_force": true,
+   "seed": 51,
+   "self_w": 2.5,
+   "body_n": 6,
+   "body_n_max": 6,
+   "tails": [
+    6,
+    6,
+    6,
+    6,
+    6
+   ],
+   "bonds_final": 29
+  },
+  {
+   "A": "O2",
+   "use_force": true,
+   "seed": 52,
+   "self_w": 2.5,
+   "body_n": 8,
+   "body_n_max": 8,
+   "tails": [
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "bonds_final": 29
+  },
+  {
+   "A": "O2",
+   "use_force": true,
+   "seed": 53,
+   "self_w": 2.5,
+   "body_n": 8,
+   "body_n_max": 8,
+   "tails": [
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "bonds_final": 32
+  },
+  {
+   "A": "O2",
+   "use_force": false,
+   "seed": 51,
+   "self_w": 2.5,
+   "body_n": 8,
+   "body_n_max": 8,
+   "tails": [
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "bonds_final": 38
+  },
+  {
+   "A": "O2",
+   "use_force": false,
+   "seed": 52,
+   "self_w": 2.5,
+   "body_n": 10,
+   "body_n_max": 10,
+   "tails": [
+    8,
+    9,
+    9,
+    9,
+    10
+   ],
+   "bonds_final": 29
+  },
+  {
+   "A": "O2",
+   "use_force": false,
+   "seed": 53,
+   "self_w": 2.5,
+   "body_n": 8,
+   "body_n_max": 8,
+   "tails": [
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "bonds_final": 31
+  },
+  {
+   "A": "C2",
+   "use_force": true,
+   "seed": 51,
+   "self_w": 0.833,
+   "body_n": 0,
+   "body_n_max": 0,
+   "tails": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bonds_final": 12
+  },
+  {
+   "A": "C2",
+   "use_force": true,
+   "seed": 52,
+   "self_w": 0.833,
+   "body_n": 0,
+   "body_n_max": 0,
+   "tails": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bonds_final": 11
+  },
+  {
+   "A": "C2",
+   "use_force": true,
+   "seed": 53,
+   "self_w": 0.833,
+   "body_n": 0,
+   "body_n_max": 0,
+   "tails": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bonds_final": 5
+  },
+  {
+   "A": "C2",
+   "use_force": false,
+   "seed": 51,
+   "self_w": 0.833,
+   "body_n": 0,
+   "body_n_max": 0,
+   "tails": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bonds_final": 0
+  },
+  {
+   "A": "C2",
+   "use_force": false,
+   "seed": 52,
+   "self_w": 0.833,
+   "body_n": 0,
+   "body_n_max": 0,
+   "tails": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bonds_final": 2
+  },
+  {
+   "A": "C2",
+   "use_force": false,
+   "seed": 53,
+   "self_w": 0.833,
+   "body_n": 0,
+   "body_n_max": 0,
+   "tails": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bonds_final": 0
+  },
+  {
+   "A": "WA",
+   "use_force": true,
+   "seed": 51,
+   "self_w": -0.333,
+   "body_n": 0,
+   "body_n_max": 0,
+   "tails": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bonds_final": 0
+  },
+  {
+   "A": "WA",
+   "use_force": true,
+   "seed": 52,
+   "self_w": -0.333,
+   "body_n": 0,
+   "body_n_max": 0,
+   "tails": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bonds_final": 0
+  },
+  {
+   "A": "WA",
+   "use_force": true,
+   "seed": 53,
+   "self_w": -0.333,
+   "body_n": 0,
+   "body_n_max": 0,
+   "tails": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bonds_final": 0
+  },
+  {
+   "A": "WA",
+   "use_force": false,
+   "seed": 51,
+   "self_w": -0.333,
+   "body_n": 0,
+   "body_n_max": 0,
+   "tails": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bonds_final": 0
+  },
+  {
+   "A": "WA",
+   "use_force": false,
+   "seed": 52,
+   "self_w": -0.333,
+   "body_n": 0,
+   "body_n_max": 0,
+   "tails": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bonds_final": 0
+  },
+  {
+   "A": "WA",
+   "use_force": false,
+   "seed": 53,
+   "self_w": -0.333,
+   "body_n": 0,
+   "body_n_max": 0,
+   "tails": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bonds_final": 0
+  }
+ ]
+}
