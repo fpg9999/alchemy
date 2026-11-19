@@ -513,23 +513,29 @@ def step(grid: dict, mols: list[Mol], rng: random.Random, threshold: float = 0.0
                     moved += 1
                     acted = True
                     break
-                # 占位：判断能否交换
-                if occ_c.formula == m.formula:
-                    continue
-                if getattr(m, "swap_cool", 0) > 0:
-                    continue
-                if dy == 0 or (dy > 0 and m.w_eff >= occ_c.w_eff) \
-                        or (dy < 0 and m.w_eff <= occ_c.w_eff):
-                    pass
-                else:
+                # 占位：只能"保序"交换
+                if not (dy == 0 or (dy > 0 and m.w_eff >= occ_c.w_eff)
+                        or (dy < 0 and m.w_eff <= occ_c.w_eff)):
                     continue
                 if abs(math.hypot(fx, fy)) < force_threshold:
                     continue
-                if DOM_SOURCE_CHECK and dominant_source(m, grid, decay=decay, asym=asym) is occ_c:
-                    continue
+                # **主导力源判据（唯一过滤）**：
+                #   交换伙伴不能是主导力源；且交换方向必须朝主导源（吸引）或背离它（排斥）
+                if DOM_SOURCE_CHECK:
+                    ds = dominant_source(m, grid, decay=decay, asym=asym)
+                    if ds is None or ds is occ_c:
+                        continue
+                    f_ds = pair_force(m, ds, decay=decay, asym=asym)
+                    if f_ds == 0:
+                        continue
+                    sxn, syn = ds.x - m.x, ds.y - m.y
+                    sn = math.hypot(sxn, syn) or 1.0
+                    tn = math.hypot(dx, dy) or 1.0
+                    dot = (dx * sxn + dy * syn) / (sn * tn)
+                    # 吸引 → 朝它走；排斥 → 背离它
+                    if (f_ds > 0 and dot < 0.5) or (f_ds < 0 and dot > -0.5):
+                        continue
                 swap_cells(grid, (m.x, m.y), best)
-                m.swap_cool = swap_cooldown
-                occ_c.swap_cool = swap_cooldown
                 moved += 1
                 acted = True
                 if stats is not None:
