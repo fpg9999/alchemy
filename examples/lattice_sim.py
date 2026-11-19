@@ -483,76 +483,60 @@ def step(grid: dict, mols: list[Mol], rng: random.Random, threshold: float = 0.0
                 continue
             steps = 1
             ux, uy = fx / mag, fy / mag
-        # 沿速度/力方向逐格推进（可推开比自己轻的分子）
+        # 沿速度/力方向逐格推进：**受阻时沿障碍滑行**（网格惯性）
         for _ in range(steps):
-            cands = [(dx, dy) for dx in (-1, 0, 1) for dy in (-1, 0, 1) if dx or dy]
-            rng.shuffle(cands)
-            best, best_score = None, -9.9
-            for dx, dy in cands:
-                nx, ny = m.x + dx, m.y + dy
-                if not (0 <= nx < GRID and 0 <= ny < GRID):
-                    continue
-                # 有重量的分子不能自己往上走（只能被别的分子推上去），
-                # 否则会和沉降规则形成每 tick 一次的上下振荡
-                if no_self_rise and use_radial and m.w_eff > 0 and ny < m.y:
-                    continue
-                score = (dx * ux + dy * uy) / math.hypot(dx, dy)
-                if score > best_score:
-                    best_score, best = score, (nx, ny)
-            if best is None or best_score < 0.3:
-                break
-            dx, dy = best[0] - m.x, best[1] - m.y
-            if (best[0], best[1]) in grid:
-                # 分子间力可以交换，但**不能破坏重量顺序**：
-                # 水平方向自由；垂直方向只允许"重的往下、轻的往上"。
-                occ = grid[best]
-                if strict_order:
-                    ok = (dy == 0 or (dy > 0 and m.w_eff > occ.w_eff)
-                          or (dy < 0 and m.w_eff < occ.w_eff))
-                else:
-                    ok = (dy == 0 or (dy > 0 and m.w_eff >= occ.w_eff)
-                          or (dy < 0 and m.w_eff <= occ.w_eff))
-                if force_threshold > 0 and math.hypot(fx, fy) < force_threshold:
-                    ok = False
-                # 无意义交换过滤 ①：同种分子互换没有意义（不可区分）
-                if occ.formula == m.formula:
+            cands = []
+            for dx in (-1, 0, 1):
+                for dy in (-1, 0, 1):
+                    if dx == 0 and dy == 0:
+                        continue
+                    nx, ny = m.x + dx, m.y + dy
+                    if not (0 <= nx < GRID and 0 <= ny < GRID):
+                        continue
+                    occ_c = grid.get((nx, ny))
+                    if occ_c is None:
+                        # 空格：有重量的分子不允许自己往上走
+                        if no_self_rise and use_radial and m.w_eff > 0 and dy < 0:
+                            continue
+                    score = (dx * ux + dy * uy) / math.hypot(dx, dy)
+                    cands.append((score, dx, dy, occ_c))
+            cands.sort(key=lambda c: -c[0])
+            acted = False
+            for score, dx, dy, occ_c in cands:
+                if score < 0.15:
                     break
-                # 无意义交换过滤 ③：**交换伙伴本身就是主导力来源**时，
-                # 交换无法让彼此更近/更远，纯属空转 → 不换
-                if DOM_SOURCE_CHECK:
-                    ds = dominant_source(m, grid, decay=decay, asym=asym)
-                    if ds is occ:
-                        break
-                # 无意义交换过滤 ②：刚换过的分子冷却期内不再换
-                if getattr(m, "swap_cool", 0) > 0:
-                    break
-                if ok and energy_rule:
-                    origin = (m.x, m.y)
-                    e_before = local_energy(m, grid) + local_energy(occ, grid)
-                    swap_cells(grid, origin, best)
-                    e_after = local_energy(m, grid) + local_energy(occ, grid)
-                    if e_after < e_before - 1e-9:
-                        moved += 1
-                        if stats is not None:
-                            stats["force"] = stats.get("force", 0) + 1
-                    else:
-                        swap_cells(grid, best, origin)       # 换回去
-                    break
-                if ok:
-                    swap_cells(grid, (m.x, m.y), best)
-                    m.swap_cool = swap_cooldown
-                    occ.swap_cool = swap_cooldown
+                best = (m.x + dx, m.y + dy)
+                if occ_c is None:
+                    del grid[(m.x, m.y)]
+                    m.x, m.y = best
+                    grid[best] = m
                     moved += 1
-                    if stats is not None:
-                        stats["force"] = stats.get("force", 0) + 1
-                break
-            else:
-                del grid[(m.x, m.y)]
-                m.x, m.y = best
-                grid[best] = m
+                    acted = True
+                    break
+                # 占位：判断能否交换
+                if occ_c.formula == m.formula:
+                    continue
+                if getattr(m, "swap_cool", 0) > 0:
+                    continue
+                if dy == 0 or (dy > 0 and m.w_eff >= occ_c.w_eff) \
+                        or (dy < 0 and m.w_eff <= occ_c.w_eff):
+                    pass
+                else:
+                    continue
+                if abs(math.hypot(fx, fy)) < force_threshold:
+                    continue
+                if DOM_SOURCE_CHECK and dominant_source(m, grid, decay=decay, asym=asym) is occ_c:
+                    continue
+                swap_cells(grid, (m.x, m.y), best)
+                m.swap_cool = swap_cooldown
+                occ_c.swap_cool = swap_cooldown
+                moved += 1
+                acted = True
                 if stats is not None:
                     stats["force"] = stats.get("force", 0) + 1
-            moved += 1
+                break
+            if not acted:
+                break
     return moved
 
 
