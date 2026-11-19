@@ -1,38 +1,52 @@
 # -*- coding: utf-8 -*-
-"""物质的三个数值属性：密度 / 粘性 / 温度。
+"""物质的三个轴：质量 / 物态 / 温度，各自对应一套游戏系统。
 
-## 规则（2026-11-18 第三轮修订）
+## 规则（2026-11-19 定稿）
 
-三条轴各决定一个**可累加的数值属性**，每条轴按阈值分成**三相（低/中/高）**，
-三者构成 **3×3×3 = 27 格**物性网格。
+三条轴分别由三个价数层的元素特征值**累加后取平均**得到，再按阈值分三档：
 
-| 轴 | 价数层 | 属性 | 权重（每个原子） |
-|---|---|---|---|
-| **概念/骨架** | 3 价 秩O / 沌K / 势P | **密度** | O +3、K +2、P +1 |
-| **物态/连接** | 2 价 晶X / 流W / 气A | **粘性** | X +3、W +2、A +1 |
-| **能量/端帽** | 1 价 焰F / 电L / 冰C | **温度** | F +3、L +2、C +1 |
+| 轴 | 价数层 | 属性 | 权重（每个原子） | 三档 | 决定的游戏系统 |
+|---|---|---|---|---|---|
+| **概念族** | 3 价 秩O / 沌K / 势P | **质量** | O 3 / K 2 / P 1 | 轻 / 中 / 重 | **重力行为**（上升/悬浮/下沉） |
+| **物质族** | 2 价 晶X / 流W / 气A | **物态** | X 3 / W 2 / A 1 | 固 / 液 / 气 | **碰撞判定**（阻挡/游泳/穿过） |
+| **能量族** | 1 价 焰F / 电L / 冰C | **温度** | F 3 / L 2 / C 1 | 冷 / 温 / 热 | **恒素富集**（稀薄/中性/富集） |
 
-- 公式一律 `Σ 该层元素的个数 × 权重`，作用于**整个分子的全部原子**；
-- 温度是**热力学式**的量：**0 = 绝对零度**（无能量元素时可达），无负值。
+**取值**：``属性 = Σ(该层元素数 × 权重) / 该层原子数``，范围 [0, 3]。
 
-### 为什么 3 价轴从"硬度"改成"密度"
+**缺失层不需要特判**：该层不存在时分子为 0，**0 必然落在最低档**
+（质量=轻、物态=气、温度=冷）——这正好符合语义：
+没有骨架就最轻、没有桥就没有内聚所以是气、没有能量元素就是绝对零度。
 
-硬度与"固态"在概念上重合（硬 → 必然固），所以会出现"刚性液体"这种不合理物质。
-密度与粘性、温度**互不重合**：水银密度大而粘性小、蜂蜜密度中而粘性大、泡沫密度小却粘。
-而且密度对固/液/气**都适用**，不会像硬度那样让"没有三价元素的分子硬度恒为 0"。
+## 三条轴为什么这样定（历史结论）
+
+| 曾用方案 | 为什么被否 |
+|---|---|
+| **硬度** | 只对固体有意义，"硬度 × 液体"那一栏只能生搬硬套 |
+| **密度 + 粘性** | 两者都是"凝聚程度"的投影（r(粘性,物态) = −0.77），会重复计同一件事 |
+| **熵 / 物态 / 温度** | 只是把密度/粘性做了归一化，物理内核没变 |
+| **活性** | 与恒素机制冲突：**反应只由恒素浓度 ρ_E 判定** |
+| **导电性** | 与 电L 的权能冲突 |
+
+**判据**：一条轴必须 (a) 对应一套独立的游戏系统，(b) 在三种物态下都有明确交互差异。
+质量 / 物态 / 温度是唯一同时满足这两条的一组。
+
+## 27 格实测（全目录抽样 6000）
+
+- 覆盖 **27 / 27**，每格 **2.7% ~ 4.5%**（162~273 个成员）
+- 三对相关：r(质量,物态) = +0.034、r(质量,温度) = −0.002、r(物态,温度) = +0.016
+- 阈值：质量 (1.67, 2.30)、物态 (1.70, 2.22)、温度 (1.50, 2.00)
 
 ## 用法
 
     >>> import alchemy.attrs as A
-    >>> A.attrs_of("OXC")["density"]
-    3.0
-    >>> A.property_of(A.attrs_of("OXC"))["cell"]
-    '密-低|粘-低|温-低'
-    >>> A.property_of(A.attrs_of("OXC"))["index"]      # 27 格里的序号
-    0
-
-档位一律以 ``property_of`` 的实际输出为准（OXC 的温度 1.0 落在 (3, 6) 之下，
-是"温-低"而不是"温-中"）。
+    >>> d = A.attrs_of("OXC")
+    >>> d["mass"], d["state"], d["temperature"]
+    (3.0, 3.0, 1.0)
+    >>> p = A.property_of(d)
+    >>> p["cell"]
+    '重·固·冷'
+    >>> p["behavior"]["gravity"]
+    '下沉'
 """
 
 from __future__ import annotations
@@ -42,92 +56,101 @@ from collections import Counter
 from .core.elements import DIV, MONO, TRI
 
 __all__ = [
-    "DENS_W", "STICK_W", "TEMP_W", "THRESHOLDS", "GRADES", "CALIBRATION",
-    "AXIS_NAMES", "molecule_attrs", "attrs_of", "skeleton_units",
-    "grade", "property_of", "grid", "cell_of", "N_CELLS",
+    "MASS_W", "STATE_W", "TEMP_W", "THRESHOLDS", "GRADES", "TIER_NAMES",
+    "CALIBRATION", "AXIS_NAMES", "N_CELLS",
+    "molecule_attrs", "attrs_of", "skeleton_units",
+    "grade", "tier_name", "cell_of", "property_of", "behavior", "grid",
+    "buoyancy", "COLLISION", "GRAVITY", "E_SOURCE",
 ]
 
-#: 密度权重：三价层（骨架主干）。秩 O 最致密 > 沌 K > 势 P。
-DENS_W: dict[str, float] = {"O": 3.0, "K": 2.0, "P": 1.0}
+#: 质量权重：三价层（骨架主干）。秩 O 最重 > 沌 K > 势 P。
+MASS_W: dict[str, float] = {"O": 3.0, "K": 2.0, "P": 1.0}
 
-#: 粘性权重：二价层（桥）。晶 X 3 > 流 W 2 > 气 A 1。
-STICK_W: dict[str, float] = {"X": 3.0, "W": 2.0, "A": 1.0}
+#: 物态权重：二价层（桥）。晶 X 最凝聚(固) > 流 W > 气 A。
+STATE_W: dict[str, float] = {"X": 3.0, "W": 2.0, "A": 1.0}
 
-#: 温度权重：一价层（端帽）。焰 F 3 > 电 L 2 > 冰 C 1（纯热值，0 = 绝对零度）。
+#: 温度权重：一价层（端帽）。焰 F 最热 > 电 L > 冰 C（0 = 绝对零度）。
 TEMP_W: dict[str, float] = {"F": 3.0, "L": 2.0, "C": 1.0}
 
 GRADES = ("低", "中", "高")
 
-#: 三轴：键 / 中文名 / 属性名 / 权重表
+#: 三轴：键 / 中文名 / 价数层
 AXIS_NAMES: tuple[tuple[str, str, str], ...] = (
-    ("density", "密度", "三价"),
-    ("stickiness", "粘性", "二价"),
+    ("mass", "质量", "三价"),
+    ("state", "物态", "二价"),
     ("temperature", "温度", "一价"),
 )
 
-#: 每条轴分三档，共 3³ = 27 格
-N_CELLS = 3 ** 3
-
-#: 档位阈值：``(低/中 分界, 中/高 分界)``，按全目录分子级分布定标（见 :data:`CALIBRATION`）。
-THRESHOLDS: dict[str, tuple[float, float]] = {
-    "density": (10.0, 16.0),
-    "stickiness": (6.0, 11.0),
-    "temperature": (3.0, 6.0),
+#: 每条轴的三个档位名（语义名，直接用于类名）
+TIER_NAMES: dict[str, tuple[str, str, str]] = {
+    "mass": ("轻", "中", "重"),
+    "state": ("气", "液", "固"),
+    "temperature": ("冷", "温", "热"),
 }
 
-#: 定标记录（2026-11-18 第三轮：分子级，3³ = 27 格）
+#: 27 格
+N_CELLS = 3 ** 3
+
+#: 档位阈值（在**按层平均**后的 [0,3] 标度上）
+THRESHOLDS: dict[str, tuple[float, float]] = {
+    "mass": (1.67, 2.30),
+    "state": (1.70, 2.22),
+    "temperature": (1.50, 2.00),
+}
+
+#: 定标记录（2026-11-19，全目录 6000 抽样，按层平均）
 CALIBRATION: dict = {
-    "scope": "molecule",
+    "scope": "molecule-per-layer-average",
     "samples": 6000,
-    "percentiles": {
-        "density": {"p33": 10.0, "p50": 13.0, "p67": 16.0, "min": 0.0, "max": 73.0},
-        "stickiness": {"p33": 6.0, "p50": 8.0, "p67": 11.0, "min": 0.0, "max": 69.0},
-        "temperature": {"p33": 3.0, "p50": 4.0, "p67": 6.0, "min": 0.0, "max": 30.0},
-    },
     "shares": {
-        "density@(10,16)": (0.297, 0.368, 0.335),
-        "stickiness@(6,11)": (0.312, 0.321, 0.366),
-        "temperature@(3,6)": (0.298, 0.316, 0.386),
+        "mass@(1.67,2.30)": (0.355, 0.340, 0.305),
+        "state@(1.70,2.22)": (0.332, 0.358, 0.310),
+        "temperature@(1.50,2.00)": (0.331, 0.345, 0.324),
     },
+    "cell_range": (0.027, 0.045),
+    "correlations": {"mass,state": 0.034, "mass,temp": -0.002, "state,temp": 0.016},
+}
+
+#: 碰撞判定（物态）
+COLLISION: dict[str, str] = {
+    "固": "完全阻挡，可站立，需破坏",
+    "液": "可进入，游泳/减速，有浮力",
+    "气": "完全穿过，无阻力",
+}
+
+#: 重力行为（质量）
+GRAVITY: dict[str, str] = {
+    "轻": "上升（浮力 > 重力）",
+    "中": "悬浮/随介质",
+    "重": "下沉（重力 > 浮力）",
+}
+
+#: 恒素富集（温度）
+E_SOURCE: dict[str, str] = {
+    "冷": "稀薄恒素，周围反应冻结",
+    "温": "中性",
+    "热": "富集恒素，周围反应活跃",
 }
 
 
 # ---------------------------------------------------------------- 分子级属性
-def _tally(atoms) -> tuple[float, float, float, Counter, Counter, Counter]:
-    dens = stick = temp = 0.0
-    dc: Counter = Counter()
-    vc: Counter = Counter()
-    tc: Counter = Counter()
-    for e in atoms:
-        if e in DENS_W:
-            dens += DENS_W[e]
-            dc[e] += 1
-        elif e in STICK_W:
-            stick += STICK_W[e]
-            vc[e] += 1
-        elif e in TEMP_W:
-            temp += TEMP_W[e]
-            tc[e] += 1
-    return dens, stick, temp, dc, vc, tc
-
-
 def molecule_attrs(atoms, edges=None) -> dict:
-    """**整个分子**的密度 / 粘性 / 温度（全部原子，不按骨架拆分）。"""
+    """整个分子的 质量 / 物态 / 温度（**按层平均**，范围 0~3）。"""
     atoms = list(atoms)
-    dens, stick, temp, dc, vc, tc = _tally(atoms)
-    return {
-        "natoms": len(atoms),
-        "density": round(dens, 2),
-        "stickiness": round(stick, 2),
-        "temperature": round(temp, 2),
-        "dens_contrib": dict(dc),
-        "stick_contrib": dict(vc),
-        "temp_contrib": dict(tc),
-    }
+    out = {"natoms": len(atoms)}
+    contrib = {}
+    for key, W in (("mass", MASS_W), ("state", STATE_W), ("temperature", TEMP_W)):
+        sub = Counter(a for a in atoms if a in W)
+        n = sum(sub.values())
+        total = sum(W[e] * c for e, c in sub.items())
+        out[key] = round(total / n, 4) if n else 0.0
+        contrib[key] = dict(sub)
+    out["contrib"] = contrib
+    return out
 
 
 def attrs_of(formula_or_atoms, edges=None, catalog=None) -> dict:
-    """对分子式计算三个属性（分子级），附带骨架分解（供外观层使用）。"""
+    """对分子式计算三轴属性，附带骨架分解（供外观层使用）。"""
     if isinstance(formula_or_atoms, str):
         formula = formula_or_atoms
         if catalog is None:
@@ -136,7 +159,7 @@ def attrs_of(formula_or_atoms, edges=None, catalog=None) -> dict:
         rec = catalog.get(formula)
         if rec is None:
             return {"formula": formula, "error": "not_in_catalog", "skeletons": [],
-                    "density": 0.0, "stickiness": 0.0, "temperature": 0.0}
+                    "mass": 0.0, "state": 0.0, "temperature": 0.0, "contrib": {}}
         atoms = list(rec["atoms"])
         edges = [tuple(e) for e in rec["edges"]]
     else:
@@ -226,49 +249,88 @@ def skeleton_units(atoms, edges) -> list[dict]:
 
 # ---------------------------------------------------------------- 阈值分档与 27 格
 def grade(value: float, attr: str, thresholds=None) -> str:
-    """把一个属性值切成 低 / 中 / 高。"""
+    """把一个值切成 低 / 中 / 高（用于编号）。"""
     lo, hi = (thresholds or THRESHOLDS)[attr]
-    if value < lo:
+    if value <= lo:
         return GRADES[0]
-    if value < hi:
+    if value <= hi:
         return GRADES[1]
     return GRADES[2]
 
 
-def cell_of(density: float, stickiness: float, temperature: float,
+def tier_name(value: float, attr: str, thresholds=None) -> str:
+    """把一个值切成该轴的语义档名（轻/中/重、气/液/固、冷/温/热）。"""
+    return TIER_NAMES[attr][GRADES.index(grade(value, attr, thresholds))]
+
+
+def cell_of(mass: float, state: float, temperature: float,
             thresholds=None) -> str:
-    """三档组合成 27 格的一格，如 ``密-低|粘-低|温-中``。"""
-    g = (grade(density, "density", thresholds),
-         grade(stickiness, "stickiness", thresholds),
-         grade(temperature, "temperature", thresholds))
-    return f"密-{g[0]}|粘-{g[1]}|温-{g[2]}"
+    """三档组合成 27 格之一，如 ``重·固·冷``。"""
+    return "·".join((
+        tier_name(mass, "mass", thresholds),
+        tier_name(state, "state", thresholds),
+        tier_name(temperature, "temperature", thresholds),
+    ))
+
+
+def behavior(mass_tier: str, state_tier: str, temp_tier: str) -> dict:
+    """由三档名给出游戏行为（碰撞 / 重力 / 恒素）。"""
+    return {
+        "collision": COLLISION[state_tier],
+        "gravity": GRAVITY[mass_tier],
+        "e_field": E_SOURCE[temp_tier],
+    }
 
 
 def property_of(attrs: dict, thresholds=None) -> dict:
-    """由三个数值得出物性格（27 格之一）。"""
-    d, v, t = attrs["density"], attrs["stickiness"], attrs["temperature"]
-    g = {"density": grade(d, "density", thresholds),
-         "stickiness": grade(v, "stickiness", thresholds),
-         "temperature": grade(t, "temperature", thresholds)}
+    """由三轴数值得出 27 格之一，含游戏行为。"""
+    m, s, t = attrs["mass"], attrs["state"], attrs["temperature"]
+    gm = grade(m, "mass", thresholds)
+    gs = grade(s, "state", thresholds)
+    gt = grade(t, "temperature", thresholds)
+    cell = "·".join((TIER_NAMES["mass"][GRADES.index(gm)],
+                     TIER_NAMES["state"][GRADES.index(gs)],
+                     TIER_NAMES["temperature"][GRADES.index(gt)]))
     return {
-        "density": d, "stickiness": v, "temperature": t,
-        "grades": g,
-        "cell": f"密-{g['density']}|粘-{g['stickiness']}|温-{g['temperature']}",
-        "index": (GRADES.index(g["density"]) * 9
-                  + GRADES.index(g["stickiness"]) * 3
-                  + GRADES.index(g["temperature"])),
+        "mass": m, "state": s, "temperature": t,
+        "grades": {"mass": gm, "state": gs, "temperature": gt},
+        "cell": cell,
+        "index": GRADES.index(gm) * 9 + GRADES.index(gs) * 3 + GRADES.index(gt),
+        "behavior": behavior(TIER_NAMES["mass"][GRADES.index(gm)],
+                             TIER_NAMES["state"][GRADES.index(gs)],
+                             TIER_NAMES["temperature"][GRADES.index(gt)]),
     }
 
 
 def grid() -> list[dict]:
-    """枚举全部 27 格（编号 / 三档），按 (密度, 粘性, 温度) 顺序。"""
+    """枚举全部 27 格（编号 / 类名 / 三档 / 行为）。"""
     out = []
-    for i, d in enumerate(GRADES):
-        for j, v in enumerate(GRADES):
-            for k, t in enumerate(GRADES):
+    for i, m in enumerate(TIER_NAMES["mass"]):
+        for j, s in enumerate(TIER_NAMES["state"]):
+            for k, t in enumerate(TIER_NAMES["temperature"]):
                 out.append({
                     "index": i * 9 + j * 3 + k,
-                    "cell": f"密-{d}|粘-{v}|温-{t}",
-                    "density": d, "stickiness": v, "temperature": t,
+                    "cell": f"{m}·{s}·{t}",
+                    "mass": m, "state": s, "temperature": t,
+                    "behavior": behavior(m, s, t),
                 })
     return out
+
+
+# ---------------------------------------------------------------- 浮力
+def buoyancy(object_mass: float, medium_mass: float, volume: float = 1.0) -> dict:
+    """浮力：``F = (介质质量 − 物体质量) × 体积``。
+
+    注：上升/下沉永远是**相对介质**而言。同一块轻固体在重气体里上浮，
+    在轻气体里照样下沉。
+    """
+    weight = object_mass * volume
+    lift = medium_mass * volume
+    net = lift - weight
+    return {
+        "weight": round(weight, 3),
+        "buoyancy": round(lift, 3),
+        "net": round(net, 3),
+        "motion": "上升" if net > 0 else ("下沉" if net < 0 else "悬浮"),
+        "can_carry": round(max(0.0, net), 3),   # 可托起的最大重量
+    }

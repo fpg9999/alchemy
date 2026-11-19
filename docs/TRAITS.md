@@ -1,3 +1,5 @@
+> ⚠️ **已被 [MATERIAL_AXES.md](MATERIAL_AXES.md) 取代（2026-11-19）**。本文描述的密度/粘性/温度方案已废弃，仅作历史记录。
+
 # 数值属性层：密度 / 粘性 / 温度 → 3³ = 27 格
 
 > 更新：2026-11-18（第三轮）　实现：`alchemy/attrs.py`　测试：`tests/test_attrs.py` 13 项、全仓库 `tests/run_all.py` 124 项全通过
