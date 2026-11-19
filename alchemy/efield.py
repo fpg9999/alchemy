@@ -89,7 +89,7 @@ class EField:
         d = abs(temp - neutral)
         if d < 0.05:
             return 0.0, 0.0
-        rate = min(max_rate, d * 0.5)
+        rate = min(max_rate, d * 0.15)
         radius = base_radius + d * radius_scale
         return rate, radius
 
