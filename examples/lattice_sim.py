@@ -60,7 +60,7 @@ def four_values(formula: str) -> tuple[float, float, float, float]:
 class Mol:
     __slots__ = ("formula", "att", "rep", "d_att", "d_rep", "x", "y",
                  "mass_val", "state_val", "mass_tier", "coll_tier",
-                 "state_simple", "weight", "w_eff", "temp_val", "e_load", "e_rep", "vx", "vy")
+                 "state_simple", "weight", "w_eff", "temp_val", "e_load", "e_rep", "swap_cool", "vx", "vy")
 
     def __init__(self, formula: str, x: int, y: int):
         self.formula = formula
@@ -91,6 +91,7 @@ class Mol:
                              for e in ("F", "L", "C")) / n1) if n1 else 0.0
         self.e_load = 0.0
         self.e_rep = 0.0
+        self.swap_cool = 0
 
 
 #: 质量档 → 重力方向（轻上升 / 中悬浮 / 重下沉）
@@ -326,7 +327,8 @@ def step(grid: dict, mols: list[Mol], rng: random.Random, threshold: float = 0.0
          flatten: bool = True, no_self_rise: bool = True,
          stats: dict | None = None, settle_ratio: float = 0.0,
          weight_by: str = "mass", strict_order: bool = False,
-         force_threshold: float = 0.0, energy_rule: bool = True,
+         force_threshold: float = 0.0, energy_rule: bool = False,
+         swap_cooldown: int = 3,
          flatten_mode: str = "balance"):
     """推进一个 tick。
 
@@ -350,6 +352,10 @@ def step(grid: dict, mols: list[Mol], rng: random.Random, threshold: float = 0.0
         decay = DEFAULT_DECAY
     if asym is None:
         asym = DEFAULT_ASYM
+    # 冷却递减
+    for m in mols:
+        if getattr(m, "swap_cool", 0) > 0:
+            m.swap_cool -= 1
     # 沉降权重：state_mass = 物态基底 + 质量；mass = 只看质量
     for m in mols:
         m.w_eff = m.mass_val if weight_by == "mass" else m.weight
@@ -469,6 +475,12 @@ def step(grid: dict, mols: list[Mol], rng: random.Random, threshold: float = 0.0
                           or (dy < 0 and m.w_eff <= occ.w_eff))
                 if force_threshold > 0 and math.hypot(fx, fy) < force_threshold:
                     ok = False
+                # 无意义交换过滤 ①：同种分子互换没有意义（不可区分）
+                if occ.formula == m.formula:
+                    break
+                # 无意义交换过滤 ②：刚换过的分子冷却期内不再换
+                if getattr(m, "swap_cool", 0) > 0:
+                    break
                 if ok and energy_rule:
                     origin = (m.x, m.y)
                     e_before = local_energy(m, grid) + local_energy(occ, grid)
@@ -483,6 +495,8 @@ def step(grid: dict, mols: list[Mol], rng: random.Random, threshold: float = 0.0
                     break
                 if ok:
                     swap_cells(grid, (m.x, m.y), best)
+                    m.swap_cool = swap_cooldown
+                    occ.swap_cool = swap_cooldown
                     moved += 1
                     if stats is not None:
                         stats["force"] = stats.get("force", 0) + 1
