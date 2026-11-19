@@ -110,6 +110,9 @@ DEFAULT_RADIAL = True
 DEFAULT_DECAY = True
 DEFAULT_ASYM = True
 
+#: 是否启用"主导力来源"过滤（交换伙伴即主导力来源时不换）
+DOM_SOURCE_CHECK = True
+
 
 def load_composition(limit: int) -> list[str]:
     """读 T62B（t62_phaseA）的物种组成，返回按丰度展开的分子式列表。"""
@@ -198,6 +201,42 @@ def swap_cells(grid: dict, a: tuple[int, int], b: tuple[int, int]) -> None:
     grid[a], grid[b] = mb, ma
     ma.x, ma.y = b
     mb.x, mb.y = a
+
+
+
+def pair_force(m: Mol, o: Mol, decay: bool = True, asym: bool = True,
+               beta: float = 0.3) -> float:
+    """m 受到 o 的力（正=吸引，负=排斥，0=无作用）。"""
+    d = math.hypot(o.x - m.x, o.y - m.y)
+    if d == 0:
+        return 0.0
+    Dij = max(m.d_att, o.d_att)
+    if d > Dij:
+        return 0.0
+    if asym:
+        att, rep = m.att, o.rep
+    else:
+        att, rep = m.att * o.att / A_MAX, m.rep * o.rep / R_MAX
+    if not decay:
+        return (att if d <= Dij else 0.0) - (
+            rep if d <= max(m.d_rep, o.d_rep) else 0.0)
+    return force_shape(d / Dij, att, rep, beta)
+
+
+def dominant_source(m: Mol, grid: dict, decay: bool = True,
+                    asym: bool = True) -> "Mol | None":
+    """对 m 施加最大单对力（绝对值）的邻居。"""
+    best, best_mag = None, -1.0
+    rmax = max(m.d_att, m.d_rep)
+    r = int(math.ceil(rmax))
+    for cx, cy in neighbours(m.x, m.y, r):
+        o = grid.get((cx, cy))
+        if o is None:
+            continue
+        f = abs(pair_force(m, o, decay, asym))
+        if f > best_mag:
+            best_mag, best = f, o
+    return best
 
 
 def force_shape(dn: float, att: float, rep: float, beta: float = 0.3) -> float:
@@ -478,6 +517,12 @@ def step(grid: dict, mols: list[Mol], rng: random.Random, threshold: float = 0.0
                 # 无意义交换过滤 ①：同种分子互换没有意义（不可区分）
                 if occ.formula == m.formula:
                     break
+                # 无意义交换过滤 ③：**交换伙伴本身就是主导力来源**时，
+                # 交换无法让彼此更近/更远，纯属空转 → 不换
+                if DOM_SOURCE_CHECK:
+                    ds = dominant_source(m, grid, decay=decay, asym=asym)
+                    if ds is occ:
+                        break
                 # 无意义交换过滤 ②：刚换过的分子冷却期内不再换
                 if getattr(m, "swap_cool", 0) > 0:
                     break
