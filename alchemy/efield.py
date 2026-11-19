@@ -1,18 +1,21 @@
 # -*- coding: utf-8 -*-
-"""恒素密度场（ρ_E）——小数、无上限、大半径、温度驱动。
+"""恒素密度场（ρ_E）——守恒的重分布，不是被消耗的资源。
 
-规格
-----
-- ρ_E 是**小数**，格内**不设上限**（可以很高，也可以被抽到 0）
-- 每个格子每 tick 先**扩散**（向 8 邻域摊平）
-- 分子按温度作用于**较大半径**的场：
-    * 热分子（温度 > 中性）：从半径内吸收恒素 → ``e_load`` 上升
-    * 冷分子（温度 < 中性）：把内圈的恒素推到外圈
-    * 中性分子：不作用
-- **温度决定两件事**：
-    * **强度**：|ΔT| 越大，每 tick 吸收/排斥的量越大（有上限 max_rate）
-    * **半径**：|ΔT| 越大，作用半径越大
-- 只有**强度**有上限；``e_load`` / ``e_rep`` 不设总量上限
+核心理解
+--------
+- **断键吸收恒素，成键释放恒素**；原子最终一定饱和，
+  所以一次反应的吸收量 = 释放量，**净额恒为零**。
+- 因此恒素**永远不会被消耗**，它只决定"反应能不能发生"。
+- 反应阈值 = 两个分子的断键数之和；接触处 ρ_E 必须 ≥ 该阈值。
+
+温度的作用（重分布，总量守恒）
+------------------------------
+- **热分子**：把大半径内的恒素**抽到自己所在格**（局部富集）
+- **冷分子**：把自己格内的恒素**推到外圈**（局部稀薄）
+- **中性分子**：不作用
+- 强度有上限；**半径由温度决定**（越偏离中性，范围越大）
+
+于是：热的物质周围恒素富集 → 反应容易发生；冷的物质周围稀薄 → 难以反应。
 """
 
 from __future__ import annotations
@@ -24,9 +27,10 @@ from .core.elements import ORDER, parse_formula
 
 NEUTRAL_TEMP = 1.85
 DEFAULT_INIT = 0.6
-DEFAULT_RATE = 0.30          # 每 tick 最大吸收/排斥量
-DEFAULT_RADIUS = 2.0         # 基础半径
-RADIUS_SCALE = 3.0           # 温度对半径的放大
+DEFAULT_RATE = 0.30          # 每 tick 最大重分布量
+DEFAULT_RADIUS = 2.0
+RADIUS_SCALE = 3.0
+STRENGTH_SCALE = 0.15
 
 
 def temp_of(formula: str) -> float:
@@ -44,6 +48,7 @@ class EField:
         self.size = size
         self.diffuse_coef = diffuse
         self.rho = [[init] * size for _ in range(size)]
+        self.initial_total = self.total()
 
     # ---------------- 访问
     def get(self, x: int, y: int) -> float:
@@ -58,7 +63,7 @@ class EField:
     def mean(self) -> float:
         return self.total() / (self.size * self.size)
 
-    # ---------------- 扩散
+    # ---------------- 扩散（守恒）
     def diffuse_step(self) -> None:
         k = self.diffuse_coef
         if k <= 0:
@@ -78,38 +83,25 @@ class EField:
                 new[y][x] = v + k * (acc / cnt - v)
         self.rho = new
 
-    # ---------------- 温度作用
+    # ---------------- 温度 → (强度, 半径)
     def strength_radius(self, temp: float,
                         neutral: float = NEUTRAL_TEMP,
                         max_rate: float = DEFAULT_RATE,
                         base_radius: float = DEFAULT_RADIUS,
                         radius_scale: float = RADIUS_SCALE
                         ) -> tuple[float, float]:
-        """返回 (强度, 半径)；强度有上限，半径随 |ΔT| 增大。"""
         d = abs(temp - neutral)
         if d < 0.05:
             return 0.0, 0.0
-        rate = min(max_rate, d * 0.15)
-        radius = base_radius + d * radius_scale
-        return rate, radius
+        return min(max_rate, d * STRENGTH_SCALE), base_radius + d * radius_scale
 
+    # ---------------- 重分布（总量守恒）
     def interact(self, mols: Iterable, neutral: float = NEUTRAL_TEMP,
                  max_rate: float = DEFAULT_RATE,
                  base_radius: float = DEFAULT_RADIUS,
-                 radius_scale: float = RADIUS_SCALE,
-                 leak: float = 0.03) -> None:
+                 radius_scale: float = RADIUS_SCALE) -> None:
         n = self.size
         for m in mols:
-            # 自然泄漏：分子把一部分恒素还回所在格，使场不会被抽干
-            if leak > 0:
-                held = getattr(m, "e_load", 0.0)
-                if held > 0:
-                    give = held * leak
-                    m.e_load = held - give
-                    self.rho[m.y][m.x] += give
-                rep = getattr(m, "e_rep", 0.0)
-                if rep > 0:
-                    m.e_rep = rep * (1.0 - leak)
             d = m.temp_val - neutral
             rate, radius = self.strength_radius(
                 m.temp_val, neutral, max_rate, base_radius, radius_scale)
@@ -118,52 +110,32 @@ class EField:
             r = int(round(radius))
             if r < 1:
                 continue
-            cells = []
+            ring = []
             for dx in range(-r, r + 1):
                 for dy in range(-r, r + 1):
                     if dx == 0 and dy == 0:
                         continue
-                    dd = math.hypot(dx, dy)
-                    if dd > r:
-                        continue
-                    cells.append(((m.x + dx) % n, (m.y + dy) % n, dd))
-            if not cells:
+                    if math.hypot(dx, dy) <= r:
+                        ring.append(((m.x + dx) % n, (m.y + dy) % n))
+            if not ring:
                 continue
             if d > 0:
-                # 热：按距离衰减地从内圈吸收
-                budget = rate
-                taken = 0.0
-                weight = sum(1.0 / (1.0 + c[2]) for c in cells) or 1.0
-                for cx, cy, dd in cells:
-                    if budget <= 0:
-                        break
-                    w = 1.0 / (1.0 + dd) / weight
-                    take = min(self.rho[cy][cx], budget * w * len(cells) / 8.0)
-                    if take <= 0:
-                        continue
-                    self.rho[cy][cx] -= take
-                    taken += take
-                    budget -= take
-                m.e_load = getattr(m, "e_load", 0.0) + taken
-            else:
-                # 冷：把内圈的恒素推到外圈
-                budget = rate
-                inner = [(cx, cy, dd) for cx, cy, dd in cells if dd <= max(1.0, r / 2)]
-                outer = [(cx, cy, dd) for cx, cy, dd in cells if dd > max(1.0, r / 2)]
-                if not inner or not outer:
-                    continue
+                # 热：从外圈抽到中心（局部富集）
+                share = rate / len(ring)
                 moved = 0.0
-                for cx, cy, dd in inner:
-                    if budget <= 0:
-                        break
-                    take = min(self.rho[cy][cx], budget / max(1, len(inner)))
+                for cx, cy in ring:
+                    take = min(self.rho[cy][cx], share)
                     if take <= 0:
                         continue
                     self.rho[cy][cx] -= take
                     moved += take
-                    budget -= take
-                if outer and moved:
-                    per = moved / len(outer)
-                    for cx, cy, dd in outer:
-                        self.rho[cy][cx] += per
-                m.e_rep = getattr(m, "e_rep", 0.0) + moved
+                self.rho[m.y][m.x] += moved
+            else:
+                # 冷：从中心推到外圈（局部稀薄）
+                budget = min(rate, self.rho[m.y][m.x])
+                if budget <= 0:
+                    continue
+                self.rho[m.y][m.x] -= budget
+                share = budget / len(ring)
+                for cx, cy in ring:
+                    self.rho[cy][cx] += share

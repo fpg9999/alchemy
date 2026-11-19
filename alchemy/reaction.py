@@ -57,12 +57,11 @@ class ReactionLayer:
                     if sorted(prods) == sorted((m.formula, o.formula)):
                         self.stats["no_change"] += 1
                         continue
-                    # 阈值 = 断键数之和（整数比较）
+                    # 阈值 = 两个分子的断键数之和；接触处的恒素密度必须达到它
                     need = max(1, breaks)
                     mx = (m.x + o.x) // 2
                     my = (m.y + o.y) // 2
-                    pot = (efield.get(int(mx), int(my))
-                           + getattr(m, "e_load", 0) + getattr(o, "e_load", 0))
+                    pot = efield.get(int(mx), int(my))
                     if pot < need:
                         self.stats["below_threshold"] += 1
                         continue
@@ -84,7 +83,6 @@ class ReactionLayer:
         from lattice_sim import Mol
         cells = [(a.x, a.y), (b.x, b.y)]
         n = len(prods)
-        released = (getattr(a, "e_load", 0) + getattr(b, "e_load", 0)) // 2
         for r in (a, b):
             grid.pop((r.x, r.y), None)
             if r in mols:
@@ -116,15 +114,7 @@ class ReactionLayer:
 
         for f, (sx, sy) in zip(prods, slots):
             nm = Mol(f, sx, sy)
-            nm.e_load = 0.0
             grid[(sx, sy)] = nm
             mols.append(nm)
-        # 恒素逸散：反应吸收的恒素大部分回到局部场（循环）
-        if efield is not None and released > 0:
-            n = efield.size
-            add = released * E_RELEASE
-            for dx in (-1, 0, 1):
-                for dy in (-1, 0, 1):
-                    nx, ny = (cells[0][0] + dx) % n, (cells[0][1] + dy) % n
-                    efield.add(nx, ny, add / 9.0)
+        # 恒素净额为零：断键借入多少，成键就归还多少，无需记账
         return slots
