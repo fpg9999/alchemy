@@ -8,7 +8,8 @@
 
 - 脚本：`t78_three_axis_env.py`（自包含环境引擎，不改 `alchemy/` 内核）
 - 结果：`t78_main_result.json` / `t78_nogate_result.json` / `t78_nochem_result.json`
-- 分析：`t78_analysis.py` → `t78_analysis.json`；作图：`t78_render.py` → `images/t78_overview.png`
+- 分析：`t78_analysis.py` → `t78_analysis.json`；作图：`t78_render.py` → `images/t78_overview.png`；
+  终产物分层图：`t78_products.py` → `images/t78_products.png` + `images/t78_products_matrix.png` + `t78_products.json`
 - **独立分析**：`docs/T78_ANALYSIS.md`（8 节，含 27 格「缺轴碎片」修正、ρ0.6 桶 rate 三重解释、与 T62 的对照机理）
 - **独立验证**：`t78_verify.py` → `t78_verify_report.json`（16/16 PASS：守恒/可复现/规则符合/物理合理/交叉核对）
 - 日期：2026-11-19（单 seed 20261119）
@@ -145,6 +146,30 @@ T78 同样等量价数、同样九元素，却**不收敛**：distinct 607、新
 ⑤ cap=20 + 开放组合空间，末分钟仍在发现新物质。
 → **「收敛/不动点」是退火+整理+全局混合的产物，而不是九元素+等量价数本身的性质**；判决实验 = 给 T78 加 1000→0°C 退火。
 
+### 3.8 终产物分层图：每一层有哪些物质、多少、什么形态
+
+- 生成：`t78_products.py` → `images/t78_products.png`（每层一张卡片：组成条 + 三轴构成 + 4 个分子结构图）、
+  `images/t78_products_matrix.png`（物种 × 层分布矩阵）、`t78_products.json`（图中全部数字的结构化版本）。
+  数据 = t=239 快照 3,922 点 + `final_composition` + 目录 `place` 六边形坐标（结构重绘时键型按 `classify_offset` 判 S/C/L）。
+- 分层口径：世界高 4000 等分 5 层（每层 800）；与 §3.2/§3.5 的「三带（1/3 切点）」是**同一快照的两种切法**，五层合计 3,922。
+- 逐层（main，t=239）：
+  * **顶层 y=3200–4000**：3,214 分子（82.0%）、273 种、平均 3.8 原子/分子；质量 轻 96%，物态 气 85%，温度 温 53%；
+    top CF 1,092（34.0%）、LF 606、L2 551、WA 334、PK 100、XA 60、X3C3P3W3K2 28、XWA 28。→ 轻气小分子富集带。
+  * **中上层 y=2400–3200**：85（2.2%）、66 种、8.1 原子；中 78%、冷 79%；top PK 9、OP 5、OXCPWK 4、O2XP3K 2、O2XCP3WK2 2。
+  * **中层 y=1600–2400**：100（2.5%）、75 种、8.1 原子；中 73%、冷 77%；top PK 7、OP 6、OXCPWK 5、C2 4、O3X2P3WK2 2。
+  * **中下层 y=800–1600**：63（1.6%）、40 种、6.7 原子；中 81%、冷 79%；top OP 15、O2XCP2KA 4、PK 4、O3X2P3WK2A 2。
+  * **底层 y=0–800**：460（11.7%）、230 种、平均 9.0 原子/分子；重 83%、气 64%、冷 70%；
+    top OK 166（36.1%）、OP 42、O2LKA 4、O6W3K4 3、O4L3K2AF 3。→ 重/冷/大分子沉降带。
+- 跨层：607 种里 **559 种只出现在一层（92.1%）**；28 种两层、13 种三层、5 种四层、2 种五层——
+  五层都有的是 **PK 与 OK**（都是气态双原子：PK=轻·气·冷、OK=重·气·冷）：气-气「穿过」让它们能穿行全箱，
+  重力只决定密度分布，不阻止穿越。
+- 形态：顶层 78% 是双原子，图中结构多为「哑铃」；中上层/中层出现 7–16 原子链状/星形（O2XP3K、C2PL3K3F、OXCPWK、
+  O3X2P3WK2A）；底层平均 9.0 原子，最复杂如 O6XW2K4A2（15 原子）、O4L3K2AF（11 原子）——竖直方向「轻小在上、重大多在底」。
+- 矩阵图的读法：每层前 5 名并集 16 种 × 5 层，格内 = 分子数、★ = 五层都有；一眼可见 CF/LF/L2/WA 几乎全在顶层、
+  OP 自底层 42 → 中下层 15 → 中层 6 → 中上层 5、PK 自上而下 100 → 9 → 7 → 4 → 1、OK 则 1 → 2 → 2 → 2 → 166。
+- 诚实注：五层等分只是任意切点；存盘坐标 y=4000.0 的 5 个粒子被 clamp 进顶层；「哪层有哪些」只反映 t=239 单帧，
+  不含 240 min 内的迁移历史（迁移体现在 §3.2 的 y 均值时间曲线）。
+
 ## 4. 诚实局限
 
 1. `incomplete` 基本恒 0（main 0、nogate 1）：T_REACT 固定 1000 时 `E.resolve` 几乎总给 complete；这不代表真实环境。
@@ -186,4 +211,5 @@ python t78_three_axis_env.py --arm nogate --minutes 240 --out t78_nogate_result.
 python t78_three_axis_env.py --arm nochem --minutes 240 --out t78_nochem_result.json  #  2 s
 python t78_analysis.py     # 一致性核对 + 27 格/分层/门控/地理/新物质 → t78_analysis.json
 python t78_render.py       # → images/t78_overview.png
+python t78_products.py     # 终产物分层图 → images/t78_products.png、t78_products_matrix.png、t78_products.json
 ```

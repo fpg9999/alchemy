@@ -81,7 +81,8 @@
   质量→重力分层（轻/中/重 y 均值 3936.5/2330.6/91.4）、温度→恒素富集（局部 ρ-温度 r=0.957）、物态→碰撞；
   main/nogate/nochem 三臂 240 min、1,793 分子/18,222 原子、守恒与漏斗全闭合；门控把 13,329 次反应中 70.6% 压到顶带、810 新物质（目录外）；
   不收敛（607 种终态、双原子小分子主导），与 T62 双组分不动点对照。脚本 `t78_three_axis_env.py`/`t78_analysis.py`/`t78_render.py`，
-  报告 `docs/T78_THREE_AXIS_ENV.md`，图 `images/t78_overview.png`。
+  报告 `docs/T78_THREE_AXIS_ENV.md`，图 `images/t78_overview.png`；**终产物分层图** `t78_products.py` → `images/t78_products.png`
+  （每层有哪些物质/多少/结构形态）与 `images/t78_products_matrix.png`（16 种主要产物的物种×层分布矩阵），数字见 `t78_products.json`。
 - **物质三轴定稿同步（2026-11-19）**：远端 `c438fef` 已同步——`alchemy/attrs.py` 重写为三轴按层平均 + **27 格行为表**
   （`molecule_attrs`/`attrs_of`/`property_of`/`behavior`/`grid`/`buoyancy`），权威定义 `docs/MATERIAL_AXES.md`；
   本地 5 个纯文档设计提交（温度维度 v1/v2 定稿、能力候选总目录 110 项、基础能力原子 36 个）rebase 干净

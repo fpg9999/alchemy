@@ -13,7 +13,8 @@
 > 不是九元素+等量价数本身的性质。详见 [`docs/T78_THREE_AXIS_ENV.md`](docs/T78_THREE_AXIS_ENV.md)、
 > 独立分析 [`docs/T78_ANALYSIS.md`](docs/T78_ANALYSIS.md)（27 格缺轴碎片修正 / ρ0.6 桶 rate 三重解释 / 与 T62 高温爆裂相对照）、
 > 独立验证 `t78_verify_report.json`（16/16 PASS）与 [`images/t78_overview.png`](images/t78_overview.png)；
-> 脚本 `t78_three_axis_env.py`（自包含，不改内核）。
+> 终产物分层图 [`images/t78_products.png`](images/t78_products.png)（每层有哪些物质/多少/结构形态）+
+> [`images/t78_products_matrix.png`](images/t78_products_matrix.png)（物种×层分布矩阵），脚本 `t78_three_axis_env.py`（自包含，不改内核）。
 
 > **物质三轴定稿同步（2026-11-19，最新）**：远端 `c438fef`「rules: 三轴定为 质量/物态/温度（碰撞/重力/恒素富集），27 格行为表」
 > 已拉到本地，并与本地 5 个纯文档设计提交 rebase 干净（HEAD 见 TRANSFER §0，领先 `origin/main` 5 个设计提交 + 本轮 T78 提交，未 push）：

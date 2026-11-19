@@ -1,0 +1,984 @@
+{
+ "source": "t78_main_result.json snapshot t=239",
+ "layers": [
+  {
+   "layer": "顶层",
+   "y": [
+    3200,
+    4000
+   ],
+   "N": 3214,
+   "species": 273,
+   "mean_atoms": 3.78,
+   "tiers": {
+    "mass": {
+     "中": 117,
+     "轻": 3096,
+     "重": 1
+    },
+    "state": {
+     "气": 2744,
+     "固": 143,
+     "液": 327
+    },
+    "temp": {
+     "热": 645,
+     "温": 1697,
+     "冷": 872
+    }
+   },
+   "top": [
+    {
+     "formula": "CF",
+     "count": 1092,
+     "share": 0.3398,
+     "cell": "轻·气·温",
+     "atoms": 2
+    },
+    {
+     "formula": "LF",
+     "count": 606,
+     "share": 0.1886,
+     "cell": "轻·气·热",
+     "atoms": 2
+    },
+    {
+     "formula": "L2",
+     "count": 551,
+     "share": 0.1714,
+     "cell": "轻·气·温",
+     "atoms": 2
+    },
+    {
+     "formula": "WA",
+     "count": 334,
+     "share": 0.1039,
+     "cell": "轻·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "PK",
+     "count": 100,
+     "share": 0.0311,
+     "cell": "轻·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "XA",
+     "count": 60,
+     "share": 0.0187,
+     "cell": "轻·液·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "X3C3P3W3K2",
+     "count": 28,
+     "share": 0.0087,
+     "cell": "轻·固·冷",
+     "atoms": 14
+    },
+    {
+     "formula": "XWA",
+     "count": 28,
+     "share": 0.0087,
+     "cell": "轻·液·冷",
+     "atoms": 3
+    },
+    {
+     "formula": "CL",
+     "count": 17,
+     "share": 0.0053,
+     "cell": "轻·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "OX2C2P2W2K",
+     "count": 12,
+     "share": 0.0037,
+     "cell": "中·固·冷",
+     "atoms": 10
+    },
+    {
+     "formula": "OX2C2P2W2KA2",
+     "count": 12,
+     "share": 0.0037,
+     "cell": "中·液·冷",
+     "atoms": 12
+    },
+    {
+     "formula": "X3C3P2W3K3",
+     "count": 12,
+     "share": 0.0037,
+     "cell": "轻·固·冷",
+     "atoms": 14
+    },
+    {
+     "formula": "O2XCP3WK2",
+     "count": 10,
+     "share": 0.0031,
+     "cell": "中·固·冷",
+     "atoms": 10
+    },
+    {
+     "formula": "F2",
+     "count": 9,
+     "share": 0.0028,
+     "cell": "轻·气·热",
+     "atoms": 2
+    }
+   ],
+   "sketches": [
+    {
+     "formula": "CF",
+     "count": 1092,
+     "atoms": 2,
+     "cell": "轻·气·温"
+    },
+    {
+     "formula": "X3C3P3W3K2A",
+     "count": 6,
+     "atoms": 15,
+     "cell": "轻·固·冷"
+    },
+    {
+     "formula": "LF",
+     "count": 606,
+     "atoms": 2,
+     "cell": "轻·气·热"
+    },
+    {
+     "formula": "L2",
+     "count": 551,
+     "atoms": 2,
+     "cell": "轻·气·温"
+    }
+   ]
+  },
+  {
+   "layer": "中上层",
+   "y": [
+    2400,
+    3200
+   ],
+   "N": 85,
+   "species": 66,
+   "mean_atoms": 8.13,
+   "tiers": {
+    "mass": {
+     "中": 66,
+     "轻": 17,
+     "重": 2
+    },
+    "state": {
+     "固": 39,
+     "气": 31,
+     "液": 15
+    },
+    "temp": {
+     "冷": 67,
+     "热": 9,
+     "温": 9
+    }
+   },
+   "top": [
+    {
+     "formula": "PK",
+     "count": 9,
+     "share": 0.1059,
+     "cell": "轻·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "OP",
+     "count": 5,
+     "share": 0.0588,
+     "cell": "中·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "OXCPWK",
+     "count": 4,
+     "share": 0.0471,
+     "cell": "中·固·冷",
+     "atoms": 6
+    },
+    {
+     "formula": "O2XCP3WK2",
+     "count": 2,
+     "share": 0.0235,
+     "cell": "中·固·冷",
+     "atoms": 10
+    },
+    {
+     "formula": "O2XP3K",
+     "count": 2,
+     "share": 0.0235,
+     "cell": "中·固·冷",
+     "atoms": 7
+    },
+    {
+     "formula": "OK",
+     "count": 2,
+     "share": 0.0235,
+     "cell": "重·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "WA",
+     "count": 2,
+     "share": 0.0235,
+     "cell": "轻·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "C2",
+     "count": 1,
+     "share": 0.0118,
+     "cell": "轻·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "C2PL3K3F",
+     "count": 1,
+     "share": 0.0118,
+     "cell": "中·气·温",
+     "atoms": 10
+    },
+    {
+     "formula": "C2W2",
+     "count": 1,
+     "share": 0.0118,
+     "cell": "轻·液·冷",
+     "atoms": 4
+    },
+    {
+     "formula": "CL",
+     "count": 1,
+     "share": 0.0118,
+     "cell": "轻·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "O2P2K2A",
+     "count": 1,
+     "share": 0.0118,
+     "cell": "中·气·冷",
+     "atoms": 7
+    },
+    {
+     "formula": "O2X2C2P3W2K",
+     "count": 1,
+     "share": 0.0118,
+     "cell": "中·固·冷",
+     "atoms": 12
+    },
+    {
+     "formula": "O2X2C2PW6K7",
+     "count": 1,
+     "share": 0.0118,
+     "cell": "中·固·冷",
+     "atoms": 20
+    }
+   ],
+   "sketches": [
+    {
+     "formula": "PK",
+     "count": 9,
+     "atoms": 2,
+     "cell": "轻·气·冷"
+    },
+    {
+     "formula": "O2X3CP3W3LA2F",
+     "count": 1,
+     "atoms": 16,
+     "cell": "中·液·温"
+    },
+    {
+     "formula": "O2XP3K",
+     "count": 2,
+     "atoms": 7,
+     "cell": "中·固·冷"
+    },
+    {
+     "formula": "C2PL3K3F",
+     "count": 1,
+     "atoms": 10,
+     "cell": "中·气·温"
+    }
+   ]
+  },
+  {
+   "layer": "中层",
+   "y": [
+    1600,
+    2400
+   ],
+   "N": 100,
+   "species": 75,
+   "mean_atoms": 8.07,
+   "tiers": {
+    "mass": {
+     "中": 73,
+     "轻": 23,
+     "重": 4
+    },
+    "state": {
+     "气": 32,
+     "液": 26,
+     "固": 42
+    },
+    "temp": {
+     "热": 14,
+     "冷": 77,
+     "温": 9
+    }
+   },
+   "top": [
+    {
+     "formula": "PK",
+     "count": 7,
+     "share": 0.07,
+     "cell": "轻·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "OP",
+     "count": 6,
+     "share": 0.06,
+     "cell": "中·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "OXCPWK",
+     "count": 5,
+     "share": 0.05,
+     "cell": "中·固·冷",
+     "atoms": 6
+    },
+    {
+     "formula": "C2",
+     "count": 4,
+     "share": 0.04,
+     "cell": "轻·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "O2XCP3WK2",
+     "count": 2,
+     "share": 0.02,
+     "cell": "中·固·冷",
+     "atoms": 10
+    },
+    {
+     "formula": "O3X2P3WK2A",
+     "count": 2,
+     "share": 0.02,
+     "cell": "中·固·冷",
+     "atoms": 12
+    },
+    {
+     "formula": "O3X2P4WK3",
+     "count": 2,
+     "share": 0.02,
+     "cell": "中·固·冷",
+     "atoms": 13
+    },
+    {
+     "formula": "OK",
+     "count": 2,
+     "share": 0.02,
+     "cell": "重·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "OXPKF",
+     "count": 2,
+     "share": 0.02,
+     "cell": "中·固·热",
+     "atoms": 5
+    },
+    {
+     "formula": "OXPWKF",
+     "count": 2,
+     "share": 0.02,
+     "cell": "中·固·热",
+     "atoms": 6
+    },
+    {
+     "formula": "XWA",
+     "count": 2,
+     "share": 0.02,
+     "cell": "轻·液·冷",
+     "atoms": 3
+    },
+    {
+     "formula": "C2W",
+     "count": 1,
+     "share": 0.01,
+     "cell": "轻·液·冷",
+     "atoms": 3
+    },
+    {
+     "formula": "F2",
+     "count": 1,
+     "share": 0.01,
+     "cell": "轻·气·热",
+     "atoms": 2
+    },
+    {
+     "formula": "O2C2P3W4A3F",
+     "count": 1,
+     "share": 0.01,
+     "cell": "中·气·温",
+     "atoms": 15
+    }
+   ],
+   "sketches": [
+    {
+     "formula": "PK",
+     "count": 7,
+     "atoms": 2,
+     "cell": "轻·气·冷"
+    },
+    {
+     "formula": "O2C2P3W4A3F",
+     "count": 1,
+     "atoms": 15,
+     "cell": "中·气·温"
+    },
+    {
+     "formula": "OXCPWK",
+     "count": 5,
+     "atoms": 6,
+     "cell": "中·固·冷"
+    },
+    {
+     "formula": "O3X2P3WK2A",
+     "count": 2,
+     "atoms": 12,
+     "cell": "中·固·冷"
+    }
+   ]
+  },
+  {
+   "layer": "中下层",
+   "y": [
+    800,
+    1600
+   ],
+   "N": 63,
+   "species": 40,
+   "mean_atoms": 6.68,
+   "tiers": {
+    "mass": {
+     "中": 51,
+     "重": 3,
+     "轻": 9
+    },
+    "state": {
+     "气": 30,
+     "液": 19,
+     "固": 14
+    },
+    "temp": {
+     "温": 7,
+     "冷": 50,
+     "热": 6
+    }
+   },
+   "top": [
+    {
+     "formula": "OP",
+     "count": 15,
+     "share": 0.2381,
+     "cell": "中·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "O2XCP2KA",
+     "count": 4,
+     "share": 0.0635,
+     "cell": "中·液·冷",
+     "atoms": 8
+    },
+    {
+     "formula": "PK",
+     "count": 4,
+     "share": 0.0635,
+     "cell": "轻·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "O3X2P3WK2A",
+     "count": 2,
+     "share": 0.0317,
+     "cell": "中·固·冷",
+     "atoms": 12
+    },
+    {
+     "formula": "OK",
+     "count": 2,
+     "share": 0.0317,
+     "cell": "重·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "OXCPKA",
+     "count": 2,
+     "share": 0.0317,
+     "cell": "中·液·冷",
+     "atoms": 6
+    },
+    {
+     "formula": "C2W2",
+     "count": 1,
+     "share": 0.0159,
+     "cell": "轻·液·冷",
+     "atoms": 4
+    },
+    {
+     "formula": "CL",
+     "count": 1,
+     "share": 0.0159,
+     "cell": "轻·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "L2",
+     "count": 1,
+     "share": 0.0159,
+     "cell": "轻·气·温",
+     "atoms": 2
+    },
+    {
+     "formula": "O2P2K2",
+     "count": 1,
+     "share": 0.0159,
+     "cell": "中·气·冷",
+     "atoms": 6
+    },
+    {
+     "formula": "O2P2LKA2",
+     "count": 1,
+     "share": 0.0159,
+     "cell": "中·气·温",
+     "atoms": 8
+    },
+    {
+     "formula": "O2X2CP3W",
+     "count": 1,
+     "share": 0.0159,
+     "cell": "中·固·冷",
+     "atoms": 9
+    },
+    {
+     "formula": "O2X2P2WK2A",
+     "count": 1,
+     "share": 0.0159,
+     "cell": "中·固·冷",
+     "atoms": 10
+    },
+    {
+     "formula": "O2X2P2WK2A2",
+     "count": 1,
+     "share": 0.0159,
+     "cell": "中·液·冷",
+     "atoms": 11
+    }
+   ],
+   "sketches": [
+    {
+     "formula": "OP",
+     "count": 15,
+     "atoms": 2,
+     "cell": "中·气·冷"
+    },
+    {
+     "formula": "O2X2P2WK2A2",
+     "count": 1,
+     "atoms": 11,
+     "cell": "中·液·冷"
+    },
+    {
+     "formula": "O2XCP2KA",
+     "count": 4,
+     "atoms": 8,
+     "cell": "中·液·冷"
+    },
+    {
+     "formula": "OXCPKA",
+     "count": 2,
+     "atoms": 6,
+     "cell": "中·液·冷"
+    }
+   ]
+  },
+  {
+   "layer": "底层",
+   "y": [
+    0,
+    800
+   ],
+   "N": 460,
+   "species": 230,
+   "mean_atoms": 9.03,
+   "tiers": {
+    "mass": {
+     "重": 384,
+     "中": 67,
+     "轻": 9
+    },
+    "state": {
+     "固": 24,
+     "气": 294,
+     "液": 142
+    },
+    "temp": {
+     "热": 68,
+     "冷": 321,
+     "温": 71
+    }
+   },
+   "top": [
+    {
+     "formula": "OK",
+     "count": 166,
+     "share": 0.3609,
+     "cell": "重·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "OP",
+     "count": 42,
+     "share": 0.0913,
+     "cell": "中·气·冷",
+     "atoms": 2
+    },
+    {
+     "formula": "O2LKA",
+     "count": 4,
+     "share": 0.0087,
+     "cell": "重·气·温",
+     "atoms": 5
+    },
+    {
+     "formula": "O4L3K2AF",
+     "count": 3,
+     "share": 0.0065,
+     "cell": "重·气·热",
+     "atoms": 11
+    },
+    {
+     "formula": "O6W3K4",
+     "count": 3,
+     "share": 0.0065,
+     "cell": "重·液·冷",
+     "atoms": 13
+    },
+    {
+     "formula": "O2CWK3",
+     "count": 2,
+     "share": 0.0043,
+     "cell": "重·液·冷",
+     "atoms": 7
+    },
+    {
+     "formula": "O2CWKA",
+     "count": 2,
+     "share": 0.0043,
+     "cell": "重·气·冷",
+     "atoms": 6
+    },
+    {
+     "formula": "O2WLK",
+     "count": 2,
+     "share": 0.0043,
+     "cell": "重·液·温",
+     "atoms": 5
+    },
+    {
+     "formula": "O3CPLKF",
+     "count": 2,
+     "share": 0.0043,
+     "cell": "重·气·温",
+     "atoms": 8
+    },
+    {
+     "formula": "O3K2AF",
+     "count": 2,
+     "share": 0.0043,
+     "cell": "重·气·热",
+     "atoms": 7
+    },
+    {
+     "formula": "O3WK2F",
+     "count": 2,
+     "share": 0.0043,
+     "cell": "重·液·热",
+     "atoms": 7
+    },
+    {
+     "formula": "O3XCW2K2A",
+     "count": 2,
+     "share": 0.0043,
+     "cell": "重·液·冷",
+     "atoms": 10
+    },
+    {
+     "formula": "O6W2K4A",
+     "count": 2,
+     "share": 0.0043,
+     "cell": "重·气·冷",
+     "atoms": 13
+    },
+    {
+     "formula": "O6WK4A2",
+     "count": 2,
+     "share": 0.0043,
+     "cell": "重·气·冷",
+     "atoms": 13
+    }
+   ],
+   "sketches": [
+    {
+     "formula": "OK",
+     "count": 166,
+     "atoms": 2,
+     "cell": "重·气·冷"
+    },
+    {
+     "formula": "O6XW2K4A2",
+     "count": 2,
+     "atoms": 15,
+     "cell": "重·液·冷"
+    },
+    {
+     "formula": "O2LKA",
+     "count": 4,
+     "atoms": 5,
+     "cell": "重·气·温"
+    },
+    {
+     "formula": "O4L3K2AF",
+     "count": 3,
+     "atoms": 11,
+     "cell": "重·气·热"
+    }
+   ]
+  }
+ ],
+ "overlap": {
+  "only_1": 559,
+  "n2": 28,
+  "n3": 13,
+  "n4": 5,
+  "n5": 2,
+  "all_layers": [
+   "PK",
+   "OK"
+  ]
+ },
+ "matrix": {
+  "layers": [
+   "顶层",
+   "中上层",
+   "中层",
+   "中下层",
+   "底层"
+  ],
+  "rows": [
+   {
+    "formula": "CF",
+    "counts": {
+     "顶层": 1092,
+     "中上层": 0,
+     "中层": 0,
+     "中下层": 0,
+     "底层": 1
+    },
+    "cell": "轻·气·温",
+    "atoms": 2
+   },
+   {
+    "formula": "LF",
+    "counts": {
+     "顶层": 606,
+     "中上层": 0,
+     "中层": 0,
+     "中下层": 0,
+     "底层": 1
+    },
+    "cell": "轻·气·热",
+    "atoms": 2
+   },
+   {
+    "formula": "L2",
+    "counts": {
+     "顶层": 551,
+     "中上层": 0,
+     "中层": 0,
+     "中下层": 1,
+     "底层": 0
+    },
+    "cell": "轻·气·温",
+    "atoms": 2
+   },
+   {
+    "formula": "WA",
+    "counts": {
+     "顶层": 334,
+     "中上层": 2,
+     "中层": 1,
+     "中下层": 0,
+     "底层": 0
+    },
+    "cell": "轻·气·冷",
+    "atoms": 2
+   },
+   {
+    "formula": "PK",
+    "counts": {
+     "顶层": 100,
+     "中上层": 9,
+     "中层": 7,
+     "中下层": 4,
+     "底层": 1
+    },
+    "cell": "轻·气·冷",
+    "atoms": 2
+   },
+   {
+    "formula": "O2XCP3WK2",
+    "counts": {
+     "顶层": 10,
+     "中上层": 2,
+     "中层": 2,
+     "中下层": 0,
+     "底层": 0
+    },
+    "cell": "中·固·冷",
+    "atoms": 10
+   },
+   {
+    "formula": "C2",
+    "counts": {
+     "顶层": 5,
+     "中上层": 1,
+     "中层": 4,
+     "中下层": 0,
+     "底层": 1
+    },
+    "cell": "轻·气·冷",
+    "atoms": 2
+   },
+   {
+    "formula": "OXCPWK",
+    "counts": {
+     "顶层": 2,
+     "中上层": 4,
+     "中层": 5,
+     "中下层": 1,
+     "底层": 0
+    },
+    "cell": "中·固·冷",
+    "atoms": 6
+   },
+   {
+    "formula": "OK",
+    "counts": {
+     "顶层": 1,
+     "中上层": 2,
+     "中层": 2,
+     "中下层": 2,
+     "底层": 166
+    },
+    "cell": "重·气·冷",
+    "atoms": 2
+   },
+   {
+    "formula": "OP",
+    "counts": {
+     "顶层": 0,
+     "中上层": 5,
+     "中层": 6,
+     "中下层": 15,
+     "底层": 42
+    },
+    "cell": "中·气·冷",
+    "atoms": 2
+   },
+   {
+    "formula": "O2XP3K",
+    "counts": {
+     "顶层": 0,
+     "中上层": 2,
+     "中层": 1,
+     "中下层": 0,
+     "底层": 0
+    },
+    "cell": "中·固·冷",
+    "atoms": 7
+   },
+   {
+    "formula": "O3X2P3WK2A",
+    "counts": {
+     "顶层": 0,
+     "中上层": 1,
+     "中层": 2,
+     "中下层": 2,
+     "底层": 1
+    },
+    "cell": "中·固·冷",
+    "atoms": 12
+   },
+   {
+    "formula": "O2XCP2KA",
+    "counts": {
+     "顶层": 0,
+     "中上层": 0,
+     "中层": 0,
+     "中下层": 4,
+     "底层": 0
+    },
+    "cell": "中·液·冷",
+    "atoms": 8
+   },
+   {
+    "formula": "O2LKA",
+    "counts": {
+     "顶层": 0,
+     "中上层": 0,
+     "中层": 0,
+     "中下层": 0,
+     "底层": 4
+    },
+    "cell": "重·气·温",
+    "atoms": 5
+   },
+   {
+    "formula": "O4L3K2AF",
+    "counts": {
+     "顶层": 0,
+     "中上层": 0,
+     "中层": 0,
+     "中下层": 0,
+     "底层": 3
+    },
+    "cell": "重·气·热",
+    "atoms": 11
+   },
+   {
+    "formula": "O6W3K4",
+    "counts": {
+     "顶层": 0,
+     "中上层": 0,
+     "中层": 0,
+     "中下层": 0,
+     "底层": 3
+    },
+    "cell": "重·液·冷",
+    "atoms": 13
+   }
+  ]
+ }
+}
