@@ -82,7 +82,7 @@ def _ring_flags(n: int, adj: list[dict[int, int]]) -> list[bool]:
     return ring
 
 
-def _trace(atom_list, rules: int = 11):
+def _trace(atom_list, rules: int = 11, seed_bonds=None):
     """完整跑一遍并保留中间信息。返回 dict 或 None（价数填不满）。
 
     返回字段：
@@ -106,6 +106,15 @@ def _trace(atom_list, rules: int = 11):
     rem = [VAL[e] for e in atom_list]
     bond = [[0] * n for _ in range(n)]
     adj: list[dict[int, int]] = [dict() for _ in range(n)]
+    # 可选：从一个已部分成键的结构继续（自然反应保留存活键）
+    if seed_bonds:
+        for (i, j, mult) in seed_bonds:
+            bond[i][j] += mult
+            bond[j][i] += mult
+            adj[i][j] = adj[i].get(j, 0) + mult
+            adj[j][i] = adj[j].get(i, 0) + mult
+            rem[i] -= mult
+            rem[j] -= mult
     dt = [[0] * n for _ in range(n)]
     fam = [[0] * n for _ in range(n)]
     for i in range(n):

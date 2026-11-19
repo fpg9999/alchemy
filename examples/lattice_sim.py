@@ -60,7 +60,7 @@ def four_values(formula: str) -> tuple[float, float, float, float]:
 class Mol:
     __slots__ = ("formula", "att", "rep", "d_att", "d_rep", "x", "y",
                  "mass_val", "state_val", "mass_tier", "coll_tier",
-                 "state_simple", "weight", "w_eff", "vx", "vy")
+                 "state_simple", "weight", "w_eff", "temp_val", "e_load", "e_rep", "vx", "vy")
 
     def __init__(self, formula: str, x: int, y: int):
         self.formula = formula
@@ -85,6 +85,12 @@ class Mol:
         # **分层权重 = 物态基底 + 连续质量**：固体恒重于液体、液体恒重于气体
         self.weight = STATE_BASE[self.state_simple] + self.mass_val
         self.w_eff = self.weight
+        # 温度（一价层平均）与恒素携带量（由恒素场写入）
+        n1 = sum(g[e] for e in ("F", "L", "C"))
+        self.temp_val = (sum({"F": 3, "L": 2, "C": 1}[e] * g[e]
+                             for e in ("F", "L", "C")) / n1) if n1 else 0.0
+        self.e_load = 0.0
+        self.e_rep = 0.0
 
 
 #: 质量档 → 重力方向（轻上升 / 中悬浮 / 重下沉）
