@@ -53,9 +53,10 @@ def four_values(formula: str) -> tuple[float, float, float, float]:
     # ---- 幂次校准 + 温和缩放：让四种组合的分布接近均匀，同时保持力的量级
     att = min(A_MAX, 10.8 * (a ** 2.5))
     rep = min(R_MAX, 10.8 * (m ** 3.0))
-    # 半径与强度**解耦**：引力半径由散素决定，斥力半径由动素决定
-    d_att = R0 + (R1 - R0) * (s ** 2.0)
-    d_rep = R0 + (R1 - R0) * (m ** 3.0)
+    # 半径**强对比**：散素把"作用距离预算"分给引力，
+    # 剩下的（1−散）加上动素分给斥力。于是两者差距明显。
+    d_att = R0 + (R1 - R0) * s
+    d_rep = R0 + (R1 - R0) * (0.8 * (1.0 - s) + 0.2 * m)
     return att, rep, d_att, d_rep
 
 
