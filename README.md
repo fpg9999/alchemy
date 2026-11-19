@@ -4,18 +4,38 @@
 
 **第一次接手请先读 [`HANDOFF.md`](HANDOFF.md)。**
 
-> **内核入库（2026-11-18，最新）**：规则 1~11 与大锅反应已从根目录脚本抽成**独立纯标准库内核包 [`alchemy/`](alchemy/README.md)**——
+> **T78 九元素三轴环境实验（2026-11-19，最新成果）**：在 4×2 km² 竖直「中·气·温」介质箱里投入 **1,793 个等量价数九元素分子**
+> （120 分子式、18,222 原子、9 元素各约 2020）跑 240 分钟，三轴全部跑通：**质量→重力**（轻/中/重 y 均值 3936.5 / 2330.6 / 91.4，
+> 重贴底、轻贴顶）、**物态→碰撞**（气-气穿过、液-液黏附、固-固阻挡，mode_counts 与实际反应率一致）、
+> **温度→恒素富集**（终态局部 ρ 与局部平均温度 r=0.957）；恒素门控把 13,329 次成功反应中 **70.6% 压到顶部富集带**，
+> 产出 **810 个目录外新物质**（全部不在 84,225 目录内）；三臂（main/nogate/nochem）元素守恒与漏斗全部闭合。
+> **但 T78 不收敛**（607 种终态、双原子小分子主导），与 T62 的 `LF`+`OXCPWKA` 双组分不动点对照——收敛依赖退火+整理+全局混合，
+> 不是九元素+等量价数本身的性质。详见 [`docs/T78_THREE_AXIS_ENV.md`](docs/T78_THREE_AXIS_ENV.md)、
+> 独立分析 [`docs/T78_ANALYSIS.md`](docs/T78_ANALYSIS.md)（27 格缺轴碎片修正 / ρ0.6 桶 rate 三重解释 / 与 T62 高温爆裂相对照）、
+> 独立验证 `t78_verify_report.json`（16/16 PASS）与 [`images/t78_overview.png`](images/t78_overview.png)；
+> 脚本 `t78_three_axis_env.py`（自包含，不改内核）。
+
+> **物质三轴定稿同步（2026-11-19，最新）**：远端 `c438fef`「rules: 三轴定为 质量/物态/温度（碰撞/重力/恒素富集），27 格行为表」
+> 已拉到本地，并与本地 5 个纯文档设计提交 rebase 干净（HEAD 见 TRANSFER §0，领先 `origin/main` 5 个设计提交 + 本轮 T78 提交，未 push）：
+> 物质分类的权威定义改为 [`docs/MATERIAL_AXES.md`](docs/MATERIAL_AXES.md)——**质量**（三价 O3/K2/P1，按层平均，阈值 1.67/2.30）→ 轻/中/重 → 重力 上升/悬浮/下沉；
+> **物态**（二价 X3/W2/A1，1.70/2.22）→ 气/液/固 → 碰撞 穿过/游泳/阻挡；**温度**（一价 F3/L2/C1，1.50/2.00）→ 冷/温/热 → 恒素 稀薄/中性/富集；
+> 三轴组合成 **27 格行为表**，浮力 `F=(介质质量−物体质量)×体积`（`alchemy.attrs.buoyancy`）。原「物性 = 密度/粘性/温度」作废，
+> [`docs/TRAITS.md`](docs/TRAITS.md) 仅留历史记录。本轮同时补入本地设计定稿：[`docs/THERMAL_DIMENSION.md`](docs/THERMAL_DIMENSION.md)（温度维度 v2）、
+> [`docs/ABILITY_CATALOG.md`](docs/ABILITY_CATALOG.md)（能力候选 11 域 110 项）、[`docs/ABILITY_PRIMITIVES.md`](docs/ABILITY_PRIMITIVES.md)（基础能力原子 6 类 36 个）。
+
+> **内核入库（2026-11-18）**：规则 1~11 与大锅反应已从根目录脚本抽成**独立纯标准库内核包 [`alchemy/`](alchemy/README.md)**——
 > 四入口 `simulate` / `embed`+`validate` / `get_catalog` / `classify`（另有 `trace`），`rules=8|9|11` 是单份参数化实现，
 > 84,225 条目录**已 100% 切到规则 1~11 口径**（14,745 条 = 17.51% 结构被替换，分子式不变）；同时把新规则写成 9 份正式文档：
 > 三轴判相（[`docs/THREE_AXES_FINAL.md`](docs/THREE_AXES_FINAL.md)：概念族 刚/粘/松 × 物态 固/液/气 × 能量 冰/焰/电，27 型全覆盖）、
 > 物相规则（[`docs/PHASE_RULE.md`](docs/PHASE_RULE.md)）、口径分歧（[`docs/CALIBER_DIVERGENCE.md`](docs/CALIBER_DIVERGENCE.md)）、
 > 能力（[`docs/ABILITY.md`](docs/ABILITY.md)：聚/散/动 三项数值 + 9 项次级能力三阶，旧 512 体系冻结作历史）、外观（[`docs/APPEARANCE.md`](docs/APPEARANCE.md)）、
-> 物性（[`docs/TRAITS.md`](docs/TRAITS.md)：密度/粘性/温度 → 3³ = 27 格）+
+> 物质三轴（现行 [`docs/MATERIAL_AXES.md`](docs/MATERIAL_AXES.md)：质量/物态/温度 → 27 格行为表；
+> 原 [`docs/TRAITS.md`](docs/TRAITS.md) 的「密度/粘性/温度 → 3³ = 27 格」方案已废弃，仅历史）+
 > 群系规格/候选（[`docs/BIOME_SPEC.md`](docs/BIOME_SPEC.md)、[`docs/BIOME_CANDIDATES.md`](docs/BIOME_CANDIDATES.md)）。
 > **151 项测试全绿**（`python tests/run_all.py`，约 16~27s），另有 4 个示例脚本与群系物种图；整理分析见
 > [`docs/KERNEL_INTAKE.md`](docs/KERNEL_INTAKE.md)。
 
-> **第二轮同步（2026-11-19，最新）**：远端 `facb162`（三价轴属性 硬度→**密度**、物性改成 **3³ = 27 格**、能力改成**类别辐条三项数值**
+> **第二轮同步（2026-11-19）**：远端 `facb162`（三价轴属性 硬度→**密度**、物性改成 **3³ = 27 格**、能力改成**类别辐条三项数值**
 > 并加 **9 项次级能力三阶**）+ `cf9d01b`（`docs/SYNC.md` 记 post-commit 自动推送钩子）已拉到本地（网络受限，经 GitHub API/raw 逐文件取回，
 > 内容与上游一致；本地提交 `7516ce0`，未 push）。另新增 [`docs/REPO_SLIM.md`](docs/REPO_SLIM.md)（694.3MB 仓库体积治理），
 > 第二轮整理分析（属性/能力/表现层）见 [`docs/INTAKE_R2.md`](docs/INTAKE_R2.md)。
@@ -55,8 +75,9 @@
 > （[`docs/T75_BLOCK_WORLD.md`](docs/T75_BLOCK_WORLD.md)）；**T75b** 属性改为**逐骨架**计算、连接桥不计入；
 > **T76 桥的功用标签**（刚性焊接/铰接/定距隔空/多点编织…，[`docs/T76_BRIDGE_FUNCTIONS.md`](docs/T76_BRIDGE_FUNCTIONS.md)）。
 > 注意：T71/T72 的能力项、T75/T75b 的「硬度」与逐骨架口径、T74 的 27 型并列序均已被新成果取代——
-> 现行能力见 [`docs/ABILITY.md`](docs/ABILITY.md)（v3 三项 + v4 九项三阶），现行物性见 [`docs/TRAITS.md`](docs/TRAITS.md)
-> （密度/粘性/温度 27 格），能力→器官→生命的新设计见 [`docs/ABILITY_EMERGENCE.md`](docs/ABILITY_EMERGENCE.md)。
+> 现行能力见 [`docs/ABILITY.md`](docs/ABILITY.md)（v3 三项 + v4 九项三阶），现行物质三轴见
+> [`docs/MATERIAL_AXES.md`](docs/MATERIAL_AXES.md)（质量/物态/温度 → 27 格行为表；`TRAITS.md` 的密度/粘性/温度方案已废弃），
+> 能力→器官→生命的新设计见 [`docs/ABILITY_EMERGENCE.md`](docs/ABILITY_EMERGENCE.md)。
 
 ## 快速开始
 
@@ -86,12 +107,12 @@
 
 ## 目录
 
-- `alchemy/`：**内核包（纯标准库）**——四入口大锅/摆放/目录/分类，另有 `phase`（三轴判相 v4）、`ability`（能力 v3 三项数值 + v4 九项次级三阶，512 冻结作历史）、`attrs`（密度/粘性/温度 27 格）、`biome`（群系物种表）、`ops`（9 操作能力）与 `emergence`（组装体→器官→生命原型）；见 [`alchemy/README.md`](alchemy/README.md)；
-- `tests/`：内核测试（`test_*.py` + `run_all.py`，124 用例 + 涌现原型测试）；`examples/`：内核/群系示例与出图；
+- `alchemy/`：**内核包（纯标准库）**——四入口大锅/摆放/目录/分类，另有 `phase`（三轴判相 v4）、`ability`（能力 v3 三项数值 + v4 九项次级三阶，512 冻结作历史）、`attrs`（物质三轴：质量/物态/温度 → 27 格行为表 + 浮力 `buoyancy`）、`biome`（群系物种表）、`ops`（9 操作能力）与 `emergence`（组装体→器官→生命原型）；见 [`alchemy/README.md`](alchemy/README.md)；
+- `tests/`：内核测试（`test_*.py` + `run_all.py`，151 项用例）；`examples/`：内核/群系示例与出图；
 - `pot_all.py` / `pot_v2.py` / `pot_v3.py` / `pot_v4.py`：历史大锅反应与几何校验脚本（规则 1~11 已迁入 `alchemy/`，`pot_v4.py` 保留为兼容实现）；
 - `natural_engine.py` / `fast_pot.py` / `t55_kinetic_env.py`：自然环境引擎与 2D 粒子环境；
 - `t4_*` ~ `t76_*`：各阶段研究脚本/数据（编号=任务阶段；T71~T76 为能力/形态/方块世界）；
-- `docs/`：全部研究报告（`T*.md`）；新规则正式文档为 `THREE_AXES_FINAL.md` / `PHASE_RULE.md` / `CALIBER_DIVERGENCE.md` / `ABILITY.md` / `APPEARANCE.md` / `TRAITS.md` / `BIOME_SPEC.md` / `BIOME_CANDIDATES.md`，本次入库整理见 `KERNEL_INTAKE.md`；`docs/templates/` 放报告模板（如 `t60_report_template.md`）；
+- `docs/`：全部研究报告（`T*.md`）；新规则正式文档为 `THREE_AXES_FINAL.md` / `PHASE_RULE.md` / `CALIBER_DIVERGENCE.md` / `MATERIAL_AXES.md`（物质三轴现行口径）/ `ABILITY.md` / `APPEARANCE.md` / `BIOME_SPEC.md` / `BIOME_CANDIDATES.md`（`TRAITS.md` 已被 `MATERIAL_AXES.md` 取代，仅历史），另有本地设计文档 `THERMAL_DIMENSION.md` / `ABILITY_CATALOG.md` / `ABILITY_PRIMITIVES.md`，本次入库整理见 `KERNEL_INTAKE.md`；`docs/templates/` 放报告模板（如 `t60_report_template.md`）；
 - `data/biomes/`：群系模板物种表（`t*.csv/json`，12 组）、候选群系（`candidates/`，5 个 + `_union` 121 种）与模板目录 `_catalogue.json`；
 - `images/`：全部结果图（T68~T70b 的图册按 `t68_*`/`t69_*`/`t70_*`/`t70b_*` 命名；内核的群系物种图在 `images/biome_candidates/`）；
 - `_data_gz/`：大数据的 gzip 版本 + `manifest.json`（GitHub 传输用）；

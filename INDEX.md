@@ -2,13 +2,14 @@
 
 > **新对话/新接手：先读 HANDOFF.md、README.md、TRANSFER.md、NEW_CHAT_PROMPT.md。**
 > 本文件是历史/主题索引；最新结论与交接以 HANDOFF.md 为准。
+> **物质三轴口径以 [`docs/MATERIAL_AXES.md`](docs/MATERIAL_AXES.md) 为准**（2026-11-19 `c438fef` 定稿：质量/物态/温度 → 27 格行为表；旧 `docs/TRAITS.md` 密度/粘性/温度方案作废，仅历史）。
 
 ---
 
 # alchemy 工作区索引（自动整理于 2026-11-13 10:58）
 
 ## 目录结构
-- `docs/`：全部研究报告（T4~T70b、HANDOFF、PROJECT_HANDOFF 等）；`docs/templates/` 报告模板
+- `docs/`：全部研究报告（T4~T77、HANDOFF 等）；`docs/templates/` 报告模板
 - `images/`：全部图片（结构图、反应矩阵、循环图、统计图、T68~T70b 大分子图册等）
 - `archive/old_scripts/`：历史探索脚本，已按阶段分子文件夹（`t3/` `t4p/` `late/` `early/`）
 - `archive/old_data/`：历史数据，已按主题分子文件夹（`t3/` `scope/` `catalog/` `finite/` `minimal/` `misc/`）
@@ -19,7 +20,7 @@
 
 - **`alchemy/`（内核包，纯标准库，2026-11-18 入库）**：规则 1~11 大锅反应 / 摆放 / 目录 / 分类的正式实现，四入口
   `simulate` / `embed`+`validate` / `get_catalog` / `classify`；`core/` 为 elements/canon/geometry/reactor/catalog/classify，
-  上层为 `phase`（三轴判相）/`ability`（能力 v3 三项数值 + v4 九项次级三阶；512 冻结作历史）/`attrs`（密度/粘性/温度 → 3³ = 27 格物性）/
+  上层为 `phase`（三轴判相）/`ability`（能力 v3 三项数值 + v4 九项次级三阶；512 冻结作历史）/`attrs`（物质三轴：质量/物态/温度 → 27 格行为表 + 浮力 `buoyancy`）/
   `biome`（群系物种表）、`ops`（v5 9 操作能力：撑/锁/黏/分/捕/断/蓄/移/传）、`emergence`（L1 分子→L2 组装体→L3 器官→L4 生命系统原型）；`rules=8|9|11` 单份参数化；
   见 `alchemy/README.md`、`docs/KERNEL_INTAKE.md`、`docs/ABILITY_EMERGENCE.md`；测试 `tests/run_all.py`（**151 项**）
 - `pot_all.py`：规则 1~8 通用模拟器（历史，已由 `alchemy` 覆盖）
@@ -43,9 +44,15 @@
 
 ## 主要报告（docs/）
 
+- **2026-11-19 T78 九元素三轴环境实验**：`T78_THREE_AXIS_ENV.md`（质量→重力/物态→碰撞/温度→恒素富集三轴在 2D 介质箱中的实现与 240 min 三臂结果：
+  轻/中/重分层 3936.5/2330.6/91.4、局部 ρ-温度 r=0.957、门控把 70.6% 反应压到顶带、810 新物质、不收敛对照 T62；含局限与下一步）；
+  独立分析 `T78_ANALYSIS.md`（27 格缺轴碎片修正、ρ0.6 桶 rate 三重解释、T62 高温爆裂相对照），独立验证 `t78_verify_report.json`（16/16 PASS）
+- **2026-11-19 物质三轴定稿（`c438fef`）**：`MATERIAL_AXES.md`（**权威定义**：质量/物态/温度按层平均、阈值 1.67/2.30 / 1.70/2.22 / 1.50/2.00、
+  27 格行为表（碰撞/重力/恒素富集）、浮力 `F=(介质质量−物体质量)×体积`；§7 记被否方案）、`TRAITS.md`（**已被 `MATERIAL_AXES.md` 取代，仅历史**）、
+  `THERMAL_DIMENSION.md`（温度维度 v2 设计定稿，未实施）、`ABILITY_CATALOG.md`（能力候选 11 域 110 项）、`ABILITY_PRIMITIVES.md`（基础能力原子 6 类 36 个）
 - **2026-11-18 内核入库新文档**：`THREE_AXES_FINAL.md`（三轴判相 v4 定稿）、`PHASE_RULE.md`（物相规则 v1/v2）、
   `CALIBER_DIVERGENCE.md`（规则 1~8/1~9/1~11 口径分歧审计）、`ABILITY.md`（能力：v3 三项数值 + v4 九项次级三阶；512 作历史）、
-  `APPEARANCE.md`（外观，仅记录）、`TRAITS.md`（密度/粘性/温度 → 27 格物性）、`BIOME_SPEC.md`（群系物种规格）、
+  `APPEARANCE.md`（外观，仅记录）、`TRAITS.md`（密度/粘性/温度 → 27 格物性；**已被 `MATERIAL_AXES.md` 取代，仅历史**）、`BIOME_SPEC.md`（群系物种规格）、
   `BIOME_CANDIDATES.md`（候选群系清单）、`SYNC.md`（同步约定 + 自动推送钩子）、`REPO_SLIM.md`（仓库体积治理）、
   `KERNEL_INTAKE.md`（内核入库整理分析总报告）、`INTAKE_R2.md`（第二轮：属性/能力/表现层整理分析）、
   `ABILITY_EMERGENCE.md`（**能力→涌现生命总纲 v5/T77**：9 操作能力/9×9 矩阵/L1~L4/器官原型/生命判据/动力学/E-T 实验）
@@ -70,7 +77,17 @@
   保留 `alchemy/intake/tmp/calib/`（标定中间产物，gitignore 排除）。
 
 ## 最新补充
-- **第三轮（2026-11-19，最新）能力维度 v5 + 涌现原型**：`docs/ABILITY_EMERGENCE.md` 总纲（9 操作能力/9×9 矩阵/
+- **T78 九元素三轴环境实验完成（2026-11-19，最新）**：新三轴在 2D 竖直介质箱（2000×4000，介质=中·气·温）中全部跑通——
+  质量→重力分层（轻/中/重 y 均值 3936.5/2330.6/91.4）、温度→恒素富集（局部 ρ-温度 r=0.957）、物态→碰撞；
+  main/nogate/nochem 三臂 240 min、1,793 分子/18,222 原子、守恒与漏斗全闭合；门控把 13,329 次反应中 70.6% 压到顶带、810 新物质（目录外）；
+  不收敛（607 种终态、双原子小分子主导），与 T62 双组分不动点对照。脚本 `t78_three_axis_env.py`/`t78_analysis.py`/`t78_render.py`，
+  报告 `docs/T78_THREE_AXIS_ENV.md`，图 `images/t78_overview.png`。
+- **物质三轴定稿同步（2026-11-19）**：远端 `c438fef` 已同步——`alchemy/attrs.py` 重写为三轴按层平均 + **27 格行为表**
+  （`molecule_attrs`/`attrs_of`/`property_of`/`behavior`/`grid`/`buoyancy`），权威定义 `docs/MATERIAL_AXES.md`；
+  本地 5 个纯文档设计提交（温度维度 v1/v2 定稿、能力候选总目录 110 项、基础能力原子 36 个）rebase 干净
+  （HEAD `4aea764`，`origin/main`=c438fef，**ahead 5，未 push**）；根文档 README/HANDOFF/TRANSFER/NEW_CHAT_PROMPT 已回填旧口径。
+  下一步：**九元素三轴环境实验（T78）已完成**——结果与独立分析见上两条，后续优先级见 `docs/T78_THREE_AXIS_ENV.md` §5。
+- **第三轮（2026-11-19）能力维度 v5 + 涌现原型**：`docs/ABILITY_EMERGENCE.md` 总纲（9 操作能力/9×9 矩阵/
   L1~L4/9 器官原型/B·M·R·I·H 判据/S1~S8 动力学/E·T 实验）；原型 `alchemy/ops.py` + `alchemy/emergence.py`（~2330 行，纯标准库，无 alive 标志）；
   测试 **151 项全绿**（`tests/test_ops.py` 11 + `tests/test_emergence.py` 16 新增）；`examples/emergence_demo.py`（`--sample/--steps/--seed/--out`）；
   需求文档 `intake/ability_spec.md`、`intake/emergence_spec.md`；参数标定见 `intake/calibration.md` 与 `alchemy/data/emergence_params.json`（`calibration` 段）：
@@ -227,8 +244,9 @@
   `docs/ABILITY.md`、`docs/TRAITS.md` 改口径；新增 `docs/REPO_SLIM.md`；测试 +18 → 124）+ `cf9d01b`（`docs/SYNC.md`
   记 post-commit 自动推送钩子）。本地经 GitHub API/raw 取回并提交 `7516ce0`（网络受限未能 `git fetch`，未 push）。
   第二轮整理分析见 `docs/INTAKE_R2.md`（属性/能力/表现层）。
+  **（注：2026-11-19 `c438fef` 已把三轴定稿为 质量/物态/温度，本节「密度/粘性」口径随之作废，以 `docs/MATERIAL_AXES.md` 为准。）**
 
-- **第三轮（2026-11-19，最新）能力维度 v5 + 涌现原型**：`docs/ABILITY_EMERGENCE.md`（总纲）；
+- **第三轮（2026-11-19）能力维度 v5 + 涌现原型**：`docs/ABILITY_EMERGENCE.md`（总纲）；
   `alchemy/ops.py`（9 元素↔9 操作：撑/锁/黏/分/捕/断/蓄/移/传，p33/p67 阈值、9×9 `LINKAGE`）、
   `alchemy/emergence.py`（L1~L4 动力学，无 `alive` 标志，`M` 由 LINKAGE 派生）、`tests/test_ops.py`+`test_emergence.py`（+27 → **151 项全绿**）、
   `examples/emergence_demo.py`、`alchemy/data/emergence_params.json`（`calibration` 段：标定后组装率 68.5%、器官系统 1~10、活性无机档出现；

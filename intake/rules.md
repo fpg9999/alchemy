@@ -3,6 +3,11 @@
 > 分析对象：`G:\AI work\deepseek\work1\alchemy`，git HEAD `4a2e4d6`（"kernel: 抽出 alchemy 内核（四入口 + 106 项测试）"），工作区干净。
 > 方法：只读仓库；通读 6 份新规则文档（`docs/THREE_AXES_FINAL.md`、`docs/PHASE_RULE.md`、`docs/CALIBER_DIVERGENCE.md`、`docs/ABILITY.md`、`docs/APPEARANCE.md`、`docs/TRAITS.md`），对照 5 份旧文档（`docs/T71_ABILITIES.md`、`docs/T72_ABILITIES_MORPHS.md`、`docs/T74_CLASSIFICATION.md`、`docs/T75_BLOCK_WORLD.md`、`docs/T76_BRIDGE_FUNCTIONS.md`），阅读 `alchemy/phase.py`、`alchemy/ability.py`、`alchemy/attrs.py`、`alchemy/README.md`、`tests/*`，并用 `alchemy.get_catalog()` 对全目录 84,225 条做统计复核（数字均与文档比对）。
 > 数值复核环境：本机 Python `C:\Users\123\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\python.exe`；`python tests/run_all.py` 实跑结果 105/106（唯一失败为沙箱禁止写系统临时目录，详见 §5.3）。
+>
+> ⚠️ **历史分析件（2026-11-19 晚补注）**：本报告写于 `c438fef` 之前，文中「性状 = 硬度/粘性/温度（后改密度/粘性/温度）
+> 整分子三数值累加 → 27 格」及其阈值、档位占比均为**旧口径**；现行物质三轴为**质量/物态/温度**（按层平均，
+> `docs/MATERIAL_AXES.md`，27 格行为表 + 浮力）。文中三轴判相（概念族/物态/能量）部分仍对应 `phase.py` 现行实现，
+> 但「物性名」与「27 格行为表」是两套不同体系（见 `docs/THREE_AXES_FINAL.md` 顶部对照注）。
 
 ---
 

@@ -89,14 +89,14 @@ alchemy/
     classify.py      骨架分类（38 库 / 6 级块 / 三层拆解 / 结构定理）
   phase.py           三轴判相（v4 hybrid 默认：两两并列循环压制、三者全等归聚、无第四相）
   ability.py         能力（v3 三项数值 + v4 九项次级能力 × 三阶；旧 512 离散体系冻结为历史接口）
-  attrs.py           物性（密度 / 粘性 / 温度 → 3³ = 27 格）
+  attrs.py           物质三轴（质量/物态/温度，按层平均 → 27 格行为表 + 浮力 buoyancy）
   biome.py           群系物种表（模板结果 → 丰度谱 / 导出 CSV·JSON）
   data/
     forms38.json     38 形态库（= 仓库根 t8_forms.json）
-tests/               不依赖 pytest 的 124 项测试与差分验证
+tests/               不依赖 pytest 的测试（当前 151 项）与差分验证
 ```
 
-口径说明看 `docs/ABILITY.md`（能力）、`docs/TRAITS.md`（27 格物性）、`docs/BIOME_SPEC.md`（群系物种表）。
+口径说明看 `docs/ABILITY.md`（能力）、`docs/MATERIAL_AXES.md`（物质三轴：质量/物态/温度 → 27 格行为表；旧 `docs/TRAITS.md`「27 格物性（密度/粘性/温度）」已被取代，仅历史）、`docs/BIOME_SPEC.md`（群系物种表）。
 旧口径文档 T71~T76 均已加"历史/已被取代"横幅，只作背景。
 
 ## 数据来源与口径提醒

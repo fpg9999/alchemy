@@ -6,6 +6,11 @@
 > 在 `intake/tmp/appearance/` 生成验证图（`check_G13_bars.png`、`check_tile_overlap.png`、`t75b_*.png`）。
 > 依据标记：`[实测]` = 本次运行输出；`[码]` = 代码行号；`[档]` = 文档行号。仓库文档正被并发修改
 > （`git status` 显示 `M docs/APPEARANCE.md`、`M docs/KERNEL_INTAKE.md` 等），行号以 2026-11-19 00:35 的快照为准。
+>
+> ⚠️ **历史分析件（2026-11-19 晚补注）**：本报告分析时的「内核物性」= 密度/粘性/温度 27 格（`attrs.py` 旧 API）；
+> 上游 `c438fef` 已改为**质量/物态/温度**（按层平均，`docs/MATERIAL_AXES.md`，27 格行为表 + 浮力），
+> 文中 `alchemy/attrs.py` 行号与 `DENS_W/STICK_W/TEMP_W` 等符号已成历史，结论（外观层与内核零连线等）仍可参考，
+> 但涉及具体字段/阈值处需按新 `attrs.py` 重新核对。
 
 ---
 

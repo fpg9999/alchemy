@@ -1,0 +1,96 @@
+{
+ "checks": [
+  {
+   "name": "1_conservation_elements",
+   "pass": true,
+   "detail": "全部通过: 投料重算(scale=0.12202): 120 种 / 1793 分子 / 18222 原子; 9元素各 2013~2033; 三/二/一价原子 6072/6086/6064 (行内 atoms!=v3+v2+v1 的行=0) ; [main] IC=重算 ✓ N=1793/3922 原子=18222; conservation 逐元素=重算且 final==initial (9元素); final_comp 3922 分子/607 种, 元素和=final, 原子和=18222; new_substances=810 distinct=607 ; [nogate] IC=重算 ✓ N=1793/4435 原子=18222; conservation 逐元素=重算且 final==initial (9元素); final_comp 4435 分子/446 种, 元素和=final, 原子和=18222; new_substances=730 distinct=446 ; [nochem] IC=重算 ✓ N=1793/1793 原子=18222; conservation 逐元素=重算且 final==initial (9元素); final_comp 1793 分子/120 种, 元素和=final, 原子和=18222; new_substances=0 distinct=120"
+  },
+  {
+   "name": "2a_reproducibility_two_quick_runs",
+   "pass": true,
+   "detail": "两次 quick(--quick --arm main, target=400, minutes=40) 全 JSON（除 runtime_s）逐字段一致=True; 耗时 0.75s/0.72s; initial_N=401 final_N=539 counts={\"attempts\": 894, \"complete\": 144, \"incomplete\": 0, \"none\": 43, \"inert\": 633, \"capped\": 74, \"self_skip\": 203, \"chem_off\": 0} new_substances=5 distinct=252 conservation_ok=True"
+  },
+  {
+   "name": "2b_reproducibility_vs_smoke_main",
+   "pass": true,
+   "detail": "smoke_main: initial_N=401 final_N=539; det: initial_N=401 final_N=539; 核心字段一致=True; new_substances=5 (keys 与 smoke 相同=True); catalog formulas=84225 (期望 84225=True); counts 除 attempts 外一致=True; attempts 口径: det 894 + self_skip 203 = smoke 1097 (=True)"
+  },
+  {
+   "name": "3a_rule_treact_fixed_1000",
+   "pass": true,
+   "detail": "T_REACT=1000.0 固定; contact_step 唯一反应调用 E.resolve([mi,mj],T_REACT); contact_step 源码不含 temp/.tt; 三臂 config T_REACT=1000.0=True; docs 明文『温度不参与是否反应的判定，只由恒素浓度 ρ_E 决定』=True"
+  },
+  {
+   "name": "3b_rule_gate_mult_rho_temperature",
+   "pass": true,
+   "detail": "GATE_EXP=1.0; contact_step: if self.gate: p=mult*(rho**GATE_EXP) else p=mult; rho=self.rho[ei], ei=e_cell(pi.x,pi.y); update_rho 由温度场构造: 热(temp=3.0)→ρ=0.8932; 温(1.75)→ρ=0.5000; 冷(0.0)→ρ=0.1068 (格 0, 10 步松弛), 方向=热增/冷减 符合; 三臂 gate 标志 main/nogate/nochem=[True, False, True]; config GATE_EXP=1.0"
+  },
+  {
+   "name": "3c_rule_cap_20",
+   "pass": true,
+   "detail": "CAP=20（模块/config）; 反应前先判 na>CAP 再 resolve（序=正确）; attempts=complete+incomplete+none+inert+capped+chem_off 三臂均闭合; capped 计数 main/nogate/nochem=[69695, 134169, 48836]; 抽样 events 的输入原子和均<=20"
+  },
+  {
+   "name": "3d_rule_collision_mode_multipliers",
+   "pass": true,
+   "detail": "MODE_MULT 9 对与期望表完全一致（气-气 穿过0.18 / 气-液 游泳0.45 / 液-液 黏附0.60 / 气-固 阻挡0.80 / 液-固 阻挡0.90 / 固-固 阻挡1.00）; 含固→阻挡、气-气→穿过、液-液→黏附、气-液→游泳，符合 attrs.COLLISION 语义; 倍率单调 0.18<0.45<0.60<0.80<0.90<1.00; 三臂 config 一致、mode_counts 和=attempts; 观测模式计数 main={\"穿过\": 1821887, \"游泳\": 432181, \"黏附\": 30145, \"阻挡\": 158807}"
+  },
+  {
+   "name": "3e_rule_medium_property",
+   "pass": true,
+   "detail": "attrs.property_of({mass:2.0,state:1.0,temperature:1.75}) = '中·气·温'; grades={'mass': '中', 'state': '低', 'temperature': '中'}; behavior.e_field='中性', collision='完全穿过，无阻力', gravity='悬浮/随介质'; MED_*=(2.0,1.0,1.75); 三臂 config.world.medium 一致; attrs.THRESHOLDS 与 docs 一致（1.67/2.30, 1.70/2.22, 1.50/2.00）"
+  },
+  {
+   "name": "4a_physics_positions_bounds_finite",
+   "pass": true,
+   "detail": "[main] 9 帧/30949 点: 越界=0, 记录值恰为x=2000.0 的 0 点 / y=4000.0 的 29 点（round(·,1) 舍入）, 末帧 n=3922=final_N | [nogate] 9 帧/34681 点: 越界=0, 记录值恰为x=2000.0 的 2 点 / y=4000.0 的 28 点（round(·,1) 舍入）, 末帧 n=4435=final_N | [nochem] 9 帧/16137 点: 越界=0, 记录值恰为x=2000.0 的 0 点 / y=4000.0 的 6 点（round(·,1) 舍入）, 末帧 n=1793=final_N | 原始坐标复核(quick main 进程内逐 step): 80 步扫描, max x=1999.9788 (<2000=True), max y=4000.0000 (<4000=True), 非有限=0; 原始坐标 0<=x<=2000/0<=y<=4000 全程成立; 与 det 快照逐点一致=True → 快照中 x=2000.0/y=4000.0 系 round(·,1) 舍入，原始坐标严格处于 [0,2000)/[0,4000)"
+  },
+  {
+   "name": "4b_physics_layering_y_mean",
+   "pass": true,
+   "detail": "[main] t=239 末行 y_mean 轻/中/重=3936.5/2330.6/91.4（轻-中=1605.9, 中-重=2239.2）; t>=120 的 120 行全部严格 轻>中>重 | [nogate] t=239 末行 y_mean 轻/中/重=3963.2/2415.0/55.2（轻-中=1548.2, 中-重=2359.8）; t>=120 的 120 行全部严格 轻>中>重 | [nochem] t=239 末行 y_mean 轻/中/重=3979.4/2080.6/17.0（轻-中=1898.8, 中-重=2063.6）; t>=120 的 120 行全部严格 轻>中>重"
+  },
+  {
+   "name": "4c_physics_histogram_band_composition_sums",
+   "pass": true,
+   "detail": "[main] 240 行三带/质量/物态/温度/模式求和全=N、atoms=18222 恒定; band_reaction 和=13329=ci; reaction_y_hist 和=13329; bands.n 和=3922=final_N; vertical_hist 和=3922; geo attempts/reactions=2443020/13329 | [nogate] 240 行三带/质量/物态/温度/模式求和全=N、atoms=18222 恒定; band_reaction 和=15250=ci; reaction_y_hist 和=15250; bands.n 和=4435=final_N; vertical_hist 和=4435; geo attempts/reactions=3457932/15250 | [nochem] 240 行三带/质量/物态/温度/模式求和全=N、atoms=18222 恒定; band_reaction 和=0=ci; reaction_y_hist 和=0; bands.n 和=1793=final_N; vertical_hist 和=1793; geo attempts/reactions=218495/0"
+  },
+  {
+   "name": "4d_physics_no_nan",
+   "pass": true,
+   "detail": "time_series/summary/快照/直方图/几何 递归扫描 NaN/Inf: 0 处; y_mean None 仅当该档计数为 0（三臂均无该情况）; rho/三轴均值/坐标全部在合法区间"
+  },
+  {
+   "name": "5_crosscheck_series_vs_summary",
+   "pass": true,
+   "detail": "[main] 8 个计数键逐行增量之和 == summary.counts（差 0，attempts:2443020,complete:13329,incomplete:0,none:245502,inert:2114494,capped:69695,self_skip:70758,chem_off:0）; 4 个模式增量之和 == mode_counts; attempts 分解闭合 | [nogate] 8 个计数键逐行增量之和 == summary.counts（差 0，attempts:3457932,complete:15249,incomplete:1,none:821710,inert:2486803,capped:134169,self_skip:65859,chem_off:0）; 4 个模式增量之和 == mode_counts; attempts 分解闭合 | [nochem] 8 个计数键逐行增量之和 == summary.counts（差 0，attempts:218495,complete:0,incomplete:0,none:0,inert:139877,capped:48836,self_skip:5252,chem_off:29782）; 4 个模式增量之和 == mode_counts; attempts 分解闭合"
+  },
+  {
+   "name": "6_structure_composition_new_substances",
+   "pass": true,
+   "detail": "[main] initial_composition 和=1793=initial_N; new_substances=810 且均不在 目录中、atoms/edges/first_t 结构合法 | [nogate] initial_composition 和=1793=initial_N; new_substances=730 且均不在 目录中、atoms/edges/first_t 结构合法 | [nochem] initial_composition 和=1793=initial_N; new_substances=0 且均不在 目录中、atoms/edges/first_t 结构合法（nochem 应为 0）"
+  },
+  {
+   "name": "7_arm_behavior_sanity",
+   "pass": true,
+   "detail": "三臂投料完全相同（IC/守恒初值/1793 分子/18222 原子）; main: gate=on chem=on complete=13329 final_N=3922; nogate: gate=off chem=on complete=15249 final_N=4435; nochem: gate=on chem=off complete=0 chem_off=29782 final_N=1793=initial; 惰性率 main=86.55% > nogate=71.92%（门控 p=mult·ρ 使更多采样判惰性，与设计一致）"
+  },
+  {
+   "name": "8_input_files_immutable",
+   "pass": true,
+   "detail": "脚本/三臂结果/smoke 的 SHA256(前16) 验证前后不变: t78_main_result.json=7c424c34892bbe86; t78_nochem_result.json=65b9df26ba0aa746; t78_nogate_result.json=1a334d53b52c414b; t78_smoke_main.json=56200adc40f6d05c; t78_three_axis_env.py=5290730fbb8f7b91"
+  }
+ ],
+ "overall": true,
+ "generated_at": "2026-11-19T19:06:58+08:00",
+ "target_mol": 1800,
+ "script": "G:\\AI work\\deepseek\\work1\\alchemy\\t78_three_axis_env.py",
+ "script_sha256": "5290730fbb8f7b91e81738f3330703eed15e446023d31229c203eeb074c7c84c",
+ "results_sha256": {
+  "t78_main_result.json": "7c424c34892bbe86dbdff9040245d038546ab3f87420667ef013cfbc31172a0b",
+  "t78_nogate_result.json": "1a334d53b52c414beb0bc47cf025f0968fb4addef08f867e5d6e49b839af5614",
+  "t78_nochem_result.json": "65b9df26ba0aa74694a3eccd351c640eee2e7fe48dd173fda86318715016d1f2"
+ },
+ "python": "3.11.3",
+ "elapsed_s": 2.8
+}

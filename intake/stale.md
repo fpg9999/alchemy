@@ -1,5 +1,10 @@
 # task-7 过时内容清扫报告
 
+> ⚠️ **历史报告（2026-11-19 晚补注）**：本报告写于上游 `c438fef` 之前，文中「新成果 / 新口径」指的是
+> **密度 / 粘性 / 温度 三轴（27 格）**。该口径随后已被**质量 / 物态 / 温度**（按层平均，`docs/MATERIAL_AXES.md`，
+> 27 格行为表 + 浮力）取代，本文的「旧→新」映射与计数**仅记录当时的清扫动作**，不代表现行口径；现行状态以
+> `docs/MATERIAL_AXES.md`、`docs/ABILITY.md`、根 `HANDOFF.md` 为准。
+
 - 任务：把 alchemy 仓库中仍按旧口径书写的"当前状态"内容改为新成果口径；历史文档只加顶部横幅。
 - 执行：stale-sweeper（teammate），2026-11-19。
 - 仓库：`G:\AI work\deepseek\work1\alchemy`（Windows + PowerShell，`python` 3.11）。

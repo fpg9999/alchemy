@@ -1,6 +1,6 @@
 # ALCHEMY 项目总交接文档
 
-> 最后更新：2026-11-19（**第三轮：能力维度 v5 + 涌现原型**。① 新增 `docs/ABILITY_EMERGENCE.md` 总纲：9 元素 ↔ 9 操作能力（撑/锁/黏/分/捕/断/蓄/移/传，位形计数×键型适配，p33/p67 阈值，9×9 联动矩阵），分子→组装体→9 类器官→生命四档判据（B/M/R/I/H+A，**无 alive 标志**）；② 新增 `alchemy/ops.py` + `alchemy/emergence.py` 可运行原型与 25 项测试（共 **151 项全绿**），CLI/demo 可跑；已完成参数标定：800×800 两 seed 组装率 68.5%、器官系统 1~4、首次出现「活性无机」档（10/20），demo 600×600 13.3s/器官22/系统3，但 B（边界）判据仍恒 0 → 拟生命/有机生命仍为 0（详见 §14.4）；③ stale-sweeper 用新口径覆盖 35 个过时文件（docstring/ABILITY/TRAITS/BIOME_SPEC/历史横幅/data/biomes 旧快照 120 处）。上一轮 2026-11-19 第二轮同步：远端 `facb162` + `cf9d01b` 接入——物性三轴改为**密度/粘性/温度**（3³ = 27 格）、能力改为**类别辐条三项数值 + 9 项次级能力三阶**（旧 512 体系冻结为历史接口）、新增 `docs/REPO_SLIM.md` 仓库体积治理；测试增至 **124 项全绿**。再上一轮 2026-11-18 内核入库：规则 1~11 抽成 `alchemy/` 纯标准库包，四入口 + 三轴判相/物相规则/口径分歧/能力/外观/性状/群系规格文档，目录 84,225 条已全部切到规则 1~11 口径）
+> 最后更新：2026-11-19（**T78 九元素三轴环境实验完成 + 物质三轴定稿同步 + 本地设计提交 rebase**。① **T78**：在 4×2 km² 竖直「中·气·温」介质箱里投入 1,793 分子/18,222 原子（120 分子式、9 元素各约 2020、三/二/一价等量）跑 240 min 三臂（main/nogate/nochem）——质量→重力分层（轻/中/重 y 均值 3936.5/2330.6/91.4）、温度→恒素富集（终态局部 ρ-温度 r=0.957）、物态→碰撞三轴全部跑通；恒素门控把 13,329 次反应中 70.6% 压到顶部富集带，产出 810 个目录外新物质（全部不在 84,225 内），守恒与漏斗全闭合；**不收敛**（607 终态、双原子小分子主导），对照 T62 的 `LF`+`OXCPWKA` 双组分不动点——收敛依赖退火+整理+全局混合。报告 `docs/T78_THREE_AXIS_ENV.md`、图 `images/t78_overview.png`、脚本 `t78_three_axis_env.py`/`t78_analysis.py`/`t78_render.py`（不改内核）。② 远端 `c438fef`「rules: 三轴定为 质量/物态/温度（碰撞/重力/恒素富集），27 格行为表」已拉到本地，并把本地 5 个纯文档设计提交 rebase 到其之上（领先 `origin/main`）；物质分类权威定义改为 `docs/MATERIAL_AXES.md`——质量（三价 O3/K2/P1，按层平均，阈值 1.67/2.30）→ 轻/中/重 → 重力 上升/悬浮/下沉；物态（二价 X3/W2/A1，1.70/2.22）→ 气/液/固 → 碰撞 穿过/游泳/阻挡；温度（一价 F3/L2/C1，1.50/2.00）→ 冷/温/热 → 恒素 稀薄/中性/富集；三轴组合成 **27 格行为表**，浮力 `F=(介质质量−物体质量)×体积`（`alchemy.attrs.buoyancy`）；原「物性 = 密度/粘性/温度」口径作废（`docs/TRAITS.md` 仅留历史记录）。② 本地 5 个设计提交（温度维度 v1/v2 定稿、能力候选总目录 11 域 110 项、基础能力原子 6 类 36 个）rebase 干净。③ 根文档旧口径回填（README / INDEX / TRANSFER / NEW_CHAT_PROMPT / 本文件 §13.5），**未改内核代码、未运行脚本/测试**。上一轮 2026-11-19 第三轮：能力维度 v5 + 涌现原型。① 新增 `docs/ABILITY_EMERGENCE.md` 总纲：9 元素 ↔ 9 操作能力（撑/锁/黏/分/捕/断/蓄/移/传，位形计数×键型适配，p33/p67 阈值，9×9 联动矩阵），分子→组装体→9 类器官→生命四档判据（B/M/R/I/H+A，**无 alive 标志**）；② 新增 `alchemy/ops.py` + `alchemy/emergence.py` 可运行原型与 25 项测试（共 **151 项全绿**），CLI/demo 可跑；已完成参数标定：800×800 两 seed 组装率 68.5%、器官系统 1~4、首次出现「活性无机」档（10/20），demo 600×600 13.3s/器官22/系统3，但 B（边界）判据仍恒 0 → 拟生命/有机生命仍为 0（详见 §14.4）；③ stale-sweeper 用新口径覆盖 35 个过时文件（docstring/ABILITY/TRAITS/BIOME_SPEC/历史横幅/data/biomes 旧快照 120 处）。再上一轮 2026-11-19 第二轮同步：远端 `facb162` + `cf9d01b` 接入——物性三轴改为**密度/粘性/温度**（3³ = 27 格）、能力改为**类别辐条三项数值 + 9 项次级能力三阶**（旧 512 体系冻结为历史接口）、新增 `docs/REPO_SLIM.md` 仓库体积治理；测试增至 **124 项全绿**。更早 2026-11-18 内核入库：规则 1~11 抽成 `alchemy/` 纯标准库包，四入口 + 三轴判相/物相规则/口径分歧/能力/外观/性状/群系规格文档，目录 84,225 条已全部切到规则 1~11 口径）
 > 工作目录：`G:\AI work\deepseek\work1\alchemy`
 > 本文件是新对话/新接手者的**唯一入口**；读完它再读 `INDEX.md` 和对应主题的 `docs/T*.md`。
 
@@ -16,7 +16,7 @@
 请先完整阅读 HANDOFF.md，再按需阅读 INDEX.md、TRANSFER.md 和 docs/ 下的 T*.md。
 规则实现以 `alchemy/` 内核包为准（规则 1~11 = `alchemy/core/reactor.py`，`rules=11` 默认；四入口 simulate/embed+validate/get_catalog/classify）；
 根目录 `pot_all.py` / `pot_v2.py` / `pot_v3.py` / `pot_v4.py` 为历史兼容实现；
-新规则文档在 `docs/THREE_AXES_FINAL.md`、`PHASE_RULE.md`、`CALIBER_DIVERGENCE.md`、`ABILITY.md`、`TRAITS.md`，整理分析见 `docs/KERNEL_INTAKE.md`；
+新规则文档在 `docs/THREE_AXES_FINAL.md`（三轴判相）、`PHASE_RULE.md`、`CALIBER_DIVERGENCE.md`、`ABILITY.md`、`MATERIAL_AXES.md`（**现行物质三轴：质量/物态/温度 → 27 格行为表**；`TRAITS.md` 已被其取代，仅历史），整理分析见 `docs/KERNEL_INTAKE.md`；
 自然环境的"不完全反应"实现在 t28_rule_v2.py；
 并列裁决分析在 t37_tie_analysis.py / t38b_policies.py。
 不要重复造轮子，不要盲目重跑 archive/ 里的清理脚本。
@@ -798,6 +798,8 @@ python t30_self_decomp.py
 
 ## 11. 当前未决/下一步建议
 
+> 注：本节主要是 2026-11-18 前后的历史待办清单，保留作研究记录。其中第 1、4、8① 条关于「T35 温度规则 / 温度阈值」的表述已被后来的定论取代：**反应是否发生只由恒素浓度 ρ_E 决定，温度不参与该判定**；2026-11-19 物质三轴定稿后，温度是物质三轴之一（冷/温/热 → 恒素 稀薄/中性/富集），见 `docs/MATERIAL_AXES.md` §3 与 `docs/PHASE_RULE.md`。第 2、3、7 条（并列裁决/库口径/wl_key）仍是有效待办。
+
 1. **把 T35 温度规则落成代码**：全加和、完全优先、自分解优先、产物重判、多不稳定同时处理；和 `t28_rule_v2.py` 合并成"自然引擎 v2"。
 2. **并列裁决规则化**：把"第 6 级按元素序 + 同中间态骨架块优先 + 最终 fallback"写成正式规则 10/11，并统计 400/2000 样本的库内率（用 `mol_label` 而非 `wl_key`）。
 3. **库口径与 6 级库闭合（T39/T45 后更新）**：用户 2026-11-15 明确"库 = 中间态骨架（38 + 7×3），
@@ -852,6 +854,14 @@ python t30_self_decomp.py
    1:2:0 / 1:0:2 移动，找出"多主→双主→单主"的临界；④**四类别的温度敏感性**：同一元素集在
    1000/700/400°C 起始退火，看类别是否随热历史改变；⑤**类别自动预测器**：用元素角色配比训练
    简单决策规则，验证 32 群系分类能否由配比直接推出。参见 `docs/T67_BIOME_CATALOG.md`。
+14. **T78 之后（三轴环境模拟，2026-11-19 已完成首轮）**：T78 用 1,793 分子/18,222 原子在「中·气·温」介质箱跑 240 min 三臂，
+    质量→重力/物态→碰撞/温度→恒素富集三轴全部跑通（ρ-温度 r=0.957、门控把 70.6% 反应压到顶带、810 目录外新物质），
+    但**不收敛**（607 终态、双原子小分子主导）。下一步候选：①**多 seed ×3 + 延长到 1000 min**，看新物质/终态数是平台还是继续增长；
+    ②**cap 对照**（40/60）确认「不收敛」是否只是 cap=20 截断假象；③**退火/二次投放**（照 T62 1000→25°C + phase B），检验是否出现双组分不动点；
+    ④**初始 ρ 梯度**（0.2→0.8）检验化学反应是否被恒素场空间定位；⑤**恒素消耗耦合**（complete 反应扣减局部 ρ）看富集带是否耗尽、反应带是否迁移；
+    ⑥**介质对照**（中·液·温、中·气·冷）；⑦反应地理分桶补记门控通过数。详见 `docs/T78_THREE_AXIS_ENV.md` §5。
+    **已知代码风险**：`alchemy/emergence.py` 仍按旧 attrs 字段（`density`/`stickiness`/`temperature` 线性 0~40）取值，
+    与新 `attrs.py`（mass/state/temperature，0~3）不兼容 → Φ≈1 退化、旧标定失效，需另开任务修复（见 `TRANSFER.md` §6.1）。
 
 ---
 
@@ -1036,7 +1046,7 @@ python t30_self_decomp.py
 | `core/classify.py` | 骨架分类：38 库、6 级块、三层拆解、结构定理 |
 | `phase.py` | 三轴判相：`phase_of` / `describe` / `physical_name`（三模式 hybrid/hierarchy/cycle） |
 | `ability.py` | 能力：v3 三项数值（聚/散/动 = 3O+2X+1C / 3K+2A+1F / 3P+2W+1L）+ v4 九项次级能力三阶（`profile`/`abilities_of`）；旧 8 情形 × 3 轴 = 512 编号保留为历史接口 |
-| `attrs.py` | 物性：密度/粘性/温度三数值 + 阈值三档 → 3³ = 27 格（`property_of`/`cell_of`/`grid`）；骨架分解 `skeleton_units` 供外观层 |
+| `attrs.py` | 物质三轴：**质量/物态/温度**，按层平均（权重 O3/K2/P1、X3/W2/A1、F3/L2/C1）→ 三档组合 **27 格行为表**（`property_of`/`behavior`/`grid`/`cell_of`）+ 浮力 `buoyancy`；骨架分解 `skeleton_units` 供外观层 |
 | `biome.py` | 群系物种表、物性、分层、CSV/JSON/MD 导出 |
 | `data/forms38.json` | 38 形态库（与根 `t8_forms.json` 字节级相同）；`data/biome_names.json` 名称映射 |
 
@@ -1046,7 +1056,7 @@ python t30_self_decomp.py
 - `embed(atoms, edges, max_nodes=None, final_check=True)` → `{int:(q,r)}`（`None` = 未判定）；`validate(place, atoms, edges)` → `(bool, 原因)`；
 - `get_catalog(path=None)` → 84,225 条只读索引；`classify(atoms, edges, rules=11, library=None, place=None, check_stable=True)`（**place 需 int 键**，
   目录 JSON 是 str 键，`classify_record` 内部转）；
-- 测试：`python tests/run_all.py` → **106/106 PASS**（约 21~27s；11 个 `test_*.py`）；`python tests/run_all.py reactor` 单模块 0.2s；
+- 测试：`python tests/run_all.py` → **106/106 PASS**（内核入库当时口径，现为 151 项；约 21~27s；11 个 `test_*.py`）；`python tests/run_all.py reactor` 单模块 0.2s；
 - 示例：`python examples/demo_kernel.py`（Windows GBK 控制台需 `PYTHONIOENCODING=utf-8`）。
 
 ### 13.3 三轴判相（v4 定稿，`docs/THREE_AXES_FINAL.md`）
@@ -1065,7 +1075,7 @@ python t30_self_decomp.py
 差异只在 T=n(O)+n(P)+n(K)≥4（T≤3 的 9,070 条 0 差异）；`place=null` 245 条（替换产生 28 + 历史 217，216 条现在能直接摆）；
 6 级骨架库（38）不受规则 9/10/11 影响。
 
-### 13.5 能力 / 外观 / 性状（`docs/ABILITY.md`、`APPEARANCE.md`、`TRAITS.md`）
+### 13.5 能力 / 外观 / 物质三轴（`docs/ABILITY.md`、`APPEARANCE.md`、`MATERIAL_AXES.md`）
 
 - **能力 v3（现行，2026-11-18 晚 `facb162`）** = 三项可量化数值，按**类别辐条**取权重（价数）：聚 = 3O+2X+1C、散 = 3K+2A+1F、动 = 3P+2W+1L；
   主方向各用两阈值切三阶（聚 6/13、散 6/12、动 6/13；6000 抽样 低/中/高 ≈ 33%/32%/35%），六项均已实现（`ability.scores`）；
@@ -1077,12 +1087,16 @@ python t30_self_decomp.py
   T71/T72/T73 是被规则改版废掉的支线，T76 桥 13 功能有效但未接入）；上游 `t75_tiles.py`(380 行)/`t75_render.py`(188 行)/`t75b_*` 已实现并出 6 张图，
   **内核侧仅记录、不实现**；接口只依赖 `alchemy.attrs.skeleton_units`（给 members/atoms/size/bridge_members），
   但缺坐标 `place`、家族/38 库块形态、融合对、装饰角色，需另写适配器（估算 150~250 行）才能由内核直接出图；
-  新 27 格物性与聚/散/动能力在外观层**零使用**（方块色只按 7 家族，T75b 色条是 36 分子内 min-max 归一），
+  新 27 格行为表与聚/散/动能力在外观层**零使用**（方块色只按 7 家族，T75b 色条是 36 分子内 min-max 归一），
   且外观权重 1.20/0.90/0.60 与内核 3/2/1 两套并存、无换算表；完整缺口清单见 `docs/INTAKE_R2.md` §4.4 与 `intake/appearance.md`；
-- **性状/物性 v3（现行）** = 整分子三数值累加：**密度** O3/K2/P1（阈值 10/16）、**粘性** X3/W2/A1（6/11）、**温度** F3/L2/C1（3/6），
-  每轴三档 → **3³ = 27 格物性网格**（`property_of` 返回 `cell`/`index`；27 格全非空，最多 7.3%、最少 1.0%）。
-  三价轴原为「硬度」，因与固态语义重合（产生 254 例"刚性液体"、无三价元素时恒 0）改为密度（`TRAITS.md`）；
-  温度 0 = 绝对零度、无负值；旧 T75b 逐骨架口径（硬度/粘性/温度逐骨架算、桥不计）已被整分子口径取代，仅 `skeleton_units` 仍给外观层用。
+- **物质三轴（现行，2026-11-19 `c438fef` 定稿；权威定义 `docs/MATERIAL_AXES.md`）** = 三层价数各取加权**按层平均**（每轴范围 [0,3]，强度量、与分子大小无关）：
+  **质量** = Σ3价×权重(O3/K2/P1)/3价原子数（阈值 1.67/2.30）→ 轻/中/重 → 重力 **上升/悬浮/下沉**；
+  **物态** = Σ2价×权重(X3/W2/A1)/2价原子数（1.70/2.22）→ 气/液/固 → 碰撞 **穿过/游泳/阻挡**；
+  **温度** = Σ1价×权重(F3/L2/C1)/1价原子数（1.50/2.00）→ 冷/温/热 → 恒素 **稀薄/中性/富集**。
+  三档组合 → **27 格行为表**（`property_of` 返回 `cell`/`index`/`behavior{collision,gravity,e_field}`；实测 27/27 格全非空，每格 2.7%~4.5%）；**缺失层 = 0，必落最低档**（轻/气/冷）。
+  浮力 `F=(介质质量−物体质量)×体积`（`buoyancy`，上升/下沉相对介质而非绝对）。温度**不参与「是否反应」判定**（只由恒素浓度 ρ_E 决定），只决定恒素富集位置（热 = 浓缩器、冷 = 稀释器）。
+  原「物性 = 密度/粘性/温度，整分子三数值累加（密度 O3/K2/P1 阈值 10/16、粘性 X3/W2/A1 6/11、温度 F3/L2/C1 3/6）」口径已作废；
+  `docs/TRAITS.md` 仅留历史记录（顶部已标"已被 MATERIAL_AXES.md 取代"）。旧 T75b 逐骨架口径（硬度/粘性/温度逐骨架算、桥不计）同样作废，仅 `skeleton_units` 仍给外观层用。
 
 ### 13.6 群系数据与示例（`docs/BIOME_SPEC.md`、`docs/BIOME_CANDIDATES.md`）
 
@@ -1103,6 +1117,8 @@ python t30_self_decomp.py
    `alchemy/ability.py` 模块 docstring 仍以 512 为现行口径；`docs/ABILITY.md` §5 三层表仍写「物性 = 硬度/粘性/温度」；
    `docs/APPEARANCE.md` §1/§4 的 512/硬度旧口径已由本轮本地整理修正（并修掉重复的 §4 编号），但 T75/T76 历史文仍保留「硬度」；
    **（2026-11-19 第三轮已由 stale-sweeper 清扫，见 §14.5）**
+   三轴定稿（`c438fef`）后复核：`docs/ABILITY.md`（第 25、206 行）与 `docs/APPEARANCE.md`（第 11、90 行）仍写「密度/粘性/温度」旧口径，
+   应改指 `docs/MATERIAL_AXES.md` 的质量/物态/温度；本轮只回填 5 个根文档，未改上游文档（列入待同步清单）。
 7. 仓库体积 694.3MB/1199 跟踪文件（`.git` 173.6MB，50 个 `*_result.json` 占 75%），治理方案见新增 `docs/REPO_SLIM.md`（Tier1 `git gc` + Tier2 result 走 gz/manifest）；尚未执行。
 8. 外观层断层（2026-11-19 实测）：内核 `skeleton_units` → `t75_tiles` 缺适配器（G1~G9，见 `docs/INTAKE_R2.md` §4.4）；
    T75b 色条文档写「右下」代码画「右上」且与块数点争位；混合元素桥（56/114）被压成单一图形；
@@ -1110,7 +1126,7 @@ python t30_self_decomp.py
 
 ---
 
-## 14. 能力维度 v5 与涌现原型（2026-11-19，最新）
+## 14. 能力维度 v5 与涌现原型（2026-11-19）
 
 > 目标（用户原话要点）：能力优先分「三大类 × 9 小类」；要能产生涌现、同时覆盖有机物与无机物；分子能自然连接成类器官，
 > 器官再靠能力联动涌现出生命特征——**不是直白地用公式"变出生命"，而是靠基础能力互相作用**。
@@ -1137,6 +1153,7 @@ python t30_self_decomp.py
 - 定义：能力 = 位形计数 × 键型适配（不乘价数）；阈值来自 6,000 抽样（seed 20261118，有效 83,980/84,225，245 条无 place）。
 - 证据：9 项非零率 47.9%~73.0%；27 物性格 27/27 有样本；与物性相关（撑~密度 r=+0.81、锁~粘性 +0.78、断~温度 +0.79）是
   1:1 载体的结构性代价，组合层不退化；有机侧 捕/移/传 显著高（移 1.70 vs 0.72、传 1.20 vs 0.54）→ 同一能力框架可覆盖有机/无机。
+  （注：以上相关性用的是 2026-11-19 `c438fef` 之前的「密度/粘性/温度」旧三轴口径，现行物质三轴为 质量/物态/温度，「密度/粘性」两轴已不存在；该组数字待按新三轴重算，本轮不编造新数值。）
 - 9×9 联动矩阵 Λ（0~1.5，36 对）：蓄×移=1.5、撑×锁=1.5、移×传=1.5、黏×断=1.4、分×传=1.3、断×蓄=1.3、黏×锁=1.3；
   拮抗 锁×断=0.2、撑×断/撑×移/断×移=0.3。6 条协同直通 6 类器官模块（骨架/壳、基质/膜、重组/愈合、消化腺、肌/马达、神经原基）。
 
@@ -1187,6 +1204,10 @@ python t30_self_decomp.py
 ---
 
 ## 15. 温度维度 v2 设计稿（2026-11-19，整数温度，待确认后实施）
+
+> ⚠️ **与现行三轴的关系（2026-11-19 `c438fef` 之后复核）**：本节写于三轴定稿之前，仍用「密度 ρ̂ / 粘性 σ̂ / 整物质整数温度 T」旧口径；
+> 现行物质三轴已改为**质量/物态/温度**、且按层平均（温度 = Σ1价×(F3/L2/C1)/1价原子数，归一到 [0,3]，见 `docs/MATERIAL_AXES.md`），
+> 温度只决定恒素富集、**不参与反应判定**。本节设计**尚未实施**，实施前需按新三轴重新对齐温度口径（待用户确认）。
 
 用户口径：**温度只由一价元素贡献**——冰 C=0°、电 L=1°、焰 F=2°，`T=n_电+2·n_焰`（**整数度，不做 /(2N) 归一**）；密度/粘性/温度全部按**整物质元素计数**，不再按骨架。设计全文见 **`docs/THERMAL_DIMENSION.md`**（v2），要点：
 
@@ -1296,3 +1317,49 @@ python t30_self_decomp.py
   标定后 800×800 两 seed 组装率 68.5%、器官系统 1~4、首次出现「活性无机」档（10/20）；demo 600×600 13.3s/器官 22/系统 3；
   但 B（边界）判据仍恒 0 → 拟生命/有机生命仍 0（详见 §14.4 与 `intake/calibration.md`）；⑥ stale-sweeper 清扫 35 文件过时口径（含 data/biomes 120 处旧快照字段）；
   ⑦ tag `kernel-0.2.0`（本地，annotated）；提交 `b15ae4a`/`e9b178c`，**仍未 push**。
+
+- **物质三轴定稿同步（最新，2026-11-19）**：远端 `c438fef`「rules: 三轴定为 质量/物态/温度（碰撞/重力/恒素富集），27 格行为表」已同步到本地，
+  并把本地 5 个纯文档设计提交 rebase 到其之上（HEAD `4aea764`，`main...origin/main` = **ahead 5**，**未 push**；工作树干净）。
+  上游内容：① `alchemy/attrs.py` 重写——三轴按层平均（质量 三价 O3/K2/P1、物态 二价 X3/W2/A1、温度 一价 F3/L2/C1；
+  阈值 1.67/2.30、1.70/2.22、1.50/2.00），`molecule_attrs`/`attrs_of`/`grade`/`tier_name`/`cell_of`/`property_of`/`behavior`/`grid`/`buoyancy`，
+  **27 格行为表**（碰撞/重力/恒素富集）+ 浮力 `F=(介质质量−物体质量)×体积`；② 新增权威文档 `docs/MATERIAL_AXES.md`
+  （旧「密度/粘性/温度」与硬度等被否方案记入其 §7）；`docs/TRAITS.md` 顶部标「已被 MATERIAL_AXES.md 取代，仅历史」。
+  本地 5 个提交（温度维度 v1/v2 定稿、能力候选总目录 11 域 110 项、基础能力原子 6 类 36 个、HANDOFF §15 与工作规则）rebase 无冲突。
+  本轮根文档回填：`README.md`（顶部同步横幅 + 正文物性→物质三轴）、`INDEX.md`（补 MATERIAL_AXES/TRAITS/THERMAL_DIMENSION/ABILITY_CATALOG/ABILITY_PRIMITIVES 条目并统一口径）、
+  `TRANSFER.md`/`NEW_CHAT_PROMPT.md`（当前状态改为三轴定稿 + 九元素三轴环境实验 T78 由 Lead 执行中，尚无结果数值），
+  本文件 §0/§11/§13.1/§13.5/§13.7/§15 同步。
+  **约束**：未改 `alchemy/` 内核代码、未运行任何 python 脚本/测试/标定；本轮文档改动尚未 commit/push。
+  **未回填（列入待同步清单）**：`docs/ABILITY.md`（第 25、206 行）、`docs/APPEARANCE.md`（第 11、90 行）、`docs/ABILITY_EMERGENCE.md`、`docs/THREE_AXES_FINAL.md`、`intake/*`、`alchemy/README.md` 仍含密度/粘性旧口径。
+  **待 Lead 决定**：`phase.py` 的物态判定（三轴判相 v4：固/液/气）与 `attrs.py` 物态轴（气/液/固 → 碰撞）是两套并存体系，文档如何区分表述。
+
+### 2026-11-19 · T78 九元素三轴环境实验（新三轴落地首轮）+ 文档同步收尾
+
+- **背景**：用户要求"拉取 github 最新成果整理到工作区 + 理解成果 + 进行一次 9 元素环境模拟实验"，并选定设计方向
+  **"新三轴物理环境（用上 27 格行为）"**——用 `c438fef` 的三轴搭全新九元素 2D 环境，不改内核。
+- **实现**：新增自包含脚本 `t78_three_axis_env.py`（约 700 行，纯标准库；世界 2000×4000 竖直、介质=中·气·温、
+  质量→速率松弛重力 `GRAV=80/K_RELAX=0.25`、物态→碰撞模式倍率 `MODE_MULT`（气-气 0.18 … 固-固 1.00）与布朗扰动、
+  温度→200×200 恒素场（热增冷减、扩散+回归）、门控 `p=物态倍率·ρ`、`T_REACT=1000` 固定（温度轴不参与反应判定）、
+  `CAP=20`、8×16 网格 DSMC 碰撞、三臂 main/nogate/nochem、元素守恒校验）。
+- **投料**：`t62_loads.json` batchA 的 120 分子式 × 0.122 → **1,793 分子 / 18,222 原子**，9 元素各 2,013~2,033、三/二/一价等量；初始覆盖 26/27 格。
+- **结果**（seed=20261119，240 min；main 31s / nogate 39s / nochem 2s）：
+  * main：N 1793→3922，attempts 2,443,020，complete **13,329**、incomplete 0、none 245,502、inert 2,114,494、capped 69,695、
+    distinct 607、new_substances **810**（全部在 84,225 目录外，原子数 17~20）、ρ 终态 0.280±0.167、反应带 底 1878 / 中 2036 / 上 **9415（70.6%）**。
+  * nogate：N→4435，complete 15,249、inert 2,486,803、capped 134,169、distinct 446、new 730、ρ 0.242、顶带 8,699/15,250（57%）。
+  * nochem：N 恒 1793，无反应；ρ 0.649±0.113（纯物理臂热分子聚集顶部→恒素持续富集）。
+  * 质量分层 y 均值（t=0→239）：轻 1975.6→3936.5、中 1953.2→2330.6、重 2035.0→91.4；三臂元素守恒 ✅、漏斗闭合 ✅。
+  * 温度轴验证：t=239 局部 ρ 与局部平均温度 r=**0.957(main)/0.955(nogate)/0.976(nochem)**（t=0 无方差）。
+  * 终态 main top：CF 1093、LF 607、L2 552、WA 337、OK 173…（双原子小分子主导）；27 格覆盖 27/27，最大格 轻·气·温 1,650（42.1%）。
+- **解释**：三轴都"跑起来"且方向符合设计；恒素门控把化学压进顶部富集带；化学消耗热分子→恒素被稀释（ρ 0.649→0.280），
+  构成负反馈；**不收敛**（对照 T62 的 `LF`+`OXCPWKA` 双组分不动点）——收敛依赖退火+整理+全局混合，cap=20 截断大分子生长。
+- **产物**：`t78_three_axis_env.py`、`t78_analysis.py`（→`t78_analysis.json`，一致性 30 项全 PASS）、`t78_render.py`
+  （→`images/t78_overview.png` 6 面板）、三臂结果 JSON、报告 `docs/T78_THREE_AXIS_ENV.md`（设计/结果/局限/下一步/复现）、
+  独立分析 `docs/T78_ANALYSIS.md`（env-analyst，8 节：27 格缺轴碎片修正、ρ0.6 桶 rate 三重解释、T62 高温爆裂相对照）、
+  独立验证 `t78_verify.py`→`t78_verify_report.json`（env-verifier，**16/16 PASS**：守恒/可复现/规则符合/物理合理/交叉核对）。
+- **文档同步收尾（两轮）**：task-1 根文档 README/HANDOFF/INDEX/TRANSFER/NEW_CHAT_PROMPT（+108/−35）；
+  task-4 `docs/ABILITY.md`、`APPEARANCE.md`、`ABILITY_EMERGENCE.md`、`THREE_AXES_FINAL.md`、`PHASE_RULE.md`、`INTAKE_R2.md`、
+  `intake/*`、`alchemy/README.md` 加新口径或历史注（含 THREE_AXES_FINAL 顶部「三轴判相 vs 物质三轴」对照段、§5 同名提示；
+  ABILITY.md 206 行表格改三轴；HANDOFF:1051 注 106/106 为内核入库当时口径、现 151 项）。两轮文档回填合计 17 files +182/−48；
+  加上 T78 脚本/结果/分析/验证/图与本条维护记录，本次提交 32 files +841,652/−48（insertions 中结果 JSON 约 84 万行占绝大多数）。
+- **未做/风险**：未改内核、未跑 tests（T78 自包含）；T78 单 seed/单介质/240 min；`alchemy/emergence.py` 仍按旧 attrs 字段
+  （density/stickiness/temperature 0~40）取值，与新 attrs（mass/state/temperature 0~3）不兼容（Φ≈1 退化、旧标定失效），
+  需另开任务修（`TRANSFER.md` §6.1 已记录）。
