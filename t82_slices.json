@@ -1,0 +1,1442 @@
+{
+ "config": {
+  "engine": "T82 方格环境：三素力 + 规则1~11 反应 + 粘附锁",
+  "W": 150,
+  "H": 110,
+  "seed": 20261120,
+  "ticks": 1200,
+  "cap": 26,
+  "p_react": 0.008,
+  "force_r": 3,
+  "lock_w": 1.0,
+  "lock_r": 2,
+  "snap_every": 200,
+  "quick": false,
+  "feed": {
+   "target": 1600,
+   "batch_total": 14752,
+   "scale": 0.10845986984815618,
+   "n_molecules": 1599
+  },
+  "feed_file": "t62_loads.json",
+  "runtime_s": 70.29
+ },
+ "final_summary": {
+  "n0": 1599,
+  "n_final": 1425,
+  "n_react": 1005,
+  "n_react_fail": 8256,
+  "n_new_species": 188,
+  "n_moves": 437098,
+  "n_blocked": 3307,
+  "n_brown": 37101,
+  "elements0": {
+   "O": 1802,
+   "X": 1811,
+   "C": 1799,
+   "P": 1809,
+   "W": 1797,
+   "L": 1814,
+   "K": 1816,
+   "A": 1809,
+   "F": 1798
+  },
+  "elements1": {
+   "O": 1802,
+   "X": 1811,
+   "C": 1799,
+   "P": 1809,
+   "W": 1797,
+   "L": 1814,
+   "K": 1816,
+   "A": 1809,
+   "F": 1798
+  },
+  "conservation_ok": true,
+  "clusters": {
+   "n_components": 587,
+   "max": 43,
+   "mean": 2.428,
+   "size_hist": {
+    "1": 357,
+    "2": 83,
+    "3": 57,
+    "4": 31,
+    "5": 11,
+    "6": 8,
+    "7": 6,
+    "8": 5,
+    "9": 7,
+    "10": 5,
+    "11": 2,
+    "12": 2,
+    "13": 2,
+    "14": 1,
+    "15": 1,
+    "17": 2,
+    "18": 1,
+    "20": 1,
+    "23": 3,
+    "24": 1,
+    "43": 1
+   },
+   "in_big": 902
+  },
+  "top": [
+   [
+    "L2A2",
+    53
+   ],
+   [
+    "O2X3CW3LA4",
+    24
+   ],
+   [
+    "X2CW4LK2AF2",
+    24
+   ],
+   [
+    "X3CPW3L2A2",
+    24
+   ],
+   [
+    "L2",
+    19
+   ],
+   [
+    "LKF2",
+    19
+   ],
+   [
+    "X7CPK4",
+    19
+   ],
+   [
+    "X3C2P2A6",
+    18
+   ],
+   [
+    "O2X2C3L",
+    13
+   ],
+   [
+    "P2W3AF2",
+    13
+   ],
+   [
+    "O3X3PW4LAF",
+    11
+   ],
+   [
+    "C2LK2AF",
+    10
+   ],
+   [
+    "XCK2F3",
+    10
+   ],
+   [
+    "XCL2K3A3F2",
+    10
+   ],
+   [
+    "O3XCW3L2K2A",
+    9
+   ],
+   [
+    "OC4P4KF4",
+    9
+   ],
+   [
+    "OX2PW4LK3F2",
+    9
+   ],
+   [
+    "OXW6K3AF2",
+    9
+   ],
+   [
+    "A2F2",
+    8
+   ],
+   [
+    "C2K2A2F2",
+    8
+   ],
+   [
+    "C2K2AF2",
+    8
+   ],
+   [
+    "LF",
+    8
+   ],
+   [
+    "O3XCWL3F",
+    8
+   ],
+   [
+    "WLK4A3F5",
+    8
+   ],
+   [
+    "XWK3A2F3",
+    8
+   ],
+   [
+    "L3K",
+    7
+   ],
+   [
+    "O2X3C2W3A4",
+    7
+   ],
+   [
+    "O3C2WL3",
+    7
+   ],
+   [
+    "OC3P3LA5",
+    7
+   ],
+   [
+    "OX4CP3W2KA",
+    7
+   ]
+  ],
+  "new_species": [
+   {
+    "formula": "O2XC4W2K6F2",
+    "atoms": 17,
+    "first_t": 4
+   },
+   {
+    "formula": "O3X4W3L2KA2F2",
+    "atoms": 17,
+    "first_t": 8
+   },
+   {
+    "formula": "O3X3CPW3L2KA3",
+    "atoms": 17,
+    "first_t": 11
+   },
+   {
+    "formula": "O7X4CPW2L3KF",
+    "atoms": 20,
+    "first_t": 13
+   },
+   {
+    "formula": "O4X4CPW4LKA2",
+    "atoms": 18,
+    "first_t": 16
+   },
+   {
+    "formula": "O2X2W2LK8A4F3",
+    "atoms": 22,
+    "first_t": 26
+   },
+   {
+    "formula": "O3X4W4L3KAF",
+    "atoms": 17,
+    "first_t": 31
+   },
+   {
+    "formula": "O6X5PW6L3KA3F",
+    "atoms": 26,
+    "first_t": 36
+   },
+   {
+    "formula": "O3X3C3P3W3KA3",
+    "atoms": 19,
+    "first_t": 43
+   },
+   {
+    "formula": "X5CP4W4L3K2A",
+    "atoms": 20,
+    "first_t": 46
+   },
+   {
+    "formula": "OXC3P2W3K8F4",
+    "atoms": 22,
+    "first_t": 47
+   },
+   {
+    "formula": "O7X2P3W5LA2F",
+    "atoms": 21,
+    "first_t": 48
+   },
+   {
+    "formula": "O3CW6L2KAF3",
+    "atoms": 17,
+    "first_t": 59
+   },
+   {
+    "formula": "O3XCP8W2LKF2",
+    "atoms": 19,
+    "first_t": 61
+   },
+   {
+    "formula": "OCP9W3L4K3A3F2",
+    "atoms": 26,
+    "first_t": 63
+   },
+   {
+    "formula": "O6X4C3P2WL2F",
+    "atoms": 19,
+    "first_t": 66
+   },
+   {
+    "formula": "OX2P8W4L6K2F",
+    "atoms": 24,
+    "first_t": 67
+   },
+   {
+    "formula": "OXPW2LK6A3F3",
+    "atoms": 18,
+    "first_t": 74
+   },
+   {
+    "formula": "O2X2P6W6L2K2A6",
+    "atoms": 26,
+    "first_t": 81
+   },
+   {
+    "formula": "OX2CPW2K7A3F4",
+    "atoms": 21,
+    "first_t": 93
+   },
+   {
+    "formula": "O8X4C6PLKAF3",
+    "atoms": 25,
+    "first_t": 94
+   },
+   {
+    "formula": "O2XPWLK8A2F2",
+    "atoms": 18,
+    "first_t": 97
+   },
+   {
+    "formula": "OXCP6W2KAF5",
+    "atoms": 18,
+    "first_t": 101
+   },
+   {
+    "formula": "O10X2CP2W2LK2A3F2",
+    "atoms": 25,
+    "first_t": 103
+   },
+   {
+    "formula": "O6X2C2PW6L2KA6",
+    "atoms": 26,
+    "first_t": 106
+   },
+   {
+    "formula": "O7XC2P2WLA3",
+    "atoms": 17,
+    "first_t": 108
+   },
+   {
+    "formula": "P3L2K8A3F",
+    "atoms": 17,
+    "first_t": 117
+   },
+   {
+    "formula": "O2X4C2P5W5K2A2F",
+    "atoms": 23,
+    "first_t": 119
+   },
+   {
+    "formula": "O3XCP8W2LKF4",
+    "atoms": 21,
+    "first_t": 129
+   },
+   {
+    "formula": "O6X3CPW2LKF2",
+    "atoms": 17,
+    "first_t": 129
+   },
+   {
+    "formula": "O8X3PW7K3A2",
+    "atoms": 24,
+    "first_t": 134
+   },
+   {
+    "formula": "O6X2P2W3LK2AF",
+    "atoms": 18,
+    "first_t": 144
+   },
+   {
+    "formula": "O6X3C2P2W8LA3F",
+    "atoms": 26,
+    "first_t": 151
+   },
+   {
+    "formula": "O2X3C3P8W5L2K",
+    "atoms": 24,
+    "first_t": 165
+   },
+   {
+    "formula": "OX4CW9K4A2F2",
+    "atoms": 23,
+    "first_t": 168
+   },
+   {
+    "formula": "O8X4P2W2LKA",
+    "atoms": 19,
+    "first_t": 170
+   },
+   {
+    "formula": "O7XCP2W4K2A",
+    "atoms": 18,
+    "first_t": 174
+   },
+   {
+    "formula": "O5X6CPW6LKA2F3",
+    "atoms": 26,
+    "first_t": 182
+   },
+   {
+    "formula": "OC3P3L3A7",
+    "atoms": 17,
+    "first_t": 183
+   },
+   {
+    "formula": "O2X4C2W6K4A",
+    "atoms": 19,
+    "first_t": 185
+   },
+   {
+    "formula": "OXC3P6W2LKF4",
+    "atoms": 19,
+    "first_t": 189
+   },
+   {
+    "formula": "X4CP2W4L2K4A3F",
+    "atoms": 21,
+    "first_t": 193
+   },
+   {
+    "formula": "O4X4C3PW4LKA",
+    "atoms": 19,
+    "first_t": 194
+   },
+   {
+    "formula": "O7X4PWL3KAF2",
+    "atoms": 20,
+    "first_t": 198
+   },
+   {
+    "formula": "OX2P7W3L2K2AF2",
+    "atoms": 20,
+    "first_t": 205
+   },
+   {
+    "formula": "O6X5CP2W4L2A4F",
+    "atoms": 25,
+    "first_t": 211
+   },
+   {
+    "formula": "O2X8C2P6W4K2A2",
+    "atoms": 26,
+    "first_t": 216
+   },
+   {
+    "formula": "O6X3C3PWL2A",
+    "atoms": 17,
+    "first_t": 223
+   },
+   {
+    "formula": "OX6C2P4W2KA5",
+    "atoms": 21,
+    "first_t": 236
+   },
+   {
+    "formula": "OP6W3L2K2F3",
+    "atoms": 17,
+    "first_t": 241
+   },
+   {
+    "formula": "X5P3W2K7F2",
+    "atoms": 19,
+    "first_t": 245
+   },
+   {
+    "formula": "O2X2C2P7L3K2A2",
+    "atoms": 20,
+    "first_t": 249
+   },
+   {
+    "formula": "O6C2PW2KA5",
+    "atoms": 17,
+    "first_t": 252
+   },
+   {
+    "formula": "O7XC2W2L3K2AF2",
+    "atoms": 20,
+    "first_t": 254
+   },
+   {
+    "formula": "O3X2P5W3L3KA2",
+    "atoms": 19,
+    "first_t": 267
+   },
+   {
+    "formula": "OX4C4PK7AF",
+    "atoms": 19,
+    "first_t": 276
+   },
+   {
+    "formula": "O3X3C2P2W3LA3",
+    "atoms": 17,
+    "first_t": 279
+   },
+   {
+    "formula": "O2XC4PW3L2K8F",
+    "atoms": 22,
+    "first_t": 281
+   },
+   {
+    "formula": "O6X3C3PW2LKF2",
+    "atoms": 19,
+    "first_t": 283
+   },
+   {
+    "formula": "O7X2W9L3K2A3",
+    "atoms": 26,
+    "first_t": 302
+   },
+   {
+    "formula": "OC2PLK7A2F6",
+    "atoms": 20,
+    "first_t": 306
+   },
+   {
+    "formula": "O7XC4PWL3KA2",
+    "atoms": 20,
+    "first_t": 310
+   },
+   {
+    "formula": "X5CP3W6KAF",
+    "atoms": 18,
+    "first_t": 315
+   },
+   {
+    "formula": "X4C2P3W4LKAF",
+    "atoms": 17,
+    "first_t": 327
+   },
+   {
+    "formula": "O8X4P2WL7K",
+    "atoms": 23,
+    "first_t": 328
+   },
+   {
+    "formula": "O6X2CW7L2K2A3F",
+    "atoms": 24,
+    "first_t": 337
+   },
+   {
+    "formula": "OC5PW3K6F",
+    "atoms": 17,
+    "first_t": 343
+   },
+   {
+    "formula": "O8X3PWLKA2F3",
+    "atoms": 20,
+    "first_t": 352
+   },
+   {
+    "formula": "O3X2C4P6KA4",
+    "atoms": 20,
+    "first_t": 367
+   },
+   {
+    "formula": "O3X3CP9W3LK2A2",
+    "atoms": 24,
+    "first_t": 376
+   },
+   {
+    "formula": "O3X4W4LKAF3",
+    "atoms": 17,
+    "first_t": 384
+   },
+   {
+    "formula": "O3X5P5W5L4KAF",
+    "atoms": 25,
+    "first_t": 390
+   },
+   {
+    "formula": "OCP5W2L3KAF3",
+    "atoms": 17,
+    "first_t": 401
+   },
+   {
+    "formula": "O3C2W7L2KAF2",
+    "atoms": 18,
+    "first_t": 406
+   },
+   {
+    "formula": "OC2P6W2L6KF2",
+    "atoms": 20,
+    "first_t": 406
+   },
+   {
+    "formula": "OX3C3P7W2K2F",
+    "atoms": 19,
+    "first_t": 407
+   },
+   {
+    "formula": "O7X2PW6L2K2A",
+    "atoms": 21,
+    "first_t": 437
+   },
+   {
+    "formula": "O6X3L3KAF4",
+    "atoms": 18,
+    "first_t": 437
+   },
+   {
+    "formula": "O2X2C2P4W4A4",
+    "atoms": 18,
+    "first_t": 460
+   },
+   {
+    "formula": "X6C2W6K2A2",
+    "atoms": 18,
+    "first_t": 462
+   },
+   {
+    "formula": "OXCP7K2A3F5",
+    "atoms": 20,
+    "first_t": 463
+   },
+   {
+    "formula": "O3X4CP4W4L2KAF",
+    "atoms": 21,
+    "first_t": 463
+   },
+   {
+    "formula": "O8CP3W3L2A2F2",
+    "atoms": 21,
+    "first_t": 470
+   },
+   {
+    "formula": "O2XCP7W3LKF4",
+    "atoms": 20,
+    "first_t": 476
+   },
+   {
+    "formula": "OX4CPK7AF4",
+    "atoms": 19,
+    "first_t": 477
+   },
+   {
+    "formula": "OX7CP5W4K2A3F",
+    "atoms": 24,
+    "first_t": 487
+   },
+   {
+    "formula": "OX2C5P3KA6",
+    "atoms": 18,
+    "first_t": 504
+   },
+   {
+    "formula": "O8X3C4PKAF6",
+    "atoms": 24,
+    "first_t": 520
+   },
+   {
+    "formula": "O6X3C2PWL4F",
+    "atoms": 18,
+    "first_t": 538
+   },
+   {
+    "formula": "X4C2P3KA6F2",
+    "atoms": 18,
+    "first_t": 545
+   },
+   {
+    "formula": "OXP8LK2A3F4",
+    "atoms": 20,
+    "first_t": 549
+   },
+   {
+    "formula": "C3P2L2K6A2F3",
+    "atoms": 18,
+    "first_t": 557
+   },
+   {
+    "formula": "OPW3L2K6A2F2",
+    "atoms": 17,
+    "first_t": 563
+   },
+   {
+    "formula": "O2X2C4P6W2L2",
+    "atoms": 18,
+    "first_t": 565
+   },
+   {
+    "formula": "OX4CP5W5LA6",
+    "atoms": 23,
+    "first_t": 573
+   },
+   {
+    "formula": "O6PW2L6KA",
+    "atoms": 17,
+    "first_t": 573
+   },
+   {
+    "formula": "O6XP3W4KA5",
+    "atoms": 20,
+    "first_t": 586
+   },
+   {
+    "formula": "OX3C2PW7LK6AF3",
+    "atoms": 25,
+    "first_t": 589
+   },
+   {
+    "formula": "O8X3C2L5K2AF3",
+    "atoms": 24,
+    "first_t": 590
+   },
+   {
+    "formula": "O6PW9LKA2F",
+    "atoms": 21,
+    "first_t": 592
+   },
+   {
+    "formula": "O2XC2P6W3K2A2",
+    "atoms": 18,
+    "first_t": 594
+   },
+   {
+    "formula": "O2X4C2P5W4A2F",
+    "atoms": 20,
+    "first_t": 614
+   },
+   {
+    "formula": "O2XCP8W3LK2A2F4",
+    "atoms": 24,
+    "first_t": 618
+   },
+   {
+    "formula": "O2C3P6LKA2F3",
+    "atoms": 18,
+    "first_t": 627
+   },
+   {
+    "formula": "OXC3P7K2A3F3",
+    "atoms": 20,
+    "first_t": 631
+   },
+   {
+    "formula": "OC5P8W4LKF6",
+    "atoms": 26,
+    "first_t": 633
+   },
+   {
+    "formula": "O9X2CP2WL5KAF4",
+    "atoms": 26,
+    "first_t": 644
+   },
+   {
+    "formula": "C4P2LK6A4F3",
+    "atoms": 20,
+    "first_t": 645
+   },
+   {
+    "formula": "O2X4P6W3L2KA3F",
+    "atoms": 22,
+    "first_t": 645
+   },
+   {
+    "formula": "OX5C2W9K4A2F3",
+    "atoms": 26,
+    "first_t": 651
+   },
+   {
+    "formula": "O5X3P5W2L2K2",
+    "atoms": 19,
+    "first_t": 651
+   },
+   {
+    "formula": "OX4C4P4W6KA3F2",
+    "atoms": 25,
+    "first_t": 658
+   },
+   {
+    "formula": "O2X4C4P8W3L2KF",
+    "atoms": 25,
+    "first_t": 668
+   },
+   {
+    "formula": "OX4P6W2K2A2F",
+    "atoms": 18,
+    "first_t": 674
+   },
+   {
+    "formula": "OX5CP6WK2A",
+    "atoms": 17,
+    "first_t": 675
+   },
+   {
+    "formula": "O2XC5P7L3KA2",
+    "atoms": 21,
+    "first_t": 676
+   },
+   {
+    "formula": "OX3C4P8K3A",
+    "atoms": 20,
+    "first_t": 685
+   },
+   {
+    "formula": "X5CP3W2K7F",
+    "atoms": 19,
+    "first_t": 691
+   },
+   {
+    "formula": "O4X5PW5LA2F2",
+    "atoms": 20,
+    "first_t": 698
+   },
+   {
+    "formula": "O2X4CP5W2K2A3",
+    "atoms": 19,
+    "first_t": 706
+   },
+   {
+    "formula": "P3K8A3F3",
+    "atoms": 17,
+    "first_t": 707
+   },
+   {
+    "formula": "O6X3P2W5K2A",
+    "atoms": 19,
+    "first_t": 715
+   },
+   {
+    "formula": "O2C3P7WL3KF4",
+    "atoms": 21,
+    "first_t": 723
+   },
+   {
+    "formula": "O6PW2L7KF",
+    "atoms": 18,
+    "first_t": 726
+   },
+   {
+    "formula": "X5C3P2W4LA2",
+    "atoms": 17,
+    "first_t": 730
+   },
+   {
+    "formula": "O6X4PW4KA4",
+    "atoms": 20,
+    "first_t": 732
+   },
+   {
+    "formula": "O2C4W2K6F4",
+    "atoms": 18,
+    "first_t": 735
+   },
+   {
+    "formula": "O6X2CL3K2A2F2",
+    "atoms": 18,
+    "first_t": 748
+   },
+   {
+    "formula": "X7C3PW2K4",
+    "atoms": 17,
+    "first_t": 754
+   },
+   {
+    "formula": "O2X3C2P7L2KF4",
+    "atoms": 21,
+    "first_t": 758
+   },
+   {
+    "formula": "OX5C3P4W5LKA",
+    "atoms": 21,
+    "first_t": 778
+   },
+   {
+    "formula": "O8X3CPWKA3F3",
+    "atoms": 21,
+    "first_t": 782
+   },
+   {
+    "formula": "O4W7LKA3F2",
+    "atoms": 18,
+    "first_t": 784
+   },
+   {
+    "formula": "O4W7L3KA3",
+    "atoms": 18,
+    "first_t": 785
+   },
+   {
+    "formula": "O6X3C2PWLAF2",
+    "atoms": 17,
+    "first_t": 785
+   },
+   {
+    "formula": "C3P2L4K8A6F3",
+    "atoms": 26,
+    "first_t": 823
+   },
+   {
+    "formula": "O2XC2P6L2A2F2",
+    "atoms": 17,
+    "first_t": 825
+   },
+   {
+    "formula": "O2X3C3W3K3A3",
+    "atoms": 17,
+    "first_t": 828
+   },
+   {
+    "formula": "O4C2W7LKA5F2",
+    "atoms": 22,
+    "first_t": 833
+   },
+   {
+    "formula": "O8X2C2L4K2AF2",
+    "atoms": 21,
+    "first_t": 845
+   },
+   {
+    "formula": "C4P2LK7A4F4",
+    "atoms": 22,
+    "first_t": 850
+   },
+   {
+    "formula": "O2X3C2P6L4A7",
+    "atoms": 24,
+    "first_t": 855
+   },
+   {
+    "formula": "X6C4W6K4A4",
+    "atoms": 24,
+    "first_t": 855
+   },
+   {
+    "formula": "O7C3PW9KA4",
+    "atoms": 25,
+    "first_t": 860
+   },
+   {
+    "formula": "O6C3PWL2KAF3",
+    "atoms": 18,
+    "first_t": 862
+   },
+   {
+    "formula": "OX4P6W3L3K2A3",
+    "atoms": 22,
+    "first_t": 887
+   },
+   {
+    "formula": "X2C4P8K3A3F",
+    "atoms": 21,
+    "first_t": 894
+   },
+   {
+    "formula": "O8X2C4WLK2A3F",
+    "atoms": 22,
+    "first_t": 898
+   },
+   {
+    "formula": "O2X2P6LKAF4",
+    "atoms": 17,
+    "first_t": 901
+   },
+   {
+    "formula": "O6X3P3W4KA5",
+    "atoms": 22,
+    "first_t": 907
+   },
+   {
+    "formula": "O2X3CP4W2KA4",
+    "atoms": 17,
+    "first_t": 916
+   },
+   {
+    "formula": "P3L3K8A5F2",
+    "atoms": 21,
+    "first_t": 920
+   },
+   {
+    "formula": "O3CW7L3KAF2",
+    "atoms": 18,
+    "first_t": 920
+   },
+   {
+    "formula": "OXC4P7K2A3F2",
+    "atoms": 20,
+    "first_t": 922
+   },
+   {
+    "formula": "O2X2P6L2K2F4",
+    "atoms": 18,
+    "first_t": 942
+   },
+   {
+    "formula": "O3C2W7L3KA2F",
+    "atoms": 19,
+    "first_t": 946
+   },
+   {
+    "formula": "O2X8C4PW3K7",
+    "atoms": 25,
+    "first_t": 947
+   },
+   {
+    "formula": "O2XCP6LKA2F3",
+    "atoms": 17,
+    "first_t": 947
+   },
+   {
+    "formula": "O6XCP2WL5A",
+    "atoms": 17,
+    "first_t": 961
+   },
+   {
+    "formula": "X4C2P3KA6F4",
+    "atoms": 20,
+    "first_t": 966
+   },
+   {
+    "formula": "O6PWL2KA2F4",
+    "atoms": 17,
+    "first_t": 967
+   },
+   {
+    "formula": "OX6C2P4W5L2KA2",
+    "atoms": 23,
+    "first_t": 970
+   },
+   {
+    "formula": "OC2PW2K6AF4",
+    "atoms": 17,
+    "first_t": 975
+   },
+   {
+    "formula": "X4PW4LK3A3F3",
+    "atoms": 19,
+    "first_t": 982
+   },
+   {
+    "formula": "O3X3C4P9W2KA2F",
+    "atoms": 25,
+    "first_t": 982
+   },
+   {
+    "formula": "O3X4CP4W4KAF3",
+    "atoms": 21,
+    "first_t": 995
+   },
+   {
+    "formula": "O3XC2WL2K8A2F3",
+    "atoms": 22,
+    "first_t": 998
+   },
+   {
+    "formula": "O8X7CP2W2L2KA",
+    "atoms": 24,
+    "first_t": 1011
+   },
+   {
+    "formula": "X5CP3W7KAF",
+    "atoms": 19,
+    "first_t": 1014
+   },
+   {
+    "formula": "OXCP2W2LK9A3F6",
+    "atoms": 26,
+    "first_t": 1023
+   },
+   {
+    "formula": "X5C2P4W4L2K2A3",
+    "atoms": 22,
+    "first_t": 1024
+   },
+   {
+    "formula": "O8C3PW2L2K2A3",
+    "atoms": 21,
+    "first_t": 1043
+   },
+   {
+    "formula": "C5P2LK8A4F6",
+    "atoms": 26,
+    "first_t": 1043
+   },
+   {
+    "formula": "O3XC3P9WKAF6",
+    "atoms": 25,
+    "first_t": 1044
+   },
+   {
+    "formula": "O3X3P2W3LA3F2",
+    "atoms": 17,
+    "first_t": 1045
+   },
+   {
+    "formula": "X6C5P4KA8",
+    "atoms": 24,
+    "first_t": 1061
+   },
+   {
+    "formula": "O7X2CPW2L4KAF2",
+    "atoms": 21,
+    "first_t": 1094
+   },
+   {
+    "formula": "O7XC4P2WL2A2F",
+    "atoms": 20,
+    "first_t": 1111
+   },
+   {
+    "formula": "O6X4C2PW4KA4",
+    "atoms": 22,
+    "first_t": 1112
+   },
+   {
+    "formula": "O6X3C2P3W4KA5",
+    "atoms": 24,
+    "first_t": 1115
+   },
+   {
+    "formula": "OXCP5W3K3A3F2",
+    "atoms": 19,
+    "first_t": 1122
+   },
+   {
+    "formula": "O6X3PWL4AF",
+    "atoms": 17,
+    "first_t": 1134
+   },
+   {
+    "formula": "O8X2C6P2L4A",
+    "atoms": 23,
+    "first_t": 1136
+   },
+   {
+    "formula": "O5X5C2W4L3K2A3",
+    "atoms": 24,
+    "first_t": 1141
+   },
+   {
+    "formula": "O3C3PW6LAF2",
+    "atoms": 17,
+    "first_t": 1167
+   },
+   {
+    "formula": "X2C4P6K2AF2",
+    "atoms": 17,
+    "first_t": 1175
+   },
+   {
+    "formula": "O7XC2PWL5KA2",
+    "atoms": 20,
+    "first_t": 1182
+   },
+   {
+    "formula": "O3X5CP5W3KA3",
+    "atoms": 21,
+    "first_t": 1193
+   }
+  ]
+ },
+ "windows": [
+  {
+   "key": "A",
+   "desc": "最密集区域",
+   "ox": 10,
+   "oy": 0,
+   "sw": 40,
+   "sh": 30,
+   "stats": {
+    "window": [
+     10,
+     0,
+     40,
+     30
+    ],
+    "n": 127,
+    "density": 0.1058,
+    "n_distinct": 102,
+    "top": [
+     [
+      "L2A2",
+      6
+     ],
+     [
+      "L2",
+      3
+     ],
+     [
+      "LKF2",
+      3
+     ],
+     [
+      "X2CW4LK2AF2",
+      3
+     ],
+     [
+      "X3CP2KA4F2",
+      3
+     ],
+     [
+      "CLA2",
+      2
+     ],
+     [
+      "L3K",
+      2
+     ],
+     [
+      "LA2F",
+      2
+     ]
+    ],
+    "atoms": 1416,
+    "mean_atoms": 11.15,
+    "elements": {
+     "O": 163,
+     "X": 153,
+     "C": 177,
+     "K": 155,
+     "A": 175,
+     "P": 136,
+     "F": 159,
+     "W": 146,
+     "L": 152
+    },
+    "clusters": {
+     "n_components": 46,
+     "max": 38,
+     "in_big": 89
+    }
+   }
+  },
+  {
+   "key": "B",
+   "desc": "中等密度区域",
+   "ox": 100,
+   "oy": 70,
+   "sw": 40,
+   "sh": 30,
+   "stats": {
+    "window": [
+     100,
+     70,
+     40,
+     30
+    ],
+    "n": 102,
+    "density": 0.085,
+    "n_distinct": 90,
+    "top": [
+     [
+      "O2X3CW3LA4",
+      4
+     ],
+     [
+      "C2K2AF2",
+      2
+     ],
+     [
+      "L2",
+      2
+     ],
+     [
+      "O2X2C3L",
+      2
+     ],
+     [
+      "O2X3C2W3A4",
+      2
+     ],
+     [
+      "OX2PW4LK3F2",
+      2
+     ],
+     [
+      "OXC4P4KF2",
+      2
+     ],
+     [
+      "WL2",
+      2
+     ]
+    ],
+    "atoms": 1175,
+    "mean_atoms": 11.52,
+    "elements": {
+     "O": 129,
+     "X": 132,
+     "C": 125,
+     "K": 138,
+     "A": 132,
+     "P": 134,
+     "F": 130,
+     "W": 141,
+     "L": 114
+    },
+    "clusters": {
+     "n_components": 55,
+     "max": 11,
+     "in_big": 43
+    }
+   }
+  },
+  {
+   "key": "C",
+   "desc": "最稀疏区域",
+   "ox": 80,
+   "oy": 35,
+   "sw": 40,
+   "sh": 30,
+   "stats": {
+    "window": [
+     80,
+     35,
+     40,
+     30
+    ],
+    "n": 86,
+    "density": 0.0717,
+    "n_distinct": 70,
+    "top": [
+     [
+      "X2CW4LK2AF2",
+      4
+     ],
+     [
+      "L2A2",
+      3
+     ],
+     [
+      "X3CPW3L2A2",
+      3
+     ],
+     [
+      "X7CPK4",
+      3
+     ],
+     [
+      "XCK2F3",
+      3
+     ],
+     [
+      "C2LK2AF",
+      2
+     ],
+     [
+      "O3X3PW4LAF",
+      2
+     ],
+     [
+      "OCP5W2L2AF",
+      2
+     ]
+    ],
+    "atoms": 1018,
+    "mean_atoms": 11.84,
+    "elements": {
+     "O": 108,
+     "X": 139,
+     "C": 111,
+     "K": 109,
+     "A": 100,
+     "P": 114,
+     "F": 95,
+     "W": 133,
+     "L": 109
+    },
+    "clusters": {
+     "n_components": 30,
+     "max": 16,
+     "in_big": 58
+    }
+   }
+  },
+  {
+   "key": "D",
+   "desc": "最大分子附近",
+   "ox": 48,
+   "oy": 33,
+   "sw": 40,
+   "sh": 30,
+   "stats": {
+    "window": [
+     48,
+     33,
+     40,
+     30
+    ],
+    "n": 99,
+    "density": 0.0825,
+    "n_distinct": 90,
+    "top": [
+     [
+      "L2A2",
+      3
+     ],
+     [
+      "X3C2P2A6",
+      3
+     ],
+     [
+      "CL2K",
+      2
+     ],
+     [
+      "CL3K2A",
+      2
+     ],
+     [
+      "OX4CP3W2KA",
+      2
+     ],
+     [
+      "OXC2L2K4AF",
+      2
+     ],
+     [
+      "XCK2F3",
+      2
+     ],
+     [
+      "C2K2AF2",
+      1
+     ]
+    ],
+    "atoms": 1076,
+    "mean_atoms": 10.87,
+    "elements": {
+     "O": 134,
+     "X": 125,
+     "C": 144,
+     "K": 99,
+     "A": 140,
+     "P": 119,
+     "F": 98,
+     "W": 91,
+     "L": 126
+    },
+    "clusters": {
+     "n_components": 37,
+     "max": 18,
+     "in_big": 67
+    }
+   }
+  }
+ ],
+ "zoom": {
+  "ox": 10,
+  "oy": 8,
+  "sw": 16,
+  "sh": 12
+ }
+}
