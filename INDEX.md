@@ -120,6 +120,9 @@
   保留 `alchemy/intake/tmp/calib/`（标定中间产物，gitignore 排除）。
 
 ## 最新补充
+- **ChemLab：Godot 交互实验场（2026-11-21，最新）**：把 T83~T91 的规则做成可交互沙盒——Godot 4.7 前端 + Python 内核侧车（TCP JSON，复用 natural_engine 规则 1~11 / resolve / three_su / attrs）。
+  世界视图按“骨架占格”渲染（每格 1 骨架单位、同物质同色、相邻合并），支持缩放平移、点击注入/删除、参数面板（重力/三素力/粘附锁/物态迁移率/温度曲线/反应门控/cap）、
+  T91 三件套与 T88 六群系预设、投料 IPF、状态存档与 CSV 导出；入口 godot/chem_lab/run_lab.bat，说明见 godot/chem_lab/README.md，截图 godot/chem_lab/preview.png。
 - **T90 主体 A 团簇的抓取-反应-并入-生长（2026-11-20，最新）**：回答“能否存在一个能稳定团簇并让它靠吞食小分子生长的环境”。
   世界 240×160、A=C3K3F2（8 原子、5 位点、self w=0.833）、营养物 C2K2+CKF2（各 250）、F1+F2→A；
   A 吸引营养物、F1/F2 只在主体表面 3 格内反应、产物 A 邻接即并入（主体固态）。

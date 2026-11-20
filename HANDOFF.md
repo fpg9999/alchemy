@@ -1,6 +1,6 @@
 # ALCHEMY 项目总交接文档
 
-> 最后更新：2026-11-20（**T90 主体 A 团簇的抓取-反应-并入-生长**：回答“能否存在能稳定团簇并靠吞食小分子生长的环境”。世界 240×160、A=C3K3F2（8 原子、5 位点、self w=0.833）、营养物 C2K2+CKF2（各 250）、F1+F2→A；A 吸引营养物、F1/F2 只在主体表面 3 格内反应、产物 A 邻接即并入（主体固态）。结果：full 主体 24→263（×11）、239 反应、176 并入、营养物 500→24；no-attr 24（0 反应）、no-react 24 不变（稳定）、no-seed 0 反应；生长自限于食物耗尽；形态为疏松网络（半径 8→62）。结论：闭环能跑通，但三条机制是建模假设、非自发涌现；report docs/T90_BODY_GROWTH.md。此前 **T89**：群系类生命候选（B4~B9 共 86 mover，最佳 B9 13 个 CF 团，非生命）；**T88**：六群系（种数 28→1,234、HHI 0.089→0.025）；**T87**：连续重力+非对称力（160 mover）；更早见文末「维护记录」。
+> 最后更新：2026-11-21（**ChemLab：Godot 交互实验场**，把 T83~T91 规则做成可调沙盒：内核侧车 + 骨架占格渲染 + 参数面板/预设/存档；另含 T91 三元组搜索、T90 主体生长、T89 类生命候选、T88 六群系、T87 连续重力+非对称力。此前 T78~T86 见维护记录。）
 > 工作目录：`G:\AI work\deepseek\work1\alchemy`
 > 双机协作：本机（牢⑨）进展写在 `progress/laojiu/`（`CURRENT.md` + `log/`），协作规则见 `progress/README.md`。
 > 本文件是新对话/新接手者的**唯一入口**；读完它再读 `INDEX.md` 和对应主题的 `docs/T*.md`。
@@ -1401,6 +1401,17 @@ python t30_self_decomp.py
 - **产物**：`alchemy/three_su.py`（模块）、`t81_su_calibrate.py`、`t81_su_world.py`、`t81_overnight.py`、`t81_su_plot.py`、`t81_growth_search.py`、`t81_probe.py`；
   数据 `t81_calibration.json`、`t81_world_full.json`、`t81_world_quick.json`、`t81_overnight.json`；报告 `docs/THREE_SU_AXES.md`；图 `images/t81_su.png`。
 - **状态**：未改内核（three_su 为纯只读模块）、未跑 tests；本次提交后本地 ahead 10（push 仍等用户确认）。
+
+### 2026-11-21 · ChemLab（Godot 交互实验场，工具而非实验）
+
+- 目的：把 T83~T91 的规则（连续重力、三素非对称力、骨架占格、粘附锁、温度场、resolve 完全/不完全反应）做成可手动调节、可观察的沙盒，用于后续探索“A 主体团簇 + 热区催化”假说。
+- 架构：Godot 4.7（GDScript）前端 + Python 内核侧车（127.0.0.1:8765，按行 JSON；ops = ping/molecule/resolve/f/feed/stats）；内核只读 alchemy 仓库，不改内核代码。
+- 前端：世界视图（W×H 环面，每格 1 骨架单位，同物质同色、相邻合并，缩放/平移，点击注入/删除）；参数面板（世界/物理/温度/反应/投料/注入/存档）；HUD + n/种数/T_env 曲线；预设（T91 四组主体+食物、T88 六群系、自由元素投料）；存档/读档/CSV/截图。
+- 模拟核心 scripts/sim.gd：重力 gacc += G·mass；力 F_on_j = KA·A_i·decay(d,ratt_i) − KR·D_j·decay(d,rrep_j)（无匹配度，非对称）；粘附锁（双向 min w ≥ lock_w，锁住相对位置，非化学键）；温度 T_local = (邻域 heat 和 + 耦合·T_env)/(n+耦合)；反应门控 T_local ≥ c_a+c_b+margin 后按 p_react 异步 resolve，complete/incomplete 才消耗并放置产物。
+- 验证：Godot 无脚本错误；selftest（240 拍）N 413→397、complete 103、joins 190、drops 0、无异常；截图见 godot/chem_lab/preview.png。
+- 状态：工具已可运行（双击 
+un_lab.bat）；本轮新增 chem_lab 工程并提交。未 push。
+- 已知限制：目录外产物按原子数近似 k、无骨架形状；环面世界；sidecar 串行处理，高反应率时 pending 上升。
 
 ### 2026-11-20 · T90 主体 A 团簇的抓取-反应-并入-生长
 

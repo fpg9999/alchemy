@@ -24,3 +24,6 @@ Thumbs.db
 
 # intake 调试临时目录（teammate 中间产物）
 /intake/tmp/
+
+# Godot 瀵煎叆缂撳瓨锛堣嚜鍔ㄧ敓鎴愶紝涓嶅叆搴擄級
+godot/chem_lab/.godot/
