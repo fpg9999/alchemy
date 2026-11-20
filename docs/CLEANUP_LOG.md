@@ -64,7 +64,7 @@ t9_reps_O.png :: [WinError 32] 另一个程序正在使用此文件，进程无�
 ### 推送
 - 本轮把本地领先 `origin/main` 的提交（T77b 等）连同本整理记录一起推送，详见 `TRANSFER.md` §6.3。
 
-## 2026-11-20 整理（T78~T81 推送前，生成物清理）
+## 2026-11-20 整理（T78~T82 推送前，生成物清理 + 远端世界物理合并）
 
 ### 删除（未跟踪/生成物，共约 0.75MB）
 - 仓库根 **21 个 `*.log`**（合计 35.9KB；最大 `t78_analysis.log` 19,602B、`t78_main.log` 3,826B、`t81_overnight.log` 3,126B）——均已 `.gitignore` 排除，无脚本在运行时读取。
@@ -79,4 +79,4 @@ t9_reps_O.png :: [WinError 32] 另一个程序正在使用此文件，进程无�
 - 工作区根 `.acl-repair/`（沙箱 ACL 修复产物，权限受保护，仍无法删除）。
 
 ### 推送
-- 删除后 `git status` 干净，tracked 1355 文件（最大 tracked 文件 `_data_gz/t12b_pairs.jsonl.gz` 39.41MB，全部 <40MB）；把本地领先 `origin/main`=`c438fef` 的 11 个提交（T78~T81 + 本整理提交）推送，详见 `TRANSFER.md` §6.1。
+- 删除后 `git status` 干净，tracked 1355 文件（最大 tracked 文件 `_data_gz/t12b_pairs.jsonl.gz` 39.41MB，全部 <40MB）；随后 `git fetch` 拉到远端 13 个世界物理/力模型提交（`c438fef`→`bdaaff1`，198 文件 +5219/−295，重写 `alchemy/core/reactor.py` 并新增 `alchemy/efield.py`/`natural.py`/`reaction.py`），本地 12 个提交（T78~T82 + 本整理提交）rebase 无冲突后全量推送（共 13 个提交），详见 `TRANSFER.md` §6.1。

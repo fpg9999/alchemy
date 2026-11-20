@@ -22,7 +22,7 @@
   `simulate` / `embed`+`validate` / `get_catalog` / `classify`；`core/` 为 elements/canon/geometry/reactor/catalog/classify，
   上层为 `phase`（三轴判相）/`ability`（能力 v3 三项数值 + v4 九项次级三阶；512 冻结作历史）/`attrs`（物质三轴：质量/物态/温度 → 27 格行为表 + 浮力 `buoyancy`）/
   `biome`（群系物种表）、`ops`（v5 9 操作能力：撑/锁/黏/分/捕/断/蓄/移/传）、`emergence`（L1 分子→L2 组装体→L3 器官→L4 生命系统原型）；`rules=8|9|11` 单份参数化；
-  见 `alchemy/README.md`、`docs/KERNEL_INTAKE.md`、`docs/ABILITY_EMERGENCE.md`；测试 `tests/run_all.py`（**151 项**）
+  见 `alchemy/README.md`、`docs/KERNEL_INTAKE.md`、`docs/ABILITY_EMERGENCE.md`；测试 `tests/run_all.py`（**150 项**）
 - `pot_all.py`：规则 1~8 通用模拟器（历史，已由 `alchemy` 覆盖）
 - `pot_v2.py`：严格摆放校验（embed_mol2 / validate_place；历史，对应内核 `alchemy.embed/validate`）
 - `pot_v3.py`：历史口径（规则 1~9；正式口径已改为规则 1~11）
@@ -289,6 +289,6 @@
   本地提交 `b15ae4a`/`e9b178c`，tag `kernel-0.2.0`，**未 push**。
 
 - **2026-11-20 整理 + T78~T81 全量推送**：删除未跟踪生成物（21 个根 `*.log`、3 处 `__pycache__/`、16 个 0 字节 `t80_*.err`、
-  5 份被 12 份 seed 版取代的 T80 首轮结果），删除后 `git status` 干净、tracked 1355 文件；把本地领先 `origin/main`=`c438fef` 的
-  **11 个提交**（T78 三轴环境实验、T79 生命搜索、T80 组装体生长、T81 三素相互作用公式 + 本轮整理）全量推送；
+  5 份被 12 份 seed 版取代的 T80 首轮结果），删除后 `git status` 干净、tracked 1355 文件；先拉取远端世界物理/力模型 13 个提交（`c438fef`→`bdaaff1`），把本地
+  **12 个提交**（T78 三轴环境实验、T79 生命搜索、T80 组装体生长、T81 三素相互作用公式、T82 九元素环境切片 + 本轮整理）rebase 无冲突后全量推送（共 13 个提交）；
   测试 `python tests/run_all.py` → **150/150 PASS**（`c438fef` 重写 `test_attrs.py` 后由 151 变 150）。详见 `docs/CLEANUP_LOG.md` 末节与 `TRANSFER.md` §6.1。
