@@ -62,4 +62,21 @@ t9_reps_O.png :: [WinError 32] 另一个程序正在使用此文件，进程无�
 - 工作区根 `.acl-repair/`（沙箱 ACL 修复产物，权限受保护，仍无法删除）。
 
 ### 推送
-- 本轮把本地领先 `origin/main` 的提交（T77b 等）连同本整理记录一起推送，详见 `TRANSFER.md` §6.1。
+- 本轮把本地领先 `origin/main` 的提交（T77b 等）连同本整理记录一起推送，详见 `TRANSFER.md` §6.3。
+
+## 2026-11-20 整理（T78~T81 推送前，生成物清理）
+
+### 删除（未跟踪/生成物，共约 0.75MB）
+- 仓库根 **21 个 `*.log`**（合计 35.9KB；最大 `t78_analysis.log` 19,602B、`t78_main.log` 3,826B、`t81_overnight.log` 3,126B）——均已 `.gitignore` 排除，无脚本在运行时读取。
+- **3 处 `__pycache__/`**（26 个 `.pyc`，合计约 718KB）——纯字节码缓存，删除后由 Python 自动重建；`.gitignore` 已排除。
+- **16 个 0 字节 `t80_*.err`**——T80 批跑的空 stderr 占位，无信息量。
+- **5 份被取代的 T80 首轮结果**：`t80_assembly_full.json`、`t80_assembly_farspawn.json`、`t80_assembly_nochem.json`、`t80_assembly_bare.json`、`t80_quick_full.json`——文档只引用 12 份带 seed 后缀的 `t80_assembly_<arm>_s<seed>.json`（arm = full/farspawn/nochem/bare × seed = 20261119/20/21），首轮文件为同 arm 的早期单次运行。
+
+### 保留（有意不动）
+- T78~T81 全部成果（脚本/结果 JSON/图/报告/根文档）均为本次待推送内容。
+- 12 份 seed 版 `t80_assembly_<arm>_s<seed>.json` 与 `t81_calibration.json`、`t81_world_full.json`、`t81_overnight.json` 等结果文件（文档引用）。
+- `alchemy/intake/tmp/calib/`（T77b 标定中间产物，`/intake/tmp/` 已 ignore）；6 个被 `.gitignore` 排除的大原始数据；`.dsh-project-memory/`（DSH 记忆库）。
+- 工作区根 `.acl-repair/`（沙箱 ACL 修复产物，权限受保护，仍无法删除）。
+
+### 推送
+- 删除后 `git status` 干净，tracked 1355 文件（最大 tracked 文件 `_data_gz/t12b_pairs.jsonl.gz` 39.41MB，全部 <40MB）；把本地领先 `origin/main`=`c438fef` 的 11 个提交（T78~T81 + 本整理提交）推送，详见 `TRANSFER.md` §6.1。

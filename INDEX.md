@@ -277,3 +277,8 @@
   `examples/emergence_demo.py`、`alchemy/data/emergence_params.json`（`calibration` 段：标定后组装率 68.5%、器官系统 1~10、活性无机档出现；
   B/H 仍 0）；stale-sweeper 覆盖 35 文件旧口径（含 `data/biomes` 120 处旧快照字段）；
   本地提交 `b15ae4a`/`e9b178c`，tag `kernel-0.2.0`，**未 push**。
+
+- **2026-11-20 整理 + T78~T81 全量推送**：删除未跟踪生成物（21 个根 `*.log`、3 处 `__pycache__/`、16 个 0 字节 `t80_*.err`、
+  5 份被 12 份 seed 版取代的 T80 首轮结果），删除后 `git status` 干净、tracked 1355 文件；把本地领先 `origin/main`=`c438fef` 的
+  **11 个提交**（T78 三轴环境实验、T79 生命搜索、T80 组装体生长、T81 三素相互作用公式 + 本轮整理）全量推送；
+  测试 `python tests/run_all.py` → **150/150 PASS**（`c438fef` 重写 `test_attrs.py` 后由 151 变 150）。详见 `docs/CLEANUP_LOG.md` 末节与 `TRANSFER.md` §6.1。

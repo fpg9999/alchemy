@@ -4,7 +4,19 @@
 
 **第一次接手请先读 [`HANDOFF.md`](HANDOFF.md)。**
 
-> **T78 九元素三轴环境实验（2026-11-19，最新成果）**：在 4×2 km² 竖直「中·气·温」介质箱里投入 **1,793 个等量价数九元素分子**
+> **T81 三素相互作用公式（2026-11-20，最新成果）**：把"聚/散/动"从能力标签落成**可计算点值 + 配对公式**——**聚素=吸引力**（O3/X2/C1 点）、
+> **散素=覆盖半径**（K3/A2/F1 点）、**动素=排斥力**（P3/W2/L1 点）；对 84,225 条目录全目录校准（同种净吸 80,396 = 95.5%、强粘 69,046 = 82.0%、
+> 无作用/自斥 3,829 = 4.5%），方阵环面 8 邻域动态验证（强吸引物种成团 max_comp 4~5，无聚素/自斥物种 0 键），夜间扩展网格 25 组 κ × 3 混合 × 3 seed
+> 定性不变（选择性 0.772~0.829）。**诚实结论**：同种强吸引 + 异种双弱成立；**力是动力学加速器而非终态决定者**；"体生长"需不对称机制
+> （食物不自粘 / 体更强 / 主动抓取，即 T80 模型）。代码 [`alchemy/three_su.py`](alchemy/three_su.py)，报告 [`docs/THREE_SU_AXES.md`](docs/THREE_SU_AXES.md)，
+> 图 [`images/t81_su.png`](images/t81_su.png)。
+
+> **T80 / T79 生命追问（2026-11-19）**：T80 按用户澄清把问题改成**组装体生长**（主体 A 的组装体吞小分子 → 合成新 A → 并入自身）：能长，但体是动态组装体
+> （会解体再重组）、生长全靠外部食物、无边界/遗传/复制/稳态，且抓取与并入是脚本化主动步骤 → **不算生命**
+> （[`docs/T80_ASSEMBLY_LIFE.md`](docs/T80_ASSEMBLY_LIFE.md)、[`images/t80_assembly.png`](images/t80_assembly.png)）；T79 在 84,225 目录中搜索
+> "单分子自催化生长" → **无此类生命**，只找到端帽聚合物生长体（[`docs/T79_LIFE_SEARCH.md`](docs/T79_LIFE_SEARCH.md)）。
+
+> **T78 九元素三轴环境实验（2026-11-19）**：在 4×2 km² 竖直「中·气·温」介质箱里投入 **1,793 个等量价数九元素分子**
 > （120 分子式、18,222 原子、9 元素各约 2020）跑 240 分钟，三轴全部跑通：**质量→重力**（轻/中/重 y 均值 3936.5 / 2330.6 / 91.4，
 > 重贴底、轻贴顶）、**物态→碰撞**（气-气穿过、液-液黏附、固-固阻挡，mode_counts 与实际反应率一致）、
 > **温度→恒素富集**（终态局部 ρ 与局部平均温度 r=0.957）；恒素门控把 13,329 次成功反应中 **70.6% 压到顶部富集带**，
@@ -17,7 +29,7 @@
 > [`images/t78_products_matrix.png`](images/t78_products_matrix.png)（物种×层分布矩阵），脚本 `t78_three_axis_env.py`（自包含，不改内核）。
 
 > **物质三轴定稿同步（2026-11-19，最新）**：远端 `c438fef`「rules: 三轴定为 质量/物态/温度（碰撞/重力/恒素富集），27 格行为表」
-> 已拉到本地，并与本地 5 个纯文档设计提交 rebase 干净（HEAD 见 TRANSFER §0，领先 `origin/main` 5 个设计提交 + 本轮 T78 提交，未 push）：
+> 已拉到本地，与本地设计提交 rebase 干净，并已随 T78~T81 一起推送（HEAD 见 `TRANSFER.md` §0）：
 > 物质分类的权威定义改为 [`docs/MATERIAL_AXES.md`](docs/MATERIAL_AXES.md)——**质量**（三价 O3/K2/P1，按层平均，阈值 1.67/2.30）→ 轻/中/重 → 重力 上升/悬浮/下沉；
 > **物态**（二价 X3/W2/A1，1.70/2.22）→ 气/液/固 → 碰撞 穿过/游泳/阻挡；**温度**（一价 F3/L2/C1，1.50/2.00）→ 冷/温/热 → 恒素 稀薄/中性/富集；
 > 三轴组合成 **27 格行为表**，浮力 `F=(介质质量−物体质量)×体积`（`alchemy.attrs.buoyancy`）。原「物性 = 密度/粘性/温度」作废，
@@ -33,7 +45,7 @@
 > 物质三轴（现行 [`docs/MATERIAL_AXES.md`](docs/MATERIAL_AXES.md)：质量/物态/温度 → 27 格行为表；
 > 原 [`docs/TRAITS.md`](docs/TRAITS.md) 的「密度/粘性/温度 → 3³ = 27 格」方案已废弃，仅历史）+
 > 群系规格/候选（[`docs/BIOME_SPEC.md`](docs/BIOME_SPEC.md)、[`docs/BIOME_CANDIDATES.md`](docs/BIOME_CANDIDATES.md)）。
-> **151 项测试全绿**（`python tests/run_all.py`，约 16~27s），另有 4 个示例脚本与群系物种图；整理分析见
+> **150 项测试全绿**（`python tests/run_all.py`，约 16~27s），另有 4 个示例脚本与群系物种图；整理分析见
 > [`docs/KERNEL_INTAKE.md`](docs/KERNEL_INTAKE.md)。
 
 > **第二轮同步（2026-11-19）**：远端 `facb162`（三价轴属性 硬度→**密度**、物性改成 **3³ = 27 格**、能力改成**类别辐条三项数值**
@@ -94,7 +106,7 @@
    ```powershell
    $env:PYTHONIOENCODING="utf-8"      # Windows GBK 控制台需要，否则 demo 的 ✓/→ 会报 UnicodeEncodeError
    python examples/demo_kernel.py     # 四入口演示 + 骨架分类表
-   python tests/run_all.py            # 151 项测试（约 16~27s）
+   python tests/run_all.py            # 150 项测试（约 16~27s）
    ```
 4. 兼容旧根脚本的大锅反应示例：
    ```powershell
@@ -109,7 +121,7 @@
 ## 目录
 
 - `alchemy/`：**内核包（纯标准库）**——四入口大锅/摆放/目录/分类，另有 `phase`（三轴判相 v4）、`ability`（能力 v3 三项数值 + v4 九项次级三阶，512 冻结作历史）、`attrs`（物质三轴：质量/物态/温度 → 27 格行为表 + 浮力 `buoyancy`）、`biome`（群系物种表）、`ops`（9 操作能力）与 `emergence`（组装体→器官→生命原型）；见 [`alchemy/README.md`](alchemy/README.md)；
-- `tests/`：内核测试（`test_*.py` + `run_all.py`，151 项用例）；`examples/`：内核/群系示例与出图；
+- `tests/`：内核测试（`test_*.py` + `run_all.py`，150 项用例）；`examples/`：内核/群系示例与出图；
 - `pot_all.py` / `pot_v2.py` / `pot_v3.py` / `pot_v4.py`：历史大锅反应与几何校验脚本（规则 1~11 已迁入 `alchemy/`，`pot_v4.py` 保留为兼容实现）；
 - `natural_engine.py` / `fast_pot.py` / `t55_kinetic_env.py`：自然环境引擎与 2D 粒子环境；
 - `t4_*` ~ `t76_*`：各阶段研究脚本/数据（编号=任务阶段；T71~T76 为能力/形态/方块世界）；
