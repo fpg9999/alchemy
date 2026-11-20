@@ -205,6 +205,7 @@ def run_biome(name, subset, desc, W=240, H=160, seed=20261120,
             "dominant_share": round(top[0][1] / total, 4) if top else 0.0,
         },
         "snapshots": snaps,
+        "track": w.frames,
     }
     os.makedirs(out_dir, exist_ok=True)
     out = os.path.join(out_dir, "t88_env_%s.json" % name.lower())

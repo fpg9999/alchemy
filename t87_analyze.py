@@ -91,8 +91,8 @@ def track_stats(tr, cool_ticks, dt):
         "net": round(net, 1),
         "speed": round(speed, 4),        # 格/拍
         "straight": round(straight, 3),
-        "dx": round(pts[-1][1] - pts[0][1], 1),
-        "dy": round(pts[-1][2] - pts[0][2], 1),
+        "dx": round(pts[-1][2] - pts[0][2], 1),      # cc：水平
+        "dy": round(pts[-1][1] - pts[0][1], 1),      # cr：垂直，正=向下
         "start": [round(pts[0][1], 1), round(pts[0][2], 1)],
         "end": [round(pts[-1][1], 1), round(pts[-1][2], 1)],
         "A_mean": round(sum(p[4] for p in pts) / len(pts), 2),
@@ -100,8 +100,8 @@ def track_stats(tr, cool_ticks, dt):
         "mass_mean": round(sum(p[7] for p in pts) / len(pts), 2),
         "top": pts[-1][6],
         "stable": bool((max(sizes) - min(sizes)) <= 0.5 * (sum(sizes) / len(sizes))),
-        "dir": ("下沉" if (pts[-1][2] - pts[0][2]) > 0.5 * net else
-                "上浮" if (pts[0][2] - pts[-1][2]) > 0.5 * net else "横向"),
+        "dir": ("下沉" if (pts[-1][1] - pts[0][1]) > 0.5 * net else
+                "上浮" if (pts[0][1] - pts[-1][1]) > 0.5 * net else "横向"),
         "pts": [[p[0], p[1], p[2], p[3]] for p in pts],
     }
 
