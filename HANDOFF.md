@@ -10,7 +10,7 @@
 
 把下面这段直接粘贴给新对话：
 
-```
+``
 你在接手一个"炼金术/元素反应"游戏化学项目。
 工作目录：<新电脑上的 alchemy 目录>。
 请先完整阅读 HANDOFF.md，再按需阅读 INDEX.md、TRANSFER.md 和 docs/ 下的 T*.md。
@@ -21,7 +21,7 @@
 并列裁决分析在 t37_tie_analysis.py / t38b_policies.py。
 不要重复造轮子，不要盲目重跑 archive/ 里的清理脚本。
 先向我确认你读到的当前结论和下一步，再开始改代码。
-```
+``
 
 ---
 
@@ -219,13 +219,13 @@ key 的优先级（从高到低）：
 循环：不完全反应 → 不稳定中间体 → 半衰期自分解 → 稳定产物 → 再次不完全反应。
 
 示例 A（三链）：
-```
+``
 OX2C + KA2F + PL2F
  → OX2C + KA2F → OX2CKA2F（不稳定）
  → 自分解 → OK + CF + XA + XA
  → PL2F + CF + XA → CPF2 + L2 + XA
  → 稳定终态：OK、XA、CPF2、L2、XA
-```
+``
 示例 B：`OWF + CWK → OW2K（不稳定）+ CF → OK + W2`。
 示例 C：`LKF2 + CPLF → CPL2KF（不稳定）+ F2 → L2 + PK + CF → F2 + L2 → 2LF`。
 示例 D：`OCPK + CA2F + WLF + X2CF → XCAF + XCAF → CF + XA → CF 再生`。
@@ -253,14 +253,14 @@ OX2C + KA2F + PL2F
 
 ### 5.3 判定优先级（T35）
 
-```
+``
 resolve(接触集合 S, T):
   1. 若 T ≥ Σc(S) 且完全条件成立 → 完全反应
   2. 否则：所有不稳定 M 且 T ≥ c(M) → 先自分解 M → F(v_M)
   3. 否则：T ≥ Σi(不完全参与者) → 不完全反应
   4. 否则：不反应
   自分解后：把产物与剩余分子当成新集合，回到第 1 步重判
-```
+``
 
 关键：
 - **完全反应优先**；
@@ -739,13 +739,13 @@ resolve(接触集合 S, T):
 
 ### 9.1 Python
 旧机器运行时：
-```
+``
 C:\Users\123\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\python.exe
-```
+``
 新机器建议使用 Python 3.10+。设置：
-```powershell
+``powershell
 $env:PYTHONIOENCODING="utf-8"
-```
+``
 在 `alchemy/` 目录下运行脚本。
 
 依赖：
@@ -755,14 +755,14 @@ $env:PYTHONIOENCODING="utf-8"
 
 ### 9.2 数据解压（首次）
 如果仓库里只有 `_data_gz/` 而没有大 JSON：
-```powershell
+``powershell
 python unpack_data.py
-```
+``
 会按 `_data_gz/manifest.json` 解压 6 个大文件并校验 SHA256。
 （也可以手工把 `.gz` 解压到对应路径；原路径见 manifest。）
 
 ### 9.3 常用命令
-```powershell
+``powershell
 # 大锅模拟（示例）
 python -c "import pot_v3; print(pot_v3.simulate(['O','K']))"
 
@@ -777,7 +777,7 @@ python t36_both_skeletons.py
 
 # 自分解验证（t30）
 python t30_self_decomp.py
-```
+``
 
 ---
 
@@ -1477,3 +1477,14 @@ python t30_self_decomp.py
 - **产物**：`t79_life_scan.py`（--quick 约 35 s）、`t79_life_scan.json`、报告 `docs/T79_LIFE_SEARCH.md`；
   `INDEX.md` 主要报告与最新补充已加条目。未改内核、未跑 tests（T79 自包含）。
 - **状态**：新增 2 个数据文件 + 1 份报告 + INDEX 条目，待 commit（push 仍等用户确认）。
+
+## 维护记录 · 2026-11-20 推送轮（远端世界物理合并 + T78~T83 全量推送）
+
+- **拉取**：`git fetch` 得远端 13 个世界物理/力模型提交（`c438fef`→`bdaaff1`，198 文件 +5219/−295）：`alchemy/core/reactor.py` 重写 599 行，新增 `alchemy/efield.py`（164 行）/`natural.py`（71）/`reaction.py`（130）、`docs/WORLD_PHYSICS.md`（96 行）、30+ `examples/`、约 200 张 `images/`、`reports/`；力模型改为引力/斥力独立衰减 + 半径解耦，网格惯性滑行 + 等重纵向交换。
+- **整理**：删除 21 个根 `*.log`（35.9KB）、3 处 `__pycache__/`（26 pyc / 718KB）、16 个 0 字节 `t80_*.err`、5 份被 12 份 seed 版取代的 T80 首轮结果、`t83_quick.json`（20,971B）、`t83_run.log`、测试重建的 4 处 `__pycache__/`、工作区根 `.tmp_docs/`；`git status` 干净。详见 `docs/CLEANUP_LOG.md` 2026-11-20 节。
+- **rebase + 推送**：本地 12 个提交（T78~T82 + 整理）rebase 到 `bdaaff1` 无冲突；连同并发代理的 T83（`676ddd2`）与 4 个文档同步提交推送成功（首轮 `bdaaff1..6aacdd9` 15 个）；`main...origin/main` = `0 0`。
+- **测试**：`python tests/run_all.py` → **150/150 PASS**（17.1s；上游 `c438fef` 重写 `test_attrs.py` 后由 151 变 150，README/HANDOFF/INDEX/TRANSFER 已同步）。
+- **远程结构**：tracked 1,574 文件（根 650 / images 490 / archive 187 / docs 120 / examples 35 / data 32 / alchemy 22 / tests 15 / intake 8 / _data_gz 7 / reports 3 / tools 2 / 中文名图 3）；工作树 1,023.6MB；最大 tracked 文件 `_data_gz/t12b_pairs.jsonl.gz` 41,327,963B（39.4MiB，GitHub 100MB 限制内）。
+- **保留**：`alchemy/intake/tmp/calib/`（标定中间产物，已 ignore）、6 个大原始数据（脚本需要）、`.dsh-project-memory/`、工作区根 `.acl-repair/`（沙箱保护，删不掉）；tag `kernel-0.2.0` 仍留本地未推。
+- **已知问题**：`alchemy/emergence.py` 仍按旧 attrs 字段（density/stickiness）取值，与新 attrs（mass/state/temperature）不兼容 → 需另开任务修。
+- **并发提醒**：本工作目录另有代理在推进 T82/T83，提交前后需 `git status`/`git log` 复核，push 前先 `git fetch`。
