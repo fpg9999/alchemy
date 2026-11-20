@@ -1,0 +1,478 @@
+{
+ "rows": [
+  {
+   "biome": "B3_OFL",
+   "label": "{O,F,L} 三族各一",
+   "subset": [
+    "O",
+    "F",
+    "L"
+   ],
+   "n_elems": 3,
+   "feed_species": 28,
+   "feed_atoms": 11846,
+   "atoms_per_mol": 4.74,
+   "valence": {
+    "1": 0.0,
+    "2": 0.3334,
+    "3": 0.6666
+   },
+   "n0": 2500,
+   "n_final": 2648,
+   "cells_used": 2648,
+   "cells_pct": 6.9,
+   "n_distinct": 28,
+   "n_complete": 430,
+   "n_incomplete": 1952,
+   "n_none": 0,
+   "n_react": 623,
+   "new_species": 0,
+   "conservation_ok": true,
+   "y_light": 71.5,
+   "y_mid": null,
+   "y_heavy": 154.8,
+   "mass_share": [
+    0.2451,
+    0.0,
+    0.7549
+   ],
+   "clusters": 643,
+   "max_cluster": 2001,
+   "in_big_pct": 75.57,
+   "band_react": [
+    596,
+    19,
+    8
+   ],
+   "top5": [
+    [
+     "O2L2F2",
+     557,
+     21.03
+    ],
+    [
+     "LF",
+     221,
+     8.35
+    ],
+    [
+     "F2",
+     216,
+     8.16
+    ],
+    [
+     "O2LF",
+     215,
+     8.12
+    ],
+    [
+     "L2",
+     212,
+     8.01
+    ]
+   ],
+   "HHI": 0.0888,
+   "dominant_share": 0.2103,
+   "type": "B 主辅",
+   "runtime_s": 48.38
+  },
+  {
+   "biome": "B3_OXC",
+   "label": "{O,X,C} 全三价",
+   "subset": [
+    "O",
+    "X",
+    "C"
+   ],
+   "n_elems": 3,
+   "feed_species": 28,
+   "feed_atoms": 12150,
+   "atoms_per_mol": 4.86,
+   "valence": {
+    "1": 0.3335,
+    "2": 0.0,
+    "3": 0.6665
+   },
+   "n0": 2500,
+   "n_final": 3005,
+   "cells_used": 3248,
+   "cells_pct": 8.46,
+   "n_distinct": 28,
+   "n_complete": 1293,
+   "n_incomplete": 5238,
+   "n_none": 0,
+   "n_react": 1102,
+   "new_species": 3,
+   "conservation_ok": true,
+   "y_light": 66.4,
+   "y_mid": null,
+   "y_heavy": 152.8,
+   "mass_share": [
+    0.1614,
+    0.0,
+    0.8386
+   ],
+   "clusters": 456,
+   "max_cluster": 2521,
+   "in_big_pct": 84.33,
+   "band_react": [
+    957,
+    93,
+    52
+   ],
+   "top5": [
+    [
+     "OXC",
+     859,
+     28.59
+    ],
+    [
+     "O2XC2",
+     466,
+     15.51
+    ],
+    [
+     "OX2C",
+     217,
+     7.22
+    ],
+    [
+     "O2X2",
+     199,
+     6.62
+    ],
+    [
+     "O2C2",
+     178,
+     5.92
+    ]
+   ],
+   "HHI": 0.127,
+   "dominant_share": 0.2859,
+   "type": "B 主辅",
+   "runtime_s": 60.62
+  },
+  {
+   "biome": "B4_OXKF",
+   "label": "{O,X,K,F} 缺动素",
+   "subset": [
+    "O",
+    "X",
+    "K",
+    "F"
+   ],
+   "n_elems": 4,
+   "feed_species": 110,
+   "feed_atoms": 15017,
+   "atoms_per_mol": 6.01,
+   "valence": {
+    "1": 0.0,
+    "2": 0.2496,
+    "3": 0.7504
+   },
+   "n0": 2500,
+   "n_final": 2932,
+   "cells_used": 3902,
+   "cells_pct": 10.16,
+   "n_distinct": 282,
+   "n_complete": 2350,
+   "n_incomplete": 6256,
+   "n_none": 2,
+   "n_react": 1785,
+   "new_species": 169,
+   "conservation_ok": true,
+   "y_light": 97.5,
+   "y_mid": 151.8,
+   "y_heavy": 152.9,
+   "mass_share": [
+    0.2862,
+    0.1241,
+    0.5897
+   ],
+   "clusters": 634,
+   "max_cluster": 2108,
+   "in_big_pct": 77.11,
+   "band_react": [
+    1298,
+    347,
+    140
+   ],
+   "top5": [
+    [
+     "OK",
+     690,
+     23.53
+    ],
+    [
+     "X2",
+     261,
+     8.9
+    ],
+    [
+     "X2F2",
+     202,
+     6.89
+    ],
+    [
+     "F2",
+     184,
+     6.28
+    ],
+    [
+     "O3K2F3",
+     134,
+     4.57
+    ]
+   ],
+   "HHI": 0.0782,
+   "dominant_share": 0.2353,
+   "type": "B 主辅",
+   "runtime_s": 80.19
+  },
+  {
+   "biome": "B5_OXKAF",
+   "label": "{O,X,K,A,F}",
+   "subset": [
+    "O",
+    "X",
+    "K",
+    "A",
+    "F"
+   ],
+   "n_elems": 5,
+   "feed_species": 258,
+   "feed_atoms": 15369,
+   "atoms_per_mol": 6.15,
+   "valence": {
+    "1": 0.1993,
+    "2": 0.2007,
+    "3": 0.6
+   },
+   "n0": 2500,
+   "n_final": 2885,
+   "cells_used": 4394,
+   "cells_pct": 11.44,
+   "n_distinct": 531,
+   "n_complete": 2051,
+   "n_incomplete": 4344,
+   "n_none": 2,
+   "n_react": 1806,
+   "new_species": 336,
+   "conservation_ok": true,
+   "y_light": 86.4,
+   "y_mid": 149.1,
+   "y_heavy": 151.5,
+   "mass_share": [
+    0.4028,
+    0.1331,
+    0.4641
+   ],
+   "clusters": 798,
+   "max_cluster": 1709,
+   "in_big_pct": 71.96,
+   "band_react": [
+    1189,
+    448,
+    169
+   ],
+   "top5": [
+    [
+     "OK",
+     468,
+     16.22
+    ],
+    [
+     "XA",
+     262,
+     9.08
+    ],
+    [
+     "F2",
+     224,
+     7.76
+    ],
+    [
+     "A2",
+     98,
+     3.4
+    ],
+    [
+     "X2",
+     71,
+     2.46
+    ]
+   ],
+   "HHI": 0.0461,
+   "dominant_share": 0.1622,
+   "type": "B 主辅",
+   "runtime_s": 79.29
+  },
+  {
+   "biome": "B6_OXCKAF",
+   "label": "{O,X,C,K,A,F} 缺动素",
+   "subset": [
+    "O",
+    "X",
+    "C",
+    "K",
+    "A",
+    "F"
+   ],
+   "n_elems": 6,
+   "feed_species": 533,
+   "feed_atoms": 15234,
+   "atoms_per_mol": 6.09,
+   "valence": {
+    "1": 0.3337,
+    "2": 0.1647,
+    "3": 0.5016
+   },
+   "n0": 2500,
+   "n_final": 3214,
+   "cells_used": 4215,
+   "cells_pct": 10.98,
+   "n_distinct": 656,
+   "n_complete": 1983,
+   "n_incomplete": 3308,
+   "n_none": 0,
+   "n_react": 1783,
+   "new_species": 263,
+   "conservation_ok": true,
+   "y_light": 93.6,
+   "y_mid": 152.7,
+   "y_heavy": 153.2,
+   "mass_share": [
+    0.4919,
+    0.1397,
+    0.3684
+   ],
+   "clusters": 1048,
+   "max_cluster": 1650,
+   "in_big_pct": 66.61,
+   "band_react": [
+    1266,
+    365,
+    152
+   ],
+   "top5": [
+    [
+     "OK",
+     347,
+     10.8
+    ],
+    [
+     "CF",
+     279,
+     8.68
+    ],
+    [
+     "XA",
+     227,
+     7.06
+    ],
+    [
+     "C2",
+     168,
+     5.23
+    ],
+    [
+     "F2",
+     142,
+     4.42
+    ]
+   ],
+   "HHI": 0.032,
+   "dominant_share": 0.108,
+   "type": "D 多主",
+   "runtime_s": 77.84
+  },
+  {
+   "biome": "B9_all9",
+   "label": "九元素全开",
+   "subset": [
+    "O",
+    "X",
+    "C",
+    "P",
+    "W",
+    "L",
+    "K",
+    "A",
+    "F"
+   ],
+   "n_elems": 9,
+   "feed_species": 2225,
+   "feed_atoms": 16651,
+   "atoms_per_mol": 6.66,
+   "valence": {
+    "1": 0.3348,
+    "2": 0.3254,
+    "3": 0.3399
+   },
+   "n0": 2500,
+   "n_final": 3771,
+   "cells_used": 4738,
+   "cells_pct": 12.34,
+   "n_distinct": 1234,
+   "n_complete": 2112,
+   "n_incomplete": 3302,
+   "n_none": 2,
+   "n_react": 1759,
+   "new_species": 288,
+   "conservation_ok": true,
+   "y_light": 110.5,
+   "y_mid": 153.7,
+   "y_heavy": 155.3,
+   "mass_share": [
+    0.7046,
+    0.1305,
+    0.1649
+   ],
+   "clusters": 1307,
+   "max_cluster": 1833,
+   "in_big_pct": 65.34,
+   "band_react": [
+    1294,
+    294,
+    171
+   ],
+   "top5": [
+    [
+     "CF",
+     249,
+     6.6
+    ],
+    [
+     "LF",
+     235,
+     6.23
+    ],
+    [
+     "CL",
+     219,
+     5.81
+    ],
+    [
+     "OK",
+     212,
+     5.62
+    ],
+    [
+     "L2",
+     207,
+     5.49
+    ]
+   ],
+   "HHI": 0.0252,
+   "dominant_share": 0.066,
+   "type": "D 多主",
+   "runtime_s": 91.68
+  }
+ ],
+ "notes": [
+  "每个群系 2,500 分子、240×160 硬边界世界、800 拍（400 拍降到 10°C 后恒温 400 拍）",
+  "规则 = T87：连续重力 + 非对称分子间力（无匹配度）+ 骨架占格 + resolve",
+  "投料 = 目录中元素集合 ⊆ 子集的 2~8 原子分子式，IPF 配平到等元素份额",
+  "类型按优势物种份额：A 单主 ≥30%；B 主辅 ≥15%；C 双主 (top1+top2)≥50%；D 多主"
+ ]
+}
