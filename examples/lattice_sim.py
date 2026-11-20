@@ -31,7 +31,9 @@ from alchemy.core.elements import ORDER, VAL, parse_formula  # noqa: E402
 # ---------------------------------------------------------------- 参数（设计稿定稿值）
 K = 8.0
 A_MAX, R_MAX = 10.0, 10.0
-R0, R1 = 1.5, 4.5          # 作用半径下限 / 上限（格子单位）
+R0, R1 = 1.5, 4.5
+FORCE_SCALE = 0.2      # 全局力强度缩放（标定：终端速度≈作用半径的12%）
+CROSS_K = 0.0          # 反对称交叉项强度（>0 时力成为真正的配对函数）          # 作用半径下限 / 上限（格子单位）
 W_S, W_OWN = 0.4, 0.3      # 半径权重：散素 0.4，自身强度 0.3
 
 GRID = 64
@@ -51,8 +53,8 @@ def four_values(formula: str) -> tuple[float, float, float, float]:
     m = sm / (sm + K)
     s = ss / (ss + K)
     # ---- 幂次校准 + 温和缩放：让四种组合的分布接近均匀，同时保持力的量级
-    att = min(A_MAX, 10.8 * (a ** 2.5))
-    rep = min(R_MAX, 10.8 * (m ** 3.0))
+    att = min(A_MAX, 10.8 * (a ** 2.5)) * FORCE_SCALE
+    rep = min(R_MAX, 10.8 * (m ** 3.0)) * FORCE_SCALE
     # 半径**强对比**：散素把"作用距离预算"分给引力，
     # 剩下的（1−散）加上动素分给斥力。于是两者差距明显。
     d_att = R0 + (R1 - R0) * s
@@ -222,11 +224,21 @@ def pair_force(m: Mol, o: Mol, decay: bool = True, asym: bool = True,
     else:
         att, rep = m.att * o.att / A_MAX, m.rep * o.rep / R_MAX
         r_att, r_rep = max(m.d_att, o.d_att), max(m.d_rep, o.d_rep)
-    if d > max(r_att, r_rep):
+    r_cross = max(r_att, m.d_rep, o.d_att)
+    if d > max(r_att, r_rep, r_cross):
         return 0.0
     if not decay:
-        return (att if d <= r_att else 0.0) - (rep if d <= r_rep else 0.0)
-    return force_shape(d, att, rep, r_att, r_rep)
+        base = (att if d <= r_att else 0.0) - (rep if d <= r_rep else 0.0)
+        cross = 0.0
+        if CROSS_K > 0 and d <= r_cross:
+            cross = CROSS_K * (m.att * o.rep - o.att * m.rep) / (A_MAX * R_MAX)
+    else:
+        base = force_shape(d, att, rep, r_att, r_rep)
+        cross = 0.0
+        if CROSS_K > 0 and r_cross > 0:
+            cross = (CROSS_K * (m.att * o.rep - o.att * m.rep)
+                     / (A_MAX * R_MAX)) * max(0.0, 1.0 - d / r_cross)
+    return base + cross
 
 
 def dominant_source(m: Mol, grid: dict, decay: bool = True,
@@ -336,11 +348,16 @@ def net_force(m: Mol, grid: dict, gravity: float = 0.0, decay: bool = False,
         else:
             att, rep = m.att * o.att / A_MAX, m.rep * o.rep / R_MAX
             r_att, r_rep = max(m.d_att, o.d_att), max(m.d_rep, o.d_rep)
+        r_cross = max(r_att, r_rep)
         if d > max(r_att, r_rep):
             continue
         ux, uy = dx / d, dy / d
         f = force_shape(d, att, rep, r_att, r_rep) if decay else (
             (att if d <= r_att else 0.0) - (rep if d <= r_rep else 0.0))
+        if CROSS_K > 0 and r_cross > 0:
+            cross = (CROSS_K * (m.att * o.rep - o.att * m.rep)
+                     / (A_MAX * R_MAX)) * (max(0.0, 1.0 - d / r_cross) if decay else 1.0)
+            f += cross
         fx += f * ux
         fy += f * uy
     fy += gravity
@@ -370,7 +387,7 @@ def step(grid: dict, mols: list[Mol], rng: random.Random, threshold: float = 0.0
          gravity: float | None = None, use_radial: bool | None = None,
          decay: bool | None = None, asym: bool | None = None,
          inertia: bool = False, dt: float = 0.05, damp: float = 0.8,
-         max_step: int = 2, pressure: bool = True, settle_priority: bool = True,
+         max_step: int = 3, pressure: bool = True, settle_priority: bool = True,
          flatten: bool = True, no_self_rise: bool = True,
          stats: dict | None = None, settle_ratio: float = 0.0,
          weight_by: str = "mass", strict_order: bool = False,
@@ -484,7 +501,7 @@ def step(grid: dict, mols: list[Mol], rng: random.Random, threshold: float = 0.0
             speed = math.hypot(m.vx, m.vy)
             if speed < threshold:
                 continue
-            steps = min(max_step, max(1, int(speed)))
+            steps = min(max_step, max(1, int(speed * 3.0)))
             ux, uy = m.vx / speed, m.vy / speed
         else:
             if mag < threshold:
@@ -521,6 +538,9 @@ def step(grid: dict, mols: list[Mol], rng: random.Random, threshold: float = 0.0
                     moved += 1
                     acted = True
                     break
+                # 同种分子互换没有物理意义（不可区分）→ 禁止
+                if occ_c.formula == m.formula:
+                    continue
                 # 占位：只能"保序"交换
                 if not (dy == 0 or (dy > 0 and m.w_eff >= occ_c.w_eff)
                         or (dy < 0 and m.w_eff <= occ_c.w_eff)):
