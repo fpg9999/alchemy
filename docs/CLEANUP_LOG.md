@@ -80,3 +80,9 @@ t9_reps_O.png :: [WinError 32] 另一个程序正在使用此文件，进程无�
 
 ### 推送
 - 删除后 `git status` 干净，tracked 1355 文件（最大 tracked 文件 `_data_gz/t12b_pairs.jsonl.gz` 39.41MB，全部 <40MB）；随后 `git fetch` 拉到远端 13 个世界物理/力模型提交（`c438fef`→`bdaaff1`，198 文件 +5219/−295，重写 `alchemy/core/reactor.py` 并新增 `alchemy/efield.py`/`natural.py`/`reaction.py`），本地 12 个提交（T78~T82 + 本整理提交）rebase 无冲突后全量推送（共 13 个提交），详见 `TRANSFER.md` §6.1。
+
+### 追加（T83 结果提交后清理）
+- 删除未跟踪 `t83_quick.json`（20,971B，T83 快速验证临时输出；`t83_env_axes.py`/`t83_render.py` 与文档均未引用）与根 `t83_run.log`（1,736B，已被 `.gitignore` 排除）。
+- 删除运行测试后重建的 4 处 `__pycache__/`（字节码缓存，`.gitignore` 已排除）。
+- 删除工作区根临时脚本目录 `.tmp_docs/`（本次 TRANSFER §0 行更新用，未入库）。
+- 清理后 `git status` 干净（仅忽略项），工作区根仅剩 `alchemy/`、`.dsh-project-memory/`、`.acl-repair/`。
