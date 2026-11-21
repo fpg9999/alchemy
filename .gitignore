@@ -27,3 +27,8 @@ Thumbs.db
 
 # Godot 导入缓存（自动生成，不入库）
 godot/chem_lab/.godot/
+
+godot/chem_lab/screenshot_check.png
+godot/chem_lab/*.err
+godot/chem_lab/shot*.log
+godot/chem_lab/selftest_out.log

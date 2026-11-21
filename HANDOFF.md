@@ -1,6 +1,6 @@
 # ALCHEMY 项目总交接文档
 
-> 最后更新：2026-11-21（**ChemLab：Godot 交互实验场**，把 T83~T91 规则做成可调沙盒：内核侧车 + 骨架占格渲染 + 参数面板/预设/存档；另含 T91 三元组搜索、T90 主体生长、T89 类生命候选、T88 六群系、T87 连续重力+非对称力。此前 T78~T86 见维护记录。）
+> 最后更新：2026-11-22 凌晨（**T92 群系网格 + ChemLab 交互升级**：336 个 3/4/5 元元素子集全扫（HHI 0.056→0.018、无 A 单主、终态种数与投料池 r=0.970）；ChemLab 数值可键入、自定义投料清单/中途喂食、参数手册 godot/chem_lab/docs/CHEMLAB_PARAMS.md。此前 ChemLab 首版、T91 三元组、T90 主体生长、T89 类生命候选、T88 六群系、T87 连续重力+非对称力，T78~T86 见维护记录。）
 > 工作目录：`G:\AI work\deepseek\work1\alchemy`
 > 双机协作：本机（牢⑨）进展写在 `progress/laojiu/`（`CURRENT.md` + `log/`），协作规则见 `progress/README.md`。
 > 本文件是新对话/新接手者的**唯一入口**；读完它再读 `INDEX.md` 和对应主题的 `docs/T*.md`。
@@ -1401,6 +1401,29 @@ python t30_self_decomp.py
 - **产物**：`alchemy/three_su.py`（模块）、`t81_su_calibrate.py`、`t81_su_world.py`、`t81_overnight.py`、`t81_su_plot.py`、`t81_growth_search.py`、`t81_probe.py`；
   数据 `t81_calibration.json`、`t81_world_full.json`、`t81_world_quick.json`、`t81_overnight.json`；报告 `docs/THREE_SU_AXES.md`；图 `images/t81_su.png`。
 - **状态**：未改内核（three_su 为纯只读模块）、未跑 tests；本次提交后本地 ahead 10（push 仍等用户确认）。
+
+### 2026-11-22 · T92 群系网格 + ChemLab 交互升级（夜间）
+
+用户要求（m04224）：用 ChemLab 生成更多群系、完善交互（投料不能选具体物质/有 bug、温度等不能键入数值）、解释所有可调参数；明早验收。
+
+**T92 群系网格**（	92_biome_grid.py）：枚举 9 元素全部 3/4/5 元子集 84+126+126=336 个，每个用 	87_env_asym.AsymWorld
+跑 160×110、700 分子、400 拍（降温 250 拍后 10°C 恒温 150 拍），沿用 T88 的 IPF 投料与 T67 分类口径，逐群系写回 JSON。
+结果：平均 HHI 3 元 0.056 → 4 元 0.027 → 5 元 0.018；优势种最高 27.3%（B3_FOX），**336 个里无 A 单主**（B 主辅 29、C 双主 0、D 多主 307）；
+终态种数 42/120/246，与投料池 Pearson r=0.970（池是多样性硬上限）；重档占比三组均约 22% 但单群系 0~86%（无 X 组合最重）；
+不完全反应普遍为 complete 的 2~4 倍。图 images/t92_biome_grid.png，报告 docs/T92_BIOME_GRID.md，统计 	92_stats.txt。
+
+**ChemLab 交互升级**：
+- 所有滑块 = HSlider + SpinBox（可直接键入精确值）+ 中文说明（tooltip + 行内小字）。
+- 投料区新增自定义投料清单：分子式+数量 → ItemList → 应用（叠加 / 先清空），可中途喂食；元素勾选配平投放保留。
+- 新增：硬墙边界开关、降温后恒温平台开关、每拍最多反应对 max_react、清空所有分子、随机撒 200、截图 null 保护。
+- 修复：内核 rgs 嵌套导致投料 N=0、面板不可见（CanvasLayer + 显式布局）、锚点 size 警告（set_anchors_preset(PRESET_FULL_RECT)）、
+  _slider 漏加 Label 导致参数名不显示、含中文字符的 .bat 被 GBK 解析（改纯 ASCII CRLF）。
+- 参数手册 godot/chem_lab/docs/CHEMLAB_PARAMS.md：全部参数（世界/投料/重力/三素力/锁定/物态迁移率/温度曲线/耦合/反应/cap/存档）的
+  默认值、范围、公式、现象与调参建议，含预设与内核协议表。README 已加交互升级一节。
+
+产物：	92_biome_grid.py/	92_biome_grid.json/	92_plot.py/	92_stats.py/	92_stats.txt/images/t92_biome_grid.png/docs/T92_BIOME_GRID.md；
+godot/chem_lab/docs/CHEMLAB_PARAMS.md、scripts/main.gd、scripts/sim.gd、README.md、preview.png。
+状态：未 push；本地 ahead 之前 2（T91 ea4a982 + ChemLab a7af5e1），本轮再 +1。
 
 ### 2026-11-21 · ChemLab（Godot 交互实验场，工具而非实验）
 

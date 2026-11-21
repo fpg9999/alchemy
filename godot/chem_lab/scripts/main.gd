@@ -102,9 +102,9 @@ func _build_ui() -> void:
 	th.default_font_size = 13
 	ui.theme = th
 
+	ui.set_anchors_preset(Control.PRESET_FULL_RECT)
 	panel = PanelContainer.new()
 	ui.add_child(panel)
-	ui.size = get_viewport_rect().size
 	_panel_node = panel
 	get_tree().root.size_changed.connect(_layout_ui)
 	_layout_ui()
@@ -169,7 +169,7 @@ func _build_ui() -> void:
 	wall_row.add_child(wall_chk)
 
 	# 投料
-	_section(v, "投料")
+	_section(v, "投料（预设 / 自由勾选 / 自定义清单）")
 	preset_opt = OptionButton.new()
 	preset_opt.add_item("T91 主体 A/食物 B/C：XK2F4 + XKF + KF3", 0)
 	preset_opt.add_item("T91 主体 A/食物 B/C：XP2F4 + XPF + PF3", 1)
@@ -185,9 +185,9 @@ func _build_ui() -> void:
 	v.add_child(preset_opt)
 	var row4 := HBoxContainer.new()
 	v.add_child(row4)
-	row4.add_child(_mk_label("分子数"))
+	row4.add_child(_mk_label("预设分子数"))
 	feed_n_edit = _spin(row4, 50, 20000, 50, 2500, 0, 90)
-	_btn(row4, "应用投料", _apply_preset)
+	_btn(row4, "应用预设（先清空）", _apply_preset)
 
 	var elem_row := GridContainer.new()
 	elem_row.columns = 5
@@ -198,33 +198,91 @@ func _build_ui() -> void:
 		cb.button_pressed = true
 		elem_checks[e] = cb
 		elem_row.add_child(cb)
-	_btn(v, "按勾选元素投 1000 分子", func(): _apply_checked(1000))
+	var row4b := HBoxContainer.new()
+	v.add_child(row4b)
+	_btn(row4b, "按勾选元素配平投放", func(): _apply_checked(int(feed_n_edit.value)))
+
+	# 自定义投料清单：可精确指定"哪种物质、多少个"
+	var feed_title := Label.new()
+	feed_title.text = "自定义投料清单（可混合任意物种）"
+	feed_title.add_theme_font_size_override("font_size", 12)
+	feed_title.add_theme_color_override("font_color", Color(0.75, 0.85, 1.0))
+	v.add_child(feed_title)
+	var rowf := HBoxContainer.new()
+	v.add_child(rowf)
+	feed_formula_edit = LineEdit.new()
+	feed_formula_edit.text = "CKF2"
+	feed_formula_edit.placeholder_text = "分子式（如 XK2F4 / CKF2）"
+	feed_formula_edit.custom_minimum_size = Vector2(150, 0)
+	feed_formula_edit.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	rowf.add_child(feed_formula_edit)
+	feed_count_edit = _spin(rowf, 1, 5000, 1, 100, 0, 78)
+	_btn(rowf, "加入清单", _feed_add)
+	feed_list = ItemList.new()
+	feed_list.custom_minimum_size = Vector2(352, 96)
+	feed_list.select_mode = ItemList.SELECT_MULTI
+	v.add_child(feed_list)
+	var rowf2 := HBoxContainer.new()
+	v.add_child(rowf2)
+	_btn(rowf2, "删除选中", _feed_remove_selected)
+	_btn(rowf2, "清空清单", _feed_clear)
+	_btn(rowf2, "应用清单（叠加）", func(): _feed_apply(false))
+	_btn(rowf2, "应用清单（先清空）", func(): _feed_apply(true))
 
 	# 物理
-	_section(v, "物理")
-	_slider(v, "gravity_G", "重力 G（格/拍/质量）", 0, 1.0, 0.01, sim.p["gravity_G"], func(x): pass)
-	_slider(v, "KA", "吸引力 KA", 0, 6.0, 0.05, sim.p["KA"], func(x): pass)
-	_slider(v, "KR", "排斥力 KR", 0, 3.0, 0.05, sim.p["KR"], func(x): pass)
-	_slider(v, "force_r", "作用力半径", 1, 6, 1, sim.p["force_r"], func(x): pass)
-	_slider(v, "lock_w", "粘附锁阈值", 0, 4.0, 0.05, sim.p["lock_w"], func(x): pass)
-	_slider(v, "lock_r", "锁断裂距离", 1, 5, 1, sim.p["lock_r"], func(x): pass)
-	_slider(v, "brown", "布朗概率", 0, 0.3, 0.005, sim.p["brown"], func(x): pass)
-	_slider(v, "mob_gas", "气态迁移率", 0, 1.5, 0.05, sim.p["mob_gas"], func(x): pass)
-	_slider(v, "mob_liq", "液态迁移率", 0, 1.5, 0.05, sim.p["mob_liq"], func(x): pass)
-	_slider(v, "mob_solid", "固态迁移率", 0, 1.5, 0.05, sim.p["mob_solid"], func(x): pass)
+	_section(v, "物理（三素力 + 重力）")
+	_slider(v, "gravity_G", "重力 G", 0, 1.0, 0.01, sim.p["gravity_G"], func(x): pass,
+		"每拍每单位质量增加的向下位移（格）。质量 3 → 约 0.9 格/拍；0 = 关重力。硬墙下会在底部堆积。")
+	_slider(v, "KA", "吸引力 KA", 0, 6.0, 0.05, sim.p["KA"], func(x): pass,
+		"聚素吸引强度上限：两个 A=3 分子贴邻时的最大吸引力（默认 2.5，与内核短键 κ0 同量级）。")
+	_slider(v, "KR", "排斥力 KR", 0, 3.0, 0.05, sim.p["KR"], func(x): pass,
+		"动素排斥强度上限：两个 D=3 分子贴邻时的最大排斥力（默认 0.5）。KA:KR 越大，同种越容易聚。")
+	_slider(v, "force_r", "作用力半径", 1, 6, 1, sim.p["force_r"], func(x): pass,
+		"力按切比雪夫距离向外衰减的半径（格）。半径 3 = 3 格内的邻居都参与受力。")
+	_slider(v, "lock_w", "粘附锁阈值", 0, 4.0, 0.05, sim.p["lock_w"], func(x): pass,
+		"双方净力 w 都 ≥ 该值时，两个相邻分子被'粘附锁'锁住（只锁相对位置，不是化学键）。")
+	_slider(v, "lock_r", "锁断裂距离", 1, 5, 1, sim.p["lock_r"], func(x): pass,
+		"被锁住的伙伴距离超过该值时锁失效（默认 2 格）。")
+	_slider(v, "brown", "布朗概率", 0, 0.3, 0.005, sim.p["brown"], func(x): pass,
+		"受力很小时，每拍随机走一格的概率（0.04 = 4%）。")
+	_slider(v, "mob_gas", "气态迁移率", 0, 1.5, 0.05, sim.p["mob_gas"], func(x): pass,
+		"物态=气 的分子响应合力的概率倍率（1.0 = 完全响应）。")
+	_slider(v, "mob_liq", "液态迁移率", 0, 1.5, 0.05, sim.p["mob_liq"], func(x): pass,
+		"物态=液 的迁移率（默认 0.6，比气态难动）。")
+	_slider(v, "mob_solid", "固态迁移率", 0, 1.5, 0.05, sim.p["mob_solid"], func(x): pass,
+		"物态=固 的迁移率（默认 0.25，最重最黏）。")
 
 	# 温度
-	_section(v, "温度")
-	_slider(v, "T0", "初始温度 T0", 0, 1200, 10, sim.p["T0"], func(x): pass)
-	_slider(v, "T_end", "终温 T_end", 0, 400, 1, sim.p["T_end"], func(x): pass)
-	_slider(v, "cool_ticks", "降温拍数", 10, 3000, 10, sim.p["cool_ticks"], func(x): pass)
-	_slider(v, "env_coupling", "环境耦合强度", 0.1, 20, 0.1, sim.p["env_coupling"], func(x): pass)
+	_section(v, "温度（分子热值 + 环境温度场）")
+	_slider(v, "T0", "初始温度 T0", 0, 1200, 10, sim.p["T0"], func(x): pass,
+		"第 0 拍的环境温度；会按 exp 曲线降到 T_end。")
+	_slider(v, "T_end", "终温 T_end", 0, 400, 1, sim.p["T_end"], func(x): pass,
+		"降温目标温度；恒温平台开启时，降到它之后保持不变。")
+	_slider(v, "cool_ticks", "降温拍数", 10, 3000, 10, sim.p["cool_ticks"], func(x): pass,
+		"从 T0 按 exp(-6t/ct) 降到 T_end 所需的拍数；之后进入恒温平台。")
+	_slider(v, "env_coupling", "环境耦合强度", 0.1, 20, 0.1, sim.p["env_coupling"], func(x): pass,
+		"局部温度 = (周围分子平均热值 + 环境耦合×T_env) / (n + 环境耦合)。越大越接近环境温度。")
+	var plat_row := HBoxContainer.new()
+	v.add_child(plat_row)
+	var plat_chk := CheckButton.new()
+	plat_chk.text = "降温后恒温平台（关闭则继续降向 0）"
+	plat_chk.button_pressed = bool(sim.p.get("plateau", true))
+	plat_chk.toggled.connect(func(on: bool):
+		sim.p["plateau"] = on
+		_status("恒温平台 = %s" % ("开" if on else "关"))
+	)
+	plat_row.add_child(plat_chk)
 
 	# 反应
-	_section(v, "反应")
-	_slider(v, "p_react", "反应概率/接触", 0, 0.2, 0.002, sim.p["p_react"], func(x): pass)
-	_slider(v, "react_margin", "温度门槛余量", 0, 20, 0.5, sim.p["react_margin"], func(x): pass)
-	_slider(v, "cap", "反应原子上限 cap", 4, 80, 1, sim.p["cap"], func(x): pass)
+	_section(v, "反应（resolve 完全 / 不完全）")
+	_slider(v, "p_react", "反应概率/接触", 0, 0.2, 0.002, sim.p["p_react"], func(x): pass,
+		"每个相邻对每拍触发一次 resolve 的概率（0.02 = 2%）。")
+	_slider(v, "react_margin", "温度门槛余量", 0, 20, 0.5, sim.p["react_margin"], func(x): pass,
+		"触发反应要求 局部温度 ≥ c_A+c_B+余量；余量越大越难反应。")
+	_slider(v, "cap", "反应原子上限 cap", 4, 80, 1, sim.p["cap"], func(x): pass,
+		"两个反应物原子数之和超过它就不反应（默认 36，防止大分子爆炸式合并）。")
+	_slider(v, "max_react", "每拍最多反应对", 0, 2000, 10, sim.max_react_per_tick, func(x): pass,
+		"每拍最多发起的 resolve 请求数（防止一次卡死；600 适合 200×140）。")
 
 	# 注入
 	_section(v, "点击注入 / 删除")
@@ -240,6 +298,16 @@ func _build_ui() -> void:
 	v.add_child(row6)
 	_btn(row6, "放置模式", func(): place_mode = 0; place_formula = formula_edit.text.strip_edges(); _status("点击世界 = 放置 %s" % place_formula))
 	_btn(row6, "删除模式", func(): place_mode = 1; _status("点击世界 = 删除该格分子"))
+	var row6b := HBoxContainer.new()
+	v.add_child(row6b)
+	_btn(row6b, "清空所有分子", func(): _reset_world(); _status("已清空分子"))
+	_btn(row6b, "随机撒 200 个当前式", func():
+		var f := formula_edit.text.strip_edges()
+		var arr: Array = [{"formula": f, "count": 200}]
+		var n: int = sim.add_feed(arr)
+		_refresh_image()
+		_status("撒入 %s × %d" % [f, n])
+	)
 	info_label = Label.new()
 	info_label.add_theme_font_size_override("font_size", 11)
 	info_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
@@ -313,35 +381,127 @@ func _spin(parent: Node, mn: float, mx: float, step: float, val: float, digits: 
 	parent.add_child(s)
 	return s
 
-func _slider(parent: Node, key: String, label: String, mn: float, mx: float, step: float, val: float, setter: Callable) -> void:
+func _fmt(v: float, step: float) -> String:
+	if step >= 1.0:
+		return "%d" % int(round(v))
+	if step >= 0.1:
+		return "%.2f" % v
+	return "%.3f" % v
+
+func _slider(parent: Node, key: String, label: String, mn: float, mx: float, step: float, val: float, setter: Callable, hint: String = "") -> void:
 	var vb := VBoxContainer.new()
 	parent.add_child(vb)
 	var l := Label.new()
-	l.text = "%s：%.3f" % [label, val]
+	l.text = "%s：%s" % [label, _fmt(val, step)]
+	l.add_theme_font_size_override("font_size", 12)
+	vb.add_child(l)
+	if hint != "":
+		l.tooltip_text = hint
+		l.mouse_filter = Control.MOUSE_FILTER_STOP
+	var row := HBoxContainer.new()
+	vb.add_child(row)
 	var sl := HSlider.new()
 	sl.min_value = mn
 	sl.max_value = mx
 	sl.step = step
 	sl.value = val
-	sl.custom_minimum_size = Vector2(340, 18)
-	sl.value_changed.connect(func(v):
-		l.text = "%s：%.3f" % [label, v]
+	sl.custom_minimum_size = Vector2(250, 18)
+	sl.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	if hint != "":
+		sl.tooltip_text = hint
+	var sp := SpinBox.new()
+	sp.min_value = mn
+	sp.max_value = mx
+	sp.step = step
+	sp.value = val
+	sp.custom_minimum_size = Vector2(92, 0)
+	sp.select_all_on_focus = true
+	if hint != "":
+		sp.tooltip_text = hint
+	var apply := func(v: float):
+		sl.set_value_no_signal(v)
+		sp.set_value_no_signal(v)
+		l.text = "%s：%s" % [label, _fmt(v, step)]
 		if key == "speed":
 			speed = v
+		elif key == "max_react":
+			sim.max_react_per_tick = int(round(v))
 		else:
 			sim.p[key] = float(v)
 		setter.call(v)
-	)
-	vb.add_child(l)
-	vb.add_child(sl)
+	sl.value_changed.connect(apply)
+	sp.value_changed.connect(apply)
+	row.add_child(sl)
+	row.add_child(sp)
+	var help := Label.new()
+	help.text = hint
+	help.add_theme_font_size_override("font_size", 10)
+	help.add_theme_color_override("font_color", Color(0.55, 0.58, 0.63))
+	help.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	help.visible = hint != ""
+	vb.add_child(help)
 
 var feed_n_edit: SpinBox
 var info_label: Label
+var feed_list: ItemList
+var feed_formula_edit: LineEdit
+var feed_count_edit: SpinBox
+var feed_items: Array = []
+
+func _refresh_feed_list() -> void:
+	if feed_list == null:
+		return
+	feed_list.clear()
+	for it in feed_items:
+		var d: Dictionary = sim.info(String(it["formula"]))
+		var nat := int(d.get("natoms", 0)) if not d.is_empty() else -1
+		feed_list.add_item("%-16s × %-5d   （%d 原子）" % [it["formula"], int(it["count"]), nat])
+
+func _feed_add() -> void:
+	var f := feed_formula_edit.text.strip_edges()
+	if f == "":
+		return
+	var d: Dictionary = sim.info(f)
+	if d.is_empty():
+		_status("未知分子式：%s（先在“点击注入/查询”里试一下）" % f)
+		return
+	var n := int(feed_count_edit.value)
+	if n <= 0:
+		return
+	feed_items.append({"formula": f, "count": n})
+	_refresh_feed_list()
+	_status("已加入 %s × %d" % [f, n])
+
+func _feed_remove_selected() -> void:
+	var idxs: Array = []
+	for i in feed_list.get_selected_items():
+		idxs.append(int(i))
+	idxs.sort()
+	idxs.reverse()
+	for i in idxs:
+		if i < feed_items.size():
+			feed_items.remove_at(i)
+	_refresh_feed_list()
+
+func _feed_clear() -> void:
+	feed_items.clear()
+	_refresh_feed_list()
+	_status("投料清单已清空")
+
+func _feed_apply(clear_world: bool) -> void:
+	if feed_items.is_empty():
+		_status("投料清单为空：先在上面的输入框里“加入清单”")
+		return
+	if clear_world:
+		sim.reset()
+		tick_done = 0
+		chart.clear_all()
+	var placed: int = sim.add_feed(feed_items)
+	_refresh_image()
+	_status("清单投放 %d 个分子（%d 条投料）" % [placed, feed_items.size()])
 
 func _layout_ui() -> void:
 	var vs := get_viewport_rect().size
-	if ui:
-		ui.size = vs
 	if sim and sim.W > 0:
 		var zx := (vs.x - 420.0) / float(sim.W)
 		var zy := (vs.y - 70.0) / float(sim.H)
@@ -442,8 +602,11 @@ func _process(delta: float) -> void:
 		_do_tick(2)
 	if _shot_mode and _frames == 60:
 		var img := get_viewport().get_texture().get_image()
-		img.save_png("res://screenshot_check.png")
-		_status("已保存 screenshot_check.png")
+		if img == null:
+			print("[shot] get_image() 返回 null（headless 模式不支持截图，请用 --screenshot 不加 --headless 运行）")
+		else:
+			img.save_png("res://screenshot_check.png")
+			_status("已保存 screenshot_check.png")
 		get_tree().quit()
 	if running and tick_done % 3 == 0:
 		chart_ticks += 1
@@ -677,5 +840,8 @@ func _export_csv() -> void:
 
 func _screenshot() -> void:
 	var img := get_viewport().get_texture().get_image()
+	if img == null:
+		_status("截图失败：当前渲染模式取不到画面")
+		return
 	img.save_png("user://chemlab_screenshot.png")
 	_status("截图已保存 user://chemlab_screenshot.png")

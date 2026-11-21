@@ -224,7 +224,9 @@ func schedule_T(t: float) -> float:
 	var ct: float = max(1.0, float(p["cool_ticks"]))
 	if t < ct:
 		return Tend + (T0 - Tend) * exp(-6.0 * t / ct)
-	return Tend
+	if bool(p.get("plateau", true)):
+		return Tend          # 恒温平台：降到终温后保持不变
+	return Tend * exp(-3.0 * (t - ct) / ct)   # 关闭平台：继续降向 0
 
 func local_T(pair_cells: Array) -> float:
 	# 以接触中点为中心、Chebyshev 2 格内的分子热值平均 + 环境耦合
@@ -521,10 +523,36 @@ func load_feed(feed: Array) -> void:
 		var f := String(item.get("formula", ""))
 		var n := int(item.get("count", 0))
 		for i in range(n):
-			if mols.size() >= W * H:
+			if _alive_count() >= W * H:
 				return
-			var a := Vector2i(rng.randi_range(0, H - 1), rng.randi_range(0, W - 1))
-			place(f, a)
+			for attempt in range(12):
+				var a := Vector2i(rng.randi_range(0, H - 1), rng.randi_range(0, W - 1))
+				if place(f, a) >= 0:
+					break
+
+## 叠加投料：不重置世界，按清单逐个放入，返回实际放入个数
+func add_feed(items: Array) -> int:
+	var placed := 0
+	for item in items:
+		var f := String(item.get("formula", ""))
+		var n := int(item.get("count", 0))
+		if f == "" or n <= 0:
+			continue
+		var done := 0
+		for i in range(n):
+			if _alive_count() >= W * H:
+				return placed
+			var ok := false
+			for attempt in range(12):
+				var a := Vector2i(rng.randi_range(0, H - 1), rng.randi_range(0, W - 1))
+				if place(f, a) >= 0:
+					ok = true
+					break
+			if not ok:
+				break
+			done += 1
+			placed += 1
+	return placed
 
 func save_json() -> Dictionary:
 	var out_mols: Array = []
