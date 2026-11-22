@@ -86,3 +86,31 @@ t9_reps_O.png :: [WinError 32] 另一个程序正在使用此文件，进程无�
 - 删除运行测试后重建的 4 处 `__pycache__/`（字节码缓存，`.gitignore` 已排除）。
 - 删除工作区根临时脚本目录 `.tmp_docs/`（本次 TRANSFER §0 行更新用，未入库）。
 - 清理后 `git status` 干净（仅忽略项），工作区根仅剩 `alchemy/`、`.dsh-project-memory/`、`.acl-repair/`。
+
+## 2026-11-22 整理（T91/T92/ChemLab 推送前，生成物与死脚本清理）
+
+> 2026-11-21 与 11-22 两次 08:30 提醒均漏投递，18:37 补投后合并执行；11-21 无整理轮，详见 `progress/laojiu/log/2026-11-21.md`。
+
+### 删除（工作区根）
+- 4 个 0 字节日志：`godot_err.log`、`godot_out.log`、`kernel.err`、`kernel.log`。
+- `.acl-repair/`（3 个沙箱 ACL 修复产物）——本次在 danger-full-access 下成功删除（此前沙箱内多次报"访问被拒绝"）。
+
+### 删除（仓库内生成物，均已 `.gitignore` 排除）
+- 3 处 `__pycache__/`（根 13 + `alchemy/` 8 + `alchemy/core/` 7 个 `.pyc`，约 799KB）；测试运行后重建的 `tests/__pycache__/` 收尾再清。
+- `godot/chem_lab/.godot/`（Godot 导入缓存，25 文件 2.66MB；首次打开实验场会自动重建）。
+- Godot 运行日志 4 个：`godot/chem_lab/{bat_err,bat_out,lab_err,lab_out}.log`。
+- 根运行日志 7 个：`t84_run.log`~`t88_run.log`、`t88_run2.log`、`t92_grid.log`（合计约 105KB）。
+- `intake/tmp/`（ignore 的调试临时目录，16 文件 110KB；正式资料在 `alchemy/intake/` 与 `docs/`）。
+
+### 删除（死脚本，tracked）
+- `_t84_probe.py`、`_t84_handoff_patch.py`——T84 时期一次性调试/补丁脚本，全仓文档与脚本均无引用。
+
+### 保留（有意不动）
+- 本机成果提交 T91/T92/ChemLab 的全部脚本、结果 JSON、图与文档（本次待推送内容）。
+- 6 个被 `.gitignore` 排除的大原始数据（脚本按名读取）、`.dsh-project-memory/`（DSH 记忆库）。
+- 根目录 699 个平铺文件（BASE 硬编码路径 + 跨阶段引用，保持平铺的既有约定）。
+
+### 测试与推送
+- 清理后 `python tests/run_all.py` → **ALL 150 TESTS PASSED (26.8s)**；`git status` 干净（仅忽略项）。
+- tracked 1,683 文件；worktree 1,943 文件 / 1,238.8MB；最大 tracked `_data_gz/t12b_pairs.jsonl.gz` 41.3MB。
+- 连同 `ea4a982`（T91）、`a7af5e1`（ChemLab）、`727e229`（T92）共 4 个提交推送 `2336866..`，远程核验 `main...origin/main` = `0 0`。
