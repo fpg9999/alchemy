@@ -1,0 +1,8 @@
+# Godot 导入缓存与运行产物（项目级兜底；根 .gitignore 也有同样规则）
+.godot/
+*.err
+shot*.log
+selftest_out.log
+screenshot_check.png
+export/
+build/

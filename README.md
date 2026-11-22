@@ -134,6 +134,7 @@
 - `images/`：全部结果图（T68~T70b 的图册按 `t68_*`/`t69_*`/`t70_*`/`t70b_*` 命名；内核的群系物种图在 `images/biome_candidates/`）；
 - `_data_gz/`：大数据的 gzip 版本 + `manifest.json`（GitHub 传输用）；
 - `tools/`：跨电脑传输工具（`make_transfer_archive.py` 重新生成全量 zip、`pack_transfer_data.py` 打包 `_data_gz/`）；
+- `godot/`：**交互式前端项目**——`chem_lab/` 为 ChemLab 九元素化学实验场（Godot 4.7 前端 + Python 内核侧车），入门与约定见 [`godot/README.md`](godot/README.md)；
 - `archive/`：历史脚本与旧数据，已按阶段/主题分子文件夹（`archive/README.md` 有对照表）。
 - `progress/`：**双机协作进展区**——每台机器一个子目录（本机「牢⑨」→ `progress/laojiu/`，含 `CURRENT.md` 滚动状态 + `log/` 每日记录）；协作规则见 [`progress/README.md`](progress/README.md)。
 

@@ -1605,3 +1605,19 @@ un_lab.bat）；本轮新增 chem_lab 工程并提交。未 push。
 - **保留**：`alchemy/intake/tmp/calib/`（标定中间产物，已 ignore）、6 个大原始数据（脚本需要）、`.dsh-project-memory/`、工作区根 `.acl-repair/`（沙箱保护，删不掉）；tag `kernel-0.2.0` 仍留本地未推。
 - **已知问题**：`alchemy/emergence.py` 仍按旧 attrs 字段（density/stickiness）取值，与新 attrs（mass/state/temperature）不兼容 → 需另开任务修。
 - **并发提醒**：本工作目录另有代理在推进 T82/T83，提交前后需 `git status`/`git log` 复核，push 前先 `git fetch`。
+
+## 维护记录 · 2026-11-22 成果与 godot 整理轮（T91 文档 + godot 目录索引）
+
+- **背景**：用户要求“把最新的成果和 godot 项目也都整理上传”（承接当日稍早的例行整理 `c5e5779`：删缓存/日志/死脚本，并推送 T91/ChemLab/T92 共 4 个提交 `2336866..c5e5779`）。
+- **最新成果补文档**：T91（三元组搜索）此前只有 `t91_search.py` + `t91_candidates.json`，无独立报告；本次整理为 `docs/T91_TRIPLE_SEARCH.md`——
+  551 种 2~5 原子小分子、151,525 无序对 → 38,312 组 `(A,B,C)`；温度窗口（`TA≥csum_AB`、`csum_BC≤TA`）/吸引锁（`wAB≥1.0`）/A 自粘（`≥1.2`）/
+  `resolve(A,B)` 热区与环境均不反应/`resolve(B,C)` 仅热区干净产 A，四类条件后仅 **4 组**候选（全 7 原子富 F 主体：
+  `O2AF4+OAF+OF3`、`O2WF4+OWF+OF3`、`XK2F4+XKF+KF3`、`XP2F4+XPF+PF3`，`T_hot=8`/`T_env=2.0`/`csum(B+C)=5`）；附方法表、候选项表、解释与复现命令。
+- **godot 目录整理**：新增 `godot/README.md`（项目一览表、Godot 4.7 + Python 3.11 环境要求、跨机器路径注意、入库/不入库约定、与 `alchemy/` 内核关系）；
+  新增 `godot/chem_lab/.gitignore`（`.godot/`、`*.err`、`shot*.log`、`selftest_out.log`、`screenshot_check.png`、`export/`、`build/` 项目级兜底）；
+  `README.md` 目录节与 `INDEX.md` 目录结构、主要报告、最新补充、整理记录均补 `godot/` 与 T91 条目。
+- **godot 项目已确认全部在库**（17 文件）：`project.godot`、`main.tscn`、`scripts/{main,sim,kernel_client,chart}.gd` 与 `.uid`、`kernel_server.py`、
+  `run_lab.bat`/`run_kernel.bat`、`preview.png` 与 `.import`、`README.md`、`docs/CHEMLAB_PARAMS.md`；导入缓存 `.godot/` 与运行日志不入库。
+- **测试**：`python tests/run_all.py` → **150/150 PASS**（26.8s）。
+- **推送**：本轮整理提交追加在 `c5e5779` 之后推送；推送后以 `git ls-remote origin refs/heads/main` 与 `main...origin/main` = `0 0` 核验（远程 HEAD 见 `TRANSFER.md` §0）。
+- **待办**：`alchemy/emergence.py` 与新 attrs 不兼容待修；tag `kernel-0.2.0` 未推；同目录并发代理提交前先复核 `git status`/`git log`。

@@ -14,6 +14,7 @@
 - `archive/old_scripts/`：历史探索脚本，已按阶段分子文件夹（`t3/` `t4p/` `late/` `early/`）
 - `archive/old_data/`：历史数据，已按主题分子文件夹（`t3/` `scope/` `catalog/` `finite/` `minimal/` `misc/`）
 - `tools/`：跨电脑传输工具（`make_transfer_archive.py`、`pack_transfer_data.py`）
+- `godot/`：交互式前端项目（`chem_lab/` 九元素化学实验场，Godot 4.7 + Python 内核侧车；说明见 `godot/README.md`）
 - 根目录：核心模拟器 + 权威数据 + 各阶段脚本/数据 + `unpack_data.py` + 本索引
 
 ## 核心代码（根目录 + 内核包）
@@ -44,6 +45,11 @@
 
 ## 主要报告（docs/）
 
+- **2026-11-21 T91 三元组搜索：主体 A + 锁住的 B + 只在热区生成 A 的 C**：`T91_TRIPLE_SEARCH.md`
+  （551 种 2~5 原子小分子 → 151,525 无序对 → 38,312 组 `(A,B,C)`（B+C 完全反应只产 A）；再按温度窗口 `TA≥csum_AB`、
+  吸引锁 `wAB≥1.0`、A 自粘 `≥1.2`、`resolve(A,B)` 热区/环境均不反应、`resolve(B,C)` 仅热区干净产 A 筛选，**仅 4 组**候选，
+  全为 7 原子富 F 主体：`O2AF4+OAF+OF3`、`O2WF4+OWF+OF3`、`XK2F4+XKF+KF3`、`XP2F4+XPF+PF3`；共同 `T_hot=8`、`T_env=2.0`、
+  `csum(B+C)=5`、`csum(A+B)=8`；脚本 `t91_search.py`（约 33s）、结果 `t91_candidates.json`；ChemLab 预设即取 `XK2F4+XKF/KF3`）
 - **2026-11-21 T92 群系网格：全部 3/4/5 元元素子集（336 个）环境群系扫描**：`T92_BIOME_GRID.md`
   （T88 的 6 手选群系 → 全组合；160×110、700 分子、400 拍、10°C 恒温；按 T67 口径分类；
   平均 HHI 0.056→0.027→0.018（3/4/5 元），优势种最高 27.3%，**无 A 单主**、B 主辅 29 / D 多主 307；
@@ -123,8 +129,15 @@
 - **2026-11-19 三次整理（T77b 推送前，详见 `docs/CLEANUP_LOG.md` 末节）**：删除工作区根 `intake/` 暂存区
   （312.2MB，7 个 md 与 `alchemy/intake/` 逐一相同、`tmp/` 为入库过程中间产物）与仓库 5 处 `__pycache__/`；
   保留 `alchemy/intake/tmp/calib/`（标定中间产物，gitignore 排除）。
+- **2026-11-22 四次整理（T91/T92/ChemLab 推送前）**：清理 `__pycache__/`、`godot/chem_lab/.godot/`（Godot 缓存 2.66MB）、
+  运行日志（根 7 个、godot 4 个）、`intake/tmp/`，删除死脚本 `_t84_probe.py`/`_t84_handoff_patch.py`，并清掉工作区根 `.acl-repair/`；
+  随后补 T91 文档、整理 `godot/` 目录（详见 `docs/CLEANUP_LOG.md` 2026-11-22 节）。
 
 ## 最新补充
+- **T91 三元组搜索落成文档（2026-11-22）**：把此前只有脚本+JSON 的 T91 结果整理成 `docs/T91_TRIPLE_SEARCH.md`——551 种小分子、151,525 对 → 38,312 组 `(A,B,C)`，
+  四类条件（温度窗口/吸引锁/A 自粘/resolve 行为）筛后仅 **4 组**候选（全 7 原子富 F 主体：`O2AF4+OAF+OF3`、`O2WF4+OWF+OF3`、`XK2F4+XKF+KF3`、`XP2F4+XPF+PF3`）。
+- **godot 目录整理（2026-11-22）**：新增 `godot/README.md`（项目一览/环境要求/入库约定/与内核关系）与 `godot/chem_lab/.gitignore`（Godot 缓存与运行产物项目级兜底）；
+  `README.md` 与 `INDEX.md` 目录结构补 `godot/` 索引行。
 - **T92 群系网格：336 个元素子集全扫（2026-11-21，最新）**：全部 3/4/5 元子集各跑一次小世界（160×110、700 分子、400 拍、10°C 恒温），
   平均 HHI 0.056→0.027→0.018，优势种最高 27.3%、**无 A 单主**（B 主辅 29 / D 多主 307），终态种数 42→120→246 且与投料池 r=0.970；
   重档占比三组均约 22% 但单群系 0~86%；`docs/T92_BIOME_GRID.md`、`images/t92_biome_grid.png`。

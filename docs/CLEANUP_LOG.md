@@ -114,3 +114,13 @@ t9_reps_O.png :: [WinError 32] 另一个程序正在使用此文件，进程无�
 - 清理后 `python tests/run_all.py` → **ALL 150 TESTS PASSED (26.8s)**；`git status` 干净（仅忽略项）。
 - tracked 1,683 文件；worktree 1,943 文件 / 1,238.8MB；最大 tracked `_data_gz/t12b_pairs.jsonl.gz` 41.3MB。
 - 连同 `ea4a982`（T91）、`a7af5e1`（ChemLab）、`727e229`（T92）共 4 个提交推送 `2336866..`，远程核验 `main...origin/main` = `0 0`。
+
+### 追加（成果与 godot 整理，同日 18:40 起）
+
+> 用户要求「将最新的成果和godot项目也都整理上传」；核查后确认 godot 项目 17 文件与 T90~T92 成果均已在远程，缺口是 T91 无独立报告、godot 目录无总览文件。
+
+- **新增 `docs/T91_TRIPLE_SEARCH.md`**：把 T91（551 种小分子 / 151,525 对 → 38,312 组 `(A,B,C)` → 4 组候选）的方法、筛选阶段计数、候选表、解释与复现命令整理成正式报告。
+- **新增 `godot/README.md`**：godot 目录总览（项目一览、Godot 4.7 + Python 3.11 环境要求、跨机器路径注意、入库/不入库约定、与 `alchemy/` 内核关系、新项目命名约定）。
+- **新增 `godot/chem_lab/.gitignore`**：`.godot/`、`*.err`、`shot*.log`、`selftest_out.log`、`screenshot_check.png`、`export/`、`build/` 的项目级兜底（与根 `.gitignore` 一致）。
+- **索引同步**：`README.md` 目录节、`INDEX.md`（目录结构/主要报告/最新补充/整理记录）、`TRANSFER.md` §0 六行 + 2026-11-22 blockquote、`HANDOFF.md` 维护记录。
+- **复核**：`python tests/run_all.py` → 150/150 PASS；`git status --porcelain` 仅本轮文档改动；推送后以 `git ls-remote origin refs/heads/main` 与 `main...origin/main` = `0 0` 核验。
