@@ -23,12 +23,14 @@ var rng := RandomNumberGenerator.new()
 
 var client                      # KernelClient
 var info_cache := {}            # formula -> info dict
+var _hash := {}                 # 空间哈希：Vector2i(格x,格y) -> [mol id]
+var _hash_cell := 12            # 哈希格边长（= r_cap）
 
 # 参数（全部可调）
 var p := {
 	"gravity_G": 0.30,
 	"KA": 2.5, "KR": 0.5,
-	"force_r": 6,
+	"r_cap": 12,
 	"force_scale": 1.00,
 	"lock_w": 1.0, "lock_r": 2, "lock_rigid_fall": true,
 	"heat_w": {"C": -1.0, "L": 1.0, "F": 2.0},
@@ -44,10 +46,18 @@ var p := {
 }
 
 # 统计
+var m_ax := PackedInt32Array()
+var m_ay := PackedInt32Array()
+var m_A := PackedFloat32Array()
+var m_D := PackedFloat32Array()
+var m_ra := PackedInt32Array()
+var m_rr := PackedInt32Array()
+var m_alive := PackedByteArray()
 var stats := {
 	"n": 0, "species": 0,
 	"complete": 0, "incomplete": 0, "none": 0, "drops": 0, "joins": 0,
 	"pairs": 0, "T_env": 0.0, "T_hot": 0.0,
+	"ms_g": 0.0, "ms_f": 0.0, "ms_l": 0.0, "ms_r": 0.0,
 }
 var species_count := {}
 var pending_res := 0
@@ -82,8 +92,12 @@ func info(f: String) -> Dictionary:
 		var d: Dictionary = r["data"]
 		d["A"] = float(d.get("A", 0.0))
 		d["D"] = float(d.get("D", 0.0))
-		d["ratt"] = int(d.get("ratt", 1))
-		d["rrep"] = int(d.get("rrep", 1))
+		var comp: Dictionary = d.get("comp", {})
+		var q: int = 3 * int(comp.get("K", 0)) + 2 * int(comp.get("A", 0)) + int(comp.get("F", 0))
+		d["Q"] = q
+		var rr := _radius_of_q(q)
+		d["ratt"] = rr[0]
+		d["rrep"] = rr[1]
 		d["k"] = int(d.get("k", 1))
 		d["heat"] = _heat_of(d.get("comp", {}), p["heat_w"])
 		d["c"] = int(d.get("c", max(1, int(d.get("natoms", 1)) - 1)))
@@ -97,6 +111,61 @@ func _heat_of(comp: Dictionary, w: Dictionary) -> int:
 	return int(round(float(w.get("C", 0.0)) * int(comp.get("C", 0)) +
 			float(w.get("L", 0.0)) * int(comp.get("L", 0)) +
 			float(w.get("F", 0.0)) * int(comp.get("F", 0))))
+
+## 散素点数 Q -> (吸引半径, 排斥半径)：R_att = Q 格（至少 1），R_rep ≈ 0.7·Q，封顶 r_cap
+func _radius_of_q(q: int) -> Array:
+	var capr: int = maxi(1, int(p["r_cap"]))
+	return [clampi(q, 1, capr), clampi(int(round(0.7 * float(q))), 1, capr)]
+
+## 修改 r_cap 后调用：重算所有类型/分子的半径，并重建空间哈希
+func recompute_radii() -> void:
+	for f in info_cache.keys():
+		var d: Dictionary = info_cache[f]
+		var rr := _radius_of_q(int(d.get("Q", 0)))
+		d["ratt"] = rr[0]
+		d["rrep"] = rr[1]
+	for id in range(mols.size()):
+		var m = mols[id]
+		if m["dead"]:
+			continue
+		var d2: Dictionary = info_cache.get(m["f"], {})
+		if not d2.is_empty():
+			m["ratt"] = int(d2["ratt"])
+			m["rrep"] = int(d2["rrep"])
+			m["Q"] = int(d2.get("Q", 0))
+			m_ra[id] = int(d2["ratt"])
+			m_rr[id] = int(d2["rrep"])
+			m_A[id] = float(m["A"])
+			m_D[id] = float(m["D"])
+	rebuild_hash()
+
+## 空间哈希：按 r_cap 大小的格子分桶（每拍重建；桶内只存锚点，避免重复）
+func rebuild_hash() -> void:
+	_hash.clear()
+	_hash_cell = maxi(2, int(p["r_cap"]))
+	for id in range(mols.size()):
+		var m = mols[id]
+		if m["dead"]:
+			continue
+		var a: Vector2i = m["anchor"]
+		var key := Vector2i(floori(float(a.x) / _hash_cell), floori(float(a.y) / _hash_cell))
+		if _hash.has(key):
+			_hash[key].append(id)
+		else:
+			_hash[key] = [id]
+
+## 取 3x3 哈希桶内的候选分子（哈希格 = r_cap，故可覆盖任意 ≤ r_cap 的作用半径）
+func hash_candidates(id: int) -> Array:
+	var out: Array = []
+	var a: Vector2i = mols[id]["anchor"]
+	var kr := floori(float(a.x) / _hash_cell)
+	var kc := floori(float(a.y) / _hash_cell)
+	for dr in range(-1, 2):
+		for dc in range(-1, 2):
+			var key := Vector2i(kr + dr, kc + dc)
+			if _hash.has(key):
+				out.append_array(_hash[key])
+	return out
 
 ## 修改热值权重后调用：刷新类型缓存与所有分子的 heat（负热值允许）
 func recompute_heat() -> void:
@@ -192,7 +261,7 @@ func place(f: String, anchor: Vector2i, ignore_id: int = -1) -> int:
 		"state": float(d["attrs"].get("state", 1.0)),
 		"temp": float(d["attrs"].get("temperature", 1.0)),
 		"A": float(d.get("A", 0.0)), "D": float(d.get("D", 0.0)),
-		"ratt": int(d.get("ratt", 1)), "rrep": int(d.get("rrep", 1)),
+		"ratt": int(d.get("ratt", 1)), "rrep": int(d.get("rrep", 1)), "Q": int(d.get("Q", 0)),
 		"heat": int(d.get("heat", 0)), "c": int(d.get("c", 1)),
 		"natoms": int(d.get("natoms", 1)),
 		"gacc": 0.0, "facc": 0.0, "dead": false, "locks": [],
@@ -202,6 +271,13 @@ func place(f: String, anchor: Vector2i, ignore_id: int = -1) -> int:
 		m["cells"].append(c)
 		grid[_idx(c)] = next_id
 	mols.append(m)
+	m_ax.append(anchor.x)
+	m_ay.append(anchor.y)
+	m_A.append(float(m["A"]))
+	m_D.append(float(m["D"]))
+	m_ra.append(int(m["ratt"]))
+	m_rr.append(int(m["rrep"]))
+	m_alive.append(1)
 	next_id += 1
 	_count_species(f, 1)
 	stats["n"] = _alive_count()
@@ -227,6 +303,7 @@ func remove(id: int) -> void:
 	if m["dead"]:
 		return
 	m["dead"] = true
+	m_alive[id] = 0
 	for c in m["cells"]:
 		grid[_idx(c)] = -1
 	_count_species(m["f"], -1)
@@ -298,29 +375,33 @@ func decay(d: int, r: int) -> float:
 	return 0.0
 
 func force_on(id: int) -> Vector2:
-	var m = mols[id]
-	var a: Vector2i = m["anchor"]
-	var f := Vector2.ZERO
+	var ax := m_ax[id]
+	var ay := m_ay[id]
+	var A := m_A[id]
+	var ra: int = maxi(1, m_ra[id])
 	var KA := float(p["KA"])
 	var KR := float(p["KR"])
-	var fr := int(p["force_r"])
-	for oid in neighbors_of(id, fr):
-		var o = mols[oid]
-		var b: Vector2i = o["anchor"]
-		var d: int = _cheb(a, b)
-		# 作用半径：取「力半径」与分子自身半径（散素点数换算）的较大者，
-		# 这样稀疏气体里的远邻也能互相作用，而强度仍由 A / D 决定。
-		var ratt: int = maxi(fr, int(m["ratt"]))
-		var rrep: int = maxi(fr, int(o["rrep"]))
-		var att := KA * float(m["A"]) * decay(d, ratt)
-		var rep := KR * float(o["D"]) * decay(d, rrep)
-		var w := att - rep
+	var f := Vector2.ZERO
+	for oid in hash_candidates(id):
+		if oid == id or m_alive[oid] == 0:
+			continue
+		var dx: int = m_ax[oid] - ax
+		var dy: int = m_ay[oid] - ay
+		var d: int = maxi(absi(dx), absi(dy))
+		if d <= 0:
+			continue
+		var rr: int = maxi(1, m_rr[oid])
+		if d > maxi(ra, rr):
+			continue
+		var w: float = KA * A * decay(d, ra) - KR * m_D[oid] * decay(d, rr)
 		if abs(w) < 0.001:
 			continue
-		var dir := Vector2(b.x - a.x, b.y - a.y)
-		if dir.length_squared() < 0.0001:
-			dir = Vector2(0.1, 0.1)
-		f += dir.normalized() * w
+		var len2: float = float(dx * dx + dy * dy)
+		if len2 < 0.0001:
+			f += Vector2(0.1, 0.1) * w
+		else:
+			var inv: float = 1.0 / sqrt(len2)
+			f += Vector2(dx * inv, dy * inv) * w
 	return f
 
 func mobility(m) -> float:
@@ -381,6 +462,8 @@ func try_move_group(ids: Array, step: Vector2i) -> bool:
 			nc.append(t)
 			grid[_idx(t)] = int(id)
 		m["cells"] = nc
+		m_ax[int(id)] = m["anchor"].x
+		m_ay[int(id)] = m["anchor"].y
 	stats["moves"] = int(stats.get("moves", 0)) + ids.size()
 	return true
 
@@ -429,6 +512,8 @@ func try_move(id: int, step: Vector2i) -> bool:
 		ncells.append(c)
 	m["anchor"] = na
 	m["cells"] = ncells
+	m_ax[id] = na.x
+	m_ay[id] = na.y
 	stats["moves"] = int(stats.get("moves", 0)) + 1
 	return true
 
@@ -459,6 +544,7 @@ func rebuild_locks() -> void:
 
 func step() -> void:
 	tick += 1
+	var _t0 := Time.get_ticks_usec()
 	stats["T_env"] = schedule_T(float(tick))
 	# 1) 重力：整格下移（锁团作为刚体整体下落，避免被锁在悬空处）
 	var G := float(p["gravity_G"])
@@ -473,7 +559,7 @@ func step() -> void:
 		while float(mols[id]["gacc"]) >= 1.0 and guard < 4:
 			guard += 1
 			var ok := false
-			if bool(p.get("lock_rigid_fall", true)):
+			if bool(p.get("lock_rigid_fall", true)) and not mols[id]["locks"].is_empty():
 				var comp := lock_component(id)
 				if comp.size() > 1:
 					ok = try_move_group(comp, Vector2i(1, 0))
@@ -493,6 +579,9 @@ func step() -> void:
 					mols[id]["gacc"] = float(mols[id]["gacc"]) - 1.0
 			if not ok:
 				break
+	rebuild_hash()
+	stats["ms_g"] = float(stats.get("ms_g", 0.0)) + float(Time.get_ticks_usec() - _t0) / 1000.0
+	var _t1 := Time.get_ticks_usec()
 	# 2) 三素力驱动
 	_order.clear()
 	for id in range(mols.size()):
@@ -515,19 +604,25 @@ func step() -> void:
 				bestdot = dot
 				best = d
 		# 力→位移：按 |F|·force_scale·迁移率 累积位移，和重力同量级（可调 force_scale）
-		m["facc"] = min(3.0, float(m["facc"]) + mag * float(p["force_scale"]) * mobility(m))
+		var facc: float = min(3.0, float(m["facc"]) + mag * float(p["force_scale"]) * mobility(m))
 		var fguard: int = 0
-		while float(m["facc"]) >= 1.0 and fguard < 4:
+		while facc >= 1.0 and fguard < 4:
 			fguard += 1
 			if try_move(id, best):
-				m["facc"] = float(m["facc"]) - 1.0
+				facc -= 1.0
 			else:
-				m["facc"] = min(float(m["facc"]), 0.99)
+				facc = min(facc, 0.99)
 				break
+		m["facc"] = facc
+	stats["ms_f"] = float(stats.get("ms_f", 0.0)) + float(Time.get_ticks_usec() - _t1) / 1000.0
+	var _t2 := Time.get_ticks_usec()
 	# 3) 粘附锁
 	rebuild_locks()
+	stats["ms_l"] = float(stats.get("ms_l", 0.0)) + float(Time.get_ticks_usec() - _t2) / 1000.0
+	var _t3 := Time.get_ticks_usec()
 	# 4) 反应：相邻对 + 局部温度门控 + 异步 resolve
 	_react_phase()
+	stats["ms_r"] = float(stats.get("ms_r", 0.0)) + float(Time.get_ticks_usec() - _t3) / 1000.0
 
 func _react_phase() -> void:
 	# 背压：内核回复跟不上时先不发起新反应，避免请求雪崩

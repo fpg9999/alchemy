@@ -47,6 +47,7 @@ var preset_opt: OptionButton
 var _shot_mode := false
 var _selftest := false
 var _selftest_ticks := 0
+var _st_t0 := 0
 var _panel_node: PanelContainer
 var panel_scroll: ScrollContainer
 var panel: PanelContainer
@@ -239,8 +240,8 @@ func _build_ui() -> void:
 		"聚素吸引强度上限：两个 A=3 分子贴邻时的最大吸引力（默认 2.5，与内核短键 κ0 同量级）。")
 	_slider(v, "KR", "排斥力 KR", 0, 3.0, 0.05, sim.p["KR"], func(x): pass,
 		"动素排斥强度上限：两个 D=3 分子贴邻时的最大排斥力（默认 0.5）。KA:KR 越大，同种越容易聚。")
-	_slider(v, "force_r", "作用力半径", 1, 12, 1, sim.p["force_r"], func(x): pass,
-		"合力扫描半径的下限（格）；实际半径 = max(该值, 分子自身 ratt/rrep)。稀疏气体里半径太小会'谁都不理谁'，默认 6。")
+	_slider(v, "r_cap", "作用距离上限 R_MAX", 2, 24, 1, sim.p["r_cap"], func(x): sim.recompute_radii(),
+		"散素点数 Q → 吸引半径 = Q 格（至少 1）、排斥半径 ≈ 0.7Q，二者都封顶本值。默认 12：Q≥12 的分子作用到 12 格，普通小分子只有 1~4 格。改它会重算所有分子半径并重建空间哈希。")
 	_slider(v, "force_scale", "力→位移系数", 0, 4.0, 0.05, sim.p["force_scale"], func(x): pass,
 		"每拍位移累加 = |合力| × 该系数 × 物态迁移率。默认 1.0：|F|≈2 时约 1~2 格/拍，与重力（0.3~0.9 格/拍）同量级；调大更活跃，调小更黏滞。")
 	_slider(v, "lock_w", "粘附锁阈值", 0, 4.0, 0.05, sim.p["lock_w"], func(x): pass,
@@ -598,7 +599,8 @@ func _process(delta: float) -> void:
 			guard += 1
 			_do_tick(1)
 			acc -= 1.0
-	_refresh_image()
+	if not _selftest:
+		_refresh_image()
 	_update_hud()
 	_frames += 1
 	if _selftest and _frames == 20:
@@ -616,6 +618,11 @@ func _process(delta: float) -> void:
 			if arg.begins_with("--force-scale="):
 				sim.p["force_scale"] = float(arg.split("=")[1])
 				_status("自检：force_scale=%s" % str(sim.p["force_scale"]))
+			elif arg.begins_with("--r-cap="):
+				sim.p["r_cap"] = float(arg.split("=")[1])
+				sim.recompute_radii()
+				_status("自检：r_cap=%s（已重算半径与哈希）" % str(sim.p["r_cap"]))
+		_st_t0 = Time.get_ticks_msec()
 	if _selftest and _frames > 20 and _selftest_ticks < 240:
 		_do_tick(2)
 		_selftest_ticks += 2
@@ -653,6 +660,13 @@ func _process(delta: float) -> void:
 				str(sim.p["lock_r"]), str(sim.p.get("lock_rigid_fall", true))])
 			print("[selftest] hard_walls=%s oob_cells=%d max_row=%d H=%d (max_row 应 <= H-1)" % [
 				str(sim.p.get("hard_walls", true)), oob, maxrow, sim.H])
+			var ms := float(Time.get_ticks_msec() - _st_t0)
+			print("[selftest] phases: g=%.0f f=%.0f l=%.0f r=%.0f ms (total)" % [
+				float(sim.stats.get("ms_g", 0.0)), float(sim.stats.get("ms_f", 0.0)),
+				float(sim.stats.get("ms_l", 0.0)), float(sim.stats.get("ms_r", 0.0))])
+			print("[selftest] perf: %.1f ms / %d ticks = %.2f ms/tick (r_cap=%d force_scale=%.2f)" % [
+				ms, _selftest_ticks, ms / float(max(1, _selftest_ticks)),
+				int(sim.p["r_cap"]), float(sim.p["force_scale"])])
 			get_tree().quit()
 			return
 	if _shot_mode and _frames >= 20 and _frames < 60:
