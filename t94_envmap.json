@@ -1,0 +1,2248 @@
+{
+  "task": "T94-C 环境分支：环境族 × 生命候选 危险度与生存矩阵",
+  "generated_at": "2026-11-24 00:25:39",
+  "quick": false,
+  "config": {
+    "T0": 200.0,
+    "T_end": 0.0,
+    "cool_ticks": 600.0,
+    "plateau": true,
+    "p_react": 1.0,
+    "gravity_G": 0.2,
+    "env_coupling": 0.5,
+    "cap": 36,
+    "react_margin": 0.0,
+    "heat_w": {
+      "C": -1.0,
+      "L": 1.0,
+      "F": 2.0
+    },
+    "seed": 20261124
+  },
+  "catalog_file": "G:\\AI work\\deepseek\\work1\\alchemy\\t4_catalog_all_validated.json",
+  "catalog_size": 84225,
+  "n_pool": 400,
+  "n_sample": 80,
+  "runtime_s": 17.6,
+  "criteria": {
+    "P_COLD_BAD": 0.5,
+    "P_COLD_MEMBRANE": 0.1,
+    "DUR_MEMBRANE": 0.8,
+    "SHELL_SUPPLY_MIN": 0.05,
+    "D_MAX": 3,
+    "local_T": "T_loc=(h_A+h_B+env_coupling*T_env)/(2+env_coupling)",
+    "thermal": "T93 模型A κ0=0.35 C_core=60 λ=0.03 T_CORE=4.0"
+  },
+  "candidates": {
+    "C3K3F2": {
+      "formula": "C3K3F2",
+      "name": "主体·三素冷壳核",
+      "role": "body",
+      "note": "T90 生长主体（8 原子 5 位点）",
+      "natoms": 8,
+      "c": 7,
+      "stable": true,
+      "heat": 1.0,
+      "Tdeg": 4,
+      "A": 1.0,
+      "D": 0.0,
+      "w_self": 0.833,
+      "csum": 7,
+      "isum": null
+    },
+    "XK2F4": {
+      "formula": "XK2F4",
+      "name": "自复制候选·7 原子富 F",
+      "role": "replicator",
+      "note": "T91 第 3 组主体",
+      "natoms": 7,
+      "c": 6,
+      "stable": true,
+      "heat": 8.0,
+      "Tdeg": 8,
+      "A": 2.0,
+      "D": 0.0,
+      "w_self": 1.667,
+      "csum": 6,
+      "isum": null
+    },
+    "P2W": {
+      "formula": "P2W",
+      "name": "高 D 膜分子",
+      "role": "membrane",
+      "note": "P/W 族高 D，D≈2.667（T93 斥力族）",
+      "natoms": 3,
+      "c": 4,
+      "stable": true,
+      "heat": 0.0,
+      "Tdeg": 0,
+      "A": 0.0,
+      "D": 2.667,
+      "w_self": -0.444,
+      "csum": 4,
+      "isum": null
+    },
+    "O10XK4": {
+      "formula": "O10XK4",
+      "name": "完美冷壳参照",
+      "role": "shell",
+      "note": "T93 最佳冷壳（D=0, η=0.039, w_self=2.424）",
+      "natoms": 15,
+      "c": 22,
+      "stable": true,
+      "heat": 0.0,
+      "Tdeg": 0,
+      "A": 2.909,
+      "D": 0.0,
+      "w_self": 2.424,
+      "csum": 22,
+      "isum": null
+    },
+    "OXC": {
+      "formula": "OXC",
+      "name": "含 C 三素对照",
+      "role": "control",
+      "note": "T93 含 C 冷壳小分子",
+      "natoms": 3,
+      "c": 3,
+      "stable": true,
+      "heat": -1.0,
+      "Tdeg": 0,
+      "A": 2.0,
+      "D": 0.0,
+      "w_self": 1.667,
+      "csum": 3,
+      "isum": null
+    }
+  },
+  "envs": [
+    {
+      "n_pool": 400,
+      "n_species": 263,
+      "atoms_per_mol": 5.8575,
+      "achieved_share": {
+        "O": 0.2083,
+        "X": 0.0495,
+        "C": 0.1246,
+        "P": 0.0307,
+        "W": 0.0188,
+        "L": 0.0777,
+        "K": 0.0999,
+        "A": 0.0952,
+        "F": 0.2953
+      },
+      "max_share_dev": 0.0083,
+      "heat_mean": 3.185,
+      "heat_pos_share": 0.795,
+      "dpos_share": 0.44,
+      "A_mean": 1.6706666666666672,
+      "D_mean": 0.6911666666666666,
+      "w_self_mean": 1.2770277777777759,
+      "top_species": [
+        [
+          "F2",
+          38,
+          0.095
+        ],
+        [
+          "O2AF4",
+          7,
+          0.0175
+        ],
+        [
+          "O3F5",
+          6,
+          0.015
+        ],
+        [
+          "LF",
+          6,
+          0.015
+        ],
+        [
+          "KF3",
+          5,
+          0.0125
+        ],
+        [
+          "CF",
+          5,
+          0.0125
+        ],
+        [
+          "OF3",
+          5,
+          0.0125
+        ],
+        [
+          "O2F4",
+          4,
+          0.01
+        ]
+      ],
+      "shell_share": 0.015,
+      "n_shell_species": 6,
+      "best_shell": {
+        "formula": "O3X2C2K",
+        "eta": 0.1354,
+        "w_self": 1.786,
+        "k_raw": 1,
+        "count": 1,
+        "mass": "重",
+        "state": "固",
+        "temperature": "冷"
+      },
+      "id": "E1",
+      "name": "富 F 环境",
+      "basis": "T88 B3_OFL/T91 富 F 方向",
+      "target": {
+        "O": 0.2,
+        "X": 0.05,
+        "C": 0.12,
+        "P": 0.03,
+        "W": 0.02,
+        "L": 0.08,
+        "K": 0.1,
+        "A": 0.1,
+        "F": 0.3
+      },
+      "n_candidate_species": 3931,
+      "local_membrane": {
+        "body": {
+          "status": "需外源膜",
+          "note": "本地壳 O3X2C2K d=1，但供给仅 1.5%"
+        },
+        "replicator": {
+          "status": "需外源膜",
+          "note": "本地壳 O3X2C2K d=3，但供给仅 1.5%"
+        },
+        "d_min_imported_shell": 1,
+        "O10XK4_in_pool": 0
+      }
+    },
+    {
+      "n_pool": 400,
+      "n_species": 227,
+      "atoms_per_mol": 6.1575,
+      "achieved_share": {
+        "O": 0.3719,
+        "X": 0.2672,
+        "C": 0.1238,
+        "P": 0.0093,
+        "W": 0.0134,
+        "L": 0.0166,
+        "K": 0.0828,
+        "A": 0.0593,
+        "F": 0.0556
+      },
+      "max_share_dev": 0.0328,
+      "heat_mean": 0.025,
+      "heat_pos_share": 0.2625,
+      "dpos_share": 0.2025,
+      "A_mean": 2.352982142857145,
+      "D_mean": 0.3591666666666667,
+      "w_self_mean": 1.900957341269843,
+      "top_species": [
+        [
+          "O2",
+          16,
+          0.04
+        ],
+        [
+          "O2X4",
+          11,
+          0.0275
+        ],
+        [
+          "O2X2",
+          10,
+          0.025
+        ],
+        [
+          "O2X6",
+          10,
+          0.025
+        ],
+        [
+          "O3X2C",
+          9,
+          0.0225
+        ],
+        [
+          "O2X5",
+          8,
+          0.02
+        ],
+        [
+          "O3X3K",
+          7,
+          0.0175
+        ],
+        [
+          "X3",
+          6,
+          0.015
+        ]
+      ],
+      "shell_share": 0.4075,
+      "n_shell_species": 59,
+      "best_shell": {
+        "formula": "O4XK2",
+        "eta": 0.0595,
+        "w_self": 2.333,
+        "k_raw": 2,
+        "count": 1,
+        "mass": "重",
+        "state": "固",
+        "temperature": "冷"
+      },
+      "id": "E2",
+      "name": "富 O/X 环境",
+      "basis": "T88 B3_OXC / T92 3 元 OXC 群系",
+      "target": {
+        "O": 0.35,
+        "X": 0.3,
+        "C": 0.12,
+        "P": 0.01,
+        "W": 0.01,
+        "L": 0.02,
+        "K": 0.08,
+        "A": 0.06,
+        "F": 0.05
+      },
+      "n_candidate_species": 3931,
+      "local_membrane": {
+        "body": {
+          "status": "可存活",
+          "note": "本地壳 O4XK2 d=1（供给 40.8%）"
+        },
+        "replicator": {
+          "status": "可存活",
+          "note": "本地壳 O4XK2 d=2（供给 40.8%）"
+        },
+        "d_min_imported_shell": 1,
+        "O10XK4_in_pool": 0
+      }
+    },
+    {
+      "n_pool": 400,
+      "n_species": 345,
+      "atoms_per_mol": 6.54,
+      "achieved_share": {
+        "O": 0.1972,
+        "X": 0.1204,
+        "C": 0.0707,
+        "P": 0.1525,
+        "W": 0.1743,
+        "L": 0.156,
+        "K": 0.0654,
+        "A": 0.0455,
+        "F": 0.018
+      },
+      "max_share_dev": 0.0143,
+      "heat_mean": 0.7925,
+      "heat_pos_share": 0.565,
+      "dpos_share": 0.9625,
+      "A_mean": 2.037238095238096,
+      "D_mean": 1.8966964285714298,
+      "w_self_mean": 1.3815823412698418,
+      "top_species": [
+        [
+          "OW4L",
+          4,
+          0.01
+        ],
+        [
+          "XW3L2",
+          3,
+          0.0075
+        ],
+        [
+          "O3XPL2",
+          3,
+          0.0075
+        ],
+        [
+          "P2WL2A",
+          3,
+          0.0075
+        ],
+        [
+          "O2W2",
+          3,
+          0.0075
+        ],
+        [
+          "OXL",
+          3,
+          0.0075
+        ],
+        [
+          "OX2P2L",
+          2,
+          0.005
+        ],
+        [
+          "OCW2A",
+          2,
+          0.005
+        ]
+      ],
+      "shell_share": 0.1,
+      "n_shell_species": 38,
+      "best_shell": {
+        "formula": "O2X",
+        "eta": 0.0833,
+        "w_self": 2.222,
+        "k_raw": 1,
+        "count": 1,
+        "mass": "重",
+        "state": "固",
+        "temperature": "冷"
+      },
+      "id": "E3",
+      "name": "富 P/W/L 环境",
+      "basis": "T93 斥力族（P/W/L）富集",
+      "target": {
+        "O": 0.2,
+        "X": 0.12,
+        "C": 0.08,
+        "P": 0.16,
+        "W": 0.16,
+        "L": 0.16,
+        "K": 0.06,
+        "A": 0.04,
+        "F": 0.02
+      },
+      "n_candidate_species": 3931,
+      "local_membrane": {
+        "body": {
+          "status": "可存活",
+          "note": "本地壳 O2X d=1（供给 10.0%）"
+        },
+        "replicator": {
+          "status": "可存活",
+          "note": "本地壳 O2X d=2（供给 10.0%）"
+        },
+        "d_min_imported_shell": 1,
+        "O10XK4_in_pool": 0
+      }
+    },
+    {
+      "n_pool": 400,
+      "n_species": 28,
+      "atoms_per_mol": 4.7175,
+      "achieved_share": {
+        "O": 0.3397,
+        "X": 0.3302,
+        "C": 0.3302,
+        "P": 0.0,
+        "W": 0.0,
+        "L": 0.0,
+        "K": 0.0,
+        "A": 0.0,
+        "F": 0.0
+      },
+      "max_share_dev": 0.0064,
+      "heat_mean": -1.5575,
+      "heat_pos_share": 0.0,
+      "dpos_share": 0.0,
+      "A_mean": 2.0035297619047614,
+      "D_mean": 0.0,
+      "w_self_mean": 1.6696081349206355,
+      "top_species": [
+        [
+          "X2C2",
+          22,
+          0.055
+        ],
+        [
+          "C2",
+          21,
+          0.0525
+        ],
+        [
+          "O2C4",
+          20,
+          0.05
+        ],
+        [
+          "O3X2C",
+          19,
+          0.0475
+        ],
+        [
+          "O2X3",
+          18,
+          0.045
+        ],
+        [
+          "O3C",
+          18,
+          0.045
+        ],
+        [
+          "O2XC4",
+          18,
+          0.045
+        ],
+        [
+          "O2",
+          17,
+          0.0425
+        ]
+      ],
+      "shell_share": 0.505,
+      "n_shell_species": 15,
+      "best_shell": {
+        "formula": "O2X",
+        "eta": 0.0833,
+        "w_self": 2.222,
+        "k_raw": 1,
+        "count": 16,
+        "mass": "重",
+        "state": "固",
+        "temperature": "冷"
+      },
+      "id": "E4",
+      "name": "O/X/C 均衡环境",
+      "basis": "T88 B3_OXC（等丰度）",
+      "target": {
+        "O": 0.3333,
+        "X": 0.3333,
+        "C": 0.3333,
+        "P": 0.0,
+        "W": 0.0,
+        "L": 0.0,
+        "K": 0.0,
+        "A": 0.0,
+        "F": 0.0
+      },
+      "n_candidate_species": 28,
+      "local_membrane": {
+        "body": {
+          "status": "可存活",
+          "note": "本地壳 O2X d=1（供给 50.5%）"
+        },
+        "replicator": {
+          "status": "可存活",
+          "note": "本地壳 O2X d=2（供给 50.5%）"
+        },
+        "d_min_imported_shell": 1,
+        "O10XK4_in_pool": 0
+      }
+    },
+    {
+      "n_pool": 400,
+      "n_species": 267,
+      "atoms_per_mol": 6.4125,
+      "achieved_share": {
+        "O": 0.1462,
+        "X": 0.0916,
+        "C": 0.0881,
+        "P": 0.0101,
+        "W": 0.009,
+        "L": 0.0277,
+        "K": 0.2889,
+        "A": 0.2811,
+        "F": 0.0573
+      },
+      "max_share_dev": 0.0089,
+      "heat_mean": 0.3475,
+      "heat_pos_share": 0.3375,
+      "dpos_share": 0.2475,
+      "A_mean": 1.745291666666666,
+      "D_mean": 0.405,
+      "w_self_mean": 1.3869097222222238,
+      "top_species": [
+        [
+          "A2",
+          10,
+          0.025
+        ],
+        [
+          "K2A6",
+          7,
+          0.0175
+        ],
+        [
+          "K2A5",
+          7,
+          0.0175
+        ],
+        [
+          "K2A3",
+          7,
+          0.0175
+        ],
+        [
+          "K2A4",
+          6,
+          0.015
+        ],
+        [
+          "OC2K3A2",
+          5,
+          0.0125
+        ],
+        [
+          "OK3A3",
+          5,
+          0.0125
+        ],
+        [
+          "K2A2",
+          5,
+          0.0125
+        ]
+      ],
+      "shell_share": 0.07,
+      "n_shell_species": 23,
+      "best_shell": {
+        "formula": "O2XK4",
+        "eta": 0.0833,
+        "w_self": 2.222,
+        "k_raw": 2,
+        "count": 2,
+        "mass": "重",
+        "state": "固",
+        "temperature": "冷"
+      },
+      "id": "E5",
+      "name": "富 K/A 环境",
+      "basis": "T88 B5_OXKAF / T93 冷壳族方向",
+      "target": {
+        "O": 0.15,
+        "X": 0.1,
+        "C": 0.08,
+        "P": 0.01,
+        "W": 0.01,
+        "L": 0.03,
+        "K": 0.28,
+        "A": 0.28,
+        "F": 0.06
+      },
+      "n_candidate_species": 3931,
+      "local_membrane": {
+        "body": {
+          "status": "可存活",
+          "note": "本地壳 O2XK4 d=1（供给 7.0%）"
+        },
+        "replicator": {
+          "status": "可存活",
+          "note": "本地壳 O2XK4 d=2（供给 7.0%）"
+        },
+        "d_min_imported_shell": 1,
+        "O10XK4_in_pool": 0
+      }
+    },
+    {
+      "n_pool": 400,
+      "n_species": 366,
+      "atoms_per_mol": 6.52,
+      "achieved_share": {
+        "O": 0.1162,
+        "X": 0.1028,
+        "C": 0.1058,
+        "P": 0.1154,
+        "W": 0.1093,
+        "L": 0.1116,
+        "K": 0.1139,
+        "A": 0.107,
+        "F": 0.1181
+      },
+      "max_share_dev": 0.0084,
+      "heat_mean": 1.5775,
+      "heat_pos_share": 0.645,
+      "dpos_share": 0.8325,
+      "A_mean": 1.6257619047619054,
+      "D_mean": 1.6356547619047621,
+      "w_self_mean": 1.0821924603174602,
+      "top_species": [
+        [
+          "WL2",
+          3,
+          0.0075
+        ],
+        [
+          "C2",
+          3,
+          0.0075
+        ],
+        [
+          "F2",
+          3,
+          0.0075
+        ],
+        [
+          "C2A",
+          3,
+          0.0075
+        ],
+        [
+          "OX3CA2",
+          2,
+          0.005
+        ],
+        [
+          "OXP3WF2",
+          2,
+          0.005
+        ],
+        [
+          "X2W2LAF",
+          2,
+          0.005
+        ],
+        [
+          "O5CLK",
+          2,
+          0.005
+        ]
+      ],
+      "shell_share": 0.055,
+      "n_shell_species": 21,
+      "best_shell": {
+        "formula": "O2X",
+        "eta": 0.0833,
+        "w_self": 2.222,
+        "k_raw": 1,
+        "count": 1,
+        "mass": "重",
+        "state": "固",
+        "temperature": "冷"
+      },
+      "id": "E6",
+      "name": "九元素均衡环境",
+      "basis": "T88 B9_all9",
+      "target": {
+        "O": 0.1111,
+        "X": 0.1111,
+        "C": 0.1111,
+        "P": 0.1111,
+        "W": 0.1111,
+        "L": 0.1111,
+        "K": 0.1111,
+        "A": 0.1111,
+        "F": 0.1111
+      },
+      "n_candidate_species": 3931,
+      "local_membrane": {
+        "body": {
+          "status": "可存活",
+          "note": "本地壳 O2X d=1（供给 5.5%）"
+        },
+        "replicator": {
+          "status": "可存活",
+          "note": "本地壳 O2X d=2（供给 5.5%）"
+        },
+        "d_min_imported_shell": 1,
+        "O10XK4_in_pool": 0
+      }
+    },
+    {
+      "n_pool": 400,
+      "n_species": 28,
+      "atoms_per_mol": 4.87,
+      "achieved_share": {
+        "O": 0.3347,
+        "X": 0.0,
+        "C": 0.0,
+        "P": 0.0,
+        "W": 0.0,
+        "L": 0.3137,
+        "K": 0.0,
+        "A": 0.0,
+        "F": 0.3516
+      },
+      "max_share_dev": 0.0197,
+      "heat_mean": 4.9525,
+      "heat_pos_share": 0.995,
+      "dpos_share": 0.7175,
+      "A_mean": 2.19,
+      "D_mean": 0.7175,
+      "w_self_mean": 1.70541666666667,
+      "top_species": [
+        [
+          "LF",
+          46,
+          0.115
+        ],
+        [
+          "F2",
+          37,
+          0.0925
+        ],
+        [
+          "L2",
+          25,
+          0.0625
+        ],
+        [
+          "O2F4",
+          21,
+          0.0525
+        ],
+        [
+          "O3F5",
+          19,
+          0.0475
+        ],
+        [
+          "OLF2",
+          18,
+          0.045
+        ],
+        [
+          "OL2F",
+          17,
+          0.0425
+        ],
+        [
+          "O2LF3",
+          17,
+          0.0425
+        ]
+      ],
+      "shell_share": 0.0,
+      "n_shell_species": 0,
+      "best_shell": null,
+      "id": "E7",
+      "name": "O/F/L 均衡环境",
+      "basis": "T88 B3_OFL",
+      "target": {
+        "O": 0.3333,
+        "X": 0.0,
+        "C": 0.0,
+        "P": 0.0,
+        "W": 0.0,
+        "L": 0.3333,
+        "K": 0.0,
+        "A": 0.0,
+        "F": 0.3333
+      },
+      "n_candidate_species": 28,
+      "local_membrane": {
+        "body": {
+          "status": "不可存活",
+          "note": "无本地冷壳料"
+        },
+        "replicator": {
+          "status": "不可存活",
+          "note": "无本地冷壳料"
+        },
+        "d_min_imported_shell": 1,
+        "O10XK4_in_pool": 0
+      }
+    },
+    {
+      "n_pool": 400,
+      "n_species": 107,
+      "atoms_per_mol": 6.035,
+      "achieved_share": {
+        "O": 0.2419,
+        "X": 0.2535,
+        "C": 0.0,
+        "P": 0.0,
+        "W": 0.0,
+        "L": 0.0,
+        "K": 0.2498,
+        "A": 0.0,
+        "F": 0.2548
+      },
+      "max_share_dev": 0.0081,
+      "heat_mean": 3.075,
+      "heat_pos_share": 0.73,
+      "dpos_share": 0.0,
+      "A_mean": 2.304279761904762,
+      "D_mean": 0.0,
+      "w_self_mean": 1.9202331349206347,
+      "top_species": [
+        [
+          "OX3K3",
+          11,
+          0.0275
+        ],
+        [
+          "K3F5",
+          9,
+          0.0225
+        ],
+        [
+          "X3",
+          8,
+          0.02
+        ],
+        [
+          "OF3",
+          7,
+          0.0175
+        ],
+        [
+          "OX2F",
+          7,
+          0.0175
+        ],
+        [
+          "XK2F2",
+          7,
+          0.0175
+        ],
+        [
+          "OX3F",
+          7,
+          0.0175
+        ],
+        [
+          "O2F4",
+          7,
+          0.0175
+        ]
+      ],
+      "shell_share": 0.18,
+      "n_shell_species": 20,
+      "best_shell": {
+        "formula": "O4XK2",
+        "eta": 0.0595,
+        "w_self": 2.333,
+        "k_raw": 2,
+        "count": 2,
+        "mass": "重",
+        "state": "固",
+        "temperature": "冷"
+      },
+      "id": "E8",
+      "name": "O/X/K/F 均衡环境",
+      "basis": "T88 B4_OXKF",
+      "target": {
+        "O": 0.25,
+        "X": 0.25,
+        "C": 0.0,
+        "P": 0.0,
+        "W": 0.0,
+        "L": 0.0,
+        "K": 0.25,
+        "A": 0.0,
+        "F": 0.25
+      },
+      "n_candidate_species": 110,
+      "local_membrane": {
+        "body": {
+          "status": "可存活",
+          "note": "本地壳 O4XK2 d=1（供给 18.0%）"
+        },
+        "replicator": {
+          "status": "可存活",
+          "note": "本地壳 O4XK2 d=2（供给 18.0%）"
+        },
+        "d_min_imported_shell": 1,
+        "O10XK4_in_pool": 0
+      }
+    }
+  ],
+  "danger": {
+    "E1": {
+      "C3K3F2": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.4125,
+        "ticks_mean": 459.3894843440027,
+        "ticks_max": 600.0,
+        "dur": 0.7656491405733379,
+        "T_thr_median": 2.00166015625,
+        "T_thr_min": 1.000390625,
+        "T_thr_max": 5.0025634765625,
+        "react_any": true,
+        "status": "需膜"
+      },
+      "XK2F4": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.825,
+        "ticks_mean": 559.2684071679965,
+        "ticks_max": 600.0,
+        "dur": 0.9321140119466609,
+        "T_thr_median": 2.0015624999999995,
+        "T_thr_min": 1.000390625,
+        "T_thr_max": 7.0025390625,
+        "react_any": true,
+        "status": "不可存活"
+      },
+      "P2W": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.5875,
+        "ticks_mean": 525.8205045045164,
+        "ticks_max": 600.0,
+        "dur": 0.8763675075075273,
+        "T_thr_median": 1.00107421875,
+        "T_thr_min": 1.00009765625,
+        "T_thr_max": 2.0022460937499997,
+        "react_any": true,
+        "status": "不可存活"
+      },
+      "O10XK4": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.125,
+        "ticks_mean": 359.03492878796743,
+        "ticks_max": 600.0,
+        "dur": 0.5983915479799458,
+        "T_thr_median": 3.001171875,
+        "T_thr_min": 3.0002929687499997,
+        "T_thr_max": 4.0008056640625,
+        "react_any": true,
+        "status": "需膜"
+      },
+      "OXC": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.5,
+        "ticks_mean": 482.6498055514883,
+        "ticks_max": 600.0,
+        "dur": 0.8044163425858138,
+        "T_thr_median": 1.0009765625,
+        "T_thr_min": 1.00009765625,
+        "T_thr_max": 3.0018310546875,
+        "react_any": true,
+        "status": "不可存活"
+      }
+    },
+    "E2": {
+      "C3K3F2": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.075,
+        "ticks_mean": 329.12797162098855,
+        "ticks_max": 600.0,
+        "dur": 0.5485466193683143,
+        "T_thr_median": 2.0022460937499997,
+        "T_thr_min": 1.000390625,
+        "T_thr_max": 5.0016357421875,
+        "react_any": true,
+        "status": "可存活"
+      },
+      "XK2F4": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.8875,
+        "ticks_mean": 577.1599476835579,
+        "ticks_max": 600.0,
+        "dur": 0.9619332461392631,
+        "T_thr_median": 2.000732421875,
+        "T_thr_min": 1.000390625,
+        "T_thr_max": 7.0008544921875,
+        "react_any": true,
+        "status": "不可存活"
+      },
+      "P2W": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.0125,
+        "ticks_mean": 362.93485264966387,
+        "ticks_max": 600.0,
+        "dur": 0.6048914210827732,
+        "T_thr_median": 1.0009765625,
+        "T_thr_min": 1.00009765625,
+        "T_thr_max": 3.0009033203125,
+        "react_any": true,
+        "status": "可存活"
+      },
+      "O10XK4": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.0,
+        "ticks_mean": 259.9178769428395,
+        "ticks_max": 419.64551562674285,
+        "dur": 0.4331964615713991,
+        "T_thr_median": 3.0009033203125,
+        "T_thr_min": 3.0,
+        "T_thr_max": 5.000683593749999,
+        "react_any": true,
+        "status": "可存活"
+      },
+      "OXC": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.0375,
+        "ticks_mean": 315.3625305596035,
+        "ticks_max": 600.0,
+        "dur": 0.5256042175993392,
+        "T_thr_median": 1.0009765625,
+        "T_thr_min": 1.00009765625,
+        "T_thr_max": 4.0001220703125,
+        "react_any": true,
+        "status": "可存活"
+      }
+    },
+    "E3": {
+      "C3K3F2": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.075,
+        "ticks_mean": 362.6960110088885,
+        "ticks_max": 600.0,
+        "dur": 0.6044933516814808,
+        "T_thr_median": 2.0021484375,
+        "T_thr_min": 1.000390625,
+        "T_thr_max": 4.002026367187499,
+        "react_any": true,
+        "status": "可存活"
+      },
+      "XK2F4": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.75,
+        "ticks_mean": 539.400044140569,
+        "ticks_max": 600.0,
+        "dur": 0.899000073567615,
+        "T_thr_median": 2.0011718750000003,
+        "T_thr_min": 1.0005126953124999,
+        "T_thr_max": 7.0025390625,
+        "react_any": true,
+        "status": "不可存活"
+      },
+      "P2W": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.1625,
+        "ticks_mean": 436.1799444197915,
+        "ticks_max": 600.0,
+        "dur": 0.7269665740329859,
+        "T_thr_median": 1.0009765625,
+        "T_thr_min": 1.00009765625,
+        "T_thr_max": 1.0023193359375,
+        "react_any": true,
+        "status": "需膜"
+      },
+      "O10XK4": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.0,
+        "ticks_mean": 267.99416288174746,
+        "ticks_max": 368.7050073763514,
+        "dur": 0.44665693813624574,
+        "T_thr_median": 3.0009033203125,
+        "T_thr_min": 3.0002929687499997,
+        "T_thr_max": 6.0009765625,
+        "react_any": true,
+        "status": "可存活"
+      },
+      "OXC": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.0125,
+        "ticks_mean": 355.4245151192614,
+        "ticks_max": 600.0,
+        "dur": 0.5923741918654357,
+        "T_thr_median": 1.0009765625,
+        "T_thr_min": 1.00009765625,
+        "T_thr_max": 3.0009033203125,
+        "react_any": true,
+        "status": "可存活"
+      }
+    },
+    "E4": {
+      "C3K3F2": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.0,
+        "ticks_mean": 294.48022751152695,
+        "ticks_max": 419.7835082619766,
+        "dur": 0.49080037918587827,
+        "T_thr_median": 2.001611328125,
+        "T_thr_min": 1.000634765625,
+        "T_thr_max": 5.00048828125,
+        "react_any": true,
+        "status": "可存活"
+      },
+      "XK2F4": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.8125,
+        "ticks_mean": 569.7778816480443,
+        "ticks_max": 600.0,
+        "dur": 0.9496298027467405,
+        "T_thr_median": 1.0019531250000002,
+        "T_thr_min": 1.000390625,
+        "T_thr_max": 7.0008544921875,
+        "react_any": true,
+        "status": "不可存活"
+      },
+      "P2W": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.0,
+        "ticks_mean": 319.6339530382338,
+        "ticks_max": 368.7903368140881,
+        "dur": 0.532723255063723,
+        "T_thr_median": 1.0009765625,
+        "T_thr_min": 1.00009765625,
+        "T_thr_max": 2.001953125,
+        "react_any": true,
+        "status": "可存活"
+      },
+      "O10XK4": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.0,
+        "ticks_mean": 245.75869602333364,
+        "ticks_max": 368.7903368140881,
+        "dur": 0.40959782670555606,
+        "T_thr_median": 3.00048828125,
+        "T_thr_min": 1.0009765625,
+        "T_thr_max": 4.00146484375,
+        "react_any": true,
+        "status": "可存活"
+      },
+      "OXC": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.0,
+        "ticks_mean": 280.12233407650507,
+        "ticks_max": 335.1953916231409,
+        "dur": 0.4668705567941751,
+        "T_thr_median": 1.0017333984374999,
+        "T_thr_min": 1.00009765625,
+        "T_thr_max": 3.001904296875,
+        "react_any": true,
+        "status": "可存活"
+      }
+    },
+    "E5": {
+      "C3K3F2": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.1125,
+        "ticks_mean": 358.0586425638374,
+        "ticks_max": 600.0,
+        "dur": 0.5967644042730623,
+        "T_thr_median": 2.0021484375,
+        "T_thr_min": 1.000390625,
+        "T_thr_max": 5.0016357421875,
+        "react_any": true,
+        "status": "需膜"
+      },
+      "XK2F4": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.925,
+        "ticks_mean": 582.2460186248462,
+        "ticks_max": 600.0,
+        "dur": 0.9704100310414103,
+        "T_thr_median": 2.0008789062499996,
+        "T_thr_min": 1.000390625,
+        "T_thr_max": 8.0005859375,
+        "react_any": true,
+        "status": "不可存活"
+      },
+      "P2W": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.1125,
+        "ticks_mean": 396.1252674062005,
+        "ticks_max": 600.0,
+        "dur": 0.6602087790103343,
+        "T_thr_median": 1.0009765625,
+        "T_thr_min": 1.00009765625,
+        "T_thr_max": 4.00146484375,
+        "react_any": true,
+        "status": "需膜"
+      },
+      "O10XK4": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.0,
+        "ticks_mean": 269.93148517080806,
+        "ticks_max": 419.64551562674285,
+        "dur": 0.4498858086180134,
+        "T_thr_median": 3.000732421875,
+        "T_thr_min": 1.0009765625,
+        "T_thr_max": 6.0009765625,
+        "react_any": true,
+        "status": "可存活"
+      },
+      "OXC": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.025,
+        "ticks_mean": 324.0647880999301,
+        "ticks_max": 600.0,
+        "dur": 0.5401079801665503,
+        "T_thr_median": 1.0014282226562499,
+        "T_thr_min": 1.00009765625,
+        "T_thr_max": 4.0001220703125,
+        "react_any": true,
+        "status": "可存活"
+      }
+    },
+    "E6": {
+      "C3K3F2": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.1125,
+        "ticks_mean": 377.6738080737048,
+        "ticks_max": 600.0,
+        "dur": 0.629456346789508,
+        "T_thr_median": 2.001953125,
+        "T_thr_min": 1.000390625,
+        "T_thr_max": 5.0016357421875,
+        "react_any": true,
+        "status": "需膜"
+      },
+      "XK2F4": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.775,
+        "ticks_mean": 548.7329054198963,
+        "ticks_max": 600.0,
+        "dur": 0.9145548423664938,
+        "T_thr_median": 1.002685546875,
+        "T_thr_min": 1.000390625,
+        "T_thr_max": 7.0025390625,
+        "react_any": true,
+        "status": "不可存活"
+      },
+      "P2W": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.375,
+        "ticks_mean": 474.68593983170376,
+        "ticks_max": 600.0,
+        "dur": 0.7911432330528396,
+        "T_thr_median": 1.0009033203125,
+        "T_thr_min": 1.00009765625,
+        "T_thr_max": 2.001953125,
+        "react_any": true,
+        "status": "需膜"
+      },
+      "O10XK4": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.025,
+        "ticks_mean": 289.83726744362366,
+        "ticks_max": 600.0,
+        "dur": 0.4830621124060394,
+        "T_thr_median": 3.0009033203125,
+        "T_thr_min": 3.0002929687499997,
+        "T_thr_max": 4.00146484375,
+        "react_any": true,
+        "status": "可存活"
+      },
+      "OXC": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.1875,
+        "ticks_mean": 403.6873752163025,
+        "ticks_max": 600.0,
+        "dur": 0.6728122920271709,
+        "T_thr_median": 1.00107421875,
+        "T_thr_min": 1.00009765625,
+        "T_thr_max": 3.001904296875,
+        "react_any": true,
+        "status": "需膜"
+      }
+    },
+    "E7": {
+      "C3K3F2": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.4625,
+        "ticks_mean": 486.77289216278484,
+        "ticks_max": 600.0,
+        "dur": 0.8112881536046413,
+        "T_thr_median": 3.000585937500001,
+        "T_thr_min": 1.000830078125,
+        "T_thr_max": 5.0025634765625,
+        "react_any": true,
+        "status": "需膜"
+      },
+      "XK2F4": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.9125,
+        "ticks_mean": 584.2097605158742,
+        "ticks_max": 600.0,
+        "dur": 0.9736829341931237,
+        "T_thr_median": 2.001123046875,
+        "T_thr_min": 1.0005859375000001,
+        "T_thr_max": 5.002587890625,
+        "react_any": true,
+        "status": "不可存活"
+      },
+      "P2W": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.9,
+        "ticks_mean": 585.509067053945,
+        "ticks_max": 600.0,
+        "dur": 0.9758484450899084,
+        "T_thr_median": 1.0009521484375,
+        "T_thr_min": 1.000390625,
+        "T_thr_max": 2.0022460937499997,
+        "react_any": true,
+        "status": "不可存活"
+      },
+      "O10XK4": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.175,
+        "ticks_mean": 410.29332255578475,
+        "ticks_max": 600.0,
+        "dur": 0.6838222042596412,
+        "T_thr_median": 3.00164794921875,
+        "T_thr_min": 3.000585937500001,
+        "T_thr_max": 4.002026367187499,
+        "react_any": true,
+        "status": "需膜"
+      },
+      "OXC": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.6,
+        "ticks_mean": 532.523812676108,
+        "ticks_max": 600.0,
+        "dur": 0.8875396877935134,
+        "T_thr_median": 1.0011230468749999,
+        "T_thr_min": 1.000390625,
+        "T_thr_max": 3.002490234375,
+        "react_any": true,
+        "status": "不可存活"
+      }
+    },
+    "E8": {
+      "C3K3F2": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.5625,
+        "ticks_mean": 486.2238447962991,
+        "ticks_max": 600.0,
+        "dur": 0.8103730746604985,
+        "T_thr_median": 2.00186767578125,
+        "T_thr_min": 1.0005126953124999,
+        "T_thr_max": 5.0025634765625,
+        "react_any": true,
+        "status": "不可存活"
+      },
+      "XK2F4": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.875,
+        "ticks_mean": 569.4903403965748,
+        "ticks_max": 600.0,
+        "dur": 0.9491505673276246,
+        "T_thr_median": 2.000732421875,
+        "T_thr_min": 1.0007812499999997,
+        "T_thr_max": 8.00048828125,
+        "react_any": true,
+        "status": "不可存活"
+      },
+      "P2W": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.375,
+        "ticks_mean": 497.64776963525594,
+        "ticks_max": 600.0,
+        "dur": 0.8294129493920932,
+        "T_thr_median": 1.00107421875,
+        "T_thr_min": 1.000390625,
+        "T_thr_max": 4.00146484375,
+        "react_any": true,
+        "status": "需膜"
+      },
+      "O10XK4": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.1125,
+        "ticks_mean": 345.3218698335583,
+        "ticks_max": 600.0,
+        "dur": 0.5755364497225972,
+        "T_thr_median": 3.000732421875,
+        "T_thr_min": 1.0009765625,
+        "T_thr_max": 6.0009765625,
+        "react_any": true,
+        "status": "需膜"
+      },
+      "OXC": {
+        "n_sample": 80,
+        "p_react_peak": 1.0,
+        "p_react_cold": 0.3125,
+        "ticks_mean": 426.45742422177545,
+        "ticks_max": 600.0,
+        "dur": 0.7107623737029591,
+        "T_thr_median": 1.0011230468749999,
+        "T_thr_min": 1.0005126953124999,
+        "T_thr_max": 3.001904296875,
+        "react_any": true,
+        "status": "需膜"
+      }
+    }
+  },
+  "pairw": {
+    "E1": {
+      "C3K3F2": {
+        "strong": 0,
+        "weak": 229,
+        "none": 171,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.5725,
+          "none": 0.4275,
+          "repel": 0.0
+        },
+        "w_mean": 0.21538793620491756,
+        "w_min": 0.0,
+        "w_max": 0.7938161203464004
+      },
+      "XK2F4": {
+        "strong": 9,
+        "weak": 201,
+        "none": 190,
+        "repel": 0,
+        "share": {
+          "strong": 0.0225,
+          "weak": 0.5025,
+          "none": 0.475,
+          "repel": 0.0
+        },
+        "w_mean": 0.2972586335166193,
+        "w_min": 0.0,
+        "w_max": 1.3608276348795434
+      },
+      "P2W": {
+        "strong": 0,
+        "weak": 0,
+        "none": 400,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.0,
+          "none": 1.0,
+          "repel": 0.0
+        },
+        "w_mean": -0.01192759640619228,
+        "w_min": -0.16666666666666666,
+        "w_max": 0.0
+      },
+      "O10XK4": {
+        "strong": 0,
+        "weak": 204,
+        "none": 196,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.51,
+          "none": 0.49,
+          "repel": 0.0
+        },
+        "w_mean": 0.2151471212184244,
+        "w_min": 0.0,
+        "w_max": 0.8918825850158446
+      },
+      "OXC": {
+        "strong": 3,
+        "weak": 246,
+        "none": 151,
+        "repel": 0,
+        "share": {
+          "strong": 0.0075,
+          "weak": 0.615,
+          "none": 0.3775,
+          "repel": 0.0
+        },
+        "w_mean": 0.272313862078929,
+        "w_min": 0.0,
+        "w_max": 1.0606601717798212
+      }
+    },
+    "E2": {
+      "C3K3F2": {
+        "strong": 0,
+        "weak": 155,
+        "none": 245,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.3875,
+          "none": 0.6125,
+          "repel": 0.0
+        },
+        "w_mean": 0.15865716291630558,
+        "w_min": 0.0,
+        "w_max": 0.8367556612176518
+      },
+      "XK2F4": {
+        "strong": 1,
+        "weak": 181,
+        "none": 218,
+        "repel": 0,
+        "share": {
+          "strong": 0.0025,
+          "weak": 0.4525,
+          "none": 0.545,
+          "repel": 0.0
+        },
+        "w_mean": 0.2382217521058859,
+        "w_min": 0.0,
+        "w_max": 1.0206207261596576
+      },
+      "P2W": {
+        "strong": 0,
+        "weak": 0,
+        "none": 400,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.0,
+          "none": 1.0,
+          "repel": 0.0
+        },
+        "w_mean": -0.005906956068323544,
+        "w_min": -0.11785113019775793,
+        "w_max": 0.0
+      },
+      "O10XK4": {
+        "strong": 11,
+        "weak": 345,
+        "none": 44,
+        "repel": 0,
+        "share": {
+          "strong": 0.0275,
+          "weak": 0.8625,
+          "none": 0.11,
+          "repel": 0.0
+        },
+        "w_mean": 0.44516476537717764,
+        "w_min": 0.0,
+        "w_max": 1.3129759037795492
+      },
+      "OXC": {
+        "strong": 26,
+        "weak": 367,
+        "none": 7,
+        "repel": 0,
+        "share": {
+          "strong": 0.065,
+          "weak": 0.9175,
+          "none": 0.0175,
+          "repel": 0.0
+        },
+        "w_mean": 0.5592953561535097,
+        "w_min": 0.0,
+        "w_max": 1.6666666666666667
+      }
+    },
+    "E3": {
+      "C3K3F2": {
+        "strong": 0,
+        "weak": 38,
+        "none": 362,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.095,
+          "none": 0.905,
+          "repel": 0.0
+        },
+        "w_mean": 0.08315926031694457,
+        "w_min": 0.0,
+        "w_max": 0.6211299937499416
+      },
+      "XK2F4": {
+        "strong": 0,
+        "weak": 87,
+        "none": 313,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.2175,
+          "none": 0.7825,
+          "repel": 0.0
+        },
+        "w_mean": 0.12489231782788264,
+        "w_min": 0.0,
+        "w_max": 0.6060606060606061
+      },
+      "P2W": {
+        "strong": 0,
+        "weak": 0,
+        "none": 389,
+        "repel": 11,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.0,
+          "none": 0.9725,
+          "repel": 0.0275
+        },
+        "w_mean": -0.0739854374592619,
+        "w_min": -0.3333333333333333,
+        "w_max": 0.0
+      },
+      "O10XK4": {
+        "strong": 0,
+        "weak": 213,
+        "none": 187,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.5325,
+          "none": 0.4675,
+          "repel": 0.0
+        },
+        "w_mean": 0.24786274327620297,
+        "w_min": 0.0,
+        "w_max": 0.8703882797784892
+      },
+      "OXC": {
+        "strong": 1,
+        "weak": 299,
+        "none": 100,
+        "repel": 0,
+        "share": {
+          "strong": 0.0025,
+          "weak": 0.7475,
+          "none": 0.25,
+          "repel": 0.0
+        },
+        "w_mean": 0.3230329898505114,
+        "w_min": 0.0,
+        "w_max": 1.0
+      }
+    },
+    "E4": {
+      "C3K3F2": {
+        "strong": 0,
+        "weak": 172,
+        "none": 228,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.43,
+          "none": 0.57,
+          "repel": 0.0
+        },
+        "w_mean": 0.14212111509059006,
+        "w_min": 0.0,
+        "w_max": 0.34020690871988585
+      },
+      "XK2F4": {
+        "strong": 0,
+        "weak": 26,
+        "none": 374,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.065,
+          "none": 0.935,
+          "repel": 0.0
+        },
+        "w_mean": 0.10757407946224787,
+        "w_min": 0.0,
+        "w_max": 0.21383343303319471
+      },
+      "P2W": {
+        "strong": 0,
+        "weak": 0,
+        "none": 400,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.0,
+          "none": 1.0,
+          "repel": 0.0
+        },
+        "w_mean": 0.0,
+        "w_min": 0.0,
+        "w_max": 0.0
+      },
+      "O10XK4": {
+        "strong": 0,
+        "weak": 275,
+        "none": 125,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.6875,
+          "none": 0.3125,
+          "repel": 0.0
+        },
+        "w_mean": 0.2755594855133112,
+        "w_min": 0.0,
+        "w_max": 0.5504818825631803
+      },
+      "OXC": {
+        "strong": 65,
+        "weak": 335,
+        "none": 0,
+        "repel": 0,
+        "share": {
+          "strong": 0.1625,
+          "weak": 0.8375,
+          "none": 0.0,
+          "repel": 0.0
+        },
+        "w_mean": 0.6847244911344825,
+        "w_min": 0.2946278254943948,
+        "w_max": 1.6666666666666667
+      }
+    },
+    "E5": {
+      "C3K3F2": {
+        "strong": 0,
+        "weak": 205,
+        "none": 195,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.5125,
+          "none": 0.4875,
+          "repel": 0.0
+        },
+        "w_mean": 0.22875327157926603,
+        "w_min": 0.0,
+        "w_max": 0.8333333333333334
+      },
+      "XK2F4": {
+        "strong": 4,
+        "weak": 226,
+        "none": 170,
+        "repel": 0,
+        "share": {
+          "strong": 0.01,
+          "weak": 0.565,
+          "none": 0.425,
+          "repel": 0.0
+        },
+        "w_mean": 0.26873299600903183,
+        "w_min": 0.0,
+        "w_max": 1.1111111111111112
+      },
+      "P2W": {
+        "strong": 0,
+        "weak": 0,
+        "none": 400,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.0,
+          "none": 1.0,
+          "repel": 0.0
+        },
+        "w_mean": -0.005436166124354809,
+        "w_min": -0.13468700594029479,
+        "w_max": 0.0
+      },
+      "O10XK4": {
+        "strong": 5,
+        "weak": 254,
+        "none": 141,
+        "repel": 0,
+        "share": {
+          "strong": 0.0125,
+          "weak": 0.635,
+          "none": 0.3525,
+          "repel": 0.0
+        },
+        "w_mean": 0.3323495010981332,
+        "w_min": 0.0,
+        "w_max": 1.3129759037795492
+      },
+      "OXC": {
+        "strong": 1,
+        "weak": 266,
+        "none": 133,
+        "repel": 0,
+        "share": {
+          "strong": 0.0025,
+          "weak": 0.665,
+          "none": 0.3325,
+          "repel": 0.0
+        },
+        "w_mean": 0.27461624077463354,
+        "w_min": 0.0,
+        "w_max": 1.0606601717798212
+      }
+    },
+    "E6": {
+      "C3K3F2": {
+        "strong": 0,
+        "weak": 147,
+        "none": 253,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.3675,
+          "none": 0.6325,
+          "repel": 0.0
+        },
+        "w_mean": 0.16944287626922594,
+        "w_min": 0.0,
+        "w_max": 0.6804138174397717
+      },
+      "XK2F4": {
+        "strong": 4,
+        "weak": 168,
+        "none": 228,
+        "repel": 0,
+        "share": {
+          "strong": 0.01,
+          "weak": 0.42,
+          "none": 0.57,
+          "repel": 0.0
+        },
+        "w_mean": 0.2183346598676359,
+        "w_min": 0.0,
+        "w_max": 1.1904761904761905
+      },
+      "P2W": {
+        "strong": 0,
+        "weak": 0,
+        "none": 398,
+        "repel": 2,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.0,
+          "none": 0.995,
+          "repel": 0.005
+        },
+        "w_mean": -0.0520012975933209,
+        "w_min": -0.26666666666666666,
+        "w_max": 0.0
+      },
+      "O10XK4": {
+        "strong": 1,
+        "weak": 173,
+        "none": 226,
+        "repel": 0,
+        "share": {
+          "strong": 0.0025,
+          "weak": 0.4325,
+          "none": 0.565,
+          "repel": 0.0
+        },
+        "w_mean": 0.1936913127608986,
+        "w_min": 0.0,
+        "w_max": 1.0770505460691615
+      },
+      "OXC": {
+        "strong": 2,
+        "weak": 233,
+        "none": 165,
+        "repel": 0,
+        "share": {
+          "strong": 0.005,
+          "weak": 0.5825,
+          "none": 0.4125,
+          "repel": 0.0
+        },
+        "w_mean": 0.2720177760859407,
+        "w_min": 0.0,
+        "w_max": 1.6666666666666667
+      }
+    },
+    "E7": {
+      "C3K3F2": {
+        "strong": 0,
+        "weak": 163,
+        "none": 237,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.4075,
+          "none": 0.5925,
+          "repel": 0.0
+        },
+        "w_mean": 0.11661591051603709,
+        "w_min": 0.0,
+        "w_max": 0.28867513459481287
+      },
+      "XK2F4": {
+        "strong": 0,
+        "weak": 190,
+        "none": 210,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.475,
+          "none": 0.525,
+          "repel": 0.0
+        },
+        "w_mean": 0.2746425487812931,
+        "w_min": 0.0,
+        "w_max": 0.9072184232530289
+      },
+      "P2W": {
+        "strong": 0,
+        "weak": 0,
+        "none": 400,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.0,
+          "none": 1.0,
+          "repel": 0.0
+        },
+        "w_mean": 0.0,
+        "w_min": 0.0,
+        "w_max": 0.0
+      },
+      "O10XK4": {
+        "strong": 0,
+        "weak": 231,
+        "none": 169,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.5775,
+          "none": 0.4225,
+          "repel": 0.0
+        },
+        "w_mean": 0.21359030716582258,
+        "w_min": 0.0,
+        "w_max": 0.4615930911724978
+      },
+      "OXC": {
+        "strong": 0,
+        "weak": 292,
+        "none": 108,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.73,
+          "none": 0.27,
+          "repel": 0.0
+        },
+        "w_mean": 0.1960442311498342,
+        "w_min": 0.0,
+        "w_max": 0.5103103630798288
+      }
+    },
+    "E8": {
+      "C3K3F2": {
+        "strong": 0,
+        "weak": 264,
+        "none": 136,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.66,
+          "none": 0.34,
+          "repel": 0.0
+        },
+        "w_mean": 0.26222732856531666,
+        "w_min": 0.0,
+        "w_max": 0.8018753738744803
+      },
+      "XK2F4": {
+        "strong": 47,
+        "weak": 292,
+        "none": 61,
+        "repel": 0,
+        "share": {
+          "strong": 0.1175,
+          "weak": 0.73,
+          "none": 0.1525,
+          "repel": 0.0
+        },
+        "w_mean": 0.5768273765761494,
+        "w_min": 0.0,
+        "w_max": 1.6666666666666667
+      },
+      "P2W": {
+        "strong": 0,
+        "weak": 0,
+        "none": 400,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.0,
+          "none": 1.0,
+          "repel": 0.0
+        },
+        "w_mean": 0.0,
+        "w_min": 0.0,
+        "w_max": 0.0
+      },
+      "O10XK4": {
+        "strong": 17,
+        "weak": 318,
+        "none": 65,
+        "repel": 0,
+        "share": {
+          "strong": 0.0425,
+          "weak": 0.795,
+          "none": 0.1625,
+          "repel": 0.0
+        },
+        "w_mean": 0.45609738224284924,
+        "w_min": 0.0,
+        "w_max": 1.3129759037795492
+      },
+      "OXC": {
+        "strong": 0,
+        "weak": 335,
+        "none": 65,
+        "repel": 0,
+        "share": {
+          "strong": 0.0,
+          "weak": 0.8375,
+          "none": 0.1625,
+          "repel": 0.0
+        },
+        "w_mean": 0.33116930458078747,
+        "w_min": 0.0,
+        "w_max": 0.9316949906249125
+      }
+    }
+  },
+  "matrix": {
+    "E1": {
+      "C3K3F2": "需膜",
+      "XK2F4": "不可存活",
+      "P2W": "不可存活",
+      "O10XK4": "需膜",
+      "OXC": "不可存活",
+      "C3K3F2+local_membrane": "需外源膜",
+      "XK2F4+local_membrane": "需外源膜"
+    },
+    "E2": {
+      "C3K3F2": "可存活",
+      "XK2F4": "不可存活",
+      "P2W": "可存活",
+      "O10XK4": "可存活",
+      "OXC": "可存活",
+      "C3K3F2+local_membrane": "可存活",
+      "XK2F4+local_membrane": "可存活"
+    },
+    "E3": {
+      "C3K3F2": "可存活",
+      "XK2F4": "不可存活",
+      "P2W": "需膜",
+      "O10XK4": "可存活",
+      "OXC": "可存活",
+      "C3K3F2+local_membrane": "可存活",
+      "XK2F4+local_membrane": "可存活"
+    },
+    "E4": {
+      "C3K3F2": "可存活",
+      "XK2F4": "不可存活",
+      "P2W": "可存活",
+      "O10XK4": "可存活",
+      "OXC": "可存活",
+      "C3K3F2+local_membrane": "可存活",
+      "XK2F4+local_membrane": "可存活"
+    },
+    "E5": {
+      "C3K3F2": "需膜",
+      "XK2F4": "不可存活",
+      "P2W": "需膜",
+      "O10XK4": "可存活",
+      "OXC": "可存活",
+      "C3K3F2+local_membrane": "可存活",
+      "XK2F4+local_membrane": "可存活"
+    },
+    "E6": {
+      "C3K3F2": "需膜",
+      "XK2F4": "不可存活",
+      "P2W": "需膜",
+      "O10XK4": "可存活",
+      "OXC": "需膜",
+      "C3K3F2+local_membrane": "可存活",
+      "XK2F4+local_membrane": "可存活"
+    },
+    "E7": {
+      "C3K3F2": "需膜",
+      "XK2F4": "不可存活",
+      "P2W": "不可存活",
+      "O10XK4": "需膜",
+      "OXC": "不可存活",
+      "C3K3F2+local_membrane": "不可存活",
+      "XK2F4+local_membrane": "不可存活"
+    },
+    "E8": {
+      "C3K3F2": "不可存活",
+      "XK2F4": "不可存活",
+      "P2W": "需膜",
+      "O10XK4": "需膜",
+      "OXC": "需膜",
+      "C3K3F2+local_membrane": "可存活",
+      "XK2F4+local_membrane": "可存活"
+    }
+  },
+  "thermal": [
+    {
+      "label": "O10XK4 完美冷壳 η=0.039",
+      "eta": 0.039,
+      "rows": [
+        {
+          "d": 0,
+          "T_in": 16.49
+        },
+        {
+          "d": 1,
+          "T_in": 6.2
+        },
+        {
+          "d": 2,
+          "T_in": 4.89
+        },
+        {
+          "d": 3,
+          "T_in": 4.56
+        },
+        {
+          "d": 4,
+          "T_in": 4.4
+        },
+        {
+          "d": 5,
+          "T_in": 4.32
+        }
+      ],
+      "d_min_core4": 1,
+      "d_min_core8": 2
+    },
+    {
+      "label": "本地最优壳",
+      "eta": 0.0595,
+      "rows": [
+        {
+          "d": 0,
+          "T_in": 16.49
+        },
+        {
+          "d": 1,
+          "T_in": 6.71
+        },
+        {
+          "d": 2,
+          "T_in": 5.23
+        },
+        {
+          "d": 3,
+          "T_in": 4.8
+        },
+        {
+          "d": 4,
+          "T_in": 4.59
+        },
+        {
+          "d": 5,
+          "T_in": 4.47
+        }
+      ],
+      "d_min_core4": 1,
+      "d_min_core8": 2
+    }
+  ],
+  "conclusions": [
+    "裸主体 C3K3F2：相对最安全 E4（O/X/C 均衡环境，p_cold=0.00），最危险 E8（O/X/K/F 均衡环境，p_cold=0.56）",
+    "自复制候选 XK2F4：相对最安全 E3（富 P/W/L 环境，p_cold=0.75），最危险 E5（富 K/A 环境，p_cold=0.93）",
+    "完美冷壳 O10XK4：相对最安全 E2（富 O/X 环境，p_cold=0.00），最危险 E7（O/F/L 均衡环境，p_cold=0.17）",
+    "裸主体 C3K3F2：可存活 3 个环境['E2', 'E3', 'E4']；需膜 4 个['E1', 'E5', 'E6', 'E7']；不可存活 1 个['E8']",
+    "裸自复制候选 XK2F4：不可存活 8/8 个环境['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8']，几乎所有环境都需要膜或不可存活",
+    "主体 + 本地冷壳膜：可存活环境 6 个['E2', 'E3', 'E4', 'E5', 'E6', 'E8']；仅差壳料供给需外源 1 个['E1']",
+    "完美冷壳 O10XK4（η=0.039）在 200°C 下：d=1 层可把核心(4°C)压到 ≤10°C，d=2 层可把 8°C 核心压到 ≤10°C；而裸核心 200°C 下为 16.5°C"
+  ]
+}

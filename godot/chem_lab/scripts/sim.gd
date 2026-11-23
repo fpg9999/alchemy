@@ -28,18 +28,18 @@ var _hash_cell := 12            # 哈希格边长（= r_cap）
 
 # 参数（全部可调）
 var p := {
-	"gravity_G": 0.30,
+	"gravity_G": 0.20,
 	"KA": 2.5, "KR": 0.5,
 	"r_cap": 12,
 	"force_scale": 1.00,
 	"lock_w": 1.0, "lock_r": 2, "lock_rigid_fall": true,
 	"heat_w": {"C": -1.0, "L": 1.0, "F": 2.0},
 	"mob_gas": 1.0, "mob_liq": 0.60, "mob_solid": 0.25,
-	"p_react": 0.02,
+	"p_react": 1.0,
 	"react_margin": 0.0,
 	"cap": 36,
-	"T0": 1000.0, "T_end": 10.0, "cool_ticks": 600.0, "plateau": true,
-	"env_coupling": 3.0,
+	"T0": 200.0, "T_end": 0.0, "cool_ticks": 600.0, "plateau": true,
+	"env_coupling": 0.5,
 	"seed": 20261120,
 	"use_match": false, "max_pending": 96,
 	"hard_walls": true,

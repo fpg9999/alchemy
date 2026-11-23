@@ -1645,3 +1645,16 @@ un_lab.bat）；本轮新增 chem_lab 工程并提交。未 push。
 - **推送**：T93 提交推送后以 `git ls-remote origin refs/heads/main` 与 `git status -sb`（`## main...origin/main` = 0 0）核验；远程 HEAD 见 `TRANSFER.md` §0。
 - **并发提醒**：同工作目录仍可能有其他代理/定时任务提交，开工前 `git status`/`git log` 复核，push 前先 `git fetch`；禁止 force push。
 - **未决**：`alchemy/emergence.py` 与新 attrs 不兼容待修；tag `kernel-0.2.0` 仍未推。
+
+## 维护记录 · 2026-11-24 T94 生命综合调查（四分支）
+
+- **触发**：用户 m00472——否认「固定攻击浴」的写法（不同环境大量存在的分子不同）、要求在**现有规则**下研究，并把试验场默认参数改为 **T0=200°C → T_end=0°C、p_react=1.0、G=0.20、env_coupling=0.5**；给今晚时间研究「目前能形成的生命相关的所有进展和问题、具体生命形式和组成」。
+- **参数落地**：新建 `alchemy/t94_config.py`（`DEFAULT_PARAMS` + `schedule_T`/`local_T`/`heat_of`/`describe`）；`godot/chem_lab/scripts/sim.gd` 默认参数与 `godot/chem_lab/docs/CHEMLAB_PARAMS.md` 同步（200→0°C、p_react 1.0、G 0.200、env_coupling 0.5）。
+- **四分支**（team：scout / sim / envmap / historian；均 fresh 上下文，不改内核、不 git）：
+  - **A 自复制普查**（`t94_census.py`，127s）：nA≤12 有 **2,596** 个模板满足 `F(2·comp(A))=[A,A]`；2,411 个有食物拆分 → **24,708 组**；保真 2,594/2,596（2 个 n=11 模板一次性规范化）；最小 **`A2F2 + A2 + F2 → 2 A2F2`**（4 原子、≥26°C、放热 +8、窗口 204 拍）；**模板作用=0**（`F(compB+compC)=[A]` 80/80）、二元催化 **0/946,946**；温度窗口 T_env_min∈[26,252]°C，0°C 平台 0 候选。
+  - **B 完美膜动态**（`t94_life.py`，10 臂×600 拍 88s，全臂守恒）：PK 膜 + **G=0** → 环境-主体接触 0、核心-环境反应 0、角覆盖 0.92、膜留存 89%；**G=0.2 重膜下沉失效**（cov 0.00、envC 8,782 反超无膜 6,542），轻膜 W2/WA2 cov 0.67~0.78 但 envC 3,638~5,698；自修复净消耗 3.7×（20 生/84 死，仅 5 次）；**自制造身体成立**：无膜对照 XA3 食物把主体原子 48→102（+212%）。
+  - **C 环境谱系**（`t94_env.py`，17s，8 族×400 池）：危险度**不来自攻击物 D**而来自环境热值抬高局部温度（E3 富 P/W/L：D>0=96.3% 但裸主体 p_cold=0.07；E8 富 O/X/K/F：D>0=0% 却 p_cold=0.56，环境热值 3.08 vs 0.79）；主体 `C3K3F2` 可存活 E2/E3/E4、需膜 E1/E5/E6/E7、E8 不可存活；本地冷壳 `O4XK2`/`O2X`（η 0.0595/0.0833）可救 6 环境；`O10XK4`（15 原子）只能外源；16,000 对中 **repel 仅 13 对（0.08%）**。
+  - **D 文献梳理**（`T94_HISTORY.md`，175 行）：七判据只有边界（静态隔离）与生长（条件性）有证据，代谢/遗传/自维持仅机制存在，**复制与选择完全缺失**；列出与今晚参数的 3 处冲突（p_react、G=0.20、C2 气态 vs 占格）。
+- **综合报告** `docs/T94_LIFE_SURVEY.md`：给出模型内最接近生命的组合 = 「O2/OK 主体 + PK/W2 膜（需 G≈0）+ O4XK2/O2X 本地冷壳 + XA3/C2K2 食物 + E4/E2/E3 环境 + 200→0°C 窗口」，能长大/被保护/有自复制化学式，**但仍不是生命**（无模板依赖/无变异/无代谢/无稳定隔室/无自修复/无选择压）；列出 6 条模型扩展建议（模板依赖、同分异构体、可逆膜-主体键、真正催化位点、隔室化补膜、持续能源）。
+- **测试**：`python tests/run_all.py` → 150/150 PASS。
+- **产物**：`t94_census.py`/`t94_life.py`/`t94_render.py`/`t94_env.py`/`t94_config.py`；`t94_census.json`（7.9MB）、`t94_life.json`（633KB）+ 10 份臂 JSON、`t94_envmap.json`；`images/t94_census.png`、`t94_life_*.png`（5 张）、`t94_envmap.png`；`t94_run.log`。README/INDEX 已加入口。
