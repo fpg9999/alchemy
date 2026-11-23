@@ -124,3 +124,20 @@ t9_reps_O.png :: [WinError 32] 另一个程序正在使用此文件，进程无�
 - **新增 `godot/chem_lab/.gitignore`**：`.godot/`、`*.err`、`shot*.log`、`selftest_out.log`、`screenshot_check.png`、`export/`、`build/` 的项目级兜底（与根 `.gitignore` 一致）。
 - **索引同步**：`README.md` 目录节、`INDEX.md`（目录结构/主要报告/最新补充/整理记录）、`TRANSFER.md` §0 六行 + 2026-11-22 blockquote、`HANDOFF.md` 维护记录。
 - **复核**：`python tests/run_all.py` → 150/150 PASS；`git status --porcelain` 仅本轮文档改动；推送后以 `git ls-remote origin refs/heads/main` 与 `main...origin/main` = `0 0` 核验。
+
+## 2026-11-23 例行维护（无新提交可拉取，仅清缓存）
+
+> 08:30 提醒 11:07 补投；`git fetch` 后 `origin/main` = 本地 `HEAD` = `cbdfd34`（`0 0`），过去 24h 无新产出。
+
+### 删除（测试/编辑器重建的缓存）
+- `__pycache__/`（根 4 文件 89.2KB）、`alchemy/__pycache__/`（5 文件 94.1KB）、`alchemy/core/__pycache__/`（7 文件 92.7KB）。
+- `godot/chem_lab/.godot/`（Godot 导入缓存，22 文件 2.55MB；打开编辑器自动重建）。
+
+### 巡检（均无异常，未改动）
+- tracked 中无 `*.log` / `*.err` / `*.pyc` / `__pycache__` / `/tmp/` / `*.tmp`；无 0 字节文件。
+- 体积 >35MB 的 tracked 文件仅 `_data_gz/t12b_pairs.jsonl.gz`（41,327,963B）。
+- 忽略项只剩 `.dsh-project-memory/` 与 6 个被脚本按名读取的大原始数据。
+- 根目录 699 个平铺文件按既有约定保持。
+
+### 提交与推送
+- 本轮仅文档（当日 log、`progress/laojiu/CURRENT.md`、本节）；提交后推送并在 `progress/laojiu/log/2026-11-23.md` 记录核验结果。
