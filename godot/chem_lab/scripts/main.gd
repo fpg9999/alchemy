@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 extends Node2D
 ## ChemLab：九元素化学实验场地。
 ## 左侧：世界视图（每格 1 像素，按物质同色，骨架占 k 格）
@@ -48,6 +48,7 @@ var _shot_mode := false
 var _selftest := false
 var _selftest_ticks := 0
 var _panel_node: PanelContainer
+var panel_scroll: ScrollContainer
 var panel: PanelContainer
 var _frames := 0
 var elem_checks := {}
@@ -110,6 +111,7 @@ func _build_ui() -> void:
 	_layout_ui()
 
 	var scroll := ScrollContainer.new()
+	panel_scroll = scroll
 	panel.add_child(scroll)
 	var v := VBoxContainer.new()
 	v.custom_minimum_size = Vector2(372, 0)
@@ -243,8 +245,6 @@ func _build_ui() -> void:
 		"双方净力 w 都 ≥ 该值时，两个相邻分子被'粘附锁'锁住（只锁相对位置，不是化学键）。")
 	_slider(v, "lock_r", "锁断裂距离", 1, 5, 1, sim.p["lock_r"], func(x): pass,
 		"被锁住的伙伴距离超过该值时锁失效（默认 2 格）。")
-	_slider(v, "brown", "布朗概率", 0, 0.3, 0.005, sim.p["brown"], func(x): pass,
-		"受力很小时，每拍随机走一格的概率（0.04 = 4%）。")
 	_slider(v, "mob_gas", "气态迁移率", 0, 1.5, 0.05, sim.p["mob_gas"], func(x): pass,
 		"物态=气 的分子响应合力的概率倍率（1.0 = 完全响应）。")
 	_slider(v, "mob_liq", "液态迁移率", 0, 1.5, 0.05, sim.p["mob_liq"], func(x): pass,
@@ -254,6 +254,20 @@ func _build_ui() -> void:
 
 	# 温度
 	_section(v, "温度（分子热值 + 环境温度场）")
+	var hw_row := HBoxContainer.new()
+	v.add_child(hw_row)
+	hw_row.add_child(_mk_label("热值权重 C / L / F："))
+	var wC := _spin(hw_row, -4, 4, 0.5, float(sim.p["heat_w"]["C"]), 1, 62)
+	var wL := _spin(hw_row, -4, 4, 0.5, float(sim.p["heat_w"]["L"]), 1, 62)
+	var wF := _spin(hw_row, -4, 4, 0.5, float(sim.p["heat_w"]["F"]), 1, 62)
+	var hw_btn_row := HBoxContainer.new()
+	v.add_child(hw_btn_row)
+	_btn(hw_btn_row, "应用热值权重（重算所有分子 heat）", func():
+		sim.p["heat_w"] = {"C": float(wC.value), "L": float(wL.value), "F": float(wF.value)}
+		sim.recompute_heat()
+		_status("热值权重 = C %.1f / L %.1f / F %.1f（heat = Σ w·n，可为负）" % [wC.value, wL.value, wF.value])
+	)
+	v.add_child(_mk_label("heat = wC·n_C + wL·n_L + wF·n_F；默认 C=-1（冰）、L=1（电）、F=2（焰）。改数值后点“应用热值权重”，所有分子热值立即重算。"))
 	_slider(v, "T0", "初始温度 T0", 0, 1200, 10, sim.p["T0"], func(x): pass,
 		"第 0 拍的环境温度；会按 exp 曲线降到 T_end。")
 	_slider(v, "T_end", "终温 T_end", 0, 400, 1, sim.p["T_end"], func(x): pass,
@@ -275,8 +289,8 @@ func _build_ui() -> void:
 
 	# 反应
 	_section(v, "反应（resolve 完全 / 不完全）")
-	_slider(v, "p_react", "反应概率/接触", 0, 0.2, 0.002, sim.p["p_react"], func(x): pass,
-		"每个相邻对每拍触发一次 resolve 的概率（0.02 = 2%）。")
+	_slider(v, "p_react", "反应概率/接触", 0, 1.0, 0.01, sim.p["p_react"], func(x): pass,
+		"每个相邻对每拍触发一次 resolve 的概率（0~1；1.0 = 只要温度和 cap 满足，每次接触必反应）。")
 	_slider(v, "react_margin", "温度门槛余量", 0, 20, 0.5, sim.p["react_margin"], func(x): pass,
 		"触发反应要求 局部温度 ≥ c_A+c_B+余量；余量越大越难反应。")
 	_slider(v, "cap", "反应原子上限 cap", 4, 80, 1, sim.p["cap"], func(x): pass,
@@ -603,10 +617,17 @@ func _process(delta: float) -> void:
 	if _shot_mode and _frames == 60:
 		var img := get_viewport().get_texture().get_image()
 		if img == null:
-			print("[shot] get_image() 返回 null（headless 模式不支持截图，请用 --screenshot 不加 --headless 运行）")
+			print("[shot] get_image() 返回 null（headless 模式不支持截图）")
+			get_tree().quit()
 		else:
 			img.save_png("res://screenshot_check.png")
 			_status("已保存 screenshot_check.png")
+		if panel_scroll:
+			panel_scroll.scroll_vertical = 430
+	if _shot_mode and _frames == 64:
+		var img2 := get_viewport().get_texture().get_image()
+		if img2 != null:
+			img2.save_png("res://screenshot_bottom.png")
 		get_tree().quit()
 	if running and tick_done % 3 == 0:
 		chart_ticks += 1
@@ -705,11 +726,13 @@ func _query_formula() -> void:
 		info_label.text = "查不到 %s" % f
 		return
 	var a: Dictionary = d.get("attrs", {})
-	info_label.text = "%s：%d 原子，k=%d 骨架格，A=%.2f D=%.2f 吸引半径=%d 排斥半径=%d 热值=%d 格子=%s（质量 %.2f / 物态 %.2f / 温度 %.2f）" % [
+	var hw: Dictionary = sim.p.get("heat_w", {})
+	info_label.text = "%s：%d 原子，k=%d 骨架格，A=%.2f D=%.2f 吸引半径=%d 排斥半径=%d 热值=%d（权重 C=%.1f L=%.1f F=%.1f） 格子=%s（质量 %.2f / 物态 %.2f）" % [
 		f, int(d.get("natoms", 0)), int(d.get("k", 1)), float(d.get("A", 0.0)),
 		float(d.get("D", 0.0)), int(d.get("ratt", 1)), int(d.get("rrep", 1)),
-		int(d.get("heat", 0)), String(d.get("cell", "")),
-		float(a.get("mass", 0.0)), float(a.get("state", 0.0)), float(a.get("temperature", 0.0))]
+		int(d.get("heat", 0)), float(hw.get("C", 0.0)), float(hw.get("L", 0.0)), float(hw.get("F", 0.0)),
+		String(d.get("cell", "")),
+		float(a.get("mass", 0.0)), float(a.get("state", 0.0))]
 
 # ---------------- 投料 ----------------
 func _toggle_play() -> void:
@@ -845,3 +868,4 @@ func _screenshot() -> void:
 		return
 	img.save_png("user://chemlab_screenshot.png")
 	_status("截图已保存 user://chemlab_screenshot.png")
+

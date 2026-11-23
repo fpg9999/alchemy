@@ -30,7 +30,7 @@ var p := {
 	"KA": 2.5, "KR": 0.5,
 	"force_r": 3,
 	"lock_w": 1.0, "lock_r": 2,
-	"brown": 0.04,
+	"heat_w": {"C": -1.0, "L": 1.0, "F": 2.0},
 	"mob_gas": 1.0, "mob_liq": 0.60, "mob_solid": 0.25,
 	"p_react": 0.02,
 	"react_margin": 0.0,
@@ -84,12 +84,30 @@ func info(f: String) -> Dictionary:
 		d["ratt"] = int(d.get("ratt", 1))
 		d["rrep"] = int(d.get("rrep", 1))
 		d["k"] = int(d.get("k", 1))
-		d["heat"] = int(d.get("heat", 0))
+		d["heat"] = _heat_of(d.get("comp", {}), p["heat_w"])
 		d["c"] = int(d.get("c", max(1, int(d.get("natoms", 1)) - 1)))
 		d["attrs"] = d.get("attrs", {"mass": 2.0, "state": 1.0, "temperature": 1.0})
 		info_cache[f] = d
 		return d
 	return {}
+
+## 温度维度权重：heat = wC·n_C + wL·n_L + wF·n_F（默认 C=-1, L=1, F=2；可调）
+func _heat_of(comp: Dictionary, w: Dictionary) -> int:
+	return int(round(float(w.get("C", 0.0)) * int(comp.get("C", 0)) +
+			float(w.get("L", 0.0)) * int(comp.get("L", 0)) +
+			float(w.get("F", 0.0)) * int(comp.get("F", 0))))
+
+## 修改热值权重后调用：刷新类型缓存与所有分子的 heat（负热值允许）
+func recompute_heat() -> void:
+	for f in info_cache.keys():
+		var d: Dictionary = info_cache[f]
+		d["heat"] = _heat_of(d.get("comp", {}), p["heat_w"])
+	for m in mols:
+		if m["dead"]:
+			continue
+		var d2: Dictionary = info_cache.get(m["f"], {})
+		if not d2.is_empty():
+			m["heat"] = int(d2["heat"])
 
 func shape_of(k: int) -> Array:
 	if k <= 1:
@@ -410,9 +428,6 @@ func step() -> void:
 		var f := force_on(id)
 		var mag := f.length()
 		if mag < 0.02:
-			# 布朗
-			if rng.randf() < float(p["brown"]):
-				try_move(id, DIRS8[rng.randi() % 8])
 			continue
 		var best := Vector2i(0, 0)
 		var bestdot: float = -1.0

@@ -135,7 +135,7 @@ def molecule_info(f):
         "D": round(sc["D"], 3),
         "ratt": sc["r_att"],
         "rrep": sc["r_rep"],
-        "heat": int(comp.get("L", 0) + 2 * comp.get("F", 0)),
+        "heat": int(-comp.get("C", 0) + comp.get("L", 0) + 2 * comp.get("F", 0)),  # 默认权重 C=-1 L=1 F=2（客户端可覆盖）
         "c": max(1, len(atoms) - 1),
     }
     _MOL_CACHE[f] = info
