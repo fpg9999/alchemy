@@ -29,7 +29,7 @@ var p := {
 	"gravity_G": 0.30,
 	"KA": 2.5, "KR": 0.5,
 	"force_r": 3,
-	"lock_w": 1.0, "lock_r": 2,
+	"lock_w": 1.0, "lock_r": 2, "lock_rigid_fall": true,
 	"heat_w": {"C": -1.0, "L": 1.0, "F": 2.0},
 	"mob_gas": 1.0, "mob_liq": 0.60, "mob_solid": 0.25,
 	"p_react": 0.02,
@@ -326,6 +326,58 @@ func mobility(m) -> float:
 		return float(p["mob_liq"])
 	return float(p["mob_solid"])
 
+## 锁连通分量（用于"锁团整体下落"：锁住的分子作为一个刚体一起移动）
+func lock_component(id: int, cap_n: int = 6000) -> Array:
+	var comp: Array = [id]
+	var seen := {id: true}
+	var i := 0
+	while i < comp.size() and comp.size() < cap_n:
+		var cur: int = comp[i]
+		i += 1
+		for nb in mols[cur]["locks"]:
+			var nbi := int(nb)
+			if nbi < 0 or nbi >= mols.size() or seen.has(nbi):
+				continue
+			if mols[nbi]["dead"]:
+				continue
+			seen[nbi] = true
+			comp.append(nbi)
+	return comp
+
+## 整团平移：所有成员同步移动 step，任何目标格冲突/越界则整团不动
+func try_move_group(ids: Array, step: Vector2i) -> bool:
+	var own := {}
+	for id in ids:
+		own[int(id)] = true
+	var targets := {}
+	for id in ids:
+		var m = mols[int(id)]
+		for c in m["cells"]:
+			var raw: Vector2i = c + step
+			if not in_bounds(raw):
+				return false
+			var nt: Vector2i = wrap_cell(raw)
+			if targets.has(nt):
+				return false
+			targets[nt] = int(id)
+	for nt in targets.keys():
+		var cur := grid[_idx(nt)]
+		if cur != -1 and not own.has(cur):
+			return false
+	for id in ids:
+		for c in mols[int(id)]["cells"]:
+			grid[_idx(c)] = -1
+	for id in ids:
+		var m = mols[int(id)]
+		m["anchor"] = wrap_cell(m["anchor"] + step)
+		var nc := []
+		for c in m["cells"]:
+			var t: Vector2i = wrap_cell(c + step)
+			nc.append(t)
+			grid[_idx(t)] = int(id)
+		m["cells"] = nc
+	return true
+
 func try_move(id: int, step: Vector2i) -> bool:
 	var m = mols[id]
 	if m["dead"]:
@@ -401,19 +453,38 @@ func rebuild_locks() -> void:
 func step() -> void:
 	tick += 1
 	stats["T_env"] = schedule_T(float(tick))
-	# 1) 重力：整格下移
+	# 1) 重力：整格下移（锁团作为刚体整体下落，避免被锁在悬空处）
 	var G := float(p["gravity_G"])
 	for id in range(mols.size()):
-		var m = mols[id]
-		if m["dead"]:
+		if not mols[id]["dead"]:
+			mols[id]["gacc"] = float(mols[id]["gacc"]) + G * float(mols[id]["mass"])
+	var moved := {}
+	for id in range(mols.size()):
+		if moved.has(id) or mols[id]["dead"]:
 			continue
-		m["gacc"] = float(m["gacc"]) + G * float(m["mass"])
 		var guard: int = 0
-		while float(m["gacc"]) >= 1.0 and guard < 4:
+		while float(mols[id]["gacc"]) >= 1.0 and guard < 4:
 			guard += 1
-			if try_move(id, Vector2i(1, 0)):
-				m["gacc"] = float(m["gacc"]) - 1.0
+			var ok := false
+			if bool(p.get("lock_rigid_fall", true)):
+				var comp := lock_component(id)
+				if comp.size() > 1:
+					ok = try_move_group(comp, Vector2i(1, 0))
+					if ok:
+						for cid in comp:
+							moved[int(cid)] = true
+							mols[int(cid)]["gacc"] = float(mols[int(cid)]["gacc"]) - 1.0
+				else:
+					ok = try_move(id, Vector2i(1, 0))
+					if ok:
+						moved[id] = true
+						mols[id]["gacc"] = float(mols[id]["gacc"]) - 1.0
 			else:
+				ok = try_move(id, Vector2i(1, 0))
+				if ok:
+					moved[id] = true
+					mols[id]["gacc"] = float(mols[id]["gacc"]) - 1.0
+			if not ok:
 				break
 	# 2) 三素力驱动
 	_order.clear()

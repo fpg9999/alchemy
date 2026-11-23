@@ -245,6 +245,16 @@ func _build_ui() -> void:
 		"双方净力 w 都 ≥ 该值时，两个相邻分子被'粘附锁'锁住（只锁相对位置，不是化学键）。")
 	_slider(v, "lock_r", "锁断裂距离", 1, 5, 1, sim.p["lock_r"], func(x): pass,
 		"被锁住的伙伴距离超过该值时锁失效（默认 2 格）。")
+	var rigid_row := HBoxContainer.new()
+	v.add_child(rigid_row)
+	var rigid_chk := CheckButton.new()
+	rigid_chk.text = "锁团整体下落（刚体：锁住的分子簇一起受重力）"
+	rigid_chk.button_pressed = bool(sim.p.get("lock_rigid_fall", true))
+	rigid_chk.toggled.connect(func(on: bool):
+		sim.p["lock_rigid_fall"] = on
+		_status("锁团刚体下落 = %s" % ("开" if on else "关"))
+	)
+	rigid_row.add_child(rigid_chk)
 	_slider(v, "mob_gas", "气态迁移率", 0, 1.5, 0.05, sim.p["mob_gas"], func(x): pass,
 		"物态=气 的分子响应合力的概率倍率（1.0 = 完全响应）。")
 	_slider(v, "mob_liq", "液态迁移率", 0, 1.5, 0.05, sim.p["mob_liq"], func(x): pass,
@@ -589,6 +599,11 @@ func _process(delta: float) -> void:
 	_refresh_image()
 	_update_hud()
 	_frames += 1
+	if _selftest and _frames == 20:
+		if "--lock1" in OS.get_cmdline_args():
+			sim.p["lock_r"] = 1
+			sim.p["lock_rigid_fall"] = not ("--no-rigid" in OS.get_cmdline_args())
+			_status("自检：lock_r=1, rigid=%s" % str(sim.p["lock_rigid_fall"]))
 	if _selftest and _frames > 20 and _selftest_ticks < 240:
 		_do_tick(2)
 		_selftest_ticks += 2
@@ -608,6 +623,22 @@ func _process(delta: float) -> void:
 					maxrow = max(maxrow, int(c.x))
 					if c.x < 0 or c.x >= sim.H or c.y < 0 or c.y >= sim.W:
 						oob += 1
+			var n_high := 0
+			var n_low := 0
+			var row_sum := 0.0
+			var n_alive := 0
+			for m in sim.mols:
+				if m["dead"]:
+					continue
+				n_alive += 1
+				row_sum += float(m["anchor"].x)
+				if int(m["anchor"].x) < sim.H - 30:
+					n_high += 1
+				if int(m["anchor"].x) >= sim.H - 10:
+					n_low += 1
+			print("[selftest] rows: mean=%.1f H=%d high(row<%d)=%d low(row>=%d)=%d lock_r=%s rigid=%s" % [
+				(row_sum / max(1, n_alive)), sim.H, sim.H - 30, n_high, sim.H - 10, n_low,
+				str(sim.p["lock_r"]), str(sim.p.get("lock_rigid_fall", true))])
 			print("[selftest] hard_walls=%s oob_cells=%d max_row=%d H=%d (max_row 应 <= H-1)" % [
 				str(sim.p.get("hard_walls", true)), oob, maxrow, sim.H])
 			get_tree().quit()
