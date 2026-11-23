@@ -52,6 +52,8 @@ var _panel_node: PanelContainer
 var panel_scroll: ScrollContainer
 var panel: PanelContainer
 var _frames := 0
+var rand_species_edit: SpinBox
+var rand_natoms_edit: SpinBox
 var elem_checks := {}
 
 func _ready() -> void:
@@ -184,7 +186,16 @@ func _build_ui() -> void:
 	preset_opt.add_item("T88 群系 B5_OXKAF（O,X,K,A,F）", 7)
 	preset_opt.add_item("T88 群系 B6_OXCKAF", 8)
 	preset_opt.add_item("T88 群系 B9_all9（九元素）", 9)
-	preset_opt.add_item("自由投料（按元素勾选）", 10)
+	var eo := ["O", "X", "C", "K", "A", "F", "P", "W", "L"]
+	var pid := 10
+	for e1 in eo:
+		preset_opt.add_item("单元素 %s" % e1, pid)
+		pid += 1
+	for i in range(eo.size()):
+		for j in range(i + 1, eo.size()):
+			preset_opt.add_item("双元素 %s+%s" % [eo[i], eo[j]], pid)
+			pid += 1
+	preset_opt.add_item("自由投料（按元素勾选）", pid)
 	v.add_child(preset_opt)
 	var row4 := HBoxContainer.new()
 	v.add_child(row4)
@@ -204,6 +215,18 @@ func _build_ui() -> void:
 	var row4b := HBoxContainer.new()
 	v.add_child(row4b)
 	_btn(row4b, "按勾选元素配平投放", func(): _apply_checked(int(feed_n_edit.value)))
+
+	# 随机投料：按勾选元素随机生成「物种 + 数量」清单
+	var rowr := HBoxContainer.new()
+	v.add_child(rowr)
+	rowr.add_child(_mk_label("随机投料: 物种数"))
+	rand_species_edit = _spin(rowr, 1, 64, 1, 6, 0, 56)
+	rowr.add_child(_mk_label("最大原子数"))
+	rand_natoms_edit = _spin(rowr, 2, 14, 1, 8, 0, 56)
+	var rowr2 := HBoxContainer.new()
+	v.add_child(rowr2)
+	_btn(rowr2, "随机生成清单（按勾选元素）", func(): _random_feed(false))
+	_btn(rowr2, "随机生成并直接投放", func(): _random_feed(true))
 
 	# 自定义投料清单：可精确指定"哪种物质、多少个"
 	var feed_title := Label.new()
@@ -658,6 +681,12 @@ func _process(delta: float) -> void:
 			print("[selftest] rows: mean=%.1f H=%d high(row<%d)=%d low(row>=%d)=%d lock_r=%s rigid=%s" % [
 				(row_sum / max(1, n_alive)), sim.H, sim.H - 30, n_high, sim.H - 10, n_low,
 				str(sim.p["lock_r"]), str(sim.p.get("lock_rigid_fall", true))])
+			for t_els in [["O"], ["O", "F", "L"], ["O", "X", "C", "K", "A", "F"]]:
+				var tr := _feed_rows(t_els, 200)
+				var tn := 0
+				for it in tr:
+					tn += int(it["count"])
+				print("[selftest] feed %s -> %d rows, %d molecules" % ["".join(t_els), tr.size(), tn])
 			print("[selftest] hard_walls=%s oob_cells=%d max_row=%d H=%d (max_row 应 <= H-1)" % [
 				str(sim.p.get("hard_walls", true)), oob, maxrow, sim.H])
 			var ms := float(Time.get_ticks_msec() - _st_t0)
@@ -797,17 +826,19 @@ func _toggle_play() -> void:
 	_status("运行中…" if running else "已暂停")
 
 func _feed_rows(elements: Array, n: int) -> Array:
-	var r = client.call_sync("feed", {"elements": elements, "n": n})
+	var r = client.call_sync("feed", {"elements": elements, "n": n, "n_mol": n})
 	if not r.get("ok", false):
 		_status("投料失败：%s" % String(r.get("error", "?")))
 		return []
-	return r["data"].get("rows", [])
+	var d: Dictionary = r["data"]
+	return d.get("rows", d.get("feed", []))
 
 func _apply_preset() -> void:
 	var id := preset_opt.selected
 	var n := int(feed_n_edit.value)
 	if id <= 3:
 		_apply_t91(id, n)
+		return
 	elif id <= 9:
 		var subsets := [
 			["O", "F", "L"], ["O", "X", "C"], ["O", "X", "K", "F"],
@@ -815,15 +846,32 @@ func _apply_preset() -> void:
 			["O", "X", "C", "K", "A", "F", "P", "W", "L"],
 		]
 		_feed_elements_preset(subsets[id - 4], n)
-	else:
-		var els: Array = []
+		return
+	var els := _preset_elements(id)
+	if els.is_empty():
+		return
+	_feed_elements_preset(els, n)
+
+func _preset_elements(id: int) -> Array:
+	var eo := ["O", "X", "C", "K", "A", "F", "P", "W", "L"]
+	var free_id := 10 + 9 + 36
+	if id == free_id:
+		var sel: Array = []
 		for e in elem_checks.keys():
 			if elem_checks[e].button_pressed:
-				els.append(e)
-		if els.is_empty():
+				sel.append(e)
+		if sel.is_empty():
 			_status("请至少勾选一个元素")
-			return
-		_feed_elements_preset(els, n)
+		return sel
+	if id >= 10 and id < 19:
+		return [eo[id - 10]]
+	var idx := id - 19
+	for i in range(eo.size()):
+		for j in range(i + 1, eo.size()):
+			if idx == 0:
+				return [eo[i], eo[j]]
+			idx -= 1
+	return []
 
 func _apply_t91(kind: int, n: int) -> void:
 	var presets := [
@@ -855,6 +903,39 @@ func _apply_t91(kind: int, n: int) -> void:
 		sim.place(c, Vector2i(sim.rng.randi_range(0, sim.H - 1), sim.rng.randi_range(0, sim.W - 1)))
 	_refresh_image()
 	_status("T91 预设：主体 %s ×%d，食物 %s/%s 各 %d" % [a, cells.size(), b, c, per])
+
+func _random_feed(apply_now: bool) -> void:
+	var els: Array = []
+	for e in elem_checks.keys():
+		if elem_checks[e].button_pressed:
+			els.append(e)
+	if els.is_empty():
+		_status("请至少勾选一个元素")
+		return
+	var n := int(feed_n_edit.value)
+	var r = client.call_sync("random_feed", {
+		"elements": els, "n_mol": n,
+		"n_species": int(rand_species_edit.value),
+		"natoms_min": 2, "natoms_max": int(rand_natoms_edit.value),
+		"seed": randi(),
+	})
+	if not r.get("ok", false):
+		_status("随机投料失败：%s" % String(r.get("error", "?")))
+		return
+	var d: Dictionary = r["data"]
+	var rows: Array = d.get("rows", d.get("feed", []))
+	if rows.is_empty():
+		_status("该元素组合没有可投料分子：试调大「最大原子数」或换元素")
+		return
+	feed_items.clear()
+	for it in rows:
+		feed_items.append({"formula": String(it["formula"]), "count": int(it["count"])})
+	_refresh_feed_list()
+	_status("随机生成 %d 种（池 %d，seed=%d）：可点「应用清单」投放" % [
+		rows.size(), int(d.get("pool", 0)), int(d.get("seed", 0))])
+	if apply_now:
+		_feed_apply(true)
+
 
 func _apply_checked(n: int) -> void:
 	var els: Array = []

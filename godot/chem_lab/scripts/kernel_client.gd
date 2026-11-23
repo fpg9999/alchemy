@@ -61,13 +61,23 @@ func call_sync(op: String, params: Dictionary) -> Dictionary:
 	if not is_kernel_connected():
 		if not connect_to_kernel():
 			return {"ok": false, "error": "not connected"}
-	_send({"op": op, "args": params})
+	var my_id := _next_id
+	_send({"op": op, "args": params, "id": my_id})
 	var waited := 0
 	while waited < _timeout_ms:
 		_pump()
 		var parsed := _try_take_line()
 		if parsed.size() > 0:
-			return parsed
+			var rid := int(parsed.get("id", -1))
+			if rid == my_id:
+				return parsed
+			# 不是本次同步调用的回复：多半是在途的异步 resolve，交给它的回调
+			if _pending.has(rid):
+				var item = _pending[rid]
+				_pending.erase(rid)
+				if item["cb"].is_valid():
+					item["cb"].call(parsed, item["ctx"])
+			continue
 		OS.delay_msec(2)
 		waited += 2
 	return {}

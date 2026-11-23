@@ -10,6 +10,7 @@
 import io
 import json
 import os
+import random
 import socket
 import sys
 import threading
@@ -179,6 +180,29 @@ def op_f(req):
     return {"products": prods, "ok": prods is not None}
 
 
+def _finalize_rows(rows, n_mol, max_species=None):
+    """把 [{formula,count}] 归一到恰好 n_mol 个分子；max_species 限制物种数（按计数降序取）。"""
+    rows = [r for r in rows if int(r.get("count", 0)) > 0]
+    if not rows:
+        return []
+    rows.sort(key=lambda r: -int(r["count"]))
+    if max_species is not None and len(rows) > max_species:
+        rows = rows[:max_species]
+    n_mol = max(1, int(n_mol))
+    total = sum(int(r["count"]) for r in rows)
+    if total != n_mol:
+        diff = n_mol - total
+        rows[0]["count"] = max(1, int(rows[0]["count"]) + diff)
+        # 若把最小值压到 0 以下则均摊修正
+        for r in rows[1:]:
+            if int(r["count"]) < 1:
+                r["count"] = 1
+        total2 = sum(int(r["count"]) for r in rows)
+        if total2 != n_mol:
+            rows[0]["count"] = max(1, int(rows[0]["count"]) + (n_mol - total2))
+    return rows
+
+
 def op_feed(req):
     """按元素子集 + IPF 生成投料：[{formula,count}, ...]"""
     elements = req.get("elements") or list(ORDER)
@@ -194,7 +218,8 @@ def op_feed(req):
             continue
         pool.append(f)
     if not pool:
-        return {"feed": [], "pool": 0}
+        return {"rows": [], "feed": [], "pool": 0}
+    max_species = max(6, n_mol // 3)
     # 目标：元素等份额；总原子数 ≈ n_mol * 平均 6.5
     total_atoms = n_mol * 6.5
     target = {e: total_atoms / float(len(elements)) for e in elements}
@@ -223,19 +248,53 @@ def op_feed(req):
             w[f] *= scale
             if w[f] < 1e-6:
                 w[f] = 1e-6
-    # 化成整数份数，总量 ≈ n_mol
-    counts = {f: w[f] for f in pool}
-    s = sum(counts.values())
+    # 化成整数份数；小投料时限制物种数（否则会出现几百种各 1 个）
+    total_w = sum(w.values())
+    limit = max(6, min(len(pool), n_mol // 3)) if n_mol < 600 else len(pool)
     feed = []
-    for f, c in sorted(counts.items(), key=lambda kv: -kv[1]):
-        n = int(round(c * n_mol / s))
-        if n > 0:
-            feed.append({"formula": f, "count": n})
-    return {"feed": feed, "pool": len(pool)}
+    for f, c in sorted(w.items(), key=lambda kv: -kv[1])[:limit]:
+        feed.append({"formula": f, "count": max(1, int(round(c * n_mol / total_w)))})
+    feed = _finalize_rows(feed, n_mol)
+    return {"rows": feed, "feed": feed, "pool": len(pool)}
+
+
+def _feed_pool(elements, natoms_min, natoms_max):
+    pool = []
+    for f, r in CATALOG.items():
+        if not (natoms_min <= r["natoms"] <= natoms_max):
+            continue
+        comp = comp_of_atoms(r["atoms"])
+        if any(e not in elements for e in comp):
+            continue
+        pool.append(f)
+    return pool
+
+
+def op_random_feed(req):
+    """按元素子集随机抽 k 个物种组成投料清单：[{formula,count}, ...]"""
+    elements = list(req.get("elements") or ORDER)
+    n_mol = max(1, int(req.get("n_mol", 400)))
+    n_species = max(1, int(req.get("n_species", 6)))
+    natoms_min = int(req.get("natoms_min", 2))
+    natoms_max = int(req.get("natoms_max", 8))
+    seed = int(req.get("seed", random.randrange(1, 2 ** 30)))
+    rng = random.Random(seed)
+    pool = _feed_pool(elements, natoms_min, natoms_max)
+    if not pool:
+        return {"rows": [], "feed": [], "pool": 0, "seed": seed}
+    k = max(1, min(n_species, len(pool)))
+    chosen = rng.sample(pool, k)
+    ws = [rng.expovariate(1.0) for _ in chosen]
+    tot = sum(ws)
+    rows = []
+    for f, w in zip(chosen, ws):
+        rows.append({"formula": f, "count": max(1, int(round(n_mol * w / tot)))})
+    rows = _finalize_rows(rows, n_mol)
+    return {"rows": rows, "feed": rows, "pool": len(pool), "seed": seed}
 
 
 HANDLERS = {"molecule": op_molecule, "resolve": op_resolve, "f": op_f,
-            "feed": op_feed, "ping": lambda r: {"pong": True},
+            "feed": op_feed, "random_feed": op_random_feed, "ping": lambda r: {"pong": True},
             "stats": lambda r: {"catalog": len(CATALOG), "f_cache": len(_F_CACHE),
                                 "mol_cache": len(_MOL_CACHE)}}
 
