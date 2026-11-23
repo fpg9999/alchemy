@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 extends Node2D
 ## ChemLab：九元素化学实验场地。
 ## 左侧：世界视图（每格 1 像素，按物质同色，骨架占 k 格）
@@ -239,8 +239,10 @@ func _build_ui() -> void:
 		"聚素吸引强度上限：两个 A=3 分子贴邻时的最大吸引力（默认 2.5，与内核短键 κ0 同量级）。")
 	_slider(v, "KR", "排斥力 KR", 0, 3.0, 0.05, sim.p["KR"], func(x): pass,
 		"动素排斥强度上限：两个 D=3 分子贴邻时的最大排斥力（默认 0.5）。KA:KR 越大，同种越容易聚。")
-	_slider(v, "force_r", "作用力半径", 1, 6, 1, sim.p["force_r"], func(x): pass,
-		"力按切比雪夫距离向外衰减的半径（格）。半径 3 = 3 格内的邻居都参与受力。")
+	_slider(v, "force_r", "作用力半径", 1, 12, 1, sim.p["force_r"], func(x): pass,
+		"合力扫描半径的下限（格）；实际半径 = max(该值, 分子自身 ratt/rrep)。稀疏气体里半径太小会'谁都不理谁'，默认 6。")
+	_slider(v, "force_scale", "力→位移系数", 0, 4.0, 0.05, sim.p["force_scale"], func(x): pass,
+		"每拍位移累加 = |合力| × 该系数 × 物态迁移率。默认 1.0：|F|≈2 时约 1~2 格/拍，与重力（0.3~0.9 格/拍）同量级；调大更活跃，调小更黏滞。")
 	_slider(v, "lock_w", "粘附锁阈值", 0, 4.0, 0.05, sim.p["lock_w"], func(x): pass,
 		"双方净力 w 都 ≥ 该值时，两个相邻分子被'粘附锁'锁住（只锁相对位置，不是化学键）。")
 	_slider(v, "lock_r", "锁断裂距离", 1, 5, 1, sim.p["lock_r"], func(x): pass,
@@ -604,14 +606,24 @@ func _process(delta: float) -> void:
 			sim.p["lock_r"] = 1
 			sim.p["lock_rigid_fall"] = not ("--no-rigid" in OS.get_cmdline_args())
 			_status("自检：lock_r=1, rigid=%s" % str(sim.p["lock_rigid_fall"]))
+		if "--zero-g" in OS.get_cmdline_args():
+			sim.p["gravity_G"] = 0.0
+			_status("自检：零重力")
+		# 自检限流，避免向内核发请求过多
+		sim.p["p_react"] = min(float(sim.p["p_react"]), 0.01)
+		sim.max_react_per_tick = min(sim.max_react_per_tick, 80)
+		for arg in OS.get_cmdline_args():
+			if arg.begins_with("--force-scale="):
+				sim.p["force_scale"] = float(arg.split("=")[1])
+				_status("自检：force_scale=%s" % str(sim.p["force_scale"]))
 	if _selftest and _frames > 20 and _selftest_ticks < 240:
 		_do_tick(2)
 		_selftest_ticks += 2
 		if _selftest_ticks >= 240:
-			print("[selftest] tick=%d N=%d species=%d complete=%d incomplete=%d none=%d drops=%d joins=%d pend=%d T=%.1f" % [
+			print("[selftest] tick=%d N=%d species=%d complete=%d incomplete=%d none=%d drops=%d joins=%d moves=%d pend=%d T=%.1f" % [
 				tick_done, int(sim.stats["n"]), int(sim.stats["species"]),
 				int(sim.stats["complete"]), int(sim.stats["incomplete"]), int(sim.stats["none"]),
-				int(sim.stats["drops"]), int(sim.stats["joins"]), client.pending_count(),
+				int(sim.stats["drops"]), int(sim.stats["joins"]), int(sim.stats.get("moves", 0)), client.pending_count(),
 				float(sim.stats["T_env"])])
 			print("[selftest] rho=%.4f" % sim.rho())
 			var oob := 0

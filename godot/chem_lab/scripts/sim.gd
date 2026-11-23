@@ -28,7 +28,8 @@ var info_cache := {}            # formula -> info dict
 var p := {
 	"gravity_G": 0.30,
 	"KA": 2.5, "KR": 0.5,
-	"force_r": 3,
+	"force_r": 6,
+	"force_scale": 1.00,
 	"lock_w": 1.0, "lock_r": 2, "lock_rigid_fall": true,
 	"heat_w": {"C": -1.0, "L": 1.0, "F": 2.0},
 	"mob_gas": 1.0, "mob_liq": 0.60, "mob_solid": 0.25,
@@ -38,7 +39,7 @@ var p := {
 	"T0": 1000.0, "T_end": 10.0, "cool_ticks": 600.0, "plateau": true,
 	"env_coupling": 3.0,
 	"seed": 20261120,
-	"use_match": false,
+	"use_match": false, "max_pending": 96,
 	"hard_walls": true,
 }
 
@@ -68,7 +69,7 @@ func reset() -> void:
 	tick = 0
 	rng.seed = int(p["seed"])
 	stats = {"n": 0, "species": 0, "complete": 0, "incomplete": 0,
-			"none": 0, "drops": 0, "joins": 0, "pairs": 0,
+			"none": 0, "drops": 0, "joins": 0, "pairs": 0, "moves": 0,
 			"T_env": float(p["T0"]), "T_hot": 0.0}
 	species_count = {}
 	pending_res = 0
@@ -194,7 +195,7 @@ func place(f: String, anchor: Vector2i, ignore_id: int = -1) -> int:
 		"ratt": int(d.get("ratt", 1)), "rrep": int(d.get("rrep", 1)),
 		"heat": int(d.get("heat", 0)), "c": int(d.get("c", 1)),
 		"natoms": int(d.get("natoms", 1)),
-		"gacc": 0.0, "dead": false, "locks": [],
+		"gacc": 0.0, "facc": 0.0, "dead": false, "locks": [],
 	}
 	for s in shape:
 		var c: Vector2i = wrap_cell(anchor + s)
@@ -307,8 +308,12 @@ func force_on(id: int) -> Vector2:
 		var o = mols[oid]
 		var b: Vector2i = o["anchor"]
 		var d: int = _cheb(a, b)
-		var att := KA * float(m["A"]) * decay(d, int(m["ratt"]))
-		var rep := KR * float(o["D"]) * decay(d, int(o["rrep"]))
+		# 作用半径：取「力半径」与分子自身半径（散素点数换算）的较大者，
+		# 这样稀疏气体里的远邻也能互相作用，而强度仍由 A / D 决定。
+		var ratt: int = maxi(fr, int(m["ratt"]))
+		var rrep: int = maxi(fr, int(o["rrep"]))
+		var att := KA * float(m["A"]) * decay(d, ratt)
+		var rep := KR * float(o["D"]) * decay(d, rrep)
 		var w := att - rep
 		if abs(w) < 0.001:
 			continue
@@ -376,6 +381,7 @@ func try_move_group(ids: Array, step: Vector2i) -> bool:
 			nc.append(t)
 			grid[_idx(t)] = int(id)
 		m["cells"] = nc
+	stats["moves"] = int(stats.get("moves", 0)) + ids.size()
 	return true
 
 func try_move(id: int, step: Vector2i) -> bool:
@@ -423,6 +429,7 @@ func try_move(id: int, step: Vector2i) -> bool:
 		ncells.append(c)
 	m["anchor"] = na
 	m["cells"] = ncells
+	stats["moves"] = int(stats.get("moves", 0)) + 1
 	return true
 
 func rebuild_locks() -> void:
@@ -507,15 +514,25 @@ func step() -> void:
 			if dot > bestdot:
 				bestdot = dot
 				best = d
-		var prob: float = mobility(m) * min(1.0, 0.25 + 0.75 * mag)
-		if rng.randf() < prob:
-			try_move(id, best)
+		# 力→位移：按 |F|·force_scale·迁移率 累积位移，和重力同量级（可调 force_scale）
+		m["facc"] = min(3.0, float(m["facc"]) + mag * float(p["force_scale"]) * mobility(m))
+		var fguard: int = 0
+		while float(m["facc"]) >= 1.0 and fguard < 4:
+			fguard += 1
+			if try_move(id, best):
+				m["facc"] = float(m["facc"]) - 1.0
+			else:
+				m["facc"] = min(float(m["facc"]), 0.99)
+				break
 	# 3) 粘附锁
 	rebuild_locks()
 	# 4) 反应：相邻对 + 局部温度门控 + 异步 resolve
 	_react_phase()
 
 func _react_phase() -> void:
+	# 背压：内核回复跟不上时先不发起新反应，避免请求雪崩
+	if client and client.pending_count() > int(p.get("max_pending", 96)):
+		return
 	var sent = 0
 	var seen := {}
 	for id in range(mols.size()):

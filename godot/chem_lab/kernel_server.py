@@ -12,6 +12,7 @@ import json
 import os
 import socket
 import sys
+import threading
 import time
 from collections import Counter
 
@@ -239,47 +240,51 @@ HANDLERS = {"molecule": op_molecule, "resolve": op_resolve, "f": op_f,
                                 "mol_cache": len(_MOL_CACHE)}}
 
 
+def _handle_conn(conn):
+    try:
+        fh = conn.makefile("rwb")
+        for line in fh:
+            line = line.strip()
+            if not line:
+                continue
+            t0 = time.time()
+            try:
+                req = json.loads(line.decode("utf-8"))
+                if isinstance(req.get("args"), dict):
+                    req.update(req["args"])
+                op = req.get("op", "")
+                h = HANDLERS.get(op)
+                if h is None:
+                    resp = {"id": req.get("id"), "ok": False,
+                            "error": "unknown op %r" % op}
+                else:
+                    resp = {"id": req.get("id"), "ok": True,
+                            "data": h(req)}
+            except Exception as ex:
+                resp = {"id": None, "ok": False, "error": "%s: %s" % (
+                    type(ex).__name__, ex)}
+            resp["ms"] = round((time.time() - t0) * 1000, 2)
+            fh.write((json.dumps(resp, ensure_ascii=False) + "\n").encode("utf-8"))
+            fh.flush()
+    except Exception as ex:
+        print("[kernel] conn error:", ex, flush=True)
+    finally:
+        try:
+            conn.close()
+        except Exception:
+            pass
+
+
 def serve(port=8765):
     srv = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     srv.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     srv.bind(("127.0.0.1", port))
-    srv.listen(4)
+    srv.listen(16)
     print("[kernel] listening on 127.0.0.1:%d" % port, flush=True)
     while True:
         conn, _ = srv.accept()
-        fh = conn.makefile("rwb")
-        try:
-            for line in fh:
-                line = line.strip()
-                if not line:
-                    continue
-                t0 = time.time()
-                try:
-                    req = json.loads(line.decode("utf-8"))
-                    if isinstance(req.get("args"), dict):
-                        req.update(req["args"])
-                    op = req.get("op", "")
-                    h = HANDLERS.get(op)
-                    if h is None:
-                        resp = {"id": req.get("id"), "ok": False,
-                                "error": "unknown op %r" % op}
-                    else:
-                        resp = {"id": req.get("id"), "ok": True,
-                                "data": h(req)}
-                except Exception as ex:
-                    resp = {"id": None, "ok": False, "error": "%s: %s" % (
-                        type(ex).__name__, ex)}
-                resp["ms"] = round((time.time() - t0) * 1000, 2)
-                fh.write((json.dumps(resp, ensure_ascii=False) + "\n").encode("utf-8"))
-                fh.flush()
-        except Exception as ex:
-            print("[kernel] conn error:", ex, flush=True)
-        finally:
-            try:
-                conn.close()
-            except Exception:
-                pass
-
+        conn.settimeout(300.0)
+        threading.Thread(target=_handle_conn, args=(conn,), daemon=True).start()
 
 def main():
     port = 8765

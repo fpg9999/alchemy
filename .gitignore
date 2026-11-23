@@ -32,3 +32,11 @@ godot/chem_lab/screenshot_check.png
 godot/chem_lab/*.err
 godot/chem_lab/shot*.log
 godot/chem_lab/selftest_out.log
+
+godot/chem_lab/kernel.log
+godot/chem_lab/kernel.err.log
+godot/chem_lab/shot_out.log
+godot/chem_lab/shot_err.log
+godot/chem_lab/st*.log
+godot/chem_lab/st*.err
+godot/chem_lab/selftest_err.log
