@@ -546,6 +546,13 @@ func _feed_apply(clear_world: bool) -> void:
 		sim.reset()
 		tick_done = 0
 		chart.clear_all()
+	var _fl := []
+	for _it in feed_items:
+		_fl.append(String(_it.get("formula", "")))
+	if _fl.size() > 0 and client:
+		var _rc = client.call_sync("molecules", {"formulas": _fl})
+		if _rc.get("ok", false):
+			sim.prime_infos(_rc["data"].get("infos", {}))
 	var placed: int = sim.add_feed(feed_items)
 	_refresh_image()
 	_status("清单投放 %d 个分子（%d 条投料）" % [placed, feed_items.size()])
@@ -645,6 +652,16 @@ func _process(delta: float) -> void:
 				sim.p["r_cap"] = float(arg.split("=")[1])
 				sim.recompute_radii()
 				_status("自检：r_cap=%s（已重算半径与哈希）" % str(sim.p["r_cap"]))
+		if "--stress" in OS.get_cmdline_args():
+			var rf = client.call_sync("random_feed", {"elements": ["O", "X", "C", "P", "W", "L", "K", "A", "F"],
+					"n_mol": 800, "n_species": 12})
+			if rf.get("ok", false):
+				sim.load_feed(rf["data"].get("rows", []))
+				sim.p["p_react"] = 0.02
+				sim.max_react_per_tick = 120
+				_status("stress: 9 元素随机投料 %d 分子 / %d 种" % [int(sim.stats["n"]), int(sim.stats["species"])])
+			else:
+				_status("stress: random_feed 失败 %s" % String(rf.get("error", "?")))
 		_st_t0 = Time.get_ticks_msec()
 	if _selftest and _frames > 20 and _selftest_ticks < 240:
 		_do_tick(2)

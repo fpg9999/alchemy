@@ -263,3 +263,39 @@ resolve → complete / incomplete / none
 
 `{"op":"feed","elements":[...],"n_mol":N,"natoms_min":2,"natoms_max":8}` →
 `{"ok":true,"data":{"rows":[{"formula":..,"count":..}],"pool":P}}`（`rows` 与 `feed` 同义，旧客户端只读 `feed`）。
+
+
+---
+
+## 附：2026-11-23 修复 —— 多元素随机投料卡死/崩溃
+
+现象：用"随机生成并直接投放"投 5~9 元素混合料后，画面卡死（几乎无响应），偶发崩溃。
+
+根因（四条叠加）：
+
+1. `_alive_count()` 是 O(N) 全表扫描，却被 `place()` / `remove()` 每次调用 → 每次反应（2 次 remove + 若干 place）× O(N)，几百次反应/拍时 CPU 爆掉。
+2. `_react_phase()` 每拍最多发 **600** 个异步 `resolve`；Python 侧车按顺序逐个算（每个 1~4ms）→ 单拍阻塞 0.6~2.4s。
+3. 反应产物的分子式未见过时，`info()` 会做**同步**内核调用（`molecule`）：在几十个 resolve 排队时，这一同步调用要等整条连接排空，主线程被阻塞数秒（这是"卡死"的主因）。
+4. `reset()` 后旧的在途 resolve 回复仍会到达，id 被新世界复用 → 打在新分子上，可能造成网格错乱/崩溃。
+
+修复：
+
+- 新增 `alive` 计数，`_alive_count()` 变 O(1)（10~100× 提升）。
+- 反应预算：`budget = max_react(默认 120) − 在途请求数`，`<=0` 时就跳过本拍反应；每拍不再无限堆积。
+- **分子信息本地计算**：`_local_info(f)` 用分子式直接算 natoms/k/mass/state/temp/A/D/Q/ratt/rrep/heat/c（与内核对齐），`info()` 不再走同步 TCP；投料前用新增的内核批量 op `molecules` 一次性预热精确 k（缓存）。
+  - 新协议：`{"op":"molecules","formulas":["CKF2","XK2F4"]}` → `{"ok":true,"data":{"infos":{...}}}`。
+- `reset()` 递增 `epoch` 并清空客户端 `_pending`；异步回复携带 `gen`，不匹配则丢弃。
+- `local_T()`（25 格扫描）挪到便宜的 `p_react` 骰子之后，减少无效扫描。
+
+参数变化：
+
+| 参数 | 旧 | 新 |
+|---|---|---|
+| `max_react`（每拍最多反应对） | 600 | **120**（0~2000 可调；卡顿时降到 40） |
+| 反应在途上限 | 96（pending 背压） | 96 保留，但同时受 per-tick 预算约束 |
+| 分子信息获取 | 同步 TCP | 本地计算 + 投料前批量预热 |
+
+自检：
+
+- `--selftest`（T91 预设，240 拍）：**11.7 ms/拍**（修复前 21.5），无脚本错误。
+- `--selftest --stress`（9 元素随机 800 分子，240 拍）：**11.2 s 跑完 / 46.7 ms/拍**，无卡死、无崩溃、无脚本错误；修复前该场景直接卡住（>10 分钟）。

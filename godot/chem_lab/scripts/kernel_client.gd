@@ -111,6 +111,10 @@ func resolve_async(mols: Array, T: float, ctx: Dictionary, cb: Callable) -> void
 func pending_count() -> int:
 	return _pending.size()
 
+## 世界重置时清空在途请求，避免旧回复打在新分子上
+func clear_pending() -> void:
+	_pending.clear()
+
 ## 每帧调用：取回所有已到达的异步结果。
 func poll() -> void:
 	if is_kernel_connected():

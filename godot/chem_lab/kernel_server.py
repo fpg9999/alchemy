@@ -203,6 +203,17 @@ def _finalize_rows(rows, n_mol, max_species=None):
     return rows
 
 
+def op_molecules(req):
+    """批量取多个分子式的信息：{"formulas": [...]} -> {"infos": {f: info}}"""
+    out = {}
+    for f in (req.get("formulas") or []):
+        try:
+            out[str(f)] = molecule_info(str(f))
+        except Exception:
+            out[str(f)] = None
+    return {"infos": out}
+
+
 def op_feed(req):
     """按元素子集 + IPF 生成投料：[{formula,count}, ...]"""
     elements = req.get("elements") or list(ORDER)
@@ -294,7 +305,7 @@ def op_random_feed(req):
 
 
 HANDLERS = {"molecule": op_molecule, "resolve": op_resolve, "f": op_f,
-            "feed": op_feed, "random_feed": op_random_feed, "ping": lambda r: {"pong": True},
+            "feed": op_feed, "molecules": op_molecules, "random_feed": op_random_feed, "ping": lambda r: {"pong": True},
             "stats": lambda r: {"catalog": len(CATALOG), "f_cache": len(_F_CACHE),
                                 "mol_cache": len(_MOL_CACHE)}}
 

@@ -61,7 +61,9 @@ var stats := {
 }
 var species_count := {}
 var pending_res := 0
-var max_react_per_tick := 600
+var max_react_per_tick := 120
+var alive := 0
+var epoch := 0
 var _order := []
 var _rng_tick := 0
 
@@ -83,10 +85,86 @@ func reset() -> void:
 			"T_env": float(p["T0"]), "T_hot": 0.0}
 	species_count = {}
 	pending_res = 0
+	alive = 0
+	epoch += 1
+	if client and client.has_method("clear_pending"):
+		client.clear_pending()
+
+## 解析分子式（元素字母 + 可选数字），失败返回 {}
+func _comp_from_formula(f: String) -> Dictionary:
+	var comp := {}
+	var i := 0
+	while i < f.length():
+		var ch := f[i]
+		if ch < "A" or ch > "Z":
+			return {}
+		if "OXCPWLKAF".find(ch) < 0:
+			return {}
+		var j := i + 1
+		var num := 1
+		var has_digit := false
+		while j < f.length() and f[j] >= "0" and f[j] <= "9":
+			if not has_digit:
+				num = 0
+				has_digit = true
+			num = num * 10 + int(f[j].to_int())
+			j += 1
+		comp[ch] = int(comp.get(ch, 0)) + max(1, num)
+		i = j
+	return comp
+
+## 本地计算分子信息（与内核 molecule_info 同口径），避免热路径同步阻塞
+func _local_info(f: String) -> Dictionary:
+	var comp := _comp_from_formula(f)
+	if comp.is_empty():
+		return {}
+	var n := 0
+	for e in comp.keys():
+		n += int(comp[e])
+	if n <= 0:
+		return {}
+	var cO := float(comp.get("O", 0))
+	var cX := float(comp.get("X", 0))
+	var cC := float(comp.get("C", 0))
+	var cK := float(comp.get("K", 0))
+	var cA := float(comp.get("A", 0))
+	var cF := float(comp.get("F", 0))
+	var cP := float(comp.get("P", 0))
+	var cW := float(comp.get("W", 0))
+	var cL := float(comp.get("L", 0))
+	var n_att := cO + cX + cC
+	var n_rng := cK + cA + cF
+	var n_rep := cP + cW + cL
+	var mass := 0.0
+	if n_att > 0.0:
+		mass = (3.0 * cO + 2.0 * cK + 1.0 * cP) / (n_att + cK + cP)
+	var state := 0.0
+	if cX + cW + cA > 0.0:
+		state = (3.0 * cX + 2.0 * cW + 1.0 * cA) / (cX + cW + cA)
+	var temp := 0.0
+	if n_rng > 0.0:
+		temp = (3.0 * cF + 2.0 * cL + 1.0 * cC) / n_rng
+	var att := 0.0
+	if n_att > 0.0:
+		att = (3.0 * cO + 2.0 * cX + 1.0 * cC) / n_att
+	var rep := 0.0
+	if n_rep > 0.0:
+		rep = (3.0 * cP + 2.0 * cW + 1.0 * cL) / n_rep
+	var q := int(3.0 * cK + 2.0 * cA + cF)
+	var rr := _radius_of_q(q)
+	var kk := maxi(1, int(round(float(n) / 8.08)))
+	return {"formula": f, "natoms": n, "comp": comp, "k": kk,
+			"attrs": {"mass": mass, "state": state, "temperature": temp},
+			"A": att, "D": rep, "Q": q, "ratt": rr[0], "rrep": rr[1],
+			"heat": int(-cC + cL + 2.0 * cF), "c": maxi(1, n - 1)}
 
 func info(f: String) -> Dictionary:
 	if info_cache.has(f):
 		return info_cache[f]
+	var li := _local_info(f)
+	if not li.is_empty():
+		info_cache[f] = li
+		return li
 	var r = client.call_sync("molecule", {"formula": f})
 	if r.get("ok", false):
 		var d: Dictionary = r["data"]
@@ -227,6 +305,23 @@ func footprint_free(shape: Array, anchor: Vector2i, ignore_id: int = -1) -> bool
 			return false
 	return true
 
+## 用内核批量返回的信息预热缓存（投料前调用一次，不在热路径）
+func prime_infos(infos: Dictionary) -> void:
+	for f in infos.keys():
+		var d = infos[f]
+		if d == null or not (d is Dictionary) or (d as Dictionary).is_empty():
+			continue
+		var e: Dictionary = (d as Dictionary).duplicate(true)
+		e["A"] = float(e.get("A", 0.0))
+		e["D"] = float(e.get("D", 0.0))
+		var comp: Dictionary = e.get("comp", {})
+		var q2 := int(3 * int(comp.get("K", 0)) + 2 * int(comp.get("A", 0)) + int(comp.get("F", 0)))
+		var rr2 := _radius_of_q(q2)
+		e["Q"] = q2
+		e["ratt"] = rr2[0]
+		e["rrep"] = rr2[1]
+		info_cache[String(f)] = e
+
 func place(f: String, anchor: Vector2i, ignore_id: int = -1) -> int:
 	var d := info(f)
 	if d.is_empty():
@@ -280,7 +375,8 @@ func place(f: String, anchor: Vector2i, ignore_id: int = -1) -> int:
 	m_alive.append(1)
 	next_id += 1
 	_count_species(f, 1)
-	stats["n"] = _alive_count()
+	alive += 1
+	stats["n"] = alive
 	return m["id"]
 
 func _count_species(f: String, d: int) -> void:
@@ -290,11 +386,7 @@ func _count_species(f: String, d: int) -> void:
 	stats["species"] = species_count.size()
 
 func _alive_count() -> int:
-	var n := 0
-	for m in mols:
-		if not m["dead"]:
-			n += 1
-	return n
+	return alive
 
 func remove(id: int) -> void:
 	if id < 0 or id >= mols.size():
@@ -307,7 +399,8 @@ func remove(id: int) -> void:
 	for c in m["cells"]:
 		grid[_idx(c)] = -1
 	_count_species(m["f"], -1)
-	stats["n"] = _alive_count()
+	alive = maxi(0, alive - 1)
+	stats["n"] = alive
 
 func remove_at(cell: Vector2i) -> void:
 	var o := grid[_idx(cell)]
@@ -626,12 +719,17 @@ func step() -> void:
 
 func _react_phase() -> void:
 	# 背压：内核回复跟不上时先不发起新反应，避免请求雪崩
-	if client and client.pending_count() > int(p.get("max_pending", 96)):
+	if client == null:
+		return
+	var outstanding: int = int(client.pending_count()) + pending_res
+	var budget: int = min(int(max_react_per_tick), int(p.get("max_react", max_react_per_tick)))
+	budget -= outstanding
+	if budget <= 0:
 		return
 	var sent = 0
 	var seen := {}
 	for id in range(mols.size()):
-		if sent >= max_react_per_tick:
+		if sent >= budget:
 			break
 		var m = mols[id]
 		if m["dead"]:
@@ -654,22 +752,24 @@ func _react_phase() -> void:
 					continue
 				if int(m["natoms"]) + int(o["natoms"]) > int(p["cap"]):
 					continue
+				if rng.randf() > float(p["p_react"]):
+					continue
 				var tl := local_T([cell, c])
 				var csum := int(m["c"]) + int(o["c"])
 				if tl < float(csum) + float(p["react_margin"]):
 					continue
-				if rng.randf() > float(p["p_react"]):
-					continue
 				stats["pairs"] = int(stats["pairs"]) + 1
 				pending_res += 1
 				sent += 1
-				var ctx := {"a": id, "b": oid, "cell": cell, "T": tl}
+				var ctx := {"a": id, "b": oid, "cell": cell, "T": tl, "gen": epoch}
 				client.resolve_async([{"formula": m["f"]}, {"formula": o["f"]}], tl, ctx, Callable(self, "on_resolve"))
 	stats["T_hot"] = stats["T_env"]
 
 func on_resolve(resp: Dictionary, ctx: Dictionary) -> void:
 	pending_res = max(0, pending_res - 1)
 	if not resp.get("ok", false):
+		return
+	if int(ctx.get("gen", -1)) != epoch:
 		return
 	var d: Dictionary = resp["data"]
 	var typ := String(d.get("type", "none"))
