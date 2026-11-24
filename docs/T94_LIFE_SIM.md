@@ -5,7 +5,7 @@
 > 环境不再使用固定攻击浴，而由 T88/T92 群系式元素丰度从目录采样。
 >
 > 产物：`t94_life.py`、`t94_render.py`、`t94_life.json`、`t94_<arm>.json`×10、
-> `images/t94_life_*.png`×5、本报告、`t94_run.log`。
+> `images/t94_life_*.png`×5、本报告（运行日志 `t94_run.log` 不入库，`.gitignore` 的 `*.log` 覆盖）。
 >
 > 数据：2026-11-24，seed=20261124，10 臂 × 600 拍，总耗时 **88.16 s**（单臂 5.1–12.4 s）；
 > 另有 `--quick` 冒烟测试（W=120 H=80、120 拍、2 臂，5.9 s）。
@@ -304,7 +304,7 @@ python t94_render.py
 ```
 
 运行时会逐臂写 `t94_<arm>.json`，并在每臂结束后原子更新主文件 `t94_life.json`
-（崩溃安全：已完成的臂不会丢）；日志追加到 `t94_run.log`。
+（崩溃安全：已完成的臂不会丢）；日志追加到 `t94_run.log`（不入库，`.gitignore` 忽略）。
 
 ---
 
@@ -322,7 +322,7 @@ python t94_render.py
 | `images/t94_life_react.png` | 内部/膜带/外部反应率与构成 |
 | `images/t94_life_selfrepair.png` | 自修复臂膜/食物/birth/death/repair 曲线与数字 |
 | `docs/T94_LIFE_SIM.md` | 本报告 |
-| `t94_run.log` | 运行日志（每 10 拍一行） |
+| `t94_run.log` | 运行日志（每 10 拍一行；**不入库**，`.gitignore` 的 `*.log` 覆盖） |
 
 ---
 

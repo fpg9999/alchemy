@@ -1657,4 +1657,4 @@ un_lab.bat）；本轮新增 chem_lab 工程并提交。未 push。
   - **D 文献梳理**（`T94_HISTORY.md`，175 行）：七判据只有边界（静态隔离）与生长（条件性）有证据，代谢/遗传/自维持仅机制存在，**复制与选择完全缺失**；列出与今晚参数的 3 处冲突（p_react、G=0.20、C2 气态 vs 占格）。
 - **综合报告** `docs/T94_LIFE_SURVEY.md`：给出模型内最接近生命的组合 = 「O2/OK 主体 + PK/W2 膜（需 G≈0）+ O4XK2/O2X 本地冷壳 + XA3/C2K2 食物 + E4/E2/E3 环境 + 200→0°C 窗口」，能长大/被保护/有自复制化学式，**但仍不是生命**（无模板依赖/无变异/无代谢/无稳定隔室/无自修复/无选择压）；列出 6 条模型扩展建议（模板依赖、同分异构体、可逆膜-主体键、真正催化位点、隔室化补膜、持续能源）。
 - **测试**：`python tests/run_all.py` → 150/150 PASS。
-- **产物**：`t94_census.py`/`t94_life.py`/`t94_render.py`/`t94_env.py`/`t94_config.py`；`t94_census.json`（7.9MB）、`t94_life.json`（633KB）+ 10 份臂 JSON、`t94_envmap.json`；`images/t94_census.png`、`t94_life_*.png`（5 张）、`t94_envmap.png`；`t94_run.log`。README/INDEX 已加入口。
+- **产物**：`t94_census.py`/`t94_life.py`/`t94_render.py`/`t94_env.py`/`t94_config.py`；`t94_census.json`（7.9MB）、`t94_life.json`（633KB）+ 10 份臂 JSON、`t94_envmap.json`；`images/t94_census.png`、`t94_life_*.png`（5 张）、`t94_envmap.png`；运行日志 `t94_run.log` 不入库（`.gitignore` 的 `*.log` 覆盖）。README/INDEX 已加入口。

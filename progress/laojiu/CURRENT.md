@@ -1,12 +1,12 @@
 # 牢⑨ 当前状态
 
-> 滚动更新；历史见 `progress/laojiu/log/`。最后更新：2026-11-24 01:05
+> 滚动更新；历史见 `progress/laojiu/log/`。最后更新：2026-11-24 08:31
 
 - **机器 / 昵称**：本机（Windows 10 + DSH），昵称「牢⑨」
 - **工作目录**：`G:\AI work\deepseek\work1\alchemy`
 - **远程**：`https://github.com/fpg9999/alchemy`（`main`）
 - **最近一次同步**：**2026-11-24 凌晨 T94 生命综合调查（四分支）**：`T94: 生命综合调查——自复制普查/完美膜/环境谱系/文献梳理 + 综合报告``55675df2bfe9b4722a2b3bf937c6edbb849ac94e`，`main...origin/main` = `0 0`（经本地代理 8899→20.205.243.166 推送，重试第 1 次成功）；此前 2026-11-23 晚间 T93 保护膜（冰壳）综合 `6b88a1b`（26 files，+183,325/−2）推送 `a3ed282..6b88a1b` 成功（经本地 CONNECT 代理 `gh_proxy.py` 8899）
-- **当前本地**：T94 产物已提交（`docs/T94_*.md` 5 份、`t94_*.py` 5 个、`t94_census.json` 7.9MB、`t94_life.json` 633KB + 10 份臂 JSON、`t94_envmap.json`、7 张图、`t94_run.log`）；新默认参数写入 `t94_config.py` 与 ChemLab；tracked 约 1,735 文件、工作树约 800MB（不含 `.git`）
+- **当前本地**：与 `origin/main` 一致（`b291641`），工作树干净；T94 产物已提交（`docs/T94_*.md` 5 份、`t94_*.py` 5 个、`t94_census.json` 7.9MB、`t94_life.json` 633KB + 10 份臂 JSON、`t94_envmap.json`、7 张图）；2026-11-24 例行把误入库的 `t94_run.log` 出库（运行日志一律不入库）；tracked 约 1,744 文件
 - **每日例行**：08:30 定时（`schedule-249fe7ef-…`）：拉取远端 → 删除无用生成物 → 更新文档 → 提交推送 → 核验远程，并更新本文件与当日 log。提醒偶尔漏投递，恢复后按批次补跑并补记 log（见 `log/2026-11-21.md`、`log/2026-11-23.md`）
 
 ## 正在进行 / 下一步
@@ -26,3 +26,4 @@
 - 本机同一工作目录可能有另一个 DSH 代理并发提交（T82~T92、ChemLab 均为其产出）：提交前后 `git status`/`git log` 复核，push 前先 `git fetch`
 - 仓库体积约 1.24GB、root 699 个平铺文件（历史阶段脚本/数据，BASE 硬编码路径，保持平铺）；`_data_gz/t12b_pairs.jsonl.gz` 41.3MB 为最大 tracked 文件
 - 日常可清项：`__pycache__/`、`godot/chem_lab/.godot/`、根 `*.log`、`intake/tmp/`（均已 ignore）
+- **运行日志不入库**：`t93_run.log`、`t94_run.log` 等由脚本 append，`.gitignore` 的 `*.log` 覆盖；2026-11-24 已把误入库的 `t94_run.log` 经 `git rm` 出库

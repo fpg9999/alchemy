@@ -141,3 +141,21 @@ t9_reps_O.png :: [WinError 32] 另一个程序正在使用此文件，进程无�
 
 ### 提交与推送
 - 本轮仅文档（当日 log、`progress/laojiu/CURRENT.md`、本节）；提交后推送并在 `progress/laojiu/log/2026-11-23.md` 记录核验结果。
+
+## 2026-11-24 整理（T93/T94 提交后清理，含误入库日志出库）
+
+> `fetch` 后 `origin/main` = 本地 `HEAD` = `b291641`（`0 0`）；`39ef0c9..b291641` 的 71 文件为并发代理的 T93/T94 产出。
+
+### 删除
+- 重建缓存：`__pycache__/`、`alchemy/__pycache__/`、`alchemy/core/__pycache__/`、`tests/__pycache__/`、`godot/chem_lab/.godot/`。
+- 忽略的运行垃圾：根 `t93_run.log`；`godot/chem_lab/` 下 7 个 `*.err`/`*.log`、`screenshot_bottom.png`(+`.import`)。
+- **误入库日志 `t94_run.log`（178,732B）→ `git rm` 出库**；同步把 `HANDOFF.md`、`docs/T94_LIFE_SIM.md`、`docs/T94_LIFE_SURVEY.md` 中的产物清单改为「运行日志不入库（`.gitignore` 的 `*.log` 覆盖）」。
+- 工作区根（仓库外）：删过期 `push_t94.log`；保留 `gh_proxy.py`、`push_t94_loop.ps1` 作为本地推送辅助工具（GitHub 直连不稳时使用，不入库）。
+
+### 审计与保留
+- tracked 已无 `*.log`/`*.err`/`*.pyc`/`__pycache__`/`tmp`，无 0 字节文件；>30MB 仅 `_data_gz/t12b_pairs.jsonl.gz`（41,327,963B）。
+- >100KB 重复内容 3 组均保留：`alchemy/data/forms38.json` == `t8_forms.json`（包内副本）、`t4_enum_O_X_K.json` == `t4_enum_O_X_K_T1_64.json`（脚本按名读取）、`t78_verify_det.json` == `t78_verify_det2.json`（两次复现对比）。
+- 根目录平铺文件按既有约定保持。
+
+### 复核
+- `python tests/run_all.py` → 150/150 PASS；提交后推送并以 `git ls-remote` / `main...origin/main` = `0 0` 核验，结果记入 `progress/laojiu/log/2026-11-24.md`。

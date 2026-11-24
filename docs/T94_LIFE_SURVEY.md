@@ -219,7 +219,7 @@ python t94_life.py --quick  # 5.9s 自检
 | `docs/T94_ENV.md` | 分支 C 报告 |
 | `docs/T94_HISTORY.md` | 分支 D 文献梳理（175 行） |
 | `t94_census.py` / `t94_census.json`（7.9MB）/ `images/t94_census.png` | A 产物 |
-| `t94_life.py` / `t94_render.py` / `t94_life.json` / 10 份臂 JSON / `images/t94_life_*.png`（5 张）/ `t94_run.log` | B 产物 |
+| `t94_life.py` / `t94_render.py` / `t94_life.json` / 10 份臂 JSON / `images/t94_life_*.png`（5 张）（运行日志 `t94_run.log` 不入库） | B 产物 |
 | `t94_env.py` / `t94_envmap.json` / `images/t94_envmap.png` | C 产物 |
 | `t94_config.py` | 今晚参数与温度曲线（全分支共用） |
 
