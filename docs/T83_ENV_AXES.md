@@ -173,3 +173,5 @@ python t83_render.py          # -> images/t83_slices.png (+5 张单图), t83_sli
 - 本报告
 
 > **T95 口径变更（2026-11-24）**：布朗运动已从全部脚本删除（用户指令），动力学改由三素力/重力/推挤碰撞驱动；本报告记录的是删除前的实验口径，旧数字不可与 T95 新规则直接比较。
+
+> **T96 口径变更（2026-11-24）**：三素覆盖半径已从「10 点一档」（`r_att=1+[Q≥10]+[Q≥20]`、`r_rep=1+[Q≥15]+[Q≥30]`）改为连续规则 `r_att=clamp(Q,1,R_MAX)`、`r_rep=clamp(round(0.7Q),1,R_MAX)`，R_MAX 默认 12（Python 脚本按世界 force_r 封顶，ChemLab 由 r_cap 控制）。本文的半径/长程力相关数字基于旧规则，不可与新规则直接比较。详见 `docs/THREE_SU_AXES.md` §10 与 `docs/T96_MOTION.md`。

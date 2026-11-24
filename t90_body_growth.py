@@ -117,7 +117,7 @@ class World:
         rec = self.cat.get(f)
         k = k_of(rec) if rec else 1
         c = comp_of(f)
-        sc = TS.scores(c)
+        sc = TS.scores(c, r_max=GATE_R)   # T96：半径封顶 == 力扫描窗口（GATE_R）
         self.types[f] = {"f": f, "k": k, "shape": shape_of(k),
                          "vec": vec_of(c), "natoms": sum(c.values()),
                          "A": sc["A"], "D": sc["D"]}
@@ -242,8 +242,9 @@ class World:
                          self.rng.choice([-1, 0, 1])))
         else:
             if self.attr_on and centroid:
-                # 朝主体质心的方向（聚素吸引力）
-                att = TS.pair_force(comp_of(A_FORMULA), comp_of(m["f"]))["att"]
+                # 朝主体质心的方向（聚素吸引力）；d=1 时衰减恒 1，r_max 仅统一口径
+                att = TS.pair_force(comp_of(A_FORMULA), comp_of(m["f"]),
+                                    r_max=GATE_R)["att"]
                 p = min(0.85, 0.10 + 1.2 * att)
                 if self.rng.random() < p:
                     tr, tc = centroid

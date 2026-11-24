@@ -68,7 +68,7 @@ tick=78  N=408 种=3 | complete=30 incomplete=0 none=0 drops=0 并入=55 | T_env
 
 - 吸引力强度 `A` = 聚素族（O/X/C）按原子数加权平均，0~3；
 - 排斥力强度 `D` = 动素族（P/W/L）按原子数加权平均，0~3；
-- 吸引力半径 `ratt`、排斥力半径 `rrep` 由散素族（K/A/F）点数 Q 决定：`ratt = 1 + [Q≥10] + [Q≥20]`，`rrep = 1 + [Q≥15] + [Q≥30]`；
+- 吸引力半径 `ratt`、排斥力半径 `rrep` 由散素族（K/A/F）点数 Q 连续决定（T96 起，与 Python 内核 `alchemy/three_su.py` 统一）：`R_att = clamp(Q, 1, R_MAX)`，`R_rep = clamp(round(0.7·Q), 1, R_MAX)`，`R_MAX = r_cap`（默认 12，UI 范围 2~24）。旧「10 点一档」写法（`ratt = 1 + [Q≥10] + [Q≥20]` / `rrep = 1 + [Q≥15] + [Q≥30]`）已废弃；
 - 质量 `mass` = (3·n_O+2·n_K+1·n_P)/相关原子数，0~3（轻/中/重阈值 1.67 / 2.30）；
 - 物态 `state` = (3·n_X+2·n_W+1·n_A)/相关原子数，0~3（气/液/固阈值 1.70 / 2.22）；
 - 热值 heat = wC·n_C + wL·n_L + wF·n_F（整数，可为负；默认权重 C=−1、L=+1、F=+2，面板里可改：F 最热、L 温、C 冷源）。
@@ -299,3 +299,50 @@ resolve → complete / incomplete / none
 
 - `--selftest`（T91 预设，240 拍）：**11.7 ms/拍**（修复前 21.5），无脚本错误。
 - `--selftest --stress`（9 元素随机 800 分子，240 拍）：**11.2 s 跑完 / 46.7 ms/拍**，无卡死、无崩溃、无脚本错误；修复前该场景直接卡住（>10 分钟）。
+
+
+---
+
+## 附：2026-11-24 更新 —— T96 碰撞/推挤（链式推挤 + 团簇动量 + 整团受力平移）
+
+对应 Python 侧 `alchemy/t95_collision.py` 的 v1/v2 规则，移植进 Godot 的 `sim.gd`。
+布朗运动已全局删除；`push_enable=false` 时逐分子位移退回旧的 `facc` 累积规则。
+
+### 新增参数（`sim.p`，均可在 UI「碰撞/推挤」区调整）
+
+| 参数 | 默认 | 范围 | 含义 |
+|---|---|---|---|
+| `push_enable` | true | 开关 | 启用 P1 链式推挤 + P2 速度积分；关=旧规则 |
+| `push_e` | 0.2 | 0~1 | 一维冲量恢复系数（0 完全非弹性，1 完全弹性） |
+| `push_mu` | 0.25 | 0~1 | 被推方地面静摩擦上限 `J_floor = μ·M_B·g` |
+| `push_kmax` | 6 | 1~24 | 单次推挤链最大分子数（含推方团簇） |
+| `push_vmax` | 2.0 | 0.1~8 | 每分子速度上限（格/拍） |
+| `push_gamma` | 0.15 | 0~0.9 | 每拍速度保留 `(1-γ)` 的阻尼 |
+| `push_m_min_ratio` | 0.5 | 0.01~1 | 推方/被推方质量比硬门槛 |
+| `group_push_enable` | true | 开关 | 锁连通分量净力 → 整团平移 1 格 |
+| `group_push_thresh` | 0.5 | 0.05~4 | 整团平移的 `|ΣF|/M` 阈值 |
+
+### 规则（与 T95 文档 §2 同口径）
+
+- **候选链**：A 沿方向 `n` 前进 1 格；被占时把对方所在「锁连通分量」当一个刚体单元，最多串联 `Kmax` 个分子。先检查整链所有目标格在界内、无其它分子占用、整链移后与链外锁伙伴仍 ≤`lock_r`；全部通过才统一提交（元素守恒、footprint 完整）。
+- **判据**：对链上相邻两单元 A（推方）、B（被推方）：
+  - `J_A = M_A·max(0, v_A·n) + max(0, F_A·n)·dt`（重力通道再加 `M_A·g`）
+  - `J_B = M_B·max(0, -v_B·n) + J_stick(B) + J_floor(B)`
+  - 需 `M_A ≥ push_m_min_ratio·M_B` 且 `J_A > J_B`，否则 `n_push_fail += 1`。
+- **冲量**：`v_A' = (M_A v_A + M_B v_B − M_B e (v_A−v_B))/(M_A+M_B)`，`v_B' = (M_A v_A + M_B v_B + M_A e (v_A−v_B))/(M_A+M_B)`；冲量后按 `Vmax` 限幅。
+- **P2 速度积分**：每拍 `v = (1−γ)v + (F/M)·F2V`（`F2V = 0.02`），`|v|≤Vmax`；累积位移 `p += v`，按整格方向逐格尝试移动。
+- **整团受力平移**：对每个锁连通分量求 `ΣF/M`，`|·| ≥ group_push_thresh` 时取最接近的主方向，`try_move_group` 整团平移 1 格。
+
+### 新增 stats
+
+`n_push`、`n_push_fail`、`chain_hist`（链长 → 次数）、`n_group_push`、`n_group_push_fail`、`mean_speed`（HUD 第二行显示）。
+
+### headless 自检（`--selftest`，240 拍，T91 预设，约 350 分子）
+
+| 运行 | moves | n_push / fail | 整团 push / fail | mean_speed | rows mean | 耗时 |
+|---|---|---|---|---|---|---|
+| `--no-push`（旧规则） | 14,798 | 0 / 0 | 0 / 0 | 0.000 | 91.7 | 12.13 ms/拍 |
+| 默认（push+group） | 28,494 | 78 / 30,944 | 1,999 / 3,283 | 0.744 | 75.8 | 15.71 ms/拍 |
+| push 开、`--no-group` | 20,516 | 107 / 23,133 | 0 / 0 | 0.615 | 82.9 | 13.57 ms/拍 |
+
+结论：推挤链把“卡死”变成“可移动”，失败数远大于成功数（质量/摩擦/边界门槛）；团簇整体平移把锁团从底部抬回中部（rows mean 91.7→75.8），对 `lock_rigid_fall` 的“整团悬浮不动”是直接修复。`hard_walls=true` 下 `oob_cells=0`、`max_row=139 (=H-1)`。

@@ -182,3 +182,5 @@ python t87_render.py                                     # 写两张图
 
 产物：`t87_env_asym.py`、`t87_analyze.py`、`t87_render.py`、`t87_env_asym_result.json`、
 `t87_analysis.json`、`t87_mover_track.json`、`images/t87_env.png`、`images/t87_mover.png`。
+
+> **T96 口径变更（2026-11-24）**：三素覆盖半径已从「10 点一档」（`r_att=1+[Q≥10]+[Q≥20]`、`r_rep=1+[Q≥15]+[Q≥30]`）改为连续规则 `r_att=clamp(Q,1,R_MAX)`、`r_rep=clamp(round(0.7Q),1,R_MAX)`，R_MAX 默认 12（Python 脚本按世界 force_r 封顶，ChemLab 由 r_cap 控制）。本文的半径/长程力相关数字基于旧规则，不可与新规则直接比较。详见 `docs/THREE_SU_AXES.md` §10 与 `docs/T96_MOTION.md`。

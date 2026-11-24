@@ -179,7 +179,7 @@ class World:
         if w is None:
             ci = self.types[f_i]["comp"]
             cj = self.types[f_j]["comp"]
-            w = TS.pair_force(ci, cj, d)["w"]
+            w = TS.pair_force(ci, cj, d, r_max=int(self.force_r))["w"]  # T96：封顶==扫描窗口
             self.force_cache[key] = w
         return w
 

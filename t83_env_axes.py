@@ -262,8 +262,10 @@ class World:
         key = (f_i, f_j, d) if f_i <= f_j else (f_j, f_i, d)
         w = self.force_cache.get(key)
         if w is None:
+            r_max = int(self.force_r)      # T96：半径封顶 == 力扫描窗口
             w = TS.pair_force(self.types[f_i]["comp"],
-                              self.types[f_j]["comp"], d)["w"]
+                              self.types[f_j]["comp"], d,
+                              r_max=r_max)["w"]
             self.force_cache[key] = w
         return w
 

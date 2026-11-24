@@ -288,6 +288,43 @@ func _build_ui() -> void:
 	_slider(v, "mob_solid", "固态迁移率", 0, 1.5, 0.05, sim.p["mob_solid"], func(x): pass,
 		"物态=固 的迁移率（默认 0.25，最重最黏）。")
 
+	# T96 碰撞/推挤
+	_section(v, "碰撞/推挤（T96：链式推挤 + 团簇动量 + 整团受力平移）")
+	var push_row := HBoxContainer.new()
+	v.add_child(push_row)
+	var push_chk := CheckButton.new()
+	push_chk.text = "启用推挤/动量（P1 链式推挤 + P2 速度积分）"
+	push_chk.button_pressed = bool(sim.p.get("push_enable", true))
+	push_chk.toggled.connect(func(on: bool):
+		sim.p["push_enable"] = on
+		_status("推挤/动量 = %s" % ("开" if on else "关（旧规则）"))
+	)
+	push_row.add_child(push_chk)
+	_slider(v, "push_e", "恢复系数 e", 0, 1.0, 0.01, sim.p["push_e"], func(x): pass,
+		"一维冲量：e=0 完全非弹性（推挤后同速），e=1 完全弹性（两团弹开）。默认 0.2（与 alchemy/t95_config.py 一致）。")
+	_slider(v, "push_mu", "地面摩擦 μ", 0, 1.0, 0.01, sim.p["push_mu"], func(x): pass,
+		"被推方静摩擦上限 J_floor = μ·M·g；μ 越大越难推动贴地的团。默认 0.25。")
+	_slider(v, "push_kmax", "链长上限 Kmax", 1, 24, 1, sim.p["push_kmax"], func(x): pass,
+		"一次推挤最多牵连的分子数（含推方团簇）；超过则记 n_push_fail。默认 6。")
+	_slider(v, "push_vmax", "速度上限 Vmax", 0.1, 8.0, 0.1, sim.p["push_vmax"], func(x): pass,
+		"每分子速度（格/拍）上限；冲量/受力加速后都会限幅。默认 2.0。")
+	_slider(v, "push_gamma", "速度阻尼 γ", 0, 0.9, 0.01, sim.p["push_gamma"], func(x): pass,
+		"每拍速度保留 (1-γ)；默认 0.15。γ→1 更快静止。")
+	_slider(v, "push_m_min_ratio", "质量比门槛", 0.01, 1.0, 0.01, sim.p["push_m_min_ratio"], func(x): pass,
+		"推方/被推方质量比 ≥ 该值才可能推动（默认 0.5）。")
+	var gpush_row := HBoxContainer.new()
+	v.add_child(gpush_row)
+	var gpush_chk := CheckButton.new()
+	gpush_chk.text = "团簇整体受力平移（锁连通分量净力 → 整团 1 格）"
+	gpush_chk.button_pressed = bool(sim.p.get("group_push_enable", true))
+	gpush_chk.toggled.connect(func(on: bool):
+		sim.p["group_push_enable"] = on
+		_status("团簇整体平移 = %s" % ("开" if on else "关"))
+	)
+	gpush_row.add_child(gpush_chk)
+	_slider(v, "group_push_thresh", "整团平移阈值", 0.05, 4.0, 0.05, sim.p["group_push_thresh"], func(x): pass,
+		"|ΣF|/M 超过该值才尝试整团平移 1 格（默认 0.5）。")
+
 	# 温度
 	_section(v, "温度（分子热值 + 环境温度场）")
 	var hw_row := HBoxContainer.new()
@@ -490,6 +527,21 @@ func _slider(parent: Node, key: String, label: String, mn: float, mx: float, ste
 	help.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	help.visible = hint != ""
 	vb.add_child(help)
+	if key != "speed" and key != "max_react":
+		param_controls[key] = {"apply": apply, "label": label, "step": step}
+
+## T96：存档读回 / 参数批量改变后，把 sim.p 的值同步回滑条与数字框
+func _refresh_param_ui() -> void:
+	for key in param_controls.keys():
+		var v = sim.p.get(key, null)
+		if v == null:
+			continue
+		var tv := typeof(v)
+		if tv != TYPE_FLOAT and tv != TYPE_INT:
+			continue
+		var ctl: Dictionary = param_controls[key]
+		var cb: Callable = ctl["apply"]
+		cb.call(float(v))
 
 var feed_n_edit: SpinBox
 var info_label: Label
@@ -497,6 +549,7 @@ var feed_list: ItemList
 var feed_formula_edit: LineEdit
 var feed_count_edit: SpinBox
 var feed_items: Array = []
+var param_controls: Dictionary = {}   # T96：参数键 -> {apply,label,step}，供存档读回后同步 UI
 
 func _refresh_feed_list() -> void:
 	if feed_list == null:
@@ -641,6 +694,12 @@ func _process(delta: float) -> void:
 		if "--zero-g" in OS.get_cmdline_args():
 			sim.p["gravity_G"] = 0.0
 			_status("自检：零重力")
+		if "--no-push" in OS.get_cmdline_args():
+			sim.p["push_enable"] = false
+			_status("自检：推挤/动量关闭（旧规则）")
+		if "--no-group" in OS.get_cmdline_args():
+			sim.p["group_push_enable"] = false
+			_status("自检：团簇整体平移关闭")
 		# 自检限流，避免向内核发请求过多
 		sim.p["p_react"] = min(float(sim.p["p_react"]), 0.01)
 		sim.max_react_per_tick = min(sim.max_react_per_tick, 80)
@@ -673,6 +732,10 @@ func _process(delta: float) -> void:
 				int(sim.stats["drops"]), int(sim.stats["joins"]), int(sim.stats.get("moves", 0)), client.pending_count(),
 				float(sim.stats["T_env"])])
 			print("[selftest] rho=%.4f" % sim.rho())
+			print("[selftest] push: n_push=%d n_push_fail=%d n_group_push=%d n_group_push_fail=%d mean_speed=%.3f chain_hist=%s" % [
+				int(sim.stats.get("n_push", 0)), int(sim.stats.get("n_push_fail", 0)),
+				int(sim.stats.get("n_group_push", 0)), int(sim.stats.get("n_group_push_fail", 0)),
+				float(sim.stats.get("mean_speed", 0.0)), str(sim.stats.get("chain_hist", {}))])
 			var oob := 0
 			var maxrow := -1
 			for m in sim.mols:
@@ -748,11 +811,17 @@ func _update_hud() -> void:
 	if hud == null:
 		return
 	var s = sim.stats
-	hud.text = "tick=%d  N=%d  种=%d  |  complete=%d  incomplete=%d  none=%d  drops=%d  并入=%d  |  T_env=%.1f  ρ=%.3f  pending=%d" % [
+	hud.text = "tick=%d  N=%d  种=%d  |  complete=%d  incomplete=%d  none=%d  drops=%d  并入=%d  |  T_env=%.1f  ρ=%.3f  pending=%d\n" % [
 		tick_done, int(s["n"]), int(s["species"]),
 		int(s["complete"]), int(s["incomplete"]), int(s["none"]),
 		int(s["drops"]), int(s["joins"]),
 		float(s["T_env"]), sim.rho(), client.pending_count() if client else 0]
+	hud.text += "push=%d fail=%d  整团=%d/%d  chain=%s  v̄=%.3f  推挤=%s 整团=%s" % [
+		int(s.get("n_push", 0)), int(s.get("n_push_fail", 0)),
+		int(s.get("n_group_push", 0)), int(s.get("n_group_push_fail", 0)),
+		str(s.get("chain_hist", {})), float(s.get("mean_speed", 0.0)),
+		"开" if bool(sim.p.get("push_enable", true)) else "关",
+		"开" if bool(sim.p.get("group_push_enable", true)) else "关"]
 	if tick_label:
 		tick_label.text = "tick %d" % tick_done
 
@@ -996,6 +1065,7 @@ func _load_state() -> void:
 		return
 	_rebuild_world(int(d.get("W", 200)), int(d.get("H", 140)))
 	sim.load_json(d)
+	_refresh_param_ui()
 	_refresh_image()
 	_status("已读取存档（tick=%d）" % int(d.get("tick", 0)))
 

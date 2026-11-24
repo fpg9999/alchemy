@@ -1387,6 +1387,7 @@ python t30_self_decomp.py
   与质量/物态/温度三轴**并存**；"最好不要有匹配度以外的变量，系数越少越好"；正式跑一晚上，早上交付。
 - **定案公式**：P=3n_O+2n_X+1n_C、Q=3n_K+2n_A+1n_F、S=3n_P+2n_W+1n_L；A=P/n_att（B、D 同理，缺族=0）；
   r_att=1+[Q≥10]+[Q≥20]，r_rep=1+[Q≥15]+[Q≥30]；J=元素组成 Jaccard；F(d,r) 线性衰减；
+  > **T96 口径变更（2026-11-24）**：半径已连续化（`R_att=clamp(Q,1,R_MAX)`、`R_rep=clamp(round(0.7Q),1,R_MAX)`，R_MAX 默认 12，Python 脚本按 force_r 封顶）；本段旧档位描述仅作历史记录。
   `Att=κA·√(AiAj)/3·J_att·F`，`Rep=κR·√(DiDj)/3·J_rep·F`，`w=Att−Rep`（κA=2.5 锚原 κ0、κR=0.5）。
   判定：w≥1 强粘 / ≥0.2 弱粘 / |w|<0.2 无作用 / ≤−0.2 排斥。
 - **全目录校准**（84,225 分子，`t81_calibration.json`）：同种净吸 80,396（95.5%）、强粘 69,046（82.0%）、无作用/自斥 3,829（4.5%）；
@@ -1673,3 +1674,16 @@ un_lab.bat）；本轮新增 chem_lab 工程并提交。未 push。
 - **测试**：布朗删除后 `python tests/run_all.py` → 150/150 PASS（19.2s）。
 - **产物**：`t95_ab.json`（1.84MB）、`t95_run.log`、`images/t95_push.png`/`t95_core.png`/`t95_vfield.png`、`docs/T95_COLLISION.md`；README/INDEX 已加入口。
 - **局限 / 后续**：① v2 速度用 `F2V` 标定，非物理常数；② 逐分子位移仍按 v0 的随机尝试（为保持可比），不是完整「力→加速度→位移」积分；③ **断弱键**列 TODO（用户要求以后再做）；④ T87/T93/T94 旧数字与新规则不可比，跨报告引用需标注口径；⑤ v2 在默认重力下只降低接触、不解决重膜沉降，需要更低 G 或轻膜/支撑面配合。
+
+---
+
+## 维护记录 · 2026-11-24 T96 分子运动修复（半径连续化 + ChemLab 推挤/动量/整团平移）
+
+- **触发**：用户 m01308 指出「散素已改成连续，每一点=一格作用范围」；m01233/m01380 两次问「为什么小分子/大分子簇都不动」。核查确认：ChemLab `_radius_of_q` 早已连续（`R_att=clamp(Q,1,r_cap)`、`R_rep=clamp(round(0.7Q),1,r_cap)`、r_cap=12，commit `e404c7f`），而 Python `three_su.py` 仍是 10 点一档 → 两套实现不一致；ChemLab 旧 `try_move` 只允许单格重压轻挤一步，多格/锁团目标格被占即钉死。
+- **指令（m01396）**：「改 1、3 条，顺便把之前的两条也修了，全部同步到 chemlab：统一半径规则：Python 内核和脚本同步为 R_att=clamp(Q,1,R_MAX)，删掉 10 点档位；断弱键已记入 TODO，本轮未实现。」
+- **T96-A（kernel）**：`three_su.py` 新增 `R_MAX=12`、`radii(q,r_max)` 连续、`scores/pair_force` 透传；`UNIT=10` 保留仅兼容历史脚本；half-away-from-zero 取整对齐 GDScript（Q=15→11）；t82/t83/t87/t90 以 `force_r`/`GATE_R` 作 r_max；`tests/run_all.py` 150/150；`three_su.py` 自检 + Q=0..24 对照表；t94/t95 quick 冒烟 29.8s/40.55s（临时 outdir，未覆盖历史 JSON）。
+- **T96-B（sim）**：`sim.gd`（869→1193 行）P1 链式推挤（锁连通分量作刚体单元、≤Kmax=6、整链边界/占格/锁先校验、J_A/J_B、M_min_ratio、e 冲量、`_commit_shift` 统一提交）、P2 速度场（vx/vy/px/py、F2V=0.02、γ=0.15、Vmax=2）、2b 整团净力平移（ΣF/M≥阈值→try_move_group）；`main.gd`（1026→1096 行）9 控件 + HUD + `--no-push`/`--no-group`；参数默认同 `t95_config`；新增 stats n_push/n_push_fail/chain_hist/n_group_push/n_group_push_fail/mean_speed。
+- **验证**：Godot 4.7.2 headless 真实内核 240 拍：旧规则 moves 14,798、rows mean 91.7、12.13 ms/拍；新规则 moves 26,132~28,494、n_push 78~94 / fail 3.09~3.19 万、整团 1,922~1,999、mean_speed 0.74~0.78、rows mean 75.8~76.5、15.7~16.2 ms/拍（**1.3×**）；`--no-group` rows 82.9；oob=0、max_row=139；`--check-only` 两脚本 EXIT=0。
+- **文档**：新增 `docs/T96_MOTION.md`（综合）、`docs/T96_CHEMLAB.md`（移植）；`THREE_SU_AXES.md` §10 T96 尾注；`CHEMLAB_PARAMS.md` 第 71 行旧档位句改连续 + T96 段；INDEX/HANDOFF/T83_ENV_AXES/T87_ENV_ASYM/T93_STATIC 加 T96 口径注记。
+- **口径**：旧 T81~T95 半径/长程力数字不可与新规则直接比较（t94 contacts 0→291、t95 n_push_fail 2,545→4,306 等）；T94/T95 正式报告未按新规则重跑，引用需注明。
+- **后续 TODO**：① 断弱键（可断键/熔化）用户要求以后做；② 热运动/最小扩散（净力 0 的对称团仍静止，观感像“死”）；③ 旋转/破碎；④ 若 Python 世界也要长程力，需调大 force_r 并重跑正式报告。

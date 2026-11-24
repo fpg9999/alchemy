@@ -386,3 +386,5 @@ python t93_static.py            # 正式参数：全量 84,225，约 20.4 s
 | 热阻（模型 A） | `R(d)=1/κ(η_c,η_s)+(d−1)/κ(η_s,η_s)+1/κ(η_s,η_env)` | 本文 |
 | 稳态（模型 A） | `T_in=(T_env+λC_core·R·T°_core)/(1+λC_core·R)`，λ=0.03，C_core=60，T°_core=4 | 本文 |
 | 门控 | `target=0.5+0.30(f_hot−f_cold)+0.20(T_amb−25)/975`；`gate=0.15+0.85ρ` | T83 |
+
+> **T96 口径变更（2026-11-24）**：三素覆盖半径已从「10 点一档」（`r_att=1+[Q≥10]+[Q≥20]`、`r_rep=1+[Q≥15]+[Q≥30]`）改为连续规则 `r_att=clamp(Q,1,R_MAX)`、`r_rep=clamp(round(0.7Q),1,R_MAX)`，R_MAX 默认 12（Python 脚本按世界 force_r 封顶，ChemLab 由 r_cap 控制）。本文的半径/长程力相关数字基于旧规则，不可与新规则直接比较。详见 `docs/THREE_SU_AXES.md` §10 与 `docs/T96_MOTION.md`。

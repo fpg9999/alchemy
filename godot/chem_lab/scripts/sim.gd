@@ -12,6 +12,7 @@ const DIRS8 := [
 	Vector2i(1, -1), Vector2i(1, 0), Vector2i(1, 1),
 ]
 const DIRS4 := [Vector2i(-1, 0), Vector2i(1, 0), Vector2i(0, -1), Vector2i(0, 1)]
+const F2V := 0.02   # T96：力→速度标定（与 alchemy/t95_collision.F2V 一致）
 
 var W := 200
 var H := 140
@@ -43,6 +44,11 @@ var p := {
 	"seed": 20261120,
 	"use_match": false, "max_pending": 96,
 	"hard_walls": true,
+	# T96 碰撞/推挤（默认值按 alchemy/t95_config.py）
+	"push_enable": true, "push_e": 0.2, "push_mu": 0.25,
+	"push_kmax": 6, "push_vmax": 2.0, "push_gamma": 0.15,
+	"push_m_min_ratio": 0.5,
+	"group_push_enable": true, "group_push_thresh": 0.5,
 }
 
 # 统计
@@ -82,6 +88,8 @@ func reset() -> void:
 	rng.seed = int(p["seed"])
 	stats = {"n": 0, "species": 0, "complete": 0, "incomplete": 0,
 			"none": 0, "drops": 0, "joins": 0, "pairs": 0, "moves": 0,
+			"n_push": 0, "n_push_fail": 0, "chain_hist": {},
+			"n_group_push": 0, "n_group_push_fail": 0, "mean_speed": 0.0,
 			"T_env": float(p["T0"]), "T_hot": 0.0}
 	species_count = {}
 	pending_res = 0
@@ -360,6 +368,7 @@ func place(f: String, anchor: Vector2i, ignore_id: int = -1) -> int:
 		"heat": int(d.get("heat", 0)), "c": int(d.get("c", 1)),
 		"natoms": int(d.get("natoms", 1)),
 		"gacc": 0.0, "facc": 0.0, "dead": false, "locks": [],
+		"vx": 0.0, "vy": 0.0, "px": 0.0, "py": 0.0, "fx": 0.0, "fy": 0.0,
 	}
 	for s in shape:
 		var c: Vector2i = wrap_cell(anchor + s)
@@ -560,7 +569,228 @@ func try_move_group(ids: Array, step: Vector2i) -> bool:
 	stats["moves"] = int(stats.get("moves", 0)) + ids.size()
 	return true
 
-func try_move(id: int, step: Vector2i) -> bool:
+## ---------------- T96：推挤链 / 团簇动量 / 团簇整体平移 ----------------
+## 与 alchemy/t95_collision.py 的 v1（P1 链式推挤）/ v2（P2 团簇动量）同口径，
+## 但这里逐分子位移改为「速度积分 + 累积位移」（P2），并保留 push_enable=false 的旧行为。
+
+func _push_fail() -> void:
+	stats["n_push_fail"] = int(stats.get("n_push_fail", 0)) + 1
+
+func _clamp_vel(vx: float, vy: float) -> Vector2:
+	var vmax := float(p["push_vmax"])
+	var spd := sqrt(vx * vx + vy * vy)
+	if spd > vmax and spd > 0.000001:
+		return Vector2(vx / spd * vmax, vy / spd * vmax)
+	return Vector2(vx, vy)
+
+func _unit_for(id: int) -> Array:
+	# P2：被粘附锁连成一片的分子作为刚体单元参与推挤链
+	if not bool(p["push_enable"]):
+		return [id]
+	if mols[id]["locks"].is_empty():
+		return [id]
+	var comp := lock_component(id)
+	if comp.size() <= 1:
+		return [id]
+	return comp
+
+func _unit_mass(ids: Array) -> float:
+	var mm := 0.0
+	for i in ids:
+		mm += float(mols[int(i)]["mass"])
+	return mm
+
+func _unit_vel(ids: Array) -> Vector2:
+	var v := Vector2.ZERO
+	for i in ids:
+		v += Vector2(float(mols[int(i)]["vx"]), float(mols[int(i)]["vy"]))
+	return v / float(maxi(1, ids.size()))
+
+func _unit_force_n(ids: Array, nvec: Vector2) -> float:
+	var s := 0.0
+	for i in ids:
+		var mm = mols[int(i)]
+		s += Vector2(float(mm["fx"]), float(mm["fy"])).dot(nvec)
+	return s
+
+func _stick_j(ids: Array, own: Dictionary) -> float:
+	var j := 0.0
+	var KA := float(p["KA"])
+	var KR := float(p["KR"])
+	for i in ids:
+		var m = mols[int(i)]
+		for lk in m["locks"]:
+			var li := int(lk)
+			if own.has(li) or li >= mols.size() or mols[li]["dead"]:
+				continue
+			var o = mols[li]
+			var w := KA * float(m["A"]) * decay(1, int(m["ratt"])) - KR * float(o["D"]) * decay(1, int(o["rrep"]))
+			j += max(0.0, w)
+	return j
+
+func _floor_j(ids: Array, own: Dictionary) -> float:
+	# 下方有边界/非链内分子支撑 → 静摩擦上限 mu·M·g
+	var G := float(p["gravity_G"])
+	if G <= 0.000001:
+		return 0.0
+	for i in ids:
+		for c in mols[int(i)]["cells"]:
+			var below: Vector2i = c + Vector2i(1, 0)
+			if not in_bounds(below):
+				return float(p["push_mu"]) * _unit_mass(ids) * G
+			var oid := grid[_idx(wrap_cell(below))]
+			if oid >= 0 and not own.has(oid):
+				return float(p["push_mu"]) * _unit_mass(ids) * G
+	return 0.0
+
+func _locks_ok_after(own: Dictionary, step: Vector2i) -> bool:
+	var lr := int(p["lock_r"])
+	for i in own.keys():
+		var m = mols[int(i)]
+		var na: Vector2i = wrap_cell(m["anchor"] + step)
+		for lk in m["locks"]:
+			var li := int(lk)
+			if own.has(li) or li >= mols.size() or mols[li]["dead"]:
+				continue
+			if _cheb(mols[li]["anchor"], na) > lr:
+				return false
+	return true
+
+func _add_impulse(ids: Array, du: float, nvec: Vector2) -> void:
+	if absf(du) < 0.000001:
+		return
+	for i in ids:
+		var m = mols[int(i)]
+		var v := _clamp_vel(float(m["vx"]) + du * nvec.x, float(m["vy"]) + du * nvec.y)
+		m["vx"] = v.x
+		m["vy"] = v.y
+
+func _commit_shift(ids: Array, step: Vector2i) -> void:
+	for i in ids:
+		for c in mols[int(i)]["cells"]:
+			grid[_idx(c)] = -1
+	for i in ids:
+		var m = mols[int(i)]
+		m["anchor"] = wrap_cell(m["anchor"] + step)
+		var nc := []
+		for c in m["cells"]:
+			var t: Vector2i = wrap_cell(c + step)
+			nc.append(t)
+			grid[_idx(t)] = int(i)
+		m["cells"] = nc
+		m_ax[int(i)] = m["anchor"].x
+		m_ay[int(i)] = m["anchor"].y
+		m["px"] = float(m["px"]) - float(step.x)
+		m["py"] = float(m["py"]) - float(step.y)
+	stats["moves"] = int(stats.get("moves", 0)) + ids.size()
+
+func _unit_stats(ids: Array, nvec: Vector2) -> Dictionary:
+	var M := _unit_mass(ids)
+	var v := _unit_vel(ids)
+	return {"ids": ids, "M": M, "u": v.dot(nvec), "fn": _unit_force_n(ids, nvec)}
+
+## P1/P2 链式推挤：先构造整条链（≤push_kmax 个分子），逐对 J_A/J_B 判定，
+## 全部检查通过才统一提交；任何一步失败整链不动（元素守恒、footprint 完整）。
+func _try_push_chain(id: int, step: Vector2i, gravity_ctx: bool = false) -> bool:
+	if step == Vector2i.ZERO:
+		return false
+	var kmax := int(p["push_kmax"])
+	var push_e := float(p["push_e"])
+	var nvec := Vector2(float(step.x), float(step.y)).normalized()
+	var chain: Array = []
+	var own := {}
+	var cur: Array = [id]
+	own[id] = true
+	if cur.size() > kmax:
+		_push_fail()
+		return false
+	while true:
+		for cid in cur:
+			for c in mols[int(cid)]["cells"]:
+				if not in_bounds(c + step):
+					_push_fail()
+					return false
+		chain.append(cur.duplicate())
+		var blockers := {}
+		for cid in cur:
+			for c in mols[int(cid)]["cells"]:
+				var nt: Vector2i = wrap_cell(c + step)
+				var oid := grid[_idx(nt)]
+				if oid >= 0 and not own.has(oid):
+					blockers[oid] = true
+		if blockers.is_empty():
+			break
+		var units: Array = []
+		for bid in blockers.keys():
+			units.append(_unit_for(int(bid)))
+		if units.size() > 1:
+			_push_fail()
+			return false
+		var nxt: Array = units[0]
+		if own.size() + nxt.size() > kmax:
+			_push_fail()
+			return false
+		for nid in nxt:
+			if own.has(int(nid)):
+				_push_fail()
+				return false
+			own[int(nid)] = true
+		cur = nxt
+		if own.size() > kmax:
+			_push_fail()
+			return false
+	var own_ids: Array = []
+	for k in own.keys():
+		own_ids.append(int(k))
+	var occ := {}
+	for grp in chain:
+		for gid in grp:
+			for c2 in mols[int(gid)]["cells"]:
+				var nt2: Vector2i = wrap_cell(c2 + step)
+				if occ.has(nt2):
+					_push_fail()
+					return false
+				occ[nt2] = int(gid)
+	for nt3 in occ.keys():
+		var curid := grid[_idx(nt3)]
+		if curid >= 0 and not own.has(curid):
+			_push_fail()
+			return false
+	if not _locks_ok_after(own, step):
+		_push_fail()
+		return false
+	var ustats: Array = []
+	for grp in chain:
+		ustats.append(_unit_stats(grp, nvec))
+	for k in range(chain.size() - 1):
+		var A: Dictionary = ustats[k]
+		var B: Dictionary = ustats[k + 1]
+		var MA: float = float(A["M"])
+		var MB: float = float(B["M"])
+		var uA: float = float(A["u"])
+		var uB: float = float(B["u"])
+		if MA < float(p["push_m_min_ratio"]) * MB or MB <= 0.0:
+			_push_fail()
+			return false
+		var JA: float = MA * max(0.0, uA) + max(0.0, float(A["fn"]))
+		if gravity_ctx:
+			JA += MA * float(p["gravity_G"])
+		var JB: float = MB * max(0.0, -uB) + _stick_j(B["ids"], own) + _floor_j(B["ids"], own)
+		if JA <= JB:
+			_push_fail()
+			return false
+		var uA2: float = (MA * uA + MB * uB - MB * push_e * (uA - uB)) / (MA + MB)
+		var uB2: float = (MA * uA + MB * uB + MA * push_e * (uA - uB)) / (MA + MB)
+		_add_impulse(A["ids"], uA2 - uA, nvec)
+		_add_impulse(B["ids"], uB2 - uB, nvec)
+		ustats[k + 1]["u"] = uB2
+	_commit_shift(own_ids, step)
+	stats["n_push"] = int(stats.get("n_push", 0)) + 1
+	var ch: Dictionary = stats["chain_hist"]
+	ch[own_ids.size()] = int(ch.get(own_ids.size(), 0)) + 1
+	return true
+
+func try_move(id: int, step: Vector2i, gravity_ctx: bool = false) -> bool:
 	var m = mols[id]
 	if m["dead"]:
 		return false
@@ -569,42 +799,59 @@ func try_move(id: int, step: Vector2i) -> bool:
 		return false
 	var na: Vector2i = wrap_cell(raw_na)
 	for lk in m["locks"]:
-		var o = mols[lk]
+		var o = mols[int(lk)]
 		if o["dead"]:
 			continue
 		if _cheb(o["anchor"], na) > int(p["lock_r"]):
 			return false
-	if not footprint_free(m["shape"], na, id):
-		# 只能把单格分子挤开一步（重压轻）
-		if int(m["k"]) != 1:
-			return false
-		var oid := grid[_idx(na)]
-		if oid < 0 or oid == id:
-			return false
-		var o = mols[oid]
-		if int(o["k"]) != 1 or o["dead"]:
-			return false
-		if float(m["mass"]) < float(o["mass"]):
-			return false
-		var raw_back: Vector2i = na - step
-		if not in_bounds(raw_back):
-			return false
-		var back: Vector2i = wrap_cell(raw_back)
-		if grid[_idx(back)] != -1 and grid[_idx(back)] != oid:
-			return false
-		grid[_idx(o["anchor"])] = -1
-		o["anchor"] = back
-		o["cells"] = [back]
-		grid[_idx(back)] = oid
+	if footprint_free(m["shape"], na, id):
+		for cell in m["cells"]:
+			grid[_idx(cell)] = -1
+		var ncells: Array = []
+		for sh in m["shape"]:
+			var c: Vector2i = wrap_cell(na + sh)
+			grid[_idx(c)] = id
+			ncells.append(c)
+		m["anchor"] = na
+		m["cells"] = ncells
+		m_ax[id] = na.x
+		m_ay[id] = na.y
+		m["px"] = float(m["px"]) - float(step.x)
+		m["py"] = float(m["py"]) - float(step.y)
+		stats["moves"] = int(stats.get("moves", 0)) + 1
+		return true
+	if bool(p["push_enable"]):
+		return _try_push_chain(id, step, gravity_ctx)
+	# 旧行为：只能把单格分子挤开一步（重压轻）
+	if int(m["k"]) != 1:
+		return false
+	var oid := grid[_idx(na)]
+	if oid < 0 or oid == id:
+		return false
+	var o2 = mols[oid]
+	if int(o2["k"]) != 1 or o2["dead"]:
+		return false
+	if float(m["mass"]) < float(o2["mass"]):
+		return false
+	var raw_back: Vector2i = na - step
+	if not in_bounds(raw_back):
+		return false
+	var back: Vector2i = wrap_cell(raw_back)
+	if grid[_idx(back)] != -1 and grid[_idx(back)] != oid:
+		return false
+	grid[_idx(o2["anchor"])] = -1
+	o2["anchor"] = back
+	o2["cells"] = [back]
+	grid[_idx(back)] = oid
 	for cell in m["cells"]:
 		grid[_idx(cell)] = -1
-	var ncells: Array = []
+	var ncells2: Array = []
 	for sh in m["shape"]:
-		var c: Vector2i = wrap_cell(na + sh)
-		grid[_idx(c)] = id
-		ncells.append(c)
+		var c2: Vector2i = wrap_cell(na + sh)
+		grid[_idx(c2)] = id
+		ncells2.append(c2)
 	m["anchor"] = na
-	m["cells"] = ncells
+	m["cells"] = ncells2
 	m_ax[id] = na.x
 	m_ay[id] = na.y
 	stats["moves"] = int(stats.get("moves", 0)) + 1
@@ -661,12 +908,12 @@ func step() -> void:
 							moved[int(cid)] = true
 							mols[int(cid)]["gacc"] = float(mols[int(cid)]["gacc"]) - 1.0
 				else:
-					ok = try_move(id, Vector2i(1, 0))
+					ok = try_move(id, Vector2i(1, 0), true)
 					if ok:
 						moved[id] = true
 						mols[id]["gacc"] = float(mols[id]["gacc"]) - 1.0
 			else:
-				ok = try_move(id, Vector2i(1, 0))
+				ok = try_move(id, Vector2i(1, 0), true)
 				if ok:
 					moved[id] = true
 					mols[id]["gacc"] = float(mols[id]["gacc"]) - 1.0
@@ -675,38 +922,114 @@ func step() -> void:
 	rebuild_hash()
 	stats["ms_g"] = float(stats.get("ms_g", 0.0)) + float(Time.get_ticks_usec() - _t0) / 1000.0
 	var _t1 := Time.get_ticks_usec()
-	# 2) 三素力驱动
+	# 2) 三素力驱动 + T96 P2 速度积分（push_enable=false 时退回旧 facc 位移）
 	_order.clear()
 	for id in range(mols.size()):
 		if not mols[id]["dead"]:
 			_order.append(id)
 	_order.shuffle()
-	for id in _order:
-		if id >= mols.size() or mols[id]["dead"]:
-			continue
-		var m = mols[id]
-		var f := force_on(id)
-		var mag := f.length()
-		if mag < 0.02:
-			continue
-		var best := Vector2i(0, 0)
-		var bestdot: float = -1.0
-		for d in DIRS8:
-			var dot: float = Vector2(d).normalized().dot(f.normalized())
-			if dot > bestdot:
-				bestdot = dot
-				best = d
-		# 力→位移：按 |F|·force_scale·迁移率 累积位移，和重力同量级（可调 force_scale）
-		var facc: float = min(3.0, float(m["facc"]) + mag * float(p["force_scale"]) * mobility(m))
-		var fguard: int = 0
-		while facc >= 1.0 and fguard < 4:
-			fguard += 1
-			if try_move(id, best):
-				facc -= 1.0
-			else:
-				facc = min(facc, 0.99)
-				break
-		m["facc"] = facc
+	if bool(p["push_enable"]):
+		var gamma := float(p["push_gamma"])
+		for id in _order:
+			if id >= mols.size() or mols[id]["dead"]:
+				continue
+			var m = mols[id]
+			var f := force_on(id)
+			m["fx"] = f.x
+			m["fy"] = f.y
+			var Mf: float = max(0.05, float(m["mass"]))
+			var nv := _clamp_vel((1.0 - gamma) * float(m["vx"]) + (f.x / Mf) * F2V,
+					(1.0 - gamma) * float(m["vy"]) + (f.y / Mf) * F2V)
+			m["vx"] = nv.x
+			m["vy"] = nv.y
+			m["px"] = float(m["px"]) + nv.x
+			m["py"] = float(m["py"]) + nv.y
+			var fguard: int = 0
+			while absf(float(m["px"])) >= 1.0 and fguard < 4:
+				fguard += 1
+				var sx: int = 1 if float(m["px"]) > 0.0 else -1
+				if not try_move(id, Vector2i(sx, 0)):
+					m["px"] = 0.0
+					break
+			fguard = 0
+			while absf(float(m["py"])) >= 1.0 and fguard < 4:
+				fguard += 1
+				var sy: int = 1 if float(m["py"]) > 0.0 else -1
+				if not try_move(id, Vector2i(0, sy)):
+					m["py"] = 0.0
+					break
+		# 2b) T96：锁连通分量净力→整团平移（每团每拍最多一次）
+		if bool(p["group_push_enable"]):
+			var seen := {}
+			var gi := 0
+			while gi < mols.size():
+				if mols[gi]["dead"] or seen.has(gi) or mols[gi]["locks"].is_empty():
+					gi += 1
+					continue
+				var comp := lock_component(gi)
+				if comp.size() < 2:
+					gi += 1
+					continue
+				for cid in comp:
+					seen[int(cid)] = true
+				var Mg := 0.0
+				var fsum := Vector2.ZERO
+				for cid in comp:
+					var cm = mols[int(cid)]
+					Mg += float(cm["mass"])
+					fsum += Vector2(float(cm["fx"]), float(cm["fy"]))
+				if Mg > 0.0 and (fsum / Mg).length() >= float(p["group_push_thresh"]):
+					var an := (fsum / Mg).normalized()
+					var best := DIRS8[0]
+					var bestdot := -2.0
+					for d in DIRS8:
+						var dot := Vector2(d).normalized().dot(an)
+						if dot > bestdot:
+							bestdot = dot
+							best = d
+					if try_move_group(comp, best):
+						stats["n_group_push"] = int(stats.get("n_group_push", 0)) + 1
+					else:
+						stats["n_group_push_fail"] = int(stats.get("n_group_push_fail", 0)) + 1
+				gi += 1
+		var sp_sum := 0.0
+		var sp_n := 0
+		for id in range(mols.size()):
+			if mols[id]["dead"]:
+				continue
+			var mm = mols[id]
+			sp_sum += sqrt(float(mm["vx"]) * float(mm["vx"]) + float(mm["vy"]) * float(mm["vy"]))
+			sp_n += 1
+		stats["mean_speed"] = sp_sum / float(maxi(1, sp_n))
+	else:
+		for id in _order:
+			if id >= mols.size() or mols[id]["dead"]:
+				continue
+			var m = mols[id]
+			var f := force_on(id)
+			m["fx"] = f.x
+			m["fy"] = f.y
+			var mag := f.length()
+			if mag < 0.02:
+				continue
+			var best := Vector2i(0, 0)
+			var bestdot: float = -1.0
+			for d in DIRS8:
+				var dot: float = Vector2(d).normalized().dot(f.normalized())
+				if dot > bestdot:
+					bestdot = dot
+					best = d
+			var facc: float = min(3.0, float(m["facc"]) + mag * float(p["force_scale"]) * mobility(m))
+			var fguard2: int = 0
+			while facc >= 1.0 and fguard2 < 4:
+				fguard2 += 1
+				if try_move(id, best):
+					facc -= 1.0
+				else:
+					facc = min(facc, 0.99)
+					break
+			m["facc"] = facc
+		stats["mean_speed"] = 0.0
 	stats["ms_f"] = float(stats.get("ms_f", 0.0)) + float(Time.get_ticks_usec() - _t1) / 1000.0
 	var _t2 := Time.get_ticks_usec()
 	# 3) 粘附锁

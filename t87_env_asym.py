@@ -60,7 +60,8 @@ class AsymWorld(T86.TriWorld):
     def ensure_type(self, formula):
         t = super().ensure_type(formula)
         if "A" not in t:
-            sc = TS.scores(t["comp"])
+            # T96：半径封顶 == 力扫描窗口（force_r），与 pair_force/force_on 口径一致
+            sc = TS.scores(t["comp"], r_max=int(self.force_r))
             t["A"] = sc["A"]
             t["R"] = sc["D"]
             t["r_att"] = sc["r_att"]

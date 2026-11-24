@@ -16,8 +16,11 @@
            B = Q/(n_K+n_A+n_F)  缺族 → 0
            D = S/(n_P+n_W+n_L)  缺族 → 0
   覆盖半径（方阵 8 邻域，半径 1 = 相邻一圈 8 格；切比雪夫距离）
-           r_att = 1 + [Q≥10] + [Q≥20]       （1、2、3）
-           r_rep = 1 + [Q≥15] + [Q≥30]       （1、2、3，比吸引落后 1.5 倍点数）
+     连续规则（T96 起，与 ChemLab `_radius_of_q` 一致）：
+           r_att = clamp(Q, 1, R_MAX)                  （Q 点即半径格数）
+           r_rep = clamp(round(0.7·Q), 1, R_MAX)       （排斥落后 0.7 倍点数）
+     Q = 0/1/2/3/…/12 对应 1/1/2/3/…/12，R_MAX 默认 12；世界脚本
+     以自身 force_r（扫描窗口）作为 r_max 传入，使半径封顶 == 力扫描窗口。
 
 双分子（i, j，格距 d = max(|dx|,|dy|)，环面）
 --------------------------------------------
@@ -50,6 +53,8 @@
 """
 from __future__ import annotations
 
+import math
+
 PTS = {"O": 3, "X": 2, "C": 1, "K": 3, "A": 2, "F": 1, "P": 3, "W": 2, "L": 1}
 FAM = {
     "O": "att", "X": "att", "C": "att",
@@ -60,7 +65,8 @@ ATT_ELS = ("O", "X", "C")
 RNG_ELS = ("K", "A", "F")
 REP_ELS = ("P", "W", "L")
 
-UNIT = 10.0          # 10 点 = 1 个覆盖单位（半径阈值也用这个单位）
+R_MAX = 12           # 半径封顶默认值（= ChemLab r_cap 默认 12）；世界脚本用 force_r 覆盖
+UNIT = 10.0          # 旧「10 点 = 1 档」单位；T96 起不再参与半径计算，保留供历史脚本读取
 K_A = 2.5            # 吸引系数（= S 短键 κ0）
 K_R = 0.5            # 排斥系数
 W_STRONG = 1.0
@@ -103,15 +109,24 @@ def points(comp):
     return p, q, s, sum(comp.values())
 
 
-def radii(q):
-    """覆盖半径（点数和 Q 决定）：吸引 1/2/3，排斥落后 1.5 倍点数。"""
-    r_att = 1 + (1 if q >= UNIT else 0) + (1 if q >= 2 * UNIT else 0)
-    r_rep = 1 + (1 if q >= 1.5 * UNIT else 0) + (1 if q >= 3 * UNIT else 0)
+def radii(q, r_max=None):
+    """覆盖半径（连续规则，T96 起）：吸引 clamp(Q,1,R_MAX)，排斥 clamp(round(0.7Q),1,R_MAX)。
+
+    r_max 为封顶半径；缺省用模块常量 R_MAX=12（= ChemLab r_cap 默认值）。
+    世界脚本传入自身 force_r，保证「半径封顶 == 力扫描窗口」。
+    """
+    cap = R_MAX if r_max is None else int(r_max)
+    if cap < 1:
+        cap = 1
+    r_att = min(cap, max(1, int(q)))
+    # 0.7Q 取整用 half-up：与 ChemLab GDScript round()（half away from zero）一致。
+    # Python 内置 round 是银行家舍入，Q=15 时会得 10 而 ChemLab 得 11。
+    r_rep = min(cap, max(1, int(math.floor(0.7 * float(q) + 0.5))))
     return r_att, r_rep
 
 
-def scores(comp):
-    """单分子三分 + 点数和 + 半径。"""
+def scores(comp, r_max=None):
+    """单分子三分 + 点数和 + 半径（r_max 为半径封顶，缺省 R_MAX）。"""
     p, q, s, n = points(comp)
     n_att = sum(c for el, c in comp.items() if FAM.get(el) == "att")
     n_rng = sum(c for el, c in comp.items() if FAM.get(el) == "rng")
@@ -119,7 +134,7 @@ def scores(comp):
     a = p / n_att if n_att else 0.0
     b = q / n_rng if n_rng else 0.0
     d = s / n_rep if n_rep else 0.0
-    r_att, r_rep = radii(q)
+    r_att, r_rep = radii(q, r_max)
     return {
         "natoms": n, "P": p, "Q": q, "S": s,
         "A": a, "B": b, "D": d,
@@ -150,15 +165,15 @@ def decay(d, r):
     return (r + 1 - d) / r
 
 
-def pair_force(comp_i, comp_j, d=1, k_a=None, k_r=None):
-    """两分子间在格距 d 的吸引/排斥/净力。
+def pair_force(comp_i, comp_j, d=1, k_a=None, k_r=None, r_max=None):
+    """两分子间在格距 d 的吸引/排斥/净力（r_max 为半径封顶，缺省 R_MAX）。
 
     返回 dict：att, rep, w, j_att, j_rep, r_att, r_rep, d。
     """
     ka = K_A if k_a is None else k_a
     kr = K_R if k_r is None else k_r
-    si = scores(comp_i)
-    sj = scores(comp_j)
+    si = scores(comp_i, r_max)
+    sj = scores(comp_j, r_max)
     r_att = max(si["r_att"], sj["r_att"])
     r_rep = max(si["r_rep"], sj["r_rep"])
     j_att, j_rep = overlap(comp_i, comp_j)
@@ -200,3 +215,21 @@ if __name__ == "__main__":
     for a, b in cross:
         pf = pair_force(parse_formula(a), parse_formula(b), 1)
         print("%-6s %-8s %8.2f %8.2f %8.2f  %s" % (a, b, pf["att"], pf["rep"], pf["w"], classify(pf["w"])))
+
+    print()
+    print("半径规则（T96 连续）：Q -> (r_att, r_rep) | 默认封顶 12 | 世界 force_r=2 封顶")
+    for q in range(0, 25):
+        a12, r12 = radii(q)
+        a2, r2 = radii(q, 2)
+        print("Q=%2d -> (%2d, %2d) | (%d, %d)" % (q, a12, r12, a2, r2))
+    # 形状自检：Q=0/1 取 1、连续增长、封顶生效、排斥落后 0.7 倍
+    assert radii(0) == (1, 1)
+    assert radii(1) == (1, 1)
+    assert radii(2) == (2, 1)
+    assert radii(15) == (12, 11)      # ChemLab round(10.5)=11（half away）；Python round 会给 10
+    assert radii(15, 2) == (2, 2)
+    assert radii(100) == (12, 12)
+    for q in range(0, 40):
+        pa, pr = radii(q, 6)
+        assert 1 <= pa <= 6 and 1 <= pr <= 6
+    print("半径规则自检 OK")

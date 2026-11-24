@@ -45,6 +45,9 @@
 
 ## 主要报告（docs/）
 
+- **2026-11-24 T96 分子运动修复：半径连续化 + ChemLab 推挤链/团簇动量/整团平移**：`T96_MOTION.md`（综合：半径公式、Q→r 新旧对照、headless 自检、局限）+ `T96_CHEMLAB.md`（ChemLab 移植细节：P1/P2/2b、参数表、验证）
+  （`r_att=clamp(Q,1,R_MAX)`、`r_rep=clamp(round(0.7Q),1,R_MAX)`，R_MAX 默认 12，Python 世界按 force_r 封顶；推挤链 Kmax=6、冲量 e=0.2；团簇动量 γ=0.15/Vmax=2；rows mean 91.7→75.8~76.5、n_push 78~94、整团 push 1,922~1,999、性能 1.3×；tests 150/150；断弱键仍 TODO）
+  脚本 `alchemy/three_su.py`（R_MAX+连续 radii、scores/pair_force 透传）、t82/t83/t87/t90（force_r 封顶）、`godot/chem_lab/scripts/sim.gd`（869→1193 行）、`main.gd`（1026→1096 行），日志 `t96_chemlab.log`
 - **2026-11-24 T95 碰撞/推挤规则：删布朗 + 质量/受力/动量判据的链式推挤（A/B 18 组）**：`T95_COLLISION_DESIGN.md`（设计：冲突决策链/冲量公式/参数表；断弱键列后续）+ `T95_COLLISION.md`（报告）
   （v1 单格推挤：成功 3,080~8,748 次/臂；v2 团簇动量：v2 在 G=0 把 PK/双层 envC 压回 0、cov 1.00，G=0.2 把 PK 9,344→4,901、双层 584→0，但不修复沉降；18/18 守恒；最长链 ≤6；最慢 1.79×）
   脚本 `t95_collision.py`/`t95_run.py`/`t95_render.py`/`t95_config.py`，数据 `t95_ab.json`（1.84MB），图 `images/t95_push.png`、`t95_core.png`、`t95_vfield.png`，日志 `t95_run.log`
@@ -149,6 +152,9 @@
   随后补 T91 文档、整理 `godot/` 目录（详见 `docs/CLEANUP_LOG.md` 2026-11-22 节）。
 
 ## 最新补充
+- **T96 分子运动修复（2026-11-24，最新）**：用户 m01396 指令「改 1、3 条 + 统一半径规则 + 全部同步 ChemLab」。半径从 10 点一档改为连续 `R_att=clamp(Q,1,R_MAX)`、`R_rep=clamp(round(0.7Q),1,R_MAX)`（R_MAX 默认 12，Python 世界按 force_r 封顶）；ChemLab 实现 P1 链式推挤（Kmax=6、J_A/J_B、e=0.2、整链先校验后提交）、P2 团簇速度场（γ=0.15、Vmax=2）、2b 团簇净力整团平移（ΣF/M≥0.5）；参数进 UI「碰撞/推挤」9 控件。
+  headless 240 拍 selftest：旧规则 rows mean 91.7/moves 14,798 → 新规则 rows mean 75.8~76.5/moves 2.6 万+/n_push 78~94、整团 push 1,922~1,999、mean_speed 0.74~0.78、1.3×；`--no-push`/`--no-group` 对照；`tests/run_all.py` 150/150；`three_su.py` 自检 Q=0..24 表 OK。
+  `docs/T96_MOTION.md` + `docs/T96_CHEMLAB.md`；日志 `t96_chemlab.log`（不入库）。断弱键（可断键/熔化）仍列 TODO。
 - **T95 碰撞/推挤规则（2026-11-24，最新）**：用户指令删除全部布朗运动（代码 6 文件 + 文档 8 处），并把「目标格被占就堵死」改为**质量 + 受力 + 动量判据的链式推挤**。
   参数 `t95_config.py`（e=0.2/µ=0.25/Kmax=6/Vmax=2/γ=0.15，全部可调）；A/B 18 组×600 拍 163.65s：18/18 守恒、5 不变量全过；
   v0（现规则）/v1（P1 单格推挤）/v2（P2 团簇速度场+动量）；v1 成功推挤 3,080~8,748 次/臂、v2 8,712~16,774 次/臂；失败 20,239~228,138（锁网+地面支撑 → J_B 很大）。
@@ -235,7 +241,8 @@
   报告 `docs/T82_ENV_SLICES.md`，图 `images/t82_slices.png`（+5 张单图）。
 - **T81 三素相互作用公式与验证（2026-11-20）**：聚素=吸引力（O3/X2/C1 点）、散素=覆盖半径（K3/A2/F1 点）、动素=排斥力（P3/W2/L1 点）；
   `Att=κA·√(AiAj)/3·J_att·F(d,r_att)`、`Rep=κR·√(DiDj)/3·J_rep·F(d,r_rep)`、`w=Att−Rep`（κA=2.5 锚原 κ0、κR=0.5，J=元素组成 Jaccard，无其它变量；
-  r_att=1+[Q≥10]+[Q≥20]，r_rep=1+[Q≥15]+[Q≥30]）。84,225 分子校准：同种净吸 **95.5%**、强粘 **82.0%**，异种双弱 **58.7%**（<1.0 时 94.6%）、强吸仅 5.4%，27 格 27/27；
+  r_att=1+[Q≥10]+[Q≥20]，r_rep=1+[Q≥15]+[Q≥30]）。  
+  > T96 起半径改为连续规则（`R_att=clamp(Q,1,R_MAX)`、`R_rep=clamp(round(0.7Q),1,R_MAX)`，默认 R_MAX=12）；下表 84,225 校准数字基于旧档位，不可直接比较。84,225 分子校准：同种净吸 **95.5%**、强粘 **82.0%**，异种双弱 **58.7%**（<1.0 时 94.6%）、强吸仅 5.4%，27 格 27/27；
   方阵环面动态世界：强吸引物种成团、混合世界同性键占比 0.63~1.00（期望 0.16），力显著加速初期装配；3 组诚实结论（同质吸引不足让单个体选择性长大 / 力是动力学加速器 / 排斥半径永远落后）。
   代码 `alchemy/three_su.py`、脚本 `t81_su_calibrate.py`/`t81_su_world.py`/`t81_overnight.py`/`t81_su_plot.py`，报告 `docs/THREE_SU_AXES.md`，图 `images/t81_su.png`。
 - **T80 组装体生长（2026-11-19）**：回答"主体是 A 的组装体能否吞小分子合成新 A 并连到体上"——
