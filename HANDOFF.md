@@ -1687,3 +1687,14 @@ un_lab.bat）；本轮新增 chem_lab 工程并提交。未 push。
 - **文档**：新增 `docs/T96_MOTION.md`（综合）、`docs/T96_CHEMLAB.md`（移植）；`THREE_SU_AXES.md` §10 T96 尾注；`CHEMLAB_PARAMS.md` 第 71 行旧档位句改连续 + T96 段；INDEX/HANDOFF/T83_ENV_AXES/T87_ENV_ASYM/T93_STATIC 加 T96 口径注记。
 - **口径**：旧 T81~T95 半径/长程力数字不可与新规则直接比较（t94 contacts 0→291、t95 n_push_fail 2,545→4,306 等）；T94/T95 正式报告未按新规则重跑，引用需注明。
 - **后续 TODO**：① 断弱键（可断键/熔化）用户要求以后做；② 热运动/最小扩散（净力 0 的对称团仍静止，观感像“死”）；③ 旋转/破碎；④ 若 Python 世界也要长程力，需调大 force_r 并重跑正式报告。
+
+---
+
+## 维护记录 · 2026-11-24 T96 追加修复（reset 残留 → 第二局完全不同）
+
+- **现象**：用户 m01643/m01655 反馈「第一次实验最理想；重置清空后同配置第二次完全不同，且不是随机数级别」。
+- **根因**：`sim.gd` 有按 id 索引的并行数组 `m_ax/m_ay/m_A/m_D/m_ra/m_rr/m_alive`：`place()` 每次 append，`force_on()`/`remove()` 按 id 直接读写；`reset()` 只清 `mols` 未清它们 → 第二局 id 从 0 开始，新分子读到上一局旧坐标/半径/吸引力/alive（甚至被当成 dead），整局物理错乱。第一局最理想正因为数组干净。
+- **修复**：`sim.gd reset()` 清空七组并行数组与 `_order`；`clear_pending()` 后追加 `client.call_sync("ping")` 排空内核旧 resolve 队列（同连接顺序执行，ping 回复即旧请求处理完）。`main.gd` 随机投料种子由 `randi()` 改为读输入框 `seed_edit.value`。
+- **验证**：Godot 4.7.2 headless 同一内核连接连跑三局（T91 预设 800 分子、600 拍、16ms/帧、p_react=1.0）：修复前第 2 局 N=722/complete=396/moves=87,013/mean_v=0.00（第 1 局 13,646/1.50）；修复后三局 complete 13,661 / 13,556 / 12,755，moves 11.3~12.1 万，同一量级。回归 `--quit-after 1200 --selftest` 240 拍通过（N=343、oob=0、无脚本错误）。
+- **口径**：只做 A（reset 清理+ping 屏障）与 D（随机投料 seed）；未做 B（反应同拍同步）与 C（sim.rng 洗牌），两局细节仍有差异，同 seed 逐位一致需再打开这两项。
+- **产物**：`godot/chem_lab/scripts/sim.gd`、`godot/chem_lab/scripts/main.gd`、`docs/T96_CHEMLAB.md` §10、README T96 块。

@@ -205,3 +205,26 @@ Godot_v4.7.2-stable_win64.exe --headless --path . --quit-after 400 --selftest --
 - 新增：`alchemy/docs/T96_CHEMLAB.md`（本文件）
 - 新增：`alchemy/t96_chemlab.log`（命令与输出；含参数同步补丁后的复验记录）
 - 未改：`main.tscn`、Python 内核与 `t9x_*.py`、`kernel_server.py`
+
+## 10. 追加修复（2026-11-24）：reset 残留导致「重置后第二局完全不同」
+
+**现象**：用户 m01643/m01655 反馈「每次打开实验场后第一次实验最理想，重置清空后同样配置的第二次实验完全不同，且不是随机数级别」。
+
+**根因**：`sim.gd` 中有一组按分子 id 索引的并行数组 `m_ax/m_ay/m_A/m_D/m_ra/m_rr/m_alive`；`place()` 每次 `append`，`force_on()`/`remove()` 按 id 直接读写。`reset()` 原来只 `mols.clear()`，**没有清这七个数组**。第二局 id 从 0 重新开始，`mols[0]` 是新分子，但 `m_ax[0]/m_A[0]/m_ra[0]/m_alive[0]` 仍是上一局旧值 → 新分子的位置/吸引力/作用半径/存活标记全部是假的（甚至被当成 dead）→ 整局物理错乱。第一局最理想，正因为数组是干净的。
+
+**修改**（只做用户确认的 A/D 两项，A 补完整）：
+- A：`reset()` 清空上述七个并行数组与 `_order`；`clear_pending()` 后追加一次 `client.call_sync("ping")`，等内核回复以排空上一局排队中的 resolve（同一连接按行顺序执行，ping 回复即旧请求已处理完、旧回复被丢弃）。
+- D：`main.gd` 随机投料种子由 `randi()` 改为读输入框 `seed_edit.value`。
+- 未做 B（反应同拍同步）/C（`sim.rng` 洗牌），保持自然随机与异步性能。
+
+**验证**（Godot 4.7.2 headless，同一内核连接内连跑三局：预设第一组 800 分子、600 拍、p_react=1.0、每拍 16 ms 帧节奏）：
+
+| 局 | 修复前 N / complete / moves / mean_v | 修复后 N / complete / moves / push / mean_v |
+|---|---|---|
+| 第 1 局 | 494 / 13,646 / 102,561 / 1.50 | 489 / 13,661 / 113,355 / 2,729 / 1.52 |
+| 第 2 局 | **722 / 396 / 87,013 / 0.00** | 479 / 13,556 / 121,445 / 2,719 / 1.60 |
+| 第 3 局（对照） | 751 / 179 / 87,177 / 0.00 | 491 / 12,755 / 97,703 / 2,424 / 1.54 |
+
+修复后三局回到同一量级、同一行为。回归：`--quit-after 1200 --selftest` 240 拍通过（N=343、oob=0、无脚本错误）。两局之间仍有细节差异（C 全局 RNG 洗牌 + B 异步落拍未改），如需同 seed 逐位一致，再打开这两项。
+
+**产物**：`scripts/sim.gd`（reset）、`scripts/main.gd`（随机投料 seed）；本文件 §10。

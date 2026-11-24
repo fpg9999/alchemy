@@ -83,6 +83,16 @@ func setup(w: int, h: int, kernel_client) -> void:
 func reset() -> void:
 	grid.fill(-1)
 	mols.clear()
+	# T96 修复：并行数组必须一起清空，否则重置后按 id 读到上一局的旧
+	# 位置/半径/吸引力/alive，物理会整体错乱（第二局效果完全不同的主因）。
+	m_ax.clear()
+	m_ay.clear()
+	m_A.clear()
+	m_D.clear()
+	m_ra.clear()
+	m_rr.clear()
+	m_alive.clear()
+	_order.clear()
 	next_id = 0
 	tick = 0
 	rng.seed = int(p["seed"])
@@ -97,6 +107,11 @@ func reset() -> void:
 	epoch += 1
 	if client and client.has_method("clear_pending"):
 		client.clear_pending()
+		# T96 修复：清空客户端回调后，内核里可能还排着上一局已发出的 resolve
+		# 请求（同一连接按行顺序执行）。发一次 ping 并等回复，保证旧队列已
+		# 处理完、旧回复被丢弃，第二局从干净的内核状态开始。
+		if client.has_method("is_kernel_connected") and client.is_kernel_connected() and client.has_method("call_sync"):
+			client.call_sync("ping", {})
 
 ## 解析分子式（元素字母 + 可选数字），失败返回 {}
 func _comp_from_formula(f: String) -> Dictionary:

@@ -1003,7 +1003,7 @@ func _random_feed(apply_now: bool) -> void:
 		"elements": els, "n_mol": n,
 		"n_species": int(rand_species_edit.value),
 		"natoms_min": 2, "natoms_max": int(rand_natoms_edit.value),
-		"seed": randi(),
+		"seed": int(seed_edit.value),
 	})
 	if not r.get("ok", false):
 		_status("随机投料失败：%s" % String(r.get("error", "?")))
