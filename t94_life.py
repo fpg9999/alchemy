@@ -221,13 +221,13 @@ class LifeWorld(T87.AsymWorld):
     def __init__(self, W=W0, H=H0, seed=SEED, env_feed=None, env_name="dyn",
                  membrane=MEM_FORMULA, n_mem=MEM_N, body_n=BODY_N,
                  food_formula=FOOD_FORMULA, food_n=FOOD_N,
-                 grav=0.2, ticks_total=600, brown_p=0.05,
+                 grav=0.2, ticks_total=600,
                  center=CORE_CENTER, body_formula=BODY_FORMULA, seed_rng=None):
         recs = T83.catalog_index()
         super().__init__(W, H, seed, [], recs,
                          cap=CFG.DEFAULT_PARAMS["cap"],
                          p_react=CFG.DEFAULT_PARAMS["p_react"],
-                         force_r=2, brown_p=brown_p,
+                         force_r=2,
                          t0=CFG.DEFAULT_PARAMS["T0"],
                          t_end=CFG.DEFAULT_PARAMS["T_end"],
                          cool_ticks=int(CFG.DEFAULT_PARAMS["cool_ticks"]))
@@ -710,11 +710,6 @@ class LifeWorld(T87.AsymWorld):
                     if self._try_move(mid, dr, dc):
                         self.n_moves += 1
                         continue
-            if self.rng.random() < self.brown_p:
-                dr, dc = self.rng.choice(T83.DIRS)
-                if self._try_move(mid, dr, dc):
-                    self.n_moves += 1
-                    self.n_brown += 1
         self._tick_contacts()
         self.react_phase()
         self.rebuild_locks()

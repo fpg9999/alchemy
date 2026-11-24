@@ -116,14 +116,13 @@ def load_feed(target=7000, path=LOAD_FILE):
 
 class World:
     def __init__(self, W, H, seed, feed, recs, cap=26, p_react=0.01,
-                 force_r=2, brown_p=0.04, lock_r=2, lock_w=1.0,
+                 force_r=2, lock_r=2, lock_w=1.0,
                  e_cells=(10, 20), t0=1000.0, t_end=25.0, cool_k=3.0):
         self.W, self.H = W, H
         self.rng = random.Random(seed)
         self.cap = cap
         self.p_react = p_react
         self.force_r = force_r
-        self.brown_p = brown_p
         self.lock_r = lock_r
         self.lock_w = lock_w
         self.recs = recs
@@ -455,11 +454,6 @@ class World:
                 if self._try_move(mid, dr, dc):
                     self.n_moves += 1
                     continue
-            if self.rng.random() < self.brown_p:
-                dr, dc = self.rng.choice(DIRS)
-                if self._try_move(mid, dr, dc):
-                    self.n_moves += 1
-                    self.n_brown += 1
         self.react_phase()
         self.rebuild_locks()
 

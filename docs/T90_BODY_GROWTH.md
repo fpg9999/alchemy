@@ -61,3 +61,5 @@ python t90_render.py          # → images/t90_body.png
 ```
 
 产物：`t90_body_growth.py`、`t90_render.py`、`t90_full.json`、`t90_noattr.json`、`t90_noreact.json`、`t90_noseed.json`、`images/t90_body.png`。
+
+> **T95 口径变更（2026-11-24）**：布朗运动已从全部脚本删除（用户指令），动力学改由三素力/重力/推挤碰撞驱动；本报告记录的是删除前的实验口径，旧数字不可与 T95 新规则直接比较。

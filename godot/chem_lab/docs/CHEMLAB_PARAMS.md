@@ -155,7 +155,7 @@ resolve → complete / incomplete / none
 |---|---|---|
 | 完全没有反应 | 温度够不够（csum 与 T_local）、cap、p_react | 局部热：投料里有没有富 F/L 的"热源" |
 | 反应太多/世界被小碎片填满 | p_react、cap、react_margin | 降低 env_coupling（减少全域反应） |
-| 主体被冲散 | lock_w、锁断裂距离、mob_* | 增大 KA 或降低 brown |
+| 主体被冲散 | lock_w、锁断裂距离、mob_* | 增大 KA 或检查推挤参数（T95 起无布朗） |
 | 分子全沉底堆成一层 | G、硬墙 | 关硬墙（环面）或降低 G |
 | drops > 0 | cap（产物太大放不下）、世界密度 | 增大 W/H 或降低投料量 |
 | pending 很大、卡顿 | speed、max_react、p_react | 降低每拍反应对上限 |

@@ -182,11 +182,6 @@ class AsymWorld(T86.TriWorld):
                     if self._try_move(mid, dr, dc):
                         self.n_moves += 1
                         continue
-            if self.rng.random() < self.brown_p:
-                dr, dc = self.rng.choice(T83.DIRS)
-                if self._try_move(mid, dr, dc):
-                    self.n_moves += 1
-                    self.n_brown += 1
         self.react_phase()
         self.rebuild_locks()
         if self.track_every and self.t % self.track_every == 0:

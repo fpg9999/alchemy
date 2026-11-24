@@ -98,7 +98,6 @@ RHO_IN_MAX = 12.0       # ρ_E 内部区域半径
 RHO_OUT_MIN, RHO_OUT_MAX = 16.0, 40.0
 
 P_REACT = 0.010        # 本实验观察 700 拍结构演化；T87 默认 0.012，取略低
-BROWN_P = 0.12         # 400°C 热浴的热运动强度（T87 常温默认 0.04；见文档）
 CAP = 26
 SEED = 20261123
 
@@ -297,7 +296,7 @@ class MembraneWorld(T87.AsymWorld):
 
         e_cells = (max(4, W // 8), max(4, H // 8))
         super().__init__(W, H, seed, [], catalog_index(),
-                         cap=CAP, p_react=p_react, force_r=2, brown_p=BROWN_P,
+                         cap=CAP, p_react=p_react, force_r=2,
                          lock_r=2, lock_w=1.0, e_cells=e_cells,
                          t0=1000.0, t_end=10.0, cool_k=10.0, cool_ticks=10,
                          track_every=0, **kw)
@@ -639,12 +638,6 @@ class MembraneWorld(T87.AsymWorld):
                     if self._try_move(mid, dr, dc):
                         self.n_moves += 1
                         continue
-            # 3) 布朗
-            if self.rng.random() < self.brown_p:
-                dr, dc = self.rng.choice(T83.DIRS)
-                if self._try_move(mid, dr, dc):
-                    self.n_moves += 1
-                    self.n_brown += 1
         self.react_phase()
         self.rebuild_locks()
         self._tick_contacts()
@@ -1124,7 +1117,6 @@ def main(argv=None):
             "W": 160, "H": 110, "seed": args.seed,
             "core_formula": CORE_FORMULA, "food": [FOOD1, FOOD2],
             "bath_pool": BATH_POOL, "p_react": P_REACT, "cap": CAP,
-            "brown_p": BROWN_P,
             "structure": {"core_n": 24, "food": [40, 40],
                           "shell_n": 300, "shell_rin": 8.2,
                           "shell_rout": 12.4,

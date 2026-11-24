@@ -171,3 +171,5 @@ python t83_render.py          # -> images/t83_slices.png (+5 张单图), t83_sli
 - `t83_env_result.json`（config/summary/6 个快照）、`t83_slices.json`（切片统计）
 - `images/t83_slices.png`（3650×2421 合成图）、`images/t83_slice_{a,b,c,d,zoom}.png`
 - 本报告
+
+> **T95 口径变更（2026-11-24）**：布朗运动已从全部脚本删除（用户指令），动力学改由三素力/重力/推挤碰撞驱动；本报告记录的是删除前的实验口径，旧数字不可与 T95 新规则直接比较。

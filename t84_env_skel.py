@@ -48,12 +48,12 @@ def skel_shape(k):
 
 class SkelWorld(BaseWorld):
     def __init__(self, W, H, seed, feed, recs, cap=26, p_react=0.01,
-                 force_r=2, brown_p=0.04, lock_r=2, lock_w=1.0,
+                 force_r=2, lock_r=2, lock_w=1.0,
                  e_cells=(10, 20), t0=1000.0, t_end=10.0, cool_k=4.5):
         self.n_skel_cache = {}
         self.n_cells_used = 0
         super().__init__(W, H, seed, feed, recs, cap=cap, p_react=p_react,
-                         force_r=force_r, brown_p=brown_p, lock_r=lock_r,
+                         force_r=force_r, lock_r=lock_r,
                          lock_w=lock_w, e_cells=e_cells, t0=t0,
                          t_end=t_end, cool_k=cool_k)
 

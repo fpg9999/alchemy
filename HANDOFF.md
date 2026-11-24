@@ -1658,3 +1658,18 @@ un_lab.bat）；本轮新增 chem_lab 工程并提交。未 push。
 - **综合报告** `docs/T94_LIFE_SURVEY.md`：给出模型内最接近生命的组合 = 「O2/OK 主体 + PK/W2 膜（需 G≈0）+ O4XK2/O2X 本地冷壳 + XA3/C2K2 食物 + E4/E2/E3 环境 + 200→0°C 窗口」，能长大/被保护/有自复制化学式，**但仍不是生命**（无模板依赖/无变异/无代谢/无稳定隔室/无自修复/无选择压）；列出 6 条模型扩展建议（模板依赖、同分异构体、可逆膜-主体键、真正催化位点、隔室化补膜、持续能源）。
 - **测试**：`python tests/run_all.py` → 150/150 PASS。
 - **产物**：`t94_census.py`/`t94_life.py`/`t94_render.py`/`t94_env.py`/`t94_config.py`；`t94_census.json`（7.9MB）、`t94_life.json`（633KB）+ 10 份臂 JSON、`t94_envmap.json`；`images/t94_census.png`、`t94_life_*.png`（5 张）、`t94_envmap.png`；运行日志 `t94_run.log` 不入库（`.gitignore` 的 `*.log` 覆盖）。README/INDEX 已加入口。
+
+## 维护记录 · 2026-11-24 T95 碰撞/推挤（删布朗 + 动量推挤）
+
+- **触发**：用户指出团簇「悬浮不动」= 目标格被占就堵死的实现钉住（且代码里布朗仍在跑，与「已无布朗」不符），要求：① 碰撞除质量外还要判断**受力与动量**；② 全局删除布朗；③ 参数做成可调、默认 e=0.2/µ=0.25/Kmax=6/Vmax=2/γ=0.15；④ 断弱键以后再做（先记着）。
+- **设计**：`docs/T95_COLLISION_DESIGN.md`——受阻时先团簇化（锁刚体 M/v/W）、接近判据、动量预算 J_A/J_B、一维冲量、网格落地（先试后写）、能量损耗；分 P1（单格链）/P2（团簇速度场）两阶段。
+- **代码**：新增 `t95_config.py`（`PUSH` 字典 + `params(**over)`）、`t95_collision.py`（`PushWorld(T94.LifeWorld)`，stage 0/1/2、链式推挤、团簇动量、5 个不变量断言）、`t95_run.py`（E4 环境、18 组 A/B）、`t95_render.py`。**删除布朗**：`t82_env_sim.py`/`t83_env_axes.py`/`t84_env_skel.py`/`t87_env_asym.py`/`t93_membrane.py`/`t94_life.py` 的参数与步内分支（`n_brown` 字段保留恒 0）；文档 6 处加「T95 口径变更」注（T78/T82/T83/T90/T93_SIM/ABILITY_PRIMITIVES），`THREE_SU_AXES.md` 与 `godot/.../CHEMLAB_PARAMS.md` 的规则句改写。
+- **A/B 结果**（18 组×600 拍，163.65s，seed=20261124，全臂元素守恒、A1~A5 全过，最慢 1.79×<2×）：
+  - v1（P1 单格推挤）：成功 3,080~8,748 次/臂，失败 20,239~203,882；
+  - v2（P2 团簇速度场+动量）：成功 8,712~16,774 次/臂，失败 74,209~228,138；链长 k2~k6 均有（最大 6）；
+  - **v2 在 G=0 把 PK/双层膜保护恢复到 envC=0、cov=1.00；G=0.2 把 PK envC 9,344→4,901、双层 584→0，但膜仍沉降（cov 0.36~0.42）**；
+  - 无膜对照部分条件下接触反升（v1 G=0 3,522；v2 G=0.2 20,269）⇒ **推挤不是无条件增益**；
+  - 修复 bug：起推团簇未计入 Kmax（曾出现链长 66），修后重跑。
+- **测试**：布朗删除后 `python tests/run_all.py` → 150/150 PASS（19.2s）。
+- **产物**：`t95_ab.json`（1.84MB）、`t95_run.log`、`images/t95_push.png`/`t95_core.png`/`t95_vfield.png`、`docs/T95_COLLISION.md`；README/INDEX 已加入口。
+- **局限 / 后续**：① v2 速度用 `F2V` 标定，非物理常数；② 逐分子位移仍按 v0 的随机尝试（为保持可比），不是完整「力→加速度→位移」积分；③ **断弱键**列 TODO（用户要求以后再做）；④ T87/T93/T94 旧数字与新规则不可比，跨报告引用需标注口径；⑤ v2 在默认重力下只降低接触、不解决重膜沉降，需要更低 G 或轻膜/支撑面配合。
