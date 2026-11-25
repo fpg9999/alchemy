@@ -33,3 +33,13 @@ progress/
 ## 每日例行（牢⑨）
 
 定时任务（每日 08:30）：拉取远端 → 删除无用生成物 → 更新文档 → 提交推送 → 核验远程结构与 HEAD，并顺带更新 `progress/laojiu/CURRENT.md`、向 `log/` 追加当日记录。
+
+## 同步规则补充（2026-11-25，两台机器都请遵守）
+
+> 背景：本机常有尚未推送的新成果，远端还有对方的工作分支；历史上出现过「拉取/整理时把本地新成果覆盖掉」的风险点。
+
+1. **只同步 `main`**：用 `git fetch origin main` 取主分支最新改动即可，不做 `git fetch --all --prune`，避免把对方其它分支（如 `minimal-force`）的更新引入本地判断。
+2. **先算落后量再动手**：`git rev-list --left-right --count HEAD...origin/main`、`git log --oneline HEAD..origin/main`；落后 0 就不需要任何拉取动作。
+3. **本地领先时只 rebase**：`git rebase origin/main` 把本地提交搬到远端之上（线性、不丢成果）；本地领先且远端也前进时同样先 fetch 再 rebase。
+4. **禁止覆盖式操作**：不 `git reset --hard origin/main`、不 `git checkout -- .`、不 `git clean -fd`、不 force push —— 这些都可能抹掉本地未推送的新成果。
+5. **删除前先确认归属**：清理生成物/日志前，先 `git status` 与 `git log` 确认它不是「尚未提交/尚未推送的新成果」；只删缓存、运行日志、明确的重复或废弃文件。

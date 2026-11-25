@@ -159,3 +159,22 @@ t9_reps_O.png :: [WinError 32] 另一个程序正在使用此文件，进程无�
 
 ### 复核
 - `python tests/run_all.py` → 150/150 PASS；提交后推送并以 `git ls-remote` / `main...origin/main` = `0 0` 核验，结果记入 `progress/laojiu/log/2026-11-24.md`。
+
+## 2026-11-25 例行维护（T95/T96 提交后清理）
+
+> 按新约定只同步 `main`：`git fetch origin main` → `origin/main` = 本地 `HEAD` = `7048409`（`0 0`），无新提交可拉取；`3545a87..HEAD` 的 38 文件（T95 碰撞/推挤、T96 分子运动修复与追加修复）为并发代理产出，已在本地。
+
+### 删除
+- 重建缓存：`__pycache__/`、`alchemy/__pycache__/`、`alchemy/core/__pycache__/`、`tests/__pycache__/`、`godot/chem_lab/__pycache__/`、`godot/chem_lab/.godot/`。
+- 忽略的运行日志：根 `t94_run.log`、`t95_run.log`、`t96_chemlab.log`（脚本 append，`.gitignore` 的 `*.log` 已覆盖，只删本地副本）。
+
+### 审计与保留
+- tracked **1,756** 文件；无 `*.log`/`*.err`/`*.pyc`/`__pycache__`/`tmp`/`screenshot_*` 入库，无 0 字节文件。
+- >30MB 仅 `_data_gz/t12b_pairs.jsonl.gz`（41,327,963B）；>100KB 重复内容仍为 3 组（`forms38.json`==`t8_forms.json`、`t4_enum_O_X_K*`、`t78_verify_det*`），均按既有理由保留。
+- 新增 T95/T96 文档齐备（`docs/T95_COLLISION.md`、`T95_COLLISION_DESIGN.md`、`T96_MOTION.md`、`T96_CHEMLAB.md`）；根目录平铺文件按既有约定保持。
+
+### 协作约定补充
+- 在 `progress/README.md` 末尾新增「同步规则补充（2026-11-25，两台机器都请遵守）」：只 `fetch origin main`、先算落后量、本地领先只 `rebase`、禁止 `reset --hard`/`checkout -- .`/`clean -fd`/force push、删除前确认文件不是未推送成果。
+
+### 复核
+- `python tests/run_all.py` → 150/150 PASS；提交后推送并核验 `git ls-remote origin refs/heads/main` 与 `main...origin/main` = `0 0`，结果记入 `progress/laojiu/log/2026-11-25.md`。

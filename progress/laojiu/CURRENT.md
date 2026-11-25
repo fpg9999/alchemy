@@ -1,12 +1,12 @@
 # 牢⑨ 当前状态
 
-> 滚动更新；历史见 `progress/laojiu/log/`。最后更新：2026-11-24 11:40
+> 滚动更新；历史见 `progress/laojiu/log/`。最后更新：2026-11-25 08:31
 
 - **机器 / 昵称**：本机（Windows 10 + DSH），昵称「牢⑨」
 - **工作目录**：`G:\AI work\deepseek\work1\alchemy`
 - **远程**：`https://github.com/fpg9999/alchemy`（`main`）
-- **最近一次同步**：**2026-11-24 T96 追加修复**（reset 残留：清并行数组 + ping 排空内核队列；随机投料 seed）`6e6ac47`，推送 `3cf2bb8..6e6ac47`；此前 **2026-11-24 T96 分子运动修复**（半径连续化 + ChemLab 推挤链/团簇动量/整团平移）`bfc09a2`，推送 `9050259..bfc09a2`，`main...origin/main` = `0 0`；此前 **2026-11-24 T95 碰撞/推挤**（删布朗 + 质量/受力/动量推挤 + A/B 18 组）`396b867`，推送 `3545a87..396b867`，`main...origin/main` = `0 0`；此前 08:30 例行 `f8cce83`、T94 生命综合调查 `55675df`、T93 保护膜 `6b88a1b` 及核验 `b291641`/`3545a87`
-- **当前本地**：与 `origin/main` 一致（T96 追加修复 `6e6ac47`，工作树干净）；T96 已提交（`alchemy/three_su.py` 连续半径 + t82/t83/t87/t90 封顶 + `sim.gd`/`main.gd` 推挤/动量/整团平移 + `docs/T96_MOTION.md`/`T96_CHEMLAB.md`）；T95 产物已提交（`t95_config.py`/`t95_collision.py`/`t95_run.py`/`t95_render.py`、`docs/T95_COLLISION.md` + `docs/T95_COLLISION_DESIGN.md`、`t95_ab.json` 1.8MB、3 张图、删布朗 6 脚本 + 8 文档处）；运行日志一律不入库；tracked 约 1,758 文件
+- **最近一次同步**：**2026-11-25 08:30 例行维护**（只同步 `main`：`git fetch origin main` 后 `0 0` 无需拉取；清缓存与运行日志；`progress/README.md` 补「同步规则补充」）本轮提交见当日 log；此前 **2026-11-24 T96 追加修复**（reset 残留：清并行数组 + ping 排空内核队列；随机投料 seed）`6e6ac47`，推送 `3cf2bb8..6e6ac47`；此前 **2026-11-24 T96 分子运动修复**（半径连续化 + ChemLab 推挤链/团簇动量/整团平移）`bfc09a2`，推送 `9050259..bfc09a2`，`main...origin/main` = `0 0`；此前 **2026-11-24 T95 碰撞/推挤**（删布朗 + 质量/受力/动量推挤 + A/B 18 组）`396b867`，推送 `3545a87..396b867`，`main...origin/main` = `0 0`；此前 08:30 例行 `f8cce83`、T94 生命综合调查 `55675df`、T93 保护膜 `6b88a1b` 及核验 `b291641`/`3545a87`
+- **当前本地**：与 `origin/main` 一致（T96 追加修复 `6e6ac47`，工作树干净）；T96 已提交（`alchemy/three_su.py` 连续半径 + t82/t83/t87/t90 封顶 + `sim.gd`/`main.gd` 推挤/动量/整团平移 + `docs/T96_MOTION.md`/`T96_CHEMLAB.md`）；T95 产物已提交（`t95_config.py`/`t95_collision.py`/`t95_run.py`/`t95_render.py`、`docs/T95_COLLISION.md` + `docs/T95_COLLISION_DESIGN.md`、`t95_ab.json` 1.8MB、3 张图、删布朗 6 脚本 + 8 文档处）；运行日志一律不入库；2026-11-25 例行后 tracked **1,756** 文件、工作树干净
 - **每日例行**：08:30 定时（`schedule-249fe7ef-…`）：拉取远端 → 删除无用生成物 → 更新文档 → 提交推送 → 核验远程，并更新本文件与当日 log。提醒偶尔漏投递，恢复后按批次补跑并补记 log（见 `log/2026-11-21.md`、`log/2026-11-23.md`）
 
 ## 正在进行 / 下一步
